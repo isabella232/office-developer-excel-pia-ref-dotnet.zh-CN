@@ -1,0 +1,547 @@
+<Type Name="Dialog" FullName="Microsoft.Office.Interop.Excel.Dialog">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="683b59b8e165135797b6775618abd9a9ace43d44" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20582864" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Dialog" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Dialog" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Dialog" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Dialog" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Dialog" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0002087A-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="b1c2e-101">代表内置的 Microsoft Excel 对话框。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="b1c2e-101">Represents a built-in Microsoft Excel dialog box.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="b1c2e-102">
+        <para>
+          <b>Dialog</b>对象所在的<see cref="T:Microsoft.Office.Interop.Excel.Dialogs" />集合。<b>Dialogs</b>集合包含 Microsoft Excel 中的所有内置对话框框。您无法创建一个新的内置对话框或向集合添加一个。您可以处理<b>Dialog</b>对象的唯一有用事情是将其与<see cref="M:Microsoft.Office.Interop.Excel.Dialog.Show(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法，以显示相应的对话框。</para>
+        <para>使用<b>Dialogs</b>(<paramref name="index" />)，其中<paramref name="index" />是内置的常量标识对话框，可返回单个<b>Dialog</b>对象。</para>
+        <para>Microsoft Excel 中的许多内置对话框包含内置常量。每个常量形成从前缀"xlDialog"，后面紧接对话框的名称。例如，应用名称对话框常量是<b>xlDialogApplyNames</b>，并查找文件对话框的常量是<b>xlDialogFindFile</b>。下列常量是成员<see cref="T:Microsoft.Office.Interop.Excel.XlBuiltInDialog" />枚举类型。</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="b1c2e-102">
+          <para>The <b>Dialog</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.Dialogs" /> collection. The <b>Dialogs</b> collection contains all the built-in dialog boxes in Microsoft Excel. You cannot create a new built-in dialog box or add one to the collection. The only useful thing you can do with a <b>Dialog</b> object is use it with the <see cref="M:Microsoft.Office.Interop.Excel.Dialog.Show(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> method to display the corresponding dialog box.</para>
+          <para>Use <b>Dialogs</b>(<paramref name="index" />), where <paramref name="index" /> is a built-in constant identifying the dialog box, to return a single <b>Dialog</b> object.</para>
+          <para>Microsoft Excel includes built-in constants for many of the built-in dialog boxes. Each constant is formed from the prefix "xlDialog" followed by the name of the dialog box. For example, the Apply Names dialog box constant is <b>xlDialogApplyNames</b>, and the Find File dialog box constant is <b>xlDialogFindFile</b>. These constants are members of the <see cref="T:Microsoft.Office.Interop.Excel.XlBuiltInDialog" /> enumerated type.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Dialog.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="b1c2e-103">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-103">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Dialog.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="b1c2e-104">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-104">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="b1c2e-105">
+            <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+            <para>
+              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-105">
+              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
+              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Dialog.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="b1c2e-106">返回指定对象的父对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-106">Returns the parent object for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public bool Show (object Arg1, object Arg2, object Arg3, object Arg4, object Arg5, object Arg6, object Arg7, object Arg8, object Arg9, object Arg10, object Arg11, object Arg12, object Arg13, object Arg14, object Arg15, object Arg16, object Arg17, object Arg18, object Arg19, object Arg20, object Arg21, object Arg22, object Arg23, object Arg24, object Arg25, object Arg26, object Arg27, object Arg28, object Arg29, object Arg30);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Show([in]object Arg1, [in]object Arg2, [in]object Arg3, [in]object Arg4, [in]object Arg5, [in]object Arg6, [in]object Arg7, [in]object Arg8, [in]object Arg9, [in]object Arg10, [in]object Arg11, [in]object Arg12, [in]object Arg13, [in]object Arg14, [in]object Arg15, [in]object Arg16, [in]object Arg17, [in]object Arg18, [in]object Arg19, [in]object Arg20, [in]object Arg21, [in]object Arg22, [in]object Arg23, [in]object Arg24, [in]object Arg25, [in]object Arg26, [in]object Arg27, [in]object Arg28, [in]object Arg29, [in]object Arg30) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Dialog.Show(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Show (Optional Arg1 As Object, Optional Arg2 As Object, Optional Arg3 As Object, Optional Arg4 As Object, Optional Arg5 As Object, Optional Arg6 As Object, Optional Arg7 As Object, Optional Arg8 As Object, Optional Arg9 As Object, Optional Arg10 As Object, Optional Arg11 As Object, Optional Arg12 As Object, Optional Arg13 As Object, Optional Arg14 As Object, Optional Arg15 As Object, Optional Arg16 As Object, Optional Arg17 As Object, Optional Arg18 As Object, Optional Arg19 As Object, Optional Arg20 As Object, Optional Arg21 As Object, Optional Arg22 As Object, Optional Arg23 As Object, Optional Arg24 As Object, Optional Arg25 As Object, Optional Arg26 As Object, Optional Arg27 As Object, Optional Arg28 As Object, Optional Arg29 As Object, Optional Arg30 As Object) As Boolean" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(496)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Arg1" Type="System.Object" />
+        <Parameter Name="Arg2" Type="System.Object" />
+        <Parameter Name="Arg3" Type="System.Object" />
+        <Parameter Name="Arg4" Type="System.Object" />
+        <Parameter Name="Arg5" Type="System.Object" />
+        <Parameter Name="Arg6" Type="System.Object" />
+        <Parameter Name="Arg7" Type="System.Object" />
+        <Parameter Name="Arg8" Type="System.Object" />
+        <Parameter Name="Arg9" Type="System.Object" />
+        <Parameter Name="Arg10" Type="System.Object" />
+        <Parameter Name="Arg11" Type="System.Object" />
+        <Parameter Name="Arg12" Type="System.Object" />
+        <Parameter Name="Arg13" Type="System.Object" />
+        <Parameter Name="Arg14" Type="System.Object" />
+        <Parameter Name="Arg15" Type="System.Object" />
+        <Parameter Name="Arg16" Type="System.Object" />
+        <Parameter Name="Arg17" Type="System.Object" />
+        <Parameter Name="Arg18" Type="System.Object" />
+        <Parameter Name="Arg19" Type="System.Object" />
+        <Parameter Name="Arg20" Type="System.Object" />
+        <Parameter Name="Arg21" Type="System.Object" />
+        <Parameter Name="Arg22" Type="System.Object" />
+        <Parameter Name="Arg23" Type="System.Object" />
+        <Parameter Name="Arg24" Type="System.Object" />
+        <Parameter Name="Arg25" Type="System.Object" />
+        <Parameter Name="Arg26" Type="System.Object" />
+        <Parameter Name="Arg27" Type="System.Object" />
+        <Parameter Name="Arg28" Type="System.Object" />
+        <Parameter Name="Arg29" Type="System.Object" />
+        <Parameter Name="Arg30" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Arg1">
+          <span data-ttu-id="b1c2e-107">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-107">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b1c2e-108">初始命令参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-108">The initial arguments for the command.</span>
+          </span>
+        </param>
+        <param name="Arg2">
+          <span data-ttu-id="b1c2e-109">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-109">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b1c2e-110">初始命令参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-110">The initial arguments for the command.</span>
+          </span>
+        </param>
+        <param name="Arg3">
+          <span data-ttu-id="b1c2e-111">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-111">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b1c2e-112">初始命令参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-112">The initial arguments for the command.</span>
+          </span>
+        </param>
+        <param name="Arg4">
+          <span data-ttu-id="b1c2e-113">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-113">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b1c2e-114">初始命令参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-114">The initial arguments for the command.</span>
+          </span>
+        </param>
+        <param name="Arg5">
+          <span data-ttu-id="b1c2e-115">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-115">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b1c2e-116">初始命令参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-116">The initial arguments for the command.</span>
+          </span>
+        </param>
+        <param name="Arg6">
+          <span data-ttu-id="b1c2e-117">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-117">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b1c2e-118">初始命令参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-118">The initial arguments for the command.</span>
+          </span>
+        </param>
+        <param name="Arg7">
+          <span data-ttu-id="b1c2e-119">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-119">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b1c2e-120">初始命令参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-120">The initial arguments for the command.</span>
+          </span>
+        </param>
+        <param name="Arg8">
+          <span data-ttu-id="b1c2e-121">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-121">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b1c2e-122">初始命令参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-122">The initial arguments for the command.</span>
+          </span>
+        </param>
+        <param name="Arg9">
+          <span data-ttu-id="b1c2e-123">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-123">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b1c2e-124">初始命令参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-124">The initial arguments for the command.</span>
+          </span>
+        </param>
+        <param name="Arg10">
+          <span data-ttu-id="b1c2e-125">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-125">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b1c2e-126">初始命令参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-126">The initial arguments for the command.</span>
+          </span>
+        </param>
+        <param name="Arg11">
+          <span data-ttu-id="b1c2e-127">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-127">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b1c2e-128">初始命令参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-128">The initial arguments for the command.</span>
+          </span>
+        </param>
+        <param name="Arg12">
+          <span data-ttu-id="b1c2e-129">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-129">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b1c2e-130">初始命令参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-130">The initial arguments for the command.</span>
+          </span>
+        </param>
+        <param name="Arg13">
+          <span data-ttu-id="b1c2e-131">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-131">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b1c2e-132">初始命令参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-132">The initial arguments for the command.</span>
+          </span>
+        </param>
+        <param name="Arg14">
+          <span data-ttu-id="b1c2e-133">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-133">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b1c2e-134">初始命令参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-134">The initial arguments for the command.</span>
+          </span>
+        </param>
+        <param name="Arg15">
+          <span data-ttu-id="b1c2e-135">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-135">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b1c2e-136">初始命令参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-136">The initial arguments for the command.</span>
+          </span>
+        </param>
+        <param name="Arg16">
+          <span data-ttu-id="b1c2e-137">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-137">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b1c2e-138">初始命令参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-138">The initial arguments for the command.</span>
+          </span>
+        </param>
+        <param name="Arg17">
+          <span data-ttu-id="b1c2e-139">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-139">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b1c2e-140">初始命令参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-140">The initial arguments for the command.</span>
+          </span>
+        </param>
+        <param name="Arg18">
+          <span data-ttu-id="b1c2e-141">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-141">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b1c2e-142">初始命令参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-142">The initial arguments for the command.</span>
+          </span>
+        </param>
+        <param name="Arg19">
+          <span data-ttu-id="b1c2e-143">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-143">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b1c2e-144">初始命令参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-144">The initial arguments for the command.</span>
+          </span>
+        </param>
+        <param name="Arg20">
+          <span data-ttu-id="b1c2e-145">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-145">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b1c2e-146">初始命令参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-146">The initial arguments for the command.</span>
+          </span>
+        </param>
+        <param name="Arg21">
+          <span data-ttu-id="b1c2e-147">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-147">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b1c2e-148">初始命令参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-148">The initial arguments for the command.</span>
+          </span>
+        </param>
+        <param name="Arg22">
+          <span data-ttu-id="b1c2e-149">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-149">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b1c2e-150">初始命令参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-150">The initial arguments for the command.</span>
+          </span>
+        </param>
+        <param name="Arg23">
+          <span data-ttu-id="b1c2e-151">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-151">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b1c2e-152">初始命令参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-152">The initial arguments for the command.</span>
+          </span>
+        </param>
+        <param name="Arg24">
+          <span data-ttu-id="b1c2e-153">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-153">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b1c2e-154">初始命令参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-154">The initial arguments for the command.</span>
+          </span>
+        </param>
+        <param name="Arg25">
+          <span data-ttu-id="b1c2e-155">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-155">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b1c2e-156">初始命令参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-156">The initial arguments for the command.</span>
+          </span>
+        </param>
+        <param name="Arg26">
+          <span data-ttu-id="b1c2e-157">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-157">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b1c2e-158">初始命令参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-158">The initial arguments for the command.</span>
+          </span>
+        </param>
+        <param name="Arg27">
+          <span data-ttu-id="b1c2e-159">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-159">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b1c2e-160">初始命令参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-160">The initial arguments for the command.</span>
+          </span>
+        </param>
+        <param name="Arg28">
+          <span data-ttu-id="b1c2e-161">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-161">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b1c2e-162">初始命令参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-162">The initial arguments for the command.</span>
+          </span>
+        </param>
+        <param name="Arg29">
+          <span data-ttu-id="b1c2e-163">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-163">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b1c2e-164">初始命令参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-164">The initial arguments for the command.</span>
+          </span>
+        </param>
+        <param name="Arg30">
+          <span data-ttu-id="b1c2e-165">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-165">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b1c2e-166">初始命令参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-166">The initial arguments for the command.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="b1c2e-167">显示内置对话框，等待用户输入数据。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-167">Displays the built-in dialog box and waits for the user to input data.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="b1c2e-168">
+            <para>对于内置对话框，此方法返回<b>True</b> ，如果用户单击确定，或将返回<b>False</b> ，如果用户单击取消按钮。</para>
+            <para>您可以使用单个对话框中同时更改许多属性。例如，使用单元格格式对话框中，若要更改的所有属性<see cref="T:Microsoft.Office.Interop.Excel.Font" />对象。</para>
+            <para>对于一些内置对话框 （打开对话框的示例），您可以设置初始值使用 arg1，arg2，...，arg30。有关内置对话框的详细信息，请参阅<see cref="T:Microsoft.Office.Interop.Excel.Dialogs" />集合。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1c2e-168">
+              <para>For built in dialog boxes, this method returns <b>True</b> if the user clicks OK, or it returns <b>False</b> if the user clicks Cancel.</para>
+              <para>You can use a single dialog box to change many properties at the same time. For example, you can use the Format Cells dialog box to change all the properties of the <see cref="T:Microsoft.Office.Interop.Excel.Font" /> object.</para>
+              <para>For some built-in dialog boxes (the Open dialog box, for example), you can set initial values using arg1, arg2, ..., arg30. For more information about built-in dialog boxes, see the <see cref="T:Microsoft.Office.Interop.Excel.Dialogs" /> collection.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

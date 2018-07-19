@@ -1,0 +1,309 @@
+<Type Name="AllowEditRange" FullName="Microsoft.Office.Interop.Excel.AllowEditRange">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="5306cd46ae37b135861511f86f23c995990f64bd" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20580099" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface AllowEditRange" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AllowEditRange" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AllowEditRange" />
+  <TypeSignature Language="VB.NET" Value="Public Interface AllowEditRange" />
+  <TypeSignature Language="C++ CLI" Value="public interface class AllowEditRange" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0002446B-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="48c39-101">代表受保护的工作表上可进行编辑的单元格。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="48c39-101">Represents the cells that can be edited on a protected worksheet.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="48c39-102">
+        <para>使用<see cref="M:Microsoft.Office.Interop.Excel.AllowEditRanges.Add(System.String,Microsoft.Office.Interop.Excel.Range,System.Object)" />方法或<see cref="P:Microsoft.Office.Interop.Excel.AllowEditRanges.Item(System.Object)" />属性<see cref="T:Microsoft.Office.Interop.Excel.AllowEditRanges" />可返回<b>AllowEditRange</b>对象的集合。</para>
+        <para>后返回<b>AllowEditRange</b>对象后，您可以使用<see cref="M:Microsoft.Office.Interop.Excel.AllowEditRange.ChangePassword(System.String)" />方法，以更改访问可以在受保护的工作表编辑区域的密码。</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="48c39-102">
+          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel.AllowEditRanges.Add(System.String,Microsoft.Office.Interop.Excel.Range,System.Object)" /> method or the <see cref="P:Microsoft.Office.Interop.Excel.AllowEditRanges.Item(System.Object)" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.AllowEditRanges" /> collection to return an <b>AllowEditRange</b> object.</para>
+          <para>Once an <b>AllowEditRange</b> object has been returned, you can use the <see cref="M:Microsoft.Office.Interop.Excel.AllowEditRange.ChangePassword(System.String)" /> method to change the password to access a range that can be edited on a protected worksheet.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ChangePassword">
+      <MemberSignature Language="C#" Value="public void ChangePassword (string Password);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ChangePassword([in]string Password) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.AllowEditRange.ChangePassword(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ChangePassword (Password As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ChangePassword(System::String ^ Password);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2237)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Password" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Password">
+          <span data-ttu-id="48c39-103">必需的 <b>字符串</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="48c39-103">Required <b>String</b>.</span>
+          </span>
+          <span data-ttu-id="48c39-104">新密码。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="48c39-104">The new password.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="48c39-105">更改受保护的工作表中可以进行编辑的区域的密码。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="48c39-105">Changes the password for a range that can be edited on a protected worksheet.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.AllowEditRange.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="48c39-106">删除对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="48c39-106">Deletes the object.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Range">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Range Range { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Range Range" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.AllowEditRange.Range" />
+      <MemberSignature Language="VB.NET" Value="Public Property Range As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Range ^ Range { Microsoft::Office::Interop::Excel::Range ^ get(); void set(Microsoft::Office::Interop::Excel::Range ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(197)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(197)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(197)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="48c39-107">返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，表示可以在受保护的工作表编辑区域的子集。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="48c39-107">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents a subset of the ranges that can be edited on a protected worksheet.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public string Title { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.AllowEditRange.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(199)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(199)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(199)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="48c39-108">返回或设置文档保存为网页时的网页的标题。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="48c39-108">Returns or sets the title of the Web page when the document is saved as a Web page.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="48c39-109">
+            <para>在 Web 浏览器中查看文档时，标题通常显示在窗口标题栏中。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="48c39-109">
+              <para>The title is usually displayed in the window title bar when the document is viewed in the Web browser.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unprotect">
+      <MemberSignature Language="C#" Value="public void Unprotect (object Password);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Unprotect([in]object Password) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.AllowEditRange.Unprotect(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Unprotect (Optional Password As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(285)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Password" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Password">
+          <span data-ttu-id="48c39-110">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="48c39-110">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="48c39-111">一个字符串，用于取消的工作表或工作簿的保护密码区分大小写。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="48c39-111">A string that denotes the case-sensitive password to use to unprotect the sheet or workbook.</span>
+          </span>
+          <span data-ttu-id="48c39-112">如果表或工作簿不受密码保护，则忽略此参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="48c39-112">If the sheet or workbook isn't protected with a password, this argument is ignored.</span>
+          </span>
+          <span data-ttu-id="48c39-113">如果省略此参数受密码保护的工作表时，系统将提示您输入密码。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="48c39-113">If you omit this argument for a sheet that's protected with a password, you'll be prompted for the password.</span>
+          </span>
+          <span data-ttu-id="48c39-114">如果省略此参数受密码保护的工作簿，该方法将失败。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="48c39-114">If you omit this argument for a workbook that's protected with a password, the method fails.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="48c39-115">删除表或工作簿的保护。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="48c39-115">Removes protection from a sheet or workbook.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="48c39-116">
+            <para>此方法不起作用如果表或工作簿不受保护。</para>
+            <para>如果您忘记了密码，则无法取消的工作表或工作簿。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="48c39-116">
+              <para>This method has no effect if the sheet or workbook isn't protected.</para>
+              <para>If you forget the password, you cannot unprotect the sheet or workbook.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Users">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.UserAccessList Users { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.UserAccessList Users" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.AllowEditRange.Users" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Users As UserAccessList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::UserAccessList ^ Users { Microsoft::Office::Interop::Excel::UserAccessList ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2238)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2238)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.UserAccessList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="48c39-117">返回<see cref="T:Microsoft.Office.Interop.Excel.UserAccessList" />工作表上受保护区域的对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="48c39-117">Returns a <see cref="T:Microsoft.Office.Interop.Excel.UserAccessList" /> object for the protected range on a worksheet.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
