@@ -1,0 +1,404 @@
+<Type Name="PivotTables" FullName="Microsoft.Office.Interop.Excel.PivotTables">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="fec2de78dcf640219cb44f66becd0a0dbc77878e" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20578020" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface PivotTables : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotTables implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotTables" />
+  <TypeSignature Language="VB.NET" Value="Public Interface PivotTables&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class PivotTables : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00020873-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="e8e60-101">所有的集合<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />指定工作表中的对象。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="e8e60-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objects on the specified worksheet.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="e8e60-102">
+        <para>使用<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTables(System.Object)" />方法可返回<b>数据透视表</b>集合。</para>
+        <para>使用<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTableWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法可创建新的数据透视表报告并将其添加到集合。</para>
+        <para>使用<b>数据透视表</b>(<paramref name="index" />)，其中<paramref name="index" />是数据透视表的索引号或名称，可返回一个<b>PivotTable</b>对象。</para>
+        <para>因为数据透视表报表编程可能会很复杂，通常最简单数据透视表操作录制，然后再修订录制的代码。录制宏，指向工具菜单上的宏，然后单击记录新宏。</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="e8e60-102">
+          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTables(System.Object)" /> method to return the <b>PivotTables</b> collection.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTableWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> method to create a new PivotTable report and add it to the collection.</para>
+          <para>Use <b>PivotTables</b>(<paramref name="index" />), where <paramref name="index" /> is the PivotTable index number or name, to return a single <b>PivotTable</b> object.</para>
+          <para>Because PivotTable report programming can be complex, it’s generally easiest to record PivotTable report actions and then revise the recorded code. To record a macro, point to Macro on the Tools menu and click Record New Macro.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotTable Add (Microsoft.Office.Interop.Excel.PivotCache PivotCache, object TableDestination, object TableName, object ReadData, object DefaultVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.PivotTable Add([in]class Microsoft.Office.Interop.Excel.PivotCache PivotCache, [in]object TableDestination, [in]object TableName, [in]object ReadData, [in]object DefaultVersion) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.PivotTables.Add(Microsoft.Office.Interop.Excel.PivotCache,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(181)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotTable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="PivotCache" Type="Microsoft.Office.Interop.Excel.PivotCache" />
+        <Parameter Name="TableDestination" Type="System.Object" />
+        <Parameter Name="TableName" Type="System.Object" />
+        <Parameter Name="ReadData" Type="System.Object" />
+        <Parameter Name="DefaultVersion" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="PivotCache">
+          <span data-ttu-id="e8e60-103">所需<b>PivotCache</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e8e60-103">Required <b>PivotCache</b>.</span>
+          </span>
+          <span data-ttu-id="e8e60-104">新的数据透视表报表所基于的数据透视表缓存。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e8e60-104">The PivotTable cache on which the new PivotTable report is based.</span>
+          </span>
+          <span data-ttu-id="e8e60-105">缓存提供报告数据。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e8e60-105">The cache provides data for the report.</span>
+          </span>
+        </param>
+        <param name="TableDestination">
+          <span data-ttu-id="e8e60-106">所需的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e8e60-106">Required <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="e8e60-107">在数据透视表报表的目标区域 （生成的报表的放置位置工作表上的区域） 的左上角单元格。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e8e60-107">The cell in the upper-left corner of the PivotTable report's destination range (the range on the worksheet where the resulting report will be placed).</span>
+          </span>
+          <span data-ttu-id="e8e60-108">您必须指定目标区域上包含的工作表<paramref name="PivotTables" />指定对象<paramref name="expression" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e8e60-108">You must specify a destination range on the worksheet that contains the <paramref name="PivotTables" /> object specified by <paramref name="expression" />.</span>
+          </span>
+        </param>
+        <param name="TableName">
+          <span data-ttu-id="e8e60-109">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e8e60-109">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="e8e60-110">新的数据透视表的名称。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e8e60-110">The name of the new PivotTable report.</span>
+          </span>
+        </param>
+        <param name="ReadData">
+          <span data-ttu-id="e8e60-111">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e8e60-111">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="e8e60-112">
+            <b>True</b>以创建包含从外部数据库; 所有记录的数据透视表缓存此缓存可能会非常大。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e8e60-112">
+              <b>True</b> to create a PivotTable cache that contains all records from the external database; this cache can be very large.</span>
+          </span>
+          <span data-ttu-id="e8e60-113">
+            <b>False</b>可允许之前实际读取数据，则将某些字段设置为基于服务器的页字段。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e8e60-113">
+              <b>False</b> to enable setting some of the fields as server-based page fields before the data is actually read.</span>
+          </span>
+        </param>
+        <param name="DefaultVersion">
+          <span data-ttu-id="e8e60-114">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e8e60-114">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="e8e60-115">以前创建数据透视表所使用的 Microsoft Excel 版本。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e8e60-115">The version of Microsoft Excel the PivotTable was originally created in.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="e8e60-116">添加新的数据透视表报告。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e8e60-116">Adds a new PivotTable report.</span>
+          </span>
+          <span data-ttu-id="e8e60-117">返回<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e8e60-117">Returns a <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> object.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotTables.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e8e60-118">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e8e60-118">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+          </span>
+          <span data-ttu-id="e8e60-119">只读。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e8e60-119">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotTables.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e8e60-120">返回集合中对象的数目。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e8e60-120">Returns the number of objects in the collection.</span>
+          </span>
+          <span data-ttu-id="e8e60-121">
+            <b>Integer</b> 类型，只读。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e8e60-121">Read-only <b>Integer</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotTables.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e8e60-122">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e8e60-122">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+          </span>
+          <span data-ttu-id="e8e60-123">如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e8e60-123">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
+          </span>
+          <span data-ttu-id="e8e60-124">只读<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e8e60-124">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="e8e60-125">
+            <para>
+              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e8e60-125">
+              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.PivotTables.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotTable Item (object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.PivotTable Item([in]object Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.PivotTables.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Item (Index As Object) As PivotTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Excel::PivotTable ^ Item(System::Object ^ Index);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(170)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotTable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="e8e60-126">所需的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e8e60-126">Required <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="e8e60-127">对象的名称或索引号。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e8e60-127">The name or index number for the object.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="e8e60-128">从集合中返回一个对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e8e60-128">Returns a single object from a collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotTables.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e8e60-p111">返回指定对象的父对象。只读。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e8e60-p111">Returns the parent object for the specified object. Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

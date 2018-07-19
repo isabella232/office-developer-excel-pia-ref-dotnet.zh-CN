@@ -1,0 +1,606 @@
+<Type Name="ModelChanges" FullName="Microsoft.Office.Interop.Excel.ModelChanges">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="d6d99d98460b08cfccb756c4802796ed0bea50e1" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20572826" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface ModelChanges" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ModelChanges" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ModelChanges" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ModelChanges" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ModelChanges" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000244E4-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="8348d-101">代表数据模型所做的更改。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="8348d-101">Represents changes made to the data model.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="8348d-102">
+        <para>
+          <b>ModelChanges</b>对象包含有关哪些更改到的数据的信息模型何时<see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.ModelChange" />事件模型操作之后发生。Excel 对数据模型进行更改，当多个更改可在同一操作和<b>ModelChanges</b>对象将包含在一个模型操作中所做的所有更改的信息。</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="8348d-102">
+          <para>The <b>ModelChanges</b> object contains information about which changes were made to the data model when the <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.ModelChange" /> event occurs after a model operation. When Excel makes changes to the data model, multiple changes can be made in the same operation and the <b>ModelChanges</b> object will include information about all the changes made in one model operation.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ModelChanges.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8348d-103">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象，表示 Excel 应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8348d-103">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Excel application.</span>
+          </span>
+          <span data-ttu-id="8348d-104">只读。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8348d-104">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnsAdded">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.ModelColumnNames ColumnsAdded { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.ModelColumnNames ColumnsAdded" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ModelChanges.ColumnsAdded" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnsAdded As ModelColumnNames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::ModelColumnNames ^ ColumnsAdded { Microsoft::Office::Interop::Excel::ModelColumnNames ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.ModelColumnNames</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8348d-105">返回<see cref="T:Microsoft.Office.Interop.Excel.ModelColumnNames" />的集合<see cref="T:Microsoft.Office.Interop.Excel.ModelColumnName" />对象这些对象代表添加模型操作的一部分的所有列。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8348d-105">Returns a <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnNames" /> collection of <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnName" /> objects which represent all columns added as part of a model operation.</span>
+          </span>
+          <span data-ttu-id="8348d-106">只读。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8348d-106">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnsChanged">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.ModelColumnChanges ColumnsChanged { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.ModelColumnChanges ColumnsChanged" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ModelChanges.ColumnsChanged" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnsChanged As ModelColumnChanges" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::ModelColumnChanges ^ ColumnsChanged { Microsoft::Office::Interop::Excel::ModelColumnChanges ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3152)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3152)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.ModelColumnChanges</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8348d-107">返回<see cref="T:Microsoft.Office.Interop.Excel.ModelColumnChanges" />的集合<see cref="T:Microsoft.Office.Interop.Excel.ModelColumnChange" />对象这些对象代表的所有表格列为其更改的数据类型的表名称和列的名称 （可能添加多个类型的更改此处将来） 作为模型操作的一部分。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8348d-107">Returns a <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnChanges" /> collection of <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnChange" /> objects which represent table names and column names of all table columns for which the data type was changed (might add more types of changes here in the future) as part of a model operation.</span>
+          </span>
+          <span data-ttu-id="8348d-108">只读。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8348d-108">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnsDeleted">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.ModelColumnNames ColumnsDeleted { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.ModelColumnNames ColumnsDeleted" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ModelChanges.ColumnsDeleted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnsDeleted As ModelColumnNames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::ModelColumnNames ^ ColumnsDeleted { Microsoft::Office::Interop::Excel::ModelColumnNames ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3151)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3151)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.ModelColumnNames</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8348d-109">返回<see cref="T:Microsoft.Office.Interop.Excel.ModelColumnNames" />的集合<see cref="T:Microsoft.Office.Interop.Excel.ModelColumnName" />对象这些对象代表已删除的模型操作的一部分的所有列。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8348d-109">Returns a <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnNames" /> collection of <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnName" /> objects which represent all columns which were deleted as part of a model operation.</span>
+          </span>
+          <span data-ttu-id="8348d-110">只读。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8348d-110">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ModelChanges.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8348d-111">返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8348d-111">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+          <span data-ttu-id="8348d-112">只读的<b>整数</b>(C# 中<b>int</b> )。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8348d-112">Read-only <b>Integer</b> (<b>int</b> in C#).</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="8348d-113">
+            <para>在 Excel 中创建对象，因为此属性返回的十六进制值，5843454c、 表示"XCEL"的字符串。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8348d-113">
+              <para>Because the object was created in Excel, this property returns the hexadecimal value, 5843454C, which represents the string "XCEL".</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeasuresAdded">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.ModelMeasureNames MeasuresAdded { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.ModelMeasureNames MeasuresAdded" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ModelChanges.MeasuresAdded" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MeasuresAdded As ModelMeasureNames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::ModelMeasureNames ^ MeasuresAdded { Microsoft::Office::Interop::Excel::ModelMeasureNames ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3153)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3153)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.ModelMeasureNames</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8348d-114">返回<see cref="T:Microsoft.Office.Interop.Excel.ModelMeasureNames" />的集合<see cref="T:Microsoft.Office.Interop.Excel.ModelMeasureName" />对象这些对象代表已删除的模型操作的一部分的所有列。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8348d-114">Returns a <see cref="T:Microsoft.Office.Interop.Excel.ModelMeasureNames" /> collection of <see cref="T:Microsoft.Office.Interop.Excel.ModelMeasureName" /> objects which represent all columns which were deleted as part of a model operation.</span>
+          </span>
+          <span data-ttu-id="8348d-115">只读。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8348d-115">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ModelChanges.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8348d-116">返回一个<b>对象</b>，代表指定<b>ModelChanges</b>对象的父对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8348d-116">Returns an <b>Object</b> that represents the parent object of the specified <b>ModelChanges</b> object.</span>
+          </span>
+          <span data-ttu-id="8348d-117">只读。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8348d-117">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelationshipChange">
+      <MemberSignature Language="C#" Value="public bool RelationshipChange { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RelationshipChange" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ModelChanges.RelationshipChange" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelationshipChange As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RelationshipChange { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8348d-118">
+            <b>，则返回 True</b>，模型中的一个或多个关系是何时更改 （添加、 删除或修改） 作为模型操作的一部分。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8348d-118">When <b>True</b>, one or more relationships in the model were changed (added, deleted or modified) as part of a model operation.</span>
+          </span>
+          <span data-ttu-id="8348d-119">
+            <b>False</b>，没有关系已发生更改时期间操作。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8348d-119">When <b>False</b>, no relationships were changed during the operation.</span>
+          </span>
+          <span data-ttu-id="8348d-120">
+            <b>Boolean</b>(C# 中<b>bool</b> )只读的。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8348d-120">
+              <b>Boolean</b> (<b>bool</b> in C#) Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Source">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlModelChangeSource Source { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlModelChangeSource Source" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ModelChanges.Source" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Source As XlModelChangeSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlModelChangeSource Source { Microsoft::Office::Interop::Excel::XlModelChangeSource get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(222)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(222)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlModelChangeSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8348d-121">数据模型的源。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8348d-121">The source of the data model.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="8348d-122">XlModelChangeSource</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8348d-122">XlModelChangeSource</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="8348d-123">
+            <para>源可以是 Excel 或的 PowerPivot 加载项。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8348d-123">
+              <para>The source can be either Excel or a PowerPivot Add-in.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TableNamesChanged">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.ModelTableNameChanges TableNamesChanged { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.ModelTableNameChanges TableNamesChanged" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ModelChanges.TableNamesChanged" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TableNamesChanged As ModelTableNameChanges" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::ModelTableNameChanges ^ TableNamesChanged { Microsoft::Office::Interop::Excel::ModelTableNameChanges ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.ModelTableNameChanges</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8348d-124">返回<see cref="T:Microsoft.Office.Interop.Excel.ModelTableNameChanges" />的集合<see cref="T:Microsoft.Office.Interop.Excel.ModelTableNameChange" />对象表示旧的和新的已重命名模型中的模型操作的一部分的所有表的名称。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8348d-124">Returns a <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNameChanges" /> collection of <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNameChange" /> objects representing old and new names of all tables which were renamed in the model as part of a model operation.</span>
+          </span>
+          <span data-ttu-id="8348d-125">只读。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8348d-125">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TablesAdded">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.ModelTableNames TablesAdded { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.ModelTableNames TablesAdded" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ModelChanges.TablesAdded" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TablesAdded As ModelTableNames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::ModelTableNames ^ TablesAdded { Microsoft::Office::Interop::Excel::ModelTableNames ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3145)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3145)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.ModelTableNames</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8348d-126">返回<see cref="T:Microsoft.Office.Interop.Excel.ModelTableNames" />作为字符串表示添加到模型模型操作的一部分的所有表的表名称的集合。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8348d-126">Returns a <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNames" /> collection of table names as strings representing all tables which were added to the model as part of a model operation.</span>
+          </span>
+          <span data-ttu-id="8348d-127">只读。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8348d-127">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TablesDeleted">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.ModelTableNames TablesDeleted { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.ModelTableNames TablesDeleted" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ModelChanges.TablesDeleted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TablesDeleted As ModelTableNames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::ModelTableNames ^ TablesDeleted { Microsoft::Office::Interop::Excel::ModelTableNames ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3146)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3146)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.ModelTableNames</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8348d-128">返回<see cref="T:Microsoft.Office.Interop.Excel.ModelTableNames" />的表名称以字符串代表该模型中删除的模型操作的一部分的所有表的集合。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8348d-128">Returns a <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNames" /> collection of table names as strings representing all tables which were deleted from the model as part of a model operation.</span>
+          </span>
+          <span data-ttu-id="8348d-129">只读。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8348d-129">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TablesModified">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.ModelTableNames TablesModified { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.ModelTableNames TablesModified" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ModelChanges.TablesModified" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TablesModified As ModelTableNames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::ModelTableNames ^ TablesModified { Microsoft::Office::Interop::Excel::ModelTableNames ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3147)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3147)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.ModelTableNames</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8348d-130">返回<see cref="T:Microsoft.Office.Interop.Excel.ModelTableNames" />的表名称以字符串代表已刷新或重新计算模型操作的一部分的所有表的集合。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8348d-130">Returns a <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNames" /> collection of table names as strings representing all tables which were refreshed or recalculated as part of a model operation.</span>
+          </span>
+          <span data-ttu-id="8348d-131">只读。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8348d-131">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnknownChange">
+      <MemberSignature Language="C#" Value="public bool UnknownChange { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UnknownChange" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ModelChanges.UnknownChange" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UnknownChange As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UnknownChange { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3154)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3154)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8348d-132">如果在模型交易中对模型进行了非指定更改，则为  <b>True</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8348d-132">
+              <b>True</b> when a non-specified change was made to the model as part of a model transaction.</span>
+          </span>
+          <span data-ttu-id="8348d-133">
+            <b>Boolean</b>(C# 中<b>bool</b> )只读</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8348d-133">
+              <b>Boolean</b> (<b>bool</b> in C#) Read-only</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

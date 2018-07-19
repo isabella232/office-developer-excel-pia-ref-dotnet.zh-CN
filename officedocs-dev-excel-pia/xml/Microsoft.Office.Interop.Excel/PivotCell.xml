@@ -1,0 +1,1166 @@
+<Type Name="PivotCell" FullName="Microsoft.Office.Interop.Excel.PivotCell">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="97d53069436a318096bbfbdc2ce01e7de3cf9166" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20574723" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface PivotCell" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotCell" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotCell" />
+  <TypeSignature Language="VB.NET" Value="Public Interface PivotCell" />
+  <TypeSignature Language="C++ CLI" Value="public interface class PivotCell" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024458-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="be755-101">代表数据透视表中的一个单元格。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="be755-101">Represents a cell in a PivotTable report.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="be755-102">
+        <para>使用<see cref="P:Microsoft.Office.Interop.Excel.Range.PivotCell" />属性<see cref="T:Microsoft.Office.Interop.Excel.Range" />可返回一个<b>PivotCell</b>对象的集合。</para>
+        <para>后返回一个<b>PivotCell</b>对象，您可以使用<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.PivotCellType" />属性可以确定哪种类型的单元格特定范围是</para>
+        <para>您可以使用<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.ColumnItems" />或<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.RowItems" />属性可以确定<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />对应于代表所选的号码的行或列轴上的项目的集合。</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="be755-102">
+          <para>Use the <see cref="P:Microsoft.Office.Interop.Excel.Range.PivotCell" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.Range" /> collection to return a <b>PivotCell</b> object.</para>
+          <para>Once a <b>PivotCell</b> object is returned, you can use the <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.PivotCellType" /> property to determine what type of cell a particular range is.</para>
+          <para>You can use the <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.ColumnItems" /> or <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.RowItems" /> property to determine the <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection that corresponds to the items on the column or row axis that represents the selected number.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllocateChange">
+      <MemberSignature Language="C#" Value="public void AllocateChange ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AllocateChange() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.PivotCell.AllocateChange" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AllocateChange ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AllocateChange();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2928)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="be755-103">在基于 OLAP 数据源的数据透视表中的指定单元格上执行回写操作。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-103">Performs a writeback operation on the specified cell in a PivotTable report based on an OLAP data source.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="be755-104">
+            <para>此方法执行更新多维数据集语句将在此特定单元格，只需更改，但还包括任何以前应用的更改。执行更新多维数据集语句、 运行时数据透视表更新，然后执行回滚事务语句之后。</para>
+            <para>运行<see cref="M:Microsoft.Office.Interop.Excel.PivotCell.AllocateChange" />方法，用于基于非 OLAP 数据源的数据透视表报告中的单元格将生成运行时错误。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-104">
+              <para>This method executes an UPDATE CUBE statement to add just the change in this particular cell, but also includes any previous changes applied. After the UPDATE CUBE statement is executed, a PivotTable update is run, and then a ROLLBACK TRANSACTION statement is executed.</para>
+              <para>Running the <see cref="M:Microsoft.Office.Interop.Excel.PivotCell.AllocateChange" /> method for a cell in a PivotTable report based on a non-OLAP data source generates a run-time error.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="be755-105">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-105">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CellChanged">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCellChangedState CellChanged { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCellChangedState CellChanged" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CellChanged As XlCellChangedState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCellChangedState CellChanged { Microsoft::Office::Interop::Excel::XlCellChangedState get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2931)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2931)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCellChangedState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="be755-106">获取是否已编辑或重新计算自创建数据透视表或执行上一提交操作以来的数据透视表值单元格。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-106">Gets whether a PivotTable value cell has been edited or recalculated since the PivotTable report was created or the last commit operation was performed.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="be755-107">A<see cref="T:Microsoft.Office.Interop.Excel.XlCellChangedState" />对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-107">A <see cref="T:Microsoft.Office.Interop.Excel.XlCellChangedState" /> object.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="be755-108">
+            <para>值<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" />属性是<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />默认。</para>
+            <para>的数据透视表报告与非 OLAP 数据源，此属性的值可以只是<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />或<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />。它是<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />的单元格尚未编辑，且<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />的已编辑的单元格。放弃更改将其值设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />。</para>
+            <para>应用并保存更改仅适用于 OLAP 数据源的数据透视表报告。下列说明中的可能的状态<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" />属性仅适用于 OLAP 数据源的数据透视表。</para>
+            <list type="bullet">
+              <item>
+                <description>
+                  <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />的单元格尚未编辑或重新计算 （如果该单元格包含公式） 自创建数据透视表，或自从上次保存或放弃更改操作以来。</description>
+              </item>
+              <item>
+                <description>
+                  <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> -已编辑或重新计算自创建数据透视表，或将更改应用最后一个相或保存的更改执行操作，但尚未应用所做的更改以来单元格 （更新多维数据集语句不已为运行它）。</description>
+              </item>
+              <item>
+                <description>
+                  <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" />-已编辑单元格或重新计算自创建数据透视表，以来或自上次应用更改后，保存更改，或放弃更改执行操作，并已应用更改 （更新多维数据集语句为其尚未运行）。</description>
+              </item>
+            </list>
+            <para>下表介绍如何不同的操作的用户影响的设置<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" />OLAP 数据源的数据透视表中的属性。</para>
+            <list type="table">
+              <item>
+                <term>键入到单元格或多个单元格的值或公式。</term>
+                <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />对这些单元格。</description>
+                <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />对这些单元格。</description>
+              </item>
+              <item>
+                <term>重新计算的单元格或多个单元格的公式，或者手动 (F9) 或由 Excel 自动。</term>
+                <description>N/A</description>
+                <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />对这些单元格。</description>
+              </item>
+              <item>
+                <term>（提交） 保存更改。</term>
+                <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />所有编辑的无公式单元格。</description>
+                <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" />所有编辑的有公式单元格。</description>
+              </item>
+              <item>
+                <term>放弃所有更改。</term>
+                <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />所有编辑的无公式单元格。</description>
+                <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />所有编辑的有公式单元格。</description>
+              </item>
+              <item>
+                <term>放弃单个单元格的更改。</term>
+                <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />的该单元格。</description>
+                <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />的该单元格。</description>
+              </item>
+              <item>
+                <term>清除一次操作中的多个单元格。</term>
+                <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />的所有这些单元格。</description>
+                <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />的所有这些单元格。</description>
+              </item>
+              <item>
+                <term>清除一个单元格。</term>
+                <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />的该单元格。</description>
+                <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />的该单元格。</description>
+              </item>
+              <item>
+                <term>执行撤消操作，将该值改回先前编辑的值，该值已应用之前。</term>
+                <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />所有编辑的无公式单元格。</description>
+                <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />所有编辑的有公式单元格。</description>
+              </item>
+              <item>
+                <term>执行撤消操作，将该值改回先前编辑的值，该值已应用后。</term>
+                <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" />所有编辑的无公式单元格。</description>
+                <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" />所有编辑的有公式单元格。</description>
+              </item>
+            </list>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-108">
+              <para>The value of the <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" /> property is <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> by default.</para>
+              <para>For PivotTable reports with non-OLAP data sources, the value of this property can be only either <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> or <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />. It is <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> for cells that have not been edited, and is <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> for cells that have been edited. Discarding changes sets its value to <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />.</para>
+              <para>Applying and saving changes applies only to PivotTable reports with OLAP data sources. The following descriptions of the possible states of the <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" /> property apply only to PivotTables with OLAP data sources.</para>
+              <list type="bullet">
+                <item>
+                  <description>
+                    <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> - the cell has not been edited or recalculated (if the cell contains a formula) since the PivotTable was created, or since the last save or discard changes operation was performed.</description>
+                </item>
+                <item>
+                  <description>
+                    <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> - the cell has been edited or recalculated since the PivotTable was created, or since the last apply changes or save changes operation was performed, but that change has not yet been applied (the UPDATE CUBE statement has not been run for it).</description>
+                </item>
+                <item>
+                  <description>
+                    <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" />- the cell has been edited or recalculated since the PivotTable was created, or since the last apply changes, save changes, or discard changes operation was performed, and that change has been applied (the UPDATE CUBE statement has been run for it).</description>
+                </item>
+              </list>
+              <para>The following table describes how different actions by the user affect the setting of the <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" /> property in a PivotTable with an OLAP data source.</para>
+              <list type="table">
+                <item>
+                  <term>Types a value or formula into a cell or multiple cells.</term>
+                  <description>Set to <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> for those cells.</description>
+                  <description>Set to <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> for those cells.</description>
+                </item>
+                <item>
+                  <term>Recalculates a cell or multiple cells with a formula, either manually (F9) or automatically by Excel.</term>
+                  <description>N/A</description>
+                  <description>Set to <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> for those cells.</description>
+                </item>
+                <item>
+                  <term>Saves (commits) changes.</term>
+                  <description>Set to <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> for all edited cells without a formula.</description>
+                  <description>Set to <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" /> for all edited cells with a formula.</description>
+                </item>
+                <item>
+                  <term>Discards all changes.</term>
+                  <description>Set to <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> for all edited cells without a formula.</description>
+                  <description>Set to <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> for all edited cells with a formula.</description>
+                </item>
+                <item>
+                  <term>Discards change in single cell.</term>
+                  <description>Set to <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> for that cell only.</description>
+                  <description>Set to <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> for that cell only.</description>
+                </item>
+                <item>
+                  <term>Clears multiple cells in one operation.</term>
+                  <description>Set to <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> for all those cells.</description>
+                  <description>Set to <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> for all those cells.</description>
+                </item>
+                <item>
+                  <term>Clears a cell.</term>
+                  <description>Set to <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> for that cell only.</description>
+                  <description>Set to <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> for that cell only.</description>
+                </item>
+                <item>
+                  <term>Performs an undo operation that changes the value back to a previously edited value, before that value was applied.</term>
+                  <description>Set to <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> for all edited cells without a formula.</description>
+                  <description>Set to <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> for all edited cells with a formula.</description>
+                </item>
+                <item>
+                  <term>Performs an undo operation that changes the value back to a previously edited value, after that value was applied.</term>
+                  <description>Set to <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" /> for all edited cells without a formula.</description>
+                  <description>Set to <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" /> for all edited cells with a formula.</description>
+                </item>
+              </list>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnItems">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotItemList ColumnItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotItemList ColumnItems" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.ColumnItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnItems As PivotItemList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotItemList ^ ColumnItems { Microsoft::Office::Interop::Excel::PivotItemList ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2191)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2191)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotItemList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="be755-109">返回<see cref="T:Microsoft.Office.Interop.Excel.PivotItemList" />对应于表示选定的区域的列轴上的项目的集合。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-109">Returns a <see cref="T:Microsoft.Office.Interop.Excel.PivotItemList" /> collection that corresponds to the items on the column axis that represent the selected range.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="be755-110">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-110">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="be755-111">
+            <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+            <para>
+              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-111">
+              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
+              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomSubtotalFunction">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlConsolidationFunction CustomSubtotalFunction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlConsolidationFunction CustomSubtotalFunction" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.CustomSubtotalFunction" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomSubtotalFunction As XlConsolidationFunction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlConsolidationFunction CustomSubtotalFunction { Microsoft::Office::Interop::Excel::XlConsolidationFunction get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2193)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2193)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlConsolidationFunction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="be755-112">返回的自定义分类汇总函数字段设置<see cref="T:Microsoft.Office.Interop.Excel.PivotCell" />对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-112">Returns the custom subtotal function field setting of a <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="be755-113">
+            <para>
+              <see cref="T:Microsoft.Office.Interop.Excel.XlConsolidationFunction" />可以是以下<b>XlConsolidationFunction</b>常量之一：</para>
+            <para>
+              <b>xlAverage</b>
+            </para>
+            <para>
+              <b>xlCount</b>
+            </para>
+            <para>
+              <b>xlCountNums</b>
+            </para>
+            <para>
+              <b>xlMax</b>
+            </para>
+            <para>
+              <b>xlMin</b>
+            </para>
+            <para>
+              <b>xlProduct</b>
+            </para>
+            <para>
+              <b>xlStDev</b>
+            </para>
+            <para>
+              <b>xlStDevP</b>
+            </para>
+            <para>
+              <b>xlSum</b>
+            </para>如果<b>PivotCell</b>对象类型不是自定义分类汇总
+          <para><b>xlUnknown</b></para><para><b>xlVar</b></para><para><b>xlVarP</b></para><para><b>CustomSubtotalFunction</b>属性将返回错误。此属性仅适用于非 OLAP 源数据。</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-113">
+              <para>
+                <see cref="T:Microsoft.Office.Interop.Excel.XlConsolidationFunction" /> can be one of the following <b>XlConsolidationFunction</b> constants:</para>
+              <para>
+                <b>xlAverage</b>
+              </para>
+              <para>
+                <b>xlCount</b>
+              </para>
+              <para>
+                <b>xlCountNums</b>
+              </para>
+              <para>
+                <b>xlMax</b>
+              </para>
+              <para>
+                <b>xlMin</b>
+              </para>
+              <para>
+                <b>xlProduct</b>
+              </para>
+              <para>
+                <b>xlStDev</b>
+              </para>
+              <para>
+                <b>xlStDevP</b>
+              </para>
+              <para>
+                <b>xlSum</b>
+              </para>
+              <para>
+                <b>xlUnknown</b>
+              </para>
+              <para>
+                <b>xlVar</b>
+              </para>
+              <para>
+                <b>xlVarP</b>
+              </para>
+              <para>The <b>CustomSubtotalFunction</b> property will return an error if the <b>PivotCell</b> object type is not a custom subtotal. This property applies only to non-OLAP source data.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataField">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotField DataField { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotField DataField" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.DataField" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataField As PivotField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotField ^ DataField { Microsoft::Office::Interop::Excel::PivotField ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2091)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2091)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="be755-114">返回<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />对象对应于所选的数据字段。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-114">Returns a <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> object that corresponds to the selected data field.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="be755-115">
+            <para>如果<b>PivotCell</b>对象不是允许的类型之一，该属性将返回错误： <b>XlPivotCellTypeValue</b>、 <b>XlPivotCellTypeDataField</b>、 <b>XlPivotCellTypeSubtotal</b>或<b>XlPivotCellTypeGrandTotal</b>。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-115">
+              <para>This property will return an error if the <b>PivotCell</b> object is not one of the allowed types: <b>XlPivotCellTypeValue</b>, <b>XlPivotCellTypeDataField</b>, <b>XlPivotCellTypeSubtotal</b>, or <b>XlPivotCellTypeGrandTotal</b>.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataSourceValue">
+      <MemberSignature Language="C#" Value="public object DataSourceValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object DataSourceValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataSourceValue As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DataSourceValue { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2930)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2930)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="be755-116">获取上次检索从数据源的数据透视表报告中的已编辑单元格的值。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-116">Gets the value last retrieved from the data source for edited cells in a PivotTable report.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="be755-117">上次检索从数据源的数据透视表报告中的已编辑单元格的值。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-117">The value last retrieved from the data source for edited cells in a PivotTable report.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="be755-118">
+            <para>只读的。</para>每当进行编辑的数据透视表值区域中的单元格，
+          <para><see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" />属性将包含之前编辑发生上次检索从数据源的值。对于数据透视表报表值单元格尚未编辑的或为其数据源的值有未明确检索到，此属性将返回空引用 (在 Visual Basic 中为 Nothing)。对于 OLAP 数据源的值的数据透视表报告<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" />属性检索从单独的连接，以确保其不包含任何用户可能所做的回写操作的值。</para><para>读取<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" />的之外的数据透视表值区域的单元格的属性将产生一个运行时错误。</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-118">
+              <para>Read-only.</para>
+              <para>Whenever a cell in the values area of a PivotTable report is edited, the <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> property will hold the value that was last retrieved from the data source before editing took place. For PivotTable report value cells that have not been edited, or for which the data source value has not been explicitly retrieved, this property will return a null reference (Nothing in Visual Basic). For PivotTable reports with OLAP data sources, the value of the <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> property is retrieved from a separate connection to ensure that it does not contain the value of any writeback operations that the user might have made.</para>
+              <para>Reading the <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> property for cells that are outside of the values area of a PivotTable report generates a run-time error.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiscardChange">
+      <MemberSignature Language="C#" Value="public void DiscardChange ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DiscardChange() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.PivotCell.DiscardChange" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DiscardChange ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DiscardChange();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2929)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="be755-119">放弃对数据透视表中指定单元格的更改。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-119">Discards changes to the specified cell in a PivotTable report.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="be755-120">
+            <para>有关数据透视表中的单元格基于 OLAP 数据源，<see cref="M:Microsoft.Office.Interop.Excel.PivotCell.DiscardChange" />方法删除公式的指定单元格中输入的值，然后运行从数据源检索的最新值的数据透视表更新。数据源的值将此方法指定单元格设置为空引用 (在 Visual Basic 中为 Nothing)。该方法还会删除对此单元格从 Excel 的更改列表，以便它不再包含更新多维数据集语句的数据源中的所有更改。此方法还会重新创建会话状态的所有其他事务中所做的更改。这包括执行回滚事务语句，并执行除外指定单元格的所有更改更新多维数据集语句。基于非 OLAP 数据源的数据透视表中单元格，此方法仅清除已编辑单元格。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-120">
+              <para>For a cell in a PivotTable based on an OLAP data source, the <see cref="M:Microsoft.Office.Interop.Excel.PivotCell.DiscardChange" /> method removes the value or formula entered in the specified cell, and then runs a PivotTable update to retrieve the latest value from the data source. The data source value will be set to a null reference (Nothing in Visual Basic) by this method for the specified cell. The method also removes all changes made to this cell from Excel's change list so that it will no longer be included in the UPDATE CUBE statement for the data source. This method also recreates the session state for all other changes made in the transaction. This includes executing a ROLLBACK TRANSACTION statement, and then executing an UPDATE CUBE statement with all changes except for the specified cell. For a cell in a PivotTable based on a non-OLAP data source, this method simply clears the edited cell.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dummy18">
+      <MemberSignature Language="C#" Value="public string Dummy18 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Dummy18" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.Dummy18" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Dummy18 As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Dummy18 { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2295)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2295)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="be755-121">仅供内部使用。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-121">Reserved for internal use.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MDX">
+      <MemberSignature Language="C#" Value="public string MDX { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MDX" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.MDX" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MDX As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MDX { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2123)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2123)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="be755-122">获取与 OLAP 数据源提供的数据透视表中指定的值单元格的完整 MDX 坐标元组。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-122">Gets a tuple that provides the full MDX coordinates of the specified value cell in PivotTable with an OLAP data source.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="be755-123">提供与 OLAP 数据源的数据透视表中指定的值单元格的完整 MDX 坐标元组。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-123">A tuple that provides the full MDX coordinates of the specified value cell in PivotTable with an OLAP data source.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="be755-124">
+            <para>只读的。</para>
+            <para>由元组中返回的尺寸<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.MDX" />属性包括行和列的坐标，以及报告筛选器坐标。对于单元格和数据透视表值区域的数据透视表，以外，访问此属性会生成运行时错误。为与报告筛选器字段中的多项选择的数据透视表，访问该属性还将生成运行时错误。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-124">
+              <para>Read-only.</para>
+              <para>The dimensions returned in the tuple by the <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.MDX" /> property include row and column coordinates as well as report filter coordinates. For cells outside the values area of the PivotTable, and outside a PivotTable, accessing this property will generate a run-time error. For PivotTables with multi-item selection in a report filter field, accessing this property will also generate a run-time error.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="be755-125">返回指定对象的父对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-125">Returns the parent object for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PivotCellType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlPivotCellType PivotCellType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlPivotCellType PivotCellType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.PivotCellType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PivotCellType As XlPivotCellType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlPivotCellType PivotCellType { Microsoft::Office::Interop::Excel::XlPivotCellType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2189)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2189)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlPivotCellType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="be755-126">返回一个常量，标识单元格对应的 PivotTable 实体。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-126">Returns a constant that identifies the PivotTable entity the cell corresponds to.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="be755-127">
+            <para>
+              <see cref="T:Microsoft.Office.Interop.Excel.XlPivotCellType" />可以是下列<b>XlPivotCellType</b>常量之一：</para>
+            <para>
+              <b>xlPivotCellBlankCell</b>数据透视表中的结构空白单元格。</para>
+            <para>
+              <b>xlPivotCellCustomSubtotal</b> A 自定义分类汇总行或列区域中的单元格。</para>
+            <para>
+              <b>xlPivotCellDataField</b>一个数据字段标签 （不是<b>数据</b>按钮）。</para>
+            <para>
+              <b>xlPivotCellDataPivotField</b>
+              <b>数据</b>按钮。</para>
+            <para>
+              <b>xlPivotCellGrandTotal</b> A 总计行或列区域中的单元格。</para>
+            <para>
+              <b>xlPivotCellPageFieldItem</b>显示页字段的选定的项的单元格。</para>
+            <para>
+              <b>xlPivotCellPivotField</b>字段 （不是<b>数据</b>按钮） 按钮。</para>
+            <para>
+              <b>xlPivotCellPivotItem</b> A 不是分类汇总、 总计、 自定义分类汇总或空行的行或列区域中的单元格。</para>
+            <para>
+              <b>xlPivotCellSubtotal</b> A 分类汇总的行或列区域中的单元格。</para>
+            <para>
+              <b>xlPivotCellValue</b>数据区区域 （除空行） 中的任一单元格。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-127">
+              <para>
+                <see cref="T:Microsoft.Office.Interop.Excel.XlPivotCellType" /> can be one of the following <b>XlPivotCellType</b> constants:</para>
+              <para>
+                <b>xlPivotCellBlankCell</b> A structural blank cell in the PivotTable.</para>
+              <para>
+                <b>xlPivotCellCustomSubtotal</b> A cell in the row or column area that is a custom subtotal.</para>
+              <para>
+                <b>xlPivotCellDataField</b> A data field label (not the <b>Data</b> button).</para>
+              <para>
+                <b>xlPivotCellDataPivotField</b> The <b>Data</b> button.</para>
+              <para>
+                <b>xlPivotCellGrandTotal</b> A cell in a row or column area which is a grand total.</para>
+              <para>
+                <b>xlPivotCellPageFieldItem</b> The cell that shows the selected item of a Page field.</para>
+              <para>
+                <b>xlPivotCellPivotField</b> The button for a field (not the <b>Data</b> button).</para>
+              <para>
+                <b>xlPivotCellPivotItem</b> A cell in the row or column area which is not a subtotal, grand total, custom subtotal, or blank line.</para>
+              <para>
+                <b>xlPivotCellSubtotal</b> A cell in the row or column area which is a subtotal.</para>
+              <para>
+                <b>xlPivotCellValue</b> Any cell in the data area (except a blank row).</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PivotColumnLine">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotLine PivotColumnLine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotLine PivotColumnLine" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.PivotColumnLine" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PivotColumnLine As PivotLine" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotLine ^ PivotColumnLine { Microsoft::Office::Interop::Excel::PivotLine ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2674)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2674)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotLine</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="be755-128">返回<see cref="T:Microsoft.Office.Interop.Excel.PivotLine" />上特定的<b>PivotCell</b>对象的列。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-128">Returns the <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> on a column for a specific  <b>PivotCell</b> object.</span>
+          </span>
+          <span data-ttu-id="be755-129">只读。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-129">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" />
+        </value>
+        <remarks>
+          <span data-ttu-id="be755-130">
+            <para>如果<b>PivotCell</b>在行上，则<b>PivotColumnLine</b>属性返回一个运行时错误。</para>
+            <para>如果<b>PivotCell</b>在列上，则<b>PivotColumnLine</b>属性返回列<b>PivotLine</b>对象。</para>
+            <para>如果<b>PivotCell</b>在数据区域，则<b>PivotColumnLine</b>属性返回对应的列<b>PivotLine</b>对象。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-130">
+              <para>If the <b>PivotCell</b> is on rows, the <b>PivotColumnLine</b> property returns a run-time error.</para>
+              <para>If the <b>PivotCell</b> is on columns, the <b>PivotColumnLine</b> property returns the column <b>PivotLine</b> object.</para>
+              <para>If the <b>PivotCell</b> is in the data area, the <b>PivotColumnLine</b> property returns the corresponding column <b>PivotLine</b> object.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PivotField">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotField PivotField { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotField PivotField" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.PivotField" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PivotField As PivotField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotField ^ PivotField { Microsoft::Office::Interop::Excel::PivotField ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(731)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(731)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="be755-131">返回<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />对象，表示包含指定区域左上角的数据透视表字段。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-131">Returns a <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> object that represents the PivotTable field containing the upper-left corner of the specified range.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PivotItem">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotItem PivotItem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotItem PivotItem" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.PivotItem" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PivotItem As PivotItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotItem ^ PivotItem { Microsoft::Office::Interop::Excel::PivotItem ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(740)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(740)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="be755-132">返回<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />对象，表示包含指定区域左上角的数据透视表项。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-132">Returns a <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> object that represents the PivotTable item containing the upper-left corner of the specified range.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PivotRowLine">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotLine PivotRowLine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotLine PivotRowLine" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.PivotRowLine" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PivotRowLine As PivotLine" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotLine ^ PivotRowLine { Microsoft::Office::Interop::Excel::PivotLine ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2673)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2673)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotLine</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="be755-133">返回<see cref="T:Microsoft.Office.Interop.Excel.PivotLine" />上的一个特定的<b>PivotCell</b>对象的行。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-133">Returns the <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> on a row for a specific  <b>PivotCell</b> object.</span>
+          </span>
+          <span data-ttu-id="be755-134">只读<b>PivotLine</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-134">Read-only <b>PivotLine</b>.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" />
+        </value>
+        <remarks>
+          <span data-ttu-id="be755-135">
+            <para>如果<b>PivotCell</b>在行上，<b>则 PivotRowLine</b>返回行的<b>PivotLine</b>对象。</para>
+            <para>如果<b>PivotCell</b>在列上，<b>则 PivotRowLine</b>返回一个运行时错误。</para>
+            <para>如果<b>PivotCell</b>在数据区域，<b>则 PivotRowLine</b>返回对应的行的<b>PivotLine</b>对象。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-135">
+              <para>If the <b>PivotCell</b> is on rows, <b>PivotRowLine</b> returns the row's <b>PivotLine</b> object.</para>
+              <para>If the <b>PivotCell</b> is on columns, <b>PivotRowLine</b>  returns a run-time error.</para>
+              <para>If the <b>PivotCell</b> is in the data area, <b>PivotRowLine</b> returns the corresponding row's <b>PivotLine</b> object.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PivotTable">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotTable PivotTable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotTable PivotTable" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.PivotTable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PivotTable As PivotTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotTable ^ PivotTable { Microsoft::Office::Interop::Excel::PivotTable ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(716)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(716)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotTable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="be755-136">返回<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />对象，它代表数据透视表报表，其中包含指定的区域或与数据透视图相关联的数据透视表报表的左上角。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-136">Returns a <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> object that represents the PivotTable report containing the upper-left corner of the specified range, or the PivotTable report associated with the PivotChart report.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Range">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Range Range { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Range Range" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.Range" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Range ^ Range { Microsoft::Office::Interop::Excel::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(197)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(197)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="be755-137">返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，它代表区域指定的 pivotcell 所应用于。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-137">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the range the specified PivotCell applies to.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowItems">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotItemList RowItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotItemList RowItems" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.RowItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowItems As PivotItemList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotItemList ^ RowItems { Microsoft::Office::Interop::Excel::PivotItemList ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2190)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2190)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotItemList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="be755-138">返回<see cref="T:Microsoft.Office.Interop.Excel.PivotItemList" />对应于分类轴上表示选定单元格的项的集合。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-138">Returns a <see cref="T:Microsoft.Office.Interop.Excel.PivotItemList" /> collection that corresponds to the items on the category axis that represent the selected cell.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerActions">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Actions ServerActions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Actions ServerActions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.ServerActions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServerActions As Actions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Actions ^ ServerActions { Microsoft::Office::Interop::Excel::Actions ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2491)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2491)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Actions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="be755-139">表示包含 OLAP 定义操作的可执行的操作的集合。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-139">Represents a collection of actions consisting of OLAP-defined actions which can be executed.</span>
+          </span>
+          <span data-ttu-id="be755-140">操作是特定于工作表级别现有数据透视表。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-140">The actions are specific to PivotTables existing at a worksheet-level.</span>
+          </span>
+          <span data-ttu-id="be755-141">只读</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-141">Read-only</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="be755-142">
+            <para>服务器操作是 OLAP 多维数据集管理员可以使用的多维数据集成员或度量值作为参数转换为查询以获取多维数据集中的信息的服务器定义的可选功能。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="be755-142">
+              <para>A server action is an optional feature that an OLAP cube administrator can define on a server that uses a cube member or measure as a parameter into a query to obtain details in the cube.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

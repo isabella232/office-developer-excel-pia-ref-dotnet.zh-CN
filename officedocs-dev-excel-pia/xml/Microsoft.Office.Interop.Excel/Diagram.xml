@@ -1,0 +1,531 @@
+<Type Name="Diagram" FullName="Microsoft.Office.Interop.Excel.Diagram">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="284dac8d28fb2f4619db584ffa0820a68ade7b37" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20572665" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Diagram" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Diagram" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Diagram" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Diagram" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Diagram" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0002446F-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4112)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="9de47-101">代表图表。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="9de47-101">Represents a diagram.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="9de47-102">
+        <para>使用的<b>图表</b>属性<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象或<see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />返回<b>图表</b>对象的集合。</para>
+        <para>您还可以将当前图表使用转换为不同的图表<see cref="M:Microsoft.Office.Interop.Excel.Diagram.Convert(Microsoft.Office.Core.MsoDiagramType)" />方法。</para>
+        <para>
+          <b>注释</b>如果当前图表是组织结构图 （<b>射线</b>），则会发生运行时错误。</para>
+        <para>有几种类型的图表时使用的<b>图表</b>对象进行选择。请参阅<see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddDiagram(Microsoft.Office.Core.MsoDiagramType,System.Single,System.Single,System.Single,System.Single)" />方法，以查看可用图表类型的列表。</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="9de47-102">
+          <para>Use the <b>Diagram</b> property of the <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object or <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> collection to a return a <b>Diagram</b> object.</para>
+          <para>You can also convert the current diagram to a different diagram by using the <see cref="M:Microsoft.Office.Interop.Excel.Diagram.Convert(Microsoft.Office.Core.MsoDiagramType)" /> method.</para>
+          <para>
+            <b>Note</b>   If the current diagram is an organization chart (<b>msoDiagramOrgChart</b>) a run-time error will occur.</para>
+          <para>There are several types of diagrams to choose from when working with the <b>Diagram</b> object. Refer to the <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddDiagram(Microsoft.Office.Core.MsoDiagramType,System.Single,System.Single,System.Single,System.Single)" /> method to view a list of available diagram types.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Diagram.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="9de47-103">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9de47-103">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoFormat">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState AutoFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState AutoFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Diagram.AutoFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoFormat As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState AutoFormat { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(114)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(114)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(114)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="9de47-104">设置或返回一个常量，该常量指示图表的自动格式状态。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9de47-104">Sets or returns a constant indicating the automatic formatting state for a diagram.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="9de47-105">
+            <para>将<b>自动套用格式</b>设置为<b>msoFalse</b>禁用将图表自动套用格式。<b>自动套用格式</b>设置为<b>msotrue 会</b>启用将图表自动套用格式。</para>
+            <para>不应用于此属性的下列<b>MsoTriState</b>常量： <b>msoCTrue</b><b>msoTriStateMixed</b>、 <b>msoTriStateToggle</b>。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9de47-105">
+              <para>Setting <b>AutoFormat</b> to <b>msoFalse</b> disables automatic formatting for the diagram. Setting <b>AutoFormat</b> to <b>msoTrue</b> enables automatic formatting for the diagram.</para>
+              <para>The following <b>MsoTriState</b> constants to not apply to this property: <b>msoCTrue</b>, <b>msoTriStateMixed</b>, <b>msoTriStateToggle</b>.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoLayout">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState AutoLayout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState AutoLayout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Diagram.AutoLayout" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoLayout As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState AutoLayout { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2243)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2243)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2243)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="9de47-106">返回或设置一个常量，确定的节点和图表中的连接器的自动位置。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9de47-106">Returns or sets a constant which determines the automatic positioning of the nodes and connectors in a diagram.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="9de47-107">
+            <para>将<b>自动版式</b>设置为<b>msoFalse</b>禁用将图表自动套用格式。将图表自动套用格式设置为<b>msotrue 会</b><b>自动版式</b>允许。</para>
+            <para>不应用于此属性的下列<b>MsoTriState</b>常量： <b>msoCTrue</b><b>msoTriStateMixed</b>、 <b>msoTriStateToggle</b>。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9de47-107">
+              <para>Setting <b>AutoLayout</b> to <b>msoFalse</b> disables automatic formatting for the diagram. Setting <b>AutoLayout</b> to <b>msoTrue</b> enables automatic formatting for the diagram.</para>
+              <para>The following <b>MsoTriState</b> constants to not apply to this property: <b>msoCTrue</b>, <b>msoTriStateMixed</b>, <b>msoTriStateToggle</b>.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public void Convert (Microsoft.Office.Core.MsoDiagramType Type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Convert([in]valuetype Microsoft.Office.Core.MsoDiagramType Type) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Diagram.Convert(Microsoft.Office.Core.MsoDiagramType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Convert (Type As MsoDiagramType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Convert(Microsoft::Office::Core::MsoDiagramType Type);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1046)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Core.MsoDiagramType" />
+      </Parameters>
+      <Docs>
+        <param name="Type">
+          <span data-ttu-id="9de47-108">所需<see cref="T:Microsoft.Office.Core.MsoDiagramType" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9de47-108">Required <see cref="T:Microsoft.Office.Core.MsoDiagramType" />.</span>
+          </span>
+          <span data-ttu-id="9de47-109">要转换为的图示类型。<b>MsoDiagramType</b>可以是下列常量之一。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9de47-109">The type of diagram to convert to.<b>MsoDiagramType</b> can be one of these constants.</span>
+          </span>
+          <span data-ttu-id="9de47-110">
+            <b>msoDiagramCycle</b>与连续周期图表类型的流程图。<b>msoDiagramMixed</b>混合的图表类型。<b>射线</b>层次结构关系图类型。<b>msoDiagramPyramid</b>Foundation 基于关系图类型。<b>msoDiagramRadial</b>显示的核心元素的关系图类型。<b>msoDiagramTarget</b>显示某个目标步骤图表类型。<b>msoDiagramVenn</b>图类型显示的各元素之间的重叠的区域。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9de47-110">
+              <b>msoDiagramCycle</b> A process diagram with a continuous cycle diagram type.<b>msoDiagramMixed</b> A mixed diagram type.<b>msoDiagramOrgChart</b> A hierarchical relationship diagram type.<b>msoDiagramPyramid</b> A foundation based relationships diagram type.<b>msoDiagramRadial</b> A diagram type showing relationships of a core element.<b>msoDiagramTarget</b> A diagram type showing steps toward a goal.<b>msoDiagramVenn</b> A diagram type showing areas of overlap between elements.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="9de47-111">将当前图表转换为不同的图表。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9de47-111">Converts the current diagram to a different diagram.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Diagram.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="9de47-112">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9de47-112">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="9de47-113">
+            <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+            <para>
+              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9de47-113">
+              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
+              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FitText">
+      <MemberSignature Language="C#" Value="public void FitText ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FitText() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Diagram.FitText" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FitText ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void FitText();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2304)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="9de47-114">调整大小以适应节点的边界内的图表中的节点中的文本。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9de47-114">Adjusts the size of the text in the nodes in a diagram to fit within the boundaries of the nodes.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="9de47-115">
+            <para>仅在 Microsoft Office PowerPoint 2003 本方法的作用。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9de47-115">
+              <para>This method functions only in Microsoft Office PowerPoint 2003.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Nodes">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.DiagramNodes Nodes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.DiagramNodes Nodes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Diagram.Nodes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Nodes As DiagramNodes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::DiagramNodes ^ Nodes { Microsoft::Office::Interop::Excel::DiagramNodes ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1701)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1701)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.DiagramNodes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="9de47-116">返回<see cref="T:Microsoft.Office.Interop.Excel.DiagramNodes" />对象，其中包含指定图表中的所有节点的简单列表。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9de47-116">Returns a <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodes" /> object that contains a flat list of all the nodes in the specified diagram.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Diagram.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="9de47-117">返回指定对象的父对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9de47-117">Returns the parent object for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reverse">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState Reverse { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState Reverse" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Diagram.Reverse" />
+      <MemberSignature Language="VB.NET" Value="Public Property Reverse As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Reverse { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2244)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2244)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2244)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="9de47-118">取消在图表中的节点。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9de47-118">Reverses the nodes in a diagram.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="9de47-119">
+            <para>设置为<b>msoFalse</b>的<b>反向</b>离开图表节点，因为它们。设置为<b>msotrue 会</b><b>反向</b>反转图表中的节点。</para>
+            <para>不应用于此属性的下列<b>MsoTriState</b>常量： <b>msoCTrue</b><b>msoTriStateMixed</b>、 <b>msoTriStateToggle</b>。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9de47-119">
+              <para>Setting <b>Reverse</b> to <b>msoFalse</b> leaves the diagram nodes as they are. Setting <b>Reverse</b> to <b>msoTrue</b> reverses the nodes in a diagram.</para>
+              <para>The following <b>MsoTriState</b> constants to not apply to this property: <b>msoCTrue</b>, <b>msoTriStateMixed</b>, <b>msoTriStateToggle</b>.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoDiagramType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoDiagramType Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Diagram.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As MsoDiagramType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoDiagramType Type { Microsoft::Office::Core::MsoDiagramType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoDiagramType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="9de47-120">返回或设置图表类型。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9de47-120">Returns or sets the diagram type.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="9de47-121">
+            <para>
+              <see cref="T:Microsoft.Office.Core.MsoDiagramType" />可以是下列<b>MsoDiagramType</b>常数之一：</para>
+            <para>
+              <b>msoDiagramCycle</b>
+            </para>
+            <para>
+              <b>msoDiagramMixed</b>
+            </para>
+            <para>
+              <b>射线</b>
+            </para>
+            <para>
+              <b>msoDiagramPyramid</b>
+            </para>
+            <para>
+              <b>msoDiagramRadial</b>
+            </para>
+            <para>
+              <b>msoDiagramTarget</b>
+            </para>
+            <para>
+              <b>msoDiagramVenn</b>
+            </para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9de47-121">
+              <para>
+                <see cref="T:Microsoft.Office.Core.MsoDiagramType" /> can be one of these <b>MsoDiagramType</b> constants:</para>
+              <para>
+                <b>msoDiagramCycle</b>
+              </para>
+              <para>
+                <b>msoDiagramMixed</b>
+              </para>
+              <para>
+                <b>msoDiagramOrgChart</b>
+              </para>
+              <para>
+                <b>msoDiagramPyramid</b>
+              </para>
+              <para>
+                <b>msoDiagramRadial</b>
+              </para>
+              <para>
+                <b>msoDiagramTarget</b>
+              </para>
+              <para>
+                <b>msoDiagramVenn</b>
+              </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
