@@ -1,0 +1,482 @@
+<Type Name="QueryTables" FullName="Microsoft.Office.Interop.Excel.QueryTables">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="dca19c730db3c359bc26e265f3af266c406db4a5" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20586938" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface QueryTables : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract QueryTables implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.QueryTables" />
+  <TypeSignature Language="VB.NET" Value="Public Interface QueryTables&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class QueryTables : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024429-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="b6a8e-101">一<see cref="T:Microsoft.Office.Interop.Excel.QueryTable" />对象。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="b6a8e-101">A collection of <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> objects.</span>
+      </span>
+      <span data-ttu-id="b6a8e-102">每一个  <b>QueryTable</b> 对象都代表一个利用从外部数据源返回的数据生成的工作表表格。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="b6a8e-102">Each <b>QueryTable</b> object represents a worksheet table built from data returned from an external data source.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="b6a8e-103">
+        <para>使用<see cref="P:Microsoft.Office.Interop.Excel._Worksheet.QueryTables" />属性可返回<b>QueryTables</b>集合。</para>
+        <para>使用<see cref="M:Microsoft.Office.Interop.Excel.QueryTables.Add(System.Object,Microsoft.Office.Interop.Excel.Range,System.Object)" />方法可创建新的查询表，并将其添加到<b>QueryTables</b>集合。</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="b6a8e-103">
+          <para>Use the <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.QueryTables" /> property to return the <b>QueryTables</b> collection.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel.QueryTables.Add(System.Object,Microsoft.Office.Interop.Excel.Range,System.Object)" /> method to create a new query table and add it to the <b>QueryTables</b> collection.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_Default">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.QueryTable this[object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.QueryTable _Default(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.QueryTables._Default(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property _Default(Index As Object) As QueryTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::QueryTable ^ default[System::Object ^] { Microsoft::Office::Interop::Excel::QueryTable ^ get(System::Object ^ Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.QueryTable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">To be added.</param>
+        <summary>
+          <span data-ttu-id="b6a8e-104">仅供内部使用。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-104">Reserved for internal use.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.QueryTable Add (object Connection, Microsoft.Office.Interop.Excel.Range Destination, object Sql);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.QueryTable Add([in]object Connection, [in]class Microsoft.Office.Interop.Excel.Range Destination, [in]object Sql) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.QueryTables.Add(System.Object,Microsoft.Office.Interop.Excel.Range,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Connection As Object, Destination As Range, Optional Sql As Object) As QueryTable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(181)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.QueryTable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Connection" Type="System.Object" />
+        <Parameter Name="Destination" Type="Microsoft.Office.Interop.Excel.Range" />
+        <Parameter Name="Sql" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Connection">
+          <span data-ttu-id="b6a8e-105">所需的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-105">Required <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b6a8e-106">查询表的数据源。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-106">The data source for the query table.</span>
+          </span>
+          <span data-ttu-id="b6a8e-107">可以是字符串的一个包含一个 OLE DB 或 ODBC 连接字符串的以下：。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-107">Can be one of the following:A string containing an OLE DB or ODBC connection string.</span>
+          </span>
+          <span data-ttu-id="b6a8e-108">ODBC 连接字符串有窗体"ODBC;&lt;连接字符串&gt;"。一个<b>QueryTable</b>对象，该对象从其查询信息最初复制，包括连接字符串和 SQL 文本，但不是包括<paramref name="Destination" />范围。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-108">The ODBC connection string has the form "ODBC;&lt;connection string&gt;".A <b>QueryTable</b> object from which the query information is initially copied, including the connection string and the SQL text, but not including the <paramref name="Destination" /> range.</span>
+          </span>
+          <span data-ttu-id="b6a8e-109">指定一个<b>QueryTable</b>对象会<paramref name="Sql" />参数被忽略。ADO 或 DAO <b>Recordset</b>对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-109">Specifying a <b>QueryTable</b> object causes the <paramref name="Sql" /> argument to be ignored.An ADO or DAO <b>Recordset</b> object.</span>
+          </span>
+          <span data-ttu-id="b6a8e-110">从 ADO 或 DAO 记录集中读取数据。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-110">Data is read from the ADO or DAO recordset.</span>
+          </span>
+          <span data-ttu-id="b6a8e-111">删除查询表或更改连接之前，Microsoft Excel 将保留 recordset。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-111">Microsoft Excel retains the recordset until the query table is deleted or the connection is changed.</span>
+          </span>
+          <span data-ttu-id="b6a8e-112">无法编辑查询结果表。Web 查询。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-112">The resulting query table cannot be edited.A Web query.</span>
+          </span>
+          <span data-ttu-id="b6a8e-113">在窗体"URL; 字符串&lt;url&gt;"，其中"URL"; 需要但未本地化而字符串的其余部分将用于 Web 查询的 URL。数据 Finder。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-113">A string in the form "URL;&lt;url&gt;", where "URL;" is required but not localized and the rest of the string is used for the URL of the Web query.Data Finder.</span>
+          </span>
+          <span data-ttu-id="b6a8e-114">在窗体"FINDER; 字符串&lt;数据 finder 文件路径&gt;"位置"FINDER"; 需要但未本地化。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-114">A string in the form "FINDER;&lt;data finder file path&gt;" where "FINDER;" is required but not localized.</span>
+          </span>
+          <span data-ttu-id="b6a8e-115">字符串的其余数据 Finder 不进行本地化） 的路径和文件名称。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-115">The rest of the string is the path and file name of a Data Finder file (*.dqy or *.iqy).</span>
+          </span>
+          <span data-ttu-id="b6a8e-116">
+            <b>Add</b>方法将在运行; 时读取文件后续调用<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" />的查询表的属性将返回字符串开头"ODBC;"或"URL"; 根据。文本文件。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-116">The file is read when the <b>Add</b> method is run; subsequent calls to the <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> property of the query table will return strings beginning with "ODBC;" or "URL;" as appropriate.A text file.</span>
+          </span>
+          <span data-ttu-id="b6a8e-117">"文本; 窗体中的字符串&lt;文本文件路径和名称&gt;"，其中所需但未本地化的文本。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-117">A string in the form "TEXT;&lt;text file path and name&gt;", where TEXT is required but not localized.</span>
+          </span>
+        </param>
+        <param name="Destination">
+          <span data-ttu-id="b6a8e-118">所需的<b>范围</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-118">Required <b>Range</b>.</span>
+          </span>
+          <span data-ttu-id="b6a8e-119">查询表目标区域 （查询结果表的放置位置的区域） 的左上角中的单元格。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-119">The cell in the upper-left corner of the query table destination range (the range where the resulting query table will be placed).</span>
+          </span>
+          <span data-ttu-id="b6a8e-120">目标区域必须包含的工作表上<see cref="T:Microsoft.Office.Interop.Excel.QueryTables" />对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-120">The destination range must be on the worksheet that contains the <see cref="T:Microsoft.Office.Interop.Excel.QueryTables" /> object.</span>
+          </span>
+        </param>
+        <param name="Sql">
+          <span data-ttu-id="b6a8e-121">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-121">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b6a8e-122">要在 ODBC 数据源上运行的 SQL 查询字符串。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-122">The SQL query string to be run on the ODBC data source.</span>
+          </span>
+          <span data-ttu-id="b6a8e-123">当您使用的 ODBC 数据源时<b>QueryTable</b>对象、 文本文件或 ADO 或 DAO <b>Recordset</b>对象指定为数据源，不能使用此参数时，此参数是可选的。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-123">This argument is optional when you're using an ODBC data source You cannot use this argument when a <b>QueryTable</b> object, text file, or ADO or DAO <b>Recordset</b> object is specified as the data source.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="b6a8e-124">新建一个查询表。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-124">Creates a new query table.</span>
+          </span>
+          <span data-ttu-id="b6a8e-125">返回<see cref="T:Microsoft.Office.Interop.Excel.QueryTable" />对象，表示新的查询表。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-125">Returns a <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> object that represents the new query table.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="b6a8e-126">
+            <para>此方法创建的查询未运行，直到<see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" />调用方法。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-126">
+              <para>A query created by this method isn't run until the <see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" /> method is called.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.QueryTables.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="b6a8e-127">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-127">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+          </span>
+          <span data-ttu-id="b6a8e-128">只读。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-128">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.QueryTables.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="b6a8e-129">返回集合中对象的数目。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-129">Returns the number of objects in the collection.</span>
+          </span>
+          <span data-ttu-id="b6a8e-130">
+            <b>Integer</b> 类型，只读。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-130">Read-only <b>Integer</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.QueryTables.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="b6a8e-131">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-131">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+          </span>
+          <span data-ttu-id="b6a8e-132">如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-132">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
+          </span>
+          <span data-ttu-id="b6a8e-133">只读<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-133">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="b6a8e-134">
+            <para>
+              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-134">
+              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.QueryTables.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.QueryTable Item (object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.QueryTable Item([in]object Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.QueryTables.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Item (Index As Object) As QueryTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Excel::QueryTable ^ Item(System::Object ^ Index);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(170)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.QueryTable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="b6a8e-135">所需的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-135">Required <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="b6a8e-136">对象的名称或索引号。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-136">The name or index number for the object.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="b6a8e-137">从集合中返回一个对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-137">Returns a single object from a collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="b6a8e-138">
+            <para>对象的文本名称就是值<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Name" />属性。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-138">
+              <para>The text name of the object is the value of the <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Name" /> property.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.QueryTables.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="b6a8e-p110">返回指定对象的父对象。只读。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b6a8e-p110">Returns the parent object for the specified object. Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
