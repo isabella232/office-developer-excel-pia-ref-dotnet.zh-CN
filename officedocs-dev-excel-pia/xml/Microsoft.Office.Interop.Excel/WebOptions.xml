@@ -1,0 +1,758 @@
+<Type Name="WebOptions" FullName="Microsoft.Office.Interop.Excel.WebOptions">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="1bb92fb327f4b105c6f89b685f7776df03148a7f" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20579833" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface WebOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WebOptions" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.WebOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Interface WebOptions" />
+  <TypeSignature Language="C++ CLI" Value="public interface class WebOptions" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024449-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>包含工作簿级的属性，当以网页保存文档或打开网页时，Microsoft Excel 将使用这些属性。</summary>
+    <remarks>
+      <para>您可以返回或设置应用程序 （全局） 级别或工作簿级的属性。（请注意，属性值可以是不同到另一个工作簿、 工作簿保存根据属性值时）。工作簿级属性设置覆盖应用程序级属性设置。应用程序级属性包含在<see cref="T:Microsoft.Office.Interop.Excel.DefaultWebOptions" />对象。</para>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Excel._Workbook.WebOptions" />属性可返回的<b>WebOptions</b>对象。</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllowPNG">
+      <MemberSignature Language="C#" Value="public bool AllowPNG { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowPNG" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.AllowPNG" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowPNG As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowPNG { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1908)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1908)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1908)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>如果为<b>true</b>将文档保存为网页时，允许将 PNG （可移植网络图形） 作为图像格式。 <b>假</b> 如果不允许将 PNG 作为输出格式。 默认值为 <b>False</b> 。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果 PNG 格式而不是任何其他文件格式保存的图像，可能会提高图像的质量或减小这些图像文件的大小和因此减少下载时间，假定您的目标 Web 浏览器支持 PNG 格式。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadComponents">
+      <MemberSignature Language="C#" Value="public bool DownloadComponents { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DownloadComponents" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.DownloadComponents" />
+      <MemberSignature Language="VB.NET" Value="Public Property DownloadComponents As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DownloadComponents { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1906)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1906)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1906)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>如果为<b>true</b>时 Web 浏览器，但仅当不安装的组件已查看保存的文档下载所需的 Microsoft Office Web 组件。 <b>False</b>如果正在不下载组件。 默认值为 <b>False</b> 。</summary>
+        <value>To be added.</value>
+        <remarks>您可以设置<para><see cref="P:Microsoft.Office.Interop.Excel.WebOptions.LocationOfComponents" />属性设为 （intranet 或 Web） 上的管理中心 URL 或路径 (本地或网络) 到授权的用户可从中下载组件查看保存的文档时的位置。路径必须是有效和必须指向位置包含必需的组件，以及用户必须具有有效的 Microsoft Office 许可证。</para><para>Office Web 组件添加对文档另存为网页的交互性。如果没有安装的组件的计算机上的浏览器中查看网页，请将静态页上的交互部分。</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Encoding">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoEncoding Encoding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoEncoding Encoding" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.Encoding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Encoding As MsoEncoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoEncoding Encoding { Microsoft::Office::Core::MsoEncoding get(); void set(Microsoft::Office::Core::MsoEncoding value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1822)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1822)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1822)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoEncoding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置文档编码 (代码页或字符集) 若要查看保存的文档时 Web 浏览器使用。 默认值是系统代码页。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>不能使用任何具有后缀<b>自动检测</b>的常量。这些常量由<see cref="M:Microsoft.Office.Interop.Excel._Workbook.ReloadAs(Microsoft.Office.Core.MsoEncoding)" />方法。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FolderSuffix">
+      <MemberSignature Language="C#" Value="public string FolderSuffix { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FolderSuffix" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FolderSuffix As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FolderSuffix { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1914)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1914)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回 Microsoft Excel 使用时将文档保存为网页，使用长文件名，选择保存在单独的文件夹的支持文件的文件夹后缀 (即，如果<see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" />和<see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" />属性设置为<b>True</b>)。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>新创建的文档使用返回的后缀<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.FolderSuffix" />属性<see cref="T:Microsoft.Office.Interop.Excel.DefaultWebOptions" />对象。<b>FolderSuffix</b>属性的值<see cref="T:Microsoft.Office.Interop.Excel.WebOptions" />对象可能不同于<b>DefaultWebOptions</b>对象的如果以前在不同的语言版本的 Microsoft Excel 中编辑文档。您可以使用<see cref="M:Microsoft.Office.Interop.Excel.WebOptions.UseDefaultFolderSuffix" />方法更改为您在 Microsoft Office 中当前正在使用的语言的后缀。</para>
+          <para>默认情况下支持的文件夹的名称是网页加上下划线 (_)、 句点 （.） 或连字符 （-） 和 word"文件"（显示在 Excel 中的文件保存为网页的版本的语言） 的名称。例如，假设您使用的 Excel 荷兰语版本将名为"Page1"文件另存为网页。支持的文件夹的默认名称就是 Page1_bestanden。</para>
+          <para>下表列出每个语言版本的 Office，并提供了相应的<see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" />属性值和文件夹后缀。对于表中未列出的语言，使用后缀".files"。</para>
+          <list type="table">
+            <item>
+              <term>阿拉伯语</term>
+              <description>1025年</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>巴斯克语</term>
+              <description>1069年</description>
+              <description>_fitxategiak</description>
+            </item>
+            <item>
+              <term>巴西</term>
+              <description>1046年</description>
+              <description>_arquivos</description>
+            </item>
+            <item>
+              <term>保加利亚语</term>
+              <description>1026</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>加泰罗尼亚语</term>
+              <description>1027年</description>
+              <description>_fitxers</description>
+            </item>
+            <item>
+              <term>中文-简化</term>
+              <description>2052年</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>中文-繁体</term>
+              <description>1028年</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>克罗地亚语</term>
+              <description>1050年</description>
+              <description>_datoteke</description>
+            </item>
+            <item>
+              <term>捷克语</term>
+              <description>1029年</description>
+              <description>_soubory</description>
+            </item>
+            <item>
+              <term>丹麦</term>
+              <description>1030年</description>
+              <description>-文件服务器</description>
+            </item>
+            <item>
+              <term>荷兰语</term>
+              <description>1043年</description>
+              <description>_bestanden</description>
+            </item>
+            <item>
+              <term>英语</term>
+              <description>1033年</description>
+              <description>_files</description>
+            </item>
+            <item>
+              <term>爱沙尼亚</term>
+              <description>1061年</description>
+              <description>_failid</description>
+            </item>
+            <item>
+              <term>芬兰</term>
+              <description>1035年</description>
+              <description>_tiedostot</description>
+            </item>
+            <item>
+              <term>法语</term>
+              <description>1036年</description>
+              <description>_fichiers</description>
+            </item>
+            <item>
+              <term>德语</term>
+              <description>1031</description>
+              <description>-Dateien</description>
+            </item>
+            <item>
+              <term>希腊语</term>
+              <description>1032年</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>希伯来语</term>
+              <description>1037年</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>匈牙利语</term>
+              <description>1038年</description>
+              <description>_elemei</description>
+            </item>
+            <item>
+              <term>意大利</term>
+              <description>1040年</description>
+              <description>-文件</description>
+            </item>
+            <item>
+              <term>日语</term>
+              <description>1041年</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>朝鲜语</term>
+              <description>1042年</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>拉脱维亚</term>
+              <description>1062年</description>
+              <description>_fails</description>
+            </item>
+            <item>
+              <term>立陶宛语</term>
+              <description>1063年</description>
+              <description>_bylos</description>
+            </item>
+            <item>
+              <term>挪威</term>
+              <description>1044年</description>
+              <description>-文件服务器</description>
+            </item>
+            <item>
+              <term>波兰</term>
+              <description>1045年</description>
+              <description>_pliki</description>
+            </item>
+            <item>
+              <term>葡萄牙语</term>
+              <description>2070年</description>
+              <description>_ficheiros</description>
+            </item>
+            <item>
+              <term>罗马尼亚语</term>
+              <description>1048年</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>俄语</term>
+              <description>1049年</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>塞尔维亚语 （西里尔文）</term>
+              <description>3098</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>塞尔维亚语 （拉丁语）</term>
+              <description>2074年</description>
+              <description>_fajlovi</description>
+            </item>
+            <item>
+              <term>斯洛伐克语</term>
+              <description>1051年</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>斯洛文尼亚语</term>
+              <description>1060年</description>
+              <description>_datoteke</description>
+            </item>
+            <item>
+              <term>西班牙语</term>
+              <description>3082</description>
+              <description>_archivos</description>
+            </item>
+            <item>
+              <term>瑞典</term>
+              <description>1053年</description>
+              <description>-文件服务器</description>
+            </item>
+            <item>
+              <term>泰语</term>
+              <description>1054年</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>土耳其语</term>
+              <description>1055年</description>
+              <description>_dosyalar</description>
+            </item>
+            <item>
+              <term>乌克兰</term>
+              <description>1058年</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>越南语</term>
+              <description>1066年</description>
+              <description>.files</description>
+            </item>
+          </list>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocationOfComponents">
+      <MemberSignature Language="C#" Value="public string LocationOfComponents { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LocationOfComponents" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.LocationOfComponents" />
+      <MemberSignature Language="VB.NET" Value="Public Property LocationOfComponents As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LocationOfComponents { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1911)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1911)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1911)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置的 （intranet 或 Web） 上的管理中心 URL 或路径 (本地或网络) 到授权的用户可从中下载 Microsoft Office Web 组件查看保存的文档时的位置。 默认值是本地或网络 for Microsoft Office 的安装路径。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果，与指定网页自动下载 office Web 组件<see cref="P:Microsoft.Office.Interop.Excel.WebOptions.DownloadComponents" />属性设置为<b>True</b>，不能已安装的组件，路径无效，并且指向包含所需组件的位置和用户具有有效的 Microsoft Office 许可证。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OrganizeInFolder">
+      <MemberSignature Language="C#" Value="public bool OrganizeInFolder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool OrganizeInFolder" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" />
+      <MemberSignature Language="VB.NET" Value="Public Property OrganizeInFolder As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OrganizeInFolder { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1902)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1902)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1902)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>如此</b> 如果在将指定的文档保存为 Web 页时所有的支持文件，例如，背景纹理和图形，都组织在单独的文件夹。 <b>假</b> 如果支持文件保存在与网页相同的文件夹中。 默认值为 <b>True</b> 。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>新的文件夹网页的保存位置的文件夹中创建和文档之后命名。如果使用长文件名，后缀将添加到的文件夹名称。<see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" />属性返回已选择或安装的语言支持的文件夹后缀或的默认文件夹后缀。</para>
+          <para>如果保存文档以前保存<b>OrganizeInFolder</b>属性设置为不同的值时，Microsoft Excel 自动移动迁入或迁出文件夹，根据需要支持文件。</para>如果不使用长文件名的
+          <para>(也就是说，如果<see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" />属性设置为<b>False</b>)，Microsoft Excel 自动将所有支持文件保存在单独的文件夹。这些文件不保存为网页的同一文件夹中。</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回指定对象的父对象。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PixelsPerInch">
+      <MemberSignature Language="C#" Value="public int PixelsPerInch { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PixelsPerInch" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.PixelsPerInch" />
+      <MemberSignature Language="VB.NET" Value="Public Property PixelsPerInch As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PixelsPerInch { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1910)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1910)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1910)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置在 Web 页上图形图像和表格单元格的密度 (每英寸像素数)。 密度设置范围通常为 19 到 480，对于常用屏幕大小来说，密度一般设置为 72、96 和 120。 默认设置为 96。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>在 Web 浏览器中查看保存的文档时，此属性确定图像和文本的大小指定网页上的单元格的大小。生成的图像或单元格的物理尺寸是原始尺寸 （以英寸为单位） 的结果乘以每英寸像素数。</para>
+          <para>您使用<see cref="P:Microsoft.Office.Interop.Excel.WebOptions.ScreenSize" />属性为目标 Web 浏览器设置最佳屏幕大小。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelyOnCSS">
+      <MemberSignature Language="C#" Value="public bool RelyOnCSS { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RelyOnCSS" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.RelyOnCSS" />
+      <MemberSignature Language="VB.NET" Value="Public Property RelyOnCSS As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RelyOnCSS { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1899)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1899)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1899)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>如此</b> 如果您在 Web 浏览器中查看保存的文档时，字体格式使用级联样式表 (CSS)。 <b>False</b>如果 HTML&lt;字体&gt;使用标记和级联样式表。 默认值为 <b>True</b> 。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Microsoft Excel 创建的级联样式表文件，并将其保存到指定的文件夹或网页，具体取决于的值相同的文件夹<see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" />属性。</para>
+          <para>应设置此属性设置为<b>True</b>如果 Web 浏览器支持级联样式表，如这将为您提供较精确的布局和网页上的格式化控件并使其更类似文档，（即 Microsoft Excel 中显示）。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelyOnVML">
+      <MemberSignature Language="C#" Value="public bool RelyOnVML { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RelyOnVML" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.RelyOnVML" />
+      <MemberSignature Language="VB.NET" Value="Public Property RelyOnVML As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RelyOnVML { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1907)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1907)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1907)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>如此</b> 如果不从将文档保存为 Web 页时，图形对象中生成图像文件。 <b>假</b> 如果生成图像。 默认值为 <b>False</b> 。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>您可以减小文件的大小不为您的 Web 浏览器支持矢量标记语言 (VML) 如果绘图对象生成图像。如果您面向的支持 VML 的浏览器，您应将<b>RelyOnVML</b>属性设置为<b>True</b> 。您为 VML 图像将不会出现时不支持的浏览器查看保存启用该属性的网页。</para>
+          <para>例如，则应不生成图像如果网页使用更早版本，则生成的图像文件，并保存文档的位置是不同的 Web 服务器上的页面的最终位置。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScreenSize">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoScreenSize ScreenSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoScreenSize ScreenSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.ScreenSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScreenSize As MsoScreenSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoScreenSize ScreenSize { Microsoft::Office::Core::MsoScreenSize get(); void set(Microsoft::Office::Core::MsoScreenSize value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1909)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1909)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1909)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoScreenSize</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置<see cref="T:Microsoft.Office.Core.MsoScreenSize" />指定在 Web 浏览器中查看保存的文档时应使用的最小的理想屏幕大小 （宽度的高度，以像素为单位） 的常量。 采用默认常量是<b>msoScreenSize800x600</b>。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetBrowser">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTargetBrowser TargetBrowser { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTargetBrowser TargetBrowser" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.TargetBrowser" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetBrowser As MsoTargetBrowser" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTargetBrowser TargetBrowser { Microsoft::Office::Core::MsoTargetBrowser get(); void set(Microsoft::Office::Core::MsoTargetBrowser value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2179)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2179)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2179)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTargetBrowser</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置<see cref="T:Microsoft.Office.Core.MsoTargetBrowser" />常量，指示浏览器版本。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseDefaultFolderSuffix">
+      <MemberSignature Language="C#" Value="public void UseDefaultFolderSuffix ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UseDefaultFolderSuffix() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.WebOptions.UseDefaultFolderSuffix" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UseDefaultFolderSuffix ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UseDefaultFolderSuffix();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1915)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>根据选定或安装的语言，将含指定文档的文件夹后缀设置为默认后缀。</summary>
+        <remarks>
+          <para>将文档保存为网页、 使用长文件名，然后选择保存在单独的文件夹的支持文件时，Microsoft Excel 将使用的文件夹后缀 (即，如果<see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" />和<see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" />属性设置为<b>True</b>)。</para>
+          <para>后缀出现文件夹名称中后的文档名称。例如，如果为文档调用"Book1"，并且的语言是英语，文件夹名称是 Book1_files。中列出了可用的文件夹后缀<see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" />属性主题。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseLongFileNames">
+      <MemberSignature Language="C#" Value="public bool UseLongFileNames { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseLongFileNames" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseLongFileNames As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseLongFileNames { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1904)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1904)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1904)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>如此</b> 如果您将文档保存为网页时使用长文件名。 <b>假</b> 如果不使用长文件名和 DOS 文件名格式 (8.3) 用。 默认值为 <b>True</b> 。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果您不使用长文件名，并且文档有支持文件，Microsoft Excel 将自动组织在单独的文件夹的那些文件。否则，使用<see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" />属性可以确定是否将支持文件组织在单独的文件夹。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
