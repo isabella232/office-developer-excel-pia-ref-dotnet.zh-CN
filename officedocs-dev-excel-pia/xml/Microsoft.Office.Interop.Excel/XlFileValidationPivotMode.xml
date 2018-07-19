@@ -1,0 +1,87 @@
+<Type Name="XlFileValidationPivotMode" FullName="Microsoft.Office.Interop.Excel.XlFileValidationPivotMode">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="c8e55ec1ec9ea610add3c7ccb937797796fc156c" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20575346" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum XlFileValidationPivotMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XlFileValidationPivotMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.XlFileValidationPivotMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum XlFileValidationPivotMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class XlFileValidationPivotMode" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>指定如何验证数据透视表的数据缓存。</summary>
+    <remarks>
+      <para>此枚举用于指定的设置<see cref="P:Microsoft.Office.Interop.Excel._Application.FileValidationPivot" />属性<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象。</para>由 PivotOptions 注册表值，该值在以下注册表子项中设置控制
+      <para><b>xlFileValidationPivotDefault</b>设置的影响： HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Excel\Security\FileValidation。PivotOptions 值是按照下表中所列可以设置一个 DWORD 值。</para><list type="table"><item><term>0</term><description>从不验证数据透视表数据缓存。（不推荐）</description></item><item><term>1</term><description>验证数据透视表报告数据缓存在以下情况下 （默认设置）： 已打开该文件从互联网文件是电子邮件附件。使用打开对话框的受保护的视图命令中打开已打开文件。从已知不安全位置其中 Internet 内容缓存在本地，或用户定义的不受信任位置打开该文件。数据缓存分析在加载时打开该文件。</description></item><item><term>2</term><description>验证所有数据透视表数据缓存。</description></item></list><para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="xlFileValidationPivotDefault">
+      <MemberSignature Language="C#" Value="xlFileValidationPivotDefault" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.Excel.XlFileValidationPivotMode xlFileValidationPivotDefault = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.Excel.XlFileValidationPivotMode.xlFileValidationPivotDefault" />
+      <MemberSignature Language="VB.NET" Value="xlFileValidationPivotDefault" />
+      <MemberSignature Language="C++ CLI" Value="xlFileValidationPivotDefault" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlFileValidationPivotMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>验证 PivotOptions 注册表设置指定的数据缓存的内容（默认）。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlFileValidationPivotRun">
+      <MemberSignature Language="C#" Value="xlFileValidationPivotRun" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.Excel.XlFileValidationPivotMode xlFileValidationPivotRun = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.Excel.XlFileValidationPivotMode.xlFileValidationPivotRun" />
+      <MemberSignature Language="VB.NET" Value="xlFileValidationPivotRun" />
+      <MemberSignature Language="C++ CLI" Value="xlFileValidationPivotRun" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlFileValidationPivotMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>验证所有数据缓存的内容，而不考虑注册表设置。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlFileValidationPivotSkip">
+      <MemberSignature Language="C#" Value="xlFileValidationPivotSkip" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.Excel.XlFileValidationPivotMode xlFileValidationPivotSkip = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.Excel.XlFileValidationPivotMode.xlFileValidationPivotSkip" />
+      <MemberSignature Language="VB.NET" Value="xlFileValidationPivotSkip" />
+      <MemberSignature Language="C++ CLI" Value="xlFileValidationPivotSkip" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlFileValidationPivotMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>不验证数据缓存的内容。</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

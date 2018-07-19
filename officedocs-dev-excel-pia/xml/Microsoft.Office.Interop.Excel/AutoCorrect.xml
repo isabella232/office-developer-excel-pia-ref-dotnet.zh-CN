@@ -1,0 +1,502 @@
+<Type Name="AutoCorrect" FullName="Microsoft.Office.Interop.Excel.AutoCorrect">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="e14cf70b8bdf1df93bc526f14352da5bd8c8b680" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20572721" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface AutoCorrect" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoCorrect" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AutoCorrect" />
+  <TypeSignature Language="VB.NET" Value="Public Interface AutoCorrect" />
+  <TypeSignature Language="C++ CLI" Value="public interface class AutoCorrect" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000208D4-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>包含 Microsoft Excel 的 AutoCorrect 属性（自动将日期名改为大写、自动更正连续两个大写字母、自动更正词条列表等等）。</summary>
+    <remarks>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Excel._Application.AutoCorrect" />属性返回<b>AutoCorrect</b>对象。</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddReplacement">
+      <MemberSignature Language="C#" Value="public object AddReplacement (string What, string Replacement);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object AddReplacement([in]string What, [in]string Replacement) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.AutoCorrect.AddReplacement(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddReplacement (What As String, Replacement As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ AddReplacement(System::String ^ What, System::String ^ Replacement);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1146)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="What" Type="System.String" />
+        <Parameter Name="Replacement" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="What">必需的 <b>字符串</b> 。 要替换的文本。 如果自动更正替换文本数组中已存在此字符串，被新文本替换现有的替换文本。</param>
+        <param name="Replacement">必需的 <b>字符串</b> 。 替换文字。</param>
+        <summary>向“自动更正”替换文本数组中添加项。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.AutoCorrect.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoExpandListRange">
+      <MemberSignature Language="C#" Value="public bool AutoExpandListRange { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoExpandListRange" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.AutoCorrect.AutoExpandListRange" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoExpandListRange As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoExpandListRange { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2294)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2294)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2294)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>一个<b>布尔</b>值，该值指示是否对列表启用自动扩展。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>时为空的行或列列表旁边的单元格中键入时，列表将扩展以包含的行或列，如果已启用自动扩展。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoFillFormulasInLists">
+      <MemberSignature Language="C#" Value="public bool AutoFillFormulasInLists { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoFillFormulasInLists" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.AutoCorrect.AutoFillFormulasInLists" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoFillFormulasInLists As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoFillFormulasInLists { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2642)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2642)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2642)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>影响由自动填充列表创建的计算列的创建。可读/写 <b>Boolean</b> 类型。</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>
+          <para>该属性不影响现有计算的列或创建自动填充中未发生的计算的列。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CapitalizeNamesOfDays">
+      <MemberSignature Language="C#" Value="public bool CapitalizeNamesOfDays { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CapitalizeNamesOfDays" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.AutoCorrect.CapitalizeNamesOfDays" />
+      <MemberSignature Language="VB.NET" Value="Public Property CapitalizeNamesOfDays As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CapitalizeNamesOfDays { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b>如果日期名称的第一个字母自动大写。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CorrectCapsLock">
+      <MemberSignature Language="C#" Value="public bool CorrectCapsLock { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CorrectCapsLock" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.AutoCorrect.CorrectCapsLock" />
+      <MemberSignature Language="VB.NET" Value="Public Property CorrectCapsLock As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CorrectCapsLock { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1620)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1620)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1620)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b>如果 Microsoft Excel 自动更正因偶然误用 CAPS LOCK 键。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CorrectSentenceCap">
+      <MemberSignature Language="C#" Value="public bool CorrectSentenceCap { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CorrectSentenceCap" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.AutoCorrect.CorrectSentenceCap" />
+      <MemberSignature Language="VB.NET" Value="Public Property CorrectSentenceCap As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CorrectSentenceCap { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1619)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1619)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1619)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b>如果 Microsoft Excel 自动更正句子 (首先 word) 大小写。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.AutoCorrect.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteReplacement">
+      <MemberSignature Language="C#" Value="public object DeleteReplacement (string What);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object DeleteReplacement([in]string What) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.AutoCorrect.DeleteReplacement(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeleteReplacement (What As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ DeleteReplacement(System::String ^ What);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1147)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="What" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="What">必需的 <b>字符串</b> 。 要替换，从自动更正替换文本数组中删除的行中所示的文本。 如果自动更正替换数组中不存在此字符串，此方法将失败。</param>
+        <summary>删除“自动更正”替换数组中的一个输入项。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayAutoCorrectOptions">
+      <MemberSignature Language="C#" Value="public bool DisplayAutoCorrectOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisplayAutoCorrectOptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.AutoCorrect.DisplayAutoCorrectOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayAutoCorrectOptions As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayAutoCorrectOptions { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1926)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1926)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1926)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>允许用户显示或隐藏自动更正选项按钮。 默认值为 <b>True</b> 。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>DisplayAutoCorrectOptions</b>属性是 Microsoft Office 范围的设置。更改此属性在 Microsoft Excel 中的将会影响其他 Office 应用程序还。</para>
+          <para>在 Excel 自动创建超链接时，才会显示自动更正选项按钮。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.AutoCorrect.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回指定对象的父对象。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplacementList">
+      <MemberSignature Language="C#" Value="public object ReplacementList[object Index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ReplacementList(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.AutoCorrect.ReplacementList(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReplacementList(Optional Index As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ReplacementList[System::Object ^] { System::Object ^ get(System::Object ^ Index); void set(System::Object ^ Index, System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1151)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1151)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1151)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">可选的<b>对象</b>。 要返回的自动更正替换数组的行索引。 该行包含两个元素的一维数组的形式返回： 第一个元素是 1，列中的文本和第二个元素是列 2 中的文本。</param>
+        <summary>返回“自动更正”替换内容的数组。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果<paramref name="Index" />未指定，则此方法返回一个二维数组。该数组中的每一行都包含一个替换下, 表中所示。</para>
+          <list type="table">
+            <item>
+              <term>1</term>
+              <description>的文本替换</description>
+            </item>
+            <item>
+              <term>2</term>
+              <description>替换文本</description>
+            </item>
+          </list>
+          <para>使用<see cref="M:Microsoft.Office.Interop.Excel.AutoCorrect.AddReplacement(System.String,System.String)" />方法可向替换列表添加条目。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplaceText">
+      <MemberSignature Language="C#" Value="public bool ReplaceText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReplaceText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.AutoCorrect.ReplaceText" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReplaceText As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReplaceText { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>如果为<b>true</b>将被自动替换列表中的自动更正替换文本。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TwoInitialCapitals">
+      <MemberSignature Language="C#" Value="public bool TwoInitialCapitals { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TwoInitialCapitals" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.AutoCorrect.TwoInitialCapitals" />
+      <MemberSignature Language="VB.NET" Value="Public Property TwoInitialCapitals As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TwoInitialCapitals { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>如果为<b>true</b>自动更正以两个大写字母开头的单词。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,142 @@
+<Type Name="Speech" FullName="Microsoft.Office.Interop.Excel.Speech">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="22837717535384f6c1e41513e3e32b7efde41769" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20576221" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Speech" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Speech" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Speech" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Speech" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Speech" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024466-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>包括与语音相关的方法和属性。</summary>
+    <remarks>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Excel._Application.Speech" />属性<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象返回一个<b>Speech</b>对象。</para>
+      <para>后返回一个<b>Speech</b>对象，您可以使用<see cref="M:Microsoft.Office.Interop.Excel.Speech.Speak(System.String,System.Object,System.Object,System.Object)" />播放字符串的内容的<b>语音</b>对象的方法。</para>
+      <para>
+        <b>注释</b>： 适用于口述和命令的安装树结构中没有语音功能&amp;控件，不必安装。</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Direction">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlSpeakDirection Direction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlSpeakDirection Direction" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Speech.Direction" />
+      <MemberSignature Language="VB.NET" Value="Public Property Direction As XlSpeakDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlSpeakDirection Direction { Microsoft::Office::Interop::Excel::XlSpeakDirection get(); void set(Microsoft::Office::Interop::Excel::XlSpeakDirection value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(168)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(168)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(168)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlSpeakDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置顺序朗读单元格的顺序。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>Direction</b>属性的值是<see cref="T:Microsoft.Office.Interop.Excel.XlSpeakDirection" />常量。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Speak">
+      <MemberSignature Language="C#" Value="public void Speak (string Text, object SpeakAsync, object SpeakXML, object Purge);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Speak([in]string Text, [in]object SpeakAsync, [in]object SpeakXML, [in]object Purge) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Speech.Speak(System.String,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Speak (Text As String, Optional SpeakAsync As Object, Optional SpeakXML As Object, Optional Purge As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2017)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Text" Type="System.String" />
+        <Parameter Name="SpeakAsync" Type="System.Object" />
+        <Parameter Name="SpeakXML" Type="System.Object" />
+        <Parameter Name="Purge" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Text">必需的 <b>字符串</b> 。 要朗读的文本。</param>
+        <param name="SpeakAsync">可选的<b>对象</b>。 <b>True</b>将导致<paramref name="Text" />朗读异步 (该方法不会等待<paramref name="Text" />朗读)。 <b>False</b>会导致<paramref name="Text" />朗读同步 (方法等待<paramref name="Text" />然后再继续朗读)。 默认值为 <b>False</b> 。</param>
+        <param name="SpeakXML">可选属性，类型为 <b>Boolean</b>。 <b>True</b>将导致<paramref name="Text" />被解释为 XML。 <b>False</b>会导致<paramref name="Text" />无法解释为 XML，因此会读取并不会被解释任何 XML 标记。 默认值为 <b>False</b> 。</param>
+        <param name="Purge">可选的<b>对象</b>。 <b>True</b>将导致当前语音会终止，任何缓冲文本之前清除<paramref name="Text" />朗读。 <b>False</b>不会导致当前语音会终止，不会清除之前的缓冲的文本<paramref name="Text" />朗读。 默认值为 <b>False</b> 。</param>
+        <summary>Microsoft Excel 回放指定的文本字符串。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpeakCellOnEnter">
+      <MemberSignature Language="C#" Value="public bool SpeakCellOnEnter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SpeakCellOnEnter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Speech.SpeakCellOnEnter" />
+      <MemberSignature Language="VB.NET" Value="Public Property SpeakCellOnEnter As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SpeakCellOnEnter { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2235)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2235)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2235)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>正在编辑模式下按 ENTER 键或完成活动单元格时将朗读活动单元格的 Microsoft Excel 支持。 <b>SpeakCellOnEnter</b>属性设置为<b>True</b>将打开此模式。 <b>False</b>关闭此模式。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
