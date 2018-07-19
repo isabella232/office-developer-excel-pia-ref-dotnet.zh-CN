@@ -1,0 +1,1653 @@
+<Type Name="DefaultWebOptions" FullName="Microsoft.Office.Interop.Excel.DefaultWebOptions">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="89da5d5cdace92821c0dcb0423dda5bc8169b1f6" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20585566" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface DefaultWebOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DefaultWebOptions" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.DefaultWebOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Interface DefaultWebOptions" />
+  <TypeSignature Language="C++ CLI" Value="public interface class DefaultWebOptions" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024448-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="0b130-101">包含 Microsoft Excel 在将文档保存为网页或打开网页时使用的全局应用程序级属性。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="0b130-101">Contains global application-level attributes used by Microsoft Excel when you save a document as a Web page or open a Web page.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="0b130-102">
+        <para>您可以返回或设置应用程序 （全局） 级别或工作簿级的属性。（请注意，属性值可以是不同到另一个工作簿、 工作簿保存根据属性值时）。工作簿级属性设置覆盖应用程序级属性设置。工作簿级特性包含在<see cref="T:Microsoft.Office.Interop.Excel.WebOptions" />对象。</para>
+        <para>使用<see cref="P:Microsoft.Office.Interop.Excel._Application.DefaultWebOptions" />属性可返回<b>DefaultWebOptions</b>对象。</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="0b130-102">
+          <para>You can return or set attributes either at the application (global) level or at the workbook level. (Note that attribute values can be different from one workbook to another, depending on the attribute value at the time the workbook was saved.) Workbook-level attribute settings override application-level attribute settings. Workbook-level attributes are contained in the <see cref="T:Microsoft.Office.Interop.Excel.WebOptions" /> object.</para>
+          <para>Use the <see cref="P:Microsoft.Office.Interop.Excel._Application.DefaultWebOptions" /> property to return the <b>DefaultWebOptions</b> object.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllowPNG">
+      <MemberSignature Language="C#" Value="public bool AllowPNG { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowPNG" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.AllowPNG" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowPNG As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowPNG { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1908)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1908)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1908)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b130-103">如果为<b>true</b>将文档保存为网页时，允许将 PNG （可移植网络图形） 作为图像格式。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-103">
+              <b>True</b> if PNG (Portable Network Graphics) is allowed as an image format when you save documents as a Web page.</span>
+          </span>
+          <span data-ttu-id="0b130-104">
+            <b>假</b> 如果不允许将 PNG 作为输出格式。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-104">
+              <b>False</b> if PNG is not allowed as an output format.</span>
+          </span>
+          <span data-ttu-id="0b130-105">默认值为 <b>False</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-105">The default value is <b>False</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="0b130-106">
+            <para>如果 PNG 格式而不是任何其他文件格式保存的图像，可能会提高图像的质量或减小这些图像文件的大小和因此减少下载时间，假定您的目标 Web 浏览器支持 PNG 格式。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-106">
+              <para>If you save images in the PNG format as opposed to any other file format, you might improve the image quality or reduce the size of those image files, and therefore decrease the download time, assuming that the Web browsers you are targeting support the PNG format.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlwaysSaveInDefaultEncoding">
+      <MemberSignature Language="C#" Value="public bool AlwaysSaveInDefaultEncoding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AlwaysSaveInDefaultEncoding" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.AlwaysSaveInDefaultEncoding" />
+      <MemberSignature Language="VB.NET" Value="Public Property AlwaysSaveInDefaultEncoding As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AlwaysSaveInDefaultEncoding { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1912)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1912)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1912)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b130-107">如果为<b>true</b>时保存网页或纯文本文档，并且独立于文件的原始编码打开时使用默认编码。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-107">
+              <b>True</b> if the default encoding is used when you save a Web page or plain text document, independent of the file's original encoding when opened.</span>
+          </span>
+          <span data-ttu-id="0b130-108">
+            <b>False</b>如果使用的文件的原始编码。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-108">
+              <b>False</b> if the original encoding of the file is used.</span>
+          </span>
+          <span data-ttu-id="0b130-109">默认值为 <b>False</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-109">The default value is <b>False</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="0b130-110">
+            <para>
+              <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.Encoding" />属性可以用于设置默认编码。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-110">
+              <para>The <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.Encoding" /> property can be used to set the default encoding.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b130-111">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-111">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckIfOfficeIsHTMLEditor">
+      <MemberSignature Language="C#" Value="public bool CheckIfOfficeIsHTMLEditor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CheckIfOfficeIsHTMLEditor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.CheckIfOfficeIsHTMLEditor" />
+      <MemberSignature Language="VB.NET" Value="Public Property CheckIfOfficeIsHTMLEditor As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CheckIfOfficeIsHTMLEditor { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1905)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1905)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1905)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b130-112">
+            <b>True</b>如果 Microsoft Excel 将检查您启动 Excel 时，Office 应用程序是否为默认的 HTML 编辑器。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-112">
+              <b>True</b> if Microsoft Excel checks to see whether an Office application is the default HTML editor when you start Excel.</span>
+          </span>
+          <span data-ttu-id="0b130-113">
+            <b>False</b>如果 Excel 不执行此检查。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-113">
+              <b>False</b> if Excel does not perform this check.</span>
+          </span>
+          <span data-ttu-id="0b130-114">默认值为 <b>True</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-114">The default value is <b>True</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="0b130-115">
+            <para>使用 Web 浏览器支持 HTML 编辑和 HTML 编辑器时，才使用此属性。</para>
+            <para>若要使用不同的 HTML 编辑器，您必须将此属性设置为<b>False</b> ，然后将该编辑器注册为默认的系统 HTML 编辑器。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-115">
+              <para>This property is used only if the Web browser you are using supports HTML editing and HTML editors.</para>
+              <para>To use a different HTML editor, you must set this property to <b>False</b> and then register the editor as the default system HTML editor.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b130-116">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-116">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="0b130-117">
+            <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+            <para>
+              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-117">
+              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
+              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadComponents">
+      <MemberSignature Language="C#" Value="public bool DownloadComponents { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DownloadComponents" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.DownloadComponents" />
+      <MemberSignature Language="VB.NET" Value="Public Property DownloadComponents As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DownloadComponents { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1906)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1906)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1906)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b130-118">如果为<b>true</b>时 Web 浏览器，但仅当不安装的组件已查看保存的文档下载所需的 Microsoft Office Web 组件。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-118">
+              <b>True</b> if the necessary Microsoft Office Web components are downloaded when you view the saved document in a Web browser, but only if the components are not already installed.</span>
+          </span>
+          <span data-ttu-id="0b130-119">
+            <b>False</b>如果正在不下载组件。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-119">
+              <b>False</b> if the components are not downloaded.</span>
+          </span>
+          <span data-ttu-id="0b130-120">默认值为 <b>False</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-120">The default value is <b>False</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="0b130-121">您可以设置<para><see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.LocationOfComponents" />属性设为 （intranet 或 Web） 上的管理中心 URL 或路径 (本地或网络) 到授权的用户可从中下载组件查看保存的文档时的位置。路径必须是有效和必须指向位置包含必需的组件，以及用户必须具有有效的 Microsoft Office 许可证。</para><para>Office Web 组件添加对文档另存为网页的交互性。如果没有安装的组件的计算机上的浏览器中查看网页，请将静态页上的交互部分。</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-121">
+              <para>You can set the <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.LocationOfComponents" /> property to a central URL (on the intranet or Web) or path (local or network) to a location from which authorized users can download components when viewing your saved document. The path must be valid and must point to a location that contains the necessary components, and the user must have a valid Microsoft Office license.</para>
+              <para>Office Web components add interactivity to documents that you save as Web pages. If you view a Web page in a browser on a computer that does not have the components installed, the interactive portions of the page will be static.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Encoding">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoEncoding Encoding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoEncoding Encoding" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.Encoding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Encoding As MsoEncoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoEncoding Encoding { Microsoft::Office::Core::MsoEncoding get(); void set(Microsoft::Office::Core::MsoEncoding value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1822)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1822)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1822)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoEncoding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b130-122">返回或设置文档编码 (代码页或字符集) 若要查看保存的文档时 Web 浏览器使用。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-122">Returns or sets the document encoding (code page or character set) to be used by the Web browser when you view the saved document.</span>
+          </span>
+          <span data-ttu-id="0b130-123">默认值是系统代码页。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-123">The default is the system code page.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="0b130-124">
+            <para>不能使用任何具有后缀<b>自动检测</b>的<b>MsoEncoding</b>常量。这些常量由<see cref="M:Microsoft.Office.Interop.Excel._Workbook.ReloadAs(Microsoft.Office.Core.MsoEncoding)" />方法。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-124">
+              <para>You cannot use any of the <b>MsoEncoding</b> constants that have the suffix <b>AutoDetect</b>. These constants are used by the <see cref="M:Microsoft.Office.Interop.Excel._Workbook.ReloadAs(Microsoft.Office.Core.MsoEncoding)" /> method.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FolderSuffix">
+      <MemberSignature Language="C#" Value="public string FolderSuffix { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FolderSuffix" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.FolderSuffix" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FolderSuffix As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FolderSuffix { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1914)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1914)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b130-125">返回 Microsoft Excel 使用时将文档保存为网页，使用长文件名，选择保存在单独的文件夹的支持文件的文件夹后缀 (即，如果<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.UseLongFileNames" />和<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.OrganizeInFolder" />属性设置为<b>True</b>)。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-125">Returns the folder suffix that Microsoft Excel uses when you save a document as a Web page, use long file names, and choose to save supporting files in a separate folder (that is, if the <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.UseLongFileNames" /> and <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.OrganizeInFolder" /> properties are set to <b>True</b>).</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="0b130-126">
+            <para>新创建的文档使用由<b>DefaultWebOptions</b>对象的<b>FolderSuffix</b>属性返回的后缀。值<see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" />属性<see cref="T:Microsoft.Office.Interop.Excel.WebOptions" />对象可能不同于<b>DefaultWebOptions</b>对象的如果以前在不同的语言版本的 Microsoft Excel 中编辑文档。您可以使用<see cref="M:Microsoft.Office.Interop.Excel.WebOptions.UseDefaultFolderSuffix" />方法更改为您在 Microsoft Office 中当前正在使用的语言的后缀。</para>
+            <para>默认情况下支持的文件夹的名称是网页加上下划线 (_)、 句点 （.） 或连字符 （-） 和 word"文件"（显示在 Excel 中的文件保存为网页的版本的语言） 的名称。例如，假设您使用的 Excel 荷兰语版本将名为"Page1"文件另存为网页。支持的文件夹的默认名称就是 Page1_bestanden。</para>
+            <para>下表列出了每个语言版本的 Office，并对其相应的<b>LanguageID</b>属性值和文件夹后缀。对于表中未列出的语言，使用后缀".files"。</para>
+            <list type="table">
+              <item>
+                <term>阿拉伯语</term>
+                <description>1025年</description>
+                <description>.files</description>
+              </item>
+              <item>
+                <term>巴斯克语</term>
+                <description>1069年</description>
+                <description>_fitxategiak</description>
+              </item>
+              <item>
+                <term>巴西</term>
+                <description>1046年</description>
+                <description>_arquivos</description>
+              </item>
+              <item>
+                <term>保加利亚语</term>
+                <description>1026</description>
+                <description>.files</description>
+              </item>
+              <item>
+                <term>加泰罗尼亚语</term>
+                <description>1027年</description>
+                <description>_fitxers</description>
+              </item>
+              <item>
+                <term>中文-简化</term>
+                <description>2052年</description>
+                <description>.files</description>
+              </item>
+              <item>
+                <term>中文-繁体</term>
+                <description>1028年</description>
+                <description>.files</description>
+              </item>
+              <item>
+                <term>克罗地亚语</term>
+                <description>1050年</description>
+                <description>_datoteke</description>
+              </item>
+              <item>
+                <term>捷克语</term>
+                <description>1029年</description>
+                <description>_soubory</description>
+              </item>
+              <item>
+                <term>丹麦</term>
+                <description>1030年</description>
+                <description>-文件服务器</description>
+              </item>
+              <item>
+                <term>荷兰语</term>
+                <description>1043年</description>
+                <description>_bestanden</description>
+              </item>
+              <item>
+                <term>英语</term>
+                <description>1033年</description>
+                <description>_files</description>
+              </item>
+              <item>
+                <term>爱沙尼亚</term>
+                <description>1061年</description>
+                <description>_failid</description>
+              </item>
+              <item>
+                <term>芬兰</term>
+                <description>1035年</description>
+                <description>_tiedostot</description>
+              </item>
+              <item>
+                <term>法语</term>
+                <description>1036年</description>
+                <description>_fichiers</description>
+              </item>
+              <item>
+                <term>德语</term>
+                <description>1031</description>
+                <description>-Dateien</description>
+              </item>
+              <item>
+                <term>希腊语</term>
+                <description>1032年</description>
+                <description>.files</description>
+              </item>
+              <item>
+                <term>希伯来语</term>
+                <description>1037年</description>
+                <description>.files</description>
+              </item>
+              <item>
+                <term>匈牙利语</term>
+                <description>1038年</description>
+                <description>_elemei</description>
+              </item>
+              <item>
+                <term>意大利</term>
+                <description>1040年</description>
+                <description>-文件</description>
+              </item>
+              <item>
+                <term>日语</term>
+                <description>1041年</description>
+                <description>.files</description>
+              </item>
+              <item>
+                <term>朝鲜语</term>
+                <description>1042年</description>
+                <description>.files</description>
+              </item>
+              <item>
+                <term>拉脱维亚</term>
+                <description>1062年</description>
+                <description>_fails</description>
+              </item>
+              <item>
+                <term>立陶宛语</term>
+                <description>1063年</description>
+                <description>_bylos</description>
+              </item>
+              <item>
+                <term>挪威</term>
+                <description>1044年</description>
+                <description>-文件服务器</description>
+              </item>
+              <item>
+                <term>波兰</term>
+                <description>1045年</description>
+                <description>_pliki</description>
+              </item>
+              <item>
+                <term>葡萄牙语</term>
+                <description>2070年</description>
+                <description>_ficheiros</description>
+              </item>
+              <item>
+                <term>罗马尼亚语</term>
+                <description>1048年</description>
+                <description>.files</description>
+              </item>
+              <item>
+                <term>俄语</term>
+                <description>1049年</description>
+                <description>.files</description>
+              </item>
+              <item>
+                <term>塞尔维亚语 （西里尔文）</term>
+                <description>3098</description>
+                <description>.files</description>
+              </item>
+              <item>
+                <term>塞尔维亚语 （拉丁语）</term>
+                <description>2074年</description>
+                <description>_fajlovi</description>
+              </item>
+              <item>
+                <term>斯洛伐克语</term>
+                <description>1051年</description>
+                <description>.files</description>
+              </item>
+              <item>
+                <term>斯洛文尼亚语</term>
+                <description>1060年</description>
+                <description>_datoteke</description>
+              </item>
+              <item>
+                <term>西班牙语</term>
+                <description>3082</description>
+                <description>_archivos</description>
+              </item>
+              <item>
+                <term>瑞典</term>
+                <description>1053年</description>
+                <description>-文件服务器</description>
+              </item>
+              <item>
+                <term>泰语</term>
+                <description>1054年</description>
+                <description>.files</description>
+              </item>
+              <item>
+                <term>土耳其语</term>
+                <description>1055年</description>
+                <description>_dosyalar</description>
+              </item>
+              <item>
+                <term>乌克兰</term>
+                <description>1058年</description>
+                <description>.files</description>
+              </item>
+              <item>
+                <term>越南语</term>
+                <description>1066年</description>
+                <description>.files</description>
+              </item>
+            </list>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-126">
+              <para>Newly created documents use the suffix returned by the <b>FolderSuffix</b> property of the <b>DefaultWebOptions</b> object. The value of the <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.WebOptions" /> object may differ from that of the <b>DefaultWebOptions</b> object if the document was previously edited in a different language version of Microsoft Excel. You can use the <see cref="M:Microsoft.Office.Interop.Excel.WebOptions.UseDefaultFolderSuffix" /> method to change the suffix to the language you are currently using in Microsoft Office.</para>
+              <para>By default, the name of the supporting folder is the name of the Web page plus an underscore (_), a period (.), or a hyphen (-) and the word "files" (appearing in the language of the version of Excel in which the file was saved as a Web page). For example, suppose that you use the Dutch language version of Excel to save a file called "Page1" as a Web page. The default name of the supporting folder is Page1_bestanden.</para>
+              <para>The following table lists each language version of Office, and gives its corresponding <b>LanguageID</b> property value and folder suffix. For the languages that are not listed in the table, the suffix ".files" is used.</para>
+              <list type="table">
+                <item>
+                  <term>Arabic</term>
+                  <description>1025</description>
+                  <description>.files</description>
+                </item>
+                <item>
+                  <term>Basque</term>
+                  <description>1069</description>
+                  <description>_fitxategiak</description>
+                </item>
+                <item>
+                  <term>Brazilian</term>
+                  <description>1046</description>
+                  <description>_arquivos</description>
+                </item>
+                <item>
+                  <term>Bulgarian</term>
+                  <description>1026</description>
+                  <description>.files</description>
+                </item>
+                <item>
+                  <term>Catalan</term>
+                  <description>1027</description>
+                  <description>_fitxers</description>
+                </item>
+                <item>
+                  <term>Chinese - Simplified</term>
+                  <description>2052</description>
+                  <description>.files</description>
+                </item>
+                <item>
+                  <term>Chinese - Traditional</term>
+                  <description>1028</description>
+                  <description>.files</description>
+                </item>
+                <item>
+                  <term>Croatian</term>
+                  <description>1050</description>
+                  <description>_datoteke</description>
+                </item>
+                <item>
+                  <term>Czech</term>
+                  <description>1029</description>
+                  <description>_soubory</description>
+                </item>
+                <item>
+                  <term>Danish</term>
+                  <description>1030</description>
+                  <description>-filer</description>
+                </item>
+                <item>
+                  <term>Dutch</term>
+                  <description>1043</description>
+                  <description>_bestanden</description>
+                </item>
+                <item>
+                  <term>English</term>
+                  <description>1033</description>
+                  <description>_files</description>
+                </item>
+                <item>
+                  <term>Estonian</term>
+                  <description>1061</description>
+                  <description>_failid</description>
+                </item>
+                <item>
+                  <term>Finnish</term>
+                  <description>1035</description>
+                  <description>_tiedostot</description>
+                </item>
+                <item>
+                  <term>French</term>
+                  <description>1036</description>
+                  <description>_fichiers</description>
+                </item>
+                <item>
+                  <term>German</term>
+                  <description>1031</description>
+                  <description>-Dateien</description>
+                </item>
+                <item>
+                  <term>Greek</term>
+                  <description>1032</description>
+                  <description>.files</description>
+                </item>
+                <item>
+                  <term>Hebrew</term>
+                  <description>1037</description>
+                  <description>.files</description>
+                </item>
+                <item>
+                  <term>Hungarian</term>
+                  <description>1038</description>
+                  <description>_elemei</description>
+                </item>
+                <item>
+                  <term>Italian</term>
+                  <description>1040</description>
+                  <description>-file</description>
+                </item>
+                <item>
+                  <term>Japanese</term>
+                  <description>1041</description>
+                  <description>.files</description>
+                </item>
+                <item>
+                  <term>Korean</term>
+                  <description>1042</description>
+                  <description>.files</description>
+                </item>
+                <item>
+                  <term>Latvian</term>
+                  <description>1062</description>
+                  <description>_fails</description>
+                </item>
+                <item>
+                  <term>Lithuanian</term>
+                  <description>1063</description>
+                  <description>_bylos</description>
+                </item>
+                <item>
+                  <term>Norwegian</term>
+                  <description>1044</description>
+                  <description>-filer</description>
+                </item>
+                <item>
+                  <term>Polish</term>
+                  <description>1045</description>
+                  <description>_pliki</description>
+                </item>
+                <item>
+                  <term>Portuguese</term>
+                  <description>2070</description>
+                  <description>_ficheiros</description>
+                </item>
+                <item>
+                  <term>Romanian</term>
+                  <description>1048</description>
+                  <description>.files</description>
+                </item>
+                <item>
+                  <term>Russian</term>
+                  <description>1049</description>
+                  <description>.files</description>
+                </item>
+                <item>
+                  <term>Serbian (Cyrillic)</term>
+                  <description>3098</description>
+                  <description>.files</description>
+                </item>
+                <item>
+                  <term>Serbian (Latin)</term>
+                  <description>2074</description>
+                  <description>_fajlovi</description>
+                </item>
+                <item>
+                  <term>Slovakian</term>
+                  <description>1051</description>
+                  <description>.files</description>
+                </item>
+                <item>
+                  <term>Slovenian</term>
+                  <description>1060</description>
+                  <description>_datoteke</description>
+                </item>
+                <item>
+                  <term>Spanish</term>
+                  <description>3082</description>
+                  <description>_archivos</description>
+                </item>
+                <item>
+                  <term>Swedish</term>
+                  <description>1053</description>
+                  <description>-filer</description>
+                </item>
+                <item>
+                  <term>Thai</term>
+                  <description>1054</description>
+                  <description>.files</description>
+                </item>
+                <item>
+                  <term>Turkish</term>
+                  <description>1055</description>
+                  <description>_dosyalar</description>
+                </item>
+                <item>
+                  <term>Ukranian</term>
+                  <description>1058</description>
+                  <description>.files</description>
+                </item>
+                <item>
+                  <term>Vietnamese</term>
+                  <description>1066</description>
+                  <description>.files</description>
+                </item>
+              </list>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Fonts">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.WebPageFonts Fonts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.WebPageFonts Fonts" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.Fonts" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Fonts As WebPageFonts" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::WebPageFonts ^ Fonts { Microsoft::Office::Core::WebPageFonts ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1913)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1913)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.WebPageFonts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b130-127">返回<see cref="T:Microsoft.Office.Core.WebPageFonts" />集合，代表字体 Microsoft Excel 将使用在 Excel 中打开网页并没有用来在 Web 页中，指定的字体信息或当前的默认字体无法显示网页中的字符集。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-127">Returns the <see cref="T:Microsoft.Office.Core.WebPageFonts" /> collection representing the set of fonts Microsoft Excel uses when you open a Web page in Excel and there is either no font information specified in the Web page, or the current default font can't display the character set in the Web page.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadPictures">
+      <MemberSignature Language="C#" Value="public bool LoadPictures { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LoadPictures" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.LoadPictures" />
+      <MemberSignature Language="VB.NET" Value="Public Property LoadPictures As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LoadPictures { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1901)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1901)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1901)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b130-128">
+            <b>True</b>如果在 Microsoft Excel 中不创建图像和文档时通常在 Microsoft Excel 中，打开文档时加载图像。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-128">
+              <b>True</b> if images are loaded when you open a document in Microsoft Excel, usually when the images and document were not created in Microsoft Excel.</span>
+          </span>
+          <span data-ttu-id="0b130-129">
+            <b>False</b>如果没有加载图像。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-129">
+              <b>False</b> if the images are not loaded.</span>
+          </span>
+          <span data-ttu-id="0b130-130">默认值为 <b>True</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-130">The default value is <b>True</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocationOfComponents">
+      <MemberSignature Language="C#" Value="public string LocationOfComponents { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LocationOfComponents" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.LocationOfComponents" />
+      <MemberSignature Language="VB.NET" Value="Public Property LocationOfComponents As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LocationOfComponents { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1911)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1911)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1911)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b130-131">返回或设置的 （intranet 或 Web） 上的管理中心 URL 或路径 (本地或网络) 到授权的用户可从中下载 Microsoft Office Web 组件查看保存的文档时的位置。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-131">Returns or sets the central URL (on the intranet or Web) or path (local or network) to the location from which authorized users can download Microsoft Office Web components when viewing your saved document.</span>
+          </span>
+          <span data-ttu-id="0b130-132">默认值是本地或网络 for Microsoft Office 的安装路径。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-132">The default value is the local or network installation path for Microsoft Office.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="0b130-133">
+            <para>如果，与指定网页自动下载 office Web 组件<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.DownloadComponents" />属性设置为<b>True</b>，不能已安装的组件，路径无效，并且指向包含所需组件的位置和用户具有有效的 Microsoft Office 许可证。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-133">
+              <para>Office Web components are automatically downloaded with the specified Web page if the <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.DownloadComponents" /> property is set to <b>True</b>, the components are not already installed, the path is valid and points to a location that contains the necessary components, and the user has a valid Microsoft Office license.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OrganizeInFolder">
+      <MemberSignature Language="C#" Value="public bool OrganizeInFolder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool OrganizeInFolder" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.OrganizeInFolder" />
+      <MemberSignature Language="VB.NET" Value="Public Property OrganizeInFolder As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OrganizeInFolder { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1902)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1902)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1902)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b130-134">
+            <b>如此</b> 如果在将指定的文档保存为 Web 页时所有的支持文件，例如，背景纹理和图形，都组织在单独的文件夹。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-134">
+              <b>True</b> if all supporting files, such as background textures and graphics, are organized in a separate folder when you save the specified document as a Web page.</span>
+          </span>
+          <span data-ttu-id="0b130-135">
+            <b>假</b> 如果支持文件保存在与网页相同的文件夹中。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-135">
+              <b>False</b> if supporting files are saved in the same folder as the Web page.</span>
+          </span>
+          <span data-ttu-id="0b130-136">默认值为 <b>True</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-136">The default value is <b>True</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="0b130-137">
+            <para>新的文件夹网页的保存位置的文件夹中创建和文档之后命名。如果使用长文件名，后缀将添加到的文件夹名称。<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.FolderSuffix" />属性返回已选择或安装的语言支持的文件夹后缀或的默认文件夹后缀。</para>
+            <para>如果保存文档以前保存<b>OrganizeInFolder</b>属性设置为不同的值时，Microsoft Excel 自动移动迁入或迁出文件夹，根据需要支持文件。</para>如果不使用长文件名的
+          <para>(也就是说，如果<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.UseLongFileNames" />属性设置为<b>False</b>)，Microsoft Excel 自动将所有支持文件保存在单独的文件夹。这些文件不保存为网页的同一文件夹中。</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-137">
+              <para>The new folder is created in the folder where you have saved the Web page and is named after the document. If long file names are used, a suffix is added to the folder name. The <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.FolderSuffix" /> property returns the folder suffix for the language support you have selected or installed, or the default folder suffix.</para>
+              <para>If you save a document that was previously saved with the <b>OrganizeInFolder</b> property set to a different value, Microsoft Excel automatically moves the supporting files into or out of the folder, as appropriate.</para>
+              <para>If you don't use long file names (that is, if the <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.UseLongFileNames" /> property is set to <b>False</b>), Microsoft Excel automatically saves any supporting files in a separate folder. The files cannot be saved in the same folder as the Web page.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b130-138">返回指定对象的父对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-138">Returns the parent object for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PixelsPerInch">
+      <MemberSignature Language="C#" Value="public int PixelsPerInch { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PixelsPerInch" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.PixelsPerInch" />
+      <MemberSignature Language="VB.NET" Value="Public Property PixelsPerInch As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PixelsPerInch { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1910)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1910)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1910)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b130-139">返回或设置在 Web 页上图形图像和表格单元格的密度 (每英寸像素数)。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-139">Returns or sets the density (pixels per inch) of graphics images and table cells on a Web page.</span>
+          </span>
+          <span data-ttu-id="0b130-140">密度设置范围通常为 19 到 480，对于常用屏幕大小来说，密度一般设置为 72、96 和 120。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-140">The range of settings is usually from 19 to 480, and common settings for popular screen sizes are 72, 96, and 120.</span>
+          </span>
+          <span data-ttu-id="0b130-141">默认设置为 96。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-141">The default setting is 96.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="0b130-142">
+            <para>在 Web 浏览器中查看保存的文档时，此属性确定图像和文本的大小指定网页上的单元格的大小。生成的图像或单元格的物理尺寸是原始尺寸 （以英寸为单位） 的结果乘以每英寸像素数。</para>
+            <para>您使用<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.ScreenSize" />属性为目标 Web 浏览器设置最佳屏幕大小。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-142">
+              <para>This property determines the size of the images and cells on the specified Web page relative to the size of text whenever you view the saved document in a Web browser. The physical dimensions of the resulting image or cell are the result of the original dimensions (in inches) multiplied by the number of pixels per inch.</para>
+              <para>You use the <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.ScreenSize" /> property to set the optimum screen size for the targeted Web browsers.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelyOnCSS">
+      <MemberSignature Language="C#" Value="public bool RelyOnCSS { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RelyOnCSS" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.RelyOnCSS" />
+      <MemberSignature Language="VB.NET" Value="Public Property RelyOnCSS As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RelyOnCSS { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1899)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1899)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1899)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b130-143">
+            <b>如此</b> 如果您在 Web 浏览器中查看保存的文档时，字体格式使用级联样式表 (CSS)。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-143">
+              <b>True</b> if cascading style sheets (CSS) are used for font formatting when you view a saved document in a Web browser.</span>
+          </span>
+          <span data-ttu-id="0b130-144">Microsoft Excel 创建的级联样式表文件，并将其保存到指定的文件夹或网页，具体取决于的值相同的文件夹<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.OrganizeInFolder" />属性。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-144">Microsoft Excel creates a cascading style sheet file and saves it either to the specified folder or to the same folder as your Web page, depending on the value of the <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.OrganizeInFolder" /> property.</span>
+          </span>
+          <span data-ttu-id="0b130-145">
+            <b>False</b>如果 HTML&lt;字体&gt;使用标记和级联样式表。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-145">
+              <b>False</b> if HTML &lt;FONT&gt; tags and cascading style sheets are used.</span>
+          </span>
+          <span data-ttu-id="0b130-146">默认值为 <b>True</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-146">The default value is <b>True</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="0b130-147">
+            <para>如果您的 Web 浏览器支持级联样式表，这将为您提供较精确的布局和网页上的格式化控件并使其类似于更多文档 （如它显示在 Microsoft Excel 中），您应将此属性设置为<b>True</b> 。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-147">
+              <para>You should set this property to <b>True</b> if your Web browser supports cascading style sheets, as this will give you more precise layout and formatting control on your Web page and make it look more like your document (as it appears in Microsoft Excel).</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelyOnVML">
+      <MemberSignature Language="C#" Value="public bool RelyOnVML { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RelyOnVML" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.RelyOnVML" />
+      <MemberSignature Language="VB.NET" Value="Public Property RelyOnVML As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RelyOnVML { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1907)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1907)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1907)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b130-148">
+            <b>如此</b> 如果不从将文档保存为 Web 页时，图形对象中生成图像文件。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-148">
+              <b>True</b> if image files are not generated from drawing objects when you save a document as a Web page.</span>
+          </span>
+          <span data-ttu-id="0b130-149">
+            <b>假</b> 如果生成图像。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-149">
+              <b>False</b> if images are generated.</span>
+          </span>
+          <span data-ttu-id="0b130-150">默认值为 <b>False</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-150">The default value is <b>False</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="0b130-151">
+            <para>您可以通过 Web 浏览器支持矢量标记语言 (VML) 如果不生成图像的图形对象，来减小文件大小。例如，Microsoft Internet Explorer 5 支持此功能，并且您应将<b>RelyOnVML</b>属性设置为<b>True</b> ，如果您面向的此浏览器。您为 VML 图像将不会出现时不支持的浏览器查看保存启用该属性的网页。</para>
+            <para>例如，则应不生成图像如果您网页将使用您之前生成的图像文件，并保存文档的位置是不同的 Web 服务器上的页面的最终位置。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-151">
+              <para>You can reduce file sizes by not generating images for drawing objects, if your Web browser supports Vector Markup Language (VML). For example, Microsoft Internet Explorer 5 supports this feature, and you should set the <b>RelyOnVML</b> property to <b>True</b> if you are targeting this browser. For browsers that do not support VML, the image will not appear when you view a Web page saved with this property enabled.</para>
+              <para>For example, you should not generate images if your Web page uses image files that you have generated earlier and if the location where you save the document is different from the final location of the page on the Web server.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveHiddenData">
+      <MemberSignature Language="C#" Value="public bool SaveHiddenData { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SaveHiddenData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.SaveHiddenData" />
+      <MemberSignature Language="VB.NET" Value="Public Property SaveHiddenData As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SaveHiddenData { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1900)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1900)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1900)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b130-152">如果为<b>true</b>将文档保存为网页时保存指定的范围之外的数据。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-152">
+              <b>True</b> if data outside of the specified range is saved when you save the document as a Web page.</span>
+          </span>
+          <span data-ttu-id="0b130-153">此数据可能需要维护公式。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-153">This data may be necessary for maintaining formulas.</span>
+          </span>
+          <span data-ttu-id="0b130-154">
+            <b>False</b>如果指定的范围之外的数据不保存的网页。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-154">
+              <b>False</b> if data outside of the specified range is not saved with the Web page.</span>
+          </span>
+          <span data-ttu-id="0b130-155">默认值为 <b>True</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-155">The default value is <b>True</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveNewWebPagesAsWebArchives">
+      <MemberSignature Language="C#" Value="public bool SaveNewWebPagesAsWebArchives { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SaveNewWebPagesAsWebArchives" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.SaveNewWebPagesAsWebArchives" />
+      <MemberSignature Language="VB.NET" Value="Public Property SaveNewWebPagesAsWebArchives As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SaveNewWebPagesAsWebArchives { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2180)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2180)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2180)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b130-156">如果新网页可以保存为 Web 档案。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-156">True if new Web pages can be saved as Web archives.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScreenSize">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoScreenSize ScreenSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoScreenSize ScreenSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.ScreenSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScreenSize As MsoScreenSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoScreenSize ScreenSize { Microsoft::Office::Core::MsoScreenSize get(); void set(Microsoft::Office::Core::MsoScreenSize value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1909)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1909)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1909)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoScreenSize</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b130-157">返回或设置在 Web 浏览器中查看保存的文档时应使用的理想最小屏幕大小 (宽度乘高度，以像素为单位)。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-157">Returns or sets the ideal minimum screen size (width by height, in pixels) that you should use when viewing the saved document in a Web browser.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="0b130-158">
+            <para>
+              <b>MsoScreenSize</b>可以是下列<b>MsoScreenSize</b>常量之一：</para>
+            <para>
+              <b>msoScreenSize1152x882</b>
+            </para>
+            <para>
+              <b>msoScreenSize1280x1024</b>
+            </para>
+            <para>
+              <b>msoScreenSize1800x1440</b>
+            </para>
+            <para>
+              <b>msoScreenSize544x376</b>
+            </para>
+            <para>
+              <b>msoScreenSize720x512</b>
+            </para>
+            <para>
+              <b>msoScreenSize1024x768</b>
+            </para>
+            <para>
+              <b>msoScreenSize1152x900</b>
+            </para>
+            <para>
+              <b>msoScreenSize1600x1200</b>
+            </para>
+            <para>
+              <b>msoScreenSize1920x1200</b>
+            </para>
+            <para>
+              <b>msoScreenSize640x480</b>
+            </para>
+            <para>
+              <b>msoScreenSize800x600</b>默认</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-158">
+              <para>
+                <b>MsoScreenSize</b> can be one of these <b>MsoScreenSize</b> constants:</para>
+              <para>
+                <b>msoScreenSize1152x882</b>
+              </para>
+              <para>
+                <b>msoScreenSize1280x1024</b>
+              </para>
+              <para>
+                <b>msoScreenSize1800x1440</b>
+              </para>
+              <para>
+                <b>msoScreenSize544x376</b>
+              </para>
+              <para>
+                <b>msoScreenSize720x512</b>
+              </para>
+              <para>
+                <b>msoScreenSize1024x768</b>
+              </para>
+              <para>
+                <b>msoScreenSize1152x900</b>
+              </para>
+              <para>
+                <b>msoScreenSize1600x1200</b>
+              </para>
+              <para>
+                <b>msoScreenSize1920x1200</b>
+              </para>
+              <para>
+                <b>msoScreenSize640x480</b>
+              </para>
+              <para>
+                <b>msoScreenSize800x600 </b>Default</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetBrowser">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTargetBrowser TargetBrowser { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTargetBrowser TargetBrowser" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.TargetBrowser" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetBrowser As MsoTargetBrowser" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTargetBrowser TargetBrowser { Microsoft::Office::Core::MsoTargetBrowser get(); void set(Microsoft::Office::Core::MsoTargetBrowser value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2179)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2179)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2179)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTargetBrowser</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b130-159">返回或设置一个常量，该常量指示浏览器版本。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-159">Returns or sets a constant indicating the browser version.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="0b130-160">
+            <para>
+              <b>MsoTargetBrowser</b>可为以下这些<b>MsoTargetBrowser</b>常量之一。</para>
+            <para>
+              <b>msoTargetBrowserIE4</b> Microsoft Internet Explorer 4.0 或更高版本。</para>
+            <para>
+              <b>msoTargetBrowserIE5</b> Microsoft Internet Explorer 5.0 或更高版本。</para>
+            <para>
+              <b>msoTargetBrowserIE6</b> Microsoft Internet Explorer 6.0 或更高版本。</para>
+            <para>
+              <b>msoTargetBrowserV3</b> Microsoft Internet Explorer 3.0，Netscape Navigator 3.0，或更高版本。</para>
+            <para>
+              <b>msoTargetBrowserV4</b> Microsoft Internet Explorer 4.0，Netscape Navigator 4.0，或更高版本。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-160">
+              <para>
+                <b>MsoTargetBrowser</b> can be one of these <b>MsoTargetBrowser</b> constants. </para>
+              <para>
+                <b>msoTargetBrowserIE4</b> Microsoft Internet Explorer 4.0 or later.</para>
+              <para>
+                <b>msoTargetBrowserIE5</b> Microsoft Internet Explorer 5.0 or later.</para>
+              <para>
+                <b>msoTargetBrowserIE6</b> Microsoft Internet Explorer 6.0 or later.</para>
+              <para>
+                <b>msoTargetBrowserV3</b> Microsoft Internet Explorer 3.0, Netscape Navigator 3.0, or later.</para>
+              <para>
+                <b>msoTargetBrowserV4</b> Microsoft Internet Explorer 4.0, Netscape Navigator 4.0, or later.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateLinksOnSave">
+      <MemberSignature Language="C#" Value="public bool UpdateLinksOnSave { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UpdateLinksOnSave" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.UpdateLinksOnSave" />
+      <MemberSignature Language="VB.NET" Value="Public Property UpdateLinksOnSave As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UpdateLinksOnSave { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1903)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1903)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1903)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b130-161">
+            <b>True</b>如果确保保存文档时包含最新的链接以网页保存文档前自动更新超链接和所有支持文件的路径。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-161">
+              <b>True</b> if hyperlinks and paths to all supporting files are automatically updated before you save the document as a Web page, ensuring that the links are up-to-date at the time the document is saved.</span>
+          </span>
+          <span data-ttu-id="0b130-162">
+            <b>False</b>如果不更新链接。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-162">
+              <b>False</b> if the links are not updated.</span>
+          </span>
+          <span data-ttu-id="0b130-163">默认值为 <b>True</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-163">The default value is <b>True</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="0b130-164">
+            <para>如果保存文档的位置的 Web 服务器上的最终位置不同，且支持的文件的第一个位置不可用，您应将此属性设置为<b>False</b> 。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-164">
+              <para>You should set this property to <b>False</b> if the location where the document is saved is different from the final location on the Web server and the supporting files are not available at the first location.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseLongFileNames">
+      <MemberSignature Language="C#" Value="public bool UseLongFileNames { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseLongFileNames" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.UseLongFileNames" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseLongFileNames As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseLongFileNames { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1904)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1904)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1904)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b130-165">
+            <b>如此</b> 如果您将文档保存为网页时使用长文件名。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-165">
+              <b>True</b> if long file names are used when you save the document as a Web page.</span>
+          </span>
+          <span data-ttu-id="0b130-166">
+            <b>假</b> 如果不使用长文件名和 DOS 文件名格式 (8.3) 用。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-166">
+              <b>False</b> if long file names are not used and the DOS file name format (8.3) is used.</span>
+          </span>
+          <span data-ttu-id="0b130-167">默认值为 <b>True</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-167">The default value is <b>True</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="0b130-168">
+            <para>如果您不使用长文件名，并且文档有支持文件，Microsoft Excel 将自动组织在单独的文件夹的那些文件。否则，使用<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.OrganizeInFolder" />属性可以确定是否将支持文件组织在单独的文件夹。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b130-168">
+              <para>If you don't use long file names and your document has supporting files, Microsoft Excel automatically organizes those files in a separate folder. Otherwise, use the <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.OrganizeInFolder" /> property to determine whether supporting files are organized in a separate folder.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

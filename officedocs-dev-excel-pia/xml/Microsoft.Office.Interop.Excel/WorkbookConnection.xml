@@ -1,0 +1,838 @@
+<Type Name="WorkbookConnection" FullName="Microsoft.Office.Interop.Excel.WorkbookConnection">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="0412302ec11fc558839570922b03112869bc8d74" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20581065" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface WorkbookConnection" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WorkbookConnection" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />
+  <TypeSignature Language="VB.NET" Value="Public Interface WorkbookConnection" />
+  <TypeSignature Language="C++ CLI" Value="public interface class WorkbookConnection" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024485-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="3ec38-101">连接是信息的一套从 1st_Excel12 工作簿之外的外部数据源获取数据所需。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="3ec38-101">A connection is a set of information needed to obtain data from an external data source other than an 1st_Excel12 workbook.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="3ec38-102">
+        <para>连接可以存储在 Excel 工作簿中。 工作簿打开时，Excel 将新建的连接，这是作为 connection 对象引用的内存中副本。 Connection 对象包含的服务器的名称和要在该服务器上打开的对象名称等信息。 （可选） 的 connection 对象还可能包括身份验证凭据和/或是传递给服务器并执行的命令 (示例： 若要执行的 SQL Server 的 SELECT 语句。) </para>
+        <para>
+          <b>注意</b>： 该连接的确切形式取决于用于检索数据 – ODBC 连接、 OLEDB 连接的机制和 Web 查询包含不同的信息。</para>
+        <para>A 连接可能还存储在单独的连接文件。 Excel 工作簿中的大部分连接包括指向外部连接文件的指针。 连接文件的清楚地设置为连接文件的扩展名 (*。ODC，*。IQY 等。）并且可能位于用户的本地计算机上或其他已知或受信任的位置，如 WSS （数据连接库） 或其他公司的服务器中。 连接文件启用重复使用连接到同一组织中的多个用户。 网络管理员可更改到后端数据源连接通过更改单个连接文件的整个组织的方式。 连接文件并不总是需要连接到外部数据源时。</para>
+        <para>连接名称是唯一地标识使用它们的工作簿中的连接字符串。    有不是唯一的连接的其他属性。 只要在 Excel 中的公式所需的参数是一个连接，就足以引用该连接，直接 （作为字符串） 的名称或间接 （通过引用的单元格包含一个字符串连接的名称。）</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="3ec38-102">
+          <para>Connections can be stored within an Excel workbook.  When the workbook is opened, Excel creates an in-memory copy of the connection which is refered to as the connection object.  A connection object contains information such as the name of the server and the name of the object to be opened on that server.  Optionally, the connection object may also include authentication credentials and/or a command that is to be passed to the server and executed (example: a SELECT statement to be executed by SQL Server.)  </para>
+          <para>
+            <b>Note</b>: The exact form of the connection depends on the mechanism that is being used to retrieve data – ODBC connections, OLEDB connections, and Web Queries will contain different information.</para>
+          <para>A connection may also be stored in a separate connection file.  Most  connections in an Excel workbook include a pointer to an external connection file.  Connection files have extensions that clearly label them as connection files (*.ODC, *.IQY, etc.) and may be located on the user's local machine or in other well known or trusted locations such as WSS (Data Connection Library), or other corporate servers.  Connection files enable multiple users within the same organization to re-use connections.  Network administrators are able to change the way the entire organization connects to a back-end data source by changing a single connection file.  A connection file is not always required when connecting to an external data source.</para>
+          <para>Connection names are strings that uniquely identify connections within the workbook in which they are used.     There are other properties of a connection that are not unique.  Whenever a formula in Excel takes an argument that is a connection, it will be sufficient to refer to the name of that connection, either directly (as a string) or indirectly (by referring to a cell that contains the connection name as a string.)</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_Default">
+      <MemberSignature Language="C#" Value="public string this { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string _Default" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection._Default" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property _Default As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="3ec38-103">当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象代表 Microsoft Office Excel 应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-103">When used without an object qualifier, this property returns an  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object that represents the Microsoft Office Excel  application.</span>
+          </span>
+          <span data-ttu-id="3ec38-104">如果使用对象识别符，此属性返回值，该值代表指定对象的创建者<b>Application</b>对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-104">When used with an object qualifier, this property returns an <b>Application</b> object that represents the creator of the specified object.</span>
+          </span>
+          <span data-ttu-id="3ec38-105">只读。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-105">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="3ec38-106">
+            <para>您可以与 OLE 自动化对象使用此属性返回该对象的应用程序。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-106">
+              <para>You can use this property with an OLE Automation object to return the application of that object.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="3ec38-107">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-107">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+          </span>
+          <span data-ttu-id="3ec38-108">
+            <b>Integer</b> 类型，只读。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-108">Read-only <b>Integer</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="3ec38-109">
+            <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-109">
+              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.  The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataFeedConnection">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.DataFeedConnection DataFeedConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.DataFeedConnection DataFeedConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.DataFeedConnection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataFeedConnection As DataFeedConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::DataFeedConnection ^ DataFeedConnection { Microsoft::Office::Interop::Excel::DataFeedConnection ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3104)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3104)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.DataFeedConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="3ec38-110">返回一个包含的数据和功能需要连接到数据源的<b>DataFeedConnection</b>对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-110">Returns a <b>DataFeedConnection</b> object that contains the data and functionality needed to connect to data feeds.</span>
+          </span>
+          <span data-ttu-id="3ec38-111">只读</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-111">Read-only</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.WorkbookConnection.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="3ec38-112">删除工作簿连接。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-112">Deletes a workbook connection.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="3ec38-113">
+            <para>使用此方法可删除的外部数据连接。此方法不适用于其他工作簿的链接。</para>
+            <para>删除连接将不删除或移除正在使用该连接的任何对象。 删除连接不会导致任何要从文件系统中删除的连接文件。 如果您编辑任何这些对象以使用另一个连接，所有内容将启动再次使用。</para>
+            <para>使用已删除的连接的对象的行为就好像无法建立连接。 </para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-113">
+              <para>Use this method to delete an external data connection. This method does not apply to links to other workbooks. </para>
+              <para>Deleting a connection will not delete or remove any objects that were using that connection.  Deleting a connection will not cause any of the connection files to be deleted from the file system.  If you edit any of those objects to use another connection, everything will start working again.</para>
+              <para>Objects that use a deleted connection behave as if the connection could not be established.  </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(218)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(218)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(218)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="3ec38-114">返回或设置的简要说明<see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-114">Returns or sets a brief description for a <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> object.</span>
+          </span>
+          <span data-ttu-id="3ec38-115">可读写 <b>String</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-115">Read/write <b>String</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="3ec38-116">
+            <para>中连接属性对话框中，用户可以编辑的连接和/或说明的名称。 更改名称和说明此对话框中的更改这些字段仅在 Excel connection 对象中的。</para>
+            <para>说明的最大大小为 255 个字符。 如果用户指定为超过 255 个字符的连接文件中的说明，说明被截断，以适合 255 个字符限制。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-116">
+              <para>In the Connection Properties dialog box, the user may edit the name of the connection and/or the description.  Changing the name and description in this dialog box changes those fields only within the Excel connection object.</para>
+              <para>The maximum size of a description is 255 characters.  If the user specifies a description within a connection file that is longer than 255 characters, the description is truncate to fit the 255 character limit.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InModel">
+      <MemberSignature Language="C#" Value="public bool InModel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool InModel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.InModel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InModel As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InModel { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3105)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3105)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="3ec38-117">指定<b>WorkbookConnection</b>对象已添加到模型。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-117">Specifies whether or not the <b>WorkbookConnection</b> object has been added to the model.</span>
+          </span>
+          <span data-ttu-id="3ec38-118">
+            <b>Boolean</b>(C# 中<b>bool</b> )只读的。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-118">
+              <b>Boolean</b> (<b>bool</b> in C#) Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="3ec38-119">
+            <para>必须为 false 的旧的连接。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-119">
+              <para>Must be false for legacy connections.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModelConnection">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.ModelConnection ModelConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.ModelConnection ModelConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.ModelConnection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ModelConnection As ModelConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::ModelConnection ^ ModelConnection { Microsoft::Office::Interop::Excel::ModelConnection ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3100)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3100)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.ModelConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="3ec38-120">返回一个对象，包含在 Excel 2013 进行交互和集成的数据模型中引入的新模型连接类型的信息。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-120">Returns an object that contains information for the new Model Connection Type introduced in Excel 2013 to interact with the integrated Data Model.</span>
+          </span>
+          <span data-ttu-id="3ec38-121">只读</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-121">Read-only</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModelTables">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.ModelTables ModelTables { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.ModelTables ModelTables" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.ModelTables" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ModelTables As ModelTables" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::ModelTables ^ ModelTables { Microsoft::Office::Interop::Excel::ModelTables ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3106)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3106)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.ModelTables</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="3ec38-122">返回<see cref="T:Microsoft.Office.Interop.Excel.ModelTables" />对象的特定连接相关联。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-122">Returns a <see cref="T:Microsoft.Office.Interop.Excel.ModelTables" /> object associated with the particular connection.</span>
+          </span>
+          <span data-ttu-id="3ec38-123">只读</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-123">Read-only</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="3ec38-p108">返回或设置工作簿连接对象的名称。可读/写 <b>String</b> 类型。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-p108">Returns or sets the name of the workbook connection object. Read/write <b>String</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ODBCConnection">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.ODBCConnection ODBCConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.ODBCConnection ODBCConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.ODBCConnection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ODBCConnection As ODBCConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::ODBCConnection ^ ODBCConnection { Microsoft::Office::Interop::Excel::ODBCConnection ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2698)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2698)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.ODBCConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="3ec38-126">Retuns ODBC 连接的详细信息指定<see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-126">Retuns the ODBC Connection details for the specified <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> object.</span>
+          </span>
+          <span data-ttu-id="3ec38-127">只读<see cref="T:Microsoft.Office.Interop.Excel.ODBCConnection" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-127">Read-only <see cref="T:Microsoft.Office.Interop.Excel.ODBCConnection" />.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OLEDBConnection">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.OLEDBConnection OLEDBConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.OLEDBConnection OLEDBConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.OLEDBConnection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OLEDBConnection As OLEDBConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::OLEDBConnection ^ OLEDBConnection { Microsoft::Office::Interop::Excel::OLEDBConnection ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2697)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2697)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.OLEDBConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="3ec38-128">Retuns OLEDB 连接的详细信息指定<see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-128">Retuns the OLEDB Connection details for the specified <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> object.</span>
+          </span>
+          <span data-ttu-id="3ec38-129">只读<see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-129">Read-only <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" />.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="3ec38-p111">返回指定对象的父对象。只读。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-p111">Returns the parent object for the specified object. Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ranges">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Ranges Ranges { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Ranges Ranges" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.Ranges" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Ranges As Ranges" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Ranges ^ Ranges { Microsoft::Office::Interop::Excel::Ranges ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2699)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2699)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Ranges</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="3ec38-132">返回的范围为指定的对象的<see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-132">Returns the range of object for the specified <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> object.</span>
+          </span>
+          <span data-ttu-id="3ec38-133">只读<see cref="T:Microsoft.Office.Interop.Excel.Ranges" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-133">Read-only <see cref="T:Microsoft.Office.Interop.Excel.Ranges" />.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Refresh">
+      <MemberSignature Language="C#" Value="public void Refresh ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Refresh() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.WorkbookConnection.Refresh" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Refresh ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Refresh();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1417)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="3ec38-134">刷新工作簿连接。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-134">Refreshes a workbook connection.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="3ec38-135">
+            <para>如果<see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" />属性为<b>false，则</b>不显示对话框， <b>Refresh</b>方法将失败并连接信息不足异常。</para>
+            <para>连接刷新失败的其他连接的刷新操作将没有任何影响。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-135">
+              <para>If the <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> property is <b>False</b>, dialog boxes are not displayed and the <b>Refresh</b> method fails with the Insufficient Connection Information exception.</para>
+              <para>A refresh failure for one connection will not have any impact on refresh operations  for the other connections. </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshWithRefreshAll">
+      <MemberSignature Language="C#" Value="public bool RefreshWithRefreshAll { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RefreshWithRefreshAll" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.RefreshWithRefreshAll" />
+      <MemberSignature Language="VB.NET" Value="Public Property RefreshWithRefreshAll As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RefreshWithRefreshAll { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3102)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3102)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(3102)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="3ec38-136">确定应刷新连接的所有刷新时都执行。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-136">Determines if the connection should be refreshed when refresh all is executed.</span>
+          </span>
+          <span data-ttu-id="3ec38-137">
+            <b>Boolean</b>(<b>bool</b> C# 中)。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-137">
+              <b>Boolean</b> (<b>bool</b> in C#).</span>
+          </span>
+          <span data-ttu-id="3ec38-138">读/写。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-138">Read/Write.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextConnection">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.TextConnection TextConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.TextConnection TextConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.TextConnection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextConnection As TextConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::TextConnection ^ TextConnection { Microsoft::Office::Interop::Excel::TextConnection ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3103)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3103)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.TextConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="3ec38-139">返回<see cref="T:Microsoft.Office.Interop.Excel.TextConnection" />对象，其中包含到文本文件查询的信息。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-139">Returns a <see cref="T:Microsoft.Office.Interop.Excel.TextConnection" /> object that contains the information on a query to a text file.</span>
+          </span>
+          <span data-ttu-id="3ec38-140">只读。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-140">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlConnectionType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlConnectionType Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As XlConnectionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlConnectionType Type { Microsoft::Office::Interop::Excel::XlConnectionType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlConnectionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="3ec38-141">返回工作簿连接类型。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-141">Returns the workbook connection type.</span>
+          </span>
+          <span data-ttu-id="3ec38-142">只读<see cref="T:Microsoft.Office.Interop.Excel.XlConnectionType" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-142">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlConnectionType" />.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorksheetDataConnection">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.WorksheetDataConnection WorksheetDataConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.WorksheetDataConnection WorksheetDataConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.WorksheetDataConnection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorksheetDataConnection As WorksheetDataConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::WorksheetDataConnection ^ WorksheetDataConnection { Microsoft::Office::Interop::Excel::WorksheetDataConnection ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3101)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3101)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorksheetDataConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="3ec38-143">返回一个对象，包含用于从 PowerPivot 模型连接到工作簿如范围、 命名的范围或表内数据的信息。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-143">Returns an object that contains information for a connection from the PowerPivot Model to data within the workbook such as a range, named range, or table.</span>
+          </span>
+          <span data-ttu-id="3ec38-144">只读。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3ec38-144">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
