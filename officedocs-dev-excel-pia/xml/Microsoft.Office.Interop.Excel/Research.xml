@@ -1,0 +1,236 @@
+<Type Name="Research" FullName="Microsoft.Office.Interop.Excel.Research">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="579219ce0a73ea5d61ce8a13164f108eb1c6b5c8" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20584747" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Research" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Research" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Research" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Research" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Research" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000244AC-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>代表 <b>Research</b> 查询的控件。</summary>
+    <remarks>
+      <para>处理<b>搜索</b>查询时，您必须具有一个现有的<b>GUID</b>对应的实时数据源。 如果数据源不可用或不存在，将发生运行时错误。</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Research.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象代表 Microsoft Office Excel 应用程序。 如果使用对象识别符，此属性返回一个代表指定对象的创建者的<b>应用程序</b>对象。 只读。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel._Application" />
+        </value>
+        <remarks>
+          <para>您可以与 OLE 自动化对象使用此属性返回该对象的应用程序。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Research.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回一个 32 位<b>整数</b>，它指示在其中创建此对象的应用程序。 只读。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
+        </value>
+        <remarks>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsResearchService">
+      <MemberSignature Language="C#" Value="public bool IsResearchService (string ServiceID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsResearchService([in]string ServiceID) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Research.IsResearchService(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsResearchService (ServiceID As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsResearchService(System::String ^ ServiceID);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2757)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ServiceID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ServiceID">所需<b>字符串</b>指定标识的信息检索服务的<b>GUID</b>的对象。</param>
+        <summary>指示 ServiceID 参数中指定的<b>GUID</b>是否对应于当前配置的服务。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Research.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回指定对象的父级。 只读。</summary>
+        <value>
+          <b>对象</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Query">
+      <MemberSignature Language="C#" Value="public object Query (string ServiceID, object QueryString, object QueryLanguage, object UseSelection, object LaunchQuery);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Query([in]string ServiceID, [in]object QueryString, [in]object QueryLanguage, [in]object UseSelection, [in]object LaunchQuery) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Research.Query(System.String,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Query (ServiceID As String, Optional QueryString As Object, Optional QueryLanguage As Object, Optional UseSelection As Object, Optional LaunchQuery As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2751)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ServiceID" Type="System.String" />
+        <Parameter Name="QueryString" Type="System.Object" />
+        <Parameter Name="QueryLanguage" Type="System.Object" />
+        <Parameter Name="UseSelection" Type="System.Object" />
+        <Parameter Name="LaunchQuery" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="ServiceID">所需<b>字符串</b>指定标识的信息检索服务的<b>GUID</b> 。</param>
+        <param name="QueryString">可选<b>对象</b>指定的查询字符串。</param>
+        <param name="QueryLanguage">可选<b>对象</b>指定的查询字符串的查询语言。</param>
+        <param name="UseSelection">可选<b>布尔值</b><b>True</b>作为查询字符串中使用当前所选内容。  此对象将替代<paramref name="QueryString" />参数如果设置。 默认值为 <b>False</b> 。</param>
+        <param name="LaunchQuery">可选<b>布尔值</b><b>，则返回 True</b> ，则启动该查询。 <b>False</b>显示范围内搜索指定的信息检索服务的信息检索任务窗格。</param>
+        <summary>指定一个检索查询。</summary>
+        <returns>
+          <b>对象</b>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetLanguagePair">
+      <MemberSignature Language="C#" Value="public object SetLanguagePair (int LanguageFrom, int LanguageTo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object SetLanguagePair([in]int32 LanguageFrom, [in]int32 LanguageTo) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Research.SetLanguagePair(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetLanguagePair (LanguageFrom As Integer, LanguageTo As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ SetLanguagePair(int LanguageFrom, int LanguageTo);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2758)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="LanguageFrom" Type="System.Int32" />
+        <Parameter Name="LanguageTo" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="LanguageFrom">需要<b>整数</b>指定语言翻译的源语言。</param>
+        <param name="LanguageTo">需要<b>整数</b>指定翻译操作的目标语言。</param>
+        <summary>为翻译服务设置语言。</summary>
+        <returns>
+          <b>对象</b>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

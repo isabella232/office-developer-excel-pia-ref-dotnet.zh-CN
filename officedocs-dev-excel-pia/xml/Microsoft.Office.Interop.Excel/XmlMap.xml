@@ -1,0 +1,741 @@
+<Type Name="XmlMap" FullName="Microsoft.Office.Interop.Excel.XmlMap">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="c3b5f447ad7e8151b7dba366715192ac74ad6768" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20583606" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface XmlMap" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XmlMap" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.XmlMap" />
+  <TypeSignature Language="VB.NET" Value="Public Interface XmlMap" />
+  <TypeSignature Language="C++ CLI" Value="public interface class XmlMap" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0002447B-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>代表已添加到工作簿的 XML 映射。</summary>
+    <remarks>
+      <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Excel.XmlMaps.Add(System.String,System.Object)" />方法<see cref="T:Microsoft.Office.Interop.Excel.XmlMaps" />集合添加到工作簿的 XML 映射。</para>
+      <para>导入和导出 XML 数据</para>使用
+      <para><see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Import(System.String,System.Object)" />方法，以从 XML 数据文件的 XML 数据导入到映射到指定<b>XmlMap</b>单元格。<see cref="M:Microsoft.Office.Interop.Excel.XmlMap.ImportXml(System.String,System.Object)" />方法将一个<b>字符串</b>变量的 XML 数据导入。</para>使用
+      <para><see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Export(System.String,System.Object)" />方法从映射到指定<b>XmlMap</b>单元格导出数据。<see cref="M:Microsoft.Office.Interop.Excel.XmlMap.ExportXml(System.String@)" />方法将 XML 数据导出到<b>String</b>变量。</para><para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_Default">
+      <MemberSignature Language="C#" Value="public string this { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string _Default" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap._Default" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property _Default As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdjustColumnWidth">
+      <MemberSignature Language="C#" Value="public bool AdjustColumnWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AdjustColumnWidth" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.AdjustColumnWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property AdjustColumnWidth As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AdjustColumnWidth { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1868)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1868)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1868)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b>如果列宽自动调整为最适合每次刷新指定的查询表或 XML 映射。 <b>False</b>如果列宽不自动调整每次刷新。 默认值为 <b>True</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>最大列宽为三分之二屏幕的宽度。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendOnImport">
+      <MemberSignature Language="C#" Value="public bool AppendOnImport { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AppendOnImport" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.AppendOnImport" />
+      <MemberSignature Language="VB.NET" Value="Public Property AppendOnImport As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AppendOnImport { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2339)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2339)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2339)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b>如果您想要追加到导入新数据或刷新的现有连接时绑定到指定的架构映射的 XML 列表的新行。 <b>False</b>如果您想要覆盖单元格的内容。 默认值为 <b>False</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。 只读。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。 如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 只读<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataBinding">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XmlDataBinding DataBinding { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.XmlDataBinding DataBinding" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.DataBinding" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataBinding As XmlDataBinding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XmlDataBinding ^ DataBinding { Microsoft::Office::Interop::Excel::XmlDataBinding ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2343)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2343)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XmlDataBinding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.XmlDataBinding" />对象，表示与指定的架构映射关联的绑定。 只读。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.XmlMap.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>从工作簿中删除指定的 XML 映射。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Export">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlXmlExportResult Export (string Url, object Overwrite);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.Office.Interop.Excel.XlXmlExportResult Export([in]string Url, [in]object Overwrite) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.XmlMap.Export(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Export (Url As String, Optional Overwrite As Object) As XlXmlExportResult" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1414)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlXmlExportResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Url" Type="System.String" />
+        <Parameter Name="Overwrite" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Url">必需的 <b>字符串</b> 。 路径和文件名导出到 XML 数据文件。</param>
+        <param name="Overwrite">所需<b>Boolean</b>。 设置为<b>True</b>以覆盖中指定的文件<paramref name="URL" />如果文件存在的参数。 默认值，如果<b>False</b>。</param>
+        <summary>将映射到指定的单元格的内容导出<see cref="T:Microsoft.Office.Interop.Excel.XmlMap" />对象的 XML 数据文件。 返回<see cref="T:Microsoft.Office.Interop.Excel.XlXmlExportResult" />。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>使用<see cref="M:Microsoft.Office.Interop.Excel.XmlMap.ExportXml(System.String@)" />方法将映射单元格的内容导出到<b>String</b>变量。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportXml">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlXmlExportResult ExportXml (out string Data);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.Office.Interop.Excel.XlXmlExportResult ExportXml([out] string&amp; Data) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.XmlMap.ExportXml(System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExportXml (ByRef Data As String) As XlXmlExportResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Excel::XlXmlExportResult ExportXml([Runtime::InteropServices::Out] System::String ^ % Data);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2346)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlXmlExportResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Data" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="Data">必需的 <b>字符串</b> 。 要将数据导出到的变量。</param>
+        <summary>将映射到指定的单元格的内容导出<see cref="T:Microsoft.Office.Interop.Excel.XmlMap" />对象的<b>字符串</b>变量。 返回<see cref="T:Microsoft.Office.Interop.Excel.XlXmlExportResult" />。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
+          <para>要映射的单元格的内容导出到 XML 数据文件，使用<see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Export(System.String,System.Object)" />方法。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Import">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlXmlImportResult Import (string Url, object Overwrite);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.Office.Interop.Excel.XlXmlImportResult Import([in]string Url, [in]object Overwrite) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.XmlMap.Import(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Import (Url As String, Optional Overwrite As Object) As XlXmlImportResult" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(917)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlXmlImportResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Url" Type="System.String" />
+        <Parameter Name="Overwrite" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Url">必需的 <b>字符串</b> 。 指向要导入的 XML 数据的路径。 通用命名约定 (UNC) 或统一资源定位器 (URL) 格式中，可以指定的路径。 该文件可以是一个 XML 数据文件或有效的 Office XML 数据源连接 (.uxdc) 文件。</param>
+        <param name="Overwrite">可选的<b>对象</b>。 设置为<b>True</b>以覆盖现有数据。 设置为<b>False</b> ，以追加到现有数据。 默认值为 <b>False</b> 。</param>
+        <summary>将数据从指定的 XML 数据文件导入到已经映射的单元格为指定<see cref="T:Microsoft.Office.Interop.Excel.XmlMap" />对象。 返回<see cref="T:Microsoft.Office.Interop.Excel.XlXmlImportResult" />。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportXml">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlXmlImportResult ImportXml (string XmlData, object Overwrite);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.Office.Interop.Excel.XlXmlImportResult ImportXml([in]string XmlData, [in]object Overwrite) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.XmlMap.ImportXml(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ImportXml (XmlData As String, Optional Overwrite As Object) As XlXmlImportResult" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2344)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlXmlImportResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="XmlData" Type="System.String" />
+        <Parameter Name="Overwrite" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="XmlData">必需的 <b>字符串</b> 。 包含要导入的 XML 数据的字符串。</param>
+        <param name="Overwrite">可选的<b>布尔</b>值。 指定是否覆盖当前映射到指定的 XML 映射的单元格的内容。 设置为<b>True</b>以覆盖单元格;设置为<b>False</b> ，将数据追加到现有的范围。 如果未指定此参数的当前值<see cref="P:Microsoft.Office.Interop.Excel.XmlMap.AppendOnImport" />属性的 XML 映射决定是否或不覆盖单元格的内容。</param>
+        <summary>将 XML 数据从<b>String</b>变量导入到已经映射的单元格为指定<see cref="T:Microsoft.Office.Interop.Excel.XmlMap" />对象。 返回<see cref="T:Microsoft.Office.Interop.Excel.XlXmlImportResult" />常量。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
+          <para>要导入映射到特定的架构映射的单元格的 XML 数据文件的内容，请使用<see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Import(System.String,System.Object)" /><b>XmlMap</b>对象的方法。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsExportable">
+      <MemberSignature Language="C#" Value="public bool IsExportable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsExportable" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.IsExportable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsExportable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsExportable { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2334)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2334)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<b>True</b> ，如果可以使用 Microsoft Excel<see cref="T:Microsoft.Office.Interop.Excel.XPath" />中导出 XML 数据和如果可以导出映射到指定的架构映射的所有 XML 列表的指定的架构映射的对象。 只读 <b>Boolean</b>。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置用于唯一标识工作簿中的映射的友好名称。 可读写 <b>String</b>。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回指定对象的父对象。只读。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreserveColumnFilter">
+      <MemberSignature Language="C#" Value="public bool PreserveColumnFilter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PreserveColumnFilter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.PreserveColumnFilter" />
+      <MemberSignature Language="VB.NET" Value="Public Property PreserveColumnFilter As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PreserveColumnFilter { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2337)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2337)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2337)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置是否刷新指定的 XML 映射时保留筛选。 可读写 <b>Boolean</b>。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreserveNumberFormatting">
+      <MemberSignature Language="C#" Value="public bool PreserveNumberFormatting { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PreserveNumberFormatting" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.PreserveNumberFormatting" />
+      <MemberSignature Language="VB.NET" Value="Public Property PreserveNumberFormatting As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PreserveNumberFormatting { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2338)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2338)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2338)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b>如果刷新的架构映射时，将被保留的数字格式映射到指定的 XML 架构映射的单元格。 默认值为 <b>False</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RootElementName">
+      <MemberSignature Language="C#" Value="public string RootElementName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RootElementName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.RootElementName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RootElementName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RootElementName { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2340)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2340)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回一个 <b>String</b> 类型的数值，该数值表示指定 XML 架构映射的根元素的名称。只读。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RootElementNamespace">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XmlNamespace RootElementNamespace { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.XmlNamespace RootElementNamespace" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.RootElementNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RootElementNamespace As XmlNamespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XmlNamespace ^ RootElementNamespace { Microsoft::Office::Interop::Excel::XmlNamespace ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2341)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2341)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XmlNamespace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.XmlNamespace" />对象，表示指定的 XML 架构映射的根元素。 只读。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveDataSourceDefinition">
+      <MemberSignature Language="C#" Value="public bool SaveDataSourceDefinition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SaveDataSourceDefinition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.SaveDataSourceDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Property SaveDataSourceDefinition As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SaveDataSourceDefinition { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2336)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2336)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2336)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b>如果数据源指定的 XML 架构映射的定义保存与工作簿。 默认值为 <b>True</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Schemas">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XmlSchemas Schemas { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.XmlSchemas Schemas" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.Schemas" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Schemas As XmlSchemas" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XmlSchemas ^ Schemas { Microsoft::Office::Interop::Excel::XmlSchemas ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2342)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2342)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XmlSchemas</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.XmlSchemas" />集合，代表架构的指定<see cref="T:Microsoft.Office.Interop.Excel.XmlMap" />对象包含。 只读。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
+          <para>返回的<b>XmlSchemas</b>集合中的第一项是用作指定 XML 架构映射的根元素的架构。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowImportExportValidationErrors">
+      <MemberSignature Language="C#" Value="public bool ShowImportExportValidationErrors { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowImportExportValidationErrors" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.ShowImportExportValidationErrors" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowImportExportValidationErrors As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowImportExportValidationErrors { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2335)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2335)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2335)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>当数据通过指定的 XML 架构映射导入或导出时，返回或设置是否显示详细说明架构有效性验证错误的对话框。默认值为 <b>False</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkbookConnection">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.WorkbookConnection WorkbookConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.WorkbookConnection WorkbookConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.WorkbookConnection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorkbookConnection As WorkbookConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::WorkbookConnection ^ WorkbookConnection { Microsoft::Office::Interop::Excel::WorkbookConnection ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2544)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2544)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>为指定的新连接 Retuns<see cref="T:Microsoft.Office.Interop.Excel.XmlMap" />对象。 只读。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

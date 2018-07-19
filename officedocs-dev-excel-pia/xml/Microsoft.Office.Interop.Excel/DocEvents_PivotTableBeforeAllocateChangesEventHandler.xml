@@ -1,0 +1,48 @@
+<Type Name="DocEvents_PivotTableBeforeAllocateChangesEventHandler" FullName="Microsoft.Office.Interop.Excel.DocEvents_PivotTableBeforeAllocateChangesEventHandler">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="d38372ce72cfb245a02690090acf89e240d4e4d5" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20580624" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public delegate void DocEvents_PivotTableBeforeAllocateChangesEventHandler(PivotTable TargetPivotTable, int ValueChangeStart, int ValueChangeEnd, out bool Cancel);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DocEvents_PivotTableBeforeAllocateChangesEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.DocEvents_PivotTableBeforeAllocateChangesEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DocEvents_PivotTableBeforeAllocateChangesEventHandler(TargetPivotTable As PivotTable, ValueChangeStart As Integer, ValueChangeEnd As Integer, ByRef Cancel As Boolean)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DocEvents_PivotTableBeforeAllocateChangesEventHandler(PivotTable ^ TargetPivotTable, int ValueChangeStart, int ValueChangeEnd, [Runtime::InteropServices::Out] bool % Cancel);" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(16)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="TargetPivotTable" Type="Microsoft.Office.Interop.Excel.PivotTable" />
+    <Parameter Name="ValueChangeStart" Type="System.Int32" />
+    <Parameter Name="ValueChangeEnd" Type="System.Int32" />
+    <Parameter Name="Cancel" Type="System.Boolean&amp;" RefType="out" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="TargetPivotTable">包含要应用的更改的数据透视表。</param>
+    <param name="ValueChangeStart">在关联中的第一个更改的索引<see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />集合。 通过指定的索引<see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" />属性<see cref="T:Microsoft.Office.Interop.Excel.ValueChange" />对象在<see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />集合。</param>
+    <param name="ValueChangeEnd">上次更改在关联的索引<see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />集合。 通过指定的索引<see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" />属性<see cref="T:Microsoft.Office.Interop.Excel.ValueChange" />对象在<see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />集合。</param>
+    <param name="Cancel">
+      <b>false</b>时，事件发生。 如果事件过程将此参数设置为<b>true</b>，则所做的更改不会应用于数据透视表，并且所有编辑都会丢失。</param>
+    <summary>用于添加事件处理程序<b>委托</b>类型<see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableBeforeAllocateChanges" />事件。 <b>PivotTableBeforeAllocateChanges</b>事件发生之前更改应用于数据透视表。</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

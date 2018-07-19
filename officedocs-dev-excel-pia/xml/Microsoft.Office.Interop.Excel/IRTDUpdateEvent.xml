@@ -1,0 +1,123 @@
+<Type Name="IRTDUpdateEvent" FullName="Microsoft.Office.Interop.Excel.IRTDUpdateEvent">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="1f85b1fa3e25fce2babaf3e1ea57dc694f4a45e5" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20583949" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface IRTDUpdateEvent" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRTDUpdateEvent" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.IRTDUpdateEvent" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRTDUpdateEvent" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IRTDUpdateEvent" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("A43788C1-D91B-11D3-8F39-00C04F3651B8")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>代表实时数据更新事件。</summary>
+    <remarks>
+      <para>若要实例化或返回一个<b>IRTDUpdateEvent</b>对象，一个变量声明为<b>IRTDUpdateEvent</b>对象，然后将该变量用作回调对象。</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Disconnect">
+      <MemberSignature Language="C#" Value="public void Disconnect ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Disconnect() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.Disconnect" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Disconnect ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Disconnect();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>指示实时数据服务器 (RTD) 来断开指定<see cref="T:Microsoft.Office.Interop.Excel.IRTDUpdateEvent" />对象。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeartbeatInterval">
+      <MemberSignature Language="C#" Value="public int HeartbeatInterval { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 HeartbeatInterval" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeartbeatInterval As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HeartbeatInterval { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置一个<b>整数</b>的实时数据更新之间的间隔。 为可读/写属性。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>设置<see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" />属性设为-1 将导致<see cref="M:Microsoft.Office.Interop.Excel.IRtdServer.Heartbeat" />不能调用的方法。</para>
+          <para>因此心跳间隔不能少于 15,000 毫秒标准的 15 秒超时而设置的
+            <b>注释</b>。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateNotify">
+      <MemberSignature Language="C#" Value="public void UpdateNotify ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateNotify() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.UpdateNotify" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UpdateNotify ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateNotify();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>实时数据 (RTD) 服务器使用此方法通知 Microsoft Excel 已收到新数据。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,183 @@
+<Type Name="ColorScaleCriterion" FullName="Microsoft.Office.Interop.Excel.ColorScaleCriterion">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="24fc2abe615803db23b08c339fdd812ffa384856" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20580540" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface ColorScaleCriterion" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ColorScaleCriterion" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ColorScaleCriterion" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ColorScaleCriterion" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024495-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>代表颜色格式条件格式的最小、中点或最大阈值的条件。</summary>
+    <remarks>
+      <para>每个<b>ColorScaleCriterion</b>属于<see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" />集合。使用<b>ColorScaleCriteria</b>(<paramref name="index" />)，返回单个条件。</para>
+      <para>可以设置<see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" />， <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Value" />，和<see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.FormatColor" />的色阶的每个阈值。</para>
+      <para />
+    </remarks>
+    <example>
+      <para>下面的代码示例创建的号码范围，然后应用于该区域的两个色阶条件格式规则。最小阈值的颜色然后分配为红色，并最大阈值，为蓝色通过索引到<see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" />来设置单个条件的集合。</para>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName="FormatColor">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.FormatColor FormatColor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.FormatColor FormatColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.FormatColor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FormatColor As FormatColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::FormatColor ^ FormatColor { Microsoft::Office::Interop::Excel::FormatColor ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2717)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2717)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.FormatColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.FormatColor" />对象，它指定分配给色阶条件格式的阈值的颜色。 只读。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" />
+        </value>
+        <remarks>
+          <para>您可以通过使用最小、 中点或最大阈值的颜色设置为任何自定义颜色<see cref="P:Microsoft.Office.Interop.Excel.FormatColor.Color" />属性;使用或<see cref="P:Microsoft.Office.Interop.Excel.FormatColor.ThemeColor" />属性。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="public int Index { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Index" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(486)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(486)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回一个<b>整数</b>值，该值代表条件的阈值。 只读。</summary>
+        <value>
+          <b>Integer</b>
+        </value>
+        <remarks>
+          <para>两个色阶条件格式规则，此属性将返回的最小阈值"1"和"2"的最大阈值的值。使用色阶规则时, 的值将"1"的最小值"2"的中点，并最大阈值"3"。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlConditionValueTypes Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlConditionValueTypes Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As XlConditionValueTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlConditionValueTypes Type { Microsoft::Office::Interop::Excel::XlConditionValueTypes get(); void set(Microsoft::Office::Interop::Excel::XlConditionValueTypes value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlConditionValueTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回的常量之一<see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" />确定枚举，指定数据条或颜色的阈值值如何扩展条件格式。 只读。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" />
+        </value>
+        <remarks>
+          <para>键入为数据条或彩色的阈值的范围可以是数字、 %、 公式或百分点值。设置为百分点值的类型将使用百分点值函数在 Excel 中确定的阈值。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public object Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置的最小、 中点或色阶条件格式的最大阈值。 为可读/写属性。</summary>
+        <value>
+          <b>对象</b>
+        </value>
+        <remarks>
+          <para>您可以设置值才<see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" />的条件格式的属性设置为以下常量之一： <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueNumber" />， <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercent" />， <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercentile" />，或<see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueFormula" />。</para>
+          <para>如果阈值的类型是一个公式，您可以为<b>字符串</b>来设置公式。该公式必须返回一个号码。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

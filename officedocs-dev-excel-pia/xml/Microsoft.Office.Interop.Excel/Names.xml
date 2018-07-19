@@ -1,0 +1,308 @@
+<Type Name="Names" FullName="Microsoft.Office.Interop.Excel.Names">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="a76d5115c800138621098c928ea18e19669180e4" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20584726" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Names : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Names implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Names" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Names&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Names : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000208B8-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>所有的集合<see cref="T:Microsoft.Office.Interop.Excel.Name" />应用程序或工作簿中的对象。 每个<b>Name</b>对象代表单元格区域的定义的名称。 名称可以是任一内置名称 — 例如数据库、 Print_Area 和 Auto_Open — 或自定义的名称。</summary>
+    <remarks>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Names" />属性可返回<b>名称</b>集合。</para>使用
+      <para><see cref="M:Microsoft.Office.Interop.Excel.Names.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法，以创建一个名称并将其添加到集合。<b>Add</b>方法的<paramref name="RefersTo" />参数必须指定以 A1 样式表示法，包括美元符号 （$），在适当的位置。例如，如果工作表 Sheet1 上所选单元格 A10 和使用定义名称<paramref name="RefersTo" />参数"= sheet1 ！A1:B1"的新名称实际引用 a10: b10 （因为指定的相对引用）。若要指定绝对引用，请使用"= sheet1 ！ $A$ 1: $B$ 1"。</para><para>使用<b>名称</b>(<paramref name="index" />)，其中<paramref name="index" />名称索引号或已定义的名称，可返回一个<b>Name</b>对象。</para><para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_Default">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Name _Default (object Index, object IndexLocal, object RefersTo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.Name _Default([in]object Index, [in]object IndexLocal, [in]object RefersTo) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Names._Default(System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function _Default (Optional Index As Object, Optional IndexLocal As Object, Optional RefersTo As Object) As Name" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Name</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+        <Parameter Name="IndexLocal" Type="System.Object" />
+        <Parameter Name="RefersTo" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">To be added.</param>
+        <param name="IndexLocal">To be added.</param>
+        <param name="RefersTo">To be added.</param>
+        <summary>仅供内部使用。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Name Add (object Name, object RefersTo, object Visible, object MacroType, object ShortcutKey, object Category, object NameLocal, object RefersToLocal, object CategoryLocal, object RefersToR1C1, object RefersToR1C1Local);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.Name Add([in]object Name, [in]object RefersTo, [in]object Visible, [in]object MacroType, [in]object ShortcutKey, [in]object Category, [in]object NameLocal, [in]object RefersToLocal, [in]object CategoryLocal, [in]object RefersToR1C1, [in]object RefersToR1C1Local) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Names.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(181)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Name</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Name" Type="System.Object" />
+        <Parameter Name="RefersTo" Type="System.Object" />
+        <Parameter Name="Visible" Type="System.Object" />
+        <Parameter Name="MacroType" Type="System.Object" />
+        <Parameter Name="ShortcutKey" Type="System.Object" />
+        <Parameter Name="Category" Type="System.Object" />
+        <Parameter Name="NameLocal" Type="System.Object" />
+        <Parameter Name="RefersToLocal" Type="System.Object" />
+        <Parameter Name="CategoryLocal" Type="System.Object" />
+        <Parameter Name="RefersToR1C1" Type="System.Object" />
+        <Parameter Name="RefersToR1C1Local" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Name">可选的<b>对象</b>。 如果使用<paramref name="NameLocal" />未指定。 要用作名称的文本。 名称不能包含空格，并且不能像单元格引用。</param>
+        <param name="RefersTo">可选的<b>对象</b>。 必需，除非其他<paramref name="RefersTo" />指定参数。 介绍什么 （使用 A1 样式表示法） 名称的引用。 <b>注释</b>如果引用不存在，则返回 nothing。</param>
+        <param name="Visible">可选的<b>对象</b>。 <b>True</b>通常定义名称。 <b>False</b>可以定义为隐藏名称的名称 （即不出现在定义名称、 粘贴名称或 Goto 对话框中）。 默认值为 <b>True</b> 。</param>
+        <param name="MacroType">可选的<b>对象</b>。 宏类型下, 表中所示。（也称为<b>Sub</b>过程） ValueMeaning1User 定义的函数 （<b>Function</b>过程） 2Macro 3 或 omittedNone （即，该名称不引用用户定义的函数或宏）</param>
+        <param name="ShortcutKey">可选的<b>对象</b>。 宏的快捷键。 必须是单个字母，如"z"或"Z"。 仅适用于命令宏。</param>
+        <param name="Category">可选的<b>对象</b>。 宏或函数的类别如果<paramref name="MacroType" />是 1 或 2。 类别是在函数向导中使用。 可以通过数 （从 1 开始） 或通过名称 （用宏语言） 来引用现有类别。 如果指定的类别尚不存在，Microsoft Excel 将创建新类别。</param>
+        <param name="NameLocal">可选的<b>对象</b>。 如果使用<paramref name="Name" />未指定。 要用作 （用用户语言） 的名称的文本。 名称不能包含空格，并且不能像单元格引用。</param>
+        <param name="RefersToLocal">可选的<b>对象</b>。 必需，除非其他<paramref name="RefersTo" />指定参数。 介绍名称 （在使用 A1 样式表示法以用户语言） 的引用。</param>
+        <param name="CategoryLocal">可选的<b>对象</b>。 如果使用<paramref name="Category" />未指定。 标识用户语言的自定义函数的类别的文本。</param>
+        <param name="RefersToR1C1">可选的<b>对象</b>。 必需，除非其他<paramref name="RefersTo" />指定参数。 介绍什么 （使用 R1C1 样式记号） 名称的引用。</param>
+        <param name="RefersToR1C1Local">可选的<b>对象</b>。 必需，除非其他<paramref name="RefersTo" />指定参数。 介绍名称所引用的内容 （使用 R1C1 样式表示法的用户的语言）。</param>
+        <summary>定义一个新名称。 返回<see cref="T:Microsoft.Office.Interop.Excel.Name" />对象。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Names.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Names.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回集合中对象的数目。 <b>Integer</b> 类型，只读。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Names.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。 如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 只读<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Names.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Name Item (object Index, object IndexLocal, object RefersTo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.Name Item([in]object Index, [in]object IndexLocal, [in]object RefersTo) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Names.Item(System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Item (Optional Index As Object, Optional IndexLocal As Object, Optional RefersTo As Object) As Name" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(170)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Name</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+        <Parameter Name="IndexLocal" Type="System.Object" />
+        <Parameter Name="RefersTo" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">可选的<b>对象</b>。 要返回的定义名称的名称或编号。</param>
+        <param name="IndexLocal">可选的<b>对象</b>。 在语言的用户定义的名称的名称。 如果您使用此参数，将不转换任何名称。</param>
+        <param name="RefersTo">可选的<b>对象</b>。 名称所引用的内容。 此参数用于标识一个名称，通过它的引用。</param>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Excel.Name" />对象从<see cref="T:Microsoft.Office.Interop.Excel.Names" />集合。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>您必须指定一个，且只有一个这三个参数。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Names.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回指定对象的父对象。只读。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
