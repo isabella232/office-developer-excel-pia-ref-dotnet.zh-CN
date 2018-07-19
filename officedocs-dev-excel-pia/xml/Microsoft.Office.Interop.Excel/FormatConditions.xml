@@ -1,0 +1,514 @@
+<Type Name="FormatConditions" FullName="Microsoft.Office.Interop.Excel.FormatConditions">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="4ea44a9883870de6c0c9f822551e19d40e34f00d" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20587512" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface FormatConditions : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FormatConditions implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.FormatConditions" />
+  <TypeSignature Language="VB.NET" Value="Public Interface FormatConditions&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class FormatConditions : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024424-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>代表一个区域内所有条件格式的集合。</summary>
+    <remarks>
+      <para>
+        <b>FormatConditions</b>集合可包含三个条件格式。每种格式由<see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" />对象。</para>使用
+      <para><see cref="P:Microsoft.Office.Interop.Excel.Range.FormatConditions" />属性可返回<b>FormatConditions</b>对象。使用<see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" />方法创建一个新的条件格式，并使用<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" />方法更改现有条件格式。</para>如果您尝试创建一个区域内的三个以上条件格式
+      <para>， <b>Add</b>方法将失败。如果一个区域有三种格式，您可以使用<b>Modify</b>方法更改某个格式，或者您可以使用<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" />方法删除格式，然后使用<b>Add</b>方法创建新的格式。</para><para>有关条件格式的详细信息，请参阅<see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" />对象。</para><para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_Default">
+      <MemberSignature Language="C#" Value="public object this[object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object _Default(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.FormatConditions._Default(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property _Default(Index As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::Object ^] { System::Object ^ get(System::Object ^ Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">To be added.</param>
+        <summary>仅供内部使用。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public object Add (Microsoft.Office.Interop.Excel.XlFormatConditionType Type, object Operator, object Formula1, object Formula2, object String, object TextOperator, object DateOperator, object ScopeType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Add([in]valuetype Microsoft.Office.Interop.Excel.XlFormatConditionType Type, [in]object Operator, [in]object Formula1, [in]object Formula2, [in]object String, [in]object TextOperator, [in]object DateOperator, [in]object ScopeType) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Type As XlFormatConditionType, Optional Operator As Object, Optional Formula1 As Object, Optional Formula2 As Object, Optional String As Object, Optional TextOperator As Object, Optional DateOperator As Object, Optional ScopeType As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(181)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Interop.Excel.XlFormatConditionType" />
+        <Parameter Name="Operator" Type="System.Object" />
+        <Parameter Name="Formula1" Type="System.Object" />
+        <Parameter Name="Formula2" Type="System.Object" />
+        <Parameter Name="String" Type="System.Object" />
+        <Parameter Name="TextOperator" Type="System.Object" />
+        <Parameter Name="DateOperator" Type="System.Object" />
+        <Parameter Name="ScopeType" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Type">. (<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />. 指定条件格式是基于单元格值还是基于表达式。</param>
+        <param name="Operator">条件格式运算符。 可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />常量： <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlBetween" />， <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlEqual" />， <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlGreater" />， <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlGreaterEqual" />， <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlLess" />， <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlLessEqual" />， <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotBetween" />，或<see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotEqual" />。 如果<paramref name="Type" />是<see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlExpression" />，键入<paramref name="Operator" />参数被忽略。</param>
+        <param name="Formula1">值或与条件格式的表达式。 可以是以常量值、 一个<b>String</b>值、 单元格引用或公式。</param>
+        <param name="Formula2">值或表达式的条件的第二部分相关联的格式时<paramref name="Operator" />是<see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlBetween" />或<see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotBetween" />（否则，则忽略此参数）。 可以是以常量值、 一个 string 值、 单元格引用或公式。</param>
+        <param name="String">To be added.</param>
+        <param name="TextOperator">To be added.</param>
+        <param name="DateOperator">To be added.</param>
+        <param name="ScopeType">To be added.</param>
+        <summary>添加新的条件格式。</summary>
+        <returns>A<see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" />对象，表示新的条件格式。</returns>
+        <remarks>
+          <para>不能定义范围内的三个以上条件格式。使用<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" />方法，以修改现有条件格式，或使用<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" />方法删除之前添加一个新的现有格式。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAboveAverage">
+      <MemberSignature Language="C#" Value="public object AddAboveAverage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object AddAboveAverage() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.FormatConditions.AddAboveAverage" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddAboveAverage () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ AddAboveAverage();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2621)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>返回一个新<see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" />对象，它代表指定区域条件格式规则。</summary>
+        <returns>
+          <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" />对象</returns>
+        <remarks>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" />对象用于在单元格区域中查找高于或低于平均值或标准偏差的值。例如，您可以每年的绩效考核中找到上述平均业绩的人员，或者查找制造低于质量评级中的两个标准偏差的材料。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddColorScale">
+      <MemberSignature Language="C#" Value="public object AddColorScale (int ColorScaleType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object AddColorScale([in]int32 ColorScaleType) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.FormatConditions.AddColorScale(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddColorScale (ColorScaleType As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ AddColorScale(int ColorScaleType);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2616)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ColorScaleType" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ColorScaleType">色阶的类型。</param>
+        <summary>返回一个新<see cref="T:Microsoft.Office.Interop.Excel.ColorScale" />对象，它代表条件格式规则的使用单元格颜色渐变来表示选定范围中包含的单元格的值相对差异。</summary>
+        <returns>
+          <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" />对象</returns>
+        <remarks>
+          <para>色阶是直观指南可帮助您了解数据分发和变体。将颜色范围可帮助您确定使用颜色变体的相对差异给定范围内的单元格的值。不同的颜色和颜色之间的渐变表示单元格的值的差异。例如，在色阶，您可以指定具有最高的相对数据值的单元格为绿色、 中间值的单元格为黄色，且具有最小值的单元格红色。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddDatabar">
+      <MemberSignature Language="C#" Value="public object AddDatabar ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object AddDatabar() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.FormatConditions.AddDatabar" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddDatabar () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ AddDatabar();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2618)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Databar" />对象，它代表数据条条件格式规则指定区域。</summary>
+        <returns>
+          <see cref="T:Microsoft.Office.Interop.Excel.Databar" />对象</returns>
+        <remarks>
+          <para>数据条可帮助您看到相对于其他单元格的单元格的值。数据条长度的代表单元格中的值。长条形图表示较高的值，短的数据条表示较小的值。数据条很有用中探索更高版本和较低的数值，尤其是具有大量数据，如顶部和底部在假日销售玩具销售报表。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddIconSetCondition">
+      <MemberSignature Language="C#" Value="public object AddIconSetCondition ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object AddIconSetCondition() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.FormatConditions.AddIconSetCondition" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddIconSetCondition () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ AddIconSetCondition();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2619)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>返回一个新<see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" />对象代表图标集指定区域条件格式规则。</summary>
+        <returns>
+          <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" />对象</returns>
+        <remarks>
+          <para>使用图标集以便进行批注和三到五个类别分隔阈值到分类数据。每个图标表示一系列值。例如，3 箭头图标集中，向上箭头红色代表较高值、 黄色侧箭头代表中间值，和向下箭头的绿色代表较低值。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTop10">
+      <MemberSignature Language="C#" Value="public object AddTop10 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object AddTop10() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.FormatConditions.AddTop10" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddTop10 () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ AddTop10();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2620)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Top10" />对象，它代表指定区域条件格式规则。</summary>
+        <returns>
+          <see cref="T:Microsoft.Office.Interop.Excel.Top10" />对象</returns>
+        <remarks>
+          <para>使用<see cref="T:Microsoft.Office.Interop.Excel.Top10" />对象，您可以根据您指定的截止值的单元格区域中找到最小值。例如，您可以在区域报表中，底部 15%的客户调查中的产品或部门人员分析中的顶部 25 薪水找到前五个销售产品。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddUniqueValues">
+      <MemberSignature Language="C#" Value="public object AddUniqueValues ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object AddUniqueValues() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.FormatConditions.AddUniqueValues" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddUniqueValues () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ AddUniqueValues();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2622)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>返回一个新<see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" />对象，它代表指定区域条件格式规则。</summary>
+        <returns>
+          <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" />对象</returns>
+        <remarks>
+          <para>您可以使用<see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" />对象快速显现包含唯一或重复值的单元格。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.FormatConditions.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.FormatConditions.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回集合中对象的数目。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.FormatConditions.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.FormatConditions.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>删除对象。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.FormatConditions.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public object Item (object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Item([in]object Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.FormatConditions.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Item (Index As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Item(System::Object ^ Index);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(170)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">所需的<b>对象</b>。 对象的索引号。</param>
+        <summary>从集合中返回一个对象。</summary>
+        <returns>
+          <b>对象</b>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.FormatConditions.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回指定对象的父对象。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
