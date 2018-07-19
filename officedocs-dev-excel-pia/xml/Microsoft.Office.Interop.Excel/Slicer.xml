@@ -1,0 +1,1320 @@
+<Type Name="Slicer" FullName="Microsoft.Office.Interop.Excel.Slicer">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="eacfd0890002beb17c916870ea77d7aa5ba1db4b" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20587666" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Slicer" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Slicer" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Slicer" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Slicer" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Slicer" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000244C8-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="10f50-101">代表工作簿中的一个切片器。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="10f50-101">Represents a slicer in a workbook.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="10f50-102">
+        <para>每个<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />对象代表工作簿中的一个切片器。使用切片器筛选数据透视表报表或 OLAP 数据源中的数据。</para>
+        <para>使用<see cref="M:Microsoft.Office.Interop.Excel.Slicers.Add" />方法添加<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />对象传递给<see cref="T:Microsoft.Office.Interop.Excel.Slicers" />集合。访问<see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" />对象表示切片器，使用中的当前所选的按钮<see cref="P:Microsoft.Office.Interop.Excel.Slicer.ActiveItem" />属性<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />对象。</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="10f50-102">
+          <para>Each <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> object represents a slicer in a workbook. Slicers are used to filter data in PivotTable reports or OLAP data sources.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel.Slicers.Add" /> method to add a <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> object to the <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> collection. To access the <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> object that represents the currently selected button in a slicer, use the <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ActiveItem" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> object.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ActiveItem">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.SlicerItem ActiveItem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.SlicerItem ActiveItem" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.ActiveItem" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveItem As SlicerItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::SlicerItem ^ ActiveItem { Microsoft::Office::Interop::Excel::SlicerItem ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2988)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2988)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.SlicerItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="10f50-103">返回<see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" />对象，表示当前正在关注点指定的切片器的切片器按钮。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-103">Returns a <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> object that represents the slicer button that is currently in focus for the specified slicer.</span>
+          </span>
+          <span data-ttu-id="10f50-104">只读。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-104">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="10f50-105">
+            <para>
+              <b>ActiveItem</b>属性将返回<b>SlicerItem</b>对象时指定的切片器有焦点，并且活动控件是一个切片器中的按钮 （例如，用户可以导航中使用处于此状态键盘切片器按钮）。</para>
+            <para>， <b>ActiveItem</b>属性将返回<b>Nothing</b> （中的空引用 (在 Visual Basic 中为 Nothing) C#） 在以下情况下：</para>
+            <list type="bullet">
+              <item>
+                <description>指定的切片器没有的焦点 （未选中或处于活动状态）。</description>
+              </item>
+              <item>
+                <description>指定的切片器有焦点，并且选定整个切片器本身 （例如，用户可以移动整个切片器在此状态下使用键盘）。</description>
+              </item>
+              <item>
+                <description>指定的切片器有焦点，并且活动控件是切片器的标头中的<b>清除筛选器</b>按钮。</description>
+              </item>
+            </list>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-105">
+              <para>The <b>ActiveItem</b> property will return a <b>SlicerItem</b> object when the specified slicer has focus and the active control is a button within the slicer (for example, the user can navigate the buttons within the slicer with the keyboard in this state).</para>
+              <para>The <b>ActiveItem</b> property will return <b>Nothing</b> (a null reference (Nothing in Visual Basic) in C#) under the following circumstances:</para>
+              <list type="bullet">
+                <item>
+                  <description>The specified slicer does not have focus (is not selected or active).</description>
+                </item>
+                <item>
+                  <description>The specified slicer has focus and the whole slicer itself is selected (for example, the user can move the whole slicer around using the keyboard in this state).</description>
+                </item>
+                <item>
+                  <description>The specified slicer has focus and the active control is the <b>Clear Filter</b> button in the header of the slicer.</description>
+                </item>
+              </list>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="10f50-106">当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-106">When used without an object qualifier, this property returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+          </span>
+          <span data-ttu-id="10f50-107">如果使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />值，该值代表指定对象的创建者的对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-107">When used with an object qualifier, this property returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the creator of the specified object.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="10f50-108">
+            <see cref="T:Microsoft.Office.Interop.Excel.Application" />对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-108">An <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="10f50-109">
+            <para>只读的。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-109">
+              <para>Read-only.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Caption">
+      <MemberSignature Language="C#" Value="public string Caption { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Caption" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Caption" />
+      <MemberSignature Language="VB.NET" Value="Public Property Caption As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Caption { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(139)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(139)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(139)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="10f50-110">获取或设置指定的切片器的标题。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-110">Gets or sets the caption of the specified slicer.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="10f50-111">指定的切片器的标题。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-111">The caption of the specified slicer.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="10f50-112">
+            <para>读/写。</para>为指定的值
+          <para><see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" />切片器的标头中显示属性。如果<see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" />属性未指定，则 Excel 将使用的值<see cref="P:Microsoft.Office.Interop.Excel.PivotField.Caption" />属性基础<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />对象。</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-112">
+              <para>Read/write.</para>
+              <para>The value specified for the <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> property is displayed in the header of the slicer. If the <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> property is not specified, Excel uses the value of the <see cref="P:Microsoft.Office.Interop.Excel.PivotField.Caption" /> property of the underlying <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> object.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnWidth">
+      <MemberSignature Language="C#" Value="public double ColumnWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ColumnWidth" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property ColumnWidth As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ColumnWidth { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(242)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(242)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(242)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="10f50-113">获取或设置的宽度，以磅为单位的切片器中的每个列。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-113">Gets or sets the width, in points, of each column in the slicer.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="10f50-114">以磅为单位的切片器中的每个列的宽度。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-114">The width, in points, of each column in the slicer.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="10f50-115">
+            <para>读/写。</para>
+            <para>
+              <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" />属性<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />对象会自动调整的值根据<see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" />属性和<see cref="P:Microsoft.Office.Interop.Excel.Slicer.NumberOfColumns" />属性。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-115">
+              <para>Read/write.</para>
+              <para>The <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> object is automatically adjusted based on the value of the <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" /> property and the <see cref="P:Microsoft.Office.Interop.Excel.Slicer.NumberOfColumns" /> property.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy">
+      <MemberSignature Language="C#" Value="public void Copy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Copy() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Slicer.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Copy ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Copy();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(551)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="10f50-116">将指定的切片器复制到剪贴板。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-116">Copies the specified slicer to the clipboard.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="10f50-117">获取一个指示在其中创建此对象的应用程序的 32 位<b>整数</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-117">Gets a 32-bit <b>integer</b> that indicates the application in which this object was created.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="10f50-118">32 位<b>整数</b>，指示在其中创建此对象的应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-118">A 32-bit <b>integer</b> that indicates the application in which this object was created.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="10f50-119">
+            <para>只读的<b>long</b>。</para>如果对象在 Microsoft Excel 中创建的
+          <para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。<see cref="P:Microsoft.Office.Interop.Excel.Slicer.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-119">
+              <para>Read-only <b>long</b>.</para>
+              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C. The <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Creator" /> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cut">
+      <MemberSignature Language="C#" Value="public void Cut ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Cut() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Slicer.Cut" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Cut ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cut();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(565)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="10f50-120">剪切指定的切片器，并将其复制到剪贴板。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-120">Cuts the specified slicer and copies it to the clipboard.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Slicer.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="10f50-121">删除切片器，并将其删除从关联<see cref="T:Microsoft.Office.Interop.Excel.Slicers" />集合。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-121">Deletes the slicer and removes it from the associated <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> collection.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisableMoveResizeUI">
+      <MemberSignature Language="C#" Value="public bool DisableMoveResizeUI { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisableMoveResizeUI" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.DisableMoveResizeUI" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisableMoveResizeUI As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisableMoveResizeUI { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2983)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2983)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2983)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="10f50-122">获取或设置是否可以移动指定的切片器或通过使用用户界面调整大小。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-122">Gets or sets whether the specified slicer can be moved or resized by using the user interface.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="10f50-123">如果为<b>true</b>可以移动指定的切片器或通过使用用户界面中; 调整大小否则为<b>false</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-123">
+              <b>true</b> if the specified slicer can be moved or resized by using the user interface; otherwise, <b>false</b>.</span>
+          </span>
+          <span data-ttu-id="10f50-124">默认值为 <b>false</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-124">The default is <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="10f50-125">
+            <para>读/写。</para>
+            <para>
+              <b>，则返回 true</b>如果无法移动切片器或通过选择用户界面中的边框或句柄调整大小; 否则为<b>false</b>。默认值为<b>false</b>。设置<see cref="P:Microsoft.Office.Interop.Excel.Slicer.DisableMoveResizeUI" />属性设置为<b>true</b>会影响仅在用户界面。移动或调整切片器大小通过设置属性，如<see cref="P:Microsoft.Office.Interop.Excel.Slicer.Top" />， <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Left" />， <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Width" />，或<see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" />属性<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />对象从代码是否已启用。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-125">
+              <para>Read/write.</para>
+              <para>
+                <b>true</b> if the slicer cannot be moved or resized by selecting borders or handles in the user interface; otherwise <b>false</b>. The default value is <b>false</b>. Setting the <see cref="P:Microsoft.Office.Interop.Excel.Slicer.DisableMoveResizeUI" /> property to <b>true</b> affects only the user interface. Moving or resizing the slicer by setting properties such as the <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Top" />, <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Left" />, <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Width" />, or <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" /> properties of the <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> object from code is not disabled.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayHeader">
+      <MemberSignature Language="C#" Value="public bool DisplayHeader { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisplayHeader" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.DisplayHeader" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayHeader As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayHeader { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2985)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2985)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2985)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="10f50-126">获取或设置是否页眉的显示切片器<see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" />是可见的。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-126">Gets or sets whether the header that displays the slicer <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> is visible.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="10f50-127">
+            <b>true</b>如果页眉的显示切片器<see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" />可见，则否则为<b>false</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-127">
+              <b>true</b> if the header that displays the slicer <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> is visible; otherwise, <b>false</b>.</span>
+          </span>
+          <span data-ttu-id="10f50-128">默认值为 <b>true</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-128">The default is <b>true</b>.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="10f50-129">
+            <para>读/写。</para>
+            <para>
+              <b>，则返回 true</b>如果标头可见; 否则为<b>false</b>。默认值为<b>true</b>。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-129">
+              <para>Read/write.</para>
+              <para>
+                <b>true</b> if the header is visible; otherwise <b>false</b>. The default value is <b>true</b>.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public double Height { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Height" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Height" />
+      <MemberSignature Language="VB.NET" Value="Public Property Height As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Height { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="10f50-130">获取或设置指定的切片器的高度，以磅为单位。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-130">Gets or sets the height of the specified slicer, in points.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="10f50-131">指定的切片器，以磅为单位的高度。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-131">The height of the specified slicer, in points.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="10f50-132">
+            <para>读/写。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-132">
+              <para>Read/write.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="public double Left { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Left" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Left" />
+      <MemberSignature Language="VB.NET" Value="Public Property Left As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Left { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="10f50-133">获取或设置指定的切片器的水平位置，以磅为单位的相对于工作表上单元格 A1 左上角。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-133">Gets or sets the horizontal position of the specified slicer, in points, relative to the upper-left corner of cell A1 on a worksheet.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="10f50-134">指定的切片器，以磅为单位的相对于工作表上单元格 A1 左上角水平位置。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-134">The horizontal position of the specified slicer, in points, relative to the upper-left corner of cell A1 on a worksheet.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="10f50-135">
+            <para>读/写。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-135">
+              <para>Read/write.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Locked">
+      <MemberSignature Language="C#" Value="public bool Locked { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Locked" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Locked" />
+      <MemberSignature Language="VB.NET" Value="Public Property Locked As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Locked { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(269)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(269)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(269)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="10f50-136">获取或设置是否包含它的工作表处于保护状态时，可以修改指定的切片器。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-136">Gets or sets whether the specified slicer can be modified when the sheet that contains it is protected.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="10f50-137">受保护时<b>，则返回 true</b>如果包含它的工作表时，可以修改指定的切片器否则为<b>false</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-137">
+              <b>true</b> if the specified slicer can be modified when the sheet that contains it is protected; otherwise, <b>false</b>.</span>
+          </span>
+          <span data-ttu-id="10f50-138">默认值为<b>true</b></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-138">The default is <b>true</b></span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="10f50-139">
+            <para>读/写。</para>
+            <para>
+              <b>true</b>如果切片器已锁定时工作表受保护。<b>false</b>如果工作表受保护时仍能修改切片器。默认值为<b>true</b>。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-139">
+              <para>Read/write.</para>
+              <para>
+                <b>true</b> if the slicer is locked when the sheet is protected. <b>false</b> if the slicer can be modified when the sheet is protected. The default value is <b>true</b>.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="10f50-140">获取或设置指定的切片器的名称。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-140">Gets  or sets the name of the specified slicer.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="10f50-141">指定的切片器的名称。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-141">The name of the specified slicer.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="10f50-142">
+            <para>读/写。</para>
+            <para>的名称必须是唯一跨工作薄内的所有切片器。使用文本格式的默认名称的切片器所基于的透视字段的字段名称，如果需要，将追加的空间和编号，以使唯一的名称。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-142">
+              <para>Read/write.</para>
+              <para>The name must be unique across all slicers within a workbook. The default name uses the text that the field name of the PivotField on which the slicer is based, and if necessary, appends a space and number to make the name unique.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfColumns">
+      <MemberSignature Language="C#" Value="public int NumberOfColumns { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfColumns" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.NumberOfColumns" />
+      <MemberSignature Language="VB.NET" Value="Public Property NumberOfColumns As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NumberOfColumns { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2984)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2984)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2984)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="10f50-143">获取或设置中指定的切片器的列数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-143">Gets or sets the number of columns in the specified slicer.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="10f50-144">指定的切片器中的列数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-144">The number of columns in the specified slicer.</span>
+          </span>
+          <span data-ttu-id="10f50-145">默认值为 1。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-145">The default is 1.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="10f50-146">
+            <para>读/写。</para>
+            <para>的默认值为 1。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-146">
+              <para>Read/write.</para>
+              <para>The default value is 1.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="10f50-147">获取<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />对象，表示包含切片器的工作表。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-147">Gets the <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> object that represents the sheet that contains the slicer.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="10f50-148">
+            <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />对象，表示包含切片器的工作表。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-148">The <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> object that represents the sheet that contains the slicer.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="10f50-149">
+            <para>只读的。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-149">
+              <para>Read-only.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowHeight">
+      <MemberSignature Language="C#" Value="public double RowHeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 RowHeight" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.RowHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property RowHeight As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double RowHeight { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(272)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(272)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(272)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="10f50-150">获取或设置的高度，以磅为单位指定的切片器中的各行。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-150">Gets or sets the height, in points, of each row in the specified slicer.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="10f50-151">以磅为单位指定的切片器中的各行的高度。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-151">The height, in points, of each row in the specified slicer.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="10f50-152">
+            <para>读/写。</para>
+            <para>此属性不会影响切片器的高度。使用<see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" />属性<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />对象可返回或设置切片器的高度。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-152">
+              <para>Read/write.</para>
+              <para>This property does not affect the height of the slicer. Use the <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> object to return or set the height of the slicer.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Shape">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Shape Shape { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Shape Shape" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Shape" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shape As Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Shape ^ Shape { Microsoft::Office::Interop::Excel::Shape ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1582)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1582)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="10f50-153">获取<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象与指定的切片器关联。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-153">Gets the <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object associated with the specified slicer.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="10f50-154">
+            <see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象与指定的切片器关联。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-154">The <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object associated with the specified slicer.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="10f50-155">
+            <para>只读的。</para>
+            <para>某些属性的切片器，如<see cref="P:Microsoft.Office.Interop.Excel.Shape.AlternativeText" />属性，只能访问从<see cref="T:Microsoft.Office.Interop.Excel.Shape" />与切片器关联的对象。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-155">
+              <para>Read-only.</para>
+              <para>Some properties of the slicer, such as the <see cref="P:Microsoft.Office.Interop.Excel.Shape.AlternativeText" /> property, can only be accessed from the <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object associated with the slicer.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SlicerCache">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.SlicerCache SlicerCache { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.SlicerCache SlicerCache" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.SlicerCache" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SlicerCache As SlicerCache" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::SlicerCache ^ SlicerCache { Microsoft::Office::Interop::Excel::SlicerCache ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2986)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2986)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.SlicerCache</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="10f50-156">获取<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />与切片器关联的对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-156">Gets the <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> object associated with the slicer.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="10f50-157">
+            <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />与切片器关联的对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-157">The <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> object associated with the slicer.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="10f50-158">
+            <para>只读的。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-158">
+              <para>Read-only.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SlicerCacheLevel">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.SlicerCacheLevel SlicerCacheLevel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.SlicerCacheLevel SlicerCacheLevel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.SlicerCacheLevel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SlicerCacheLevel As SlicerCacheLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::SlicerCacheLevel ^ SlicerCacheLevel { Microsoft::Office::Interop::Excel::SlicerCacheLevel ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2987)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2987)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.SlicerCacheLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="10f50-159">获取<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />与切片器关联的对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-159">Gets the <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> object associated with the slicer.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="10f50-160">
+            <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />与切片器关联的对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-160">The <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> object associated with the slicer.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="10f50-161">
+            <para>只读的。</para>
+            <para>此属性仅适用于 OLAP 数据源。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-161">
+              <para>Read-only.</para>
+              <para>This property only applies to OLAP data sources.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SlicerCacheType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlSlicerCacheType SlicerCacheType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlSlicerCacheType SlicerCacheType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.SlicerCacheType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SlicerCacheType As XlSlicerCacheType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlSlicerCacheType SlicerCacheType { Microsoft::Office::Interop::Excel::XlSlicerCacheType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3111)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3111)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlSlicerCacheType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="10f50-162">返回的切片器缓存 – 切片器或日程表的类型。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-162">Returns the type of the slicer cache – slicer or timeline.</span>
+          </span>
+          <span data-ttu-id="10f50-163">
+            <b>XlSlicerCacheType</b>只读</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-163">
+              <b>XlSlicerCacheType</b> Read-only</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Style">
+      <MemberSignature Language="C#" Value="public object Style { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Style" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Style" />
+      <MemberSignature Language="VB.NET" Value="Public Property Style As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Style { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(260)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(260)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(260)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="10f50-164">获取或设置当前应用于指定的切片器的样式。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-164">Gets or sets the style currently applied to the specified slicer.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="10f50-165">当前应用于指定的切片器的样式。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-165">The style currently applied to the specified slicer.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="10f50-166">
+            <para>读/写。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-166">
+              <para>Read/write.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimelineViewState">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.TimelineViewState TimelineViewState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.TimelineViewState TimelineViewState" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.TimelineViewState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TimelineViewState As TimelineViewState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::TimelineViewState ^ TimelineViewState { Microsoft::Office::Interop::Excel::TimelineViewState ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3116)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3116)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.TimelineViewState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="10f50-167">特定于日程表的切片器的状态。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-167">The timeline-specific state of the Slicer.</span>
+          </span>
+          <span data-ttu-id="10f50-168">
+            <b>TimelineViewState</b>只读</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-168">
+              <b>TimelineViewState</b> Read-only</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="public double Top { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Top" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Top" />
+      <MemberSignature Language="VB.NET" Value="Public Property Top As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Top { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="10f50-169">获取或设置指定的切片器的垂直位置，以磅为单位的相对于工作表上单元格 A1 左上角。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-169">Gets or sets the vertical position of the specified slicer, in points, relative to the upper-left corner of cell A1 on a worksheet.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="10f50-170">以磅为单位的相对于工作表上单元格 A1 左上角指定的切片器，垂直位置。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-170">The vertical position of the specified slicer, in points, relative to the upper-left corner of cell A1 on a worksheet.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="10f50-171">
+            <para>读/写。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-171">
+              <para>Read/write.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public double Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Width" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Width { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="10f50-172">获取或设置指定的切片器的宽度，以磅为单位。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-172">Gets or sets the width of the specified slicer, in points.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="10f50-173">指定的切片器，以磅为单位的宽度。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-173">The width of the specified slicer, in points.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="10f50-174">
+            <para>读/写。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="10f50-174">
+              <para>Read/write.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
