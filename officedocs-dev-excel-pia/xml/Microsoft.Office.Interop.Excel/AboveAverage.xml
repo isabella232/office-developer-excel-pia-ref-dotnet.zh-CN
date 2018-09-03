@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20584096" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AboveAverage" />
@@ -32,7 +32,7 @@
     <summary>代表条件格式规则的高于平均值的视图。对某一区域或选定内容应用颜色或填充有助于您查看与其他单元格相关的单元格的值。</summary>
     <remarks>
       <para>所有条件格式对象包含在<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />集合对象，该元素是子对象的<see cref="T:Microsoft.Office.Interop.Excel.Range" />集合。您可以使用以下任意创建上面的平均格式规则<see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />或<see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddAboveAverage" />方法<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />集合。</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -96,8 +96,8 @@
         <value>
           <b>应用程序</b>（请参见上文）</value>
         <remarks>
-          <para>您可以与 OLE 自动化对象使用此属性返回该对象的应用程序。</para>
-          <para />
+          <para>您可以使用此属性与 OLE 自动化对象返回该对象的应用程序。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -160,7 +160,7 @@
         </value>
         <remarks>
           <para>对于条件格式对象，您只能设置为顶部、 底部和侧边框的单元格的属性。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -197,7 +197,7 @@
         <remarks>
           <para>仅当条件格式应用于数据透视表中时，此属性才适用。</para>
           <para>此属性可以设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlAllValues" />， <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlColGroups" />，或<see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlRowGroups" />才<see cref="P:Microsoft.Office.Interop.Excel.AboveAverage.ScopeType" />属性设置为<see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlFieldsScope" />。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -228,10 +228,7 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para />
-        </remarks>
+        <remarks>如果对象在 Microsoft Excel 中创建的<para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para></para></remarks>
         <example>
           <para>本示例显示一条有关 Excel 工作簿的创建者。</para>
         </example>
@@ -290,9 +287,8 @@
           <see cref="T:Microsoft.Office.Interop.Excel.Font" />
         </value>
         <remarks>
-          <para>
-            <b>Font</b>对象的所有属性都支持条件格式对象。您可以设置字体样式、 下划线、 颜色和删除线属性。</para>
-          <para />
+          <para>不支持条件格式对象的<b>Font</b>对象的所有属性。您可以设置字体样式、 下划线、 颜色和删除线属性。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -353,7 +349,7 @@
         <remarks>
           <para>范围必须以 A1 引用样式和完全包含在工作表的父级的<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />集合。它可以包括区域运算符 （冒号）、 交点运算符 （空格） 或 union 运算符 （逗号分隔）。也可以使用美元符号，但会被忽略。</para>
           <para>您还可以使用局部定义的名称范围的任何部分中，但该名称必须是在宏的语言。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -387,10 +383,7 @@
         <value>
           <b>对象</b>
         </value>
-        <remarks>
-          <para>使用相同的格式代码显示在单元格格式对话框的数字选项卡上指定的数字格式。您可以使用内置的数字格式，例如"常规"，或<see cref="createacustomnumberformat#CrossCollection" />。</para>
-          <para />
-        </remarks>
+        <remarks>使用单元格格式对话框的数字选项卡上显示的相同的格式代码指定<para>的数字格式。您可以使用内置的数字格式，例如"常规"，或<see cref="createacustomnumberformat#CrossCollection" />。</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumStdDev">
@@ -487,8 +480,8 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>设置优先级时, 值必须是介于 1 和工作表上的条件格式规则的总数之间的正整数。优先级必须在工作表上的所有规则的唯一值，因此更改指定的条件格式规则的优先级可能导致在工作表中要移动的其他规则的优先级值。</para>
-          <para />
+          <para>时设置的优先级，值必须是介于 1 和工作表上的条件格式规则的总数之间的正整数。优先级必须在工作表上的所有规则的唯一值，因此更改指定的条件格式规则的优先级可能导致要移动的工作表上的其他规则的优先级值。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -554,7 +547,7 @@
         </value>
         <remarks>
           <para>默认值是<see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />，其设置范围使用<see cref="P:Microsoft.Office.Interop.Excel.AboveAverage.AppliesTo" />属性。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -584,7 +577,7 @@
           <para>当您有多个工作表中的条件格式规则如果规则以前没有设置为"1"的优先级时，此方法将导致加一工作表上的所有其他现有规则的优先级。</para>
           <para>
             <b>注释</b>： 基于工作表级别应用条件格式规则的优先级。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -614,7 +607,7 @@
           <para>优先级的实际值将等于的工作表上的条件格式规则的总数。如果您在工作表中有多个条件格式规则，此方法将导致的优先级值大于加一该规则的规则的优先级。</para>
           <para>
             <b>注释</b>： 基于工作表级别应用条件格式规则的优先级。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -650,7 +643,7 @@
         </value>
         <remarks>
           <para>为了支持向后兼容性，此属性的默认值为<b>True</b>，即的格式的行为相反用户界面中创建的规则。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -683,7 +676,7 @@
         </value>
         <remarks>
           <para>此属性将始终返回<b>整数</b>值"12"，它等效于<see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlAboveAverageCondition" />。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

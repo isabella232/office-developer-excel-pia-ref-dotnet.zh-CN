@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20585566" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DefaultWebOptions" />
@@ -30,7 +30,7 @@
     <remarks>
       <para>您可以返回或设置应用程序 （全局） 级别或工作簿级的属性。（请注意，属性值可以是不同到另一个工作簿、 工作簿保存根据属性值时）。工作簿级属性设置覆盖应用程序级属性设置。工作簿级特性包含在<see cref="T:Microsoft.Office.Interop.Excel.WebOptions" />对象。</para>
       <para>使用<see cref="P:Microsoft.Office.Interop.Excel._Application.DefaultWebOptions" />属性可返回<b>DefaultWebOptions</b>对象。</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -63,8 +63,8 @@
         <summary>如果为<b>true</b>将文档保存为网页时，允许将 PNG （可移植网络图形） 作为图像格式。 <b>假</b> 如果不允许将 PNG 作为输出格式。 默认值为 <b>False</b> 。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果 PNG 格式而不是任何其他文件格式保存的图像，可能会提高图像的质量或减小这些图像文件的大小和因此减少下载时间，假定您的目标 Web 浏览器支持 PNG 格式。</para>
-          <para />
+          <para>如果 PNG 格式而不是任何其他文件格式保存图像，您可能提高图像的质量或缩小这些图像文件，并因此减少下载时间，假定您的目标 Web 浏览器支持 PNG 格式。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -99,7 +99,7 @@
         <remarks>
           <para>
             <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.Encoding" />属性可以用于设置默认编码。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -163,7 +163,7 @@
         <remarks>
           <para>使用 Web 浏览器支持 HTML 编辑和 HTML 编辑器时，才使用此属性。</para>
           <para>若要使用不同的 HTML 编辑器，您必须将此属性设置为<b>False</b> ，然后将该编辑器注册为默认的系统 HTML 编辑器。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -196,7 +196,7 @@
           <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
           <para>
             <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -228,7 +228,11 @@
       <Docs>
         <summary>如果为<b>true</b>时 Web 浏览器，但仅当不安装的组件已查看保存的文档下载所需的 Microsoft Office Web 组件。 <b>False</b>如果正在不下载组件。 默认值为 <b>False</b> 。</summary>
         <value>To be added.</value>
-        <remarks>您可以设置<para><see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.LocationOfComponents" />属性设为 （intranet 或 Web） 上的管理中心 URL 或路径 (本地或网络) 到授权的用户可从中下载组件查看保存的文档时的位置。路径必须是有效和必须指向位置包含必需的组件，以及用户必须具有有效的 Microsoft Office 许可证。</para><para>Office Web 组件添加对文档另存为网页的交互性。如果没有安装的组件的计算机上的浏览器中查看网页，请将静态页上的交互部分。</para><para /></remarks>
+        <remarks>
+          <para>您可以设置<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.LocationOfComponents" />属性设为 （intranet 或 Web） 上的管理中心 URL 或路径 (本地或网络) 到授权的用户可从中下载组件查看保存的文档时的位置。路径必须是有效和必须指向位置包含必需的组件，以及用户必须具有有效的 Microsoft Office 许可证。</para>
+          <para>Office Web 组件添加对文档另存为网页的交互性。如果没有安装的组件的计算机上的浏览器中查看网页，请将静态页上的交互部分。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Encoding">
@@ -261,7 +265,7 @@
         <value>To be added.</value>
         <remarks>
           <para>不能使用任何具有后缀<b>自动检测</b>的<b>MsoEncoding</b>常量。这些常量由<see cref="M:Microsoft.Office.Interop.Excel._Workbook.ReloadAs(Microsoft.Office.Core.MsoEncoding)" />方法。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -491,7 +495,7 @@
               <description>.files</description>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -583,10 +587,7 @@
       <Docs>
         <summary>返回或设置的 （intranet 或 Web） 上的管理中心 URL 或路径 (本地或网络) 到授权的用户可从中下载 Microsoft Office Web 组件查看保存的文档时的位置。 默认值是本地或网络 for Microsoft Office 的安装路径。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果，与指定网页自动下载 office Web 组件<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.DownloadComponents" />属性设置为<b>True</b>，不能已安装的组件，路径无效，并且指向包含所需组件的位置和用户具有有效的 Microsoft Office 许可证。</para>
-          <para />
-        </remarks>
+        <remarks>如果，与指定网页自动下载<para>office Web 组件<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.DownloadComponents" />属性设置为<b>True</b>，不能已安装的组件，路径无效，并且指向包含所需组件的位置和用户具有有效的 Microsoft Office 许可证。</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OrganizeInFolder">
@@ -621,7 +622,7 @@
         <remarks>
           <para>新的文件夹网页的保存位置的文件夹中创建和文档之后命名。如果使用长文件名，后缀将添加到的文件夹名称。<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.FolderSuffix" />属性返回已选择或安装的语言支持的文件夹后缀或的默认文件夹后缀。</para>
           <para>如果保存文档以前保存<b>OrganizeInFolder</b>属性设置为不同的值时，Microsoft Excel 自动移动迁入或迁出文件夹，根据需要支持文件。</para>如果不使用长文件名的
-          <para>(也就是说，如果<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.UseLongFileNames" />属性设置为<b>False</b>)，Microsoft Excel 自动将所有支持文件保存在单独的文件夹。这些文件不保存为网页的同一文件夹中。</para><para /></remarks>
+          <para>(也就是说，如果<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.UseLongFileNames" />属性设置为<b>False</b>)，Microsoft Excel 自动将所有支持文件保存在单独的文件夹。这些文件不保存为网页的同一文件夹中。</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -683,7 +684,7 @@
         <remarks>
           <para>在 Web 浏览器中查看保存的文档时，此属性确定图像和文本的大小指定网页上的单元格的大小。生成的图像或单元格的物理尺寸是原始尺寸 （以英寸为单位） 的结果乘以每英寸像素数。</para>
           <para>您使用<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.ScreenSize" />属性为目标 Web 浏览器设置最佳屏幕大小。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -717,8 +718,8 @@
           <b>如此</b> 如果您在 Web 浏览器中查看保存的文档时，字体格式使用级联样式表 (CSS)。 Microsoft Excel 创建的级联样式表文件，并将其保存到指定的文件夹或网页，具体取决于的值相同的文件夹<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.OrganizeInFolder" />属性。 <b>False</b>如果 HTML&lt;字体&gt;使用标记和级联样式表。 默认值为 <b>True</b> 。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果您的 Web 浏览器支持级联样式表，这将为您提供较精确的布局和网页上的格式化控件并使其类似于更多文档 （如它显示在 Microsoft Excel 中），您应将此属性设置为<b>True</b> 。</para>
-          <para />
+          <para>应设置此属性设置为<b>True</b>如果 Web 浏览器支持级联样式表，如这将为您提供较精确的布局和网页上的格式化控件并使其更类似文档，（即 Microsoft Excel 中显示）。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -754,7 +755,7 @@
         <remarks>
           <para>您可以通过 Web 浏览器支持矢量标记语言 (VML) 如果不生成图像的图形对象，来减小文件大小。例如，Microsoft Internet Explorer 5 支持此功能，并且您应将<b>RelyOnVML</b>属性设置为<b>True</b> ，如果您面向的此浏览器。您为 VML 图像将不会出现时不支持的浏览器查看保存启用该属性的网页。</para>
           <para>例如，则应不生成图像如果您网页将使用您之前生成的图像文件，并保存文档的位置是不同的 Web 服务器上的页面的最终位置。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -883,7 +884,7 @@
           </para>
           <para>
             <b>msoScreenSize800x600</b>默认</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -928,7 +929,7 @@
             <b>msoTargetBrowserV3</b> Microsoft Internet Explorer 3.0，Netscape Navigator 3.0，或更高版本。</para>
           <para>
             <b>msoTargetBrowserV4</b> Microsoft Internet Explorer 4.0，Netscape Navigator 4.0，或更高版本。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -962,8 +963,8 @@
           <b>True</b>如果确保保存文档时包含最新的链接以网页保存文档前自动更新超链接和所有支持文件的路径。 <b>False</b>如果不更新链接。 默认值为 <b>True</b> 。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果保存文档的位置的 Web 服务器上的最终位置不同，且支持的文件的第一个位置不可用，您应将此属性设置为<b>False</b> 。</para>
-          <para />
+          <para>您应将此属性设置为<b>False</b> ，如果保存文档的位置不同的 Web 服务器上的最终位置和支持文件的第一个位置不可用。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -996,10 +997,7 @@
         <summary>
           <b>如此</b> 如果您将文档保存为网页时使用长文件名。 <b>假</b> 如果不使用长文件名和 DOS 文件名格式 (8.3) 用。 默认值为 <b>True</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果您不使用长文件名，并且文档有支持文件，Microsoft Excel 将自动组织在单独的文件夹的那些文件。否则，使用<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.OrganizeInFolder" />属性可以确定是否将支持文件组织在单独的文件夹。</para>
-          <para />
-        </remarks>
+        <remarks>如果不使用长文件名，并且文档有支持文件的<para>，Microsoft Excel 自动组织在单独的文件夹的那些文件。否则，使用<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.OrganizeInFolder" />属性可以确定是否在单独的文件夹组织支持的文件。</para><para></para></remarks>
       </Docs>
     </Member>
   </Members>

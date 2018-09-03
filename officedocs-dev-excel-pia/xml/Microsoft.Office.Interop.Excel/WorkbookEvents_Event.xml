@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20586259" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface WorkbookEvents_Event" />
@@ -52,7 +52,7 @@
         <remarks>
           <para>在显示同一工作簿的两个窗口间切换时，将发生<b>WindowActivate</b>事件，但工作簿的<b>Activate</b>事件不会发生。</para>
           <para>当您创建一个新窗口时不触发此事件。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -92,8 +92,8 @@
       <Docs>
         <summary>当工作簿作为加载宏卸载时，发生此事件。</summary>
         <remarks>
-          <para>外接程序不自动关闭它卸载时。</para>
-          <para />
+          <para>外接程序后不会自动关闭它卸载。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -134,7 +134,7 @@
         <summary>Excel 保存或导出到 XML 数据文件的指定工作簿中的数据后发生。</summary>
         <remarks>
           <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -156,7 +156,7 @@
         <summary>新的 XML 数据导入到指定的 Excel 工作簿或刷新现有的 XML 数据连接之后，发生此事件。</summary>
         <remarks>
           <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -235,7 +235,7 @@
         <summary>Excel 保存或将数据从指定的工作簿导出到 XML 数据文件前发生。</summary>
         <remarks>
           <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -257,7 +257,7 @@
         <summary>刷新现有的 XML 数据连接或新的 xml 数据被导入 Excel 工作簿之前发生。</summary>
         <remarks>
           <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -320,7 +320,7 @@
             <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewChart" />每当插入新图表或将其粘贴到工作表、 图表工作表或其他工作表类型中发生事件。如果多个图表插入或者粘贴，则会发生事件的每个图表的顺序插入或粘贴。如果 chart 对象或图表工作表从一个位置移动到另一个，不会发生该事件。但是，如果 chart 对象和图表工作表之间移动时图表，则会发生事件因为必须创建一个新的图表。</para>
           <para>
             <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewChart" />事件不会发生以下情况方案： 复制或粘贴图表工作表、 更改图表类型或图表数据源，撤消或恢复插入或粘贴图表，并加载包含图表的工作簿的更改。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -417,8 +417,8 @@
       <Docs>
         <summary>在用户深化记录集或调用行集操作在 OLAP 数据透视表时引发的事件。</summary>
         <remarks>
-          <para>异步创建记录集，因为该事件允许自动确定在完成该操作。此外，因为在单独的工作表上创建记录集，该事件需要工作簿级上。</para>
-          <para />
+          <para>事件原因异步创建记录集，允许自动确定已完成操作。此外，因为在单独的工作表上创建记录集后，事件需要在工作簿级。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -496,8 +496,8 @@
       <Docs>
         <summary>右键单击任一工作表时发生此事件，此事件先于默认的右键单击操作。</summary>
         <remarks>
-          <para>图表工作表上不发生此事件。</para>
-          <para />
+          <para>图表工作表上不会发生此事件。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -537,8 +537,8 @@
       <Docs>
         <summary>当用户或外部链接更改了任何工作表中的单元格时发生此事件。</summary>
         <remarks>
-          <para>图表工作表上不发生此事件。</para>
-          <para />
+          <para>图表工作表上不会发生此事件。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -597,8 +597,8 @@
       <Docs>
         <summary>标注库的图标 （动态和静态） 已完成的工作表的呈现时发生。</summary>
         <remarks>
-          <para>此事件可用于指示时重新启用屏幕更新或其他显示对话框，例如。</para>
-          <para />
+          <para>此事件可以用于指示时重新启用屏幕更新或其他显示对话框，例如。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -621,7 +621,7 @@
         <remarks>
           <para>
             <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableAfterValueChange" />编辑或重新计算的单元格以外的任何情况下不会发生事件。例如，它不会发生在数据透视表进行刷新、 排序、 筛选，或深化，即使这些操作移动单元格，并可能从 OLAP 数据源检索新值。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -643,8 +643,8 @@
         <summary>在向数据透视表应用更改前发生此事件。</summary>
         <remarks>
           <para>
-            <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeAllocateChanges" /> Excel 立即执行所有更改应用于数据透视表的 OLAP 数据源，更新多维数据集语句之前，且用户已选择要应用的用户界面中更改后一刻发生的事件。</para>
-          <para />
+            <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeAllocateChanges" />事件 Excel 立即执行所有更改应用于数据透视表的 OLAP 数据源，更新多维数据集语句之前，且用户已选择要应用的用户界面中更改后立即发生。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -666,8 +666,8 @@
         <summary>在针对 OLAP 数据源提交对数据透视表的更改前发生此事件。</summary>
         <remarks>
           <para>
-            <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeCommitChanges" /> Excel 立即执行 TRANSACTION 数据透视表的 OLAP 数据源之前，且用户已选择保存的更改整个数据透视表的后一刻发生的事件。</para>
-          <para />
+            <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeCommitChanges" />事件 Excel 立即执行 TRANSACTION 数据透视表的 OLAP 数据源之前，且用户已选择保存的更改整个数据透视表的后一刻发生。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -688,8 +688,8 @@
       <Docs>
         <summary>在放弃对数据透视表所做的更改之前发生此事件。</summary>
         <remarks>
-          <para>Excel 执行回滚事务语句对 OLAP 数据源，如果事务仍处于活动状态，并且用户已选择放弃更改后然后放弃对数据透视表中的所有已编辑的值前一刻发生。</para>
-          <para />
+          <para>时发生即将 Excel 执行回滚事务语句对 OLAP 数据源，如果事务仍处于活动状态，并且用户已选择放弃更改后然后放弃对数据透视表中的所有已编辑的值。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -712,7 +712,7 @@
         <remarks>
           <para>
             <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableChangeSync" />大多数更改期间发生在数据透视表，以便您可以编写代码以响应用户操作，如清除、 分组或刷新数据透视表中的项目。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

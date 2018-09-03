@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20586112" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ConnectorFormat" />
@@ -33,7 +33,7 @@
     <remarks>
       <para>A 连接器是附加在连接位置的其他两个形状的行。如果重新排列相连的形状，连接符的几何将自动调整，以便形状保持连接。</para>使用
       <para><see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectorFormat" />属性可返回<b>ConnectorFormat</b>对象。使用<see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" />和<see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" />方法附加到文档中的其他形状的连接符的端点。使用<see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" />方法，以自动查找连接器连接两个形状间的最短路径。使用<see cref="P:Microsoft.Office.Interop.Excel.Shape.Connector" />属性以查看是否形状是连接符。</para>注意当您添加到连接器时分配大小和位置
-      <para><see cref="T:Microsoft.Office.Interop.Excel.Shapes" />的开头和连接符的终点附加到集合中其他形状时自动调整集合，但的大小和位置。因此，如果您打算将连接符连接到其他形状的初始大小和位置指定无关。同样，指定要附加的连接器时连接符，但在连接器之后使用<b>RerouteConnections</b>方法附加形状上的连接网站可能会发生改变连接符所连接，哪些连接网站进行连接的原始选择无关。</para><para>连接结点通常进行编号根据下表中所示的规则。</para><list type="table"><item><term>自选图形、 艺术字、 图片和 OLE 对象</term><description>的连接结点从顶部开始并继续逆时针进行编号。</description></item><item><term>任意多边形</term><description>连接结点为顶点，以及它们与顶点编号相对应。</description></item></list><para /></remarks>
+      <para><see cref="T:Microsoft.Office.Interop.Excel.Shapes" />的开头和连接符的终点附加到集合中其他形状时自动调整集合，但的大小和位置。因此，如果您打算将连接符连接到其他形状的初始大小和位置指定无关。同样，指定要附加的连接器时连接符，但在连接器之后使用<b>RerouteConnections</b>方法附加形状上的连接网站可能会发生改变连接符所连接，哪些连接网站进行连接的原始选择无关。</para><para>连接结点通常进行编号根据下表中所示的规则。</para><list type="table"><item><term>自选图形、 艺术字、 图片和 OLE 对象</term><description>的连接结点从顶部开始并继续逆时针进行编号。</description></item><item><term>任意多边形</term><description>连接结点为顶点，以及它们与顶点编号相对应。</description></item></list><para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -93,9 +93,9 @@
           <b>必选。</b> 由指定的形状上的连接站点<paramref name="ConnectedShape" />。 必须是介于 1 和返回整数之间的整数<see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" />指定形状的属性。 如果您希望连接器以自动查找其连接的两个形状之间的最短路径，指定此参数的任何有效的整数，然后使用<see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" />方法连接器附加到形状两端之后。</param>
         <summary>将指定的连接符的起点连接到指定的形状上。</summary>
         <remarks>
-          <para>如果已存在的连接符的起点和另一个形状，将断开连接之间的连接。如果连接符的起点没有位于指定的连接位置，此方法将连接符的起点移动到的连接的网站，并调整大小和位置的连接器。使用<see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" />方法附加到形状的连接符的终点。</para>
+          <para>如果已存在的连接符的起点和另一个形状之间的连接，将断开的连接。如果连接符的起点没有位于指定的连接位置，此方法将连接符的起点移动到的连接的网站，并调整大小和位置的连接器。使用<see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" />方法附加到形状的连接符的终点。</para>
           <para>时将连接符连接到对象后，在必要时自动调整大小和位置，连接符。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -142,7 +142,7 @@
           </para>
           <para>指定连接符的起点连接到形状的
             <b>msoTrue</b> 。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -172,8 +172,8 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象，代表指定连接符的起点连接到形状。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果指定连接符的起点没有连接到形状，该属性将产生错误。</para>
-          <para />
+          <para>如果指定连接符的起点没有连接到形状，该属性将生成一个错误。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -203,8 +203,8 @@
         <summary>返回用于指定连接符末端所连接的连接结点的整数。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果指定连接符的终点没有连接到形状，该属性将产生错误。</para>
-          <para />
+          <para>如果指定连接符的终点没有连接到形状，该属性将生成一个错误。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -233,7 +233,7 @@
         <remarks>
           <para>
             <b>BeginDisconnect</b>方法不改变大小或位置连接器。连接符的起点仍保留在原来连接网站，但不再连接。使用<see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndDisconnect" />方法来分离从形状的连接符的终点。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -266,7 +266,7 @@
           <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
           <para>
             <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -299,9 +299,9 @@
           <b>必选。</b> 由指定的形状上的连接站点<paramref name="ConnectedShape" />。 必须是介于 1 和返回整数之间的整数<see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" />指定形状的属性。 如果您希望连接器以自动查找其连接的两个形状之间的最短路径，指定此参数的任何有效的整数，然后使用<see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" />方法连接器附加到形状两端之后。</param>
         <summary>将指定的连接符的终点连接到指定的形状上。</summary>
         <remarks>
-          <para>如果已存在另一个形状，将断开连接的连接符的终点之间的连接。如果连接符的终点没有位于指定的连接位置，此方法将连接符的终点移动到的连接的网站，并调整大小和位置的连接器。使用<see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" />方法附加到形状的连接符的起点。</para>
+          <para>如果已存在的连接符的终点与另一个形状之间的连接，将断开的连接。如果连接符的终点没有位于指定的连接位置，此方法将连接符的终点移动到的连接的网站，并调整大小和位置的连接器。使用<see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" />方法附加到形状的连接符的起点。</para>
           <para>时将连接符连接到对象后，在必要时自动调整大小和位置，连接符。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -338,7 +338,7 @@
             <b>msoFalse</b>指定的连接符的终点不连接到形状。</para>
           <para>
             <b>msoTrue</b>指定的连接符的终点连接到形状。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -368,8 +368,8 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象，代表指定连接符的终点连接到形状。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果指定连接符的终点没有连接到形状，该属性将产生错误。</para>
-          <para />
+          <para>如果指定连接符的终点没有连接到形状，该属性将生成一个错误。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -399,8 +399,8 @@
         <summary>返回用于指定连接符末端所连接的连接结点的整数。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果指定连接符的终点没有连接到形状，该属性将产生错误。</para>
-          <para />
+          <para>如果指定连接符的终点没有连接到形状，该属性将生成一个错误。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -427,8 +427,8 @@
       <Docs>
         <summary>分离从形状附加到指定的连接符的终点。</summary>
         <remarks>
-          <para>该方法不改变大小或位置连接器;连接符的终点仍保留在原来连接网站，但不再连接。使用<see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginDisconnect" />方法来分离从形状的连接符的起点。</para>
-          <para />
+          <para>该方法不改变大小或位置连接器; 连接符的终点仍保留在原来连接网站，但不再连接。使用<see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginDisconnect" />方法来分离从形状的连接符的起点。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -503,7 +503,7 @@
           <para>
             <b>msoConnectorTypeMixed</b>
           </para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

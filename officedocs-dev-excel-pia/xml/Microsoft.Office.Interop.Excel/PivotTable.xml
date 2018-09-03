@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20587708" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotTable" />
@@ -33,7 +33,7 @@
     <remarks>
       <para>使用<b>数据透视表</b>(<paramref name="index" />)，其中<paramref name="index" />是数据透视表的索引号或名称，可返回一个<b>PivotTable</b>对象。</para>
       <para>因为数据透视表报表编程可能会很复杂，通常最简单数据透视表操作录制，然后再修订录制的代码。要录制宏，指向工具菜单上的宏，然后单击录制新宏。</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -203,7 +203,7 @@
           <para>您必须指定一个字段参数。</para>
           <para>字段名指定由返回的唯一名称<see cref="P:Microsoft.Office.Interop.Excel.PivotField.SourceName" />属性<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />对象。</para>
           <para>此方法对于 OLAP 数据源无效。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -231,8 +231,8 @@
         <summary>在基于 OLAP 数据源的数据透视表中的所有已编辑的单元格上执行回写操作。</summary>
         <remarks>
           <para>
-            <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.AllocateChanges" />方法将执行的自上次应用更改操作已提交，或更改从不如果提交应用创建数据透视表以来已执行以来进行的数据透视表值区域中的所有更改更新多维数据集语句。如果数据透视表报表基于非 OLAP 数据源上执行，此方法将产生一个运行时错误。</para>
-          <para />
+            <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.AllocateChanges" />方法将执行的自上次应用更改操作已提交，或更改从不如果提交应用创建数据透视表以来已执行以来进行的数据透视表值区域中的所有更改更新多维数据集语句。如果数据透视表报表基于非 OLAP 数据源上执行，此方法会生成运行时错误。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -269,7 +269,7 @@
           <para>读/写。</para>
           <para>
             <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Allocation" />属性对应于计算设置在模拟分析设置对话框中的更改。默认设置是<see cref="F:Microsoft.Office.Interop.Excel.XlAllocation.xlManualAllocation" />，对应于手动 （时选择计算更改的数据透视表） 设置。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -306,7 +306,7 @@
           <para>读/写。</para>
           <para>
             <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" />属性对应于模拟分析设置对话框中的分配方法设置。默认设置是<see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlEqualAllocation" />，对应于等于分配设置。如果<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" />属性设置为<see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlWeightedAllocation" />，其对应的加权分配设置，您可以选择指定加权表达式，用于通过设置<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" />属性。如果您不指定加权表达式，等价于加权表达式&lt;的叶单元格值&gt; / &lt;现有值&gt;用于。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -343,7 +343,7 @@
           <para>读/写。</para>
           <para>
             <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationValue" />属性对应于模拟分析设置对话框中的分配设置的值。默认设置是<see cref="F:Microsoft.Office.Interop.Excel.XlAllocationValue.xlAllocateValue" />，对应于输入的值除以分配设置的数。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -379,7 +379,7 @@
           <para>读/写。</para>
           <para>
             <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" />属性对应于模拟分析设置对话框中的加权表达式设置。之前<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" />属性进行设置，则必须设置<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" />属性设为<see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlWeightedAllocation" />。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -417,7 +417,7 @@
         <remarks>
           <para>默认值为<b>False</b>。</para>
           <para>时该属性设置为<b>True</b>，多个筛选器可以应用于单个<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />。设置为<b>False</b>时, 应用筛选器<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />是已筛选的将删除现有的筛选器并应用新。 此属性设置为<b>False</b>时<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />具有多个筛选器应用将带有字段以无提示方式删除所有筛选器中的<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />而不显示任何警告。但是，不通知时这是通过用户界面。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -452,7 +452,7 @@
         <remarks>
           <para>读/写。</para>
           <para>的值<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AlternativeText" />属性对应于数据透视表选项对话框的标题框替换文字选项卡中的值。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -513,8 +513,8 @@
         <summary>返回或设置数据透视表缓存的索引号。 可读写 <b>Integer</b>。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果将<b>CacheIndex</b>属性设置，以便一个数据透视表报告第二个数据透视表报表中使用缓存时，第一个报表的字段必须是有效第二个报告中的字段的子集。</para>
-          <para />
+          <para>将<b>CacheIndex</b>属性设置，以便一个数据透视表报告第二个数据透视表报表中使用缓存时，如果第一个报表的字段必须是有效子集的第二个报告中的字段。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -570,8 +570,8 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" />集合表示 OLAP 数据透视表的所有计算的成员和计算度量值。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性用于联机分析处理 (OLAP) 源;非 OLAP 源将返回一个运行时错误。</para>
-          <para />
+          <para>此属性用于联机分析处理 (OLAP) 源，非 OLAP 源将返回一个运行时错误。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -609,7 +609,7 @@
           <para>
             <b>，则返回 true</b>如果计算筛选器计算成员; 否则为<b>false</b>。</para>
           <para>此属性的值对应的求值计算成员设置汇总上的筛选器复选框中的 OLAP 服务器中&amp;的数据透视表选项对话框的数据透视表报告的筛选器选项卡基于 OLAP 数据源。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -641,7 +641,7 @@
         <remarks>
           <para>
             <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangeConnection(Microsoft.Office.Interop.Excel.WorkbookConnection)" />方法仅可用于<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />，连接到外部数据源。如果将发生运行时错误<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangeConnection(Microsoft.Office.Interop.Excel.WorkbookConnection)" />方法用于<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />使用存储在工作表作为其数据源上的数据。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -673,7 +673,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />基于 OLAP 数据源的集合，代表对指定数据透视表所做的更改的列表。</value>
         <remarks>
           <para>只读的。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -705,7 +705,7 @@
         <remarks>
           <para>
             <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangePivotCache(System.Object)" />方法仅可用于<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />使用存储在工作表作为其数据源上的数据。如果将发生运行时错误<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangePivotCache(System.Object)" />方法用于<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />，连接到外部数据源。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -734,7 +734,7 @@
           <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ClearAllFilters" />方法删除当前应用于所有筛选器<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。 这包括删除中的所有筛选器<see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" />的集合<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />对象，删除任何应用手动筛选和设置所有<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s 为默认项报告筛选区域中的。</summary>
         <remarks>
           <para>之后调用<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ClearAllFilters" />方法，<see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" />集合将为空。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -764,7 +764,7 @@
         <remarks>
           <para>
             <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ClearTable" />函数不采用任何参数，可用于关系和 OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -883,8 +883,8 @@
         <summary>执行提交操作在基于 OLAP 数据源的数据透视表报告的数据源。</summary>
         <remarks>
           <para>
-            <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.CommitChanges" />方法将提交事务语句发送到 OLAP 服务器，并清除所有已编辑通过输入一个值，但不是会清除中的值单元格的公式的单元格。如果数据透视表报表基于非 OLAP 数据源上执行，此方法将产生一个运行时错误。</para>
-          <para />
+            <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.CommitChanges" />方法将提交事务语句发送到 OLAP 服务器，并清除所有已编辑通过输入一个值，但不是会清除中的值单元格的公式的单元格。如果数据透视表报表基于非 OLAP 数据源上执行，此方法会生成运行时错误。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -915,10 +915,10 @@
       </ReturnValue>
       <Docs>
         <summary>指定标题的列标题中显示的<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />何时压缩行布局窗体中。 为可读/写属性。</summary>
-        <value>字符串</value>
+        <value>String</value>
         <remarks>
-          <para>当用户自定义这些标题网格中时，它也会反映这些属性中。</para>
-          <para />
+          <para>当用户自定义这些标题网格中的时，也会反映这些属性中。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -953,8 +953,8 @@
           <b>字符串</b>
         </value>
         <remarks>
-          <para>当用户自定义这些标题网格中时，它也会反映这些属性中。</para>
-          <para />
+          <para>当用户自定义这些标题网格中的时，也会反映这些属性中。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -989,8 +989,8 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>默认值为 1。此设置有效的值是 0 到 Microsoft Excel 中指定的最大缩进。</para>
-          <para />
+          <para>默认值为 1。此设置有效的值是 0 到 Microsoft Excel 中指定的最大缩进量。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1021,8 +1021,8 @@
         <summary>
           <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ConvertToFormulas(System.Boolean)" />方法在 1st_Excel12 中新增和用于转换<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />为多维数据集公式。</summary>
         <remarks>
-          <para>此参数控制是否转换 ReportFilter 区域的<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。</para>
-          <para />
+          <para>参数控制是否转换 ReportFilter 区域的<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1089,8 +1089,8 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para />
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1263,7 +1263,7 @@
         <remarks>
           <para>的数据透视表报告中基于 OLAP 数据源，该方法删除所有值和输入值单元格中的公式，然后运行从数据源检索的最新值的数据透视表更新操作。将数据源的值设置为空引用 (在 Visual Basic 中为 Nothing) 的所有值单元格的编辑，且还执行针对 OLAP 服务器的回滚事务语句。</para>
           <para>如果您尝试执行此方法对于数据透视表报表基于非 OLAP 数据源，此方法将生成运行时错误。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1299,7 +1299,7 @@
         </value>
         <remarks>
           <para>如果<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DisplayContextTooltips" />设置为<b>False</b>，上下文的工具提示<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />将不会显示单元格。如果它设置为<b>True</b>，工具提示的<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />将显示的行、 列和数据区域中的单元格。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1333,7 +1333,7 @@
         <value>To be added.</value>
         <remarks>
           <para>数据透视表必须连接到联机分析处理 (OLAP) 数据源以避免运行时错误。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1367,7 +1367,7 @@
         <value>To be added.</value>
         <remarks>
           <para>数据透视表必须连接到联机分析处理 (OLAP) 数据源以避免运行时错误。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1402,7 +1402,7 @@
         <remarks>
           <para>使用<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ErrorString" />属性设置的自定义错误字符串。</para>
           <para>此属性是对于当透视处理计算的字段消除被零除错误尤其有用。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1438,7 +1438,7 @@
         </value>
         <remarks>
           <para>默认值为<b>True</b>。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1504,8 +1504,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>如果<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DisplayMemberPropertyTooltips" />设置为<b>False</b>，将在工具提示中显示属性的任何成员。如果设置为<b>True</b>，则将在工具提示中显示成员属性。</para>
-          <para />
+          <para>如果<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DisplayMemberPropertyTooltips" />设置为<b>False</b>，将在工具提示中显示属性的任何成员。如果设置为<b>True</b>，将在工具提示中显示成员属性。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1539,7 +1539,7 @@
         <value>To be added.</value>
         <remarks>
           <para>使用<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.NullString" />属性来设置自定义空字符串。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1787,7 +1787,7 @@
         <value>To be added.</value>
         <remarks>
           <para>对数据值执行任何编辑时都将丢失刷新。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1822,7 +1822,7 @@
         <remarks>
           <para>的数据透视表报告将将其设置为该报表中的所有字段设置此属性。</para>
           <para>对于 OLAP 数据源，该值始终是<b>，则返回 True</b>。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1855,8 +1855,8 @@
         <summary>如果当用户双击数据透视表字段时，<b>“数据透视表字段”</b>对话框可用，则该属性值为 <b>True</b>。默认值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性的数据透视表设置的该报表中的所有字段。</para>
-          <para />
+          <para>的数据透视表报告将将其设置为该报表中的所有字段设置此属性。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1921,8 +1921,8 @@
         <summary>如果“数据透视表向导”可用，则该属性值为 <b>True</b>。默认值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>当此属性设置时，字段井并不会显示在工作表。</para>
-          <para />
+          <para>当此属性设置时，字段井并不会显示在工作表中。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1962,7 +1962,7 @@
           <para>如果<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" />属性设置为<b>true</b> ，然后<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" />属性设置为<b>true</b>，<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" />属性自动设置为<b>false</b> ，刷新数据透视表和数据值上进行的任何编辑是丢失。</para>
           <para>如果<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" />属性设置为<b>true</b> ，然后<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" />属性设置为<b>true</b>，<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" />属性自动设置为<b>false</b> ，不会刷新数据透视表，和还原数据源值。</para>
           <para>对于非 OLAP 数据源，设置此属性会生成运行时错误。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2030,7 +2030,7 @@
         <remarks>
           <para>当此属性设置为<b>True</b>时，字段以升序排序。当设置为<b>False</b>时，数据源顺序排序字段。</para>
           <para>不应用于<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />连接到 OLAP 数据源。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2265,10 +2265,7 @@
       <Docs>
         <summary>检查工作表级别中是否存在数据透视表。 <b>Boolean</b>(<b>bool</b> C# 中)。 只读</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>当<b>Hidden</b>属性设置为<b>True</b>时，<b>数据透视表</b>对象隐藏工作表级别中。当该属性设置为<b>False</b>时，数据透视表存在工作表上。</para>
-          <para />
-        </remarks>
+        <remarks>从工作表级别， <para><b>Hidden</b>属性设置为<b>True</b>，<b>数据透视表</b>对象时处于隐藏状态。数据透视表时该属性设置为<b>False</b>，存在于工作表上。</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HiddenFields">
@@ -2301,8 +2298,8 @@
         <summary>返回一个 object 值，该值代表之一的单个数据透视表字段 (<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />对象) 或所有字段的集合 (<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />对象) 的当前不显示为行、 列、 页或数据字段。 只读。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>对于 OLAP 数据源，此属性始终返回一个空集合。</para>
-          <para />
+          <para>的 OLAP 数据源，此属性始终返回一个空集合。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2337,8 +2334,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>当<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.InGridDropZones" />属性设置为<b>True</b>，网格中表示形式<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />与 Excel 2003 中是相同的。当该属性设置为<b>False</b>时，没有网格中的拖放区域。<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />布局也会更改使用此属性。</para>
-          <para />
+          <para>时<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.InGridDropZones" />属性设置为<b>True</b>，网格中表示形式<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />与 Excel 2003 中是相同的。当该属性设置为<b>False</b>时，没有网格中的拖放区域。<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />布局也会更改此属性与。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2372,7 +2369,7 @@
         <value>To be added.</value>
         <remarks>
           <para>此属性不可用于 OLAP 数据源。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2409,7 +2406,7 @@
         <remarks>
           <para>
             <see cref="T:Microsoft.Office.Interop.Excel.XlLayoutRowType" />可以是 xlCompactRow、 xlTabularRow 或 xlOutlineRow。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2437,7 +2434,7 @@
         <summary>在分离工作表上创建数据透视表的计算项和计算字段的列表。</summary>
         <remarks>
           <para>此方法不可用于 OLAP 数据源。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2503,8 +2500,8 @@
         <summary>如果数据透视表仅在用户请求时重新计算，则该值为 <b>True</b>。默认值为 <b>False</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>程序终止后立即此属性设置为<b>False</b> 。</para>
-          <para />
+          <para>立即程序终止后，此属性设置为<b>False</b> 。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2535,7 +2532,7 @@
         <value>To be added.</value>
         <remarks>
           <para>查询非联机分析处理 OLAP 数据透视表，或者当没有任何数据透视表视图 （无数据项） 时，此值将返回一个运行时错误。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2695,7 +2692,7 @@
         <remarks>
           <para>层次结构可以包含一个页字段。</para>
           <para>对于数据透视表报表基于数据透视表缓存，则返回的数据透视表字段的集合反映了内容当前在缓存中。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2729,7 +2726,7 @@
         <value>To be added.</value>
         <remarks>
           <para>该样式用于作为默认样式的背景区域，并应用任何用户格式之前。清空时到另一个位置的页字段区域从透视字段的单元格保留此样式。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2958,8 +2955,8 @@
         <summary>返回一个 object 值，该值代表之一的单个数据透视表字段 (<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />对象) 或可见和隐藏字段的集合 (<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />对象) 的数据透视表报告中。 只读。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>对于 OLAP 数据源，有没有隐藏的字段的对象或返回的集合，反映了当前可见的内容。</para>
-          <para />
+          <para>有对于 OLAP 数据源不隐藏的字段，并返回集合的对象反映了当前可见的内容。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2989,8 +2986,8 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.PivotFormulas" />对象，表示为指定的公式集合<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />报告。 只读。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>对于 OLAP 数据源，此属性返回一个空集合。</para>
-          <para />
+          <para>的 OLAP 数据源，此属性返回一个空集合。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3053,8 +3050,8 @@
         <param name="UseStandardName">可选的<b>对象</b>。 如果为 <b>True</b>，则表示将在其他位置运行录制的宏。</param>
         <summary>选定数据透视表的一部分。</summary>
         <remarks>
-          <para>您可用于指定的模式仅选择数据透视表报告中的相应项。例如，不能使用<b>xlButton</b>模式，则选择数据和标签同样，不能使用<b>xlDataOnly</b>模式选择按钮。</para>
-          <para />
+          <para>您可用于指定的模式仅选择数据透视表报告中的相应项。例如，不能使用<b>xlButton</b>模式，则选择数据和标签同样，不能选择使用<b>xlDataOnly</b>模式的按钮。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3088,7 +3085,7 @@
         <value>To be added.</value>
         <remarks>
           <para>设置此属性等效于调用<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.PivotSelect(System.String,Microsoft.Office.Interop.Excel.XlPTSelectionMode,System.Object)" />方法与<paramref name="Mode" />参数设置为<b>xldataandlabel 时</b>。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3123,7 +3120,7 @@
         <remarks>
           <para>
             <b>Pivotselection</b>属性是"国际友好"而<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.PivotSelection" />属性不是。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3278,7 +3275,7 @@
         <remarks>
           <para>返回<b>True</b> ，如果深化指示符的打印<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />，则返回<b>False</b> ，如果深化指示符的不打印<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。</para>
           <para>时<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowDrillIndicators" />属性设置为<b>False</b><see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowDrillIndicators" />属性不起作用。当中不显示不打印深化指示符<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3313,7 +3310,7 @@
         <remarks>
           <para>行打印标题设置为包含数据透视表报表的列字段项的行。打印标题设置为包含的行项的列。</para>
           <para>数据透视表报表必须打印区域中仅有的。若要设置数据透视表的缩进的格式，使用<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.Format(Microsoft.Office.Interop.Excel.XlPivotFormatType)" />方法。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3343,7 +3340,7 @@
           <para>若要确定数据透视表是否处于回写模式，请查看<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" />或<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" />属性<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />对象，其中任一将返回 True。对于不处于回写模式的数据透视表报表，尝试执行此方法将生成运行时错误。</para>
           <para>的数据透视表使用 OLAP 数据源执行<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.RefreshDataSourceValues" />方法创建一个单独的连接到 OLAP 服务器，并执行完整的 MDX 查询 (的值<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.MDX" />属性)，用于执行到更新操作填充数据透视表。Excel 中提取返回在数据透视表视图中，已编辑的所有单元格的值，然后将其存储<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" />属性对这些单元格。</para>
           <para>此方法仅适用于 OLAP 数据源的数据透视表报告。尝试执行此方法或非 OLAP 数据源的数据透视表报告生成运行时错误。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3373,8 +3370,8 @@
         <summary>返回最近一次刷新数据透视表的日期。 只读的<b>DateTime</b>。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>对于 OLAP 数据源，每次查询后都会更新此属性。</para>
-          <para />
+          <para>对于 OLAP 数据源，此属性在每个查询后更新。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3404,8 +3401,8 @@
         <summary>返回最近一次刷新数据透视表或数据透视表缓存的人员的名称。 只读 <b>String</b>。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>对于 OLAP 数据源，每次查询后都会更新此属性。</para>
-          <para />
+          <para>对于 OLAP 数据源，此属性在每个查询后更新。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3463,7 +3460,7 @@
         <remarks>
           <para>使用<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.RepeatAllLabels(Microsoft.Office.Interop.Excel.XlPivotFieldRepeatLabels)" />方法对应于在报表布局下拉列表的数据透视表工具设计选项卡上重复所有项目标签和执行不重复项目标签命令</para>
           <para>若要指定是否为单个 PivotField 重复项目标签，请使用<see cref="P:Microsoft.Office.Interop.Excel.PivotField.RepeatLabels" />属性。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3498,7 +3495,7 @@
         <remarks>
           <para>数据透视表必须是唯一打印区域中。若要设置数据透视表的缩进的格式，使用<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.Format(Microsoft.Office.Interop.Excel.XlPivotFormatType)" />方法。</para>
           <para>Microsoft Excel 打印代替设置工作表的任何打印标题行和列标签。使用<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.PrintTitles" />属性可以确定是否打印标题设置数据透视表。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3529,7 +3526,7 @@
         <summary>此方法用于同时设置为所有现有的版式选项<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s。</summary>
         <remarks>
           <para>此方法是原子，因此它可确保如果不能在任何上设置版式选项<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />，将更改的任何字段的布局选项以及对进行任何更改<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3654,7 +3651,7 @@
         <value>To be added.</value>
         <remarks>
           <para>对于 OLAP 数据源，此属性始终设置为<b>False</b>。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3688,7 +3685,7 @@
         <value>To be added.</value>
         <remarks>
           <para>如果数据透视表字段不是大纲形式，指定任意常量与<b>xlFirstRow</b>的和将等价于单独指定该常量。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3728,8 +3725,8 @@
           <b>True</b>如果 Microsoft Excel 将发送到服务器的 MDX （多维表达式） 包括<see cref="P:Microsoft.Office.Interop.Excel.ChartFillFormat.BackColor" />属性对应于的单元格中联机分析处理 (OLAP) 数据集数据区域中的每个单元格。 默认值为 <b>False</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果 OLAP 数据集返回<b>BackColor</b>属性值，则会将单元格的填充颜色设置为最接近的工作表的 Microsoft Excel 的调色板中颜色。如果用户应用手动到单元格格式的单元格图案，它将覆盖 OLAP 数据集的所有格式。</para>
-          <para />
+          <para>如果 OLAP 数据集返回<b>BackColor</b>属性值，则单元格的填充颜色设置为最接近的工作表的 Microsoft Excel 的调色板中颜色。如果用户应用手动到单元格格式的单元格图案，它将覆盖 OLAP 数据集的所有格式。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3766,7 +3763,7 @@
         </value>
         <remarks>
           <para>返回<b>True</b> ，如果深化指示符显示在<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />，则返回<b>False</b> ，如果深化指示符未显示在<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3828,7 +3825,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>此方法不可用于 OLAP 数据源。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4022,7 +4019,7 @@
         <remarks>
           <para>读/写。</para>
           <para>此属性对应于显示数据透视表选项对话框的显示选项卡上的值行复选框的设置。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4054,7 +4051,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.Slicers" />指定数据透视表的集合。</value>
         <remarks>
           <para>只读的。</para>可以使用
-          <para>切片器筛选数据透视表报告中的数据。<see cref="T:Microsoft.Office.Interop.Excel.Slicers" />集合包含<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />对象表示与指定的数据透视表关联的切片器。</para><para /></remarks>
+          <para>切片器筛选数据透视表报告中的数据。<see cref="T:Microsoft.Office.Interop.Excel.Slicers" />集合包含<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />对象表示与指定的数据透视表关联的切片器。</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SmallGrid">
@@ -4086,8 +4083,8 @@
         <summary>如果 Microsoft Excel 为新建的数据透视表使用一个具有两个单元格宽度和两个单元格高度的网格，则该值为 <b>True</b>。如果 Excel 使用一个空白模板边框，则该值为 <b>False</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>您应使用模具大纲。网格仅被为了使与早期版本的 Excel 的兼容性。</para>
-          <para />
+          <para>您应使用模具大纲。网格仅为了使与早期版本的 Excel 的兼容性。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4123,8 +4120,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>此属性设置为<b>False</b>可优化具有多个项的字段的性能，并且它还允许用户不希望自定义基于列表的排序避免。</para>
-          <para />
+          <para>设置此属性为<b>False</b>可优化具有多个项的字段的性能，并且它还允许的用户用户不希望自定义基于列表的排序以免它。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4177,7 +4174,7 @@
             </item>
           </list>
           <para>此属性不可用于 OLE DB 数据源。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4211,7 +4208,7 @@
         <value>To be added.</value>
         <remarks>
           <para>对于 OLAP 数据源，该值始终是<b>，则返回 True</b>。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4243,7 +4240,7 @@
         <remarks>
           <para>
             <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.SubtotalLocation(Microsoft.Office.Interop.Excel.XlSubtototalLocationType)" />方法设置<see cref="P:Microsoft.Office.Interop.Excel.PivotField.LayoutSubtotalLocation" />为所有现有属性<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s 自动。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4278,7 +4275,7 @@
         <remarks>
           <para>读/写。</para>
           <para>的值<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Summary" />属性对应于数据透视表选项对话框的可选文字选项卡上的说明框中的值。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4310,7 +4307,7 @@
         <remarks>
           <para>
             <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableRange2" />属性包括页字段。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4342,7 +4339,7 @@
         <remarks>
           <para>
             <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableRange1" />属性不包括页字段。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4381,8 +4378,8 @@
         <summary>返回或设置数据透视表在正文中使用的样式。 默认值为空字符串 （默认情况下应用无样式）。 可读写 <b>String</b>。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>该样式用于作为默认样式的背景区域，并应用任何用户格式之前。</para>
-          <para />
+          <para>该样式用于作为默认样式的背景区域，并在任何用户格式之前应用。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4418,8 +4415,8 @@
           <b>对象</b>
         </value>
         <remarks>
-          <para>该属性称为<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableStyle2" />因为没有现有属性名为<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableStyle" />。</para>
-          <para />
+          <para>调用该属性<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableStyle2" />因为没有现有属性名为<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableStyle" />。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4485,7 +4482,7 @@
         <remarks>
           <para>当此属性设置为<b>True</b>时，星号表示汇总中包含隐藏的项。无论在报表中的任何项目是否已被隐藏会显示星号。</para>
           <para>对于非 OLAP 数据源，此属性的值总是<b>False</b>。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4665,8 +4662,8 @@
         <summary>数据透视表报告中返回一个对象，表示单个字段 (<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />对象) 或所有可见字段的集合 (<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />对象)。 可见字段显示为行、 列、 页或数据字段。 只读。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>对于 OLAP 数据源存在不隐藏的字段，并在数据透视表缓存，此属性返回的所有字段。</para>
-          <para />
+          <para>有对于 OLAP 数据源不隐藏的字段，以及此属性返回的所有域中的数据透视表缓存。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4703,7 +4700,7 @@
           <para>中非-OLAP 数据透视表，如果隐藏了项目，将重新进行汇总以反映仅仍可见的数据透视表中的项目。在 OLAP 数据透视表，总计计算的服务器上，因此不受影响的任何项目在数据透视表视图中的隐藏是否。但是，如果 OLAP 数据透视表的<b>VisualTotals</b>属性设置为<b>False</b> ，然后 OLAP 数据透视表的结果将匹配的非-OLAP 数据透视表。</para>
           <para>用于 OLAP 数据透视表，用于非-OLAP 数据透视表所述的<b>VisualTotals</b>属性设置为<b>True</b> （默认值） 工作方式相同。</para>
           <para>，<b>其 VisualTotals</b>属性返回<b>True</b>的所有新数据透视表。但是，如果当前版本的 Microsoft Excel 中打开工作簿，具有已在以前版本的 Excel 中创建数据透视表的<b>VisualTotals</b>属性将返回<b>False</b>。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4741,7 +4738,7 @@
           <para>
             <b>，则返回 true</b>如果命名集汇总中包含筛选的项目; 否则为<b>false</b>。此属性的默认值为<b>false</b>。</para>
           <para>中基于数据透视表的 OLAP 数据源，您可以配置是否汇总在数据透视表命名集将包括已筛选的项目。设置<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.VisualTotalsForSets" />属性对应于组上汇总的汇总复选框中包含筛选项目&amp;数据透视表选项对话框的筛选器选项卡。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
