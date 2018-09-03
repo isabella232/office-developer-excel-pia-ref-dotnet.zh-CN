@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20579126" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface IRtdServer" />
@@ -27,20 +27,21 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="7fd74-101">代表实时数据服务器的一个接口。</span>
+      <span data-ttu-id="65340-101">代表实时数据服务器的一个接口。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="7fd74-101">Represents an interface for a real-time data server.</span>
+        <span data-stu-id="65340-101">Represents an interface for a real-time data server.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="7fd74-102">
-        <para>可以实例化或只能由实现<b>IRTDServer</b>接口使用<b>Implements</b>关键字创建<b>IRTDServer</b>对象。</para>
-        <para />
+      <span data-ttu-id="65340-102">
+        <para>
+          <b>IRTDServer</b>对象可以实例化或创建只能由实现<b>IRTDServer</b>接口使用<b>Implements</b>关键字。</para>
+        <para></para>
       </span>
       <span class="sxs-lookup">
-        <span data-stu-id="7fd74-102">
+        <span data-stu-id="65340-102">
           <para>The <b>IRTDServer</b> object can be instantiated or created only by implementing the <b>IRTDServer</b> interface using the <b>Implements</b> keyword.</para>
-          <para />
+          <para></para>
         </span>
       </span>
     </remarks>
@@ -72,47 +73,47 @@
       </Parameters>
       <Docs>
         <param name="TopicID">
-          <span data-ttu-id="7fd74-103">
+          <span data-ttu-id="65340-103">
             <b>必选。</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="7fd74-103">Required <b>Integer</b>.</span>
+            <span data-stu-id="65340-103">Required <b>Integer</b>.</span>
           </span>
-          <span data-ttu-id="7fd74-104">由 Microsoft Excel 指定的用于标识主题的唯一值。</span>
+          <span data-ttu-id="65340-104">由 Microsoft Excel 指定的用于标识主题的唯一值。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7fd74-104">A unique value, assigned by Microsoft Excel, which identifies the topic.</span>
+            <span data-stu-id="65340-104">A unique value, assigned by Microsoft Excel, which identifies the topic.</span>
           </span>
         </param>
         <param name="Strings">
-          <span data-ttu-id="7fd74-105">所需的<b>对象</b>。</span>
+          <span data-ttu-id="65340-105">所需的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7fd74-105">Required <b>Object</b>.</span>
+            <span data-stu-id="65340-105">Required <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="7fd74-106">用于标识主题的字符串的一维数组。</span>
+          <span data-ttu-id="65340-106">用于标识主题的字符串的一维数组。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7fd74-106">A single-dimensional array of strings identifying the topic.</span>
+            <span data-stu-id="65340-106">A single-dimensional array of strings identifying the topic.</span>
           </span>
         </param>
         <param name="GetNewValues">
-          <span data-ttu-id="7fd74-107">所需<b>Boolean</b>。</span>
+          <span data-ttu-id="65340-107">所需<b>Boolean</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7fd74-107">Required <b>Boolean</b>.</span>
+            <span data-stu-id="65340-107">Required <b>Boolean</b>.</span>
           </span>
-          <span data-ttu-id="7fd74-108">如果该值为 <b>True</b>，则确定是否需要新值。</span>
+          <span data-ttu-id="65340-108">如果该值为 <b>True</b>，则确定是否需要新值。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7fd74-108">
+            <span data-stu-id="65340-108">
               <b>True</b> to determine if new values are to be acquired.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="7fd74-109">从实时数据服务器中添加新的主题。</span>
+          <span data-ttu-id="65340-109">从实时数据服务器中添加新的主题。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7fd74-109">Adds new topics from a real-time data server.</span>
+            <span data-stu-id="65340-109">Adds new topics from a real-time data server.</span>
           </span>
-          <span data-ttu-id="7fd74-110">
+          <span data-ttu-id="65340-110">
             <b>ConnectData</b>方法在新公式包含<b>RTD</b>函数中包含实时数据函数打开文件时，或当用户键入时调用。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7fd74-110">The <b>ConnectData</b> method is called when a file is opened that contains real-time data functions or when a user types in a new formula which contains the <b>RTD</b> function.</span>
+            <span data-stu-id="65340-110">The <b>ConnectData</b> method is called when a file is opened that contains real-time data functions or when a user types in a new formula which contains the <b>RTD</b> function.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -143,21 +144,21 @@
       </Parameters>
       <Docs>
         <param name="TopicID">
-          <span data-ttu-id="7fd74-111">
+          <span data-ttu-id="65340-111">
             <b>必选。</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="7fd74-111">Required <b>Integer</b>.</span>
+            <span data-stu-id="65340-111">Required <b>Integer</b>.</span>
           </span>
-          <span data-ttu-id="7fd74-112">指定给 Microsoft Excel 指定的主题的唯一值。</span>
+          <span data-ttu-id="65340-112">指定给 Microsoft Excel 指定的主题的唯一值。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7fd74-112">A unique value assigned to the topic assigned by Microsoft Excel.</span>
+            <span data-stu-id="65340-112">A unique value assigned to the topic assigned by Microsoft Excel.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="7fd74-113">将不再使用的主题通知给实时数据 (RTD) 服务器应用程序。</span>
+          <span data-ttu-id="65340-113">将不再使用的主题通知给实时数据 (RTD) 服务器应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7fd74-113">Notifies a real-time data (RTD) server application that a topic is no longer in use.</span>
+            <span data-stu-id="65340-113">Notifies a real-time data (RTD) server application that a topic is no longer in use.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -185,25 +186,25 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="7fd74-114">确定实时数据服务器是否仍处于活动状态。</span>
+          <span data-ttu-id="65340-114">确定实时数据服务器是否仍处于活动状态。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7fd74-114">Determines if the real-time data server is still active.</span>
+            <span data-stu-id="65340-114">Determines if the real-time data server is still active.</span>
           </span>
-          <span data-ttu-id="7fd74-115">零或为负数表示失败;正数表示服务器处于活动状态。</span>
+          <span data-ttu-id="65340-115">零或为负数表示失败;正数表示服务器处于活动状态。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7fd74-115">Zero or a negative number indicates failure; a positive number indicates that the server is active.</span>
+            <span data-stu-id="65340-115">Zero or a negative number indicates failure; a positive number indicates that the server is active.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
         <remarks>
-          <span data-ttu-id="7fd74-116">
-            <para>如果由 Microsoft Excel 调用 Heartbeat 方法<see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" />属性经过最后一次调用 Excel 以来与<see cref="M:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.UpdateNotify" />方法。</para>
-            <para />
+          <span data-ttu-id="65340-116">
+            <para>由 Microsoft Excel 调用 Heartbeat 方法，如果<see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" />属性经过最后一次调用 Excel 以来与<see cref="M:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.UpdateNotify" />方法。</para>
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="7fd74-116">
+            <span data-stu-id="65340-116">
               <para>The Heartbeat method is called by Microsoft Excel if the <see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" /> property has elapsed since the last time Excel was called with the <see cref="M:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.UpdateNotify" /> method.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -233,33 +234,33 @@
       </Parameters>
       <Docs>
         <param name="TopicCount">
-          <span data-ttu-id="7fd74-117">
+          <span data-ttu-id="65340-117">
             <b>必选。</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="7fd74-117">Required <b>Integer</b>.</span>
+            <span data-stu-id="65340-117">Required <b>Integer</b>.</span>
           </span>
-          <span data-ttu-id="7fd74-118">RTD 服务器必须更改的值<paramref name="TopicCount" />返回到数组中的元素的数目。</span>
+          <span data-ttu-id="65340-118">RTD 服务器必须更改的值<paramref name="TopicCount" />返回到数组中的元素的数目。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7fd74-118">The RTD server must change the value of the <paramref name="TopicCount" /> to the number of elements in the array returned.</span>
+            <span data-stu-id="65340-118">The RTD server must change the value of the <paramref name="TopicCount" /> to the number of elements in the array returned.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="7fd74-119">由 Microsoft Excel 以获取新数据调用此方法。</span>
+          <span data-ttu-id="65340-119">由 Microsoft Excel 以获取新数据调用此方法。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7fd74-119">This method is called by Microsoft Excel to get new data.</span>
+            <span data-stu-id="65340-119">This method is called by Microsoft Excel to get new data.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
         <remarks>
-          <span data-ttu-id="7fd74-120">
-            <para>返回到 Excel 的数据是一个包含一个二维数组的<b>对象</b>。第一个维度代表主题 Id 的列表。第二个维度表示主题 Id 相关联的值。</para>
-            <para />
+          <span data-ttu-id="65340-120">
+            <para>数据返回到 Excel 是一个包含一个二维数组的<b>对象</b>。第一个维度代表主题 Id 的列表。第二个维度表示主题 Id 相关联的值。</para>
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="7fd74-120">
+            <span data-stu-id="65340-120">
               <para>The data returned to Excel is an <b>Object</b> containing a two-dimensional array. The first dimension represents the list of topic IDs. The second dimension represents the values associated with the topic IDs.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -289,23 +290,23 @@
       </Parameters>
       <Docs>
         <param name="CallbackObject">
-          <span data-ttu-id="7fd74-121">所需<see cref="T:Microsoft.Office.Interop.Excel.IRTDUpdateEvent" />对象。</span>
+          <span data-ttu-id="65340-121">所需<see cref="T:Microsoft.Office.Interop.Excel.IRTDUpdateEvent" />对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7fd74-121">Required <see cref="T:Microsoft.Office.Interop.Excel.IRTDUpdateEvent" /> object.</span>
+            <span data-stu-id="65340-121">Required <see cref="T:Microsoft.Office.Interop.Excel.IRTDUpdateEvent" /> object.</span>
           </span>
-          <span data-ttu-id="7fd74-122">回调对象。</span>
+          <span data-ttu-id="65340-122">回调对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7fd74-122">The callback object.</span>
+            <span data-stu-id="65340-122">The callback object.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="7fd74-123">实时数据服务器实例化后立即调用<b>ServerStart</b>方法。</span>
+          <span data-ttu-id="65340-123">实时数据服务器实例化后立即调用<b>ServerStart</b>方法。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7fd74-123">The <b>ServerStart</b> method is called immediately after a real-time data server is instantiated.</span>
+            <span data-stu-id="65340-123">The <b>ServerStart</b> method is called immediately after a real-time data server is instantiated.</span>
           </span>
-          <span data-ttu-id="7fd74-124">负值或零指示未能启动服务器。正值表示成功。</span>
+          <span data-ttu-id="65340-124">负值或零指示未能启动服务器。正值表示成功。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7fd74-124">Negative value or zero indicates failure to start the server; positive value indicates success.</span>
+            <span data-stu-id="65340-124">Negative value or zero indicates failure to start the server; positive value indicates success.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -334,9 +335,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="7fd74-125">中断与实时数据服务器的连接。</span>
+          <span data-ttu-id="65340-125">中断与实时数据服务器的连接。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="7fd74-125">Terminates the connection to the real-time data server.</span>
+            <span data-stu-id="65340-125">Terminates the connection to the real-time data server.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>

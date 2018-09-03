@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20576207" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface OLEDBConnection" />
@@ -30,23 +30,23 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="5c5af-101">代表 OLE DB 连接。</span>
+      <span data-ttu-id="ebe7b-101">代表 OLE DB 连接。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="5c5af-101">Represents the OLE DB connection.</span>
+        <span data-stu-id="ebe7b-101">Represents the OLE DB connection.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="5c5af-102">
+      <span data-ttu-id="ebe7b-102">
         <para>OLE DB 连接可以存储在 Excel 工作簿中。 当 Micrososft Excel 打开工作簿时，Excel 创建 OLE DB 连接称为内存中副本<see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" />对象。</para>
         <para>
           <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" />对象包含与该连接，连接到服务器的名称和要在该服务器上打开的对象名称等相关信息。 （可选）<see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" />对象可能还包括身份验证凭据信息或命令，以传递给服务器和执行 （例如，若要执行的 SQL Server 的 SELECT 语句）。</para>
-        <para />
+        <para></para>
       </span>
       <span class="sxs-lookup">
-        <span data-stu-id="5c5af-102">
+        <span data-stu-id="ebe7b-102">
           <para>An OLE DB connection can be stored in an Excel workbook.  When Micrososft Excel opens the workbook, Excel creates an in-memory copy of the OLE DB connection known as the  <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> object.</para>
           <para>An <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> object contains information related to the connection, such as the name of the server to connect to and the name of the objects to be opened on that server.  Optionally, the <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> object may also include authentication credential information, or a command that is to be passed to the server and executed (for example, a SELECT statement to be executed by SQL Server).</para>
-          <para />
+          <para></para>
         </span>
       </span>
     </remarks>
@@ -76,36 +76,36 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-p101">如果将数据透视表缓存连接到 OLE DB 数据源，则返回一个 ADO Connection 对象。只读。
+          <span data-ttu-id="ebe7b-p101">如果将数据透视表缓存连接到 OLE DB 数据源，则返回一个 ADO Connection 对象。只读。
 
 </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-p101">Returns an ADO connection object if the PivotTable cache is connected to an OLE DB data source. Read-only.</span>
+            <span data-stu-id="ebe7b-p101">Returns an ADO connection object if the PivotTable cache is connected to an OLE DB data source. Read-only.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="5c5af-105">
+          <span data-ttu-id="ebe7b-105">
             <b>对象</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-105">
+            <span data-stu-id="ebe7b-105">
               <b>Object</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="5c5af-106">
+          <span data-ttu-id="ebe7b-106">
             <para>
               <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ADOConnection" />属性公开的 Microsoft Excel 连接到数据提供程序，允许用户使用 Excel 的同一会话的上下文中编写代码。</para>
             <para>
               <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ADOConnection" />属性是可用只为会话其中的数据源是一个 OLE DB 数据源。当没有 ADO 会话时，查询将导致运行时错误。 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ADOConnection" />属性可用于用 ADO 任何基于 OLE DB 的缓存。ADO connection 对象可用于与 ADO MD 查找有关缓存基于 OLAP 多维数据集的信息。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-106">
+            <span data-stu-id="ebe7b-106">
               <para>The <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ADOConnection" /> property exposes the Microsoft Excel connection to the data provider, allowing the user to write code within the context of the same session that Excel is using. </para>
               <para>The <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ADOConnection" /> property is available only for sessions where the data source is an OLE DB data source. When there is no ADO session, the query will result in a run-time error.  The <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ADOConnection" /> property can be used for any OLE DB–based cache with ADO. The ADO connection object can be used with ADO MD for finding information about OLAP cubes on which the cache is based.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -138,35 +138,32 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-107">如果为<b>true</b>的连接文件始终用于建立与数据源连接。</span>
+          <span data-ttu-id="ebe7b-107">如果为<b>true</b>的连接文件始终用于建立与数据源连接。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-107">
+            <span data-stu-id="ebe7b-107">
               <b>True</b>if the connection file is always used to establish connection to the data source.</span>
           </span>
-          <span data-ttu-id="5c5af-108">可读写 <b>Boolean</b>。</span>
+          <span data-ttu-id="ebe7b-108">可读写 <b>Boolean</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-108">Read/write <b>Boolean</b>.</span>
+            <span data-stu-id="ebe7b-108">Read/write <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="5c5af-109">
+          <span data-ttu-id="ebe7b-109">
             <b>Boolean</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-109">
+            <span data-stu-id="ebe7b-109">
               <b>Boolean</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="5c5af-110">
-            <para>当此属性为<b>True</b>的连接文件将始终用于建立与数据源的连接。 如果工作簿中嵌入的连接为不同的外部连接文件，将忽略嵌入的连接和外部连接文件将被视为唯一的版本。</para>
-            <para />
-          </span>
+          <span data-ttu-id="ebe7b-110">当此属性为<b>True</b>的连接文件的<para>始终将用于建立与数据源的连接。 如果工作簿中嵌入的连接为不同的外部连接文件，将忽略嵌入的连接和外部连接文件将被视为唯一的版本。</para><para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-110">
+            <span data-stu-id="ebe7b-110">
               <para>When this property is <b>True</b> the connection file will always be used to establish the connection to the data source.  If the connection embedded within the workbook is different from the external connection file, the embedded connection will be ignored and the external connection file will be the only version considered.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -196,38 +193,38 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-111">当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象代表 Microsoft Office Excel 应用程序。</span>
+          <span data-ttu-id="ebe7b-111">当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象代表 Microsoft Office Excel 应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-111">When used without an object qualifier, this property returns an  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object that represents the Microsoft Office Excel  application.</span>
+            <span data-stu-id="ebe7b-111">When used without an object qualifier, this property returns an  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object that represents the Microsoft Office Excel  application.</span>
           </span>
-          <span data-ttu-id="5c5af-112">如果使用对象识别符，此属性返回值，该值代表指定对象的创建者<b>Application</b>对象。</span>
+          <span data-ttu-id="ebe7b-112">如果使用对象识别符，此属性返回值，该值代表指定对象的创建者<b>Application</b>对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-112">When used with an object qualifier, this property returns an <b>Application</b> object that represents the creator of the specified object.</span>
+            <span data-stu-id="ebe7b-112">When used with an object qualifier, this property returns an <b>Application</b> object that represents the creator of the specified object.</span>
           </span>
-          <span data-ttu-id="5c5af-113">只读。</span>
+          <span data-ttu-id="ebe7b-113">只读。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-113">Read-only.</span>
+            <span data-stu-id="ebe7b-113">Read-only.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="5c5af-114">
-            <b>Application</b>
+          <span data-ttu-id="ebe7b-114">
+            <b>应用程序</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-114">
+            <span data-stu-id="ebe7b-114">
               <b>Application</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="5c5af-115">
-            <para>您可以与 OLE 自动化对象使用此属性返回该对象的应用程序。</para>
-            <para />
+          <span data-ttu-id="ebe7b-115">
+            <para>您可以使用此属性与 OLE 自动化对象返回该对象的应用程序。</para>
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-115">
+            <span data-stu-id="ebe7b-115">
               <para>You can use this property with an OLE Automation object to return the application of that object.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -260,31 +257,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-p104">如果 OLE DB 连接的查询是异步执行（在后台执行）的，则为 <b>True</b>。可读/写 <b>Boolean</b> 类型。</span>
+          <span data-ttu-id="ebe7b-p104">如果 OLE DB 连接的查询是异步执行（在后台执行）的，则为 <b>True</b>。可读/写 <b>Boolean</b> 类型。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-p104">
+            <span data-stu-id="ebe7b-p104">
               <b>True</b> if queries for the OLE DB connection are performed asynchronously (in the background). Read/write <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="5c5af-118">
+          <span data-ttu-id="ebe7b-118">
             <b>Boolean</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-118">
+            <span data-stu-id="ebe7b-118">
               <b>Boolean</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="5c5af-119">
-            <para>对于 OLAP 数据源，此属性是只读的且始终返回<b>False</b>。</para>
-            <para />
+          <span data-ttu-id="ebe7b-119">
+            <para>对于 OLAP 数据源，此属性是只读的并且始终返回<b>False</b>。</para>
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-119">
+            <span data-stu-id="ebe7b-119">
               <para>For OLAP data sources, this property is read-only and always returns <b>False</b>.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -314,29 +311,29 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-120">获取<see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" />指定连接的集合。</span>
+          <span data-ttu-id="ebe7b-120">获取<see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" />指定连接的集合。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-120">Gets the <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> collection for the specified connection.</span>
+            <span data-stu-id="ebe7b-120">Gets the <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> collection for the specified connection.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="5c5af-121">
+          <span data-ttu-id="ebe7b-121">
             <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" />指定连接的集合。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-121">The <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> collection for the specified connection.</span>
+            <span data-stu-id="ebe7b-121">The <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> collection for the specified connection.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="5c5af-122">
+          <span data-ttu-id="ebe7b-122">
             <para>只读的。</para>
             <para>使用<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CalculatedMembers" />属性<see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" />共享之间使用相同的连接的多个数据透视表和多维数据集函数的计算的成员的集合。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-122">
+            <span data-stu-id="ebe7b-122">
               <para>Read-only.</para>
               <para>Use the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CalculatedMembers" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> collection to share calculated members between multiple PivotTables and cube functions that use the same connection.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -364,20 +361,20 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-123">对指定的 OLE DB 连接取消正在进行的所有刷新操作。</span>
+          <span data-ttu-id="ebe7b-123">对指定的 OLE DB 连接取消正在进行的所有刷新操作。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-123">Cancels all refresh operations in progress for the specified OLE DB connection.</span>
+            <span data-stu-id="ebe7b-123">Cancels all refresh operations in progress for the specified OLE DB connection.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="5c5af-124">
-            <para>使用<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Refreshing" />属性可以确定刷新操作当前是否正在运行。</para>
-            <para />
+          <span data-ttu-id="ebe7b-124">
+            <para>使用<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Refreshing" />属性可以确定刷新操作当前是否正在。</para>
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-124">
+            <span data-stu-id="ebe7b-124">
               <para>Use the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Refreshing" /> property to determine whether a refresh operation is currently in progress.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -410,37 +407,37 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-125">返回或设置指定的数据源的命令字符串。</span>
+          <span data-ttu-id="ebe7b-125">返回或设置指定的数据源的命令字符串。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-125">Returns or sets the command string for the specified data source.</span>
+            <span data-stu-id="ebe7b-125">Returns or sets the command string for the specified data source.</span>
           </span>
-          <span data-ttu-id="5c5af-126">读取/写入 <b>对象</b> 。</span>
+          <span data-ttu-id="ebe7b-126">读取/写入 <b>对象</b> 。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-126">Read/write <b>Object</b>.</span>
+            <span data-stu-id="ebe7b-126">Read/write <b>Object</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="5c5af-127">
+          <span data-ttu-id="ebe7b-127">
             <b>对象</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-127">
+            <span data-stu-id="ebe7b-127">
               <b>Object</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="5c5af-128">
+          <span data-ttu-id="ebe7b-128">
             <para>您应使用<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" />属性而不是<b>SQL</b>属性，现在存在主要用于与早期版本的 Microsoft Excel 的兼容性。如果您使用这两个属性，<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" />属性的值优先。</para>
             <para>
               <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandType" />属性描述了的值<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" />属性。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-128">
+            <span data-stu-id="ebe7b-128">
               <para>You should use the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" /> property instead of the <b>SQL</b>property, which now exists primarily for compatibility with earlier versions of Microsoft Excel. If you use both properties, the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" /> property's value takes precedence.</para>
               <para>The <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandType" /> property describes the value of the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" /> property.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -473,27 +470,24 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-129">返回或设置<b>XlCmdType</b>常量之一。</span>
+          <span data-ttu-id="ebe7b-129">返回或设置<b>XlCmdType</b>常量之一。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-129">Returns or sets one of the <b>XlCmdType</b> constants.</span>
+            <span data-stu-id="ebe7b-129">Returns or sets one of the <b>XlCmdType</b> constants.</span>
           </span>
-          <span data-ttu-id="5c5af-130">读/写<see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" />。</span>
+          <span data-ttu-id="ebe7b-130">读/写<see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" />。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-130">Read/write <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" />.</span>
+            <span data-stu-id="ebe7b-130">Read/write <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" />.</span>
           </span>
         </summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" />
         </value>
         <remarks>
-          <span data-ttu-id="5c5af-131">
-            <para>返回或设置常数描述的值<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" />属性。默认值是<see cref="F:Microsoft.Office.Interop.Excel.XlCmdType.xlCmdSql" />。</para>
-            <para />
-          </span>
+          <span data-ttu-id="ebe7b-131">返回或设置常量<para>介绍的值<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" />属性。默认值是<see cref="F:Microsoft.Office.Interop.Excel.XlCmdType.xlCmdSql" />。</para><para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-131">
+            <span data-stu-id="ebe7b-131">
               <para>The constant that is returned or set describes the value of the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" /> property. The default value is <see cref="F:Microsoft.Office.Interop.Excel.XlCmdType.xlCmdSql" />. </para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -526,34 +520,34 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-132">返回或设置一个字符串，包含 OLE DB 设置，使 Microsoft Excel 连接到 OLE DB 数据源。</span>
+          <span data-ttu-id="ebe7b-132">返回或设置一个字符串，包含 OLE DB 设置，使 Microsoft Excel 连接到 OLE DB 数据源。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-132">Returns or sets a string that contains OLE DB settings that enable Microsoft Excel to connect to an OLE DB data source.</span>
+            <span data-stu-id="ebe7b-132">Returns or sets a string that contains OLE DB settings that enable Microsoft Excel to connect to an OLE DB data source.</span>
           </span>
-          <span data-ttu-id="5c5af-133">读取/写入 <b>对象</b> 。</span>
+          <span data-ttu-id="ebe7b-133">读取/写入 <b>对象</b> 。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-133">Read/write <b>Object</b>.</span>
+            <span data-stu-id="ebe7b-133">Read/write <b>Object</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="5c5af-134">
+          <span data-ttu-id="ebe7b-134">
             <b>对象</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-134">
+            <span data-stu-id="ebe7b-134">
               <b>Object</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="5c5af-135">
+          <span data-ttu-id="ebe7b-135">
             <para>设置<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" />属性不会立即启动与数据源的连接。您必须使用<see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" />方法以进行连接，并检索数据。 使用脱机多维数据集文件时，设置<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" />属性设为<b>True</b>和使用<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" />属性而不是<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" />属性。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-135">
+            <span data-stu-id="ebe7b-135">
               <para>Setting the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> property does not immediately initiate the connection to the data source. You must use the <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> method to make the connection and retrieve the data.  When using an offline cube file, set the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" /> property to <b>True</b> and use the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> property instead of the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> property.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -583,27 +577,24 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-136">返回中的一个常量<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />枚举，指示在其中创建此对象的应用程序。</span>
+          <span data-ttu-id="ebe7b-136">返回中的一个常量<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />枚举，指示在其中创建此对象的应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-136">Returns a constant in the <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> enumeration that indicates the application in which this object was created.</span>
+            <span data-stu-id="ebe7b-136">Returns a constant in the <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> enumeration that indicates the application in which this object was created.</span>
           </span>
-          <span data-ttu-id="5c5af-137">只读。</span>
+          <span data-ttu-id="ebe7b-137">只读。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-137">Read-only.</span>
+            <span data-stu-id="ebe7b-137">Read-only.</span>
           </span>
         </summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <span data-ttu-id="5c5af-138">
-            <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-            <para />
-          </span>
+          <span data-ttu-id="ebe7b-138">如果对象在 Microsoft Excel 中创建的<para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-138">
+            <span data-stu-id="ebe7b-138">
               <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.  The <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Creator" /> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -636,32 +627,32 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-p109">			如果用户可刷新连接，则为 <b>True</b>。默认值是 <b>True</b>。可读/写 <b>Boolean</b> 类型。</span>
+          <span data-ttu-id="ebe7b-p109">			如果用户可刷新连接，则为 <b>True</b>。默认值是 <b>True</b>。可读/写 <b>Boolean</b> 类型。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-p109">
+            <span data-stu-id="ebe7b-p109">
               <b>True</b> if the connection can be refreshed by the user. The default value is <b>True</b>. Read/write <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="5c5af-142">
+          <span data-ttu-id="ebe7b-142">
             <b>Boolean</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-142">
+            <span data-stu-id="ebe7b-142">
               <b>Boolean</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="5c5af-143">
+          <span data-ttu-id="ebe7b-143">
             <para>
               <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.RefreshOnFileOpen" />属性将被忽略，如果<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.EnableRefresh" />属性设置为<b>False</b>。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-143">
+            <span data-stu-id="ebe7b-143">
               <para>The <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.RefreshOnFileOpen" /> property is ignored if the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.EnableRefresh" /> property is set to <b>False</b>. </para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -691,39 +682,39 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-144">返回<b>True</b> ，如果<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.MaintainConnection" />属性为<b>True</b>。</span>
+          <span data-ttu-id="ebe7b-144">返回<b>True</b> ，如果<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.MaintainConnection" />属性为<b>True</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-144">Returns <b>True</b> if the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.MaintainConnection" /> property is<b>True</b>.</span>
+            <span data-stu-id="ebe7b-144">Returns <b>True</b> if the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.MaintainConnection" /> property is<b>True</b>.</span>
           </span>
-          <span data-ttu-id="5c5af-145">如果当前未其源相连，则返回<b>False</b> 。</span>
+          <span data-ttu-id="ebe7b-145">如果当前未其源相连，则返回<b>False</b> 。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-145">Returns <b>False</b> if it is not currently connected to its source.</span>
+            <span data-stu-id="ebe7b-145">Returns <b>False</b> if it is not currently connected to its source.</span>
           </span>
-          <span data-ttu-id="5c5af-146">只读 <b>Boolean</b>。</span>
+          <span data-ttu-id="ebe7b-146">只读 <b>Boolean</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-146">Read-only <b>Boolean</b>.</span>
+            <span data-stu-id="ebe7b-146">Read-only <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="5c5af-147">
+          <span data-ttu-id="ebe7b-147">
             <b>Boolean</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-147">
+            <span data-stu-id="ebe7b-147">
               <b>Boolean</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="5c5af-148">
+          <span data-ttu-id="ebe7b-148">
             <para>
-              <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.IsConnected" />属性不检查连接是否连接。即使该属性返回<b>True</b>，发送到提供程序的命令如果可能导致错误连接不再有效。</para>
-            <para />
+              <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.IsConnected" />属性不检查连接是否连接。如果连接不再有效即使该属性返回<b>True</b>，发送到提供程序的命令可能导致出错。</para>
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-148">
+            <span data-stu-id="ebe7b-148">
               <para>The <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.IsConnected" /> property does not check to see if the connection is connected. Even if this property returns<b>True</b>, sending commands to the provider could result in an error if the connection is no longer valid.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -756,38 +747,38 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-149">返回或设置到脱机多维数据集文件的连接字符串。</span>
+          <span data-ttu-id="ebe7b-149">返回或设置到脱机多维数据集文件的连接字符串。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-149">Returns or sets the connection string to an offline cube file.</span>
+            <span data-stu-id="ebe7b-149">Returns or sets the connection string to an offline cube file.</span>
           </span>
-          <span data-ttu-id="5c5af-150">读取/写入 <b>对象</b> 。</span>
+          <span data-ttu-id="ebe7b-150">读取/写入 <b>对象</b> 。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-150">Read/write <b>Object</b>.</span>
+            <span data-stu-id="ebe7b-150">Read/write <b>Object</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="5c5af-151">
+          <span data-ttu-id="ebe7b-151">
             <b>对象</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-151">
+            <span data-stu-id="ebe7b-151">
               <b>Object</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="5c5af-152">
+          <span data-ttu-id="ebe7b-152">
             <para>对于非 OLAP 数据源的值<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" />属性为空字符串，和<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" />属性设置为<b>False</b>。</para>
             <para>设置<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" />属性不会立即启动与数据源的连接。您必须首先使用<see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" />方法以进行连接，并检索数据。</para>
             <para>值的<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" />属性来如果<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" />属性设置为<b>True</b>。如果<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" />属性设置为<b>False</b><see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" />属性指定用于查询表基于非本地多维数据集文件的源的连接字符串。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-152">
+            <span data-stu-id="ebe7b-152">
               <para>For a non-OLAP data source, the value of the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> property is an empty string, and the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" /> property is set to <b>False</b>.</para>
               <para>Setting the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> property does not immediately initiate the connection to the data source. You must first use the <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> method to make the connection and retrieve the data.</para>
               <para>The value of the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> property is used if the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" /> property is set to <b>True</b>. If the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" /> property is set to <b>False</b>, the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> property specifies the connection string for query tables based on sources other than local cube files.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -820,28 +811,28 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-153">获取或设置指定的连接的区域设置标识符。</span>
+          <span data-ttu-id="ebe7b-153">获取或设置指定的连接的区域设置标识符。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-153">Gets or sets the locale identifier for the specified connection.</span>
+            <span data-stu-id="ebe7b-153">Gets or sets the locale identifier for the specified connection.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="5c5af-154">指定连接的区域设置标识符。</span>
+          <span data-ttu-id="ebe7b-154">指定连接的区域设置标识符。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-154">The locale identifier for the specified connection.</span>
+            <span data-stu-id="ebe7b-154">The locale identifier for the specified connection.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="5c5af-155">
+          <span data-ttu-id="ebe7b-155">
             <para>读/写。</para>
             <para>将设置之前<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocaleID" />为新的区域设置的属性，必须设置<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.RetrieveInOfficeUILang" />属性<see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" />对象为<b>false</b>。有关有效的区域设置 ID (LCID) 值的信息，搜索 MSDN 网站的"区域设置 Id 分配由 Microsoft"。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-155">
+            <span data-stu-id="ebe7b-155">
               <para>Read/write.</para>
               <para>Before you set the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocaleID" /> property to a new locale, you must set the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.RetrieveInOfficeUILang" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> object to <b>false</b>. For information about valid Locale ID (LCID) values, search the MSDN website for "Locale IDs Assigned by Microsoft".</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -874,32 +865,32 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-p112">如果从刷新操作开始直至关闭工作簿，都一直保留与指定数据源的连接，则返回 <b>True</b>。可读/写 <b>Boolean</b> 类型。
+          <span data-ttu-id="ebe7b-p112">如果从刷新操作开始直至关闭工作簿，都一直保留与指定数据源的连接，则返回 <b>True</b>。可读/写 <b>Boolean</b> 类型。
 
 </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-p112">Returns <b>True</b> if the connection to the specified data source is maintained after the refresh operation and until the workbook is closed. Read/write <b>Boolean</b>.</span>
+            <span data-stu-id="ebe7b-p112">Returns <b>True</b> if the connection to the specified data source is maintained after the refresh operation and until the workbook is closed. Read/write <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="5c5af-158">
+          <span data-ttu-id="ebe7b-158">
             <b>Boolean</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-158">
+            <span data-stu-id="ebe7b-158">
               <b>Boolean</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="5c5af-159">
+          <span data-ttu-id="ebe7b-159">
             <para>默认值为<b>True</b>。如果预计频繁对服务器进行查询，将此属性设置为<b>True</b>可提高性能降低重新连接的时间。此属性设置为<b>False</b>会导致关闭打开的连接。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-159">
+            <span data-stu-id="ebe7b-159">
               <para>The default value is <b>True</b>. If you anticipate frequent queries to a server, setting this property to <b>True</b> might improve performance by reducing reconnection time. Setting this property to <b>False</b> causes an open connection to be closed.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -927,25 +918,25 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-160">为指定的 OLE DB 连接建立连接。</span>
+          <span data-ttu-id="ebe7b-160">为指定的 OLE DB 连接建立连接。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-160">Establishes a connection for the specified OLE DB connection.</span>
+            <span data-stu-id="ebe7b-160">Establishes a connection for the specified OLE DB connection.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="5c5af-161">
+          <span data-ttu-id="ebe7b-161">
             <para>
               <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.MakeConnection" />断开连接和用户想要重新建立连接时，可以使用方法。</para>
             <para>各种对象和方法可能会返回一个运行时错误，如果将断开的连接。使用此方法可确保在执行其他对象或方法之前的连接。</para>
             <para>如果，此方法将导致运行时错误<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.MaintainConnection" />指定的 OLE DB 连接的属性将设置为<b>False</b>。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-161">
+            <span data-stu-id="ebe7b-161">
               <para>The <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.MakeConnection" /> method can be used when a connection drops and the user wants to reestablish the connection. </para>
               <para>Various objects and methods might return a run-time error if the connection is dropped. Use of this method assures a connection before executing other objects or methods.</para>
               <para>This method will result in a run-time error if the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.MaintainConnection" /> property of the specified OLE DB connection has been set to <b>False</b>.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -978,21 +969,21 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-162">返回或设置要检索的记录的最大数目。</span>
+          <span data-ttu-id="ebe7b-162">返回或设置要检索的记录的最大数目。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-162">Returns or sets the maximum number of records to retrieve.</span>
+            <span data-stu-id="ebe7b-162">Returns or sets the maximum number of records to retrieve.</span>
           </span>
-          <span data-ttu-id="5c5af-163">可读写 <b>Integer</b>。</span>
+          <span data-ttu-id="ebe7b-163">可读写 <b>Integer</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-163">Read/write <b>Integer</b>.</span>
+            <span data-stu-id="ebe7b-163">Read/write <b>Integer</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="5c5af-164">
+          <span data-ttu-id="ebe7b-164">
             <b>Integer</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-164">
+            <span data-stu-id="ebe7b-164">
               <b>Integer</b>
             </span>
           </span>
@@ -1024,17 +1015,17 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-p114">如果 OLE DB 连接与联机分析处理 (OLAP) 服务器相连，则返回 <b>True</b>，只读 <b>Boolean</b> 类型。</span>
+          <span data-ttu-id="ebe7b-p114">如果 OLE DB 连接与联机分析处理 (OLAP) 服务器相连，则返回 <b>True</b>，只读 <b>Boolean</b> 类型。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-p114">Returns <b>True</b> if the OLE DB connection is connected to an Online Analytical Processing (OLAP) server. Read-only <b>Boolean</b>.</span>
+            <span data-stu-id="ebe7b-p114">Returns <b>True</b> if the OLE DB connection is connected to an Online Analytical Processing (OLAP) server. Read-only <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="5c5af-167">
+          <span data-ttu-id="ebe7b-167">
             <b>Boolean</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-167">
+            <span data-stu-id="ebe7b-167">
               <b>Boolean</b>
             </span>
           </span>
@@ -1066,17 +1057,17 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-p115">返回指定对象的父对象。只读。</span>
+          <span data-ttu-id="ebe7b-p115">返回指定对象的父对象。只读。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-p115">Returns the parent object for the specified object. Read-only.</span>
+            <span data-stu-id="ebe7b-p115">Returns the parent object for the specified object. Read-only.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="5c5af-170">
+          <span data-ttu-id="ebe7b-170">
             <b>对象</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-170">
+            <span data-stu-id="ebe7b-170">
               <b>Object</b>
             </span>
           </span>
@@ -1106,9 +1097,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-171">先放弃再重新连接指定的连接。</span>
+          <span data-ttu-id="ebe7b-171">先放弃再重新连接指定的连接。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-171">Drops and then reconnects the specified connection.</span>
+            <span data-stu-id="ebe7b-171">Drops and then reconnects the specified connection.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -1136,27 +1127,27 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-172">刷新 OLE DB 连接。</span>
+          <span data-ttu-id="ebe7b-172">刷新 OLE DB 连接。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-172">Refreshes an OLE DB connection.</span>
+            <span data-stu-id="ebe7b-172">Refreshes an OLE DB connection.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="5c5af-173">
+          <span data-ttu-id="ebe7b-173">
             <para>OLE DB 数据源的连接时，Microsoft Excel 将使用指定的连接字符串<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" />属性。如果指定的连接字符串缺少必需的值，则将显示对话框提示用户输入所需的信息。如果<see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" />属性为<b>False</b>，则不显示对话框和<see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" />方法将失败的连接信息不足异常。</para>
             <para>后 Microsoft Excel 使成功连接，它存储已完成的连接字符串，以便提示将不会显示后续调用<see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" />同一编辑会话期间的方法。您可以通过检查的值来获取完整的连接字符串<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" />属性。</para>
             <para>进行数据库连接之后，请验证 SQL 查询。如果查询无效，<see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" />方法将失败的 SQL 语法错误异常。</para>
             <para>
               <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" />如果成功完成或启动查询方法返回<b>True</b> ; 如果用户取消连接，则返回<b>False</b> 。</para>请参阅是否读取的行数超过的工作表上可用的行数，请检查的
-          <para><see cref="P:Microsoft.Office.Interop.Excel._QueryTable.FetchedRowOverflow" />属性。此属性初始化每次<see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" />方法调用。</para><para /></span>
+          <para><see cref="P:Microsoft.Office.Interop.Excel._QueryTable.FetchedRowOverflow" />属性。此属性初始化每次<see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" />方法调用。</para><para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-173">
+            <span data-stu-id="ebe7b-173">
               <para>When making the connection to the OLE DB data source, Microsoft Excel uses the connection string specified by the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> property. If the specified connection string is missing required values, dialog boxes will be displayed to prompt the user for the required information. If the <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> property is <b>False</b>, dialog boxes are not displayed and the <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> method fails with the Insufficient Connection Information exception.</para>
               <para>After Microsoft Excel makes a successful connection, it stores the completed connection string so that prompts will not be displayed for subsequent calls to the <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> method during the same editing session. You can obtain the completed connection string by examining the value of the  <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> property.</para>
               <para>After the database connection is made, the SQL query is validated. If the query is not valid, the <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> method fails with the SQL Syntax Error exception.</para>
               <para>The <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> method returns <b>True</b> if the query is successfully completed or started; it returns <b>False</b> if the user cancels a connection.</para>
               <para>To see whether the number of fetched rows exceeded the number of available rows on the worksheet, examine the <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.FetchedRowOverflow" /> property. This property is initialized every time the <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> method is called.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -1186,34 +1177,34 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-174">返回最近一次刷新 OLE DB 连接的日期。</span>
+          <span data-ttu-id="ebe7b-174">返回最近一次刷新 OLE DB 连接的日期。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-174">Returns the date on which the OLE DB connection was last refreshed.</span>
+            <span data-stu-id="ebe7b-174">Returns the date on which the OLE DB connection was last refreshed.</span>
           </span>
-          <span data-ttu-id="5c5af-175">只读的<b>DateTime</b>。</span>
+          <span data-ttu-id="ebe7b-175">只读的<b>DateTime</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-175">Read-only <b>DateTime</b>.</span>
+            <span data-stu-id="ebe7b-175">Read-only <b>DateTime</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="5c5af-176">
+          <span data-ttu-id="ebe7b-176">
             <b>DateTime</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-176">
+            <span data-stu-id="ebe7b-176">
               <b>DateTime</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="5c5af-177">
-            <para>对于 OLAP 数据源，每次查询后都会更新此属性。</para>
-            <para />
+          <span data-ttu-id="ebe7b-177">
+            <para>对于 OLAP 数据源，此属性在每个查询后更新。</para>
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-177">
+            <span data-stu-id="ebe7b-177">
               <para>For OLAP data sources, this property is updated after each query.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -1243,31 +1234,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-p117">			如果正在进行指定 OLE DB 连接的后台 OLE DB 查询，则为 <b>True</b>。可读/写 <b>Boolean</b> 类型。</span>
+          <span data-ttu-id="ebe7b-p117">			如果正在进行指定 OLE DB 连接的后台 OLE DB 查询，则为 <b>True</b>。可读/写 <b>Boolean</b> 类型。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-p117">
+            <span data-stu-id="ebe7b-p117">
               <b>True</b> if a background OLE DB query is in progress for the specified OLE DB connection. Read/write <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="5c5af-180">
+          <span data-ttu-id="ebe7b-180">
             <b>Boolean</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-180">
+            <span data-stu-id="ebe7b-180">
               <b>Boolean</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="5c5af-181">
+          <span data-ttu-id="ebe7b-181">
             <para>使用<see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.CancelRefresh" />方法可取消后台查询。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-181">
+            <span data-stu-id="ebe7b-181">
               <para>Use the <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.CancelRefresh" /> method to cancel background queries.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -1300,31 +1291,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-p118">			如果每次打开工作簿都自动更新连接，则为 <b>True</b>。默认值为 <b>False</b>。可读/写 <b>Boolean</b> 类型。</span>
+          <span data-ttu-id="ebe7b-p118">			如果每次打开工作簿都自动更新连接，则为 <b>True</b>。默认值为 <b>False</b>。可读/写 <b>Boolean</b> 类型。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-p118">
+            <span data-stu-id="ebe7b-p118">
               <b>True</b> if the connection is automatically updated each time the workbook is opened. The default value is <b>False</b>. Read/write <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="5c5af-185">
+          <span data-ttu-id="ebe7b-185">
             <b>Boolean</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-185">
+            <span data-stu-id="ebe7b-185">
               <b>Boolean</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="5c5af-186">
+          <span data-ttu-id="ebe7b-186">
             <para>不使用打开工作簿时自动刷新连接<see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />Visual Basic 中的方法。使用<see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" />方法，以打开工作簿后，刷新数据。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-186">
+            <span data-stu-id="ebe7b-186">
               <para>The connections are not automatically refreshed when you open the workbook by using the <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> method in Visual Basic. Use the <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> method to refresh the data after the workbook is open.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -1357,34 +1348,34 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-187">返回或设置的刷新间隔的分钟数。</span>
+          <span data-ttu-id="ebe7b-187">返回或设置的刷新间隔的分钟数。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-187">Returns or sets the number of minutes between refreshes.</span>
+            <span data-stu-id="ebe7b-187">Returns or sets the number of minutes between refreshes.</span>
           </span>
-          <span data-ttu-id="5c5af-188">可读写 <b>Integer</b>。</span>
+          <span data-ttu-id="ebe7b-188">可读写 <b>Integer</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-188">Read/write <b>Integer</b>.</span>
+            <span data-stu-id="ebe7b-188">Read/write <b>Integer</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="5c5af-189">
+          <span data-ttu-id="ebe7b-189">
             <b>Integer</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-189">
+            <span data-stu-id="ebe7b-189">
               <b>Integer</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="5c5af-190">
-            <para>将周期设置为 0 （零） 会禁用自动定时的刷新，并等效于将该属性设置为<b>Null</b>。<b>RefreshPeriod</b>属性的值可以是介于 0 到 32767 之间的整数。</para>
-            <para />
+          <span data-ttu-id="ebe7b-190">
+            <para>周期设置为 0 （零） 会禁用自动定时的刷新，并等效于将该属性设置为<b>Null</b>。<b>RefreshPeriod</b>属性的值可以是介于 0 到 32767 之间的整数。</para>
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-190">
+            <span data-stu-id="ebe7b-190">
               <para>Setting the period to 0 (zero) disables automatic timed refreshes and is equivalent to setting this property to <b>Null</b>. The value of the <b>RefreshPeriod</b> property can be an integer from 0 through 32767.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -1417,31 +1408,28 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-p120">如果要以 Office 用户界面显示语言（如果可用）检索数据和错误，则为 <b>True</b>。可读/写 <b>Boolean</b> 类型。</span>
+          <span data-ttu-id="ebe7b-p120">如果要以 Office 用户界面显示语言（如果可用）检索数据和错误，则为 <b>True</b>。可读/写 <b>Boolean</b> 类型。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-p120">
+            <span data-stu-id="ebe7b-p120">
               <b>True</b> if the data and errors are to be retrieved in the Office user interface display language when available.  Read/write <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="5c5af-193">
+          <span data-ttu-id="ebe7b-193">
             <b>Boolean</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-193">
+            <span data-stu-id="ebe7b-193">
               <b>Boolean</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="5c5af-194">
-            <para>如果此属性设置为<b>False</b>，则改用连接字符串中的 LCID 值。如果未指定 LCID，则使用默认 LCID 从服务器。</para>
-            <para />
-          </span>
+          <span data-ttu-id="ebe7b-194">而使用<para>如果此属性设置为<b>False</b>，连接字符串中的 LCID 值。如果未指定 LCID，则使用默认 LCID 从服务器。</para><para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-194">
+            <span data-stu-id="ebe7b-194">
               <para>If this property is set to <b>False</b>, the LCID value in the connection string is used instead. If an LCID is not specified, the default LCID from the server is used.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -1474,29 +1462,29 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-195">返回或设置 OLE DB 连接到其数据源的连接方式。</span>
+          <span data-ttu-id="ebe7b-195">返回或设置 OLE DB 连接到其数据源的连接方式。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-195">Returns or sets how OLE DB connection connects to its data source.</span>
+            <span data-stu-id="ebe7b-195">Returns or sets how OLE DB connection connects to its data source.</span>
           </span>
-          <span data-ttu-id="5c5af-196">读/写<see cref="T:Microsoft.Office.Interop.Excel.XlRobustConnect" />。</span>
+          <span data-ttu-id="ebe7b-196">读/写<see cref="T:Microsoft.Office.Interop.Excel.XlRobustConnect" />。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-196">Read/write <see cref="T:Microsoft.Office.Interop.Excel.XlRobustConnect" />.</span>
+            <span data-stu-id="ebe7b-196">Read/write <see cref="T:Microsoft.Office.Interop.Excel.XlRobustConnect" />.</span>
           </span>
         </summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlRobustConnect" />
         </value>
         <remarks>
-          <span data-ttu-id="5c5af-197">
+          <span data-ttu-id="ebe7b-197">
             <para>是否您使用可靠的连接，Microsoft Excel 无法建立连接使用的工作簿连接信息时，Excel 将检查工作簿连接是否有外部连接文件的路径。 如果是这样，Excel 将打开外部连接文件，并尝试使用外部连接文件中包含的信息进行连接。 如果使用外部连接文件后，可以建立连接，则 Excel 将更新工作簿的 connection 对象。 </para>
             <para>这提供了可靠的连接信息技术部门都可在其中维护和更新的中心位置中的连接的情况下允许用户的工作簿自动获取那些次更新的早期版本（在工作簿缓存） 的连接失败。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-197">
+            <span data-stu-id="ebe7b-197">
               <para>If you use robust connectivity, when Microsoft Excel is unable to establish a connection using the workbook connection information,   Excel will check if the workbook connection has a path to an external connection file.  If it does, Excel will open the external connection file and try to connect using the information contained in the external connection file.  If a connection can be established after using the external connection file, Excel will then update the workbook's connection object.  </para>
               <para>This provides robust connectivity in scenarios where an Information Technology Department maintains and updates connections in a central place, permitting a user's workbook to automatically fetch those updates whenever the previous version of the connection (cached within the workbook) fails. </para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -1527,27 +1515,27 @@
       </Parameters>
       <Docs>
         <param name="ODCFileName">
-          <span data-ttu-id="5c5af-198">保存文件的位置。</span>
+          <span data-ttu-id="ebe7b-198">保存文件的位置。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-198">Location to save the file.</span>
+            <span data-stu-id="ebe7b-198">Location to save the file.</span>
           </span>
         </param>
         <param name="Description">
-          <span data-ttu-id="5c5af-199">将保存在文件中的说明。</span>
+          <span data-ttu-id="ebe7b-199">将保存在文件中的说明。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-199">Description that will be saved in the file.</span>
+            <span data-stu-id="ebe7b-199">Description that will be saved in the file.</span>
           </span>
         </param>
         <param name="Keywords">
-          <span data-ttu-id="5c5af-200">可用于搜索该文件的以空格分隔的关键字。</span>
+          <span data-ttu-id="ebe7b-200">可用于搜索该文件的以空格分隔的关键字。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-200">Space-separated keywords that can be used to search for this file.</span>
+            <span data-stu-id="ebe7b-200">Space-separated keywords that can be used to search for this file.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="5c5af-201">将 OLE DB 连接保存为 Microsoft Office 数据连接文件。</span>
+          <span data-ttu-id="ebe7b-201">将 OLE DB 连接保存为 Microsoft Office 数据连接文件。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-201">Saves the OLE DB connection as an Microsoft Office Data Connection file.</span>
+            <span data-stu-id="ebe7b-201">Saves the OLE DB connection as an Microsoft Office Data Connection file.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -1580,31 +1568,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-p122">如果将 OLE DB 连接字符串中的密码信息保存在连接字符串中，则为 <b>True</b>。如果删除密码，则为 <b>False</b>。可读/写 <b>Boolean</b> 类型。</span>
+          <span data-ttu-id="ebe7b-p122">如果将 OLE DB 连接字符串中的密码信息保存在连接字符串中，则为 <b>True</b>。如果删除密码，则为 <b>False</b>。可读/写 <b>Boolean</b> 类型。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-p122">
+            <span data-stu-id="ebe7b-p122">
               <b>True</b> if password information in an OLE DB connection string is saved in the connection string. <b>False</b> if the password is removed. Read/write <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="5c5af-205">
+          <span data-ttu-id="ebe7b-205">
             <b>Boolean</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-205">
+            <span data-stu-id="ebe7b-205">
               <b>Boolean</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="5c5af-206">
-            <para>此属性使用在 ODBC 和 OLEDB 查询中，由数据透视表和查询表。</para>
-            <para />
+          <span data-ttu-id="ebe7b-206">
+            <para>ODBC 和 OLEDB 查询中由数据透视表和查询表使用此属性。</para>
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-206">
+            <span data-stu-id="ebe7b-206">
               <para>This property is used in both ODBC and OLEDB queries, and by both PivotTables and QueryTables.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -1637,13 +1625,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-207">返回或设置的应用于服务器身份验证凭据的类型。</span>
+          <span data-ttu-id="ebe7b-207">返回或设置的应用于服务器身份验证凭据的类型。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-207">Returns or sets the type of credentials that should be used for server authentication.</span>
+            <span data-stu-id="ebe7b-207">Returns or sets the type of credentials that should be used for server authentication.</span>
           </span>
-          <span data-ttu-id="5c5af-208">读/写<see cref="T:Microsoft.Office.Interop.Excel.XlCredentialsMethod" />。</span>
+          <span data-ttu-id="ebe7b-208">读/写<see cref="T:Microsoft.Office.Interop.Excel.XlCredentialsMethod" />。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-208">Read/write <see cref="T:Microsoft.Office.Interop.Excel.XlCredentialsMethod" />.</span>
+            <span data-stu-id="ebe7b-208">Read/write <see cref="T:Microsoft.Office.Interop.Excel.XlCredentialsMethod" />.</span>
           </span>
         </summary>
         <value>
@@ -1679,18 +1667,18 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-p124">如果在使用指定连接时从服务器中检索 OLAP 服务器的填充色格式，则为 <b>True</b>。可读/写 <b>Boolean</b> 类型。</span>
+          <span data-ttu-id="ebe7b-p124">如果在使用指定连接时从服务器中检索 OLAP 服务器的填充色格式，则为 <b>True</b>。可读/写 <b>Boolean</b> 类型。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-p124">
+            <span data-stu-id="ebe7b-p124">
               <b>True</b> if the fill color format for the OLAP server is retrieved from the server when using the specified connection.  Read/write <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="5c5af-211">
+          <span data-ttu-id="ebe7b-211">
             <b>Boolean</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-211">
+            <span data-stu-id="ebe7b-211">
               <b>Boolean</b>
             </span>
           </span>
@@ -1725,18 +1713,18 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-p125">如果在使用指定连接时从服务器中检索 OLAP 服务器的字体样式格式，则为 <b>True</b>。可读/写 <b>Boolean</b> 类型。</span>
+          <span data-ttu-id="ebe7b-p125">如果在使用指定连接时从服务器中检索 OLAP 服务器的字体样式格式，则为 <b>True</b>。可读/写 <b>Boolean</b> 类型。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-p125">
+            <span data-stu-id="ebe7b-p125">
               <b>True</b> if the font style format for the OLAP server is retrieved from the server when using the specified connection.  Read/write <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="5c5af-214">
+          <span data-ttu-id="ebe7b-214">
             <b>Boolean</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-214">
+            <span data-stu-id="ebe7b-214">
               <b>Boolean</b>
             </span>
           </span>
@@ -1771,18 +1759,18 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-p126">如果在使用指定连接时从服务器中检索 OLAP 服务器的数字格式，则为 <b>True</b>。可读/写 <b>Boolean</b> 类型。</span>
+          <span data-ttu-id="ebe7b-p126">如果在使用指定连接时从服务器中检索 OLAP 服务器的数字格式，则为 <b>True</b>。可读/写 <b>Boolean</b> 类型。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-p126">
+            <span data-stu-id="ebe7b-p126">
               <b>True</b> if the number format for the OLAP server is retrieved from the server when using the specified connection.  Read/write <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="5c5af-217">
+          <span data-ttu-id="ebe7b-217">
             <b>Boolean</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-217">
+            <span data-stu-id="ebe7b-217">
               <b>Boolean</b>
             </span>
           </span>
@@ -1817,17 +1805,17 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-p127">返回或设置单一登录 (SSO) 应用程序标识符，该标识符用于在 SSO 数据库中查找凭据。可读/写 <b>String</b> 类型。</span>
+          <span data-ttu-id="ebe7b-p127">返回或设置单一登录 (SSO) 应用程序标识符，该标识符用于在 SSO 数据库中查找凭据。可读/写 <b>String</b> 类型。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-p127">Returns or sets a single sign-on application (SSO) identifier that is used to perform a lookup in the SSO database for credentials. Read/write <b>String</b>.</span>
+            <span data-stu-id="ebe7b-p127">Returns or sets a single sign-on application (SSO) identifier that is used to perform a lookup in the SSO database for credentials. Read/write <b>String</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="5c5af-220">
+          <span data-ttu-id="ebe7b-220">
             <b>字符串</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-220">
+            <span data-stu-id="ebe7b-220">
               <b>String</b>
             </span>
           </span>
@@ -1862,18 +1850,18 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-p128">如果在使用指定连接时从服务器中检索 OLAP 服务器的文本颜色格式，则为 <b>True</b>。可读/写 <b>Boolean</b> 类型。</span>
+          <span data-ttu-id="ebe7b-p128">如果在使用指定连接时从服务器中检索 OLAP 服务器的文本颜色格式，则为 <b>True</b>。可读/写 <b>Boolean</b> 类型。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-p128">
+            <span data-stu-id="ebe7b-p128">
               <b>True</b> if the text color format for the OLAP server is retrieved from the server when using the specified connection.  Read/write <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="5c5af-223">
+          <span data-ttu-id="ebe7b-223">
             <b>Boolean</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-223">
+            <span data-stu-id="ebe7b-223">
               <b>Boolean</b>
             </span>
           </span>
@@ -1908,17 +1896,17 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-p129">返回或设置一个 <b>String</b> 类型的值，该值指示用于创建连接的 Microsoft Office 数据连接文件或类似文件。可读/写。</span>
+          <span data-ttu-id="ebe7b-p129">返回或设置一个 <b>String</b> 类型的值，该值指示用于创建连接的 Microsoft Office 数据连接文件或类似文件。可读/写。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-p129">Returns or sets a <b>String</b> indicating the Microsoft Office Data Connection file or similar file that was used to create the connection. Read/write.</span>
+            <span data-stu-id="ebe7b-p129">Returns or sets a <b>String</b> indicating the Microsoft Office Data Connection file or similar file that was used to create the connection. Read/write.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="5c5af-226">
+          <span data-ttu-id="ebe7b-226">
             <b>字符串</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-226">
+            <span data-stu-id="ebe7b-226">
               <b>String</b>
             </span>
           </span>
@@ -1953,34 +1941,34 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-227">返回或设置一个<b>String</b> ，指示 OLE DB 连接的源数据文件。</span>
+          <span data-ttu-id="ebe7b-227">返回或设置一个<b>String</b> ，指示 OLE DB 连接的源数据文件。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-227">Returns or sets a <b>String</b> indicating the source data file for an OLE DB connection.</span>
+            <span data-stu-id="ebe7b-227">Returns or sets a <b>String</b> indicating the source data file for an OLE DB connection.</span>
           </span>
-          <span data-ttu-id="5c5af-228">为可读/写属性。</span>
+          <span data-ttu-id="ebe7b-228">为可读/写属性。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-228">Read/write.</span>
+            <span data-stu-id="ebe7b-228">Read/write.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="5c5af-229">
+          <span data-ttu-id="ebe7b-229">
             <b>字符串</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-229">
+            <span data-stu-id="ebe7b-229">
               <b>String</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="5c5af-230">
-            <para>对于基于文件的数据源 （例如，访问）<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.SourceDataFile" />属性包含源数据文件的完全限定的路径。它为 null 的基于服务器的数据源 (例如，SQL Server)。<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.SourceDataFile" />属性设置为 null<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" />以编程方式更改属性。</para>
-            <para />
+          <span data-ttu-id="ebe7b-230">
+            <para>基于文件的数据源 （例如，访问） 的<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.SourceDataFile" />属性包含源数据文件的完全限定的路径。它为 null 的基于服务器的数据源 (例如，SQL Server)。<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.SourceDataFile" />属性设置为 null<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" />以编程方式更改属性。</para>
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-230">
+            <span data-stu-id="ebe7b-230">
               <para>For file-based data sources (for example, Access) the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.SourceDataFile" /> property contains a fully qualified path to the source data file. It is null for server-based data sources (for example, SQL Server). The <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.SourceDataFile" /> property is set to null if the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> property is changed programmatically.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -2013,42 +2001,42 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="5c5af-231">
+          <span data-ttu-id="ebe7b-231">
             <b>True</b>如果<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" />属性用于指定的字符串，使 Microsoft Excel 连接到数据源。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-231">
+            <span data-stu-id="ebe7b-231">
               <b>True</b> if the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> property is used to specify the string that enables Microsoft Excel to connect to a data source.</span>
           </span>
-          <span data-ttu-id="5c5af-232">
+          <span data-ttu-id="ebe7b-232">
             <b>False</b>如果指定的连接字符串<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" />使用属性。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-232">
+            <span data-stu-id="ebe7b-232">
               <b>False</b> if the connection string specified by the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> property is used.</span>
           </span>
-          <span data-ttu-id="5c5af-233">可读写 <b>Boolean</b>。</span>
+          <span data-ttu-id="ebe7b-233">可读写 <b>Boolean</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-233">Read/write <b>Boolean</b>.</span>
+            <span data-stu-id="ebe7b-233">Read/write <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="5c5af-234">
+          <span data-ttu-id="ebe7b-234">
             <b>Boolean</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-234">
+            <span data-stu-id="ebe7b-234">
               <b>Boolean</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="5c5af-235">
-            <para>本示例设置为引用脱机多维数据集文件的第一个数据透视表缓存的连接字符串。</para>
-            <para />
+          <span data-ttu-id="ebe7b-235">
+            <para>此示例将设置为引用脱机多维数据集文件的第一个数据透视表缓存的连接字符串。</para>
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="5c5af-235">
+            <span data-stu-id="ebe7b-235">
               <para>This example sets the connection string of the first PivotTable cache to reference an offline cube file.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>

@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20579294" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface IconCriterion" />
@@ -30,30 +30,30 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="2d713-p101">代表图标集中单个图标的条件。此条件指定了值的范围以及与图标集条件格式规则中的图标关联的阈值类型。</span>
+      <span data-ttu-id="055af-p101">代表图标集中单个图标的条件。此条件指定了值的范围以及与图标集条件格式规则中的图标关联的阈值类型。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="2d713-p101">Represents the criterion for an individual icon in an icon set. The criterion specifies the range of values and the threshold type associated with the icon in an icon set conditional formatting rule.</span>
+        <span data-stu-id="055af-p101">Represents the criterion for an individual icon in an icon set. The criterion specifies the range of values and the threshold type associated with the icon in an icon set conditional formatting rule.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="2d713-103">
-        <para>所有图标集条件格式的条件都包含在<see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />集合。您可以通过传递到集合的索引来访问集合中的每个<b>IconCriterion</b>对象。请参阅详细信息的示例。</para>
-        <para />
+      <span data-ttu-id="055af-103">
+        <para>所有图标集条件格式的条件都包含在<see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />集合。您可以通过传递到集合的索引来访问集合中的每个<b>IconCriterion</b>对象。请参阅的详细信息示例。</para>
+        <para></para>
       </span>
       <span class="sxs-lookup">
-        <span data-stu-id="2d713-103">
+        <span data-stu-id="055af-103">
           <para>All of the criteria for an icon set conditional format are contained in an <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" /> collection. You can access each <b>IconCriterion</b> object in the collection by passing an index into the collection. See the example for details.</para>
-          <para />
+          <para></para>
         </span>
       </span>
     </remarks>
     <example>
-      <span data-ttu-id="2d713-104">
+      <span data-ttu-id="055af-104">
         <para>下面的代码示例创建表示成绩的号码范围的，然后应用于该区域的图标集条件格式规则。图标集的类型将从默认图标变为五箭头图标集。最后，将阈值类型从百分点修改硬编码的数字。</para>
         <code>&lt;span class="label"&gt;Sub CreateIconSetCF()    Dim cfIconSet As IconSetCondition        'Fill cells with sample data    With ActiveSheet        .Range("C1") = 55        .Range("C2") = 92        .Range("C3") = 88        .Range("C4") = 77        .Range("C5") = 66        .Range("C6") = 93        .Range("C7") = 76        .Range("C8") = 80        .Range("C9") = 79        .Range("C10") = 83        .Range("C11") = 66        .Range("C12") = 74    End With        Range("C1:C12").Select          'Create an icon set conditional format for the created sample data range    Set cfIconSet = Selection.FormatConditions.AddIconSetCondition        'Change the icon set to a five-arrow icon set    cfIconSet.IconSet = ActiveWorkbook.IconSets(xl5Arrows)        'The IconCriterion collection contains all IconCriteria    'By indexing into the collection you can modify each criterion    With cfIconSet.IconCriteria(1)        .Type = xlConditionValueNumber        .Value = 0        .Operator = 7    End With    With cfIconSet.IconCriteria(2)        .Type = xlConditionValueNumber        .Value = 60        .Operator = 7    End With    With cfIconSet.IconCriteria(3)        .Type = xlConditionValueNumber        .Value = 70        .Operator = 7    End With    With cfIconSet.IconCriteria(4)        .Type = xlConditionValueNumber        .Value = 80        .Operator = 7    End With    With cfIconSet.IconCriteria(5)        .Type = xlConditionValueNumber        .Value = 90        .Operator = 7    End With        End Sub&lt;/span&gt;</code>
       </span>
       <span class="sxs-lookup">
-        <span data-stu-id="2d713-104">
+        <span data-stu-id="055af-104">
           <para>The following code example creates a range of numbers representing test scores and then applies an icon set conditional formatting rule to that range. The type of icon set is then changed from the default icons to a five-arrow icon set. Finally, the threshold type is modified from percentile to a hard-coded number.</para>
           <code>&lt;span class="label"&gt;Sub CreateIconSetCF()    Dim cfIconSet As IconSetCondition        'Fill cells with sample data    With ActiveSheet        .Range("C1") = 55        .Range("C2") = 92        .Range("C3") = 88        .Range("C4") = 77        .Range("C5") = 66        .Range("C6") = 93        .Range("C7") = 76        .Range("C8") = 80        .Range("C9") = 79        .Range("C10") = 83        .Range("C11") = 66        .Range("C12") = 74    End With        Range("C1:C12").Select          'Create an icon set conditional format for the created sample data range    Set cfIconSet = Selection.FormatConditions.AddIconSetCondition        'Change the icon set to a five-arrow icon set    cfIconSet.IconSet = ActiveWorkbook.IconSets(xl5Arrows)        'The IconCriterion collection contains all IconCriteria    'By indexing into the collection you can modify each criterion    With cfIconSet.IconCriteria(1)        .Type = xlConditionValueNumber        .Value = 0        .Operator = 7    End With    With cfIconSet.IconCriteria(2)        .Type = xlConditionValueNumber        .Value = 60        .Operator = 7    End With    With cfIconSet.IconCriteria(3)        .Type = xlConditionValueNumber        .Value = 70        .Operator = 7    End With    With cfIconSet.IconCriteria(4)        .Type = xlConditionValueNumber        .Value = 80        .Operator = 7    End With    With cfIconSet.IconCriteria(5)        .Type = xlConditionValueNumber        .Value = 90        .Operator = 7    End With        End Sub&lt;/span&gt;</code>
         </span>
@@ -88,21 +88,21 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="2d713-105">获取或设置图标集条件格式规则中的某个条件的图标。</span>
+          <span data-ttu-id="055af-105">获取或设置图标集条件格式规则中的某个条件的图标。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2d713-105">Gets or sets the icon for a criterion in an icon set conditional formatting rule.</span>
+            <span data-stu-id="055af-105">Gets or sets the icon for a criterion in an icon set conditional formatting rule.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="2d713-106">
+          <span data-ttu-id="055af-106">
             <para>图标集条件格式规则中，设置图标条件的<b>Icon</b>属性后<see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconSet" />属性更改为<b>xlCustomSet</b>。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="2d713-106">
+            <span data-stu-id="055af-106">
               <para>After you set the <b>Icon</b> property for the icon criterion in an icon set conditional formatting rule, the <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconSet" /> property is changed to <b>xlCustomSet</b>.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -132,21 +132,21 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="2d713-107">获取一个值，该值代表条件的阈值。</span>
+          <span data-ttu-id="055af-107">获取一个值，该值代表条件的阈值。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2d713-107">Gets a value indicating which threshold the criteria represents.</span>
+            <span data-stu-id="055af-107">Gets a value indicating which threshold the criteria represents.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="2d713-108">
-            <para>对于图标集，此属性将返回的值为"1"的最小阈值，"2"的下一个阈值，等等。</para>
-            <para />
+          <span data-ttu-id="055af-108">
+            <para>为图标集，此属性将返回值为最小阈值，"2"的下一个阈值，"1"，依此类推。</para>
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="2d713-108">
+            <span data-stu-id="055af-108">
               <para>For an icon set, this property will return a value of "1" for the minimum threshold, "2" for the next threshold, and so on.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -179,21 +179,21 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="2d713-109">返回或设置的常量之一，<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />枚举，该常量指定阈值是"大于"或"大于或等于"阈值。</span>
+          <span data-ttu-id="055af-109">返回或设置的常量之一，<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />枚举，该常量指定阈值是"大于"或"大于或等于"阈值。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2d713-109">Returns or sets one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> enumeration, which specifes if the threshold is "greater than" or "greater than or equal to" the threshold value.</span>
+            <span data-stu-id="055af-109">Returns or sets one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> enumeration, which specifes if the threshold is "greater than" or "greater than or equal to" the threshold value.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="2d713-110">
+          <span data-ttu-id="055af-110">
             <para>对于图标集条件格式规则，可以将此属性设置为以下两个常量之一： <b>xlGreater</b>或<b>xlGreaterEqual</b>。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="2d713-110">
+            <span data-stu-id="055af-110">
               <para>For an icon set conditional formatting rule, this property can be set to only one of the following two constants: <b>xlGreater</b> or <b>xlGreaterEqual</b>.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -226,25 +226,22 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="2d713-111">返回的常量之一<see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" />枚举，指定如何确定图标集的阈值。</span>
+          <span data-ttu-id="055af-111">返回的常量之一<see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" />枚举，指定如何确定图标集的阈值。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2d713-111">Returns one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" /> enumeration, which specifies how the threshold value for an icon set is determined.</span>
+            <span data-stu-id="055af-111">Returns one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" /> enumeration, which specifies how the threshold value for an icon set is determined.</span>
           </span>
-          <span data-ttu-id="2d713-112">只读。</span>
+          <span data-ttu-id="055af-112">只读。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2d713-112">Read-only.</span>
+            <span data-stu-id="055af-112">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="2d713-113">
-            <para>图标集的阈值值类型可以是数字、 %、 公式或百分点值。设置为百分点值的类型将使用百分点值函数在 Excel 中确定的阈值。</para>
-            <para />
-          </span>
+          <span data-ttu-id="055af-113">数字、 %、 公式或百分点值可以是阈值的<para>的类型的图标设置。设置为百分点值的类型将使用百分点值函数在 Excel 中来确定阈值的值。</para><para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="2d713-113">
+            <span data-stu-id="055af-113">
               <para>The type of threshold value for an icon set can be  a number, percent, formula, or percentile. Setting the type to percentile will use the Percentile function in Excel to determine the threshold value.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -277,23 +274,23 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="2d713-p103">返回或设置条件格式中图标的阈值。可读/写 <b>Variant</b> 类型。</span>
+          <span data-ttu-id="055af-p103">返回或设置条件格式中图标的阈值。可读/写 <b>Variant</b> 类型。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2d713-p103">Returns or sets the threshold value for an icon in a conditional format. Read/write <b>Variant</b>.</span>
+            <span data-stu-id="055af-p103">Returns or sets the threshold value for an icon in a conditional format. Read/write <b>Variant</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="2d713-116">
+          <span data-ttu-id="055af-116">
             <para>您可以设置值才<see cref="P:Microsoft.Office.Interop.Excel.IconCriterion.Type" />的条件格式的属性设置为以下常量之一： <b>xlConditionValueNumber</b>、 <b>xlConditionValuePercent</b>、 <b>xlConditionValuePercentile</b>或<b>xlConditionValueFormula</b>。</para>
             <para>如果阈值的类型是一个公式，您可以为<b>字符串</b>来设置公式。该公式必须返回一个号码。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="2d713-116">
+            <span data-stu-id="055af-116">
               <para>You can set the value only if the <see cref="P:Microsoft.Office.Interop.Excel.IconCriterion.Type" /> property for the conditional format is set to one of the following constants: <b>xlConditionValueNumber</b>, <b>xlConditionValuePercent</b>, <b>xlConditionValuePercentile</b>, or <b>xlConditionValueFormula</b>.</para>
               <para>If the type of threshold  is a formula, you can set the formula as a <b>String</b>. The formula must return a single number.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
