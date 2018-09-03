@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20577768" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Window" />
@@ -36,7 +36,7 @@
       <para>使用<b>Windows</b>(<paramref name="index" />)，其中<paramref name="index" />是窗口名称或索引号，可返回单个<b>Window</b>对象。</para>
       <para>注意，活动窗口总是 windows(1。</para>
       <para>窗口标题是时窗口最大化窗口顶部的标题栏中显示的文本。题注还会显示在底部的 Windows 菜单上打开的文件列表中。使用<see cref="P:Microsoft.Office.Interop.Excel.Window.Caption" />属性来设置或返回窗口的标题。更改窗口的标题不会更改工作簿的名称。</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -147,8 +147,8 @@
         <returns>To be added.</returns>
         <remarks>
           <para>
-            <b>Activate</b>方法不会运行可能附加在工作簿的任何 Auto_Activate 或 Auto_Deactivate 宏。使用<see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" />方法可运行这些宏。</para>
-          <para />
+            <b>激活</b>方法不会运行可能附加在工作簿的任何 Auto_Activate 或 Auto_Deactivate 宏。使用<see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" />方法可运行这些宏。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -232,7 +232,7 @@
         <remarks>
           <para>如果不指定对象识别符，此属性返回活动窗口中的活动单元格。</para>
           <para>注意区分活动单元格和所选内容。活动单元格内当前所选内容的单个单元格。所选内容可能包含多个单元格，但只有一个是活动单元格。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -262,8 +262,8 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Chart" />对象，表示活动图表 （嵌入的图表或图表工作表）。 选择或激活时，嵌入的图表被视为活动。 当没有图表处于活动状态时，则此属性返回<b>Nothing</b>。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果不指定对象识别符，此属性将返回活动工作簿中的活动图表。</para>
-          <para />
+          <para>如果不指定对象识别符，此属性返回活动工作簿中的活动图表。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -295,7 +295,7 @@
         <remarks>
           <para>可仅在工作表和宏工作表上使用此属性。</para>
           <para>使用<see cref="P:Microsoft.Office.Interop.Excel.Window.Index" />属性获取活动窗格的索引。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -329,7 +329,7 @@
         <remarks>
           <para>如果不指定对象识别符，此属性返回活动工作簿中的活动工作表。</para>
           <para>工作簿出现在多个窗口中，如果<b>ActiveSheet</b>属性可能不同在不同的窗口。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -483,9 +483,8 @@
         <summary>关闭对象。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>
-            <b>Close</b>方法不运行 Auto_Close 宏工作簿中。使用<see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" />方法可运行自动关闭宏。</para>
-          <para />
+          <para>的<b>Close</b>方法不运行 Auto_Close 宏工作簿中。使用<see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" />方法可运行自动关闭宏。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -518,7 +517,7 @@
           <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
           <para>
             <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -553,7 +552,7 @@
         <value>To be added.</value>
         <remarks>
           <para>此属性仅适用于工作表和宏工作表。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -589,7 +588,7 @@
         <remarks>
           <para>此属性仅适用于工作表和宏工作表。</para>
           <para>此属性会影响只显示网格线。使用<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintGridlines" />属性控制打印网格线。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -625,7 +624,7 @@
         <remarks>
           <para>此属性仅适用于工作表和宏工作表。</para>
           <para>此属性会影响只显示标题。使用<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintHeadings" />属性控制标题的打印。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -691,7 +690,7 @@
         <value>To be added.</value>
         <remarks>
           <para>此属性仅适用于工作表和宏工作表。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -887,7 +886,7 @@
         <value>To be added.</value>
         <remarks>
           <para>此属性仅适用于工作表和宏工作表。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -954,7 +953,7 @@
         <remarks>
           <para>它是为<b>真</b><b>FreezePanes</b>可能为和<see cref="P:Microsoft.Office.Interop.Excel.Window.Split" />为<b>False</b>，反之亦然。</para>
           <para>此属性仅适用于工作表和宏工作表。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1019,7 +1018,7 @@
         <value>To be added.</value>
         <remarks>
           <para>将此属性设置为<b>xlColorIndexAutomatic</b>可指定颜色为自动。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1051,10 +1050,7 @@
       <Docs>
         <summary>以磅为单位窗口的高度。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Excel.Window.UsableHeight" />属性来确定窗口的最大大小。如果窗口处于最大化或最小化，不能设置此属性。使用<see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" />属性来确定窗口状态。</para>
-          <para />
-        </remarks>
+        <remarks>使用<para><see cref="P:Microsoft.Office.Interop.Excel.Window.UsableHeight" />属性来确定窗口的最大大小。如果窗口处于最大化或最小化，不能设置此属性。使用<see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" />属性来确定窗口状态。</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Hwnd">
@@ -1148,7 +1144,7 @@
           <para>如果<paramref name="Down" />和<paramref name="Up" />都已指定，则内容的窗口滚动个参数的差。例如，如果<paramref name="Down" />是 3 和<paramref name="Up" />为 6，内容向上滚动三页。</para>
           <para>如果<paramref name="ToLeft" />和<paramref name="ToRight" />都已指定，则内容的窗口滚动个参数的差。例如，如果<paramref name="ToLeft" />是 3 和<paramref name="ToRight" />为 6，则内容滚动到右三页。</para>
           <para>任何参数均可为负数。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1240,7 +1236,7 @@
         <remarks>
           <para>当其他过程切换到窗口或切换到窗口的命令通过 DDE 通道接收时，不运行此属性指定的过程。相反，过程响应用户操作，例如单击鼠标的窗口，单击转到上的编辑菜单中，依次类推。</para>
           <para>如果表或宏表具有为它定义的 Auto_Activate 或 Auto_Deactivate 宏，将在<b>OnWindow</b>属性指定的过程之后运行这些宏。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1271,7 +1267,7 @@
         <value>To be added.</value>
         <remarks>
           <para>此属性是可用于窗口才窗口的<see cref="P:Microsoft.Office.Interop.Excel.Window.Split" />属性可设置为<b>True</b>。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1403,8 +1399,8 @@
         <summary>打印对象。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>说明中的"页面"<paramref name="From" />和<paramref name="To" />指打印页 — 表或工作簿中的未全部页。</para>
-          <para />
+          <para>"页面"的说明中的<paramref name="From" />和<paramref name="To" />指打印页 — 表或工作簿中的未全部页。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1498,7 +1494,7 @@
           <para>在工作表中，选择 graphic 对象时<see cref="P:Microsoft.Office.Interop.Excel.Window.Selection" />属性返回 graphic 对象而不是一个<b>Range</b>对象;<b>RangeSelection</b>属性返回 graphic 对象已选择前已选中的单元格区域。</para>
           <para>此属性和<b>Selection</b>属性返回相同的值 （不图形对象） 的范围选择工作表上时。</para>
           <para>如果指定窗口中的活动表不是工作表，该属性无效。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1530,10 +1526,7 @@
       <Docs>
         <summary>返回或设置在窗格或窗口的左侧的列数。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果窗口拆分时的<b>ScrollColumn</b>属性<see cref="T:Microsoft.Office.Interop.Excel.Window" />对象引用左上角的窗格。如果冻结窗格， <b>Window</b>对象的<b>ScrollColumn</b>属性将排除冻结的区域。</para>
-          <para />
-        </remarks>
+        <remarks>如果指定窗口拆分的<b>ScrollColumn</b>属性<para><see cref="T:Microsoft.Office.Interop.Excel.Window" />对象引用左上角的窗格。如果冻结窗格， <b>Window</b>对象的<b>ScrollColumn</b>属性排除冻结的区域。</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollIntoView">
@@ -1575,7 +1568,7 @@
         <remarks>
           <para>
             <paramref name="Start" />参数对调整屏幕显示当矩形比文档窗口或窗格大时有用处。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1607,10 +1600,7 @@
       <Docs>
         <summary>返回或设置在顶部窗格或窗口中显示的行数。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果窗口拆分时的<b>ScrollRow</b>属性<see cref="T:Microsoft.Office.Interop.Excel.Window" />对象引用左上角的窗格。如果冻结窗格， <b>Window</b>对象的<b>ScrollRow</b>属性将排除冻结的区域。</para>
-          <para />
-        </remarks>
+        <remarks>如果指定窗口拆分的<b>ScrollRow</b>属性<para><see cref="T:Microsoft.Office.Interop.Excel.Window" />对象引用左上角的窗格。如果冻结窗格， <b>Window</b>对象的<b>ScrollRow</b>属性排除冻结的区域。</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollWorkbookTabs">
@@ -1643,7 +1633,7 @@
         <remarks>
           <para>
             <b>ScrollWorkbookTabs</b>方法不会影响工作簿中的活动工作表。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1703,7 +1693,7 @@
         <remarks>
           <para>返回的对象类型取决于当前选定内容 (例如，如果所选单元格，则此属性返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象)。如果未选择的<b>Selection</b>属性返回<b>Nothing</b> 。</para>
           <para>使用此属性与没有对象识别符，等效于使用<see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" />属性<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1772,7 +1762,7 @@
           <para>如果<paramref name="Down" />和<paramref name="Up" />都已指定，则内容的窗口滚动个参数的差。例如，如果<paramref name="Down" />是 3 和<paramref name="Up" />为 6，内容向上滚动三行。</para>
           <para>如果<paramref name="ToLeft" />和<paramref name="ToRight" />都已指定，则内容的窗口滚动个参数的差。例如，如果<paramref name="ToLeft" />是 3 和<paramref name="ToRight" />为 6，则内容滚动到右三列。</para>
           <para>任何这些参数均可为负数。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1807,7 +1797,7 @@
         <remarks>
           <para>可能为<see cref="P:Microsoft.Office.Interop.Excel.Window.FreezePanes" />是<b>True</b>和<b>拆分</b>为<b>False</b>，反之亦然。</para>
           <para>此属性仅适用于工作表和宏工作表。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1965,7 +1955,7 @@
         <value>To be added.</value>
         <remarks>
           <para>此属性没有影响何时<see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayWorkbookTabs" />设置为<b>False</b> （保留其值，但它不影响显示）。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1999,7 +1989,7 @@
         <value>To be added.</value>
         <remarks>
           <para>不能设置该属性最大化的窗口。使用<see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" />属性可返回或设置窗口的状态。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2205,10 +2195,7 @@
       <Docs>
         <summary>以磅为单位窗口的宽度。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Excel.Window.UsableWidth" />属性来确定窗口的最大大小。如果窗口处于最大化或最小化，不能设置此属性。使用<see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" />属性来确定窗口状态。</para>
-          <para />
-        </remarks>
+        <remarks>使用<para><see cref="P:Microsoft.Office.Interop.Excel.Window.UsableWidth" />属性来确定窗口的最大大小。如果窗口处于最大化或最小化，不能设置此属性。使用<see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" />属性来确定窗口状态。</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WindowNumber">
@@ -2238,7 +2225,7 @@
         <value>To be added.</value>
         <remarks>
           <para>窗口号与窗口的窗口索引相同 (的返回值<see cref="P:Microsoft.Office.Interop.Excel.Window.Index" />属性)，这是中窗口的位置<see cref="T:Microsoft.Office.Interop.Excel.Windows" />集合。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2304,7 +2291,7 @@
         <remarks>
           <para>您还可以将此属性设置为<b>True</b>以使当前选定区域相适应窗口大小。</para>
           <para>此函数影响在窗口为当前处于活动状态的工作表。若要在其他工作表上使用此属性，您必须先激活。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

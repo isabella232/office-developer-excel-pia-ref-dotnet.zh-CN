@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20581814" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Shapes : System.Collections.IEnumerable" />
@@ -34,7 +34,7 @@
   </Attributes>
   <Docs>
     <summary>所有的集合<see cref="T:Microsoft.Office.Interop.Excel.Shape" />指定工作表上的对象。</summary>
-    <remarks>&lt;b0&gt;每个&lt;b1&gt;&lt;/b1&gt;对象代表绘图层，例如自选图形、 任意多边形中的对象、 OLE 对象或图片。&lt;/b0&gt;&lt;b2&gt;&lt;b3&gt;注意&lt;/b3&gt;： 如果您想要使用文档中的形状的子集-例如，若要执行某些操作仅对文档的自选图形或仅对选定形状 — 必须构造&lt;b4&gt;&lt;/b4&gt;要使用包含的形状的集合。 &lt;/c2 &lt;/b2&gt;&lt;b5&gt;&lt;/b5&gt;</remarks>
+    <remarks>&lt;b0&gt;每个&lt;b1&gt;&lt;/b1&gt;对象代表绘图层，例如自选图形、 任意多边形中的对象、 OLE 对象或图片。&lt;/b0&gt;&lt;b2&gt;&lt;b3&gt;注意&lt;/b3&gt;： 如果您想要使用文档中的形状的子集-例如，若要执行某些操作仅对文档的自选图形或仅对选定形状 — 必须构造&lt;b4&gt;&lt;/b4&gt;要使用包含的形状的集合。 &lt;/c2 &gt;&lt;b5&gt; &lt;/b5&gt;&lt;/b2&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -109,7 +109,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>使用可以插入各种标注<see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddShape(Microsoft.Office.Core.MsoAutoShapeType,System.Single,System.Single,System.Single,System.Single)" />方法。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -269,9 +269,9 @@
         <summary>创建一个连接符。 返回<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象，表示新连接器。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>连接符添加后，未连接到任何内容。使用<see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" />和<see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" />方法附加到文档中的其他形状的开头和连接符的终点。</para>
+          <para>添加一个连接器时，它未连接到任何内容。使用<see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" />和<see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" />方法附加到文档中的其他形状的开头和连接符的终点。</para>
           <para>将连接符连接到形状，大小和自动调整连接器的位置，如有必要时。因此，如果您打算将连接符连接到其他形状，添加连接器时所指定的大小和位置无关。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -388,7 +388,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>使用<see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddOLEObject(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法或<see cref="M:Microsoft.Office.Interop.Excel.OLEObjects.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />要创建 ActiveX 控件的 OLEObjects 集合的方法。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -635,8 +635,8 @@
         <summary>创建开放的折线或闭合的多边形。 返回<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象，表示新的折线或多边形。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>要组成一个封闭的多边形，为连续线段图形中的第一个和最后一个顶点指定相同的坐标。</para>
-          <para />
+          <para>要组成一个封闭的多边形，请将相同的坐标分配给连续线段图形中的第一个和最后一个顶点。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -679,8 +679,8 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象，表示工作表中的新自选图形。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>若要改变所添加的自选图形类型，将设置<see cref="P:Microsoft.Office.Interop.Excel.Shape.AutoShapeType" />属性。</para>
-          <para />
+          <para>要改变所添加的自选图形类型，可设置<see cref="P:Microsoft.Office.Interop.Excel.Shape.AutoShapeType" />属性。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -805,8 +805,8 @@
         <summary>创建艺术字对象。 返回<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象，表示新的艺术字对象。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>向文档添加艺术字的高度和宽度的艺术字将根据大小和数量的您指定的文本自动进行设置。</para>
-          <para />
+          <para>时向文档添加艺术字，高度和宽度的艺术字自动设置基于的大小和数量所指定的文字。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -870,10 +870,7 @@
           <b>必选。</b> 任意图形中第一个节点相对于文档左上角的位置（以磅为单位）。</param>
         <summary>建立任意多边形对象。 返回<see cref="T:Microsoft.Office.Interop.Excel.FreeformBuilder" />对象，代表任意多边形时几何。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" />方法将段添加到任意多边形。在任意多边形添加至少一个段后，您可以使用<see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" />方法将转换到<b>FreeformBuilder</b>对象<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象已<b>FreeformBuilder</b>对象中已定义的几何描述。</para>
-          <para />
-        </remarks>
+        <remarks>使用<para><see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" />方法将段添加到任意多边形。在任意多边形添加至少一个段后，您可以使用<see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" />方法将转换到<b>FreeformBuilder</b>对象<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象已<b>FreeformBuilder</b>对象中已定义的几何描述。</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -933,7 +930,7 @@
           <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
           <para>
             <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

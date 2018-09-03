@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20581499" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Worksheets : System.Collections.IEnumerable" />
@@ -40,7 +40,7 @@
       <para>使用<b>工作表</b>(<paramref name="index" />)，其中<paramref name="index" />是工作表的索引号或名称，可返回单个<b>Worksheet</b>对象。</para>
       <para>
         <b>工作表</b>对象也是成员<see cref="T:Microsoft.Office.Interop.Excel.Sheets" />集合。<b>Sheets</b>集合包含工作簿 （图表工作表和工作表） 中的所有工作表。</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -154,7 +154,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>如果<paramref name="Before" />和<paramref name="After" />是同时省略，新建的工作表插入到活动工作表之前。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -191,7 +191,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>如果<paramref name="Before" />和<paramref name="After" />是同时省略，新建的工作表插入到活动工作表之前。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -251,7 +251,7 @@
         <summary>将工作表复制到工作簿的另一位置。</summary>
         <remarks>
           <para>如果不指定<paramref name="Before" />或<paramref name="After" />，Microsoft Excel 将新建一个包含复制的工作表的新工作簿。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -310,8 +310,8 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para />
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -337,10 +337,7 @@
       <Parameters />
       <Docs>
         <summary>删除对象。</summary>
-        <remarks>
-          <para>当您删除<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />或<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />，此方法将显示一个对话框，提示用户确认删除。默认情况下显示此对话框。<b>Delete</b>方法返回一个<b>Boolean</b>值，如果用户单击取消对话框上的或<b>，则返回 True</b> ，如果用户单击删除为<b>False</b> 。</para>
-          <para />
-        </remarks>
+        <remarks>当您删除的<para><see cref="T:Microsoft.Office.Interop.Excel.Workbook" />或<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />，此方法将显示一个对话框，提示用户确认删除。默认情况下显示此对话框。<b>Delete</b>方法返回一个<b>Boolean</b>值，如果用户单击取消对话框上的或<b>，则返回 True</b> ，如果用户单击删除为<b>False</b> 。</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FillAcrossSheets">
@@ -430,7 +427,7 @@
         <value>To be added.</value>
         <remarks>
           <para>没有限制为每个工作表的 1,026 水平分页符。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -494,7 +491,7 @@
         <summary>将工作表移到工作簿中的其他位置。</summary>
         <remarks>
           <para>如果不指定<paramref name="Before" />或<paramref name="After" />，Microsoft Excel 将新建一个包含移动的工作表的新工作簿。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -568,8 +565,8 @@
         <param name="PrToFileName">可选的<b>对象</b>。 如果<paramref name="PrintToFile" />设置为<b>True</b>，则该参数指定要打印到的文件的名称。</param>
         <summary>打印对象。</summary>
         <remarks>
-          <para>说明中的"页面"<paramref name="From" />和<paramref name="To" />指打印页 — 表或工作簿中的未全部页。</para>
-          <para />
+          <para>"页面"的说明中的<paramref name="From" />和<paramref name="To" />指打印页 — 表或工作簿中的未全部页。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -668,8 +665,8 @@
         <param name="Replace">可选<b>对象</b>（仅与表一起使用）。 <b>为</b> 当前所选内容替换为指定的对象。 <b>False</b> 来扩展当前选定内容以包括任何以前选定的对象和指定的对象。</param>
         <summary>选择对象。</summary>
         <remarks>
-          <para>若要选择一个单元格的范围，请使用<b>Select</b>方法。若要使单个单元格活动单元格，请使用<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Activate" />方法。</para>
-          <para />
+          <para>，选择单元格区域，请使用<b>Select</b>方法。若要使单个单元格活动单元格，请使用<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Activate" />方法。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>

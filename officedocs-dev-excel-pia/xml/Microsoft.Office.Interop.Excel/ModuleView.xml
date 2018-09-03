@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20581415" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ModuleView" />
@@ -31,8 +31,8 @@
   <Docs>
     <summary>代表现有<see cref="T:Microsoft.Office.Interop.Excel.Module" />工作簿中的视图。</summary>
     <remarks>
-      <para>模块区域中包括所有内容，包括图表的绘图区。但是，绘图区有它自己的填充，因此填充绘图区未填充模块区域。</para>
-      <para />
+      <para>模块区域中包括所有内容，包括图表的绘图区。但是，绘图区具有自己的填充，因此填充绘图区未填充模块区域中。</para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -63,8 +63,8 @@
         <value>
           <b>应用程序</b>（请参见上文）</value>
         <remarks>
-          <para>您可以与 OLE 自动化对象使用此属性返回该对象的应用程序。</para>
-          <para />
+          <para>您可以使用此属性与 OLE 自动化对象返回该对象的应用程序。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -95,10 +95,7 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <see cref="P:Microsoft.Office.Interop.Excel.ModuleView.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para />
-        </remarks>
+        <remarks>如果对象在 Microsoft Excel 中创建的<para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <see cref="P:Microsoft.Office.Interop.Excel.ModuleView.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

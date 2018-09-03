@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20577236" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotField" />
@@ -59,7 +59,7 @@
             <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.VisibleFields(System.Object)" />属性</description>
         </item>
       </list>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -127,8 +127,8 @@
         <param name="ClearList">可选的<b>对象</b>。 如果<b>False</b> （默认），则向现有列表中添加一个页面项。 如果<b>，则返回 True</b>，删除所有当前项目和添加<paramref name="Item" />。</param>
         <summary>向具有多个项的页面字段添加其他项。</summary>
         <remarks>
-          <para>若要避免运行时错误，数据源必须是 OLAP 源，选择字段当前必须位于页面位置中，并将<see cref="P:Microsoft.Office.Interop.Excel.CubeField.EnableMultiplePageItems" />属性必须设置为<b>True</b>。</para>
-          <para />
+          <para>为了避免运行时错误，数据源必须是 OLAP 源，选择字段当前必须位于页面位置中，并将<see cref="P:Microsoft.Office.Interop.Excel.CubeField.EnableMultiplePageItems" />属性必须设置为<b>True</b>。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -166,7 +166,7 @@
           <para>对于<b>数据透视表</b>，该属性是可用于<b>PivotField</b>对象。</para>
           <para>默认值为<b>True</b>。 此属性自动设置为<b>True</b>时应用任何手动筛选 (无论<see cref="P:Microsoft.Office.Interop.Excel.PivotField.IncludeNewItemsInFilter" />属性是<b>True</b>或<b>False</b>)。应用任何手动筛选后会自动设置为<b>False</b> (无论<see cref="P:Microsoft.Office.Interop.Excel.PivotField.IncludeNewItemsInFilter" />属性是<b>True</b>或<b>False</b>)。</para>
           <para>此属性直接反映<b>透视</b>字段或<b>多维数据集</b>的筛选器下拉列表中全选复选框状态。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -463,7 +463,7 @@
           </list>
           <para>排序仅支持实际因此尝试将<b>AutoSortCustomSubtotal</b>设置为一个值，代表数据透视表视图将自定义分类汇总不在数据透视表中显示的自定义分类汇总返回一个运行时错误。</para>
           <para>如果排序应用基于自定义分类汇总，且从数据透视表中删除该分类汇总，则<b>AutoSortCustomSubtotal</b>属性将自动设置为默认值 (1)。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -615,8 +615,8 @@
         <summary>返回或设置自定义计算的基本字段。 此属性是仅对数据字段有效。 读取/写入 <b>对象</b> 。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>该属性不适用于 OLAP 数据源。</para>
-          <para />
+          <para>此属性不可用于 OLAP 数据源。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -675,8 +675,8 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.CalculatedItems" />值，该值代表指定数据透视表报告中的所有计算的项的集合。 只读。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>对于 OLAP 数据源，此方法返回一个零长度的集合。</para>
-          <para />
+          <para>的 OLAP 数据源，此方法返回一个零长度的集合。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -710,7 +710,7 @@
         <value>To be added.</value>
         <remarks>
           <para>对于 OLAP 数据源，此属性仅能返回或设置为<b>xlNormal</b>。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -773,7 +773,7 @@
         <remarks>
           <para>如果指定的字段没有子字段，此属性将导致出错。</para>
           <para>此属性不可用于 OLAP 数据源。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -807,8 +807,8 @@
         <summary>返回一个 object 值，该值代表之一的单个数据透视表项 (<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />对象) 或所有项的集合 (<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />对象) 而言是组子级的指定字段中或指定项的子级。 只读。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>该属性不适用于 OLAP 数据源。</para>
-          <para />
+          <para>此属性不可用于 OLAP 数据源。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1037,7 +1037,7 @@
               <term>xlAllDatesInPeriodDecember</term>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1066,7 +1066,7 @@
         <remarks>
           <para>此方法是可用于<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />中的<b>对象</b><see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />和<see cref="T:Microsoft.Office.Interop.Excel.CubeField" />中 OLAP 对象<see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />。调用它以<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />中 OLAP<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />将返回一个运行时错误。</para>
           <para>调用此方法后，以下集合为空： <b>HiddenItemsList</b>、 <b>HiddenItems</b>、 <b>VisibleItemsList</b>和<b>VisibleItems</b>。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1143,11 +1143,8 @@
             <item>
               <term />
             </item>
-            <item>
-              <term />
-            </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1178,8 +1175,8 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para />
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1271,8 +1268,8 @@
         <summary>返回或设置一个包含多项页字段的数据透视表报告中的项目的列表对应的字符串数组。 读取/写入 <b>对象</b> 。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>若要避免运行时错误，数据源必须是 OLAP 源，选择字段当前必须位于页面位置中，并将<see cref="P:Microsoft.Office.Interop.Excel.CubeField.EnableMultiplePageItems" />属性必须设置为<b>True</b>。</para>
-          <para />
+          <para>为了避免运行时错误，数据源必须是 OLAP 源，选择字段当前必须位于页面位置中，并将<see cref="P:Microsoft.Office.Interop.Excel.CubeField.EnableMultiplePageItems" />属性必须设置为<b>True</b>。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1305,8 +1302,8 @@
         <summary>返回或设置指定数据透视表上的当前显示页。该页名称将出现在页字段中。注意，只有当已存在当前显示页时，本属性才有效。<b>String</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性适用于连接到 OLAP 数据源的数据透视表。返回或设置此属性与未连接到 OLAP 数据源的数据透视表在尝试将导致运行时错误。</para>
-          <para />
+          <para>此属性适用于连接到 OLAP 数据源的数据透视表中。返回或设置此属性与未连接到 OLAP 数据源的数据透视表在尝试将导致运行时错误。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1347,7 +1344,7 @@
           <para>
             <b>将 DatabaseSort</b>属性设置为<b>True</b>或<b>False</b>都会引起更新。</para>
           <para>非 OLAP 源或 OLAP 数据字段<b>将 DatabaseSort</b>属性设置为<b>True</b>将导致运行时错误。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1391,7 +1388,7 @@
               <description>限定项目的数据</description>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1476,8 +1473,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>在给定的成员属性用作标题和<b>False</b>时成员属性时，此属性返回<b>True</b><see cref="T:Microsoft.Office.Interop.Excel.PivotField" />未用作标题。尝试将该属性用于<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s 不成员属性将返回一个运行时错误。</para>
-          <para />
+          <para>此属性返回<b>True</b>时给定的成员属性用作标题和<b>False</b>时成员属性<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />未用作标题。尝试将该属性用于<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s 不成员属性将返回一个运行时错误。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1514,7 +1511,7 @@
         <remarks>
           <para>获取或设置这些属性在尝试<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s 不成员属性将返回一个运行时错误。</para>
           <para>给定的成员属性是时<b>DisplayAsTooltip</b>属性设置为<b>True</b>，在工具提示中显示，并将设置为<b>False</b>时，不显示工具提示中。默认值为<b>True</b>。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1580,8 +1577,8 @@
         <summary>如果指定字段能被拖动到列位置上，则为 <b>True</b>。默认值是 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>对于 OLAP 数据源的值为<b>False</b>的度量字段。</para>
-          <para />
+          <para>对于 OLAP 数据源，则该值为<b>False</b>的度量字段。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1614,8 +1611,8 @@
         <summary>如果为<b>true</b>指定的字段可拖动到数据位置。 默认值为 <b>True</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>对于 OLAP 数据源的值为<b>False</b>的度量字段。</para>
-          <para />
+          <para>对于 OLAP 数据源，则该值为<b>False</b>的度量字段。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1679,8 +1676,8 @@
         <summary>如果字段可被拖动到页位置上，则为 <b>True</b>。默认值是 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>对于 OLAP 数据源的值为<b>False</b>的度量字段。</para>
-          <para />
+          <para>对于 OLAP 数据源，则该值为<b>False</b>的度量字段。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1713,8 +1710,8 @@
         <summary>如果字段可被拖动到行位置上，则为 <b>True</b>。默认值是 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>对于 OLAP 数据源的值为<b>False</b>的度量字段。</para>
-          <para />
+          <para>对于 OLAP 数据源，则该值为<b>False</b>的度量字段。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1749,7 +1746,7 @@
         <remarks>
           <para>您可以使用此属性仅对于 OLAP 数据源。</para>
           <para>如果字段或项被隐藏，则无法设置该属性。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1780,8 +1777,8 @@
         <summary>
           <b>DrillTo</b>方法支持深化到指定<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />从另一<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />。</summary>
         <remarks>
-          <para>仅对字段的实际上执行此操作<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。因此，或者是包含请求的层次结构<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />必须位于行或列的<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />，或属性/关系字段必须位于行或列的<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />放置至少一个其他关系属性/字段旁边。此外，要深化到的字段必须是相同的层次结构或属性链中。如果不满足这些条件，则发生运行时错误。</para>
-          <para />
+          <para>上的实际在字段仅执行此操作<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。因此，或者是包含请求的层次结构<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />必须位于行或列的<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />，或属性/关系字段必须位于行或列的<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />放置至少一个其他关系属性/字段旁边。此外，要深化到的字段必须是相同的层次结构或属性链中。如果不满足这些条件，则会发生运行时错误。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1815,7 +1812,7 @@
         <value>To be added.</value>
         <remarks>
           <para>如果 OLAP 数据透视表字段不是层次结构的最高级别，则会发生运行时错误。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1852,8 +1849,8 @@
         <remarks>
           <para>为 OLAP 保留现有的属性值。</para>
           <para>
-            <b>注意</b>： 在 short_Excel2007，如果您创建 short_Excel2007 之前的 OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s (PivotTable.Version &lt; 3) 使用<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.SubtotalHiddenPageItems" />属性<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />对象和<see cref="P:Microsoft.Office.Interop.Excel.PivotField.EnableMultiplePageItems" />属性<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />对象设置为<b>True</b>，更改在页面区域的筛选器下拉列表菜单中的复选框的状态会产生任何效果。 在这种情况下，将始终设置筛选器，为<b>所有</b>，包括保持为不选中 （隐藏） 的项目。</para>
-          <para />
+            <b>注意</b>： 在 short_Excel2007，如果您创建 short_Excel2007 之前的 OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s (PivotTable.Version &lt; 3) 使用<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.SubtotalHiddenPageItems" />属性<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />对象和<see cref="P:Microsoft.Office.Interop.Excel.PivotField.EnableMultiplePageItems" />属性<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />对象设置为<b>True</b>，更改在页面区域的筛选器下拉列表菜单中的复选框的状态会产生任何效果。 在这种情况下，筛选器将始终设置为<b>所有</b>，包括 （隐藏） 勾。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1889,7 +1886,7 @@
           <para>此属性不可用于 OLAP 数据源。</para>
           <para>如果单元格包含常量，该属性返回的常量。如果单元格为空，该<b>公式</b>属性将返回空字符串。如果单元格包含公式， <b>Formula</b>属性会将该公式返回相同的格式将公式栏 （包括等号） 中显示的字符串形式。</para>如果设置为日期值或单元格公式的
           <para>，Microsoft Excel 将检查以查看是否已设置该单元格格式之一的日期或时间的数字格式。如果没有，Microsoft Excel 将号码格式设为默认的短日期数字格式。</para>如果该区域是一个-或两维范围
-          <para>，可以将公式设置为相同尺寸的 Visual Basic 阵列中。同样，将公式放到 Visual Basic 阵列中。</para><para>的多个单元格区域填充公式的范围中的所有单元格设置公式。</para><para /></remarks>
+          <para>，可以将公式设置为相同尺寸的 Visual Basic 阵列中。同样，将公式放到 Visual Basic 阵列中。</para><para>的多个单元格区域填充公式的范围中的所有单元格设置公式。</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Function">
@@ -1922,7 +1919,7 @@
         <value>To be added.</value>
         <remarks>
           <para>对于 OLAP 数据源，此属性是只读的且始终返回<b>xlUnknown</b>。对于其他数据源，此属性不能设置为<b>xlUnknown</b>。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1954,7 +1951,7 @@
         <remarks>
           <para>此属性不可用于 OLAP 数据源。</para>
           <para>最高一级的父字段 （最左边的父字段） 为第一级，其子为二级，依此类推。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1992,7 +1989,7 @@
           <para>返回<b>True</b>的隐藏的级别和<b>False</b>可见 （非隐藏） 的级别。</para>
           <para>此属性是只适用于 OLAP 层次结构的级别。</para>
           <para>的关系数据源和 OLAP 属性，此属性始终为<b>False</b>。尝试对为属性设置为<b>True</b>或关系字段将返回运行时错误。 不能设置该属性为<b>True</b>级别如果相同的层次结构的所有其他级别已有此设置设置为<b>True</b>。至少一个的层次结构级别必须具有此属性设置为<b>False</b>。尝试执行此操作将返回一个运行时错误。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2026,8 +2023,8 @@
         <summary>返回一个 object 值，该值代表之一的单个隐藏数据透视表项 (<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />对象) 或所有隐藏数据项的集合 (<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />对象) 中指定的字段。 只读。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>对于 OLAP 数据源，此属性始终返回一个空集合。</para>
-          <para />
+          <para>的 OLAP 数据源，此属性始终返回一个空集合。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2061,8 +2058,8 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>HiddenItemsList</b>属性才有效对于联机分析处理 (OLAP) 数据源;在非 OLAP 数据源上使用该属性将返回一个运行时错误。</para>
-          <para />
+            <b>HiddenItemsList</b>属性只对联机分析处理 (OLAP) 数据源有效; 非 OLAP 数据源使用此属性将返回一个运行时错误。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2099,7 +2096,7 @@
         <remarks>
           <para>此属性的默认值为<b>False</b>。</para>
           <para>应用手动筛选时，开发人员可以设置<see cref="P:Microsoft.Office.Interop.Excel.PivotField.IncludeNewItemsInFilter" />属性设置为<b>True</b>以跟踪排除的项目。他们可以将属性设置为<b>False</b>来跟踪包含的项目。 如果新项目添加到源数据后<see cref="P:Microsoft.Office.Interop.Excel.PivotField.IncludeNewItemsInFilter" />属性设置为<b>True</b>，新的项目中显示<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />下一个刷新操作，因为它们不是 Excel 正在跟踪的项目的集合中后。</para>此设置设置
-          <para>的 OLAP 层次结构<see cref="T:Microsoft.Office.Interop.Excel.CubeField" />对象，并尝试将其设置在<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />是层次结构的一部分的 s 将会失败 （并运行时错误）。您可以获取此设置中的<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s 属于的层次结构，它将返回与相应相同<see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" />属性。</para><para>切换此设置将清除下列集合： <see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItemsList" />， <see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItems(System.Object)" />， <see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItemsList" />，和<see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItems(System.Object)" />。 当<see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" />设置为<b>False</b>，<see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItemsList" />和<see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItems(System.Object)" />集合为空，并且无法向它们添加项目。 尝试添加项目时，将返回运行时错误。 当<see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" />设置为<b>True</b>，<see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItemsList" />和<see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItems(System.Object)" />集合为空，并且无法向它们添加项目。 尝试添加项目时，则返回一个运行时错误。</para><para>中<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s，此设置在<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />对象。切换此设置不会更改筛选状态。</para><para /></remarks>
+          <para>的 OLAP 层次结构<see cref="T:Microsoft.Office.Interop.Excel.CubeField" />对象，并尝试将其设置在<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />是层次结构的一部分的 s 将会失败 （并运行时错误）。您可以获取此设置中的<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s 属于的层次结构，它将返回与相应相同<see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" />属性。</para><para>切换此设置将清除下列集合： <see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItemsList" />， <see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItems(System.Object)" />， <see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItemsList" />，和<see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItems(System.Object)" />。 当<see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" />设置为<b>False</b>，<see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItemsList" />和<see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItems(System.Object)" />集合为空，并且无法向它们添加项目。 尝试添加项目时，将返回运行时错误。 当<see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" />设置为<b>True</b>，<see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItemsList" />和<see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItems(System.Object)" />集合为空，并且无法向它们添加项目。 尝试添加项目时，则返回一个运行时错误。</para><para>中<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s，此设置在<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />对象。切换此设置不会更改筛选状态。</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCalculated">
@@ -2129,7 +2126,7 @@
         <value>To be added.</value>
         <remarks>
           <para>对于 OLAP 数据源，此属性始终返回<b>False</b>。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2160,7 +2157,7 @@
         <value>To be added.</value>
         <remarks>
           <para>如果不使用联机分析处理 (OLAP) 数据源，此属性将返回一个运行时错误。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2223,7 +2220,7 @@
         <remarks>
           <para>您可以设置的任何数据透视表字段，此属性; 仅时指定的字段之外的最里层 （最低级） 的行字段为行字段，但是，显示的空白行。对于非 OLAP 数据源，不会更改此属性的值，重新排列的字段或将其添加到数据透视表报表中。</para>
           <para>不能在数据透视表报告中的空行中输入数据。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2258,8 +2255,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>此属性设置为<b>True</b> （默认值） 将中有没有直接的视觉效果<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />如果<see cref="P:Microsoft.Office.Interop.Excel.PivotField.LayoutForm" />属性设置为<see cref="F:Microsoft.Office.Interop.Excel.XlLayoutFormType.xlTabular" />，但可以独立设置。</para>
-          <para />
+          <para>此属性设置为<b>True</b> （默认值） 将中有没有直接的视觉效果<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />如果<see cref="P:Microsoft.Office.Interop.Excel.PivotField.LayoutForm" />属性设置为<see cref="F:Microsoft.Office.Interop.Excel.XlLayoutFormType.xlTabular" />，但可以独立地设置它。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2292,8 +2289,8 @@
         <summary>返回或设置指定的数据透视表项的显示的方式 — 以表格格式还是以分级显示格式。 读/写<see cref="T:Microsoft.Office.Interop.Excel.XlLayoutFormType" />。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>您可以设置该属性的任何数据透视表字段;但是的格式显示仅当指定的字段是行字段之外的最里层 （最低级行字段。对于非 OLAP 数据源时重新排列字段, 或添加到或数据透视表报表中删除时，不会更改此属性的值。</para>
-          <para />
+          <para>您可以设置该属性的任何数据透视表字段; 但是的格式显示仅当指定的字段是行字段之外的最里层 （最低级行字段。对于非 OLAP 数据源，此属性的值或不会更改时重新排列字段添加到或数据透视表报表中删除。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2326,8 +2323,8 @@
         <summary>如果每个字段后都插入了分页符，则该值为 <b>True</b>。默认值为 <b>False</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>尽管您可以设置的任何数据透视表字段，此属性，但仅时指定的字段之外的最里层 （最低级） 的行字段为行字段显示打印选项。对于非 OLAP 数据源时重新排列字段, 或添加到或数据透视表报表中删除时，不会更改此属性的值。</para>
-          <para />
+          <para>仅时指定的字段之外的最里层 （最低级） 的行字段为行字段虽然您可以设置的任何数据透视表字段，此属性，显示打印选项。对于非 OLAP 数据源，此属性的值或不会更改时重新排列字段添加到或数据透视表报表中删除。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2363,7 +2360,7 @@
           <para>您可以以分级显示格式设置的任何数据透视表字段，此属性; 但是的格式显示仅当指定的字段是为行字段之外其他最里层 （最低级） 的行字段。对于非 OLAP 数据源，此属性的值或不会更改时重新排列字段添加到或报表中删除。</para>
           <para>
             <see cref="P:Microsoft.Office.Interop.Excel.PivotField.LayoutForm" />属性确定报表显示以表格格式还是以分级显示格式。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2401,7 +2398,7 @@
           <para>
             <b>注意</b>： 此设置才可视化效果仅当<see cref="P:Microsoft.Office.Interop.Excel.PivotField.UseMemberPropertyAsCaption" />设置为<b>True</b>的<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />。</para>
           <para>时<see cref="P:Microsoft.Office.Interop.Excel.PivotField.MemberPropertyCaption" />是设置，设置记住切换<see cref="P:Microsoft.Office.Interop.Excel.PivotField.UseMemberPropertyAsCaption" />属性。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2495,7 +2492,7 @@
         <remarks>
           <para>为<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />对象，您可以设置<b>NumberFormat</b>属性仅对数据字段。</para>
           <para>格式代码是作为单元格格式对话框中的格式代码选项相同的字符串。<b>Format</b>函数使用格式代码字符串不同，不执行<b>与 NumberFormat</b>和<see cref="P:Microsoft.Office.Interop.Excel.CellFormat.NumberFormatLocal" />属性。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2528,8 +2525,8 @@
         <summary>指定数据透视表报告中的字段的位置。 读/写<see cref="T:Microsoft.Office.Interop.Excel.XlPivotFieldOrientation" />。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>对于 OLAP 数据源，设置该属性的一个字段层次结构中设置其他字段的方向相同的层次结构中。只能在行、 列和页字段区域的数据透视表报告中进行定向维度字段。仅可以在数据区域面向度量字段。层次结构或数据的字段设置为<b>xlHidden</b>从数据透视表中删除的层次结构或字段。</para>
-          <para />
+          <para>对于 OLAP 数据源，层次结构中设置此属性的一个字段设置相同的层次结构中的其他字段的方向。只能在行、 列和页字段区域的数据透视表报告中进行定向维度字段。仅可以在数据区域面向度量字段。层次结构或数据的字段设置为<b>xlHidden</b>从数据透视表中删除字段的层次结构。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2588,7 +2585,7 @@
         <value>To be added.</value>
         <remarks>
           <para>此属性不可用于 OLAP 数据源。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2623,7 +2620,7 @@
         <value>To be added.</value>
         <remarks>
           <para>此属性不可用于 OLAP 数据源。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2684,7 +2681,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>对于 OLAP 数据源，该集合索引唯一的名称 (由返回的名称<see cref="P:Microsoft.Office.Interop.Excel.PivotField.SourceName" />属性) 而不是按显示名称。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2750,7 +2747,7 @@
         <remarks>
           <para>设置该属性将重新排列此多维数据集字段的顺序的属性。此属性是从 1 开始。允许的范围是从 1 到其显示的层次结构的成员属性字段的最大数。</para>
           <para>如果<see cref="P:Microsoft.Office.Interop.Excel.PivotField.IsMemberProperty" />属性为<b>False</b>，则使用<b>PropertyOrder</b>属性将创建一个运行时错误。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2782,7 +2779,7 @@
         <remarks>
           <para>只对属于成员属性字段的字段有效。</para>
           <para>如果<see cref="P:Microsoft.Office.Interop.Excel.PivotField.IsMemberProperty" />属性为<b>False</b>，则使用<b>PropertyParentField</b>属性将返回一个运行时错误。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2819,7 +2816,7 @@
           <para>读/写。</para>
           <para>
             <b>，则返回 true</b>如果指定的透视字段重复项目标签; 否则为<b>false</b>。设置<see cref="P:Microsoft.Office.Interop.Excel.PivotField.RepeatLabels" />属性对应于布局上的重复项目标签复选框&amp;PivotTable.To 中的字段字段设置对话框的打印选项卡指定是否对在单个数据透视表中的所有透视字段重复项目标签操作，使用<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.RepeatAllLabels(Microsoft.Office.Interop.Excel.XlPivotFieldRepeatLabels)" />方法。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2869,7 +2866,7 @@
               <description>的字段是不是基于的服务器 （即备注字段或 OLE 对象） 数据类型。</description>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2903,7 +2900,7 @@
         <value>To be added.</value>
         <remarks>
           <para>对于 OLAP 数据源，该值始终是<b>False</b>。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2968,8 +2965,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>该属性返回<b>True</b> ，如果<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />是当前可见，则返回<b>False</b> ，如果当前不可见。可见性<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />由是否<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />标题是否可见中<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />表格 （非压缩） 窗体中。</para>
-          <para />
+          <para>该属性返回<b>True</b>如果<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />是当前可见，则返回<b>False</b> ，如果当前不可见。可见性<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />由是否<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />标题是否可见中<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />表格 （非压缩） 窗体中。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3003,7 +3000,7 @@
         </value>
         <remarks>
           <para>您可以使用<see cref="T:Microsoft.Office.Interop.Excel.PivotField.Name" />或<see cref="T:Microsoft.Office.Interop.Excel.PivotField.SourceName" />非 olap <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3068,7 +3065,7 @@
             <b>StandardFormula</b>属性主要影响与日期或数字格式的项名称。它提供了一种方法来指定或查询给定的计算项的公式。</para>
           <para>
             <b>StandardFormula</b>属性是则国际-，而<see cref="P:Microsoft.Office.Interop.Excel.PivotField.Formula" />属性不是。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3136,8 +3133,8 @@
         <summary>返回或设置与指定字段显示分类汇总。 仅对非数据字段有效。 读取/写入 <b>对象</b> 。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>对于 OLAP 数据源，<paramref name="Index" />仅能返回或设置为 1 （自动）。返回的数组始终包含<b>True</b>或<b>False</b>的第一个的数组元素，并且它包含<b>False</b>的所有其他元素。数组元素的值的所有<b>False</b>指示没有分类汇总。</para>
-          <para />
+          <para>对于 OLAP 数据源，<paramref name="Index" />仅能返回或设置为 1 （自动）。返回的数组始终包含<b>True</b>或<b>False</b>的第一个的数组元素，并且它包含<b>False</b>的所有其他元素。数组元素的值的所有<b>False</b>指示有没有分类汇总。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3167,8 +3164,8 @@
         <summary>返回当前字段组中的字段的总数。 如果字段不分组，或者<b>TotalLevels</b>基于 OLAP 数据源时，返回值 1。 <b>Integer</b> 类型，只读。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>一组分组的字段中的所有字段都具有相同的<b>TotalLevels</b>值。</para>
-          <para />
+          <para>分组的字段的一组中的所有字段都具有相同的<b>TotalLevels</b>值。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3205,7 +3202,7 @@
         <remarks>
           <para>如果<see cref="P:Microsoft.Office.Interop.Excel.PivotField.UseMemberPropertyAsCaption" />设置为<b>True</b>的<see cref="P:Microsoft.Office.Interop.Excel.PivotField" />，然后<see cref="P:Microsoft.Office.Interop.Excel.PivotField.UseMemberPropertyAsCaption" />指定要显示哪些成员属性标题。如果未指定，第一个成员属性的<see cref="P:Microsoft.Office.Interop.Excel.PivotField" />（按数据源顺序） 将显示为该项目的标题<see cref="P:Microsoft.Office.Interop.Excel.PivotField" />。</para>
           <para>如果<see cref="P:Microsoft.Office.Interop.Excel.PivotField.UseMemberPropertyAsCaption" />设置为<b>False</b>，然后的正常<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />标题用于<see cref="P:Microsoft.Office.Interop.Excel.PivotField" />。</para>如果您尝试设置
-          <para><see cref="P:Microsoft.Office.Interop.Excel.PivotField.UseMemberPropertyAsCaption" />为<b>True</b><see cref="P:Microsoft.Office.Interop.Excel.PivotField" />没有成员属性，返回一个运行时错误。为<see cref="P:Microsoft.Office.Interop.Excel.PivotField" />s 没有成员属性，该属性将始终为<b>False</b>。</para><para /></remarks>
+          <para><see cref="P:Microsoft.Office.Interop.Excel.PivotField.UseMemberPropertyAsCaption" />为<b>True</b><see cref="P:Microsoft.Office.Interop.Excel.PivotField" />没有成员属性，返回一个运行时错误。为<see cref="P:Microsoft.Office.Interop.Excel.PivotField" />s 没有成员属性，该属性将始终为<b>False</b>。</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -3269,8 +3266,8 @@
         <summary>返回一个 object 值，该值代表之一的单个可见的数据透视表项 (<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />对象) 或所有可见的项的集合 (<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />对象) 中指定的字段。 只读。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>对于 OLAP 数据源，此属性是只读的且始终返回<b>True</b>。没有隐藏的项目。</para>
-          <para />
+          <para>对于 OLAP 数据源，此属性是只读的始终返回<b>True</b>。没有隐藏项目。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3306,7 +3303,7 @@
         </value>
         <remarks>
           <para>此属性是适用于 OLAP<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />仅 s。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

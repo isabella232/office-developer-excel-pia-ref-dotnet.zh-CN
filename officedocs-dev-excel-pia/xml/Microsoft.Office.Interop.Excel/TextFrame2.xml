@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20576032" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface TextFrame2 : Microsoft.Office.Core._IMsoDispObj" />
@@ -33,7 +33,7 @@
     <summary>代表文本框架中的<see cref="T:Microsoft.Office.Interop.Excel.Shape" />， <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />，或<see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />对象。</summary>
     <remarks>
       <para>此对象包含文本框架，以及属性和方法的控件的对齐方式和定位文本框架中的文本。使用<b>TextFrame2</b>属性可返回<see cref="T:Microsoft.Office.Interop.Excel.TextFrame2" />对象。</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -68,8 +68,8 @@
           <see cref="T:Microsoft.Office.Interop.Excel._Application" />
         </value>
         <remarks>
-          <para>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象代表 Microsoft Excel 应用程序。如果使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel._Application" />值，该值代表指定对象 （可与 OLE 自动化对象使用此属性可返回该对象的应用程序） 的创建者的对象。</para>
-          <para />
+          <para>不使用对象识别符的情况下使用时，此属性返回<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象代表 Microsoft Excel 应用程序。如果使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel._Application" />值，该值代表指定对象 （可与 OLE 自动化对象使用此属性可返回该对象的应用程序） 的创建者的对象。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -166,10 +166,7 @@
         <value>
           <b>Integer</b>
         </value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。<see cref="P:Microsoft.Office.Interop.Excel.TextFrame2.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para />
-        </remarks>
+        <remarks>如果对象在 Microsoft Excel 中创建的<para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。<see cref="P:Microsoft.Office.Interop.Excel.TextFrame2.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteText">
@@ -196,7 +193,7 @@
         <summary>删除文本框中的文字以及所有关联的文字属性。</summary>
         <remarks>
           <para>关联的文字属性包括<see cref="T:Microsoft.Office.Interop.Excel.Font" />属性，如加粗、 下划线，等等。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -453,7 +450,7 @@
               </description>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -489,7 +486,7 @@
         </value>
         <remarks>
           <para>此属性的值可以从-90 到 90 度，或之一设置为一个整数值<see cref="T:Microsoft.Office.Core.MsoTextOrientation" />常量。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

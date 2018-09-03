@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20575801" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Validation" />
@@ -33,7 +33,7 @@
     <remarks>
       <para>使用<see cref="P:Microsoft.Office.Interop.Excel.Range.Validation" />属性返回<b>Validation</b>对象。</para>
       <para>使用<see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" />添加到区域的数据验证并创建新的<b>Validation</b>对象的方法。</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -99,7 +99,7 @@
               <description>一个任一<paramref name="Formula1" />或<paramref name="Formula2" />必须指定和 / 或可以指定。</description>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -128,10 +128,7 @@
       <Docs>
         <summary>返回有效性验证警告样式。 只读<see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" />方法，以便设置范围的警告样式。如果该区域已有数据有效性，使用<see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" />方法，以更改警告样式。</para>
-          <para />
-        </remarks>
+        <remarks>使用<para><see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" />方法，以便设置范围的警告样式。如果该区域已有数据有效性，使用<see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" />方法，以更改警告样式。</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -189,8 +186,8 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para />
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -335,8 +332,8 @@
         <summary>返回的值或条件格式或数据有效性的第二部分相关联的表达式。 只读 <b>String</b>。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性仅用于数据验证条件格式时<see cref="P:Microsoft.Office.Interop.Excel.Validation.Operator" />属性为<b>xlBetween</b>或<b>xlNotBetween</b>。它可以是以常量值、 一个 string 值、 单元格引用或公式。</para>
-          <para />
+          <para>此属性是使用仅当数据验证条件格式<see cref="P:Microsoft.Office.Interop.Excel.Validation.Operator" />属性为<b>xlBetween</b>或<b>xlNotBetween</b>。它可以是以常量值、 一个 string 值、 单元格引用或公式。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -369,8 +366,9 @@
         <summary>如果指定区域内的数据有效性检验允许空值，则该值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果<b>IgnoreBlank</b>属性为<b>True</b>，如果单元格为空，或者通过以下任一方式引用的单元格中，单元格数据被视为有效<see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MinNumber" />或<see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MaxNumber" />属性为空。</para>
-          <para />
+          <para>
+            <b>IgnoreBlank</b>属性为<b>True</b>，如果单元格数据被视为有效，如果单元格为空，或者通过以下任一方式引用的单元格中<see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MinNumber" />或<see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MaxNumber" />属性为空。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -403,8 +401,8 @@
         <summary>返回或设置日语输入规则的说明。 可以是一个<see cref="T:Microsoft.Office.Interop.Excel.XlIMEMode" />常量。 可读写 <b>Integer</b>。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>请注意，仅当安装和选择了日文语言支持时，才可以设置此属性。</para>
-          <para />
+          <para>注意，仅当安装和选择了日文语言支持时，才可以设置此属性。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -439,7 +437,7 @@
         <remarks>
           <para>如果验证类型不是<b>xlValidateList</b>，将忽略此属性。</para>
           <para>使用<paramref name="Minimum" />参数<see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" />或<see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" />方法<see cref="T:Microsoft.Office.Interop.Excel.Validation" />对象以指定包含有效数据的区域。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -569,7 +567,7 @@
                 <paramref name="Formula1" />或<paramref name="Formula2" />，必须指定和 / 或。</description>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

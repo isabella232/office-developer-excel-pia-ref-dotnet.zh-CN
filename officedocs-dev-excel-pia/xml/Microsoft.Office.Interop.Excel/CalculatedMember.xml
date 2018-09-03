@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20576788" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CalculatedMember" />
@@ -35,7 +35,7 @@
       <para>使用<b>CalculatedMember</b>对象，您可以检查计算的字段或项在数据透视表中使用的有效性<see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.IsValid" />属性。</para>
       <para>
         <b>注释</b>如果数据透视表当前未连接到数据源的<b>IsValid</b>属性将返回<b>True</b> 。使用<see cref="M:Microsoft.Office.Interop.Excel.PivotCache.MakeConnection" />方法测试的<b>IsValid</b>属性之前。</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -127,7 +127,7 @@
           <para>如果对象在 Excel 中创建的此属性返回字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
           <para>
             <b>Creator</b>属性用于在 Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Excel 具有 XCEL 的创建者代码。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -154,8 +154,8 @@
       <Docs>
         <summary>删除对象。</summary>
         <remarks>
-          <para>您可以删除多维数据集字段，如果您已创建多维数据集字段自己使用<b>CalculatedMember.Add</b>方法具有仅<paramref name="xlCalculatedSet" />参数。</para>
-          <para />
+          <para>可以删除多维数据集字段，如果您已创建多维数据集字段自己使用<b>CalculatedMember.Add</b>方法具有仅<paramref name="xlCalculatedSet" />参数。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -188,7 +188,7 @@
           <para>只读的。</para>
           <para>此属性的值对应于可选的命名的集创建或编辑时可以在新建/修改设置对话框中的显示文件夹文本框中输入值。若要创建新的名为从基于 OLAP 数据源的数据透视表中的数据集，单击数据透视表，单击字段中，项目，&amp;集在数据透视表工具选项在功能区选项卡，单击管理设置、 单击新建中设置管理器对话框中，，然后单击创建 Set 使用 MDX。这将显示新设置对话框，其中包含显示文件夹文本框。同样，如果在设置管理器对话框中选择一个现有的命名的集，然后单击编辑修改设置对话框将显示。</para>
           <para>此属性与<see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Dynamic" />和<see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.HierarchizeDistinct" />属性只能读取命名集 (这由<see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" />对象其中<see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" />属性等于<paramref name="xlCalculatedSet" />)。无法读取的这些属性的计算的成员或度量值 (这由<see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" />对象其中<see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" />属性等于<paramref name="xlCalculatedMember" />)。如果您试图读取计算的成员或度量值的这些属性，会引发运行时错误。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -224,7 +224,7 @@
             <b>，则返回 true</b>如果命名的集计算每次更新; 否则为<b>false</b>。</para>
           <para>此属性的值对应于在新建/修改设置对话框创建或编辑命名的集时，可使用每个更新复选框来设置重新计算的设置。若要创建新的名为从基于 OLAP 数据源的数据透视表中的数据集，单击数据透视表，单击字段中，项目，&amp;集在数据透视表工具选项在功能区选项卡，单击管理设置、 单击新建中设置管理器对话框中，，然后单击创建 Set 使用 MDX。这将显示新设置对话框，其中包含与每个更新复选框设置重新计算。同样，如果在设置管理器对话框中选择一个现有的命名的集，然后单击编辑修改设置对话框将显示。</para>
           <para>此属性与<see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.DisplayFolder" />和<see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.HierarchizeDistinct" />属性只能读取命名集 (这由<see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" />对象其中<see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" />属性等于<paramref name="xlCalculatedSet" />)。无法读取的这些属性的计算的成员或度量值 (这由<see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" />对象其中<see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" />属性等于<paramref name="xlCalculatedMember" />)。如果您试图读取计算的成员或度量值的这些属性，会引发运行时错误。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -262,7 +262,7 @@
           <para>
             <b>，则返回 true</b>如果命名集的项目的层次结构中所有级别显示的同一字段中; 否则为<b>false</b>。</para>
           <para>此属性的值对应于显示项的设置从单独的字段复选框，在新建/修改设置对话框中的不同级别创建或编辑命名的集时。若要创建新的名为从基于 OLAP 数据源的数据透视表中的数据集，单击数据透视表，单击字段中，项目，&amp;集在数据透视表工具选项在功能区选项卡，单击管理设置、 单击新建中设置管理器对话框中，，然后单击创建 Set 使用 MDX。这将显示新设置对话框，其中包含来自在单独的字段的复选框的不同级别的显示项目。同样，如果在设置管理器对话框中选择一个现有的命名的集，然后单击编辑修改设置对话框将显示。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -295,7 +295,7 @@
           <para>此属性不可用于 OLAP 数据源。</para>
           <para>如果单元格包含常量，该属性返回的常量。如果单元格为空，则<b>公式</b>属性将返回空字符串。如果单元格包含公式， <b>Formula</b>属性会将该公式返回相同的格式将公式栏 （包括等号） 中显示的字符串形式。</para>如果设置为日期值或单元格公式的
           <para>，Microsoft Excel 将检查以查看是否已设置该单元格格式之一的日期或时间的数字格式。如果没有，Microsoft Excel 将号码格式设为默认的短日期数字格式。</para>如果该区域是一个-或两维范围
-          <para>，您可以为数组相同尺寸设置公式。同样，将公式放入数组。</para><para>的多个单元格区域填充公式的范围中的所有单元格设置公式。</para><para /></remarks>
+          <para>，您可以为数组相同尺寸设置公式。同样，将公式放入数组。</para><para>的多个单元格区域填充公式的范围中的所有单元格设置公式。</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HierarchizeDistinct">
@@ -333,7 +333,7 @@
             <b>，则返回 true</b>如果命名集的层次结构显示，按顺序移除重复项; 否则为<b>false</b>。</para>
           <para>此属性的值对应的自动顺序和删除重复项从新建/修改设置对话框中的创建或编辑命名的集时框中的设置复选框。若要创建新的名为从基于 OLAP 数据源的数据透视表中的数据集，单击数据透视表，单击字段中，项目，&amp;集在数据透视表工具选项在功能区选项卡，单击管理设置、 单击新建中设置管理器对话框中，，然后单击创建 Set 使用 MDX。这将显示新设置对话框，其中包含的自动顺序和删除重复项从设置复选框。同样，如果在设置管理器对话框中选择一个现有的命名的集，然后单击编辑修改设置对话框将显示。</para>
           <para>此属性与<see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.DisplayFolder" />和<see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Dynamic" />属性只能读取命名集 (这由<see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" />对象其中<see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" />属性等于<paramref name="xlCalculatedSet" />)。无法读取的这些属性的计算的成员或度量值 (这由<see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" />对象其中<see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" />属性等于<paramref name="xlCalculatedMember" />)。如果您试图读取计算的成员或度量值的这些属性，会引发运行时错误。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -363,8 +363,8 @@
         <summary>返回一个<b>boolean 类型的值</b>，该值指示是否指定的计算的成员已成功实例化与 OLAP 提供程序在当前会话中。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性返回<b>True</b> ，即使未连接到其数据源对数据透视表。确保查询<b>IsValid</b>属性的值之前，已连接数据透视表。</para>
-          <para />
+          <para>即使数据透视表未连接到其数据源，此属性返回<b>True</b> 。确保查询<b>IsValid</b>属性的值之前，已连接数据透视表。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -535,7 +535,7 @@
         <value>To be added.</value>
         <remarks>
           <para>默认父成员，取决于任何已定义由多维数据集设计器或 Analysis Services 为所选层次结构的默认成员。例如，如果所选层次结构存在"All"的成员，则通常多维数据集上的默认父成员。</para>如果所选的父层次结构不具有"All"父成员，另一个默认父成员
-          <para>多维数据集设计器或通过 Analysis Services 以编程方式定义。（如果未指定多维数据集设计器的默认成员，Analysis Services 引擎自动定义一个。）</para><para /></remarks>
+          <para>多维数据集设计器或通过 Analysis Services 以编程方式定义。（如果未指定多维数据集设计器的默认成员，Analysis Services 引擎自动定义一个。）</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SolveOrder">
@@ -638,7 +638,7 @@
               <description>巴黎</description>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -676,7 +676,7 @@
           <para>
             <b>xlCalculatedSet</b>
           </para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

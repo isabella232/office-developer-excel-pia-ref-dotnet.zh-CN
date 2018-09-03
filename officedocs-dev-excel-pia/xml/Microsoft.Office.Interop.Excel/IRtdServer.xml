@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20579126" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface IRtdServer" />
@@ -28,8 +28,9 @@
   <Docs>
     <summary>代表实时数据服务器的一个接口。</summary>
     <remarks>
-      <para>可以实例化或只能由实现<b>IRTDServer</b>接口使用<b>Implements</b>关键字创建<b>IRTDServer</b>对象。</para>
-      <para />
+      <para>
+        <b>IRTDServer</b>对象可以实例化或创建只能由实现<b>IRTDServer</b>接口使用<b>Implements</b>关键字。</para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -120,8 +121,8 @@
         <summary>确定实时数据服务器是否仍处于活动状态。 零或为负数表示失败;正数表示服务器处于活动状态。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>如果由 Microsoft Excel 调用 Heartbeat 方法<see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" />属性经过最后一次调用 Excel 以来与<see cref="M:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.UpdateNotify" />方法。</para>
-          <para />
+          <para>由 Microsoft Excel 调用 Heartbeat 方法，如果<see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" />属性经过最后一次调用 Excel 以来与<see cref="M:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.UpdateNotify" />方法。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -153,8 +154,8 @@
         <summary>由 Microsoft Excel 以获取新数据调用此方法。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>返回到 Excel 的数据是一个包含一个二维数组的<b>对象</b>。第一个维度代表主题 Id 的列表。第二个维度表示主题 Id 相关联的值。</para>
-          <para />
+          <para>数据返回到 Excel 是一个包含一个二维数组的<b>对象</b>。第一个维度代表主题 Id 的列表。第二个维度表示主题 Id 相关联的值。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>

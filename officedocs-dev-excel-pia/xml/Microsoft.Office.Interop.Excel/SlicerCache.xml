@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20579588" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SlicerCache" />
@@ -33,7 +33,7 @@
     <remarks>
       <para>使用<see cref="P:Microsoft.Office.Interop.Excel._Workbook.SlicerCaches" />属性<see cref="T:Microsoft.Office.Interop.Excel._Workbook" />对象可访问集合<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />工作簿中的对象。</para>
       <para>每个切片器有基本<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />对象代表切片器和其对应的项标题中显示的图块数为单位的当前用户界面状态中显示的项目。在 Excel 中的用户看到每个切片器控件由<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />对象，它具有<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />对象与其相关联</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -65,7 +65,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.Application" />对象。</value>
         <remarks>
           <para>只读的。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -141,10 +141,7 @@
       <Parameters />
       <Docs>
         <summary>清除与指定切片器缓存关联的所有切片器的筛选。</summary>
-        <remarks>
-          <para>如果清除从一个切片器筛选通过使用<see cref="M:Microsoft.Office.Interop.Excel.SlicerCache.ClearManualFilter" />方法，但一个或多个切片器的交叉筛选数据，切片器中第一个切片器, 的某些项目仍处于灰显状态。例如，如果您有客户和国家/地区的切片器的交叉筛选，并执行 ActiveWorkbook.SlicerCaches("Slicer_Customer")。ClearManualFilter，Customer 切片器中的所有项目之前，不能可用执行 ActiveWorkbook.SlicerCaches("Slicer_Country")。ClearManualFilter。在交叉筛选的详细信息，请参阅<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" />属性。</para>
-          <para />
-        </remarks>
+        <remarks>如果清除使用从一个切片器筛选的<para><see cref="M:Microsoft.Office.Interop.Excel.SlicerCache.ClearManualFilter" />方法，但一个或多个切片器的交叉筛选数据，切片器中第一个切片器, 的某些项目仍处于灰显状态。例如，如果您有客户和国家/地区的切片器的交叉筛选，并执行 ActiveWorkbook.SlicerCaches("Slicer_Customer")。ClearManualFilter，Customer 切片器中的所有项目之前，不能可用执行 ActiveWorkbook.SlicerCaches("Slicer_Country")。ClearManualFilter。在交叉筛选的详细信息，请参阅<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" />属性。</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -174,7 +171,7 @@
         <value>32 位<b>整数</b>，指示在其中创建此对象的应用程序。</value>
         <remarks>
           <para>只读的<b>long</b>。</para>如果对象在 Microsoft Excel 中创建的
-          <para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para /></remarks>
+          <para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CrossFilterType">
@@ -208,7 +205,7 @@
         <remarks>
           <para>读/写。</para>如果多个切片器关联的同一个数据透视表，默认情况下，如果您在一个切片器筛选的项目有没有相应的数据，另一个切片器中的
           <para>，这些项目将灰显。例如，如果您具有 Country 切片器和状态切片器，并单击国家切片器中的国家/地区，所有状态的都相关不在的国家/地区将灰显。此功能称为为"跨筛选"。</para>设置对应的
-          <para>用户界面设置<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" />属性直观地指明空数据项和显示项目的切片器设置对话框中没有数据最后一个复选框。设置<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" />属性设为<see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithDataAtTop" />对应于同时选中这两直观地指明没有数据的项并显示项目没有数据上次复选框。设置<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" />属性设为<see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithNoData" />对应于仅选择直观地指明项目没有数据复选框。清除两个复选框对应于设置<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" />属性设为<see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerNoCrossFilter" />。</para><para>OLAP 数据源 (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> =  <b>，则返回 true</b>) 不支持<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" />属性<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />对象。对于 OLAP 数据源，使用<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" />属性<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />对象，而。</para><para /></remarks>
+          <para>用户界面设置<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" />属性直观地指明空数据项和显示项目的切片器设置对话框中没有数据最后一个复选框。设置<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" />属性设为<see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithDataAtTop" />对应于同时选中这两直观地指明没有数据的项并显示项目没有数据上次复选框。设置<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" />属性设为<see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithNoData" />对应于仅选择直观地指明项目没有数据复选框。清除两个复选框对应于设置<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" />属性设为<see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerNoCrossFilter" />。</para><para>OLAP 数据源 (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> =  <b>，则返回 true</b>) 不支持<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" />属性<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />对象。对于 OLAP 数据源，使用<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" />属性<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />对象，而。</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -234,8 +231,8 @@
       <Docs>
         <summary>删除指定的切片器缓存以及相关联的切片器。</summary>
         <remarks>
-          <para>若要删除独立切片器缓存于特定的切片器，请使用<see cref="M:Microsoft.Office.Interop.Excel.Slicer.Delete" />方法<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />改为对象。</para>
-          <para />
+          <para>若要删除独立切片器缓存于特定的切片器，请使用<see cref="M:Microsoft.Office.Interop.Excel.Slicer.Delete" />方法<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />对象改为。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -380,8 +377,8 @@
         <summary>获取或设置切片器缓存的名称。</summary>
         <value>切片器缓存的名称。</value>
         <remarks>
-          <para>切片器缓存的名称必须是唯一的工作簿的命名空间中。默认情况下，分配给切片器缓存的名称为与关联 Slicer_ 跟数据透视表字段的切片器缓存的名称。例如，如果切片器相关联的数据透视表中的产品类别字段，则默认名称将的 Slicer_Product_Category （任何空格字段名称中的替换下划线字符）。如果同名 Slicer_Product_Category 工作簿中没有超过一个与之关联的切片器与同一工作簿中的产品类别字段或某些其他命名的实体，Excel 会将大量追加后要生成的唯一名称的名称如 Slicer_Product_Category1。</para>
-          <para />
+          <para>的切片器缓存的名称必须是唯一的工作簿的命名空间中。默认情况下，分配给切片器缓存的名称为与关联 Slicer_ 跟数据透视表字段的切片器缓存的名称。例如，如果切片器相关联的数据透视表中的产品类别字段，则默认名称将的 Slicer_Product_Category （任何空格字段名称中的替换下划线字符）。如果同名 Slicer_Product_Category 工作簿中没有超过一个与之关联的切片器与同一工作簿中的产品类别字段或某些其他命名的实体，Excel 会将大量追加后要生成的唯一名称的名称如 Slicer_Product_Category1。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -415,7 +412,7 @@
           <para>只读的。</para>
           <para>
             <b>，则返回 true</b>，如果切片器基于 OLAP 数据源; 否则为<b>false</b>。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -446,7 +443,7 @@
         <value>父<see cref="T:Microsoft.Office.Interop.Excel.SlicerCaches" />指定的对象的<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />对象。</value>
         <remarks>
           <para>只读的。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -479,7 +476,7 @@
           <para>只读的。</para>
           <para>
             <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" />集合返回<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.PivotTables" />属性将为空，如果与指定的切片器关联<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />未连接到任何数据透视表。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -548,7 +545,7 @@
           <para>时<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" />属性设置为<b>true</b> （默认值），连接到指定的切片器缓存的切片器中显示的源数据中已删除项目。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" />属性对应于显示项目从切片器设置对话框中的数据源复选框中删除的设置。</para>
           <para>
             <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" />属性仅适用于基于工作簿范围或列表的切片器 (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> =  <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />)，或基于关系数据源的切片器 (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> =  <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" />和<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>false</b>)。尝试设置<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" />属性切片器连接到数据透视表的基于外部 OLAP 数据源 (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> =  <b>，则返回 true</b>) 会生成运行时错误。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -581,7 +578,7 @@
           <para>只读的。</para>
           <para>
             <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerCacheLevels" />属性仅适用于筛选的 OLAP 数据源的切片器 (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> =  <b>，则返回 true</b>)。尝试从非 OLAP 切片器中访问此属性会生成运行时错误。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -642,7 +639,7 @@
           <para>只读的。</para>
           <para>
             <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" />属性<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />对象才适用，基于数据透视表的切片器基于工作簿范围或列表 (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> =  <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />)，或基于数据透视表的切片器基于关系数据源的 (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> =  <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" />和<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>false</b>)。尝试访问<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" />切片器连接到外部 OLAP 数据源的属性 (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> =  <b>，则返回 true</b>) 会生成运行时错误。对于 OLAP 数据源，使用<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SlicerItems" />属性<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />对象改为。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -673,7 +670,7 @@
         <value>A<see cref="T:Microsoft.Office.Interop.Excel.Slicers" />集合包含的集合，该集合<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />对象与指定关联<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。</value>
         <remarks>
           <para>只读的。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -710,7 +707,7 @@
           <para>此属性的默认设置是<see cref="F:Microsoft.Office.Interop.Excel.XlSortOrder.xlAscending" />。</para>
           <para>
             <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortItems" />属性<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />对象仅适用于基于连接到工作簿范围或列表的数据透视表的切片器 (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />).尝试访问<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortItems" />切片器连接到 OLAP 数据源的属性 (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> =  <b>，则返回 true</b>) 会生成运行时错误。对于 OLAP 数据源，使用<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SortItems" />属性<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />对象改为。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -748,7 +745,7 @@
             <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortUsingCustomLists" />属性对应于使用自定义列表的设置时排序切片器设置对话框的复选框。若要访问与当前安装的 Excel 相关联的自定义列表，单击文件选项卡，单击选项、 高级，，然后单击在常规类别下的编辑自定义列表。</para>
           <para>
             <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortUsingCustomLists" />属性仅适用于筛选非 OLAP 数据源的切片器。尝试从正在筛选的 OLAP 数据源的切片器缓存中访问此属性 (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> =  <b>，则返回 true</b>) 会生成运行时错误。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -781,7 +778,7 @@
           <para>只读的。</para>
           <para>的切片器基于工作簿中的数据 (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> =  <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />)，或基于非 OLAP 外部数据的切片器 (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> =  <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" />和<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>false</b>)，返回源数据中相应列的名称。</para>
           <para>对于 OLAP 切片器 (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> =  <b>，则返回 true</b>)，返回切片器所基于的层次结构的 MDX 唯一名称。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -813,7 +810,7 @@
         <remarks>
           <para>只读的。</para>
           <para>仅<see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />和<see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" />支持数据源类型。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -875,7 +872,7 @@
           <para>只读的。</para>
           <para>
             <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.VisibleSlicerItems" />属性才适用，基于数据透视表的切片器基于工作簿范围或列表 (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />).尝试访问<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.VisibleSlicerItems" />切片器连接到 OLAP 数据源的属性 (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> =  <b>，则返回 true</b>) 会生成运行时错误。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -911,7 +908,7 @@
           <para>读/写。</para>
           <para>
             <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.VisibleSlicerItemsList" />属性仅适用于基于 OLAP 数据源的切片器 (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> =  <b>，则返回 true</b>)。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -944,7 +941,7 @@
           <para>只读的。</para>
           <para>
             <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.WorkbookConnection" />属性仅适用于基于外部数据源的切片器 (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" />).尝试访问<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.WorkbookConnection" />属性连接到数据透视表的切片器基于工作簿范围或列表 (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" /> =  <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />) 将生成运行时错误。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

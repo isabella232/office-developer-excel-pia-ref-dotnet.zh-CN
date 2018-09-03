@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20581065" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface WorkbookConnection" />
@@ -36,7 +36,7 @@
         <b>注意</b>： 该连接的确切形式取决于用于检索数据 – ODBC 连接、 OLEDB 连接的机制和 Web 查询包含不同的信息。</para>
       <para>A 连接可能还存储在单独的连接文件。 Excel 工作簿中的大部分连接包括指向外部连接文件的指针。 连接文件的清楚地设置为连接文件的扩展名 (*。ODC，*。IQY 等。）并且可能位于用户的本地计算机上或其他已知或受信任的位置，如 WSS （数据连接库） 或其他公司的服务器中。 连接文件启用重复使用连接到同一组织中的多个用户。 网络管理员可更改到后端数据源连接通过更改单个连接文件的整个组织的方式。 连接文件并不总是需要连接到外部数据源时。</para>
       <para>连接名称是唯一地标识使用它们的工作簿中的连接字符串。    有不是唯一的连接的其他属性。 只要在 Excel 中的公式所需的参数是一个连接，就足以引用该连接，直接 （作为字符串） 的名称或间接 （通过引用的单元格包含一个字符串连接的名称。）</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -103,8 +103,8 @@
         <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象代表 Microsoft Office Excel 应用程序。 如果使用对象识别符，此属性返回值，该值代表指定对象的创建者<b>Application</b>对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>您可以与 OLE 自动化对象使用此属性返回该对象的应用程序。</para>
-          <para />
+          <para>您可以使用此属性与 OLE 自动化对象返回该对象的应用程序。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -133,10 +133,7 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。 <b>Integer</b> 类型，只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para />
-        </remarks>
+        <remarks>如果对象在 Microsoft Excel 中创建的<para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataFeedConnection">
@@ -193,7 +190,7 @@
           <para>使用此方法可删除的外部数据连接。此方法不适用于其他工作簿的链接。</para>
           <para>删除连接将不删除或移除正在使用该连接的任何对象。 删除连接不会导致任何要从文件系统中删除的连接文件。 如果您编辑任何这些对象以使用另一个连接，所有内容将启动再次使用。</para>
           <para>使用已删除的连接的对象的行为就好像无法建立连接。 </para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -228,7 +225,7 @@
         <remarks>
           <para>中连接属性对话框中，用户可以编辑的连接和/或说明的名称。 更改名称和说明此对话框中的更改这些字段仅在 Excel connection 对象中的。</para>
           <para>说明的最大大小为 255 个字符。 如果用户指定为超过 255 个字符的连接文件中的说明，说明被截断，以适合 255 个字符限制。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -259,7 +256,7 @@
         <value>To be added.</value>
         <remarks>
           <para>必须为 false 的旧的连接。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -487,7 +484,7 @@
         <remarks>
           <para>如果<see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" />属性为<b>false，则</b>不显示对话框， <b>Refresh</b>方法将失败并连接信息不足异常。</para>
           <para>连接刷新失败的其他连接的刷新操作将没有任何影响。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

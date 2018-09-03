@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20580722" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface IconSetCondition" />
@@ -33,7 +33,7 @@
     <remarks>
       <para>所有条件格式对象包含在<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />集合对象，该元素是子对象的<see cref="T:Microsoft.Office.Interop.Excel.Range" />集合。您可以创建使用任何一个格式规则的图标集<see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法或<see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddIconSetCondition" /><b>FormatConditions</b>集合的方法。</para>
       <para>每个图标集包含三、 四个或五个图标。您使用<see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" />属性<see cref="T:Microsoft.Office.Interop.Excel._Workbook" />对象返回<see cref="T:Microsoft.Office.Interop.Excel.IconSets" />对象指定一个内置图标集。每个图标集中的单个图标然后由的成员分配给范围的值的子集<see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />对象。此对象还指定阈值的类型。</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -64,8 +64,8 @@
         <value>
           <b>应用程序</b>（请参见上文）</value>
         <remarks>
-          <para>您可以与 OLE 自动化对象使用此属性返回该对象的应用程序。</para>
-          <para />
+          <para>您可以使用此属性与 OLE 自动化对象返回该对象的应用程序。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -126,10 +126,7 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para />
-        </remarks>
+        <remarks>如果对象在 Microsoft Excel 中创建的<para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -188,8 +185,8 @@
           <b>字符串</b>
         </value>
         <remarks>
-          <para>此属性可用于限制将显示条件格式的值的范围。典型方案是后的号码包含正值和负值范围。要创建的此号码范围的多个条件格式 — 一个正值和负值。</para>
-          <para />
+          <para>此属性可用于限制将显示条件格式的值的范围。典型方案是后的号码包含正值和负值范围。要创建的此号码范围的多个条件格式 — 一个正值和负值的另一个用于。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -221,8 +218,8 @@
           <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />
         </value>
         <remarks>
-          <para>后<see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />集合，您可以使用<see cref="P:Microsoft.Office.Interop.Excel.IconCriteria.Item(System.Object)" />属性返回的集合的<see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" />对象。<see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" />对象代表一个条件的图标集。</para>
-          <para />
+          <para>后所<see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />集合，您可以使用<see cref="P:Microsoft.Office.Interop.Excel.IconCriteria.Item(System.Object)" />属性返回的集合的<see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" />对象。<see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" />对象代表一个条件的图标集。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -257,8 +254,8 @@
           <b>对象</b>
         </value>
         <remarks>
-          <para>您可以分配的图标集使用<see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" />属性<see cref="T:Microsoft.Office.Interop.Excel._Workbook" />对象。</para>
-          <para />
+          <para>，您可以分配的图标集使用<see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" />属性<see cref="T:Microsoft.Office.Interop.Excel._Workbook" />对象。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -289,7 +286,7 @@
         <remarks>
           <para>范围必须以 A1 引用样式和完全包含在工作表的父级的<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />集合。它可以包括区域运算符 （冒号）、 交点运算符 （空格） 或 union 运算符 （逗号分隔）。也可以使用美元符号，但会被忽略。</para>
           <para>您还可以使用局部定义的名称范围的任何部分中，但该名称必须是在宏的语言。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -353,10 +350,7 @@
         <value>
           <b>Boolean</b>
         </value>
-        <remarks>
-          <para>如果未将每个阈值设置为百分点值，则此属性将返回<b>False</b> 。此属性设置为<b>True</b>时，会将每个阈值类型设置为百分点。</para>
-          <para />
-        </remarks>
+        <remarks>如果未将每个阈值设置为百分点值，则<para>此属性将返回<b>False</b> 。此属性设置为<b>True</b>将每个阈值类型设置为百分点。</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Priority">
@@ -390,8 +384,8 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>设置优先级时, 值必须是介于 1 和工作表上的条件格式规则的总数之间的正整数。优先级必须在工作表上的所有规则的唯一值，因此更改指定的条件格式规则的优先级可能导致在工作表中要移动的其他规则的优先级值。</para>
-          <para />
+          <para>时设置的优先级，值必须是介于 1 和工作表上的条件格式规则的总数之间的正整数。优先级必须在工作表上的所有规则的唯一值，因此更改指定的条件格式规则的优先级可能导致要移动的工作表上的其他规则的优先级值。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -456,8 +450,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>默认情况下，您可以使用的图标集的大多数将较高的值与关联正图像。例如，"三色交通灯"图标集应用于绿色圆上限值阈值和区域中的最低值一个红色圆圈。如果您的数据，以便较低值是更有意义，如马拉松时间结果可能要反向图标于要关联绿色圆与最小值的范围的顺序。</para>
-          <para />
+          <para>默认情况下，您可以使用的图标集的最相关联正图像较高的值。例如，"三色交通灯"图标集应用于绿色圆上限值阈值和区域中的最低值一个红色圆圈。如果数据较低值是更有意义，如马拉松时间结果，您可能要撤销图标于要关联绿色圆与最小值的范围的顺序。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -493,7 +487,7 @@
         </value>
         <remarks>
           <para>默认值是<see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />，其设置范围使用<see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.AppliesTo" />属性。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -520,8 +514,8 @@
       <Docs>
         <summary>将此条件格式规则的优先级值设置为“1”，以便在工作表上的所有其他规则之前计算此规则。</summary>
         <remarks>
-          <para>如果您有多个工作表中的条件格式规则如果规则以前没有设置为"1"的优先级，此方法将导致加一工作表上的所有其他现有规则的优先级。</para>
-          <para />
+          <para>当您有多个工作表中的条件格式规则如果规则以前没有设置为"1"的优先级时，此方法将导致加一工作表上的所有其他现有规则的优先级。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -549,7 +543,7 @@
         <summary>为此条件格式规则设置求值顺序，以便在工作表上的所有其他规则之后计算此规则。</summary>
         <remarks>
           <para>优先级的实际值将等于的工作表上的条件格式规则的总数。如果您在工作表中有多个条件格式规则，此方法将导致的优先级值大于加一该规则的规则的优先级。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -585,7 +579,7 @@
         </value>
         <remarks>
           <para>此属性的默认值为<b>False</b>。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -618,7 +612,7 @@
         </value>
         <remarks>
           <para>为了支持向后兼容性，此属性的默认值为<b>True</b>，即的格式的行为相反用户界面中创建的规则。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -651,7 +645,7 @@
         </value>
         <remarks>
           <para>此属性将始终返回值 6，它等效于<see cref="T:Microsoft.Office.Interop.Excel.XlIconSet" />。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

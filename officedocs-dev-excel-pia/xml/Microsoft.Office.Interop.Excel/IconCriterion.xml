@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20579294" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface IconCriterion" />
@@ -31,8 +31,8 @@
   <Docs>
     <summary>代表图标集中单个图标的条件。此条件指定了值的范围以及与图标集条件格式规则中的图标关联的阈值类型。</summary>
     <remarks>
-      <para>所有图标集条件格式的条件都包含在<see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />集合。您可以通过传递到集合的索引来访问集合中的每个<b>IconCriterion</b>对象。请参阅详细信息的示例。</para>
-      <para />
+      <para>所有图标集条件格式的条件都包含在<see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />集合。您可以通过传递到集合的索引来访问集合中的每个<b>IconCriterion</b>对象。请参阅的详细信息示例。</para>
+      <para></para>
     </remarks>
     <example>
       <para>下面的代码示例创建表示成绩的号码范围的，然后应用于该区域的图标集条件格式规则。图标集的类型将从默认图标变为五箭头图标集。最后，将阈值类型从百分点修改硬编码的数字。</para>
@@ -70,7 +70,7 @@
         <value>To be added.</value>
         <remarks>
           <para>图标集条件格式规则中，设置图标条件的<b>Icon</b>属性后<see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconSet" />属性更改为<b>xlCustomSet</b>。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -100,8 +100,8 @@
         <summary>获取一个值，该值代表条件的阈值。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>对于图标集，此属性将返回的值为"1"的最小阈值，"2"的下一个阈值，等等。</para>
-          <para />
+          <para>为图标集，此属性将返回值为最小阈值，"2"的下一个阈值，"1"，依此类推。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -135,7 +135,7 @@
         <value>To be added.</value>
         <remarks>
           <para>对于图标集条件格式规则，可以将此属性设置为以下两个常量之一： <b>xlGreater</b>或<b>xlGreaterEqual</b>。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -167,10 +167,7 @@
       <Docs>
         <summary>返回的常量之一<see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" />枚举，指定如何确定图标集的阈值。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>图标集的阈值值类型可以是数字、 %、 公式或百分点值。设置为百分点值的类型将使用百分点值函数在 Excel 中确定的阈值。</para>
-          <para />
-        </remarks>
+        <remarks>数字、 %、 公式或百分点值可以是阈值的<para>的类型的图标设置。设置为百分点值的类型将使用百分点值函数在 Excel 中来确定阈值的值。</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -204,7 +201,7 @@
         <remarks>
           <para>您可以设置值才<see cref="P:Microsoft.Office.Interop.Excel.IconCriterion.Type" />的条件格式的属性设置为以下常量之一： <b>xlConditionValueNumber</b>、 <b>xlConditionValuePercent</b>、 <b>xlConditionValuePercentile</b>或<b>xlConditionValueFormula</b>。</para>
           <para>如果阈值的类型是一个公式，您可以为<b>字符串</b>来设置公式。该公式必须返回一个号码。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
