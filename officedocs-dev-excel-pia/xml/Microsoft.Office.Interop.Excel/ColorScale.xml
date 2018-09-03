@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20585587" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ColorScale" />
@@ -30,29 +30,29 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="112f3-101">代表色阶条件格式规则。</span>
+      <span data-ttu-id="7afaf-101">代表色阶条件格式规则。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="112f3-101">Represents a color scale conditional formatting rule.</span>
+        <span data-stu-id="7afaf-101">Represents a color scale conditional formatting rule.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="112f3-102">
+      <span data-ttu-id="7afaf-102">
         <para>所有条件格式对象包含在<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />集合对象，该元素是子对象的<see cref="T:Microsoft.Office.Interop.Excel.Range" />集合。您可以创建使用任何一个格式规则的色阶<see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />或<see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddColorScale(System.Int32)" /><b>FormatConditions</b>集合的方法。</para>
         <para>颜色刻度作为 visual 指南可帮助您了解数据分发和变体。您可以对数据、 表中的数据或数据透视表中的范围应用双色或色阶。两个色阶条件格式，则分配值、 类型和颜色范围的最小和最大阈值。色阶还具有的中点阈值。</para>
         <para>每个这些阈值由设置属性的<see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" />对象。<b>ColorScaleCriteria</b>对象，即<b>ColorScale</b>对象的子元素是一系列的所有<see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" />对象色阶。</para>
-        <para />
+        <para></para>
       </span>
       <span class="sxs-lookup">
-        <span data-stu-id="112f3-102">
+        <span data-stu-id="7afaf-102">
           <para>All conditional formatting objects are contained within a <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection object, which is a child of a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> collection. You can create a color scale formatting rule by using either the <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> or <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddColorScale(System.Int32)" /> method of the <b>FormatConditions</b> collection.</para>
           <para>Color scales are visual guides that help you understand data distribution and variation. You can apply either a two-color or a three-color scale to a range of data, data in a table, or data in a PivotTable report. For a two-color scale conditional format, you assign the value, type, and color to the minimum and maximum thresholds of a range. A three-color scale also has a midpoint threshold.</para>
           <para>Each of these thresholds is determined by setting the properties of the <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> object. The <b>ColorScaleCriteria</b> object, which is a child of the <b>ColorScale</b> object, is a collection of all of the <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> objects for the color scale.</para>
-          <para />
+          <para></para>
         </span>
       </span>
     </remarks>
     <example>
-      <span data-ttu-id="112f3-103">
+      <span data-ttu-id="7afaf-103">
         <para>下面的代码示例创建的号码范围，然后应用于该区域的两个色阶条件格式规则。最小阈值的颜色然后分配为红色，并最大阈值为蓝色。</para>
         <code>&lt;span class="label"&gt;Sub CreateColorScaleCF() 
 
@@ -315,7 +315,7 @@
 &lt;span class="label"&gt;'Fill cells with sample data from 1 to 10     With ActiveSheet         .Range("C1") = 1         .Range("C2") = 2         .Range("C1:C2").AutoFill Destination:=Range("C1:C10")     End With          Range("C1:C10").Select          'Create a two-color ColorScale object for the created sample data range     Set cfColorScale = Selection.FormatConditions.AddColorScale(ColorScaleType:=2)          'Set the minimum threshold to red and maximum threshold to blue     cfColorScale.ColorScaleCriteria(1).FormatColor.Color = RGB(255, 0, 0)     cfColorScale.ColorScaleCriteria(2).FormatColor.Color = RGB(0, 0, 255)          End Sub&lt;/span&gt;</code>
       </span>
       <span class="sxs-lookup">
-        <span data-stu-id="112f3-103">
+        <span data-stu-id="7afaf-103">
           <para>The following code example creates a range of numbers and then applies a two-color scale conditional formatting rule to that range. The color for the minimum threshold is then assigned to red and the maximum threshold to blue.</para>
           <code>&lt;span class="label"&gt;Sub CreateColorScaleCF() 
 
@@ -605,36 +605,36 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="112f3-104">当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象代表 Microsoft Office Excel 应用程序。</span>
+          <span data-ttu-id="7afaf-104">当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象代表 Microsoft Office Excel 应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-104">When used without an object qualifier, this property returns an  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object that represents the Microsoft Office Excel  application.</span>
+            <span data-stu-id="7afaf-104">When used without an object qualifier, this property returns an  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object that represents the Microsoft Office Excel  application.</span>
           </span>
-          <span data-ttu-id="112f3-105">如果使用对象识别符，此属性返回值，该值代表指定对象的创建者<b>Application</b>对象。</span>
+          <span data-ttu-id="7afaf-105">如果使用对象识别符，此属性返回值，该值代表指定对象的创建者<b>Application</b>对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-105">When used with an object qualifier, this property returns an <b>Application</b> object that represents the creator of the specified object.</span>
+            <span data-stu-id="7afaf-105">When used with an object qualifier, this property returns an <b>Application</b> object that represents the creator of the specified object.</span>
           </span>
-          <span data-ttu-id="112f3-106">只读。</span>
+          <span data-ttu-id="7afaf-106">只读。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-106">Read-only.</span>
+            <span data-stu-id="7afaf-106">Read-only.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="112f3-107">
+          <span data-ttu-id="7afaf-107">
             <b>应用程序</b>（请参见上文）</span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-107">
+            <span data-stu-id="7afaf-107">
               <b>Application</b> (see above)</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="112f3-108">
-            <para>您可以与 OLE 自动化对象使用此属性返回该对象的应用程序。</para>
-            <para />
+          <span data-ttu-id="7afaf-108">
+            <para>您可以使用此属性与 OLE 自动化对象返回该对象的应用程序。</para>
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-108">
+            <span data-stu-id="7afaf-108">
               <para>You can use this property with an OLE Automation object to return the application of that object.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -664,9 +664,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="112f3-109">返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />指定格式规则所应用于的单元格区域的对象。</span>
+          <span data-ttu-id="7afaf-109">返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />指定格式规则所应用于的单元格区域的对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-109">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object specifying the cell range to which the formatting rule is applied.</span>
+            <span data-stu-id="7afaf-109">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object specifying the cell range to which the formatting rule is applied.</span>
           </span>
         </summary>
         <value>
@@ -699,18 +699,18 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="112f3-110">返回<see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" />对象，它是一系列个人<see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" />对象。</span>
+          <span data-ttu-id="7afaf-110">返回<see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" />对象，它是一系列个人<see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" />对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-110">Returns a   <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> object, which is a collection of individual <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> objects.</span>
+            <span data-stu-id="7afaf-110">Returns a   <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> object, which is a collection of individual <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> objects.</span>
           </span>
-          <span data-ttu-id="112f3-111">
+          <span data-ttu-id="7afaf-111">
             <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" />对象指定类型、 值和阈值标准色阶条件格式中使用的颜色。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-111">The <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> object specifies the type, value, and color  of threshold criteria used in the color scale conditional format.</span>
+            <span data-stu-id="7afaf-111">The <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> object specifies the type, value, and color  of threshold criteria used in the color scale conditional format.</span>
           </span>
-          <span data-ttu-id="112f3-112">只读。</span>
+          <span data-ttu-id="7afaf-112">只读。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-112">Read-only.</span>
+            <span data-stu-id="7afaf-112">Read-only.</span>
           </span>
         </summary>
         <value>
@@ -743,27 +743,24 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="112f3-113">返回中的一个常量<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />枚举，指示在其中创建此对象的应用程序。</span>
+          <span data-ttu-id="7afaf-113">返回中的一个常量<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />枚举，指示在其中创建此对象的应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-113">Returns a constant in the <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> enumeration that indicates the application in which this object was created.</span>
+            <span data-stu-id="7afaf-113">Returns a constant in the <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> enumeration that indicates the application in which this object was created.</span>
           </span>
-          <span data-ttu-id="112f3-114">只读。</span>
+          <span data-ttu-id="7afaf-114">只读。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-114">Read-only.</span>
+            <span data-stu-id="7afaf-114">Read-only.</span>
           </span>
         </summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <span data-ttu-id="112f3-115">
-            <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-            <para />
-          </span>
+          <span data-ttu-id="7afaf-115">如果对象在 Microsoft Excel 中创建的<para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-115">
+            <span data-stu-id="7afaf-115">
               <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.  The <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.Creator" /> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -791,9 +788,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="112f3-116">删除指定的条件格式规则对象。</span>
+          <span data-ttu-id="7afaf-116">删除指定的条件格式规则对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-116">Deletes the specified conditional formatting rule object.</span>
+            <span data-stu-id="7afaf-116">Deletes the specified conditional formatting rule object.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -826,30 +823,30 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="112f3-117">返回或设置一个代表公式（该公式确定将对图标集应用的值）的 <b>String</b>。</span>
+          <span data-ttu-id="7afaf-117">返回或设置一个代表公式（该公式确定将对图标集应用的值）的 <b>String</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-117">Returns or sets a <b>String</b> representing a formula that determines the values to which the icon set will be applied.</span>
+            <span data-stu-id="7afaf-117">Returns or sets a <b>String</b> representing a formula that determines the values to which the icon set will be applied.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="112f3-118">
+          <span data-ttu-id="7afaf-118">
             <b>字符串</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-118">
+            <span data-stu-id="7afaf-118">
               <b>String</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="112f3-119">
-            <para>此属性可用于限制将显示条件格式的值的范围。典型方案是后的号码包含正值和负值范围。要创建的此号码范围的多个条件格式 — 一个正值和负值。</para>
-            <para />
+          <span data-ttu-id="7afaf-119">
+            <para>此属性可用于限制将显示条件格式的值的范围。典型方案是后的号码包含正值和负值范围。要创建的此号码范围的多个条件格式 — 一个正值和负值的另一个用于。</para>
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-119">
+            <span data-stu-id="7afaf-119">
               <para>This property is useful to limit the range of values that will display the conditional format. A typical scenario is when you have a range of numbers containing both positive and negative values. You may want to create more than one conditional format for this range of numbers—one for positive values and another for negative values.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -878,28 +875,28 @@
       </Parameters>
       <Docs>
         <param name="Range">
-          <span data-ttu-id="112f3-120">此格式规则将应用于的区域。</span>
+          <span data-ttu-id="7afaf-120">此格式规则将应用于的区域。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-120">The range to which this formatting rule will be applied.</span>
+            <span data-stu-id="7afaf-120">The range to which this formatting rule will be applied.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="112f3-121">设置此格式规则所应用于的单元格区域。</span>
+          <span data-ttu-id="7afaf-121">设置此格式规则所应用于的单元格区域。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-121">Sets the cell range to which this formatting rule applies.</span>
+            <span data-stu-id="7afaf-121">Sets the cell range to which this formatting rule applies.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="112f3-122">
+          <span data-ttu-id="7afaf-122">
             <para>范围必须以 A1 引用样式和完全包含在工作表的父级的<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />集合。它可以包括区域运算符 （冒号）、 交点运算符 （空格） 或 union 运算符 （逗号分隔）。也可以使用美元符号，但会被忽略。</para>
             <para>您还可以使用局部定义的名称范围的任何部分中，但该名称必须是在宏的语言。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-122">
+            <span data-stu-id="7afaf-122">
               <para>The range must be in the A1 reference style and be entirely contained within the sheet that is the parent of the <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection. It can include the range operator (a colon), the intersection operator (a space), or the union operator (a comma). Dollar signs can also be used but they are ignored.</para>
               <para>You can also use a local defined name in any part of the range, but the name must be in the language of the macro.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -929,17 +926,17 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="112f3-p104">返回指定对象的父对象。只读。</span>
+          <span data-ttu-id="7afaf-p104">返回指定对象的父对象。只读。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-p104">Returns the parent object for the specified object. Read-only.</span>
+            <span data-stu-id="7afaf-p104">Returns the parent object for the specified object. Read-only.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="112f3-125">
+          <span data-ttu-id="7afaf-125">
             <b>对象</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-125">
+            <span data-stu-id="7afaf-125">
               <b>Object</b>
             </span>
           </span>
@@ -974,30 +971,30 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="112f3-p105">返回或设置条件格式规则的优先级值。当工作表中存在多个条件格式规则时，优先级确定求值的顺序。</span>
+          <span data-ttu-id="7afaf-p105">返回或设置条件格式规则的优先级值。当工作表中存在多个条件格式规则时，优先级确定求值的顺序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-p105">Returns or sets the priority value of the conditional formatting rule. The priority determines the order of evaluation when multiple conditional formatting rules exist in a worksheet.</span>
+            <span data-stu-id="7afaf-p105">Returns or sets the priority value of the conditional formatting rule. The priority determines the order of evaluation when multiple conditional formatting rules exist in a worksheet.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="112f3-128">
+          <span data-ttu-id="7afaf-128">
             <b>Integer</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-128">
+            <span data-stu-id="7afaf-128">
               <b>Integer</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="112f3-129">
-            <para>设置优先级时, 值必须是介于 1 和工作表上的条件格式规则的总数之间的正整数。优先级必须在工作表上的所有规则的唯一值，因此更改指定的条件格式规则的优先级可能导致在工作表中要移动的其他规则的优先级值。</para>
-            <para />
+          <span data-ttu-id="7afaf-129">
+            <para>时设置的优先级，值必须是介于 1 和工作表上的条件格式规则的总数之间的正整数。优先级必须在工作表上的所有规则的唯一值，因此更改指定的条件格式规则的优先级可能导致要移动的工作表上的其他规则的优先级值。</para>
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-129">
+            <span data-stu-id="7afaf-129">
               <para>When setting the priority, the value must be a positive integer between 1 and the total number of conditional formatting rules on the worksheet. The priority must be a unique value for all rules on the worksheet, so changing the priority for the specified conditional formatting rule may cause the priority value of the other rules on the worksheet to be shifted.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -1027,21 +1024,21 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="112f3-130">返回一个<b>Boolean</b>值，该值指示是否对应用条件格式<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />图表。</span>
+          <span data-ttu-id="7afaf-130">返回一个<b>Boolean</b>值，该值指示是否对应用条件格式<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />图表。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-130">Returns a <b>Boolean</b> value indicating if the conditional format is being applied to a <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> chart.</span>
+            <span data-stu-id="7afaf-130">Returns a <b>Boolean</b> value indicating if the conditional format is being applied to a <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> chart.</span>
           </span>
-          <span data-ttu-id="112f3-131">只读。</span>
+          <span data-ttu-id="7afaf-131">只读。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-131">Read-only.</span>
+            <span data-stu-id="7afaf-131">Read-only.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="112f3-132">
+          <span data-ttu-id="7afaf-132">
             <b>Boolean</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-132">
+            <span data-stu-id="7afaf-132">
               <b>Boolean</b>
             </span>
           </span>
@@ -1076,23 +1073,23 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="112f3-133">返回或设置的常量之一，<see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />是必需的条件格式应用于数据透视表图表时的枚举。</span>
+          <span data-ttu-id="7afaf-133">返回或设置的常量之一，<see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />是必需的条件格式应用于数据透视表图表时的枚举。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-133">Returns or sets one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> enumeration, which determines the scope of the conditional format when it is applied to a PivotTable chart.</span>
+            <span data-stu-id="7afaf-133">Returns or sets one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> enumeration, which determines the scope of the conditional format when it is applied to a PivotTable chart.</span>
           </span>
         </summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />
         </value>
         <remarks>
-          <span data-ttu-id="112f3-134">
+          <span data-ttu-id="7afaf-134">
             <para>默认值是<see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />，其设置范围使用<see cref="P:Microsoft.Office.Interop.Excel.ColorScale.AppliesTo" />属性。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-134">
+            <span data-stu-id="7afaf-134">
               <para>The default value is <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, which sets the scope using the <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.AppliesTo" />property.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -1120,24 +1117,24 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="112f3-135">将此条件格式规则的优先级值设置为“1”，以便在工作表上的所有其他规则之前计算此规则。</span>
+          <span data-ttu-id="7afaf-135">将此条件格式规则的优先级值设置为“1”，以便在工作表上的所有其他规则之前计算此规则。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-135">Sets the priority value for this conditional formatting rule to "1" so that it will be evaluated before all other rules on the worksheet.</span>
+            <span data-stu-id="7afaf-135">Sets the priority value for this conditional formatting rule to "1" so that it will be evaluated before all other rules on the worksheet.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="112f3-136">
+          <span data-ttu-id="7afaf-136">
             <para>当您有多个工作表中的条件格式规则如果规则以前没有设置为"1"的优先级时，此方法将导致加一工作表上的所有其他现有规则的优先级。</para>
             <para>
               <b>注释</b>： 基于工作表级别应用条件格式规则的优先级。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-136">
+            <span data-stu-id="7afaf-136">
               <para>When you have multiple conditional formatting rules  in a worksheet, if the rule was not previously set to priority "1", this method will cause the priority of all other existing rules on the worksheet to be increased by one.</para>
               <para>
                 <b>Note</b>: Priority levels for conditional formatting rules are applied on a worksheet-level basis.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -1165,24 +1162,24 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="112f3-137">为此条件格式规则设置求值顺序，以便在工作表上的所有其他规则之后计算此规则。</span>
+          <span data-ttu-id="7afaf-137">为此条件格式规则设置求值顺序，以便在工作表上的所有其他规则之后计算此规则。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-137">Sets the evaluation order for this conditional formatting rule so it is evaluated after all other rules on the worksheet.</span>
+            <span data-stu-id="7afaf-137">Sets the evaluation order for this conditional formatting rule so it is evaluated after all other rules on the worksheet.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="112f3-138">
+          <span data-ttu-id="7afaf-138">
             <para>优先级的实际值将等于的工作表上的条件格式规则的总数。如果您在工作表中有多个条件格式规则，此方法将导致的优先级值大于加一该规则的规则的优先级。</para>
             <para>
               <b>注释</b>： 基于工作表级别应用条件格式规则的优先级。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-138">
+            <span data-stu-id="7afaf-138">
               <para>The actual vaule of the priority will be equal to the total number of conditional formatting rules on the worksheet. When you have multiple conditional formatting rules  in a worksheet, this method will cause the priority of rules that had a priority value greater than this rule to be increased by one.</para>
               <para>
                 <b>Note</b>: Priority levels for conditional formatting rules are applied on a worksheet-level basis.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -1212,30 +1209,30 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="112f3-139">返回或设置一个 <b>Boolean</b> 值，该值确定在当前规则的计算结果为 <b>True</b> 时是否应计算单元格上的其他格式规则。</span>
+          <span data-ttu-id="7afaf-139">返回或设置一个 <b>Boolean</b> 值，该值确定在当前规则的计算结果为 <b>True</b> 时是否应计算单元格上的其他格式规则。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-139">Returns or sets a <b>Boolean</b> value that determines if additional formatting rules on the cell should be evaluated if the current rule evaluates to <b>True</b>.</span>
+            <span data-stu-id="7afaf-139">Returns or sets a <b>Boolean</b> value that determines if additional formatting rules on the cell should be evaluated if the current rule evaluates to <b>True</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="112f3-140">
+          <span data-ttu-id="7afaf-140">
             <b>Boolean</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-140">
+            <span data-stu-id="7afaf-140">
               <b>Boolean</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="112f3-141">
+          <span data-ttu-id="7afaf-141">
             <para>为了支持向后兼容性，此属性的默认值为<b>True</b>，即的格式的行为相反用户界面中创建的规则。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-141">
+            <span data-stu-id="7afaf-141">
               <para>To support backward compatibility, the default value for this property is <b>True</b>, which is the opposite behavior of a formatting rule created in the user interface.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -1265,34 +1262,34 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="112f3-142">返回的常量之一<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />枚举，指定条件格式的类型。</span>
+          <span data-ttu-id="7afaf-142">返回的常量之一<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />枚举，指定条件格式的类型。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-142">Returns one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> enumeration, which specifies the type of conditional format.</span>
+            <span data-stu-id="7afaf-142">Returns one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> enumeration, which specifies the type of conditional format.</span>
           </span>
-          <span data-ttu-id="112f3-143">只读。</span>
+          <span data-ttu-id="7afaf-143">只读。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-143">Read-only.</span>
+            <span data-stu-id="7afaf-143">Read-only.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="112f3-144">
+          <span data-ttu-id="7afaf-144">
             <b>Integer</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-144">
+            <span data-stu-id="7afaf-144">
               <b>Integer</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="112f3-145">
+          <span data-ttu-id="7afaf-145">
             <para>此属性将始终返回<b>整数</b>值"3"，它等效于<see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlColorScale" />。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="112f3-145">
+            <span data-stu-id="7afaf-145">
               <para>This property will always return a <b>Integer</b> value of "3", which is equivalent to <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlColorScale" />.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>

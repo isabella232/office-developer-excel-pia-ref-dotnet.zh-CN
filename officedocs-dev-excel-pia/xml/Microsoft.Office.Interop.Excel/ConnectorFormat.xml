@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20586112" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ConnectorFormat" />
@@ -30,18 +30,18 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="4f07b-101">包含应用于连接符的属性和方法。</span>
+      <span data-ttu-id="0b728-101">包含应用于连接符的属性和方法。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="4f07b-101">Contains properties and methods that apply to connectors.</span>
+        <span data-stu-id="0b728-101">Contains properties and methods that apply to connectors.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="4f07b-102">
+      <span data-ttu-id="0b728-102">
         <para>A 连接器是附加在连接位置的其他两个形状的行。如果重新排列相连的形状，连接符的几何将自动调整，以便形状保持连接。</para>使用
       <para><see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectorFormat" />属性可返回<b>ConnectorFormat</b>对象。使用<see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" />和<see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" />方法附加到文档中的其他形状的连接符的端点。使用<see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" />方法，以自动查找连接器连接两个形状间的最短路径。使用<see cref="P:Microsoft.Office.Interop.Excel.Shape.Connector" />属性以查看是否形状是连接符。</para>注意当您添加到连接器时分配大小和位置
-      <para><see cref="T:Microsoft.Office.Interop.Excel.Shapes" />的开头和连接符的终点附加到集合中其他形状时自动调整集合，但的大小和位置。因此，如果您打算将连接符连接到其他形状的初始大小和位置指定无关。同样，指定要附加的连接器时连接符，但在连接器之后使用<b>RerouteConnections</b>方法附加形状上的连接网站可能会发生改变连接符所连接，哪些连接网站进行连接的原始选择无关。</para><para>连接结点通常进行编号根据下表中所示的规则。</para><list type="table"><item><term>自选图形、 艺术字、 图片和 OLE 对象</term><description>的连接结点从顶部开始并继续逆时针进行编号。</description></item><item><term>任意多边形</term><description>连接结点为顶点，以及它们与顶点编号相对应。</description></item></list><para /></span>
+      <para><see cref="T:Microsoft.Office.Interop.Excel.Shapes" />的开头和连接符的终点附加到集合中其他形状时自动调整集合，但的大小和位置。因此，如果您打算将连接符连接到其他形状的初始大小和位置指定无关。同样，指定要附加的连接器时连接符，但在连接器之后使用<b>RerouteConnections</b>方法附加形状上的连接网站可能会发生改变连接符所连接，哪些连接网站进行连接的原始选择无关。</para><para>连接结点通常进行编号根据下表中所示的规则。</para><list type="table"><item><term>自选图形、 艺术字、 图片和 OLE 对象</term><description>的连接结点从顶部开始并继续逆时针进行编号。</description></item><item><term>任意多边形</term><description>连接结点为顶点，以及它们与顶点编号相对应。</description></item></list><para></para></span>
       <span class="sxs-lookup">
-        <span data-stu-id="4f07b-102">
+        <span data-stu-id="0b728-102">
           <para>A connector is a line that attaches two other shapes at points called connection sites. If you rearrange shapes that are connected, the geometry of the connector will be automatically adjusted so that the shapes remain connected.</para>
           <para>Use the <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectorFormat" /> property to return a <b>ConnectorFormat</b> object. Use the <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> and <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> methods to attach the ends of the connector to other shapes in the document. Use the <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> method to automatically find the shortest path between the two shapes connected by the connector. Use the <see cref="P:Microsoft.Office.Interop.Excel.Shape.Connector" /> property to see whether a shape is a connector.</para>
           <para>Note that you assign a size and a position when you add a connector to the <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection, but the size and position are automatically adjusted when you attach the beginning and end of the connector to other shapes in the collection. Therefore, if you intend to attach a connector to other shapes, the initial size and position you specify are irrelevant. Likewise, you specify which connection sites on a shape to attach the connector to when you attach the connector, but using the <b>RerouteConnections</b> method after the connector is attached may change which connection sites the connector attaches to, making your original choice of connection sites irrelevant.</para>
@@ -56,7 +56,7 @@
               <description>The connection sites are the vertices, and they correspond to the vertex numbers.</description>
             </item>
           </list>
-          <para />
+          <para></para>
         </span>
       </span>
     </remarks>
@@ -86,9 +86,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="4f07b-103">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
+          <span data-ttu-id="0b728-103">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-103">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="0b728-103">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -120,56 +120,56 @@
       </Parameters>
       <Docs>
         <param name="ConnectedShape">
-          <span data-ttu-id="4f07b-104">所需<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象。</span>
+          <span data-ttu-id="0b728-104">所需<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-104">Required <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object.</span>
+            <span data-stu-id="0b728-104">Required <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object.</span>
           </span>
-          <span data-ttu-id="4f07b-105">要连接到连接符起点的形状。</span>
+          <span data-ttu-id="0b728-105">要连接到连接符起点的形状。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-105">The shape to attach the beginning of the connector to.</span>
+            <span data-stu-id="0b728-105">The shape to attach the beginning of the connector to.</span>
           </span>
-          <span data-ttu-id="4f07b-106">指定的<b>Shape</b>对象必须在同一<see cref="T:Microsoft.Office.Interop.Excel.Shapes" />作为连接器的集合。</span>
+          <span data-ttu-id="0b728-106">指定的<b>Shape</b>对象必须在同一<see cref="T:Microsoft.Office.Interop.Excel.Shapes" />作为连接器的集合。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-106">The specified <b>Shape</b> object must be in the same <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection as the connector.</span>
+            <span data-stu-id="0b728-106">The specified <b>Shape</b> object must be in the same <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection as the connector.</span>
           </span>
         </param>
         <param name="ConnectionSite">
-          <span data-ttu-id="4f07b-107">
+          <span data-ttu-id="0b728-107">
             <b>必选。</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-107">Required <b>Integer</b>.</span>
+            <span data-stu-id="0b728-107">Required <b>Integer</b>.</span>
           </span>
-          <span data-ttu-id="4f07b-108">由指定的形状上的连接站点<paramref name="ConnectedShape" />。</span>
+          <span data-ttu-id="0b728-108">由指定的形状上的连接站点<paramref name="ConnectedShape" />。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-108">A connection site on the shape specified by <paramref name="ConnectedShape" />.</span>
+            <span data-stu-id="0b728-108">A connection site on the shape specified by <paramref name="ConnectedShape" />.</span>
           </span>
-          <span data-ttu-id="4f07b-109">必须是介于 1 和返回整数之间的整数<see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" />指定形状的属性。</span>
+          <span data-ttu-id="0b728-109">必须是介于 1 和返回整数之间的整数<see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" />指定形状的属性。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-109">Must be an integer between 1 and the integer returned by the <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" /> property of the specified shape.</span>
+            <span data-stu-id="0b728-109">Must be an integer between 1 and the integer returned by the <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" /> property of the specified shape.</span>
           </span>
-          <span data-ttu-id="4f07b-110">如果您希望连接器以自动查找其连接的两个形状之间的最短路径，指定此参数的任何有效的整数，然后使用<see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" />方法连接器附加到形状两端之后。</span>
+          <span data-ttu-id="0b728-110">如果您希望连接器以自动查找其连接的两个形状之间的最短路径，指定此参数的任何有效的整数，然后使用<see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" />方法连接器附加到形状两端之后。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-110">If you want the connector to automatically find the shortest path between the two shapes it connects, specify any valid integer for this argument and then use the <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> method after the connector is attached to shapes at both ends.</span>
+            <span data-stu-id="0b728-110">If you want the connector to automatically find the shortest path between the two shapes it connects, specify any valid integer for this argument and then use the <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> method after the connector is attached to shapes at both ends.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="4f07b-111">将指定的连接符的起点连接到指定的形状上。</span>
+          <span data-ttu-id="0b728-111">将指定的连接符的起点连接到指定的形状上。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-111">Attaches the beginning of the specified connector to a specified shape.</span>
+            <span data-stu-id="0b728-111">Attaches the beginning of the specified connector to a specified shape.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="4f07b-112">
-            <para>如果已存在的连接符的起点和另一个形状，将断开连接之间的连接。如果连接符的起点没有位于指定的连接位置，此方法将连接符的起点移动到的连接的网站，并调整大小和位置的连接器。使用<see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" />方法附加到形状的连接符的终点。</para>
+          <span data-ttu-id="0b728-112">
+            <para>如果已存在的连接符的起点和另一个形状之间的连接，将断开的连接。如果连接符的起点没有位于指定的连接位置，此方法将连接符的起点移动到的连接的网站，并调整大小和位置的连接器。使用<see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" />方法附加到形状的连接符的终点。</para>
             <para>时将连接符连接到对象后，在必要时自动调整大小和位置，连接符。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-112">
+            <span data-stu-id="0b728-112">
               <para>If there’s already a connection between the beginning of the connector and another shape, that connection is broken. If the beginning of the connector isn’t already positioned at the specified connecting site, this method moves the beginning of the connector to the connecting site and adjusts the size and position of the connector. Use the <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> method to attach the end of the connector to a shape.</para>
               <para>When you attach a connector to an object, the size and position of the connector are automatically adjusted if necessary.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -199,16 +199,16 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="4f07b-113">
+          <span data-ttu-id="0b728-113">
             <b>True</b>如果指定连接符的起点连接到形状。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-113">
+            <span data-stu-id="0b728-113">
               <b>True</b> if the beginning of the specified connector is connected to a shape.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="4f07b-114">
+          <span data-ttu-id="0b728-114">
             <para>
               <see cref="T:Microsoft.Office.Core.MsoTriState" />可以是下列<b>MsoTriState</b>常量之一：</para>
             <para>
@@ -225,10 +225,10 @@
             </para>
             <para>指定连接符的起点连接到形状的
             <b>msoTrue</b> 。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-114">
+            <span data-stu-id="0b728-114">
               <para>
                 <see cref="T:Microsoft.Office.Core.MsoTriState" /> can be one of the following <b>MsoTriState</b> constants:</para>
               <para>
@@ -245,7 +245,7 @@
               </para>
               <para>
                 <b>msoTrue</b> The beginning of the specified connector is connected to a shape.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -275,21 +275,21 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="4f07b-115">返回<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象，代表指定连接符的起点连接到形状。</span>
+          <span data-ttu-id="0b728-115">返回<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象，代表指定连接符的起点连接到形状。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-115">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object that represents the shape that the beginning of the specified connector is attached to.</span>
+            <span data-stu-id="0b728-115">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object that represents the shape that the beginning of the specified connector is attached to.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="4f07b-116">
-            <para>如果指定连接符的起点没有连接到形状，该属性将产生错误。</para>
-            <para />
+          <span data-ttu-id="0b728-116">
+            <para>如果指定连接符的起点没有连接到形状，该属性将生成一个错误。</para>
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-116">
+            <span data-stu-id="0b728-116">
               <para>If the beginning of the specified connector isn’t attached to a shape, this property generates an error.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -319,21 +319,21 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="4f07b-117">返回用于指定连接符末端所连接的连接结点的整数。</span>
+          <span data-ttu-id="0b728-117">返回用于指定连接符末端所连接的连接结点的整数。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-117">Returns an integer that specifies the connection site that the end of a connector is connected to.</span>
+            <span data-stu-id="0b728-117">Returns an integer that specifies the connection site that the end of a connector is connected to.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="4f07b-118">
-            <para>如果指定连接符的终点没有连接到形状，该属性将产生错误。</para>
-            <para />
+          <span data-ttu-id="0b728-118">
+            <para>如果指定连接符的终点没有连接到形状，该属性将生成一个错误。</para>
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-118">
+            <span data-stu-id="0b728-118">
               <para>If the end of the specified connector isn’t attached to a shape, this property generates an error.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -361,21 +361,21 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="4f07b-119">断开的形状附加到指定的连接符的起点。</span>
+          <span data-ttu-id="0b728-119">断开的形状附加到指定的连接符的起点。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-119">Detaches the beginning of the specified connector from the shape it’s attached to.</span>
+            <span data-stu-id="0b728-119">Detaches the beginning of the specified connector from the shape it’s attached to.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="4f07b-120">
+          <span data-ttu-id="0b728-120">
             <para>
               <b>BeginDisconnect</b>方法不改变大小或位置连接器。连接符的起点仍保留在原来连接网站，但不再连接。使用<see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndDisconnect" />方法来分离从形状的连接符的终点。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-120">
+            <span data-stu-id="0b728-120">
               <para>The <b>BeginDisconnect</b> method doesn’t alter the size or position of the connector. The beginning of the connector remains positioned at a connection site but is no longer connected. Use the <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndDisconnect" /> method to detach the end of the connector from a shape.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -405,24 +405,24 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="4f07b-121">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
+          <span data-ttu-id="0b728-121">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-121">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="0b728-121">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="4f07b-122">
+          <span data-ttu-id="0b728-122">
             <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
             <para>
               <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-122">
+            <span data-stu-id="0b728-122">
               <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
               <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -453,56 +453,56 @@
       </Parameters>
       <Docs>
         <param name="ConnectedShape">
-          <span data-ttu-id="4f07b-123">所需<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象。</span>
+          <span data-ttu-id="0b728-123">所需<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-123">Required <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object.</span>
+            <span data-stu-id="0b728-123">Required <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object.</span>
           </span>
-          <span data-ttu-id="4f07b-124">要连接到连接符的终点的形状。</span>
+          <span data-ttu-id="0b728-124">要连接到连接符的终点的形状。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-124">The shape to attach the end of the connector to.</span>
+            <span data-stu-id="0b728-124">The shape to attach the end of the connector to.</span>
           </span>
-          <span data-ttu-id="4f07b-125">指定的<b>Shape</b>对象必须在同一<see cref="T:Microsoft.Office.Interop.Excel.Shapes" />作为连接器的集合。</span>
+          <span data-ttu-id="0b728-125">指定的<b>Shape</b>对象必须在同一<see cref="T:Microsoft.Office.Interop.Excel.Shapes" />作为连接器的集合。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-125">The specified <b>Shape</b> object must be in the same <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection as the connector.</span>
+            <span data-stu-id="0b728-125">The specified <b>Shape</b> object must be in the same <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection as the connector.</span>
           </span>
         </param>
         <param name="ConnectionSite">
-          <span data-ttu-id="4f07b-126">
+          <span data-ttu-id="0b728-126">
             <b>必选。</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-126">Required <b>Integer</b>.</span>
+            <span data-stu-id="0b728-126">Required <b>Integer</b>.</span>
           </span>
-          <span data-ttu-id="4f07b-127">由指定的形状上的连接站点<paramref name="ConnectedShape" />。</span>
+          <span data-ttu-id="0b728-127">由指定的形状上的连接站点<paramref name="ConnectedShape" />。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-127">A connection site on the shape specified by <paramref name="ConnectedShape" />.</span>
+            <span data-stu-id="0b728-127">A connection site on the shape specified by <paramref name="ConnectedShape" />.</span>
           </span>
-          <span data-ttu-id="4f07b-128">必须是介于 1 和返回整数之间的整数<see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" />指定形状的属性。</span>
+          <span data-ttu-id="0b728-128">必须是介于 1 和返回整数之间的整数<see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" />指定形状的属性。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-128">Must be an integer between 1 and the integer returned by the <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" /> property of the specified shape.</span>
+            <span data-stu-id="0b728-128">Must be an integer between 1 and the integer returned by the <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" /> property of the specified shape.</span>
           </span>
-          <span data-ttu-id="4f07b-129">如果您希望连接器以自动查找其连接的两个形状之间的最短路径，指定此参数的任何有效的整数，然后使用<see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" />方法连接器附加到形状两端之后。</span>
+          <span data-ttu-id="0b728-129">如果您希望连接器以自动查找其连接的两个形状之间的最短路径，指定此参数的任何有效的整数，然后使用<see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" />方法连接器附加到形状两端之后。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-129">If you want the connector to automatically find the shortest path between the two shapes it connects, specify any valid integer for this argument and then use the <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> method after the connector is attached to shapes at both ends.</span>
+            <span data-stu-id="0b728-129">If you want the connector to automatically find the shortest path between the two shapes it connects, specify any valid integer for this argument and then use the <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> method after the connector is attached to shapes at both ends.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="4f07b-130">将指定的连接符的终点连接到指定的形状上。</span>
+          <span data-ttu-id="0b728-130">将指定的连接符的终点连接到指定的形状上。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-130">Attaches the end of the specified connector to a specified shape.</span>
+            <span data-stu-id="0b728-130">Attaches the end of the specified connector to a specified shape.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="4f07b-131">
-            <para>如果已存在另一个形状，将断开连接的连接符的终点之间的连接。如果连接符的终点没有位于指定的连接位置，此方法将连接符的终点移动到的连接的网站，并调整大小和位置的连接器。使用<see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" />方法附加到形状的连接符的起点。</para>
+          <span data-ttu-id="0b728-131">
+            <para>如果已存在的连接符的终点与另一个形状之间的连接，将断开的连接。如果连接符的终点没有位于指定的连接位置，此方法将连接符的终点移动到的连接的网站，并调整大小和位置的连接器。使用<see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" />方法附加到形状的连接符的起点。</para>
             <para>时将连接符连接到对象后，在必要时自动调整大小和位置，连接符。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-131">
+            <span data-stu-id="0b728-131">
               <para>If there’s already a connection between the end of the connector and another shape, that connection is broken. If the end of the connector isn’t already positioned at the specified connecting site, this method moves the end of the connector to the connecting site and adjusts the size and position of the connector. Use the <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> method to attach the beginning of the connector to a shape.</para>
               <para>When you attach a connector to an object, the size and position of the connector are automatically adjusted if necessary.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -532,33 +532,33 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="4f07b-132">
+          <span data-ttu-id="0b728-132">
             <b>msoTrue</b>如果指定连接符的终点连接到形状。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-132">
+            <span data-stu-id="0b728-132">
               <b>msoTrue</b> if the end of the specified connector is connected to a shape.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="4f07b-133">
+          <span data-ttu-id="0b728-133">
             <para>
               <see cref="T:Microsoft.Office.Core.MsoTriState" />可以是下列<b>MsoTriState</b>常量之一：</para>
             <para>
               <b>msoFalse</b>指定的连接符的终点不连接到形状。</para>
             <para>
               <b>msoTrue</b>指定的连接符的终点连接到形状。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-133">
+            <span data-stu-id="0b728-133">
               <para>
                 <see cref="T:Microsoft.Office.Core.MsoTriState" /> can be one of the following <b>MsoTriState</b> constants:</para>
               <para>
                 <b>msoFalse</b> The end of the specified connector is not connected to a shape.</para>
               <para>
                 <b>msoTrue</b> The end of the specified connector is connected to a shape.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -588,21 +588,21 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="4f07b-134">返回<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象，代表指定连接符的终点连接到形状。</span>
+          <span data-ttu-id="0b728-134">返回<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象，代表指定连接符的终点连接到形状。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-134">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object that represents the shape that the end of the specified connector is attached to.</span>
+            <span data-stu-id="0b728-134">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object that represents the shape that the end of the specified connector is attached to.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="4f07b-135">
-            <para>如果指定连接符的终点没有连接到形状，该属性将产生错误。</para>
-            <para />
+          <span data-ttu-id="0b728-135">
+            <para>如果指定连接符的终点没有连接到形状，该属性将生成一个错误。</para>
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-135">
+            <span data-stu-id="0b728-135">
               <para>If the end of the specified connector isn’t attached to a shape, this property generates an error.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -632,21 +632,21 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="4f07b-136">返回用于指定连接符末端所连接的连接结点的整数。</span>
+          <span data-ttu-id="0b728-136">返回用于指定连接符末端所连接的连接结点的整数。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-136">Returns an integer that specifies the connection site that the end of a connector is connected to.</span>
+            <span data-stu-id="0b728-136">Returns an integer that specifies the connection site that the end of a connector is connected to.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="4f07b-137">
-            <para>如果指定连接符的终点没有连接到形状，该属性将产生错误。</para>
-            <para />
+          <span data-ttu-id="0b728-137">
+            <para>如果指定连接符的终点没有连接到形状，该属性将生成一个错误。</para>
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-137">
+            <span data-stu-id="0b728-137">
               <para>If the end of the specified connector isn’t attached to a shape, this property generates an error.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -674,20 +674,20 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="4f07b-138">分离从形状附加到指定的连接符的终点。</span>
+          <span data-ttu-id="0b728-138">分离从形状附加到指定的连接符的终点。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-138">Detaches the end of the specified connector from the shape it’s attached to.</span>
+            <span data-stu-id="0b728-138">Detaches the end of the specified connector from the shape it’s attached to.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="4f07b-139">
-            <para>该方法不改变大小或位置连接器;连接符的终点仍保留在原来连接网站，但不再连接。使用<see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginDisconnect" />方法来分离从形状的连接符的起点。</para>
-            <para />
+          <span data-ttu-id="0b728-139">
+            <para>该方法不改变大小或位置连接器; 连接符的终点仍保留在原来连接网站，但不再连接。使用<see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginDisconnect" />方法来分离从形状的连接符的起点。</para>
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-139">
+            <span data-stu-id="0b728-139">
               <para>This method doesn’t alter the size or position of the connector; the end of the connector remains positioned at a connection site but is no longer connected. Use the <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginDisconnect" /> method to detach the beginning of the connector from a shape.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -717,9 +717,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="4f07b-140">返回指定对象的父对象。</span>
+          <span data-ttu-id="0b728-140">返回指定对象的父对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-140">Returns the parent object for the specified object.</span>
+            <span data-stu-id="0b728-140">Returns the parent object for the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -753,14 +753,14 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="4f07b-141">返回或设置格式类型的连接器。</span>
+          <span data-ttu-id="0b728-141">返回或设置格式类型的连接器。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-141">Returns or sets the connector format type.</span>
+            <span data-stu-id="0b728-141">Returns or sets the connector format type.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="4f07b-142">
+          <span data-ttu-id="0b728-142">
             <para>
               <see cref="T:Microsoft.Office.Core.MsoConnectorType" />可以是下列<b>MsoConnectorType</b>常量之一：</para>
             <para>
@@ -775,10 +775,10 @@
             <para>
               <b>msoConnectorTypeMixed</b>
             </para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="4f07b-142">
+            <span data-stu-id="0b728-142">
               <para>
                 <see cref="T:Microsoft.Office.Core.MsoConnectorType" /> can be one of the following <b>MsoConnectorType</b> constants:</para>
               <para>
@@ -793,7 +793,7 @@
               <para>
                 <b>msoConnectorTypeMixed</b>
               </para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>

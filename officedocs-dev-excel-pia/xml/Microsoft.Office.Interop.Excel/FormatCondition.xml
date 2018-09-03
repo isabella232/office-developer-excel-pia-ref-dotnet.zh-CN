@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20584411" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface FormatCondition" />
@@ -30,20 +30,20 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="2e122-101">代表条件格式。</span>
+      <span data-ttu-id="f63e8-101">代表条件格式。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="2e122-101">Represents a conditional format.</span>
+        <span data-stu-id="f63e8-101">Represents a conditional format.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="2e122-102">
+      <span data-ttu-id="f63e8-102">
         <para>
           <b>FormatCondition</b>对象所在的<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />集合。<b>FormatConditions</b>集合可包含给定范围内的三个条件格式。</para>
         <para>使用<b>FormatConditions</b>(<paramref name="index" />)，其中 index 是条件格式，以返回一个<b>FormatCondition</b>对象的索引号。</para>使用
       <para><see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" />方法来创建新的条件格式。如果您尝试创建一个区域内的三个以上条件格式， <b>Add</b>方法将失败。如果区域有三种格式，则可以使用<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" />方法，若要更改某个格式，也可以使用<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" />方法删除格式，然后使用<b>Add</b>方法创建新的格式。</para><para>使用<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Font" />， <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Borders" />，和<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Interior" />属性<b>FormatCondition</b>对象来控制的外观设置单元格。这些对象的某些属性不受支持的条件格式对象模型。下表列出了可用于条件格式属性。</para><list type="table"><item><term><b>字体</b></term><description><b>加粗</b><b>颜色</b><b>ColorIndex</b><b>FontStyle</b><b>倾斜</b><b>删除线</b><b>下划线</b>不能使用会计下划线样式。</description></item>可以使用
-        <item><term><b>边框</b></term><description><b>底部</b><b>颜色</b><b>左</b><b>右</b><b>样式</b>以下边框样式 （所有其他人不支持的）： <b>xlNone</b><b>xlSolid</b>、 <b>xlDash</b>，<b>xlDot</b>、 <b>xlDashDot</b>、 <b>xlDashDotDot</b>、 <b>xlGray50</b>、 <b>xlGray75</b>和<b>xlGray25</b>。<b>顶部</b><b>权重</b>可使用下面的边框粗细 （所有其他人不支持的）： <b>xlWeightHairline</b>和<b>xlWeightThin</b>。</description></item><item><term><b>内部</b></term><description><b>颜色</b><b>ColorIndex</b><b>模式</b><b>PatternColorIndex</b></description></item></list><para /></span>
+        <item><term><b>边框</b></term><description><b>底部</b><b>颜色</b><b>左</b><b>右</b><b>样式</b>以下边框样式 （所有其他人不支持的）： <b>xlNone</b><b>xlSolid</b>、 <b>xlDash</b>，<b>xlDot</b>、 <b>xlDashDot</b>、 <b>xlDashDotDot</b>、 <b>xlGray50</b>、 <b>xlGray75</b>和<b>xlGray25</b>。<b>顶部</b><b>权重</b>可使用下面的边框粗细 （所有其他人不支持的）： <b>xlWeightHairline</b>和<b>xlWeightThin</b>。</description></item><item><term><b>内部</b></term><description><b>颜色</b><b>ColorIndex</b><b>模式</b><b>PatternColorIndex</b></description></item></list><para></para></span>
       <span class="sxs-lookup">
-        <span data-stu-id="2e122-102">
+        <span data-stu-id="f63e8-102">
           <para>The <b>FormatCondition</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection. The <b>FormatConditions</b> collection can contain up to three conditional formats for a given range.</para>
           <para>Use <b>FormatConditions</b>(<paramref name="index" />), where index is the index number of the conditional format, to return a <b>FormatCondition</b> object.</para>
           <para>Use the <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> method to create a new conditional format. If you try to create more than three conditional formats for a single range, the <b>Add</b> method fails. If a range has three formats, you can use the <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> method to change one of the formats, or you can use the <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> method to delete a format and then use the <b>Add</b> method to create a new format.</para>
@@ -85,7 +85,7 @@
               </description>
             </item>
           </list>
-          <para />
+          <para></para>
         </span>
       </span>
     </remarks>
@@ -115,9 +115,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="2e122-103">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
+          <span data-ttu-id="f63e8-103">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-103">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="f63e8-103">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -148,9 +148,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="2e122-104">返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />指定格式规则所应用于的单元格区域的对象。</span>
+          <span data-ttu-id="f63e8-104">返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />指定格式规则所应用于的单元格区域的对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-104">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object specifying the cell range to which the formatting rule is applied.</span>
+            <span data-stu-id="f63e8-104">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object specifying the cell range to which the formatting rule is applied.</span>
           </span>
         </summary>
         <value>
@@ -183,9 +183,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="2e122-105">返回<see cref="T:Microsoft.Office.Interop.Excel.Borders" />集合，代表 （包括定义为条件格式一部分的区域） 的单元格区域或样式的边框。</span>
+          <span data-ttu-id="f63e8-105">返回<see cref="T:Microsoft.Office.Interop.Excel.Borders" />集合，代表 （包括定义为条件格式一部分的区域） 的单元格区域或样式的边框。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-105">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> collection that represents the borders of a style or a range of cells (including a range defined as part of a conditional format).</span>
+            <span data-stu-id="f63e8-105">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> collection that represents the borders of a style or a range of cells (including a range defined as part of a conditional format).</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -216,24 +216,24 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="2e122-106">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
+          <span data-ttu-id="f63e8-106">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-106">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="f63e8-106">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="2e122-107">
+          <span data-ttu-id="f63e8-107">
             <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
             <para>
               <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-107">
+            <span data-stu-id="f63e8-107">
               <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
               <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -266,13 +266,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="2e122-108">指定<see cref="T:Microsoft.Office.Interop.Excel.XlTimePeriods" />日期格式条件中使用的运算符。</span>
+          <span data-ttu-id="f63e8-108">指定<see cref="T:Microsoft.Office.Interop.Excel.XlTimePeriods" />日期格式条件中使用的运算符。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-108">Specifies the <see cref="T:Microsoft.Office.Interop.Excel.XlTimePeriods" /> Date operator used in the format condition.</span>
+            <span data-stu-id="f63e8-108">Specifies the <see cref="T:Microsoft.Office.Interop.Excel.XlTimePeriods" /> Date operator used in the format condition.</span>
           </span>
-          <span data-ttu-id="2e122-109">为可读/写属性。</span>
+          <span data-ttu-id="f63e8-109">为可读/写属性。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-109">Read/write.</span>
+            <span data-stu-id="f63e8-109">Read/write.</span>
           </span>
         </summary>
         <value>
@@ -303,9 +303,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="2e122-110">删除对象。</span>
+          <span data-ttu-id="f63e8-110">删除对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-110">Deletes the object.</span>
+            <span data-stu-id="f63e8-110">Deletes the object.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -335,9 +335,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="2e122-111">返回<see cref="T:Microsoft.Office.Interop.Excel.Font" />对象，它代表指定对象的字体。</span>
+          <span data-ttu-id="f63e8-111">返回<see cref="T:Microsoft.Office.Interop.Excel.Font" />对象，它代表指定对象的字体。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-111">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Font" /> object that represents the font of the specified object.</span>
+            <span data-stu-id="f63e8-111">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Font" /> object that represents the font of the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -368,22 +368,22 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="2e122-112">返回的值或与条件格式或数据验证相关联的表达式。</span>
+          <span data-ttu-id="f63e8-112">返回的值或与条件格式或数据验证相关联的表达式。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-112">Returns the value or expression associated with the conditional format or data validation.</span>
+            <span data-stu-id="f63e8-112">Returns the value or expression associated with the conditional format or data validation.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="2e122-113">
+          <span data-ttu-id="f63e8-113">
             <para>
               <b>Formula1</b>属性可以是以常量值、 一个 string 值、 单元格引用或公式。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-113">
+            <span data-stu-id="f63e8-113">
               <para>The <b>Formula1</b> property can be a constant value, a string value, a cell reference, or a formula.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -413,22 +413,18 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="2e122-114">返回的值或条件格式或数据有效性的第二部分相关联的表达式。</span>
+          <span data-ttu-id="f63e8-114">返回的值或条件格式或数据有效性的第二部分相关联的表达式。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-114">Returns the value or expression associated with the second part of a conditional format or data validation.</span>
+            <span data-stu-id="f63e8-114">Returns the value or expression associated with the second part of a conditional format or data validation.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="2e122-115">
-            <para>
-              <b>Formula2</b>属性来仅当数据验证条件格式<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Operator" />属性为<b>xlBetween</b>或<b>xlNotBetween</b>。可以是以常量值、 一个 string 值、 单元格引用或公式。</para>
-            <para />
-          </span>
+          <span data-ttu-id="f63e8-115">仅使用<para><b>Formula2</b>属性时数据验证条件格式<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Operator" />属性为<b>xlBetween</b>或<b>xlNotBetween</b>。可以是以常量值、 一个 string 值、 单元格引用或公式。</para><para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-115">
+            <span data-stu-id="f63e8-115">
               <para>The <b>Formula2</b> property is used only when the data validation conditional format <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Operator" /> property is <b>xlBetween</b> or <b>xlNotBetween</b>. Can be a constant value, a string value, a cell reference, or a formula.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -458,9 +454,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="2e122-116">返回<see cref="T:Microsoft.Office.Interop.Excel.Interior" />值，该值代表指定对象的内部的对象。</span>
+          <span data-ttu-id="f63e8-116">返回<see cref="T:Microsoft.Office.Interop.Excel.Interior" />值，该值代表指定对象的内部的对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-116">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> object that represents the interior of the specified object.</span>
+            <span data-stu-id="f63e8-116">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> object that represents the interior of the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -496,65 +492,65 @@
       </Parameters>
       <Docs>
         <param name="Type">
-          <span data-ttu-id="2e122-117">所需<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />。</span>
+          <span data-ttu-id="f63e8-117">所需<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-117">Required <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />.</span>
+            <span data-stu-id="f63e8-117">Required <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />.</span>
           </span>
-          <span data-ttu-id="2e122-118">指定条件格式是基于单元格值还是基于表达式。</span>
+          <span data-ttu-id="f63e8-118">指定条件格式是基于单元格值还是基于表达式。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-118">Specifies whether the conditional format is based on a cell value or an expression.</span>
+            <span data-stu-id="f63e8-118">Specifies whether the conditional format is based on a cell value or an expression.</span>
           </span>
-          <span data-ttu-id="2e122-119">可以是下列<b>XlFormatCondition</b>常量之一：<b>xlCellValue</b><b>xlExpression</b></span>
+          <span data-ttu-id="f63e8-119">可以是下列<b>XlFormatCondition</b>常量之一：<b>xlCellValue</b><b>xlExpression</b></span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-119">Can be one of the following <b>XlFormatCondition</b> constants:<b>xlCellValue</b><b>xlExpression</b></span>
+            <span data-stu-id="f63e8-119">Can be one of the following <b>XlFormatCondition</b> constants:<b>xlCellValue</b><b>xlExpression</b></span>
           </span>
         </param>
         <param name="Operator">
-          <span data-ttu-id="2e122-120">可选<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />。</span>
+          <span data-ttu-id="f63e8-120">可选<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-120">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />.</span>
+            <span data-stu-id="f63e8-120">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />.</span>
           </span>
-          <span data-ttu-id="2e122-121">条件格式运算符。</span>
+          <span data-ttu-id="f63e8-121">条件格式运算符。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-121">The conditional format operator.</span>
+            <span data-stu-id="f63e8-121">The conditional format operator.</span>
           </span>
-          <span data-ttu-id="2e122-122">可以是下列<b>XlFormatConditionOperator</b>常量之一：<b>xlBetween</b><b>xlEqual</b><b>xlGreater</b><b>xlGreaterEqual</b><b>xlLess</b><b>xlLessEqua</b>l<b>xlNotBetween</b><b>xlNotEqual</b>如果<paramref name="Type" />，是<b>xlExpression</b>，<paramref name="Operator" />参数被忽略。</span>
+          <span data-ttu-id="f63e8-122">可以是下列<b>XlFormatConditionOperator</b>常量之一：<b>xlBetween</b><b>xlEqual</b><b>xlGreater</b><b>xlGreaterEqual</b><b>xlLess</b><b>xlLessEqua</b>l<b>xlNotBetween</b><b>xlNotEqual</b>如果<paramref name="Type" />，是<b>xlExpression</b>，<paramref name="Operator" />参数被忽略。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-122">Can be one of the following <b>XlFormatConditionOperator</b> constants:<b>xlBetween</b><b>xlEqual</b><b>xlGreater</b><b>xlGreaterEqual</b><b>xlLess</b><b>xlLessEqua</b>l<b>xlNotBetween</b><b>xlNotEqual</b>If <paramref name="Type" />, is <b>xlExpression</b>, the <paramref name="Operator" /> argument is ignored.</span>
+            <span data-stu-id="f63e8-122">Can be one of the following <b>XlFormatConditionOperator</b> constants:<b>xlBetween</b><b>xlEqual</b><b>xlGreater</b><b>xlGreaterEqual</b><b>xlLess</b><b>xlLessEqua</b>l<b>xlNotBetween</b><b>xlNotEqual</b>If <paramref name="Type" />, is <b>xlExpression</b>, the <paramref name="Operator" /> argument is ignored.</span>
           </span>
         </param>
         <param name="Formula1">
-          <span data-ttu-id="2e122-123">可选的<b>对象</b>。</span>
+          <span data-ttu-id="f63e8-123">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-123">Optional <b>Object</b>.</span>
+            <span data-stu-id="f63e8-123">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="2e122-124">值或与条件格式的表达式。</span>
+          <span data-ttu-id="f63e8-124">值或与条件格式的表达式。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-124">The value or expression associated with the conditional format.</span>
+            <span data-stu-id="f63e8-124">The value or expression associated with the conditional format.</span>
           </span>
-          <span data-ttu-id="2e122-125">可以是以常量值、 一个 string 值、 单元格引用或公式。</span>
+          <span data-ttu-id="f63e8-125">可以是以常量值、 一个 string 值、 单元格引用或公式。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-125">Can be a constant value, a string value, a cell reference, or a formula.</span>
+            <span data-stu-id="f63e8-125">Can be a constant value, a string value, a cell reference, or a formula.</span>
           </span>
         </param>
         <param name="Formula2">
-          <span data-ttu-id="2e122-126">可选的<b>对象</b>。</span>
+          <span data-ttu-id="f63e8-126">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-126">Optional <b>Object</b>.</span>
+            <span data-stu-id="f63e8-126">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="2e122-127">值或与条件格式的表达式。</span>
+          <span data-ttu-id="f63e8-127">值或与条件格式的表达式。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-127">The value or expression associated with the conditional format.</span>
+            <span data-stu-id="f63e8-127">The value or expression associated with the conditional format.</span>
           </span>
-          <span data-ttu-id="2e122-128">可以是以常量值、 一个 string 值、 单元格引用或公式。</span>
+          <span data-ttu-id="f63e8-128">可以是以常量值、 一个 string 值、 单元格引用或公式。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-128">Can be a constant value, a string value, a cell reference, or a formula.</span>
+            <span data-stu-id="f63e8-128">Can be a constant value, a string value, a cell reference, or a formula.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="2e122-129">更改现有条件格式。</span>
+          <span data-ttu-id="f63e8-129">更改现有条件格式。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-129">Modifies an existing conditional format.</span>
+            <span data-stu-id="f63e8-129">Modifies an existing conditional format.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -583,28 +579,28 @@
       </Parameters>
       <Docs>
         <param name="Range">
-          <span data-ttu-id="2e122-130">此格式规则将应用于的区域。</span>
+          <span data-ttu-id="f63e8-130">此格式规则将应用于的区域。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-130">The range to which this formatting rule will be applied.</span>
+            <span data-stu-id="f63e8-130">The range to which this formatting rule will be applied.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="2e122-131">设置此格式规则所应用于的单元格区域。</span>
+          <span data-ttu-id="f63e8-131">设置此格式规则所应用于的单元格区域。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-131">Sets the cell range to which this formatting rule applies.</span>
+            <span data-stu-id="f63e8-131">Sets the cell range to which this formatting rule applies.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="2e122-132">
+          <span data-ttu-id="f63e8-132">
             <para>范围必须以 A1 引用样式和完全包含在工作表的父级的<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />集合。它可以包括区域运算符 （冒号）、 交点运算符 （空格） 或 union 运算符 （逗号分隔）。也可以使用美元符号，但会被忽略。</para>
             <para>您还可以使用局部定义的名称范围的任何部分中，但该名称必须是在宏的语言。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-132">
+            <span data-stu-id="f63e8-132">
               <para>The range must be in the A1 reference style and be entirely contained within the sheet that is the parent of the <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection. It can include the range operator (a colon), the intersection operator (a space), or the union operator (a comma). Dollar signs can also be used but they are ignored.</para>
               <para>You can also use a local defined name in any part of the range, but the name must be in the language of the macro.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -674,34 +670,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="2e122-133">返回或设置条件格式规则计算结果为<b>True</b>的情况下应用于单元格的数字格式。</span>
+          <span data-ttu-id="f63e8-133">返回或设置条件格式规则计算结果为<b>True</b>的情况下应用于单元格的数字格式。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-133">Returns or sets the number format applied to a cell if the conditional formatting rule evaluates to <b>True</b>.</span>
+            <span data-stu-id="f63e8-133">Returns or sets the number format applied to a cell if the conditional formatting rule evaluates to <b>True</b>.</span>
           </span>
-          <span data-ttu-id="2e122-134">读取/写入 <b>对象</b> 。</span>
+          <span data-ttu-id="f63e8-134">读取/写入 <b>对象</b> 。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-134">Read/write <b>Object</b>.</span>
+            <span data-stu-id="f63e8-134">Read/write <b>Object</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="2e122-135">
+          <span data-ttu-id="f63e8-135">
             <b>对象</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-135">
+            <span data-stu-id="f63e8-135">
               <b>Object</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="2e122-136">
-            <para>使用相同的格式代码显示在单元格格式对话框的数字选项卡上指定的数字格式。您可以使用内置的数字格式，例如"常规"，或创建自定义数字格式。</para>
-            <para />
-          </span>
+          <span data-ttu-id="f63e8-136">使用单元格格式对话框的数字选项卡上显示的相同的格式代码指定<para>的数字格式。您可以使用内置的数字格式，例如"常规"，或创建自定义数字格式。</para><para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-136">
+            <span data-stu-id="f63e8-136">
               <para>The number format is specified using the same format codes displayed on the Number tab of the Format Cells dialog box. You can use a built-in number format, for example "General", or create a custom number format.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -731,9 +724,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="2e122-137">返回条件格式的操作符。</span>
+          <span data-ttu-id="f63e8-137">返回条件格式的操作符。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-137">Returns the operator for the conditional format.</span>
+            <span data-stu-id="f63e8-137">Returns the operator for the conditional format.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -764,9 +757,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="2e122-138">返回指定对象的父对象。</span>
+          <span data-ttu-id="f63e8-138">返回指定对象的父对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-138">Returns the parent object for the specified object.</span>
+            <span data-stu-id="f63e8-138">Returns the parent object for the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -800,30 +793,30 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="2e122-p107">返回或设置条件格式规则的优先级值。当工作表中存在多个条件格式规则时，优先级确定求值的顺序。</span>
+          <span data-ttu-id="f63e8-p107">返回或设置条件格式规则的优先级值。当工作表中存在多个条件格式规则时，优先级确定求值的顺序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-p107">Returns or sets the priority value of the conditional formatting rule. The priority determines the order of evaluation when multiple conditional formatting rules exist in a worksheet.</span>
+            <span data-stu-id="f63e8-p107">Returns or sets the priority value of the conditional formatting rule. The priority determines the order of evaluation when multiple conditional formatting rules exist in a worksheet.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="2e122-141">
+          <span data-ttu-id="f63e8-141">
             <b>Integer</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-141">
+            <span data-stu-id="f63e8-141">
               <b>Integer</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="2e122-142">
-            <para>设置优先级时, 值必须是介于 1 和工作表上的条件格式规则的总数之间的正整数。优先级必须在工作表上的所有规则的唯一值，因此更改指定的条件格式规则的优先级可能导致在工作表中要移动的其他规则的优先级值。</para>
-            <para />
+          <span data-ttu-id="f63e8-142">
+            <para>时设置的优先级，值必须是介于 1 和工作表上的条件格式规则的总数之间的正整数。优先级必须在工作表上的所有规则的唯一值，因此更改指定的条件格式规则的优先级可能导致要移动的工作表上的其他规则的优先级值。</para>
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-142">
+            <span data-stu-id="f63e8-142">
               <para>When setting the priority, the value must be a positive integer between 1 and the total number of conditional formatting rules on the worksheet. The priority must be a unique value for all rules on the worksheet, so changing the priority for the specified conditional formatting rule may cause the priority value of the other rules on the worksheet to be shifted.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -853,17 +846,17 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="2e122-p108">返回一个 <b>Boolean</b> 值，指明是否将条件格式应用于数据透视表图表。只读。</span>
+          <span data-ttu-id="f63e8-p108">返回一个 <b>Boolean</b> 值，指明是否将条件格式应用于数据透视表图表。只读。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-p108">Returns a <b>Boolean</b> value indicating if the conditional format is being applied to a PivotTable chart. Read-only.</span>
+            <span data-stu-id="f63e8-p108">Returns a <b>Boolean</b> value indicating if the conditional format is being applied to a PivotTable chart. Read-only.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="2e122-145">
+          <span data-ttu-id="f63e8-145">
             <b>Boolean</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-145">
+            <span data-stu-id="f63e8-145">
               <b>Boolean</b>
             </span>
           </span>
@@ -898,23 +891,23 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="2e122-146">返回或设置的常量之一，<see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />是必需的条件格式应用于数据透视表图表时的枚举。</span>
+          <span data-ttu-id="f63e8-146">返回或设置的常量之一，<see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />是必需的条件格式应用于数据透视表图表时的枚举。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-146">Returns or sets one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> enumeration, which determines the scope of the conditional format when it is applied to a PivotTable chart.</span>
+            <span data-stu-id="f63e8-146">Returns or sets one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> enumeration, which determines the scope of the conditional format when it is applied to a PivotTable chart.</span>
           </span>
         </summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />
         </value>
         <remarks>
-          <span data-ttu-id="2e122-147">
+          <span data-ttu-id="f63e8-147">
             <para>默认值是<see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />，其设置范围使用<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.AppliesTo" />属性。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-147">
+            <span data-stu-id="f63e8-147">
               <para>The default value is <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, which sets the scope using the <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.AppliesTo" />property.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -942,24 +935,24 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="2e122-148">将此条件格式规则的优先级值设置为“1”，以便在工作表上的所有其他规则之前计算此规则。</span>
+          <span data-ttu-id="f63e8-148">将此条件格式规则的优先级值设置为“1”，以便在工作表上的所有其他规则之前计算此规则。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-148">Sets the priority value for this conditional formatting rule to "1" so that it will be evaluated before all other rules on the worksheet.</span>
+            <span data-stu-id="f63e8-148">Sets the priority value for this conditional formatting rule to "1" so that it will be evaluated before all other rules on the worksheet.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="2e122-149">
+          <span data-ttu-id="f63e8-149">
             <para>当您有多个工作表中的条件格式规则如果规则以前没有设置为"1"的优先级时，此方法将导致加一工作表上的所有其他现有规则的优先级。</para>
             <para>
               <b>注释</b>： 基于工作表级别应用条件格式规则的优先级。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-149">
+            <span data-stu-id="f63e8-149">
               <para>When you have multiple conditional formatting rules  in a worksheet, if the rule was not previously set to priority "1", this method will cause the priority of all other existing rules on the worksheet to be increased by one.</para>
               <para>
                 <b>Note</b>: Priority levels for conditional formatting rules are applied on a worksheet-level basis.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -987,24 +980,24 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="2e122-150">为此条件格式规则设置求值顺序，以便在工作表上的所有其他规则之后计算此规则。</span>
+          <span data-ttu-id="f63e8-150">为此条件格式规则设置求值顺序，以便在工作表上的所有其他规则之后计算此规则。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-150">Sets the evaluation order for this conditional formatting rule so it is evaluated after all other rules on the worksheet.</span>
+            <span data-stu-id="f63e8-150">Sets the evaluation order for this conditional formatting rule so it is evaluated after all other rules on the worksheet.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="2e122-151">
+          <span data-ttu-id="f63e8-151">
             <para>优先级的实际值将等于的工作表上的条件格式规则的总数。如果您在工作表中有多个条件格式规则，此方法将导致的优先级值大于加一该规则的规则的优先级。</para>
             <para>
               <b>注释</b>： 基于工作表级别应用条件格式规则的优先级。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-151">
+            <span data-stu-id="f63e8-151">
               <para>The actual vaule of the priority will be equal to the total number of conditional formatting rules on the worksheet. When you have multiple conditional formatting rules  in a worksheet, this method will cause the priority of rules that had a priority value greater than this rule to be increased by one.</para>
               <para>
                 <b>Note</b>: Priority levels for conditional formatting rules are applied on a worksheet-level basis.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -1037,30 +1030,30 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="2e122-152">返回或设置一个 <b>Boolean</b> 值，该值确定在当前规则的计算结果为 <b>True</b> 时是否应计算单元格上的其他格式规则。</span>
+          <span data-ttu-id="f63e8-152">返回或设置一个 <b>Boolean</b> 值，该值确定在当前规则的计算结果为 <b>True</b> 时是否应计算单元格上的其他格式规则。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-152">Returns or sets a <b>Boolean</b> value that determines if additional formatting rules on the cell should be evaluated if the current rule evaluates to <b>True</b>.</span>
+            <span data-stu-id="f63e8-152">Returns or sets a <b>Boolean</b> value that determines if additional formatting rules on the cell should be evaluated if the current rule evaluates to <b>True</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="2e122-153">
+          <span data-ttu-id="f63e8-153">
             <b>Boolean</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-153">
+            <span data-stu-id="f63e8-153">
               <b>Boolean</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="2e122-154">
+          <span data-ttu-id="f63e8-154">
             <para>为了支持向后兼容性，此属性的默认值为<b>True</b>，即的格式的行为相反用户界面中创建的规则。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-154">
+            <span data-stu-id="f63e8-154">
               <para>To support backward compatibility, the default value for this property is <b>True</b>, which is the opposite behavior of a formatting rule created in the user interface.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -1093,30 +1086,30 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="2e122-155">返回或设置一个<b>String</b>值，指定条件格式规则所使用的文本。</span>
+          <span data-ttu-id="f63e8-155">返回或设置一个<b>String</b>值，指定条件格式规则所使用的文本。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-155">Returns or sets a <b>String</b> value specifying the text used by the conditional formatting rule.</span>
+            <span data-stu-id="f63e8-155">Returns or sets a <b>String</b> value specifying the text used by the conditional formatting rule.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="2e122-156">
+          <span data-ttu-id="f63e8-156">
             <b>字符串</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-156">
+            <span data-stu-id="f63e8-156">
               <b>String</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="2e122-157">
-            <para>如果此属性，则忽略<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Type" />属性未设置为<see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlTextString" />。</para>
-            <para />
+          <span data-ttu-id="f63e8-157">
+            <para>，则忽略此属性，如果<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Type" />属性未设置为<see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlTextString" />。</para>
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-157">
+            <span data-stu-id="f63e8-157">
               <para>This property is ignored if the <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Type" /> property is not set to <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlTextString" />.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -1149,9 +1142,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="2e122-158">返回或设置的常量之一，<see cref="T:Microsoft.Office.Interop.Excel.XlContainsOperator" />枚举，指定条件格式规则执行的文本搜索。</span>
+          <span data-ttu-id="f63e8-158">返回或设置的常量之一，<see cref="T:Microsoft.Office.Interop.Excel.XlContainsOperator" />枚举，指定条件格式规则执行的文本搜索。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-158">Returns or sets one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlContainsOperator" /> enumeration, specifying the text search performed by the conditional formatting rule.</span>
+            <span data-stu-id="f63e8-158">Returns or sets one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlContainsOperator" /> enumeration, specifying the text search performed by the conditional formatting rule.</span>
           </span>
         </summary>
         <value>
@@ -1184,14 +1177,14 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="2e122-159">返回对象类型。</span>
+          <span data-ttu-id="f63e8-159">返回对象类型。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-159">Returns the object type.</span>
+            <span data-stu-id="f63e8-159">Returns the object type.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="2e122-160">
+          <span data-ttu-id="f63e8-160">
             <para>对象类型可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />常量：</para>
             <para>
               <b>xlCellValue</b>
@@ -1199,10 +1192,10 @@
             <para>
               <b>xlExpression</b>
             </para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="2e122-160">
+            <span data-stu-id="f63e8-160">
               <para>The object type can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> constants:</para>
               <para>
                 <b>xlCellValue</b>
@@ -1210,7 +1203,7 @@
               <para>
                 <b>xlExpression</b>
               </para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
