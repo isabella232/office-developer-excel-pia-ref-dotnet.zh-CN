@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20574723" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotCell" />
@@ -34,7 +34,7 @@
       <para>使用<see cref="P:Microsoft.Office.Interop.Excel.Range.PivotCell" />属性<see cref="T:Microsoft.Office.Interop.Excel.Range" />可返回一个<b>PivotCell</b>对象的集合。</para>
       <para>后返回一个<b>PivotCell</b>对象，您可以使用<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.PivotCellType" />属性可以确定哪种类型的单元格特定范围是</para>
       <para>您可以使用<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.ColumnItems" />或<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.RowItems" />属性可以确定<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />对应于代表所选的号码的行或列轴上的项目的集合。</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -63,7 +63,7 @@
         <remarks>
           <para>此方法执行更新多维数据集语句将在此特定单元格，只需更改，但还包括任何以前应用的更改。执行更新多维数据集语句、 运行时数据透视表更新，然后执行回滚事务语句之后。</para>
           <para>运行<see cref="M:Microsoft.Office.Interop.Excel.PivotCell.AllocateChange" />方法，用于基于非 OLAP 数据源的数据透视表报告中的单元格将生成运行时错误。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -186,7 +186,7 @@
               <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" />所有编辑的有公式单元格。</description>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -247,7 +247,7 @@
           <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
           <para>
             <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -306,7 +306,7 @@
           <para>
             <b>xlSum</b>
           </para>如果<b>PivotCell</b>对象类型不是自定义分类汇总
-          <para><b>xlUnknown</b></para><para><b>xlVar</b></para><para><b>xlVarP</b></para><para><b>CustomSubtotalFunction</b>属性将返回错误。此属性仅适用于非 OLAP 源数据。</para><para /></remarks>
+          <para><b>xlUnknown</b></para><para><b>xlVar</b></para><para><b>xlVarP</b></para><para><b>CustomSubtotalFunction</b>属性将返回错误。此属性仅适用于非 OLAP 源数据。</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataField">
@@ -336,7 +336,7 @@
         <value>To be added.</value>
         <remarks>
           <para>如果<b>PivotCell</b>对象不是允许的类型之一，该属性将返回错误： <b>XlPivotCellTypeValue</b>、 <b>XlPivotCellTypeDataField</b>、 <b>XlPivotCellTypeSubtotal</b>或<b>XlPivotCellTypeGrandTotal</b>。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -367,7 +367,7 @@
         <value>上次检索从数据源的数据透视表报告中的已编辑单元格的值。</value>
         <remarks>
           <para>只读的。</para>每当进行编辑的数据透视表值区域中的单元格，
-          <para><see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" />属性将包含之前编辑发生上次检索从数据源的值。对于数据透视表报表值单元格尚未编辑的或为其数据源的值有未明确检索到，此属性将返回空引用 (在 Visual Basic 中为 Nothing)。对于 OLAP 数据源的值的数据透视表报告<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" />属性检索从单独的连接，以确保其不包含任何用户可能所做的回写操作的值。</para><para>读取<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" />的之外的数据透视表值区域的单元格的属性将产生一个运行时错误。</para><para /></remarks>
+          <para><see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" />属性将包含之前编辑发生上次检索从数据源的值。对于数据透视表报表值单元格尚未编辑的或为其数据源的值有未明确检索到，此属性将返回空引用 (在 Visual Basic 中为 Nothing)。对于 OLAP 数据源的值的数据透视表报告<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" />属性检索从单独的连接，以确保其不包含任何用户可能所做的回写操作的值。</para><para>读取<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" />的之外的数据透视表值区域的单元格的属性将产生一个运行时错误。</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DiscardChange">
@@ -393,8 +393,8 @@
       <Docs>
         <summary>放弃对数据透视表中指定单元格的更改。</summary>
         <remarks>
-          <para>有关数据透视表中的单元格基于 OLAP 数据源，<see cref="M:Microsoft.Office.Interop.Excel.PivotCell.DiscardChange" />方法删除公式的指定单元格中输入的值，然后运行从数据源检索的最新值的数据透视表更新。数据源的值将此方法指定单元格设置为空引用 (在 Visual Basic 中为 Nothing)。该方法还会删除对此单元格从 Excel 的更改列表，以便它不再包含更新多维数据集语句的数据源中的所有更改。此方法还会重新创建会话状态的所有其他事务中所做的更改。这包括执行回滚事务语句，并执行除外指定单元格的所有更改更新多维数据集语句。基于非 OLAP 数据源的数据透视表中单元格，此方法仅清除已编辑单元格。</para>
-          <para />
+          <para>的数据透视表中的单元格基于 OLAP 数据源，<see cref="M:Microsoft.Office.Interop.Excel.PivotCell.DiscardChange" />方法删除公式的指定单元格中输入的值，然后运行从数据源检索的最新值的数据透视表更新。数据源的值将此方法指定单元格设置为空引用 (在 Visual Basic 中为 Nothing)。该方法还会删除对此单元格从 Excel 的更改列表，以便它不再包含更新多维数据集语句的数据源中的所有更改。此方法还会重新创建会话状态的所有其他事务中所做的更改。这包括执行回滚事务语句，并执行除外指定单元格的所有更改更新多维数据集语句。对于非 OLAP 数据源上基于数据透视表中的单元格，此方法只是清除已编辑单元格。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -457,7 +457,7 @@
         <remarks>
           <para>只读的。</para>
           <para>由元组中返回的尺寸<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.MDX" />属性包括行和列的坐标，以及报告筛选器坐标。对于单元格和数据透视表值区域的数据透视表，以外，访问此属性会生成运行时错误。为与报告筛选器字段中的多项选择的数据透视表，访问该属性还将生成运行时错误。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -538,7 +538,7 @@
             <b>xlPivotCellSubtotal</b> A 分类汇总的行或列区域中的单元格。</para>
           <para>
             <b>xlPivotCellValue</b>数据区区域 （除空行） 中的任一单元格。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -573,7 +573,7 @@
           <para>如果<b>PivotCell</b>在行上，则<b>PivotColumnLine</b>属性返回一个运行时错误。</para>
           <para>如果<b>PivotCell</b>在列上，则<b>PivotColumnLine</b>属性返回列<b>PivotLine</b>对象。</para>
           <para>如果<b>PivotCell</b>在数据区域，则<b>PivotColumnLine</b>属性返回对应的列<b>PivotLine</b>对象。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -664,7 +664,7 @@
           <para>如果<b>PivotCell</b>在行上，<b>则 PivotRowLine</b>返回行的<b>PivotLine</b>对象。</para>
           <para>如果<b>PivotCell</b>在列上，<b>则 PivotRowLine</b>返回一个运行时错误。</para>
           <para>如果<b>PivotCell</b>在数据区域，<b>则 PivotRowLine</b>返回对应的行的<b>PivotLine</b>对象。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -779,7 +779,7 @@
         <value>To be added.</value>
         <remarks>
           <para>服务器操作是 OLAP 多维数据集管理员可以使用的多维数据集成员或度量值作为参数转换为查询以获取多维数据集中的信息的服务器定义的可选功能。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
