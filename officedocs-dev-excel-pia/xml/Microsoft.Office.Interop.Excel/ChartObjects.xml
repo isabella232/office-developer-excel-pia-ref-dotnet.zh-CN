@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20586091" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ChartObjects : System.Collections.IEnumerable" />
@@ -36,7 +36,7 @@
     <summary>所有的集合<see cref="T:Microsoft.Office.Interop.Excel.ChartObject" />指定的图表工作表、 对话框工作表或工作表上的对象。</summary>
     <remarks>
       <para>每个<b>ChartObject</b>对象代表内嵌的图表。<b>ChartObject</b>对象充当容器<see cref="T:Microsoft.Office.Interop.Excel.Chart" />对象。<b>ChartObject</b>对象的属性和方法控制的外观和工作表上嵌入图表的大小。</para>使用
-      <para><see cref="M:Microsoft.Office.Interop.Excel._Worksheet.ChartObjects(System.Object)" />方法可返回<b>ChartObjects</b>集合。使用<see cref="M:Microsoft.Office.Interop.Excel.ChartObjects.Add(System.Double,System.Double,System.Double,System.Double)" />方法可创建一个新的嵌入的图表并将其添加到集合。使用<see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法，以添加数据并设置其格式的新图表。</para><para>使用<b>ChartObjects</b>(<paramref name="index" />)，其中<paramref name="index" />是嵌入的图表的索引号或名称，可返回单个<b>ChartObject</b>对象。</para><para /></remarks>
+      <para><see cref="M:Microsoft.Office.Interop.Excel._Worksheet.ChartObjects(System.Object)" />方法可返回<b>ChartObjects</b>集合。使用<see cref="M:Microsoft.Office.Interop.Excel.ChartObjects.Add(System.Double,System.Double,System.Double,System.Double)" />方法可创建一个新的嵌入的图表并将其添加到集合。使用<see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法，以添加数据并设置其格式的新图表。</para><para>使用<b>ChartObjects</b>(<paramref name="index" />)，其中<paramref name="index" />是嵌入的图表的索引号或名称，可返回单个<b>ChartObject</b>对象。</para><para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Copy">
@@ -529,8 +529,8 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para />
+          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -559,7 +559,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>可剪切嵌入式的图表仅。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -832,10 +832,7 @@
       <Docs>
         <summary>从对象左边缘到工作表） 的 A 列的左边的缘或 （在图表上） 的图表区的左边的缘的距离。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果该窗口最大化，此属性将返回负数会有所不同，根据窗口边框的宽度。此属性设置为 0 （零） 将使窗口稍微有点小超过将应用程序窗口已最大化状态。换句话说，如果此属性为 0 （零），则 Microsoft Excel 主窗口的左边的框仅能执行将在屏幕上可见。</para>
-          <para />
-        </remarks>
+        <remarks>如果窗口处于最大化<para>，此属性返回会有所不同，为负数基于窗口边框的宽度。此属性设置为 0 （零） 将使窗口稍微有点小超过将应用程序窗口已最大化状态。换句话说，如果此属性为 0 （零），Microsoft Excel 主窗口的左边的框将几乎会显示在屏幕上。</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Locked">
@@ -1028,8 +1025,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>此属性设置为<b>True</b>不会保护嵌入的图表框架通过对象模型进行修改。</para>
-          <para />
+          <para>将此属性设置为<b>True</b>不会保护嵌入的图表框架通过对象模型进行修改。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1256,7 +1253,7 @@
         <remarks>
           <para>如果项目位于表中当前可见，数据透视表项的<b>Visible</b>属性为<b>True</b> 。</para>
           <para>将名称的<b>Visible</b>属性设置为<b>False</b>时，如果名称不会出现在定义名称对话框。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

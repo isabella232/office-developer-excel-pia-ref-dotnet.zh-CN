@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20587267" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SlicerCacheLevel" />
@@ -31,8 +31,8 @@
   <Docs>
     <summary>表示由切片器筛选的 OLAP 数据源中某个层次结构的一个级别。</summary>
     <remarks>
-      <para>使用切片器筛选的 OLAP 数据源时, 与其关联的切片器缓存可以包含的数据源中的多个层次结构级别。使用<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" />对象的父集合<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />对象传递给访问<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />表示这些层次结构级别的对象。</para>
-      <para />
+      <para>使用切片器筛选的 OLAP 数据源时，其关联的切片器缓存可以包含的数据源中的多个层次结构级别。使用<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" />对象的父集合<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />对象传递给访问<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />表示这些层次结构级别的对象。</para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -64,7 +64,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.Application" />对象。</value>
         <remarks>
           <para>只读的。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -95,7 +95,7 @@
         <value>数<see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" />中指定的对象<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />对象。</value>
         <remarks>
           <para>只读的。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -126,7 +126,7 @@
         <value>32 位<b>整数</b>，指示在其中创建此对象的应用程序。</value>
         <remarks>
           <para>只读的<b>long</b>。</para>如果对象在 Microsoft Excel 中创建的
-          <para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para /></remarks>
+          <para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CrossFilterType">
@@ -160,7 +160,7 @@
         <remarks>
           <para>读/写。</para>
           <para>如果多个切片器关联的相同数据透视表，默认情况下，如果您在一个切片器筛选的项目有没有相应的数据，另一个切片器中，这些项目将变灰。例如，如果您具有 Country 切片器和状态切片器，并单击国家切片器中的国家/地区，状态切片器中的所有状态的都相关不在的国家/地区将变灰。此功能称为为"跨筛选"。</para>设置对应的
-          <para>用户界面设置<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" />属性直观地指明空数据项和显示项目的切片器设置对话框中没有数据最后一个复选框。设置<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" />属性设为<see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithDataAtTop" />对应于同时选中这两直观地指明没有数据的项并显示项目没有数据上次复选框。设置<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" />属性设为<see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithNoData" />对应于仅选择直观地指明项目没有数据复选框。清除两个复选框对应于设置<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" />属性设为<see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerNoCrossFilter" />。</para><para>切片器筛选非 OLAP 数据源 (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> =  <b>false</b>) 不支持<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" />属性<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />对象。筛选数据透视表的切片器基于范围、 列表和非 OLAP 关系数据源，则使用<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" />属性<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />对象，而。</para><para /></remarks>
+          <para>用户界面设置<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" />属性直观地指明空数据项和显示项目的切片器设置对话框中没有数据最后一个复选框。设置<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" />属性设为<see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithDataAtTop" />对应于同时选中这两直观地指明没有数据的项并显示项目没有数据上次复选框。设置<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" />属性设为<see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithNoData" />对应于仅选择直观地指明项目没有数据复选框。清除两个复选框对应于设置<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" />属性设为<see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerNoCrossFilter" />。</para><para>切片器筛选非 OLAP 数据源 (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> =  <b>false</b>) 不支持<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" />属性<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />对象。筛选数据透视表的切片器基于范围、 列表和非 OLAP 关系数据源，则使用<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" />属性<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />对象，而。</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -218,7 +218,7 @@
         <value>由指定的层次结构级别的从 1 开始的序号值<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />对象。</value>
         <remarks>
           <para>只读的。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -250,7 +250,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />指定的对象的<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />对象。</value>
         <remarks>
           <para>只读的。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -281,7 +281,7 @@
         <value>A<see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" />集合，其中包含指定级别的所有切片器项的集合。</value>
         <remarks>
           <para>只读的。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -316,7 +316,7 @@
         <remarks>
           <para>读/写。</para>
           <para>此属性的默认设置是<b>xlDataSourceOrder</b> (1)。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -348,7 +348,7 @@
         <remarks>
           <para>只读的。</para>
           <para>为 MDX 唯一名称的字符串返回切片器项的列表。如果此列表为空，切片器未筛选的数据源和所选的图块数为单位显示为的所有切片器。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
