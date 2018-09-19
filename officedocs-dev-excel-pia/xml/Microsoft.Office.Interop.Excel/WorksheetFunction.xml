@@ -1,10 +1,10 @@
 <Type Name="WorksheetFunction" FullName="Microsoft.Office.Interop.Excel.WorksheetFunction">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c4f9fcb96caaeda1ab919426e45e33ce9a1e04aa" />
+    <Meta Name="ms.openlocfilehash" Value="0e8779a13b1ae831ceba99e1523c885328838f42" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/06/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/17/2018" />
     <Meta Name="ms.locfileid" Value="20574611" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface WorksheetFunction" />
@@ -166,19 +166,19 @@
           <list type="table">
             <item>
               <term>0 或省略</term>
-              <description>我们 (NASD) 30/360</description>
+              <description>美国（美国证券交易商协会）30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/实际实际值</description>
+              <term>1</term>
+              <description>实际天数/实际天数</description>
             </item>
             <item>
               <term>2</term>
-              <description>实际/360</description>
+              <description>实际天数/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>实际/365</description>
+              <description>实际天数/365</description>
             </item>
             <item>
               <term>4</term>
@@ -229,19 +229,19 @@
           <list type="table">
             <item>
               <term>0 或省略</term>
-              <description>我们 (NASD) 30/360</description>
+              <description>美国（美国证券交易商协会）30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/实际实际值</description>
+              <term>1</term>
+              <description>实际天数/实际天数</description>
             </item>
             <item>
               <term>2</term>
-              <description>实际/360</description>
+              <description>实际天数/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>实际/365</description>
+              <description>实际天数/365</description>
             </item>
             <item>
               <term>4</term>
@@ -251,25 +251,27 @@
           <para>以下列表包含使用 ACCRINTM 时应注意的信息：</para>
           <list type="bullet">
             <item>
-              <description>Microsoft Excel 将日期存储为顺序的序列号，以便他们可以在计算中使用。默认情况下 1900 年 1 月 1 日是序列号 1，，2008 年 1 月 1 日序列号 39448，这是因为它 1900 年 1 月 1 日有 39448 天。</description>
+              <description>Microsoft Excel 以序数形式存储日期以使其可用于计算。默认情况下，1900 年 1 月 1 日是序列号 1，2008 年 1 月 1 日是序列号 39,448，这是因为它距 1900 年 1 月 1 日有 39,448 天。</description>
             </item>
             <item>
-              <description>问题、 maturity 和 basis 将被截尾取整。</description>
+              <description>Issue、maturity 和 basis 将被截尾取整。</description>
             </item>
             <item>
-              <description>如果 issue 或 maturity 不是有效日期，则 ACCRINTM 将生成一个错误。</description>
+              <description>如果 issue 或 maturity 是无效的日期，则 ACCRINTM 将生成一个错误。</description>
             </item>
             <item>
-              <description>如果 rate ≤ 0 或 par ≤ 0，则 ACCRINTM 将生成一个错误。</description>
+              <description>如果 rate ≤ 0 或 par ≤ 0，则 ACCRINTM 将产生一个错误。</description>
             </item>
             <item>
-              <description>如果 basis &lt; 0 或者，如果基础&gt;4，则 ACCRINTM 将生成一个错误。</description>
+              <description>如果 basis &lt; 0 或者，如果基础&gt;4，则 ACCRINTM 将生成一个错误。 </description>
             </item>
             <item>
-              <description>如果问题 ≥ maturity，则 ACCRINTM 将生成一个错误。</description>
+              <description>如果 issue ≥ maturity，则 ACCRINTM 将产生一个错误。</description>
             </item>
             <item>
-              <description>ACCRINTM 的计算公式如下：</description>
+              <description>ACCRINTM 的计算公式如下：
+
+ </description>
             </item>
           </list>
           <para>其中：</para>
@@ -545,11 +547,11 @@
           <list type="table">
             <item>
               <term>0 或省略</term>
-              <description>360 天 （NASD 方法）</description>
+              <description>360 天（NASD 方法）</description>
             </item>
             <item>
               <term>1</term>
-              <description>实际</description>
+              <description>实际天数</description>
             </item>
             <item>
               <term>3</term>
@@ -557,7 +559,7 @@
             </item>
             <item>
               <term>4</term>
-              <description>（欧洲方法） 一年 360 天</description>
+              <description>一年 360 天（欧洲方法）</description>
             </item>
           </list>
           <para>Microsoft Excel 以序数形式存储日期以使其可用于计算。默认情况下，1900 年 1 月 1 日的序数是 1；2008 年 1 月 1 日的序数是 39448，因为该日期距 1900 年 1 月 1 日有 39,448 天。Microsoft Excel for the Macintosh 使用另外一个默认日期系统。</para>
@@ -567,11 +569,11 @@
 </para>
           <list type="table">
             <item>
-              <term>之间 3 和 4 年</term>
+              <term>3 到 4 年</term>
               <description>1.5</description>
             </item>
             <item>
-              <term>之间 5 和 6 年</term>
+              <term>5 到 6 年</term>
               <description>2</description>
             </item>
             <item>
@@ -627,11 +629,11 @@
           <list type="table">
             <item>
               <term>0 或省略</term>
-              <description>360 天 （NASD 方法）</description>
+              <description>360 天（NASD 方法）</description>
             </item>
             <item>
               <term>1</term>
-              <description>实际</description>
+              <description>实际天数</description>
             </item>
             <item>
               <term>3</term>
@@ -639,7 +641,7 @@
             </item>
             <item>
               <term>4</term>
-              <description>（欧洲方法） 一年 360 天</description>
+              <description>一年 360 天（欧洲方法）</description>
             </item>
           </list>
           <para>
@@ -1148,13 +1150,13 @@
             <b>平均</b>方法趋，这是一组数统计分布中的中心的位置。 三个趋大多数常用方法是：</para>
           <list type="bullet">
             <item>
-              <description>平均值即算术平均值，是通过添加一组数，然后除以这些数字的个数。例如，2、 3、 3、 5、 7 和 10 的平均值为 30 除以 6，这是 5。</description>
+              <description>算术平均值，并通过添加一组数，然后除以这些号码数计算的平均值。 例如，2、 3、 3、 5、 7 和 10 的平均值为 30 除以 6，这是 5。 </description>
             </item>
             <item>
-              <description>这是一组数字的中间数; 这是的 Median、 一半的号码的值都大于 median 和半号码的值都小于中间值。例如，2、 3、 3、 5、 7 和 10 的中间值是 4。</description>
+              <description>这是一组数; 中间号的中间值即一半的号码的值都大于 median 和半号码的值都小于中间值。 例如，2、 3、 3、 5、 7 和 10 的中间值是 4。</description>
             </item>
             <item>
-              <description>这是一组数中的出现频率最多号的模式。例如，2、 3、 3、 5、 7 和 10 的模式为 3。</description>
+              <description>这是一组数中的出现频率最多号的模式。 例如，2、 3、 3、 5、 7 和 10 的模式为 3。</description>
             </item>
           </list>
           <para>对于对称分布的一组数字，这三种趋中性衡量方式完全相同。对于偏态分布的一组数字，这些衡量方式可能会不同。</para>
@@ -1207,16 +1209,16 @@
             </item>
             <item>
               <term>A1:A5</term>
-              <description>b1: b3</description>
+              <description>B1:B3</description>
               <description>B1:B5</description>
             </item>
             <item>
-              <term>A1: b4</term>
+              <term>A1:B4</term>
               <description>C1:D4</description>
               <description>C1:D4</description>
             </item>
             <item>
-              <term>A1: b4</term>
+              <term>A1:B4</term>
               <description>C1:C2</description>
               <description>C1:D4</description>
             </item>
@@ -1225,13 +1227,13 @@
             <b>则 AverageIf</b>方法趋，这是一组数统计分布中的中心的位置。 三个趋大多数常用方法是：</para>
           <list type="bullet">
             <item>
-              <description>平均值即算术平均值，是通过添加一组数，然后除以这些数字的个数。例如，2、 3、 3、 5、 7 和 10 的平均值为 30 除以 6，这是 5。</description>
+              <description>算术平均值，并通过添加一组数，然后除以这些号码数计算的平均值。 例如，2、 3、 3、 5、 7 和 10 的平均值为 30 除以 6，这是 5。 </description>
             </item>
             <item>
-              <description>这是一组数字的中间数; 这是的 Median、 一半的号码的值都大于 median 和半号码的值都小于中间值。例如，2、 3、 3、 5、 7 和 10 的中间值是 4。</description>
+              <description>这是一组数; 中间号的中间值即一半的号码的值都大于 median 和半号码的值都小于中间值。 例如，2、 3、 3、 5、 7 和 10 的中间值是 4。</description>
             </item>
             <item>
-              <description>这是一组数中的出现频率最多号的模式。例如，2、 3、 3、 5、 7 和 10 的模式为 3。</description>
+              <description>这是一组数中的出现频率最多号的模式。 例如，2、 3、 3、 5、 7 和 10 的模式为 3。</description>
             </item>
           </list>
           <para>对于对称分布的一组数字，这三种趋中性衡量方式完全相同。对于偏态分布的一组数字，这些衡量方式可能会不同。</para>
@@ -1337,16 +1339,16 @@
             </item>
             <item>
               <term>A1:A5</term>
-              <description>b1: b3</description>
+              <description>B1:B3</description>
               <description>B1:B5</description>
             </item>
             <item>
-              <term>A1: b4</term>
+              <term>A1:B4</term>
               <description>C1:D4</description>
               <description>C1:D4</description>
             </item>
             <item>
-              <term>A1: b4</term>
+              <term>A1:B4</term>
               <description>C1:C2</description>
               <description>C1:D4</description>
             </item>
@@ -1355,13 +1357,13 @@
             <b>AverageIfs</b>函数趋，这是一组数统计分布中的中心的位置。 三个趋大多数常用方法是：</para>
           <list type="bullet">
             <item>
-              <description>平均值即算术平均值，是通过添加一组数，然后除以这些数字的个数。例如，2、 3、 3、 5、 7 和 10 的平均值为 30 除以 6，这是 5。</description>
+              <description>算术平均值，并通过添加一组数，然后除以这些号码数计算的平均值。 例如，2、 3、 3、 5、 7 和 10 的平均值为 30 除以 6，这是 5。 </description>
             </item>
             <item>
-              <description>这是一组数字的中间数; 这是的 Median、 一半的号码的值都大于 median 和半号码的值都小于中间值。例如，2、 3、 3、 5、 7 和 10 的中间值是 4。</description>
+              <description>这是一组数; 中间号的中间值即一半的号码的值都大于 median 和半号码的值都小于中间值。 例如，2、 3、 3、 5、 7 和 10 的中间值是 4。</description>
             </item>
             <item>
-              <description>这是一组数中的出现频率最多号的模式。例如，2、 3、 3、 5、 7 和 10 的模式为 3。</description>
+              <description>这是一组数中的出现频率最多号的模式。 例如，2、 3、 3、 5、 7 和 10 的模式为 3。</description>
             </item>
           </list>
           <para>对于对称分布的一组数字，这三种趋中性衡量方式完全相同。对于偏态分布的一组数字，这些衡量方式可能会不同。</para>
@@ -1643,7 +1645,7 @@
           <para>Beta 分布通常用于研究样本中某些事物变化的百分比，例如人们一天中用来看电视的时间所占的比例：</para>
           <list type="bullet">
             <item>
-              <description>如果任一参数为非数值型，<b>则 beta_dist 将</b>返回 #VALUE ！错误值。</description>
+              <description>如果任一参数为非数值型，<b>则 beta_dist 将</b>返回 #VALUE ！ 错误值。</description>
             </item>
             <item>
               <description>如果 alpha ≤ 0 或 beta ≤ 0，<b>则 Beta_Dist</b>将生成一个错误值。</description>
@@ -1752,7 +1754,7 @@
           <para>Beta 分布通常用于研究样本中某些事物变化的百分比，例如人们一天中用来看电视的时间所占的比例。</para>
           <list type="bullet">
             <item>
-              <description>如果任一参数为非数值型，<b>则 betadist 将</b>返回 #VALUE ！。错误值。</description>
+              <description>如果任一参数为非数值型，<b>则 betadist 将</b>返回 #VALUE ！。 错误值。</description>
             </item>
             <item>
               <description>如果 alpha ≤ 0 或 beta ≤ 0，<b>则 BetaDist</b>将生成一个错误值。</description>
@@ -1810,10 +1812,10 @@
               <description>如果任一参数为非数值型， <b>betainv 就</b>会生成一个错误值。</description>
             </item>
             <item>
-              <description>如果 alpha ≤ 0 或 beta ≤ <b>0,betainv</b>将生成一个错误值。</description>
+              <description>如果 alpha ≤ 0 或 beta ≤ <b>0,betainv</b>将生成一个错误值。 </description>
             </item>
             <item>
-              <description>如果 probability ≤ 0 或 probability &gt; 1， <b>betainv 就</b>会生成一个错误值。</description>
+              <description>如果 probability ≤ 0 或 probability &gt; 1， <b>betainv 就</b>会生成一个错误值。 </description>
             </item>
             <item>
               <description>如果忽略值 a 和 B， <b>BetaInv</b>将使用标准累积 beta 分布，使 A = 0 且 B = 1。</description>
@@ -1972,13 +1974,15 @@
               <description>Number_s 和 trials 将被截尾取整。</description>
             </item>
             <item>
-              <description>如果 number_s、 trials 或 probability_s 为非数值型，则<b>Binom_Dist</b>方法将生成一个错误。</description>
+              <description>如果 number_s、 trials 或 probability_s 为非数值型，则<b>Binom_Dist</b>方法将生成一个错误。 </description>
             </item>
             <item>
-              <description>如果 number_s &lt; 0 或 number_s &gt; trials，则<b>Binom_Dist</b>方法将生成一个错误。</description>
+              <description>如果 number_s &lt; 0 或 number_s &gt; trials，则<b>Binom_Dist</b>方法将生成一个错误。 </description>
             </item>
             <item>
-              <description>如果 probability_s &lt; 0 或 probability_s &gt; 1，则<b>Binom_Dist</b>方法将生成一个错误。二项式概率密度函数的是：</description>
+              <description>如果 probability_s &lt; 0 或 probability_s &gt; 1，则<b>Binom_Dist</b>方法将生成一个错误。 二项式概率密度函数的计算公式为： 
+
+ </description>
             </item>
           </list>
           <para>其中：</para>
@@ -2388,13 +2392,16 @@
               <description>向零舍入。</description>
             </item>
             <item>
-              <term>+/+</term>离零舍。
+              <term>+/+</term>
+              <description>离零舍入。</description>
             </item>
             <item>
-              <term>-/+</term>向零舍入。
+              <term>-/+</term>
+              <description>向零舍入。</description>
             </item>
             <item>
-              <term>+/-</term>离零舍。
+              <term>+/-</term>
+              <description>离零舍入。</description>
             </item>
           </list>
           <para>如果任一参数为非数值，<b>Ceiling_Precise</b> 将生成错误。</para>
@@ -3182,30 +3189,30 @@
               <description>"g"</description>
             </item>
             <item>
-              <term>辅助信息</term>
+              <term>斯勒格</term>
               <description>"sg"</description>
             </item>
             <item>
-              <term>磅 （常衡）</term>
+              <term>磅（常衡制）</term>
               <description>"lbm"</description>
             </item>
             <item>
-              <term>U （原子质量单位）</term>
+              <term>U（原子质量单位）</term>
               <description>"u"</description>
             </item>
             <item>
-              <term>盎司批量 （常衡制）</term>
+              <term>盎司（常衡制）</term>
               <description>"ozm"</description>
             </item>
           </list>
           <list type="table">
             <item>
-              <term>指示器</term>
+              <term>米</term>
               <description>"m"</description>
             </item>
             <item>
               <term>法定英里</term>
-              <description>"英里"</description>
+              <description>"mi"</description>
             </item>
             <item>
               <term>海里</term>
@@ -3221,47 +3228,47 @@
             </item>
             <item>
               <term>码</term>
-              <description>"码"</description>
+              <description>"yd"</description>
             </item>
             <item>
               <term>埃</term>
               <description>"ang"</description>
             </item>
             <item>
-              <term>十二点活字 （1/72 英寸）</term>
-              <description>"十二点活字"</description>
+              <term>皮卡（1/72 英寸）</term>
+              <description>"Pica"</description>
             </item>
           </list>
           <list type="table">
             <item>
               <term>年</term>
-              <description>"年"</description>
+              <description>"yr"</description>
             </item>
             <item>
-              <term>天</term>
-              <description>"天"</description>
+              <term>日</term>
+              <description>"day"</description>
             </item>
             <item>
-              <term>小时</term>
-              <description>"人力资源"</description>
+              <term>时</term>
+              <description>"hr"</description>
             </item>
             <item>
-              <term>分钟</term>
+              <term>分</term>
               <description>"mn"</description>
             </item>
             <item>
-              <term>第二个</term>
-              <description>"秒"</description>
+              <term>秒</term>
+              <description>"sec"</description>
             </item>
           </list>
           <list type="table">
             <item>
-              <term>Pascal</term>
-              <description>"Pa"（或"p"）</description>
+              <term>帕斯卡</term>
+              <description>"Pa"（或 "p"）</description>
             </item>
             <item>
-              <term>不断</term>
-              <description>"atm"（或"at"）</description>
+              <term>大气压</term>
+              <description>"atm"（或 "at"）</description>
             </item>
             <item>
               <term>毫米汞柱</term>
@@ -3274,21 +3281,21 @@
               <description>"N"</description>
             </item>
             <item>
-              <term>达因为单位</term>
-              <description>"dyn"（或"dy"）</description>
+              <term>达因</term>
+              <description>"dyn"（或 "dy"）</description>
             </item>
             <item>
-              <term>镑强制</term>
+              <term>磅力</term>
               <description>"lbf"</description>
             </item>
           </list>
           <list type="table">
             <item>
-              <term>Joule</term>
+              <term>焦耳</term>
               <description>"J"</description>
             </item>
             <item>
-              <term>Erg</term>
+              <term>尔格</term>
               <description>"e"</description>
             </item>
             <item>
@@ -3301,86 +3308,86 @@
             </item>
             <item>
               <term>电子伏</term>
-              <description>"eV"（或"ev"）</description>
+              <description>"eV"（或 "ev"）</description>
             </item>
             <item>
-              <term>动力小时</term>
-              <description>"HPh"（或"hh"）</description>
+              <term>马力-小时</term>
+              <description>"HPh"（或 "hh"）</description>
             </item>
             <item>
-              <term>Watt-hour</term>
-              <description>"Wh"（或"wh"）</description>
+              <term>瓦特-小时</term>
+              <description>"Wh"（或者"wh"）</description>
             </item>
             <item>
-              <term>Foot-pound</term>
+              <term>英尺磅</term>
               <description>"flb"</description>
             </item>
             <item>
               <term>BTU</term>
-              <description>"BTU"（或"btu"）</description>
+              <description>"BTU"（或 "btu"）</description>
             </item>
           </list>
           <list type="table">
             <item>
-              <term>动力</term>
-              <description>"HP"（或"h"）</description>
+              <term>马力</term>
+              <description>"HP"（或 "h"）</description>
             </item>
             <item>
-              <term>瓦</term>
-              <description>"W"（或"w"）</description>
+              <term>瓦特</term>
+              <description>"W"（或 "w")</description>
             </item>
           </list>
           <list type="table">
             <item>
-              <term>特斯拉为单位</term>
+              <term>特斯拉</term>
               <description>"T"</description>
             </item>
             <item>
-              <term>Gauss</term>
+              <term>高斯</term>
               <description>"ga"</description>
             </item>
           </list>
           <list type="table">
             <item>
               <term>摄氏度</term>
-              <description>"C"（或"cel"）</description>
+              <description>"C"（或 "cel"）</description>
             </item>
             <item>
               <term>华氏度</term>
-              <description>"F"（或"fah"）</description>
+              <description>"F"（或 "fah"）</description>
             </item>
             <item>
-              <term>开氏</term>
-              <description>"K"（或"kel"）</description>
+              <term>开尔文</term>
+              <description>"K"（或 "kel"）</description>
             </item>
           </list>
           <list type="table">
             <item>
-              <term>让我们庆祝您</term>
+              <term>茶匙</term>
               <description>"tsp"</description>
             </item>
             <item>
               <term>汤匙</term>
-              <description>"tb"</description>
+              <description>"tbs"</description>
             </item>
             <item>
               <term>液量盎司</term>
-              <description>"盎司"</description>
+              <description>"oz"</description>
             </item>
             <item>
-              <term>奖杯</term>
-              <description>"奖杯"</description>
+              <term>杯</term>
+              <description>"cup"</description>
             </item>
             <item>
-              <term>美国品脱</term>
-              <description>"pt"（或"us_pt"）</description>
+              <term>U.S. 品脱</term>
+              <description>"pt"（或 "us_pt"）</description>
             </item>
             <item>
-              <term>英国品脱</term>
+              <term>U.K. 品脱</term>
               <description>"uk_pt"</description>
             </item>
             <item>
-              <term>Quart</term>
+              <term>夸脱</term>
               <description>"qt"</description>
             </item>
             <item>
@@ -3389,49 +3396,49 @@
             </item>
             <item>
               <term>升</term>
-              <description>"l"（或"lt"）</description>
+              <description>"l"（或 "lt"）</description>
             </item>
           </list>
           <para>下列缩写的单位前缀可以加在任何公制单位 from_unit 或 to_unit 之前。</para>
           <list type="table">
             <item>
               <term>exa</term>
-              <description>1E 18 +</description>
+              <description>1E+18</description>
               <description>"E"</description>
             </item>
             <item>
               <term>peta</term>
-              <description>1E + 15</description>
+              <description>1E+15</description>
               <description>"P"</description>
             </item>
             <item>
               <term>tera</term>
-              <description>1E + 12</description>
+              <description>1E+12</description>
               <description>"T"</description>
             </item>
             <item>
               <term>giga</term>
-              <description>1E + 09</description>
+              <description>1E+09</description>
               <description>"G"</description>
             </item>
             <item>
-              <term>大型</term>
-              <description>1E + 06</description>
+              <term>mega</term>
+              <description>1E+06</description>
               <description>"M"</description>
             </item>
             <item>
-              <term>千</term>
-              <description>1E + 03</description>
+              <term>kilo</term>
+              <description>1E+03</description>
               <description>"k"</description>
             </item>
             <item>
               <term>hecto</term>
-              <description>1E + 02</description>
-              <description>"h 之间"</description>
+              <description>1E+02</description>
+              <description>"h"</description>
             </item>
             <item>
               <term>dekao</term>
-              <description>1E + 01</description>
+              <description>1E+01</description>
               <description>"e"</description>
             </item>
             <item>
@@ -3440,23 +3447,23 @@
               <description>"d"</description>
             </item>
             <item>
-              <term>厘</term>
+              <term>centi</term>
               <description>1E-02</description>
               <description>"c"</description>
             </item>
             <item>
-              <term>毫秒</term>
+              <term>milli</term>
               <description>1E-03</description>
               <description>"m"</description>
             </item>
             <item>
-              <term>微</term>
-              <description>1E 06</description>
+              <term>micro</term>
+              <description>1E-06</description>
               <description>"u"</description>
             </item>
             <item>
               <term>nano</term>
-              <description>1E 09</description>
+              <description>1E-09</description>
               <description>"n"</description>
             </item>
             <item>
@@ -3466,12 +3473,12 @@
             </item>
             <item>
               <term>femto</term>
-              <description>1E 15</description>
+              <description>1E-15</description>
               <description>"f"</description>
             </item>
             <item>
               <term>atto</term>
-              <description>1E 18</description>
+              <description>1E-18</description>
               <description>"a"</description>
             </item>
           </list>
@@ -4000,19 +4007,19 @@
           <list type="table">
             <item>
               <term>0 或省略</term>
-              <description>我们 (NASD) 30/360</description>
+              <description>美国（美国证券交易商协会）30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/实际实际值</description>
+              <term>1</term>
+              <description>实际天数/实际天数</description>
             </item>
             <item>
               <term>2</term>
-              <description>实际/360</description>
+              <description>实际天数/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>实际/365</description>
+              <description>实际天数/365</description>
             </item>
             <item>
               <term>4</term>
@@ -4068,19 +4075,19 @@
           <list type="table">
             <item>
               <term>0 或省略</term>
-              <description>我们 (NASD) 30/360</description>
+              <description>美国（美国证券交易商协会）30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/实际实际值</description>
+              <term>1</term>
+              <description>实际天数/实际天数</description>
             </item>
             <item>
               <term>2</term>
-              <description>实际/360</description>
+              <description>实际天数/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>实际/365</description>
+              <description>实际天数/365</description>
             </item>
             <item>
               <term>4</term>
@@ -4136,19 +4143,19 @@
           <list type="table">
             <item>
               <term>0 或省略</term>
-              <description>我们 (NASD) 30/360</description>
+              <description>美国（美国证券交易商协会）30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/实际实际值</description>
+              <term>1</term>
+              <description>实际天数/实际天数</description>
             </item>
             <item>
               <term>2</term>
-              <description>实际/360</description>
+              <description>实际天数/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>实际/365</description>
+              <description>实际天数/365</description>
             </item>
             <item>
               <term>4</term>
@@ -4204,19 +4211,19 @@
           <list type="table">
             <item>
               <term>0 或省略</term>
-              <description>我们 (NASD) 30/360</description>
+              <description>美国（美国证券交易商协会）30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/实际实际值</description>
+              <term>1</term>
+              <description>实际天数/实际天数</description>
             </item>
             <item>
               <term>2</term>
-              <description>实际/360</description>
+              <description>实际天数/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>实际/365</description>
+              <description>实际天数/365</description>
             </item>
             <item>
               <term>4</term>
@@ -4272,19 +4279,19 @@
           <list type="table">
             <item>
               <term>0 或省略</term>
-              <description>我们 (NASD) 30/360</description>
+              <description>美国（美国证券交易商协会）30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/实际实际值</description>
+              <term>1</term>
+              <description>实际天数/实际天数</description>
             </item>
             <item>
               <term>2</term>
-              <description>实际/360</description>
+              <description>实际天数/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>实际/365</description>
+              <description>实际天数/365</description>
             </item>
             <item>
               <term>4</term>
@@ -4340,19 +4347,19 @@
           <list type="table">
             <item>
               <term>0 或省略</term>
-              <description>我们 (NASD) 30/360</description>
+              <description>美国（美国证券交易商协会）30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/实际实际值</description>
+              <term>1</term>
+              <description>实际天数/实际天数</description>
             </item>
             <item>
               <term>2</term>
-              <description>实际/360</description>
+              <description>实际天数/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>实际/365</description>
+              <description>实际天数/365</description>
             </item>
             <item>
               <term>4</term>
@@ -4674,8 +4681,8 @@
           <para>下表列出了值中使用<paramref name="Arg6" />。</para>
           <list type="table">
             <item>
-              <term>0 （零）</term>
-              <description>付款期结束时</description>
+              <term>0（零）</term>
+              <description>期末付款</description>
             </item>
             <item>
               <term>1</term>
@@ -4733,8 +4740,8 @@
           <para>下表列出了值中使用<paramref name="Arg6" />。</para>
           <list type="table">
             <item>
-              <term>0 （零）</term>
-              <description>付款期结束时</description>
+              <term>0（零）</term>
+              <description>期末付款</description>
             </item>
             <item>
               <term>1</term>
@@ -4788,12 +4795,12 @@
           <para>其中条目是您想要查找的文本或值。 例如：</para>
           <list type="table">
             <item>
-              <term>="= 李小明"</term>
-              <description>= 李小明</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>="= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>筛选时文本数据，Excel 不区分大写和小写字符。 但是，您可以使用公式执行区分大小写的搜索。</para>
@@ -4869,13 +4876,13 @@
             <item>
               <term>
                 <b>false</b>或省略</term>
-              <description>美国 (NASD) 方法。如果的开始日期的月 31 日，则等于同一个月 30 日。如果的结束日期是一个月 31 日和开始日期早于月 30 日的结束日期等于下个月; 14-1st否则结束日期等于同一个月 30 日。</description>
+              <description>美国 (NASD) 方法。如果起始日期是一个月的 31 号，则会等于同月的 30 号。如果终止日期是一个月的 31 号，且起始日期早于 30 号，则终止日期等于下一个月的 1 号；否则，终止日期会等于同月的 30 号。</description>
             </item>
             <item>
               <term>
-                <b>，则返回 true</b>
+                <b>true</b>
               </term>
-              <description>欧洲方法。起始日期和结束日期的月 31 日上发生将等于同一个月 30 日。</description>
+              <description>欧洲方法。发生在一个月的 31 号的起始日期和终止日期都将等于同月的 30 号。</description>
             </item>
           </list>
           <para>Microsoft Excel 以序数形式存储日期以使其可用于计算。默认情况下，1900 年 1 月 1 日的序数是 1；2008 年 1 月 1 日的序数是 39448，因为该日期距 1900 年 1 月 1 日有 39,448 天。Microsoft Excel for the Macintosh 使用另外一个默认日期系统。</para>
@@ -4994,12 +5001,12 @@
           <para>其中条目是文本或要查找的值。 例如：</para>
           <list type="table">
             <item>
-              <term>="= 李小明"</term>
-              <description>= 李小明</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>="= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>筛选时文本数据，Excel 不区分大写和小写字符。 但是，您可以使用公式执行区分大小写的搜索。</para>
@@ -5043,12 +5050,12 @@
           <para>其中条目是文本或要查找的值。 例如：</para>
           <list type="table">
             <item>
-              <term>="= 李小明"</term>
-              <description>= 李小明</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>="= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>筛选时文本数据，Excel 不区分大写和小写字符。 但是，您可以使用公式执行区分大小写的搜索。</para>
@@ -5446,12 +5453,12 @@
           <para>其中条目是文本或要查找的值。 例如：</para>
           <list type="table">
             <item>
-              <term>="= 李小明"</term>
-              <description>= 李小明</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>="= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>筛选时文本数据，Excel 不区分大写和小写字符。 但是，您可以使用公式执行区分大小写的搜索。</para>
@@ -5550,12 +5557,12 @@
           <para>其中条目是文本或要查找的值。 例如：</para>
           <list type="table">
             <item>
-              <term>="= 李小明"</term>
-              <description>= 李小明</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>="= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>筛选时文本数据，Excel 不区分大写和小写字符。 但是，您可以使用公式执行区分大小写的搜索。</para>
@@ -5599,12 +5606,12 @@
           <para>其中条目是文本或要查找的值。 例如：</para>
           <list type="table">
             <item>
-              <term>="= 李小明"</term>
-              <description>= 李小明</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>="= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>筛选时文本数据，Excel 不区分大写和小写字符。 但是，您可以使用公式执行区分大小写的搜索。</para>
@@ -5753,12 +5760,12 @@
           <para>其中条目是文本或要查找的值。 例如：</para>
           <list type="table">
             <item>
-              <term>="= 李小明"</term>
-              <description>= 李小明</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>="= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>筛选时文本数据，Excel 不区分大写和小写字符。 但是，您可以使用公式执行区分大小写的搜索。</para>
@@ -5802,12 +5809,12 @@
           <para>其中条目是文本或要查找的值。 例如：</para>
           <list type="table">
             <item>
-              <term>="= 李小明"</term>
-              <description>= 李小明</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>="= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>筛选时文本数据，Excel 不区分大写和小写字符。 但是，您可以使用公式执行区分大小写的搜索。</para>
@@ -5851,12 +5858,12 @@
           <para>其中条目是文本或要查找的值。 例如：</para>
           <list type="table">
             <item>
-              <term>="= 李小明"</term>
-              <description>= 李小明</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>="= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>筛选时文本数据，Excel 不区分大写和小写字符。 但是，您可以使用公式执行区分大小写的搜索。</para>
@@ -5900,12 +5907,12 @@
           <para>其中条目是文本或要查找的值。 例如：</para>
           <list type="table">
             <item>
-              <term>="= 李小明"</term>
-              <description>= 李小明</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>="= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>筛选时文本数据，Excel 不区分大写和小写字符。 但是，您可以使用公式执行区分大小写的搜索。</para>
@@ -6077,19 +6084,19 @@
           <list type="table">
             <item>
               <term>0 或省略</term>
-              <description>我们 (NASD) 30/360</description>
+              <description>美国（美国证券交易商协会）30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/实际实际值</description>
+              <term>1</term>
+              <description>实际天数/实际天数</description>
             </item>
             <item>
               <term>2</term>
-              <description>实际/360</description>
+              <description>实际天数/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>实际/365</description>
+              <description>实际天数/365</description>
             </item>
             <item>
               <term>4</term>
@@ -6144,12 +6151,12 @@
           <para>其中条目是文本或要查找的值。 例如：</para>
           <list type="table">
             <item>
-              <term>="= 李小明"</term>
-              <description>= 李小明</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>="= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>筛选时文本数据，Excel 不区分大写和小写字符。 但是，您可以使用公式执行区分大小写的搜索。</para>
@@ -6193,12 +6200,12 @@
           <para>其中条目是文本或要查找的值。 例如：</para>
           <list type="table">
             <item>
-              <term>="= 李小明"</term>
-              <description>= 李小明</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>="= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>筛选时文本数据，Excel 不区分大写和小写字符。 但是，您可以使用公式执行区分大小写的搜索。</para>
@@ -7060,9 +7067,13 @@
           <list type="bullet">
             <item>
               <description>
-                <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Find(System.String,System.String,System.Object)" />始终将每个字符，计算单字节还是双字节，作为 1，无论什么默认语言设置是.</description>
-            </item>已启用的编辑支持 DBCS 的语言，然后将其设置为默认语言时， 
-            <item><description><b>findb 将</b>作为 2 计算每个双字节字符。否则， <b>findb 将</b>作为 1 计算每个字符。</description></item></list>
+                <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Find(System.String,System.String,System.Object)" />无论是单字节还是双字节，作为 1，无论默认语言设置，始终将每个字符，计数。</description>
+            </item>
+            <item>
+              <description>已启用的编辑支持 DBCS 的语言，然后将其设置为默认语言时， 
+                <b>findb 将</b>作为 2 计算每个双字节字符。 否则， <b>findb 将</b>作为 1 计算每个字符。</description>
+            </item>
+          </list>
           <para>支持 DBCS 的语言包括日语、中文（简体）、中文（繁体）和朝鲜语。</para>
           <para>
             <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Find(System.String,System.String,System.Object)" />和<b>findb 将</b>区分大小写，并不允许使用通配符。 如果您不希望执行区分大小写的搜索或使用通配符字符，则可以使用<see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Search(System.String,System.String,System.Object)" />和<see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.SearchB(System.String,System.String,System.Object)" />。 </para>
@@ -7338,16 +7349,19 @@
           <list type="table">
             <item>
               <term>-/-</term>
-              <description>离零舍。</description>
+              <description>离零舍入。</description>
             </item>
             <item>
-              <term>+/+</term>向零舍入。
+              <term>+/+</term>
+              <description>向零舍入。</description>
             </item>
             <item>
-              <term>-/+</term>离零舍。
+              <term>-/+</term>
+              <description>离零舍入。</description>
             </item>
             <item>
-              <term>+/-</term>向零舍入。
+              <term>+/-</term>
+              <description>向零舍入。</description>
             </item>
           </list>
           <para>如果任一参数为非数值型， <b>Floor_Precise</b>方法将生成一个错误。 </para>
@@ -7519,11 +7533,11 @@
           <list type="table">
             <item>
               <term>0</term>
-              <description>末尾的句号</description>
+              <description>期末</description>
             </item>
             <item>
-              <description>期初</description>
               <term>1</term>
+              <description>期初</description>
             </item>
           </list>
           <para>请确保用于指定 rate 和 nper 的单位的一致性。例如，同样是四年期年利率为 12% 的贷款，如果按月支付，rate 应为 12%/12，nper 应为 4*12；如果按年支付，rate 应为 12%，nper 为 4。</para>
@@ -9764,11 +9778,11 @@
           <list type="bullet">
             <item>
               <description>
-                <b>截获</b>和<see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Slope(System.Object,System.Object)" />返回 #DIV/0 ！错误。<b>截获</b>和<see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Slope(System.Object,System.Object)" />算法旨在查找且只有一个回答，并在这种情况下可以有多个答案。</description>
+                <b>截获</b>和<see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Slope(System.Object,System.Object)" />返回 #DIV/0 ！ 错误。 <b>截获</b>和<see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Slope(System.Object,System.Object)" />算法旨在查找且只有一个回答，并在这种情况下可以有多个答案。 </description>
             </item>
             <item>
               <description>
-                <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" />返回值为 0。<see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" />算法旨在返回合理数据的结果共线，并在这种情况下可以找到至少一个答案。</description>
+                <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" />返回值为 0。 <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" />算法旨在返回合理数据的结果共线，并在这种情况下可以找到至少一个答案。</description>
             </item>
           </list>
           <para></para>
@@ -9812,19 +9826,19 @@
           <list type="table">
             <item>
               <term>0 或省略</term>
-              <description>我们 (NASD) 30/360</description>
+              <description>美国（美国证券交易商协会）30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/实际实际值</description>
+              <term>1</term>
+              <description>实际天数/实际天数</description>
             </item>
             <item>
               <term>2</term>
-              <description>实际/360</description>
+              <description>实际天数/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>实际/365</description>
+              <description>实际天数/365</description>
             </item>
             <item>
               <term>4</term>
@@ -9889,14 +9903,14 @@
           <list type="table">
             <item>
               <term>0</term>
-              <description>末尾的句号</description>
+              <description>期末</description>
             </item>
             <item>
-              <description>期初</description>
               <term>1</term>
+              <description>期初</description>
             </item>
           </list>
-          <para>请确保用于指定 rate 和 nper 的单位的一致性。例如，同样是四年期年利率为 12% 的贷款，如果按月支付，rate 应为 12%/12，nper 应为 4*12；如果按年支付，rate 应为 12%，nper 为 4。</para>
+          <para>请确保用于指定 rate 和 nper 的单位的一致性。例如，同样是四年期年利率为 12% 的贷款，如果按月支付，rate 应为 12%/12，nper 应为 4*12；如果按年支付，rate 应为 12%，nper 为 4。 </para>
           <para>在所有参数中，支出的款项，如银行存款，表示为负数；收入的款项，如股息支票，表示为正数。</para>
           <para></para>
         </remarks>
@@ -10689,8 +10703,8 @@
           <para>附加回归统计值如下：</para>
           <list type="table">
             <item>
-              <term>se1、 se2，...，离</term>
-              <description>标准误差值系数 m1、 m2，...，mn。</description>
+              <term>se1，se2，...离</term>
+              <description>系数 m1,m2,...,mn 的标准误差值。</description>
             </item>
             <item>
               <term>seb</term>
@@ -10698,18 +10712,19 @@
             </item>
             <item>
               <term>r2</term>
-              <description>确定系数。比较估计和实际 y 的值，范围为从 0 到 1 值。如果为 1，则示例好的相关性 — 在估计的 y 值和实际的 y 值之间没有区别。在另一个极限值，如果确定系数为 0，回归公式不能用来预测的 y 值。</description>
+              <description>确定系数。 比较估计和实际 y 的值，范围为从 0 到 1 值。 如果为 1，则示例好的相关性 — 在估计的 y 值和实际的 y 值之间没有区别。 在另一个极限值，如果确定系数为 0，回归公式不能用来预测的 y 值。 </description>
             </item>
             <item>
               <term>sey</term>
-              <description>y 估计值标准误差。</description>
+              <description>y 估计值的标准误差。</description>
             </item>
             <item>
-              <term>F</term>F
-              <description>统计信息或 F 观察值。F 统计用于确定是否的观察到的从属和独立变量关系发生的可能性。</description></item>
+              <term>F</term>
+              <description>F 统计或 F 观察值。使用 F 统计可以判断因变量和自变量之间是否偶尔发生过可观察到的关系。</description>
+            </item>
             <item>
               <term>df</term>
-              <description>自由度数。使用自由度可帮助您查找统计表中的 F 临界值。比较的 F 统计表中查找的值由返回<b>linest 函数</b>来确定可信度级别的模型。</description>
+              <description>自由度。 使用自由度可帮助您查找统计表中的 F 临界值。 比较的 F 统计表中查找的值由返回<b>linest 函数</b>来确定可信度级别的模型。 </description>
             </item>
             <item>
               <term>ssreg</term>
@@ -10717,7 +10732,7 @@
             </item>
             <item>
               <term>ssresid</term>
-              <description>剩余的平方和。</description>
+              <description>剩余平方和。</description>
             </item>
           </list>
           <para>下面的图示显示了附加回归统计值返回的顺序。</para>
@@ -11123,13 +11138,14 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
         <remarks>
           <list type="table">
             <item>
-              <term>一行或单列区域 （称为向量） 中查找值和返回第二个一行或一个列区域中相同位置中的值</term>
+              <term>在单行区域或单列区域（称为“向量”）中查找值，然后返回第二个单行区域或单列区域中相同位置的值。</term>
               <description>向量形式</description>
-              <description>您具有大型列表的值，以查找或时值可能会随时间时使用的向量形式。</description>
+              <description>当要查询的值列表较大或者值可能会随时间而改变时，使用该向量形式。</description>
             </item>
             <item>
-              <description>使用数组的
-              <term>数组的指定列的第一行中的外观值并返回中的最后一个行或列的数组中相同位置的值</term><description>数组形式</description>窗体具有列表较小并且值时保持不变随着时间的推移。</description>
+              <term>在数组的第一行或第一列中查找指定的数值，然后返回数组的最后一行或最后一列中相同位置的数值。</term>
+              <description>数组形式</description>
+              <description>当值列表较小并且值在一段时间内保持不变时，使用该数组形式。</description>
             </item>
           </list>
           <para>
@@ -11490,13 +11506,13 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
             <b>注意</b>： <b>Median</b>函数趋，这是一组数统计分布中的中心的位置。 三个趋大多数常用方法是：</para>
           <list type="bullet">
             <item>
-              <description>平均值即算术平均值，是通过添加一组数，然后除以这些数字的个数。例如，2、 3、 3、 5、 7 和 10 的平均值为 30 除以 6，这是 5。</description>
+              <description>算术平均值，并通过添加一组数，然后除以这些号码数计算的平均值。 例如，2、 3、 3、 5、 7 和 10 的平均值为 30 除以 6，这是 5。 </description>
             </item>
             <item>
-              <description>这是一组数字的中间数; 这是的 Median、 一半的号码的值都大于 median 和半号码的值都小于中间值。例如，2、 3、 3、 5、 7 和 10 的中间值是 4。</description>
+              <description>这是一组数; 中间号的中间值即一半的号码的值都大于 median 和半号码的值都小于中间值。 例如，2、 3、 3、 5、 7 和 10 的中间值是 4。</description>
             </item>
             <item>
-              <description>这是一组数中的出现频率最多号的模式。例如，2、 3、 3、 5、 7 和 10 的模式为 3。</description>
+              <description>这是一组数中的出现频率最多号的模式。 例如，2、 3、 3、 5、 7 和 10 的模式为 3。</description>
             </item>
           </list>
           <para>对于对称分布的一组数字，这三种趋中性衡量方式完全相同。对于偏态分布的一组数字，这些衡量方式可能会不同。</para>
@@ -11637,12 +11653,12 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
 </para>
           <list type="table">
             <item>
-              <term>第 1 行</term>
+              <term>第一行</term>
               <description>d / (*d-b*c)</description>
               <description>b / (b*c a*d)</description>
             </item>
             <item>
-              <term>第 2 行</term>
+              <term>第二行</term>
               <description>c / (b*c a*d)</description>
               <description>/ (*d-b*c)</description>
             </item>
@@ -11839,13 +11855,13 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
             <b>注意</b>：<b>模式</b>函数趋，这是一组数统计分布中的中心的位置。 三个趋大多数常用方法是：</para>
           <list type="bullet">
             <item>
-              <description>平均值即算术平均值，是通过添加一组数，然后除以这些数字的个数。例如，2、 3、 3、 5、 7 和 10 的平均值为 30 除以 6，这是 5。</description>
+              <description>算术平均值，并通过添加一组数，然后除以这些号码数计算的平均值。 例如，2、 3、 3、 5、 7 和 10 的平均值为 30 除以 6，这是 5。 </description>
             </item>
             <item>
-              <description>这是一组数字的中间数; 这是的 Median、 一半的号码的值都大于 median 和半号码的值都小于中间值。例如，2、 3、 3、 5、 7 和 10 的中间值是 4。</description>
+              <description>这是一组数; 中间号的中间值即一半的号码的值都大于 median 和半号码的值都小于中间值。 例如，2、 3、 3、 5、 7 和 10 的中间值是 4。 </description>
             </item>
             <item>
-              <description>模式它最常出现号码中一组数。例如，2、 3、 3、 5、 7 和 10 的模式为 3。</description>
+              <description>这是一组数中的出现频率最多号的模式。 例如，2、 3、 3、 5、 7 和 10 的模式为 3。</description>
             </item>
           </list>
           <para>对于对称分布的一组数字，这三种趋中性衡量方式完全相同。对于偏态分布的一组数字，这些衡量方式可能会不同。</para>
@@ -12037,13 +12053,13 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
             <b>注意</b>： <b>Mode_Sngl</b>函数趋，这是一组数统计分布中的中心的位置。 三个趋大多数常用方法是：</para>
           <list type="bullet">
             <item>
-              <description>平均算术平均值，和的计算方法添加一组数，然后除以这些数字的个数。例如，2、 3、 3、 5、 7 和 10 的平均值为 30 除以 6，这是 5。</description>
+              <description>平均算术平均值，和的计算方法添加一组数，然后除以这些数字的个数。 例如，2、 3、 3、 5、 7 和 10 的平均值为 30 除以 6，这是 5。 </description>
             </item>
             <item>
-              <description>Median 中间数一组数; 即的值都大于 median 的半号码以及具有值的中间值小于的半号码。例如，2、 3、 3、 5、 7 和 10 的中间值是 4。</description>
+              <description>Median 的一组数; 中间数即一半的号码的值都大于 median 和半号码的值都小于中间值。 例如，2、 3、 3、 5、 7 和 10 的中间值是 4。 </description>
             </item>
             <item>
-              <description>模式号码的一组中出现频率最多的数。例如，2、 3、 3、 5、 7 和 10 的模式为 3。</description>
+              <description>模式号码的一组中出现频率最多数量。 例如，2、 3、 3、 5、 7 和 10 的模式为 3。</description>
             </item>
           </list>
           <para>对于对称分布的一组数字，这三种趋中性衡量方式完全相同。对于偏态分布的一组数字，这些衡量方式可能会不同。</para>
@@ -12792,11 +12808,11 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 或省略</term>
-              <description>末尾的句号</description>
+              <description>期末</description>
             </item>
             <item>
-              <description>期初</description>
               <term>1</term>
+              <description>期初</description>
             </item>
           </list>
           <para></para>
@@ -13128,19 +13144,19 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 或省略</term>
-              <description>我们 (NASD) 30/360</description>
+              <description>美国（美国证券交易商协会）30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/实际实际值</description>
+              <term>1</term>
+              <description>实际天数/实际天数</description>
             </item>
             <item>
               <term>2</term>
-              <description>实际/360</description>
+              <description>实际天数/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>实际/365</description>
+              <description>实际天数/365</description>
             </item>
             <item>
               <term>4</term>
@@ -13231,19 +13247,19 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 或省略</term>
-              <description>我们 (NASD) 30/360</description>
+              <description>美国（美国证券交易商协会）30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/实际实际值</description>
+              <term>1</term>
+              <description>实际天数/实际天数</description>
             </item>
             <item>
               <term>2</term>
-              <description>实际/360</description>
+              <description>实际天数/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>实际/365</description>
+              <description>实际天数/365</description>
             </item>
             <item>
               <term>4</term>
@@ -13308,19 +13324,19 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 或省略</term>
-              <description>我们 (NASD) 30/360</description>
+              <description>美国（美国证券交易商协会）30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/实际实际值</description>
+              <term>1</term>
+              <description>实际天数/实际天数</description>
             </item>
             <item>
               <term>2</term>
-              <description>实际/360</description>
+              <description>实际天数/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>实际/365</description>
+              <description>实际天数/365</description>
             </item>
             <item>
               <term>4</term>
@@ -13384,19 +13400,19 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 或省略</term>
-              <description>我们 (NASD) 30/360</description>
+              <description>美国（美国证券交易商协会）30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/实际实际值</description>
+              <term>1</term>
+              <description>实际天数/实际天数</description>
             </item>
             <item>
               <term>2</term>
-              <description>实际/360</description>
+              <description>实际天数/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>实际/365</description>
+              <description>实际天数/365</description>
             </item>
             <item>
               <term>4</term>
@@ -14056,11 +14072,11 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 或省略</term>
-              <description>末尾的句号</description>
+              <description>期末</description>
             </item>
             <item>
-              <description>期初</description>
               <term>1</term>
+              <description>期初</description>
             </item>
           </list>
           <para>
@@ -14242,11 +14258,11 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 或省略</term>
-              <description>末尾的句号</description>
+              <description>期末</description>
             </item>
             <item>
-              <description>期初</description>
               <term>1</term>
+              <description>期初</description>
             </item>
           </list>
           <para>应确保所指定的 rate 和 nper 单位的一致性。例如，同样是四年期年利率为 12% 的贷款，如果按月支付，rate 应为 12%/12，nper 应为 4*12；如果按年支付，rate 应为 12%，nper 为 4。</para>
@@ -14297,19 +14313,19 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 或省略</term>
-              <description>我们 (NASD) 30/360</description>
+              <description>美国（美国证券交易商协会）30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/实际实际值</description>
+              <term>1</term>
+              <description>实际天数/实际天数</description>
             </item>
             <item>
               <term>2</term>
-              <description>实际/360</description>
+              <description>实际天数/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>实际/365</description>
+              <description>实际天数/365</description>
             </item>
             <item>
               <term>4</term>
@@ -14376,19 +14392,19 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 或省略</term>
-              <description>我们 (NASD) 30/360</description>
+              <description>美国（美国证券交易商协会）30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/实际实际值</description>
+              <term>1</term>
+              <description>实际天数/实际天数</description>
             </item>
             <item>
               <term>2</term>
-              <description>实际/360</description>
+              <description>实际天数/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>实际/365</description>
+              <description>实际天数/365</description>
             </item>
             <item>
               <term>4</term>
@@ -14455,19 +14471,19 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 或省略</term>
-              <description>我们 (NASD) 30/360</description>
+              <description>美国（美国证券交易商协会）30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/实际实际值</description>
+              <term>1</term>
+              <description>实际天数/实际天数</description>
             </item>
             <item>
               <term>2</term>
-              <description>实际/360</description>
+              <description>实际天数/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>实际/365</description>
+              <description>实际天数/365</description>
             </item>
             <item>
               <term>4</term>
@@ -14689,27 +14705,27 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 或省略</term>
-              <description>末尾的句号</description>
+              <description>期末</description>
             </item>
             <item>
-              <description>期初</description>
               <term>1</term>
+              <description>期初</description>
             </item>
           </list>
-          <para>应确保所指定的 rate 和 nper 单位的一致性。例如，同样是四年期年利率为 12% 的贷款，如果按月支付，rate 应为 12%/12，nper 应为 4*12；如果按年支付，rate 应为 12%，nper 为 4。</para>
+          <para>应确保所指定的 rate 和 nper 单位的一致性。例如，同样是四年期年利率为 12% 的贷款，如果按月支付，rate 应为 12%/12，nper 应为 4*12；如果按年支付，rate 应为 12%，nper 为 4。 </para>
           <para>以下功能应用于年金： </para>
           <list type="table">
             <item>
-              <term>则 CUMIPMT</term>
+              <term>CUMIPMT</term>
               <description>PPMT</description>
             </item>
             <item>
-              <term>则 CUMPRINC</term>
+              <term>CUMPRINC</term>
               <description>PV</description>
             </item>
             <item>
               <term>FV</term>
-              <description>速率</description>
+              <description>RATE</description>
             </item>
             <item>
               <term>FVSCHEDULE</term>
@@ -14725,10 +14741,10 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
             </item>
           </list>
           <para>年金是一系列连续时间所做的固定的现金付款。 例如，一笔贷款在汽车或按揭贷款是年金。 有关详细信息，请参阅每个年金函数的说明。 </para>
-          <para>在年金函数中，支出的款项，如银行存款，表示为负数；收入的款项，如股息收入，表示为正数。例如，对于储户来说，$1000 银行存款可表示为参数 -1,000，而对于银行来说该参数为 1,000。</para>
+          <para>在年金函数中，支出的款项，如银行存款，表示为负数；收入的款项，如股息收入，表示为正数。例如，对于储户来说，$1000 银行存款可表示为参数 -1,000，而对于银行来说该参数为 1,000。 </para>
           <para>下面列出的是 Microsoft Excel 进行财务运算的公式，如果 rate 不为 0，则：
 
-</para>
+ </para>
           <para>图 1： 公式当利率不 0</para>
           <para></para>
           <para></para>
@@ -14776,19 +14792,19 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
             </item>
             <item>
               <term>1</term>
-              <description>第一个四分位数 （第 25 个百分点值）</description>
+              <description>第一个四分位数（第 25 个百分点值）</description>
             </item>
             <item>
               <term>2</term>
-              <description>中值 （第 50 个百分点值）</description>
+              <description>中值（第 50 个百分点值）</description>
             </item>
             <item>
               <term>3</term>
-              <description>第三个四分位数 （第 75 个百分点值）</description>
+              <description>第三个四分位数（第 75 个百分点值）</description>
             </item>
             <item>
               <term>4</term>
-              <description>的最大值</description>
+              <description>最大值</description>
             </item>
           </list>
           <para>如果 array 为空，<b>则 Quartile</b>将返回 #NUM ！ 错误值。 </para>
@@ -15128,11 +15144,11 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 或省略</term>
-              <description>末尾的句号</description>
+              <description>期末</description>
             </item>
             <item>
-              <description>期初</description>
               <term>1</term>
+              <description>期初</description>
             </item>
           </list>
           <para>如果省略 guess，则假定其值为 10%。</para>
@@ -15181,19 +15197,19 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 或省略</term>
-              <description>我们 (NASD) 30/360</description>
+              <description>美国（美国证券交易商协会）30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/实际实际值</description>
+              <term>1</term>
+              <description>实际天数/实际天数</description>
             </item>
             <item>
               <term>2</term>
-              <description>实际/360</description>
+              <description>实际天数/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>实际/365</description>
+              <description>实际天数/365</description>
             </item>
             <item>
               <term>4</term>
@@ -15366,7 +15382,7 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 或省略</term>
-              <description>经典。</description>
+              <description>古典型。</description>
             </item>
             <item>
               <term>1</term>
@@ -15382,19 +15398,19 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
             </item>
             <item>
               <term>4</term>
-              <description>简化。</description>
+              <description>简化型。</description>
             </item>
             <item>
               <term>
-                <b>，则返回 true</b>
+                <b>true</b>
               </term>
-              <description>经典。</description>
+              <description>古典型。</description>
             </item>
             <item>
               <term>
                 <b>false</b>
               </term>
-              <description>简体。</description>
+              <description>简化型。</description>
             </item>
           </list>
           <para>如果 number 为负数，则将返回错误值 #VALUE!。</para>
@@ -16244,11 +16260,11 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="bullet">
             <item>
               <description>
-                <b>斜率</b>和<see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Intercept(System.Object,System.Object)" />返回 #DIV/0 ！错误。<b>斜率</b>和<see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Intercept(System.Object,System.Object)" />算法旨在查找且只有一个回答，并在这种情况下可以有多个答案。</description>
+                <b>斜率</b>和<see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Intercept(System.Object,System.Object)" />返回 #DIV/0 ！ 错误。 <b>斜率</b>和<see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Intercept(System.Object,System.Object)" />算法旨在查找且只有一个回答，并在这种情况下可以有多个答案。 </description>
             </item>
             <item>
               <description>
-                <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" />返回值为 0。<see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" />算法旨在返回合理数据的结果共线，并在这种情况下可以找到至少一个答案。</description>
+                <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" />返回值为 0。 <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" />算法旨在返回合理数据的结果共线，并在这种情况下可以找到至少一个答案。</description>
             </item>
           </list>
           <para></para>
@@ -17071,16 +17087,16 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
             </item>
             <item>
               <term>A1:A5</term>
-              <description>b1: b3</description>
+              <description>B1:B3</description>
               <description>B1:B5</description>
             </item>
             <item>
-              <term>A1: b4</term>
+              <term>A1:B4</term>
               <description>C1:D4</description>
               <description>C1:D4</description>
             </item>
             <item>
-              <term>A1: b4</term>
+              <term>A1:B4</term>
               <description>C1:C2</description>
               <description>C1:D4</description>
             </item>
@@ -17184,16 +17200,16 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
             </item>
             <item>
               <term>A1:A5</term>
-              <description>b1: b3</description>
+              <description>B1:B3</description>
               <description>B1:B5</description>
             </item>
             <item>
-              <term>A1: b4</term>
+              <term>A1:B4</term>
               <description>C1:D4</description>
               <description>C1:D4</description>
             </item>
             <item>
-              <term>A1: b4</term>
+              <term>A1:B4</term>
               <description>C1:C2</description>
               <description>C1:D4</description>
             </item>
@@ -18502,15 +18518,15 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>1</term>
-              <description>配对</description>
+              <description>成对</description>
             </item>
             <item>
               <term>2</term>
-              <description>双样本等方差 （同方差）</description>
+              <description>双样本等方差（同方差）</description>
             </item>
             <item>
               <term>3</term>
-              <description>双样本不等方差 （异方差）</description>
+              <description>双样本不等方差（异方差）</description>
             </item>
           </list>
           <para>如果 array1 和 array2 的数据点，并键入不同数量 = 1 （成对），<b>则 ttest 将</b>返回错误值 # n/A。 </para>
@@ -19176,43 +19192,43 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>1 或省略</term>
-              <description>数字 1 （星期日） 到 7 （星期六）。与早期版本的 Microsoft Excel 相似之处。</description>
+              <description>数字 1（星期日）到数字 7（星期六），同 Microsoft Excel 早期版本。</description>
             </item>
             <item>
               <term>2</term>
-              <description>数字 1 （星期一） 到 7 （星期日）。</description>
+              <description>数字 1（星期一）到 7（星期日）。</description>
             </item>
             <item>
               <term>3</term>
-              <description>数字 0 （星期一） 到 6 （星期日）。</description>
+              <description>数字 0（星期一）到 6（星期日）。</description>
             </item>
             <item>
               <term>11</term>
-              <description>数字 1 （星期一） 到 7 （星期日）。</description>
+              <description>数字 1（星期一）到 7（星期日）。</description>
             </item>
             <item>
               <term>12</term>
-              <description>数字 1 （星期二） 到 7 （星期一）</description>
+              <description>数字 1（星期二）到 7（星期一）</description>
             </item>
             <item>
               <term>13</term>
-              <description>数字 1 （星期三） 到 7 （星期二）</description>
+              <description>数字 1（星期三）到 7（星期二）</description>
             </item>
             <item>
               <term>14</term>
-              <description>数字 1 （星期四） 到 7 （星期三）</description>
+              <description>数字 1（星期四）到 7（星期三）</description>
             </item>
             <item>
               <term>15</term>
-              <description>数字 1 （星期五） 到 7 （星期四）</description>
+              <description>数字 1（星期五）到 7（星期四）</description>
             </item>
             <item>
               <term>16</term>
-              <description>数字 1 （星期六） 到 7 （星期五）</description>
+              <description>数字 1（星期六）到 7（星期五）</description>
             </item>
             <item>
               <term>17</term>
-              <description>数字 1 （星期日） 到 7 （星期六）</description>
+              <description>数字 1（星期日）到 7（星期六）</description>
             </item>
           </list>
           <para>Microsoft Excel 以序数形式存储日期以使其可用于计算。默认情况下，1900 年 1 月 1 日的序数是 1；2008 年 1 月 1 日的序数是 39448，因为该日期距 1900 年 1 月 1 日有 39,448 天。Microsoft Excel for the Macintosh 使用另外一个默认日期系统。</para>
@@ -19253,11 +19269,11 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>1</term>
-              <description>星期开始于星期日。Weekdays 进行编号 1 至 7。</description>
+              <description>星期从星期日开始。星期内的天数从 1 到 7 记数。</description>
             </item>
             <item>
               <term>2</term>
-              <description>星期开始于星期一。Weekdays 进行编号 1 至 7。</description>
+              <description>星期从星期一开始。星期内的天数从 1 到 7 记数。</description>
             </item>
           </list>
           <para>Microsoft Excel 以序数形式存储日期以使其可用于计算。默认情况下，1900 年 1 月 1 日的序数是 1；2008 年 1 月 1 日的序数是 39448，因为该日期距 1900 年 1 月 1 日有 39,448 天。Microsoft Excel for the Macintosh 使用另外一个默认日期系统。</para>
@@ -19670,19 +19686,19 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 或省略</term>
-              <description>我们 (NASD) 30/360</description>
+              <description>美国（美国证券交易商协会）30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/实际实际值</description>
+              <term>1</term>
+              <description>实际天数/实际天数</description>
             </item>
             <item>
               <term>2</term>
-              <description>实际/360</description>
+              <description>实际天数/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>实际/365</description>
+              <description>实际天数/365</description>
             </item>
             <item>
               <term>4</term>
@@ -19736,19 +19752,19 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 或省略</term>
-              <description>我们 (NASD) 30/360</description>
+              <description>美国（美国证券交易商协会）30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/实际实际值</description>
+              <term>1</term>
+              <description>实际天数/实际天数</description>
             </item>
             <item>
               <term>2</term>
-              <description>实际/360</description>
+              <description>实际天数/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>实际/365</description>
+              <description>实际天数/365</description>
             </item>
             <item>
               <term>4</term>
@@ -19807,19 +19823,19 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 或省略</term>
-              <description>我们 (NASD) 30/360</description>
+              <description>美国（美国证券交易商协会）30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/实际实际值</description>
+              <term>1</term>
+              <description>实际天数/实际天数</description>
             </item>
             <item>
               <term>2</term>
-              <description>实际/360</description>
+              <description>实际天数/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>实际/365</description>
+              <description>实际天数/365</description>
             </item>
             <item>
               <term>4</term>
