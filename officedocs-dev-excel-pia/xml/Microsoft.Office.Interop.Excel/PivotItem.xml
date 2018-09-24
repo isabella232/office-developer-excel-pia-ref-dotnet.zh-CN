@@ -1,10 +1,10 @@
 <Type Name="PivotItem" FullName="Microsoft.Office.Interop.Excel.PivotItem">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e442965f9ffbd148054a2f84e29e9a51ecca6941" />
+    <Meta Name="ms.openlocfilehash" Value="fb2cfd5e547820789be4ff24b8428ca8e43d853e" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578979" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotItem" />
@@ -162,7 +162,7 @@
         <summary>返回一个 object 值，该值代表之一的单个数据透视表项 (<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />对象) 或所有项的集合 (<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />对象) 所指定字段中的组子项或指定项的子级。 只读。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性不可用于 OLAP 数据源。</para>
+          <para>此属性对于 OLAP 数据源无效。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -194,7 +194,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -229,14 +229,16 @@
             <b>DataRange</b>属性返回以下内容，具体取决于对象：</para>
           <list type="table">
             <item>
-              <term>数据字段</term>的
-              <description>字段中包含的数据</description></item>
+              <term>“数据”字段</term>
+              <description>字段中包含的数据</description>
+            </item>
             <item>
-              <term>行、 列或页字段</term>的
-              <description>字段中的项</description></item>
+              <term>行、列或者页字段</term>
+              <description>字段中的数据项</description>
+            </item>
             <item>
-              <term>项目</term>
-              <description>限定项目的数据</description>
+              <term>数据项</term>
+              <description>数据项规范所限定的数据</description>
             </item>
           </list>
           <para></para>
@@ -266,7 +268,7 @@
       <Docs>
         <summary>删除对象。</summary>
         <remarks>
-          <para>仅当您已创建多维数据集字段自己使用，您可以删除多维数据集字段<see cref="M:Microsoft.Office.Interop.Excel.CalculatedMembers.Add(System.String,System.String,System.Object,System.Object)" />方法与<paramref name="xlCalculatedSet" />参数。</para>
+          <para>您可以删除多维数据集字段，如果您已创建多维数据集字段自己使用仅<see cref="M:Microsoft.Office.Interop.Excel.CalculatedMembers.Add(System.String,System.String,System.Object,System.Object)" />方法与<paramref name="xlCalculatedSet" />参数。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -300,8 +302,8 @@
         <summary>如果指定数据透视表字段或数据透视表项的标志设置为“drilled”（展开或可见），则为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>您可以使用此属性仅对于 OLAP 数据源。</para>
-          <para>如果字段或项被隐藏，则无法设置该属性。</para>
+          <para>此属性仅对 OLAP 数据源有效。</para>
+          <para>如果字段或项被隐藏，则不可设置此属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -333,7 +335,7 @@
         <summary>
           <see cref="M:Microsoft.Office.Interop.Excel.PivotItem.DrillTo(System.String)" />方法支持深化到指定<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />从<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />。</summary>
         <remarks>
-          <para>对于 OLAP 数据源，<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />要深化到具有相同的层次结构中为<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />正在 drilled 或多个属性层次结构旁边彼此放置在行或列，<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />要深化到必须是 1 属性每个其他; 旁边的层次结构没有用户层次结构可以放在之间<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />的<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />正在 drilled 和<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />要深化到。 如果不满足这些条件，则返回一个运行时错误。</para>
+          <para>对于 OLAP 数据源，<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />要深化到具有相同的层次结构中为<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />正在 drilled 或多个属性层次结构旁边彼此放置在行或列，<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />要深化到必须是 1 属性每个其他; 旁边的层次结构没有用户层次结构可以放在之间<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />的<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />正在 drilled 和<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />要深化到。  如果不满足这些条件，则返回一个运行时错误。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -367,10 +369,13 @@
         <summary>返回或设置 A1 样式表示法和宏语言中的对象的公式。读/写， <b>字符串</b> 。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性不可用于 OLAP 数据源。</para>
-          <para>如果单元格包含常量，该属性返回的常量。如果单元格为空，该<b>公式</b>属性将返回空字符串。如果单元格包含公式， <b>Formula</b>属性会将该公式返回相同的格式将公式栏 （包括等号） 中显示的字符串形式。</para>如果设置为日期值或单元格公式的
-          <para>，Microsoft Excel 将检查以查看是否已设置该单元格格式之一的日期或时间的数字格式。如果没有，Microsoft Excel 将号码格式设为默认的短日期数字格式。</para>如果该区域是一个-或两维范围
-          <para>，可以将公式设置为相同尺寸的 Visual Basic 阵列中。同样，将公式放到 Visual Basic 阵列中。</para><para>的多个单元格区域填充公式的范围中的所有单元格设置公式。</para><para></para></remarks>
+          <para>此属性对于 OLAP 数据源无效。</para>
+          <para>如果单元格包含一个常量，此属性返回该常量。如果单元格为空，此 <b>Formula</b> 属性返回一个空字符串。如果单元格包含公式，<b>Formula</b> 属性将该公式作为字符串返回，所用格式与在编辑栏（包括等号）中显示时的格式相同。</para>
+          <para>如果将单元格的值或者公式设置为日期类型，则 Microsoft Excel 将检查此单元格的数字格式是否符合日期或者时间格式。如果不符合，Microsoft Excel 将把数字格式设置为默认的短日期格式。</para>
+          <para>如果指定区域是一维或二维区域，则可将公式指定为 Visual Basic 中相同维数的数组。同样，也可在 Visual Basic 数组中使用公式。</para>
+          <para>如果为多单元格区域设置公式，则会用公式填充该区域所有的单元格。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCalculated">
@@ -399,7 +404,7 @@
         <summary>如果为<b>true</b>的数据透视表字段或数据透视表项为计算的字段或计算项。 只读 <b>Boolean</b>。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>对于 OLAP 数据源，此属性始终返回<b>False</b>。</para>
+          <para>对于 OLAP 数据源，此属性始终返回 <b>False</b>。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -582,7 +587,7 @@
         <summary>如果当前显示的项目字段中的项的位置。 可读写 <b>Integer</b>。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>的<see cref="T:Microsoft.Office.Interop.Excel.CubeFields" />集合，该属性返回位置层次结构字段的数据透视表它拖动时从字段井。</para>
+          <para>为<see cref="T:Microsoft.Office.Interop.Excel.CubeFields" />集合，此属性返回层次结构字段的位置上数据透视表报告从字段井拖动时。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -613,7 +618,7 @@
         <summary>在数据透视表缓存或包含的指定的项的缓存记录数目返回记录的数。 <b>Integer</b> 类型，只读。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>这种此属性反映了查询时缓存的瞬时状态。缓存可以更改查询之间。</para>
+          <para>此属性反映了查询高速缓存时的瞬时状态。该高速缓存可对不同查询而更改。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -647,24 +652,24 @@
         <summary>如果为<b>true</b> （以便是可见的行或列的详细信息），展开大纲指定区域。 读取/写入 <b>对象</b> 。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>指定的区域必须是单个汇总列或行在大纲中。如果该项目正在显示明细数据，将此属性设置为<b>True</b> 。</para>
+          <para>指定的区域必须是单个汇总列或行在大纲中。 此属性设置为<b>true，</b>如果该项目正在显示明细数据。</para>
           <para>此属性不可用于 OLAP 数据源。</para>
-          <para>如果指定的区域不在数据透视表报告中，下列语句是，则返回 true:</para>
+          <para>如果指定区域不在数据透视表中，则下列声明为真：</para>
           <list type="bullet">
             <item>
-              <description>该范围必须在单个汇总行或列中。</description>
+              <description>指定区域必须在单个汇总行或汇总列中。</description>
             </item>
             <item>
-              <description>如果任何行或列的子级处于隐藏状态，此属性返回<b>False</b> 。</description>
+              <description>如果指定行或列的任意子级处于隐藏状态，则此属性返回 <b>False</b>。</description>
             </item>
             <item>
-              <description>将此属性设置为<b>True</b>等效于显示指定汇总行或列的所有子级都内容。</description>
+              <description>将此属性设置为 <b>True</b> 相当于显示指定汇总行或汇总列的所有子级内容。</description>
             </item>
             <item>
-              <description>此属性设置为<b>False</b>相当于隐藏汇总行或列的所有子级。</description>
+              <description>将此属性设置为 <b>False</b> 相当于隐藏汇总行或汇总列的所有子级内容。</description>
             </item>
           </list>
-          <para>如果数据透视表中指定的范围，就可以一次设置此属性的多个单元格，如果是连续的区域。此属性可返回的范围是单个单元格时，才。</para>
+          <para>如果指定区域为数据透视表，则当该区域连续时，就可以同时对多个单元格设置此属性。仅当指定区域为单个单元格时，才能返回此属性的值。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -758,7 +763,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>StandardFormula</b>属性主要影响与日期或数字格式的项名称。它提供了一种方法来指定或查询给定的计算项的公式。</para>
+            <b>StandardFormula</b> 属性主要影响具有日期或数字格式的项目名称。该属性提供了一种方法可指定或查询给定计算项的公式。</para>
           <para>
             <b>StandardFormula</b>属性是则"国际-"而<see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Formula" />属性不是。</para>
           <para></para>
@@ -825,8 +830,8 @@
         <summary>决定对象是否可见。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果项目位于表中当前可见，数据透视表项的<b>Visible</b>属性为<b>True</b> 。</para>
-          <para>将名称的<b>Visible</b>属性设置为<b>False</b>时，如果名称不会出现在定义名称对话框。</para>
+          <para>如果数据透视表中的某一项在当前是可见的，则该项的 <b>Visible</b> 属性为 <b>True</b>。</para>
+          <para>如果将一个名称的 <b>Visible</b> 属性设为 <b>False</b>，则该名称将不出现在“定义名称”对话框中。</para>
           <para></para>
         </remarks>
       </Docs>

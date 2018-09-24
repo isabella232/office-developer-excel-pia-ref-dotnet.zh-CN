@@ -1,10 +1,10 @@
 <Type Name="XmlMap" FullName="Microsoft.Office.Interop.Excel.XmlMap">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c3b5f447ad7e8151b7dba366715192ac74ad6768" />
+    <Meta Name="ms.openlocfilehash" Value="90e19f9871537de3824defd244b85c6255bb7e45" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20583606" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface XmlMap" />
@@ -33,9 +33,11 @@
     <remarks>
       <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
       <para>使用<see cref="M:Microsoft.Office.Interop.Excel.XmlMaps.Add(System.String,System.Object)" />方法<see cref="T:Microsoft.Office.Interop.Excel.XmlMaps" />集合添加到工作簿的 XML 映射。</para>
-      <para>导入和导出 XML 数据</para>使用
-      <para><see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Import(System.String,System.Object)" />方法，以从 XML 数据文件的 XML 数据导入到映射到指定<b>XmlMap</b>单元格。<see cref="M:Microsoft.Office.Interop.Excel.XmlMap.ImportXml(System.String,System.Object)" />方法将一个<b>字符串</b>变量的 XML 数据导入。</para>使用
-      <para><see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Export(System.String,System.Object)" />方法从映射到指定<b>XmlMap</b>单元格导出数据。<see cref="M:Microsoft.Office.Interop.Excel.XmlMap.ExportXml(System.String@)" />方法将 XML 数据导出到<b>String</b>变量。</para><para></para></remarks>
+      <para>导入和导出 XML 数据</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Import(System.String,System.Object)" />方法，以从 XML 数据文件的 XML 数据导入到映射到指定<b>XmlMap</b>单元格。 <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.ImportXml(System.String,System.Object)" />方法将一个<b>字符串</b>变量的 XML 数据导入。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Export(System.String,System.Object)" />方法从映射到指定<b>XmlMap</b>单元格导出数据。 <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.ExportXml(System.String@)" />方法将 XML 数据导出到<b>String</b>变量。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -99,7 +101,7 @@
           <b>True</b>如果列宽自动调整为最适合每次刷新指定的查询表或 XML 映射。 <b>False</b>如果列宽不自动调整每次刷新。 默认值为 <b>True</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>最大列宽为三分之二屏幕宽度。</para>
+          <para>最大列宽为屏幕宽度的三分之二。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -194,7 +196,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -316,7 +318,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
-          <para>要映射的单元格的内容导出到 XML 数据文件，使用<see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Export(System.String,System.Object)" />方法。</para>
+          <para>若要将映射单元格的内容导出到 XML 数据文件，请使用<see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Export(System.String,System.Object)" />方法。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -380,7 +382,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
-          <para>要导入映射到特定的架构映射的单元格的 XML 数据文件的内容，请使用<see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Import(System.String,System.Object)" /><b>XmlMap</b>对象的方法。</para>
+          <para>若要将 XML 数据文件的内容导入映射到特定的架构映射的单元格，使用<see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Import(System.String,System.Object)" /><b>XmlMap</b>对象的方法。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -668,7 +670,7 @@
         <value>To be added.</value>
         <remarks>
           <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
-          <para>返回的<b>XmlSchemas</b>集合中的第一项是用作指定 XML 架构映射的根元素的架构。</para>
+          <para>返回的 <b>XmlSchemas</b> 集合中的第一项是用作指定 XML 架构映射的根元素的架构。</para>
           <para></para>
         </remarks>
       </Docs>

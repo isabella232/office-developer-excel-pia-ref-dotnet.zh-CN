@@ -1,10 +1,10 @@
 <Type Name="PivotCell" FullName="Microsoft.Office.Interop.Excel.PivotCell">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="97d53069436a318096bbfbdc2ce01e7de3cf9166" />
+    <Meta Name="ms.openlocfilehash" Value="d2f870880113d0a92987ae33be86341048714031" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574723" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotCell" />
@@ -32,7 +32,7 @@
     <summary>代表数据透视表中的一个单元格。</summary>
     <remarks>
       <para>使用<see cref="P:Microsoft.Office.Interop.Excel.Range.PivotCell" />属性<see cref="T:Microsoft.Office.Interop.Excel.Range" />可返回一个<b>PivotCell</b>对象的集合。</para>
-      <para>后返回一个<b>PivotCell</b>对象，您可以使用<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.PivotCellType" />属性可以确定哪种类型的单元格特定范围是</para>
+      <para>一旦返回一个<b>PivotCell</b>对象，您可以使用<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.PivotCellType" />是属性可以确定哪种类型的单元格特定范围。</para>
       <para>您可以使用<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.ColumnItems" />或<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.RowItems" />属性可以确定<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />对应于代表所选的号码的行或列轴上的项目的集合。</para>
       <para></para>
     </remarks>
@@ -61,7 +61,7 @@
       <Docs>
         <summary>在基于 OLAP 数据源的数据透视表中的指定单元格上执行回写操作。</summary>
         <remarks>
-          <para>此方法执行更新多维数据集语句将在此特定单元格，只需更改，但还包括任何以前应用的更改。执行更新多维数据集语句、 运行时数据透视表更新，然后执行回滚事务语句之后。</para>
+          <para>此方法执行 UPDATE CUBE 语句，不仅添加此特定单元格中的更改，还包含先前应用的任何更改。执行 UPDATE CUBE 语句后，数据透视表更新运行，然后 ROLLBACK TRANSACTION 语句执行。</para>
           <para>运行<see cref="M:Microsoft.Office.Interop.Excel.PivotCell.AllocateChange" />方法，用于基于非 OLAP 数据源的数据透视表报告中的单元格将生成运行时错误。</para>
           <para></para>
         </remarks>
@@ -121,37 +121,37 @@
         <summary>获取是否已编辑或重新计算自创建数据透视表或执行上一提交操作以来的数据透视表值单元格。</summary>
         <value>A<see cref="T:Microsoft.Office.Interop.Excel.XlCellChangedState" />对象。</value>
         <remarks>
-          <para>值<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" />属性是<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />默认。</para>
-          <para>的数据透视表报告与非 OLAP 数据源，此属性的值可以只是<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />或<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />。它是<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />的单元格尚未编辑，且<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />的已编辑的单元格。放弃更改将其值设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />。</para>
-          <para>应用并保存更改仅适用于 OLAP 数据源的数据透视表报告。下列说明中的可能的状态<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" />属性仅适用于 OLAP 数据源的数据透视表。</para>
+          <para>值<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" />属性是<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />默认情况下。</para>
+          <para>对于非 OLAP 数据源的数据透视表报表，此属性的值可以是仅<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />或<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />。 它是<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />的单元格尚未编辑，且<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />的已编辑的单元格。 放弃更改将其值设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />。</para>
+          <para>应用并保存更改仅适用于 OLAP 数据源的数据透视表报告。 下列说明中的可能的状态<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" />属性仅适用于 OLAP 数据源的数据透视表。</para>
           <list type="bullet">
             <item>
               <description>
-                <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />的单元格尚未编辑或重新计算 （如果该单元格包含公式） 自创建数据透视表，或自从上次保存或放弃更改操作以来。</description>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />-单元格尚未编辑或重新计算 （如果该单元格包含公式），因为创建数据透视表，或自从上次保存或放弃更改操作。</description>
             </item>
             <item>
               <description>
-                <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> -已编辑或重新计算自创建数据透视表，或将更改应用最后一个相或保存的更改执行操作，但尚未应用所做的更改以来单元格 （更新多维数据集语句不已为运行它）。</description>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />-已编辑或重新计算自创建数据透视表，或将更改应用最后一个相或保存的更改执行操作，但尚未应用所做的更改以来单元格 （更新多维数据集语句不已为运行它）。</description>
             </item>
             <item>
               <description>
-                <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" />-已编辑单元格或重新计算自创建数据透视表，以来或自上次应用更改后，保存更改，或放弃更改执行操作，并已应用更改 （更新多维数据集语句为其尚未运行）。</description>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" />-已编辑或重新计算因为对数据透视表创建的或执行了自上次应用更改，保存更改，或放弃更改操作以来，单元格和已应用更改 （更新多维数据集语句为其尚未运行）。</description>
             </item>
           </list>
-          <para>下表介绍如何不同的操作的用户影响的设置<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" />OLAP 数据源的数据透视表中的属性。</para>
+          <para>下表介绍如何不同的操作的用户影响的设置<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" />与 OLAP 数据源的数据透视表中的属性。</para>
           <list type="table">
             <item>
-              <term>键入到单元格或多个单元格的值或公式。</term>
+              <term>在一个或多个单元格中输入值或公式。</term>
               <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />对这些单元格。</description>
               <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />对这些单元格。</description>
             </item>
             <item>
-              <term>重新计算的单元格或多个单元格的公式，或者手动 (F9) 或由 Excel 自动。</term>
-              <description>N/A</description>
+              <term>重新计算含公式的一个或多个单元格（手动计算 (F9)，或由 Excel 自动计算）。</term>
+              <description>不适用</description>
               <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />对这些单元格。</description>
             </item>
             <item>
-              <term>（提交） 保存更改。</term>
+              <term>保存（提交）更改。</term>
               <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />所有编辑的无公式单元格。</description>
               <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" />所有编辑的有公式单元格。</description>
             </item>
@@ -161,12 +161,12 @@
               <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />所有编辑的有公式单元格。</description>
             </item>
             <item>
-              <term>放弃单个单元格的更改。</term>
+              <term>放弃单个单元格中的更改。</term>
               <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />的该单元格。</description>
               <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />的该单元格。</description>
             </item>
             <item>
-              <term>清除一次操作中的多个单元格。</term>
+              <term>一次操作清除多个单元格。</term>
               <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />的所有这些单元格。</description>
               <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />的所有这些单元格。</description>
             </item>
@@ -176,12 +176,12 @@
               <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />的该单元格。</description>
             </item>
             <item>
-              <term>执行撤消操作，将该值改回先前编辑的值，该值已应用之前。</term>
+              <term>应用值之前，执行撤消操作，将该值改回先前编辑的值。</term>
               <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />所有编辑的无公式单元格。</description>
               <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />所有编辑的有公式单元格。</description>
             </item>
             <item>
-              <term>执行撤消操作，将该值改回先前编辑的值，该值已应用后。</term>
+              <term>应用值之后，执行撤消操作，将该值改回先前编辑的值。</term>
               <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" />所有编辑的无公式单元格。</description>
               <description>设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" />所有编辑的有公式单元格。</description>
             </item>
@@ -244,9 +244,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -305,8 +305,19 @@
           </para>
           <para>
             <b>xlSum</b>
-          </para>如果<b>PivotCell</b>对象类型不是自定义分类汇总
-          <para><b>xlUnknown</b></para><para><b>xlVar</b></para><para><b>xlVarP</b></para><para><b>CustomSubtotalFunction</b>属性将返回错误。此属性仅适用于非 OLAP 源数据。</para><para></para></remarks>
+          </para>
+          <para>
+            <b>xlUnknown</b>
+          </para>
+          <para>
+            <b>xlVar</b>
+          </para>
+          <para>
+            <b>xlVarP</b>
+          </para>
+          <para>如果 <b>PivotCell</b> 对象类型不是自定义分类汇总，那么 <b>CustomSubtotalFunction</b> 属性将返回一个错误。该属性只应用于非 OLAP 源数据。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataField">
@@ -366,8 +377,11 @@
         <summary>获取上次检索从数据源的数据透视表报告中的已编辑单元格的值。</summary>
         <value>上次检索从数据源的数据透视表报告中的已编辑单元格的值。</value>
         <remarks>
-          <para>只读的。</para>每当进行编辑的数据透视表值区域中的单元格，
-          <para><see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" />属性将包含之前编辑发生上次检索从数据源的值。对于数据透视表报表值单元格尚未编辑的或为其数据源的值有未明确检索到，此属性将返回空引用 (在 Visual Basic 中为 Nothing)。对于 OLAP 数据源的值的数据透视表报告<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" />属性检索从单独的连接，以确保其不包含任何用户可能所做的回写操作的值。</para><para>读取<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" />的之外的数据透视表值区域的单元格的属性将产生一个运行时错误。</para><para></para></remarks>
+          <para>只读。</para>
+          <para>每当进行编辑的数据透视表值区域中的单元格，<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" />属性将包含之前编辑发生上次检索从数据源的值。 对于数据透视表报表值单元格尚未编辑的或为其数据源的值有未明确检索到，此属性将返回空引用 (在 Visual Basic 中为 Nothing)。 对于 OLAP 数据源的值的数据透视表报告<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" />属性检索从单独的连接，以确保其不包含任何用户可能所做的回写操作的值。</para>
+          <para>读取<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" />的之外的数据透视表值区域的单元格的属性将产生一个运行时错误。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DiscardChange">
@@ -393,7 +407,7 @@
       <Docs>
         <summary>放弃对数据透视表中指定单元格的更改。</summary>
         <remarks>
-          <para>的数据透视表中的单元格基于 OLAP 数据源，<see cref="M:Microsoft.Office.Interop.Excel.PivotCell.DiscardChange" />方法删除公式的指定单元格中输入的值，然后运行从数据源检索的最新值的数据透视表更新。数据源的值将此方法指定单元格设置为空引用 (在 Visual Basic 中为 Nothing)。该方法还会删除对此单元格从 Excel 的更改列表，以便它不再包含更新多维数据集语句的数据源中的所有更改。此方法还会重新创建会话状态的所有其他事务中所做的更改。这包括执行回滚事务语句，并执行除外指定单元格的所有更改更新多维数据集语句。对于非 OLAP 数据源上基于数据透视表中的单元格，此方法只是清除已编辑单元格。</para>
+          <para>有关数据透视表中的单元格基于 OLAP 数据源，<see cref="M:Microsoft.Office.Interop.Excel.PivotCell.DiscardChange" />方法删除公式的指定单元格中输入的值，然后运行从数据源检索的最新值的数据透视表更新。 数据源的值将此方法指定单元格设置为空引用 (在 Visual Basic 中为 Nothing)。 该方法还会删除对此单元格从 Excel 的更改列表，以便它不再包含更新多维数据集语句的数据源中的所有更改。 此方法还会重新创建会话状态的所有其他事务中所做的更改。 这包括执行回滚事务语句，并执行除外指定单元格的所有更改更新多维数据集语句。 基于非 OLAP 数据源的数据透视表中单元格，此方法仅清除已编辑单元格。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -455,8 +469,8 @@
         <summary>获取与 OLAP 数据源提供的数据透视表中指定的值单元格的完整 MDX 坐标元组。</summary>
         <value>提供与 OLAP 数据源的数据透视表中指定的值单元格的完整 MDX 坐标元组。</value>
         <remarks>
-          <para>只读的。</para>
-          <para>由元组中返回的尺寸<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.MDX" />属性包括行和列的坐标，以及报告筛选器坐标。对于单元格和数据透视表值区域的数据透视表，以外，访问此属性会生成运行时错误。为与报告筛选器字段中的多项选择的数据透视表，访问该属性还将生成运行时错误。</para>
+          <para>只读。</para>
+          <para>由元组中返回尺寸<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.MDX" />属性包括行和列的坐标，以及报告筛选器坐标。 对于单元格和数据透视表值区域的数据透视表，以外，访问此属性会生成运行时错误。 为与报告筛选器字段中的多项选择的数据透视表，访问该属性还将生成运行时错误。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -520,24 +534,24 @@
           <para>
             <b>xlPivotCellBlankCell</b>数据透视表中的结构空白单元格。</para>
           <para>
-            <b>xlPivotCellCustomSubtotal</b> A 自定义分类汇总行或列区域中的单元格。</para>
+            <b>xlPivotCellCustomSubtotal</b>自定义分类汇总行或列区域中的单元格。</para>
           <para>
-            <b>xlPivotCellDataField</b>一个数据字段标签 （不是<b>数据</b>按钮）。</para>
+            <b>xlPivotCellDataField</b>数据字段标签 （不是<b>数据</b>按钮）。</para>
           <para>
             <b>xlPivotCellDataPivotField</b>
             <b>数据</b>按钮。</para>
           <para>
-            <b>xlPivotCellGrandTotal</b> A 总计行或列区域中的单元格。</para>
+            <b>xlPivotCellGrandTotal</b>总计行或列区域中的单元格。</para>
           <para>
             <b>xlPivotCellPageFieldItem</b>显示页字段的选定的项的单元格。</para>
           <para>
             <b>xlPivotCellPivotField</b>字段 （不是<b>数据</b>按钮） 按钮。</para>
           <para>
-            <b>xlPivotCellPivotItem</b> A 不是分类汇总、 总计、 自定义分类汇总或空行的行或列区域中的单元格。</para>
+            <b>xlPivotCellPivotItem</b>不是分类汇总、 总计、 自定义分类汇总或空行的行或列区域中的单元格。</para>
           <para>
-            <b>xlPivotCellSubtotal</b> A 分类汇总的行或列区域中的单元格。</para>
+            <b>xlPivotCellSubtotal</b>分类汇总的行或列区域中的单元格。</para>
           <para>
-            <b>xlPivotCellValue</b>数据区区域 （除空行） 中的任一单元格。</para>
+            <b>xlPivotCellValue</b>数据区域 （除空行） 中的任意单元格。</para>
           <para></para>
         </remarks>
       </Docs>

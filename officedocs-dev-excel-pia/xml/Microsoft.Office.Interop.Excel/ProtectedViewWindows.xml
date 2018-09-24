@@ -1,10 +1,10 @@
 <Type Name="ProtectedViewWindows" FullName="Microsoft.Office.Interop.Excel.ProtectedViewWindows">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5f5d6154812eece1e15f8ff475735c633b7bf0bc" />
+    <Meta Name="ms.openlocfilehash" Value="66b22fff8688e9bbf701a61d74932c01a62ad6e6" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578916" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ProtectedViewWindows : System.Collections.IEnumerable" />
@@ -102,7 +102,7 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.Application" />对象。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -161,8 +161,10 @@
         <summary>获取一个指示在其中创建此对象的应用程序的 32 位<b>整数</b>。</summary>
         <value>32 位<b>整数</b>，指示在其中创建此对象的应用程序。</value>
         <remarks>
-          <para>只读的<b>long</b>。</para>如果对象在 Microsoft Excel 中创建的
-          <para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。<see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindows.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para></para></remarks>
+          <para>只读的<b>long</b>。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindows.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -263,7 +265,7 @@
         <summary>在新的“受保护的视图”窗口中打开指定的工作簿。</summary>
         <returns>A<see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" />对象。</returns>
         <remarks>
-          <para>避免在您的应用程序中使用硬编码的密码。如果在某个过程中需要密码，用户请求该密码、 将其存储在变量，然后在代码中使用该变量。</para>
+          <para>避免在应用程序中使用硬编码的密码。如果某个过程需要密码，可要求用户提供密码，将其以变量形式进行存储，然后在编码中使用该变量。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -294,7 +296,7 @@
         <summary>获取指定对象的父对象。</summary>
         <value>指定的对象的的父对象。 的</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>

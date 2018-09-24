@@ -1,10 +1,10 @@
 <Type Name="TickLabels" FullName="Microsoft.Office.Interop.Excel.TickLabels">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fcdd070f496219f0cc3c7df419775ae6cd824dc6" />
+    <Meta Name="ms.openlocfilehash" Value="80b3e086ba4d3ed73fe6b8241b450f89bafae6e6" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20579567" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface TickLabels" />
@@ -31,7 +31,7 @@
   <Docs>
     <summary>代表图表坐标轴上刻度线标志相关联刻度线标签。</summary>
     <remarks>
-      <para>此对象不是集合。没有对象表示单个刻度线标签;您必须为单位返回所有刻度线标签。分类轴的刻度线标记标签文本来自于图表中关联的类别的名称。默认分类轴的刻度线标记标签文本是数字，用于指示相对于此轴的左端类别的位置。若要更改的未标记的刻度线刻度线标签之间的标记，则必须更改<see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabelSpacing" />属性的分类轴。刻度线标签文本标记的数值轴的计算公式基于<see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" />， <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinimumScale" />，和<see cref="P:Microsoft.Office.Interop.Excel.Axis.MaximumScale" />数值轴的属性。若要更改的数值轴的刻度线标记标签文本，则必须更改这些属性的值。</para>
+      <para>此对象不是集合。 没有对象表示单个刻度线标签;您必须为单位返回所有刻度线标签。 分类轴的刻度线标记标签文本来自于图表中关联的类别的名称。 默认分类轴的刻度线标记标签文本是数字，用于指示相对于此轴的左端类别的位置。 若要更改的未标记的刻度线刻度线标签之间的标记，则必须更改<see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabelSpacing" />属性的分类轴。 刻度线标签文本标记的数值轴的计算公式基于<see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" />， <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinimumScale" />，和<see cref="P:Microsoft.Office.Interop.Excel.Axis.MaximumScale" />数值轴的属性。 若要更改的数值轴的刻度线标记标签文本，则必须更改这些属性的值。</para>
       <para>使用<see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabels" />属性可返回<b>TickLabels</b>对象。</para>
       <para></para>
     </remarks>
@@ -172,9 +172,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -384,7 +384,7 @@
         <summary>返回或设置对象的格式代码。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>格式代码是作为单元格格式对话框中的格式代码选项相同的字符串。</para>
+          <para>格式代码是在 设置单元格格式对话框中 格式代码选项相同的字符串。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -481,7 +481,7 @@
         <summary>返回或设置标签的级别和第一级与坐标轴之间的距离之间的距离。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>默认距离是 100%，代表坐标轴标签与坐标轴之间的默认间距。值可以是介于 0 到 1000，相对于坐标轴标签的字体大小的一个整数百分比。</para>
+          <para>其默认距离为百分之百，代表坐标轴标签之间以及标签与坐标轴线之间的默认距离。其值可以为从 0 到 1000 之间的一个整数百分比，表示相对于坐标轴标签的字号。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -576,7 +576,7 @@
         <remarks>
           <para>
             <b>ReadingOrder</b>属性可以是下列常量之一： <b>xlRTL</b> （右至左）、 <b>xlLTR</b> （从左到右） 或<b>xlContext</b>。</para>
-          <para>这些常量的一些可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
+          <para>[!注释] 由于选择或安装的语言支持（例如美国英语）不同，有些常量可能无法使用。</para>
           <para></para>
         </remarks>
       </Docs>

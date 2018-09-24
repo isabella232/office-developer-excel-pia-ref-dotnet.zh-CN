@@ -1,10 +1,10 @@
 <Type Name="CalculatedMembers" FullName="Microsoft.Office.Interop.Excel.CalculatedMembers">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="953e871a40c21fce56f87ab1a7241017eaeb4ca0" />
+    <Meta Name="ms.openlocfilehash" Value="2ef237f29eff8550f0d57ac22a72517d08855192" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572833" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CalculatedMembers : System.Collections.IEnumerable" />
@@ -112,7 +112,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>
-            <paramref name="Formula" />参数必须具有有效的 MDX （多维表达式） 语法语句。<paramref name="Name" />参数必须是可接受的联机分析处理 (OLAP) 提供程序和<paramref name="Type" />参数必须定义。</para>
+            <paramref name="Formula" />参数必须具有有效的 MDX （多维表达式） 语法语句。 <paramref name="Name" />参数必须是可接受的联机分析处理 (OLAP) 提供程序和<paramref name="Type" />参数必须定义。</para>
           <para>如果您设置<paramref name="Type" />到此方法的参数<paramref name="xlCalculatedSet" />，然后必须调用<see cref="M:Microsoft.Office.Interop.Excel.CubeFields.AddSet(System.String,System.String)" />方法以使新的字段集在数据透视表中可见。</para>
           <para></para>
         </remarks>
@@ -202,19 +202,19 @@
         <returns>To be added.</returns>
         <remarks>
           <para>
-            <b>公式</b>参数必须有有效的 MDX （多维表达式） 语法语句。<b>名称</b>参数必须是可接受的联机分析处理 (OLAP) 提供程序。</para>
+            <b>公式</b>参数必须有有效的 MDX （多维表达式） 语法语句。 <b>名称</b>参数必须是可接受的联机分析处理 (OLAP) 提供程序。</para>
           <list type="bullet">
             <item>
               <description>
-                <b>DisplayFolder</b>： 显示文件夹仅供计算度量值。它们不是有效的计算成员的。字符串可以具有分号;在它。分号指定多个显示文件夹。例如，如果您使用的字符串我 folder1; myfolder2 然后计算度量值将显示在两个显示文件夹一个命名 myfolder1 其他命名 myfolder2。字符串可以具有反斜杠\.这指定显示文件夹的分层路径。例如，如果您使用将会字符串 welcome\to\seattle 调用欢迎包含显示文件夹的显示文件夹调用到其中包含一个名为西雅图的显示文件夹。显示文件夹是虚拟文件夹。 它们真正不存在同一意义上说，我们认为系统文件夹中。它们仅存在为了显示计算度量值。</description>
+                <b>DisplayFolder</b>： 显示文件夹仅供计算度量值。 它们不是有效的计算成员的。 字符串可以具有分号;在它。 分号指定多个显示文件夹。 例如，如果您使用的字符串我 folder1; myfolder2 然后计算度量值将显示在两个显示文件夹一个命名 myfolder1 其他命名 myfolder2。 字符串可以具有反斜杠 \。 这将指定的显示文件夹的分层路径。 例如，如果您使用将会字符串 welcome\to\seattle 调用欢迎包含显示文件夹的显示文件夹调用到其中包含一个名为西雅图的显示文件夹。 显示文件夹是虚拟文件夹。  它们真正不存在同一意义上说，我们认为系统文件夹中。 仅存在为了显示计算度量值。</description>
             </item>
             <item>
               <description>
-                <b>NumberFormat</b>： 只能通过宏设置数字格式。没有设置其用户界面。这是不能通过用户界面设置的唯一属性。类型始终是<b>xlNumberFormatTypeDefault</b>时通过用户界面创建的计算的成员。仅供计算成员的数字格式。它们不是有效的计算度量值。</description>
+                <b>NumberFormat</b>： 只能通过宏设置数字格式。 没有设置其用户界面。 这是不能通过用户界面设置的唯一属性。 类型始终是<b>xlNumberFormatTypeDefault</b>时通过用户界面创建的计算的成员。 仅供计算成员的数字格式。 不计算度量值无效。</description>
             </item>
             <item>
               <description>
-                <b>ParentHierarchy</b>： 父层次结构可以是任何有效的 MDX 层次结构。父层次结构仅供计算成员。不计算度量值无效。如果这另一父层次结构中选择父成员，父层次结构将自动更改要匹配的父成员的父级层次结构。</description>
+                <b>ParentHierarchy</b>： 父层次结构可以是任何有效的 MDX 层次结构。 父层次结构仅供计算成员。 不计算度量值无效。 如果这另一父层次结构中选择父成员，父层次结构将自动更改要匹配的父成员的父级层次结构。</description>
             </item>
           </list>
           <para></para>
@@ -303,9 +303,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>

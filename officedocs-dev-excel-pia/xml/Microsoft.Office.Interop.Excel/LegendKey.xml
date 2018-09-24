@@ -1,10 +1,10 @@
 <Type Name="LegendKey" FullName="Microsoft.Office.Interop.Excel.LegendKey">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e97e2c6b2812c0c27e94200204837ef948711b2c" />
+    <Meta Name="ms.openlocfilehash" Value="5c0f463a642ccce4a5ea924e670fcd78c73fdfeb" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580729" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface LegendKey" />
@@ -31,7 +31,7 @@
   <Docs>
     <summary>代表图表图例中的图例标示。</summary>
     <remarks>
-      <para>每个图例项标示是图形表示使用其关联的系列或趋势线图表中的图例项。图例项标示链接到与其关联的系列或趋势线的格式之一同时更改的其他格式的方式。</para>
+      <para>每个图例项标示都是一个图形，它将图例项标示以及与之相关联的图表中的系列或趋势线链接起来。图例项标示链接到与之相关联的系列或趋势线的方式为：更改一个的格式会同时更改另一个的格式。</para>
       <para>使用<see cref="P:Microsoft.Office.Interop.Excel.LegendEntry.LegendKey" />属性返回<see cref="T:Microsoft.Office.Interop.Excel.LegendKey" />对象。</para>
       <para></para>
     </remarks>
@@ -148,9 +148,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -550,29 +550,29 @@
           <para>
             <see cref="T:Microsoft.Office.Interop.Excel.XlMarkerStyle" />可以是以下<b>XlMarkerStyle</b>常量之一：</para>
           <para>
-            <b>xlMarkerStyleAutomatic</b>。自动设置标记</para>
+            <b>xlMarkerStyleAutomatic</b>. Automatic markers</para>
           <para>
-            <b>xlMarkerStyleCircle</b>。圆形标记</para>
+            <b>xlMarkerStyleCircle</b>. Circular markers</para>
           <para>
-            <b>xlMarkerStyleDash</b>。长条形标记</para>
+            <b>xlMarkerStyleDash</b>. Long bar markers</para>
           <para>
-            <b>xlMarkerStyleDiamond</b>。菱形标记</para>
+            <b>xlMarkerStyleDiamond</b>. Diamond-shaped markers</para>
           <para>
-            <b>xlMarkerStyleDot</b>。短条形标记</para>
+            <b>xlMarkerStyleDot</b>. Short bar markers</para>
           <para>
-            <b>xlMarkerStyleNone</b>。无标记</para>
+            <b>xlMarkerStyleNone</b>. No markers</para>
           <para>
-            <b>xlMarkerStylePicture</b>。图片标记</para>
+            <b>xlMarkerStylePicture</b>. Picture markers</para>
           <para>
-            <b>xlmarkerstyleplus:</b>。带加号的方形标记</para>
+            <b>xlMarkerStylePlus</b>. Square markers with a plus sign</para>
           <para>
-            <b>xlMarkerStyleSquare</b>。方形标记</para>
+            <b>xlMarkerStyleSquare</b>. Square markers</para>
           <para>
-            <b>xlMarkerStyleStar</b>。带星号的方形标记</para>
+            <b>xlMarkerStyleStar</b>. Square markers with an asterisk</para>
           <para>
-            <b>xlMarkerStyleTriangle</b>。三角形标记</para>
+            <b>xlMarkerStyleTriangle</b>. Triangular markers</para>
           <para>
-            <b>xlMarkerStyleX</b>。带 X 的方形标记</para>
+            <b>xlMarkerStyleX</b>. Square markers with an X</para>
           <para></para>
         </remarks>
       </Docs>

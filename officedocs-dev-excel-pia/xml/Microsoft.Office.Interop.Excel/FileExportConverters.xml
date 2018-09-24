@@ -1,10 +1,10 @@
 <Type Name="FileExportConverters" FullName="Microsoft.Office.Interop.Excel.FileExportConverters">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a0248fd27bcefad2e1cbf85330ede4a467e15625" />
+    <Meta Name="ms.openlocfilehash" Value="d9d15ade86de30f26a8ffa76c4393a2b02abadaa" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572455" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface FileExportConverters : System.Collections.IEnumerable" />
@@ -37,8 +37,10 @@
     <remarks>
       <para>使用<see cref="P:Microsoft.Office.Interop.Excel._Application.FileExportConverters" />属性返回<see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" />集合。</para>
       <para>
-        <b>添加</b>方法不适用于<see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" />集合。<see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" />对象的 Microsoft Office 或通过安装补充转换器的安装过程中添加。</para>使用
-      <para><see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" />(Index)，其中 Index 是整数，若要返回单个 FileExportConverter 对象。索引号代表 FileExportConverters 集合中的文件转换器的位置。</para><para></para></remarks>
+        <b>Add</b>方法不适用于<see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" />集合。 <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" />安装 Microsoft Office 时，或者通过安装补充转换器过程中将添加对象。</para>
+      <para>使用<see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" />(Index)，其中 Index 是整数，若要返回单个 FileExportConverter 对象。 索引号代表 FileExportConverters 集合中的文件转换器的位置。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -165,7 +167,10 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
-        <remarks>如果对象在 Microsoft Excel 中创建的<para>，此属性返回的十六进制值，5843454c、 表示"XCEL"的字符串。Creator 属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para></para></remarks>
+        <remarks>
+          <para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回十六进制值 5843454C，该值表示字符串“XCEL”。Creator 属性设计为在 Microsoft Excel for the Macintosh 中使用，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

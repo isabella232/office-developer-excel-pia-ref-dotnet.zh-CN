@@ -1,10 +1,10 @@
 <Type Name="OLEObjects" FullName="Microsoft.Office.Interop.Excel.OLEObjects">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0ceeeadbbe58866d8578dc0cbfba5a77ed0fec61" />
+    <Meta Name="ms.openlocfilehash" Value="c7a55aea3278bf57d03536464456af6c54d9afe8" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575633" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface OLEObjects : System.Collections.IEnumerable" />
@@ -37,8 +37,8 @@
     <remarks>
       <para>使用<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.OLEObjects(System.Object)" />方法可返回<b>OLEObjects</b>集合。</para>
       <para>使用<see cref="M:Microsoft.Office.Interop.Excel.OLEObjects.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法可创建新的 OLE 对象并将其添加到<b>OLEObjects</b>集合。</para>
-      <para>工作表上 ActiveX 控件有两个名称： 包含的控件，可以时，将显示在名称框中查看工作表和代码名称的控件，您可以看到 （名称） 右侧属性窗口中的单元格中的形状的名称。首先，将控件添加到工作表中，当形状名称和代码名称匹配。但是，如果您更改形状名称或代码名称，其他不会自动更改以匹配。</para>
-      <para>您在名称的事件过程中使用代码控件的名称。但是，当您返回控件从<see cref="T:Microsoft.Office.Interop.Excel.Shapes" />或工作表的<b>OLEObjects</b>集合，您必须使用形状的名称，而不是代码名称，按名称引用的控件。例如，假定您向工作表添加复选框和默认形状的名称和默认代码名称是 CheckBox1。如果您后来更改控件代码名称，通过在属性窗口中键入 chkFinished 旁边 （名称），您必须使用 chkFinished 在事件过程名称，但您仍需要使用 CheckBox1 从<b>形状</b>或<b>OLEObjects</b>返回控件集合。</para>
+      <para>工作表上的 ActiveX 控件有两个名称：一个是包含该控件的形状的名称，查看工作表时可在“名称”框中看到它；另一个是控件的代码名称，可以在“属性”窗口中“(名称)”右边的单元格中看到它。在您首次向工作表添加控件时，形状名称和代码名称是一致的。但是，如果您更改这两个名称中的任意一个，另一个不会随之自动更改。</para>
+      <para>在名称的事件过程，您使用控件的代码名称。 但是，当您返回控件从<see cref="T:Microsoft.Office.Interop.Excel.Shapes" />或工作表的<b>OLEObjects</b>集合，您必须使用形状的名称，而不是代码名称，按名称引用的控件。 例如，假定您向工作表添加复选框和默认形状的名称和默认代码名称是 CheckBox1。 如果您后来更改控件代码名称，通过在属性窗口中键入 chkFinished 旁边 （名称），您必须使用 chkFinished 在事件过程名称，但您仍需要使用 CheckBox1 从<b>形状</b>或<b>OLEObjects</b>返回控件集合。</para>
       <para></para>
     </remarks>
   </Docs>
@@ -540,8 +540,8 @@
         <summary>打开<b>，则返回 true</b>如果包含该工作簿时自动加载的 OLE 对象。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>ActiveX 控件，则忽略此属性。打开工作簿时，始终进行加载 ActiveX 控件。</para>
-          <para>对于大多数 OLE 对象类型，此属性不应设置为<b>True</b>。默认情况下<b>AutoLoad</b>属性设置为<b>False</b>的新的 OLE 对象;Microsoft Excel 加载工作簿时，此节省时间和内存。自动加载 OLE 的好处对象是对于表示可变数据的对象，可以立即重新建立链接到数据源，可以再次，呈现对象，如有必要。</para>
+          <para>ActiveX 忽略此属性。打开一个工作簿时总会载入 ActiveX 控件。</para>
+          <para>对于大多数 OLE 对象类型，此属性不能设为 <b>True</b>。对于新 OLE 对象，默认情况下其 <b>AutoLoad</b> 属性设为 <b>False</b>；当 Microsoft Excel 载入工作簿时，设为“False”可节省时间和内存。自动载入 OLE 对象的好处在于，对于代表易变动的数据的对象，可立即重建到数据源的链接，而且，如果需要，可对这些对象进行重新映射。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -710,9 +710,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -741,8 +741,8 @@
         <summary>将对象剪切到剪贴板，或者将其粘贴到指定的目的地。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>剪切的区域必须由相邻单元格。</para>
-          <para>可剪切嵌入式的图表仅。</para>
+          <para>剪切的区域必须由相邻的单元格组成。</para>
+          <para>只可剪切嵌入式图表。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1136,7 +1136,7 @@
         <summary>返回或设置该对象附加到它的单元格的方式。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>使用下列常量之一：</para>
+          <para>使用以下常量之一：</para>
           <para>
             <b>xlFreeFloating</b>
           </para>
@@ -1445,7 +1445,7 @@
         <summary>返回对象的 z-顺序位置。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>对象的任何集合，在 z-次序末尾该对象在<paramref name="collection" />(1)，且在 z-顺序的顶层对象为<paramref name="collection" />(<paramref name="collection" />。<b>Count</b>)。</para>
+          <para>在任何对象的集合，该对象 z-次序末尾在<paramref name="collection" />(1)，且在 z-顺序的顶层对象为<paramref name="collection" />(<paramref name="collection" />。<b>Count</b>)。</para>
           <para></para>
         </remarks>
       </Docs>

@@ -1,10 +1,10 @@
 <Type Name="SlicerItem" FullName="Microsoft.Office.Interop.Excel.SlicerItem">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c437a5df8c218a73a221a359a6d25ce166383fd0" />
+    <Meta Name="ms.openlocfilehash" Value="3c1b11b181cf76e60a0a1ab7e6eab3bce566f124" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575143" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SlicerItem" />
@@ -31,7 +31,7 @@
   <Docs>
     <summary>代表切片器中的项目。</summary>
     <remarks>
-      <para>访问<see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" />对象，表示切片器，使用中的当前所选的按钮<see cref="P:Microsoft.Office.Interop.Excel.Slicer.ActiveItem" />属性<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />对象。访问<see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" />集合，代表切片器筛选的数据透视表使用中的所有项目<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" />属性<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />与关联的对象<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />对象。访问<see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" />表示切片器筛选的 OLAP 层次结构，使用一个级别中的项的集合<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SlicerItems" />属性<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />对象，表示层次结构的级别。</para>
+      <para>访问<see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" />对象，表示切片器，使用中的当前所选的按钮<see cref="P:Microsoft.Office.Interop.Excel.Slicer.ActiveItem" />属性<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />对象。 访问<see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" />集合，代表切片器筛选的数据透视表使用中的所有项目<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" />属性<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />与关联的对象<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />对象。 访问<see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" />表示切片器筛选的 OLAP 层次结构，使用一个级别中的项的集合<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SlicerItems" />属性<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />对象，表示层次结构的级别。</para>
       <para></para>
     </remarks>
   </Docs>
@@ -63,7 +63,7 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.Application" />对象。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -94,7 +94,7 @@
         <summary>获取切片器项的标签文本。</summary>
         <value>切片器项的标签文本。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -124,7 +124,10 @@
       <Docs>
         <summary>获取一个指示在其中创建此对象的应用程序的 32 位<b>整数</b>。</summary>
         <value>32 位<b>整数</b>，指示在其中创建此对象的应用程序。</value>
-        <remarks>如果对象在 Microsoft Excel 中创建的<para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。<see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para></para></remarks>
+        <remarks>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasData">
@@ -154,10 +157,10 @@
         <value>
           <b>true</b>如果切片器项包含与当前手动筛选状态; 相匹配的数据否则为<b>false</b>。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para>
-            <b>，则返回 true</b>如果切片器项包含与当前手动筛选状态相匹配的数据; 否则为<b>false</b>。</para>
-          <para>当交叉筛选处于打开状态，并会生成运行时错误否则仅支持此属性。若要确定是否交叉筛选为打开与数据透视表报告关联的切片器，请检查的值<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" />属性指定的<see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" />对象的父对象<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />对象。若要确定是否交叉筛选已经为与 OLAP 数据源关联的切片器，请检查的值<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" />属性<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />对象对应于作为筛选的 OLAP 层次结构。</para>
+            <b>true</b>如果切片器项包含与当前手动筛选状态; 相匹配的数据否则为<b>false</b>。</para>
+          <para>此属性才支持时交叉筛选处于打开状态，否则会生成运行时错误。 若要确定是否交叉筛选为打开与数据透视表报告关联的切片器，请检查的值<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" />属性指定的<see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" />对象的父对象<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />对象。 若要确定是否交叉筛选已经为与 OLAP 数据源关联的切片器，请检查的值<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" />属性<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />对象对应于作为筛选的 OLAP 层次结构。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -188,7 +191,7 @@
         <summary>获取切片器项的名称。</summary>
         <value>切片器项的名称。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -219,7 +222,7 @@
         <summary>获取父<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />对象的切片器项。</summary>
         <value>父<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />对象的切片器项。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -254,9 +257,9 @@
         <value>
           <b>true</b>如果切片器项选择;否则为<b>false</b>。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>为可读/写属性。</para>
           <para>
-            <b>，则返回 true</b>如果选择了切片器项; 否则为<b>false</b>。</para>
+            <b>true</b>如果切片器项选择;否则为<b>false</b>。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -287,7 +290,7 @@
         <summary>获取切片器项的源名称。</summary>
         <value>切片器项源名称。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -318,7 +321,7 @@
         <summary>获取切片器项的源名称中标准英语 （美国） 格式设置。</summary>
         <value>以标准英语 （美国） 格式设置的切片器项的源名称。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para>切片器项有本地化的版本时使用此属性并将其<see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.SourceNameStandard" />属性值不同<see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.SourceName" />属性的值，例如带日期格式。</para>
           <para></para>
         </remarks>
@@ -350,7 +353,7 @@
         <summary>获取切片器项的值。</summary>
         <value>切片器项的值。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>

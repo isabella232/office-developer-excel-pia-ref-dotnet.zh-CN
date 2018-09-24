@@ -1,10 +1,10 @@
 <Type Name="DiagramNode" FullName="Microsoft.Office.Interop.Excel.DiagramNode">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0ca42ecf50dd3405db74400e2269347011d04258" />
+    <Meta Name="ms.openlocfilehash" Value="86e622fca7f83a44ee8326d13178a7a41108a865" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576144" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DiagramNode : Microsoft.Office.Core._IMsoDispObj" />
@@ -34,7 +34,7 @@
     <remarks>
       <para>使用<see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" />方法，以将节点添加到图表或图表顶点。</para>
       <para>使用<see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.Delete" />方法，以从图表或图表节点中删除一个节点。</para>
-      <para>若要返回<b>DiagramNode</b>对象，请使用以下项之一：</para>
+      <para>若要返回<b>DiagramNode</b>对象，请使用下列选项之一：</para>
       <list type="bullet">
         <item>
           <description>
@@ -53,7 +53,7 @@
             <see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象的或<see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />集合的<b>DiagramNode</b>属性</description>
         </item>
       </list>
-      <para>A 图表节点可以终止，或它可以包含其他子图表，子图表节点或子形状。请参阅为以下这些：</para>
+      <para>图表节点可以终止，或者可以包含其他子图表、 图示子节点或子形状。 请参阅替换为以下这些：</para>
       <list type="bullet">
         <item>
           <description>要引用的子图表，请使用<see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Diagram" />属性。</description>
@@ -222,9 +222,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -313,18 +313,18 @@
         <remarks>
           <para>
             <b>MsoOrgChartLayoutType</b>可以是下列<b>MsoOrgChartLayoutType</b>常量之一。</para>
-          <para>为助手
-            <b>msoOrgChartLayoutAssistant</b> Places 子节点。</para>
           <para>
-            <b>msoOrgChartLayoutBothHanging</b> Places 子节点垂直从左侧和右侧的父节点。</para>
+            <b>msoOrgChartLayoutAssistant</b>作为助理将子节点。</para>
           <para>
-            <b>msoOrgChartLayoutLeftHanging</b> Places 子节点垂直从左侧的父节点。</para>
+            <b>msoOrgChartLayoutBothHanging</b>将子节点垂直从父节点放在左侧和右侧。</para>
           <para>
-            <b>msoOrgChartLayoutMixed</b>父节点包含子使用多个<b>MsoOrgChartLayoutType</b>设置格式的返回值。</para>
+            <b>msoOrgChartLayoutLeftHanging</b>在左侧将垂直从父节点的子节点。</para>
           <para>
-            <b>msoOrgChartLayoutRightHanging</b> Places 子节点垂直从右侧的父节点。</para>
+            <b>msoOrgChartLayoutMixed</b>返回父节点包含子使用多个<b>MsoOrgChartLayoutType</b>设置格式的值。</para>
           <para>
-            <b>msoOrgChartLayoutStandard</b> Places 子节点水平的父节点之下。</para>
+            <b>msoOrgChartLayoutRightHanging</b>将子节点垂直从父节点放在右侧。</para>
+          <para>
+            <b>msoOrgChartLayoutStandard</b>将子节点的父节点之下水平。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -465,7 +465,7 @@
         <param name="pTargetNode">所需<see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" />对象。 要替换目标图示节点。</param>
         <summary>目标图示节点替换为源图表顶点。</summary>
         <remarks>
-          <para>目标图示节点被删除，并将源图表节点，包括任何子节点，移动到目标图节点所在。</para>
+          <para>删除目标图示节点，并将源图表节点，包括任何子节点，移动到目标图节点所在。</para>
           <para></para>
         </remarks>
       </Docs>

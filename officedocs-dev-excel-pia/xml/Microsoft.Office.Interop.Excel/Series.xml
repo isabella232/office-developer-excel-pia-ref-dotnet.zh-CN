@@ -1,10 +1,10 @@
 <Type Name="Series" FullName="Microsoft.Office.Interop.Excel.Series">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3bf5d873dc8f258078c4b08af2de06bdc1a91315" />
+    <Meta Name="ms.openlocfilehash" Value="3a8cc36d1324ac7595cb7a40f82c526876f56ea7" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574828" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Series" />
@@ -297,7 +297,7 @@
         <summary>返回指定的图表组或系列的组。 读/写<see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" />。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>对于三维图表，仅<b>xlPrimary</b>是否有效。</para>
+          <para>对于三维图表，仅 <b>xlPrimary</b> 有效。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -393,7 +393,7 @@
         <summary>返回或设置一个 string，指的是包含图表的气泡大小数据的工作表单元格。 仅适用于气泡图。 读取/写入 <b>对象</b> 。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>返回的单元格引用时，它将返回描述 A1 样式表示法中的单元格的字符串。若要设置图表的气泡大小数据，您必须使用 R1 样式表示法。</para>
+          <para>在返回的单元格引用时，它将返回描述 A1 样式表示法中的单元格的字符串。 若要设置图表的气泡大小数据，必须使用 R1 样式表示法。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -427,7 +427,7 @@
         <summary>返回或设置图表类型。 读/写<see cref="T:Microsoft.Office.Interop.Excel.XlChartType" />。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>某些图表类型不可用对数据透视图。</para>
+          <para>某些图表类型对数据透视图报表无效。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -511,7 +511,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -542,8 +542,8 @@
         <summary>返回一个 object 值，该值代表之一的单个数据标签 (<see cref="T:Microsoft.Office.Interop.Excel.DataLabel" />对象) 或所有数据系列的数据标签集合 (<see cref="T:Microsoft.Office.Interop.Excel.DataLabels" />集合)。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>如果系列有<b>显示值</b>选项处于打开状态的数据标签，则返回的集合可以包含每个点的最多为 1 个标签。数据标签可以打开还是关闭的系列中单个点。</para>
-          <para>如果系列已面积图，并具有<b>显示标签</b>选项已打开的数据标签，则返回的集合包含仅单个数据标签，即区域的数据系列的标签。</para>
+          <para>如果系列中指定数据标签的 <b>"显示值"</b>选项处于打开状态，则返回的集合中每个数据点最多包含一个数据标签。可对系列中的各个数据点打开或关闭数据标签。</para>
+          <para>如果指定系列处于面积图中，并且数据标签的 <b>"显示标签"</b>选项处于打开状态，则返回的集合中仅包含单个数据标签，即面积系列的标签。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -572,7 +572,7 @@
         <summary>删除对象。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>删除数据<b>点</b>或<b>LegendKey</b>对象将删除整个数据系列。</para>
+          <para>删除 <b>Point</b> 对象或 <b>LegendKey</b> 对象将删除整个数据系列。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -762,10 +762,13 @@
         <summary>使用 A1 样式表示法返回或设置对象的公式。 可读写 <b>String</b>。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性不可用于 OLAP 数据源。</para>
-          <para>如果单元格包含常量，该属性返回的常量。如果单元格为空，该<b>公式</b>属性将返回空字符串。如果单元格包含公式， <b>Formula</b>属性会将该公式返回相同的格式将公式栏 （包括等号） 中显示的字符串形式。</para>如果设置为日期值或单元格公式的
-          <para>，Microsoft Excel 将检查以查看是否已设置该单元格格式之一的日期或时间的数字格式。如果没有，Microsoft Excel 将号码格式设为默认的短日期数字格式。</para>如果该区域是一个-或两维范围
-          <para>，可以将公式设置为相同尺寸的 Visual Basic 阵列中。同样，将公式放到 Visual Basic 阵列中。</para><para>的多个单元格区域填充公式的范围中的所有单元格设置公式。</para><para></para></remarks>
+          <para>此属性对于 OLAP 数据源无效。</para>
+          <para>如果单元格包含一个常量，此属性返回该常量。如果单元格为空，此 <b>Formula</b> 属性返回一个空字符串。如果单元格包含公式，<b>Formula</b> 属性将该公式作为字符串返回，所用格式与在编辑栏（包括等号）中显示时的格式相同。</para>
+          <para>如果将单元格的值或者公式设置为日期类型，则 Microsoft Excel 将检查此单元格的数字格式是否符合日期或者时间格式。如果不符合，Microsoft Excel 将把数字格式设置为默认的短日期格式。</para>
+          <para>如果指定区域是一维或二维区域，则可将公式指定为 Visual Basic 中相同维数的数组。同样，也可在 Visual Basic 数组中使用公式。</para>
+          <para>如果为多单元格区域设置公式，则会用公式填充该区域所有的单元格。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaLocal">
@@ -797,9 +800,12 @@
         <summary>返回或设置在用户的语言使用 A1-样式引用的对象的公式。 读/写<b>String</b></summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果单元格包含常量，该属性返回的常量。如果单元格为空，则属性将返回空字符串。如果单元格包含公式，则该属性返回公式作为字符串中，在其中将显示公式栏 （包括等号） 中的格式。</para>如果设置为日期值或单元格公式的
-          <para>，Microsoft Excel 将检查以查看是否已设置该单元格格式之一的日期或时间的数字格式。如果没有的数字格式将更改为默认的短日期数字格式。</para>如果该区域是一个-或两维范围
-          <para>，可以将公式设置为相同尺寸的 Visual Basic 阵列中。同样，将公式放到 Visual Basic 阵列中。</para><para>设置多个单元格区域的公式填充公式的范围中的所有单元格。</para><para></para></remarks>
+          <para>如果指定单元格包含常量，此属性返回的就是该常量。如果单元格为空，此属性返回一个空字符串。如果单元格包含公式，此属性将该公式作为字符串返回，所用格式与在编辑栏（包括等号）中显示时的格式相同。</para>
+          <para>如果将单元格的格式的值或公式设为日期类型，Microsoft Excel 将检查该单元格的格式是否符合某个日期或时间数组格式，如果不符合，将采用默认的短日期数字格式。</para>
+          <para>如果指定区域是一维或二维区域，则可将公式指定为 Visual Basic 中相同维数的数组。同样，也可在 Visual Basic 数组中使用公式。</para>
+          <para>如果对多重单元格区域设置公式，则该区域中的所有单元格都用此公式填充。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaR1C1">
@@ -831,9 +837,12 @@
         <summary>返回或设置使用 R1C1 样式表示法对象的公式。 可读写 <b>String</b>。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果单元格包含常量，该属性返回的常量。如果单元格为空，则属性将返回空字符串。如果单元格包含公式，则该属性返回公式作为字符串中，在其中将显示公式栏 （包括等号） 中的格式。</para>如果设置为日期值或单元格公式的
-          <para>，Microsoft Excel 将检查以查看是否已设置该单元格格式之一的日期或时间的数字格式。如果没有的数字格式将更改为默认的短日期数字格式。</para>如果该区域是一个-或两维范围
-          <para>，可以将公式设置为相同尺寸的 Visual Basic 阵列中。同样，将公式放到 Visual Basic 阵列中。</para><para>设置多个单元格区域的公式填充公式的范围中的所有单元格。</para><para></para></remarks>
+          <para>如果单元格包含一个常量，此属性返回该常量。如果单元格为空，此属性返回一个空字符串。如果单元格包含公式，此属性将该公式作为字符串返回，所使用的格式与在公式栏中显示的格式相同（包括等号）。</para>
+          <para>如果将单元格的格式的值或公式设为日期类型，Microsoft Excel 将检查该单元格的格式是否符合某个日期或时间数组格式，如果不符合，将采用默认的短日期数字格式。</para>
+          <para>如果指定区域是一维或二维区域，则可将公式指定为 Visual Basic 中相同维数的数组。同样，也可在 Visual Basic 数组中使用公式。</para>
+          <para>如果对多重单元格区域设置公式，则该区域中的所有单元格都用此公式填充。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaR1C1Local">
@@ -865,9 +874,12 @@
         <summary>返回或设置对象，使用的用户语言的 R1C1 样式表示法表示的公式。读/写， <b>字符串</b> 。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果单元格包含常量，该属性返回的常量。如果单元格为空，则属性将返回空字符串。如果单元格包含公式，则该属性返回公式作为字符串中，在其中将显示公式栏 （包括等号） 中的格式。</para>如果设置为日期值或单元格公式的
-          <para>，Microsoft Excel 将检查以查看是否已设置该单元格格式之一的日期或时间的数字格式。如果没有的数字格式将更改为默认的短日期数字格式。</para>如果该区域是一个-或两维范围
-          <para>，可以将公式设置为相同尺寸的 Visual Basic 阵列中。同样，将公式放到 Visual Basic 阵列中。</para><para>设置多个单元格区域的公式填充公式的范围中的所有单元格。</para><para></para></remarks>
+          <para>如果指定单元格包含常量，此属性返回的就是该常量。如果单元格为空，此属性返回一个空字符串。如果单元格包含公式，此属性将该公式作为字符串返回，所用格式与在编辑栏（包括等号）中显示时的格式相同。</para>
+          <para>如果将单元格的格式的值或公式设为日期类型，Microsoft Excel 将检查该单元格的格式是否符合某个日期或时间数组格式，如果不符合，将采用默认的短日期数字格式。</para>
+          <para>如果指定区域是一维或二维区域，则可将公式指定为 Visual Basic 中相同维数的数组。同样，也可在 Visual Basic 数组中使用公式。</para>
+          <para>如果对多重单元格区域设置公式，则该区域中的所有单元格都用此公式填充。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Has3DEffect">
@@ -1055,10 +1067,10 @@
         <summary>获取或设置在一系列中的负数据点的填充颜色。</summary>
         <value>系列中的负数据点的填充颜色。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>为可读/写属性。</para>
           <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" />属性使您能够负数据点的填充色设置为特定的数字、 十六进制数，八进制数或 RGB 颜色值。若要设置的值作为 RBG 值，使用 Visual Basic 的<b>RGB</b>函数。而不是使用<see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" />属性，您可以使用<see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" />属性，使用简单一的整数值从当前调色板。</para>
-          <para>的<see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" />属性起作用，<see cref="P:Microsoft.Office.Interop.Excel.Series.InvertIfNegative" />属性<see cref="T:Microsoft.Office.Interop.Excel.Series" />对象还必须设置为<b>true</b>。</para>
+            <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" />属性使您能够负数据点的填充色设置为特定的数字、 十六进制数，八进制数或 RGB 颜色值。 若要设置的值作为 RBG 值，使用 Visual Basic 的<b>RGB</b>函数。 而不是使用<see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" />属性，您可以使用<see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" />属性，使用一组较简单的当前调色板中的整数值。</para>
+          <para>为<see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" />属性起作用，<see cref="P:Microsoft.Office.Interop.Excel.Series.InvertIfNegative" />属性<see cref="T:Microsoft.Office.Interop.Excel.Series" />对象还必须设置为<b>true</b>。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1092,10 +1104,10 @@
         <summary>获取或设置在一系列中的负数据点的填充颜色。</summary>
         <value>系列中的负数据点的填充颜色。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>为可读/写属性。</para>
           <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" />属性使您能够设置负数据点的填充颜色的颜色索引值为从 0 到 56。而不是使用<see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" />属性，您可以使用<see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" />属性，使您能够将颜色设置为特定数值，十六进制、 八进制或 RGB 颜色值。</para>
-          <para>的<see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" />属性起作用，<see cref="P:Microsoft.Office.Interop.Excel.Series.InvertIfNegative" />属性<see cref="T:Microsoft.Office.Interop.Excel.Series" />对象还必须设置为<b>true</b>。</para>
+            <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" />属性使您能够设置负数据点的填充颜色的颜色索引值为从 0 到 56。 而不是使用<see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" />属性，您可以使用<see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" />属性，使您能够将颜色设置为特定数值，十六进制、 八进制或 RGB 颜色值。</para>
+          <para>为<see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" />属性起作用，<see cref="P:Microsoft.Office.Interop.Excel.Series.InvertIfNegative" />属性<see cref="T:Microsoft.Office.Interop.Excel.Series" />对象还必须设置为<b>true</b>。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1159,7 +1171,10 @@
       <Docs>
         <summary>此设置控制是否系列已被筛选图表中。 默认值为 <b>False</b> 。 <b>Boolean</b>(C# 中<b>bool</b> )读/写。</summary>
         <value>To be added.</value>
-        <remarks>当用户筛选出一系列，系列<b>IsFiltered</b>属性切换为<b>True</b>，并且系列传输超出其父级<b>SeriesCollection</b><para>。但是，该系列仍保留其父级<b>FullSeriesCollection</b>。时系列重新用户筛选器，它插入回中<b>SeriesCollection</b>其原始位置。</para><para></para></remarks>
+        <remarks>
+          <para>当用户筛选出一系列时，系列<b>IsFiltered</b>属性切换为<b>True</b>，并且系列传递超出其父级<b>SeriesCollection</b>。 但是，该系列仍保留其父级<b>FullSeriesCollection</b>。 当系列重新用户筛选器时，它将插入回中<b>SeriesCollection</b>其原始位置。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LeaderLines">
@@ -1405,35 +1420,35 @@
         <summary>返回或设置对象的名称。 <b>String</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>下表显示<b>名称</b>属性和给定唯一名称"[Europe] 与 OLAP 数据源相关的属性示例值。[France]。[Paris]"，并将与项目的非 OLAP 数据源命名"巴黎"。</para>
+          <para>下表显示了 <b>Name</b> 属性和相关属性的示例值，同时假设有一个具有唯一名称为“[Europe].[France].[Paris]”的 OLAP 数据源，有一个包含项名称为“Paris”的非 OLAP 数据源。</para>
           <list type="table">
             <item>
               <term>
                 <b>标题</b>
               </term>
-              <description>巴黎</description>
-              <description>巴黎</description>
+              <description>Paris</description>
+              <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>名称</b>
               </term>
-              <description>[Europe]。 [法国]。[Paris]（只读）</description>
-              <description>巴黎</description>
+              <description>[Europe].[France].[Paris]（只读）</description>
+              <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>SourceName</b>
               </term>
-              <description>[Europe]。 [法国]。[Paris]（只读）</description>
-              <description>（与 SQL 属性值，只读相同）</description>
+              <description>[Europe].[France].[Paris]（只读）</description>
+              <description>（与 SQL 属性值相同，只读）</description>
             </item>
             <item>
               <term>
                 <b>值</b>
               </term>
-              <description>[Europe]。 [法国]。[Paris]（只读）</description>
-              <description>巴黎</description>
+              <description>[Europe].[France].[Paris]（只读）</description>
+              <description>Paris</description>
             </item>
           </list>
           <para>指定的索引时<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />集合，您可以使用下表中所示的语法。</para>
@@ -1443,11 +1458,11 @@
               <description>表达式。PivotItems("Paris")</description>
             </item>
           </list>
-          <para>时使用<see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" />属性引用集合中的特定成员，您可以使用下表中所示的文本索引名称。</para>
+          <para>当使用<see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" />属性引用集合中的特定成员，您可以使用下表中所示的文本索引名称。</para>
           <list type="table">
             <item>
-              <term>[Europe]。 [法国]。[Paris]</term>
-              <description>巴黎</description>
+              <term>[Europe]。[France]。[Paris]</term>
+              <description>Paris</description>
             </item>
           </list>
           <para></para>
@@ -1635,8 +1650,8 @@
         <summary>获取在内部用于将系列格式与图表元素相关联的索引值。</summary>
         <value>在内部用于将系列格式与图表元素相关联的索引值。</value>
         <remarks>
-          <para>只读的。</para>
-          <para>此属性由 Excel 内部使用，不应从代码调用。</para>
+          <para>只读。</para>
+          <para>该属性由 Excel 在内部使用，不应从代码调用它。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1670,8 +1685,8 @@
         <summary>返回或设置指定图表组中选定数据系列的绘制顺序。 可读写 <b>Integer</b>。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>您可以设置 （如果您有多个图表类型不能设置整个图表的绘制顺序） 图表组内的绘制顺序。图表组是使用相同的图表类型的系列集合。</para>
-          <para>更改某个系列的绘制顺序将导致根据需要调整图图表组中的其他数据系列的绘制顺序。</para>
+          <para>只能设置图表组内的绘制顺序（在图表中包含若干图表类型的情况下，不能设置整个图表的绘制顺序）。图表组指具有相同图表类型和子类型的数据系列的集合。</para>
+          <para>更改某个系列的绘制顺序将导致调整必要图图表组中的其他数据系列的绘制顺序。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1728,7 +1743,7 @@
         <summary>选择对象。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>，选择单元格区域，请使用<b>Select</b>方法。若要使单个单元格活动单元格，请使用<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" />方法。</para>
+          <para>若要选择一个单元格的范围，请使用<b>Select</b>方法。 若要使单个单元格活动单元格，请使用<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" />方法。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1884,7 +1899,7 @@
         <summary>返回或设置系列中的所有值的集合。 这可以是区域工作表或数组常量的值，但不是两者的组合。 读取/写入 <b>对象</b> 。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>的数据透视图报表，此属性是只读的。</para>
+          <para>对于数据透视图，该属性为只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1918,7 +1933,7 @@
         <summary>返回或设置 x 值的图表系列的数组。 可以将<b>XValues</b>属性设置为工作表区域或数组值，但不是能为二者的组合。 读取/写入 <b>对象</b> 。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>的数据透视图报表此属性是只读的。</para>
+          <para>对数据透视图报表此属性是只读的。</para>
           <para></para>
         </remarks>
       </Docs>

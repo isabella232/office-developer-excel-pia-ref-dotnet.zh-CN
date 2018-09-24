@@ -1,10 +1,10 @@
 <Type Name="Axis" FullName="Microsoft.Office.Interop.Excel.Axis">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ddfafcdfbef138ea093cab8dfc3008aaafe95251" />
+    <Meta Name="ms.openlocfilehash" Value="d10d4e8e1ee2a7c304ba94c879df8f19e1748061" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572931" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Axis" />
@@ -33,7 +33,7 @@
     <remarks>
       <para>
         <b>Axis</b>对象是成员<see cref="T:Microsoft.Office.Interop.Excel.Axes" />集合。</para>
-      <para>使用<b>Axes</b>(<paramref name="type, group" />) 其中类型为坐标轴类型，group 为坐标轴组，可返回单个<b>Axis</b>对象。<paramref name="Type" />可以是以下项之一<see cref="ff" />常量： <b>xlCategory</b>、 <b>xlSeries</b>或<b>xlValue</b>。<paramref name="Group" />可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" />常量： <b>xlPrimary</b>或<b>xlSecondary</b>。有关详细信息，请参阅<see cref="M:Microsoft.Office.Interop.Excel._Chart.Axes(System.Object,Microsoft.Office.Interop.Excel.XlAxisGroup)" />方法。</para>
+      <para>使用<b>Axes</b>(<paramref name="type, group" />) 其中类型为坐标轴类型，group 为坐标轴组，可返回单个<b>Axis</b>对象。 <paramref name="Type" />可以是以下项之一<see cref="ff" />常量： <b>xlCategory</b>、 <b>xlSeries</b>或<b>xlValue</b>。 <paramref name="Group" />可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" />常量： <b>xlPrimary</b>或<b>xlSecondary</b>。 有关详细信息，请参阅<see cref="M:Microsoft.Office.Interop.Excel._Chart.Axes(System.Object,Microsoft.Office.Interop.Excel.XlAxisGroup)" />方法。</para>
       <para></para>
     </remarks>
   </Docs>
@@ -95,7 +95,7 @@
         <summary>如果数值轴与分类轴相交于分类之间，则该属性值为 <b>True</b> 。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性仅适用于分类轴，而不适用于三维图表。</para>
+          <para>该属性仅应用于分类轴，而不应用于三维图表。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -126,7 +126,7 @@
         <summary>返回指定坐标轴组。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>对于三维图表，仅<b>xlPrimary</b>是否有效。</para>
+          <para>对于三维图表，仅 <b>xlPrimary</b> 有效。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -188,8 +188,8 @@
         <summary>返回或设置指定分类轴的基本单位。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果将此属性设置没有任何可见效果<see cref="P:Microsoft.Office.Interop.Excel.Axis.CategoryType" />指定坐标轴的属性设置为<b>xlCategoryScale</b>。设置的值会保留，但是，并且<b>CategoryType</b>属性设置为<b>xlTimeScale</b>时才会生效。</para>
-          <para>不能设置此属性对数值轴。</para>
+          <para>如果将此属性设置没有任何可见效果<see cref="P:Microsoft.Office.Interop.Excel.Axis.CategoryType" />指定坐标轴的属性设置为<b>xlCategoryScale</b>。 设置的值被保留，但是，并且 <b>定</b> 属性设置为 <b>xlTimeScale</b> 时生效。</para>
+          <para>不能对数值轴设置该属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -224,7 +224,7 @@
           <b>True</b>如果 Microsoft Excel 选择适当的指定的分类轴的基本单位。 默认值为 <b>True</b> 。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>不能设置此属性对数值轴。</para>
+          <para>不能对数值轴设置该属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -287,7 +287,7 @@
         <value>To be added.</value>
         <remarks>
           <para>当您设置此属性时，您可以将其设置为以下任意数组或<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，其中包含的类别名称。</para>
-          <para>此属性仅适用于分类轴。</para>
+          <para>该属性仅适用于分类轴。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -321,7 +321,7 @@
         <summary>返回或设置分类轴类型。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>不能设置此属性对数值轴。</para>
+          <para>不能对数值轴设置该属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -352,9 +352,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -395,7 +395,7 @@
               <term>
                 <b>xlAxisCrossesAutomatic</b>
               </term>
-              <description>Microsoft Excel 设置坐标轴交叉点。</description>
+              <description>由 Microsoft Excel 设置坐标轴交点。</description>
             </item>
             <item>
               <term>
@@ -414,13 +414,12 @@
                 <b>xlAxisCrossesCustom</b>
               </term>
               <description>
-                <see cref="P:Microsoft.Office.Interop.Excel.Axis.CrossesAt" />属性指定坐标轴交点。</description>
+                <see cref="P:Microsoft.Office.Interop.Excel.Axis.CrossesAt" />属性指定坐标轴相交点。</description>
             </item>
           </list>
-          <para>此属性不可用于雷达图。对于三维图表，此属性只能应用于数值轴且指示平面定义由分类轴与数值轴相交的位置。</para>
-          <para>此属性可用于分类和数值轴。分类轴上,<b>不同，xlMinimum</b>设置数值轴上的第一个类别，跨和<b>xlMaximum</b>设置数值轴的最后一个类别处相交。</para>
-          <para>
-            <b>不同，xlMinimum</b>和<b>xlMaximum</b>可能有不同的含义，根据坐标轴的注释。</para>
+          <para>该属性对雷达图无效。对于三维图表，该属性只能应用于数值轴并指示由分类轴所定义的平面与数值轴相交的位置。</para>
+          <para>本属性既可用于分类轴，也可用于数值轴。在分类轴上，<b>xlMinimum</b> 使数值轴在第一个分类处与之相交，而 <b>xlMaximum</b> 使数值轴在最后一个分类处与之相交。</para>
+          <para>请注意，根据坐标轴的不同， <b>xlMinimum</b> 和 <b>xlMaximum</b> 可能有不同的含义。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -455,7 +454,7 @@
         <value>To be added.</value>
         <remarks>
           <para>设置该属性会<see cref="P:Microsoft.Office.Interop.Excel.Axis.Crosses" />属性更改为<b>xlAxisCrossesCustom</b>。</para>
-          <para>此属性不能用于雷达图。对于三维图表，该属性指示定义由分类轴的平面的数值坐标轴交点。</para>
+          <para>该属性不能用于雷达图。对于三维图表，本属性指示由分类轴和数值轴交叉所定义的平面的位置。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -515,7 +514,7 @@
         <summary>返回或设置数值轴的单位标签。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>当图表大值，则使用单位标签使刻度线标志更容易阅读。例如，如果您标记将数值轴的单位百、 成千上万，您可以使用较小的数值轴上的刻度。</para>
+          <para>在绘制大数值图表时，使用单位标志可使刻度线标志易于阅读。例如，如果将数值轴的单位设置为百、千或百万，则可以在坐标轴的刻度标志上使用较小的数字值。</para>
           <para>
             <see cref="T:Microsoft.Office.Interop.Excel.XlDisplayUnit" />可以是以下<b>XlDisplayUnit</b>常量之一：</para>
           <para>
@@ -585,7 +584,7 @@
         <summary>如果值<see cref="P:Microsoft.Office.Interop.Excel.Axis.DisplayUnit" />属性为<b>xlCustom</b>， <b>DisplayUnitCustom</b>属性返回或设置的显示单位的值。 值必须介于 0 到 10e307 之间。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>使用单位标签时图表大值使您的刻度线标记标签更容易阅读。例如，如果您标记将数值轴的单位百、 成千上万，您可以使用较小的数值轴上的刻度。</para>
+          <para>在绘制大数值图表时，使用单位标志可使刻度线标志易于阅读。例如，如果将数值轴的单位设置为百、千或百万，则可以在坐标轴的刻度标志上使用较小的数字值。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -866,7 +865,7 @@
           <b>Double</b>
         </value>
         <remarks>
-          <para>Attempting 将设置该属性值小于或等于零 (0) 会导致错误。默认值为 10。</para>
+          <para>试图将此属性设置为小于或等于零 (0) 的值将导致错误。默认值是 10。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1445,7 +1444,7 @@
           <b>True</b>如果 Microsoft Excel 绘制数据点从最后一到第一个。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性不能用于雷达图。</para>
+          <para>该属性不能用于雷达图。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1515,7 +1514,7 @@
         <summary>选择对象。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>，选择单元格区域，请使用<b>Select</b>方法。若要使单个单元格活动单元格，请使用<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" />方法。</para>
+          <para>若要选择一个单元格的范围，请使用<b>Select</b>方法。 若要使单个单元格活动单元格，请使用<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" />方法。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1563,7 +1562,7 @@
           <para>
             <b>xlTickLabelPositionNextToAxis</b>
           </para>
-          <para>不能使用<b>xlTickLabelPositionHigh</b>常量在三维图表。</para>
+          <para>不能对三维图表使用<b>xlTickLabelPositionHigh</b>常量。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1625,7 +1624,7 @@
         <summary>返回或设置分类或系列的刻度线标签之间的数。 仅适用于分类和系列轴。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>数值轴上的刻度线标签间距总是由 Microsoft Excel 进行计算。</para>
+          <para>数值轴上刻度线标签间距总是由 Microsoft Excel 进行计算。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1764,12 +1763,12 @@
             <b>xlCategory</b>
           </para>
           <para>
-            <b>xlSeriesAxis</b>
+            <b>xlseriesaxis:</b>
           </para>
           <para>
             <b>xlValue</b>
           </para>
-          <para>时散点图的水平坐标轴使用此属性， <b>xlCategory</b>将作为坐标轴类型返回。</para>
+          <para>在对散点图使用此属性时，<b>xlCategory</b> 将被返回为“坐标轴”类型。</para>
           <para></para>
         </remarks>
       </Docs>

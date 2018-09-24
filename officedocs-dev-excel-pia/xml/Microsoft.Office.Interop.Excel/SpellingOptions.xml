@@ -1,10 +1,10 @@
 <Type Name="SpellingOptions" FullName="Microsoft.Office.Interop.Excel.SpellingOptions">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="680281cf8f7bfb5111026034cee31a35884676c8" />
+    <Meta Name="ms.openlocfilehash" Value="b664c52434f8d93eb47ce0675a7bb457e2c7098f" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576081" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SpellingOptions" />
@@ -89,6 +89,11 @@
             <see cref="P:Microsoft.Office.Interop.Excel.SpellingOptions.SuggestMainOnly" />
           </description>
         </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.SpellingOptions.UserDict" />
+          </description>
+        </item>
       </list>
       <para></para>
     </remarks>
@@ -155,9 +160,9 @@
         <value>
           <b>true</b>如果拼写检查器使用规则阿拉伯语单词以 alef hamza; 开头否则为<b>false</b>。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>为可读/写属性。</para>
           <para>
-            <b>，则返回 true</b>如果拼写检查使用有关以 alef hamza 开头的阿拉伯语单词拼写规则; 否则为<b>false</b>。</para>
+            <b>true</b>如果拼写检查器使用有关阿拉伯语拼写规则 words 开头的字符串以 alef hamza;否则为<b>false</b>。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -192,9 +197,9 @@
         <value>
           <b>true</b>如果拼写检查使用有关以字母 yaa 结尾; 结尾的阿拉伯语单词的规则否则为<b>false</b>。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>为可读/写属性。</para>
           <para>
-            <b>，则返回 true</b>如果拼写检查使用有关以字母 yaa 结尾的阿拉伯语单词的规则; 否则为<b>false</b>。</para>
+            <b>true</b>如果拼写检查使用有关以字母 yaa 结尾; 结尾的阿拉伯语单词的规则否则为<b>false</b>。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -229,9 +234,9 @@
         <value>
           <b>true</b>如果拼写检查器使用规则来标志而不是以 marboota; 结尾的阿拉伯语单词否则为<b>false</b>。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>为可读/写属性。</para>
           <para>
-            <b>，则返回 true</b>如果拼写检查器使用规则来标志而不是以 marboota 结尾的阿拉伯语单词; 否则为<b>false</b>。</para>
+            <b>true</b>如果拼写检查器使用规则来标志而不是以 marboota; 结尾的阿拉伯语单词否则为<b>false</b>。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -265,9 +270,9 @@
         <summary>获取或设置为巴西葡萄牙语的拼写检查模式。</summary>
         <value>巴西葡萄牙语的拼写检查模式。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>为可读/写属性。</para>
           <para>
-            <b>注意</b>： 该属性不会设置欧洲葡萄牙语的拼写检查的模式。若要执行的操作，使用<see cref="P:Microsoft.Office.Interop.Excel.SpellingOptions.PortugalReform" />属性。</para>
+            <b>注意</b>： 该属性不会设置欧洲葡萄牙语的拼写检查的模式。 若要执行的操作，使用<see cref="P:Microsoft.Office.Interop.Excel.SpellingOptions.PortugalReform" />属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -364,7 +369,7 @@
         <summary>返回或设置希伯来语拼写检查工具的模式。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>合法的希伯来语单词可以是基本的词典词条或任何屈。</para>
+          <para>合法的希伯来语单词可以是基本的词典词条或任何一个经过词形变化的词。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -587,9 +592,9 @@
         <summary>获取或设置欧洲葡萄牙语的拼写检查的模式。</summary>
         <value>欧洲葡萄牙语的拼写检查模式。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>为可读/写属性。</para>
           <para>
-            <b>注意</b>： 该属性不会设置为巴西葡萄牙语的拼写检查模式。若要执行的操作，使用<see cref="P:Microsoft.Office.Interop.Excel.SpellingOptions.BrazilReform" />属性。</para>
+            <b>注意</b>： 该属性不会设置为巴西葡萄牙语的拼写检查模式。 若要执行的操作，使用<see cref="P:Microsoft.Office.Interop.Excel.SpellingOptions.BrazilReform" />属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -624,9 +629,9 @@
         <value>
           <b>true</b>如果拼写检查使用有关以包含字符 ë; 的俄语单词的规则否则为<b>false</b>。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>为可读/写属性。</para>
           <para>
-            <b>，则返回 true</b>如果拼写检查使用有关以包含字符 ë 的俄语单词的规则; 否则为<b>false</b>。</para>
+            <b>true</b>如果拼写检查使用有关以包含字符 ë; 的俄语单词的规则否则为<b>false</b>。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -660,7 +665,7 @@
         <summary>获取或设置检查西班牙语的拼写的模式。</summary>
         <value>西班牙语拼写检查模式。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>为可读/写属性。</para>
           <para></para>
         </remarks>
       </Docs>

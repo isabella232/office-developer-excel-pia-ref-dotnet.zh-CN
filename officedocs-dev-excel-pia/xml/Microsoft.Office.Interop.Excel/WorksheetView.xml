@@ -1,10 +1,10 @@
 <Type Name="WorksheetView" FullName="Microsoft.Office.Interop.Excel.WorksheetView">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="97c336b4282cbc103ce2a8f4618467c615c04d48" />
+    <Meta Name="ms.openlocfilehash" Value="6d639f6ce96c01d378daef71d514ccd7be53adeb" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20577096" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface WorksheetView" />
@@ -32,7 +32,7 @@
     <summary>指定的或活动工作簿中所有 <b>WorksheetView</b> 对象的集合。
 </summary>
     <remarks>
-      <para>通过如使用属性控制应用程序或工作簿级视图的外观<see cref="P:Microsoft.Office.Interop.Excel.WorksheetView.DisplayFormulas" />， <see cref="P:Microsoft.Office.Interop.Excel.WorksheetView.DisplayGridlines" />，和<see cref="P:Microsoft.Office.Interop.Excel.WorksheetView.DisplayHeadings" />。</para>
+      <para>通过使用如属性控制应用程序或工作簿级视图的外观<see cref="P:Microsoft.Office.Interop.Excel.WorksheetView.DisplayFormulas" />， <see cref="P:Microsoft.Office.Interop.Excel.WorksheetView.DisplayGridlines" />，和<see cref="P:Microsoft.Office.Interop.Excel.WorksheetView.DisplayHeadings" />。</para>
       <para></para>
     </remarks>
   </Docs>
@@ -65,7 +65,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel._Application" />
         </value>
         <remarks>
-          <para>您可以使用此属性与 OLE 自动化对象返回该对象的应用程序。</para>
+          <para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -97,7 +97,10 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
-        <remarks>如果对象在 Microsoft Excel 中创建的<para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para></para></remarks>
+        <remarks>
+          <para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。<b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayFormulas">
@@ -165,8 +168,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>此属性仅适用于工作表和宏工作表。 </para>
-          <para>此属性会影响只显示网格线。使用<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintGridlines" />属性控制打印网格线。</para>
+          <para>该属性仅应用于工作表和宏工作表。</para>
+          <para>此属性会影响只显示网格线。 使用<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintGridlines" />属性控制打印网格线。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -203,8 +206,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>此属性仅适用于工作表和宏工作表。 </para>
-          <para>此属性会影响只显示标题。使用<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintHeadings" />属性控制标题的打印。</para>
+          <para>该属性仅应用于工作表和宏工作表。</para>
+          <para>此属性会影响只显示标题。 使用<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintHeadings" />属性控制标题的打印。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -241,7 +244,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>此属性仅适用于工作表和宏工作表。</para>
+          <para>该属性仅应用于工作表和宏工作表。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -278,7 +281,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>此属性仅适用于工作表和宏工作表。</para>
+          <para>该属性仅应用于工作表和宏工作表。</para>
           <para></para>
         </remarks>
       </Docs>

@@ -1,10 +1,10 @@
 <Type Name="CalculatedFields" FullName="Microsoft.Office.Interop.Excel.CalculatedFields">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="322bea970ce4e1d5a0095eafdd21ad263f26ffe7" />
+    <Meta Name="ms.openlocfilehash" Value="551200c74cbef27982489b80758fa22c187b61fe" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572672" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CalculatedFields : System.Collections.IEnumerable" />
@@ -35,8 +35,8 @@
   <Docs>
     <summary>一<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />对象值，该值代表指定数据透视表报告中的所有计算的字段。</summary>
     <remarks>
-      <para>如无法具有一个计算的字段名为"利润"，并定义为费用字段中的金额减去收入字段中的金额包含收入和费用字段的报告。</para>
-      <para>对于 OLAP 数据源，不能设置该集合，并且它始终返回<b>Nothing</b>。</para>
+      <para>例如，一个报表无法具有一个计算的字段名为"利润"，并定义为费用字段中的金额减去收入字段中的金额包含收入和费用字段。</para>
+      <para>对于 OLAP 数据源，无法设置该集合，它始终返回 <b>Nothing</b>。</para>
       <para>使用<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.CalculatedFields" />方法可返回<b>CalculatedFields</b>集合。</para>
       <para>使用<b>CalculatedFields</b>(<paramref name="index" />)，其中<paramref name="index" />是指定的字段的名称或索引号，可从<b>CalculatedFields</b>集合返回单个<b>PivotField</b>对象。</para>
       <para></para>
@@ -226,9 +226,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>

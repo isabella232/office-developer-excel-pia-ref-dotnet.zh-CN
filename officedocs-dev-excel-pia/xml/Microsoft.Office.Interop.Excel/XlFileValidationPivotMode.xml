@@ -1,10 +1,10 @@
 <Type Name="XlFileValidationPivotMode" FullName="Microsoft.Office.Interop.Excel.XlFileValidationPivotMode">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c8e55ec1ec9ea610add3c7ccb937797796fc156c" />
+    <Meta Name="ms.openlocfilehash" Value="b2b09bda61eed0ec23579a26ff7207bf32c883e0" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575346" />
   </Metadata>
   <TypeSignature Language="C#" Value="public enum XlFileValidationPivotMode" />
@@ -22,8 +22,24 @@
   <Docs>
     <summary>指定如何验证数据透视表的数据缓存。</summary>
     <remarks>
-      <para>此枚举用于指定的设置<see cref="P:Microsoft.Office.Interop.Excel._Application.FileValidationPivot" />属性<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象。</para>由 PivotOptions 注册表值，该值在以下注册表子项中设置控制
-      <para><b>xlFileValidationPivotDefault</b>设置的影响： HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Excel\Security\FileValidation。PivotOptions 值是按照下表中所列可以设置一个 DWORD 值。</para><list type="table"><item><term>0</term><description>从不验证数据透视表数据缓存。（不推荐）</description></item><item><term>1</term><description>验证数据透视表报告数据缓存在以下情况下 （默认设置）： 已打开该文件从互联网文件是电子邮件附件。使用打开对话框的受保护的视图命令中打开已打开文件。从已知不安全位置其中 Internet 内容缓存在本地，或用户定义的不受信任位置打开该文件。数据缓存分析在加载时打开该文件。</description></item><item><term>2</term><description>验证所有数据透视表数据缓存。</description></item></list><para></para></remarks>
+      <para>此枚举用于指定的设置<see cref="P:Microsoft.Office.Interop.Excel._Application.FileValidationPivot" />属性<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象。</para>
+      <para>由 PivotOptions 注册表值，该值在以下注册表子项中设置控制<b>xlFileValidationPivotDefault</b>设置的影响： HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Excel\Security\FileValidation。 PivotOptions 值是按照下表中所列可以设置一个 DWORD 值。</para>
+      <list type="table">
+        <item>
+          <term>0</term>
+          <description>不验证数据透视表数据缓存。（不推荐）</description>
+        </item>
+        <item>
+          <term>1</term>
+          <description>验证数据透视表数据缓存在以下情况下 （默认设置）： 已打开该文件从互联网文件是电子邮件附件。使用打开对话框的受保护的视图命令中打开已打开文件。从已知不安全位置其中 Internet 内容缓存在本地，或用户定义的不受信任位置打开该文件。 文件打开时，将在加载数据缓存时对其进行解析。</description>
+        </item>
+        <item>
+          <term>2</term>
+          <description>验证所有数据透视表数据缓存。</description>
+        </item>
+      </list>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="xlFileValidationPivotDefault">

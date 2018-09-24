@@ -1,10 +1,10 @@
 <Type Name="TableStyles" FullName="Microsoft.Office.Interop.Excel.TableStyles">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="03e47761cb02c3ab6b4ff2d4f2536bdbb8cc8a76" />
+    <Meta Name="ms.openlocfilehash" Value="70d5a69d0e4e826dda6e82f38beab66614060a9a" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20579595" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface TableStyles : System.Collections.IEnumerable" />
@@ -35,24 +35,26 @@
   <Docs>
     <summary>代表可应用于表格的样式。</summary>
     <remarks>
-      <para>表样式提供了一种方法来设置格式的整个表或数据透视表。表格样式替换现有的自动套用格式功能的整个表格的格式。</para>
-      <para>表格样式与自动套用格式如下：</para>
+      <para>表格样式提供了一种为整个表格或数据透视图设置格式的方式。表格样式取代了用于为整个表格设置格式的现有的自动套用格式功能。</para>
+      <para>表格样式与自动套用格式在以下几个方面不同：</para>
       <para></para>
       <list type="bullet">
         <item>
-          <description>可以创建并重复使用您自己的自定义表格样式。</description>
+          <description>您可以创建并重复使用您自己的自定义表格样式。
+</description>
         </item>
         <item>
-          <description>表格样式可处理主题。 </description>
+          <description>表格样式可处理主题。  </description>
         </item>
         <item>
-          <description>更改文档主题的配色方案和/或字体方案将更改内置表格样式的外观。</description>
+          <description>更改文档主题的配色方案和/或字体方案将更改内置表格样式的外观。 </description>
         </item>
         <item>
-          <description>表格样式可重新样式到对象，如数据透视表和表格应用对象更改。 表将记住应用于它们的样式和时单元格添加、 删除、 隐藏，并且显示将重新显示相应。</description>
+          <description>当对象发生变化时，表格样式可以将样式重新应用于像数据透视表和表格之类的对象。该表格将记住应用于对象的样式，在添加、删除、隐藏和显示单元格时，表格将相应地进行重新显示。</description>
         </item>
         <item>
-          <description>表格样式具有可见的用户界面功能区中。</description>
+          <description>表格样式必须在功能区可见的用户界面。
+</description>
         </item>
       </list>
       <para></para>
@@ -152,7 +154,7 @@
           <b>对象</b>
         </value>
         <remarks>
-          <para>您可以使用此属性与 OLE 自动化对象返回该对象的应用程序。</para>
+          <para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -214,7 +216,10 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
-        <remarks>如果对象在 Microsoft Excel 中创建的<para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para></para></remarks>
+        <remarks>
+          <para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。<b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

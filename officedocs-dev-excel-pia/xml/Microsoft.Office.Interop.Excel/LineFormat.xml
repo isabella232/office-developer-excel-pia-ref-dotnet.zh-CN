@@ -1,10 +1,10 @@
 <Type Name="LineFormat" FullName="Microsoft.Office.Interop.Excel.LineFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="13bc8c12ad34dfd5fd661b85e444b185e1b7b074" />
+    <Meta Name="ms.openlocfilehash" Value="7d64676ab2ca48d349cd8696c6abf4830f0a9f32" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575486" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface LineFormat : Microsoft.Office.Core._IMsoDispObj" />
@@ -32,7 +32,7 @@
   <Docs>
     <summary>代表线条和箭头格式。</summary>
     <remarks>
-      <para>对于线条， <b>LineFormat</b>对象包含该线条自身; 格式信息对于带有边框形状，该对象包含形状的边框的格式信息。</para>
+      <para>对于线条， <b>LineFormat</b> 对象包含关于线条本身; 的格式设置信息具有边框的形状，该对象包含形状的边框的格式设置信息。</para>
       <para>使用<see cref="P:Microsoft.Office.Interop.Excel.Shape.Line" />属性可返回<b>LineFormat</b>对象。</para>
       <para></para>
     </remarks>
@@ -222,9 +222,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -413,9 +413,9 @@
         <summary>获取或设置是否线条绘制在指定的形状的边界。</summary>
         <value>A<see cref="T:Microsoft.Office.Core.MsoTriState" />对象。</value>
         <remarks>
-          <para>读/写。</para>
-          <para>
-            <b>，则为 msoTrue</b> (-1) 如果线条绘制在形状的边界; 否则为<b>msoFalse</b> (0)。</para>
+          <para>为可读/写属性。</para>
+          <para>如果线条绘制在形状的边界以内，则为 
+            <b>msoTrue</b> (-1)；否则为 <b>msoFalse</b> (0)。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -539,7 +539,7 @@
         <summary>返回或设置指定填充的透明度作为值从 0.0 （不透明） 到 1.0 （清除）。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性的值影响的纯色填充外观和仅行; 它不影响带图案的线条或图案、 渐变、 纹理的填充的外观。</para>
+          <para>此属性的值仅影响均一颜色填充和线条的外观。对图案线条及渐变、图案、图片和纹理填充的外观无效。</para>
           <para></para>
         </remarks>
       </Docs>

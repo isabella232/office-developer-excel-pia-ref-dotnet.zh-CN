@@ -1,10 +1,10 @@
 <Type Name="SmartTagAction" FullName="Microsoft.Office.Interop.Excel.SmartTagAction">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f9b7525cdde5955b94995035e9fee9c22d92425a" />
+    <Meta Name="ms.openlocfilehash" Value="0a10fef880f7ed0c7daae5414a8fa44a05aefdd9" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578076" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SmartTagAction" />
@@ -32,7 +32,7 @@
     <summary>代表可用智能标记执行的操作</summary>
     <remarks>
       <para>使用<see cref="P:Microsoft.Office.Interop.Excel.SmartTagActions.Item(System.Object)" />属性<see cref="T:Microsoft.Office.Interop.Excel.SmartTagActions" />返回<b>SmartTagAction</b>对象的集合。</para>
-      <para>后返回<b>SmartTagAction</b>对象后，您可以激活自动添加批注数据使用智能标记<see cref="M:Microsoft.Office.Interop.Excel.SmartTagAction.Execute" />方法。</para>
+      <para>一旦返回<b>SmartTagAction</b>对象后，您可以激活自动添加批注数据使用智能标记<see cref="M:Microsoft.Office.Interop.Excel.SmartTagAction.Execute" />方法。</para>
       <para></para>
     </remarks>
   </Docs>
@@ -154,7 +154,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>CheckboxState</b>属性设置为<b>True</b>选中该复选框。此属性设置为<b>False</b>将清除复选框。</para>
+            <b>CheckboxState</b>属性设置为<b>True</b>选中该复选框。 此属性设置为<b>False</b>清除复选框。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -185,9 +185,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -311,29 +311,29 @@
               <term>
                 <b>标题</b>
               </term>
-              <description>巴黎</description>
-              <description>巴黎</description>
+              <description>Paris</description>
+              <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>名称</b>
               </term>
-              <description>[Europe]。 [法国]。[Paris]（只读）</description>
-              <description>巴黎</description>
+              <description>[Europe].[France].[Paris]（只读）</description>
+              <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>SourceName</b>
               </term>
-              <description>[Europe]。 [法国]。[Paris]（只读）</description>
-              <description>（与 SQL 属性值，只读相同）</description>
+              <description>[Europe].[France].[Paris]（只读）</description>
+              <description>（与 SQL 属性值相同，只读）</description>
             </item>
             <item>
               <term>
                 <b>值</b>
               </term>
-              <description>[Europe]。 [法国]。[Paris]（只读）</description>
-              <description>巴黎</description>
+              <description>[Europe].[France].[Paris]（只读）</description>
+              <description>Paris</description>
             </item>
           </list>
           <para>指定的索引时<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />集合，您可以使用下表中所示的语法。</para>
@@ -343,11 +343,11 @@
               <description>表达式。PivotItems("Paris")</description>
             </item>
           </list>
-          <para>时使用<see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" />属性引用集合中的特定成员，您可以使用下表中所示的文本索引名称。</para>
+          <para>当使用<see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" />属性引用集合中的特定成员，您可以使用下表中所示的文本索引名称。</para>
           <list type="table">
             <item>
-              <term>[Europe]。 [法国]。[Paris]</term>
-              <description>巴黎</description>
+              <term>[Europe]。[France]。[Paris]</term>
+              <description>Paris</description>
             </item>
           </list>
           <para></para>

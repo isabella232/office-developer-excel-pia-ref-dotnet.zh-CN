@@ -1,10 +1,10 @@
 <Type Name="UniqueValues" FullName="Microsoft.Office.Interop.Excel.UniqueValues">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f01acc4c1bb63a5b606cf231563d19494b82dbd9" />
+    <Meta Name="ms.openlocfilehash" Value="7327266440c4ce7862c175d5e4fbece11422832f" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578475" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface UniqueValues" />
@@ -62,7 +62,7 @@
           <b>应用程序</b>
         </value>
         <remarks>
-          <para>您可以使用此属性与 OLE 自动化对象返回该对象的应用程序。</para>
+          <para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -125,7 +125,7 @@
           <b>Borders</b>
         </value>
         <remarks>
-          <para>对于条件格式对象，您只能设置为顶部、 底部和侧边框的单元格的属性。</para>
+          <para>对于条件格式对象，您只能为单元格的上边框、下边框和侧边框设置属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -157,7 +157,10 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
-        <remarks>如果对象在 Microsoft Excel 中创建的<para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para></para></remarks>
+        <remarks>
+          <para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。<b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -246,7 +249,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.Font" />
         </value>
         <remarks>
-          <para>不支持条件格式对象的<b>Font</b>对象的所有属性。您可以设置字体样式、 下划线、 颜色和删除线属性。</para>
+          <para>条件格式对象并不支持 <b>Font</b> 对象的所有属性。您可以设置字体样式、下划线、颜色和删除线属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -306,8 +309,8 @@
         <param name="Range">此格式规则将应用于的区域。</param>
         <summary>设置此格式规则所应用于的单元格区域。</summary>
         <remarks>
-          <para>范围必须以 A1 引用样式和完全包含在工作表的父级的<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />集合。它可以包括区域运算符 （冒号）、 交点运算符 （空格） 或 union 运算符 （逗号分隔）。也可以使用美元符号，但会被忽略。</para>
-          <para>您还可以使用局部定义的名称范围的任何部分中，但该名称必须是在宏的语言。</para>
+          <para>范围必须以 A1 引用样式和完全包含在工作表的父级的<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />集合。 它可以包括区域运算符 （冒号）、 交点运算符 （空格） 或 union 运算符 （逗号分隔）。 也可以使用美元符号，但会被忽略。</para>
+          <para>您也可以在区域的任意部分中使用局部定义名称，但该名称必须使用宏语言。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -342,7 +345,10 @@
         <value>
           <b>对象</b>
         </value>
-        <remarks>使用单元格格式对话框的数字选项卡上显示的相同的格式代码指定<para>的数字格式。您可以使用内置的数字格式，例如"常规"，或创建自定义数字格式。</para><para></para></remarks>
+        <remarks>
+          <para>数字格式是使用“单元格格式”对话框的“数字”选项卡上显示的相同格式代码指定的。您可以使用内置的数字格式，例如 "General" 或者创建自定义数字格式。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -406,7 +412,7 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>时设置的优先级，值必须是介于 1 和工作表上的条件格式规则的总数之间的正整数。优先级必须在工作表上的所有规则的唯一值，因此更改指定的条件格式规则的优先级可能导致要移动的工作表上的其他规则的优先级值。</para>
+          <para>设置优先级时，值必须为介于 1 和工作表上条件格式规则总数之间的正整数。对于工作表上的所有规则，优先级必须为唯一值，因此，如果更改指定条件格式规则的优先级，将可能会导致工作表上其他规则的优先级值移位。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -500,9 +506,9 @@
       <Docs>
         <summary>将此条件格式规则的优先级值设置为“1”，以便在工作表上的所有其他规则之前计算此规则。</summary>
         <remarks>
-          <para>当您有多个工作表中的条件格式规则如果规则以前没有设置为"1"的优先级时，此方法将导致加一工作表上的所有其他现有规则的优先级。</para>
+          <para>当工作表中有多个条件格式规则时，如果之前未将此规则设置为优先级“1”，此方法将导致工作表上的所有其他现有规则的优先级都增加 1。</para>
           <para>
-            <b>注释</b>： 基于工作表级别应用条件格式规则的优先级。</para>
+            <b>注意</b>： 基于工作表级别应用条件格式规则的优先级。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -530,9 +536,9 @@
       <Docs>
         <summary>为此条件格式规则设置求值顺序，以便在工作表上的所有其他规则之后计算此规则。</summary>
         <remarks>
-          <para>优先级的实际值将等于的工作表上的条件格式规则的总数。如果您在工作表中有多个条件格式规则，此方法将导致的优先级值大于加一该规则的规则的优先级。</para>
+          <para>优先级的实际值将等于工作表上条件格式规则的总数。当工作表中有多个条件格式规则时，此方法将导致优先级值大于此规则的规则的优先级增加 1。</para>
           <para>
-            <b>注释</b>： 基于工作表级别应用条件格式规则的优先级。</para>
+            <b>注意</b>： 基于工作表级别应用条件格式规则的优先级。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -568,7 +574,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>为了支持向后兼容性，此属性的默认值为<b>True</b>，即的格式的行为相反用户界面中创建的规则。</para>
+          <para>为了支持向后兼容性，此属性的默认值为 <b>True</b>，而这与在用户界面中创建的格式规则的行为相反。</para>
           <para></para>
         </remarks>
       </Docs>

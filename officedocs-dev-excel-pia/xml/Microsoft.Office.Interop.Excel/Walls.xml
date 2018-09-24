@@ -1,10 +1,10 @@
 <Type Name="Walls" FullName="Microsoft.Office.Interop.Excel.Walls">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a799677b46bf969b126a84541e7f118b6dcbcf47" />
+    <Meta Name="ms.openlocfilehash" Value="694e055e0616d70a2ab7c59205f377db0e237a53" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576046" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Walls" />
@@ -31,7 +31,7 @@
   <Docs>
     <summary>代表三维图表的背景墙。</summary>
     <remarks>
-      <para>此对象不是一个集合。没有对象表示单个墙;您必须作为部门返回所有背景墙</para>
+      <para>此对象不是集合。 没有对象表示单个墙;您必须为单位返回所有背景墙。</para>
       <para>使用<see cref="P:Microsoft.Office.Interop.Excel._Chart.Walls" />属性可返回<b>Walls</b>对象。</para>
       <para></para>
     </remarks>
@@ -148,9 +148,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -273,35 +273,35 @@
         <summary>返回的对象的名称。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>下表显示<b>名称</b>属性和给定唯一名称"[Europe] 与 OLAP 数据源相关的属性示例值。[France]。[Paris]"，并将与项目的非 OLAP 数据源命名"巴黎"。</para>
+          <para>下表显示了 <b>Name</b> 属性和相关属性的示例值，同时假设有一个具有唯一名称为“[Europe].[France].[Paris]”的 OLAP 数据源，有一个包含项名称为“Paris”的非 OLAP 数据源。</para>
           <list type="table">
             <item>
               <term>
                 <b>标题</b>
               </term>
-              <description>巴黎</description>
-              <description>巴黎</description>
+              <description>Paris</description>
+              <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>名称</b>
               </term>
-              <description>[Europe]。 [法国]。[Paris]（只读）</description>
-              <description>巴黎</description>
+              <description>[Europe].[France].[Paris]（只读）</description>
+              <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>SourceName</b>
               </term>
-              <description>[Europe]。 [法国]。[Paris]（只读）</description>
-              <description>（与 SQL 属性值，只读相同）</description>
+              <description>[Europe].[France].[Paris]（只读）</description>
+              <description>（与 SQL 属性值相同，只读）</description>
             </item>
             <item>
               <term>
                 <b>值</b>
               </term>
-              <description>[Europe]。 [法国]。[Paris]（只读）</description>
-              <description>巴黎</description>
+              <description>[Europe].[France].[Paris]（只读）</description>
+              <description>Paris</description>
             </item>
           </list>
           <para>指定的索引时<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />集合，您可以使用下表中所示的语法。</para>
@@ -366,7 +366,7 @@
       <Docs>
         <summary>将剪贴板中的图片粘贴到指定图表的背景墙上。</summary>
         <remarks>
-          <para>列、 栏、 折线图或雷达图图表上可以使用此方法。它将<b>MarkerStyle</b>属性设置为<b>xlMarkerStylePicture</b>。</para>
+          <para>此方法可在柱形图、条形图、折线图或雷达图上使用。 它会将<b>MarkerStyle</b>属性设置为<b>xlMarkerStylePicture</b>。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -494,7 +494,7 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>使用此属性可设置墙上的粗细。 默认粗细为 0。</para>
+          <para>使用此属性设置边框的粗细。默认粗细为 0。</para>
           <para></para>
         </remarks>
       </Docs>

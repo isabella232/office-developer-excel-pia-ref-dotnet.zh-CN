@@ -1,10 +1,10 @@
 <Type Name="ServerViewableItems" FullName="Microsoft.Office.Interop.Excel.ServerViewableItems">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c2be0679f4fcc0da628343344a5b5b0cce8a4549" />
+    <Meta Name="ms.openlocfilehash" Value="6a49378a5a672e109bb0d1469a510a5d3faf8153" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20579448" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ServerViewableItems : System.Collections.IEnumerable" />
@@ -35,8 +35,11 @@
   <Docs>
     <summary>已标记为在服务器上可查看的对象的集合。</summary>
     <remarks>
-      <para>这是一个集合中对象的引用的<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。在服务器上将显示仅此集合中的对象。 默认情况下，将显示整个工作簿 （包括所有工作表）。 </para>仅具有一个
-      <para><see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" />对象可以存在每<see cref="T:Microsoft.Office.Interop.Excel._Workbook" />。 此集合不编制索引的名称，因为没有不保证标记为可查看服务器上的对象的名称是唯一。</para><para>在 Excel 用户界面中，您可以查看标记为 Excel Services 选项对话框中的服务器上可查看的对象的集合。</para><para></para></remarks>
+      <para>这是一个集合中对象的引用的<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。 在服务器上将显示仅此集合中的对象。  默认情况下，将显示整个工作簿 （包括所有工作表）。  </para>
+      <para>只有一个<see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" />对象可以存在每个<see cref="T:Microsoft.Office.Interop.Excel._Workbook" />。  此集合不是按名称编制索引，因为没有不保证标记为可查看服务器上的对象的名称是唯一。</para>
+      <para>在 Excel 用户界面中，您可以查看标记为 Excel Services 选项对话框中的服务器上可查看的对象的集合。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -102,7 +105,10 @@
         <returns>
           <b>对象</b>
         </returns>
-        <remarks>如果您尝试添加的表和为已命名的项目组合的<para><see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" />集合，则返回一个错误。 <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" />集合可以包含仅引用工作表或仅引用已命名的项目，但不是能同时在同一呼叫。 </para><para></para></remarks>
+        <remarks>
+          <para>如果您尝试添加的表和为已命名的项目组合<see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" />集合，则返回一个错误。  <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" />集合可以包含仅引用工作表或仅引用已命名的项目，但不是能同时在同一呼叫。  </para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -133,7 +139,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel._Application" />
         </value>
         <remarks>
-          <para>使用对象识别符时，此属性返回的 Microsoft Office Excel 应用程序。如果使用对象识别符，此属性返回值，该值代表指定对象的创建者<b>Application</b>对象。</para>
+          <para>使用对象识别符，此属性返回的 Microsoft Office Excel 应用程序。 如果使用对象识别符，此属性返回值，该值代表指定对象的创建者<b>Application</b>对象。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -195,7 +201,10 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
-        <remarks>如果对象在 Microsoft Excel 中创建的<para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para></para></remarks>
+        <remarks>
+          <para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。<b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -224,7 +233,7 @@
         <param name="Index">需要您要删除的对象的索引的<b>整数</b>。</param>
         <summary>删除对中的对象的引用<see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" />中的集<see cref="T:Microsoft.Office.Interop.Excel._Workbook" />。</summary>
         <remarks>
-          <para>您不希望在 Excel Services 中查看特定对象，如果使用此方法删除该对象。</para>
+          <para>如果不希望在 Excel Services 中看到特定对象，请使用此方法删除该对象。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -252,7 +261,7 @@
       <Docs>
         <summary>删除对中的所有对象的引用<see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" />中的集<see cref="T:Microsoft.Office.Interop.Excel._Workbook" />。</summary>
         <remarks>
-          <para>如果不希望任何中对象的<see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" />集合可在服务器上，使用此方法将其删除一次性彻底。</para>
+          <para>如果不希望任何中对象的<see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" />集合可在服务器上，使用此方法将其一次性彻底删除。</para>
           <para>
             <b>注意</b>： 如果<see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" />集合不包含至少一个<b>对象</b>，查看时，您将看到消息"无法为显示指定命名区域或项目" <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> Excel Services 中。</para>
           <para></para>

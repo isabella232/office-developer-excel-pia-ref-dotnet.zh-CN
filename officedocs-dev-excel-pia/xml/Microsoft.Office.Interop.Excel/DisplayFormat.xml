@@ -1,10 +1,10 @@
 <Type Name="DisplayFormat" FullName="Microsoft.Office.Interop.Excel.DisplayFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="950506d4053e1b80daf0ee4edfebb807a67ddea2" />
+    <Meta Name="ms.openlocfilehash" Value="4ddcd9f96de4128a0ca313e475935d98703af7f3" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20573526" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DisplayFormat" />
@@ -31,8 +31,10 @@
   <Docs>
     <summary>代表关联的显示设置<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象。</summary>
     <remarks>
-      <para>只读的。</para>如更改一个范围的条件格式或表样式的
-      <para>操作将导致不一致使用中的相应属性的值在当前用户界面中显示的内容<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象。使用的属性<see cref="T:Microsoft.Office.Interop.Excel.DisplayFormat" />对象来返回的值是当前用户界面中显示。</para><para></para></remarks>
+      <para>只读。</para>
+      <para>如更改一个范围的条件格式或表样式的操作将导致不一致使用中的相应属性的值在当前用户界面中显示的内容<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象。 使用的属性<see cref="T:Microsoft.Office.Interop.Excel.DisplayFormat" />对象的当前用户界面中所显示返回的值。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddIndent">
@@ -61,8 +63,8 @@
         <summary>获取一个值，指示是否 Microsoft Excel 自动缩进文本关联的<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的单元格中的文本对齐方式设置为等距分布 （水平或垂直等距） 时, 显示在当前用户界面中。</summary>
         <value>指示是否 Microsoft Excel 自动缩进文本关联的<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的单元格中的文本对齐方式设置为等距分布 （水平或垂直等距） 时, 显示在当前用户界面中。</value>
         <remarks>
-          <para>只读的。</para>
-          <para>返回<b>true</b>如果单元格中的文本对齐方式设置时，为水平或垂直等距分布到自动缩进文本。</para>
+          <para>只读。</para>
+          <para>如果单元格中的文本对齐方式设置时，为水平或垂直等距分布到自动缩进文本，则返回<b>true</b> 。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -94,7 +96,7 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.Application" />对象。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -125,7 +127,7 @@
         <summary>获取<see cref="T:Microsoft.Office.Interop.Excel.Borders" />对象，表示关联的边框<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象在当前用户界面中显示。</summary>
         <value>A<see cref="T:Microsoft.Office.Interop.Excel.Borders" />对象，表示关联的边框<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象在当前用户界面中显示。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -190,8 +192,10 @@
         <summary>获取一个指示在其中创建此对象的应用程序的 32 位<b>整数</b>。</summary>
         <value>32 位<b>整数</b>，指示在其中创建此对象的应用程序。</value>
         <remarks>
-          <para>只读的<b>long</b>。</para>如果对象在 Microsoft Excel 中创建的
-          <para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。<see cref="P:Microsoft.Office.Interop.Excel.DisplayFormat.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para></para></remarks>
+          <para>只读的<b>long</b>。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <see cref="P:Microsoft.Office.Interop.Excel.DisplayFormat.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -220,7 +224,7 @@
         <summary>获取<see cref="T:Microsoft.Office.Interop.Excel.Font" />对象，表示关联的字体<see cref="T:Microsoft.Office.Interop.Excel.Range" />是显示在当前用户界面。</summary>
         <value>A<see cref="T:Microsoft.Office.Interop.Excel.Font" />对象，表示关联的字体<see cref="T:Microsoft.Office.Interop.Excel.Range" />是显示在当前用户界面。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -251,7 +255,7 @@
         <summary>获取一个值，指示如果关联的公式<see cref="T:Microsoft.Office.Interop.Excel.Range" />是当前用户界面中显示工作表处于保护状态时隐藏对象。</summary>
         <value>指示如果关联的公式<see cref="T:Microsoft.Office.Interop.Excel.Range" />是当前用户界面中显示工作表处于保护状态时隐藏对象。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para>如果工作表时隐藏公式，则返回<b>true</b>保护，空引用 (在 Visual Basic 中为 Nothing) 如果该区域包含有些单元格的<see cref="P:Microsoft.Office.Interop.Excel.DisplayFormat.FormulaHidden" />等于<b>true</b>和有些单元格的<see cref="P:Microsoft.Office.Interop.Excel.DisplayFormat.FormulaHidden" />等于<b>false</b>。</para>
           <para></para>
         </remarks>
@@ -283,7 +287,7 @@
         <summary>获取一个值，代表相关联的水平对齐方式<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</summary>
         <value>关联的水平对齐方式<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -314,7 +318,7 @@
         <summary>获取一个值，代表相关联的缩进级别<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</summary>
         <value>关联的缩进级别<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -346,7 +350,7 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.Interior" />对象，表示关联的内部<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象在当前用户界面中显示。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -377,8 +381,8 @@
         <summary>获取一个值，指示如果关联<see cref="T:Microsoft.Office.Interop.Excel.Range" />是显示在当前用户界面对象已被锁定。</summary>
         <value>指示如果关联<see cref="T:Microsoft.Office.Interop.Excel.Range" />是显示在当前用户界面对象已被锁定。</value>
         <remarks>
-          <para>只读的。</para>
-          <para>返回<b>true</b>如果区域已锁定，则为<b>false</b>如果工作表受保护，或空引用 (在 Visual Basic 中为 Nothing) 该区域是否包含同时锁定和未锁定单元格时，可以修改范围。</para>
+          <para>只读。</para>
+          <para>返回<b>true</b>如果区域已锁定， <b>false</b>如果工作表受保护，或空引用 (在 Visual Basic 中为 Nothing) 该区域是否包含同时锁定和未锁定单元格时，可以修改该区域。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -409,8 +413,8 @@
         <summary>获取一个值，指示如果关联<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示包含合并单元格。</summary>
         <value>指示如果关联<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示包含合并单元格。</value>
         <remarks>
-          <para>只读的。</para>
-          <para>返回<b>true</b> ，如果该区域包含合并单元格。</para>
+          <para>只读。</para>
+          <para>如果该区域包含合并单元格，则返回<b>true</b> 。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -441,8 +445,8 @@
         <summary>获取一个值，代表关联的格式代码<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</summary>
         <value>关联的格式代码<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</value>
         <remarks>
-          <para>只读的。</para>
-          <para>如果指定范围中的所有单元格不具有相同的数字格式，此属性返回空引用 (在 Visual Basic 中为 Nothing)。</para>
+          <para>只读。</para>
+          <para>如果指定范围中的所有单元格不具有相同的数字格式，则此属性返回空引用 (在 Visual Basic 中为 Nothing)。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -473,7 +477,7 @@
         <summary>获取一个值，代表关联的格式代码<see cref="T:Microsoft.Office.Interop.Excel.Range" />作为其用户语言字符串形式中显示的当前用户界面。</summary>
         <value>关联的格式代码<see cref="T:Microsoft.Office.Interop.Excel.Range" />作为其用户语言字符串形式中显示的当前用户界面。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -504,7 +508,7 @@
         <summary>获取一个值，代表文本方向关联的<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</summary>
         <value>关联的文本方向<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -535,7 +539,7 @@
         <summary>获取指定对象的父对象。</summary>
         <value>指定的对象的的父对象。 的</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -566,7 +570,7 @@
         <summary>获取关联的阅读顺序<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</summary>
         <value>关联的阅读顺序<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -597,7 +601,7 @@
         <summary>获取一个值，指示是否 Microsoft Excel 会自动缩小文本以适应可用列宽关联的<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</summary>
         <value>指示是否 Microsoft Excel 会自动缩小文本以适应可用列宽关联的<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para>如果文本会自动缩小以适应可用列宽，则返回<b>true</b> 。</para>
           <para></para>
         </remarks>
@@ -657,7 +661,7 @@
         <summary>获取一个值，代表相关联的垂直对齐方式<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</summary>
         <value>关联的垂直对齐方式<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -688,7 +692,7 @@
         <summary>获取一个值，指示是否 Microsoft Excel 中关联的文字环绕<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</summary>
         <value>指示是否 Microsoft Excel 中关联的文字环绕<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para>如果在范围内的所有单元格文本换行，则返回<b>true</b> 。</para>
           <para></para>
         </remarks>

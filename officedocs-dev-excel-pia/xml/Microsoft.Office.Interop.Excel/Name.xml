@@ -1,10 +1,10 @@
 <Type Name="Name" FullName="Microsoft.Office.Interop.Excel.Name">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="dc0260c6b148041f273cfeb372c53b2a97c08418" />
+    <Meta Name="ms.openlocfilehash" Value="03c7a9b67e0c5237abc6e68749010ea9f9840fdb" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575892" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Name" />
@@ -32,13 +32,15 @@
     <summary>代表单元格区域的定义的名称。</summary>
     <remarks>
       <para>名称可以是任一内置名称 — 例如数据库、 Print_Area 和 Auto_Open — 或自定义的名称。</para>
-      <para>应用程序、 工作簿和 Worksheet 对象</para>
+      <para>应用程序、工作簿和 Worksheet 对象
+		</para>
       <para>
-        <b>名称</b>对象是成员<see cref="T:Microsoft.Office.Interop.Excel.Names" />集合<see cref="T:Microsoft.Office.Interop.Excel.Application" />， <see cref="T:Microsoft.Office.Interop.Excel.Workbook" />，和<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />对象。使用<b>名称</b>(<paramref name="index" />)，其中<paramref name="index" />名称索引号或已定义的名称，可返回一个<b>Name</b>对象。</para>
-      <para>索引号指示集合中的名称的位置。名称位于按字母顺序从 a 到 z，并将不区分大小写 （显示在定义名称和应用名称对话框，通过单击插入菜单上的名称命令返回，这是相同的顺序）。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Excel.Name.Name" />属性可返回或设置的文本名称本身。</para>
-      <para>Range 对象</para>
-      <para>虽然<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象可以有多个名称，没有<b>名称</b>集合的<b>Range</b>对象。使用<b>范围</b>对象的<b>名称</b>返回分配给此区域的第一个名称从列表中 （按字母顺序排序） 的名称。</para>
+        <b>Name</b>对象所在的<see cref="T:Microsoft.Office.Interop.Excel.Names" />集合<see cref="T:Microsoft.Office.Interop.Excel.Application" />， <see cref="T:Microsoft.Office.Interop.Excel.Workbook" />，和<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />对象。 使用<b>名称</b>(<paramref name="index" />)，其中<paramref name="index" />名称索引号或已定义的名称，可返回一个<b>Name</b>对象。</para>
+      <para>索引号指示集合中的名称的位置。 名称位于按字母顺序从 a 到 z，并将不区分大小写 （显示在定义名称和应用名称对话框，通过单击插入菜单上的名称命令返回，这是相同的顺序）。</para>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Excel.Name.Name" />属性可返回或设置名称本身的文本。</para>
+      <para>Range 对象
+		</para>
+      <para>尽管<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象可以有多个名称，没有<b>名称</b>集合的<b>Range</b>对象。 使用<b>名称</b>与一个<b>Range</b>对象，返回分配给范围的第一个名称从列表中 （按字母顺序排序） 的名称。</para>
       <para></para>
     </remarks>
   </Docs>
@@ -198,7 +200,7 @@
           <b>字符串</b>
         </value>
         <remarks>
-          <para>批注文本不能超过 255 个字符。</para>
+          <para>批注文本不能超过 255 个字符。 </para>
           <para></para>
         </remarks>
       </Docs>
@@ -229,9 +231,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果指定的对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果指定的对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -379,7 +381,7 @@
         <summary>返回或设置在用户的语言的对象的名称。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果样式为内置样式，此属性中的当前区域设置语言返回样式的名称。</para>
+          <para>如果样式为内置样式，则此属性以当前系统所使用的地区语言返回样式的名称。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -472,7 +474,7 @@
         <summary>返回或设置名称引用的公式。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>公式是在用户的语言，它位于 A1 样式表示法，开头等号。</para>
+          <para>公式中的用户语言和处于 A1 样式表示法，开头等号。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -540,7 +542,7 @@
         <summary>返回或设置名称引用的公式。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此公式是语言的用户，并且它在 R1C1 样式表示法，开头等号。</para>
+          <para>此公式中的用户语言和处于 R1C1 样式表示法，开头等号。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -571,7 +573,7 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象引用的<see cref="T:Microsoft.Office.Interop.Excel.Name" />对象。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果<b>Name</b>对象并不引用区域 （例如，如果它引用常量或公式），该属性无效。</para>
+          <para>如果 <b>Name</b> 对象并不引用区域（例如，如果该对象引用的是一个常量或公式），则该属性无效。</para>
           <para>若要更改名称所引用的范围，请使用<see cref="P:Microsoft.Office.Interop.Excel.Name.RefersTo" />属性。</para>
           <para></para>
         </remarks>
@@ -667,7 +669,7 @@
         <summary>返回一个包含公式的名称定义为字符串引用。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>字符串是在语言的宏的 A1 样式表示法和等号开头。</para>
+          <para>该字符串是在语言的宏的 A1 样式表示法和等号开头。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -701,8 +703,8 @@
         <summary>确定对象是否可见。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果项目位于表中当前可见，数据透视表项的<b>Visible</b>属性为<b>True</b> 。</para>
-          <para>将名称的<b>Visible</b>属性设置为<b>False</b>时，如果名称不会出现在<b>定义名称</b>对话框。</para>
+          <para>如果数据透视表中的某一项在当前是可见的，则该项的 <b>Visible</b> 属性为 <b>True</b>。</para>
+          <para>如果将一个名称的 <b>Visible</b> 属性设为 <b>False</b>，则该名称将不出现在<b>“定义名称”</b>对话框中。</para>
           <para></para>
         </remarks>
       </Docs>

@@ -1,10 +1,10 @@
 <Type Name="Filter" FullName="Microsoft.Office.Interop.Excel.Filter">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0b4f5874cb8cfaefd8c795df970db8c632ebef06" />
+    <Meta Name="ms.openlocfilehash" Value="0a55068feedec78d62f267ca39e674ead9d7d9f3" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576326" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Filter" />
@@ -32,7 +32,7 @@
     <summary>代表单个列的筛选。 <b>Filter</b>对象所在的<see cref="T:Microsoft.Office.Interop.Excel.Filters" />集合。 <b>Filters</b>集合包含自动筛选区域中的所有筛选器。</summary>
     <remarks>
       <para>使用<b>筛选器</b>(<paramref name="index" />)，其中<paramref name="index" />是筛选器标题或索引号，可返回单个<b>筛选器</b>对象。</para>
-      <para>注释的<b>筛选器</b>对象的所有属性都是只读的。若要设置这些属性，手动应用的自动筛选，或使用<see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" />方法<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象。</para>
+      <para>请注意的<b>筛选器</b>对象的所有属性都是只读的。 若要设置这些属性，手动应用的自动筛选，或使用<see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" />方法<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象。</para>
       <para></para>
     </remarks>
   </Docs>
@@ -153,7 +153,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -211,7 +211,10 @@
       <Docs>
         <summary>筛选区域中返回指定列的第二个筛选的值。</summary>
         <value>To be added.</value>
-        <remarks>如果您尝试访问<b>Criteria2</b>属性筛选器在不使用两个条件的<para>，则会发生错误。检查<see cref="P:Microsoft.Office.Interop.Excel.Filter.Operator" />属性<see cref="T:Microsoft.Office.Interop.Excel.Filter" />对象不等于零 (0)，然后再尝试访问<b>Criteria2</b>属性。</para><para></para></remarks>
+        <remarks>
+          <para>如果您尝试访问没有使用两个条件的筛选器的<b>Criteria2</b>属性，将发生错误。 检查<see cref="P:Microsoft.Office.Interop.Excel.Filter.Operator" />属性<see cref="T:Microsoft.Office.Interop.Excel.Filter" />对象不等于零 (0)，然后再尝试访问<b>Criteria2</b>属性。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="On">

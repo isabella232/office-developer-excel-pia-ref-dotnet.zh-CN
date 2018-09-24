@@ -1,10 +1,10 @@
 <Type Name="ListObjects" FullName="Microsoft.Office.Interop.Excel.ListObjects">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c26d759231e55f2d7cd0214bee3fb3636fe79db1" />
+    <Meta Name="ms.openlocfilehash" Value="297eaae8b8252f38795243645194d97dbacd5ca5" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580939" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ListObjects : System.Collections.IEnumerable" />
@@ -111,7 +111,10 @@
         <param name="Destination">可选的<b>对象</b>。 为新的列表对象的左上角的目标指定的单个单元格引用一个<b>Range</b>对象。 如果<b>Range</b>对象引用多个单元格，则生成错误。 <paramref name="Destination" />参数必须时指定<paramref name="SourceType" />设置为<b>参数</b>。 <paramref name="Destination" />如果参数，则忽略<paramref name="SourceType" />设置为<b>xlSrcRange</b>。 目标区域必须包含指定的工作表上<see cref="T:Microsoft.Office.Interop.Excel.ListObjects" />集合。 将在插入新列<paramref name="Destination" />以适应新的列表。 因此，不会覆盖现有数据。</param>
         <summary>创建新的列表对象。 返回<see cref="T:Microsoft.Office.Interop.Excel.ListObject" />对象。</summary>
         <returns>To be added.</returns>
-        <remarks>如果未被设为文本，将转换为<b>文本</b>，<para>时列表有标题，单元格的第一行。转换将基于单元格的可见文本。这意味着，如果没有更改区域设置<b>日期</b>格式的 date 值，对列表的转换可能产生不同的结果，具体取决于当前的系统区域设置。此外，如果有两个单元格标题行具有相同的可见文本，递增的<b>整数</b>将会追加以使每个列标题唯一。</para><para></para></remarks>
+        <remarks>
+          <para>当列表有标题时，单元格的第一行将转换为<b>文本</b>，如果还未被设为文本。 转换将基于单元格的可见文本。 这意味着，如果没有更改区域设置<b>日期</b>格式的 date 值，对列表的转换可能产生不同的结果，具体取决于当前的系统区域设置。 此外，如果有两个单元格标题行具有相同的可见文本，将追加递增的<b>整数</b>以使每个列标题唯一。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddEx">
@@ -235,7 +238,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>

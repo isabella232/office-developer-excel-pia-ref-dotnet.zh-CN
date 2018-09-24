@@ -1,10 +1,10 @@
 <Type Name="Diagram" FullName="Microsoft.Office.Interop.Excel.Diagram">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="284dac8d28fb2f4619db584ffa0820a68ade7b37" />
+    <Meta Name="ms.openlocfilehash" Value="9a421c6b190452977e49a87c2df60fb4cf93d756" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572665" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Diagram" />
@@ -34,8 +34,8 @@
       <para>使用的<b>图表</b>属性<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象或<see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />返回<b>图表</b>对象的集合。</para>
       <para>您还可以将当前图表使用转换为不同的图表<see cref="M:Microsoft.Office.Interop.Excel.Diagram.Convert(Microsoft.Office.Core.MsoDiagramType)" />方法。</para>
       <para>
-        <b>注释</b>如果当前图表是组织结构图 （<b>射线</b>），则会发生运行时错误。</para>
-      <para>有几种类型的图表时使用的<b>图表</b>对象进行选择。请参阅<see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddDiagram(Microsoft.Office.Core.MsoDiagramType,System.Single,System.Single,System.Single,System.Single)" />方法，以查看可用图表类型的列表。</para>
+        <b>注释</b>  如果当前图表是组织结构图 （<b>射线</b>） 将发生运行时错误。</para>
+      <para>有几种类型的图表时使用的<b>图表</b>对象进行选择。 请参阅<see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddDiagram(Microsoft.Office.Core.MsoDiagramType,System.Single,System.Single,System.Single,System.Single)" />方法，以查看可用图表类型的列表。</para>
       <para></para>
     </remarks>
   </Docs>
@@ -97,8 +97,8 @@
         <summary>设置或返回一个常量，该常量指示图表的自动格式状态。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>将<b>自动套用格式</b>设置为<b>msoFalse</b>禁用将图表自动套用格式。<b>自动套用格式</b>设置为<b>msotrue 会</b>启用将图表自动套用格式。</para>
-          <para>不应用于此属性的下列<b>MsoTriState</b>常量： <b>msoCTrue</b><b>msoTriStateMixed</b>、 <b>msoTriStateToggle</b>。</para>
+          <para>将<b>自动套用格式</b>设置为<b>msoFalse</b>禁用将图表自动套用格式。 <b>自动套用格式</b>设置为<b>msotrue 会</b>使将图表自动套用格式。</para>
+          <para>若要应用于此属性的下列<b>MsoTriState</b>常量： <b>msoCTrue</b><b>msoTriStateMixed</b>、 <b>msoTriStateToggle</b>。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -132,8 +132,8 @@
         <summary>返回或设置一个常量，确定的节点和图表中的连接器的自动位置。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>将<b>自动版式</b>设置为<b>msoFalse</b>禁用将图表自动套用格式。将图表自动套用格式设置为<b>msotrue 会</b><b>自动版式</b>允许。</para>
-          <para>不应用于此属性的下列<b>MsoTriState</b>常量： <b>msoCTrue</b><b>msoTriStateMixed</b>、 <b>msoTriStateToggle</b>。</para>
+          <para>将<b>自动版式</b>设置为<b>msoFalse</b>禁用将图表自动套用格式。 设置为<b>msotrue 会</b><b>自动版式</b>允许将图表自动套用格式。</para>
+          <para>若要应用于此属性的下列<b>MsoTriState</b>常量： <b>msoCTrue</b><b>msoTriStateMixed</b>、 <b>msoTriStateToggle</b>。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -192,9 +192,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -222,7 +222,7 @@
       <Docs>
         <summary>调整大小以适应节点的边界内的图表中的节点中的文本。</summary>
         <remarks>
-          <para>此方法函数仅在 Microsoft Office PowerPoint 2003 中。</para>
+          <para>仅在 Microsoft Office PowerPoint 2003 本方法的作用。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -312,8 +312,8 @@
         <summary>取消在图表中的节点。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>设置为<b>msoFalse</b>的<b>反向</b>离开图表节点，因为它们。设置为<b>msotrue 会</b><b>反向</b>反转图表中的节点。</para>
-          <para>不应用于此属性的下列<b>MsoTriState</b>常量： <b>msoCTrue</b><b>msoTriStateMixed</b>、 <b>msoTriStateToggle</b>。</para>
+          <para>设置为<b>msoFalse</b>的<b>反向</b>离开图表节点，因为它们。 设置为<b>msotrue 会</b><b>反向</b>反转图表中的节点。</para>
+          <para>若要应用于此属性的下列<b>MsoTriState</b>常量： <b>msoCTrue</b><b>msoTriStateMixed</b>、 <b>msoTriStateToggle</b>。</para>
           <para></para>
         </remarks>
       </Docs>

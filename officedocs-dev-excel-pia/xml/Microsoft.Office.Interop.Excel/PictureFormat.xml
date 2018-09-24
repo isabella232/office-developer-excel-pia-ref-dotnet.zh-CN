@@ -1,10 +1,10 @@
 <Type Name="PictureFormat" FullName="Microsoft.Office.Interop.Excel.PictureFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="544844d3abf31303982b0f353a2d5d38252de5ca" />
+    <Meta Name="ms.openlocfilehash" Value="87aeae7792de72516fdcdfd36f8f7269365bfbb4" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576228" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PictureFormat : Microsoft.Office.Core._IMsoDispObj" />
@@ -33,7 +33,7 @@
     <summary>包含应用于图片和 OLE 对象的属性和方法。</summary>
     <remarks>
       <para>
-        <see cref="T:Microsoft.Office.Interop.Excel.LinkFormat" />对象包含属性和方法应用于链接 OLE 对象。<see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" />对象包含属性和方法应用于 OLE 对象是否它们的链接。</para>
+        <see cref="T:Microsoft.Office.Interop.Excel.LinkFormat" />对象包含属性和方法应用于链接 OLE 对象。 <see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" />对象包含属性和方法应用于 OLE 对象是否它们的链接。</para>
       <para>使用<see cref="P:Microsoft.Office.Interop.Excel.Shape.PictureFormat" />属性可返回<b>PictureFormat</b>对象。</para>
       <para></para>
     </remarks>
@@ -192,9 +192,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -225,7 +225,7 @@
         <summary>获取<see cref="T:Microsoft.Office.Core.Crop" />对象，表示指定的裁剪设置<see cref="T:Microsoft.Office.Interop.Excel.PictureFormat" />对象。</summary>
         <value>A<see cref="T:Microsoft.Office.Core.Crop" />对象，表示指定的裁剪设置<see cref="T:Microsoft.Office.Interop.Excel.PictureFormat" />对象。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -259,7 +259,7 @@
         <summary>返回或设置从指定图片或 OLE 对象的底部裁剪下的磅值。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>裁剪计算相对于图片的原始尺寸。例如，如果插入最初为 100 磅的图片，将放大以便为 200 磅，然后设置为 50，100 磅 (而不是 50) <b>CropBottom</b>属性将裁剪图片底部。</para>
+          <para>裁剪的计算是同图像的原始尺寸相关的。例如，如果插入一幅原始高度为 100 磅的图像，将其放大为 200 磅高，然后设置 <b>CropBottom</b> 属性为 50, 那么从图像的底部切除的将是 100 磅（而不是 50 磅）。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -293,7 +293,7 @@
         <summary>返回或设置指定的图片或 OLE 对象的左边裁剪的磅数。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>裁剪计算相对于图片的原始尺寸。例如，如果插入为 100 磅宽的图片，将放大以便为 200 磅宽，然后设置为 50，100 磅 (而不是 50) <b>CropLeft</b>属性将裁剪图片的左边界。</para>
+          <para>裁剪的计算是同图像的原始尺寸相关的。例如，如果插入一幅原始宽度为 100 磅的图像，将其放大为 200 磅宽，然后设置 <b>CropLeft</b> 属性为 50, 那么 100 磅（不是 50 磅）将从图像的左边被切除。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -327,7 +327,7 @@
         <summary>返回或设置从指定的图片或 OLE 对象的右边裁剪的磅数。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>裁剪计算相对于图片的原始尺寸。例如，如果插入为 100 磅宽的图片，将放大以便为 200 磅宽，然后设置为 50，100 磅 (而不是 50) <b>CropRight</b>属性将裁剪图片的右侧。</para>
+          <para>裁剪的计算是同图像的原始尺寸相关的。例如，如果插入一幅原始宽度为 100 磅的图像，将其放大为 200 磅宽，然后设置 <b>CropRight</b> 属性为 50, 那么 100 磅（不是 50 磅）将从图像的右边被切除。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -361,7 +361,7 @@
         <summary>返回或设置从指定的图片或 OLE 对象的顶部裁剪的磅数。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>裁剪计算相对于图片的原始尺寸。例如，如果插入最初为 100 磅的图片，将放大以便为 200 磅，然后设置为 50，100 磅 (而不是 50) <b>CropTop</b>属性将裁剪图片顶部。</para>
+          <para>裁剪的计算是同图像的原始尺寸相关的。例如，如果插入一幅原始高度为 100 磅的图像，将其放大为 200 磅高，然后设置 <b>CropTop</b> 属性为 50, 那么 100 磅（不是 50 磅）将从图像的顶部被切除。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -393,8 +393,9 @@
           <b>必选。</b> 指定多少更改的值<see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.Brightness" />图片的属性。 正值使图片更亮;使用负值可使图片变暗。</param>
         <summary>按指定数值改变图片亮度。</summary>
         <remarks>
-          <para>使用<b>Brightness</b>属性可设置图片的绝对亮度。</para>
-          <para>您不能调整以前<b>Brightness</b>属性的上半部分还是下半限制图片的亮度。例如，如果<b>Brightness</b>属性最初设置为 0.9 和指定为 0.3<paramref name="Increment" />参数，将生成的亮度级别将 1.0，即<b>Brightness</b>属性，而不是 1.2 上限。</para>
+          <para>
+            <b>亮度</b> 属性用于设置图片的绝对亮度。</para>
+          <para>您不能调整 <b>亮度</b> 属性值的上下界图片的亮度。 例如，如果<b>Brightness</b>属性最初设置为 0.9 和指定为 0.3<paramref name="Increment" />参数，将生成的亮度级别将 1.0，即<b>Brightness</b>属性，而不是 1.2 上限。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -426,8 +427,8 @@
           <b>必选。</b> 指定多少更改的值<see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.Contrast" />图片的属性。 正值会增加对比度。</param>
         <summary>按指定值改变图片的对比度。</summary>
         <remarks>
-          <para>使用<b>Contrast</b>属性设置图片的绝对对比度。</para>
-          <para>您不能调整以前<b>Contrast</b>属性的上半部分还是下半限制图片的对比度。例如，如果<b>Contrast</b>属性最初设置为 0.9 和指定为 0.3<paramref name="Increment" />参数，生成的对比度级别将 1.0，即<b>对比度</b>属性，而不是 1.2 上限。</para>
+          <para>可以使用 <b>Contrast</b> 属性设置图片的绝对对比度。</para>
+          <para>您不能调整 <b>对比度</b> 属性值的上限或下限界图片的对比度。 例如，如果<b>Contrast</b>属性最初设置为 0.9 和指定为 0.3<paramref name="Increment" />参数，生成的对比度级别将 1.0，即<b>对比度</b>属性，而不是 1.2 上限。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -492,8 +493,10 @@
         <summary>返回或设置指定图片的透明色，以红-绿-蓝 (RGB) 值。 仅应用于位图。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性才会生效，<see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.TransparentBackground" />属性必须设置为<b>True</b>。</para>如果您想要将能够看到通过一直到图片后的对象的图片的透明部分
-          <para>，必须设置<see cref="P:Microsoft.Office.Interop.Excel.FillFormat.Visible" />属性的图片的<see cref="T:Microsoft.Office.Interop.Excel.FillFormat" />对象为<b>False</b>。如果您的图片具有透明色和图片的<b>FillFormat</b>对象的<b>Visible</b>属性设置为<b>True</b>，将图片填充都将看到通过透明色，但将遮盖图片后面的对象。</para><para></para></remarks>
+          <para>此属性才会生效，<see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.TransparentBackground" />属性必须设置为<b>True</b>。</para>
+          <para>如果您想要将能够看到通过一直到图片后的对象的图片的透明部分，则必须设置<see cref="P:Microsoft.Office.Interop.Excel.FillFormat.Visible" />属性的图片的<see cref="T:Microsoft.Office.Interop.Excel.FillFormat" />对象为<b>False</b>。 如果图片具有透明色 <b>的图片对象</b> 的 <b>Visible</b> 属性设置为 <b>True</b> ，将透过透明的颜色，看到图片的填充，但被遮盖的图片后面的对象。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TransparentBackground">
@@ -525,8 +528,10 @@
         <summary>返回或设置是否指定的图片格式使用透明背景。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.TransparencyColor" />属性可设置透明色。仅适用于位图。</para>如果您想要将能够看到通过一直到图片后的对象的图片的透明部分
-          <para>，必须设置<see cref="P:Microsoft.Office.Interop.Excel.FillFormat.Visible" />属性的图片的<see cref="T:Microsoft.Office.Interop.Excel.FillFormat" />对象为<b>False</b>。如果您的图片具有透明色和图片的<b>FillFormat</b>对象的<b>Visible</b>属性设置为<b>True</b>，将图片填充都将看到通过透明色，但将遮盖图片后面的对象。</para><para></para></remarks>
+          <para>使用<see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.TransparencyColor" />属性可设置透明色。 仅应用于位图。</para>
+          <para>如果您想要将能够看到通过一直到图片后的对象的图片的透明部分，则必须设置<see cref="P:Microsoft.Office.Interop.Excel.FillFormat.Visible" />属性的图片的<see cref="T:Microsoft.Office.Interop.Excel.FillFormat" />对象为<b>False</b>。 如果图片具有透明色 <b>的图片对象</b> 的 <b>Visible</b> 属性设置为 <b>True</b> ，将透过透明的颜色，看到图片的填充，但被遮盖的图片后面的对象。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575045" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface _Workbook" />
@@ -331,11 +331,11 @@
         <value>指定哪个版本的算法用于特定工作表函数。</value>
         <remarks>
           <para>读/写</para>
-          <para>默认情况下，从 Microsoft Office Excel 2007 工作表函数的一些和早期版本的 Microsoft Excel 使用新提高其准确性的算法。但是，在某些情况下，新的算法会降低性能的相对于其 Microsoft Office Excel 2007 中的性能这些函数和早期版本的 Excel。若要指定这些工作表函数使用旧算法来提高其性能，设置<see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" />属性设为 1。下表介绍了可能的设置<see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" />属性。</para>
+          <para>默认情况下，从 Microsoft Office Excel 2007 工作表函数的一些和早期版本的 Microsoft Excel 使用新提高其准确性的算法。 但是，在某些情况下，新的算法会降低性能的相对于其 Microsoft Office Excel 2007 中的性能这些函数和早期版本的 Excel。 若要指定这些工作表函数使用旧算法来提高其性能，设置<see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" />属性设为 1。 下表介绍了可能的设置<see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" />属性。</para>
           <list type="table">
             <item>
               <term>0</term>
-              <description>使用最新、 最精确的算法 （默认值）</description>
+              <description>使用最新、最精确的算法（默认）</description>
             </item>
             <item>
               <term>1</term>
@@ -348,19 +348,19 @@
           </list>
           <para>
             <b>警告</b>： 设置<see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" />属性设为非 0、 1 或 2 的值将导致未定义的行为。</para>
-          <para>下表总结了哪些功能受到设置<see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" />属性设为 1。"函数不影响"列中列出的功能将始终使用最新的准确性算法或 Excel 2010 中未更改。对于在其名称中包含句点 （.） 的函数名称，以确定相应的函数的名称在 VBA 中作为方法实现的<see cref="T:Microsoft.Office.Interop.Excel.WorksheetFunction" />对象，该期间替换下划线字符 (_)。例如，对应于 BETA 的 VBA 方法。分发函数是<see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Beta_Dist(System.Double,System.Double,System.Double,System.Boolean,System.Object,System.Object)" />方法。</para>
+          <para>下表总结了哪些功能受到设置<see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" />属性设为 1。 "函数不影响"列中列出的功能将始终使用最新的准确性算法或 Excel 2010 中未更改。 对于在其名称中包含句点 （.） 的函数名称，以确定相应的函数的名称在 VBA 中作为方法实现的<see cref="T:Microsoft.Office.Interop.Excel.WorksheetFunction" />对象，该期间替换下划线字符 (_)。 例如，对应于 BETA 的 VBA 方法。分发函数是<see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Beta_Dist(System.Double,System.Double,System.Double,System.Boolean,System.Object,System.Object)" />方法。</para>
           <list type="table">
             <item>
-              <term>则 betadist 将</term>
-              <description>聚合</description>
+              <term>BETADIST</term>
+              <description>AGGREGATE</description>
             </item>
             <item>
               <term>BETAINV</term>
-              <description>BETA。分发</description>
+              <description>试用版。分发</description>
             </item>
             <item>
               <term>BINOMDIST</term>
-              <description>BETA。INV</description>
+              <description>试用版。INV</description>
             </item>
             <item>
               <term>CHIDIST</term>
@@ -375,7 +375,7 @@
               <description>CEILING</description>
             </item>
             <item>
-              <term>可信度</term>
+              <term>CONFIDENCE</term>
               <description>CEILING。精确</description>
             </item>
             <item>
@@ -383,11 +383,11 @@
               <description>CHISQ。分发</description>
             </item>
             <item>
-              <term>则 CUMIPMT</term>
+              <term>CUMIPMT</term>
               <description>CHISQ。DIST.RT</description>
             </item>
             <item>
-              <term>则 CUMPRINC</term>
+              <term>CUMPRINC</term>
               <description>CHISQ。INV</description>
             </item>
             <item>
@@ -427,7 +427,7 @@
               <description>ERFC。精确</description>
             </item>
             <item>
-              <term>则 hypgeomdist 将</term>
+              <term>HYPGEOMDIST</term>
               <description>EXPON。分发</description>
             </item>
             <item>
@@ -447,7 +447,7 @@
               <description>F.INV。RT</description>
             </item>
             <item>
-              <term>则 NEGBINOMDIST</term>
+              <term>NEGBINOMDIST</term>
               <description>F.TEST</description>
             </item>
             <item>
@@ -471,12 +471,12 @@
               <description>GAMMALN。精确</description>
             </item>
             <item>
-              <term>泊松</term>
+              <term>POISSON</term>
               <description>HYPGEOM。分发</description>
             </item>
             <item>
               <term>PPMT</term>
-              <description>ISO。天花板</description>
+              <description>ISO。CEILING</description>
             </item>
             <item>
               <term>STDEV</term>
@@ -487,15 +487,15 @@
               <description>LOGNORM。INV</description>
             </item>
             <item>
-              <term>则 tdist 将</term>
+              <term>TDIST</term>
               <description>MOD</description>
             </item>
             <item>
               <term>TINV</term>
-              <description>模式</description>
+              <description>MODE</description>
             </item>
             <item>
-              <term>则 ttest 将</term>
+              <term>TTEST</term>
               <description>模式。MULT</description>
             </item>
             <item>
@@ -515,7 +515,7 @@
               <description>NORM。分发</description>
             </item>
             <item>
-              <term>韦伯</term>
+              <term>WEIBULL</term>
               <description>NORM。INV</description>
             </item>
             <item>
@@ -527,94 +527,124 @@
               <description>NORM。S.INV</description>
             </item>
             <item>
-              <term />百分点值
+              <term />
+              <description>PERCENTILE</description>
             </item>
             <item>
-              <term />百分点值。执行
+              <term />
+              <description>百分点值。执行</description>
             </item>
             <item>
-              <term />百分点值。INC
+              <term />
+              <description>百分点值。INC</description>
             </item>
             <item>
-              <term />函数 percentrank 将进行
+              <term />
+              <description>PERCENTRANK</description>
             </item>
             <item>
-              <term />函数 percentrank 将进行。执行
+              <term />
+              <description>函数 PERCENTRANK 将进行。执行</description>
             </item>
             <item>
-              <term />函数 percentrank 将进行。INC
+              <term />
+              <description>函数 PERCENTRANK 将进行。INC</description>
             </item>
             <item>
-              <term />泊松。分发
+              <term />
+              <description>泊松。分发</description>
             </item>
             <item>
-              <term />四分位数
+              <term />
+              <description>QUARTILE</description>
             </item>
             <item>
-              <term />四分位数。执行
+              <term />
+              <description>四分位数。执行</description>
             </item>
             <item>
-              <term />四分位数。INC
+              <term />
+              <description>四分位数。INC</description>
             </item>
             <item>
-              <term />排名
+              <term />
+              <description>RANK</description>
             </item>
             <item>
-              <term />排名。平均
+              <term />
+              <description>排名。平均</description>
             </item>
             <item>
-              <term />排名。EQ
+              <term />
+              <description>排名。EQ</description>
             </item>
             <item>
-              <term />STDEV。P
+              <term />
+              <description>STDEV。P</description>
             </item>
             <item>
-              <term />STDEV。S
+              <term />
+              <description>STDEV。S</description>
             </item>
             <item>
-              <term />T.DIST
+              <term />
+              <description>T.DIST</description>
             </item>
             <item>
-              <term />T.DIST.2T
+              <term />
+              <description>T.DIST.2T</description>
             </item>
             <item>
-              <term />T.DIST。RT
+              <term />
+              <description>T.DIST。RT</description>
             </item>
             <item>
-              <term />T.DIST。RT
+              <term />
+              <description>T.DIST。RT</description>
             </item>
             <item>
-              <term />T.INV
+              <term />
+              <description>T.INV</description>
             </item>
             <item>
-              <term />T.INV.2T
+              <term />
+              <description>T.INV.2T</description>
             </item>
             <item>
-              <term />T.INV。RT
+              <term />
+              <description>T.INV。RT</description>
             </item>
             <item>
-              <term />T.TEST
+              <term />
+              <description>T.TEST</description>
             </item>
             <item>
-              <term />差异P
+              <term />
+              <description>差异P</description>
             </item>
             <item>
-              <term />差异S
+              <term />
+              <description>差异S</description>
             </item>
             <item>
-              <term />WEEKDAY
+              <term />
+              <description>WEEKDAY</description>
             </item>
             <item>
-              <term />WEEKNUM
+              <term />
+              <description>WEEKNUM</description>
             </item>
             <item>
-              <term />韦伯。分发
+              <term />
+              <description>韦伯。分发</description>
             </item>
             <item>
-              <term />工作日。INTL
+              <term />
+              <description>工作日。INTL</description>
             </item>
             <item>
-              <term />Z.TEST
+              <term />
+              <description>Z.TEST</description>
             </item>
           </list>
           <para></para>
@@ -706,7 +736,7 @@
         <summary>在活动工作簿或工作簿的指定的窗口中，则返回一个对象，表示活动工作表 （顶部的工作表）。 如果没有工作表处于活动状态，则返回<b>Nothing</b> 。 只读。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果不指定对象识别符，此属性返回活动工作簿中的活动工作表。</para>
+          <para>如果不指定对象识别符，则此属性返回活动工作簿中的活动工作表。</para>
           <para>如果工作簿出现在多个窗口中，<see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" />属性在不同窗口中可能会有所不同。</para>
           <para></para>
         </remarks>
@@ -739,8 +769,8 @@
         <value>一个 object 值，该值代表指定工作簿或活动工作簿中的活动切片器。</value>
         <remarks>
           <para>如果没有切片器处于活动状态，则返回空引用 (在 Visual Basic 中为 Nothing)。</para>
-          <para>只读的。</para>
-          <para>如果未指定<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />对象，该属性返回活动工作簿中的活动切片器。</para>
+          <para>只读。</para>
+          <para>如果您不指定<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />对象，该属性返回活动工作簿中的活动切片器。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -868,19 +898,19 @@
         <value>返回<see cref="T:System.String" />。</value>
         <remarks>To be added.</remarks>
         <example>
-          <para>本示例删除活动工作表上由 Jean Selva 添加的所有批注。</para>
+          <para>本示例删除活动工作表中由 Jean Selva 添加的所有批注。</para>
           <code>&lt;span class="label"&gt;For Each c in ActiveSheet.Comments     If c.&lt;/span&gt;
 &lt;i&gt;Author&lt;/i&gt;
 &lt;span class="label"&gt;= "Jean Selva" Then c.Delete Next&lt;/span&gt;</code>
         </example>
         <example>
-          <para>本示例删除活动工作表上由 Jean Selva 添加的所有批注。</para>
+          <para>本示例删除活动工作表中由 Jean Selva 添加的所有批注。</para>
           <code>&lt;span class="label"&gt;For Each c in ActiveSheet.Comments     If c.&lt;/span&gt;
 &lt;i&gt;Author&lt;/i&gt;
 &lt;span class="label"&gt;= "Jean Selva" Then c.Delete Next&lt;/span&gt;</code>
         </example>
         <example>
-          <para>本示例删除活动工作表上由 Jean Selva 添加的所有批注。</para>
+          <para>本示例删除活动工作表中由 Jean Selva 添加的所有批注。</para>
           <code>&lt;span class="label"&gt;For Each c in ActiveSheet.Comments     If c.&lt;/span&gt;
 &lt;i&gt;Author&lt;/i&gt;
 &lt;span class="label"&gt;= "Jean Selva" Then c.Delete Next&lt;/span&gt;</code>
@@ -916,8 +946,7 @@
         <summary>返回或设置的自动更新共享工作簿之间的分钟数。 可读写 <b>Integer</b>。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>
-            <b>AutoUpdateFrequency</b>属性必须设置一个值为从 5 至 1440 此属性才会生效。</para>
+          <para>从 5 至 1440 此属性才会生效，必须将<b>AutoUpdateFrequency</b>属性设置为值。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1013,39 +1042,39 @@
         <summary>返回<see cref="T:Microsoft.Office.Core.DocumentProperties" />代表指定工作簿的所有内置文档属性的集合。 只读。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性返回内置文档属性的整个集合。使用<see cref="P:Microsoft.Office.Core.DocumentProperties.Item(System.Object)" />方法，以返回集合中的单个成员 (<see cref="T:Microsoft.Office.Core.DocumentProperty" />对象) 通过指定的属性的名称或集合索引 （以数字）。</para>
-          <para>您可以参考文档属性的索引值或名称。以下列表显示可用的内置文档属性名称：</para>
-          <para>标题</para>
-          <para>主题</para>
+          <para>此属性返回内置文档属性的整个集合。 使用<see cref="P:Microsoft.Office.Core.DocumentProperties.Item(System.Object)" />方法，以返回集合中的单个成员 (<see cref="T:Microsoft.Office.Core.DocumentProperty" />对象) 通过指定的属性的名称或集合索引 （以数字）。</para>
+          <para>可通过索引值或名称来引用文档属性。下面的列表显示的是可用的内置文档属性的名称：</para>
+          <para>Title </para>
+          <para>Subject</para>
           <para>作者</para>
-          <para>关键字</para>
+          <para>Keywords</para>
           <para>注释</para>
-          <para>模板</para>
+          <para>Template</para>
           <para>上一个作者</para>
-          <para>修订号</para>
-          <para>应用程序名称</para>
+          <para>修订次数</para>
+          <para>Application Name</para>
           <para>上次打印日期</para>
-          <para>创建日期</para>
+          <para>创建日期 </para>
           <para>上次保存时间</para>
           <para>编辑时间总计</para>
-          <para>的页数</para>
-          <para>的单词数</para>
-          <para>的字符数</para>
+          <para>页数</para>
+          <para>字数</para>
+          <para>字符数</para>
           <para>安全</para>
-          <para>类别</para>
-          <para>格式</para>
-          <para>管理器</para>
+          <para>Category</para>
+          <para>Format</para>
+          <para>Manager</para>
           <para>公司</para>
-          <para>的字节数</para>
-          <para>的行数</para>
-          <para>的段落数</para>
-          <para>的幻灯片的数目</para>
+          <para>字节数</para>
+          <para>行数</para>
+          <para>段落数</para>
+          <para>幻灯片数</para>
           <para>备注数</para>
-          <para>的隐藏幻灯片的数目</para>
-          <para>数多媒体剪辑</para>
+          <para>隐藏幻灯片数</para>
+          <para>多媒体剪辑数</para>
           <para>超链接基础</para>
           <para>字符数 （带空格）</para>
-          <para>容器应用程序不需要定义每个内置文档属性的值。如果 Microsoft Excel 没有定义某个内置文档属性的值，读取<see cref="P:Microsoft.Office.Core.DocumentProperty.Value" />文档属性的属性将导致出错。</para>
+          <para>容器应用程序不需要定义每个内置文档属性的值。 如果 Microsoft Excel 没有定义某个内置文档属性的值，读取<see cref="P:Microsoft.Office.Core.DocumentProperty.Value" />文档属性的属性将导致出错。</para>
           <para>
             <b>Item</b>方法是<b>DocumentProperties</b>集合的默认方法。</para>
           <para>使用<see cref="P:Microsoft.Office.Interop.Excel._Workbook.CustomDocumentProperties" />属性可以返回自定义文档属性的集合。</para>
@@ -1079,7 +1108,7 @@
         <summary>返回一个数字，其最右边的四位是次要计算引擎的版本号和其其他数字 （左侧） 是 Microsoft Excel 的主要版本。 为<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />对象，该属性返回的信息的上次工作簿进行完全重新计算的 Excel 版本。 <b>Integer</b> 类型，只读。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果 Excel 的早期版本中保存工作簿和工作簿并未进行完全重新计算，如果此属性返回 0。</para>
+          <para>如果在早期版本的 Excel 中保存工作簿和工作簿并未进行完全重新计算，此属性返回 0。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1171,7 +1200,10 @@
         <param name="WritePassword">可选的<b>对象</b>。 如果该文件是保留的写入指定的写保护密码和<paramref name="Mode" />是<b>xlReadWrite</b>。 如果没有文件密码或忽略<paramref name="Mode" />是<b>xlReadOnly</b>。</param>
         <param name="Notify">可选的<b>对象</b>。 如果该值为 <b>True</b>（或省略该参数），则当无法立即访问文件时通知用户。</param>
         <summary>更改工作簿的访问权限。本方法需要从磁盘加载工作簿的更新版本。</summary>
-        <remarks>如果您有以只读模式打开文件的<para>，无需对文件独占访问。如果从只读为读/写更改文件，Microsoft Excel 必须加载的文件，以确保您具有以只读方式打开该文件时，未进行任何更改的新副本。</para><para></para></remarks>
+        <remarks>
+          <para>如果以只读模式打开文件，则不可独占访问此文件。如果将此文件从只读更改为可读写，Microsoft Excel 必须载入该文件的新副本以确认在以只读模式打开该文件后没有进行过更改。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ChangeHistoryDuration">
@@ -1203,7 +1235,7 @@
         <summary>返回或设置的共享工作簿的更改历史记录中所示的天数。 可读写 <b>Integer</b>。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>关闭工作簿时，将删除早于设置此属性的更改历史记录中的所有更改。</para>
+          <para>关闭工作簿时，将删除修订记录中任何比该属性设置日期早的修订。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1300,7 +1332,7 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Sheets" />值，该值代表指定工作簿中的所有图表工作表的集合。 只读。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>使用此属性不使用对象识别符的情况下将返回活动工作簿中的工作表的所有图表。</para>
+          <para>使用对象识别符的此属性返回活动工作簿中的所有图表工作表。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1402,8 +1434,8 @@
         <param name="VersionType">指定工作簿的版本信息。</param>
         <summary>将工作簿从本地计算机保存到服务器，并将本地工作簿设置为只读，以便无法在本地编辑。</summary>
         <remarks>
-          <para>设置<paramref name="MakePublic" />参数为<b>true</b>提交工作簿中的审批过程中，最终会导致具有只读权限，对工作簿的用户发布的工作簿的版本 (仅适用于<paramref name="SaveChanges" />设置为<b>true</b>).</para>
-          <para>若要利用 Microsoft Excel 中内置的协作功能，文档必须存储在 Microsoft SharePoint Server 上。</para>
+          <para>设置<paramref name="MakePublic" />参数为<b>true</b>提交工作簿中的审批过程中，最终会导致具有只读权限，对工作簿的用户发布的工作簿的版本 (仅适用于<paramref name="SaveChanges" />设置为<b>true</b>). </para>
+          <para>要利用 Microsoft Excel 中内置的协作功能，文档必须存储在 Microsoft SharePoint Server 上。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1440,7 +1472,7 @@
         <param name="RouteWorkbook">可选的<b>对象</b>。 如果工作簿不需要路由到下一个收件人 （如果它没有传送名单，或已路由），则忽略此参数。 否则，Microsoft Excel 传送工作簿下表中所示。ValueMeaning<b>，则返回 True</b>，则将工作簿发送到下一个收件人。<b>False</b>不发送工作簿。OmittedDisplays 对话框，询问用户是否应发送工作簿。</param>
         <summary>关闭对象。</summary>
         <remarks>
-          <para>关闭工作簿使用<b>Close</b>方法不会运行 Auto_Close 宏工作簿中。使用<see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" />方法可运行 Auto_Close 宏。</para>
+          <para>关闭工作簿使用<b>Close</b>方法不运行 Auto_Close 宏工作簿中。 使用<see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" />方法可运行 Auto_Close 宏。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1471,8 +1503,8 @@
         <summary>返回对象的代码名称。 只读 <b>String</b>。 您看到属性窗口中的<b>（名称）</b>右侧的单元格中的值是所选对象的代码名。 在设计时，您可以通过更改此值更改对象的代码名。 以编程方式不能在运行时更改此属性。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>代码名称对象可用于代替返回对象的表达式。</para>
-          <para>是可能的工作表名称不同于代码名称。当创建表、 工作表名称和代码名称是相同，但更改工作表名称不会更改代码名称，或更改代码名称 （使用属性窗口在 Visual Basic 编辑器中） 不会更改工作表名称。</para>
+          <para>对象的代码名称可代替返回对象的表达式。</para>
+          <para>工作表的名称可以与其代码名不同。创建一张工作表时，其工作表名称和代码名是相同的，不过，更改工作表名称时并不影响其代码名，并且，更改工作表代码名（在 Visual Basic 编辑器中使用“属性”窗口）也不影响其名称。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1544,8 +1576,8 @@
         <summary>返回<see cref="P:Microsoft.Office.Interop.Excel._Workbook.CommandBars" />对象，表示 Microsoft Excel 命令栏。 只读。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>当工作簿是嵌入到另一个应用程序，并通过双击工作簿的用户激活时，对<b>工作簿</b>对象使用此属性返回其他应用程序中可用的 Microsoft Excel 命令栏的集。在所有其他时候，通过<b>Workbook</b>对象使用此属性返回<b>Nothing</b>。</para>
-          <para>没有没有以编程方式返回的附加到工作簿的命令栏集。</para>
+          <para>当一个工作簿嵌入在另一个应用程序中并且用户通过双击它将其激活时，此属性与 <b>Workbook</b> 对象一起使用会返回可在其他应用程序中使用的 Microsoft Excel 命令栏集。在所有其他情况下，此属性与 <b>Workbook</b> 对象一起使用会返回 <b>Nothing</b>。</para>
+          <para>没有编程的方法可用来返回附属于工作簿的命令栏集。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1592,19 +1624,19 @@
         <value>返回<see cref="T:System.String" />。</value>
         <remarks>To be added.</remarks>
         <example>
-          <para>本示例删除活动工作表上由 Jean Selva 添加的所有批注。</para>
+          <para>本示例删除活动工作表中由 Jean Selva 添加的所有批注。</para>
           <code>&lt;span class="label"&gt;For Each c in ActiveSheet.Comments     If c.&lt;/span&gt;
 &lt;i&gt;Author&lt;/i&gt;
 &lt;span class="label"&gt;= "Jean Selva" Then c.Delete Next&lt;/span&gt;</code>
         </example>
         <example>
-          <para>本示例删除活动工作表上由 Jean Selva 添加的所有批注。</para>
+          <para>本示例删除活动工作表中由 Jean Selva 添加的所有批注。</para>
           <code>&lt;span class="label"&gt;For Each c in ActiveSheet.Comments     If c.&lt;/span&gt;
 &lt;i&gt;Author&lt;/i&gt;
 &lt;span class="label"&gt;= "Jean Selva" Then c.Delete Next&lt;/span&gt;</code>
         </example>
         <example>
-          <para>本示例删除活动工作表上由 Jean Selva 添加的所有批注。</para>
+          <para>本示例删除活动工作表中由 Jean Selva 添加的所有批注。</para>
           <code>&lt;span class="label"&gt;For Each c in ActiveSheet.Comments     If c.&lt;/span&gt;
 &lt;i&gt;Author&lt;/i&gt;
 &lt;span class="label"&gt;= "Jean Selva" Then c.Delete Next&lt;/span&gt;</code>
@@ -1729,7 +1761,7 @@
         <summary>返回包含指定 OLE 对象的容器应用程序的对象。<b>Object</b> 类型，只读。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性提供了一种方法，如果主机应用程序，如 Microsoft Internet Explorer 中打开 Excel 工作簿时访问容器应用程序的对象模型。</para>
+          <para>此属性提供了一种在主机应用程序内（如 Microsoft Internet Explorer）打开 Excel 工作簿时访问容器应用程序对象模型的方法。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1822,7 +1854,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1853,7 +1885,7 @@
         <summary>返回或设置<see cref="T:Microsoft.Office.Core.DocumentProperties" />值，该值代表指定工作簿的所有自定义文档属性的集合。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性返回自定义文档属性的整个的集合。使用<see cref="P:Microsoft.Office.Core.DocumentProperties.Item(System.Object)" />方法，以返回集合中的单个成员 (<see cref="T:Microsoft.Office.Core.DocumentProperty" />对象) 通过指定的属性的名称或集合索引 （以数字）。</para>
+          <para>此属性返回自定义文档属性的整个的集合。 使用<see cref="P:Microsoft.Office.Core.DocumentProperties.Item(System.Object)" />方法，以返回集合中的单个成员 (<see cref="T:Microsoft.Office.Core.DocumentProperty" />对象) 通过指定的属性的名称或集合索引 （以数字）。</para>
           <para>
             <b>Item</b>方法是<b>DocumentProperties</b>集合的默认方法。</para>
           <para>使用<see cref="P:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties" />属性可返回内置文档属性的集合。</para>
@@ -2030,7 +2062,7 @@
         <summary>获取或设置从样式<see cref="T:Microsoft.Office.Interop.Excel.TableStyles" />用作切片器的默认样式的对象。</summary>
         <value>从样式<see cref="T:Microsoft.Office.Interop.Excel.TableStyles" />用作切片器的默认样式的对象。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>为可读/写属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2213,17 +2245,20 @@
             <item>
               <term>
                 <paramref name="xlDisplayShapes" />
-              </term>显示所有形状。
+              </term>
+              <description>显示所有形状。</description>
             </item>
             <item>
               <term>
                 <paramref name="xlPlaceholders" />
-              </term>仅显示占位符。
+              </term>
+              <description>仅显示占位符。</description>
             </item>
             <item>
               <term>
                 <paramref name="xlHide" />
-              </term>隐藏所有形状。
+              </term>
+              <description>隐藏所有形状。</description>
             </item>
           </list>
           <para></para>
@@ -2496,7 +2531,10 @@
       <Docs>
         <summary>根据规定的时间间隔保存全部格式的已更改文件。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
-        <remarks>如果 Microsoft Excel<para>失败，则系统将失败，或如果系统不正确地关闭 （不允许 Excel 保存更改的文件），打开备份的文件，并且用户拥有的机会，以保存更改，否则将已丢失。当用户重新启动 Excel 时，将打开文档恢复窗口，为用户提供用于恢复已处理的文件的选项。此属性设置为<b>True</b> （默认值） 将启用该功能。</para><para></para></remarks>
+        <remarks>
+          <para>如果 Microsoft Excel 出现故障、系统出现故障，或者系统非正常关闭（不允许 Excel 保存更改的文件），则会打开备份的文件，使用户有机会保存否则会丢失的更改。当用户重新启动 Excel 时，将打开一个文档恢复窗口，该窗口为用户提供一个选择，以恢复他们正在处理的文件。如果将该属性设置为 <b>True</b>（默认值），将启用该功能。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableConnections">
@@ -2699,7 +2737,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>在兼容模式下，某些功能被禁用，或不同功能。 例如，在 short_Excel2007 有更多行和列与早期版本的 Excel 可用。结构化引用也可在 short_Excel2007。</para>
+          <para>在兼容模式下，某些功能被禁用或函数不同。  例如，在 short_Excel2007 有更多行和列与早期版本的 Excel 可用。 此外结构化引用将在 short_Excel2007 可用。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2732,8 +2770,10 @@
         <returns>To be added.</returns>
         <remarks>
           <para>
-            <b>ExclusiveAccess</b>方法保存任何更改已对工作簿并要求其他用户拥有工作簿打开作改变保存到另一个文件。</para>如果指定的工作簿不是作为共享列表打开
-          <para>，此方法将失败。若要确定工作簿是否处于打开状态以共享清单，请使用<see cref="P:Microsoft.Office.Interop.Excel._Workbook.MultiUserEditing" />属性。</para><para></para></remarks>
+            <b>ExclusiveAccess</b> 方法保存对指定工作簿的任何更改，并要求其他打开该工作簿的用户将所作改变保存到另外的文件。</para>
+          <para>如果指定的工作簿未打开作为共享列表，此方法将失败。 若要确定工作簿是否处于打开状态以共享清单，请使用<see cref="P:Microsoft.Office.Interop.Excel._Workbook.MultiUserEditing" />属性。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportAsFixedFormat">
@@ -2779,7 +2819,7 @@
           <see cref="M:Microsoft.Office.Interop.Excel._Workbook.ExportAsFixedFormat(Microsoft.Office.Interop.Excel.XlFixedFormatType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法用于将工作簿发布到 PDF 或 XPS 格式。</summary>
         <remarks>To be added.</remarks>
         <example>
-          <para>下面的示例在当前文件的目录中按标准质量创建 PDF 和发布后在查看器中显示文件。</para>
+          <para>以下示例在当前文件的目录中按标准质量创建 PDF 文件，并在发布该文件后在查看器中显示文件。</para>
           <para>
             <b>注意</b>： 如果 PDF 加载项当前未安装，则会发生错误。</para>
         </example>
@@ -2814,7 +2854,7 @@
         <summary>返回的文件格式和/或工作簿的类型。 只读<see cref="T:Microsoft.Office.Interop.Excel.XlFileFormat" />。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>这些常量的一些可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
+          <para>这些常量中的某些可能不可用，这取决于选择或安装的语言支持（例如，美国英语）。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2850,7 +2890,9 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>值设置为<b>True</b>标记工作簿作为最终，通知收件人 （如果有） 工作簿是最终的并将工作簿设置为只读的。</para>
+          <para>将值设置为 <b>True</b> 可将工作簿标记为最终版本，通知收件人（如果有）工作簿是最终的，并将工作簿设置为只读。
+
+</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3194,7 +3236,7 @@
         <summary>如果指定工作簿含有传送名单，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>将此属性设置为<b>True</b>采用默认值创建一个传送名单。属性设置为<b>False</b>删除传送名单。</para>
+          <para>将该属性设为 <b>True</b>，则用默认值创建一个传送名单；将该属性设为 <b>False</b>，则删除传送名单。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3227,7 +3269,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>此属性是在以编程方式确定是否需要为启用宏的文件格式保存工作簿中最有用。如果保存在另一种格式，宏和文档中包含的代码项目可能会丢失。</para>
+          <para>在以编程方式决定是否需要将工作簿保存成支持宏的文件格式时，此属性最有用。如果以其他格式保存，则文档中包含的宏和代码项目可能丢失。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3384,7 +3426,7 @@
         <summary>一个 <b>Boolean</b> 值，指定当列表不处于活动状态时，此列表的边框是否可见。如果边框可见，则返回 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>设置此属性将影响工作表上的所有列表。</para>
+          <para>该属性的设置将影响工作表上的所有列表。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3418,22 +3460,22 @@
         <summary>如果指定工作簿作为加载宏运行，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>工作簿时将该属性设置为<b>True</b>时，具有以下特征：</para>
+          <para>如果将该属性设置为 <b>True</b>，则指定工作簿将具有下列特征：</para>
           <list type="bullet">
             <item>
-              <description>不会提示您保存工作簿，如果工作簿打开时进行更改。</description>
+              <description>如果打开该工作簿时发生了更改，将不提示保存该工作簿。</description>
             </item>
             <item>
               <description>工作簿窗口不可见。</description>
             </item>
             <item>
-              <description>工作簿中的任何宏不可见在宏对话框 （显示指向工具菜单上，单击宏）。</description>
+              <description>该工作簿中的任何宏都不在“宏”对话框中显示（指向“工具”菜单中的“宏”项，并单击“宏”命令可显示该对话框）。</description>
             </item>
             <item>
-              <description>宏工作簿中的可以仍在运行从宏对话框即使不可见。此外，宏名称不必是用工作簿的名称限定。</description>
+              <description>尽管该工作簿中的宏在“宏”对话框中不可见，仍然可以通过“宏”对话框运行该工作簿中的宏。另外，宏名无须使用工作簿名称进行标识。</description>
             </item>
             <item>
-              <description>当您打开工作簿时按住 SHIFT 键不起作用。</description>
+              <description>在打开工作簿时按住 Shift 键不起作用。</description>
             </item>
           </list>
           <para></para>
@@ -3608,8 +3650,8 @@
         <summary>返回一个数组，这些工作簿中的链接。 该数组中的名称是链接的文档、 版本或 DDE 或 OLE 服务器的名称。 如果没有链接，则返回<b>空</b>。 <b>对象</b>。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>数组的格式为所有类型但 publisher 和订阅者一维数组。返回的字符串包含链接类型的相应表示法中的链接源的名称。例如，DDE 链接使用"服务器 |文档 ！项目"语法。</para>
-          <para>Publisher 和订阅者的链接，则返回的数组是二维。第一列的数组包含的版本，名称和第二列包含以文本形式的版本的引用。</para>
+          <para>如果链接类型不是发布者或订阅者，则返回的数组的格式为一维数组。所返回的字符串包含链接源的名称，以与该类型的链接的相应记号表示。例如，DDE 链接将使用“Server|Document!Item”语法。</para>
+          <para>对于发布者或订阅者，返回的数组是二维的。数组的第一列包含公告板文章的名称，第二列以文字的形式给出对公告板文章的引用。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3813,7 +3855,10 @@
       <Docs>
         <summary>如果工作簿以共享列表方式打开，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，只读。</summary>
         <value>To be added.</value>
-        <remarks>保存工作簿作为共享列表，使用的<para><see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法。若要切换到独占模式从共享模式工作簿，请使用<see cref="M:Microsoft.Office.Interop.Excel._Workbook.ExclusiveAccess" />方法。</para><para></para></remarks>
+        <remarks>
+          <para>若要将工作簿保存为共享列表中，使用<see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法。 若要切换到独占模式从共享模式工作簿，请使用<see cref="M:Microsoft.Office.Interop.Excel._Workbook.ExclusiveAccess" />方法。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -4120,7 +4165,10 @@
       <Docs>
         <summary>返回或设置在打开指定工作簿时必须提供的密码。<b>String</b> 类型，可读写。</summary>
         <value>To be added.</value>
-        <remarks>合并和小写字母、 数字和符号的<para>使用强密码。弱密码不混合使用这些元素。强密码： Y6dh ！ et5。弱密码： House27。使用强密码，以便您无需记下您能记得。</para><para></para></remarks>
+        <remarks>
+          <para>[!注释] 使用同时包含大小写字母、数字和符号的强密码。弱密码不混合使用这些元素。例如，强密码：Y6dh!et5。弱密码：House27。请使用可以记住的强密码，这样就不必记录密码了。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PasswordEncryptionAlgorithm">
@@ -4596,7 +4644,7 @@
         <param name="PrToFileName">可选的<b>对象</b>。 如果<paramref name="PrintToFile" />设置为<b>True</b>，则该参数指定要打印到的文件的名称。</param>
         <summary>打印对象。</summary>
         <remarks>
-          <para>"页面"的说明中的<paramref name="From" />和<paramref name="To" />指打印页、 工作表或工作簿中不整个页面。</para>
+          <para>说明中的"页面"<paramref name="From" />和<paramref name="To" />指打印页、 工作表或工作簿中不整个页面。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4745,7 +4793,10 @@
         <param name="CreateBackup">可选的<b>对象</b>。 如果为  <b>True</b> ，则创建备份文件。</param>
         <param name="SharingPassword">可选的<b>对象</b>。 一个字符串，表示文件共享保护密码。</param>
         <summary>保存工作簿并设置共享保护。</summary>
-        <remarks>合并和小写字母、 数字和符号的<para>使用强密码。弱密码不混合使用这些元素。强密码： Y6dh ！ et5。弱密码： House27。使用强密码，以便您无需记下您能记得。</para><para></para></remarks>
+        <remarks>
+          <para>[!注释] 使用同时包含大小写字母、数字和符号的强密码。弱密码不混合使用这些元素。例如，强密码：Y6dh!et5。弱密码：House27。请使用可以记住的强密码，这样就不必记录密码了。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ProtectSharingEx">
@@ -4930,7 +4981,7 @@
         <summary>如果对象以只读方式打开，则返回 <b>True</b>。<b>Boolean</b> 类型，只读。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性仅用于链接到 SharePoint 网站的列表。</para>
+          <para>该属性仅用于链接到 SharePoint 网站的列表。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4964,7 +5015,7 @@
         <summary>如果工作簿以建议只读方式保存，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，只读。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Microsoft Excel 以只读方式已保存建议的工作簿打开时，显示一条消息，建议您打开工作簿以只读模式。</para>
+          <para>当打开一个建议为只读的工作簿时，Microsoft Excel 将显示一条信息，建议以只读方式打开此工作簿。</para>
           <para>使用<see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法来更改此属性。</para>
           <para></para>
         </remarks>
@@ -5256,7 +5307,10 @@
       <Docs>
         <param name="ShowMessage">可选的<b>对象</b>。 <b>False</b>不显示消息。 如果显示消息，<b>则返回 true</b> 。</param>
         <summary>向已发送候审的工作簿的作者发送电子邮件消息，通知审阅者已经完成工作簿的审阅。</summary>
-        <remarks>使用<para><see cref="M:Microsoft.Office.Interop.Excel._Workbook.SendForReview(System.Object,System.Object,System.Object,System.Object)" />方法以启动协作工作簿的审阅。如果不属于协作审阅阶段的工作簿执行<b>ReplyWithChanges</b>方法，则用户会收到错误。</para><para></para></remarks>
+        <remarks>
+          <para>使用<see cref="M:Microsoft.Office.Interop.Excel._Workbook.SendForReview(System.Object,System.Object,System.Object,System.Object)" />方法以启动协作工作簿的审阅。 如果不属于协作审阅阶段的工作簿执行<b>ReplyWithChanges</b>方法，则用户将收到一个错误。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Research">
@@ -5343,8 +5397,7 @@
         <summary>返回已作为共享列表打开期间保存工作簿的次数。 以独占模式打开工作簿时，此属性返回 0 （零）。 <b>Integer</b> 类型，只读。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>
-            <b>RevisionNumber</b>属性更新仅在保存远程副本时不保存工作簿的本地副本时。</para>
+          <para>仅在保存工作簿的本地副本时，<b>RevisionNumber</b> 属性才进行更新，保存该工作簿的远程副本时该属性不进行更新。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5378,7 +5431,7 @@
       <Docs>
         <summary>使用工作簿的当前传送名单传送工作簿。</summary>
         <remarks>
-          <para>路由工作簿设置<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Routed" />属性设置为<b>True</b>。</para>
+          <para>传送工作簿设置<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Routed" />属性设置为<b>True</b>。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5415,7 +5468,7 @@
         <summary>如果指定工作簿已经传送给下一个收件人，则该值为 <b>True</b>；如果该工作簿需要进行传送，则该值为 <b>False</b>。<b>Boolean</b> 类型，只读。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果工作簿不传送给当前收件人，则该值总是<b>False</b> （例如，如果文档有没有传送名单，或传送名单刚创建）。</para>
+          <para>如果工作簿不是传送给当前收件人，则该值总是 <b>False</b>（例如，如果指定文档没有传送名单，或者刚创建了一个传送名单）。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5509,7 +5562,7 @@
         <summary>保存对指定工作簿所做的更改。</summary>
         <remarks>
           <para>若要打开工作簿文件，请使用<see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法。</para>
-          <para>要将工作簿标记为已保存，但不将其写入磁盘，设置其<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Saved" />属性设置为<b>True</b>。</para>
+          <para>若要将工作簿标记为已保存，但不将其写入磁盘，请将设置其<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Saved" />属性设置为<b>True</b>。</para>
           <para>首次保存工作簿，使用<see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法，以指定文件的名称。</para>
           <para></para>
         </remarks>
@@ -5596,7 +5649,7 @@
         <summary>将已映射到指定 XML 架构映射的数据导出到 XML 数据文件中。</summary>
         <remarks>
           <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
-          <para>如果 Excel 无法导出与指定的架构映射的数据，此方法将导致运行时错误。若要检查 Excel 是否可以使用指定的架构映射导出数据，请使用<see cref="P:Microsoft.Office.Interop.Excel.XmlMap.IsExportable" />属性。</para>
+          <para>如果 Excel 无法导出与指定的架构映射的数据，此方法将导致运行时错误。 若要检查 Excel 是否可以使用指定的架构映射导出数据，请使用<see cref="P:Microsoft.Office.Interop.Excel.XmlMap.IsExportable" />属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5667,7 +5720,7 @@
         <value>To be added.</value>
         <remarks>
           <para>如果工作簿从未保存过，其<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Path" />属性返回一个空字符串 ("")。</para>
-          <para>您可以设置此属性设置为<b>True</b> ，如果您想要关闭已修改的工作簿，而不保存或提示保存它。</para>
+          <para>如果要关闭某个已更改的工作簿，但又不想保存它或者不想出现保存提示，则可将此属性设为 <b>True</b>。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5769,8 +5822,12 @@
         <param name="ShowMessage">可选的<b>对象</b>。 <b>为</b> 传真邮件发送传真之前显示。 <b>False</b> ，则发送传真而不显示传真邮件。</param>
         <summary>将工作表作为传真发送给指定的收件人。</summary>
         <remarks>
-          <para>使用<b>SendFaxOverInternet</b>方法要求用户的计算机上启用传真服务。</para>用于指定中的传真号码的格式
-          <para><paramref name="Recipients" />参数是<paramref name="recipientsfaxnumber@usersfaxprovider" />或<paramref name="recipientsname@recipientsfaxnumber" />。您可以访问用户的传真提供商信息使用以下注册表路径：</para><para>HKEY_CURRENT_USER\Software\Microsoft\Office\11.0\Common\Services\Fax</para><para>使用此注册表路径上 FaxAddress 项的值来确定若要对收件人使用的格式。</para><para></para></remarks>
+          <para>使用 <b>SendFaxOverInternet</b> 方法时要求在用户的计算机上启用传真服务。</para>
+          <para>用于指定中的传真号码的格式<paramref name="Recipients" />参数是<paramref name="recipientsfaxnumber@usersfaxprovider" />或<paramref name="recipientsname@recipientsfaxnumber" />。 可通过使用以下注册表路径访问用户的传真提供商信息：</para>
+          <para>HKEY_CURRENT_USER\Software\Microsoft\Office\11.0\Common\Services\Fax</para>
+          <para>使用此注册表路径上 FaxAddress 项的值确定要对收件人使用的格式。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SendForReview">
@@ -5805,7 +5862,7 @@
         <summary>在电子邮件中将供审阅的工作簿发送到指定的收件人。</summary>
         <remarks>
           <para>
-            <b>SendForReview</b>方法启动协作审阅阶段。使用<see cref="M:Microsoft.Office.Interop.Excel._Workbook.EndReview" />方法来结束审阅阶段。</para>
+            <b>SendForReview</b> 方法开始协作审阅周期。 使用<see cref="M:Microsoft.Office.Interop.Excel._Workbook.EndReview" />结束审阅流程的方法。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5934,7 +5991,7 @@
           <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ServerViewableItems" />
         </value>
         <remarks>
-          <para>此属性返回无法发布到 Excel Services 的项目的集合。 它可以包含表、 数据透视表、 命名区域和图表。 它还可以包含工作表，只要不是混和的表和之前提到的列表。 </para>
+          <para>此属性返回一个可以发布到 Excel Services 的项目集。它可以包括“表格”、“数据透视表”、“命名区域”和“图表”。它还可以包含“工作表”（只要它不是“工作表”和之前提到的列表的混合体）。  </para>
           <para></para>
         </remarks>
       </Docs>
@@ -6003,8 +6060,8 @@
         <summary>使用密码来设置对工作簿进行加密的选项。</summary>
         <remarks>
           <para>
-            <paramref name="PasswordEncryptionProvider" />， <paramref name="PasswordEncryptionAlgorithm" />，和<paramref name="PasswordEncryptionKeyLength" />参数不是彼此独立。选定的加密提供程序限制的算法和密钥长度，可以选择的设置。</para>
-          <para>的<paramref name="PasswordEncryptionKeyLength" />有参数是无固有限制范围的密钥长度。区域由还决定加密算法加密服务提供程序。</para>
+            <paramref name="PasswordEncryptionProvider" />， <paramref name="PasswordEncryptionAlgorithm" />，和<paramref name="PasswordEncryptionKeyLength" />参数不是彼此独立。 选定的加密提供程序限制的算法和密钥长度，可以选择的设置。</para>
+          <para>为<paramref name="PasswordEncryptionKeyLength" />有参数是无固有限制范围的密钥长度。 区域由还决定加密算法加密服务提供商决定。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6099,7 +6156,10 @@
       <Docs>
         <summary>如果“冲突的历史记录”工作表在作为共享列表打开的工作簿中可见，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
-        <remarks>如果指定的工作簿不是作为共享列表打开<para>，该属性无效。若要确定工作簿是否处于打开状态以共享清单，请使用<see cref="P:Microsoft.Office.Interop.Excel._Workbook.MultiUserEditing" />属性。</para><para></para></remarks>
+        <remarks>
+          <para>如果指定的工作簿不是作为共享列表打开，则该属性无效。 若要确定工作簿是否处于打开状态以共享清单，请使用<see cref="P:Microsoft.Office.Interop.Excel._Workbook.MultiUserEditing" />属性。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowPivotChartActiveFields">
@@ -6133,7 +6193,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>此属性的控件 （切换 on/off） 数据透视图筛选窗格的可见性。 使其可见，必须选择<b>数据透视图</b>对象。</para>
+          <para>此属性控制数据透视图筛选窗格的可见性（打开/关闭窗格）。为了使窗格可见，必须选择一个 <b>PivotChart</b> 对象。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6197,7 +6257,8 @@
           <see cref="T:Microsoft.Office.Core.SignatureSet" />
         </value>
         <remarks>
-          <para>进行数字签名 Excel2007 工作簿和验证其他签名，则需要 Microsoft CryptoAPI 和唯一的数字签名证书。CryptoAPI 安装 Microsoft Internet Explorer 4.01 或更高版本。您可以从证书颁发机构获取数字签名证书。</para>
+          <para>若要进行数字签名 Excel2007 工作簿，并验证其在其他签名，您需要 Microsoft CryptoAPI 和唯一的数字签名证书。 CryptoAPI 安装 Microsoft Internet Explorer 4.01 或更高版本。 可从证书颁发机构获得数字签名证书。
+</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6229,7 +6290,7 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.SlicerCaches" />对象关联的工作簿。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>为可读/写属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6552,7 +6613,7 @@
       <Docs>
         <summary>打开或关闭，则切换窗体设计模式。</summary>
         <remarks>
-          <para>当 Excel 是在窗体设计模式下，将显示控件工具箱工具栏。您可以使用此工具栏插入 ActiveX 控件，例如命令按钮、 滚动条和选项按钮。在窗体设计模式下，不运行事件过程，并且单击嵌入的控件时，显示控件的尺寸控点。</para>
+          <para>在窗体设计模式下 Excel 后，将显示控件工具箱工具栏。 您可以使用此工具栏插入 ActiveX 控件，例如命令按钮、 滚动条和选项按钮。 在窗体设计模式下，不运行事件过程，并单击嵌入的控件时，显示控件的尺寸控点。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6584,7 +6645,10 @@
       <Docs>
         <param name="Password">可选的<b>对象</b>。 一个字符串，用于取消的工作表或工作簿的保护密码区分大小写。 如果表或工作簿不受密码保护，则忽略此参数。 如果省略此参数受密码保护的工作表时，系统将提示您输入密码。 如果省略此参数受密码保护的工作簿，该方法将失败。</param>
         <summary>取消工作表或工作簿的保护。如果工作表或工作簿不是受保护的，则此方法不起作用。</summary>
-        <remarks>如果您忘记了密码<para>，则无法取消的工作表或工作簿。它是安全的就地保留您的密码和其对应的文档名称的列表，最好。</para><para></para></remarks>
+        <remarks>
+          <para>如果您忘记了密码，将不能取消工作表或工作簿的保护。建议将密码和对应文档名妥善保存。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UnprotectSharing">
@@ -6611,7 +6675,10 @@
       <Docs>
         <param name="SharingPassword">可选的<b>对象</b>。 工作簿密码。</param>
         <summary>关闭共享保护功能并保存工作簿。</summary>
-        <remarks>合并和小写字母、 数字和符号的<para>使用强密码。弱密码不混合使用这些元素。强密码： Y6dh ！ et5。弱密码： House27。使用强密码，以便您无需记下您能记得。</para><para></para></remarks>
+        <remarks>
+          <para>[!注释] 使用同时包含大小写字母、数字和符号的强密码。弱密码不混合使用这些元素。例如，强密码：Y6dh!et5。弱密码：House27。请使用可以记住的强密码，这样就不必记录密码了。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateFromFile">
@@ -6640,7 +6707,7 @@
       <Docs>
         <summary>如果磁盘上的工作簿版本比内存中的当前工作簿副本新，则用磁盘上保存的工作簿文件更新只读工作簿。如果载入工作簿之后，磁盘上的副本无改变，则不必重新载入内存中的副本。</summary>
         <remarks>
-          <para>此方法是很有用以只读方式打开用户 A 的工作簿并将其打开以读/写用户 b。如果用户 B 将新版本的工作簿保存到磁盘，而用户 A 仍工作簿打开，用户 A 无法获取更新的副本，而不关闭并重新打开工作簿并丢失视图设置。<b>UpdateFromFile</b>方法更新磁盘文件中的工作簿的内存中副本。</para>
+          <para>本方法适用于用户 A 以只读方式打开工作簿，同时用户 B 以可读写方式打开该工作簿。如果用户 B 将工作簿新版存盘而用户 A 仍在使用原工作簿，那么用户 A 必须先关闭该工作簿再打开才能获得更新版本的工作簿，<b>UpdateFromFile</b> 方法使用磁盘文件更新内存中的工作簿副本。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6675,7 +6742,7 @@
         <param name="Type">可选<see cref="T:Microsoft.Office.Interop.Excel.XlLinkType" />。</param>
         <summary>更新 Microsoft Excel 链接、DDE 链接或 OLE 链接。</summary>
         <remarks>
-          <para>调用<b>UpdateLink</b>方法时不带任何参数，Excel 将默认更新所有工作表链接。</para>
+          <para>如果在没有任何参数的情况下调用 <b>UpdateLink</b> 方法，Excel 将默认更新所有的工作表链接。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6815,7 +6882,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>UserStatus</b>属性不返回有关以只读方式打开指定工作簿的用户的信息。</para>
+            <b>UserStatus</b> 属性不返回有关以只读方式打开指定工作簿的用户的信息。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -7013,7 +7080,7 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Windows" />值，该值代表指定工作簿中的所有窗口的集合。 只读<b>Windows</b>对象。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性返回可见和隐藏的窗口的集合。</para>
+          <para>此属性返回的集合中既包括可见窗口，也包括隐藏窗口。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -7044,8 +7111,8 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Sheets" />值，该值代表指定工作簿中的所有工作表的集合。 只读<b>Sheets</b>对象。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>使用此属性，而不使用对象识别符返回活动工作簿中的所有工作表。</para>
-          <para>此属性不返回宏表; 使用<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel4MacroSheets" />属性或<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel4IntlMacroSheets" />属性可返回这些表。</para>
+          <para>在不使用对象识别符的情况下，使用此属性将返回活动工作簿中所有的工作表。</para>
+          <para>此属性不返回宏表;使用<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel4MacroSheets" />属性或<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel4IntlMacroSheets" />属性可返回这些表。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -7186,7 +7253,7 @@
               <description>指定的 XML 数据包含语法错误。</description>
             </item>
             <item>
-              <description>导入过程被取消，因为指定的数据不能容纳到工作表。</description>
+              <description>导入过程被取消，因为指定的数据与工作表不符。</description>
             </item>
           </list>
           <para>使用<see cref="M:Microsoft.Office.Interop.Excel._Workbook.XmlImportXml(System.String,Microsoft.Office.Interop.Excel.XmlMap@,System.Object,System.Object)" />方法<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />对象导入先前加载到内存中的 XML 数据。</para>
@@ -7234,7 +7301,7 @@
               <description>指定的 XML 数据包含语法错误。</description>
             </item>
             <item>
-              <description>导入过程被取消，因为指定的数据不能容纳到工作表。</description>
+              <description>导入过程被取消，因为指定的数据与工作表不符。</description>
             </item>
           </list>
           <para>使用<see cref="M:Microsoft.Office.Interop.Excel._Workbook.XmlImport(System.String,Microsoft.Office.Interop.Excel.XmlMap@,System.Object,System.Object)" />方法<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />对象的 XML 数据文件导入当前工作簿。</para>

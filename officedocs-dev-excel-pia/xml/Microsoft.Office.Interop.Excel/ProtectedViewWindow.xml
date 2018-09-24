@@ -1,10 +1,10 @@
 <Type Name="ProtectedViewWindow" FullName="Microsoft.Office.Interop.Excel.ProtectedViewWindow">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e408f0f28015c64503fb4f24fd3d1bb9d13526ce" />
+    <Meta Name="ms.openlocfilehash" Value="ba924f04fb4c1accdb23e5bb8b2f1b404a2117ad" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574758" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ProtectedViewWindow" />
@@ -31,10 +31,10 @@
   <Docs>
     <summary>代表受保护的视图窗口。</summary>
     <remarks>
-      <para>受保护的视图窗口用于显示工作簿从存在安全隐患的位置。不安全位置定义为以下：</para>
+      <para>“受保护的视图”窗口用来显示可能来自不安全位置的工作簿。不安全的位置定义如下：</para>
       <list type="number">
         <item>
-          <description>从 Internet 打开的文件。</description>
+          <description>从 Internet 上打开的文件。</description>
         </item>
         <item>
           <description>从 Microsoft Outlook 2010 中打开的附件。</description>
@@ -43,14 +43,17 @@
           <description>文件阻止策略阻止的文件。</description>
         </item>
         <item>
-          <description>Office 文件验证失败的文件。</description>
+          <description>未通过 Office 文件验证的文件。</description>
         </item>
         <item>
-          <description>显式打开的文件在受保护的视图中使用在打开对话框的打开按钮的受保护的视图命令中打开。</description>
+          <description>使用“打开”对话框中“打开”按钮的“在受保护的视图中打开”命令，在“受保护的视图”中显式打开的文件。</description>
         </item>
       </list>
-      <para>受保护的视图窗口中显示的工作簿不能编辑，并禁止它们运行活动内容，如 Visual Basic for Applications 宏和数据连接。</para>要返回单个
-      <para><see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" />对象从<see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" />集合，使用 protectedviewwindows （index），其中 Index 是您要打开窗口的索引号。您还可以访问<see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" />对象，表示活动的受保护的视图窗口使用<see cref="P:Microsoft.Office.Interop.Excel.Application.ActiveProtectedViewWindow" />属性<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象。</para><para>访问后<see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" />对象，请使用<see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Workbook" />属性访问<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />对象，表示在受保护的视图窗口中打开的工作簿文件。受保护的视图窗口旨在防止可能恶意代码的用户，因为这些操作可以通过使用<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />对象返回<see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" />对象将受到限制。大多数不允许将返回"运行时错误 1004年： 沙盒 Excel 时，此命令不可用。"</para><para></para></remarks>
+      <para>受保护的视图窗口中显示的工作簿不能编辑，并禁止它们运行活动内容，如 Visual Basic for Applications 宏和数据连接。</para>
+      <para>若要返回单个<see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" />对象从<see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" />集合中，使用 protectedviewwindows （index），其中 Index 是您要打开窗口的索引号。 您还可以访问<see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" />对象，表示活动的受保护的视图窗口使用<see cref="P:Microsoft.Office.Interop.Excel.Application.ActiveProtectedViewWindow" />属性<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象。</para>
+      <para>访问后<see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" />对象，请使用<see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Workbook" />属性访问<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />对象，表示在受保护的视图窗口中打开的工作簿文件。 受保护的视图窗口旨在防止可能恶意代码的用户，因为这些操作可以通过使用<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />对象返回<see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" />对象将受到限制。 大多数不允许将返回"运行时错误 1004年： 沙盒 Excel 时，此命令不可用。"</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -138,7 +141,7 @@
         <summary>获取或设置一个值，代表在受保护的视图窗口的标题栏中显示的名称。</summary>
         <value>在受保护的视图窗口的标题栏中显示的名称。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>为可读/写属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -198,17 +201,17 @@
         <returns>返回<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />对象。</returns>
         <remarks>
           <para>如果<paramref name="WriteResPassword" />省略参数和工作簿需要密码，将提示用户输入密码。</para>
-          <para>如果<paramref name="UpdateLinks" />省略参数，系统会提示用户指定如何将更新链接。如果 Excel WKS 中打开的文件，WK1 或 WK3 格式和<paramref name="UpdateLinks" />参数值为 0，不创建任何图表;Excel 图形附加到的文件从生成图表的否则。</para>
-          <para>避免在您的应用程序中使用硬编码的密码。如果在某个过程中需要密码，用户请求该密码、 将其存储在变量，然后在代码中使用该变量。</para>
+          <para>如果<paramref name="UpdateLinks" />省略参数，系统会提示用户指定如何将更新链接。 如果 Excel WKS 中打开的文件，WK1 或 WK3 格式和<paramref name="UpdateLinks" />参数值为 0，不创建任何图表;否则 Excel 从附加到的文件图形生成图表。</para>
+          <para>避免在应用程序中使用硬编码的密码。如果某个过程需要密码，可要求用户提供密码，将其以变量形式进行存储，然后在编码中使用该变量。</para>
           <para>您可以指定其中一个值，在下表中列出<paramref name="UpdateLinks" />参数，以确定在打开工作簿时是否更新外部引用 （链接）。</para>
           <list type="table">
             <item>
               <term>0</term>
-              <description>打开工作簿时，将不会更新外部引用 （链接）。</description>
+              <description>工作簿打开时不更新外部引用（链接）。</description>
             </item>
             <item>
               <term>3</term>
-              <description>打开工作簿时，将更新外部引用 （链接）。</description>
+              <description>工作簿打开时更新外部引用（链接）。</description>
             </item>
           </list>
           <para></para>
@@ -244,7 +247,7 @@
         <summary>获取或设置是否可以调整大小受保护的视图窗口。</summary>
         <value>如果为<b>true</b>可以调整大小受保护的视图窗口;否则为<b>false</b>。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>为可读/写属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -278,8 +281,8 @@
         <summary>获取或设置一个值，该值代表的高度，以磅为单位的受保护的视图窗口。</summary>
         <value>高度，以磅为单位的受保护的视图窗口。</value>
         <remarks>
-          <para>读/写。</para>
-          <para>如果在受保护的视图窗口处于最大化或最小化，不能设置此属性。使用<see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" />属性来确定窗口状态。</para>
+          <para>为可读/写属性。</para>
+          <para>如果在受保护的视图窗口处于最大化或最小化，不能设置此属性。 使用<see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" />属性来确定窗口状态。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -313,7 +316,7 @@
         <summary>获取或设置一个值，代表从到受保护的视图窗口的左边缘的工作区的左边缘的距离，以磅为单位。</summary>
         <value>以磅为单位，从受保护的视图窗口的左边缘到的工作区的左边缘的距离。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>为可读/写属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -344,7 +347,7 @@
         <summary>获取指定的受保护的视图窗口中打开的源文件的名称。</summary>
         <value>在指定受保护的视图窗口处于打开状态的源文件的名称。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -375,8 +378,8 @@
         <summary>获取指定的受保护的视图窗口中处于打开状态的源文件的路径。</summary>
         <value>在指定受保护的视图窗口处于打开状态的源文件的路径。</value>
         <remarks>
-          <para>只读的。</para>
-          <para>路径不包括尾随字符 (例如，"C:\MSOffice")。使用<see cref="P:Microsoft.Office.Interop.Excel._Application.PathSeparator" />属性添加文件夹和驱动器号的分隔符。使用<see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.SourceName" />的<see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" />对象返回源文件名不路径。</para>
+          <para>只读。</para>
+          <para>路径不包括尾随字符 (例如，"C:\MSOffice")。 使用<see cref="P:Microsoft.Office.Interop.Excel._Application.PathSeparator" />属性添加文件夹和驱动器号的分隔符。 使用<see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.SourceName" />的<see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" />对象返回不带路径的源文件名称。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -410,8 +413,8 @@
         <summary>获取或设置一个值，代表从可用区域中的上边缘到指定的受保护的视图窗口的上边缘的距离，以磅为单位。</summary>
         <value>以磅为单位，从可用区域中的上边缘到指定的受保护的视图窗口的上边缘的距离。</value>
         <remarks>
-          <para>读/写。</para>
-          <para>不能设置该属性最大化的受保护的视图窗口。使用<see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" />属性可返回或设置窗口的状态。</para>
+          <para>为可读/写属性。</para>
+          <para>不能设置该属性最大化的受保护的视图窗口。 使用<see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" />属性可返回或设置窗口的状态。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -446,7 +449,7 @@
         <value>
           <b>true</b>如果指定的受保护的视图窗口可见;否则为<b>false</b>。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>为可读/写属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -480,8 +483,8 @@
         <summary>获取或设置一个值，指定的宽度，以磅为单位指定受保护的视图窗口。</summary>
         <value>以磅为单位指定受保护的视图窗口的宽度。</value>
         <remarks>
-          <para>读/写。</para>
-          <para>如果在受保护的视图窗口处于最大化或最小化，不能设置此属性。使用<see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" />属性来确定窗口状态。</para>
+          <para>为可读/写属性。</para>
+          <para>如果在受保护的视图窗口处于最大化或最小化，不能设置此属性。 使用<see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" />属性来确定窗口状态。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -515,7 +518,7 @@
         <summary>获取或设置指定的受保护的视图窗口的状态。</summary>
         <value>指定的受保护的视图窗口的状态。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>为可读/写属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -546,8 +549,8 @@
         <summary>获取一个 object 值，该值代表指定的受保护的视图窗口中处于打开状态的工作簿。</summary>
         <value>在指定受保护的视图窗口中打开了工作簿。</value>
         <remarks>
-          <para>只读的。</para>
-          <para>受保护的视图窗口旨在防止可能恶意代码的用户，因为这些操作可以通过使用<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />对象返回<see cref="T:Microsoft.Office.Interop.Excel._Workbook" />方法将受到限制。不允许任何操作将返回"运行时错误 1004年： 沙盒 Excel 时，此命令不可用。"</para>
+          <para>只读。</para>
+          <para>受保护的视图窗口旨在防止可能恶意代码的用户，因为这些操作可以通过使用<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />对象返回<see cref="T:Microsoft.Office.Interop.Excel._Workbook" />方法将受到限制。 不允许任何操作将返回"运行时错误 1004年： 沙盒 Excel 时，此命令不可用。"</para>
           <para></para>
         </remarks>
       </Docs>
