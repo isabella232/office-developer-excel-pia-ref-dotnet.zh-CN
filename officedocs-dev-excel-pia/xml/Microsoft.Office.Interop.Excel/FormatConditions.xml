@@ -1,10 +1,10 @@
 <Type Name="FormatConditions" FullName="Microsoft.Office.Interop.Excel.FormatConditions">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4ea44a9883870de6c0c9f822551e19d40e34f00d" />
+    <Meta Name="ms.openlocfilehash" Value="ba5c29fb9f36cf63da85041a757db4dd4b830ce1" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587512" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface FormatConditions : System.Collections.IEnumerable" />
@@ -36,9 +36,12 @@
     <summary>代表一个区域内所有条件格式的集合。</summary>
     <remarks>
       <para>
-        <b>FormatConditions</b>集合可包含三个条件格式。每种格式由<see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" />对象。</para>使用
-      <para><see cref="P:Microsoft.Office.Interop.Excel.Range.FormatConditions" />属性可返回<b>FormatConditions</b>对象。使用<see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" />方法创建一个新的条件格式，并使用<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" />方法更改现有条件格式。</para>如果您尝试创建一个区域内的三个以上条件格式
-      <para>， <b>Add</b>方法将失败。如果一个区域有三种格式，您可以使用<b>Modify</b>方法更改某个格式，或者您可以使用<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" />方法删除格式，然后使用<b>Add</b>方法创建新的格式。</para><para>有关条件格式的详细信息，请参阅<see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" />对象。</para><para></para></remarks>
+        <b>FormatConditions</b>集合可包含三个条件格式。 每种格式由<see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" />对象。</para>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Excel.Range.FormatConditions" />属性可返回<b>FormatConditions</b>对象。 使用<see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" />方法创建一个新的条件格式，并使用<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" />方法更改现有条件格式。</para>
+      <para>如果您尝试创建一个区域内的三个以上条件格式， <b>Add</b>方法将失败。 如果一个区域有三种格式，您可以使用<b>Modify</b>方法更改某个格式，或者您可以使用<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" />方法删除格式，然后使用<b>Add</b>方法创建新的格式。</para>
+      <para>有关条件格式的详细信息，请参阅<see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" />对象。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -116,7 +119,7 @@
         <summary>添加新的条件格式。</summary>
         <returns>A<see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" />对象，表示新的条件格式。</returns>
         <remarks>
-          <para>不能定义范围内的三个以上条件格式。使用<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" />方法，以修改现有条件格式，或使用<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" />方法删除之前添加一个新的现有格式。</para>
+          <para>不能定义范围内的三个以上条件格式。 使用<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" />方法，以修改现有条件格式，或使用<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" />方法删除之前添加一个新的现有格式。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -147,7 +150,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" />对象</returns>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" />对象用于在单元格区域中查找高于或低于平均值或标准偏差的值。例如，您可以每年的绩效考核中找到上述平均业绩的人员或可以查找制造低于质量评级中的两个标准偏差的材料。</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" />对象用于在单元格区域中查找高于或低于平均值或标准偏差的值。 例如，您可以每年的绩效考核中找到上述平均业绩的人员，或者查找制造低于质量评级中的两个标准偏差的材料。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -180,7 +183,7 @@
         <returns>
           <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" />对象</returns>
         <remarks>
-          <para>颜色刻度作为 visual 指南可帮助您了解数据分发和变体。将颜色范围可帮助您确定使用颜色变体的相对差异给定范围内的单元格的值。不同的颜色和颜色之间的渐变表示单元格的值的差异。例如，在色阶，您可以指定是否具有最高的相对数据值的单元格是绿色、 中间值的单元格为黄色，且具有最小值的单元格 red.</para>
+          <para>色阶是直观的参照，可以帮助您了解数据的分布和变化。色阶可帮助您利用颜色的变化来标出给定区域中单元格值的相对差异。不同的颜色和颜色之间的渐变代表单元格值的差异。例如，在三色色阶中，您可以指定包含最高相对数据值的单元格为绿色，包含中间值的单元格为黄色，包含最低值的单元格为红色。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -210,7 +213,7 @@
         <returns>
           <see cref="T:Microsoft.Office.Interop.Excel.Databar" />对象</returns>
         <remarks>
-          <para>数据条可帮助您看到相对于其他单元格的单元格的值。数据条长度的代表单元格中的值。长条形图表示较高的值，短的数据条表示较小的值。数据条很有用中探索更高版本和较低的数值，尤其是具有大量数据，如顶部和底部在假日销售玩具销售报告。</para>
+          <para>数据条可帮助您查看某个单元格相对于其他单元格的值。数据条的长度代表单元格中的值。较长的数据条代表较高的值，较短的数据条代表较低的值。数据条在辨认较高和较低数值，特别是有大量数据存在的情况下很有帮助，比如，辨认假日销售报告中的最高玩具销量和最低玩具销量。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -240,7 +243,7 @@
         <returns>
           <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" />对象</returns>
         <remarks>
-          <para>使用图标集以便进行批注和三到五个类别分隔阈值到分类数据。每个图标表示一系列值。例如，在 3 箭头图标集，向上箭头红色表示较高的值、 黄色侧箭头代表中间值，和向下箭头的绿色代表较低值。</para>
+          <para>使用图标集为数据添加注释并将数据分为按阈值隔开的三到五类数据。每种图标均代表某一值范围。例如，在 3 箭头图标集中，红色向上箭头代表较高值，黄色侧箭头代表中间值，绿色向下箭头代表较低值。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -270,7 +273,7 @@
         <returns>
           <see cref="T:Microsoft.Office.Interop.Excel.Top10" />对象</returns>
         <remarks>
-          <para>使用<see cref="T:Microsoft.Office.Interop.Excel.Top10" />对象，您可以根据您指定的截止值的单元格区域中找到最小值。例如，在区域报表中，产品中客户的底部 15%查找前五个销售产品，调查或部门人员分析中的前 25 薪水。</para>
+          <para>使用<see cref="T:Microsoft.Office.Interop.Excel.Top10" />对象，您可以根据您指定的截止值的单元格区域中找到最小值。 例如，您可以在区域报表中，底部 15%的客户调查中的产品或部门人员分析中的顶部 25 薪水找到前五个销售产品。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -387,9 +390,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>

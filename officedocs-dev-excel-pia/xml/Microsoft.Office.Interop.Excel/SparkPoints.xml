@@ -1,10 +1,10 @@
 <Type Name="SparkPoints" FullName="Microsoft.Office.Interop.Excel.SparkPoints">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="244ea4c7d176a75a006d65791e464a2e30c56131" />
+    <Meta Name="ms.openlocfilehash" Value="e5a9199cd752c599cbd9222cae79f2248af65580" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585125" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SparkPoints" />
@@ -30,7 +30,10 @@
   </Attributes>
   <Docs>
     <summary>代表迷你图上数据点标记的设置。</summary>
-    <remarks>使用<para><see cref="T:Microsoft.Office.Interop.Excel.SparkPoints" />对象的颜色和可见性数据点的标记设置迷你图。使用<see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Points" />属性<see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" />对象返回<see cref="T:Microsoft.Office.Interop.Excel.SparkPoints" />对象。属性<see cref="T:Microsoft.Office.Interop.Excel.SparkPoints" />对象对应于和迷你图的样式部分中的标记颜色下拉列表上的项的高点、 低点、 负点、 第一个点、 最后一个点和显示部分中的标记复选框的设置工具功能区的设计选项卡。</para><para></para></remarks>
+    <remarks>
+      <para>使用<see cref="T:Microsoft.Office.Interop.Excel.SparkPoints" />对象的颜色和可见性数据点的标记设置迷你图。 使用<see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Points" />属性<see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" />对象返回<see cref="T:Microsoft.Office.Interop.Excel.SparkPoints" />对象。 属性<see cref="T:Microsoft.Office.Interop.Excel.SparkPoints" />对象对应于和迷你图的样式部分中的标记颜色下拉列表上的项的高点、 低点、 负点、 第一个点、 最后一个点和显示部分中的标记复选框的设置工具功能区的设计选项的卡。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +63,7 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.Application" />对象。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -91,8 +94,10 @@
         <summary>获取一个指示在其中创建此对象的应用程序的 32 位<b>整数</b>。</summary>
         <value>32 位<b>整数</b>，指示在其中创建此对象的应用程序。</value>
         <remarks>
-          <para>只读的<b>long</b>。</para>如果对象在 Microsoft Excel 中创建的
-          <para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。<see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para></para></remarks>
+          <para>只读的<b>long</b>。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Firstpoint">
@@ -121,7 +126,7 @@
         <summary>获取<see cref="T:Microsoft.Office.Interop.Excel.SparkColor" />对象，表示的颜色和可见性迷你图上数据的第一个点的标记。</summary>
         <value>A<see cref="T:Microsoft.Office.Interop.Excel.SparkColor" />对象，表示的颜色和可见性迷你图上数据的第一个点的标记。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para>
             <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Firstpoint" />属性对应于的设置和功能区的迷你图工具设计选项卡上样式部分中的标记颜色下拉列表的第一个点项目的显示部分中的第一个点复选框。</para>
           <para></para>
@@ -154,7 +159,7 @@
         <summary>获取<see cref="T:Microsoft.Office.Interop.Excel.SparkColor" />对象，表示的颜色和可见性最高的迷你图上数据点的标记。</summary>
         <value>A<see cref="T:Microsoft.Office.Interop.Excel.SparkColor" />对象，表示的颜色和可见性最高的迷你图上数据点的标记。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para>
             <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Highpoint" />属性对应于的设置和功能区的迷你图工具设计选项卡上的标记颜色下拉列表中样式部分的高点项的显示部分中的高点复选框。</para>
           <para></para>
@@ -187,7 +192,7 @@
         <summary>获取<see cref="T:Microsoft.Office.Interop.Excel.SparkColor" />对象，表示的颜色和可见性迷你图上数据的最后一个点的标记。</summary>
         <value>A<see cref="T:Microsoft.Office.Interop.Excel.SparkColor" />对象，表示的颜色和可见性迷你图上数据的最后一个点的标记。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para>
             <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Lastpoint" />属性对应于的设置和功能区的迷你图工具设计选项卡上样式部分中的标记颜色下拉列表的最后一个点项目的最后一个点，在显示部分中的复选框。</para>
           <para></para>
@@ -220,7 +225,7 @@
         <summary>获取<see cref="T:Microsoft.Office.Interop.Excel.SparkColor" />对象，表示的颜色和可见性最低迷你图上数据点的标记。</summary>
         <value>A<see cref="T:Microsoft.Office.Interop.Excel.SparkColor" />对象，表示的颜色和可见性最低迷你图上数据点的标记。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para>
             <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Lowpoint" />属性对应于的设置和功能区的迷你图工具设计选项卡上样式部分中的标记颜色下拉列表的低点项的显示部分中的低点复选框。</para>
           <para></para>
@@ -253,7 +258,7 @@
         <summary>获取<see cref="T:Microsoft.Office.Interop.Excel.SparkColor" />对象，表示的颜色和可见性正迷你图上数据点的标记。</summary>
         <value>A<see cref="T:Microsoft.Office.Interop.Excel.SparkColor" />对象，表示的颜色和可见性正迷你图上数据点的标记。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para>
             <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Markers" />属性对应于的设置和功能区的迷你图工具设计选项卡上的标记颜色下拉列表中样式部分的标记项目的显示部分中的标记复选框。</para>
           <para></para>
@@ -286,7 +291,7 @@
         <summary>获取<see cref="T:Microsoft.Office.Interop.Excel.SparkColor" />对象，表示的颜色和可见性负迷你图上数据点的标记。</summary>
         <value>A<see cref="T:Microsoft.Office.Interop.Excel.SparkColor" />对象，表示的颜色和可见性负迷你图上数据点的标记。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para>
             <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Negative" />属性对应于的设置和功能区的迷你图工具设计选项卡上的标记颜色下拉列表中样式部分中的负分项的显示部分中的负点复选框。</para>
           <para></para>
@@ -319,7 +324,7 @@
         <summary>获取父<see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" />指定对象的对象。</summary>
         <value>父<see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" />指定对象的对象。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>

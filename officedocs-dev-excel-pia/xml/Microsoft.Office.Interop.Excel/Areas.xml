@@ -1,10 +1,10 @@
 <Type Name="Areas" FullName="Microsoft.Office.Interop.Excel.Areas">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7cdbce4233c98945faa9b4ad7a5d8d53b5756c20" />
+    <Meta Name="ms.openlocfilehash" Value="3d66092e7ce8a02412645f2fcf1c40d1d7d63d9e" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584355" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Areas : System.Collections.IEnumerable" />
@@ -35,10 +35,10 @@
   <Docs>
     <summary>由选定区域内的多个子区域或连续单元格块组成的集合。</summary>
     <remarks>
-      <para>没有单一<b>区域</b>对象;<b>Areas</b>集合中的单个成员的<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象。<b>Areas</b>集合包含的每个区域，连续的所选内容中的单元格的一个<b>Range</b>对象。如果所选内容包含只有一个区域，则<b>Areas</b>集合包含对应于该所选内容的单个<b>Range</b>对象。</para>
+      <para>没有单一<b>区域</b>对象;<b>Areas</b>集合中的单个成员的<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象。 <b>Areas</b>集合包含的每个区域，连续的所选内容中的单元格的一个<b>Range</b>对象。 如果所选内容包含只有一个区域，则<b>Areas</b>集合包含对应于该所选内容的单个<b>Range</b>对象。</para>
       <para>使用<see cref="P:Microsoft.Office.Interop.Excel.Range.Areas" />属性可返回<b>区域</b>集合。</para>
-      <para>使用<b>区域</b>(<paramref name="index" />)，其中<paramref name="index" />是区域索引号，若要从集合中返回单个<b>Range</b>对象。索引编号对应于在其中选定区域的顺序。</para>
-      <para>上同时选定内容中的多个区域，无法执行某些操作; 必须循环访问选定内容中的单个区域，还可以单独执行每个区域的操作。</para>
+      <para>使用<b>区域</b>(<paramref name="index" />)，其中<paramref name="index" />是区域索引号，若要从集合中返回单个<b>Range</b>对象。 索引编号对应于在其中选定区域的顺序。</para>
+      <para>不能同时; 选定内容中的多个区域执行某些操作必须在所选内容的单个区域中循环，还可以单独执行每个区域的操作。</para>
       <para></para>
     </remarks>
   </Docs>
@@ -160,9 +160,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>

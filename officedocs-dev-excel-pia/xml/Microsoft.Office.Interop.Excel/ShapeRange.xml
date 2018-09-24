@@ -1,10 +1,10 @@
 <Type Name="ShapeRange" FullName="Microsoft.Office.Interop.Excel.ShapeRange">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="31a303422ec357161186ed476f9e5e4506d2d55c" />
+    <Meta Name="ms.openlocfilehash" Value="ffea79e6ef3bb0175b91650070af45326d337d7f" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582899" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ShapeRange : System.Collections.IEnumerable" />
@@ -33,9 +33,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表形状区域，它是文档中的一组形状。</summary>
+    <summary>代表一个形状范围，即某个文档中的一组形状。</summary>
     <remarks>
-      <para>的形状范围可以包含文档作为单个形状尽可能少或所有形状。您可以包含所需的任何形状 — 从文档的所有形状或选定内容中的所有形状选择 — 来构造形状范围。例如，可以构造<see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />集合，其中包含对文档的前三个形状、 所有选定的形状或文档中所有的任意多边形。</para>
+      <para>形状范围可以只包含文档中的一个形状，也可以包含该文档中的所有形状。 您可以包括任何所需的形状--从文档中的所有图形或所选内容中的所有形状中进行选择   构造形状范围。 例如，可以构造<see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />集合，其中包含对文档的前三个形状、 所有选定的形状或文档中所有的任意多边形。</para>
       <para></para>
     </remarks>
   </Docs>
@@ -159,7 +159,7 @@
         <summary>返回或设置的 （可选） 的描述性文本字符串<see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />对象，该对象保存到网页时。 可读写 <b>String</b>。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>的可选文字可以显示可以代替在 Web 浏览器或直接通过图像的形状的图像时鼠标指针悬停于 （中支持这些功能的浏览器） 的图像。</para>
+          <para>可选文字可以代替在 Web 浏览器或直接通过图像的形状的图像时鼠标指针悬停于 （中支持这些功能的浏览器） 的图像上会显示。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -246,7 +246,7 @@
         <summary>返回或设置指定的形状类型<see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />对象，它代表行、 任意多边形，或连接器自选。 读/写<see cref="T:Microsoft.Office.Core.MsoAutoShapeType" />。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>当您更改形状的类型时，该形状保留其大小、 颜色和其他属性。</para>
+          <para>[!注释] 改变一个形状的类型时，该形状保留其大小、颜色和其他属性。</para>
           <para>使用<see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.Type" />属性<see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" />对象来设置或返回连接符类型。</para>
           <para></para>
         </remarks>
@@ -697,7 +697,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -961,7 +961,7 @@
           <see cref="T:Microsoft.Office.Core.GlowFormat" />
         </value>
         <remarks>
-          <para>发光效果为图形添加了色彩鲜明的彩色的边缘。 </para>
+          <para>发光效果为图形添加了色彩鲜明的彩色边缘。  </para>
           <para></para>
         </remarks>
       </Docs>
@@ -990,7 +990,7 @@
         <summary>将指定区域中的形状形成一组。 作为 single 类型返回组合的形状<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>由于一组形状作为单个形状来处理，分组和取消分组形状的<b>Shapes</b>集合中的项目数量的更改并更改之后影响集合中的项目的项目的索引号。</para>
+          <para>由于一组形状被视为单个形状，组合和取消组合的形状的 <b>Shapes</b> 集合中项的数目，并更改集合中受影响的项之后的项的索引号。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1204,7 +1204,7 @@
         <summary>返回指定对象的类型。 <b>Integer</b> 类型，只读。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>您可以将 ID 标签用作其他 HTML 文档或相同网页上的超链接引用。</para>
+          <para>可将 ID 标签用作其他 HTML 文档或相同网页上的超链接引用。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1265,7 +1265,7 @@
           <b>必选。</b> 指定距离该形状是水平旋转度中。 正值表示使形状按顺时针方向旋转；负值表示使形状按逆时针方向旋转。</param>
         <summary>按指定度数值，改变指定形状绕 z 轴的旋转角度。 使用<see cref="P:Microsoft.Office.Interop.Excel.ShapeRange.Rotation" />属性设置形状的绝对旋转角度。</summary>
         <remarks>
-          <para>要将三维形状绕 x 轴或 y 轴，请分别使用<see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationX(System.Single)" />方法或<see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationY(System.Single)" />方法。</para>
+          <para>若要将三维形状绕 x 轴或 y 轴的旋转，使用<see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationX(System.Single)" />方法或<see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationY(System.Single)" />方法。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1388,7 +1388,7 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.LineFormat" />对象，其中包含线条格式指定形状的属性。 只读。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>对于线条， <b>LineFormat</b>对象代表线条本身; 而对于带有边框形状， <b>LineFormat</b>对象代表边框。</para>
+          <para>对于线条， <b>LineFormat</b> 对象代表线条本身;具有边框的形状， <b>LineFormat</b> 对象表示的边框。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1454,35 +1454,35 @@
         <summary>返回或设置对象的名称。 <b>String</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>下表显示<b>名称</b>属性和给定唯一名称"[Europe] 与 OLAP 数据源相关的属性示例值。[France]。[Paris]"，并将与项目的非 OLAP 数据源命名"巴黎"。</para>
+          <para>下表显示了 <b>Name</b> 属性和相关属性的示例值，同时假设有一个具有唯一名称为“[Europe].[France].[Paris]”的 OLAP 数据源，有一个包含项名称为“Paris”的非 OLAP 数据源。</para>
           <list type="table">
             <item>
               <term>
                 <b>标题</b>
               </term>
-              <description>巴黎</description>
-              <description>巴黎</description>
+              <description>Paris</description>
+              <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>名称</b>
               </term>
-              <description>[Europe]。 [法国]。[Paris]（只读）</description>
-              <description>巴黎</description>
+              <description>[Europe].[France].[Paris]（只读）</description>
+              <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>SourceName</b>
               </term>
-              <description>[Europe]。 [法国]。[Paris]（只读）</description>
-              <description>（与 SQL 属性值，只读相同）</description>
+              <description>[Europe].[France].[Paris]（只读）</description>
+              <description>（与 SQL 属性值相同，只读）</description>
             </item>
             <item>
               <term>
                 <b>值</b>
               </term>
-              <description>[Europe]。 [法国]。[Paris]（只读）</description>
-              <description>巴黎</description>
+              <description>[Europe].[France].[Paris]（只读）</description>
+              <description>Paris</description>
             </item>
           </list>
           <para>指定的索引时<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />集合，您可以使用下表中所示的语法。</para>
@@ -1492,11 +1492,11 @@
               <description>表达式。PivotItems("Paris")</description>
             </item>
           </list>
-          <para>时使用<see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" />属性引用集合中的特定成员，您可以使用下表中所示的文本索引名称。</para>
+          <para>当使用<see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" />属性引用集合中的特定成员，您可以使用下表中所示的文本索引名称。</para>
           <list type="table">
             <item>
-              <term>[Europe]。 [法国]。[Paris]</term>
-              <description>巴黎</description>
+              <term>[Europe]。[France]。[Paris]</term>
+              <description>Paris</description>
             </item>
           </list>
           <para></para>
@@ -1695,7 +1695,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>
-            <b>Regroup</b>方法只还原组中的第一个以前组合的形状中指定发现<see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />集合。因此，如果指定的形状区域包含以前属于不同的组的形状，组之一将恢复。</para>
+            <b>Regroup</b>方法只还原组中的第一个以前组合的形状中指定发现<see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />集合。 因此，如果指定的形状范围包含以前属于不同组的形状，将恢复组之一。</para>
           <para>请注意，由于将一组形状被视为一个形状，分组和取消分组形状中的项目数<see cref="T:Microsoft.Office.Interop.Excel.Shapes" />集合和更改之后影响集合中的项目的项目的索引号。</para>
           <para></para>
         </remarks>
@@ -1724,8 +1724,10 @@
       <Docs>
         <summary>重置连接符，使它们可以采用最短的路径连接的形状。</summary>
         <remarks>
-          <para>若要重排连接线， <b>RerouteConnections</b>方法可能分离连接符的端点并将其重新附加到不同连接的站点上连接的形状。此方法将重排连接上所有连接线附加到指定的形状;如果指定的形状是连接符，就重排该连接符。</para>如果此方法应用于的连接器，只有该连接器的
-          <para>将被重新路由。如果此方法应用于连接的形状，将重新路由对该形状的所有连接符。</para><para></para></remarks>
+          <para>若要重排连接线， <b>RerouteConnections</b>方法可能分离连接符的端点并将其重新附加到不同连接的站点上连接的形状。 此方法将重排连接在指定形状上的所有连接符；如果指定的形状是连接符，就重排该连接符。</para>
+          <para>如果该方法应用于一个连接符，则只重置该连接符；如果该方法应用于一个已连接的形状，则重置该形状上所有的连接符。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Rotation">
@@ -1789,7 +1791,7 @@
         <param name="Scale">可选<see cref="T:Microsoft.Office.Core.MsoScaleFrom" />。 指定在缩放形状时，该形状的哪一部分将保持在原有的位置。</param>
         <summary>按指定因子调整形状的高度。</summary>
         <remarks>
-          <para>的图片和 OLE 对象，您可以指示您是否要扩展的形状相对于原始或当前大小。图片和 OLE 对象以外的形状总是相对于其当前高度缩放。</para>
+          <para>对于图片和 OLE 对象，您可以指示您是否要扩展的形状相对于原始或当前大小。 对于除图片和 OLE 对象以外的其他形状来说，缩放总是相对于其当前高度而言。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1824,7 +1826,7 @@
         <param name="Scale">可选<see cref="T:Microsoft.Office.Core.MsoScaleFrom" />。 指定在缩放形状时，该形状的哪一部分将保持在原有的位置。</param>
         <summary>按指定因子调整形状的宽度。</summary>
         <remarks>
-          <para>的图片和 OLE 对象，您可以指示您是否要扩展的形状相对于原始或当前大小。图片和 OLE 对象以外的形状总是相对于其当前宽度缩放。</para>
+          <para>对于图片和 OLE 对象，您可以指示您是否要扩展的形状相对于原始或当前大小。 图片和 OLE 对象以外的形状总是相对于当前宽度缩放。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2118,8 +2120,8 @@
         <summary>获取或设置与指定的形状区域关联的替代文本的标题。</summary>
         <value>指定的形状区域相关联的可选文字标题。</value>
         <remarks>
-          <para>读/写。</para>
-          <para>要设置形状区域的可选文本的描述性文本字符串，请使用<see cref="P:Microsoft.Office.Interop.Excel.ShapeRange.AlternativeText" />属性。</para>
+          <para>为可读/写属性。</para>
+          <para>若要设置形状区域的可选文本的描述性文本字符串，使用<see cref="P:Microsoft.Office.Interop.Excel.ShapeRange.AlternativeText" />属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2268,31 +2270,31 @@
         <value>To be added.</value>
         <remarks>
           <para>您可以使用此属性返回用作参数的数组<see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddCurve(System.Object)" />方法或<see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddPolyline(System.Object)" />方法。</para>
-          <para>下表显示了如何<b>Vertices</b>属性将数组 vertarray （） 中的值与三角形的顶点坐标相关联。</para>
+          <para>下表显示 <b>Vertices</b> 属性如何将 vertArray() 数组中的值与三角形的顶点坐标相关联。</para>
           <list type="table">
             <item>
               <term>vertArray （1，1）</term>
-              <description>从第一个顶点至文档的左边界的水平距离</description>
+              <description>第一个顶点与文档的左边界之间的水平距离</description>
             </item>
             <item>
               <term>vertArray （1，2）</term>
-              <description>从第一个顶点到文档顶端的垂直距离</description>
+              <description>第一个顶点与文档的顶端之间的垂直距离</description>
             </item>
             <item>
               <term>vertArray （2，1）</term>
-              <description>从第二个顶点至文档的左边界的水平距离</description>
+              <description>第二个顶点与文档的左边界之间的水平距离</description>
             </item>
             <item>
               <term>vertArray （2，2）</term>
-              <description>从第二个顶点到文档顶端的垂直距离</description>
+              <description>第二个顶点与文档的顶端之间的垂直距离</description>
             </item>
             <item>
               <term>vertArray （3，1）</term>
-              <description>从第三个顶点至文档的左边界的水平距离</description>
+              <description>第三个顶点与文档的左边界之间的水平距离</description>
             </item>
             <item>
               <term>vertArray （3、 2）</term>
-              <description>从第三个顶点到文档顶端的垂直距离</description>
+              <description>第三个顶点与文档的顶端之间的垂直距离</description>
             </item>
           </list>
           <para></para>
@@ -2418,8 +2420,11 @@
         <summary>返回指定的形状在 z 顺序中的位置。 <b>Integer</b> 类型，只读。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>若要设置形状的 z-顺序中的位置，请使用<see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" />方法。</para>对应于中的形状的索引号的 z-顺序中的
-          <para>的形状的位置<see cref="T:Microsoft.Office.Interop.Excel.Shapes" />集合。例如，如果 myDocument 上第四个形状，表达式 myDocument.Shapes(1) 返回 z-次序末尾的形状，而表达式 myDocument.Shapes(4) 返回的形状在 z-顺序的顶层。</para><para>只要向集合添加新的形状，它默认情况下添加到 z-顺序的顶层。</para><para></para></remarks>
+          <para>若要设置形状的 z-顺序中的位置，请使用<see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" />方法。</para>
+          <para>对应于中的形状的索引号的 z-顺序中的形状的位置<see cref="T:Microsoft.Office.Interop.Excel.Shapes" />集合。 例如，如果 myDocument 上第四个形状，表达式 myDocument.Shapes(1) 返回 z-次序末尾的形状，而表达式 myDocument.Shapes(4) 返回的形状在 z-次序前面。</para>
+          <para>每次向集合中添加一个新的形状时，默认情况下它会被添加到 z-次序的最前端。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

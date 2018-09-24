@@ -1,10 +1,10 @@
 <Type Name="SparklineGroup" FullName="Microsoft.Office.Interop.Excel.SparklineGroup">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2c34b4c1cd646b1414ae18e10ee0fbe1e821f9fa" />
+    <Meta Name="ms.openlocfilehash" Value="ba984506dbd7cd1c005762dfefbca8ba4bc4260a" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585076" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SparklineGroup : System.Collections.IEnumerable" />
@@ -36,8 +36,10 @@
     <summary>代表一组迷你图。</summary>
     <remarks>
       <para>
-        <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" />对象可以包含多个迷你图和包含的组中，如颜色和坐标轴设置的属性设置。每个迷你图由<see cref="T:Microsoft.Office.Interop.Excel.Sparkline" />对象。</para>使用
-      <para><see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.Modify(Microsoft.Office.Interop.Excel.Range,System.String)" />方法中添加或删除迷你图迷你图组。使用<see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.ModifyLocation(Microsoft.Office.Interop.Excel.Range)" />方法，以更改迷你图和使用的位置<see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.ModifySourceData(System.String)" />方法更改的源数据范围。</para><para></para></remarks>
+        <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" />对象可以包含多个迷你图和包含的组中，如颜色和坐标轴设置的属性设置。 每个迷你图由<see cref="T:Microsoft.Office.Interop.Excel.Sparkline" />对象。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.Modify(Microsoft.Office.Interop.Excel.Range,System.String)" />方法中添加或删除迷你图迷你图组。 使用<see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.ModifyLocation(Microsoft.Office.Interop.Excel.Range)" />方法，以更改迷你图和使用的位置<see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.ModifySourceData(System.String)" />方法更改的源数据范围。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -67,7 +69,7 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.Application" />对象。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -98,7 +100,7 @@
         <summary>获取关联<see cref="T:Microsoft.Office.Interop.Excel.SparkAxes" />对象。</summary>
         <value>关联<see cref="T:Microsoft.Office.Interop.Excel.SparkAxes" />对象。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -129,7 +131,7 @@
         <summary>获取迷你图组中的迷你图的数量。</summary>
         <value>迷你图组中的迷你图数。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -160,8 +162,10 @@
         <summary>获取一个指示在其中创建此对象的应用程序的 32 位<b>整数</b>。</summary>
         <value>32 位<b>整数</b>，指示在其中创建此对象的应用程序。</value>
         <remarks>
-          <para>只读的<b>long</b>。</para>如果对象在 Microsoft Excel 中创建的
-          <para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。<see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para></para></remarks>
+          <para>只读的<b>long</b>。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateRange">
@@ -194,10 +198,10 @@
         <value>迷你图组的日期范围。</value>
         <remarks>
           <para>Raed/写。</para>
-          <para>若要清除日期范围此属性设置为空字符串。</para>
-          <para>的日期范围必须是连续的一维范围。</para>
+          <para>若要清除日期范围，请将此属性设置为空字符串。</para>
+          <para>日期范围必须是连续的一维范围。</para>
           <para>日期范围可以位于不同的工作表比<see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" />和<see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.SourceData" />属性。</para>
-          <para>空单元格，但不显示日期范围中的非日期值。</para>
+          <para>日期范围中的空单元格和非日期值不显示。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -256,7 +260,7 @@
         <summary>获取或设置，在图表上绘制空白单元格的方式。</summary>
         <value>指定在图表上绘制空白单元格的方式。</value>
         <remarks>
-          <para>此属性可以是一个<see cref="T:Microsoft.Office.Interop.Excel.XlDisplayBlanksAs" />常量。读/写。</para>
+          <para>此属性可以是一个<see cref="T:Microsoft.Office.Interop.Excel.XlDisplayBlanksAs" />常量。 为可读/写属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -291,7 +295,7 @@
         <value>
           <b>true</b>如果隐藏单元格的绘制迷你图组中; 中否则为<b>false</b>。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>为可读/写属性。</para>
           <para>迷你图组中显示
             <b>，则返回 true</b>如果隐藏单元格。</para>
           <para></para>
@@ -391,7 +395,7 @@
         <summary>获取或设置迷你图组中的迷你图的粗细。</summary>
         <value>迷你图组中的迷你图的粗细。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>为可读/写属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -426,10 +430,14 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，表示迷你图组的位置。</value>
         <remarks>
-          <para>读/写。</para>
-          <para>迷你图组中所有迷你图的位置必须位于同一工作表，但是迷你图组的源数据可以位于不同的工作表或工作簿。</para>
-          <para>表示的范围的大小<see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" />属性必须等于行或列中的<see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.SourceData" />属性<see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" />对象。</para>与迷你图组相关联的
-          <para>A 连续范围只能一维。如果不连续范围，必须单独指定每个单元格。</para><para><b>注意</b>： 请勿使用<see cref="M:Microsoft.Office.Interop.Excel._Application.Union(Microsoft.Office.Interop.Excel.Range,Microsoft.Office.Interop.Excel.Range,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object" />方法创建非连续区域，因为<see cref="M:Microsoft.Office.Interop.Excel._Application.Union(Microsoft.Office.Interop.Excel.Range,Microsoft.Office.Interop.Excel.Range,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object" />方法将返回单个区域引用。</para><para></para></remarks>
+          <para>为可读/写属性。</para>
+          <para>迷你图组中所有迷你图的位置必须在同一个工作表上，但迷你图组的源数据可以在不同的工作表或工作簿上。</para>
+          <para>代表区域的大小<see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" />属性必须等于行或列中的<see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.SourceData" />属性<see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" />对象。</para>
+          <para>与迷你图组关联的连续区域只能是一维的。如果区域是不连续的，则必须分别指定每个单元格。</para>
+          <para>
+            <b>注意</b>： 请勿使用<see cref="M:Microsoft.Office.Interop.Excel._Application.Union(Microsoft.Office.Interop.Excel.Range,Microsoft.Office.Interop.Excel.Range,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object" />方法创建非连续区域，因为<see cref="M:Microsoft.Office.Interop.Excel._Application.Union(Microsoft.Office.Interop.Excel.Range,Microsoft.Office.Interop.Excel.Range,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object" />方法将返回单个区域引用。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Modify">
@@ -574,7 +582,7 @@
         <summary>获取指定对象的父对象。</summary>
         <value>指定的对象的的父对象。 的</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -608,8 +616,8 @@
         <summary>获取或设置时如何绘制迷你图所基于的数据处于方形区域。</summary>
         <value>指定当迷你图所依据的数据位于方形区域中时如何绘制此迷你图。</value>
         <remarks>
-          <para>读/写。</para>
-          <para>如果迷你图所基于的数据处于方形区域，例如，如果数据位于区域 A1:B2 只能设置此属性。</para>
+          <para>为可读/写属性。</para>
+          <para>只有在迷你图所基于的数据处于方形区域中时，才可以设置此属性，例如，数据位于区域 A1:B2。</para>
           <para>方形区域中 sp 数据的默认值是按行绘制数据 (<see cref="F:Microsoft.Office.Interop.Excel.XlSparklineRowCol.xlSparklineRowsSquare" />)。</para>
           <para></para>
         </remarks>
@@ -641,8 +649,8 @@
         <summary>获取为坐标对指定节点的位置。 每个坐标都以磅表示。</summary>
         <value>作为坐标对指定的节点的位置。</value>
         <remarks>
-          <para>坐标对是一对表示的 x 坐标和 y 坐标点的二维数组中可以包含多个点的坐标中存储的值。</para>
-          <para>此属性是只读的。使用<see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetPosition(System.Int32,System.Single,System.Single)" />方法，以便设置此属性的值。</para>
+          <para>一对值表示的 x 坐标和 y 坐标点的二维数组中可以包含多个点的坐标中存储的坐标对。</para>
+          <para>此属性是只读的。 使用<see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetPosition(System.Int32,System.Single,System.Single)" />方法，以便设置此属性的值。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -673,7 +681,7 @@
         <summary>获取<see cref="T:Microsoft.Office.Interop.Excel.FormatColor" />对象，表示迷你图组的主系列颜色。</summary>
         <value>A<see cref="T:Microsoft.Office.Interop.Excel.FormatColor" />对象，表示迷你图组的主系列颜色。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -707,9 +715,9 @@
         <summary>获取或设置包含迷你图组的源数据的区域。</summary>
         <value>包含迷你图组的源数据的区域。</value>
         <remarks>
-          <para>读/写。</para>
-          <para>的源数据区域中行或列数必须等于中的单元格数<see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" />属性范围。</para>
-          <para>单个迷你图迷你图组中的数据源区域必须是连续。</para>
+          <para>为可读/写属性。</para>
+          <para>源数据区域中行或列数必须等于中的单元格数<see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" />属性范围。</para>
+          <para>迷你图组内单个迷你图的数据源区域必须是连续的。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -743,7 +751,7 @@
         <summary>获取或设置组的迷你图的类型。</summary>
         <value>迷你图组的类型。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>可读/写。</para>
           <para></para>
         </remarks>
       </Docs>

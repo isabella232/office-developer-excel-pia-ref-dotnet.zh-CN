@@ -1,10 +1,10 @@
 <Type Name="TableStyleElements" FullName="Microsoft.Office.Interop.Excel.TableStyleElements">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="cdfa9a675b6bfbf4b67bd4e52f22eba1b2c75b5d" />
+    <Meta Name="ms.openlocfilehash" Value="3117481061c35343899d615630d86622b984f99c" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585013" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface TableStyleElements : System.Collections.IEnumerable" />
@@ -35,8 +35,8 @@
   <Docs>
     <summary>代表表格样式元素。</summary>
     <remarks>
-      <para>表样式定义格式设置为一个或所有表或数据透视表的元素。 例如，标题行、 最后一列或汇总行是表的元素和表格样式可以定义标题行的填充颜色为蓝色、 最后一列为红色。 </para>
-      <para>A 表格中的表样式元素可以具有的表格样式应用于元素中指定的格式。 <see cref="T:Microsoft.Office.Interop.Excel.XlTableStyleElementType" />枚举包含可供使用表格样式元素的类型。</para>
+      <para>表样式定义格式设置为一个或所有表或数据透视表的元素。  例如，标题行、 最后一列或汇总行是表的元素和表格样式可以定义标题行的填充颜色为蓝色、 最后一列为红色。  </para>
+      <para>表格中的表样式元素可以具有的表格样式应用于元素中指定的格式。  <see cref="T:Microsoft.Office.Interop.Excel.XlTableStyleElementType" />枚举包含可供使用表格样式元素的类型。</para>
       <para></para>
     </remarks>
   </Docs>
@@ -104,7 +104,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel._Application" />
         </value>
         <remarks>
-          <para>您可以使用此属性与 OLE 自动化对象返回该对象的应用程序。</para>
+          <para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -166,7 +166,10 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
-        <remarks>如果对象在 Microsoft Excel 中创建的<para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para></para></remarks>
+        <remarks>
+          <para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。<b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

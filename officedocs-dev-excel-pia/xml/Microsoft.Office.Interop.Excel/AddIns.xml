@@ -1,10 +1,10 @@
 <Type Name="AddIns" FullName="Microsoft.Office.Interop.Excel.AddIns">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d97bdc18c8727af88437835877abfa363ae29787" />
+    <Meta Name="ms.openlocfilehash" Value="08779fe0f93d595b31e4991956a1b4a5705a2268" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584131" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AddIns : System.Collections.IEnumerable" />
@@ -35,8 +35,12 @@
   <Docs>
     <summary>一<see cref="T:Microsoft.Office.Interop.Excel.AddIn" />，而不考虑它们是否已安装到 Microsoft Excel，表示所有可用加载宏的对象。 此列表对应于显示在加载项对话框 （工具菜单） 的加载宏的列表。</summary>
     <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Excel._Application.AddIns" />属性可返回<b>AddIns</b>集合。</para>使用
-      <para><see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" />方法，以加载项添加到可用加载项的列表。<b>Add</b>方法向列表中添加外接程序，但不安装外接程序集<see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" />属性为<b>True</b>可安装的加载项的加载项。若要安装不显示的外接程序的可用加载项列表中，必须首先使用<b>Add</b>方法，并将<b>Installed</b>属性。这可以在一个步骤中。</para><para>使用<b>加载项</b>(<paramref name="index" />)，其中<paramref name="index" />是外接程序标题或索引号，可返回单个<b>AddIn</b>对象。</para><para>请勿混淆外接程序标题，显示在加载项对话框中添加的名称外, 接程序的文件名称。您必须完全相同书写加载项对话框中，但不一定要匹配大写拼写外接程序标题。</para><para></para></remarks>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Excel._Application.AddIns" />属性可返回<b>AddIns</b>集合。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" />方法，以加载项添加到可用加载项的列表。<b>Add</b>方法向列表中添加外接程序，但不安装外接程序。 设置<see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" />属性为<b>True</b>可安装的加载项的加载项。 若要安装不显示的外接程序的可用加载项列表中，必须首先使用<b>Add</b>方法，并将<b>Installed</b>属性。 进行这种单步执行。</para>
+      <para>使用<b>加载项</b>(<paramref name="index" />)，其中<paramref name="index" />是外接程序标题或索引号，可返回单个<b>AddIn</b>对象。</para>
+      <para>请勿混淆加载宏标题（出现在“加载宏”对话框中）与加载宏名称（加载宏的文件名）。必须严格按照“加载宏”对话框中的标题书写加载宏标题，但不必匹配大小写。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -102,7 +106,7 @@
         <summary>将一个新的外接程序文件添加到加载宏列表<see cref="T:Microsoft.Office.Interop.Excel.AddIn" />对象。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>此方法不会安装新的加载项。必须设置<see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" />属性以安装加载项。</para>
+          <para>此方法不会安装新的加载项。 必须设置<see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" />属性来安装外接程序。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -189,9 +193,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>

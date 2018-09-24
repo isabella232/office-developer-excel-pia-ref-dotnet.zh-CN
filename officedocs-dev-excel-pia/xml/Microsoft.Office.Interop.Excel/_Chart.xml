@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580323" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface _Chart" />
@@ -386,7 +386,7 @@
         <param name="Filename">图表模板的文件名。</param>
         <summary>将标准图表类型或自定义图表类型应用于图表。</summary>
         <remarks>
-          <para>此方法不支持本机或组合图的做笔记常量。</para>
+          <para>此方法不支持采用原图表或组合图的常量。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -498,7 +498,7 @@
         <param name="ChartType">图表类型。</param>
         <summary>应用功能区中显示的版式。</summary>
         <remarks>
-          <para>使用当前图表类型，从 1 到 10 的数字布局时应用于图表类型。 您还可以在另一种图表类型应用一个图表类型的布局。 例如，您可以应用程序可从折线图为柱形图的布局。 布局仅添加可供该特定图表类型的图表元素。</para>
+          <para>在当前图表类型上使用版式时，会将介于 1 到 10 之间的数字应用于该图表类型。还可以将某一图表类型的版式应用于另一个图表类型。例如，可以将折线图中的可用版式应用于柱形图。版式只会添加可用于该特定图表类型的图表元素。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -898,7 +898,10 @@
       <Docs>
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.XlCategoryLabelLevel" />引用的其中源自分类标签正在级别的常量。 <b>整数</b>(C# 中<b>int</b> )读/写。</summary>
         <value>To be added.</value>
-        <remarks>如果没有一个层次结构，0，则<para>指的是最父级别，1 是指其子级，依此类推。因此，0 等于第一级，1 等于第二级，2 等于第三个级别，依次类推。</para><para></para></remarks>
+        <remarks>
+          <para>如果没有层次结构，0 指的是最父级别，1 是指其子级，依此类推。 因此，0 等于第一级，1 等于第二级，2 等于第三个级别，依此类推。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ChartArea">
@@ -1022,7 +1025,10 @@
         <param name="Index">可选的<b>对象</b>。 名称或图表的数目。 此参数可以是指定多个图表的数组。</param>
         <summary>返回一个 object 值，该值代表以下任意一个嵌入式的图表 (<see cref="T:Microsoft.Office.Interop.Excel.ChartObject" />对象) 或所有嵌入式图表的集合 (<see cref="T:Microsoft.Office.Interop.Excel.ChartObjects" />对象) 工作表上。</summary>
         <returns>To be added.</returns>
-        <remarks>此方法不等于<para><see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" />属性。此方法返回嵌入式的图表;<b>图表</b>属性返回图表工作表。使用<see cref="P:Microsoft.Office.Interop.Excel.ChartObject.Chart" />属性返回嵌入图表的<b>图表</b>对象。</para><para></para></remarks>
+        <remarks>
+          <para>此方法不等于<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" />属性。 此方法返回嵌入式的图表;<b>图表</b>属性返回图表工作表。 使用<see cref="P:Microsoft.Office.Interop.Excel.ChartObject.Chart" />属性返回嵌入图表的<b>图表</b>对象。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ChartStyle">
@@ -1056,7 +1062,7 @@
           <b>对象</b>
         </value>
         <remarks>
-          <para>您可以使用从 1 到 48 之间的数字设置图表样式。</para>
+          <para>您可以使用介于 1 到 48 之间的数字设置图表样式。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1121,7 +1127,7 @@
         <summary>返回或设置图表类型。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>某些图表类型不可用对数据透视图。</para>
+          <para>某些图表类型对数据透视图报表无效。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1272,7 +1278,7 @@
       <Docs>
         <summary>清除指定图表上所有不会遵循应用于图表的颜色样式的颜色。</summary>
         <remarks>
-          <para>使用此方法将格式应用于图表的颜色样式的所有图表颜色重都置。</para>
+          <para>使用此方法重置格式应用于图表的颜色样式的所有图表颜色。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1300,7 +1306,7 @@
       <Docs>
         <summary>清除图表元素格式以改为自动格式。</summary>
         <remarks>
-          <para>使用此方法可重置格式设置为自动的图表元素。   如果您在图表中使用此方法，将重置所有格式 （包括重写）。</para>
+          <para>使用此方法将图表元素格式重置为自动格式。    如果在图表上使用此方法，则将重置所有格式（包括替代项）。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1331,8 +1337,8 @@
         <summary>返回对象的代码名称。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>您看到属性窗口中 （名称） 右侧的单元格中的值是所选对象的代码名。在设计时，您可以通过更改此值更改对象的代码名。不能以编程方式在运行时更改此属性。</para>
-          <para>对象的代码名称可代替返回对象的表达式。很可能为工作表名称不同于代码名称。当创建表、 工作表名称和代码名称是相同，但更改工作表名称不会更改代码名称，或更改代码名称不会更改工作表名称。</para>
+          <para>在“属性”窗口中“（名称）”右边的单元格中显示的值是所选对象的代码名。可以在设计过程中通过更改该值来改变对象的代码名。不能在运行过程中更改该属性。</para>
+          <para>对象的代码名称可代替返回对象的表达式。 很可能为工作表名称不同于代码名称。 创建工作表时，工作表名称和代码名称相同，但更改工作表名称不会更改代码名称，并且在更改代码名称不会更改工作表名称。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1610,7 +1616,7 @@
         </value>
         <remarks>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1938,14 +1944,14 @@
         <summary>对于显示设置了垂直距离的标注，该属性将返回从文本边界框边缘到标注线附加到文本框的位置之间的垂直距离（以磅为单位）。<b>Single</b> 类型，只读。</summary>
         <returns>返回<see cref="T:System.Object" />。</returns>
         <remarks>
-          <para>此距离顶部的文本框中，除非<b>AutoAttach</b>属性设置为<b>True</b>且文本框中位于左侧的原点的标注线 （标注线所指向的位置），在其中案例距离度量从 t他的文本框的底部。</para>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomDrop(System.Single)" />方法设置此属性的值。</para>
+          <para>此距离从文本框的顶边计算，但当 <b>AutoAttach</b> 属性为 <b>True</b> 且文本框在标注线起点（标注所指位置）的左侧时例外，此时的距离从文本框底部开始计算。</para>
+          <para>使用<see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomDrop(System.Single)" />方法，以便设置此属性的值。</para>
           <para></para>
           <para>此属性的值准确地反映到文本框标注行附件的位置，仅当具有显式设置标注放置值 — 即，如果的值<see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.DropType" />属性是<b>msoCalloutDropCustom</b>。</para>
           <para></para>
         </remarks>
         <example>
-          <para>本示例将 mydocument 中形状之一之一的两个预设的垂直距离，具体取决于是否自定义垂直值大于或标注文本边框的高度不超过一半的自定义垂直。对于示例正常运行，第一个形状必须是标注。</para>
+          <para>本示例用一或两个预设的下沉替换 myDocument 中第一个形状的自定义下沉，这依赖于自定义垂直距离是否大于或小于标注文本框高度的一半。要使本示例执行，第一个形状必须是标注。</para>
           <code>&lt;span class="label"&gt;Set myDocument = Worksheets(1)  
  
  
@@ -1999,7 +2005,7 @@ With myDocument.Shapes(1).Callout
 &lt;span class="label"&gt;&amp;lt; .Parent.Height / 2 Then             .PresetDrop msoCalloutDropTop         Else             .PresetDrop msoCalloutDropBottom         End If     End If End With&lt;/span&gt;</code>
         </example>
         <example>
-          <para>本示例将 mydocument 中形状之一之一的两个预设的垂直距离，具体取决于是否自定义垂直值大于或标注文本边框的高度不超过一半的自定义垂直。对于示例正常运行，第一个形状必须是标注。</para>
+          <para>本示例用一或两个预设的下沉替换 myDocument 中第一个形状的自定义下沉，这依赖于自定义垂直距离是否大于或小于标注文本框高度的一半。要使本示例执行，第一个形状必须是标注。</para>
           <code>&lt;span class="label"&gt;Set myDocument = Worksheets(1)  
  
  
@@ -2053,7 +2059,7 @@ With myDocument.Shapes(1).Callout
 &lt;span class="label"&gt;&amp;lt; .Parent.Height / 2 Then             .PresetDrop msoCalloutDropTop         Else             .PresetDrop msoCalloutDropBottom         End If     End If End With&lt;/span&gt;</code>
         </example>
         <example>
-          <para>本示例将 mydocument 中形状之一之一的两个预设的垂直距离，具体取决于是否自定义垂直值大于或标注文本边框的高度不超过一半的自定义垂直。对于示例正常运行，第一个形状必须是标注。</para>
+          <para>本示例用一或两个预设的下沉替换 myDocument 中第一个形状的自定义下沉，这依赖于自定义垂直距离是否大于或小于标注文本框高度的一半。要使本示例执行，第一个形状必须是标注。</para>
           <code>&lt;span class="label"&gt;Set myDocument = Worksheets(1)  
  
  
@@ -2217,7 +2223,7 @@ With myDocument.Shapes(1).Callout
         <summary>返回或设置中度提升三维图表视图。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>图表提升是以度表示的查看图表的高度。默认为 15，为大多数图表类型。此属性的值必须是介于-90 到 90，除三维条形图，之间它必须是介于 0 到 44 之间。</para>
+          <para>图表提升是以度表示的查看图表的高度。 对于绝大多数图表类型，其默认值为 15。 该属性的值必须介于 -90 到 90 之间，但三维条形图除外，对于三维条形图，该值必须介于 0 到 44 之间。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2328,7 +2334,7 @@ With myDocument.Shapes(1).Callout
         <param name="FixedFormatExtClassPtr">指向 FixedFormatExt 类的指针。</param>
         <summary>导出为指定格式的文件。</summary>
         <remarks>
-          <para>此方法还支持初始化外接程序导出为固定格式的文件的文件。例如，如果存在转换器，则 Excel 将执行文件格式转换。通常由用户启动的转换。</para>
+          <para>此方法还支持初始化加载项，以将文件导出为固定格式的文件。例如，如果存在转换器，则 Excel 将执行文件格式转换。转换通常由用户执行。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2393,8 +2399,8 @@ With myDocument.Shapes(1).Callout
         <summary>允许检索筛选出由 Index 参数指定的系列。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>除非用户已启用选择数据对话框中的<b>显示隐藏的行和列中的数据</b>选项不隐藏的行或列中
-            <b>series</b>对象显示当前的系列集合中。</para>
+          <para>除非用户已启用选择数据对话框中的<b>显示隐藏的行和列中的数据</b>选项当前的系列集合中不显示隐藏的行或列中
+            <b>series</b>对象。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2475,7 +2481,7 @@ With myDocument.Shapes(1).Callout
           <b>必选。</b> 方法返回时，此参数包含与图表元素相关的信息。 有关详细信息，请参阅"备注"部分。</param>
         <summary>返回指定的 X 坐标和 Y 坐标上图表元素的信息。本方法稍有与众不同之处：调用时只须指定前两个参数，在本方法执行期间，Microsoft Excel 为其余参数赋值，本方法返回后应检验这些参数的值。</summary>
         <remarks>
-          <para>值<paramref name="ElementID" />方法返回确定后是否<paramref name="Arg1" />和<paramref name="Arg2" />包含下表中所示的信息，。</para>
+          <para>值<paramref name="ElementID" />方法返回确定后是否<paramref name="Arg1" />和<paramref name="Arg2" />包含的信息下, 表中所示。</para>
           <list type="table">
             <item>
               <term>
@@ -2572,63 +2578,63 @@ With myDocument.Shapes(1).Callout
               <term>
                 <b>xlChartArea</b>
               </term>
-              <description>None</description>
+              <description>无</description>
               <description>无</description>
             </item>
             <item>
               <term>
                 <b>xlChartTitle</b>
               </term>
-              <description>None</description>
+              <description>无</description>
               <description>无</description>
             </item>
             <item>
               <term>
                 <b>xlCorners</b>
               </term>
-              <description>None</description>
+              <description>无</description>
               <description>无</description>
             </item>
             <item>
               <term>
                 <b>xlDataTable</b>
               </term>
-              <description>None</description>
+              <description>无</description>
               <description>无</description>
             </item>
             <item>
               <term>
                 <b>xlFloor</b>
               </term>
-              <description>None</description>
+              <description>无</description>
               <description>无</description>
             </item>
             <item>
               <term>
                 <b>xlLegend</b>
               </term>
-              <description>None</description>
+              <description>无</description>
               <description>无</description>
             </item>
             <item>
               <term>
                 <b>xlNothing</b>
               </term>
-              <description>None</description>
+              <description>无</description>
               <description>无</description>
             </item>
             <item>
               <term>
                 <b>xlPlotArea</b>
               </term>
-              <description>None</description>
+              <description>无</description>
               <description>无</description>
             </item>
             <item>
               <term>
                 <b>xlWalls</b>
               </term>
-              <description>None</description>
+              <description>无</description>
               <description>无</description>
             </item>
             <item>
@@ -2699,15 +2705,15 @@ With myDocument.Shapes(1).Callout
           <list type="table">
             <item>
               <term>AxisIndex</term>
-              <description>指定坐标轴是否主要或次要。可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" />常量： <b>xlPrimary</b>或<b>xlSecondary</b>。</description>
+              <description>指定轴主要或辅助。 可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" />常量： <b>xlPrimary</b>或<b>xlSecondary</b>。</description>
             </item>
             <item>
               <term>AxisType</term>
-              <description>指定坐标轴类型。可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" />常量： <b>xlCategory</b>、 <b>xlSeriesAxis</b>或<b>xlValue</b>。</description>
+              <description>指定坐标轴类型。 可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" />常量： <b>xlCategory</b>、 <b>xlSeriesAxis</b>或<b>xlValue</b>。</description>
             </item>
             <item>
               <term>DropZoneType</term>
-              <description>指定拖放区域类型： 列、 数据、 页或行字段。可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlPivotFieldOrientation" />常量： <b>xlColumnField</b>、 <b>xlDataField</b>、 <b>xlPageField</b>或<b>xlRowField</b>。列和行字段常量指定系列和类别字段分别。</description>
+              <description>指定拖放区域类型: 列、 数据、 页或行字段。 可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlPivotFieldOrientation" />常量： <b>xlColumnField</b>、 <b>xlDataField</b>、 <b>xlPageField</b>或<b>xlRowField</b>。 列和行字段常量分别指定系列和类别字段。</description>
             </item>
             <item>
               <term>GroupIndex</term>
@@ -2715,11 +2721,11 @@ With myDocument.Shapes(1).Callout
             </item>
             <item>
               <term>PivotFieldIndex</term>
-              <description>指定中的偏移量<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />集合的特定列 （系列）、 数据、 页或行 （分类） 字段。 如果拖放区域类型为<b>xlDataField</b>-1。</description>
+              <description>指定中的偏移量<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />的特定列 （系列）、 数据、 页或行 （分类） 字段的集合。 如果区域类型-1 是<b>xlDataField</b>。</description>
             </item>
             <item>
               <term>PointIndex</term>
-              <description>指定中的偏移量<see cref="T:Microsoft.Office.Interop.Excel.Points" />一系列中特定点的集合。值为-1 表示选定的所有数据点。</description>
+              <description>指定中的偏移量<see cref="T:Microsoft.Office.Interop.Excel.Points" />的一系列中的特定点的集合。 -1 表示所有数据点，处于选中都状态。</description>
             </item>
             <item>
               <term>SeriesIndex</term>
@@ -3325,35 +3331,35 @@ With myDocument.Shapes(1).Callout
         <summary>以字符串数组的形式，返回或设置指定列表框或组合框中的文字项，也可返回或设置单个文字项。如果指定列表框中没有数据项将出错。</summary>
         <returns>Variant</returns>
         <remarks>
-          <para>设置该属性清除任何由指定的区域<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" />属性。</para>
+          <para>此属性设置清除任何由指定的区域<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" />属性。</para>
           <para></para>
         </remarks>
         <example>
-          <para>本示例设置条目列表框中张工作表上。如果 Shapes(2) 不代表一个列表框，则本示例将失败。</para>
+          <para>本示例对第一张工作表中一个列表框的数据项进行设置。如果 Shapes(2) 代表的不是列表框，则本示例将无效。</para>
           <code>&lt;span class="label"&gt;Worksheets(1).Shapes(2).ControlFormat.&lt;/span&gt;
 &lt;i&gt;List&lt;/i&gt;
 &lt;span class="label"&gt;= _     Array("cogs", "widgets", "sprockets", "gizmos")&lt;/span&gt;</code>
-          <para>本示例设置条目四列表框中张工作表上。如果 Shapes(2) 不代表一个列表框，则本示例将失败。</para>
+          <para>本示例对第一张工作表中一个列表框的数据项四进行设置。如果 Shapes(2) 代表的不是列表框，则本示例将无效。</para>
           <code>&lt;span class="label"&gt;Worksheets(1).Shapes(2).ControlFormat.&lt;/span&gt;
 &lt;i&gt;List&lt;/i&gt;
 &lt;span class="label"&gt;(4) = "gadgets"&lt;/span&gt;</code>
         </example>
         <example>
-          <para>本示例设置条目列表框中张工作表上。如果 Shapes(2) 不代表一个列表框，则本示例将失败。</para>
+          <para>本示例对第一张工作表中一个列表框的数据项进行设置。如果 Shapes(2) 代表的不是列表框，则本示例将无效。</para>
           <code>&lt;span class="label"&gt;Worksheets(1).Shapes(2).ControlFormat.&lt;/span&gt;
 &lt;i&gt;List&lt;/i&gt;
 &lt;span class="label"&gt;= _     Array("cogs", "widgets", "sprockets", "gizmos")&lt;/span&gt;</code>
-          <para>本示例设置条目四列表框中张工作表上。如果 Shapes(2) 不代表一个列表框，则本示例将失败。</para>
+          <para>本示例对第一张工作表中一个列表框的数据项四进行设置。如果 Shapes(2) 代表的不是列表框，则本示例将无效。</para>
           <code>&lt;span class="label"&gt;Worksheets(1).Shapes(2).ControlFormat.&lt;/span&gt;
 &lt;i&gt;List&lt;/i&gt;
 &lt;span class="label"&gt;(4) = "gadgets"&lt;/span&gt;</code>
         </example>
         <example>
-          <para>本示例设置条目列表框中张工作表上。如果 Shapes(2) 不代表一个列表框，则本示例将失败。</para>
+          <para>本示例对第一张工作表中一个列表框的数据项进行设置。如果 Shapes(2) 代表的不是列表框，则本示例将无效。</para>
           <code>&lt;span class="label"&gt;Worksheets(1).Shapes(2).ControlFormat.&lt;/span&gt;
 &lt;i&gt;List&lt;/i&gt;
 &lt;span class="label"&gt;= _     Array("cogs", "widgets", "sprockets", "gizmos")&lt;/span&gt;</code>
-          <para>本示例设置条目四列表框中张工作表上。如果 Shapes(2) 不代表一个列表框，则本示例将失败。</para>
+          <para>本示例对第一张工作表中一个列表框的数据项四进行设置。如果 Shapes(2) 代表的不是列表框，则本示例将无效。</para>
           <code>&lt;span class="label"&gt;Worksheets(1).Shapes(2).ControlFormat.&lt;/span&gt;
 &lt;i&gt;List&lt;/i&gt;
 &lt;span class="label"&gt;(4) = "gadgets"&lt;/span&gt;</code>
@@ -3995,7 +4001,7 @@ With myDocument.Shapes(1).Callout
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.PivotLayout" />对象，它代表数据透视表报告中的字段的位置和数据透视图报表中的轴的位置。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果指定的图表不是数据透视图报表，此属性的值为<b>Nothing</b>。</para>
+          <para>如果指定图表不是一个数据透视图，则该属性值为 <b>Nothing</b>。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4154,7 +4160,7 @@ With myDocument.Shapes(1).Callout
         <summary>获取当前图表将打印批注页数。</summary>
         <value>注释页打印当前图表的数。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para>由于图表和图表工作表不支持批注，<see cref="P:Microsoft.Office.Interop.Excel._Chart.PrintedCommentPages" />属性<see cref="T:Microsoft.Office.Interop.Excel._Chart" />对象将总是返回零。</para>
           <para></para>
         </remarks>
@@ -4205,7 +4211,7 @@ With myDocument.Shapes(1).Callout
         <param name="PrToFileName">可选的<b>对象</b>。 如果<paramref name="PrintToFile" />设置为<b>True</b>，则该参数指定要打印到的文件的名称。</param>
         <summary>打印对象。</summary>
         <remarks>
-          <para>"页面"的说明中的<paramref name="From" />和<paramref name="To" />指打印页 — 表或工作簿中的未全部页。</para>
+          <para>说明中的"页面"<paramref name="From" />和<paramref name="To" />指打印页 — 表或工作簿中的未全部页。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4316,7 +4322,10 @@ With myDocument.Shapes(1).Callout
         <param name="Scenarios">可选的<b>对象</b>。 <b>True</b>保护方案。 此参数是仅供工作表。 默认值为 <b>True</b> 。</param>
         <param name="UserInterfaceOnly">可选的<b>对象</b>。 <b>True</b>保护用户界面，但不是宏。 如果省略此参数，则保护应用宏和用户界面。</param>
         <summary>保护图表使其不被修改。</summary>
-        <remarks>合并和小写字母、 数字和符号的<para>使用强密码。弱密码不混合使用这些元素。强密码： Y6dh ！ et5。弱密码： House27。使用强密码，以便您无需记下您能记得。</para><para></para></remarks>
+        <remarks>
+          <para>[!注释] 使用同时包含大小写字母、数字和符号的强密码。弱密码不混合使用这些元素。例如，强密码：Y6dh!et5。弱密码：House27。请使用可以记住的强密码，这样就不必记录密码了。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ProtectContents">
@@ -4444,7 +4453,7 @@ With myDocument.Shapes(1).Callout
           <b>True</b>如果用户不能修改图表格式。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性为<b>True</b>，禁用格式菜单上的对象命令，不能添加、 移动、 调整大小，或删除图表元素。</para>
+          <para>当此属性为<b>True</b>时，格式菜单上的对象命令被禁用，并且不能添加、 移动、 调整大小，或删除图表元素。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4547,7 +4556,7 @@ With myDocument.Shapes(1).Callout
         <summary>如果为<b>true</b>不选定图表元素。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>时此属性为<b>True</b>，则无法将形状添加到图表中，对图表元素的 Click 和 DoubleClick 事件不会发生。</para>
+          <para>该属性为 <b>True</b> 时，不能向图表中添加形状，而且图表元素的 Click 和 DoubleClick 事件不会发生。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4681,7 +4690,7 @@ With myDocument.Shapes(1).Callout
           <b>如此</b> 如果图表的坐标轴为直角，并与图表旋转角或仰角无关。 适用于仅三维折线图、 柱形图和条形图。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性为<b>True</b>，如果<see cref="P:Microsoft.Office.Interop.Excel._Chart.Perspective" />属性将被忽略。</para>
+          <para>如果此属性为<b>True</b>，<see cref="P:Microsoft.Office.Interop.Excel._Chart.Perspective" />属性将被忽略。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4794,7 +4803,7 @@ With myDocument.Shapes(1).Callout
         <param name="Filename">图表模板的名称。</param>
         <summary>将自定义图表模板保存到可用图表模板的列表中。</summary>
         <remarks>
-          <para>默认情况下，此方法将活动图表保存到用户的图表模板目录。 如果指定的 UNC 或 URL，则将保存图表到指定的位置。</para>
+          <para>默认情况下，此方法将活动图表保存到用户的图表模板库中。如果指定了 UNC 或 URL，则图表将保存到指定位置。 </para>
           <para></para>
         </remarks>
       </Docs>
@@ -5041,21 +5050,21 @@ With myDocument.Shapes(1).Callout
           <para>对于图表，布局选项卡中的以下命令对应于<see cref="M:Microsoft.Office.Interop.Excel._Chart.SetElement(Microsoft.Office.Core.MsoChartElementType)" />方法：</para>
           <list type="bullet">
             <item>
-              <description>标签组中的全部内容。</description>
+              <description>"标签"组中的全部内容。</description>
             </item>
             <item>
-              <description>坐标轴组中的全部内容。</description>
+              <description>"坐标轴"组中的全部内容。</description>
             </item>
             <item>
-              <description>分析组中的全部内容。</description>
+              <description>"分析"组中的全部内容。</description>
             </item>
             <item>
-              <description>PlotArea、 图表背景墙和图表基底按钮。</description>
+              <description>"绘图区"、 "图表背景墙"和 "图表基底"按钮。</description>
             </item>
           </list>
           <para></para>
           <para>
-            <b>MsoChartElementType</b>是常量枚举，引用上述命令的所有。</para>
+            <b>MsoChartElementType</b> 是一个枚举常量引用的所有上述命令。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5147,8 +5156,12 @@ With myDocument.Shapes(1).Callout
         <value>
           <b>true</b>如果所有字段的数据透视图上的按钮应显示;否则为<b>false</b>。</value>
         <remarks>
-          <para>读/写。</para>设置
-          <para><see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowAllFieldButtons" />属性设置为<b>true</b>的指定数据透视图中显示所有字段按钮。将属性设置为<b>false</b>以隐藏所有字段按钮。</para><para><see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowAllFieldButtons" />属性对应于分析选项卡，选择数据透视图时可用的字段按钮下拉列表上的全部隐藏命令。</para><para></para></remarks>
+          <para>为可读/写属性。</para>
+          <para>设置<see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowAllFieldButtons" />属性设置为<b>true</b>的指定数据透视图中显示所有字段按钮。 属性设置为<b>false</b>以隐藏所有字段按钮。</para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowAllFieldButtons" />属性对应于分析选项卡，选择数据透视图时可用的字段按钮下拉列表上的全部隐藏命令。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowAxisFieldButtons">
@@ -5181,8 +5194,12 @@ With myDocument.Shapes(1).Callout
         <value>
           <b>true</b>如果坐标轴字段按钮的数据透视图上应显示;否则为<b>false</b>。</value>
         <remarks>
-          <para>读/写。</para>设置
-          <para><see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowAxisFieldButtons" />属性设置为<b>true</b>以指定数据透视图显示坐标轴字段按钮。将属性设置为<b>false</b>以隐藏的按钮。</para><para><see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowAxisFieldButtons" />属性对应于分析选项卡，选择数据透视图时可用的字段按钮下拉列表上的显示坐标轴字段按钮命令。</para><para></para></remarks>
+          <para>为可读/写属性。</para>
+          <para>设置<see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowAxisFieldButtons" />属性设置为<b>true</b>以指定数据透视图显示坐标轴字段按钮。 属性设置为<b>false</b>以隐藏按钮。</para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowAxisFieldButtons" />属性对应于分析选项卡，选择数据透视图时可用的字段按钮下拉列表上的显示坐标轴字段按钮命令。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowDataLabelsOverMaximum">
@@ -5215,7 +5232,10 @@ With myDocument.Shapes(1).Callout
         <value>
           <b>Boolean</b>
         </value>
-        <remarks>如果更改变得数据点的大小小于中数值轴的<para>，您可以使用此属性设置是否显示数据标签。此属性适用于二维图表仅。</para><para></para></remarks>
+        <remarks>
+          <para>如果您更改数值轴，使其变得比数据点的大小还小，则可以使用此属性设置是否显示数据标签。此属性只适用于二维图表。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowLegendFieldButtons">
@@ -5248,8 +5268,12 @@ With myDocument.Shapes(1).Callout
         <value>
           <b>true</b>如果图例字段按钮的数据透视图上应显示;否则为<b>false</b>。</value>
         <remarks>
-          <para>读/写。</para>设置
-          <para><see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowLegendFieldButtons" />属性设置为<b>true</b>以指定的数据透视图上显示图例字段按钮。将属性设置为<b>false</b>以隐藏的按钮。</para><para><see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowLegendFieldButtons" />属性对应于分析选项卡，选择数据透视图时可用的字段按钮下拉列表上的显示图例字段按钮命令。</para><para></para></remarks>
+          <para>为可读/写属性。</para>
+          <para>设置<see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowLegendFieldButtons" />属性设置为<b>true</b>以指定的数据透视图上显示图例字段按钮。 属性设置为<b>false</b>以隐藏按钮。</para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowLegendFieldButtons" />属性对应于分析选项卡，选择数据透视图时可用的字段按钮下拉列表上的显示图例字段按钮命令。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowReportFilterFieldButtons">
@@ -5282,8 +5306,12 @@ With myDocument.Shapes(1).Callout
         <value>
           <b>true</b>如果报表筛选字段按钮的数据透视图上应显示;否则为<b>false</b>。</value>
         <remarks>
-          <para>读/写。</para>设置
-          <para><see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowReportFilterFieldButtons" />属性设置为<b>true</b>以显示指定数据透视图报表筛选字段按钮。将属性设置为<b>false</b>以隐藏的按钮。</para><para><see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowReportFilterFieldButtons" />属性对应于分析选项卡，选择数据透视图时可用的字段按钮下拉列表上的显示报表筛选字段按钮命令。</para><para></para></remarks>
+          <para>为可读/写属性。</para>
+          <para>设置<see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowReportFilterFieldButtons" />属性设置为<b>true</b>以显示指定数据透视图报表筛选字段按钮。 属性设置为<b>false</b>以隐藏按钮。</para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowReportFilterFieldButtons" />属性对应于分析选项卡，选择数据透视图时可用的字段按钮下拉列表上的显示报表筛选字段按钮命令。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowValueFieldButtons">
@@ -5315,8 +5343,12 @@ With myDocument.Shapes(1).Callout
         <summary>获取或设置是否在数据透视图上显示值字段按钮。</summary>
         <value>如果为<b>true</b>的值字段按钮的数据透视图上应显示;否则为<b>false</b>。</value>
         <remarks>
-          <para>读/写。</para>设置
-          <para><see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowValueFieldButtons" />属性设置为<b>true</b>以指定数据透视图显示值字段按钮。将属性设置为<b>false</b>以隐藏按钮。</para><para><see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowValueFieldButtons" />属性对应于分析选项卡，选择数据透视图时可用的字段按钮下拉列表上的显示值字段按钮命令。</para><para></para></remarks>
+          <para>为可读/写属性。</para>
+          <para>设置<see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowValueFieldButtons" />属性设置为<b>true</b>以指定数据透视图显示值字段按钮。 属性设置为<b>false</b>以隐藏按钮。</para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowValueFieldButtons" />属性对应于分析选项卡，选择数据透视图时可用的字段按钮下拉列表上的显示值字段按钮命令。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowWindow">
@@ -5674,7 +5706,10 @@ With myDocument.Shapes(1).Callout
       <Docs>
         <param name="Password">可选的<b>对象</b>。 一个字符串，用于取消的工作表或工作簿的保护密码区分大小写。 如果表或工作簿不受密码保护，则忽略此参数。 如果省略此参数受密码保护的工作表时，系统将提示您输入密码。 如果省略此参数受密码保护的工作簿，该方法将失败。</param>
         <summary>取消工作表或工作簿的保护。如果工作表或工作簿不是受保护的，则此方法不起作用。</summary>
-        <remarks>如果您忘记了密码<para>，则无法取消的工作表或工作簿。它是安全的就地保留您的密码和其对应的文档名称的列表，最好。</para><para></para></remarks>
+        <remarks>
+          <para>如果您忘记了密码，将不能取消工作表或工作簿的保护。建议将密码和对应文档名妥善保存。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -5743,7 +5778,7 @@ With myDocument.Shapes(1).Callout
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Walls" />对象，它代表三维图表的背景墙。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性不适用于三维饼图。</para>
+          <para>本属性不能应用于三维饼图。</para>
           <para></para>
         </remarks>
       </Docs>

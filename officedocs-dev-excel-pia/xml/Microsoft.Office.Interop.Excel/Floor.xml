@@ -1,10 +1,10 @@
 <Type Name="Floor" FullName="Microsoft.Office.Interop.Excel.Floor">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b46cd39a9809b30a314421902a29c83bcc4ce94d" />
+    <Meta Name="ms.openlocfilehash" Value="99549f67e982e39983a155ad9b00fc0919dd9674" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584936" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Floor" />
@@ -147,9 +147,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -273,33 +273,35 @@
         <summary>返回的对象的名称。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>下表显示的<b>名称</b>属性和给定<a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproName1.htm">OLAP</a>的相关的属性的示例值</para>
+          <para>下表显示<b>名称</b>属性和给定<a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproName1.htm">OLAP</a>的相关的属性的示例的值</para>
           <list type="table">
             <item>
               <term>
                 <b>标题</b>
               </term>
-              <description>巴黎</description>
-              <description>巴黎</description>
+              <description>Paris</description>
+              <description>Paris</description>
             </item>
             <item>
-              <description>[Europe] 的
-              <term><b>名称</b></term>。 [法国]。[Paris]（只读）</description>
-              <description>巴黎</description>
+              <term>
+                <b>名称</b>
+              </term>
+              <description>[Europe].[France].[Paris]（只读）</description>
+              <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>SourceName</b>
               </term>
-              <description>[Europe]。 [法国]。[Paris]（只读）</description>
-              <description>（与 SQL 属性值，只读相同）</description>
+              <description>[Europe].[France].[Paris]（只读）</description>
+              <description>（与 SQL 属性值相同，只读）</description>
             </item>
             <item>
               <term>
                 <b>值</b>
               </term>
-              <description>[Europe]。 [法国]。[Paris]（只读）</description>
-              <description>巴黎</description>
+              <description>[Europe].[France].[Paris]（只读）</description>
+              <description>Paris</description>
             </item>
           </list>
           <para>指定的索引时<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />集合，您可以使用下表中所示的语法。</para>
@@ -363,7 +365,11 @@
       <Parameters />
       <Docs>
         <summary>将剪贴板中的图片粘贴到指定图表的基底上。</summary>
-        <remarks>可以在列、 栏、 折线图或雷达图上使用<para><b>粘贴</b>方法。该方法会将<b>MarkerStyle</b>属性设置为<b>xlMarkerStylePicture</b>。</para><para></para></remarks>
+        <remarks>
+          <para>
+            <b>Paste</b>方法可在列、 栏、 折线图或雷达图。 该方法会将<b>MarkerStyle</b>属性设置为<b>xlMarkerStylePicture</b>。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PictureType">
@@ -454,7 +460,7 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>使用此属性可设置讲席的粗细。 默认粗细为零 (0)。</para>
+          <para>使用此属性可设置基底的厚度。默认厚度为零 (0)。</para>
           <para></para>
         </remarks>
       </Docs>

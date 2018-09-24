@@ -1,10 +1,10 @@
 <Type Name="Hyperlink" FullName="Microsoft.Office.Interop.Excel.Hyperlink">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="dd29b6bc04f2e1a3332ee1b3e06df7d844ecc7c4" />
+    <Meta Name="ms.openlocfilehash" Value="0dfd3a08d223fb5d9858e759d9369366737cb84c" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580687" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Hyperlink" />
@@ -34,7 +34,7 @@
       <para>
         <b>Hyperlink</b>对象所在的<see cref="T:Microsoft.Office.Interop.Excel.Hyperlinks" />集合。</para>
       <para>使用<see cref="P:Microsoft.Office.Interop.Excel.Shape.Hyperlink" />属性返回 （形状可以有只有一个超链接） 形状的超链接。</para>
-      <para>的范围或工作表可以有多个超链接。使用<b>超链接</b>(<paramref name="index" />)，其中<paramref name="index" />是超链接数，返回单个<b>Hyperlink</b>对象。</para>
+      <para>区域或工作表可以有多个超链接。 使用<b>超链接</b>(<paramref name="index" />)，其中<paramref name="index" />是超链接数，返回单个<b>Hyperlink</b>对象。</para>
       <para></para>
     </remarks>
   </Docs>
@@ -181,9 +181,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -242,7 +242,7 @@
         <summary>返回或设置指定超链接的电子邮件主题行的文本字符串。 主题行追加到超链接的地址。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性通常用于电子邮件超链接。</para>
+          <para>该属性常与电子邮件超链接一起使用。</para>
           <para>此属性的值优先于使用指定的任何电子邮件主题行<see cref="P:Microsoft.Office.Interop.Excel.Hyperlink.Address" />相同的<b>Hyperlink</b>对象的属性。</para>
           <para></para>
         </remarks>
@@ -396,7 +396,7 @@
         <summary>返回或设置指定的超链接的屏幕提示文字。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>文档已保存到网页后，可能会显示屏幕提示文字 （示例） 时鼠标指针置于超链接时 Web 浏览器中查看的文档。某些 Web 浏览器可能不支持的屏幕提示。</para>
+          <para>在将文档保存到网页中之后，如果在 Web 浏览器中查看该文档，则当鼠标移动到超链接上时，“屏幕提示”文字就会显示。某些浏览器可能不支持“屏幕提示”。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -517,7 +517,8 @@
         <summary>返回的 HTML 框架的位置。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>的<b>Type</b>属性可以是以下项之一<see cref="T:Microsoft.Office.Core.MsoHyperlinkType" />常量： <b>msoHyperlinkInlineShape</b>、 <b>msoHyperlinkRange</b>或<b>msoHyperlinkShape</b>。</para>
+          <para>
+            <b>Type</b>属性可以是以下项之一<see cref="T:Microsoft.Office.Core.MsoHyperlinkType" />常量： <b>msoHyperlinkInlineShape</b>、 <b>msoHyperlinkRange</b>或<b>msoHyperlinkShape</b>。</para>
           <para></para>
         </remarks>
       </Docs>

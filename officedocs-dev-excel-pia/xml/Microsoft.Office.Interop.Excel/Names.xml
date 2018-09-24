@@ -1,10 +1,10 @@
 <Type Name="Names" FullName="Microsoft.Office.Interop.Excel.Names">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a76d5115c800138621098c928ea18e19669180e4" />
+    <Meta Name="ms.openlocfilehash" Value="25942f5647980d40fd5f4e153bf99810065d6715" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584726" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Names : System.Collections.IEnumerable" />
@@ -35,8 +35,11 @@
   <Docs>
     <summary>所有的集合<see cref="T:Microsoft.Office.Interop.Excel.Name" />应用程序或工作簿中的对象。 每个<b>Name</b>对象代表单元格区域的定义的名称。 名称可以是任一内置名称 — 例如数据库、 Print_Area 和 Auto_Open — 或自定义的名称。</summary>
     <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Names" />属性可返回<b>名称</b>集合。</para>使用
-      <para><see cref="M:Microsoft.Office.Interop.Excel.Names.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法，以创建一个名称并将其添加到集合。<b>Add</b>方法的<paramref name="RefersTo" />参数必须指定以 A1 样式表示法，包括美元符号 （$），在适当的位置。例如，如果工作表 Sheet1 上所选单元格 A10 和使用定义名称<paramref name="RefersTo" />参数"= sheet1 ！A1:B1"的新名称实际引用 a10: b10 （因为指定的相对引用）。若要指定绝对引用，请使用"= sheet1 ！ $A$ 1: $B$ 1"。</para><para>使用<b>名称</b>(<paramref name="index" />)，其中<paramref name="index" />名称索引号或已定义的名称，可返回一个<b>Name</b>对象。</para><para></para></remarks>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Names" />属性可返回<b>名称</b>集合。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Excel.Names.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法，以创建一个名称并将其添加到集合。 <b>Add</b>方法的<paramref name="RefersTo" />参数必须指定以 A1 样式表示法，包括美元符号 （$），在适当的位置。 例如，如果工作表 Sheet1 上所选单元格 A10 和使用定义名称<paramref name="RefersTo" />参数"= sheet1 ！A1:B1"的新名称实际引用 a10: b10 （因为指定的相对引用）。 若要指定绝对引用，请使用"= sheet1 ！ $A$ 1: $B$ 1"。</para>
+      <para>使用<b>名称</b>(<paramref name="index" />)，其中<paramref name="index" />名称索引号或已定义的名称，可返回一个<b>Name</b>对象。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -204,7 +207,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -271,7 +274,7 @@
         <summary>返回一个<see cref="T:Microsoft.Office.Interop.Excel.Name" />对象从<see cref="T:Microsoft.Office.Interop.Excel.Names" />集合。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>必须指定一个，且只有一个这三个参数。</para>
+          <para>必须只指定这三个参数中的一个。</para>
           <para></para>
         </remarks>
       </Docs>

@@ -1,10 +1,10 @@
 <Type Name="SparkVerticalAxis" FullName="Microsoft.Office.Interop.Excel.SparkVerticalAxis">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="58af75a9b43e55e0b77805aa1bfb7a6bdd59f70d" />
+    <Meta Name="ms.openlocfilehash" Value="fe955a98c00424a8f8a9fec57fcf8d6210bc302d" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575885" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SparkVerticalAxis" />
@@ -63,7 +63,7 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.Application" />对象。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -94,8 +94,10 @@
         <summary>获取一个指示在其中创建此对象的应用程序的 32 位<b>整数</b>。</summary>
         <value>32 位<b>整数</b>，指示在其中创建此对象的应用程序。</value>
         <remarks>
-          <para>只读的<b>long</b>。</para>如果对象在 Microsoft Excel 中创建的
-          <para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。<see cref="P:Microsoft.Office.Interop.Excel.SparkVerticalAxis.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para></para></remarks>
+          <para>只读的<b>long</b>。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <see cref="P:Microsoft.Office.Interop.Excel.SparkVerticalAxis.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomMaxScaleValue">
@@ -127,7 +129,7 @@
         <summary>获取或设置自定义的迷你图垂直轴的最大值。</summary>
         <value>迷你图的垂直轴的最大自定义值。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>为可读/写属性。</para>
           <para>
             <see cref="P:Microsoft.Office.Interop.Excel.SparkVerticalAxis.CustomMaxScaleValue" />属性可以返回或设置时，才<see cref="P:Microsoft.Office.Interop.Excel.SparkVerticalAxis.MaxScaleType" />属性指定<see cref="T:Microsoft.Office.Interop.Excel.SparkVerticalAxis" />对象设置为<see cref="F:Microsoft.Office.Interop.Excel.XlSparkScale.xlSparkScaleCustom" />(3)。</para>
           <para></para>
@@ -163,7 +165,7 @@
         <summary>获取或设置迷你图的垂直轴的自定义最小值。</summary>
         <value>迷你图的垂直轴自定义的最小值。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>为可读/写属性。</para>
           <para>
             <see cref="P:Microsoft.Office.Interop.Excel.SparkVerticalAxis.CustomMinScaleValue" />属性可以返回或设置时，才<see cref="P:Microsoft.Office.Interop.Excel.SparkVerticalAxis.MinScaleType" />属性指定<see cref="T:Microsoft.Office.Interop.Excel.SparkVerticalAxis" />对象设置为<see cref="F:Microsoft.Office.Interop.Excel.XlSparkScale.xlSparkScaleCustom" />(3)。</para>
           <para></para>
@@ -199,7 +201,7 @@
         <summary>获取或设置迷你图垂直轴的最大值如何相对于组中的其他迷你图缩放。</summary>
         <value>指定迷你图垂直轴的最大值如何相对于组中的其他迷你图缩放。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>为可读/写属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -233,7 +235,7 @@
         <summary>获取或设置如何相对于组中的其他迷你图缩放迷你图的垂直轴的最小值。</summary>
         <value>指定如何相对于组中的其他迷你图缩放迷你图的垂直轴的最小值。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>为可读/写属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -264,7 +266,7 @@
         <summary>获取父<see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" />指定对象的对象。</summary>
         <value>父<see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" />指定对象的对象。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>

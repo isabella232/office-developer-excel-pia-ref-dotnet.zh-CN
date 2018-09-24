@@ -1,10 +1,10 @@
 <Type Name="Border" FullName="Microsoft.Office.Interop.Excel.Border">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="30183a3a980c964f6c89cba76995fed1732880ce" />
+    <Meta Name="ms.openlocfilehash" Value="615b6d793dd88e23d55febf94b9549b59f9d20c5" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576781" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Border" />
@@ -31,12 +31,12 @@
   <Docs>
     <summary>代表对象的边框。</summary>
     <remarks>
-      <para>最界定对象 (除之外的所有<see cref="T:Microsoft.Office.Interop.Excel.Range" />和<see cref="T:Microsoft.Office.Interop.Excel.Style" />对象) 都将被视为一个实体的边框，无论多少边它具有。必须作为单位返回整个边框。使用<b>边框</b>属性可返回此类型的对象的<b>边框</b>对象。</para>
+      <para>最界定对象 (除之外的所有<see cref="T:Microsoft.Office.Interop.Excel.Range" />和<see cref="T:Microsoft.Office.Interop.Excel.Style" />对象) 都将被视为一个实体的边框，无论多少边它具有。 整个边框必须作为一个单元。 <b>Border</b>属性用于返回此类型的对象的<b>边框</b>对象。</para>
       <para>
-        <b>范围</b>和<b>Style</b>对象具有四个离散边框 — 左、 右、 顶部和底部 — 可返回单独或作为一个组。使用<b>区域</b>的<b>边框</b>属性或<b>Style</b>对象，返回<b>Borders</b>集合，其中包含所有四个边框和边框视为部门</para>
+        <b>范围</b>和<b>Style</b>对象具有四个离散边框 — 左、 右、 顶部和底部 — 可返回单独或作为一个组。 使用<b>Range</b>或<b>Style</b>对象的<b>Borders</b>属性可返回<b>Borders</b>集合，其中包含全部四条边框和边框视为单位。</para>
       <para>使用<b>边框</b>(<paramref name="index" />)，其中<paramref name="index" />标识的边框，返回单个<b>边框</b>对象。</para>
       <para>
-        <paramref name="Index" />可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" />常量： <b>xlDiagonalDown</b>、 <b>xlDiagonalUp</b>、 <b>xlEdgeBottom</b>、 <b>xlEdgeLeft</b>、 <b>xlEdgeRight</b>、 <b>xlEdgeTop</b>、 <b>xlInsideHorizontal</b>，或<b>xlInsideVertical</b>。</para>
+        <paramref name="Index" />可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" />常量： <b>xlDiagonalDown</b>、 <b>xlDiagonalUp</b>、 <b>xlEdgeBottom</b>、 <b>xlEdgeLeft</b>、 <b>xlEdgeRight</b>、 <b>xlEdgeTop</b>、 <b>xlInsideHorizontal</b>、 或<b>xlInsideVertical</b>。</para>
       <para></para>
     </remarks>
   </Docs>
@@ -169,9 +169,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -294,7 +294,7 @@
           <b>对象</b>
         </value>
         <remarks>
-          <para>尝试访问其主题颜色的颜色不是当前主题对象将导致无效请求运行时错误。</para>
+          <para>如果对象当前未应用主题颜色，试图访问其主题颜色则会引起无效请求运行时错误。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -330,8 +330,8 @@
           <b>Single</b>
         </value>
         <remarks>
-          <para>您可以输入-1 （最暗） 到数字 1 （最亮） 之间的<see cref="P:Microsoft.Office.Interop.Excel.Border.TintAndShade" />属性。零 (0) 是中性。</para>
-          <para>试图将该属性设置为小于-1 或大于 1 的值将导致运行时错误:"指定的值是超出范围。" 此属性的主题颜色和非主题颜色有效。</para>
+          <para>您可以输入-1 （最暗） 到数字 1 （最亮） 之间的<see cref="P:Microsoft.Office.Interop.Excel.Border.TintAndShade" />属性。 中性零 (0)。</para>
+          <para>如果将此属性设置为小于 -1 或大于 1 的值，则会引起运行时错误：“指定的值超出了范围”。此属性用于主题颜色和非主题颜色。</para>
           <para></para>
         </remarks>
       </Docs>

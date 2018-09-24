@@ -1,10 +1,10 @@
 <Type Name="Legend" FullName="Microsoft.Office.Interop.Excel.Legend">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a1be48c9d0d19cc48ee0a2813dac8b8828be4fbf" />
+    <Meta Name="ms.openlocfilehash" Value="67108bf0496a38e9f989b18082d38d2c41e4a563" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587617" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Legend" />
@@ -31,9 +31,9 @@
   <Docs>
     <summary>代表图标中的图例。</summary>
     <remarks>
-      <para>每个图表可以有一个图例。<b>Legend</b>对象包含一个或多个<see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" />对象;每个<see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" />对象包含<see cref="T:Microsoft.Office.Interop.Excel.LegendKey" />对象。</para>
+      <para>每个图表只能有一个图例。 <b>Legend</b>对象包含一个或多个<see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" />对象;每个<see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" />对象包含<see cref="T:Microsoft.Office.Interop.Excel.LegendKey" />对象。</para>
       <para>使用<see cref="P:Microsoft.Office.Interop.Excel._Chart.Legend" />属性可返回<b>图例</b>对象。</para>
-      <para>图表图例不见除非<see cref="P:Microsoft.Office.Interop.Excel._Chart.HasLegend" />属性为<b>True</b>。如果此属性为<b>False</b>，将会失败<b>Legend</b>对象的属性和方法。</para>
+      <para>图表图例不见除非<see cref="P:Microsoft.Office.Interop.Excel._Chart.HasLegend" />属性为<b>True</b>。 如果此属性为 <b>False</b> ，则 <b>图例</b> 对象的属性和方法将会失败。</para>
       <para></para>
     </remarks>
   </Docs>
@@ -186,9 +186,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -373,7 +373,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>此属性不影响图表是自动版式模式还是不。 如果用户添加标题使用上面图表命令，将更小，请与 Microsoft Office Excel 2003 调整图表。 如果用户然后删除标题，或选择覆盖标题选项之一，则图表将变较大，如同标题不在图表中。</para>
+          <para>该属性对于图表是否处于自动版式模式没有影响。  如果用户添加标题使用上面图表命令，将更小，请与 Microsoft Office Excel 2003 调整图表。  如果用户随后删除标题，或者选择其中一个覆盖标题选项，则图表将变得较大，就好像标题不在图表上那样。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -494,33 +494,35 @@
         <summary>返回的对象的名称。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>下表显示的<b>名称</b>属性和给定<a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproName1.htm">OLAP</a>的相关的属性的示例值</para>
+          <para>下表显示<b>名称</b>属性和给定<a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproName1.htm">OLAP</a>的相关的属性的示例的值</para>
           <list type="table">
             <item>
               <term>
                 <b>标题</b>
               </term>
-              <description>巴黎</description>
-              <description>巴黎</description>
+              <description>Paris</description>
+              <description>Paris</description>
             </item>
             <item>
-              <description>[Europe] 的
-              <term><b>名称</b></term>。 [法国]。[Paris]（只读）</description>
-              <description>巴黎</description>
+              <term>
+                <b>名称</b>
+              </term>
+              <description>[Europe].[France].[Paris]（只读）</description>
+              <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>SourceName</b>
               </term>
-              <description>[Europe]。 [法国]。[Paris]（只读）</description>
-              <description>（与 SQL 属性值，只读相同）</description>
+              <description>[Europe].[France].[Paris]（只读）</description>
+              <description>（与 SQL 属性值相同，只读）</description>
             </item>
             <item>
               <term>
                 <b>值</b>
               </term>
-              <description>[Europe]。 [法国]。[Paris]（只读）</description>
-              <description>巴黎</description>
+              <description>[Europe].[France].[Paris]（只读）</description>
+              <description>Paris</description>
             </item>
           </list>
           <para>指定的索引时<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />集合，您可以使用下表中所示的语法。</para>

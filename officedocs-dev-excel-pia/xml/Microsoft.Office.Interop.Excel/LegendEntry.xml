@@ -1,10 +1,10 @@
 <Type Name="LegendEntry" FullName="Microsoft.Office.Interop.Excel.LegendEntry">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7de5505ce151e50ee7cf3bb22663696d2b691245" />
+    <Meta Name="ms.openlocfilehash" Value="983427dff3c6cf28781fdc671025f8966ca21207" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576942" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface LegendEntry" />
@@ -32,9 +32,15 @@
     <summary>代表图表图例中的图例项。</summary>
     <remarks>
       <para>
-        <b>LegendEntry</b>对象所在的<see cref="T:Microsoft.Office.Interop.Excel.LegendEntries" />集合。<b>LegendEntries</b>集合包含在图例中的所有<b>LegendEntry</b>对象。</para>
-      <para>每个图例项都有两个部分： 条目，这是与图例项和项的标记，以可视方式链接将图例项与及其关联的系列或趋势线图表中的关联的系列的名称的文本。项标记与其关联的系列或趋势线的格式属性包含在<see cref="T:Microsoft.Office.Interop.Excel.LegendKey" />对象。</para>不能更改
-      <para>的图例项的文本。<b>LegendEntry</b>对象支持字体格式，并可删除它们。无图案格式都支持图例项。固定的位置和大小的条目。</para><para>使用<b>LegendEntries</b>(<paramref name="index" />)，其中<paramref name="index" />是图例项的索引号，返回的单个<b>LegendEntry</b>对象。不能按照名称返回图例项。</para><para>索引编号代表图例中图例项的位置。LegendEntries(1) 位于图例的顶部和底部是图例。</para><para>没有直接方法返回的系列或趋势线对应于某图例项。</para><para>图例项已被删除后，将其还原的唯一方法是删除并重新创建包含这些设置中的图例<see cref="P:Microsoft.Office.Interop.Excel._Chart.HasLegend" />属性为<b>False</b>的图表，然后返回<b>True</b>。</para><para></para></remarks>
+        <b>LegendEntry</b>对象所在的<see cref="T:Microsoft.Office.Interop.Excel.LegendEntries" />集合。 <b>LegendEntries</b> 集合中包含所有的 <b>LegendEntry</b> 对象在图例中。</para>
+      <para>每个图例项都有两个部分： 条目，这是与图例项和项的标记，以可视方式链接将图例项与及其关联的系列或趋势线图表中的关联的系列的名称的文本。 项标记与其关联的系列或趋势线的格式属性包含在<see cref="T:Microsoft.Office.Interop.Excel.LegendKey" />对象。</para>
+      <para>不能更改图例项的文字。 <b>LegendEntry</b> 对象支持字体格式，并且可以删除它们。无模式格式设置图例项的支持。位置和条目的大小被固定。</para>
+      <para>使用<b>LegendEntries</b>(<paramref name="index" />)，其中<paramref name="index" />是图例项的索引号，返回的单个<b>LegendEntry</b>对象。 不能按名称返回图例项。</para>
+      <para>索引号代表图例项在图例中的位置。 LegendEntries(1) 位于图例的顶部和底部是图例。</para>
+      <para>没有返回相应于某图例项的数据系列或趋势线的直接方法。</para>
+      <para>图例项已被删除后，将其还原的唯一方法是删除并重新创建包含这些设置中的图例<see cref="P:Microsoft.Office.Interop.Excel._Chart.HasLegend" />属性为<b>False</b>的图表，然后返回<b>True</b>。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -128,9 +134,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>

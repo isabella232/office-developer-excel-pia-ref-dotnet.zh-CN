@@ -1,10 +1,10 @@
 <Type Name="ChartGroup" FullName="Microsoft.Office.Interop.Excel.ChartGroup">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="91aeed6a7dfc46c2d925ce34ca5aa8b7e1be919f" />
+    <Meta Name="ms.openlocfilehash" Value="d867c9c484716da4b2528f8d662af2030b791599" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578244" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ChartGroup" />
@@ -31,9 +31,9 @@
   <Docs>
     <summary>代表图表中用同一格式绘制的一个或多个系列。 <b>ChartGroup</b>对象所在的<see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" />集合。</summary>
     <remarks>
-      <para>图表包含一个或多个图表组，每个图表组包含一个或多个数据系列，以及每个数据系列包含一个或多个点。例如，单个图表可能包含折线图图表组，其中包含与折线图格式，绘制的所有系列和条形图图表组，其中都包含与条形图格式绘制的所有系列。</para>
-      <para>使用<b>ChartGroups</b>(<paramref name="index" />)，其中<paramref name="index" />是图表组的索引号，可返回单个<b>ChartGroup</b>对象。如果图表已被激活，则可以使用<see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" />属性。</para>
-      <para>因为如果更改组所用的图表格式，可以更改特定图表组的索引号，所以可能更轻松地使用命名的图表组快捷方法之一可返回特定图表组。<see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" />方法在图表中，返回饼图图表组集合的<see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" />方法将返回为折线图图表组中，依次类推集合。每种方法可以用于与索引号可返回单个<b>ChartGroup</b>对象，或不返回<b>ChartGroups</b>集合的索引号。下面的图表组方法是可用：</para>
+      <para>一张图表包含一个或多个图表组，每个图表组包含一个或多个系列，每个数据系列包含一个或多个点。 例如，单张图表可能既包含折线图图表组，其中包含所有用折线图格式，绘制的数据系列也条形图图表组，其中包含所有用条形图格式绘制的数据系列。</para>
+      <para>使用<b>ChartGroups</b>(<paramref name="index" />)，其中<paramref name="index" />是图表组的索引号，可返回单个<b>ChartGroup</b>对象。 如果图表已被激活，则可以使用<see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" />属性。</para>
+      <para>如果更改组所用的图表格式，可以更改特定图表组的索引号，因为它可能更轻松地使用命名的图表组快捷方法之一可返回特定图表组。 <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" />方法在图表中，返回饼图图表组集合的<see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" />方法将返回为折线图图表组中，依次类推集合。 每种方法可以用于与索引号可返回单个<b>ChartGroup</b>对象，或不返回<b>ChartGroups</b>集合的索引号。 以下图表组方法有：</para>
       <list type="bullet">
         <item>
           <description>
@@ -121,7 +121,7 @@
         <summary>返回指定的图表组或系列的组。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>的三维图表，仅<b>xlprimary 有效</b>。</para>
+          <para>对于三维图表仅<b>xlPrimary</b>才有效。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -212,7 +212,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -392,7 +392,7 @@
         <summary>条形图或柱形图： 返回或设置之间的间距条形图或柱形簇的条形图或柱形百分比宽度。 复合饼图和条饼图： 返回或设置图表的主要和辅助部分之间的间距。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性的值必须是介于 0 到 500 之间。</para>
+          <para>该属性的值必须介于 0 到 500 之间。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -671,7 +671,7 @@
         <summary>指定条形和柱形的排列方式。 可以是-100 和 100 之间的值。 仅适用于二维条形图和二维柱形图。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>条如果此属性设置为 – 100，定位以便没有一条它们之间的宽度。如果重叠为 0 （零），但没有空间存储之间栏 （上述栏后立即启动一个栏） 上。如果重叠，100 条位于彼此。</para>
+          <para>如果此属性设置为 – 100，条定位以便没有一条它们之间的宽度。 如果重叠为 0 （零），但没有空间存储之间栏 （上述栏后立即启动一个栏） 上。 如果重叠，100 条定位到每个其他顶部。</para>
           <para></para>
         </remarks>
       </Docs>

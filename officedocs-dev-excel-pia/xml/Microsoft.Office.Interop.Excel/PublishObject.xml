@@ -1,10 +1,10 @@
 <Type Name="PublishObject" FullName="Microsoft.Office.Interop.Excel.PublishObject">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b96f660c297a7de8cbf9fee33cb4e9de84d52863" />
+    <Meta Name="ms.openlocfilehash" Value="fcc61ded7b33a1797bd24a5447641b388b7f9f14" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574744" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PublishObject" />
@@ -120,9 +120,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -178,7 +178,7 @@
         <summary>返回的唯一标识符，用于标识 HTML &lt;DIV&gt;网页上标记。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>标记相关联的已保存到网页文档中的项目。项目可以整个工作簿、 工作表、 选定的打印区域，自动筛选区域、 单元格区域、 图表、 数据透视表报表或查询表。</para>
+          <para>标记相关联的已保存到网页文档中的项目。 项目可以是整个工作簿、 工作表、 选定的打印区域，自动筛选区域、 单元格区域、 图表、 数据透视表报表或查询表。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -247,7 +247,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>HtmlType</b>属性可以是一个<see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" />常量，指定该项静态还是交互式网页中。默认值是<b>xlHtmlStatic</b>。</para>
+            <b>HtmlType</b>属性可以是一个<see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" />常量，指定该项静态还是交互式网页中。 默认值是<b>xlHtmlStatic</b>。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -306,7 +306,7 @@
         <summary>将文档中的项或项的集合保存到网页中。</summary>
         <remarks>
           <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.PublishObject.Filename" />属性返回或设置的位置和名称的 HTML 文件。</para>
+            <see cref="P:Microsoft.Office.Interop.Excel.PublishObject.Filename" />属性返回或设置的位置和 HTML 文件的名称。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -364,7 +364,10 @@
       <Docs>
         <summary>返回标识的项具有的唯一名称<see cref="P:Microsoft.Office.Interop.Excel.PublishObject.SourceType" />属性值为<b>xlSourceRange</b>、 <b>xlSourceChart</b>、 <b>xlSourcePrintArea</b>、 <b>xlSourceAutoFilter</b>、 <b>xlSourcePivotTable</b>或<b>xlSourceQuery</b>.</summary>
         <value>To be added.</value>
-        <remarks>如果<b>SourceType</b>属性设置为<b>xlSourceRange</b><para>，此属性返回的范围，这可以是已定义的名称。如果<b>SourceType</b>属性设置为<b>xlSourceChart</b>、 <b>xlSourcePivotTable</b>或<b>xlSourceQuery</b>，此属性返回的对象，如图表名称、 数据透视表报告名称或一个查询表名称的名称。</para><para></para></remarks>
+        <remarks>
+          <para>如果 <b>SourceType</b> 属性设置为 <b>xlSourceRange</b>，则此属性返回一个区域，该区域可以是一个定义名称。如果 <b>SourceType</b> 属性设置为 <b>xlSourceChart</b>、<b>xlSourcePivotTable</b> 或 <b>xlSourceQuery</b>，则此属性返回对象的名称，例如：图表名称、数据透视表名称或查询表名称。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceType">
@@ -424,7 +427,7 @@
         <summary>返回或设置文档保存为网页时的网页的标题。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>标题通常显示在窗口标题栏时 Web 浏览器中查看文档中。</para>
+          <para>在 Web 浏览器中查看文档时，标题通常显示在窗口的标题栏中。</para>
           <para></para>
         </remarks>
       </Docs>

@@ -1,10 +1,10 @@
 <Type Name="Action" FullName="Microsoft.Office.Interop.Excel.Action">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="afecfbda532d3df2acebf4ba8d22c8da8391a38b" />
+    <Meta Name="ms.openlocfilehash" Value="2161b566bfd02a2bafb42673b2e765964172c1df" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584089" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Action" />
@@ -60,7 +60,7 @@
         <value>
           <b>应用程序</b>（请参见上文）</value>
         <remarks>
-          <para>您可以使用此属性与 OLE 自动化对象返回该对象的应用程序。</para>
+          <para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -182,7 +182,10 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
-        <remarks>如果对象在 Microsoft Excel 中创建的<para>，此属性返回的字符串 XCEL，这相当于 5843454c 和十进制 1480803660 的十六进制数。<see cref="P:Microsoft.Office.Interop.Excel.Action.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para></para></remarks>
+        <remarks>
+          <para>如果在 Microsoft Excel 中创建对象，此属性将返回字符串 XCEL，这相当于 5843454c 和十进制 1480803660 的十六进制数。 <see cref="P:Microsoft.Office.Interop.Excel.Action.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">

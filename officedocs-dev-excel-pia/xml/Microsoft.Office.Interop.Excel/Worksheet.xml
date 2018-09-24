@@ -1,10 +1,10 @@
 <Type Name="Worksheet" FullName="Microsoft.Office.Interop.Excel.Worksheet">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="092a8bd086f190725e346add1ff9bd88a61c6ee6" />
+    <Meta Name="ms.openlocfilehash" Value="f8af3c130d8cd9b8102e484a18e8b5c0f9ce9942" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20577733" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Worksheet : Microsoft.Office.Interop.Excel._Worksheet, Microsoft.Office.Interop.Excel.DocEvents_Event" />
@@ -35,10 +35,10 @@
   <Docs>
     <summary>代表一个工作表。</summary>
     <remarks>
-      <para>这是.NET 接口派生的互操作性与相应的 COM 对象的托管代码需要 COM coclass。使用此派生的接口访问 COM 对象的所有方法、 属性和事件的成员。但是，如果方法或想要使用的事件共享相同的名称相同的 COM 对象下，强制转换为相应的主接口调用方法，并强制转换为最新的事件接口，连接到该事件。请参阅本主题的 COM 对象有关的信息。有关 COM 对象的方法和属性成员的信息，请参阅<see cref="T:Microsoft.Office.Interop.Excel._Worksheet" />。</para>
+      <para>这是.NET 接口派生的互操作性与相应的 COM 对象的托管代码需要 COM coclass。 使用此派生的接口访问 COM 对象的所有方法、 属性和事件的成员。 但是，如果方法或想要使用的事件共享相同的名称相同的 COM 对象下，强制转换为相应的主接口调用方法，并强制转换为最新的事件接口，连接到该事件。 请参阅本主题的 COM 对象有关的信息。 有关 COM 对象的方法和属性成员的信息，请参阅<see cref="T:Microsoft.Office.Interop.Excel._Worksheet" />。</para>
       <para>
-        <b>工作表</b>对象是成员<see cref="T:Microsoft.Office.Interop.Excel.Worksheets" />集合。<b>工作表</b>集合包含工作簿中的所有<b>工作表</b>对象。</para>
-      <para>本节中介绍返回<b>Worksheet</b>对象的以下属性：</para>
+        <b>Worksheet</b>对象所在的<see cref="T:Microsoft.Office.Interop.Excel.Worksheets" />集合。 <b>工作表</b>集合包含工作簿中的所有<b>工作表</b>对象。</para>
+      <para>本节描述返回<b>Worksheet</b>对象的以下属性：</para>
       <list type="bullet">
         <item>
           <description>
@@ -51,12 +51,12 @@
       </list>
       <para>Worksheets 属性</para>
       <para>使用<b>工作表</b>(<paramref name="index" />)，其中<paramref name="index" />是工作表的索引号或名称，可返回单个<b>Worksheet</b>对象。</para>
-      <para>工作表的索引号表示工作簿的选项卡栏上的工作表的位置。Worksheets(1) 是工作簿中的第一个 （最左边） 工作表和 Worksheets(Worksheets.Count) 是最后一个。所有工作表包含在索引计数中，即使它们隐藏的。</para>
-      <para>工作表名称时显示工作表选项卡。使用<see cref="P:Microsoft.Office.Interop.Excel._Worksheet.Name" />属性来设置或返回工作表名称。</para>
+      <para>工作表索引号指示该工作表在工作簿的标签栏上的位置。Worksheets(1) 是工作簿中第一个（最左边的）工作表，而 Worksheets(Worksheets.Count) 是最后一个。所有工作表均包括在索引计数中，即便是隐藏工作表也是如此。</para>
+      <para>在工作表选项卡上显示工作表名称。 使用<see cref="P:Microsoft.Office.Interop.Excel._Worksheet.Name" />属性来设置或返回工作表名称。</para>
       <para>
-        <b>工作表</b>对象也是成员<see cref="T:Microsoft.Office.Interop.Excel.Sheets" />集合。<b>Sheets</b>集合包含工作簿 （图表工作表和工作表） 中的所有工作表。</para>
+        <b>Worksheet</b>对象也是成员的<see cref="T:Microsoft.Office.Interop.Excel.Sheets" />集合。 <b>Sheets</b>集合包含工作簿 （图表工作表和工作表） 中的所有工作表。</para>
       <para>ActiveSheet 属性</para>
-      <para>工作表时活动工作表，您可以使用<b>ActiveSheet</b>属性来引用它。</para>
+      <para>活动工作表的工作表时，您可以使用<b>ActiveSheet</b>属性引用它。</para>
       <para></para>
     </remarks>
   </Docs>

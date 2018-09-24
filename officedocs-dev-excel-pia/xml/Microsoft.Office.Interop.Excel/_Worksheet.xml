@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20583130" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface _Worksheet" />
@@ -529,7 +529,7 @@
           <b>True</b>如果当前工作表上显示自动筛选下拉箭头。 此属性是独立的<see cref="P:Microsoft.Office.Interop.Excel._Worksheet.FilterMode" />属性。 可读写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性返回<b>True</b> ，如果当前显示的下拉箭头。您可以将此属性设置为<b>False</b>可删除该箭头，但不能将它设置为<b>True</b>。使用<see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" />方法，以筛选列表和显示的下拉箭头。</para>
+          <para>如果当前显示的下拉箭头，则此属性返回<b>True</b> 。 您可以将此属性设置为<b>False</b>可删除该箭头，但不能将它设置为<b>True</b>。 使用<see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" />方法，以筛选列表和显示的下拉箭头。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -600,12 +600,12 @@
               <description>Application.Calculate</description>
             </item>
             <item>
-              <description>Worksheets(1) 的
-              <term>特定工作表</term>。计算</description>
+              <term>指定工作表</term>
+              <description>Worksheets(1)。计算</description>
             </item>
             <item>
-              <description>Worksheets(1) 的
-              <term>指定的范围</term>。Rows(2)。计算</description>
+              <term>指定区域</term>
+              <description>Worksheets(1)。Rows(2)。计算</description>
             </item>
           </list>
           <para></para>
@@ -638,8 +638,8 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，表示工作表 （而不仅仅是当前正在使用的单元） 上的所有单元格。 只读。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>因为<see cref="P:Microsoft.Office.Interop.Excel.Worksheets.Item(System.Object)" />属性是<b>Range</b>对象的默认属性，则可以在<b>单元格</b>关键字后面立即指定的行和列的索引。有关详细信息，请参阅<b>Item</b>属性。</para>
-          <para>使用此属性，而不使用对象识别符返回一个<b>Range</b>对象，该对象代表活动工作表上的所有单元格的。</para>
+          <para>因为<see cref="P:Microsoft.Office.Interop.Excel.Worksheets.Item(System.Object)" />属性是<b>Range</b>对象的默认属性，则可以在<b>单元格</b>关键字后面立即指定的行和列的索引。 有关详细信息，请参阅<b>Item</b>属性。</para>
+          <para>使用对象识别符的此属性返回一个<b>Range</b>对象，该对象代表活动工作表上的所有单元格。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -672,7 +672,10 @@
         <param name="Index">可选<b>Variant</b>。 名称或图表的数目。 此参数可以是指定多个图表的数组。</param>
         <summary>返回一个 object 值，该值代表以下任意一个嵌入式的图表 (<see cref="T:Microsoft.Office.Interop.Excel.ChartObject" />对象) 或所有嵌入式图表的集合 (<see cref="T:Microsoft.Office.Interop.Excel.ChartObjects" />对象) 工作表上。</summary>
         <returns>To be added.</returns>
-        <remarks>此方法不等于<para><see cref="T:Microsoft.Office.Interop.Excel.Charts" />属性。此方法返回嵌入式的图表;<b>图表</b>属性返回图表工作表。使用<see cref="T:Microsoft.Office.Interop.Excel.Chart" />属性返回<see cref="T:Microsoft.Office.Interop.Excel.Chart" />嵌入式图表的对象。</para><para></para></remarks>
+        <remarks>
+          <para>此方法不等于<see cref="T:Microsoft.Office.Interop.Excel.Charts" />属性。 此方法返回嵌入式的图表;<b>图表</b>属性返回图表工作表。 使用<see cref="T:Microsoft.Office.Interop.Excel.Chart" />属性返回<see cref="T:Microsoft.Office.Interop.Excel.Chart" />嵌入式图表的对象。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckBoxes">
@@ -886,9 +889,9 @@
         <summary>返回对象的代码名。<b>String</b> 型，只读。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>您看到属性窗口中的<b>（名称）</b>右侧的单元格中的值是所选对象的代码名。在设计时，您可以通过更改此值更改对象的代码名。不能以编程方式在运行时更改此属性。</para>
-          <para>代码名称对象可用于代替返回对象的表达式。</para>
-          <para>是可能的工作表名称不同于代码名称。当创建表、 工作表名称和代码名称是相同，但更改工作表名称不会更改代码名称，或更改代码名称 （使用属性窗口在 Visual Basic 编辑器中） 不会更改工作表名称。</para>
+          <para>您看到属性窗口中的<b>（名称）</b>右侧的单元格中的值是所选对象的代码名。 在设计时，您可以通过更改此值更改对象的代码名。 以编程方式不能在运行时更改此属性。</para>
+          <para>对象的代码名称可代替返回对象的表达式。</para>
+          <para>工作表的名称可以与其代码名不同。创建一张工作表时，其工作表名称和代码名是相同的，不过，更改工作表名称时并不影响其代码名，并且，更改工作表代码名（在 Visual Basic 编辑器中使用“属性”窗口）也不影响其名称。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1125,7 +1128,7 @@
         </value>
         <remarks>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1156,8 +1159,7 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.CustomProperties" />对象，表示与工作表关联的标识符信息。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>
-            <b>CustomProperties</b>属性，工作表的标识符信息可以表示元数据 XML。</para>
+          <para>对于 <b>CustomProperties</b> 属性，工作表的标识符信息可以表示 XML 的元数据。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1187,7 +1189,10 @@
       <Parameters />
       <Docs>
         <summary>删除对象。</summary>
-        <remarks>当您删除的<para><see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />，此方法将显示一个对话框，提示用户确认删除。默认情况下显示此对话框。<b>Delete</b>方法返回一个<b>Boolean</b>值，如果用户单击取消对话框上的或<b>，则返回 True</b> ，如果用户单击删除为<b>False</b> 。</para><para></para></remarks>
+        <remarks>
+          <para>当您删除<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />，此方法将显示一个对话框，提示用户确认删除。 默认情况下显示此对话框。 <b>Delete</b>方法返回一个<b>Boolean</b>值，如果用户单击取消对话框上的或<b>，则返回 True</b> ，如果用户单击删除为<b>False</b> 。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayAutomaticPageBreaks">
@@ -1262,7 +1267,7 @@
         <summary>如果显示指定工作表中的分页符（包括自动和手动分页符），则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果您没有安装打印机，不能设置此属性。</para>
+          <para>如果没有安装打印机，不能设置该属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1442,7 +1447,7 @@
         <summary>如果当仅限于用户界面保护处于打开状态时，启用自动筛选箭头，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性适用于每个工作表，并且不随工作表或会话一起保存。</para>
+          <para>该属性可应用于每一张工作表，而不随工作表或会话一起保存。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1476,7 +1481,7 @@
         <summary>如果在必要的情况下 Microsoft Excel 自动重新计算工作表，则该值为 <b>True</b>。如果 Excel 不重新计算工作表，则该值为 <b>False</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性的值为<b>False</b>时，您不能请求重新计算。Excel 时将值从<b>False</b>更改为<b>True</b>时，重新计算工作表。</para>
+          <para>当本属性的值为 <b>False</b> 时，则不能请求重新计算。如果将其值从 <b>False</b> 更改为 <b>True</b>，则 Excel 将重新计算工作表。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1512,8 +1517,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>当设置为<b>True</b> （默认值） 时，将自动根据需要进行评估的条件格式。 设置为<b>False</b>时，条件格式不会重新计算。 任何以前应用的条件格式将仍可见，但它不会更新为单元格的值或<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.AppliesTo" />更改范围。 </para>
-          <para>此标志的用途是允许程序员完整地配置规则评估它之前。 当条件应用于较大的区域，性能可能会比较慢在这些情况下，此功能特别有用。</para>
+          <para>当设置为<b>True</b> （默认值） 时，将自动根据需要进行评估的条件格式。  设置为<b>False</b>时，条件格式不会重新计算。  任何以前应用的条件格式将仍可见，但它不会更新为单元格的值或<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.AppliesTo" />更改范围。  </para>
+          <para>此标志的用途是允许程序员完整地配置规则评估它之前。  当条件应用于较大的区域，性能可能会比较慢在这些情况下，这是特别有用。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1553,7 +1558,7 @@
         <summary>如果当仅限于用户界面保护处于打开状态时，启用分级显示符号，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性适用于每个工作表，并且不随工作表或会话一起保存。</para>
+          <para>该属性可应用于每一张工作表，而不随工作表或会话一起保存。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1593,8 +1598,8 @@
         <summary>如果当仅限于用户界面保护处于打开状态时，启用数据透视表控件和操作，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性适用于每个工作表，并且不随工作表或会话一起保存。</para>
-          <para>必须有足够的未锁定单元格下面和 Microsoft excel 才能重新计算并显示数据透视表数据透视表的右侧。</para>
+          <para>该属性可应用于每一张工作表，而不随工作表或会话一起保存。</para>
+          <para>在数据透视表的下方或右侧必须有足够的未锁定单元格，这样 Microsoft Excel 才能重新计算并显示该数据透视表。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1628,7 +1633,7 @@
         <summary>返回或设置工作表上可选择的内容。 读/写<see cref="T:Microsoft.Office.Interop.Excel.XlEnableSelection" />。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性才会生效仅在工作表处于保护状态时： <b>xlNoSelection</b>可防止任何工作表上的选择， <b>xlUnlockedCells</b>允许仅对这些单元格<b>Locked</b>属性为<b>False</b> ，选择和<b>xlNoRestrictions</b>允许选择任意单元格。</para>
+          <para>仅当工作表处于保护状态时，本属性才能起作用：<b>xlNoSelection</b> 防止在工作表上进行任何选择操作，<b>xlUnlockedCells</b> 仅允许 <b>Locked</b> 属性为 <b>False</b> 的单元格才能被选定，而 <b>xlNoRestrictions</b> 允许选定任意单元格。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1663,13 +1668,13 @@
         <summary>将一个 Microsoft Excel 名称转换为一个对象或者一个值。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>可使用此方法时使用以下类型的 Microsoft Excel 名称：</para>
+          <para>该方法可使用下列 Microsoft Excel 名称类型：</para>
           <list type="bullet">
             <item>
-              <description>定义名称。您可以指定任何名称。</description>
+              <description>已定义的名称。 您可以指定任何名称。</description>
             </item>
             <item>
-              <description>外部引用。您可以使用 ！要引用其他工作簿中定义的工作表的运算符。</description>
+              <description>外部引用。 您可以使用 ！ 要引用在其他工作簿中定义的工作表的运算符。</description>
             </item>
           </list>
           <para></para>
@@ -1718,7 +1723,7 @@
         <param name="FixedFormatExtClassPtr">指向<b>FixedFormatExt</b>类的指针。</param>
         <summary>导出为指定格式的文件。</summary>
         <remarks>
-          <para>此方法还支持初始化外接程序导出为固定格式的文件的文件。例如，如果存在转换器，则 Excel 将执行文件格式转换。通常由用户启动的转换。</para>
+          <para>此方法还支持初始化加载项，以将文件导出为固定格式的文件。例如，如果存在转换器，则 Excel 将执行文件格式转换。转换通常由用户执行。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1753,7 +1758,7 @@
           <b>True</b>如果工作表处于筛选模式。 只读 <b>Boolean</b>。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性为<b>True</b> ，如果工作表包含已筛选的列表中隐藏的行。</para>
+          <para>如果工作表包含已筛选的列表中隐藏的行，则此属性为<b>True</b> 。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2194,8 +2199,8 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Chart" />， <see cref="T:Microsoft.Office.Interop.Excel.Range" />，或<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />对象，表示的下一个工作表或单元格。 只读。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象为区域，此属性会模拟 TAB 键，但会返回下一个单元格不选定它。</para>
-          <para>在受保护的工作表，此属性返回下一个未锁定单元格。不受保护的表，此属性始终返回单元格立即右侧的指定单元格。</para>
+          <para>如果该对象为区域，则此属性会模拟 Tab 键，但会返回下一个单元格，而不选中它。</para>
+          <para>在处于保护状态的工作表中，此属性返回下一个未锁定单元格。在未保护的工作表中，此属性总是返回紧靠指定单元格右边的单元格。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2672,7 +2677,7 @@
         <summary>将“剪贴板”中的内容粘贴到工作表上。</summary>
         <remarks>
           <para>如果不指定<paramref name="Destination" />参数，您必须选择目标区域才能使用此方法。</para>
-          <para>此方法可能会修改工作表选择，具体取决于剪贴板的内容。</para>
+          <para>该方法可能会修改工作表的选定区域，这取决于剪贴板中的内容。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2718,9 +2723,9 @@
         <summary>粘贴到使用指定的格式工作表剪贴板的内容。 粘贴从其他应用程序的数据或以特定格式粘贴数据，请使用此方法。</summary>
         <remarks>
           <para>
-            <paramref name="NoHTMLFormatting" />将仅专家时<paramref name="Format" />="HTML"。在所有其他情况下，<paramref name="NoHTMLFormatting" />将被忽略。</para>
-          <para>使用此方法之前，必须选择目标区域。</para>
-          <para>此方法可能会修改工作表选择，具体取决于剪贴板的内容。</para>
+            <paramref name="NoHTMLFormatting" />将仅专家时<paramref name="Format" />="HTML"。 在所有其他情况下，<paramref name="NoHTMLFormatting" />将被忽略。</para>
+          <para>必须在使用本方法之前选定目标区域。</para>
+          <para>该方法可能会修改工作表的选定区域，这取决于剪贴板中的内容。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2877,8 +2882,8 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Chart" />， <see cref="T:Microsoft.Office.Interop.Excel.Range" />，或<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />对象，表示的上一个工作表或单元格。 只读。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>对象为区域，如果此属性是仿效 SHIFT + TAB; 但是，与不同的键的组合，该属性返回的以前的单元格，而不选中它。</para>
-          <para>在受保护的工作表，此属性返回以前未锁定单元格。不受保护的表，此属性始终返回单元格立即指定单元格的左侧。</para>
+          <para>如果指定对象为区域，则此属性的作用是仿效 Shift+Tab；但此属性只是返回上一单元格，并不选定它。</para>
+          <para>在保护工作表上，该属性返回上一个未锁定的单元格。在未保护的工作表上，该属性通常返回指定单元格左侧相邻的单元格。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2909,9 +2914,9 @@
         <summary>获取当前工作表的打印的注释页数。</summary>
         <value>将打印当前工作表的备注页的数目。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para>
-            <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.PrintedCommentPages" />属性将仅返回一个数字大于零如果注释的页面设置工作表选项卡上设置对话框中设置为在工作表的末尾。如果工作表为图表工作表或 MS Excel 5.0 对话框工作表，此属性将返回零。</para>
+            <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.PrintedCommentPages" />属性将仅返回一个数字大于零如果注释的页面设置工作表选项卡上设置对话框中设置为在工作表的末尾。 如果工作表为图表工作表或 MS Excel 5.0 对话框工作表，此属性将返回零。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2961,7 +2966,7 @@
         <param name="PrToFileName">可选的<b>对象</b>。 如果<paramref name="PrintToFile" />设置为<b>True</b>，则该参数指定要打印到的文件的名称。</param>
         <summary>打印对象。</summary>
         <remarks>
-          <para>"页面"的说明中的<paramref name="From" />和<paramref name="To" />指打印页、 工作表或工作簿中不整个页面。</para>
+          <para>说明中的"页面"<paramref name="From" />和<paramref name="To" />指打印页、 工作表或工作簿中不整个页面。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3097,10 +3102,10 @@
         <param name="AllowUsingPivotTables">可选的<b>对象</b>。 <b>True</b>允许用户在受保护的工作表上使用数据透视表报告。 默认值为 <b>False</b> 。</param>
         <summary>保护工作表使其不能被修改。</summary>
         <remarks>
-          <para>如果应用<b>Protect</b>方法与<paramref name="UserInterfaceOnly" />参数设置为<b>True</b>向工作表，然后保存工作簿，整张工作表 （而不仅仅是接口） 将受到完全保护时重新打开工作簿。要重新启用用户界面保护后打开工作簿时，必须重新应用<b>Protect</b>方法与<paramref name="UserInterfaceOnly" />将设置为<b>True</b>。</para>
-          <para>如果您想要对受保护的工作表进行更改，则可以使用<b>Protect</b>方法在受保护的工作表上，如果提供密码。另一种方法是取消保护工作表和进行必要的更改，然后再次保护工作表。</para>
+          <para>如果应用<b>Protect</b>方法与<paramref name="UserInterfaceOnly" />参数设置为<b>True</b>向工作表，然后保存工作簿，整张工作表 （而不仅仅是接口） 将受到完全保护时重新打开工作簿。 要重新启用用户界面保护后打开工作簿时，必须重新应用<b>Protect</b>方法与<paramref name="UserInterfaceOnly" />将设置为<b>True</b>。</para>
+          <para>如果您想要对受保护的工作表进行更改，则可以使用<b>Protect</b>方法在受保护的工作表上，如果提供密码。 另一种方法是取消保护工作表和进行必要的更改，然后再次保护工作表。</para>
           <para>
-            <b>注释</b>: 未受保护意味着单元格可能被锁定 （单元格格式对话框） 中编辑区域对话框，允许用户定义的范围包含但和用户已取消保护密码的范围或已 NT 权限通过验证。</para>
+            <b>注意</b>: 未受保护意味着单元格可能被锁定 （单元格格式对话框） 中编辑区域对话框，允许用户定义的范围包含但和用户已取消保护密码的范围或已 NT 权限通过验证。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3547,7 +3552,7 @@
         <summary>返回或设置允许滚动的区域以 A1-样式区域引用。 不能选择滚动区域以外的单元格。 可读写 <b>String</b>。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>将此属性设置为空字符串 ("") 以允许整个工作表的单元格选定。</para>
+          <para>可将该属性设置为空字符串 ("") 以允许对整张工作表内所有单元格的选定。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3614,7 +3619,7 @@
         <param name="Replace">可选的<b>对象</b>。 要替换的对象。</param>
         <summary>选择对象。</summary>
         <remarks>
-          <para>，选择单元格区域，请使用<b>Select</b>方法。若要使单个单元格活动单元格，请使用<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" />方法。</para>
+          <para>若要选择一个单元格的范围，请使用<b>Select</b>方法。 若要使单个单元格活动单元格，请使用<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" />方法。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3729,8 +3734,8 @@
       <Docs>
         <summary>显示与指定工作表相关联的数据表单。</summary>
         <remarks>
-          <para>您正在使用的数据表单时，会暂停执行。关注<b>ShowDataForm</b>方法的代码行处的数据表单关闭时，继续执行。</para>
-          <para>本方法运行自定义数据表单中，如果存在。</para>
+          <para>您正在使用的数据表单时，会暂停执行。 关闭数据表单时，处行的下<b>ShowDataForm</b>方法将继续执行。</para>
+          <para>如果存在自定义数据表单，则本方法将运行此表单。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3896,7 +3901,7 @@
         <summary>返回或设置工作表中所有列的标准列宽（默认值）。<b>Double</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>一个列宽单位等于正文样式中一个字符的宽度。对于非等宽字体，则使用字符 0 （零） 的宽度。</para>
+          <para>一个列宽单位等于"常规"样式中一个字符的宽度。对于比例字体，则使用字符 0（零）的宽度。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4107,7 +4112,10 @@
       <Docs>
         <param name="Password">可选的<b>对象</b>。 一个字符串，用于取消的工作表或工作簿的保护密码区分大小写。 如果表或工作簿不受密码保护，则忽略此参数。 如果省略此参数受密码保护的工作表时，系统将提示您输入密码。 如果省略此参数受密码保护的工作簿，该方法将失败。</param>
         <summary>取消工作表或工作簿的保护。如果工作表或工作簿不是受保护的，则此方法不起作用。</summary>
-        <remarks>如果您忘记了密码<para>，则无法取消的工作表或工作簿。它是安全的就地保留您的密码和其对应的文档名称的列表，最好。</para><para></para></remarks>
+        <remarks>
+          <para>如果您忘记了密码，将不能取消工作表或工作簿的保护。建议将密码和对应文档名妥善保存。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UsedRange">
@@ -4176,8 +4184,8 @@
         <summary>确定对象是否可见。 读/写<see cref="T:Microsoft.Office.Interop.Excel.XlSheetVisibility" />。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果项目位于表中当前可见，数据透视表项的<b>Visible</b>属性为<b>True</b> 。</para>
-          <para>将名称的<b>Visible</b>属性设置为<b>False</b>时，如果名称不会出现在定义名称对话框。</para>
+          <para>如果数据透视表中的某一项在当前是可见的，则该项的 <b>Visible</b> 属性为 <b>True</b>。</para>
+          <para>如果将一个名称的 <b>Visible</b> 属性设为 <b>False</b>，则该名称将不出现在“定义名称”对话框中。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4241,7 +4249,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
-          <para>如果 XPath 存在于 XML 列表中的列，将返回的<b>范围</b>对象 （不包括标题行或插入行。</para>
+          <para>如果 XPath 存在于 XML 列表中的列，返回的<b>Range</b>对象不包括标题行或插入行。</para>
           <para></para>
         </remarks>
       </Docs>

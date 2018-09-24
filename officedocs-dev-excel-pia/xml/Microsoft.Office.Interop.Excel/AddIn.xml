@@ -1,10 +1,10 @@
 <Type Name="AddIn" FullName="Microsoft.Office.Interop.Excel.AddIn">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7b2ad4081ea4bdb99cc06e468b6712922b5b097b" />
+    <Meta Name="ms.openlocfilehash" Value="ad740aac6b501b523017ffe9ffd52b91e10dd267" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584145" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AddIn" />
@@ -32,14 +32,16 @@
     <summary>代表已经安装或尚未安装的单个加载项。</summary>
     <remarks>
       <para>
-        <b>AddIn</b>对象是成员<see cref="T:Microsoft.Office.Interop.Excel.AddIns" />集合。<b>AddIns</b>集合包含所有可用加载项到 Microsoft Excel，而不考虑它们是否已安装的列表。此列表对应于显示在加载项对话框 （工具菜单） 的加载宏的列表。</para>
+        <b>AddIn</b>对象是成员<see cref="T:Microsoft.Office.Interop.Excel.AddIns" />集合。 <b>AddIns</b>集合包含所有可用加载项到 Microsoft Excel，而不考虑它们是否已安装的列表。 此列表对应于显示在加载项对话框 （工具菜单） 的加载宏的列表。</para>
       <para>使用<b>加载项</b>(<paramref name="index" />)，其中<paramref name="index" />是外接程序标题或索引号，可返回单个<b>AddIn</b>对象。</para>
-      <para>请勿混淆外接程序标题，显示在加载项对话框中添加的名称外, 接程序的文件名称。您必须完全相同书写加载项对话框中，但不一定要匹配大写拼写外接程序标题。</para>
+      <para>请勿混淆加载宏标题（出现在“加载宏”对话框中）与加载宏名称（加载宏的文件名）。必须严格按照“加载宏”对话框中的标题书写加载宏标题，但不必匹配大小写。</para>
       <para>索引号表示的加载项的加载项提供框加载项对话框中的位置。</para>
       <para>
-        <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" />方法外接程序添加到可用加载项的列表，但不安装外接程序集<see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" />属性为<b>True</b>可安装的加载项的加载项。若要安装不显示的外接程序的可用加载项列表中，必须首先使用<b>Add</b>方法，并将<b>Installed</b>属性。这可以在单个步骤</para>
-      <para>使用<b>工作簿</b>(<paramref name="index" />) 其中<paramref name="index" />是外接程序文件名 （不标题） 以返回到工作簿对应于加载的加载项的引用。您必须使用文件名称，因为中加载的加载项通常不显示<see cref="T:Microsoft.Office.Interop.Excel.Workbooks" />集合。</para>如果<b>Installed</b>属性返回<b>True</b>，但仍将对中的加载项的函数的调用失败外, 接程序可能不实际加载
-      <para>。这是因为<b>Addin</b>对象表示存在和安装的加载项的状态，但不代表工作簿中添加的实际内容。若要保证加载已安装加载项时，应打开工作簿加载项。</para><para></para></remarks>
+        <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" />方法外接程序添加到可用加载项的列表，但不安装外接程序。 设置<see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" />属性为<b>True</b>可安装的加载项的加载项。 若要安装不显示的外接程序的可用加载项列表中，必须首先使用<b>Add</b>方法，并将<b>Installed</b>属性。 这可以在单个步骤</para>
+      <para>使用<b>工作簿</b>(<paramref name="index" />) 其中<paramref name="index" />是外接程序文件名 （不标题） 以返回到工作簿对应于加载的加载项的引用。 您必须使用文件名称，因为中加载的加载项通常不显示<see cref="T:Microsoft.Office.Interop.Excel.Workbooks" />集合。</para>
+      <para>如果<b>Installed</b>属性返回<b>True</b>，但呼叫到中外接程序函数仍失败外, 接程序可能不实际加载。 这是因为<b>Addin</b>对象表示存在和安装的加载项的状态，但不代表工作簿中添加的实际内容。 若要保证加载是已安装加载项，则应打开外接程序工作簿。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -186,9 +188,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -253,7 +255,7 @@
         <summary>如果为<b>true</b>安装外接程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>将此属性设置为<b>True</b>安装外接程序，并调用其 Auto_Add 函数。此属性设置为<b>False</b>外接程序中删除并调用其 Auto_Remove 函数。</para>
+          <para>将此属性设为 <b>True</b> 将安装指定加载宏，并调用 Auto_Add 函数。将此属性设为 <b>False</b> 则移去指定加载宏，并调用 Auto_Remove 函数。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -286,7 +288,7 @@
           <b>true</b>如果外接程序当前打开;否则为<b>false</b>。</value>
         <remarks>
           <para>
-            <b>布尔</b>只读的。</para>
+            <b>boolean</b>只读的。</para>
           <para></para>
         </remarks>
       </Docs>

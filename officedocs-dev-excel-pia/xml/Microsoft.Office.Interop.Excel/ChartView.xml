@@ -1,10 +1,10 @@
 <Type Name="ChartView" FullName="Microsoft.Office.Interop.Excel.ChartView">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="64e3d0eb74ea386ed7789a74ad85ee0f5db4ab04" />
+    <Meta Name="ms.openlocfilehash" Value="66d11355e519fc34b24dc963c54e03b1573babd9" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20577201" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ChartView" />
@@ -32,11 +32,11 @@
     <summary>代表图表的视图。</summary>
     <remarks>
       <para>
-        <b>ChartView</b>对象是对象可通过返回之一<see cref="T:Microsoft.Office.Interop.Excel.SheetViews" />集合，类似于<see cref="T:Microsoft.Office.Interop.Excel.Sheets" />集合。<b>ChartView</b>对象仅适用于图表工作表。  </para>
+        <b>ChartView</b>对象是可通过返回的对象之一<see cref="T:Microsoft.Office.Interop.Excel.SheetViews" />集合，类似于<see cref="T:Microsoft.Office.Interop.Excel.Sheets" />集合。 <b>ChartView</b>对象仅适用于图表工作表。   </para>
       <para></para>
     </remarks>
     <example>
-      <para>以下示例返回<b>ChartView</b>对象。</para>
+      <para>以下示例返回 <b>ChartView</b> 对象。</para>
       <code>&lt;span class="label"&gt;ActiveWindow.SheetViews.Item(1)  
 
 
@@ -326,7 +326,7 @@
         <value>
           <b>应用程序</b>（请参见上文）</value>
         <remarks>
-          <para>您可以使用此属性与 OLE 自动化对象返回该对象的应用程序。</para>
+          <para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -358,7 +358,10 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
-        <remarks>如果对象在 Microsoft Excel 中创建的<para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <see cref="P:Microsoft.Office.Interop.Excel.ChartView.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para></para></remarks>
+        <remarks>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。  <see cref="P:Microsoft.Office.Interop.Excel.ChartView.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

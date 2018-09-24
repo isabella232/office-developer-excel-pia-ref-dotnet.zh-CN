@@ -1,10 +1,10 @@
 <Type Name="FormatColor" FullName="Microsoft.Office.Interop.Excel.FormatColor">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ea2361eaf95facae7ae9b899ec4a890f3cd18569" />
+    <Meta Name="ms.openlocfilehash" Value="f57d49748d62286fafce20d40a1880d5eeb2e6ca" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580827" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface FormatColor" />
@@ -63,7 +63,7 @@
         <value>
           <b>应用程序</b>（请参见上文）</value>
         <remarks>
-          <para>您可以使用此属性与 OLE 自动化对象返回该对象的应用程序。</para>
+          <para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -98,7 +98,10 @@
         <value>
           <b>对象</b>
         </value>
-        <remarks>格式颜色表示为<para><see cref="P:Microsoft.Office.Core.ColorFormat.RGB" />函数。例如，若要将设置为红色，可使用 RGB(255,0,0)。</para><para></para></remarks>
+        <remarks>
+          <para>格式颜色表示为<see cref="P:Microsoft.Office.Core.ColorFormat.RGB" />函数。 例如，若要将设置为红色，使用 RGB(255,0,0)。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ColorIndex">
@@ -132,7 +135,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" />
         </value>
         <remarks>
-          <para>颜色色阶或数据条条件格式规则的每个阈值使用此属性。</para>
+          <para>此属性用于色阶或数据条条件格式规则中的每个阈值。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -164,7 +167,10 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
-        <remarks>如果对象在 Microsoft Excel 中创建的<para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para></para></remarks>
+        <remarks>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。  <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -261,7 +267,7 @@
           <b>对象</b>
         </value>
         <remarks>
-          <para>您可以输入-1 （最暗） 到数字 1 （最亮） 之间的<see cref="P:Microsoft.Office.Interop.Excel.FormatColor.TintAndShade" />属性。零 (0) 是中性。</para>
+          <para>您可以输入-1 （最暗） 到数字 1 （最亮） 之间的<see cref="P:Microsoft.Office.Interop.Excel.FormatColor.TintAndShade" />属性。 中性零 (0)。</para>
           <para></para>
         </remarks>
       </Docs>

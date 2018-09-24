@@ -1,10 +1,10 @@
 <Type Name="SlicerItems" FullName="Microsoft.Office.Interop.Excel.SlicerItems">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d1a81d454d46b2c62921aa4430edf7c421a1acdb" />
+    <Meta Name="ms.openlocfilehash" Value="774e30c34e5d1fc1bfc66a2f61fafb0bf20e4cfb" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585986" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SlicerItems : System.Collections.IEnumerable" />
@@ -103,7 +103,7 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.Application" />对象。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -134,7 +134,7 @@
         <summary>获取集合中对象的数目。</summary>
         <value>集合中的对象数。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -165,8 +165,10 @@
         <summary>获取一个指示在其中创建此对象的应用程序的 32 位<b>整数</b>。</summary>
         <value>32 位<b>整数</b>，指示在其中创建此对象的应用程序。</value>
         <remarks>
-          <para>只读的。</para>如果对象在 Microsoft Excel 中创建的
-          <para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。<see cref="P:Microsoft.Office.Interop.Excel.SlicerItems.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para></para></remarks>
+          <para>只读。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <see cref="P:Microsoft.Office.Interop.Excel.SlicerItems.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -259,7 +261,7 @@
         <summary>获取父<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />指定对象的对象。</summary>
         <value>父<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />指定对象的对象。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>

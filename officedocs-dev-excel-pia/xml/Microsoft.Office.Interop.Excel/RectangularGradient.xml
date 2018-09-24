@@ -1,10 +1,10 @@
 <Type Name="RectangularGradient" FullName="Microsoft.Office.Interop.Excel.RectangularGradient">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4cba2599f80d4b3a1cd4ad4d3fcc0d4672314334" />
+    <Meta Name="ms.openlocfilehash" Value="32bd8a6a6080dd51d08bba085fda72e6b6f51462" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584446" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface RectangularGradient" />
@@ -36,7 +36,7 @@
         <b>注意</b>： 处理时，应考虑以下几点<see cref="T:Microsoft.Office.Interop.Excel.RectangularGradient" />对象</para>
       <list type="bullet">
         <item>
-          <description>尝试访问<see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" />属性<see cref="T:Microsoft.Office.Interop.Excel.Interior" />没有现有的渐变填充的对象将导致一个运行时错误。 注意<see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" />属性之前访问<see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" />属性。</description>
+          <description>尝试访问<see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" />属性<see cref="T:Microsoft.Office.Interop.Excel.Interior" />没有现有的渐变填充的对象将导致一个运行时错误。  注意<see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" />属性之前访问<see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" />属性。</description>
         </item>
         <item>
           <description>如果<see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" />从渐变类型更改为非渐变类型，<see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" />对象将采用默认值进行填充。</description>
@@ -133,7 +133,10 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
-        <remarks>如果对象在 Microsoft Excel 中创建的<para>，此属性返回字符串 XCEL，这相当于十六进制数字 5843454c。<b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 具有 XCEL 的创建者代码。</para><para></para></remarks>
+        <remarks>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回字符串 XCEL，这相当于十六进制数字 5843454c。 <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。 </para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -197,27 +200,31 @@
           <b>Double</b>
         </value>
         <remarks>
-          <para>适用于<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />， <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />，和<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />。 下表列出了有效的值。</para>
+          <para>适用于<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />， <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />，和<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />。  下表列出了有效的值。</para>
           <list type="table">
             <item>
               <term>
                 <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />
-              </term>0-1
+              </term>
+              <description>0-1</description>
             </item>
             <item>
               <term>
                 <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />
-              </term>0-1
+              </term>
+              <description>0-1</description>
             </item>
             <item>
               <term>
                 <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />
-              </term>0-1
+              </term>
+              <description>0-1</description>
             </item>
             <item>
               <term>
                 <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />
-              </term>0-1
+              </term>
+              <description>0-1</description>
             </item>
           </list>
           <para></para>
@@ -255,27 +262,31 @@
           <b>Double</b>
         </value>
         <remarks>
-          <para>适用于<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />， <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />，和<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />。 下表列出了有效的值。</para>
+          <para>适用于<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />， <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />，和<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />。  下表列出了有效的值。</para>
           <list type="table">
             <item>
               <term>
                 <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />
-              </term>0-1
+              </term>
+              <description>0-1</description>
             </item>
             <item>
               <term>
                 <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />
-              </term>0-1
+              </term>
+              <description>0-1</description>
             </item>
             <item>
               <term>
                 <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />
-              </term>0-1
+              </term>
+              <description>0-1</description>
             </item>
             <item>
               <term>
                 <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />
-              </term>0-1
+              </term>
+              <description>0-1</description>
             </item>
           </list>
           <para></para>
@@ -313,27 +324,31 @@
           <b>Double</b>
         </value>
         <remarks>
-          <para>适用于<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />， <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />，和<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />。 下表列出了有效的值。</para>
+          <para>适用于<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />， <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />，和<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />。  下表列出了有效的值。</para>
           <list type="table">
             <item>
               <term>
                 <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />
-              </term>0-1
+              </term>
+              <description>0-1</description>
             </item>
             <item>
               <term>
                 <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />
-              </term>0-1
+              </term>
+              <description>0-1</description>
             </item>
             <item>
               <term>
                 <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />
-              </term>0-1
+              </term>
+              <description>0-1</description>
             </item>
             <item>
               <term>
                 <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />
-              </term>0-1
+              </term>
+              <description>0-1</description>
             </item>
           </list>
           <para></para>
@@ -371,27 +386,31 @@
           <b>Double</b>
         </value>
         <remarks>
-          <para>适用于<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />， <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />，和<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />。 下表列出了有效的值。</para>
+          <para>适用于<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />， <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />，和<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />。  下表列出了有效的值。</para>
           <list type="table">
             <item>
               <term>
                 <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />
-              </term>0-1
+              </term>
+              <description>0-1</description>
             </item>
             <item>
               <term>
                 <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />
-              </term>0-1
+              </term>
+              <description>0-1</description>
             </item>
             <item>
               <term>
                 <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />
-              </term>0-1
+              </term>
+              <description>0-1</description>
             </item>
             <item>
               <term>
                 <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />
-              </term>0-1
+              </term>
+              <description>0-1</description>
             </item>
           </list>
           <para></para>

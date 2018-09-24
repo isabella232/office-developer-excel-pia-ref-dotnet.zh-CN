@@ -1,10 +1,10 @@
 <Type Name="AllowEditRange" FullName="Microsoft.Office.Interop.Excel.AllowEditRange">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5306cd46ae37b135861511f86f23c995990f64bd" />
+    <Meta Name="ms.openlocfilehash" Value="5ed1c5d1b07edaa52f829f20631c74db61529a28" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580099" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AllowEditRange" />
@@ -32,7 +32,7 @@
     <summary>代表受保护的工作表上可进行编辑的单元格。</summary>
     <remarks>
       <para>使用<see cref="M:Microsoft.Office.Interop.Excel.AllowEditRanges.Add(System.String,Microsoft.Office.Interop.Excel.Range,System.Object)" />方法或<see cref="P:Microsoft.Office.Interop.Excel.AllowEditRanges.Item(System.Object)" />属性<see cref="T:Microsoft.Office.Interop.Excel.AllowEditRanges" />可返回<b>AllowEditRange</b>对象的集合。</para>
-      <para>后返回<b>AllowEditRange</b>对象后，您可以使用<see cref="M:Microsoft.Office.Interop.Excel.AllowEditRange.ChangePassword(System.String)" />方法，以更改访问可以在受保护的工作表编辑区域的密码。</para>
+      <para>一旦返回<b>AllowEditRange</b>对象后，您可以使用<see cref="M:Microsoft.Office.Interop.Excel.AllowEditRange.ChangePassword(System.String)" />方法以更改密码以访问可以在受保护的工作表编辑区域。</para>
       <para></para>
     </remarks>
   </Docs>
@@ -150,7 +150,7 @@
         <summary>返回或设置文档保存为网页时的网页的标题。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>标题通常显示在窗口标题栏时 Web 浏览器中查看文档中。</para>
+          <para>在 Web 浏览器中查看文档时，标题通常显示在窗口的标题栏中。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -180,7 +180,7 @@
         <param name="Password">可选的<b>对象</b>。 一个字符串，用于取消的工作表或工作簿的保护密码区分大小写。 如果表或工作簿不受密码保护，则忽略此参数。 如果省略此参数受密码保护的工作表时，系统将提示您输入密码。 如果省略此参数受密码保护的工作簿，该方法将失败。</param>
         <summary>删除表或工作簿的保护。</summary>
         <remarks>
-          <para>此方法不起作用如果表或工作簿不受保护。</para>
+          <para>如果工作表或工作簿不受保护，则此方法无效。</para>
           <para>如果您忘记了密码，则无法取消的工作表或工作簿。</para>
           <para></para>
         </remarks>

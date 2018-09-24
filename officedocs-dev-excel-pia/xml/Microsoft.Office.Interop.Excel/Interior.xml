@@ -1,10 +1,10 @@
 <Type Name="Interior" FullName="Microsoft.Office.Interop.Excel.Interior">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="84509cfb8129326d031763fb72114f30f66959dd" />
+    <Meta Name="ms.openlocfilehash" Value="c71701c9d8836ca465988c9e2fec16d9b1bf8ddb" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582255" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Interior" />
@@ -126,9 +126,9 @@
         <remarks>
           <para>将颜色作为当前调色板的索引值或以下项之一指定<see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" />常量。</para>
           <para>
-            <b>xlColorIndexAutomatic</b>。使用指定的图形对象的自动填充。</para>
+            <b>xlColorIndexAutomatic</b>。 使用指定的图形对象的自动填充。</para>
           <para>
-            <b>xlColorIndexNone</b>。用于指定任何内部填充。</para>
+            <b>xlColorIndexNone</b>。 用于指定任何内部填充。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -159,9 +159,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -411,7 +411,7 @@
         <summary>返回或设置内部图案的颜色，作为当前调色板中的索引也可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" />常量： <b>xlColorIndexAutomatic</b>或<b>xlColorIndexNone</b>。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>将此属性设置为<b>xlColorIndexAutomatic</b>可指定的单元格的自动模式或图形对象的自动填充样式。此属性设置为<b>xlColorIndexNone</b>指定您不希望模式 (这是设置相同<see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" />属性<see cref="T:Microsoft.Office.Interop.Excel.Interior" /><b>xlPatternNone</b>对象)。</para>
+          <para>将此属性设置为<b>xlColorIndexAutomatic</b>可指定的单元格的自动模式或图形对象的自动填充样式。 此属性设置为<b>xlColorIndexNone</b>指定您不希望模式 (这是设置相同<see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" />属性<see cref="T:Microsoft.Office.Interop.Excel.Interior" /><b>xlPatternNone</b>对象)。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -507,7 +507,7 @@
         <summary>获取或设置与指定的对象关联的应用的配色方案中的主题颜色。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>尝试访问其主题颜色的颜色不是当前主题对象将导致无效请求运行时错误。</para>
+          <para>如果对象当前未应用主题颜色，试图访问其主题颜色则会引起无效请求运行时错误。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -541,8 +541,8 @@
         <summary>获取或设置一个值，使颜色变深或。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>可以为<b>TintAndShade</b>属性 （最亮） 之间的 1-1 （最暗） 输入号码。零 (0) 是中性。</para>
-          <para>试图将该属性设置为小于-1 或大于 1 的值将导致运行时错误:"指定的值是超出范围。"此属性的主题颜色和非主题颜色有效。</para>
+          <para>可以为 <b>TintAndShade</b> 属性输入 -1（最暗）到 1（最亮）之间的数字，零 (0) 为中间值。</para>
+          <para>试图将该属性设置为小于-1 或大于 1 的值将导致运行时错误:"指定的值是超出范围。" 此属性适用于主题颜色和非主题颜色。</para>
           <para></para>
         </remarks>
       </Docs>

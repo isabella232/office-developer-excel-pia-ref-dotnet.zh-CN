@@ -1,10 +1,10 @@
 <Type Name="DropLines" FullName="Microsoft.Office.Interop.Excel.DropLines">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b812f4bbf5c164a5e6bd7c838afce5e6befd46ba" />
+    <Meta Name="ms.openlocfilehash" Value="75b4c26df638c0a7eb516bce66d8566fed0d8a59" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580876" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DropLines" />
@@ -31,7 +31,7 @@
   <Docs>
     <summary>代表图表组中的垂直线。</summary>
     <remarks>
-      <para>投递连线连接和 x 轴的图表中的点。仅折线图和面积图图表组可以有的垂直线。此对象不是集合。没有对象表示单个垂直线;必须启用所有图表组中点垂直线或必须将其都关闭</para>
+      <para>垂直线将图表中的数据点与 x 轴连接起来。只有折线图和面积图组可以有垂直线。此对象不是集合。没有代表单个垂直线的对象；或者打开图表组中所有数据点的垂直线，或者将其全部关闭。</para>
       <para>使用<see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.DropLines" />属性可返回<b>DropLines</b>对象。</para>
       <para>如果<see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.HasDropLines" />属性为<b>False</b>，则会禁用<b>DropLines</b>对象的大多数属性。</para>
       <para></para>
@@ -120,9 +120,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -263,7 +263,7 @@
         <summary>选择对象。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>，选择单元格区域，请使用<b>Select</b>方法。若要使单个单元格活动单元格，请使用<see cref="M:Microsoft.Office.Interop.Excel._Chart.Activate" />方法。</para>
+          <para>若要选择一个单元格的范围，请使用<b>Select</b>方法。 若要使单个单元格活动单元格，请使用<see cref="M:Microsoft.Office.Interop.Excel._Chart.Activate" />方法。</para>
           <para></para>
         </remarks>
       </Docs>

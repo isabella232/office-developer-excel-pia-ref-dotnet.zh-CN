@@ -1,10 +1,10 @@
 <Type Name="Font" FullName="Microsoft.Office.Interop.Excel.Font">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="04a0bbf6cf70448fc91575d6e89513f6621293f7" />
+    <Meta Name="ms.openlocfilehash" Value="a8ba6992514b1438faa9fc74351cb46d6d8e0551" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585692" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Font" />
@@ -31,8 +31,8 @@
   <Docs>
     <summary>包含对象的字体属性（字体名称、字号、颜色等等）。</summary>
     <remarks>
-      <para>使用的<b>字体</b>属性可返回<b>Font</b>对象。</para>
-      <para>您不希望设置单元格或图形中的所有文本的格式相同的方式，如果使用<see cref="P:Microsoft.Office.Interop.Excel.Range.Characters(System.Object,System.Object)" />属性可返回文本的子集。</para>
+      <para>使用 <b>Font</b> 属性以返回 <b>Font</b> 对象。</para>
+      <para>如果您不希望设置单元格或图形中的所有文本的格式相同的方式，使用<see cref="P:Microsoft.Office.Interop.Excel.Range.Characters(System.Object,System.Object)" />属性可返回文本的子集。</para>
       <para></para>
     </remarks>
   </Docs>
@@ -99,19 +99,19 @@
               <term>
                 <b>xlBackgroundAutomatic</b>
               </term>
-              <description>字体背景将自动更改文本颜色的最佳显示图表文本的颜色应用于文本下方元素周围的背景区域</description>
+              <description>字体背景将自动更改文本周围的背景区域颜色，以使在文本下方元素所应用的颜色之上显示的文本达到最佳效果</description>
             </item>
             <item>
               <term>
                 <b>xlBackgroundOpaque</b>
               </term>
-              <description>字体背景将设置为黑色，如果文本颜色和文本下方的填充颜色为非常接近或相同的颜色，以便不会显示文本的字体背景</description>
+              <description>字体背景将字体背景如果设置为黑色文本颜色和填充颜色文本下方非常接近或者相同的颜色，以便不会显示文本</description>
             </item>
             <item>
-              <description>字体背景设置为透明，以便文本背景不会更改文本颜色接近文本下方的颜色是否</description>
               <term>
                 <b>xlBackgroundTransparent</b>
               </term>
+              <description>字体背景设置为透明，以便当文本颜色接近文本下方的颜色时，文本背景不会更改</description>
             </item>
           </list>
           <para></para>
@@ -212,7 +212,7 @@
         <remarks>
           <para>将颜色作为当前调色板的索引值或以下项之一指定<see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" />常量：</para>
           <para>
-            <b>xlColorIndexAutomatic</b>。用于指定自动配色。</para>
+            <b>xlColorIndexAutomatic</b>。 用于指定自动配色。</para>
           <para>
             <b>xlColorIndexNone</b>。</para>
           <para></para>
@@ -245,9 +245,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -347,33 +347,35 @@
         <summary>返回或设置对象的名称。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>下表显示的<b>名称</b>属性和给定<a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproName1.htm">OLAP</a>的相关的属性的示例值</para>
+          <para>下表显示<b>名称</b>属性和给定<a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproName1.htm">OLAP</a>的相关的属性的示例的值</para>
           <list type="table">
             <item>
               <term>
                 <b>标题</b>
               </term>
-              <description>巴黎</description>
-              <description>巴黎</description>
+              <description>Paris</description>
+              <description>Paris</description>
             </item>
             <item>
-              <description>[Europe] 的
-              <term><b>名称</b></term>。 [法国]。[Paris]（只读）</description>
-              <description>巴黎</description>
+              <term>
+                <b>名称</b>
+              </term>
+              <description>[Europe].[France].[Paris]（只读）</description>
+              <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>SourceName</b>
               </term>
-              <description>[Europe]。 [法国]。[Paris]（只读）</description>
-              <description>（与 SQL 属性值，只读相同）</description>
+              <description>[Europe].[France].[Paris]（只读）</description>
+              <description>（与 SQL 属性值相同，只读）</description>
             </item>
             <item>
               <term>
                 <b>值</b>
               </term>
-              <description>[Europe]。 [法国]。[Paris]（只读）</description>
-              <description>巴黎</description>
+              <description>[Europe].[France].[Paris]（只读）</description>
+              <description>Paris</description>
             </item>
           </list>
           <para>指定的索引时<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />集合，您可以使用下表中所示的语法。</para>
@@ -422,7 +424,7 @@
         <summary>如果字体为空心字体，则为 true。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性不影响在 Windows 中，但保留其值 （也可以设置和返回）。</para>
+          <para>本属性在 Windows 中无效，但保留其值（可被设置和返回）。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -654,7 +656,7 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>尝试访问其主题颜色的颜色不是当前主题对象将导致无效请求运行时错误。</para>
+          <para>如果对象当前未应用主题颜色，试图访问其主题颜色则会引起无效请求运行时错误。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -723,8 +725,8 @@
           <b>对象</b>
         </value>
         <remarks>
-          <para>您可以输入-1 （最暗） 到数字 1 （最亮） 之间的<see cref="P:Microsoft.Office.Interop.Excel.Font.TintAndShade" />属性。零 (0) 是中性。</para>
-          <para>试图将该属性设置为小于-1 或大于 1 的值将导致运行时错误:"指定的值是超出范围。" 此属性的主题颜色和非主题颜色有效。</para>
+          <para>您可以输入-1 （最暗） 到数字 1 （最亮） 之间的<see cref="P:Microsoft.Office.Interop.Excel.Font.TintAndShade" />属性。 中性零 (0)。</para>
+          <para>如果将此属性设置为小于 -1 或大于 1 的值，则会引起运行时错误：“指定的值超出了范围”。此属性用于主题颜色和非主题颜色。</para>
           <para></para>
         </remarks>
       </Docs>

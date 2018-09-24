@@ -1,10 +1,10 @@
 <Type Name="SlicerPivotTables" FullName="Microsoft.Office.Interop.Excel.SlicerPivotTables">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b123a1bc4260dc8310b68183d37e0c58e2055b96" />
+    <Meta Name="ms.openlocfilehash" Value="e7cf06ad9737671167d43d23e4d02fbaa27f0834" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580981" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SlicerPivotTables : System.Collections.IEnumerable" />
@@ -36,7 +36,7 @@
     <summary>代表与指定关联的数据透视表集合相关的信息<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />对象。</summary>
     <remarks>
       <para>
-        <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" />集合包含有关数据透视表的信息当前筛选的切片器缓存。它提供了属性，用于确定的数据透视表的切片器相关联，数和用于检索<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />对象表示要筛选的数据透视表。它还提供方法添加和删除从数据透视表<see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" />集合。<see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" />集合将为空，如果与指定的切片器关联<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />未连接到任何数据透视表。</para>
+        <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" />集合包含有关数据透视表的信息当前筛选的切片器缓存。 它提供了属性，用于确定的数据透视表的切片器相关联，数和用于检索<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />对象表示要筛选的数据透视表。 它还提供方法添加和删除从数据透视表<see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" />集合。 <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" />集合将为空，如果与指定的切片器关联<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />未连接到任何数据透视表。</para>
       <para>使用<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.PivotTables" />属性<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />对象返回<see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" />集合相关联<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />，这又可能与一个或多个切片器关联。</para>
       <para></para>
     </remarks>
@@ -102,7 +102,7 @@
         <param name="PivotTable">A<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />对象，表示要添加的数据透视表。</param>
         <summary>添加到数据透视表的引用<see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" />集合。</summary>
         <remarks>
-          <para>时的数据透视表添加到<see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" />集合，可以按其父级对其进行筛选<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />以及与其相关联的切片器</para>
+          <para>当数据透视表添加到<see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" />集合，可以按其父级对其进行筛选<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />以及与之关联的切片器。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -134,7 +134,7 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.Application" />对象。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -192,7 +192,10 @@
       <Docs>
         <summary>获取一个指示在其中创建此对象的应用程序的 32 位<b>整数</b>。</summary>
         <value>32 位<b>整数</b>，指示在其中创建此对象的应用程序。</value>
-        <remarks>如果对象在 Microsoft Excel 中创建的<para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。<see cref="P:Microsoft.Office.Interop.Excel.SlicerPivotTables.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para></para></remarks>
+        <remarks>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <see cref="P:Microsoft.Office.Interop.Excel.SlicerPivotTables.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -286,7 +289,7 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />对象的父对象指定的<see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" />集合。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -317,7 +320,7 @@
         <param name="PivotTable">A<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />对象，它代表数据透视表中删除，或名称或数据透视表集合中的索引。</param>
         <summary>删除对数据透视表从<see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" />集合。</summary>
         <remarks>
-          <para>时的数据透视表已从<see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" />按其父级不再筛选的集合，<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />以及与其相关联的切片器</para>
+          <para>当数据透视表已从<see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" />按其父级不再筛选的集合，<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />以及与之关联的切片器。</para>
           <para></para>
         </remarks>
       </Docs>

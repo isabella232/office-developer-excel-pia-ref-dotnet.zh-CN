@@ -1,10 +1,10 @@
 <Type Name="SparkHorizontalAxis" FullName="Microsoft.Office.Interop.Excel.SparkHorizontalAxis">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2091e62e3bd9eee6f44a0bedc30aca1aa5473af5" />
+    <Meta Name="ms.openlocfilehash" Value="d17f400b5b6b710e5d3be00feaaaf13db697ccb6" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582024" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SparkHorizontalAxis" />
@@ -31,7 +31,7 @@
   <Docs>
     <summary>代表迷你图组的水平轴设置。</summary>
     <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Excel.SparkAxes.Horizontal" />属性<see cref="T:Microsoft.Office.Interop.Excel.SparkAxes" />对象返回<see cref="T:Microsoft.Office.Interop.Excel.SparkHorizontalAxis" />迷你图组的对象。仅当迷你图的数据具有负值和正值垂直轴上显示水平轴。</para>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Excel.SparkAxes.Horizontal" />属性<see cref="T:Microsoft.Office.Interop.Excel.SparkAxes" />对象返回<see cref="T:Microsoft.Office.Interop.Excel.SparkHorizontalAxis" />迷你图组的对象。 仅当迷你图的数据具有负值和正值垂直轴上显示水平轴。</para>
       <para></para>
     </remarks>
   </Docs>
@@ -63,7 +63,7 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.Application" />对象。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -94,7 +94,7 @@
         <summary>获取<see cref="T:Microsoft.Office.Interop.Excel.SparkColor" />指定迷你图的水平轴的颜色的对象。</summary>
         <value>A<see cref="T:Microsoft.Office.Interop.Excel.SparkColor" />指定迷你图的水平轴的颜色的对象。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -125,8 +125,10 @@
         <summary>获取一个指示在其中创建此对象的应用程序的 32 位<b>整数</b>。</summary>
         <value>32 位<b>整数</b>，指示在其中创建此对象的应用程序。</value>
         <remarks>
-          <para>只读的<b>long</b>。</para>如果对象在 Microsoft Excel 中创建的
-          <para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。<see cref="P:Microsoft.Office.Interop.Excel.SparkHorizontalAxis.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，excelnv1 具有 XCEL 的创建者代码。</para><para></para></remarks>
+          <para>只读的<b>long</b>。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <see cref="P:Microsoft.Office.Interop.Excel.SparkHorizontalAxis.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，excelnv1 具有 XCEL 的创建者代码。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDateAxis">
@@ -156,9 +158,9 @@
         <value>
           <b>true</b>如果迷你图的水平轴基于日期值;否则为<b>false</b>。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para>
-            <b>，则返回 true</b>如果水平轴基于日期值; 否则为<b>false</b>。</para>
+            <b>true</b>如果水平轴基于日期值;否则为<b>false</b>。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -189,7 +191,7 @@
         <summary>获取父<see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" />指定对象的对象。</summary>
         <value>父<see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" />指定对象的对象。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -224,7 +226,7 @@
         <value>
           <b>true</b>如果水平轴上的点的绘制顺序从右到左;否则为<b>false</b>。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>为可读/写属性。</para>
           <para>设置<see cref="P:Microsoft.Office.Interop.Excel.SparkHorizontalAxis.RightToLeftPlotOrder" />属性设置为<b>true</b>以从右到左顺序在水平轴上绘制值。</para>
           <para></para>
         </remarks>

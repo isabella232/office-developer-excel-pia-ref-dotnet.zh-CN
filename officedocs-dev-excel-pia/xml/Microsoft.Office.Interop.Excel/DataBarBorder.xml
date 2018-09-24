@@ -1,10 +1,10 @@
 <Type Name="DataBarBorder" FullName="Microsoft.Office.Interop.Excel.DataBarBorder">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="652e59066d0a33cc1dafc626a8307465fc7f73d0" />
+    <Meta Name="ms.openlocfilehash" Value="e6636975b025ffd82977c1b6d9a6f682b8f015e5" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20586056" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DataBarBorder" />
@@ -30,7 +30,10 @@
   </Attributes>
   <Docs>
     <summary>表示由条件格式规则指定的数据条的边框。</summary>
-    <remarks>使用<para><see cref="T:Microsoft.Office.Interop.Excel.DataBarBorder" />对象，以获取或设置数据条的颜色和边框类型。访问<see cref="T:Microsoft.Office.Interop.Excel.DataBarBorder" />对象相关联的数据条条件格式规则，请使用<see cref="P:Microsoft.Office.Interop.Excel.Databar.BarBorder" />属性。检索后<see cref="T:Microsoft.Office.Interop.Excel.DataBarBorder" />对象，请使用其<see cref="P:Microsoft.Office.Interop.Excel.DataBarBorder.Color" />属性可返回<see cref="T:Microsoft.Office.Interop.Excel.FormatColor" />对象可用来设置的数据条的颜色。</para><para></para></remarks>
+    <remarks>
+      <para>使用<see cref="T:Microsoft.Office.Interop.Excel.DataBarBorder" />对象，以获取或设置数据条的颜色和边框类型。 访问<see cref="T:Microsoft.Office.Interop.Excel.DataBarBorder" />对象相关联的数据条条件格式规则，请使用<see cref="P:Microsoft.Office.Interop.Excel.Databar.BarBorder" />属性。 检索后<see cref="T:Microsoft.Office.Interop.Excel.DataBarBorder" />对象，请使用其<see cref="P:Microsoft.Office.Interop.Excel.DataBarBorder.Color" />属性可返回<see cref="T:Microsoft.Office.Interop.Excel.FormatColor" />对象可用来设置的数据条的颜色。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +63,7 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.Application" />对象。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -91,7 +94,7 @@
         <summary>获取指定的条件格式规则指定的数据条的边框颜色的对象。</summary>
         <value>指定数据条条件格式规则指定边框的颜色的对象。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -122,8 +125,10 @@
         <summary>获取一个指示在其中创建此对象的应用程序的 32 位<b>整数</b>。</summary>
         <value>32 位<b>整数</b>，指示在其中创建此对象的应用程序。</value>
         <remarks>
-          <para>只读的<b>long</b>。</para>如果对象在 Microsoft Excel 中创建的
-          <para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。<see cref="P:Microsoft.Office.Interop.Excel.DataBarBorder.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para></para></remarks>
+          <para>只读的<b>long</b>。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <see cref="P:Microsoft.Office.Interop.Excel.DataBarBorder.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -152,7 +157,7 @@
         <summary>获取指定对象的父对象。</summary>
         <value>指定的对象的的父对象。 的</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -186,7 +191,7 @@
         <summary>获取或设置的条件格式规则指定数据条的边框类型。</summary>
         <value>条件格式规则指定数据条的边框的类型。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>可读/写。</para>
           <para></para>
         </remarks>
       </Docs>

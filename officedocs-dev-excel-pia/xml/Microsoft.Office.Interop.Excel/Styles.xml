@@ -1,10 +1,10 @@
 <Type Name="Styles" FullName="Microsoft.Office.Interop.Excel.Styles">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d5b16d0cbfdec51d146c93cd55fc38ef3293d37f" />
+    <Meta Name="ms.openlocfilehash" Value="e553a7598a3f9ae8e05db8f343f51fd6b194d460" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587246" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Styles : System.Collections.IEnumerable" />
@@ -35,7 +35,7 @@
   <Docs>
     <summary>所有的集合<see cref="T:Microsoft.Office.Interop.Excel.Style" />指定的或活动工作簿中的对象。</summary>
     <remarks>
-      <para>每个<b>样式</b>对象代表区域的样式说明。<b>Style</b>对象包含作为属性的所有样式属性 （字体、 数字格式、 对齐方式，等等）。有几种内置样式 — 包括普通、 货币和 %— 在样式对话框 （格式菜单） 的样式名称框中列出的。</para>
+      <para>每个<b>样式</b>对象代表区域的样式说明。 <b>Style</b>对象包含作为属性的所有样式属性 （字体、 数字格式、 对齐方式，等等）。 有几种内置样式 — 包括普通、 货币和 %— 在样式对话框 （格式菜单） 的样式名称框中列出的。</para>
       <para>使用<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Styles" />属性返回的<b>Styles</b>集合。</para>
       <para>使用<see cref="M:Microsoft.Office.Interop.Excel.Styles.Add(System.String,System.Object)" />方法，以创建新样式并将其添加到集合。</para>
       <para>使用<b>样式</b>(<paramref name="index" />)，其中<paramref name="index" />是样式索引号或名称，从工作簿<b>Styles</b>集合中返回单个<b>Style</b>对象。</para>
@@ -193,9 +193,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -291,7 +291,7 @@
         <summary>合并到另一个工作簿中的样式<see cref="T:Microsoft.Office.Interop.Excel.Styles" />集合。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>该区域左上角的单元格中指定合并区域的值。</para>
+          <para>合并区域的值在该区域左上角的单元格中指定。</para>
           <para></para>
         </remarks>
       </Docs>

@@ -1,10 +1,10 @@
 <Type Name="UserAccess" FullName="Microsoft.Office.Interop.Excel.UserAccess">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="cbd39fb1f38835efe39fe6d5eb2e5786a179eb1c" />
+    <Meta Name="ms.openlocfilehash" Value="5757d729f5b2ba76353f83174ceb6884fc95261d" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587197" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface UserAccess" />
@@ -32,8 +32,7 @@
     <summary>代表对受保护区域的用户访问。</summary>
     <remarks>
       <para>使用<see cref="M:Microsoft.Office.Interop.Excel.UserAccessList.Add(System.String,System.Boolean)" />方法或<see cref="P:Microsoft.Office.Interop.Excel.UserAccessList.Item(System.Object)" />属性<see cref="T:Microsoft.Office.Interop.Excel.UserAccessList" />可返回一个<b>UserAccess</b>对象的集合。</para>
-      <para>
-        <b>UserAccess</b>对象返回后，您可以确定如果允许对工作表中特定范围访问，则使用<see cref="P:Microsoft.Office.Interop.Excel.UserAccess.AllowEdit" />属性。</para>
+      <para>一旦返回了<b>UserAccess</b>对象，就可以确定如果允许对工作表中特定范围访问，则使用<see cref="P:Microsoft.Office.Interop.Excel.UserAccess.AllowEdit" />属性。</para>
       <para></para>
     </remarks>
   </Docs>
@@ -127,29 +126,29 @@
               <term>
                 <b>标题</b>
               </term>
-              <description>巴黎</description>
-              <description>巴黎</description>
+              <description>Paris</description>
+              <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>名称</b>
               </term>
-              <description>[Europe]。 [法国]。[Paris]（只读）</description>
-              <description>巴黎</description>
+              <description>[Europe].[France].[Paris]（只读）</description>
+              <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>SourceName</b>
               </term>
-              <description>[Europe]。 [法国]。[Paris]（只读）</description>
-              <description>（与 SQL 属性值，只读相同）</description>
+              <description>[Europe].[France].[Paris]（只读）</description>
+              <description>（与 SQL 属性值相同，只读）</description>
             </item>
             <item>
               <term>
                 <b>值</b>
               </term>
-              <description>[Europe]。 [法国]。[Paris]（只读）</description>
-              <description>巴黎</description>
+              <description>[Europe].[France].[Paris]（只读）</description>
+              <description>Paris</description>
             </item>
           </list>
           <para>指定的索引时<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />集合，您可以使用下表中所示的语法。</para>
@@ -159,11 +158,11 @@
               <description>表达式。PivotItems("Paris")</description>
             </item>
           </list>
-          <para>时使用<see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" />属性引用集合中的特定成员，您可以使用下表中所示的文本索引名称。</para>
+          <para>当使用<see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" />属性引用集合中的特定成员，您可以使用下表中所示的文本索引名称。</para>
           <list type="table">
             <item>
-              <term>[Europe]。 [法国]。[Paris]</term>
-              <description>巴黎</description>
+              <term>[Europe]。[France]。[Paris]</term>
+              <description>Paris</description>
             </item>
           </list>
           <para></para>

@@ -1,10 +1,10 @@
 <Type Name="Point" FullName="Microsoft.Office.Interop.Excel.Point">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7e25b0218180f3970a9efba6f581a14516fdea82" />
+    <Meta Name="ms.openlocfilehash" Value="41d76d059050993a028c8b26b1795b64c3e70e33" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587680" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Point" />
@@ -32,8 +32,8 @@
     <summary>代表图表系列中的单个数据点。</summary>
     <remarks>
       <para>
-        <b>Point</b>对象所在的<see cref="T:Microsoft.Office.Interop.Excel.Points" />集合。<b>Points</b>集合包含一个系列中的所有数据点。</para>
-      <para>使用<b>点</b>(<paramref name="index" />)，其中<paramref name="index" />是点索引号，若要返回单个<b>Point</b>对象。点编号从左到右系列。Points(1) 是最左侧的点，并且 Points(Points.Count) 最右侧的点。</para>
+        <b>Point</b>对象所在的<see cref="T:Microsoft.Office.Interop.Excel.Points" />集合。 该 <b>点</b> 集合包含一个序列中的所有点。</para>
+      <para>使用<b>点</b>(<paramref name="index" />)，其中<paramref name="index" />是点索引号，若要返回单个<b>Point</b>对象。 点在系列从左至右编号。 Points(1) 是最左侧的点，Points(Points.Count) 是最右侧的点。</para>
       <para></para>
     </remarks>
   </Docs>
@@ -360,9 +360,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -548,8 +548,8 @@
         <summary>返回或设置一个值，指明是否数据点具有三维外观。 读/写。</summary>
         <value>Boolean</value>
         <remarks>
-          <para>当数据点具有三维外观返回 True。</para>
-          <para>此属性适用于气泡图仅。</para>
+          <para>如果数据点具有三维外观，则返回 True。 </para>
+          <para>该属性仅适用于气泡图。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -611,7 +611,7 @@
         <summary>获取的高度，以磅为单位的对象。</summary>
         <value>对象的高度，以磅为单位。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -704,7 +704,7 @@
         <summary>获取一个值，代表从的图表区的左边缘到该对象的左边缘的距离，以磅为单位。</summary>
         <value>距离，以磅为单位，从左边缘到图表区的左边缘的对象。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -896,29 +896,29 @@
           <para>
             <see cref="T:Microsoft.Office.Interop.Excel.XlMarkerStyle" />可以是以下<b>XlMarkerStyle</b>常量之一：</para>
           <para>
-            <b>xlMarkerStyleAutomatic</b>。自动设置标记</para>
+            <b>xlMarkerStyleAutomatic</b>. Automatic markers</para>
           <para>
-            <b>xlMarkerStyleCircle</b>。圆形标记</para>
+            <b>xlMarkerStyleCircle</b>. Circular markers</para>
           <para>
-            <b>xlMarkerStyleDash</b>。长条形标记</para>
+            <b>xlMarkerStyleDash</b>. Long bar markers</para>
           <para>
-            <b>xlMarkerStyleDiamond</b>。菱形标记</para>
+            <b>xlMarkerStyleDiamond</b>. Diamond-shaped markers</para>
           <para>
-            <b>xlMarkerStyleDot</b>。短条形标记</para>
+            <b>xlMarkerStyleDot</b>. Short bar markers</para>
           <para>
-            <b>xlMarkerStyleNone</b>。无标记</para>
+            <b>xlMarkerStyleNone</b>. No markers</para>
           <para>
-            <b>xlMarkerStylePicture</b>。图片标记</para>
+            <b>xlMarkerStylePicture</b>. Picture markers</para>
           <para>
-            <b>xlmarkerstyleplus:</b>。带加号的方形标记</para>
+            <b>xlMarkerStylePlus</b>. Square markers with a plus sign</para>
           <para>
-            <b>xlMarkerStyleSquare</b>。方形标记</para>
+            <b>xlMarkerStyleSquare</b>. Square markers</para>
           <para>
-            <b>xlMarkerStyleStar</b>。带星号的方形标记</para>
+            <b>xlMarkerStyleStar</b>. Square markers with an asterisk</para>
           <para>
-            <b>xlMarkerStyleTriangle</b>。三角形标记</para>
+            <b>xlMarkerStyleTriangle</b>. Triangular markers</para>
           <para>
-            <b>xlMarkerStyleX</b>。带 X 的方形标记</para>
+            <b>xlMarkerStyleX</b>. Square markers with an X</para>
           <para></para>
         </remarks>
       </Docs>
@@ -949,8 +949,8 @@
         <summary>获取的对象名称。</summary>
         <value>对象名称。</value>
         <remarks>
-          <para>只读的。</para>
-          <para>此属性对应于图表上的数据点的名称。名称由使用以下格式： S&lt;序列号&gt;P&lt;点数&gt;。</para>
+          <para>只读。</para>
+          <para>此属性对应于图表中的数据点的名称。 名称由使用以下格式： S&lt;序列号&gt;P&lt;点数&gt;。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1155,7 +1155,7 @@
         <summary>返回图表项上某点的水平或垂直位置（以磅为单位），从对象的上边缘或左边缘到图表区域的上边缘或左边缘。</summary>
         <returns>垂直或水平点的位置上图表项，以磅为单位从顶部或左侧缘到图表区的顶部或左侧边缘的对象。</returns>
         <remarks>
-          <para>此属性仅适用于饼图和圆环图图表类型。</para>
+          <para>此属性仅适用于饼图和圆环图类型。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1275,7 +1275,7 @@
         <summary>获取一个值，代表从对象的图表区的上边缘的上边缘的距离，以磅为单位。</summary>
         <value>以磅为单位从的图表区的上边缘到对象的上边缘的距离。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1306,7 +1306,7 @@
         <summary>获取的宽度，以磅为单位的对象。</summary>
         <value>对象的高度，以磅为单位。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>

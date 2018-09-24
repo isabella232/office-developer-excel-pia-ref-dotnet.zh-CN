@@ -1,10 +1,10 @@
 <Type Name="Adjustments" FullName="Microsoft.Office.Interop.Excel.Adjustments">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="55c03b5083f29e8896f86dd16915d59d3c798ec9" />
+    <Meta Name="ms.openlocfilehash" Value="5fbb3122486169cf5cb93352c3646bc1cdd1c0b4" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584138" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Adjustments : Microsoft.Office.Core._IMsoDispObj" />
@@ -32,9 +32,26 @@
   <Docs>
     <summary>包含指定自选图形、艺术字对象或连接符的调整值的集合。</summary>
     <remarks>
-      <para>每个调整值表示一种方法可调整的调整控点。由于某些调整控点可以调整以下两种方式 — 例如，某些控点可以水平和垂直调整 — 形状可以有多个调整值比调整控点。形状可以有最多八个调整值。</para>使用
-      <para><see cref="P:Microsoft.Office.Interop.Excel.Shape.Adjustments" />属性返回<b>Adjustments</b>对象。使用<b>调整</b>(<paramref name="index" />)，其中<paramref name="index" />是调整值的索引号，返回一个调整值。</para><para>不同形状具有不同数量的调整值的不同种类的调整以不同的方式更改形状的几何图形和不同种类的调整有不同的有效值范围。</para><para>下表总结了不同类型的调整控点的调整值的有效范围。在大多数情况下，如果您指定为有效的值的范围之外的值最接近的有效值将分配给调整值。</para><list type="table"><item><term>线性 （水平或垂直）</term><description>通常值 0.0 代表形状的左边缘或上边缘，而值 1.0 代表形状的右或底部边缘。有效的值对应于有效可以对形状进行手动的调整。例如，如果手动跨形状仅可以提取一半的调整控点，相应的调整的最大值将为 0.5。形状如连接器和标注，其中值 0.0 和 1.0 代表定义的起点和终点连接器或标注线的矩形的限制，负号和编号大于 1.0 是有效值。</description></item><item><term>径向</term><description>1.0 调整值对应于形状的宽度。最大值是 0.5，或半形状跨。</description></item>用度表示
-        <item><term>角度</term><description>值。如果您指定的值范围为 180-180，它将回呼要在该范围内。</description></item></list><para></para></remarks>
+      <para>每个调整值代表一种调整控点的调整方法。由于某些调整控点可以按两种方法调整（例如，某些控点既可以水平调整也可以垂直调整），所以形状的调整值数量可以大于调整控点数量。一个形状最多可以有八个调整值。</para>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Excel.Shape.Adjustments" />属性返回<b>Adjustments</b>对象。 使用<b>调整</b>(<paramref name="index" />)，其中<paramref name="index" />是调整值的索引号，返回一个调整值。</para>
+      <para>不同的形状有不同数量的调整值，不同的调整值以不同的方式改变形状的几何外形，且不同的调整值有不同的有效值范围。</para>
+      <para>下表概括了不同类型的调整值的有效取值范围。多数情况下，如果指定的调整值超出了有效取值范围，就将用最接近的有效值来代替。</para>
+      <list type="table">
+        <item>
+          <term>线性（水平或垂直）</term>
+          <description>0.0 通常表示形状的左边缘或上边缘，而值 1.0 代表形状的右或底部边缘。 有效值对应于有效的手动调整。 例如，如果只能将调整控点手动拖动形状的一半宽度，则相应的调整值最大为 0.5。 对于象连接符和标注这样的形状，0.0 和 1.0 值代表由它们的起始和终止点定义的矩形界限，此时负值和大于 1.0 的值是有效的。</description>
+        </item>
+        <item>
+          <term>射线</term>
+          <description>调整值 1.0 对应于形状宽度。最大值为 0.5，或形状宽度的一半。</description>
+        </item>
+        <item>
+          <term>角</term>
+          <description>以度为单位表示的值。 如果您指定的值范围为 180-180，它将规范化可在该范围内。</description>
+        </item>
+      </list>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -125,9 +142,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -166,8 +183,8 @@
         <summary>返回或设置指定的调整值。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>对于线性调整，调整值 0.0 通常对应于形状的左边缘或上边缘和值 1.0 通常对应于形状的右或底部边缘。但是，调整可超过形状边界一些形状。对于径向调整，1.0 调整值对应于形状的宽度。对于角度调整，以度表示指定的调整值。<b>Item</b>属性仅适用于有调整的形状。</para>
-          <para>自选图形、 连接符和艺术字对象可有最多八个调整值。</para>
+          <para>对于线性调整，调整值 0.0 通常对应于图形的左边或上边边缘，值 1.0 通常对应于图形的右边或下边边缘。但是，调整值可以超出形状的边界的一些形状。对于径向调整，调整值 1.0 对应于图形的宽度。对于角度调整，调整值以度为单位指定。 <b>Item</b> 属性仅适用于具有调整的形状。</para>
+          <para>自选图形、连接符和艺术字对象最多可有八个调整。</para>
           <para></para>
         </remarks>
       </Docs>

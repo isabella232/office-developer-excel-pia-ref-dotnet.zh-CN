@@ -1,10 +1,10 @@
 <Type Name="Workbook" FullName="Microsoft.Office.Interop.Excel.Workbook">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="92ffce8b5e62ce88e392a62537bf1cc2d3a58d10" />
+    <Meta Name="ms.openlocfilehash" Value="38fbc25ab1d7bdcab1f5c79b80d9c636b7fd7389" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587351" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Workbook : Microsoft.Office.Interop.Excel._Workbook, Microsoft.Office.Interop.Excel.WorkbookEvents_Event" />
@@ -35,10 +35,10 @@
   <Docs>
     <summary>代表一个 Microsoft Excel 工作簿.</summary>
     <remarks>
-      <para>这是.NET 接口派生的互操作性与相应的 COM 对象的托管代码需要 COM coclass。使用此派生的接口访问 COM 对象的所有方法、 属性和事件的成员。但是，如果方法或想要使用的事件共享相同的名称相同的 COM 对象下，强制转换为相应的主接口调用方法，并强制转换为最新的事件接口，连接到该事件。请参阅本主题的 COM 对象有关的信息。有关 COM 对象的方法和属性成员的信息，请参阅<see cref="T:Microsoft.Office.Interop.Excel._Workbook" />。</para>
+      <para>这是.NET 接口派生的互操作性与相应的 COM 对象的托管代码需要 COM coclass。 使用此派生的接口访问 COM 对象的所有方法、 属性和事件的成员。 但是，如果方法或想要使用的事件共享相同的名称相同的 COM 对象下，强制转换为相应的主接口调用方法，并强制转换为最新的事件接口，连接到该事件。 请参阅本主题的 COM 对象有关的信息。 有关 COM 对象的方法和属性成员的信息，请参阅<see cref="T:Microsoft.Office.Interop.Excel._Workbook" />。</para>
       <para>
-        <see cref="T:Microsoft.Office.Interop.Excel.Workbook" />对象是成员<see cref="T:Microsoft.Office.Interop.Excel.Workbooks" />集合。<b>工作簿</b>集合包含所有当前在 Microsoft Excel 中打开的<b>工作簿</b>对象。</para>
-      <para>本节中介绍返回<b>Workbook</b>对象的以下属性：</para>
+        <see cref="T:Microsoft.Office.Interop.Excel.Workbook" />对象是成员<see cref="T:Microsoft.Office.Interop.Excel.Workbooks" />集合。 <b>工作簿</b>集合包含所有当前在 Microsoft Excel 中打开的<b>工作簿</b>对象。</para>
+      <para>返回一个<b>Workbook</b>对象的以下属性本节所述：</para>
       <list type="bullet">
         <item>
           <description>
@@ -53,18 +53,18 @@
             <see cref="P:Microsoft.Office.Interop.Excel._Application.ThisWorkbook" />属性</description>
         </item>
       </list>
-      <para>工作簿属性</para>
+      <para>Workbooks 属性</para>
       <para>使用<b>工作簿</b>(<paramref name="index" />)，其中<paramref name="index" />是工作簿的名称或索引号，可返回一个<b>Workbook</b>对象。</para>
-      <para>编号指出创建或打开工作簿的顺序。Workbooks(1) 是创建第一个工作簿和 Workbooks(Workbooks.Count) 是创建的最后一个。激活工作簿不会更改其索引号。所有工作簿包含在索引计数中，即使它们隐藏的。</para>
+      <para>编号指示创建或打开工作簿的顺序。Workbooks(1) 是创建的第一个工作簿，而 Workbooks(Workbooks.Count)Workbooks 是最后一个。激活某工作簿并不更改其索引号。所有工作簿均包括在索引计数中，即便是隐藏工作簿也是如此。</para>
       <para>
-        <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Name" />属性返回工作簿的名称。您不能使用此属性; 设置名称如果您需要更改的名称，请使用<see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法，以保存工作簿以其他文件名。</para>
+        <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Name" />属性返回工作簿的名称。 您不能使用此属性; 设置名称如果您需要更改的名称，请使用<see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法，以保存工作簿以其他文件名。</para>
       <para>ActiveWorkbook 属性</para>
       <para>
         <b>ActiveWorkbook</b>属性返回当前处于活动状态的工作簿。</para>
       <para>ThisWorkbook 属性</para>
       <para>
-        <b>ThisWorkbook</b>属性返回工作簿运行的 Visual Basic 代码。在大多数情况下，这是活动工作簿相同。但是，如果 Visual Basic 代码外, 接程序的一部分的<b>ThisWorkbook</b>属性不会返回活动工作簿。在这种情况下，活动工作簿是工作簿调用外接程序，因此<b>ThisWorkbook</b>属性返回外接程序工作簿。</para>
-      <para>如果您要创建外接程序从 Visual Basic 代码中，您应使用<b>ThisWorkbook</b>属性来限定必须编译到外接程序的工作簿运行的任何语句</para>
+        <b>ThisWorkbook</b>属性返回工作簿运行的 Visual Basic 代码。 在大多数情况下，这是活动工作簿相同。 但是，如果 Visual Basic 代码外, 接程序的一部分的<b>ThisWorkbook</b>属性不会返回活动工作簿。 在这种情况下，活动工作簿是工作簿调用外接程序，因此<b>ThisWorkbook</b>属性返回外接程序工作簿。 </para>
+      <para>如果用 Visual Basic 代码创建加载宏，那么对于那些编译到加载宏中的工作簿，在其中运行的语句应当用 <b>ThisWorkbook</b> 属性加以限定。</para>
       <para></para>
     </remarks>
   </Docs>

@@ -1,10 +1,10 @@
 <Type Name="Sparkline" FullName="Microsoft.Office.Interop.Excel.Sparkline">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f6bbcc759a0ae6dc4daf56bf9557c19d8ef56e98" />
+    <Meta Name="ms.openlocfilehash" Value="c3b25443564b1ba5ad0aba47d0107551ef56fce0" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581877" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Sparkline" />
@@ -30,7 +30,10 @@
   </Attributes>
   <Docs>
     <summary>代表单个迷你图。</summary>
-    <remarks>使用<para><see cref="M:Microsoft.Office.Interop.Excel.Sparkline.ModifyLocation(Microsoft.Office.Interop.Excel.Range)" />方法更改单个迷你图的位置，并使用<see cref="M:Microsoft.Office.Interop.Excel.Sparkline.ModifySourceData(System.String)" />方法更改的源数据范围。若要同时处理一组迷你图，使用的成员<see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" />对象。</para><para></para></remarks>
+    <remarks>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Excel.Sparkline.ModifyLocation(Microsoft.Office.Interop.Excel.Range)" />方法更改单个迷你图的位置，并使用<see cref="M:Microsoft.Office.Interop.Excel.Sparkline.ModifySourceData(System.String)" />方法更改的源数据范围。 若要同时处理一组迷你图，使用的成员<see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" />对象。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +63,7 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.Application" />对象。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -91,8 +94,10 @@
         <summary>获取一个指示在其中创建此对象的应用程序的 32 位<b>整数</b>。</summary>
         <value>32 位<b>整数</b>，指示在其中创建此对象的应用程序。</value>
         <remarks>
-          <para>只读的<b>long</b>。</para>如果对象在 Microsoft Excel 中创建的
-          <para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。<see cref="P:Microsoft.Office.Interop.Excel.Sparkline.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para></para></remarks>
+          <para>只读的<b>long</b>。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <see cref="P:Microsoft.Office.Interop.Excel.Sparkline.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -124,7 +129,7 @@
         <summary>获取或设置单个迷你图的位置。</summary>
         <value>单个迷你图的位置。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>为可读/写属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -182,7 +187,7 @@
         <param name="Formula">该区域包含源数据。</param>
         <summary>修改单个迷你图的源数据。</summary>
         <remarks>
-          <para>单个迷你图的数据源区域必须是连续。</para>
+          <para>单个迷你图的数据源区域必须是连续的。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -213,7 +218,7 @@
         <summary>获取父<see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" />指定对象的对象。</summary>
         <value>父<see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" />指定对象的对象。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -247,8 +252,8 @@
         <summary>获取或设置包含单个迷你图的源数据的区域。</summary>
         <value>包含单个迷你图的源数据的区域。</value>
         <remarks>
-          <para>读/写。</para>
-          <para>单个迷你图的数据源区域必须是连续。</para>
+          <para>为可读/写属性。</para>
+          <para>单个迷你图的数据源区域必须是连续的。</para>
           <para></para>
         </remarks>
       </Docs>

@@ -1,10 +1,10 @@
 <Type Name="Validation" FullName="Microsoft.Office.Interop.Excel.Validation">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="083a06403ed93601b1e670cd7b0f4d2f6291f627" />
+    <Meta Name="ms.openlocfilehash" Value="64490ccfa07c156fb946aaf6fbcab62bd0310122" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575801" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Validation" />
@@ -70,33 +70,34 @@
         <param name="Formula2">可选的<b>对象</b>。 数据有效性的第二部分时<paramref name="Operator" />为<b>xlBetween</b>或<b>xlNotBetween</b> （否则，则忽略此参数）。</param>
         <summary>向指定区域内添加数据有效性验证。</summary>
         <remarks>
-          <para>添加方法所要求的参数，具体取决于有效性验证类型下, 表中所示。</para>
+          <para>Add 方法要求的参数，具体取决于有效性验证类型下, 表中所示。</para>
           <list type="table">
             <item>
               <term>
                 <b>xlValidateCustom</b>
               </term>
               <description>
-                <paramref name="Formula1" /> ，则需要;<paramref name="Formula2" /> ，则忽略。<paramref name="Formula1" />必须包含表达式无效数据项时计算结果为<b>True</b>时是有效的数据输入和<b>False</b> 。</description>
+                <paramref name="Formula1" />需要;<paramref name="Formula2" /> ，则忽略。 <paramref name="Formula1" />必须包含无效数据项时计算结果为<b>True</b>时是有效的数据输入和<b>False</b>的表达式。</description>
             </item>
             <item>
               <term>
                 <b>xlInputOnly</b>
               </term>
               <description>
-                <paramref name="AlertStyle" />， <paramref name="Formula1" />，或<paramref name="Formula2" />用于。</description>
+                <paramref name="AlertStyle" />
+                <paramref name="Formula1" />，或<paramref name="Formula2" />使用。</description>
             </item>
             <item>
               <term>
                 <b>xlValidateList</b>
               </term>
               <description>
-                <paramref name="Formula1" /> ，则需要;<paramref name="Formula2" /> ，则忽略。<paramref name="Formula1" />必须包含逗号分隔的值列表或对此列表的工作表引用。</description>
+                <paramref name="Formula1" />需要;<paramref name="Formula2" /> ，则忽略。 <paramref name="Formula1" />必须包含逗号分隔的值列表或对此列表的工作表引用。</description>
             </item>
             <item>
               <term>
-                <b>xlValidateWholeNumber</b>、 <b>xlValidateDate</b>、 <b>xlValidateDecimal</b>、 <b>xlValidateTextLength</b>或<b>xlValidateTime</b></term>
-              <description>一个任一<paramref name="Formula1" />或<paramref name="Formula2" />必须指定和 / 或可以指定。</description>
+                <b>xlValidateWholeNumber</b>、<b>xlValidateDate</b>、<b>xlValidateDecimal</b>、<b>xlValidateTextLength</b> 或 <b>xlValidateTime</b></term>
+              <description>一种：<paramref name="Formula1" />或<paramref name="Formula2" />必须指定或指定这两个月。</description>
             </item>
           </list>
           <para></para>
@@ -128,7 +129,10 @@
       <Docs>
         <summary>返回有效性验证警告样式。 只读<see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />。</summary>
         <value>To be added.</value>
-        <remarks>使用<para><see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" />方法，以便设置范围的警告样式。如果该区域已有数据有效性，使用<see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" />方法，以更改警告样式。</para><para></para></remarks>
+        <remarks>
+          <para>使用<see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" />方法，以便设置范围的警告样式。 如果该区域已有数据有效性，使用<see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" />方法，以更改警告样式。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -186,7 +190,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -332,7 +336,7 @@
         <summary>返回的值或条件格式或数据有效性的第二部分相关联的表达式。 只读 <b>String</b>。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性是使用仅当数据验证条件格式<see cref="P:Microsoft.Office.Interop.Excel.Validation.Operator" />属性为<b>xlBetween</b>或<b>xlNotBetween</b>。它可以是以常量值、 一个 string 值、 单元格引用或公式。</para>
+          <para>此属性仅用于数据验证条件格式时<see cref="P:Microsoft.Office.Interop.Excel.Validation.Operator" />属性为<b>xlBetween</b>或<b>xlNotBetween</b>。 它可以是以常量值、 一个 string 值、 单元格引用或公式。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -366,8 +370,7 @@
         <summary>如果指定区域内的数据有效性检验允许空值，则该值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>
-            <b>IgnoreBlank</b>属性为<b>True</b>，如果单元格数据被视为有效，如果单元格为空，或者通过以下任一方式引用的单元格中<see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MinNumber" />或<see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MaxNumber" />属性为空。</para>
+          <para>如果<b>IgnoreBlank</b>属性为<b>True</b>，如果单元格为空，或者通过以下任一方式引用的单元格中，单元格数据被视为有效<see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MinNumber" />或<see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MaxNumber" />属性为空。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -401,7 +404,7 @@
         <summary>返回或设置日语输入规则的说明。 可以是一个<see cref="T:Microsoft.Office.Interop.Excel.XlIMEMode" />常量。 可读写 <b>Integer</b>。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>注意，仅当安装和选择了日文语言支持时，才可以设置此属性。</para>
+          <para>只有安装和选择了日文语言支持时，才可设置该属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -435,7 +438,7 @@
         <summary>如果数据有效性显示含有有效取值的下拉列表，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果验证类型不是<b>xlValidateList</b>，将忽略此属性。</para>
+          <para>如果数据有效性检验类型不是 <b>xlValidateList</b>，将忽略该属性。</para>
           <para>使用<paramref name="Minimum" />参数<see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" />或<see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" />方法<see cref="T:Microsoft.Office.Interop.Excel.Validation" />对象以指定包含有效数据的区域。</para>
           <para></para>
         </remarks>
@@ -537,32 +540,33 @@
         <summary>修改指定区域的数据有效性验证。</summary>
         <remarks>
           <para>
-            <b>Modify</b>方法所要求的参数，具体取决于有效性验证类型下, 表中所示。</para>
+            <b>Modify</b> 方法所要求的参数依有效性验证的类型而定，如下表所示。</para>
           <list type="table">
             <item>
               <term>
                 <b>xlInputOnly</b>
               </term>
               <description>
-                <paramref name="AlertStyle" />， <paramref name="Formula1" />，和<paramref name="Formula2" />未使用。</description>
+                <paramref name="AlertStyle" />
+                <paramref name="Formula1" />，和<paramref name="Formula2" />未使用。</description>
             </item>
             <item>
               <term>
                 <b>xlValidateCustom</b>
               </term>
               <description>
-                <paramref name="Formula1" /> ，则需要;<paramref name="Formula2" /> ，则忽略。<paramref name="Formula1" />必须包含表达式无效数据项时计算结果为<b>True</b>时是有效的数据输入和<b>False</b> 。</description>
+                <paramref name="Formula1" />需要;<paramref name="Formula2" /> ，则忽略。 <paramref name="Formula1" />必须包含无效数据项时计算结果为<b>True</b>时是有效的数据输入和<b>False</b>的表达式。</description>
             </item>
             <item>
               <term>
                 <b>xlValidateList</b>
               </term>
               <description>
-                <paramref name="Formula1" /> ，则需要;<paramref name="Formula2" /> ，则忽略。<paramref name="Formula1" />必须包含逗号分隔的值列表的工作表引用。</description>
+                <paramref name="Formula1" />需要;<paramref name="Formula2" /> ，则忽略。 <paramref name="Formula1" />必须包含逗号分隔的值列表或对列表的工作表引用。</description>
             </item>
             <item>
               <term>
-                <b>xlValidateDate</b>、 <b>xlValidateDecimal</b>、 <b>xlValidateTextLength</b>、 <b>xlValidateTime</b>或<b>xlValidateWholeNumber</b></term>
+                <b>xlValidateDate</b>、<b>xlValidateDecimal</b>、<b>xlValidateTextLength</b>、 <b>xlValidateTime</b> 或 <b>xlValidateWholeNumber</b></term>
               <description>
                 <paramref name="Formula1" />或<paramref name="Formula2" />，必须指定和 / 或。</description>
             </item>

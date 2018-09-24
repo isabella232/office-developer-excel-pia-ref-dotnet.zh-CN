@@ -1,10 +1,10 @@
 <Type Name="ColorScaleCriteria" FullName="Microsoft.Office.Interop.Excel.ColorScaleCriteria">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c8c5c4bd0f115d5f46e3f8b194a4b36d82012e7f" />
+    <Meta Name="ms.openlocfilehash" Value="589e9e7df115b961e73fd7901c8f7f0502669047" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587435" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ColorScaleCriteria : System.Collections.IEnumerable" />
@@ -39,7 +39,7 @@
       <para></para>
     </remarks>
     <example>
-      <para>下面的代码示例创建的号码范围，然后应用于该区域的两个色阶条件格式规则。最小阈值的颜色然后分配为红色，并最大阈值为蓝色通过索引到要设置单个条件的<b>ColorScaleCriteria</b>集合。</para>
+      <para>以下代码示例创建了一个数字范围，然后将双色色阶条件格式规则应用于该范围。然后通过在 <b>ColorScaleCriteria</b> 集合中编制索引来设置单独的条件，从而指定最小阈值的颜色为红色，最大阈值的颜色为蓝色。</para>
       <code>&lt;span class="label"&gt;Sub CreateColorScaleCF()  
 
 
@@ -4463,7 +4463,7 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>条件数目等于为色阶分配阈值的数。这将两个或三个，具体取决于是否为条件格式规则中使用双色色阶。</para>
+          <para>条件的数目等于为色阶分配的阈值的数目。此值要么为 2，要么为 3，具体情况取决于您为条件格式规则使用双色色阶还是使用三色色阶。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4532,7 +4532,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" />
         </value>
         <remarks>
-          <para>值的<paramref name="Index" />参数不能大于的条件为色阶条件格式设置的数目。条件是等价于色阶分配的阈值。若要查找的阈值数目，请使用<see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriteria.Count" />属性。</para>
+          <para>值<paramref name="Index" />参数不能大于的条件为色阶条件格式设置的数目。 条件是等价于色阶分配的阈值。 若要查找的阈值数目，请使用<see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriteria.Count" />属性。</para>
           <para></para>
         </remarks>
       </Docs>

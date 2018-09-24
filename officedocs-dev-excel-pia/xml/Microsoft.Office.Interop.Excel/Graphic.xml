@@ -1,10 +1,10 @@
 <Type Name="Graphic" FullName="Microsoft.Office.Interop.Excel.Graphic">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f71cc399b82a45b3ea700b16adc69b6140e7585c" />
+    <Meta Name="ms.openlocfilehash" Value="557d2313e5eee89f3ea3d42e9d0eca09addf2bb5" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585650" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Graphic" />
@@ -180,7 +180,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Contrast</b>属性必须是数字 0.0 （最小对比度） 到 1.0 （最大对比度）。</para>
+            <b>Contrast</b>属性必须是数字从 0.0 （最小对比度） 到 1.0 （最大对比度）。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -211,9 +211,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -247,7 +247,7 @@
         <summary>返回或设置从指定图片或 OLE 对象的底部裁剪下的磅值。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>裁剪计算相对于图片的原始尺寸。例如，如果插入最初为 100 磅的图片，将放大以便为 200 磅，然后设置为 50，100 磅 (而不是 50) <b>CropBottom</b>属性将裁剪图片底部。</para>
+          <para>裁剪的计算是同图像的原始尺寸相关的。例如，如果插入一幅原始高度为 100 磅的图像，将其放大为 200 磅高，然后设置 <b>CropBottom</b> 属性为 50, 那么从图像的底部切除的将是 100 磅（而不是 50 磅）。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -281,7 +281,7 @@
         <summary>返回或设置指定的图片或 OLE 对象的左边裁剪的磅数。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>裁剪计算相对于图片的原始尺寸。例如，如果插入为 100 磅宽的图片，将放大以便为 200 磅宽，然后设置为 50，100 磅 (而不是 50) <b>CropLeft</b>属性将裁剪图片的左边界。</para>
+          <para>裁剪的计算是同图像的原始尺寸相关的。例如，如果插入一幅原始宽度为 100 磅的图像，将其放大为 200 磅宽，然后设置 <b>CropLeft</b> 属性为 50, 那么 100 磅（不是 50 磅）将从图像的左边被切除。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -315,7 +315,7 @@
         <summary>返回或设置从指定的图片或 OLE 对象的右边裁剪的磅数。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>裁剪计算相对于图片的原始尺寸。例如，如果插入为 100 磅宽的图片，将放大以便为 200 磅宽，然后设置为 50，100 磅 (而不是 50) <b>CropRight</b>属性将裁剪图片的右侧。</para>
+          <para>裁剪的计算是同图像的原始尺寸相关的。例如，如果插入一幅原始宽度为 100 磅的图像，将其放大为 200 磅宽，然后设置 <b>CropRight</b> 属性为 50, 那么 100 磅（不是 50 磅）将从图像的右边被切除。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -349,7 +349,7 @@
         <summary>返回或设置从指定的图片或 OLE 对象的顶部裁剪的磅数。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>裁剪计算相对于图片的原始尺寸。例如，如果插入最初为 100 磅的图片，将放大以便为 200 磅，然后设置为 50，100 磅 (而不是 50) <b>CropTop</b>属性将裁剪图片顶部。</para>
+          <para>裁剪的计算是同图像的原始尺寸相关的。例如，如果插入一幅原始高度为 100 磅的图像，将其放大为 200 磅高，然后设置 <b>CropTop</b> 属性为 50, 那么 100 磅（不是 50 磅）将从图像的顶部被切除。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -383,7 +383,7 @@
         <summary>返回或设置 （在 intranet 或 Web） 的 URL 或路径 (本地或网络) 到保存指定的源对象的位置。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果指定路径中的文件夹不存在，则<b>FileName</b>属性将生成一个错误。</para>
+          <para>如果指定路径中的文件夹不存在，则 <b>FileName</b> 属性将产生一个错误。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -455,7 +455,7 @@
             <b>msoCTrue</b>
           </para>
           <para>
-            <b>msoFalse</b>可以更改的高度和宽度的形状彼此在调整它。</para>
+            <b>msoFalse</b>在调整，可以更改的高度和彼此的形状的宽度。</para>
           <para>
             <b>msoTriStateMixed</b>
           </para>
@@ -463,7 +463,7 @@
             <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msoTrue</b>指定形状其原始比例保持在调整它。</para>
+            <b>msoTrue</b>指定的形状在调整保留其原始比例。</para>
           <para></para>
         </remarks>
       </Docs>

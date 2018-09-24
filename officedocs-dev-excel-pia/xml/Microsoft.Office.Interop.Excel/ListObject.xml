@@ -1,10 +1,10 @@
 <Type Name="ListObject" FullName="Microsoft.Office.Interop.Excel.ListObject">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e5db05498474766473e84216636995014a7a4d11" />
+    <Meta Name="ms.openlocfilehash" Value="1bb3f266b1d484c480fc364acfdb40b99ff98c94" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20583018" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ListObject" />
@@ -32,7 +32,7 @@
     <summary>代表工作表上的列表对象。</summary>
     <remarks>
       <para>
-        <see cref="T:Microsoft.Office.Interop.Excel.ListObject" />对象是成员<see cref="T:Microsoft.Office.Interop.Excel.ListObjects" />集合。<see cref="T:Microsoft.Office.Interop.Excel.ListObjects" />集合包含工作表上的所有列表对象。</para>
+        <see cref="T:Microsoft.Office.Interop.Excel.ListObject" />对象是成员<see cref="T:Microsoft.Office.Interop.Excel.ListObjects" />集合。 <see cref="T:Microsoft.Office.Interop.Excel.ListObjects" />集合包含工作表上的所有列表对象。</para>
       <para>使用<see cref="P:Microsoft.Office.Interop.Excel._Worksheet.ListObjects" />属性<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />返回<see cref="T:Microsoft.Office.Interop.Excel.ListObjects" />集合。</para>
       <para></para>
     </remarks>
@@ -129,8 +129,8 @@
         <summary>获取或设置指定表格的 （可选） 的描述性文本字符串。</summary>
         <value>指定表的 （可选） 的描述性文本字符串。</value>
         <remarks>
-          <para>读/写。</para>
-          <para>的值<see cref="P:Microsoft.Office.Interop.Excel.ListObject.AlternativeText" />属性对应于可选文字对话框，通过右键单击表显示时，在标题框的设置将表中，指向，然后单击可选文字。</para>
+          <para>为可读/写属性。</para>
+          <para>值<see cref="P:Microsoft.Office.Interop.Excel.ListObject.AlternativeText" />属性对应于可选文字对话框，通过右键单击表显示时，在标题框的设置将表中，指向，然后单击可选文字。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -257,9 +257,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -314,7 +314,10 @@
       <Parameters />
       <Docs>
         <summary>删除<see cref="T:Microsoft.Office.Interop.Excel.ListObject" />对象，并清除工作表中的单元格数据。</summary>
-        <remarks>如果列表链接到 SharePoint 网站的<para>，删除不影响运行 Windows SharePoint Services 的服务器上的数据。对本地列表所做的任何未提交的更改不发送到 SharePoint 列表中。（没有这些未提交的更改会丢失任何警告。）</para><para></para></remarks>
+        <remarks>
+          <para>如果列表链接到 SharePoint 网站中，删除它不会影响运行 Windows SharePoint Services 的服务器上的数据。 对本地列表所做的任何未提交的更改不发送到 SharePoint 列表中。 （没有这些未提交的更改会丢失任何警告。）</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayName">
@@ -376,7 +379,7 @@
         <summary>确定指定的窗口、 工作表，或<see cref="T:Microsoft.Office.Interop.Excel.ListObject" />对象显示从右到左而不是从左到右。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性返回<b>True</b> ，如果指定的窗口、 工作表或<b>ListObject</b>显示从右到左而不是从左到右，并且<b>False</b>如果对象从显示从左到右。</para>
+          <para>如果指定的窗口、 工作表或<b>ListObject</b>显示从右到左而不是从左到右和<b>False</b>如果对象从显示从左到右，此属性返回<b>True</b> 。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -460,7 +463,7 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，代表插入行，如果有，指定的<see cref="T:Microsoft.Office.Interop.Excel.ListObject" />对象。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果由于列表处于非活动插入行不可见，请将返回<b>Nothing</b>对象。</para>
+          <para>如果由于列表处于非活动状态而使得“插入”行不可见，则返回 <b>Nothing</b> 对象。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -519,7 +522,7 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.ListRows" />对象，代表中的数据的所有行<see cref="T:Microsoft.Office.Interop.Excel.ListObject" />对象。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>不包括标头、 总计行或插入行，则返回的<b>ListRows</b>对象。</para>
+          <para>返回的 <b>ListRows</b> 对象不包括标题行、总计行或插入行。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -613,7 +616,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>此属性返回 S<b>字符串</b>，它是 SharePoint 网站上发布列表的 URL。</para>
-          <para>如果<see cref="T:Microsoft.Office.Interop.Excel.ListObject" />对象当前未链接到 SharePoint 网站中，设置列表<paramref name="LinkSource" />为<b>True</b>将创建一个新列表上指定的 SharePoint 网站。如果<b>ListObject</b>对象当前链接到 SharePoint 网站中，设置<paramref name="LinkSource" />参数为<b>True</b>将替换现有的链接 （您可以仅将列表链接到一个 SharePoint 网站）。如果当前未链接<b>ListObject</b>对象，设置<paramref name="LinkSource" />为<b>False</b> ，则将保留取消链接的<b>ListObject</b>对象。如果<b>ListObject</b>对象当前链接到 SharePoint 网站中，设置<paramref name="LinkSource" />为<b>False</b> ，则将保留<b>ListObject</b>对象链接到当前 SharePoint 网站。</para>
+          <para>如果<see cref="T:Microsoft.Office.Interop.Excel.ListObject" />对象当前未链接到 SharePoint 网站中，设置列表<paramref name="LinkSource" />为<b>True</b>将创建一个新列表上指定的 SharePoint 网站。 如果<b>ListObject</b>对象当前链接到 SharePoint 网站中，设置<paramref name="LinkSource" />参数为<b>True</b>将替换现有的链接 （您可以仅将列表链接到一个 SharePoint 网站）。 如果当前未链接<b>ListObject</b>对象，设置<paramref name="LinkSource" />为<b>False</b> ，则将保留取消链接的<b>ListObject</b>对象。 如果<b>ListObject</b>对象当前链接到 SharePoint 网站中，设置<paramref name="LinkSource" />为<b>False</b> ，则将保留<b>ListObject</b>对象链接到当前 SharePoint 网站。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -697,8 +700,8 @@
       <Docs>
         <summary>从运行 Microsoft Windows SharePoint Services 服务器返回的当前数据和列表架构。</summary>
         <remarks>
-          <para>仅与链接到 SharePoint 网站的列表，可以使用此方法。如果 SharePoint 网站不可用，则调用此方法将返回错误。</para>
-          <para>调用<b>Refresh</b>方法不能提交到的列表中的 Excel 工作簿。调用<b>Refresh</b>方法时，在 Excel 中的列表中未提交的更改将被丢弃。若要避免丢失任何未提交的更改，请调用<see cref="M:Microsoft.Office.Interop.Excel.ListObject.UpdateChanges(Microsoft.Office.Interop.Excel.XlListConflict)" />方法<see cref="T:Microsoft.Office.Interop.Excel.ListObject" />对象调用<b>Refresh</b>方法之前。</para>
+          <para>此方法可以将仅用于链接到 SharePoint 网站的列表。 如果 SharePoint 网站不可用，则调用此方法将返回错误。</para>
+          <para>调用<b>Refresh</b>方法不提交到的列表中的 Excel 工作簿的更改。 调用<b>Refresh</b>方法时，在 Excel 中的列表中未提交的更改将被丢弃。 若要避免丢失任何未提交的更改，请调用<see cref="M:Microsoft.Office.Interop.Excel.ListObject.UpdateChanges(Microsoft.Office.Interop.Excel.XlListConflict)" />方法<see cref="T:Microsoft.Office.Interop.Excel.ListObject" />调用<b>Refresh</b>方法之前的对象。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -729,9 +732,9 @@
         <summary>
           <b>Resize</b>方法允许<see cref="T:Microsoft.Office.Interop.Excel.ListObject" />对象通过新的范围可以调整大小。</summary>
         <remarks>
-          <para>没有单元格插入或删除该属性。</para>
+          <para>没有单元格插入或移动该属性。</para>
           <para>此属性返回<b>Nothing</b>。</para>
-          <para>链接到运行 Microsoft Windows SharePoint Services 的服务器的列表，您可以调整大小使用此方法通过提供列表<paramref name="Range" />包含不同于当前区域中的行数仅 ListObject 它的参数。通过添加或删除列调整列表链接到 Windows SharePoint Services (在<paramref name="Range" />参数) 导致运行时错误。</para>
+          <para>链接到运行 Microsoft Windows SharePoint Services 的服务器的列表，您可以调整大小使用此方法通过提供列表<paramref name="Range" />包含不同于当前区域中的行数仅 ListObject 它的参数。 通过添加或删除列调整列表链接到 Windows SharePoint Services (在<paramref name="Range" />参数) 导致运行时错误。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1148,8 +1151,8 @@
         <summary>获取或设置与指定的表的可选文字字符串关联的说明。</summary>
         <value>与指定的表的可选文字字符串关联的说明。</value>
         <remarks>
-          <para>读/写。</para>
-          <para>的值<see cref="P:Microsoft.Office.Interop.Excel.ListObject.Summary" />属性对应于可选文字对话框，通过右键单击表显示时，在说明框的设置将表中，指向，然后单击可选文字。</para>
+          <para>为可读/写属性。</para>
+          <para>值<see cref="P:Microsoft.Office.Interop.Excel.ListObject.Summary" />属性对应于可选文字对话框，通过右键单击表显示时，在说明框的设置将表中，指向，然后单击可选文字。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1271,7 +1274,7 @@
         <summary>从列表到 Microsoft Windows SharePoint Services 网站中删除的链接。</summary>
         <remarks>
           <para>此属性返回<b>Nothing</b>。</para>
-          <para>调用此方法，列表被取消链接，它不可逆。</para>
+          <para>调用此方法后，列表被取消链接，无法再恢复。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1301,7 +1304,7 @@
         <remarks>
           <para>使用此方法后，组成该列表的单元格的范围将常规的数据区域。</para>
           <para>此属性返回<b>Nothing</b>。</para>
-          <para>运行此方法工作表中保留单元格数据、 格式和公式。汇总行还将保持不变。此方法删除任何链接到 Microsoft Windows SharePoint Services 网站。也会自动筛选和插入行从列表中删除。</para>
+          <para>运行此方法工作表中保留单元格数据、 格式和公式。 汇总行还将保持不变。 此方法删除任何链接到 Microsoft Windows SharePoint Services 网站。 自动筛选和插入行也会从列表删除。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1335,7 +1338,7 @@
         <summary>对工作表中列表所做的更改更新 Microsoft Windows SharePoint Services 网站上的列表。</summary>
         <remarks>
           <para>此属性返回<b>Nothing</b>。</para>
-          <para>此方法仅适用于链接到 SharePoint 网站的列表。如果 SharePoint 网站不可用，则生成错误。</para>
+          <para>此方法仅适用于链接到 SharePoint 网站的列表。 如果 SharePoint 网站不可用，则生成错误。</para>
           <para></para>
         </remarks>
       </Docs>

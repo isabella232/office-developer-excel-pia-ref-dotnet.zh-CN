@@ -1,10 +1,10 @@
 <Type Name="Comment" FullName="Microsoft.Office.Interop.Excel.Comment">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7623036514119839c00f2d3d08991f073ef618c8" />
+    <Meta Name="ms.openlocfilehash" Value="aee055e9a2656dedc02e66bab44aba17d315d4f9" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585846" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Comment" />
@@ -122,9 +122,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -178,7 +178,7 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Comment" />对象，表示下一条批注。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>此方法仅适用于张工作表。最后一个批注工作表上使用此方法返回<b>Null</b> （不在下一个工作表上的下一个批注）。</para>
+          <para>本方法仅对单张工作表有效。对工作表中最后一条批注使用本方法可返回 <b>Null</b>（不是下一张工作表的第一条批注）。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -235,7 +235,7 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Comment" />对象，表示上一批注。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>此方法仅适用于张工作表。在工作表上的第一个批注上使用此方法返回<b>Null</b> （不在上一个工作表上的最后一个批注）。</para>
+          <para>本方法仅对单张工作表有效。对工作表中第一条批注使用本方法可返回 <b>Null</b>（不是前一张工作表的最后一条批注）。</para>
           <para></para>
         </remarks>
       </Docs>

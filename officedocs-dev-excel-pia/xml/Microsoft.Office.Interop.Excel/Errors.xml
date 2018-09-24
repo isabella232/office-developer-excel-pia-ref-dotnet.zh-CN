@@ -1,10 +1,10 @@
 <Type Name="Errors" FullName="Microsoft.Office.Interop.Excel.Errors">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b4f3cf8bb7a50a611d29713aebe29d640596ae60" />
+    <Meta Name="ms.openlocfilehash" Value="73bd6a9f765a75f5056ac06000a5ad65696c4627" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576396" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Errors" />
@@ -32,7 +32,7 @@
     <summary>代表区域内的各种电子表格错误。</summary>
     <remarks>
       <para>使用<see cref="P:Microsoft.Office.Interop.Excel.Range.Errors" />属性<see cref="T:Microsoft.Office.Interop.Excel.Range" />可返回<b>Errors</b>对象的集合。</para>
-      <para>后返回<b>Errors</b>对象，您可以使用<see cref="P:Microsoft.Office.Interop.Excel.Error.Value" />属性<see cref="T:Microsoft.Office.Interop.Excel.Error" />检查的特定错误检查的条件的对象。</para>
+      <para>一旦返回<b>Errors</b>对象，您可以使用<see cref="P:Microsoft.Office.Interop.Excel.Error.Value" />属性<see cref="T:Microsoft.Office.Interop.Excel.Error" />检查的特定错误检查的条件的对象。</para>
       <para></para>
     </remarks>
   </Docs>
@@ -74,7 +74,7 @@
           <para></para>
         </remarks>
         <example>
-          <para>本示例中，以文本形式写入编号位于单元格 A1 中。 然后，Microsoft Excel 判断是否数编写为单元格 A1 中的文本，并相应地通知用户。</para>
+          <para>在本例中，单元格 A1 中放置了文本格式的数字。然后，Microsoft Excel 判断单元格 A1 中的数字是否为文本格式，并通知用户。</para>
           <code>&lt;span class="label"&gt;Sub CheckForErrors()
 
 
@@ -1159,9 +1159,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>

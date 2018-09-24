@@ -1,10 +1,10 @@
 <Type Name="Tab" FullName="Microsoft.Office.Interop.Excel.Tab">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f556887ccfbbf416d3399219f2df31285e1376b3" />
+    <Meta Name="ms.openlocfilehash" Value="71eb536a457812dc4d61b8e60fbc32743a3a5406" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585818" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Tab" />
@@ -125,7 +125,7 @@
         <summary>返回或设置指定的图表选项卡的颜色。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>之一指定颜色<see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" />常量。</para>
+          <para>作为之一指定颜色<see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" />常量。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -156,9 +156,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -222,7 +222,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlThemeColor" />
         </value>
         <remarks>
-          <para>尝试访问其主题颜色的颜色不是当前主题对象将导致无效请求运行时错误。</para>
+          <para>如果对象当前未应用主题颜色，试图访问其主题颜色则会引起无效请求运行时错误。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -258,8 +258,8 @@
           <b>Single</b>
         </value>
         <remarks>
-          <para>您可以输入-1 （最暗） 到数字 1 （最亮） 之间的<see cref="P:Microsoft.Office.Interop.Excel.Tab.TintAndShade" />属性。零 (0) 是中性。</para>
-          <para>试图将该属性设置为小于-1 或大于 1 的值将导致运行时错误:"指定的值是超出范围。" 此属性的主题颜色和非主题颜色有效。</para>
+          <para>您可以输入-1 （最暗） 到数字 1 （最亮） 之间的<see cref="P:Microsoft.Office.Interop.Excel.Tab.TintAndShade" />属性。 中性零 (0)。</para>
+          <para>如果将此属性设置为小于 -1 或大于 1 的值，则会引起运行时错误：“指定的值超出了范围”。此属性用于主题颜色和非主题颜色。</para>
           <para></para>
         </remarks>
       </Docs>

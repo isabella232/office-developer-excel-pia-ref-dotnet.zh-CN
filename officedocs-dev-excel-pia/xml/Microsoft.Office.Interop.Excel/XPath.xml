@@ -1,10 +1,10 @@
 <Type Name="XPath" FullName="Microsoft.Office.Interop.Excel.XPath">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f001cd2ee91a64e5f9f9b522beeb19a822533c95" />
+    <Meta Name="ms.openlocfilehash" Value="d73d2c6682dfafc4ccfddfe3f9001a4e4768bd0e" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20573596" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface XPath" />
@@ -31,8 +31,11 @@
   <Docs>
     <summary>代表已被映射到 XPath<see cref="T:Microsoft.Office.Interop.Excel.Range" />或<see cref="T:Microsoft.Office.Interop.Excel.ListColumn" />对象。</summary>
     <remarks>
-      <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>使用
-      <para><see cref="M:Microsoft.Office.Interop.Excel.XPath.SetValue(Microsoft.Office.Interop.Excel.XmlMap,System.String,System.Object,System.Object)" />方法映射到 range 或列表列的 XPath。<b>SetValue</b>方法还用于更改现有 XPath 的属性。</para><para>使用<see cref="M:Microsoft.Office.Interop.Excel.XPath.Clear" />方法，以删除已被映射到的区域或列表列的 XPath。</para><para></para></remarks>
+      <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Excel.XPath.SetValue(Microsoft.Office.Interop.Excel.XmlMap,System.String,System.Object,System.Object)" />方法映射到 range 或列表列的 XPath。 <b>SetValue</b>方法还用于更改现有 XPath 的属性。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Excel.XPath.Clear" />方法，以删除已被映射到的区域或列表列的 XPath。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -117,8 +120,8 @@
       <Docs>
         <summary>清除从映射到指定的 XPath 单元格的架构映射。</summary>
         <remarks>
-          <para>此方法不会清除映射到指定的 XPath 单元格的数据。使用<see cref="M:Microsoft.Office.Interop.Excel.Range.Clear" />方法<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象以清除单元格的数据。</para>
-          <para>如果指定的 XPath 映射中 XML 列表，然后将删除架构映射，但不是会从工作表中删除该列表。</para>
+          <para>此方法不会清除映射到指定的 XPath 单元格的数据。 使用<see cref="M:Microsoft.Office.Interop.Excel.Range.Clear" />方法<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象以清除单元格的数据。</para>
+          <para>如果指定的 XPath 在 XML 列表中被映射，则将删除架构映射，但列表不会从工作表中删除。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -150,7 +153,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>

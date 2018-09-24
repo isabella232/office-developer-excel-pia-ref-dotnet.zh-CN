@@ -1,10 +1,10 @@
 <Type Name="CubeField" FullName="Microsoft.Office.Interop.Excel.CubeField">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="dd2f0a8509580a113ef53628d35dc680262b50f0" />
+    <Meta Name="ms.openlocfilehash" Value="bf16f6175f71fd20e3da730314c01f3723f6ca55" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582416" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CubeField" />
@@ -98,7 +98,7 @@
         <param name="PropertyOrder">可选的<b>对象</b>。 设置<see cref="P:Microsoft.Office.Interop.Excel.PivotField.PropertyOrder" />属性值<see cref="T:Microsoft.Office.Interop.Excel.CubeField" />对象。 集合中的实际位置将当前具有相同的数据透视表字段前的那一刻<paramref name="PropertyOrder" />参数中指定的值。 如果没有字段具有给定的属性顺序值时，可接受的值的范围是从 1 到已显示的层次结构以及一个成员属性的数目。 此参数是从 1 开始。 如果省略，该属性将转到列表末尾。</param>
         <summary>将成员属性字段添加到多维数据集字段的显示区域。</summary>
         <remarks>
-          <para>指定的属性字段将不可见，如果数据透视表视图未不包含任何字段。</para>
+          <para>如果数据透视表视图上没有字段，则指定的属性字段将不可见。</para>
           <para>若要删除成员属性，请使用<see cref="M:Microsoft.Office.Interop.Excel.PivotField.Delete" />方法，以删除<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />对象从<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />集合。</para>
           <para></para>
         </remarks>
@@ -165,9 +165,9 @@
         </value>
         <remarks>
           <para>默认值为<b>True</b> ，可用于<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />和<see cref="T:Microsoft.Office.Interop.Excel.CubeField" />对象。</para>
-          <para>用于 OLAP 数据透视表，此属性才可用于<see cref="T:Microsoft.Office.Interop.Excel.CubeField" />对象。尝试获取或设置在<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />OLAP 数据透视表中的对象将返回一个运行时错误。</para>
-          <para>用于数据透视表，此属性是可用于<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />对象。</para>
-          <para>此属性自动设置为<b>True</b>时应用任何手动筛选 (无论<see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" />属性是 true 或 false)。应用任何手动筛选后会自动设置为<b>False</b> (无论<see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" />属性是 true 或 false)。</para>
+          <para>对于 OLAP 数据透视表，此属性才可用于<see cref="T:Microsoft.Office.Interop.Excel.CubeField" />对象。 尝试获取或设置在<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />OLAP 数据透视表中的对象将返回一个运行时错误。</para>
+          <para>对于数据透视表，该属性是可用于<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />对象。</para>
+          <para>此属性自动设置为<b>True</b>时应用任何手动筛选 (无论<see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" />属性是 true 或 false)。 应用任何手动筛选后会自动设置为<b>False</b> (无论<see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" />属性是 true 或 false)。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -258,7 +258,7 @@
         <summary>
           <see cref="M:Microsoft.Office.Interop.Excel.CubeField.ClearManualFilter" />方法提供一种简便的方法的所有项目的数据透视表，表中透视字段将<b>Visible</b>属性设置为<b>True</b> ，并清空<b>HiddenItemsInList</b>/OLAP 数据透视表中的<b>VisibleItemsList</b>集合。</summary>
         <remarks>
-          <para>此方法是可用于<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />对象在<see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />和<see cref="T:Microsoft.Office.Interop.Excel.CubeField" />OLAP 数据透视表中的对象。调用它的 OLAP 数据透视表中的透视字段将返回一个运行时错误。</para>
+          <para>此方法是可用于<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />对象在<see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />和<see cref="T:Microsoft.Office.Interop.Excel.CubeField" />OLAP 数据透视表中的对象。 调用此方法的 OLAP 数据透视表中透视字段将返回一个运行时错误。</para>
           <para>调用此方法后， <b>HiddenItemsList</b>/<b>HiddenItems</b>和<b>VisibleItemsList</b>/<b>VisibleItems</b>集合为空。</para>
           <para></para>
         </remarks>
@@ -287,7 +287,10 @@
       <Docs>
         <summary>
           <see cref="M:Microsoft.Office.Interop.Excel.CubeField.CreatePivotFields" />方法是 Microsoft Office Excel 2007 中的新。 使用户可以对尚未添加到数据透视表通过创建相应的透视字段应用筛选器<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />对象。</summary>
-        <remarks>在 OLAP 数据透视表，<para><see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />相应之前不存在<see cref="T:Microsoft.Office.Interop.Excel.CubeField" />添加到<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。<see cref="M:Microsoft.Office.Interop.Excel.CubeField.CreatePivotFields" />方法，用户可以创建所有<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />的<see cref="T:Microsoft.Office.Interop.Excel.CubeField" />。 用户还可以将筛选器添加到透视字段和设置这些属性，多维数据集添加到前<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。</para><para></para></remarks>
+        <remarks>
+          <para>在 OLAP 数据透视表，<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />相应之前不存在<see cref="T:Microsoft.Office.Interop.Excel.CubeField" />添加到<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。 <see cref="M:Microsoft.Office.Interop.Excel.CubeField.CreatePivotFields" />方法，用户可以创建所有<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />的<see cref="T:Microsoft.Office.Interop.Excel.CubeField" />。  用户还可以将筛选器添加到透视字段和设置这些属性，多维数据集添加到前<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -316,9 +319,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -352,7 +355,7 @@
         </value>
         <remarks>
           <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.CubeField.CubeFieldSubType" />可以是以下枚举中的值的任何</para>
+            <see cref="P:Microsoft.Office.Interop.Excel.CubeField.CubeFieldSubType" />可以是任何以下枚举中的值 </para>
           <list type="bullet">
             <item>
               <description>
@@ -397,6 +400,11 @@
             <item>
               <description>
                 <see cref="F:Microsoft.Office.Interop.Excel.XlCubeFieldSubType.xlCubeMeasure" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlCubeFieldSubType.xlCubeSet" />
               </description>
             </item>
           </list>
@@ -491,7 +499,7 @@
       <Docs>
         <summary>删除对象。</summary>
         <remarks>
-          <para>仅当您已创建多维数据集字段自己使用，您可以删除多维数据集字段<see cref="M:Microsoft.Office.Interop.Excel.CalculatedMembers.Add(System.String,System.String,System.Object,System.Object)" />方法<see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" />对象与<paramref name="xlCalculatedSet" />参数。</para>
+          <para>您可以删除多维数据集字段，如果您已创建多维数据集字段自己使用仅<see cref="M:Microsoft.Office.Interop.Excel.CalculatedMembers.Add(System.String,System.String,System.Object,System.Object)" />方法<see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" />对象与<paramref name="xlCalculatedSet" />参数。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -525,8 +533,8 @@
         <summary>如果为<b>true</b>指定的字段可拖动到列位置。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>默认值为<b>True</b>。</para>
-          <para>对于 OLAP 数据源的值为<b>False</b>的度量值的字段。</para>
+          <para>默认值为 <b>True</b> 。</para>
+          <para>对于 OLAP 数据源的值为<b>False</b>的度量字段。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -560,8 +568,8 @@
         <summary>如果为<b>true</b>指定的字段可拖动到数据位置。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>默认值为<b>True</b>。</para>
-          <para>对于 OLAP 数据源的值为<b>False</b>的度量值的字段。</para>
+          <para>默认值为 <b>True</b> 。</para>
+          <para>对于 OLAP 数据源的值为<b>False</b>的度量字段。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -595,7 +603,7 @@
         <summary>如果为<b>true</b>可以通过拖离数据透视表报告中隐藏该字段。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>默认值为<b>True</b>。</para>
+          <para>默认值为 <b>True</b> 。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -629,8 +637,8 @@
         <summary>如果为<b>true</b>字段可拖动到页位置。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>默认值为<b>True</b>。</para>
-          <para>对于 OLAP 数据源的值为<b>False</b>的度量值的字段。</para>
+          <para>默认值为 <b>True</b> 。</para>
+          <para>对于 OLAP 数据源的值为<b>False</b>的度量字段。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -664,8 +672,8 @@
         <summary>如果为<b>true</b>字段可拖动到行位置。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>默认值为<b>True</b>。</para>
-          <para>对于 OLAP 数据源的值为<b>False</b>的度量值的字段。</para>
+          <para>默认值为 <b>True</b> 。</para>
+          <para>对于 OLAP 数据源的值为<b>False</b>的度量字段。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -700,8 +708,8 @@
           <b>True</b>允许多个 OLAP 数据透视表中选择的页字段区域中的项目。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>默认值为<b>False</b>。</para>
-          <para>此属性仅适用于联机分析处理 (OLAP) 数据透视表。查询或设置非-OLAP 数据透视表将导致运行时错误。</para>
+          <para>默认值为 <b>False</b> 。</para>
+          <para>此属性仅适用于联机分析处理 (OLAP) 数据透视表。 查询或设置非-OLAP 数据透视表将导致运行时错误。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -736,9 +744,9 @@
         <value>
           <b>true</b>如果基于 OLAP 多维数据; 的数据透视表报表的同一字段中显示项目的命名的集的多维数据集字段的层次结构中所有级别否则为<b>false</b>。</value>
         <remarks>
-          <para>读/写。</para>
-          <para>
-            <b>，则返回 true</b>如果的同一字段中显示的指定的命名集的所有层次结构; 否则为<b>false</b>。</para>
+          <para>为可读/写属性。</para>
+          <para>如果为
+            <b>true</b>的同一字段; 中显示的指定的命名集的所有层次结构否则为<b>false</b>。</para>
           <para>从布局上的单独的字段复选框中的不同级别，此属性的值对应于显示项的设置&amp;基于 OLAP 多维数据集数据透视表中的命名集字段设置对话框的打印选项卡。</para>
           <para>如果此属性将返回错误<see cref="P:Microsoft.Office.Interop.Excel.CubeField.CubeFieldType" />属性指定的<see cref="T:Microsoft.Office.Interop.Excel.CubeField" />对象不是<b>xlset，则</b>。</para>
           <para></para>
@@ -809,7 +817,7 @@
         <value>To be added.</value>
         <remarks>
           <para>默认值为 0 （零），指示没有级别处于隐藏状态。</para>
-          <para>若要设置为一个整数值的此属性的值大于 0，您必须首先将值设置为 0。</para>
+          <para>若要设置为一个整数值的此属性的值大于 0，您必须先设置为 0 的值。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -844,9 +852,9 @@
         <value>
           <b>true</b>如果应排序且时显示指定的命名集数据透视表报告中基于 OLAP 多维数据; 删除重复项否则为<b>false</b>。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>为可读/写属性。</para>
           <para>
-            <b>，则返回 true</b>如果命名的集显示，按顺序移除重复项; 否则为<b>false</b>。</para>
+            <b>true</b>如果命名的集显示为按顺序重复项删除;否则为<b>false</b>。</para>
           <para>此属性的值对应于自动顺序和删除的设置重复项从布局上的设置复选框&amp;的数据透视表报告中的命名集字段设置对话框的打印选项卡基于 OLAP 多维数据集。</para>
           <para>如果此属性将返回错误<see cref="P:Microsoft.Office.Interop.Excel.CubeField.CubeFieldType" />属性指定的<see cref="T:Microsoft.Office.Interop.Excel.CubeField" />对象不是<b>xlset，则</b>。</para>
           <para></para>
@@ -885,10 +893,10 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>默认值为<b>False</b>。</para>
-          <para>当应用手动筛选时，此设置设置为<b>True</b>时, 跟踪排除的项目。当此设置设置为<b>False</b>时，包括的项目进行跟踪时应用手动筛选。</para>
-          <para>时<see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" />设置为<b>False</b>， <b>HiddenItemsList</b>和<b>HiddenItems</b>集合为空，并且无法向它们添加项目。</para>
-          <para>时<see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" />设置为<b>True</b>， <b>VisibleItemsList</b>和<b>VisibleItems</b>集合为空，并且无法向它们添加项目。</para>
+          <para>默认值为 <b>False</b> 。</para>
+          <para>如果将此设置设置为 <b>True</b>，则在应用手动筛选时将跟踪排除的项目，如果将此设置设置为 <b>False</b>，则在应用手动筛选时将跟踪包括的项目。</para>
+          <para>当<see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" />设置为<b>False</b>， <b>HiddenItemsList</b>和<b>HiddenItems</b>集合为空，并且无法向它们添加项目。</para>
+          <para>当<see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" />设置为<b>True</b>， <b>VisibleItemsList</b>和<b>VisibleItems</b>集合为空，并且无法向它们添加项目。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -955,11 +963,11 @@
           <para>
             <see cref="T:Microsoft.Office.Interop.Excel.XlLayoutFormType" />可以是以下<b>XlLayoutFormType</b>常量之一：</para>
           <para>
-            <b>xlTabular</b>默认。</para>
+            <b>xlTabular</b>默认值。</para>
           <para>
             <b>xlOutline</b>
             <see cref="P:Microsoft.Office.Interop.Excel.CubeField.LayoutSubtotalLocation" />属性指定分类汇总在数据透视表报表中显示的位置。</para>
-          <para>您可以设置该属性的任何数据透视表字段; 但是的格式显示仅当指定的字段是行字段之外的最里层 （最低级） 的行字段。对于非 OLAP 数据源，此属性的值或不会更改时重新排列字段添加到或数据透视表报表中删除。</para>
+          <para>可以对任意数据透视表字段设置此属性。然而，只有当指定字段是除最里层（最低级别）行字段之外的其他行字段时，该格式才会出现。对于非 OLAP 数据源，当重新排列该字段或将其添加到数据透视表中或从数据透视表中删除时，此属性的值不会更改。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -999,8 +1007,8 @@
             <b>xlattop，</b>
           </para>
           <para>
-            <b>xlAtBottom</b>默认</para>
-          <para>可以将此属性设置为任何数据透视表字段以分级显示格式; 但是的格式显示仅当指定字段是为行字段之外其他最里层 （最低级） 的行字段。对于非 OLAP 数据源，此属性的值或不会更改时重新排列字段添加到或报表中删除。</para>
+            <b>xlAtBottom</b>默认值</para>
+          <para>您可以设置任何数据透视表字段，此的属性以分级显示格式;但是，格式才会显示指定的字段是为行字段之外其他最里层 （最低级） 的行字段。 对于非 OLAP 数据源时重新排列字段, 或添加到或报表中删除时，不会更改此属性的值。</para>
           <para>
             <see cref="P:Microsoft.Office.Interop.Excel.CubeField.LayoutForm" />属性确定报表显示以表格格式还是以分级显示格式。</para>
           <para></para>
@@ -1081,7 +1089,7 @@
           <para>
             <b>xlRowField</b>
           </para>
-          <para>对于 OLAP 数据源，设置该属性中的一个字段层次结构设置相同的层次结构中的其他字段的方向。只能在行、 列和页字段区域的数据透视表报告中进行定向维度字段。仅可以在数据区域面向度量字段。层次结构或数据的字段设置为<b>xlHidden</b>从数据透视表中删除字段的层次结构。</para>
+          <para>对于 OLAP 数据源，当设置某一层中的一个字段的此属性值时，也会同时设置同一层中所有其他字段的方向。维字段只能在数据透视表的行、列和页字段区域中进行定向。度量字段则只能在数据区域中进行定向。将某一层或数据字段设置为 <b>xlHidden</b> 时，会将该层或字段从数据透视表中移出。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1140,7 +1148,7 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />集合。 此集合包含所有数据透视表字段，包括那些屏幕上不当前可见。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>的联机分析处理 (OLAP) 数据源，不存在隐藏的字段，并返回集合的对象反映了当前可见的内容。</para>
+          <para>对于联机分析处理 (OLAP) 数据源，不存在隐藏字段，返回的对象或集合反映了当前可见的内容。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1233,7 +1241,7 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.TreeviewControl" />对象，表示基于 OLAP 数据透视表报告的多维数据集操作控件。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>仅当控件可见时，此属性是可用。</para>
+          <para>只有当控件可见时，该属性才可用。</para>
           <para></para>
         </remarks>
       </Docs>

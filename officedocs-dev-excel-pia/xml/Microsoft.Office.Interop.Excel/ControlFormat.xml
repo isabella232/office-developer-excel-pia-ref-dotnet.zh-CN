@@ -1,10 +1,10 @@
 <Type Name="ControlFormat" FullName="Microsoft.Office.Interop.Excel.ControlFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="482ee10d764810f337717c2623a0421ee3669708" />
+    <Meta Name="ms.openlocfilehash" Value="d88e80486b6e3c8db83afbc148105146372d3b01" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578279" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ControlFormat" />
@@ -160,9 +160,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -288,7 +288,11 @@
       <Docs>
         <summary>返回或设置工作表区域链接到控件的值。</summary>
         <value>To be added.</value>
-        <remarks>如果将值放在单元格中<para>，该控件所需的此值。同样，如果您更改控件的值，该值还放在单元格。</para><para>您不能用于多选列表框的此属性。</para><para></para></remarks>
+        <remarks>
+          <para>如果单元格中放置一个值，该控件将采用此值。 同样，如果您更改控件的值，该值也被放在单元格。</para>
+          <para>不能将该属性应用于多选列表框。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="List">
@@ -321,7 +325,7 @@
         <summary>以字符串数组的形式，返回或设置指定列表框或组合框中的文字项，也可返回或设置单个文字项。如果指定列表框中没有数据项将出错。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>设置该属性清除任何由指定的区域<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" />属性。</para>
+          <para>此属性设置清除任何由指定的区域<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" />属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -387,7 +391,7 @@
         <value>To be added.</value>
         <remarks>
           <para>设置该属性会破坏列表框中的任何现有列表。</para>
-          <para>Microsoft Excel 读取范围中的每个单元格的内容，并在列表中插入单元格的值。列表跟踪单元格区域中的更改。</para>
+          <para>Microsoft Excel 阅读区域中的每一单元格的内容，并将单元格值插入到列表框中。列表对该区域中单元格的修订进行追踪。</para>
           <para>如果列表框的列表中创建与<see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.AddItem(System.String,System.Object)" />方法，此属性返回空字符串 ("")。</para>
           <para></para>
         </remarks>
@@ -555,9 +559,9 @@
         <summary>返回或设置指定的列表框的选择模式。 可以是下列常量之一： <b>xlNone</b>、 <b>xlSimple</b>或<b>xlExtended</b>。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>单一选择 (<b>xlNone</b>) 允许选择一次只有一个项目。单击鼠标或按空格键取消选择并选择单击的项。</para>
-          <para>简单 multiselect (<b>xlSimple</b>) 切换选定内容中列表项上用鼠标单击或项上焦点时按空格键。此模式适合于选取的列表，这通常是在选择多个项。</para>
-          <para>扩展 multiselect (<b>xlExtended</b>) 通常类似单项选择列表框。当您单击项目时，您将取消所有其他选择。在单击鼠标或按箭头键的同时按住 shift 键，当您选择项目按顺序从当前项。在单击鼠标时按住 CTRL，当您向列表添加单个项目。允许但不是经常使用多个项目时，此模式适合。</para>
+          <para>如果为单项选择 (<b>xlNone</b>)，则每次只允许选择一项。单击鼠标或按空格键将取消原先的选择项，并选定正在单击的项。</para>
+          <para>简单 multiselect (<b>xlSimple</b>) 切换选定内容中列表项上用鼠标单击或项上焦点时按空格键。 此模式适合于选取的列表，这通常是在选择多个项。</para>
+          <para>扩展 multiselect (<b>xlExtended</b>) 通常类似单项选择列表框。 当您单击项目时，您将取消所有其他选择。 在单击鼠标或按箭头键的同时按住 shift 键，当您选择项目按顺序从当前项。 在单击鼠标时按住 CTRL，当您向列表添加单个项目。 此模式适合，允许但不是经常使用多个项目时。</para>
           <para>您可以使用<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Value" />或<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListIndex" />属性返回或设置单项选择列表框中选定的项。</para>
           <para>不能使用链接多选列表框<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.LinkedCell" />属性。</para>
           <para></para>
@@ -676,8 +680,8 @@
         <param name="Count">可选的<b>对象</b>。 要删除的项目数从项目开始<paramref name="Index" />。 如果省略此参数，则会删除一个项目。 如果<paramref name="Index" />  +  <paramref name="Count" />在列表中，从所有项目的项目数超过<paramref name="Index" />通过列表末尾已没有发生错误。</param>
         <summary>从列表框或组合框中删除一个或多个数据项。</summary>
         <remarks>
-          <para>指定的对象是否为它定义了填充区域，此方法将失败。</para>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.RemoveAllItems" />方法从 Microsoft Excel 列表框或组合框中移除所有项。</para>
+          <para>如果指定对象定义了填充区域，则该方法无效。</para>
+          <para>使用<see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.RemoveAllItems" />方法，以从 Microsoft Excel 列表框或组合框中删除的所有条目。</para>
           <para></para>
         </remarks>
       </Docs>

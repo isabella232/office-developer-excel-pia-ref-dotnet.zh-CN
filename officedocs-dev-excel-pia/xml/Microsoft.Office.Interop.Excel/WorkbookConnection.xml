@@ -1,10 +1,10 @@
 <Type Name="WorkbookConnection" FullName="Microsoft.Office.Interop.Excel.WorkbookConnection">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0412302ec11fc558839570922b03112869bc8d74" />
+    <Meta Name="ms.openlocfilehash" Value="a6d1fef0add7e32139d0f7d1970c0354fbd328c7" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581065" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface WorkbookConnection" />
@@ -31,11 +31,11 @@
   <Docs>
     <summary>连接是信息的一套从 1st_Excel12 工作簿之外的外部数据源获取数据所需。</summary>
     <remarks>
-      <para>连接可以存储在 Excel 工作簿中。 工作簿打开时，Excel 将新建的连接，这是作为 connection 对象引用的内存中副本。 Connection 对象包含的服务器的名称和要在该服务器上打开的对象名称等信息。 （可选） 的 connection 对象还可能包括身份验证凭据和/或是传递给服务器并执行的命令 (示例： 若要执行的 SQL Server 的 SELECT 语句。) </para>
+      <para>连接可存储在 Excel 工作簿中。工作簿打开时，Excel 创建连接的内存副本，称为连接对象。连接对象包含服务器名称和服务器上打开的对象的名称等信息。连接对象也可以选择包含身份验证凭据和/或一个命令，该命令可传递给服务器执行（例如：由 SQL Server 执行的 SELECT 语句）。</para>
       <para>
         <b>注意</b>： 该连接的确切形式取决于用于检索数据 – ODBC 连接、 OLEDB 连接的机制和 Web 查询包含不同的信息。</para>
-      <para>A 连接可能还存储在单独的连接文件。 Excel 工作簿中的大部分连接包括指向外部连接文件的指针。 连接文件的清楚地设置为连接文件的扩展名 (*。ODC，*。IQY 等。）并且可能位于用户的本地计算机上或其他已知或受信任的位置，如 WSS （数据连接库） 或其他公司的服务器中。 连接文件启用重复使用连接到同一组织中的多个用户。 网络管理员可更改到后端数据源连接通过更改单个连接文件的整个组织的方式。 连接文件并不总是需要连接到外部数据源时。</para>
-      <para>连接名称是唯一地标识使用它们的工作簿中的连接字符串。    有不是唯一的连接的其他属性。 只要在 Excel 中的公式所需的参数是一个连接，就足以引用该连接，直接 （作为字符串） 的名称或间接 （通过引用的单元格包含一个字符串连接的名称。）</para>
+      <para>连接还可以存储在单独的连接文件中。Excel 工作簿中的大多数连接都包含一个指向外部连接文件的指针。连接文件的扩展名清楚地表明这类文件为连接文件（*.ODC、*.IQY 等），可在用户的本地计算机、其他熟知或受信任的位置（如 WSS，即数据连接库）或其他公司服务器上找到连接文件。通过连接文件，同一组织中的多个用户可重复使用连接。通过更改单个连接文件，网络管理员可以更改整个组织连接到后端数据源的方式。连接外部数据源时，连接文件不是必需使用的。</para>
+      <para>连接名称是字符串，唯一标识使用这些连接的工作簿中的连接。连接还有一些属性不具有唯一性。只要 Excel 中携带参数的公式是一个连接，则以直接方式（字符串形式）或间接方式（引用包含字符串形式的连接名称的单元格）引用连接的名称即可。</para>
       <para></para>
     </remarks>
   </Docs>
@@ -103,7 +103,7 @@
         <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象代表 Microsoft Office Excel 应用程序。 如果使用对象识别符，此属性返回值，该值代表指定对象的创建者<b>Application</b>对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>您可以使用此属性与 OLE 自动化对象返回该对象的应用程序。</para>
+          <para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -133,7 +133,10 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。 <b>Integer</b> 类型，只读。</summary>
         <value>To be added.</value>
-        <remarks>如果对象在 Microsoft Excel 中创建的<para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para></para></remarks>
+        <remarks>
+          <para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。<b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataFeedConnection">
@@ -187,9 +190,11 @@
       <Docs>
         <summary>删除工作簿连接。</summary>
         <remarks>
-          <para>使用此方法可删除的外部数据连接。此方法不适用于其他工作簿的链接。</para>
-          <para>删除连接将不删除或移除正在使用该连接的任何对象。 删除连接不会导致任何要从文件系统中删除的连接文件。 如果您编辑任何这些对象以使用另一个连接，所有内容将启动再次使用。</para>
-          <para>使用已删除的连接的对象的行为就好像无法建立连接。 </para>
+          <para>使用此方法可以删除一个外部数据连接。此方法不适用于与其他工作簿之间的链接。 </para>
+          <para>删除连接将删除或移除任何正在使用该连接的对象。
+
+删除连接不会导致任何要从文件系统中删除的连接文件。  如果您编辑任何这些对象以使用另一个连接，所有内容将启动再次使用。</para>
+          <para>那些使用已删除链接的对象所表现出的行为就好像无法建立连接一样。  </para>
           <para></para>
         </remarks>
       </Docs>
@@ -223,8 +228,8 @@
         <summary>返回或设置的简要说明<see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />对象。 可读写 <b>String</b>。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>中连接属性对话框中，用户可以编辑的连接和/或说明的名称。 更改名称和说明此对话框中的更改这些字段仅在 Excel connection 对象中的。</para>
-          <para>说明的最大大小为 255 个字符。 如果用户指定为超过 255 个字符的连接文件中的说明，说明被截断，以适合 255 个字符限制。</para>
+          <para>在“连接属性”对话框中，用户可以编辑连接的名称和/或说明。在该对话框中更改名称和说明只会更改 Excel 连接对象中的相应字段。</para>
+          <para>说明的最大长度为 255 个字符。如果用户指定的连接文件的说明长于 255 个字符，则说明会被截断，以满足 255 个字符的限制。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -483,7 +488,8 @@
         <summary>刷新工作簿连接。</summary>
         <remarks>
           <para>如果<see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" />属性为<b>false，则</b>不显示对话框， <b>Refresh</b>方法将失败并连接信息不足异常。</para>
-          <para>连接刷新失败的其他连接的刷新操作将没有任何影响。</para>
+          <para>刷新连接失败对刷新其他操作没有任何影响。
+</para>
           <para></para>
         </remarks>
       </Docs>

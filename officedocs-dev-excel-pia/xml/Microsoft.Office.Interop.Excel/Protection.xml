@@ -1,10 +1,10 @@
 <Type Name="Protection" FullName="Microsoft.Office.Interop.Excel.Protection">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="eb4842f02045899e4df285db2b98dfe149fa3820" />
+    <Meta Name="ms.openlocfilehash" Value="f9996163076ffe6bcb7674a54fe7b673141d992b" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585188" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Protection" />
@@ -84,6 +84,11 @@
             <see cref="P:Microsoft.Office.Interop.Excel.Protection.AllowSorting" />
           </description>
         </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.Protection.AllowUsingPivotTables" />
+          </description>
+        </item>
       </list>
       <para></para>
     </remarks>
@@ -116,7 +121,7 @@
         <value>To be added.</value>
         <remarks>
           <para>可以通过使用设置<b>AllowDeletingColumns</b>属性<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />方法参数。</para>
-          <para>工作表处于保护状态时，必须锁定包含要删除的单元格的列。</para>
+          <para>对于受保护的工作表，必须取消对包含要删除的单元格的列的锁定。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -148,7 +153,7 @@
         <value>To be added.</value>
         <remarks>
           <para>可以通过使用设置<b>AllowDeletingRows</b>属性<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />方法参数。</para>
-          <para>工作表处于保护状态时，必须锁定包含要删除的单元格的行。</para>
+          <para>对于受保护的工作表，必须取消对包含要删除的单元格的行的锁定。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -209,8 +214,8 @@
         <remarks>
           <para>可以通过使用设置<b>AllowFiltering</b>属性<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />方法参数。</para>
           <para>
-            <b>AllowFiltering</b>属性允许用户更改现有的自动筛选上筛选条件。用户无法创建或删除受保护的工作表上的自动筛选器。</para>
-          <para>要筛选的单元格必须时工作表受保护的锁定。</para>
+            <b>AllowFiltering</b> 属性允许用户更改已有的“自动筛选”上的筛选条件。用户不能创建或删除受保护的工作表上的“自动筛选”。</para>
+          <para>若要筛选受保护的工作表上的单元格，则必须先取消对这些单元格的锁定。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -242,7 +247,7 @@
         <value>To be added.</value>
         <remarks>
           <para>可以通过使用设置<b>AllowFormattingCells</b>属性<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />方法参数。</para>
-          <para>使用此属性禁用保护选项卡中，允许用户更改所有格式但不是能锁定或隐藏范围。</para>
+          <para>使用此属性禁用保护选项卡，允许用户更改所有格式但不是能锁定或隐藏范围。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -335,7 +340,7 @@
         <summary>如果允许受保护的工作表上插入列，则，返回<b>True</b> 。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>插入列继承其格式 （默认） 从列到其左，这意味着它可能已锁定的单元格。换言之，用户可能无法删除它们已插入的列。</para>
+          <para>默认情况下，插入的列继承了其左边的列的格式设置，这意味着该列可能包含锁定的单元格。也就是说，用户可能不能删除插入的列。</para>
           <para>可以通过使用设置<b>AllowInsertingColumns</b>属性<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />方法参数。</para>
           <para></para>
         </remarks>
@@ -367,7 +372,7 @@
         <summary>如果允许受保护的工作表上插入超链接，则，返回<b>True</b> 。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>只能在受保护的工作表上的未锁定或未受保护的单元格中插入超链接。</para>
+          <para>在受保护的工作表上，只能将超链接插入未锁定或未保护的单元格中。</para>
           <para>可以通过使用设置<b>AllowInsertingHyperlinks</b>属性<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />方法参数。</para>
           <para></para>
         </remarks>
@@ -430,7 +435,7 @@
         <summary>如果排序选项允许在受保护的工作表上，则返回<b>True</b> 。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>在受保护的工作表，排序只能对未锁定或未受保护的单元格。</para>
+          <para>在受保护的工作表，排序只能执行对未锁定或未受保护的单元格。</para>
           <para>可以通过使用设置<b>AllowSorting</b>属性<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />方法参数。</para>
           <para></para>
         </remarks>
@@ -463,7 +468,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>AllowUsingPivotTables</b>属性应用于非 OLAP 源数据。</para>
+            <b>AllowUsingPivotTables</b> 属性应用于非 OLAP 源数据。</para>
           <para>可以通过使用设置<b>AllowUsingPivotTables</b>属性<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />方法参数。</para>
           <para></para>
         </remarks>

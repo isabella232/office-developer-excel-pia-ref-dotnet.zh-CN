@@ -1,10 +1,10 @@
 <Type Name="DownBars" FullName="Microsoft.Office.Interop.Excel.DownBars">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="86b025151902b86185c6a47185ca8e79c9861e63" />
+    <Meta Name="ms.openlocfilehash" Value="8a11ccac0189762102efaa1f69baea1cafc3ed8e" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587533" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DownBars" />
@@ -31,7 +31,7 @@
   <Docs>
     <summary>代表图表组中的跌柱线。</summary>
     <remarks>
-      <para>跌柱线使用较低值最后一系列 （行下移从第一个系列） 进行连接图表组中的第一个系列上的点。仅包含至少两个系列二维折线图可以有跌柱线。此对象不是集合。没有对象代表一个向下的条形图;必须涨柱线和跌柱线处于打开状态图表组中的所有点或必须将其都关闭</para>
+      <para>跌柱线将图表组中第一个系列的数据点与最后一个系列中相应的有较小值的数据点连接起来（从第一个系列向下生长）。只有至少包含两个系列的二维折线图才能有跌柱线。此对象不是集合。没有代表单个跌柱线的对象；或者打开图表组中所有数据点的涨跌柱线，或者将其全部关闭。</para>
       <para>使用<see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.DownBars" />属性可返回<b>DownBars</b>对象。</para>
       <para>如果<see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.HasUpDownBars" />属性为<b>False</b>， <b>DownBars</b>对象的绝大部分属性将被禁用。</para>
       <para></para>
@@ -123,9 +123,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -328,7 +328,7 @@
         <summary>选择对象。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>，选择单元格区域，请使用<b>Select</b>方法。若要使单个单元格活动单元格，请使用<see cref="M:Microsoft.Office.Interop.Excel._Chart.Activate" />方法。</para>
+          <para>若要选择一个单元格的范围，请使用<b>Select</b>方法。 若要使单个单元格活动单元格，请使用<see cref="M:Microsoft.Office.Interop.Excel._Chart.Activate" />方法。</para>
           <para></para>
         </remarks>
       </Docs>

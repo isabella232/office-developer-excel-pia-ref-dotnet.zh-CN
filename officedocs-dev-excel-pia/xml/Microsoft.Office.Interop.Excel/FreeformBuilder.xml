@@ -1,10 +1,10 @@
 <Type Name="FreeformBuilder" FullName="Microsoft.Office.Interop.Excel.FreeformBuilder">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9e6022e2a6980f7f4d0f4351bf6f7fad328d8c16" />
+    <Meta Name="ms.openlocfilehash" Value="49bbc8d21ea36b32da44ca3a92e3697a77f26497" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582647" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface FreeformBuilder" />
@@ -30,7 +30,10 @@
   </Attributes>
   <Docs>
     <summary>代表任意多边形创建时的几何属性。</summary>
-    <remarks>使用<para><see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" />方法，以返回<b>FreeformBuilder</b>对象。使用<see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" />方法将节点添加到 freefrom。使用<see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" />方法可创建<b>FreeformBuilder</b>对象中定义的形状，并将其添加到<see cref="T:Microsoft.Office.Interop.Excel.Shapes" />集合。</para><para></para></remarks>
+    <remarks>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" />方法，以返回<b>FreeformBuilder</b>对象。 使用<see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" />方法将节点添加到 freefrom。 使用<see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" />方法可创建<b>FreeformBuilder</b>对象中定义的形状，并将其添加到<see cref="T:Microsoft.Office.Interop.Excel.Shapes" />集合。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddNodes">
@@ -129,7 +132,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>
-            <b>注意</b>您必须将应用<see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" />方法<b>FreeformBuilder</b>对象至少应用一次使用<b>ConvertToShape</b>方法前。</para>
+            <b>注释</b>  您必须应用<see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" />方法<b>FreeformBuilder</b>对象至少应用一次才能使用<b>ConvertToShape</b>方法。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -160,9 +163,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>

@@ -1,10 +1,10 @@
 <Type Name="WorkbookEvents_Event" FullName="Microsoft.Office.Interop.Excel.WorkbookEvents_Event">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a6f0025a298b025acdc36577d72a1f6f03353008" />
+    <Meta Name="ms.openlocfilehash" Value="2c6690aaaabf5f77b79d72b8fb4094774b86969d" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20586259" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface WorkbookEvents_Event" />
@@ -50,8 +50,8 @@
       <Docs>
         <summary>激活工作簿时发生此事件。</summary>
         <remarks>
-          <para>在显示同一工作簿的两个窗口间切换时，将发生<b>WindowActivate</b>事件，但工作簿的<b>Activate</b>事件不会发生。</para>
-          <para>当您创建一个新窗口时不触发此事件。</para>
+          <para>在显示同一工作簿的两个窗口间切换时，发生<b>WindowActivate</b>事件，但工作簿的<b>Activate</b>事件不会发生。</para>
+          <para>新建窗口时不产生此事件。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -92,7 +92,7 @@
       <Docs>
         <summary>当工作簿作为加载宏卸载时，发生此事件。</summary>
         <remarks>
-          <para>外接程序后不会自动关闭它卸载。</para>
+          <para>卸载加载宏时，该加载宏并不自动关闭。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -317,7 +317,7 @@
         <summary>在工作簿中创建新图表时发生。</summary>
         <remarks>
           <para>
-            <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewChart" />每当插入新图表或将其粘贴到工作表、 图表工作表或其他工作表类型中发生事件。如果多个图表插入或者粘贴，则会发生事件的每个图表的顺序插入或粘贴。如果 chart 对象或图表工作表从一个位置移动到另一个，不会发生该事件。但是，如果 chart 对象和图表工作表之间移动时图表，则会发生事件因为必须创建一个新的图表。</para>
+            <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewChart" />每当插入新图表或将其粘贴到工作表、 图表工作表或其他工作表类型中发生事件。 如果多个图表插入或者粘贴，则会发生事件的每个图表的顺序插入或粘贴。 如果 chart 对象或图表工作表从一个位置移动到另一个，不会发生该事件。 但是，如果 chart 对象和图表工作表之间移动图表时，因为必须创建一个新的图表，将发生该事件。</para>
           <para>
             <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewChart" />事件不会发生以下情况方案： 复制或粘贴图表工作表、 更改图表类型或图表数据源，撤消或恢复插入或粘贴图表，并加载包含图表的工作簿的更改。</para>
           <para></para>
@@ -417,7 +417,7 @@
       <Docs>
         <summary>在用户深化记录集或调用行集操作在 OLAP 数据透视表时引发的事件。</summary>
         <remarks>
-          <para>事件原因异步创建记录集，允许自动确定已完成操作。此外，因为在单独的工作表上创建记录集后，事件需要在工作簿级。</para>
+          <para>由于记录集是以异步方式创建的，所以此事件允许自动确定已在何时完成操作。此外，由于记录集是在单独的工作表上创建的，所以需要将此事件置于工作簿级别上。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -496,7 +496,7 @@
       <Docs>
         <summary>右键单击任一工作表时发生此事件，此事件先于默认的右键单击操作。</summary>
         <remarks>
-          <para>图表工作表上不会发生此事件。</para>
+          <para>图表工作表中不发生此事件。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -537,7 +537,7 @@
       <Docs>
         <summary>当用户或外部链接更改了任何工作表中的单元格时发生此事件。</summary>
         <remarks>
-          <para>图表工作表上不会发生此事件。</para>
+          <para>图表工作表中不发生此事件。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -597,7 +597,7 @@
       <Docs>
         <summary>标注库的图标 （动态和静态） 已完成的工作表的呈现时发生。</summary>
         <remarks>
-          <para>此事件可以用于指示时重新启用屏幕更新或其他显示对话框，例如。</para>
+          <para>此事件可用于指示时重新启用屏幕更新或其他显示对话框，例如。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -620,7 +620,7 @@
         <summary>在编辑或重新计算（针对包含公式的单元格）数据透视表中的单元格或单元格区域后发生此事件。</summary>
         <remarks>
           <para>
-            <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableAfterValueChange" />编辑或重新计算的单元格以外的任何情况下不会发生事件。例如，它不会发生在数据透视表进行刷新、 排序、 筛选，或深化，即使这些操作移动单元格，并可能从 OLAP 数据源检索新值。</para>
+            <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableAfterValueChange" />编辑或重新计算的单元格以外的任何情况下不会发生事件。 例如，它不会发生在数据透视表进行刷新、 排序、 筛选，或深化，即使这些操作移动单元格，并可能从 OLAP 数据源检索新值。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -643,7 +643,7 @@
         <summary>在向数据透视表应用更改前发生此事件。</summary>
         <remarks>
           <para>
-            <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeAllocateChanges" />事件 Excel 立即执行所有更改应用于数据透视表的 OLAP 数据源，更新多维数据集语句之前，且用户已选择要应用的用户界面中更改后立即发生。</para>
+            <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeAllocateChanges" /> Excel 立即执行所有更改应用于数据透视表的 OLAP 数据源，更新多维数据集语句之前，且用户已选择要应用的用户界面中更改后一刻发生的事件。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -666,7 +666,7 @@
         <summary>在针对 OLAP 数据源提交对数据透视表的更改前发生此事件。</summary>
         <remarks>
           <para>
-            <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeCommitChanges" />事件 Excel 立即执行 TRANSACTION 数据透视表的 OLAP 数据源之前，且用户已选择保存的更改整个数据透视表的后一刻发生。</para>
+            <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeCommitChanges" /> Excel 立即执行 TRANSACTION 数据透视表的 OLAP 数据源之前，且用户已选择保存的更改整个数据透视表的后一刻发生的事件。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -688,7 +688,7 @@
       <Docs>
         <summary>在放弃对数据透视表所做的更改之前发生此事件。</summary>
         <remarks>
-          <para>时发生即将 Excel 执行回滚事务语句对 OLAP 数据源，如果事务仍处于活动状态，并且用户已选择放弃更改后然后放弃对数据透视表中的所有已编辑的值。</para>
+          <para>Excel 执行回滚事务语句对 OLAP 数据源，如果事务仍处于活动状态，并且用户已选择放弃更改后然后放弃对数据透视表中的所有已编辑的值前一刻发生。</para>
           <para></para>
         </remarks>
       </Docs>

@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587785" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface _Application" />
@@ -404,7 +404,7 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，表示活动窗口 （最上面的窗口） 中的活动单元格或指定窗口中。 如果窗口中不显示工作表，该属性无效。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>注意区分活动单元格和所选内容。活动单元格内当前所选内容的单个单元格。所选内容可能包含多个单元格，但只有一个是活动单元格。</para>
+          <para>请仔细区分活动单元格和选定区域。活动单元格为选定区域内部的一个单元格。而选定区域可以包含多个单元格，但只有一个单元格为活动单元格。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -592,7 +592,7 @@
         <summary>获取<see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" />对象，表示活动的受保护的视图窗口 （最上面的窗口）。</summary>
         <value>A<see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" />对象，表示活动的受保护的视图窗口 （最上面的窗口）。</value>
         <remarks>
-          <para>返回空引用 (在 Visual Basic 中为 Nothing)，如果没有打开的受保护的视图窗口。只读的。</para>
+          <para>如果没有打开的受保护的视图窗口，则返回空引用 (在 Visual Basic 中为 Nothing)。 只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -623,7 +623,7 @@
         <summary>在活动工作簿或工作簿的指定的窗口中，则返回一个对象，表示活动工作表 （顶部的工作表）。 如果没有工作表处于活动状态，则返回<b>Nothing</b> 。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>工作簿出现在多个窗口中，如果<b>ActiveSheet</b>属性可能不同在不同的窗口。</para>
+          <para>如果工作簿出现在多个窗口中，在不同窗口中可能不同的<b>ActiveSheet</b>属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -751,7 +751,7 @@
         <param name="ByRow">可选的<b>对象</b>。 如果仅使用<paramref name="ListArray" />是一个<b>Range</b>对象。 <b>True</b>区域中每行的创建自定义列表。 <b>False</b>从每个列区域中创建自定义列表。 如果省略此参数，并且有更多的行数多于列数 （或行和列数相等） 区域中，Microsoft Excel 将新建一个自定义列表从区域中的每个列。 如果省略此参数，并且有多个列数多于范围中的行数，Microsoft Excel 将新建范围中的每行的自定义列表。</param>
         <summary>为自定义自动填充和/或自定义排序添加自定义列表。</summary>
         <remarks>
-          <para>如果的列表您尝试添加已经存在，则此方法不起作用。</para>
+          <para>如果要添加的列表已经存在，则本方法不起作用。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -813,7 +813,7 @@
         <summary>获取一<see cref="T:Microsoft.Office.Interop.Excel.AddIns2" />代表所有加载项的当前或打开在 Excel 中，而不考虑它们是否安装可用的对象。</summary>
         <value>一<see cref="T:Microsoft.Office.Interop.Excel.AddIns2" />代表所有加载项的当前可用或在 Excel 中打开的对象。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -923,7 +923,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>即使 ClearType 的 Microsoft Windows 设置处于关闭状态，将此属性设置为<b>True</b>替代 Windows 设置和所有 Microsoft Office 应用程序中使用 ClearType。</para>
+          <para>即使关闭 Microsoft Windows 的 ClearType 设置，将此属性设置为 <b>True</b> 也会替代 Windows 设置，并在所有 Microsoft Office 应用程序中使用 ClearType。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1085,7 +1085,7 @@
         </value>
         <remarks>
           <para>
-            <b>IAssistance</b>对象使开发人员可以显示自定义帮助以及随 Office 帮助查看器中的 Office 一起安装的帮助。</para>
+            <b>IAssistance</b> 对象使开发人员显示自定义帮助和安装在办公室帮助查看器中的 Office 的帮助。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1210,24 +1210,24 @@
         <summary>返回或设置<see cref="T:Microsoft.Office.Core.MsoAutomationSecurity" />以编程方式打开文件时，将使用常量，代表 Microsoft Excel 的安全模式。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>启动应用程序时，此属性是自动设置为<b>msoAutomationSecurityLow</b> 。因此，以避免破坏依赖的默认设置的解决方案，您应该注意此属性重置为<b>msoAutomationSecurityLow</b>后以编程方式打开文件。此外，此属性应设置立即之前和之后打开文件以编程方式为避免恶意 subversion。</para>
+          <para>当应用程序启动时，该属性自动设置为 <b>msoAutomationSecurityLow</b>。因此，要避免中断依赖于默认设置的解决方案，应该在以编程方式打开文件后，小心地将本属性重置为 <b>msoAutomationSecurityLow</b>。另外，在以编程方式打开文件前后，还应该立即对本属性进行设置，以避免恶意破坏。</para>
           <para>
-            <b>MsoAutomationSecurity</b>可以是下列<b>MsoAutomationSecurity</b>常量之一：</para>
+            <b>MsoAutomationSecurity</b> 可以是其中一个 <b>MsoAutomationSecurity</b> 常量:</para>
           <list type="bullet">
             <item>
               <description>
-                <b>msoAutomationSecurityByUI</b>使用<b>安全</b>对话框中指定的安全设置。</description>
+                <b>msoAutomationSecurityByUI</b> 使用<b>安全</b>对话框中指定的安全设置。</description>
             </item>
             <item>
               <description>
-                <b>msoAutomationSecurityForceDisable</b>禁用以编程方式打开而不显示任何安全警告的所有文件中的所有宏。</description>
+                <b>msoAutomationSecurityForceDisable</b> 禁用所有宏，而不显示任何安全警告以编程方式打开的所有文件中。</description>
             </item>
             <item>
               <description>
-                <b>msoAutomationSecurityLow</b>启用所有宏。启动应用程序时，这是默认值。</description>
+                <b>msoAutomationSecurityLow</b> 启用所有宏。 此为启动应用程序时的默认值。</description>
             </item>
           </list>
-          <para>设置<see cref="P:Microsoft.Office.Interop.Excel._Application.ScreenUpdating" />为<b>False</b>不会影响通知并将不影响安全警告。<see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" />设置不会应用于安全警告。例如，如果用户将设置为<b>DisplayAlerts</b>等于<b>False</b>和<b>AutomationSecurity</b><b>msoAutomationSecurityByUI</b>，用户时在中型安全级别，然后将会安全警告宏时运行。这将允许宏捕获文件打开错误，而仍显示安全警告如果成功打开的文件。</para>
+          <para>设置<see cref="P:Microsoft.Office.Interop.Excel._Application.ScreenUpdating" />为<b>False</b>不会影响通知并将不影响安全警告。 <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" />设置不会应用于安全警告。 例如，如果用户将设置为<b>DisplayAlerts</b>等于<b>False</b>和<b>AutomationSecurity</b><b>msoAutomationSecurityByUI</b>，用户时在中型安全级别，然后将会安全警告时运行宏。 这使宏可以捕获文件打开错误，而仍将显示安全警告如果成功打开文件。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1290,7 +1290,7 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.AutoRecover" />对象，它设定的时间间隔备份所有文件格式。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>有效的时间间隔是介于 1 到 120。</para>
+          <para>有效的时间间隔为从 1 到 120 的所有数值。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1443,7 +1443,7 @@
       <Docs>
         <summary>对于所有打开的工作簿，强制数据的完整计算并重建从属关系。</summary>
         <remarks>
-          <para>依赖项是取决于其他单元格的公式。例如，公式"= A1"取决于的单元格 A1。<b>CalculateFullRebuild</b>方法类似于重新输入所有公式是。</para>
+          <para>从属关系是取决于其他单元格的公式。例如，公式“=A1”取决于单元格 A1。<b>CalculateFullRebuild</b> 方法类似于重新输入所有公式。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1635,7 +1635,7 @@
         <summary>返回一个数字，其最右边的四位是次要计算引擎的版本号，并且其 （左侧） 其他位数的主版本的 Microsoft Excel。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果 Excel 的早期版本中保存工作簿和工作簿并未进行完全重新计算，如果此属性返回 0。</para>
+          <para>如果工作簿已保存的 Excel 和工作簿并未进行完全重新计算的早期版本中，此属性返回 0。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1673,28 +1673,27 @@
         <summary>返回关于调用 Visual Basic 的信息（有关详细信息，请参阅“注解”部分）。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性返回信息已调用 Visual Basic 下, 表中所示。</para>
+          <para>本属性返回关于调用 Visual Basic 的信息，如下表所示。</para>
           <list type="table">
             <item>
-              <term>自定义的函数中的单个单元格输入</term>
-              <description>A<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，它指定该单元格</description>
+              <term>在单个单元格中输入的自定义函数</term>
+              <description>A<see cref="T:Microsoft.Office.Interop.Excel.Range" />指定该单元格的对象</description>
             </item>
             <item>
-              <term>A 自定义的函数单元格区域中作为数组公式的</term>
-              <description>
-                <b>Range</b>对象，该对象指定的单元格的区域</description>
+              <term>在单元格区域中作为数组公式一部分的自定义函数</term>
+              <description>指定该单元格区域的<b>区域</b>对象</description>
             </item>
             <item>
-              <term>Auto_Open、 Auto_Close、 Auto_Activate 或 Auto_Deactivate 宏</term>
-              <description>以文本形式文档的名称</description>
+              <term>Auto_Open、 Auto_Close 、 Auto_Activate 或 Auto_Deactivate 宏</term>
+              <description>以文本形式返回的文档名</description>
             </item>
             <item>
               <term>通过以下任一方式设置的宏<see cref="P:Microsoft.Office.Interop.Excel._Application.OnDoubleClick" />或<see cref="P:Microsoft.Office.Interop.Excel._Application.OnEntry" />属性</term>
-              <description>chart 对象的名称标识符或单元格引用宏所应用 （如果适用）</description>
+              <description>该宏所应用的图表对象标识符或单元格引用（若适用）的名称</description>
             </item>
             <item>
-              <term>宏对话框 （工具菜单） 或上述之外的任何呼叫方</term>
-              <description>#REF ！ 错误值</description>
+              <term>“工具”菜单中的“宏”对话框，或上述之外的其他调用进程</term>
+              <description>错误值 #REF!</description>
             </item>
           </list>
           <para></para>
@@ -1857,7 +1856,7 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，表示活动工作表上的所有单元格。 如果活动文档不是工作表，该属性无效。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>因为<see cref="P:Microsoft.Office.Interop.Excel.Range.Item(System.Object,System.Object)" />属性是<b>Range</b>对象的默认属性，则可以在<b>单元格</b>关键字后面立即指定的行和列的索引。有关详细信息，请参阅<see cref="P:Microsoft.Office.Interop.Excel.Range.Item(System.Object,System.Object)" />属性。</para>
+          <para>因为<see cref="P:Microsoft.Office.Interop.Excel.Range.Item(System.Object,System.Object)" />属性是<b>Range</b>对象的默认属性，则可以在<b>单元格</b>关键字后面立即指定的行和列的索引。 有关详细信息，请参阅<see cref="P:Microsoft.Office.Interop.Excel.Range.Item(System.Object,System.Object)" />属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2049,7 +2048,7 @@
         <summary>返回数字值的数组形式目前剪贴板的格式。 若要确定特定格式是否剪贴板上，与备注部分中列出的适当常量比较数组中的每个元素。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性返回的数字值的数组。若要确定特定格式是否剪贴板上，比较与下列选项之一数组的每个元素<see cref="T:Microsoft.Office.Interop.Excel.XlClipboardFormat" />常量：</para>
+          <para>此属性返回的数字值的数组。 若要确定特定格式是否剪贴板上，比较与下列选项之一数组的每个元素<see cref="T:Microsoft.Office.Interop.Excel.XlClipboardFormat" />常量：</para>
           <para>
             <b>xlClipboardFormatBIFF</b>
           </para>
@@ -2182,11 +2181,11 @@
         <summary>获取或设置用来运行 XLL 加载项中的用户定义函数的高性能计算 (HPC) 群集连接器的名称。</summary>
         <value>用于运行 XLL 加载项中的用户定义函数的高性能计算 (HPC) 群集连接器的名称。</value>
         <remarks>
-          <para>读/写。</para>
-          <para>的设置<see cref="P:Microsoft.Office.Interop.Excel._Application.ClusterConnector" />属性对应于群集类型下拉列表框在公式下高级类别中的 Excel 选项对话框。</para>
+          <para>为可读/写属性。</para>
+          <para>设置<see cref="P:Microsoft.Office.Interop.Excel._Application.ClusterConnector" />属性对应于群集类型下拉列表框在公式下高级类别中的 Excel 选项对话框。</para>
           <para>
-            <b>注意</b>： 指定<see cref="P:Microsoft.Office.Interop.Excel._Application.ClusterConnector" />属性必须安装高性能计算 (HPC) 群集连接器。群集连接器使您能够以提高性能的 HPC 群集上远程运行群集安全 XLL 函数。</para>
-          <para>可以指定之前<see cref="P:Microsoft.Office.Interop.Excel._Application.ClusterConnector" />属性，您必须使用<see cref="P:Microsoft.Office.Interop.Excel._Application.UseClusterConnector" />属性，以允许 Microsoft Excel 2010 XLL 加载宏中运行的用户定义函数</para>
+            <b>注意</b>： 指定<see cref="P:Microsoft.Office.Interop.Excel._Application.ClusterConnector" />属性必须安装高性能计算 (HPC) 群集连接器。 群集连接器使您能够以提高性能的 HPC 群集上远程运行群集安全 XLL 函数。</para>
+          <para>您可以指定之前<see cref="P:Microsoft.Office.Interop.Excel._Application.ClusterConnector" />属性，您必须使用<see cref="P:Microsoft.Office.Interop.Excel._Application.UseClusterConnector" />属性，以允许 Microsoft Excel 2010 XLL 加载项中运行的用户定义函数。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2313,7 +2312,7 @@
         <summary>返回<see cref="T:Microsoft.Office.Core.CommandBars" />对象，表示 Excel 命令栏。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性返回应用程序的可用的内置和自定义命令栏集。</para>
+          <para>此属性返回到应用程序的可用的内置和自定义命令栏集。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2364,7 +2363,7 @@
           <para>
             <b>xlCommandUnderlinesAutomatic</b>
           </para>
-          <para>在 Microsoft Excel for Windows，读取此属性始终返回<b>xlCommandUnderlinesOn</b>，并且该属性设置为<b>xlCommandUnderlinesOn</b>之外的任何内容是一个错误。</para>
+          <para>在 Microsoft Excel for Windows 中，该属性总是返回 <b>xlCommandUnderlinesOn</b>，该属性只能设置为 <b>xlCommandUnderlinesOn</b>，不允许设置为其他任何值。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2405,7 +2404,7 @@
           <b>True</b>如果手写识别仅限于数字和标点符号。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性是您使用 Microsoft Windows for Pen Computing 时才可用。如果您尝试设置该属性在其他操作系统下的，将发生错误。</para>
+          <para>该属性仅在使用 Microsoft Windows for Pen Computing 时可用。如果试图在其他操作系统中对该属性进行设置将产生错误。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2446,7 +2445,7 @@
           <b>True</b>如果 Microsoft Excel 显示为从右到左语言的控制字符。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>仅当从右到左语言支持安装和选择了时，才可以设置此属性。</para>
+          <para>只有在安装和选择了从右到左语言支持时，才可以设置该属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2555,7 +2554,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2600,12 +2599,14 @@
           <para>
             <b>xlDefault</b>默认指针。</para>
           <para>
-            <b>xlIBeam</b> i 形指针。</para>
+            <b>xlIBeam</b>I 形指针。</para>
           <para>
             <b>xlNorthwestArrow</b>西北箭头指针。</para>
           <para>
-            <b>xlWait</b>沙漏型指针。</para>停止宏的运行时，
-          <para><b>光标</b>属性不自动重新一设置。您应将重置指针为<b>xlDefault</b>之前您的宏停止运行。</para><para></para></remarks>
+            <b>xlWait</b>沙漏型指针。</para>
+          <para>当宏停止运行时，<b>Cursor</b> 属性不会自动重设。在宏停止运行前，应将指针重设为 <b>xlDefault</b>。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CursorMovement">
@@ -2643,7 +2644,7 @@
         <summary>返回或设置一个值，指示是否使用可视的光标或逻辑光标。 可以是下列常量之一： <b>xlVisualCursor</b>或<b>xlLogicalCursor</b>。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>这些常量可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
+          <para>对于所选择或安装的不同语言支持（例如，英语（美国）），这些常量可能不可用。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2727,13 +2728,13 @@
               <term>
                 <b>xlCopy</b>
               </term>
-              <description>中复制模式</description>
+              <description>复制模式</description>
             </item>
             <item>
               <term>
                 <b>xlCut</b>
               </term>
-              <description>中剪切模式</description>
+              <description>剪切模式</description>
             </item>
           </list>
           <list type="table">
@@ -2741,13 +2742,13 @@
               <term>
                 <b>False</b>
               </term>
-              <description>取消剪切或复制模式并删除移动边框。</description>
+              <description>取消剪切或复制模式并清除移动边框。</description>
             </item>
             <item>
               <term>
-                <b>，则返回 true</b>
+                <b>True</b>
               </term>
-              <description>取消剪切或复制模式并删除移动边框。</description>
+              <description>取消剪切或复制模式并清除移动边框。</description>
             </item>
           </list>
           <para></para>
@@ -2794,19 +2795,19 @@
               <term>
                 <b>xlOn</b>
               </term>
-              <description>数据输入模式处于打开状态。</description>
+              <description>“数据输入”模式处于打开状态。</description>
             </item>
             <item>
               <term>
                 <b>xlOff</b>
               </term>
-              <description>关闭数据输入模式</description>
+              <description>“数据输入”模式处于关闭状态。</description>
             </item>
             <item>
               <term>
                 <b>xlStrict</b>
               </term>
-              <description>数据输入模式处于打开状态，然后按 ESC 不会将其关闭</description>
+              <description>数据输入模式处于打开状态，并且按 ESC 不会将其关闭。</description>
             </item>
           </list>
           <para></para>
@@ -2876,47 +2877,47 @@
         <summary>通过指定的 DDE 通道在另一个应用程序中运行一条命令或执行其他操作。</summary>
         <remarks>
           <para>
-            <b>DDEExecute</b>方法用于发送到另一个应用程序的命令。您还可将其用于将击键发送给其他应用程序，尽管<see cref="M:Microsoft.Office.Interop.Excel._Application.SendKeys(System.Object,System.Object)" />方法是将击键发送的首选的方法。<paramref name="String" />参数可以指定与 ALT、 CTRL 或 SHIFT 或这些键的任意组合结合任意单个键。由一个或多个字符，例如"a"字符表示每个键，或"{输入}"ENTER 键。</para>
-          <para>若要指定按相应键 （例如，ENTER 或选项卡上） 时不显示的字符使用下表中列出的代码。每个表中的代码表示键盘上的一个键。</para>
+            <b>DDEExecute</b>方法用于发送到另一个应用程序的命令。 您还可将其用于将击键发送给其他应用程序，尽管<see cref="M:Microsoft.Office.Interop.Excel._Application.SendKeys(System.Object,System.Object)" />方法是将击键发送的首选的方法。 <paramref name="String" />参数可以指定与 ALT、 CTRL 或 SHIFT 或这些键的任意组合结合任意单个键。 由一个或多个字符，例如"a"字符表示每个键，或"{输入}"ENTER 键。</para>
+          <para>若要指定那些没有屏幕回显该字符的键（例如，Enter 或 Tab），请使用下表所列的代码来表示相应的键。表中的每个代码表示键盘上的一个对应键。</para>
           <list type="table">
             <item>
               <term>BACKSPACE</term>
               <description>{BACKSPACE} 或 {BS}</description>
             </item>
             <item>
-              <term>中断</term>
+              <term>Break</term>
               <description>{中断}</description>
             </item>
             <item>
-              <term>CAPS LOCK</term>
+              <term>Caps Lock</term>
               <description>{CAPSLOCK}</description>
             </item>
             <item>
-              <term>清除</term>
+              <term>Clear</term>
               <description>{清除}</description>
             </item>
             <item>
-              <term>DELETE 或 DEL</term>
+              <term>Delete 或 Del</term>
               <description>{DELETE} 或 {DEL}</description>
             </item>
             <item>
-              <term>向下箭头</term>
+              <term>向下键</term>
               <description>{下}</description>
             </item>
             <item>
-              <term>结束</term>
+              <term>End</term>
               <description>{最终}</description>
             </item>
             <item>
-              <term>ENTER</term>
-              <description>~ （波形符）</description>
+              <term>Enter</term>
+              <description>~（波形符）</description>
             </item>
             <item>
-              <term>ENTER （数字小键盘）</term>
-              <description>{ENTER}</description>
+              <term>Enter（数字小键盘）</term>
+              <description>{输入}</description>
             </item>
             <item>
-              <term>ESC</term>
+              <term>Esc</term>
               <description>{ESCAPE} 或 {ESC}</description>
             </item>
             <item>
@@ -2924,66 +2925,66 @@
               <description>{F1} 到 {F15}</description>
             </item>
             <item>
-              <term>帮助</term>
+              <term>Help</term>
               <description>{帮助}</description>
             </item>
             <item>
-              <term>主页</term>
+              <term>Home</term>
               <description>{主页}</description>
             </item>
             <item>
-              <term>项</term>
+              <term>Ins</term>
               <description>{插入}</description>
             </item>
             <item>
-              <term>左箭头</term>
+              <term>向左键</term>
               <description>{左}</description>
             </item>
             <item>
-              <term>NUM LOCK</term>
+              <term>Num Lock</term>
               <description>{NUMLOCK}</description>
             </item>
             <item>
-              <term>PAGE DOWN</term>
+              <term>PageDown</term>
               <description>{PGDN}</description>
             </item>
             <item>
-              <term>PAGE UP</term>
+              <term>PageUp</term>
               <description>{PGUP}</description>
             </item>
             <item>
-              <term>返回</term>
+              <term>Return</term>
               <description>{返回}</description>
             </item>
             <item>
-              <term>向右箭头</term>
+              <term>向右键</term>
               <description>{右}</description>
             </item>
             <item>
-              <term>SCROLL LOCK</term>
+              <term>Scroll Lock</term>
               <description>{SCROLLLOCK}</description>
             </item>
             <item>
-              <term>选项卡</term>
+              <term>Tab</term>
               <description>{选项卡}</description>
             </item>
             <item>
-              <term>向上箭头</term>
-              <description>{UP}</description>
+              <term>向上键</term>
+              <description>{向上}</description>
             </item>
           </list>
-          <para>您还可以指定与 SHIFT 和/或 CTRL 和/或 ALT 组合的键。若要指定键组合与一个或多个只提到的项，请使用下表。</para>
+          <para>还可指定与 Shift 和/或 Ctrl 和/或 Alt 组合使用的键。若要指定前面提到的这些键的组合键，请使用下表的用法。</para>
           <list type="table">
             <item>
-              <term>SHIFT</term>
-              <description>+ （加号）</description>
+              <term>Shift</term>
+              <description>+（加号）</description>
             </item>
             <item>
-              <term>CTRL</term>
-              <description>^ （插入记号）</description>
+              <term>Ctrl</term>
+              <description>^（插入符号）</description>
             </item>
             <item>
-              <term>ALT</term>
+              <term>Alt</term>
               <description>%（百分号）</description>
             </item>
           </list>
@@ -3022,7 +3023,10 @@
         <param name="Topic">必需的 <b>字符串</b> 。 描述通道所指向的应用程序的有关信息，通常为该应用程序的一个文档。</param>
         <summary>打开到一个应用程序的 DDE 通道。</summary>
         <returns>To be added.</returns>
-        <remarks>如果成功<para>， <b>DDEInitiate</b>方法返回打开的通道号。所有后续 DDE 函数使用此号码指定该频道。</para><para></para></remarks>
+        <remarks>
+          <para>如果成功的话，<b>DDEInitiate</b> 方法将返回打开通道的通道号，所有随后的 DDE 函数将使用此号码指定通道。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DDEPoke">
@@ -3059,7 +3063,7 @@
         <param name="Data">所需的<b>对象</b>。 发送到应用程序的数据。</param>
         <summary>向应用程序发送数据。</summary>
         <remarks>
-          <para>如果方法调用失效将发生错误。</para>
+          <para>如果本方法调用失效将产生错误。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3265,7 +3269,7 @@
         <summary>返回或设置默认方向在其中 Microsoft Excel 将显示新的 windows 和工作表。 可以是下列常量之一： <b>xlRTL</b> （右到左） 或<b>xlLTR</b> （从左到右）。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>这些常量的一些可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
+          <para>这些常量中的某些可能不可用，这取决于选择或安装的语言支持（例如，美国英语）。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3330,7 +3334,7 @@
         </value>
         <remarks>
           <para>
-            <b>DeferAsyncQueries</b>属性设置为<b>True</b>可防止直到执行任何异步查询窗体<see cref="M:Microsoft.Office.Interop.Excel._Application.CalculateUntilAsyncQueriesDone" />调用方法。</para>
+            <b>将 DeferAsyncQueries</b>属性设置为<b>True</b>可防止直到执行任何异步查询窗体<see cref="M:Microsoft.Office.Interop.Excel._Application.CalculateUntilAsyncQueriesDone" />调用方法。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3399,7 +3403,7 @@
           <b>必选。</b> 自定义列表数。 此号码必须大于或等于 5 （Microsoft Excel 具有四个不能删除内置自定义列表）。</param>
         <summary>删除一个自定义序列。</summary>
         <remarks>
-          <para>如果列表数字小于 5 或者没有匹配的自定义列表，此方法将生成一个错误。</para>
+          <para>如果列表数字小于 5 或者没有匹配的自定义序列，则使用本方法将产生错误。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3499,9 +3503,9 @@
           <b>True</b>如果 Microsoft Excel 显示某些警告和消息时运行宏。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>默认值为<b>True</b>。将此属性设置为<b>False</b> ，如果您不想被打扰提示和通知消息时应用程序;任何时候一条消息要求响应，Microsoft Excel 选择默认的响应。</para>
+          <para>默认值为 <b>True</b> 。 将此属性设置为<b>False</b> ，如果您不想被打扰提示和通知消息时应用程序;随时一条消息，要求进行响应，Microsoft Excel 选择默认的响应。</para>
           <para>如果将此属性设置为<b>False</b>，Microsoft Excel 将该属性设置为<b>True</b>完成代码后，除非运行的跨进程代码。</para>
-          <para>时使用<see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法的工作簿以覆盖现有文件，覆盖警报具有默认值为否，而<b>DisplayAlerts</b>属性设置为<b>False</b>时，选择是响应由 Excel。</para>
+          <para>当使用<see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法工作簿以覆盖现有文件时<b>DisplayAlerts</b>属性设置为<b>False</b>时，选择是响应由 Excel, 覆盖警报具有默认值为否。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3603,7 +3607,7 @@
         <summary>设置为<b>True</b>以显示文档操作任务窗格;设置为<b>False</b>以隐藏文档操作任务窗格。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>将此属性设置为<b>True</b>将导致运行时错误如果活动工作簿不是智能文档。</para>
+          <para>如果活动工作簿不是智能文档，则将该属性设置为 <b>True</b> 将产生运行时错误。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3786,7 +3790,7 @@
           <b>True</b>如果 Microsoft Excel 以全屏显示模式。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>全屏幕模式使其填充整个屏幕和隐藏的应用程序标题栏的应用程序窗口最大化。工具栏、 状态栏中和公式栏维护单独显示全屏显示模式和正常模式设置。</para>
+          <para>全屏显示模式将应用程序窗口最大化，从而可覆盖整个屏幕并隐藏应用程序窗口的标题栏。工具栏、状态栏和编辑栏对全屏显示模式和普通显示模式保留各自独立的显示设置。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3951,7 +3955,7 @@
         <summary>如果为<b>true</b>可显示粘贴选项按钮。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>这是 Microsoft Office 级设置。此设置会影响所有其他 Microsoft Office 应用程序。设置<b>DisplayPasteOptions</b>属性设置为<b>True</b>将关闭 Microsoft Excel 中的自动填充选项按钮。<b>自动填充选项</b>按钮是仅在 Excel 中，但在所有其他 Microsoft Office 应用程序粘贴选项按钮。</para>
+          <para>这是 Microsoft Office 级设置。 此设置会影响所有其他 Microsoft Office 应用程序。 设置<b>DisplayPasteOptions</b>属性设置为<b>True</b>将关闭 Microsoft Excel 中的自动填充选项按钮。 <b>自动填充选项</b>按钮是仅在 Excel 中，但在所有其他 Microsoft Office 应用程序粘贴选项按钮。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4964,19 +4968,21 @@
           <list type="bullet">
             <item>
               <description>
-                <b>xlDisabled</b>取消键捕获功能完全禁用。</description>
+                <b>xlDisabled</b> 完全禁用取消键捕获功能。</description>
             </item>
             <item>
               <description>
-                <b>xlErrorHandler</b>中断发送给运行的过程为错误，可捕获的错误处理程序使用 On Error GoTo 语句的设置。可捕获的错误代码为 18。</description>
+                <b>xlErrorHandler</b> 中断为错误，可捕获的错误处理程序使用 On Error GoTo 语句的设置发送给运行的过程。 可捕获的错误代码为 18。</description>
             </item>
             <item>
               <description>
-                <b>xlInterrupt</b>当前过程被中断，并且用户可进行调试或结束此过程。</description>
+                <b>xlInterrupt</b> 当前过程被中断，并且用户可进行调试或结束此过程。</description>
             </item>
           </list>
-          <para>谨慎使用此属性。如果您使用<b>xlDisabled</b>，没有任何办法中断超越循环或自终止其他代码。同样，如果您使用<b>xlErrorHandler</b>但错误处理程序始终返回使用<b>Resume</b>语句，则不能停止超越代码。</para>到<b>xlInterrupt</b>始终重置
-          <para><b>EnableCancelKey</b>属性，Microsoft Excel 将返回到空闲状态，而且没有代码运行时。要捕获或禁用取消您的过程中，您必须明确<b>EnableCancelKey</b>属性每次更改将会调用过程。</para><para></para></remarks>
+          <para>谨慎使用此属性。 如果您使用<b>xlDisabled</b>，没有任何办法中断超越循环或自终止其他代码。 同样，如果您使用<b>xlErrorHandler</b> ，但您的错误处理程序始终返回使用<b>Resume</b>语句，则无法停止超越代码。</para>
+          <para>只要 Microsoft Excel 返回空闲状态并且没有程序处于运行状态，<b>EnableCancelKey</b> 属性都会重置为 <b>xlInterrupt</b>。若要在程序运行中捕获或者禁用取消过程，则每次在程序被调用时必须明确更改 <b>EnableCancelKey</b> 属性。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableCheckFileExtensions">
@@ -5072,7 +5078,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>此属性的默认值为<b>True</b>。</para>
+          <para>此属性的默认值为 <b>True</b> 。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5108,7 +5114,9 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>此属性对应于 Excel 选项对话框中启用实时预览复选框。</para>
+          <para>此属性对应于“Excel 选项”对话框中的“启用实时预览”复选框。
+
+</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5277,23 +5285,23 @@
         <summary>将一个 Microsoft Excel 名称转换为一个对象或者一个值。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>可使用此方法时使用以下类型的 Microsoft Excel 名称：</para>
+          <para>该方法可使用下列 Microsoft Excel 名称类型：</para>
           <list type="bullet">
             <item>
-              <description>A1-样式引用。您可以使用任何 A1 样式表示法中的单个单元格的引用。被视为是绝对引用的所有引用。</description>
+              <description>A1 格式引用。可以通过 A1 格式表示法引用单个单元格。所有引用均视为绝对引用。</description>
             </item>
             <item>
-              <description>区域。您可以使用范围、 交集和 union 运算符 (冒号、 空格和逗号，分别) 引用。</description>
+              <description>区域。在引用中可以使用区域、交集和联合运算符（分别为冒号、空格和逗号）。</description>
             </item>
             <item>
-              <description>定义名称。您可以指定任何名称在该宏的语言。</description>
+              <description>定义的名称。可用宏语言指定任何名称。</description>
             </item>
             <item>
-              <description>外部引用。您可以使用 ！运算符引用的单元格或其他工作簿中定义的名称 — 例如，Evaluate ("[BOOK1。XLS] 工作表 Sheet1 ！A1")。</description>
+              <description>外部引用。 您可以使用 ！ 运算符引用的单元格或其他工作簿中定义的名称 — 例如，Evaluate ("[BOOK1。XLS] 工作表 Sheet1 ！A1")。</description>
             </item>
           </list>
           <para>
-            <b>注释</b>: （例如，"[A1:C5]"） 使用方括号等同于调用带字符串参数<b>Evaluate</b>方法。使用方括号的好处是代码是较短。使用<b>评估</b>的优点是参数是一个字符串，因此您可以在代码中构造字符串或使用的变量。</para>
+            <b>注意</b>: （例如，"[A1:C5]"） 使用方括号等同于调用带字符串参数<b>Evaluate</b>方法。 使用方括号的好处是代码是较短。 使用<b>评估</b>的好处是参数是一个字符串，因此您可以在代码中构造字符串或使用的变量。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5383,7 +5391,7 @@
         <summary>运行 Microsoft Excel 4.0 宏函数，，然后返回函数的结果。 返回类型取决于函数。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Microsoft Excel 4.0 宏，不会评估当前工作簿或工作表的上下文中。这意味着所有引用应为外部而应指定显式工作簿的名称。例如，若要在 Book1 中运行 Microsoft Excel 4.0 宏"My_Macro"，必须使用"Book1 ！My_Macro()"。如果不指定工作簿的名称，此方法将失败。</para>
+          <para>Microsoft Excel 4.0 宏，不会评估当前工作簿或工作表的上下文中。 这意味着所有引用应为外部而应指定显式工作簿的名称。 例如，若要在 Book1 中运行 Microsoft Excel 4.0 宏"My_Macro"，必须使用"Book1 ！My_Macro()"。 如果不指定工作簿的名称，此方法将失败。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5418,7 +5426,7 @@
           <b>True</b>如果 Microsoft Excel 自动扩展格式和公式到新的数据的添加到列表。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>若要扩展格式和公式必须出现在的五个列表行或新行或列中，前面的列中的至少三个并且必须将数据添加到底部或列表的右侧。</para>
+          <para>要实现格式和公式的扩展，则清单中新行或新列前五行或五列中至少应有三行或三列必须具有这些格式和公式，且数据必须添加到清单的底部或右方。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5457,19 +5465,21 @@
           <list type="bullet">
             <item>
               <description>
-                <b>msoFeatureInstallNone</b>在调用未安装的功能时的运行时生成一般的自动化错误。这是默认常数。</description>
+                <b>msoFeatureInstallNone</b> 在调用未安装的功能时的运行时生成一般的自动化错误。 这是默认常量。</description>
             </item>
             <item>
               <description>
-                <b>msoFeatureInstallOnDemand</b>提示用户安装新功能。</description>
+                <b>msoFeatureInstallOnDemand</b> 提示用户安装新功能。</description>
             </item>
             <item>
               <description>
-                <b>msoFeatureInstallOnDemandWithUI</b>安装过程中时显示进度表; 不提示用户安装新功能。</description>
+                <b>msoFeatureInstallOnDemandWithUI</b> 在安装; 过程时显示进度表不提示用户安装新功能。</description>
             </item>
           </list>
-          <para>可以使用<b>msoFeatureInstallOnDemandWithUI</b>常量以阻止还以为自己的应用程序未响应时安装功能的用户。如果您想开发人员是唯一可以安装功能的人使用<b>msoFeatureInstallNone</b>常量。</para>如果您有
-          <para><see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" />属性设置为<b>False</b>，将不提示用户安装新功能，即使<b>FeatureInstall</b>属性设置为<b>msoFeatureInstallOnDemand</b>。如果<see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" />属性设置为<b>True</b>，如果<b>FeatureInstall</b>属性设置为<b>msoFeatureInstallOnDemand</b>，则会显示安装进度指示器。</para><para></para></remarks>
+          <para>可以使用 <b>msoFeatureInstallOnDemandWithUI</b> 常量来防止用户误以为在安装某功能时应用程序没有响应。如果希望只有开发者才能安装某些功能，则可使用 <b>msoFeatureInstallNone</b> 常量。</para>
+          <para>如果您有<see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" />属性设置为<b>False</b>，将不提示用户安装新功能，即使<b>FeatureInstall</b>属性设置为<b>msoFeatureInstallOnDemand</b>。 如果<see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" />属性设置为<b>True</b>，如果<b>FeatureInstall</b>属性设置为<b>msoFeatureInstallOnDemand</b>，则会显示安装进度指示器。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FileConverters">
@@ -5507,7 +5517,7 @@
         <summary>返回有关已安装的文件转换器的信息。 如果不没有安装任何转换器，则返回<b>Null</b> 。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果不指定参数，此属性返回一个数组，包含所有安装的文件转换器的信息。数组中的每一行包含一个文件转换器，有关信息下, 表中所示。</para>
+          <para>如果不指定参数，则此属性返回一个数组，包含所有安装的文件转换器的信息。 数组中的每一行包含有关单个文件转换器的信息，如下表所示。</para>
           <list type="table">
             <item>
               <term>1</term>
@@ -5515,11 +5525,11 @@
             </item>
             <item>
               <term>2</term>
-              <description>的转换器 DLL 的路径或代码资源</description>
+              <description>转换器动态 DLL 或代码资源的路径</description>
             </item>
             <item>
               <term>3</term>
-              <description>的文件扩展名搜索字符串</description>
+              <description>文件扩展名搜索字符串</description>
             </item>
           </list>
           <para></para>
@@ -5677,8 +5687,10 @@
         <summary>获取或设置如何 Microsoft Excel 将打开它们，以此之前验证文件。</summary>
         <value>A<see cref="T:Microsoft.Office.Core.MsoFileValidationMode" />对象。</value>
         <remarks>
-          <para>读/写。</para>没有通过验证的
-          <para>文件将在受保护的视图窗口中打开。如果您设置<see cref="P:Microsoft.Office.Interop.Excel._Application.FileValidation" />属性，设置将保持有效整个会话的应用程序是打开的。</para><para></para></remarks>
+          <para>为可读/写属性。</para>
+          <para>未通过验证的文件将在受保护的视图窗口中打开。 如果您设置<see cref="P:Microsoft.Office.Interop.Excel._Application.FileValidation" />属性，设置将保持有效的应用程序是打开整个会话。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FileValidationPivot">
@@ -5710,8 +5722,10 @@
         <summary>获取或设置 Microsoft Excel 将如何验证数据透视表的数据缓存的内容。</summary>
         <value>A<see cref="T:Microsoft.Office.Interop.Excel.XlFileValidationPivotMode" />对象。</value>
         <remarks>
-          <para>读/写。</para>将受保护的视图窗口中打开包含未通过验证数据缓存的
-          <para>文件。如果您设置<see cref="P:Microsoft.Office.Interop.Excel._Application.FileValidationPivot" />属性，设置将保持有效整个会话的应用程序是打开的。</para><para></para></remarks>
+          <para>为可读/写属性。</para>
+          <para>将受保护的视图窗口中打开包含未通过验证数据缓存的文件。 如果您设置<see cref="P:Microsoft.Office.Interop.Excel._Application.FileValidationPivot" />属性，设置将保持有效的应用程序是打开整个会话。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FindFile">
@@ -5741,7 +5755,7 @@
         <summary>显示“打开”对话框。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>该方法显示打开对话框，允许用户打开文件。如果成功打开一个新文件，则此方法返回<b>True</b>。如果用户取消对话框中，此方法返回<b>False</b>。</para>
+          <para>本方法显示“打开”对话框并让用户打开一个文件。如果成功打开一个新文件，则该方法返回 <b>True</b>。如果用户退出该对话框，则该方法返回 <b>False</b>。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6087,7 +6101,7 @@
         <summary>返回字符串数组的自定义序列号。使用本方法既可对内置序列进行匹配，也可对自定义序列进行匹配。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>此方法将生成一个错误，如果没有对应序列。</para>
+          <para>如果没有对应序列，则使用本方法将出错。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6129,7 +6143,7 @@
         <summary>显示标准的“打开”对话框，并获取用户文件名，而不必真正打开任何文件。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>此方法返回所选的文件名或由用户输入的名称。返回的名称可能包含的路径规范。如果<paramref name="MultiSelect" />为<b>True</b>，返回值为选定的文件名称的数组 （即使只有一个文件名处于选中状态）。如果用户取消对话框中，则返回<b>False</b> 。</para>
+          <para>此方法返回所选的文件名或由用户输入的名称。 返回的名称可能包含的路径规范。 如果<paramref name="MultiSelect" />为<b>True</b>，返回值为选定的文件名称的数组 （即使只有一个文件名处于选中状态）。 如果用户取消对话框中，则返回<b>False</b> 。</para>
           <para>本方法可能更改当前驱动器或文件夹。</para>
           <para></para>
         </remarks>
@@ -6200,7 +6214,7 @@
         <summary>显示标准的“另存为”对话框，获取用户文件名，而无须真正保存任何文件。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>此方法返回所选的文件名或由用户输入的名称。返回的名称可能包含的路径规范。如果用户取消对话框中，则返回<b>False</b> 。</para>
+          <para>本方法返回选定的文件名或用户输入的名称。返回的名称可能包含路径说明。如果用户取消了对话框，则该值为 <b>False</b>。</para>
           <para>本方法可能更改当前驱动器或文件夹。</para>
           <para></para>
         </remarks>
@@ -6239,17 +6253,17 @@
           <para>此方法不同于<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Select(System.Object)" />方法按以下方式：</para>
           <list type="bullet">
             <item>
-              <description>如果指定区域的不是位于顶部上的工作表，Microsoft Excel 将切换到该工作表选择之前。（如果您使用的不是位于顶部上的工作表区域中使用<b>选择</b>，将选择范围，但不会激活该工作表）。</description>
+              <description>如果指定的区域不在位于最前面屏幕的工作表中，Microsoft Excel 将在选定该区域之前切换至该工作表。（如果对不在屏幕的最前面的工作表中的区域使用 <b>Select</b> 方法，则选定该区域时并不激活该工作表）。</description>
             </item>
             <item>
               <description>此方法等效于<paramref name="Scroll" />参数可滚动目标窗口。</description>
             </item>
             <item>
-              <description>使用<b>Goto</b>方法前, 一项选择 （之前<b>将 Goto</b>方法运行） 时添加到以前的选择的数组 (有关详细信息，请参阅<see cref="P:Microsoft.Office.Interop.Excel._Application.PreviousSelections(System.Object)" />属性)。您可以使用此功能可以最多四个选项之间快速跳转。</description>
+              <description>当使用<b>Goto</b>方法时，将前一项选择 （在<b>Goto</b>方法运行） 之前添加到以前的选择的数组 (有关详细信息，请参阅<see cref="P:Microsoft.Office.Interop.Excel._Application.PreviousSelections(System.Object)" />属性)。 您可以使用此功能可以最多四个选项之间快速跳转。</description>
             </item>
             <item>
               <description>
-                <b>Select</b>方法具有<paramref name="Replace" />参数; <b>Goto</b>方法没有该。</description>
+                <b>Select</b>方法具有<paramref name="Replace" />参数;<b>而 Goto</b>方法没有。</description>
             </item>
           </list>
           <para></para>
@@ -6356,7 +6370,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>此属性对应于打印部分的 Excel 选项对话框的高级类别中的图形复选框的高质量模式的设置。</para>
+          <para>此属性对应于“Excel 选项”对话框“高级”类别的“打印”部分中“图形的高质量模式”复选框的设置。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6415,9 +6429,14 @@
         <summary>获取由指定的 Microsoft Excel 2010 的实例的句柄<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象。</summary>
         <value>由指定的 Microsoft Excel 2010 的实例的句柄<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象。</value>
         <remarks>
-          <para>只读的<b>Variant</b>。</para>
-          <para>此属性返回在两个 32 位和 64 位版本的 Excel 的正确的句柄。它扩展的功能的<see cref="P:Microsoft.Office.Interop.Excel._Application.Hinstance" />属性<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象，它仅能在 32 位版本的 Excel 正常起作用。</para>要用于此属性的
-          <para>理想的数据类型为<b>LongPtr</b>数据类型。按预期这两个 32 位和 64 位版本的 Excel 中，将工作分配到<b>LongPtr</b>变量，此属性返回的值。内部实现原因情况下，该属性定义为<b>Variant</b> 。但是，它始终返回 32 位值在 32 位系统和 64 位系统上的 64 位值。</para><para>此属性仅适用于 Excel 2010 中，从开始，并且只可与 64 位版本的 Excel 时必需。如果您必须编写代码还将用于与早期版本的 Excel，以避免编译错误阅读下 #if Win64 条件编译指令，此属性，并使用<see cref="P:Microsoft.Office.Interop.Excel._Application.Hinstance" />下的属性 #else 指令。</para><para><b>注意</b>： 该属性在两个开头 Excel 2010 的 32 位和 64 位环境中工作正常。因此，如果您的代码将用于仅使用 Excel 2010 或更高版本，或者是 32 位或 64 位，它可以读取此属性时没有条件编译。</para><para></para></remarks>
+          <para>只读 <b>Variant</b>。</para>
+          <para>此属性返回在两个 32 位和 64 位版本的 Excel 的正确的句柄。 它扩展的功能的<see cref="P:Microsoft.Office.Interop.Excel._Application.Hinstance" />属性<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象，它仅能在 32 位版本的 Excel 正常起作用。</para>
+          <para>用于此属性的理想数据类型为 LongPtr 数据类型。按照预期，将此属性返回的值分配给 LongPtr 变量同样适用于 32 位和 64 位版本的 Excel。出于内部实现原因，此属性被定义为 Variant。不过，在 32 位系统上它始终返回 32 位的值，在 64 位系统上始终返回 64 位的值。</para>
+          <para>此属性仅适用于 Excel 2010 中，从开始，并且只可与 64 位版本的 Excel 时必需。 如果您必须编写代码还将用于与早期版本的 Excel，以避免编译错误阅读下 #if Win64 条件编译指令，此属性，并使用<see cref="P:Microsoft.Office.Interop.Excel._Application.Hinstance" />下的属性 #else 指令。</para>
+          <para>
+            <b>注意</b>： 该属性在两个开头 Excel 2010 的 32 位和 64 位环境中工作正常。 因此，如果您的代码将用于仅使用 Excel 2010 或更高版本，或者是 32 位或 64 位，它可以读取此属性时没有条件编译。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Hwnd">
@@ -6561,10 +6580,14 @@
         <returns>To be added.</returns>
         <remarks>
           <para>
-            <b>InputBox</b>用于显示一个简单的对话框，以便您可以输入在宏中使用信息。具有对话框的确定按钮和取消按钮。如果您选择确定按钮， <b>InputBox</b>将返回对话框中输入的值。如果您单击取消按钮， <b>InputBox</b>返回<b>False</b>。</para>
-          <para>如果<paramref name="Type" />为 0，则<b>InputBox</b>以文本形式返回公式 — 例如，"= 2 * PI （) / 360"。如果在公式中有任何引用，也会返回作为 A1-样式引用。(使用<see cref="M:Microsoft.Office.Interop.Excel._Application.ConvertFormula(System.Object,Microsoft.Office.Interop.Excel.XlReferenceStyle,System.Object,System.Object,System.Object)" />引用样式之间进行转换。)</para>
-          <para>如果<paramref name="Type" />是 8， <b>InputBox</b>返回一个<b>Range</b>对象。</para>如果您使用<b>InputBox</b>方法的公式，询问用户
-          <para>，您必须使用<see cref="P:Microsoft.Office.Interop.Excel.Range.FormulaLocal" />属性分配给<b>Range</b>对象的公式。输入的公式将在用户的语言。</para><para><b>InputBox</b>方法与<b>InputBox</b>函数，它允许选择性验证用户的输入，并可与 Microsoft Excel 对象、 错误值和公式。与没有对象识别符的 InputBox 调用<b>InputBox</b>函数。</para><para></para></remarks>
+            <b>InputBox</b> 可用于显示简单对话框，方便用户输入要在宏中使用的信息。 对话框中有“确认”按钮和“取消”按钮。 如果您选择确定按钮， <b>InputBox</b>将返回对话框中输入的值。 如果您单击取消按钮， <b>InputBox</b>返回<b>False</b>。</para>
+          <para>如果<paramref name="Type" />为 0，则<b>InputBox</b>以文本形式返回公式 — 例如，"= 2 * PI （) / 360"。 只要公式中有引用，就会以 A1 样式引用的形式返回。 (使用<see cref="M:Microsoft.Office.Interop.Excel._Application.ConvertFormula(System.Object,Microsoft.Office.Interop.Excel.XlReferenceStyle,System.Object,System.Object,System.Object)" />引用样式之间进行转换。)</para>
+          <para>如果<paramref name="Type" />是 8， <b>InputBox</b>返回一个<b>Range</b>对象。</para>
+          <para>如果您使用<b>InputBox</b>方法要求用户输入公式，则必须使用<see cref="P:Microsoft.Office.Interop.Excel.Range.FormulaLocal" />属性分配给<b>Range</b>对象的公式。 输入公式使用用户语言。</para>
+          <para>
+            <b>InputBox</b>方法与<b>InputBox</b>函数，它允许选择性验证用户的输入，并可与 Microsoft Excel 对象、 错误值和公式。 与没有对象识别符的 InputBox 调用<b>InputBox</b>函数。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Interactive">
@@ -6603,8 +6626,8 @@
           <b>True</b>如果 Microsoft Excel 在交互模式;通常，此属性为<b>True</b>。 如果将此属性设置为<b>False</b>，Microsoft Excel 将阻止所有意见键盘和鼠标 （除非您的代码显示的对话框输入）。 阻止用户输入将防止用户干扰代码，如移动或者激活 Microsoft Excel 对象。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>该属性很有用，如果您编写的代码以从其他应用程序与 Microsoft Excel 进行通信。</para>
-          <para>如果将此属性设置为<b>False</b>，不要忘记将它设置为<b>True</b>。Microsoft Excel 将不会自动设置此属性为<b>True</b>时您的代码停止运行。</para>
+          <para>此属性是很有用，如果您编写的代码以从其他应用程序与 Microsoft Excel 进行通信。</para>
+          <para>如果将此属性设置为<b>False</b>，不要忘记将它设置为<b>True</b>。 Microsoft Excel 自动不会将此属性设置为<b>True</b> ，在您的代码停止运行时。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6651,7 +6674,7 @@
               <description>
                 <b>字符串</b>
               </description>
-              <description>而不是在字面数组中左括号 （{） 字符。</description>
+              <description>在字面数组中左大括号 ({) 的替代字符。</description>
             </item>
             <item>
               <term>
@@ -6660,7 +6683,7 @@
               <description>
                 <b>字符串</b>
               </description>
-              <description>R1C1-样式相对引用中左方括号 ([]) 字符。</description>
+              <description>在 R1C1-样式相对引用中左方括号 ([) 的替代字符。</description>
             </item>
             <item>
               <term>
@@ -6687,7 +6710,7 @@
               <description>
                 <b>字符串</b>
               </description>
-              <description>而不是在字面数组中右大括号 （}） 字符。</description>
+              <description>在字面数组中右大括号 (}) 的替代字符。</description>
             </item>
             <item>
               <term>
@@ -6696,7 +6719,7 @@
               <description>
                 <b>字符串</b>
               </description>
-              <description>R1C1-样式引用中右方括号 (]) 字符。</description>
+              <description>在 R1C1-样式引用中右方括号 (]) 的替代字符。</description>
             </item>
             <item>
               <term>
@@ -6714,7 +6737,7 @@
               <description>
                 <b>字符串</b>
               </description>
-              <description>大写行字母 （对于 R1C1-样式引用）。</description>
+              <description>大写行字母（对于 R1C1-样式引用）。</description>
             </item>
           </list>
           <para>国家/地区设置</para>
@@ -6726,7 +6749,7 @@
               <description>
                 <b>整数</b>
               </description>
-              <description>的 Microsoft Excel 的国家/地区版本。</description>
+              <description>Microsoft Excel 的国家/地区版本。</description>
             </item>
             <item>
               <term>
@@ -6735,7 +6758,7 @@
               <description>
                 <b>整数</b>
               </description>
-              <description>Windows 控制面板中的当前国家/地区设置。</description>
+              <description>Windows“控制面板”中的当前国家/地区设置。</description>
             </item>
             <item>
               <term>
@@ -6744,7 +6767,7 @@
               <description>
                 <b>字符串</b>
               </description>
-              <description>常规数字格式的名称。</description>
+              <description>“常规”数字格式名称。</description>
             </item>
           </list>
           <para>货币</para>
@@ -6754,10 +6777,10 @@
                 <b>xlCurrencyBefore</b>
               </term>
               <description>
-                <b>布尔</b>
+                <b>布尔值</b>
               </description>
-              <description>
-                <b>True</b>如果货币符号前面的货币值;<b>False</b>如果遵循这些。</description>
+              <description>如果货币符号在货币值之前，则返回 
+                <b>True</b>；如果货币符号在货币值之后，则返回 <b>False</b>。</description>
             </item>
             <item>
               <term>
@@ -6775,27 +6798,27 @@
               <description>
                 <b>整数</b>
               </description>
-              <description>的货币格式中使用的小数位数。</description>
+              <description>货币格式中的小数位数。</description>
             </item>
             <item>
               <term>
                 <b>xlCurrencyLeadingZeros</b>
               </term>
               <description>
-                <b>布尔</b>
+                <b>布尔值</b>
               </description>
-              <description>显示零货币值
-                <b>True</b>如果前导零。</description>
+              <description>如果显示零货币值的前导零，则返回 
+                <b>True</b>。</description>
             </item>
             <item>
               <term>
                 <b>xlCurrencyMinusSign</b>
               </term>
               <description>
-                <b>布尔</b>
+                <b>布尔值</b>
               </description>
-              <description>
-                <b>True</b>如果对负数; 使用负号<b>False</b>如果使用括号。</description>
+              <description>如果对负数使用负号，则返回 
+                <b>True</b>；如果使用括号，则返回 <b>False</b>。</description>
             </item>
             <item>
               <term>
@@ -6804,27 +6827,27 @@
               <description>
                 <b>整数</b>
               </description>
-              <description>负货币值： 0 的货币格式 = (symbolx) 或 (xsymbol) 1 =-symbolx 或-xsymbol2 = 符号 x symbol3 = symbolx 或 xsymbol-在何处符号是的货币符号国家或地区。请注意的货币符号的位置由<b>xlCurrencyBefore</b>。</description>
+              <description>货币格式负货币值： 0 = (symbolx) 或 (xsymbol) 1 =-symbolx 或-xsymbol2 = 符号 x symbol3 = symbolx 或 xsymbol 位置符号是国家或地区的货币符号。 请注意的货币符号的位置由<b>xlCurrencyBefore</b>。</description>
             </item>
             <item>
               <term>
                 <b>xlCurrencySpaceBefore</b>
               </term>
               <description>
-                <b>布尔</b>
+                <b>布尔值</b>
               </description>
-              <description>
-                <b>True</b>如果在货币符号前面添加空格。</description>
+              <description>如果在货币符号前面添加空格，则返回 
+                <b>True</b>。</description>
             </item>
             <item>
               <term>
                 <b>xlCurrencyTrailingZeros</b>
               </term>
               <description>
-                <b>布尔</b>
+                <b>布尔值</b>
               </description>
-              <description>显示零货币值
-                <b>True</b>如果尾随零。</description>
+              <description>如果显示零货币值的尾部零，则返回 
+                <b>True</b>。</description>
             </item>
             <item>
               <term>
@@ -6833,7 +6856,7 @@
               <description>
                 <b>整数</b>
               </description>
-              <description>的非货币格式中使用的小数位数。</description>
+              <description>非货币格式中使用的小数位数的数。</description>
             </item>
           </list>
           <para>日期和时间</para>
@@ -6843,20 +6866,20 @@
                 <b>xl24HourClock</b>
               </term>
               <description>
-                <b>布尔</b>
+                <b>布尔值</b>
               </description>
-              <description>
-                <b>True</b>如果使用 24 小时制时间;<b>False</b>如果使用 12 小时制。</description>
+              <description>如果使用 24 小时制时间，则返回 
+                <b>True</b>；如果使用 12 小时制时间，则返回 <b>False</b>。</description>
             </item>
             <item>
               <term>
                 <b>xl4DigitYears</b>
               </term>
               <description>
-                <b>布尔</b>
+                <b>布尔值</b>
               </description>
-              <description>
-                <b>True</b>如果使用四位数年份;<b>False</b>如果您使用的两位数年份。</description>
+              <description>如果使用四位年，则返回 
+                <b>True</b>；如果使用两位年，则返回 <b>False</b>。</description>
             </item>
             <item>
               <term>
@@ -6865,7 +6888,7 @@
               <description>
                 <b>整数</b>
               </description>
-              <description>元素的次序日期： 0 = 月-日-年 1 = 日-月-年 2 = 年-月-日</description>
+              <description>日期元素的次序：0 = 月-日-年 1 = 日-月-年 2 = 年-月-日</description>
             </item>
             <item>
               <term>
@@ -6874,7 +6897,7 @@
               <description>
                 <b>字符串</b>
               </description>
-              <description>日期分隔符 （/）。</description>
+              <description>日期分隔符 (/)。</description>
             </item>
             <item>
               <term>
@@ -6890,9 +6913,9 @@
                 <b>xlDayLeadingZero</b>
               </term>
               <description>
-                <b>布尔</b>
+                <b>布尔值</b>
               </description>
-              <description>如果日期中显示前导零，则为 True。</description>
+              <description>如果在日期中显示前导零，则返回 True。</description>
             </item>
             <item>
               <term>
@@ -6908,10 +6931,10 @@
                 <b>xlMDY</b>
               </term>
               <description>
-                <b>布尔</b>
+                <b>布尔值</b>
               </description>
-              <description>
-                <b>True</b>如果日期次序为月-日-年日期显示中长窗体;<b>False</b>如果日期次序为日-月-年。</description>
+              <description>如果长日期显示中日期次序为月-日-年，则返回 
+                <b>True</b>；如果次序为日-月-年，则返回 <b>False</b>。</description>
             </item>
             <item>
               <term>
@@ -6936,10 +6959,10 @@
                 <b>xlMonthLeadingZero</b>
               </term>
               <description>
-                <b>布尔</b>
+                <b>布尔值</b>
               </description>
-              <description>
-                <b>True</b>如果月份 （时以数字显示月份） 中显示前导零。</description>
+              <description>如果以数字显示月份时显示月份中的前导零，则返回 
+                <b>True</b>。</description>
             </item>
             <item>
               <term>
@@ -6948,7 +6971,7 @@
               <description>
                 <b>整数</b>
               </description>
-              <description>始终返回向后兼容性的三个字符。缩写的月份名称从 Microsoft Windows 读取，并且可以是任何长度。</description>
+              <description>为了向后兼容总是返回三个字符。月份名称的缩写从 Microsoft Windows 中读取并且可以为任意长度。</description>
             </item>
             <item>
               <term>
@@ -6966,17 +6989,17 @@
               <description>
                 <b>字符串</b>
               </description>
-              <description>时间分隔符 （:）。</description>
+              <description>时间分隔符 (:)。</description>
             </item>
             <item>
               <term>
                 <b>xlTimeLeadingZero</b>
               </term>
               <description>
-                <b>布尔</b>
+                <b>布尔值</b>
               </description>
-              <description>
-                <b>True</b>如果时间中显示前导零。</description>
+              <description>如果在时间表示中显示前导零，则该值为 
+                <b>True</b>。</description>
             </item>
             <item>
               <term>
@@ -6985,7 +7008,7 @@
               <description>
                 <b>整数</b>
               </description>
-              <description>始终返回向后兼容性的三个字符。缩写的工作日名称从 Microsoft Windows 读取，并且可以是任何长度。</description>
+              <description>为了向后兼容总是返回三个字符。星期名称的缩写从 Microsoft Windows 中读取并且可以为任意长度。</description>
             </item>
             <item>
               <term>
@@ -6994,7 +7017,7 @@
               <description>
                 <b>字符串</b>
               </description>
-              <description>数字格式 (y) 中的年符号。</description>
+              <description>数字格式中的年符号 (y)。</description>
             </item>
           </list>
           <para>度量系统</para>
@@ -7004,20 +7027,20 @@
                 <b>xlMetric</b>
               </term>
               <description>
-                <b>布尔</b>
+                <b>布尔值</b>
               </description>
-              <description>
-                <b>True</b>如果您使用制度量系统;<b>False</b>如果使用英。</description>
+              <description>如果使用米制度量系统，则返回 
+                <b>True</b>；如果使用英制度量系统，则返回 <b>False</b>。</description>
             </item>
             <item>
               <term>
                 <b>xlNonEnglishFunctions</b>
               </term>
               <description>
-                <b>布尔</b>
+                <b>布尔值</b>
               </description>
-              <description>
-                <b>True</b>如果不以英文显示函数。</description>
+              <description>如果不以英文显示函数，则返回 
+                <b>True</b>。</description>
             </item>
           </list>
           <para>分隔符</para>
@@ -7029,7 +7052,7 @@
               <description>
                 <b>字符串</b>
               </description>
-              <description>替代的数组项分隔符，如果当前数组分隔符与小数分隔符相同。</description>
+              <description>如果当前数组分隔符与小数分隔符相同时替代的数组项分隔符。</description>
             </item>
             <item>
               <term>
@@ -7038,7 +7061,7 @@
               <description>
                 <b>字符串</b>
               </description>
-              <description>使用字符以字面数组中的列分隔符。</description>
+              <description>数组文字类型的列分隔符。</description>
             </item>
             <item>
               <term>
@@ -7065,7 +7088,7 @@
               <description>
                 <b>字符串</b>
               </description>
-              <description>字符用于分隔字面数组中的行。</description>
+              <description>数组文字类型的行分隔符。</description>
             </item>
             <item>
               <term>
@@ -7077,7 +7100,7 @@
               <description>零或千位分隔符。</description>
             </item>
           </list>
-          <para>符号、 分隔符和上表中所示的货币格式可能不同于您的语言或地理位置所使用的和可能不可用，具体取决于的语言支持 （例如，美国英语） 已选择或安装。</para>
+          <para>上表显示的符号、分隔符和货币格式可能因所用语言和地理位置而异，而且可能不可用，这取决于选择或安装的语言支持（例如，美国英语）。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -7374,7 +7397,10 @@
       <Docs>
         <summary>以磅为单位，从 Microsoft Excel 主窗口的左边缘到屏幕的左边缘的距离。</summary>
         <value>To be added.</value>
-        <remarks>如果窗口处于最大化<para>，此属性返回会有所不同，为负数基于窗口边框的宽度。此属性设置为 0 （零） 将使窗口稍微有点小超过将应用程序窗口已最大化状态。换句话说，如果此属性为 0 （零），Microsoft Excel 主窗口的左边的框将几乎会显示在屏幕上。</para><para></para></remarks>
+        <remarks>
+          <para>如果该窗口最大化，此属性将返回负数会有所不同，根据窗口边框的宽度。 此属性设置为 0 （零） 将使窗口稍微有点小超过将应用程序窗口已最大化状态。 换句话说，如果此属性为 0 （零），则 Microsoft Excel 主窗口的左边的框仅能执行将在屏幕上可见。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LibraryPath">
@@ -7520,12 +7546,12 @@
               </description>
             </item>
             <item>
-              <item>
-                <term>11</term>
-                <description>
-                  <b>自定义</b>
-                </description>
-              </item>
+              <term>11</term>
+              <description>
+                <b>自定义</b>
+              </description>
+            </item>
+            <item>
               <term>12</term>
               <description>
                 <b>宏控件</b>
@@ -7593,7 +7619,7 @@
             </item>
             <item>
               <term>27</term>
-              <description>Thirteenth自定义类别</description>
+              <description>第十三个自定义类别</description>
             </item>
             <item>
               <term>28</term>
@@ -7730,8 +7756,8 @@
         <param name="DownloadNewMail">可选的<b>对象</b>。 如果为 <b>True</b>，则立即下载新邮件。</param>
         <summary>登录进入 MAPI Mail 或 Microsoft Exchange 并建立一个邮件会话。如果 Microsoft Mail 不处于运行状态，必须在使用邮件或文档传送功能之前先使用本方法建立邮件会话。</summary>
         <remarks>
-          <para>Microsoft Excel 将注销任何以前建立在尝试建立新的会话之前的邮件会话。</para>
-          <para>若要直接返回到系统默认邮件会话，请省略名称和密码参数。</para>
+          <para>Microsoft Excel 在尝试建立新的邮件会话之前将先退出所有已建立的邮件会话。</para>
+          <para>要直接返回到系统默认的邮件会话，请省略名称和密码这两个参数。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -7765,7 +7791,7 @@
         <summary>MAPI 邮件会话号返回一个以十六进制字符串 （如果有活动会话），则返回<b>Null</b> ，如果没有会话。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性仅适用于邮件会话由 Microsoft Excel （其不 Microsoft Mail 的返回邮件会话号）。</para>
+          <para>该属性仅应用于由 Microsoft Excel 建立的邮件会话（不返回 Microsoft Mail 的邮件会话号）。</para>
           <para>该属性不用于 PowerTalk 邮件系统。</para>
           <para></para>
         </remarks>
@@ -8310,7 +8336,7 @@
           <para>
             <b>xlUp</b>
           </para>
-          <para>如果<see cref="P:Microsoft.Office.Interop.Excel._Application.MoveAfterReturn" />属性为<b>False</b>，所选内容不会移动，而不考虑如何<b>MoveAfterReturnDirection</b>属性设置。</para>
+          <para>如果<see cref="P:Microsoft.Office.Interop.Excel._Application.MoveAfterReturn" />属性为<b>False</b>，可以将所选内容，不会移动而不考虑如何设置<b>MoveAfterReturnDirection</b>属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -8549,7 +8575,7 @@
         <summary>返回或设置以秒为单位的 ODBC 查询时间限制。 默认值为 45 秒。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>值 0 （零） 表示没有时间限制。</para>
+          <para>返回值为 0（零）表示没有时间限制。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -8785,47 +8811,47 @@
         <summary>当按特定键或特定的组合键时运行指定的过程。</summary>
         <remarks>
           <para>
-            <paramref name="Key" />参数可以指定与 ALT、 CTRL 或 SHIFT 或这些键的任意组合结合任意单个键。由一个或多个字符，例如"a"字符表示每个键，或"{输入}"ENTER 键。</para>
-          <para>若要指定当您按对应的键 （ENTER 或选项卡上，例如），不显示的字符使用下表中列出的代码。每个表中的代码表示键盘上的一个键。</para>
+            <paramref name="Key" />参数可以指定与 ALT、 CTRL 或 SHIFT 或这些键的任意组合结合任意单个键。 由一个或多个字符，例如"a"字符表示每个键，或"{输入}"ENTER 键。</para>
+          <para>若要指定按对应的键（例如 Enter 或 Tab）时的非显示字符，请使用下表所列出的代码。表中的每个代码表示键盘上的一个对应键。</para>
           <list type="table">
             <item>
               <term>BACKSPACE</term>
               <description>{BACKSPACE} 或 {BS}</description>
             </item>
             <item>
-              <term>中断</term>
+              <term>Break</term>
               <description>{中断}</description>
             </item>
             <item>
-              <term>CAPS LOCK</term>
+              <term>Caps Lock</term>
               <description>{CAPSLOCK}</description>
             </item>
             <item>
-              <term>清除</term>
+              <term>Clear</term>
               <description>{清除}</description>
             </item>
             <item>
-              <term>DELETE 或 DEL</term>
+              <term>Delete 或 Del</term>
               <description>{DELETE} 或 {DEL}</description>
             </item>
             <item>
-              <term>向下箭头</term>
+              <term>向下键</term>
               <description>{下}</description>
             </item>
             <item>
-              <term>最终</term>
+              <term>End</term>
               <description>{最终}</description>
             </item>
             <item>
-              <term>ENTER</term>
-              <description>~ （波形符）</description>
+              <term>Enter</term>
+              <description>~（波形符）</description>
             </item>
             <item>
-              <term>ENTER （数字小键盘）</term>
-              <description>{ENTER}</description>
+              <term>Enter（数字小键盘）</term>
+              <description>{输入}</description>
             </item>
             <item>
-              <term>ESC</term>
+              <term>Esc</term>
               <description>{ESCAPE} 或 {ESC}</description>
             </item>
             <item>
@@ -8833,66 +8859,66 @@
               <description>{F1} 到 {F15}</description>
             </item>
             <item>
-              <term>帮助</term>
+              <term>Help</term>
               <description>{帮助}</description>
             </item>
             <item>
-              <term>主页</term>
+              <term>Home</term>
               <description>{主页}</description>
             </item>
             <item>
-              <term>项</term>
+              <term>Ins</term>
               <description>{插入}</description>
             </item>
             <item>
-              <term>左箭头</term>
+              <term>向左键</term>
               <description>{左}</description>
             </item>
             <item>
-              <term>NUM LOCK</term>
+              <term>Num Lock</term>
               <description>{NUMLOCK}</description>
             </item>
             <item>
-              <term>PAGE DOWN</term>
+              <term>PageDown</term>
               <description>{PGDN}</description>
             </item>
             <item>
-              <term>PAGE UP</term>
+              <term>PageUp</term>
               <description>{PGUP}</description>
             </item>
             <item>
-              <term>返回</term>
+              <term>Return</term>
               <description>{返回}</description>
             </item>
             <item>
-              <term>向右箭头</term>
+              <term>向右键</term>
               <description>{右}</description>
             </item>
             <item>
-              <term>SCROLL LOCK</term>
+              <term>Scroll Lock</term>
               <description>{SCROLLLOCK}</description>
             </item>
             <item>
-              <term>选项卡</term>
+              <term>Tab</term>
               <description>{选项卡}</description>
             </item>
             <item>
-              <term>向上箭头</term>
-              <description>{UP}</description>
+              <term>向上键</term>
+              <description>{向上}</description>
             </item>
           </list>
-          <para>您还可以指定与 SHIFT 和/或 CTRL 和/或 ALT 组合的键。若要指定键组合与另一个键或注册表项，请使用下表。</para>
+          <para>还可指定与 Shift 和/或 Ctrl 和/或 Alt 组合使用的键。若要指定与其他键组合使用的键，可使用下表。</para>
           <list type="table">
             <item>
-              <term>SHIFT</term>
-              <description>+ （加号）</description>
+              <term>Shift</term>
+              <description>+（加号）</description>
             </item>
             <item>
-              <term>CTRL</term>
-              <description>^ （插入记号）</description>
+              <term>Ctrl</term>
+              <description>^（插入符号）</description>
             </item>
             <item>
-              <term>ALT</term>
+              <term>Alt</term>
               <description>%（百分号）</description>
             </item>
           </list>
@@ -8932,8 +8958,8 @@
         <param name="Procedure">必需的 <b>字符串</b> 。 选择“编辑”菜单的“重复”命令时将运行的过程的名称。</param>
         <summary>设置“重复”菜单项和过程的名称；如果在运行设置此属性的过程之后选择“编辑”菜单的“重复”命令，将运行此处命名的过程。</summary>
         <remarks>
-          <para>如果过程不使用<b>OnRepeat</b>方法，重复命令将重复最近次运行的过程。</para>
-          <para>过程必须用<b>onrepeat 方法</b>和<see cref="M:Microsoft.Office.Interop.Excel._Application.OnUndo(System.String,System.String)" />方法上次，要重复和撤消过程正在的过程中的后续操作覆盖。</para>
+          <para>如果过程不使用<b>OnRepeat</b>方法，则重复命令将重复最近次运行的过程。</para>
+          <para>过程必须用<b>onrepeat 方法</b>和<see cref="M:Microsoft.Office.Interop.Excel._Application.OnUndo(System.String,System.String)" />方法上次，要重复和撤消的过程中的后续操作覆盖的过程。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -9058,7 +9084,7 @@
         <param name="Schedule">可选的<b>对象</b>。 <b>True</b>安排新的<b>OnTime</b>过程。 <b>False</b>以清除以前设置过程。 默认值为 <b>True</b> 。</param>
         <summary>安排一个过程在将来的特定时间运行（既可以是具体指定的某个时间，也可以是指定的一段时间之后）。</summary>
         <remarks>
-          <para>使用 Now+TimeValue(time) 可安排时特定经过的时间 （从现在开始计数） 已运行。使用 TimeValue(time) 安排某个特定时间运行。</para>
+          <para>使用 Now+TimeValue(time) 可安排时特定经过的时间 （从现在开始计数） 已运行。 使用 TimeValue(time) 安排某个特定时间运行。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -9094,8 +9120,8 @@
         <param name="Procedure">必需的 <b>字符串</b> 。 选择“编辑”菜单的“撤消”命令时运行的过程的名称。</param>
         <summary>设置“撤消”的文本和过程的名称；如果在运行设置该属性的过程之后选择“编辑”菜单上的“撤消”命令，将运行此处命名的过程。</summary>
         <remarks>
-          <para>如果过程不使用<b>OnUndo</b>方法，将禁用撤消命令。</para>
-          <para>过程必须用<see cref="M:Microsoft.Office.Interop.Excel._Application.OnRepeat(System.String,System.String)" />和<b>OnUndo</b>方法最后一个、 要重复和撤消过程正在的过程中的后续操作覆盖。</para>
+          <para>如果过程不使用 <b>OnUndo</b> 方法，将禁用“撤消”命令。</para>
+          <para>过程必须用<see cref="M:Microsoft.Office.Interop.Excel._Application.OnRepeat(System.String,System.String)" />和<b>OnUndo</b>方法最后一个、 要重复和撤消的过程中的后续操作覆盖的过程。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -9135,8 +9161,8 @@
         <summary>返回或设置时激活一个窗口运行过程的名称。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>当其他过程切换到窗口或切换到窗口的命令通过 DDE 通道接收时，不运行此属性指定的过程。相反，过程响应用户操作，例如单击鼠标的窗口，单击转到上的编辑菜单中，依次类推。</para>
-          <para>如果表或宏表具有为它定义的 Auto_Activate 或 Auto_Deactivate 宏，将在<b>OnWindow</b>属性指定的过程之后运行这些宏。</para>
+          <para>当其他过程切换到窗口或切换到窗口的命令通过 DDE 通道接收时，此属性指定的过程不运行。 而是过程响应用户操作，如单击了鼠标窗口单击转到编辑菜单上，依次类推。</para>
+          <para>如果一个工作表或宏表具有为它定义的 Auto_Activate 或 Auto_Deactivate 宏，这些宏将会在 <b>OnWindow</b> 属性指定的过程之后运行。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -9394,8 +9420,10 @@
           <b>true</b>如果与打印机的通信开启;否则为<b>false</b>。</value>
         <remarks>
           <para>
-            <b>boolean</b>读/写。</para>设置
-          <para><see cref="P:Microsoft.Office.Interop.Excel._Application.PrintCommunication" />属性设为<b>false</b>来加快设置 PageSetup 属性的代码执行。设置<see cref="P:Microsoft.Office.Interop.Excel._Application.PrintCommunication" />属性设置为<b>true</b>后设置属性来提交所有缓存 PageSetup 命令。</para><para></para></remarks>
+            <b>boolean</b>读/写。</para>
+          <para>设置<see cref="P:Microsoft.Office.Interop.Excel._Application.PrintCommunication" />属性设为<b>false</b>来加快设置 PageSetup 属性的代码执行。 设置<see cref="P:Microsoft.Office.Interop.Excel._Application.PrintCommunication" />属性设置为<b>true</b>后设置属性来提交所有缓存 PageSetup 命令。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ProductCode">
@@ -9489,7 +9517,7 @@
         <summary>获取<see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" />集合，代表应用程序中打开的所有受保护的视图窗口。</summary>
         <value>A<see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" />集合，代表应用程序中打开的所有受保护的视图窗口。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -9545,7 +9573,7 @@
       <Docs>
         <summary>退出 Microsoft Excel。</summary>
         <remarks>
-          <para>如果使用此方法时，未保存工作簿处于打开状态，Microsoft Excel 将显示一个对话框询问您是否要保存所做的更改。您可以通过将使用<b>Quit</b>方法之前的所有工作簿保存或设置阻止这<see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" />属性设为<b>False</b>。与未保存工作簿; 退出时，Microsoft Excel 当此属性为<b>False</b>时，才会显示对话框退出而不进行保存。</para>
+          <para>如果使用此方法时，未保存工作簿处于打开状态，Microsoft Excel 将显示一个对话框询问您是否要保存所做的更改。 您可以通过将使用<b>Quit</b>方法之前的所有工作簿保存或设置阻止这<see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" />属性设为<b>False</b>。 与未保存工作簿; 退出时，Microsoft Excel 当此属性为<b>False</b>时，才会显示对话框退出而不进行保存。</para>
           <para>如果您设置<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Saved" />属性为<b>True</b>而不工作簿保存到磁盘，Microsoft Excel 工作簿将退出时不要求您保存工作簿。</para>
           <para></para>
         </remarks>
@@ -9614,7 +9642,7 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，它代表单元格区域。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>属性是相对于<b>Range</b>对象。例如，如果所选内容位于单元格 C3，然后 Selection.Range("B1") 返回单元格 D3 因为它是相对于<b>Range</b>对象返回<see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" />属性。另一方面，ActiveSheet.Range("B1") 始终返回的代码单元格 B1。</para>
+          <para>该属性是相对于<b>Range</b>对象。 例如，如果所选内容位于单元格 C3，然后 Selection.Range("B1") 返回单元格 D3 因为它是相对于<b>Range</b>对象返回<see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" />属性。 另一方面，代码 ActiveSheet.Range("B1") 始终返回单元格 B1。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -9706,8 +9734,8 @@
         <summary>如果宏录制程序正在运行，则记录相应代码。</summary>
         <remarks>
           <para>
-            <b>RecordMacro</b>方法不能录入活动模块 （模块<b>RecordMacro</b>方法已存在）。</para>
-          <para>若要中止录制 （例如，如果用户取消了对话框），请调用此函数使用两个空字符串。</para>
+            <b>RecordMacro</b> 方法不能录入活动模块（即运行 <b>RecordMacro</b> 方法的模块）。</para>
+          <para>若要中止录制（例如，如果用户取消了对话框），请使用两个空字符串调用此函数。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -9825,7 +9853,25 @@
         <param name="Index2">可选的<b>对象</b>。 函数的名称。</param>
         <summary>在任一动态链接库 (Dll) 中返回有关函数的信息或代码资源的已注册的注册或 REGISTER.ID 宏功能。</summary>
         <value>To be added.</value>
-        <remarks>如果未指定这些参数的<para>，此属性返回一个数组，包含所有注册的函数的列表。数组中的每一行包含单个函数，有关信息下, 表中所示。</para><list type="table"><item><term>1</term><description>DLL 或代码资源的名称</description></item><item><term>2</term><description>DLL 或代码资源中过程的名称</description></item><item><term>3</term><description>字符串指定的返回值的数量和数据类型的数据类型参数</description></item></list><para>如果没有注册的函数，此属性返回<b>Null</b>。</para><para></para></remarks>
+        <remarks>
+          <para>如果未指定这些参数，此属性返回一个数组，包含所有注册的函数的列表。 下表中所示，则数组中的每一行包含一个函数的信息。</para>
+          <list type="table">
+            <item>
+              <term>1</term>
+              <description>动态链接库或代码资源的名称</description>
+            </item>
+            <item>
+              <term>2</term>
+              <description>动态链接库或代码资源中过程的名称</description>
+            </item>
+            <item>
+              <term>3</term>
+              <description>指定的返回值的数据类型和参数数目及数据类型的字符串</description>
+            </item>
+          </list>
+          <para>如果没有注册的函数，则此属性返回<b>Null</b>。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RegisterXLL">
@@ -9858,7 +9904,7 @@
         <summary>加载 XLL 代码源，并自动注册该代码源中包含的函数和命令。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>如果代码资源成功加载，此方法返回<b>True</b> ; 否则，该方法返回<b>False</b>。</para>
+          <para>如果代码源加载成功，则该方法返回 <b>True</b>；否则返回 <b>False</b>。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -9889,7 +9935,7 @@
       <Docs>
         <summary>重复上一用户界面操作。</summary>
         <remarks>
-          <para>此方法会重复仅在运行此过程之前执行用户的最后一个操作。它必须是在过程中的第一行。</para>
+          <para>此方法会重复仅在运行此过程之前执行用户的最后一个操作。 它必须是在过程中的第一行。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -9955,19 +10001,19 @@
         <summary>重新设置传送名单，从而可用同一名单初始化一个新的传送过程（使用同一收件人列表和收件人地址信息）。使用本方法之前，该传送过程必须已完成。否则本方法将导致错误。</summary>
         <remarks>To be added.</remarks>
         <example>
-          <para>本示例将会重置的传送名单工作簿 book1.xls 路由已完成。</para>
+          <para>如果工作簿 Book1.xls 的传送过程已完成，本示例将重新设置传送名单。</para>
           <code>&lt;span class="label"&gt;With Workbooks("BOOK1.XLS").RoutingSlip     If .Status = xlRoutingComplete Then         .&lt;/span&gt;
 &lt;i&gt;Reset&lt;/i&gt;
 &lt;span class="label"&gt;Else         MsgBox "Cannot reset routing; not yet complete"     End If End With&lt;/span&gt;</code>
         </example>
         <example>
-          <para>本示例将会重置的传送名单工作簿 book1.xls 路由已完成。</para>
+          <para>如果工作簿 Book1.xls 的传送过程已完成，本示例将重新设置传送名单。</para>
           <code>&lt;span class="label"&gt;With Workbooks("BOOK1.XLS").RoutingSlip     If .Status = xlRoutingComplete Then         .&lt;/span&gt;
 &lt;i&gt;Reset&lt;/i&gt;
 &lt;span class="label"&gt;Else         MsgBox "Cannot reset routing; not yet complete"     End If End With&lt;/span&gt;</code>
         </example>
         <example>
-          <para>本示例将会重置的传送名单工作簿 book1.xls 路由已完成。</para>
+          <para>如果工作簿 Book1.xls 的传送过程已完成，本示例将重新设置传送名单。</para>
           <code>&lt;span class="label"&gt;With Workbooks("BOOK1.XLS").RoutingSlip     If .Status = xlRoutingComplete Then         .&lt;/span&gt;
 &lt;i&gt;Reset&lt;/i&gt;
 &lt;span class="label"&gt;Else         MsgBox "Cannot reset routing; not yet complete"     End If End With&lt;/span&gt;</code>
@@ -10034,7 +10080,7 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，表示活动工作表上的所有行。 如果活动文档不是工作表，<b>行</b>属性无效。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>时应用于多个选择一个<b>Range</b>对象，该属性仅范围的第一个区域中返回行。例如，如果<b>Range</b>对象有两个区域 — A1:B2 和 C3:D4 — Selection.Rows.Count 返回 2，不 4。若要使用此属性可能包含多个选定区域上，测试<b>Areas.Count</b>以确定该区域是否有多个选择。如果是，对区域中每个区域进行循环。</para>
+          <para>应用于<b>Range</b>对象，它是多个所选内容时，该属性将返回仅范围的第一个区域中的行。 例如，如果<b>Range</b>对象有两个区域 — A1:B2 和 C3:D4 — Selection.Rows.Count 返回 2，不 4。 若要使用此属性可能包含多个选定区域上，测试<b>Areas.Count</b>以确定该区域是否有多个选择。 如果是，对每个区域区域中循环。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -10153,9 +10199,9 @@
         <summary>运行一个宏或调用的函数。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>不能使用此方法使用命名的参数。参数必须按位置传递。</para>
-          <b>运行</b>
-          <para>方法返回任何值被调用的宏。对象作为参数传递给宏转换为值 (通过应用<see cref="P:Microsoft.Office.Interop.Excel._Application.Value" />对象的属性)。这意味着您不能使用<b>Run</b>方法将对象传递给宏。</para>
+          <para>此方法不可使用命名参数，参数必须通过位置进行传递。</para>
+          <para>
+            <b>Run</b>方法返回任何值被调用的宏。 对象作为参数传递给宏转换为值 (通过应用<see cref="P:Microsoft.Office.Interop.Excel._Application.Value" />对象的属性)。 这意味着您不能使用<b>Run</b>方法将对象传递给宏。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -10193,7 +10239,7 @@
         <remarks>
           <para>若要打开工作簿文件，请使用<see cref="&quot;M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String" />方法。</para>
           <para></para>
-          <para>要将工作簿标记为已保存，但不将其写入磁盘，设置其<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.SaveData" />属性设置为<b>True</b>。</para>
+          <para>若要将工作簿标记为已保存，但不将其写入磁盘，请将设置其<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.SaveData" />属性设置为<b>True</b>。</para>
           <para></para>
           <para>首次保存工作簿，使用<see cref="&quot;M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object" />方法，以指定文件的名称。</para>
           <para></para>
@@ -10333,8 +10379,8 @@
           <b>如此</b> 如果打开屏幕更新。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>打开屏幕更新关闭以加快您的代码。您不能以查看代码执行的内容，但其运行速度更快。</para>
-          <para>记住将<b>ScreenUpdating</b>属性设置为<b>True</b> ，代码结束时。</para>
+          <para>关闭屏幕更新以加快您的代码。 您不能以查看代码执行，但它将更快地运行。</para>
+          <para>请记住将<b>ScreenUpdating</b>属性设置为<b>True</b> ，代码结束时。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -10368,7 +10414,7 @@
         <summary>返回在活动窗口中选定的对象。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>返回的对象类型取决于当前选定内容 (例如，如果所选单元格，则此属性返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象)。如果未选择的<b>Selection</b>属性返回<b>Nothing</b> 。</para>
+          <para>返回的对象类型取决于当前选定内容 (例如，如果所选单元格，则此属性返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象)。 如果未选择任何内容， <b>Selection</b>属性返回<b>Nothing</b> 。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -10403,49 +10449,49 @@
         <param name="Wait">可选的<b>对象</b>。 <b>True</b>等待处理向宏返回控件之前的键的 Microsoft excel。 <b>False</b>（或省略） 继续运行该宏，而无需等待处理的键。</param>
         <summary>将击键发送给活动应用程序。</summary>
         <remarks>
-          <para>此方法将键击放在密钥缓冲区中。在某些情况下，只有在调用将键击方法之前必须调用此方法。例如，若要发送到对话框的密码，您必须调用<b>SendKeys</b>方法之前显示对话框。</para>
+          <para>此方法将键击放在密钥缓冲区中。 在某些情况下，只有在调用将键击方法之前必须调用此方法。 例如，若要发送到对话框的密码，必须调用<b>SendKeys</b>方法之前显示对话框。</para>
           <para>
-            <paramref name="Keys" />参数可以指定任何单个键或任何与键组合 ALT、 CTRL 或 SHIFT （或这些键的任意组合）。由一个或多个字符，例如"a"字符表示每个键，或"{输入}"ENTER 键。</para>
-          <para>若要指定按相应键 （例如，ENTER 或选项卡上） 时不显示的字符使用下表中列出的代码。每个表中的代码表示键盘上的一个键。</para>
+            <paramref name="Keys" />参数可以指定任何单个键或任何与键组合 ALT、 CTRL 或 SHIFT （或这些键的任意组合）。 由一个或多个字符，例如"a"字符表示每个键，或"{输入}"ENTER 键。</para>
+          <para>若要指定那些没有屏幕回显该字符的键（例如，Enter 或 Tab），请使用下表所列的代码来表示相应的键。表中的每个代码表示键盘上的一个对应键。</para>
           <list type="table">
             <item>
               <term>BACKSPACE</term>
               <description>{BACKSPACE} 或 {BS}</description>
             </item>
             <item>
-              <term>中断</term>
+              <term>Break</term>
               <description>{中断}</description>
             </item>
             <item>
-              <term>CAPS LOCK</term>
+              <term>Caps Lock</term>
               <description>{CAPSLOCK}</description>
             </item>
             <item>
-              <term>清除</term>
+              <term>Clear</term>
               <description>{清除}</description>
             </item>
             <item>
-              <term>DELETE 或 DEL</term>
+              <term>Delete 或 Del</term>
               <description>{DELETE} 或 {DEL}</description>
             </item>
             <item>
-              <term>向下箭头</term>
+              <term>向下键</term>
               <description>{下}</description>
             </item>
             <item>
-              <term>结束</term>
+              <term>End</term>
               <description>{最终}</description>
             </item>
             <item>
-              <term>ENTER</term>
-              <description>~ （波形符）</description>
+              <term>Enter</term>
+              <description>~（波形符）</description>
             </item>
             <item>
-              <term>ENTER （数字小键盘）</term>
-              <description>{ENTER}</description>
+              <term>Enter（数字小键盘）</term>
+              <description>{输入}</description>
             </item>
             <item>
-              <term>ESC</term>
+              <term>Esc</term>
               <description>{ESCAPE} 或 {ESC}</description>
             </item>
             <item>
@@ -10453,66 +10499,66 @@
               <description>{F1} 到 {F15}</description>
             </item>
             <item>
-              <term>帮助</term>
+              <term>Help</term>
               <description>{帮助}</description>
             </item>
             <item>
-              <term>主页</term>
+              <term>Home</term>
               <description>{主页}</description>
             </item>
             <item>
-              <term>项</term>
+              <term>Ins</term>
               <description>{插入}</description>
             </item>
             <item>
-              <term>左箭头</term>
+              <term>向左键</term>
               <description>{左}</description>
             </item>
             <item>
-              <term>NUM LOCK</term>
+              <term>Num Lock</term>
               <description>{NUMLOCK}</description>
             </item>
             <item>
-              <term>PAGE DOWN</term>
+              <term>PageDown</term>
               <description>{PGDN}</description>
             </item>
             <item>
-              <term>PAGE UP</term>
+              <term>PageUp</term>
               <description>{PGUP}</description>
             </item>
             <item>
-              <term>返回</term>
+              <term>Return</term>
               <description>{返回}</description>
             </item>
             <item>
-              <term>向右箭头</term>
+              <term>向右键</term>
               <description>{右}</description>
             </item>
             <item>
-              <term>SCROLL LOCK</term>
+              <term>Scroll Lock</term>
               <description>{SCROLLLOCK}</description>
             </item>
             <item>
-              <term>选项卡</term>
+              <term>Tab</term>
               <description>{选项卡}</description>
             </item>
             <item>
-              <term>向上箭头</term>
-              <description>{UP}</description>
+              <term>向上键</term>
+              <description>{向上}</description>
             </item>
           </list>
-          <para>您还可以指定与 SHIFT 和/或 CTRL 和/或 ALT 组合的键。若要指定键组合与另一个键或注册表项，请使用下表。</para>
+          <para>还可指定与 Shift 和/或 Ctrl 和/或 Alt 组合使用的键。若要指定与其他键组合使用的键，可使用下表。</para>
           <list type="table">
             <item>
-              <term>SHIFT</term>
-              <description>+ （加号）</description>
+              <term>Shift</term>
+              <description>+（加号）</description>
             </item>
             <item>
-              <term>CTRL</term>
-              <description>^ （插入记号）</description>
+              <term>Ctrl</term>
+              <description>^（插入符号）</description>
             </item>
             <item>
-              <term>ALT</term>
+              <term>Alt</term>
               <description>%（百分号）</description>
             </item>
           </list>
@@ -10777,7 +10823,9 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>此属性对应于显示开发人员选项卡中 Excel 选项对话框的功能区复选框。</para>
+          <para>此属性对应于“Excel 选项”对话框中的“在功能区显示‘开发工具’选项卡”复选框。
+
+</para>
           <para></para>
         </remarks>
       </Docs>
@@ -10877,7 +10925,9 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>对应于 Excel 选项对话框中选择复选框时显示浮动工具栏。</para>
+          <para>对应于“Excel 选项”对话框中的“选择时显示浮动工具栏”复选框。
+
+</para>
           <para></para>
         </remarks>
       </Docs>
@@ -11007,7 +11057,7 @@
         <summary>获取当前加载的应用程序中的颜色样式集。</summary>
         <value>当前加载的应用程序中的颜色样式集。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -11038,7 +11088,7 @@
         <summary>获取当前加载的应用程序中的 SmartArt 布局的组。</summary>
         <value>当前加载的应用程序中的 SmartArt 布局集。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -11069,7 +11119,7 @@
         <summary>获取 SmartArt 其当前加载的应用程序中的快速样式的集。</summary>
         <value>SmartArt 当前加载的应用程序中快速样式集。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -11196,7 +11246,7 @@
         <summary>返回或设置标准字体的名称。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果使用该属性更改标准字体，直到重新启动 Microsoft Excel 后，更改才会生效。</para>
+          <para>如果使用该属性更改标准字体，则直到重新启动 Microsoft Excel 后，所做的更改才能生效。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -11236,7 +11286,7 @@
         <summary>返回或设置标准字体大小，以磅为单位。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果使用该属性更改标准字体大小，直到重新启动 Microsoft Excel 后，更改才会生效。</para>
+          <para>如果使用该属性更改标准字体大小，则直到重新启动 Microsoft Excel 后，所做的更改才能生效。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -11307,7 +11357,7 @@
         <summary>返回或设置状态栏中的文本。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果 Microsoft Excel 具有状态栏的控件，此属性返回<b>False</b> 。若要还原默认状态栏文本，请将属性设置为<b>False</b>;这适用即使状态栏处于隐藏状态。</para>
+          <para>如果 Microsoft Excel 控制状态栏，则本属性返回 <b>False</b>。若要恢复默认的状态栏文字，可将本属性设为 <b>False</b>，这在状态栏处于隐藏状态时也起作用。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -11403,7 +11453,7 @@
         <summary>为将从这里调用单元格的用户定义的函数的返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>用户不能访问属性或方法在用户定义的函数的<b>Range</b>对象。用户可以存储供以后使用<b>Range</b>对象，并执行其他操作完成后重新计算。</para>
+          <para>在用户定义的函数中，用户不能访问 <b>Range</b> 对象上的属性或方法。当完成了重新计算后，用户可以为今后的使用和执行附加操作而存储 <b>Range</b> 对象。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -11437,8 +11487,10 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />对象，表示当前的宏代码运行的工作簿。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>使用此属性来引用包含您的宏代码的工作簿。<b>ThisWorkbook</b>是引用的外接程序工作薄内外接程序本身的唯一方式。<b>ActiveWorkbook</b>属性不返回外接程序工作簿;将返回的工作簿的加载项调用。<see cref="P:Microsoft.Office.Interop.Excel._Application.Workbooks" />属性可能会失败，因为您在创建外接程序时，可能更改了工作簿的名称<b>ThisWorkbook</b>始终返回在运行代码的工作簿。</para>此属性可使用只能从
-          <para>在 Excel 内部。不能使用它访问的工作簿从任何其他应用程序。</para><para></para></remarks>
+          <para>使用此属性来引用包含您的宏代码的工作簿。 <b>ThisWorkbook</b>是引用的外接程序工作薄内外接程序本身的唯一方式。 <b>ActiveWorkbook</b>属性不返回外接程序工作簿;将返回的工作簿的加载项调用。 <see cref="P:Microsoft.Office.Interop.Excel._Application.Workbooks" />属性可能会失败，因为创建外接程序时，可能更改了工作簿的名称。 <b>ThisWorkbook</b>始终返回在运行代码的工作簿。</para>
+          <para>可以使用此属性只能从在 Excel 内部。 不能用于从任何其他应用程序访问工作簿。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ThousandsSeparator">
@@ -11720,7 +11772,7 @@
       <Docs>
         <summary>取消最近的用户界面操作。</summary>
         <remarks>
-          <para>此方法撤消仅在运行此过程之前执行用户的最后一个操作。它必须是在过程中的第一行。</para>
+          <para>此方法撤消仅在运行此过程之前执行用户的最后一个操作。 它必须是在过程中的第一行。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -11906,12 +11958,12 @@
         <value>
           <b>true</b>如果 Excel 允许用户定义的函数在 XLL 外接程序在计算群集; 上运行否则为<b>false</b>。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>为可读/写属性。</para>
           <para>
-            <b>，则返回 true</b>如果 Excel 允许用户定义的函数在 XLL 外接程序在计算群集上运行; 否则为<b>false</b>。设置<see cref="P:Microsoft.Office.Interop.Excel._Application.UseClusterConnector" />属性对应于允许用户定义 XLL 函数计算群集中的复选框在公式下 Excel 选项对话框的高级类别上运行。</para>
+            <b>true</b>如果 Excel 允许用户定义的函数在 XLL 外接程序在计算群集; 上运行否则为<b>false</b>。 设置<see cref="P:Microsoft.Office.Interop.Excel._Application.UseClusterConnector" />属性对应于允许用户定义 XLL 函数计算群集中的复选框在公式下 Excel 选项对话框的高级类别上运行。</para>
           <para>
-            <b>注意</b>： 若要启用<see cref="P:Microsoft.Office.Interop.Excel._Application.UseClusterConnector" />属性必须安装高性能计算 (HPC) 群集连接器。群集连接器使您能够以提高性能的 HPC 群集上远程运行群集安全 XLL 函数。</para>
-          <para>后设置<see cref="P:Microsoft.Office.Interop.Excel._Application.UseClusterConnector" />属性，使用<see cref="P:Microsoft.Office.Interop.Excel._Application.ClusterConnector" />属性指定要使用的 HPC 群集连接器。</para>
+            <b>注意</b>： 若要启用<see cref="P:Microsoft.Office.Interop.Excel._Application.UseClusterConnector" />属性必须安装高性能计算 (HPC) 群集连接器。 群集连接器使您能够以提高性能的 HPC 群集上远程运行群集安全 XLL 函数。</para>
+          <para>设置后<see cref="P:Microsoft.Office.Interop.Excel._Application.UseClusterConnector" />属性，使用<see cref="P:Microsoft.Office.Interop.Excel._Application.ClusterConnector" />属性指定要使用的 HPC 群集连接器。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -11973,7 +12025,10 @@
         <summary>
           <b>True</b>如果应用程序是可见，或者如果它是创建或由用户启动。 隐藏<b>false</b>如果创建或使用<b>CreateObject</b>或<b>GetObject</b>函数和应用程序以编程方式启动的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>释放<para>时<b>UserControl</b>属性为<b>False</b>对象，该对象是对对象的最后一个编程引用时释放。如果此属性为<b>False</b>，Microsoft Excel 退出时释放会话中的最后一个对象。</para><para></para></remarks>
+        <remarks>
+          <para>当对象的 <b>UserControl</b> 属性为 <b>False</b> 时，则最后一个以编程方式对该对象的引用释放以后，该对象也将释放。如果本属性为 <b>False</b>，会话中最后一个对象释放后，Microsoft Excel 将退出。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UserLibraryPath">
@@ -12258,7 +12313,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>
-            <b>重要说明</b>： <b>Wait</b>方法暂停所有 Microsoft Excel 活动，并可能会阻止您<b>等待</b>生效时执行您的计算机上的其他操作。但是，后台处理，如打印和重新计算继续。</para>
+            <b>重要说明</b>： <b>Wait</b>方法暂停所有 Microsoft Excel 活动，并可能会阻止您<b>等待</b>生效时执行您的计算机上的其他操作。 但是，后台处理，如打印和重新计算继续。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -12388,7 +12443,7 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Windows" />集合，代表所有工作簿中的所有窗口。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性返回可见和隐藏的窗口的集合。</para>
+          <para>此属性返回的集合中既包括可见窗口，也包括隐藏窗口。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -12501,7 +12556,8 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Workbooks" />集合，代表所有打开的工作簿。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>的<b>工作簿</b>属性返回的集合不包括打开加载项，它们是一种特殊的隐藏工作簿。如果您知道文件名，但是，可以返回单个打开外接程序。例如，Workbooks("Oscar.xla") 将打开外接程序名为"Oscar.xla"作为<b>Workbook</b>对象返回。</para>
+          <para>
+            <b>工作簿</b>属性返回的集合不包括打开加载项，它们是一种特殊的隐藏工作簿。 如果您知道文件名，但是，可以返回单个打开外接程序。 例如，Workbooks("Oscar.xla") 将打开外接程序名为"Oscar.xla"作为<b>Workbook</b>对象返回。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -12560,7 +12616,7 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Sheets" />代表活动工作簿中的所有工作表的集合。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性不返回宏表; 使用<see cref="P:Microsoft.Office.Interop.Excel._Application.Excel4MacroSheets" />属性或<see cref="P:Microsoft.Office.Interop.Excel._Application.Excel4IntlMacroSheets" />属性可返回这些表。</para>
+          <para>此属性不返回宏表;使用<see cref="P:Microsoft.Office.Interop.Excel._Application.Excel4MacroSheets" />属性或<see cref="P:Microsoft.Office.Interop.Excel._Application.Excel4IntlMacroSheets" />属性可返回这些表。</para>
           <para></para>
         </remarks>
       </Docs>

@@ -1,10 +1,10 @@
 <Type Name="PageSetup" FullName="Microsoft.Office.Interop.Excel.PageSetup">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5a93c78e6a5ae623101eeeccd4a1a36c91884483" />
+    <Meta Name="ms.openlocfilehash" Value="50c5531a9636ff8479dc8d559960466d2a73af0f" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578951" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PageSetup" />
@@ -157,7 +157,7 @@
         <summary>返回或设置边距的大小，以磅为单位。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>边距设置或返回以磅为单位。使用任意一种<see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" />方法或<see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" />方法来执行转换。</para>
+          <para>边距设置或返回以磅为单位。 使用任意一种<see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" />方法或<see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" />执行转换的方法。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -379,7 +379,7 @@
         <summary>返回或设置图表扩展以适应页面上的方式。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性仅应用于图表工作表 （其不能用于嵌入式图表）。</para>
+          <para>此属性仅适用于图表工作表 （其不能用于嵌入式图表）。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -410,9 +410,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -479,7 +479,7 @@
         <summary>如果为<b>true</b>将图形不打印工作表。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>设置此属性设置为<b>True</b>可提高打印速度 （但是不打印图形）。</para>
+          <para>将该属性设置为 <b>True</b> 可加快打印速度（但是不打印其中的图形）。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -705,7 +705,7 @@
         <summary>返回或设置从页面顶部的距离，页眉，以磅为单位。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>边距设置或返回以磅为单位。使用<see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" />方法或<see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" />方法可将度量单位从英寸或厘米为单位指定转换。</para>
+          <para>边距设置或返回以磅为单位。 使用<see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" />方法或<see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" />方法可将度量单位从英寸或厘米为单位指定转换。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -857,7 +857,7 @@
         <summary>返回或设置的左边距的大小，以磅为单位。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>边距设置或返回以磅为单位。使用<see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" />方法或<see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" />方法可将度量单位从英寸或厘米为单位指定转换。</para>
+          <para>边距设置或返回以磅为单位。 使用<see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" />方法或<see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" />方法可将度量单位从英寸或厘米为单位指定转换。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -956,7 +956,7 @@
         <summary>纵向或横向打印模式。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>对于 OLAP 数据源，层次结构中设置此属性的一个字段设置相同的层次结构中的其他字段的方向。只能在行、 列和页字段区域的数据透视表报告中进行定向维度字段。仅可以在数据区域面向度量字段。层次结构或数据的字段设置为<b>xlHidden</b>从数据透视表中删除字段的层次结构。</para>
+          <para>对于 OLAP 数据源，当设置某一层中的一个字段的此属性值时，也会同时设置同一层中所有其他字段的方向。维字段只能在数据透视表的行、列和页字段区域中进行定向。度量字段则只能在数据区域中进行定向。将某一层或数据字段设置为 <b>xlHidden</b> 时，会将该层或字段从数据透视表中移出。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1079,8 +1079,8 @@
         <summary>返回或设置要在宏语言中使用 A1-样式引用的字符串作为打印的范围。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>将此属性设置为<b>False</b>或空字符串 ("") 将打印区域设置为整个工作表。</para>
-          <para>此属性仅适用于工作表页面。</para>
+          <para>将该属性设置为 <b>False</b> 或空字符串 ("")，可打印整个工作表。</para>
+          <para>该属性仅适用于工作表页面。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1313,9 +1313,9 @@
         <summary>返回或设置包含在每页的左边界上重复 A1 样式表示法语言宏的字符串形式的单元格的列。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Microsoft Excel 指定仅列的一部分，如果将范围扩展为整个列。</para>
-          <para>将此属性设置为<b>False</b>或空字符串 ("")，将会关闭标题列。</para>
-          <para>此属性仅适用于工作表页面。</para>
+          <para>如果仅指定列的一部分，Microsoft Excel 将自动把该区域扩展为整个列。</para>
+          <para>将该属性设置为 <b>False</b> 或空字符串 ("")，将会关闭标题列。</para>
+          <para>该属性仅适用于工作表页面。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1349,9 +1349,9 @@
         <summary>返回或设置包含要重复在每页的顶部，在语言的宏的 A1 样式表示法字符串形式的单元格的行。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Microsoft Excel 指定仅的一行或多行的一部分，如果将范围扩展为整个行。</para>
-          <para>将此属性设置为<b>False</b>或空字符串 ("")，将会关闭标题行。</para>
-          <para>此属性仅适用于工作表页面。</para>
+          <para>如果仅指定行的一部分，Microsoft Excel 将把该区域扩展为整个行。</para>
+          <para>将该属性设置为 <b>False</b> 或空字符串 ("")，将会关闭标题行。</para>
+          <para>该属性仅适用于工作表页面。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1503,7 +1503,7 @@
         <summary>返回或设置的右边距的大小，以磅为单位。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>边距设置或返回以磅为单位。使用<see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" />方法或<see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" />方法可将度量单位从英寸或厘米为单位指定转换。</para>
+          <para>边距设置或返回以磅为单位。 使用<see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" />方法或<see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" />方法可将度量单位从英寸或厘米为单位指定转换。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1570,7 +1570,7 @@
         <summary>返回或设置边距的大小，以磅为单位。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>边距设置或返回以磅为单位。使用<see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" />方法或<see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" />方法可将度量单位从英寸或厘米为单位指定转换。</para>
+          <para>边距设置或返回以磅为单位。 使用<see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" />方法或<see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" />方法可将度量单位从英寸或厘米为单位指定转换。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1605,7 +1605,7 @@
         <value>To be added.</value>
         <remarks>
           <para>如果此属性为<b>False</b>，<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesWide" />和<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesTall" />属性控制工作表缩放的方式。</para>
-          <para>所有缩放均保持原文档的纵横比。</para>
+          <para>所有缩放均保持原文档的长宽比例。</para>
           <para></para>
         </remarks>
       </Docs>

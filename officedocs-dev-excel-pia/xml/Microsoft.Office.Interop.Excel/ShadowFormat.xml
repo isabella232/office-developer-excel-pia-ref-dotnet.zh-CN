@@ -1,10 +1,10 @@
 <Type Name="ShadowFormat" FullName="Microsoft.Office.Interop.Excel.ShadowFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="09d808183dd11068f3bb29e58ab558271621e063" />
+    <Meta Name="ms.openlocfilehash" Value="5eeac5f0fb754a2bafeb2c032994726f97c18d68" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584432" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ShadowFormat : Microsoft.Office.Core._IMsoDispObj" />
@@ -130,9 +130,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -293,7 +293,7 @@
         <summary>返回或设置以磅为单位指定形状阴影的水平偏移量。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>正值将其中阴影向形状右侧偏移; 值为负偏移其左侧。</para>
+          <para>正值表示负值表示阴影向图形; 右侧读它的左侧。</para>
           <para>如果您想要微移阴影的水平或垂直从当前位置而无需指定其绝对位置，使用<see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetX(System.Single)" />方法或<see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetY(System.Single)" />方法。</para>
           <para></para>
         </remarks>
@@ -328,7 +328,7 @@
         <summary>返回或设置以磅为单位指定形状的阴影的垂直偏移量。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>正值将其中阴影向形状右侧偏移; 值为负偏移其左侧。</para>
+          <para>正值表示负值表示阴影向图形; 右侧读它的左侧。</para>
           <para>如果您想要微移阴影的水平或垂直从当前位置而无需指定其绝对位置，使用<see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetX(System.Single)" />方法或<see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetY(System.Single)" />方法。</para>
           <para></para>
         </remarks>
@@ -471,6 +471,11 @@
                 <see cref="F:Microsoft.Office.Core.MsoShadowStyle.msoShadowStyleMixed" />
               </term>
             </item>
+            <item>
+              <term>
+                <see cref="F:Microsoft.Office.Core.MsoShadowStyle.msoShadowStyleOuterShadow" />
+              </term>
+            </item>
           </list>
           <para></para>
         </remarks>
@@ -505,7 +510,7 @@
         <summary>返回或设置指定填充的透明度作为值从 0.0 （不透明） 到 1.0 （清除）。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性的值影响的纯色填充外观和仅行; 它不影响带图案的线条或图案、 渐变、 纹理的填充的外观。</para>
+          <para>此属性的值仅影响均一颜色填充和线条的外观。对图案线条及渐变、图案、图片和纹理填充的外观无效。</para>
           <para></para>
         </remarks>
       </Docs>

@@ -1,10 +1,10 @@
 <Type Name="FormatCondition" FullName="Microsoft.Office.Interop.Excel.FormatCondition">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a635d52289eab8b27e83a83f54b3afc26b142b07" />
+    <Meta Name="ms.openlocfilehash" Value="06db90663108615d83dc620b65e7671be2f3d791" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584411" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface FormatCondition" />
@@ -32,10 +32,49 @@
     <summary>代表条件格式。</summary>
     <remarks>
       <para>
-        <b>FormatCondition</b>对象所在的<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />集合。<b>FormatConditions</b>集合可包含给定范围内的三个条件格式。</para>
-      <para>使用<b>FormatConditions</b>(<paramref name="index" />)，其中 index 是条件格式，以返回一个<b>FormatCondition</b>对象的索引号。</para>使用
-      <para><see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" />方法来创建新的条件格式。如果您尝试创建一个区域内的三个以上条件格式， <b>Add</b>方法将失败。如果区域有三种格式，则可以使用<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" />方法，若要更改某个格式，也可以使用<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" />方法删除格式，然后使用<b>Add</b>方法创建新的格式。</para><para>使用<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Font" />， <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Borders" />，和<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Interior" />属性<b>FormatCondition</b>对象来控制的外观设置单元格。这些对象的某些属性不受支持的条件格式对象模型。下表列出了可用于条件格式属性。</para><list type="table"><item><term><b>字体</b></term><description><b>加粗</b><b>颜色</b><b>ColorIndex</b><b>FontStyle</b><b>倾斜</b><b>删除线</b><b>下划线</b>不能使用会计下划线样式。</description></item>可以使用
-        <item><term><b>边框</b></term><description><b>底部</b><b>颜色</b><b>左</b><b>右</b><b>样式</b>以下边框样式 （所有其他人不支持的）： <b>xlNone</b><b>xlSolid</b>、 <b>xlDash</b>，<b>xlDot</b>、 <b>xlDashDot</b>、 <b>xlDashDotDot</b>、 <b>xlGray50</b>、 <b>xlGray75</b>和<b>xlGray25</b>。<b>顶部</b><b>权重</b>可使用下面的边框粗细 （所有其他人不支持的）： <b>xlWeightHairline</b>和<b>xlWeightThin</b>。</description></item><item><term><b>内部</b></term><description><b>颜色</b><b>ColorIndex</b><b>模式</b><b>PatternColorIndex</b></description></item></list><para></para></remarks>
+        <b>FormatCondition</b>对象所在的<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />集合。 <b>FormatConditions</b>集合可包含给定范围内的三个条件格式。</para>
+      <para>使用<b>FormatConditions</b>(<paramref name="index" />)，其中 index 是条件格式，以返回一个<b>FormatCondition</b>对象的索引号。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" />方法来创建新的条件格式。 如果您尝试创建一个区域内的三个以上条件格式， <b>Add</b>方法将失败。 如果区域有三种格式，则可以使用<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" />方法，若要更改某个格式，也可以使用<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" />方法删除格式，然后使用<b>Add</b>方法创建新的格式。</para>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Font" />， <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Borders" />，和<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Interior" />属性<b>FormatCondition</b>对象来控制的外观设置单元格。 这些对象的某些属性不受支持的条件格式对象模型。 下表中列出可用于条件格式的属性。</para>
+      <list type="table">
+        <item>
+          <term>
+            <b>字体</b>
+          </term>
+          <description>
+            <b>加粗</b>
+            <b>颜色</b>
+            <b>ColorIndex</b>
+            <b>FontStyle</b>
+            <b>斜体</b>
+            <b>删除线</b>
+            <b>下划线</b>不能使用会计下划线样式。</description>
+        </item>
+        <item>
+          <term>
+            <b>边框</b>
+          </term>
+          <description>
+            <b>底部</b>
+            <b>颜色</b>
+            <b>左</b>
+            <b>右</b>
+            <b>样式</b>可以使用下面的边框样式 （所有其他人不支持的）： <b>xlNone</b>、 <b>xlSolid</b>、 <b>xlDash</b>、 <b>xlDot</b>、 <b>xlDashDot</b>、 <b>xlDashDotDot</b>、 <b>xlGray50</b>、 <b>xlGray75</b>和<b>xlGray25</b>.<b>顶部</b><b>权重</b>可使用下面的边框粗细 （所有其他人不支持的）： <b>xlWeightHairline</b>和<b>xlWeightThin</b>。</description>
+        </item>
+        <item>
+          <term>
+            <b>内部</b>
+          </term>
+          <description>
+            <b>颜色</b>
+            <b>ColorIndex</b>
+            <b>模式</b>
+            <b>PatternColorIndex</b>
+          </description>
+        </item>
+      </list>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -150,9 +189,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -300,7 +339,11 @@
       <Docs>
         <summary>返回的值或条件格式或数据有效性的第二部分相关联的表达式。</summary>
         <value>To be added.</value>
-        <remarks>仅使用<para><b>Formula2</b>属性时数据验证条件格式<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Operator" />属性为<b>xlBetween</b>或<b>xlNotBetween</b>。可以是以常量值、 一个 string 值、 单元格引用或公式。</para><para></para></remarks>
+        <remarks>
+          <para>
+            <b>Formula2</b>属性来仅当数据验证条件格式<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Operator" />属性为<b>xlBetween</b>或<b>xlNotBetween</b>。 可以是以常量值、 一个 string 值、 单元格引用或公式。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -392,8 +435,8 @@
         <param name="Range">此格式规则将应用于的区域。</param>
         <summary>设置此格式规则所应用于的单元格区域。</summary>
         <remarks>
-          <para>范围必须以 A1 引用样式和完全包含在工作表的父级的<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />集合。它可以包括区域运算符 （冒号）、 交点运算符 （空格） 或 union 运算符 （逗号分隔）。也可以使用美元符号，但会被忽略。</para>
-          <para>您还可以使用局部定义的名称范围的任何部分中，但该名称必须是在宏的语言。</para>
+          <para>范围必须以 A1 引用样式和完全包含在工作表的父级的<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />集合。 它可以包括区域运算符 （冒号）、 交点运算符 （空格） 或 union 运算符 （逗号分隔）。 也可以使用美元符号，但会被忽略。</para>
+          <para>您也可以在区域的任意部分中使用局部定义名称，但该名称必须使用宏语言。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -465,7 +508,10 @@
         <value>
           <b>对象</b>
         </value>
-        <remarks>使用单元格格式对话框的数字选项卡上显示的相同的格式代码指定<para>的数字格式。您可以使用内置的数字格式，例如"常规"，或创建自定义数字格式。</para><para></para></remarks>
+        <remarks>
+          <para>数字格式是使用“单元格格式”对话框的“数字”选项卡上显示的相同格式代码指定的。您可以使用内置的数字格式，例如 "General" 或者创建自定义数字格式。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Operator">
@@ -555,7 +601,7 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>时设置的优先级，值必须是介于 1 和工作表上的条件格式规则的总数之间的正整数。优先级必须在工作表上的所有规则的唯一值，因此更改指定的条件格式规则的优先级可能导致要移动的工作表上的其他规则的优先级值。</para>
+          <para>设置优先级时，值必须为介于 1 和工作表上条件格式规则总数之间的正整数。对于工作表上的所有规则，优先级必须为唯一值，因此，如果更改指定条件格式规则的优先级，将可能会导致工作表上其他规则的优先级值移位。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -649,9 +695,9 @@
       <Docs>
         <summary>将此条件格式规则的优先级值设置为“1”，以便在工作表上的所有其他规则之前计算此规则。</summary>
         <remarks>
-          <para>当您有多个工作表中的条件格式规则如果规则以前没有设置为"1"的优先级时，此方法将导致加一工作表上的所有其他现有规则的优先级。</para>
+          <para>当工作表中有多个条件格式规则时，如果之前未将此规则设置为优先级“1”，此方法将导致工作表上的所有其他现有规则的优先级都增加 1。</para>
           <para>
-            <b>注释</b>： 基于工作表级别应用条件格式规则的优先级。</para>
+            <b>注意</b>： 基于工作表级别应用条件格式规则的优先级。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -679,9 +725,9 @@
       <Docs>
         <summary>为此条件格式规则设置求值顺序，以便在工作表上的所有其他规则之后计算此规则。</summary>
         <remarks>
-          <para>优先级的实际值将等于的工作表上的条件格式规则的总数。如果您在工作表中有多个条件格式规则，此方法将导致的优先级值大于加一该规则的规则的优先级。</para>
+          <para>优先级的实际值将等于工作表上条件格式规则的总数。当工作表中有多个条件格式规则时，此方法将导致优先级值大于此规则的规则的优先级增加 1。</para>
           <para>
-            <b>注释</b>： 基于工作表级别应用条件格式规则的优先级。</para>
+            <b>注意</b>： 基于工作表级别应用条件格式规则的优先级。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -717,7 +763,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>为了支持向后兼容性，此属性的默认值为<b>True</b>，即的格式的行为相反用户界面中创建的规则。</para>
+          <para>为了支持向后兼容性，此属性的默认值为 <b>True</b>，而这与在用户界面中创建的格式规则的行为相反。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -753,7 +799,7 @@
           <b>字符串</b>
         </value>
         <remarks>
-          <para>，则忽略此属性，如果<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Type" />属性未设置为<see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlTextString" />。</para>
+          <para>如果此属性，则忽略<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Type" />属性未设置为<see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlTextString" />。</para>
           <para></para>
         </remarks>
       </Docs>

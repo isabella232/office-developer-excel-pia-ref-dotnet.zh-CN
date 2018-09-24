@@ -1,10 +1,10 @@
 <Type Name="CellFormat" FullName="Microsoft.Office.Interop.Excel.CellFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7fe04494981caca0d57f0a87169643a708571b41" />
+    <Meta Name="ms.openlocfilehash" Value="bb607767f33cbf4ea76bfc37821ee59c522eeb21" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581170" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CellFormat" />
@@ -67,7 +67,7 @@
           <b>True</b>如果水平或垂直等距单元格中的文本对齐方式设置为等距分布时，自动缩进文本。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>设置文本对齐方式为均匀分布，您可以设置<see cref="P:Microsoft.Office.Interop.Excel.CellFormat.VerticalAlignment" />属性设为<b>xlVAlignDistributed</b>时的值<see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Orientation" />属性是<b>xlVertical</b>，并且可以设置<see cref="P:Microsoft.Office.Interop.Excel.CellFormat.HorizontalAlignment" />属性设为<b>xlHAlignDistributed</b>时<b>Orientation</b>属性的值是<b>xlHorizontal</b>。</para>
+          <para>若要设置为均匀分布的文本对齐方式，您可以设置<see cref="P:Microsoft.Office.Interop.Excel.CellFormat.VerticalAlignment" />属性设为<b>xlVAlignDistributed</b>时的值<see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Orientation" />属性是<b>xlVertical</b>，并且可以设置<see cref="P:Microsoft.Office.Interop.Excel.CellFormat.HorizontalAlignment" />属性设为<b>xlHAlignDistributed</b>时<b>Orientation</b>属性的值为<b>xlHorizontal</b>。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -182,9 +182,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -249,7 +249,7 @@
         <summary>如果为<b>true</b>将时工作表处于保护状态隐藏公式。 如果指定的范围包含有些单元格的<b>FormulaHidden</b>等于<b>true，</b>而有些单元格的<b>FormulaHidden</b>等于<b>False</b>，则返回<b>Null</b> 。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>不将此属性与<see cref="P:Microsoft.Office.Interop.Excel.Range.Hidden" />属性。只有在受保护工作簿和工作表不; 如果不隐藏公式仅当在工作表保护将被隐藏。</para>
+          <para>不将此属性与<see cref="P:Microsoft.Office.Interop.Excel.Range.Hidden" />属性。 只有在受保护工作簿和工作表不; 如果不隐藏公式仅当在工作表保护，它将被隐藏。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -299,7 +299,7 @@
           <para>
             <b>xlRight</b>
           </para>
-          <para>这些常量的一些可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
+          <para>[!注释] 由于选择或安装的语言支持（例如美国英语）不同，有些常量可能无法使用。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -333,7 +333,7 @@
         <summary>返回或设置单元格或区域的缩进。 可以是介于 0 到 15 的整数。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>使用此属性将缩进级别设置为一个小于 0 （零） 或大于 15 将导致出错。</para>
+          <para>使用此属性将缩进量设为小于 0 或者大于 15 的数字，将导致发生错误。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -431,7 +431,7 @@
           <b>True</b>如果 range 或 style 包含合并单元格。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>当您选择该区域包含合并单元格时，所获得的选择可能不同于预期的所选内容。使用<see cref="P:Microsoft.Office.Interop.Excel.Range.Address(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlReferenceStyle,System.Object,System.Object)" />属性检查所选范围的地址。</para>
+          <para>选择包含合并单元格区域时，所获得的选择可能不同于预期的所选内容。 使用<see cref="P:Microsoft.Office.Interop.Excel.Range.Address(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlReferenceStyle,System.Object,System.Object)" />属性检查所选范围的地址。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -465,7 +465,7 @@
         <summary>返回或设置对象的格式代码。 如果指定范围中的所有单元格都包含相同的数字格式，则返回<b>Null</b> 。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>格式代码是作为单元格格式对话框中的格式代码选项相同的字符串。Visual Basic <b>Format</b>函数使用格式代码字符串不同，不执行<b>与 NumberFormat</b>和<see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormatLocal" />属性。</para>
+          <para>格式代码是在 设置单元格格式对话框中 格式代码选项相同的字符串。 Visual Basic <b>Format</b>函数使用格式代码字符串不同，不执行<b>与 NumberFormat</b>和<see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormatLocal" />属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -499,7 +499,7 @@
         <summary>返回或设置对象的格式代码，以用户的语言的字符串形式。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>执行 Visual Basic <b>Format</b>函数使用使用格式代码字符串不同<see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormat" />和<b>NumberFormatLocal</b>属性。</para>
+          <para>Visual Basic <b>Format</b>函数使用使用的格式代码字符串不同<see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormat" />和<b>NumberFormatLocal</b>属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -547,7 +547,7 @@
           <para>
             <b>xlVertical</b>
           </para>
-          <para>对于 OLAP 数据源，设置层次结构中的一个字段的此属性将设置相同的层次结构中的其他字段的方向。只能在行、 列和页字段区域的数据透视表报告中进行定向维度字段。仅可以在数据区域面向度量字段。层次结构或数据的字段设置为<b>xlHidden</b>从数据透视表中删除字段的层次结构。</para>
+          <para>对于 OLAP 数据源，当设置某一层中的一个字段的此属性值时，也会同时设置同一层中所有其他字段的方向。维字段只能在数据透视表的行、列和页字段区域中进行定向。度量字段则只能在数据区域中进行定向。将某一层或数据字段设置为 <b>xlHidden</b> 时，会将该层或字段从数据透视表中移出。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -692,7 +692,7 @@
           <b>True</b>如果 Microsoft Excel 将文本包装对象中。 如果指定的区域中包含一些单元格文本换行的和不其他单元格，则返回<b>Null</b> 。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Microsoft Excel 将更改范围的高度，如有必要，以容纳其中的文字范围中。</para>
+          <para>Microsoft Excel 会在必要的时候改变区域的行高以容纳其中的文字。</para>
           <para></para>
         </remarks>
       </Docs>

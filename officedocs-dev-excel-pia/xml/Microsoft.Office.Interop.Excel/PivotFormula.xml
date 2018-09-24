@@ -1,10 +1,10 @@
 <Type Name="PivotFormula" FullName="Microsoft.Office.Interop.Excel.PivotFormula">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f7a0555508b1378be940d3dc42a9131282186bb8" />
+    <Meta Name="ms.openlocfilehash" Value="ce492b9d9661d497cae1980426cde80b49102656" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585146" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotFormula" />
@@ -32,7 +32,7 @@
     <summary>代表在数据透视表中用于计算的公式。</summary>
     <remarks>
       <para>使用<b>PivotFormulas</b>(<paramref name="index" />)，其中<paramref name="index" />是返回<b>PivotFormula</b>对象的公式的编号或公式，左侧的字符串。</para>
-      <para>此对象及其相关的属性和方法对于 OLAP 数据源无效因为计算字段和项不支持。</para>
+      <para>本对象及其相关属性和方法对于 OLAP 数据源无效，这是因为它不支持计算字段和计算项。</para>
       <para></para>
     </remarks>
   </Docs>
@@ -128,9 +128,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -189,10 +189,13 @@
         <summary>使用 A1 样式表示法返回或设置对象的公式。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>此属性不可用于 OLAP 数据源。</para>
-          <para>如果单元格包含常量，该属性返回的常量。如果单元格为空，该<b>公式</b>属性将返回空字符串。如果单元格包含公式， <b>Formula</b>属性会将该公式返回相同的格式将公式栏 （包括等号） 中显示的字符串形式。</para>如果设置为日期值或单元格公式的
-          <para>，Microsoft Excel 将检查以查看是否已设置该单元格格式之一的日期或时间的数字格式。如果没有，Microsoft Excel 将号码格式设为默认的短日期数字格式。</para>如果该区域是一个-或两维范围
-          <para>，您可以为数组相同尺寸设置公式。同样，将公式放入数组。</para><para>的多个单元格区域填充公式的范围中的所有单元格设置公式。</para><para></para></remarks>
+          <para>此属性对于 OLAP 数据源无效。</para>
+          <para>如果单元格包含一个常量，此属性返回该常量。如果单元格为空，此 <b>Formula</b> 属性返回一个空字符串。如果单元格包含公式，<b>Formula</b> 属性将该公式作为字符串返回，所用格式与在编辑栏（包括等号）中显示时的格式相同。</para>
+          <para>如果将单元格的值或者公式设置为日期类型，则 Microsoft Excel 将检查此单元格的数字格式是否符合日期或者时间格式。如果不符合，Microsoft Excel 将把数字格式设置为默认的短日期格式。</para>
+          <para>如果该区域是一个-或两维范围时，您可以设置为相同尺寸的数组的公式。 同样，您可以将公式放入数组。</para>
+          <para>如果为多单元格区域设置公式，则会用公式填充该区域所有的单元格。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -284,7 +287,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>StandardFormula</b>属性主要影响与日期或数字格式的项名称。它提供了一种方法来指定或查询给定的计算项的公式。</para>
+            <b>StandardFormula</b> 属性主要影响具有日期或数字格式的项目名称。该属性提供了一种方法可指定或查询给定计算项的公式。</para>
           <para>
             <b>StandardFormula</b>属性是则"国际-"而<see cref="P:Microsoft.Office.Interop.Excel.PivotFormula.Formula" />属性不是。</para>
           <para></para>

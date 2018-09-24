@@ -1,10 +1,10 @@
 <Type Name="ColorFormat" FullName="Microsoft.Office.Interop.Excel.ColorFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="94eccbe19d3d32c07fd1936d4fcbe2799d83801e" />
+    <Meta Name="ms.openlocfilehash" Value="3d031f52b238ec46211ddb6bca7295480f58f00f" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584474" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ColorFormat : Microsoft.Office.Core._IMsoDispObj" />
@@ -33,7 +33,7 @@
     <summary>代表单色对象的颜色、带有渐变或图案填充的对象的前景或背景色，或者指针的颜色。</summary>
     <remarks>
       <para>可以将颜色设为显式的红-绿-蓝值 (使用<see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.RGB" />属性) 或配色方案中颜色 (使用<see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.SchemeColor" />属性)。</para>
-      <para>使用的属性可返回一个<b>ColorFormat</b>对象，下表中列出。</para>
+      <para>使用下表中列出的属性之一来返回一个 <b>ColorFormat</b> 对象。</para>
       <list type="table">
         <item>
           <term>
@@ -42,7 +42,7 @@
           <description>
             <b>FillFormat</b>
           </description>
-          <description>（用于底纹或图案填充） 的背景填充颜色</description>
+          <description>背景填充色（用于阴影或图案填充格式）</description>
         </item>
         <item>
           <term>
@@ -51,7 +51,7 @@
           <description>
             <b>FillFormat</b>
           </description>
-          <description>的前景填充颜色 （或只需纯色填充的填充颜色）</description>
+          <description>前景填充色（对于纯色填充格式，即代表填充颜色）</description>
         </item>
         <item>
           <term>
@@ -60,7 +60,7 @@
           <description>
             <b>LineFormat</b>
           </description>
-          <description>背景线条颜色 （用于图案线条）</description>
+          <description>线条背景色（用于图案线条）</description>
         </item>
         <item>
           <term>
@@ -69,7 +69,7 @@
           <description>
             <b>LineFormat</b>
           </description>
-          <description>前景线条颜色 （或只是实线的线条颜色）</description>
+          <description>线条前景色（对于纯色线条，即代表线条颜色）</description>
         </item>
         <item>
           <term>
@@ -87,7 +87,7 @@
           <description>
             <b>ThreeDFormat</b>
           </description>
-          <description>延伸对象的侧边颜色</description>
+          <description>有延伸的对象的侧边颜色</description>
         </item>
       </list>
       <para></para>
@@ -154,8 +154,8 @@
         <summary>获取或设置指定对象的亮度。</summary>
         <value>指定对象的亮度。</value>
         <remarks>
-          <para>读/写。</para>
-          <para>此属性的值必须是 0.0 （最暗） 到 1.0 （最亮）。</para>
+          <para>为可读/写属性。</para>
+          <para>此属性的值必须是介于 0.0 (最暗) 到 1.0 (最亮)。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -191,9 +191,9 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 具有 XCEL 的创建者代码。另请参阅<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</para>
+            <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。 另请参阅<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -355,7 +355,7 @@
         <summary>返回或设置一个<b>单个</b>变浅或变深指定形状的颜色。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>可以为<b>TintAndShade</b>属性，0 （零） 适中 （最亮） 之间的 1-1 （最暗） 输入号码。</para>
+          <para>您可以输入大量从-1 (深) 到 <b>TintAndShade</b> 属性，0 (零) 表示非特定的 (最亮) 1。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -387,7 +387,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>MsoCalloutType</b>可以是下列<b>MsoCalloutType</b>常量之一。</para>
+            <b>MsoCalloutType</b> 可以是下列 <b>MsoCalloutType</b> 常量之一。</para>
           <para>
             <b>msocalloutfour 类型</b>
           </para>

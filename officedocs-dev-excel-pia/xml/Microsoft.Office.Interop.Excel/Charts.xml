@@ -1,10 +1,10 @@
 <Type Name="Charts" FullName="Microsoft.Office.Interop.Excel.Charts">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f0e75c27ff1370b7c1737585a6a29f589fcd20eb" />
+    <Meta Name="ms.openlocfilehash" Value="21bb7adb80852e2d82d5897dcd0ffec87dcefadd" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581737" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Charts : System.Collections.IEnumerable" />
@@ -35,11 +35,11 @@
   <Docs>
     <summary>指定的或活动工作簿中所有图表工作表的集合。 每个图表工作表由<see cref="T:Microsoft.Office.Interop.Excel.Chart" />对象。 这不包括工作表或对话框工作表上嵌入图表。 有关嵌入式图表的信息，请参阅<see cref="T:Microsoft.Office.Interop.Excel.ChartObject" />对象。</summary>
     <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" />属性返回<b>Charts</b>集合。使用<see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" />方法可创建新图表工作表并将其添加到工作簿。</para>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" />属性返回<b>Charts</b>集合。 使用<see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" />方法可创建新图表工作表并将其添加到工作簿。</para>
       <para>可以组合<see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" />方法与<see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法添加新图表包含从工作表中的数据。</para>
       <para>使用<b>图表</b>(<paramref name="index" />)，其中<paramref name="index" />是图表工作表的索引号或名称，可返回单个<b>图表</b>对象。</para>
       <para>
-        <see cref="T:Microsoft.Office.Interop.Excel.Sheets" />集合包含工作簿 （图表工作表和工作表） 中的所有工作表。使用<b>工作表</b>(<paramref name="index" />)，其中<paramref name="index" />工作表名称或编号，就可以返回一个工作表。</para>
+        <see cref="T:Microsoft.Office.Interop.Excel.Sheets" />集合包含工作簿 （图表工作表和工作表） 中的所有工作表。 使用<b>工作表</b>(<paramref name="index" />)，其中<paramref name="index" />工作表名称或编号，就可以返回一个工作表。</para>
       <para></para>
     </remarks>
   </Docs>
@@ -333,7 +333,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -421,7 +421,7 @@
         <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" />集合，代表水平分页符工作表上。 只读。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>没有限制为每个工作表的 1026年水平分页符。</para>
+          <para>每张工作表最多有 1026 个水平分页符。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -560,7 +560,7 @@
         <param name="PrToFileName">可选的<b>对象</b>。 如果<paramref name="PrintToFile" />设置为<b>True</b>，则该参数指定要打印到的文件的名称。</param>
         <summary>打印对象。</summary>
         <remarks>
-          <para>"页面"的说明中的<paramref name="From" />和<paramref name="To" />指打印页、 工作表或工作簿中不整个页面。</para>
+          <para>说明中的"页面"<paramref name="From" />和<paramref name="To" />指打印页、 工作表或工作簿中不整个页面。</para>
           <para></para>
         </remarks>
       </Docs>

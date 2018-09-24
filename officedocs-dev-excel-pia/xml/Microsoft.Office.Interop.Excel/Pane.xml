@@ -1,10 +1,10 @@
 <Type Name="Pane" FullName="Microsoft.Office.Interop.Excel.Pane">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="52961e7c7c0430d4ed8f7d76b64787b55ef124c0" />
+    <Meta Name="ms.openlocfilehash" Value="88411cce6007dd3bdb19bfe1fbfa29a798d89eed" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20586903" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Pane" />
@@ -32,7 +32,7 @@
     <summary>表示窗口的窗格。</summary>
     <remarks>
       <para>
-        <see cref="T:Microsoft.Office.Interop.Excel.Pane" />对象只对于工作表和 Microsoft Excel 4.0 宏表存在。<see cref="T:Microsoft.Office.Interop.Excel.Pane" />对象是成员<see cref="T:Microsoft.Office.Interop.Excel.Panes" />集合。<see cref="T:Microsoft.Office.Interop.Excel.Panes" />集合包含所有单个窗口中显示的窗格。</para>
+        <see cref="T:Microsoft.Office.Interop.Excel.Pane" />对象只对于工作表和 Microsoft Excel 4.0 宏表存在。 <see cref="T:Microsoft.Office.Interop.Excel.Pane" />对象是成员<see cref="T:Microsoft.Office.Interop.Excel.Panes" />集合。 <see cref="T:Microsoft.Office.Interop.Excel.Panes" />集合包含所有单个窗口中显示的窗格。</para>
       <para>使用<see cref="T:Microsoft.Office.Interop.Excel.Panes" />(<paramref name="index" />)，其中<paramref name="index" />是窗格索引号，若要返回单个<see cref="T:Microsoft.Office.Interop.Excel.Pane" />对象。</para>
       <para></para>
     </remarks>
@@ -61,7 +61,10 @@
       <Docs>
         <summary>激活窗格。</summary>
         <returns>To be added.</returns>
-        <remarks>如果该窗格不在活动的窗口中，该窗格所属的窗口的<para>也将被激活。无法激活冻结窗格。</para><para></para></remarks>
+        <remarks>
+          <para>如果窗格不在活动窗口中，则该窗格所属的窗口也将被激活。不能激活冻结的窗格。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -118,9 +121,9 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -185,9 +188,9 @@
         <summary>按页滚动窗口内容。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>如果<paramref name="Down" />和<paramref name="Up" />都已指定，则内容的窗口滚动个参数的差。例如，如果<paramref name="Down" />是 3 和<paramref name="Up" />为 6，内容向上滚动三页。</para>
-          <para>如果<paramref name="ToLeft" />和<paramref name="ToRight" />都已指定，则内容的窗口滚动个参数的差。例如，如果<paramref name="ToLeft" />是 3 和<paramref name="ToRight" />为 6，则内容滚动到右三页。</para>
-          <para>任何参数均可为负数。</para>
+          <para>如果<paramref name="Down" />和<paramref name="Up" />都已指定，则内容的窗口滚动个参数的差。 例如，如果<paramref name="Down" />是 3 和<paramref name="Up" />为 6，内容向上滚动三页。</para>
+          <para>如果<paramref name="ToLeft" />和<paramref name="ToRight" />都已指定，则内容的窗口滚动个参数的差。 例如，如果<paramref name="ToLeft" />是 3 和<paramref name="ToRight" />为 6，则内容滚动到右三页。</para>
+          <para>以上任何参数均可为负数。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -419,9 +422,9 @@
         <summary>按行或按列滚动窗口内容。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>如果<paramref name="Down" />和<paramref name="Up" />都已指定，则内容的窗口滚动个参数的差。例如，如果<paramref name="Down" />是 3 和<paramref name="Up" />为 6，内容向上滚动三行。</para>
-          <para>如果<paramref name="ToLeft" />和<paramref name="ToRight" />都已指定，则内容的窗口滚动个参数的差。例如，如果<paramref name="ToLeft" />是 3 和<paramref name="ToRight" />为 6，则内容滚动到右三列。</para>
-          <para>任何这些参数均可为负数。</para>
+          <para>如果<paramref name="Down" />和<paramref name="Up" />都已指定，则内容的窗口滚动个参数的差。 例如，如果<paramref name="Down" />是 3 和<paramref name="Up" />为 6，内容向上滚动三行。</para>
+          <para>如果<paramref name="ToLeft" />和<paramref name="ToRight" />都已指定，则内容的窗口滚动个参数的差。 例如，如果<paramref name="ToLeft" />是 3 和<paramref name="ToRight" />为 6，则内容滚动到右三列。</para>
+          <para>这四个参数都可以取负值。</para>
           <para></para>
         </remarks>
       </Docs>

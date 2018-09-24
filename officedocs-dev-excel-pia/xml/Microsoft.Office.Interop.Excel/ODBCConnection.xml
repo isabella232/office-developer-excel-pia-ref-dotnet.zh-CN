@@ -1,10 +1,10 @@
 <Type Name="ODBCConnection" FullName="Microsoft.Office.Interop.Excel.ODBCConnection">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e5e615f4da82b798a1e4b0d3975b38e694467344" />
+    <Meta Name="ms.openlocfilehash" Value="492ad873be2d6a4f1713ad14d80112f787219f44" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578048" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ODBCConnection" />
@@ -31,9 +31,9 @@
   <Docs>
     <summary>代表 ODBC 连接。</summary>
     <remarks>
-      <para>ODBC 连接可以存储在 Excel 工作簿中。 当 Micrososft Excel 打开工作簿时，Excel 将新建的 ODBC 连接称为内存中副本<see cref="T:Microsoft.Office.Interop.Excel.ODBCConnection" />对象。</para>
+      <para>ODBC 连接可以存储在 Excel 工作簿中。  当 Micrososft Excel 打开工作簿时，Excel 将新建的 ODBC 连接称为内存中副本<see cref="T:Microsoft.Office.Interop.Excel.ODBCConnection" />对象。</para>
       <para>
-        <see cref="T:Microsoft.Office.Interop.Excel.ODBCConnection" />对象包含与该连接，连接到服务器的名称和要在该服务器上打开的对象名称等相关信息。 （可选）<see cref="T:Microsoft.Office.Interop.Excel.ODBCConnection" />对象可能还包括身份验证凭据信息或命令，以传递给服务器和执行 （例如，若要执行的 SQL Server 的 SELECT 语句）。</para>
+        <see cref="T:Microsoft.Office.Interop.Excel.ODBCConnection" />对象包含与该连接，连接到服务器的名称和要在该服务器上打开的对象名称等相关信息。  （可选）<see cref="T:Microsoft.Office.Interop.Excel.ODBCConnection" />对象可能还包括身份验证凭据信息或命令，以传递给服务器和执行 （例如，若要执行的 SQL Server 的 SELECT 语句）。</para>
       <para></para>
     </remarks>
   </Docs>
@@ -68,7 +68,10 @@
         <value>
           <b>Boolean</b>
         </value>
-        <remarks>当此属性为<b>True</b>，连接文件的<para>将用于建立与数据源的连接。 如果工作簿中嵌入的连接为不同的外部连接文件，将忽略嵌入的连接和外部连接文件将被视为唯一的版本。</para><para></para></remarks>
+        <remarks>
+          <para>当此属性为 <b>True</b> 时，连接文件将用于建立与数据源的连接。如果在工作簿中嵌入的连接不同于外部连接文件，则忽略嵌入的连接，且外部连接文件将是唯一考虑的版本。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -98,7 +101,7 @@
         <value>
           <b>应用程序</b>（请参见上文）</value>
         <remarks>
-          <para>您可以使用此属性与 OLE 自动化对象返回该对象的应用程序。</para>
+          <para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -159,7 +162,7 @@
       <Docs>
         <summary>对指定的 ODBC 连接取消正在进行的所有刷新操作。</summary>
         <remarks>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.Refreshing" />属性可以确定刷新操作当前是否正在。</para>
+          <para>使用<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.Refreshing" />属性可以确定刷新操作当前是否正在运行。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -195,7 +198,7 @@
           <b>对象</b>
         </value>
         <remarks>
-          <para>您应使用<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.CommandText" />属性而不是<b>SQL</b>属性，现在存在主要用于与早期版本的 Microsoft Excel 的兼容性。如果您使用这两个属性，<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.CommandText" />属性的值优先。</para>
+          <para>您应使用<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.CommandText" />属性而不是<b>SQL</b>属性，现在存在主要用于与早期版本的 Microsoft Excel 的兼容性。 如果您使用这两个属性，<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.CommandText" />属性的值优先。</para>
           <para>
             <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.CommandType" />属性描述了的值<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.CommandText" />属性。</para>
           <para></para>
@@ -232,7 +235,10 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" />
         </value>
-        <remarks>返回或设置常量<para>介绍的值<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.CommandText" />属性。默认值是<see cref="F:Microsoft.Office.Interop.Excel.XlCmdType.xlCmdSql" />。</para><para></para></remarks>
+        <remarks>
+          <para>返回或设置常数描述的值<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.CommandText" />属性。 默认值是<see cref="F:Microsoft.Office.Interop.Excel.XlCmdType.xlCmdSql" />。 </para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Connection">
@@ -266,7 +272,7 @@
           <b>对象</b>
         </value>
         <remarks>
-          <para>设置<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.Connection" />属性不会立即启动与数据源的连接。您必须使用<see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" />方法以进行连接，并检索数据。</para>
+          <para>设置<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.Connection" />属性不会立即启动与数据源的连接。 您必须使用<see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" />方法以进行连接，并检索数据。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -298,7 +304,10 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
-        <remarks>如果对象在 Microsoft Excel 中创建的<para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para></para></remarks>
+        <remarks>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。  <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableRefresh">
@@ -333,7 +342,7 @@
         </value>
         <remarks>
           <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.RefreshOnFileOpen" />属性将被忽略，如果<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.EnableRefresh" />属性设置为<b>False</b>。对于 OLAP 数据源，此属性设置为<b>False</b>可禁用更新。</para>
+            <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.RefreshOnFileOpen" />属性将被忽略，如果<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.EnableRefresh" />属性设置为<b>False</b>。 对于 OLAP 数据源，将此属性设置为 <b>False</b> 会禁用更新。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -391,11 +400,15 @@
       <Docs>
         <summary>刷新 ODBC 连接。</summary>
         <remarks>
-          <para>Microsoft Excel 与 ODBC 数据源的连接时，使用指定的连接字符串<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.Connection" />属性。如果指定的连接字符串缺少必需的值，则将显示对话框提示用户输入所需的信息。如果<see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" />属性为<b>False</b>，则不显示对话框和<see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" />方法将失败的连接信息不足异常。</para>
-          <para>后 Microsoft Excel 使成功连接，它存储已完成的连接字符串，以便提示将不会显示后续调用<see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" />同一编辑会话期间的方法。您可以通过检查的值来获取完整的连接字符串<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.Connection" />属性。</para>
-          <para>进行数据库连接之后，请验证 SQL 查询。如果查询无效，<see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" />方法将失败的 SQL 语法错误异常。</para>如果查询需要参数，
-          <para><see cref="T:Microsoft.Office.Interop.Excel.Parameters" />参数绑定信息之前必须初始化集合<see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" />调用方法。如果未绑定没有足够的参数，<see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" />方法将失败并参数错误异常。如果参数设置为提示它们的值，而不考虑设置的用户显示的对话框<see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" />属性。如果用户取消参数对话框中，<see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" />方法暂停并返回<b>False</b>。如果额外参数绑定使用<see cref="T:Microsoft.Office.Interop.Excel.Parameters" />集合，这些额外的参数将被忽略。</para><para><see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" />如果成功完成或启动查询方法返回<b>True</b> ; 如果用户取消连接或参数对话框，则返回<b>False</b> 。</para>请参阅是否读取的行数超过的工作表上可用的行数，请检查的
-          <para><see cref="P:Microsoft.Office.Interop.Excel._QueryTable.FetchedRowOverflow" />属性。此属性初始化每次<see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" />方法调用。</para><para></para></remarks>
+          <para>Microsoft Excel 与 ODBC 数据源的连接时，使用指定的连接字符串<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.Connection" />属性。 如果指定的连接字符串缺少必需的值，则将显示对话框提示用户输入所需的信息。 如果<see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" />属性为<b>False</b>，则不显示对话框和<see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" />方法将失败的连接信息不足异常。</para>
+          <para>Microsoft Excel 将成功连接后，它可以存储已完成的连接字符串，以便提示将不会显示后续调用<see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" />同一编辑会话期间的方法。 您可以通过检查的值来获取完整的连接字符串<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.Connection" />属性。</para>
+          <para>进行数据库连接之后，请验证 SQL 查询。 如果查询无效，<see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" />方法将失败的 SQL 语法错误异常。</para>
+          <para>如果查询需要参数，<see cref="T:Microsoft.Office.Interop.Excel.Parameters" />参数绑定信息之前必须初始化集合<see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" />调用方法。 如果未绑定没有足够的参数，<see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" />方法将失败并参数错误异常。 如果参数设置为提示它们的值，而不考虑设置的用户显示的对话框<see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" />属性。 如果用户取消参数对话框中，<see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" />方法暂停并返回<b>False</b>。 如果额外参数绑定使用<see cref="T:Microsoft.Office.Interop.Excel.Parameters" />集合，这些额外的参数将被忽略。</para>
+          <para>
+            <see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" />方法返回<b>True</b>如果查询成功完成或启动;如果用户取消连接或参数对话框，则返回<b>False</b> 。</para>
+          <para>若要查看是否读取的行数超过的工作表上可用的行数，请检查<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.FetchedRowOverflow" />属性。 此属性初始化每次<see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" />调用方法。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshDate">
@@ -426,7 +439,7 @@
           <b>DateTime</b>
         </value>
         <remarks>
-          <para>对于 OLAP 数据源，此属性在每个查询后更新。</para>
+          <para>对于 OLAP 数据源，在每次查询后都会更新此属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -495,7 +508,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>不使用打开工作簿时自动刷新连接<see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法。使用<see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" />方法，以打开工作簿后，刷新数据。</para>
+          <para>不使用打开工作簿时自动刷新连接<see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法。 使用<see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" />方法，以打开工作簿后，刷新数据。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -531,7 +544,9 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>周期设置为 0 （零） 会禁用自动定时的刷新，并等效于将该属性设置为<b>Null</b>。 值<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.RefreshPeriod" />属性可以是介于 0 到 32767 之间的整数。</para>
+          <para>将周期设置为 0（零），则会禁用自动定时刷新，并且等同于将该属性设置为 <b>Null</b>。
+
+值<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.RefreshPeriod" />属性可以是介于 0 到 32767 之间的整数。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -567,8 +582,8 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlRobustConnect" />
         </value>
         <remarks>
-          <para>是否您使用可靠的连接，Microsoft Excel 无法建立连接使用的工作簿连接信息时，Excel 将检查工作簿连接是否有外部连接文件的路径。 如果是这样，Excel 将打开外部连接文件，并尝试使用外部连接文件中包含的信息进行连接。 如果使用外部连接文件后，可以建立连接，则 Excel 将更新工作簿的 connection 对象。 </para>
-          <para>这提供了可靠的连接信息技术部门都可在其中维护和更新的中心位置中的连接的情况下允许用户的工作簿自动获取那些次更新的早期版本（在工作簿缓存） 的连接失败。</para>
+          <para>如果您使用可靠的连接，Microsoft Excel 无法建立连接使用的工作簿连接信息时，Excel 将检查的工作簿连接是否有外部连接文件的路径。  如果是这样，Excel 将打开外部连接文件，并尝试使用外部连接文件中包含的信息进行连接。  如果使用外部连接文件后，可以建立连接，则 Excel 将更新工作簿的 connection 对象。  </para>
+          <para>在信息技术部门在一个中央位置维护和更新连接的情况下，这可以提供可靠的连接，每当上一版本的连接（缓存在工作簿中）失败时，允许用户的工作簿自动获取那些更新。 </para>
           <para></para>
         </remarks>
       </Docs>
@@ -635,7 +650,10 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>ODBC 和 OLE DB 查询中由数据透视表和查询表使用此属性。</para>
+          <para>此属性由数据透视表和查询表在 ODBC 和 OLE DB 查询中使用。
+
+
+</para>
           <para></para>
         </remarks>
       </Docs>
@@ -771,22 +789,22 @@
           <list type="table">
             <item>
               <term>Microsoft Excel 列表或数据库</term>
-              <description>的单元格的引用，以文本形式。</description>
+              <description>文本形式的单元格引用。</description>
             </item>
             <item>
-              <description>数组的
-              <term>外部数据源</term>。每个行作为查询字符串，细分为 255 个字符段包含的剩余元素 SQL 连接字符串。</description>
+              <term>外部数据源</term>
+              <description>数组。每行包含一个 SQL 连接字符串，该行的剩余元素作为查询字符串，以 255 个字符为单位分段。</description>
             </item>
             <item>
-              <description>一个二维数组的
-              <term>多个合并区域</term>。引用和其关联的页字段项的每个行组成。</description>
+              <term>多个合并区域</term>
+              <description>二维数组。每行由一个引用及与其相关联的页字段项组成。</description>
             </item>
             <item>
-              <term>另一个数据透视表报告</term>
+              <term>其他数据透视表</term>
               <description>以上三种信息之一。</description>
             </item>
           </list>
-          <para>此属性不可用于 OLE DB 数据源。</para>
+          <para>该属性不可用于 OLE DB 数据源。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -822,7 +840,7 @@
           <b>字符串</b>
         </value>
         <remarks>
-          <para>基于文件的数据源 （例如，访问） 的<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.SourceDataFile" />属性包含源数据文件的完全限定的路径。它为 null 的基于服务器的数据源 (例如，SQL Server)。<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.SourceDataFile" />属性设置为 null<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.Connection" />以编程方式更改属性。</para>
+          <para>对于基于文件的数据源 （例如，访问）<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.SourceDataFile" />属性包含源数据文件的完全限定的路径。 它为 null 的基于服务器的数据源 (例如，SQL Server)。 <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.SourceDataFile" />属性设置为 null<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.Connection" />以编程方式更改属性。</para>
           <para></para>
         </remarks>
       </Docs>

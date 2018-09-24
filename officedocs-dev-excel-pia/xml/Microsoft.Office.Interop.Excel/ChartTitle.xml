@@ -1,10 +1,10 @@
 <Type Name="ChartTitle" FullName="Microsoft.Office.Interop.Excel.ChartTitle">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fd15703f57031a773ff1789f012ce5a108f36a64" />
+    <Meta Name="ms.openlocfilehash" Value="afb7795a68830e3b601b5cd96bed04591a26e206" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572861" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ChartTitle" />
@@ -200,7 +200,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Characters</b>对象不是一个集合。</para>
+            <b>Characters</b> 对象不是集合。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -234,7 +234,7 @@
         </value>
         <remarks>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -390,7 +390,7 @@
         <summary>获取或设置一个值，它代表 A1 样式表示法，使用英文对象的公式。</summary>
         <value>使用 A1 样式表示法以英文对象的公式。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>为可读/写属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -424,7 +424,7 @@
         <summary>获取或设置一个值，它代表 A1 样式表示法，使用语言的用户对象的公式。</summary>
         <value>在语言的用户使用 A1 样式表示法，对象的公式。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>为可读/写属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -458,7 +458,7 @@
         <summary>获取或设置一个值，该值代表使用 R1C1 样式表示法以英文对象的公式。</summary>
         <value>使用 R1C1 样式表示法以英文对象的公式。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>为可读/写属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -492,7 +492,7 @@
         <summary>获取或设置一个值，该值代表在语言的用户使用 R1C1 样式表示法，对象的公式。</summary>
         <value>在语言的用户使用 R1C1 样式表示法，对象的公式。</value>
         <remarks>
-          <para>读/写。</para>
+          <para>为可读/写属性。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -523,7 +523,7 @@
         <summary>获取的高度，以磅为单位的对象。</summary>
         <value>对象的高度，以磅为单位。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -573,7 +573,7 @@
           <para>
             <b>xlRight</b>
           </para>
-          <para>这些常量的一些可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
+          <para>[!注释] 由于选择或安装的语言支持（例如美国英语）不同，有些常量可能无法使用。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -609,7 +609,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>此属性不影响图表是自动版式模式还是不。 如果用户添加标题使用上面图表命令，将更小，请与 Microsoft Office Excel 2003 调整图表。 如果用户然后删除标题，或选择覆盖标题选项之一，则图表将变较大，如同标题不在图表中。</para>
+          <para>此属性对于图表是否处于自动版式模式无影响。如果用户使用“图表上方”命令添加标题，则图表将变得较小，就像在 Microsoft Office Excel 2003 中一样。如果用户随后删除标题，或者选择其中一个覆盖标题选项，则图表将变得较大，就好像标题不在图表上那样。
+</para>
           <para></para>
         </remarks>
       </Docs>
@@ -673,7 +674,10 @@
       <Docs>
         <summary>从对象左边界至 A 列左边界（在工作表上）或图表区左边界（在图表上）的距离，以磅为单位。</summary>
         <value>To be added.</value>
-        <remarks>如果窗口处于最大化<para>，此属性返回会有所不同，为负数基于窗口边框的宽度。此属性设置为 0 （零） 将使窗口稍微有点小超过将应用程序窗口已最大化状态。换句话说，如果此属性为 0 （零），Microsoft Excel 主窗口的左边的框将几乎会显示在屏幕上。</para><para></para></remarks>
+        <remarks>
+          <para>如果该窗口最大化，此属性将返回负数会有所不同，根据窗口边框的宽度。 此属性设置为 0 （零） 将使窗口稍微有点小超过将应用程序窗口已最大化状态。 换句话说，如果此属性为 0 （零），则 Microsoft Excel 主窗口的左边的框仅能执行将在屏幕上可见。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -842,7 +846,7 @@
         <summary>返回或设置指定对象的读取顺序。 可以是下列常量之一： <b>xlRTL</b> （右至左）、 <b>xlLTR</b> （从左到右） 或<b>xlContext</b>。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>这些常量的一些可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
+          <para>[!注释] 由于选择或安装的语言支持（例如美国英语）不同，有些常量可能无法使用。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1042,7 +1046,7 @@
         <summary>获取的宽度，以磅为单位的对象。</summary>
         <value>对象的高度，以磅为单位。</value>
         <remarks>
-          <para>只读的。</para>
+          <para>只读。</para>
           <para></para>
         </remarks>
       </Docs>

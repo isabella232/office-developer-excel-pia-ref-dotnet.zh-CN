@@ -1,10 +1,10 @@
 <Type Name="DialogSheetView" FullName="Microsoft.Office.Interop.Excel.DialogSheetView">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="bdd569ccdf6fea52e7b4fab4fc41bb90dbfbbb10" />
+    <Meta Name="ms.openlocfilehash" Value="825103d8cf213ae6fc44dac4d5a8a2545223ae71" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20586133" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DialogSheetView" />
@@ -31,7 +31,7 @@
   <Docs>
     <summary>表示当前<see cref="T:Microsoft.Office.Interop.Excel.Dialog" />工作表的工作簿中的视图。</summary>
     <remarks>
-      <para>若要访问该对象，您必须开发活动工作簿中的对话框工作表。 对话框工作表的情况下对象的视图属性返回空字符串值。</para>
+      <para>若要访问此对象，活动工作簿中必须有已开发的对话框工作表。如果没有对话框工作表，该对象的视图属性将返回空字符串值。</para>
       <para></para>
     </remarks>
   </Docs>
@@ -63,7 +63,7 @@
         <value>
           <b>应用程序</b>（请参见上文）</value>
         <remarks>
-          <para>您可以使用此属性与 OLE 自动化对象返回该对象的应用程序。</para>
+          <para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -95,7 +95,10 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
-        <remarks>如果对象在 Microsoft Excel 中创建的<para>，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <see cref="P:Microsoft.Office.Interop.Excel.DialogSheetView.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para><para></para></remarks>
+        <remarks>
+          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。  <see cref="P:Microsoft.Office.Interop.Excel.DialogSheetView.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

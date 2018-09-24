@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20579973" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface _OLEObject" />
@@ -153,8 +153,8 @@
         <summary>如果打开包含指定 OLE 对象的工作簿时自动载入该 OLE 对象，则为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>ActiveX 控件，则忽略此属性。打开工作簿时，始终进行加载 ActiveX 控件。</para>
-          <para>对于大多数 OLE 对象类型，此属性不应设置为<b>True</b>。默认情况下<b>AutoLoad</b>属性设置为<b>False</b>的新的 OLE 对象;Microsoft Excel 加载工作簿时，此节省时间和内存。自动加载 OLE 对象，表示可变数据的对象，可以立即重新建立链接到源数据和对象可以再次呈现，如有必要。</para>
+          <para>ActiveX 忽略此属性。打开一个工作簿时总会载入 ActiveX 控件。</para>
+          <para>对于大多数 OLE 对象类型，不应将此属性将设置为<b>True</b>。 默认情况下<b>AutoLoad</b>属性设置为<b>False</b>的新的 OLE 对象;Microsoft Excel 加载工作簿时，此节省时间和内存。 对于表示可变数据的对象，可以立即重新建立链接到源数据和对象可以再次呈现，如有必要，自动加载 OLE 对象的好处。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -356,7 +356,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
+            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -385,7 +385,7 @@
         <summary>将对象剪切到剪贴板，或者将其粘贴到指定的目的地。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>可剪切嵌入式的图表仅。</para>
+          <para>只可剪切嵌入式图表。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -588,7 +588,10 @@
       <Docs>
         <summary>从对象左边界至 A 列左边界（在工作表上）或图表区左边界（在图表上）的距离，以磅为单位。 读/写 <b>双</b> 。</summary>
         <value>To be added.</value>
-        <remarks>如果窗口处于最大化<para>，此属性返回会有所不同，为负数基于窗口边框的宽度。此属性设置为 0 （零） 将使窗口稍微有点小超过将应用程序窗口已最大化状态。换句话说，如果<b>Left</b>属性为 0 （零），Microsoft Excel 主窗口的左边的框将几乎会显示在屏幕上。</para><para></para></remarks>
+        <remarks>
+          <para>如果该窗口最大化，此属性将返回负数会有所不同，根据窗口边框的宽度。 此属性设置为 0 （零） 将使窗口稍微有点小超过将应用程序窗口已最大化状态。 换句话说，如果<b>Left</b>属性为 0 （零），则 Microsoft Excel 主窗口的左边的框仅能执行将在屏幕上可见。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LinkedCell">
@@ -620,7 +623,7 @@
         <summary>返回或设置指向控制值的工作表区域。如果为这些单元格赋值，则指定控制也会取得相应的值。与此类似，如果更改控制的值，则单元格的值也作相应变动。<b>String</b> 型，可读写。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>您不能用于多选列表框的此属性。</para>
+          <para>不能将该属性应用于多选列表框。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -654,7 +657,7 @@
         <summary>返回或设置用于填充指定列表框的工作表区域。对该属性进行设置将破坏列表框中的所有列表项。<b>String</b> 型，可读写。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Microsoft Excel 读取范围中的每个单元格的内容，并在列表中插入单元格的值。列表跟踪单元格区域中的更改。</para>
+          <para>Microsoft Excel 阅读区域中的每一单元格的内容，并将单元格值插入到列表框中。列表对该区域中单元格的修订进行追踪。</para>
           <para>如果列表框的列表中创建与<see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.AddItem(System.String,System.Object)" />方法，此属性返回空字符串 ("")。</para>
           <para></para>
         </remarks>
@@ -814,23 +817,23 @@
         <summary>返回或设置单击指定对象时运行的宏的名称。<b>String</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>将此属性设置为菜单项将覆盖任何自定义帮助信息设置为菜单项的信息设置为已分配宏。</para>
+          <para>为菜单项设置该属性，该属性可取代为菜单项和指定宏设定的自定义帮助信息。</para>
           <para></para>
         </remarks>
         <example>
-          <para>本示例使 Microsoft Excel 运行 ShapeClick 过程，每次单击第一个形状时。</para>
+          <para>本示例在每当单击第一个形状时使 Microsoft Excel 运行 ShapeClick 过程。</para>
           <code>&lt;span class="label"&gt;Worksheets(1).Shapes(1).&lt;/span&gt;
 &lt;span class="label"&gt;OnAction&lt;/span&gt;
 &lt;span class="label"&gt;= "ShapeClick"&lt;/span&gt;</code>
         </example>
         <example>
-          <para>本示例使 Microsoft Excel 运行 ShapeClick 过程，每次单击第一个形状时。</para>
+          <para>本示例在每当单击第一个形状时使 Microsoft Excel 运行 ShapeClick 过程。</para>
           <code>&lt;span class="label"&gt;Worksheets(1).Shapes(1).&lt;/span&gt;
 &lt;span class="label"&gt;OnAction&lt;/span&gt;
 &lt;span class="label"&gt;= "ShapeClick"&lt;/span&gt;</code>
         </example>
         <example>
-          <para>本示例使 Microsoft Excel 运行 ShapeClick 过程，每次单击第一个形状时。</para>
+          <para>本示例在每当单击第一个形状时使 Microsoft Excel 运行 ShapeClick 过程。</para>
           <code>&lt;span class="label"&gt;Worksheets(1).Shapes(1).&lt;/span&gt;
 &lt;span class="label"&gt;OnAction&lt;/span&gt;
 &lt;span class="label"&gt;= "ShapeClick"&lt;/span&gt;</code>
@@ -894,7 +897,7 @@
         <summary>返回或设置该对象附加到它的单元格的方式。 读取/写入 <b>对象</b> 。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>使用下列常量之一：</para>
+          <para>使用以下常量之一：</para>
           <para>
             <b>xlFreeFloating</b>
           </para>
@@ -1313,7 +1316,7 @@
         <summary>返回对象的 z-顺序位置。 <b>Integer</b> 类型，只读。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>对象的任何集合，在 z-次序末尾该对象在<paramref name="collection" />(1)，且在 z-顺序的顶层对象为<paramref name="collection" />(<paramref name="collection" />。<b>Count</b>)。</para>
+          <para>在任何对象的集合，该对象 z-次序末尾在<paramref name="collection" />(1)，且在 z-顺序的顶层对象为<paramref name="collection" />(<paramref name="collection" />。<b>Count</b>)。</para>
           <para></para>
         </remarks>
       </Docs>
