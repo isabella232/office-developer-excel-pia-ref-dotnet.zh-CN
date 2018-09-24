@@ -1,10 +1,10 @@
 <Type Name="PivotCache" FullName="Microsoft.Office.Interop.Excel.PivotCache">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="95fb67e4ccce659f9704901963b16bd33fec57c6" />
+    <Meta Name="ms.openlocfilehash" Value="7195435ce0a1b6444d578842bbbfb476577c6bb3" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20579497" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotCache" />
@@ -30,27 +30,32 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="75c18-101">代表数据透视表的缓存。</span>
+      <span data-ttu-id="156a4-101">代表数据透视表的缓存。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="75c18-101">Represents the memory cache for a PivotTable report.</span>
+        <span data-stu-id="156a4-101">Represents the memory cache for a PivotTable report.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="75c18-102">
-        <para>
-          <b>PivotCache</b>对象所在的<see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" />集合。</para>
-        <para>使用<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.PivotCache" />方法，以返回数据透视表报表 （每个报告具有只有一个缓存） 的一个<b>PivotCache</b>对象。</para>
-        <para>使用<b>PivotCaches</b>(<paramref name="index" />)，其中<paramref name="index" />是数据透视表缓存编号，从工作簿的<b>PivotCaches</b>集合中返回单个<b>PivotCache</b>对象。</para>
-        <para></para>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="75c18-102">
-          <para>The <b>PivotCache</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" /> collection.</para>
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.PivotCache" /> method to return a <b>PivotCache</b> object for a PivotTable report (each report has only one cache).</para>
-          <para>Use <b>PivotCaches</b>(<paramref name="index" />), where <paramref name="index" /> is the PivotTable cache number, to return a single <b>PivotCache</b> object from the <b>PivotCaches</b> collection for a workbook.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="156a4-102">
+          <b>PivotCache</b>对象所在的<see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" />集合。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="156a4-102">The <b>PivotCache</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" /> collection.</span>
         </span>
-      </span>
+      </para>
+      <para>
+        <span data-ttu-id="156a4-103">使用<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.PivotCache" />方法，以返回数据透视表报表 （每个报告具有只有一个缓存） 的一个<b>PivotCache</b>对象。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="156a4-103">Use the <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.PivotCache" /> method to return a <b>PivotCache</b> object for a PivotTable report (each report has only one cache).</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="156a4-104">使用<b>PivotCaches</b>(<paramref name="index" />)，其中<paramref name="index" />是数据透视表缓存编号，从工作簿的<b>PivotCaches</b>集合中返回单个<b>PivotCache</b>对象。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="156a4-104">Use <b>PivotCaches</b>(<paramref name="index" />), where <paramref name="index" /> is the PivotTable cache number, to return a single <b>PivotCache</b> object from the <b>PivotCaches</b> collection for a workbook.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -78,30 +83,43 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-103">如果数据透视表缓存连接到一个 OLE DB 数据源，则返回的 ADO connection 对象。</span>
+          <span data-ttu-id="156a4-105">如果数据透视表缓存连接到一个 OLE DB 数据源，则返回的 ADO connection 对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-103">Returns an ADO connection object if the PivotTable cache is connected to an OLE DB data source.</span>
+            <span data-stu-id="156a4-105">Returns an ADO connection object if the PivotTable cache is connected to an OLE DB data source.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="75c18-104">
-            <para>
-              <b>ADOConnection</b>属性公开 Microsoft Excel 连接到数据提供程序，允许用户 Excel 使用 ADO （关系源） 或 ADOMD （OLAP 源） 的同一会话的上下文中编写代码。</para>
-            <para>
-              <b>ADOConnection</b>属性位于只为会话其中的数据源是一个 OLE DB 数据源。在查询时没有 ADO 会话将导致运行时错误。</para>
-            <para>
-              <b>ADOConnection</b>属性可用于用 ADO 任何基于 OLEDB 缓存。ADO connection 对象可用于 ADOMD 查找有关缓存基于 OLAP 多维数据集的信息。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="75c18-104">
-              <para>The <b>ADOConnection</b> property exposes Microsoft Excel's connection to the data provider, allowing the user to write code within the context of the same session that Excel is using with ADO (relational source) or ADOMD (OLAP source).</para>
-              <para>The <b>ADOConnection</b> property is available only for sessions where the data source is an OLE DB data source. When there is no ADO session the query will result in a run-time error.</para>
-              <para>The <b>ADOConnection</b> property can be used for any OLEDB-based cache with ADO. The ADO connection object can be used with ADOMD for finding information about OLAP Cubes on which the cache is based.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="156a4-106">
+              <b>ADOConnection</b>属性公开 Microsoft Excel 连接到数据提供程序，允许用户 Excel 使用 ADO （关系源） 或 ADOMD （OLAP 源） 的同一会话的上下文中编写代码。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-106">The <b>ADOConnection</b> property exposes Microsoft Excel's connection to the data provider, allowing the user to write code within the context of the same session that Excel is using with ADO (relational source) or ADOMD (OLAP source).</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-107">
+              <b>ADOConnection</b>属性位于只为会话其中的数据源是一个 OLE DB 数据源。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-107">The <b>ADOConnection</b> property is available only for sessions where the data source is an OLE DB data source.</span>
+            </span>
+            <span data-ttu-id="156a4-108">没有 ADO 会话时查询将导致运行时错误。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-108">When there is no ADO session the query will result in a run-time error.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-109">
+              <b>ADOConnection</b>属性可用于用 ADO 任何基于 OLEDB 缓存。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-109">The <b>ADOConnection</b> property can be used for any OLEDB-based cache with ADO.</span>
+            </span>
+            <span data-ttu-id="156a4-110">ADO connection 对象可用于与 ADOMD 查找有关缓存基于 OLAP 多维数据集的信息。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-110">The ADO connection object can be used with ADOMD for finding information about OLAP Cubes on which the cache is based.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -129,9 +147,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-105">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
+          <span data-ttu-id="156a4-111">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-105">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="156a4-111">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -165,24 +183,21 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-106">如果为<b>true</b>的数据透视表报表或查询表的查询执行异步 （在后台）。</span>
+          <span data-ttu-id="156a4-112">如果为<b>true</b>的数据透视表报表或查询表的查询执行异步 （在后台）。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-106">
+            <span data-stu-id="156a4-112">
               <b>True</b> if queries for the PivotTable report or query table are performed asynchronously (in the background).</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="75c18-107">
-            <para>对于 OLAP 数据源，此属性是只读的并且始终返回<b>False</b>。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="75c18-107">
-              <para>For OLAP data sources, this property is read-only and always returns <b>False</b>.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="156a4-113">对于 OLAP 数据源，此属性是只读的，并且始终返回 <b>False</b>。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-113">For OLAP data sources, this property is read-only and always returns <b>False</b>.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -213,23 +228,20 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-108">返回或设置指定的数据源的命令字符串。</span>
+          <span data-ttu-id="156a4-114">返回或设置指定的数据源的命令字符串。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-108">Returns or sets the command string for the specified data source.</span>
+            <span data-stu-id="156a4-114">Returns or sets the command string for the specified data source.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="75c18-109">
-            <para>的 OLE DB 源，<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.CommandType" />属性描述了<b>CommandText</b>属性的值类型。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="75c18-109">
-              <para>For OLE DB sources, the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.CommandType" /> property describes the value type of the <b>CommandText</b> property.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="156a4-115">对于 OLE DB 源，<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.CommandType" />属性描述了<b>CommandText</b>属性的值类型。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-115">For OLE DB sources, the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.CommandType" /> property describes the value type of the <b>CommandText</b> property.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -260,50 +272,74 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-110">返回或设置一个常量，该常量描述值类型的<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.CommandText" />属性。</span>
+          <span data-ttu-id="156a4-116">返回或设置一个常量，该常量描述值类型的<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.CommandText" />属性。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-110">Returns or sets a constant describing the value type of the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.CommandText" /> property.</span>
+            <span data-stu-id="156a4-116">Returns or sets a constant describing the value type of the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.CommandText" /> property.</span>
           </span>
-          <span data-ttu-id="75c18-111">默认值是<b>xlCmdSQL</b>。</span>
+          <span data-ttu-id="156a4-117">默认值是<b>xlCmdSQL</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-111">The default value is <b>xlCmdSQL</b>.</span>
+            <span data-stu-id="156a4-117">The default value is <b>xlCmdSQL</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="75c18-112">
-            <para>
-              <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" />可以是下列<b>XlCmdType</b>常量之一：</para>
-            <para>
-              <b>xlcmdcube 时</b>。包含一个 OLAP 数据源的多维数据集名称。</para>
-            <para>
-              <b>xlCmdDefault</b>。包含 OLE DB 提供程序可识别的命令文本。</para>
-            <para>
-              <b>xlCmdSql</b>。包含 SQL 语句。</para>
-            <para>
-              <b>xlCmdTable</b>。包含用于访问 OLE DB 数据源的表名称。</para>
-            <para>您才可以设置<b>CommandType</b>属性的值<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.QueryType" />查询表或数据透视表缓存的属性为<b>xloledbquery 时</b>。</para>
-            <para>
-              <b>CommandType</b>属性的值为<b>xlcmdcube 时</b>，您无法更改此值，如果没有与查询表相关联的数据透视。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="75c18-112">
-              <para>
-                <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" /> can be one of the following <b>XlCmdType</b> constants:</para>
-              <para>
-                <b>xlCmdCube</b>. Contains a cube name for an OLAP data source.</para>
-              <para>
-                <b>xlCmdDefault</b>. Contains command text that the OLE DB provider understands.</para>
-              <para>
-                <b>xlCmdSql</b>. Contains a SQL statement.</para>
-              <para>
-                <b>xlCmdTable</b>. Contains a table name for accessing OLE DB data sources.</para>
-              <para>You can set the <b>CommandType</b> property only if the value of the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.QueryType" /> property for the query table or PivotTable cache is <b>xlOLEDBQuery</b>.</para>
-              <para>If the value of the <b>CommandType</b> property is <b>xlCmdCube</b>, you cannot change this value if there is a PivotTable report associated with the query table.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="156a4-118">
+              <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" />可以是下列<b>XlCmdType</b>常量之一：</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-118">
+                <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" /> can be one of the following <b>XlCmdType</b> constants:</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-p104">
+              <b>xlCmdCube</b>。包含 OLAP 数据源的多维数据集名称。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-p104">
+                <b>xlCmdCube</b>. Contains a cube name for an OLAP data source.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-p105">
+              <b>xlCmdDefault</b>。包含 OLE DB 提供者可识别的命令文本。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-p105">
+                <b>xlCmdDefault</b>. Contains command text that the OLE DB provider understands.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-123">
+              <b>xlCmdSql</b>。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-123">
+                <b>xlCmdSql</b>.</span>
+            </span>
+            <span data-ttu-id="156a4-124">包含 SQL 语句。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-124">Contains a SQL statement.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-p107">
+              <b>xlCmdTable</b>。包含用于访问 OLE DB 数据源的表名称。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-p107">
+                <b>xlCmdTable</b>. Contains a table name for accessing OLE DB data sources.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-127">您才可以设置<b>CommandType</b>属性的值<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.QueryType" />查询表或数据透视表缓存的属性为<b>xloledbquery 时</b>。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-127">You can set the <b>CommandType</b> property only if the value of the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.QueryType" /> property for the query table or PivotTable cache is <b>xlOLEDBQuery</b>.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-128">当 <b>CommandType</b> 属性的值为 <b>xlCmdCube</b> 时，如果没有与查询表相关联的数据透视表，则不能更改该值。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-128">If the value of the <b>CommandType</b> property is <b>xlCmdCube</b>, you cannot change this value if there is a PivotTable report associated with the query table.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -334,33 +370,50 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-113">返回或设置数据透视表缓存的连接信息。</span>
+          <span data-ttu-id="156a4-129">返回或设置数据透视表缓存的连接信息。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-113">Returns or sets connection information for a PivotTable cache.</span>
+            <span data-stu-id="156a4-129">Returns or sets connection information for a PivotTable cache.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="75c18-114">
-            <para>
-              <b>Connection</b>属性可以是下列选项之一： OLE DB 设置，使 Microsoft Excel 连接到 OLE DB 数据源，ODBC 设置，使 Microsoft Excel 连接到 ODBC 数据源，使 Microsoft Excel 连接到的 URL网站数据源、 的路径和文件名的文本文件或的路径和指定的数据库或 Web 查询文件的文件名。</para>
-            <para>
-              <b>连接</b>属性设置不立即启动与数据源的连接。您必须使用<see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" />方法以进行连接，并检索数据。</para>
-            <para>使用脱机多维数据集文件时，设置<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" />属性设为<b>True</b>和使用<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.LocalConnection" />属性而不是<b>在 Connection</b>属性。</para>
-            <para>有关连接字符串语法的详细信息，请参阅<see cref="M:Microsoft.Office.Interop.Excel.PivotCaches.Add(Microsoft.Office.Interop.Excel.XlPivotTableSourceType,System.Object)" /><b>PivotCaches</b>集合的方法。</para>
-            <para>或者，您可以选择直接通过改为使用 Microsoft ActiveX 数据对象 (ADO) 库访问数据源。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="75c18-114">
-              <para>The <b>Connection</b> property can be one of the following: OLE DB settings that enable Microsoft Excel to connect to an OLE DB data source, ODBC settings that enable Microsoft Excel to connect to an ODBC data source, a URL that enables Microsoft Excel to connect to a Web data source, the path to and file name of a text file, or the path to and file name of a file that specifies a database or Web query.</para>
-              <para>Setting the <b>Connection</b> property doesn’t immediately initiate the connection to the data source. You must use the <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" /> method to make the connection and retrieve the data.</para>
-              <para>When using an offline cube file, set the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" /> property to <b>True</b> and use the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.LocalConnection" /> property instead of the <b>Connection</b> property.</para>
-              <para>For more information about the connection string syntax, see the <see cref="M:Microsoft.Office.Interop.Excel.PivotCaches.Add(Microsoft.Office.Interop.Excel.XlPivotTableSourceType,System.Object)" /> method of the <b>PivotCaches</b> collection.</para>
-              <para>Alternatively, you may choose to access a data source directly by using the Microsoft ActiveX Data Objects (ADO) library instead.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="156a4-130">
+              <b>Connection</b>属性可以是下列选项之一： OLE DB 设置，使 Microsoft Excel 连接到 OLE DB 数据源，ODBC 设置，使 Microsoft Excel 连接到 ODBC 数据源，使 Microsoft Excel 连接到的 URLWeb 数据源、 路径和文件名的文本文件，或的路径和文件名指定的数据库或 Web 查询的文件。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-130">The <b>Connection</b> property can be one of the following: OLE DB settings that enable Microsoft Excel to connect to an OLE DB data source, ODBC settings that enable Microsoft Excel to connect to an ODBC data source, a URL that enables Microsoft Excel to connect to a Web data source, the path to and file name of a text file, or the path to and file name of a file that specifies a database or Web query.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-131">
+              <b>连接</b>属性设置不立即启动与数据源的连接。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-131">Setting the <b>Connection</b> property doesn’t immediately initiate the connection to the data source.</span>
+            </span>
+            <span data-ttu-id="156a4-132">您必须使用<see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" />方法以进行连接，并检索数据。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-132">You must use the <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" /> method to make the connection and retrieve the data.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-133">使用脱机多维数据集文件时，设置<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" />属性设为<b>True</b>和使用<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.LocalConnection" />属性而不是<b>在 Connection</b>属性。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-133">When using an offline cube file, set the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" /> property to <b>True</b> and use the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.LocalConnection" /> property instead of the <b>Connection</b> property.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-134">有关连接字符串语法的详细信息，请参阅<see cref="M:Microsoft.Office.Interop.Excel.PivotCaches.Add(Microsoft.Office.Interop.Excel.XlPivotTableSourceType,System.Object)" /><b>PivotCaches</b>集合的方法。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-134">For more information about the connection string syntax, see the <see cref="M:Microsoft.Office.Interop.Excel.PivotCaches.Add(Microsoft.Office.Interop.Excel.XlPivotTableSourceType,System.Object)" /> method of the <b>PivotCaches</b> collection.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-135">另外，也可以通过选择 Microsoft ActiveX 数据对象 (ADO) 库直接访问数据源。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-135">Alternatively, you may choose to access a data source directly by using the Microsoft ActiveX Data Objects (ADO) library instead.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -392,103 +445,110 @@
       </Parameters>
       <Docs>
         <param name="ChartDestination">
-          <span data-ttu-id="75c18-115">目标工作表</span>
+          <span data-ttu-id="156a4-136">目标工作表</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-115">The Destination worksheet</span>
+            <span data-stu-id="156a4-136">The Destination worksheet</span>
           </span>
         </param>
         <param name="XlChartType">
-          <span data-ttu-id="75c18-116">图表的类型</span>
+          <span data-ttu-id="156a4-137">图表的类型</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-116">The type of chart</span>
+            <span data-stu-id="156a4-137">The type of chart</span>
           </span>
         </param>
         <param name="Left">
-          <span data-ttu-id="75c18-117">从对象左边界至 A 列左边界（在工作表上）或图表区左边界（在图表上）的距离，以磅为单位。</span>
+          <span data-ttu-id="156a4-138">从对象左边界至 A 列左边界（在工作表上）或图表区左边界（在图表上）的距离，以磅为单位。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-117">The distance, in points, from the left edge of the object to the left edge of column A (on a worksheet) or the left edge of the chart area (on a chart).</span>
+            <span data-stu-id="156a4-138">The distance, in points, from the left edge of the object to the left edge of column A (on a worksheet) or the left edge of the chart area (on a chart).</span>
           </span>
         </param>
         <param name="Top">
-          <span data-ttu-id="75c18-118">从图形区域中最上端的图形的顶端到工作表顶端的距离，以磅为单位。</span>
+          <span data-ttu-id="156a4-139">从图形区域中最上端的图形的顶端到工作表顶端的距离，以磅为单位。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-118">The distance, in points, from the top edge of the topmost shape in the shape range to the top edge of the worksheet.</span>
+            <span data-stu-id="156a4-139">The distance, in points, from the top edge of the topmost shape in the shape range to the top edge of the worksheet.</span>
           </span>
         </param>
         <param name="Width">
-          <span data-ttu-id="75c18-119">对象的高度，以磅为单位。</span>
+          <span data-ttu-id="156a4-140">对象的高度，以磅为单位。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-119">The width, in points, of the object.</span>
+            <span data-stu-id="156a4-140">The width, in points, of the object.</span>
           </span>
         </param>
         <param name="Height">
-          <span data-ttu-id="75c18-120">对象的高度，以磅为单位。</span>
+          <span data-ttu-id="156a4-141">对象的高度，以磅为单位。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-120">The width, in points, of the object.</span>
+            <span data-stu-id="156a4-141">The width, in points, of the object.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="75c18-121">从一个<b>PivotCache</b>对象创建独立的数据透视图。</span>
+          <span data-ttu-id="156a4-142">从一个<b>PivotCache</b>对象创建独立的数据透视图。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-121">Creates a standalone PivotChart from a <b>PivotCache</b> object.</span>
+            <span data-stu-id="156a4-142">Creates a standalone PivotChart from a <b>PivotCache</b> object.</span>
           </span>
-          <span data-ttu-id="75c18-122">A<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象返回。</span>
+          <span data-ttu-id="156a4-143">A<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象返回。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-122">A <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object is returned.</span>
+            <span data-stu-id="156a4-143">A <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object is returned.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
         <remarks>
-          <span data-ttu-id="75c18-123">
-            <para>如果<b>PivotCache</b>对象的从调用该方法没有附加的数据透视表：</para>
-            <list type="bullet">
-              <item>
-                <description>工作簿级数据透视表创建从现有的 PivotCache。</description>
-              </item>
-              <item>
-                <description>独立的数据透视图将创建对新创建的数据透视表的引用。</description>
-              </item>
-            </list>
-            <para>如果 PivotCache 已有关联的数据透视表：</para>
-            <item>
-              <description>克隆的 PivotCache</description>
-            </item>
-            <list type="bullet">
-              <item>
-                <description>新工作簿级数据透视表创建基于克隆的 PivotCache。</description>
-              </item>
-              <item>
-                <description>独立的数据透视图创建新的工作簿级数据透视表的引用。</description>
-              </item>
-            </list>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="75c18-123">
-              <para>If the <b>PivotCache</b> object that the method is called from has no attached PivotTable:</para>
-              <list type="bullet">
-                <item>
-                  <description>A workbook-level PivotTable is created from the existing PivotCache.</description>
-                </item>
-                <item>
-                  <description>A standalone PivotChart will be created with a reference to the newly created PivotTable.</description>
-                </item>
-              </list>
-              <para>If the PivotCache already has an associated PivotTable:</para>
-              <list type="bullet">
-                <item>
-                  <description>The PivotCache is cloned</description>
-                </item>
-                <item>
-                  <description>A new workbook-level PivotTable is created based on the cloned PivotCache.</description>
-                </item>
-                <item>
-                  <description>A standalone PivotChart is created with a reference to the new workbook-level PivotTable.</description>
-                </item>
-              </list>
-              <para></para>
+          <para>
+            <span data-ttu-id="156a4-144">如果<b>PivotCache</b>对象的从调用该方法没有附加的数据透视表：</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-144">If the <b>PivotCache</b> object that the method is called from has no attached PivotTable:</span>
             </span>
-          </span>
+          </para>
+          <list type="bullet">
+            <item>
+              <description>
+                <span data-ttu-id="156a4-145">工作簿级数据透视表创建从现有的 PivotCache。</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="156a4-145">A workbook-level PivotTable is created from the existing PivotCache.</span>
+                </span>
+              </description>
+            </item>
+            <item>
+              <description>
+                <span data-ttu-id="156a4-146">独立对新创建的数据透视表的引用，将创建数据透视图。</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="156a4-146">A standalone PivotChart will be created with a reference to the newly created PivotTable.</span>
+                </span>
+              </description>
+            </item>
+          </list>
+          <para>
+            <span data-ttu-id="156a4-147">如果 PivotCache 已有关联的数据透视表：</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-147">If the PivotCache already has an associated PivotTable:</span>
+            </span>
+          </para>
+          <list type="bullet">
+            <item>
+              <description>
+                <span data-ttu-id="156a4-148">克隆 PivotCache</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="156a4-148">The PivotCache is cloned</span>
+                </span>
+              </description>
+            </item>
+            <item>
+              <description>
+                <span data-ttu-id="156a4-149">新的工作簿级数据透视表创建基于克隆的 PivotCache。</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="156a4-149">A new workbook-level PivotTable is created based on the cloned PivotCache.</span>
+                </span>
+              </description>
+            </item>
+            <item>
+              <description>
+                <span data-ttu-id="156a4-150">创建独立的数据透视图对新的工作簿级数据透视表的引用。</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="156a4-150">A standalone PivotChart is created with a reference to the new workbook-level PivotTable.</span>
+                </span>
+              </description>
+            </item>
+          </list>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -518,75 +578,72 @@
       </Parameters>
       <Docs>
         <param name="TableDestination">
-          <span data-ttu-id="75c18-124">所需的<b>对象</b>。</span>
+          <span data-ttu-id="156a4-151">所需的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-124">Required <b>Object</b>.</span>
+            <span data-stu-id="156a4-151">Required <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="75c18-125">在数据透视表报表的目标区域 （生成的数据透视表报表的放置位置工作表上的区域） 的左上角单元格。</span>
+          <span data-ttu-id="156a4-152">在数据透视表报表的目标区域 （生成的数据透视表报表的放置位置工作表上的区域） 的左上角单元格。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-125">The cell in the upper-left corner of the PivotTable report’s destination range (the range on the worksheet where the resulting PivotTable report will be placed).</span>
+            <span data-stu-id="156a4-152">The cell in the upper-left corner of the PivotTable report’s destination range (the range on the worksheet where the resulting PivotTable report will be placed).</span>
           </span>
-          <span data-ttu-id="75c18-126">目标区域必须包含由表达式指定的<b>PivotCache</b>对象的工作簿中的工作表上。</span>
+          <span data-ttu-id="156a4-153">目标区域必须包含由表达式指定的<b>PivotCache</b>对象的工作簿中的工作表上。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-126">The destination range must be on a worksheet in the workbook that contains the <b>PivotCache</b> object specified by expression.</span>
+            <span data-stu-id="156a4-153">The destination range must be on a worksheet in the workbook that contains the <b>PivotCache</b> object specified by expression.</span>
           </span>
         </param>
         <param name="TableName">
-          <span data-ttu-id="75c18-127">可选的<b>对象</b>。</span>
+          <span data-ttu-id="156a4-154">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-127">Optional <b>Object</b>.</span>
+            <span data-stu-id="156a4-154">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="75c18-128">新的数据透视表的名称。</span>
+          <span data-ttu-id="156a4-155">新的数据透视表的名称。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-128">The name of the new PivotTable report.</span>
+            <span data-stu-id="156a4-155">The name of the new PivotTable report.</span>
           </span>
         </param>
         <param name="ReadData">
-          <span data-ttu-id="75c18-129">可选的<b>对象</b>。</span>
+          <span data-ttu-id="156a4-156">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-129">Optional <b>Object</b>.</span>
+            <span data-stu-id="156a4-156">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="75c18-130">
+          <span data-ttu-id="156a4-157">
             <b>True</b>以创建包含从外部数据库; 记录的所有数据透视表缓存此缓存可能会非常大。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-130">
+            <span data-stu-id="156a4-157">
               <b>True</b> to create a PivotTable cache that contains all of the records from the external database; this cache can be very large.</span>
           </span>
-          <span data-ttu-id="75c18-131">
+          <span data-ttu-id="156a4-158">
             <b>False</b>可允许之前实际读取数据，则将某些字段设置为基于服务器的页字段。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-131">
+            <span data-stu-id="156a4-158">
               <b>False</b> to enable setting some of the fields as server-based page fields before the data is actually read.</span>
           </span>
         </param>
         <param name="DefaultVersion">
-          <span data-ttu-id="75c18-132">可选的<b>对象</b>。</span>
+          <span data-ttu-id="156a4-159">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-132">Optional <b>Object</b>.</span>
+            <span data-stu-id="156a4-159">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="75c18-133">数据透视表的默认版本。</span>
+          <span data-ttu-id="156a4-160">数据透视表的默认版本。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-133">The default version of the PivotTable report.</span>
+            <span data-stu-id="156a4-160">The default version of the PivotTable report.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="75c18-134">创建基于数据透视表报告<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />对象。</span>
+          <span data-ttu-id="156a4-161">创建基于数据透视表报告<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-134">Creates a PivotTable report based on a <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> object.</span>
+            <span data-stu-id="156a4-161">Creates a PivotTable report based on a <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> object.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
         <remarks>
-          <span data-ttu-id="75c18-135">
-            <para>创建基于数据透视表高速缓存数据透视表报表的替代方法，请参阅<see cref="M:Microsoft.Office.Interop.Excel.PivotTables.Add(Microsoft.Office.Interop.Excel.PivotCache,System.Object,System.Object,System.Object,System.Object)" />方法<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />对象。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="75c18-135">
-              <para>For an alternative way to create a PivotTable report based on a PivotTable cache, see the <see cref="M:Microsoft.Office.Interop.Excel.PivotTables.Add(Microsoft.Office.Interop.Excel.PivotCache,System.Object,System.Object,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> object.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="156a4-162">创建基于数据透视表高速缓存数据透视表报表的替代方法，请参阅<see cref="M:Microsoft.Office.Interop.Excel.PivotTables.Add(Microsoft.Office.Interop.Excel.PivotCache,System.Object,System.Object,System.Object,System.Object)" />方法<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />对象。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-162">For an alternative way to create a PivotTable report based on a PivotTable cache, see the <see cref="M:Microsoft.Office.Interop.Excel.PivotTables.Add(Microsoft.Office.Interop.Excel.PivotCache,System.Object,System.Object,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> object.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -614,26 +671,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-136">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
+          <span data-ttu-id="156a4-163">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-136">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="156a4-163">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="75c18-137">
-            <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
-            <para>
-              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="75c18-137">
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="156a4-164">如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-164">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-165">
+              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-165">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="156a4-166">例如，Microsoft Excel 具有 XCEL 的创建者代码。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-166">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -664,31 +726,32 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-138">如果为<b>true</b>可由用户刷新数据透视表高速缓存或查询表。</span>
+          <span data-ttu-id="156a4-167">如果为<b>true</b>可由用户刷新数据透视表高速缓存或查询表。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-138">
+            <span data-stu-id="156a4-167">
               <b>True</b> if the PivotTable cache or query table can be refreshed by the user.</span>
           </span>
-          <span data-ttu-id="75c18-139">默认值为 <b>True</b> 。</span>
+          <span data-ttu-id="156a4-168">默认值为 <b>True</b> 。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-139">The default value is <b>True</b>.</span>
+            <span data-stu-id="156a4-168">The default value is <b>True</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="75c18-140">
-            <para>
-              <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.RefreshOnFileOpen" />如果<b>EnableRefresh</b>属性设置为<b>False</b>，则忽略属性。</para>
-            <para>对于 OLAP 数据源，此属性设置为<b>False</b>可禁用更新。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="75c18-140">
-              <para>The <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.RefreshOnFileOpen" /> property is ignored if the <b>EnableRefresh</b> property is set to <b>False</b>.</para>
-              <para>For OLAP data sources, setting this property to <b>False</b> disables updates.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="156a4-169">
+              <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.RefreshOnFileOpen" />如果<b>EnableRefresh</b>属性设置为<b>False</b>，则忽略属性。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-169">The <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.RefreshOnFileOpen" /> property is ignored if the <b>EnableRefresh</b> property is set to <b>False</b>.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-170">对于 OLAP 数据源，将此属性设置为 <b>False</b> 会禁用更新。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-170">For OLAP data sources, setting this property to <b>False</b> disables updates.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -716,9 +779,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-141">返回对象在其同类对象所组成的集合内的编号。</span>
+          <span data-ttu-id="156a4-171">返回对象在其同类对象所组成的集合内的编号。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-141">Returns the index number of the object within the collection of similar objects.</span>
+            <span data-stu-id="156a4-171">Returns the index number of the object within the collection of similar objects.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -749,30 +812,36 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-142">返回<b>True</b> ，如果<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.MaintainConnection" />属性为<b>True</b> ，并且数据透视表缓存当前连接到其源。</span>
+          <span data-ttu-id="156a4-172">返回<b>True</b> ，如果<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.MaintainConnection" />属性为<b>True</b> ，并且数据透视表缓存当前连接到其源。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-142">Returns <b>True</b> if the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.MaintainConnection" /> property is <b>True</b> and the PivotTable cache is currently connected to its source.</span>
+            <span data-stu-id="156a4-172">Returns <b>True</b> if the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.MaintainConnection" /> property is <b>True</b> and the PivotTable cache is currently connected to its source.</span>
           </span>
-          <span data-ttu-id="75c18-143">如果当前未其源相连，则返回<b>False</b> 。</span>
+          <span data-ttu-id="156a4-173">如果当前未其源相连，则返回<b>False</b> 。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-143">Returns <b>False</b> if it is not currently connected to its source.</span>
+            <span data-stu-id="156a4-173">Returns <b>False</b> if it is not currently connected to its source.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="75c18-144">
-            <para>
-              <b>IsConnected</b>属性不检查连接是否连接。如果连接不再有效即使该属性返回<b>True</b>，发送到提供程序的命令可能导致出错。</para>
-            <para>要求缓存的源类型是外部并且它是一个 OLE DB 数据源。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="75c18-144">
-              <para>The <b>IsConnected</b> property does not check to see if the connection is connected. Even if this property returns <b>True</b>, sending commands to the provider could result in an error if the connection is no longer valid.</para>
-              <para>Requires that the cache source type is external and that it is an OLE DB data source.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="156a4-174">
+              <b>IsConnected</b>属性不检查连接是否连接。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-174">The <b>IsConnected</b> property does not check to see if the connection is connected.</span>
             </span>
-          </span>
+            <span data-ttu-id="156a4-175">即使该属性返回<b>True</b>，发送到提供程序的命令如果可能导致错误连接不再有效。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-175">Even if this property returns <b>True</b>, sending commands to the provider could result in an error if the connection is no longer valid.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-176">要求缓存的源类型是外部的，并且是一个 OLE DB 数据源。
+</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-176">Requires that the cache source type is external and that it is an OLE DB data source.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -803,27 +872,47 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-145">返回或设置到脱机多维数据集文件的连接字符串。</span>
+          <span data-ttu-id="156a4-177">返回或设置到脱机多维数据集文件的连接字符串。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-145">Returns or sets the connection string to an offline cube file.</span>
+            <span data-stu-id="156a4-177">Returns or sets the connection string to an offline cube file.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="75c18-146">
-            <para>对于非 OLAP 数据源， <b>LocalConnection</b>属性的值为空字符串，和<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" />属性设置为<b>False</b>。</para>
-            <para>
-              <b>LocalConnection</b>属性设置不立即启动与数据源的连接。您必须首先使用<see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" />方法以进行连接，并检索数据。</para>如果使用
-          <para><b>LocalConnection</b>属性的值<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" />属性设置为<b>True</b>。如果<b>UseLocalConnection</b>属性设置为 False，<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" />属性指定用于查询表基于非本地多维数据集文件的源的连接字符串。</para><para>有关连接字符串的语法的详细信息，请参阅帮助主题<see cref="M:Microsoft.Office.Interop.Excel.PivotTables.Add(Microsoft.Office.Interop.Excel.PivotCache,System.Object,System.Object,System.Object,System.Object)" /><b>数据透视表</b>集合的方法。</para><para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="75c18-146">
-              <para>For a non-OLAP data source, the value of the <b>LocalConnection</b> property is an empty string, and the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" /> property is set to <b>False</b>.</para>
-              <para>Setting the <b>LocalConnection</b> property doesn’t immediately initiate the connection to the data source. You must first use the <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" /> method to make the connection and retrieve the data.</para>
-              <para>The value of the <b>LocalConnection</b> property is used if the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" /> property is set to <b>True</b>. If the <b>UseLocalConnection</b> property is set to False, the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> property specifies the connection string for query tables based on sources other than local cube files.</para>
-              <para>For more information about the syntax for connection strings, see the Help topic for the <see cref="M:Microsoft.Office.Interop.Excel.PivotTables.Add(Microsoft.Office.Interop.Excel.PivotCache,System.Object,System.Object,System.Object,System.Object)" /> method of the <b>PivotTables</b> collection.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="156a4-178">对于非 OLAP 数据源， <b>LocalConnection</b>属性的值为空字符串，和<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" />属性设置为<b>False</b>。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-178">For a non-OLAP data source, the value of the <b>LocalConnection</b> property is an empty string, and the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" /> property is set to <b>False</b>.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-179">
+              <b>LocalConnection</b>属性设置不立即启动与数据源的连接。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-179">Setting the <b>LocalConnection</b> property doesn’t immediately initiate the connection to the data source.</span>
+            </span>
+            <span data-ttu-id="156a4-180">您必须首先使用<see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" />方法以进行连接，并检索数据。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-180">You must first use the <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" /> method to make the connection and retrieve the data.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-181">如果使用<b>LocalConnection</b>属性的值<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" />属性设置为<b>True</b>。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-181">The value of the <b>LocalConnection</b> property is used if the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" /> property is set to <b>True</b>.</span>
+            </span>
+            <span data-ttu-id="156a4-182">如果<b>UseLocalConnection</b>属性设置为 False，<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" />属性指定用于查询表基于非本地多维数据集文件的源的连接字符串。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-182">If the <b>UseLocalConnection</b> property is set to False, the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> property specifies the connection string for query tables based on sources other than local cube files.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-183">有关连接字符串的语法的详细信息，请参阅帮助主题<see cref="M:Microsoft.Office.Interop.Excel.PivotTables.Add(Microsoft.Office.Interop.Excel.PivotCache,System.Object,System.Object,System.Object,System.Object)" /><b>数据透视表</b>集合的方法。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-183">For more information about the syntax for connection strings, see the Help topic for the <see cref="M:Microsoft.Office.Interop.Excel.PivotTables.Add(Microsoft.Office.Interop.Excel.PivotCache,System.Object,System.Object,System.Object,System.Object)" /> method of the <b>PivotTables</b> collection.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -854,31 +943,32 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-147">
+          <span data-ttu-id="156a4-184">
             <b>True</b>如果刷新后，直到关闭工作簿维护与指定的数据源的连接。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-147">
+            <span data-stu-id="156a4-184">
               <b>True</b> if the connection to the specified data source is maintained after the refresh and until the workbook is closed.</span>
           </span>
-          <span data-ttu-id="75c18-148">默认值为 <b>True</b> 。</span>
+          <span data-ttu-id="156a4-185">默认值为 <b>True</b> 。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-148">The default value is <b>True</b>.</span>
+            <span data-stu-id="156a4-185">The default value is <b>True</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="75c18-149">
-            <para>您可以设置<b>MaintainConnection</b>属性才<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.QueryType" />的查询表或数据透视表缓存的属性设置为<b>xloledbquery 时</b>。</para>
-            <para>如果预计频繁对服务器进行查询，将此属性设置为<b>True</b>可提高性能降低重新连接的时间。属性设置为<b>False</b>会导致关闭打开的连接。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="75c18-149">
-              <para>You can set the <b>MaintainConnection</b> property only if the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.QueryType" /> property of the query table or PivotTable cache is set to <b>xlOLEDBQuery</b>.</para>
-              <para>If you anticipate frequent queries to a server, setting this property to <b>True</b> might improve performance by reducing reconnection time. Setting the property to <b>False</b> causes an open connection to be closed.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="156a4-186">您可以设置<b>MaintainConnection</b>属性才<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.QueryType" />的查询表或数据透视表缓存的属性设置为<b>xloledbquery 时</b>。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-186">You can set the <b>MaintainConnection</b> property only if the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.QueryType" /> property of the query table or PivotTable cache is set to <b>xlOLEDBQuery</b>.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-p121">如果预计会频繁对服务器进行查询，则可将此属性设置为 <b>True</b>，这样能减少重新连接的时间因而可提高性能。将此属性设置为 <b>False</b>，将会关闭一个打开的连接。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-p121">If you anticipate frequent queries to a server, setting this property to <b>True</b> might improve performance by reducing reconnection time. Setting the property to <b>False</b> causes an open connection to be closed.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -904,27 +994,32 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-150">为指定的数据透视表缓存建立连接。</span>
+          <span data-ttu-id="156a4-189">为指定的数据透视表缓存建立连接。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-150">Establishes a connection for the specified PivotTable cache.</span>
+            <span data-stu-id="156a4-189">Establishes a connection for the specified PivotTable cache.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="75c18-151">
-            <para>
-              <b>MakeConnection</b>方法可在缓存断开连接和用户想要重新建立连接之后。</para>
-            <para>各种对象和方法可能会返回一个运行时错误，如果未连接缓存。使用此方法可确保在执行其他对象或方法之前的连接。</para>
-            <para>如果，此方法将导致运行时错误<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.MaintainConnection" />指定的数据透视表缓存的属性已设置为<b>False</b>，<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceType" />具有未指定数据透视表缓存的属性设置为<b>xlExternal</b>，或如果不连接OLEDB。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="75c18-151">
-              <para>The <b>MakeConnection</b> method can be used after the cache drops a connection and the user wants to re-establish the connection.</para>
-              <para>Various objects and methods might return a run-time error if the cache is not connected. Use of this method assures a connection before executing other objects or methods.</para>
-              <para>This method will result in a run-time error if the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.MaintainConnection" /> property of the specified PivotTable cache has been set to <b>False</b>, the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceType" /> property of the specified PivotTable cache has not been set to <b>xlExternal</b>, or if the connection is not OLEDB.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="156a4-190">
+              <b>MakeConnection</b>方法可在缓存断开连接和用户想要重新建立连接之后。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-190">The <b>MakeConnection</b> method can be used after the cache drops a connection and the user wants to re-establish the connection.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-p122">如果没有连接缓存，各种对象和方法可能都会返回运行错误。使用该方法可确保在执行其他对象或方法之前已建立一个连接。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-p122">Various objects and methods might return a run-time error if the cache is not connected. Use of this method assures a connection before executing other objects or methods.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-193">如果，此方法将导致运行时错误<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.MaintainConnection" />指定的数据透视表缓存的属性已设置为<b>False</b>，<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceType" />具有未指定数据透视表缓存的属性设置为<b>xlExternal</b>，或者如果不 OLEDB 连接。.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-193">This method will result in a run-time error if the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.MaintainConnection" /> property of the specified PivotTable cache has been set to <b>False</b>, the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceType" /> property of the specified PivotTable cache has not been set to <b>xlExternal</b>, or if the connection is not OLEDB.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -952,26 +1047,27 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-152">以字节为单位当前正在使用该对象返回内存的量。</span>
+          <span data-ttu-id="156a4-194">以字节为单位当前正在使用该对象返回内存的量。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-152">Returns the amount of memory in bytes currently being used by the object.</span>
+            <span data-stu-id="156a4-194">Returns the amount of memory in bytes currently being used by the object.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="75c18-153">
-            <para>
-              <b>MemoryUsed</b>属性反映了查询时的缓存的瞬时状态。</para>
-            <para>如果<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />对象中的任何附加到它的数据透视表报告，此属性返回 0 （零）。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="75c18-153">
-              <para>The <b>MemoryUsed</b> property reflects the transient state of the cache at the time that it’s queried.</para>
-              <para>If the <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> object has no PivotTable report attached to it, this property returns 0 (zero).</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="156a4-195">
+              <b>MemoryUsed</b>属性反映了查询时的缓存的瞬时状态。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-195">The <b>MemoryUsed</b> property reflects the transient state of the cache at the time that it’s queried.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-196">如果<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />对象中的任何附加到它的数据透视表报告，此属性返回 0 （零）。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-196">If the <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> object has no PivotTable report attached to it, this property returns 0 (zero).</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1002,38 +1098,59 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-154">返回或设置的每个数据透视表字段即使不支持的数据进行缓存记录保留的唯一项的最大数量。</span>
+          <span data-ttu-id="156a4-197">返回或设置的每个数据透视表字段即使不支持的数据进行缓存记录保留的唯一项的最大数量。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-154">Returns or sets the maximum quantity of unique items per PivotTable field that are retained even when they have no supporting data in the cache records.</span>
+            <span data-stu-id="156a4-197">Returns or sets the maximum quantity of unique items per PivotTable field that are retained even when they have no supporting data in the cache records.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="75c18-155">
-            <para>
-              <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableMissingItems" />可以是以下<b>XlPivotTableMissingItems</b>常量之一：</para>
-            <para>
-              <b>xlMissingItemsDefault</b>每个透视字段允许的唯一项的默认个数。</para>
-            <para>
-              <b>xlMissingItemsMax</b>每个透视字段的唯一项的最大数目允许 (32,500)。</para>
-            <para>
-              <b>xlMissingItemsNone</b>允许每个透视字段没有唯一项 （零）。</para>此属性可以设置为介于 0 到 32500 值
-          <para>。如果指定一个整数，小于零，则这相当于指定<b>xlMissingItemsDefault</b>。大于 32,500 可指定，但将具有指定<b>xlMissingItemsMax</b>相同的效果的整数。</para><para><b>MissingItemsLimit</b>属性仅适用于非 OLAP 透视; 否则，会发生运行时错误。</para><para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="75c18-155">
-              <para>
-                <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableMissingItems" /> can be one of the following <b>XlPivotTableMissingItems</b> constants:</para>
-              <para>
-                <b>xlMissingItemsDefault</b> The default number of unique items per PivotField allowed.</para>
-              <para>
-                <b>xlMissingItemsMax</b> The maximum number of unique items per PivotField allowed (32,500).</para>
-              <para>
-                <b>xlMissingItemsNone</b> No unique items per PivotField allowed (zero).</para>
-              <para>This property can be set to a value between 0 and 32500. If an integer less than zero is specified, this is equivalent to specifying <b>xlMissingItemsDefault</b>. Integers greater than 32,500 can be specified but will have the same effect as specifying <b>xlMissingItemsMax</b>.</para>
-              <para>The <b>MissingItemsLimit</b> property only works for non-OLAP PivotTables; otherwise, a run-time error can occur.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="156a4-198">
+              <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableMissingItems" />可以是以下<b>XlPivotTableMissingItems</b>常量之一：</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-198">
+                <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableMissingItems" /> can be one of the following <b>XlPivotTableMissingItems</b> constants:</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-199">
+              <b>xlMissingItemsDefault</b> 每个允许的数据透视表字段中唯一项的默认个数。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-199">
+                <b>xlMissingItemsDefault</b> The default number of unique items per PivotField allowed.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-200">
+              <b>xlMissingItemsMax</b> 每个允许的数据透视表字段中唯一项的最大个数 (32,500)。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-200">
+                <b>xlMissingItemsMax</b> The maximum number of unique items per PivotField allowed (32,500).</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-201">
+              <b>xlMissingItemsNone</b> 每个允许的数据透视表中没有唯一项（零）。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-201">
+                <b>xlMissingItemsNone</b> No unique items per PivotField allowed (zero).</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-p123">该属性的值可以介于 0 到 32500。如果指定一个小于零的整数，则其等价于指定 <b>xlMissingItemsDefault</b>。可以指定大于 32,500 的整数，但等价于指定 <b>xlMissingItemsMax</b>。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-p123">This property can be set to a value between 0 and 32500. If an integer less than zero is specified, this is equivalent to specifying <b>xlMissingItemsDefault</b>. Integers greater than 32,500 can be specified but will have the same effect as specifying <b>xlMissingItemsMax</b>.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-205">
+              <b>MissingItemsLimit</b> 属性只用于非 OLAP 数据透视表，否则将出现运行时错误。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-205">The <b>MissingItemsLimit</b> property only works for non-OLAP PivotTables; otherwise, a run-time error can occur.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1061,9 +1178,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-156">如果数据透视表缓存连接到联机分析处理 (OLAP) 服务器，则返回<b>True</b> 。</span>
+          <span data-ttu-id="156a4-206">如果数据透视表缓存连接到联机分析处理 (OLAP) 服务器，则返回<b>True</b> 。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-156">Returns <b>True</b> if the PivotTable cache is connected to an Online Analytical Processing (OLAP) server.</span>
+            <span data-stu-id="156a4-206">Returns <b>True</b> if the PivotTable cache is connected to an Online Analytical Processing (OLAP) server.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -1097,31 +1214,32 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-157">
+          <span data-ttu-id="156a4-207">
             <b>True</b>如果数据透视表缓存在构造时进行了优化。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-157">
+            <span data-stu-id="156a4-207">
               <b>True</b> if the PivotTable cache is optimized when it’s constructed.</span>
           </span>
-          <span data-ttu-id="75c18-158">默认值为 <b>False</b> 。</span>
+          <span data-ttu-id="156a4-208">默认值为 <b>False</b> 。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-158">The default value is <b>False</b>.</span>
+            <span data-stu-id="156a4-208">The default value is <b>False</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="75c18-159">
-            <para>缓存优化中其他查询结果，并会降低数据透视表的初始性能。</para>
-            <para>的 OLE DB 数据源，此属性是只读的并且始终返回<b>False</b>。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="75c18-159">
-              <para>Cache optimization results in additional queries and degrades initial performance of the PivotTable report.</para>
-              <para>For OLE DB data sources, this property is read-only and always returns <b>False</b>.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="156a4-209">高速缓存的优化将导致附加的查询，并会降低数据透视表的初始性能。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-209">Cache optimization results in additional queries and degrades initial performance of the PivotTable report.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-210">对于 OLE DB 数据源，该属性是只读的，并且总返回 <b>False</b>。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-210">For OLE DB data sources, this property is read-only and always returns <b>False</b>.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1149,9 +1267,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-160">返回指定对象的父对象。</span>
+          <span data-ttu-id="156a4-211">返回指定对象的父对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-160">Returns the parent object for the specified object.</span>
+            <span data-stu-id="156a4-211">Returns the parent object for the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -1182,51 +1300,100 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-161">指示 Microsoft Excel 用于填充的数据透视表缓存的查询的类型。</span>
+          <span data-ttu-id="156a4-212">指示 Microsoft Excel 用于填充的数据透视表缓存的查询的类型。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-161">Indicates the type of query used by Microsoft Excel to populate the PivotTable cache.</span>
+            <span data-stu-id="156a4-212">Indicates the type of query used by Microsoft Excel to populate the PivotTable cache.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="75c18-162">
-            <para>
-              <see cref="T:Microsoft.Office.Interop.Excel.XlQueryType" />可以是下列<b>XlQueryType</b>常量之一：</para>
-            <para>
-              <b>xlTextImport</b>。基于文本文件;仅用于查询表。</para>
-            <para>
-              <b>xloledbquery 时</b>。基于 OLE DB 查询，包括 OLAP 数据源。</para>
-            <para>
-              <b>xlWebQuery</b>。基于 Web 的网页;仅用于查询表。</para>
-            <para>
-              <b>xlADORecordset</b>。基于 ADO 记录集查询。</para>
-            <para>
-              <b>xlDAORecordSet</b>。基于 DAO 记录集查询;仅用于查询表。</para>
-            <para>
-              <b>xlODBCQuery</b>。基于 ODBC 数据源。</para>
-            <para>的前缀中指定的数据源<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" />属性的值。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="75c18-162">
-              <para>
-                <see cref="T:Microsoft.Office.Interop.Excel.XlQueryType" /> can be one of the following <b>XlQueryType</b> constants:</para>
-              <para>
-                <b>xlTextImport</b>. Based on a text file; for query tables only.</para>
-              <para>
-                <b>xlOLEDBQuery</b>. Based on an OLE DB query, including OLAP data sources.</para>
-              <para>
-                <b>xlWebQuery</b>. Based on a Web page; for query tables only.</para>
-              <para>
-                <b>xlADORecordset</b>. Based on an ADO recordset query.</para>
-              <para>
-                <b>xlDAORecordSet</b>. Based on a DAO recordset query; for query tables only.</para>
-              <para>
-                <b>xlODBCQuery</b>. Based on an ODBC data source.</para>
-              <para>You specify the data source in the prefix for the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> property’s value.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="156a4-213">
+              <see cref="T:Microsoft.Office.Interop.Excel.XlQueryType" />可以是下列<b>XlQueryType</b>常量之一：</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-213">
+                <see cref="T:Microsoft.Office.Interop.Excel.XlQueryType" /> can be one of the following <b>XlQueryType</b> constants:</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-214">
+              <b>xlTextImport</b>。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-214">
+                <b>xlTextImport</b>.</span>
+            </span>
+            <span data-ttu-id="156a4-215">基于文本文件;仅用于查询表。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-215">Based on a text file; for query tables only.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-216">
+              <b>xloledbquery 时</b>。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-216">
+                <b>xlOLEDBQuery</b>.</span>
+            </span>
+            <span data-ttu-id="156a4-217">基于 OLE DB 查询，包括 OLAP 数据源。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-217">Based on an OLE DB query, including OLAP data sources.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-218">
+              <b>xlWebQuery</b>。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-218">
+                <b>xlWebQuery</b>.</span>
+            </span>
+            <span data-ttu-id="156a4-219">基于 Web 的网页;仅用于查询表。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-219">Based on a Web page; for query tables only.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-220">
+              <b>xlADORecordset</b>。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-220">
+                <b>xlADORecordset</b>.</span>
+            </span>
+            <span data-ttu-id="156a4-221">基于 ADO 记录集查询。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-221">Based on an ADO recordset query.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-222">
+              <b>xlDAORecordSet</b>。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-222">
+                <b>xlDAORecordSet</b>.</span>
+            </span>
+            <span data-ttu-id="156a4-223">基于 DAO 记录集查询;仅用于查询表。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-223">Based on a DAO recordset query; for query tables only.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-224">
+              <b>xlODBCQuery</b>。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-224">
+                <b>xlODBCQuery</b>.</span>
+            </span>
+            <span data-ttu-id="156a4-225">基于 ODBC 数据源。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-225">Based on an ODBC data source.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-226">前缀中指定的数据源<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" />属性的值。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-226">You specify the data source in the prefix for the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> property’s value.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1254,23 +1421,20 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-163">在数据透视表缓存或包含的指定的项的缓存记录数目返回记录的数。</span>
+          <span data-ttu-id="156a4-227">在数据透视表缓存或包含的指定的项的缓存记录数目返回记录的数。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-163">Returns the number of records in the PivotTable cache or the number of cache records that contain the specified item.</span>
+            <span data-stu-id="156a4-227">Returns the number of records in the PivotTable cache or the number of cache records that contain the specified item.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="75c18-164">
-            <para>这种此属性反映了查询时缓存的瞬时状态。缓存可以更改查询之间。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="75c18-164">
-              <para>This property reflects the transient state of the cache at the time that it’s queried. The cache can change between queries.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="156a4-p131">此属性反映了查询高速缓存时的瞬时状态。该高速缓存可对不同查询而更改。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-p131">This property reflects the transient state of the cache at the time that it’s queried. The cache can change between queries.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1301,23 +1465,20 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-165">返回或设置一个用作数据源指定的查询表或数据透视表缓存的<b>Recordset</b>对象。</span>
+          <span data-ttu-id="156a4-230">返回或设置一个用作数据源指定的查询表或数据透视表缓存的<b>Recordset</b>对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-165">Returns or sets a <b>Recordset</b> object that’s used as the data source for the specified query table or PivotTable cache.</span>
+            <span data-stu-id="156a4-230">Returns or sets a <b>Recordset</b> object that’s used as the data source for the specified query table or PivotTable cache.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="75c18-166">
-            <para>如果此属性用来覆盖现有记录集，更改将生效时<see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" />方法运行。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="75c18-166">
-              <para>If this property is used to overwrite an existing recordset, the change takes effect when the <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" /> method is run.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="156a4-231">如果此属性用来覆盖现有记录集，更改将生效时<see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" />方法运行。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-231">If this property is used to overwrite an existing recordset, the change takes effect when the <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" /> method is run.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1343,9 +1504,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-167">更新的高速缓存<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />对象。</span>
+          <span data-ttu-id="156a4-232">更新的高速缓存<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-167">Updates the cache of the <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> object.</span>
+            <span data-stu-id="156a4-232">Updates the cache of the <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> object.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -1375,25 +1536,26 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-168">返回最近一次刷新数据透视表缓存的日期。</span>
+          <span data-ttu-id="156a4-233">返回最近一次刷新数据透视表缓存的日期。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-168">Returns the date on which the PivotTable cache was last refreshed.</span>
+            <span data-stu-id="156a4-233">Returns the date on which the PivotTable cache was last refreshed.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="75c18-169">
-            <para>该缓存必须至少一个与其相关联的数据透视表报告</para>
-            <para>对于 OLAP 数据源，此属性在每个查询后更新。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="75c18-169">
-              <para>The cache must have at least one PivotTable report associated with it.</para>
-              <para>For OLAP data sources, this property is updated after each query.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="156a4-234">该缓存必须至少一个与之关联的数据透视表报告。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-234">The cache must have at least one PivotTable report associated with it.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-235">对于 OLAP 数据源，在每次查询后都会更新此属性。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-235">For OLAP data sources, this property is updated after each query.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1421,9 +1583,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-170">返回最近一次刷新数据透视表缓存的人员的名称。</span>
+          <span data-ttu-id="156a4-236">返回最近一次刷新数据透视表缓存的人员的名称。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-170">Returns the name of the person who last refreshed the PivotTable cache.</span>
+            <span data-stu-id="156a4-236">Returns the name of the person who last refreshed the PivotTable cache.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -1457,28 +1619,29 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-171">打开<b>，则返回 true</b>如果每次工作簿数据透视表缓存自动更新。</span>
+          <span data-ttu-id="156a4-237">打开<b>，则返回 true</b>如果每次工作簿数据透视表缓存自动更新。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-171">
+            <span data-stu-id="156a4-237">
               <b>True</b> if the PivotTable cache is automatically updated each time the workbook is opened.</span>
           </span>
-          <span data-ttu-id="75c18-172">默认值为 <b>False</b> 。</span>
+          <span data-ttu-id="156a4-238">默认值为 <b>False</b> 。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-172">The default value is <b>False</b>.</span>
+            <span data-stu-id="156a4-238">The default value is <b>False</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="75c18-173">
-            <para>数据透视表报表不自动刷新。使用<see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" />方法，以打开工作簿后，刷新数据。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="75c18-173">
-              <para>PivotTable reports are not automatically refreshed. Use the <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" /> method to refresh the data after the workbook is open.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="156a4-239">不自动刷新数据透视表报告。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-239">PivotTable reports are not automatically refreshed.</span>
             </span>
-          </span>
+            <span data-ttu-id="156a4-240">使用<see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" />方法，以打开工作簿后，刷新数据。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-240">Use the <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" /> method to refresh the data after the workbook is open.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1509,26 +1672,27 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-174">返回或设置的刷新间隔的分钟数。</span>
+          <span data-ttu-id="156a4-241">返回或设置的刷新间隔的分钟数。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-174">Returns or sets the number of minutes between refreshes.</span>
+            <span data-stu-id="156a4-241">Returns or sets the number of minutes between refreshes.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="75c18-175">
-            <para>将周期设置为 0 （零） 禁用自动定时刷新，并且等同于将该属性设置为<b>Null</b>。</para>
-            <para>
-              <b>RefreshPeriod</b>属性的值可以是介于 0 到 32767 之间的整数。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="75c18-175">
-              <para>Setting the period to 0 (zero) disables automatic timed refreshes and is equivalent to setting this property to <b>Null</b>.</para>
-              <para>The value of the <b>RefreshPeriod</b> property can be an integer from 0 through 32,767.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="156a4-242">将周期设置为 0（零），则会禁用自动定时刷新，并且等同于将该属性设置为 <b>Null</b>。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-242">Setting the period to 0 (zero) disables automatic timed refreshes and is equivalent to setting this property to <b>Null</b>.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-243">
+              <b>RefreshPeriod</b>属性的值可以是介于 0 到 32767 之间的整数。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-243">The value of the <b>RefreshPeriod</b> property can be an integer from 0 through 32,767.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1554,9 +1718,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-176">将指定数据透视表的刷新计时器重置使用设置的最后一个时间间隔为<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.RefreshPeriod" />属性。</span>
+          <span data-ttu-id="156a4-244">将指定数据透视表的刷新计时器重置使用设置的最后一个时间间隔为<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.RefreshPeriod" />属性。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-176">Resets the refresh timer for the specified PivotTable report to the last interval you set using the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.RefreshPeriod" /> property.</span>
+            <span data-stu-id="156a4-244">Resets the refresh timer for the specified PivotTable report to the last interval you set using the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.RefreshPeriod" /> property.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -1589,37 +1753,46 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-177">返回或设置数据透视表缓存与其数据源连接的方式。</span>
+          <span data-ttu-id="156a4-245">返回或设置数据透视表缓存与其数据源连接的方式。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-177">Returns or sets how the PivotTable cache connects to its data source.</span>
+            <span data-stu-id="156a4-245">Returns or sets how the PivotTable cache connects to its data source.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="75c18-178">
-            <para>
-              <see cref="T:Microsoft.Office.Interop.Excel.XlRobustConnect" />可以是下列<b>XlRobustConnect</b>常量之一：</para>
-            <para>
-              <b>xlAlways</b>缓存始终使用外部源信息 (如由定义<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceConnectionFile" />或<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceDataFile" />属性) 重新连接。</para>
-            <para>
-              <b>xlAsRequired</b>缓存使用外部源信息进行重新连接使用<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" />属性。</para>
-            <para>
-              <b>xlNever</b>缓存从不使用源信息进行重新连接。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="75c18-178">
-              <para>
-                <see cref="T:Microsoft.Office.Interop.Excel.XlRobustConnect" /> can be one of the following <b>XlRobustConnect</b> constants:</para>
-              <para>
-                <b>xlAlways</b> The cache always uses external source information (as defined by the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceConnectionFile" /> or <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceDataFile" /> property) to reconnect.</para>
-              <para>
-                <b>xlAsRequired</b> The cache uses external source info to reconnect using the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> property.</para>
-              <para>
-                <b>xlNever</b> The cache never uses source info to reconnect.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="156a4-246">
+              <see cref="T:Microsoft.Office.Interop.Excel.XlRobustConnect" />可以是下列<b>XlRobustConnect</b>常量之一：</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-246">
+                <see cref="T:Microsoft.Office.Interop.Excel.XlRobustConnect" /> can be one of the following <b>XlRobustConnect</b> constants:</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-247">
+              <b>xlAlways</b>缓存始终使用外部源信息 (如由定义<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceConnectionFile" />或<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceDataFile" />属性) 重新连接。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-247">
+                <b>xlAlways</b> The cache always uses external source information (as defined by the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceConnectionFile" /> or <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceDataFile" /> property) to reconnect.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-248">
+              <b>xlAsRequired</b>缓存使用外部源信息进行重新连接使用<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" />属性。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-248">
+                <b>xlAsRequired</b> The cache uses external source info to reconnect using the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> property.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-249">
+              <b>xlNever</b>缓存从不使用源信息进行重新连接。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-249">
+                <b>xlNever</b> The cache never uses source info to reconnect.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1648,39 +1821,39 @@
       </Parameters>
       <Docs>
         <param name="ODCFileName">
-          <span data-ttu-id="75c18-179">必需的 <b>字符串</b> 。</span>
+          <span data-ttu-id="156a4-250">必需的 <b>字符串</b> 。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-179">Required <b>String</b>.</span>
+            <span data-stu-id="156a4-250">Required <b>String</b>.</span>
           </span>
-          <span data-ttu-id="75c18-180">保存文件的位置。</span>
+          <span data-ttu-id="156a4-251">保存文件的位置。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-180">Location to save the file.</span>
+            <span data-stu-id="156a4-251">Location to save the file.</span>
           </span>
         </param>
         <param name="Description">
-          <span data-ttu-id="75c18-181">可选的<b>对象</b>。</span>
+          <span data-ttu-id="156a4-252">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-181">Optional <b>Object</b>.</span>
+            <span data-stu-id="156a4-252">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="75c18-182">将保存在文件中的说明。</span>
+          <span data-ttu-id="156a4-253">将保存在文件中的说明。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-182">Description that will be saved in the file.</span>
+            <span data-stu-id="156a4-253">Description that will be saved in the file.</span>
           </span>
         </param>
         <param name="Keywords">
-          <span data-ttu-id="75c18-183">可选的<b>对象</b>。</span>
+          <span data-ttu-id="156a4-254">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-183">Optional <b>Object</b>.</span>
+            <span data-stu-id="156a4-254">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="75c18-184">可用于搜索该文件的以空格分隔的关键字。</span>
+          <span data-ttu-id="156a4-255">可用于搜索该文件的以空格分隔的关键字。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-184">Space-separated keywords that can be used to search for this file.</span>
+            <span data-stu-id="156a4-255">Space-separated keywords that can be used to search for this file.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="75c18-185">将数据透视表缓存的源保存为 Microsoft Office 数据连接文件。</span>
+          <span data-ttu-id="156a4-256">将数据透视表缓存的源保存为 Microsoft Office 数据连接文件。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-185">Saves the PivotTable cache source as a Microsoft Office Data Connection file.</span>
+            <span data-stu-id="156a4-256">Saves the PivotTable cache source as a Microsoft Office Data Connection file.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -1713,30 +1886,27 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-186">如果为<b>true</b>将 ODBC 连接字符串中的密码信息保存与指定的查询。</span>
+          <span data-ttu-id="156a4-257">如果为<b>true</b>将 ODBC 连接字符串中的密码信息保存与指定的查询。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-186">
+            <span data-stu-id="156a4-257">
               <b>True</b> if password information in an ODBC connection string is saved with the specified query.</span>
           </span>
-          <span data-ttu-id="75c18-187">
+          <span data-ttu-id="156a4-258">
             <b>False</b>如果删除密码。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-187">
+            <span data-stu-id="156a4-258">
               <b>False</b> if the password is removed.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="75c18-188">
-            <para>此属性会影响仅 ODBC 查询。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="75c18-188">
-              <para>This property affects only ODBC queries.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="156a4-259">此属性会影响仅 ODBC 查询。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-259">This property affects only ODBC queries.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1767,9 +1937,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-189">返回或设置一个<b>字符串</b>，指示用来创建数据透视表的类似文件的 Microsoft Office 数据连接文件。</span>
+          <span data-ttu-id="156a4-260">返回或设置一个<b>字符串</b>，指示用来创建数据透视表的类似文件的 Microsoft Office 数据连接文件。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-189">Returns or sets a <b>String</b> indicating the Microsoft Office Data Connection file or similar file that was used to create the PivotTable.</span>
+            <span data-stu-id="156a4-260">Returns or sets a <b>String</b> indicating the Microsoft Office Data Connection file or similar file that was used to create the PivotTable.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -1803,61 +1973,88 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-190">返回数据透视表的数据源。</span>
+          <span data-ttu-id="156a4-261">返回数据透视表的数据源。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-190">Returns the data source for the PivotTable report.</span>
+            <span data-stu-id="156a4-261">Returns the data source for the PivotTable report.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="75c18-191">
-            <para>下表显示<b>SourceDate</b>属性返回的值：</para>
-            <list type="table">
-              <item>
-                <term>Microsoft Excel 列表或数据库</term>
-                <description>以文本形式的单元格引用。</description>
-              </item>
-              <item>
-                <description>数组的
-              <term>外部数据源</term>。每个行作为查询字符串，细分为 255 个字符段包含的剩余元素的 SQL 连接字符串。</description>
-              </item>
-              <item>
-                <description>一个二维数组的
-              <term>多个合并区域</term>。引用和其关联的页字段项的每个行组成。</description>
-              </item>
-              <item>
-                <term>另一个数据透视表报告</term>
-                <description>以上三种信息之一。</description>
-              </item>
-            </list>
-            <para>此属性不可用于 OLE DB 数据源。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="75c18-191">
-              <para>The following table shows the values returned by the <b>SourceDate</b> property:</para>
-              <list type="table">
-                <item>
-                  <term>Microsoft Excel list or database</term>
-                  <description>The cell reference as text.</description>
-                </item>
-                <item>
-                  <term>External data source</term>
-                  <description>An array. Each row consists of a SQL connection string with the remaining elements as the query string, broken down into 255-character segments.</description>
-                </item>
-                <item>
-                  <term>Multiple consolidation ranges</term>
-                  <description>A two-dimensional array. Each row consists of a reference and its associated page field items.</description>
-                </item>
-                <item>
-                  <term>Another PivotTable report</term>
-                  <description>One of the above three kinds of information.</description>
-                </item>
-              </list>
-              <para>This property is not available for OLE DB data sources.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="156a4-262">下表显示<b>SourceDate</b>属性返回的值：</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-262">The following table shows the values returned by the <b>SourceDate</b> property:</span>
             </span>
-          </span>
+          </para>
+          <list type="table">
+            <item>
+              <term>
+                <span data-ttu-id="156a4-263">Microsoft Excel 列表或数据库</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="156a4-263">Microsoft Excel list or database</span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="156a4-264">以文本形式的单元格引用。</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="156a4-264">The cell reference as text.</span>
+                </span>
+              </description>
+            </item>
+            <item>
+              <term>
+                <span data-ttu-id="156a4-265">外部数据源</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="156a4-265">External data source</span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="156a4-266">数组。</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="156a4-266">An array.</span>
+                </span>
+                <span data-ttu-id="156a4-267">每个行作为查询字符串，细分为 255 个字符段包含的剩余元素的 SQL 连接字符串。</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="156a4-267">Each row consists of a SQL connection string with the remaining elements as the query string, broken down into 255-character segments.</span>
+                </span>
+              </description>
+            </item>
+            <item>
+              <term>
+                <span data-ttu-id="156a4-268">多个合并区域</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="156a4-268">Multiple consolidation ranges</span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="156a4-p139">二维数组。每行由一个引用及与其相关联的页字段项组成。</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="156a4-p139">A two-dimensional array. Each row consists of a reference and its associated page field items.</span>
+                </span>
+              </description>
+            </item>
+            <item>
+              <term>
+                <span data-ttu-id="156a4-271">其他数据透视表</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="156a4-271">Another PivotTable report</span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="156a4-272">以上三种信息之一。</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="156a4-272">One of the above three kinds of information.</span>
+                </span>
+              </description>
+            </item>
+          </list>
+          <para>
+            <span data-ttu-id="156a4-273">该属性不可用于 OLE DB 数据源。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-273">This property is not available for OLE DB data sources.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1885,23 +2082,29 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-192">返回一个指示的数据透视表缓存的源数据文件的<b>字符串</b>。</span>
+          <span data-ttu-id="156a4-274">返回一个指示的数据透视表缓存的源数据文件的<b>字符串</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-192">Returns a <b>String</b> indicating the source data file for the cache of the PivotTable.</span>
+            <span data-stu-id="156a4-274">Returns a <b>String</b> indicating the source data file for the cache of the PivotTable.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="75c18-193">
-            <para>的基于文件的数据源 (如 Microsoft Access) <b>SourceDataFile</b>属性包含源数据文件的完全限定的路径。它为<b>Null</b>的基于服务器的数据源 (如 SQL Server)。<b>SourceDataFile</b>属性设置为<b>Null</b> ，如果<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" />以编程方式更改属性。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="75c18-193">
-              <para>For file-based data sources (e.g. Microsoft Access) the <b>SourceDataFile</b> property contains a fully qualified path to the source data file. It is <b>Null</b> for server-based data sources (e.g. SQL Server). The <b>SourceDataFile</b> property is set to <b>Null</b> if the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> property is changed programmatically.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="156a4-275">对于基于文件的数据源 (如 Microsoft Access) <b>SourceDataFile</b>属性包含源数据文件的完全限定的路径。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-275">For file-based data sources (e.g. Microsoft Access) the <b>SourceDataFile</b> property contains a fully qualified path to the source data file.</span>
             </span>
-          </span>
+            <span data-ttu-id="156a4-276">它为<b>Null</b>的基于服务器的数据源 (如 SQL Server)。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-276">It is <b>Null</b> for server-based data sources (e.g. SQL Server).</span>
+            </span>
+            <span data-ttu-id="156a4-277">
+              <b>SourceDataFile</b>属性设置为<b>Null</b> ，如果<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" />以编程方式更改属性。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-277">The <b>SourceDataFile</b> property is set to <b>Null</b> if the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> property is changed programmatically.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1929,55 +2132,72 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-194">返回一个值，标识要发布的项目的类型。</span>
+          <span data-ttu-id="156a4-278">返回一个值，标识要发布的项目的类型。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-194">Returns a value that identifies the type of item being published.</span>
+            <span data-stu-id="156a4-278">Returns a value that identifies the type of item being published.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="75c18-195">
-            <para>
-              <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" />可以是以下<b>XlPivotTableSourceType</b>常量之一：</para>
-            <para>
-              <b>xlConsolidation</b>
-            </para>
-            <para>
-              <b>xlDatabase</b>
-            </para>
-            <para>
-              <b>xlExternal</b>
-            </para>
-            <para>
-              <b>xlPivotTable</b>
-            </para>
-            <para>
-              <b>xlScenario</b>
-            </para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="75c18-195">
-              <para>
-                <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> can be one of the following <b>XlPivotTableSourceType</b> constants:</para>
-              <para>
-                <b>xlConsolidation</b>
-              </para>
-              <para>
-                <b>xlDatabase</b>
-              </para>
-              <para>
-                <b>xlExternal</b>
-              </para>
-              <para>
-                <b>xlPivotTable</b>
-              </para>
-              <para>
-                <b>xlScenario</b>
-              </para>
-              <para></para>
+          <para>
+            <span data-ttu-id="156a4-279">
+              <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" />可以是以下<b>XlPivotTableSourceType</b>常量之一：</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-279">
+                <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> can be one of the following <b>XlPivotTableSourceType</b> constants:</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-280">
+              <b>xlConsolidation</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-280">
+                <b>xlConsolidation</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-281">
+              <b>xlDatabase</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-281">
+                <b>xlDatabase</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-282">
+              <b>xlExternal</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-282">
+                <b>xlExternal</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-283">
+              <b>xlPivotTable</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-283">
+                <b>xlPivotTable</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-284">
+              <b>xlScenario</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-284">
+                <b>xlScenario</b>
+              </span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2014,9 +2234,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-196">仅供内部使用。</span>
+          <span data-ttu-id="156a4-285">仅供内部使用。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-196">Reserved for internal use.</span>
+            <span data-stu-id="156a4-285">Reserved for internal use.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -2050,36 +2270,53 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-197">包含信息是否升级<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />和所有连接<see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />上的下一个刷新。</span>
+          <span data-ttu-id="156a4-286">包含信息是否升级<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />和所有连接<see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />上的下一个刷新。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-197">Contains information on whether to upgrade the <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />  and all connected <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> on the next refresh.</span>
+            <span data-stu-id="156a4-286">Contains information on whether to upgrade the <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />  and all connected <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> on the next refresh.</span>
           </span>
-          <span data-ttu-id="75c18-198">为可读/写属性。</span>
+          <span data-ttu-id="156a4-287">为可读/写属性。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-198">Read/write.</span>
+            <span data-stu-id="156a4-287">Read/write.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="75c18-199">
+          <span data-ttu-id="156a4-288">
             <b>Boolean</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-199">
+            <span data-stu-id="156a4-288">
               <b>Boolean</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="75c18-200">
-            <para>默认值为<b>False</b>。如果为<b>PivotCache</b>属性设置为<b>True</b> ，则刷新任何<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />附加到的<b>PivotCache</b>将<b>PivotCache</b>和升级所有附加的<b>数据透视表</b>到 2007年版 (PivotTable.Version = 3) 的一部分刷新。</para>如果该属性设置为<b>False</b>的<b>PivotCache</b><para>，刷新<b>数据透视表</b>的任何附加到的<b>PivotCache</b>将不会更改的版本<b>PivotCache</b>，也不任何附加<b>数据透视表的版本</b>.它们都保持刷新前的相同版本。</para><para>时在兼容性模式将设置此属性为<b>True</b>的所有保存为 short_Excel2007 文件格式时，<see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" />工作簿中。</para><para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="75c18-200">
-              <para>The default value is <b>False</b>. If the property is set to <b>True</b> for a <b>PivotCache</b>, refreshing any <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> attached to that <b>PivotCache</b> will upgrade the <b>PivotCache</b> and all the attached <b>PivotTables</b> to version 2007 (PivotTable.Version = 3) as part of the refresh.</para>
-              <para>If the property is set to <b>False</b> for a <b>PivotCache</b>, refreshing any <b>PivotTable</b> attached to that <b>PivotCache</b> will not change the version of the <b>PivotCache</b>, nor the version of any attached <b>PivotTables</b>. They all stay the same version as before the refresh.</para>
-              <para>Saving to a short_Excel2007 file format, when in compatibility mode will set this property to <b>True</b> for all <see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" /> in the workbook.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="156a4-289">默认值为 <b>False</b> 。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-289">The default value is <b>False</b>.</span>
             </span>
-          </span>
+            <span data-ttu-id="156a4-290">如果为<b>PivotCache</b>属性设置为<b>True</b> ，则刷新任何<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />附加到的<b>PivotCache</b>将<b>PivotCache</b>和升级所有附加的<b>数据透视表</b>到 2007年版 (PivotTable.Version = 3) 的一部分刷新。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-290">If the property is set to <b>True</b> for a <b>PivotCache</b>, refreshing any <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> attached to that <b>PivotCache</b> will upgrade the <b>PivotCache</b> and all the attached <b>PivotTables</b> to version 2007 (PivotTable.Version = 3) as part of the refresh.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-291">如果为<b>PivotCache</b>属性设置为<b>False</b> ，刷新<b>数据透视表</b>的任何附加到的<b>PivotCache</b>将不会更改的版本<b>PivotCache</b>，也不任何附加的<b>数据透视表</b>的版本。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-291">If the property is set to <b>False</b> for a <b>PivotCache</b>, refreshing any <b>PivotTable</b> attached to that <b>PivotCache</b> will not change the version of the <b>PivotCache</b>, nor the version of any attached <b>PivotTables</b>.</span>
+            </span>
+            <span data-ttu-id="156a4-292">它们都刷新前保持相同的版本。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-292">They all stay the same version as before the refresh.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="156a4-293">将保存到 short_Excel2007 文件格式，当在兼容性模式将设置此属性为<b>True</b>的所有<see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" />工作簿中。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-293">Saving to a short_Excel2007 file format, when in compatibility mode will set this property to <b>True</b> for all <see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" /> in the workbook.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2110,16 +2347,16 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-201">
+          <span data-ttu-id="156a4-294">
             <b>True</b>如果<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.LocalConnection" />属性用于指定的字符串，使 Microsoft Excel 连接到数据源。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-201">
+            <span data-stu-id="156a4-294">
               <b>True</b> if the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.LocalConnection" /> property is used to specify the string that enables Microsoft Excel to connect to a data source.</span>
           </span>
-          <span data-ttu-id="75c18-202">
+          <span data-ttu-id="156a4-295">
             <b>False</b>如果指定的连接字符串<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" />使用属性。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-202">
+            <span data-stu-id="156a4-295">
               <b>False</b> if the connection string specified by the <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> property is used.</span>
           </span>
         </summary>
@@ -2151,29 +2388,30 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-203">在其中返回的 Microsoft Excel 版本<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />创建。</span>
+          <span data-ttu-id="156a4-296">在其中返回的 Microsoft Excel 版本<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />创建。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-203">Returns the version of Microsoft Excel in which the <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> was created.</span>
+            <span data-stu-id="156a4-296">Returns the version of Microsoft Excel in which the <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> was created.</span>
           </span>
-          <span data-ttu-id="75c18-204">只读。</span>
+          <span data-ttu-id="156a4-297">只读。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-204">Read-only.</span>
+            <span data-stu-id="156a4-297">Read-only.</span>
           </span>
         </summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableVersionList" />
         </value>
         <remarks>
-          <span data-ttu-id="75c18-205">
-            <para>此属性返回的版本<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。行为取决于要允许旧的<b>数据透视表</b>对象模型代码以<b>数据透视表</b>的版本对应的为其编写代码的 Excel 版本时，在相同的行为的 1st_Excel12 中运行的版本和默认设置。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="75c18-205">
-              <para>This property returns the version of the <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />. Default settings and behaviors depend on the version to allow for old <b>PivotTable</b> object model code to run in 1st_Excel12 with the same behaviors when the version of the <b>PivotTable</b> corresponds to the version of Excel for which the code was written.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="156a4-298">此属性返回的版本<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-298">This property returns the version of the <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</span>
             </span>
-          </span>
+            <span data-ttu-id="156a4-299">行为取决于要允许旧的<b>数据透视表</b>对象模型代码以<b>数据透视表</b>的版本对应的为其编写代码的 Excel 版本时，在相同的行为的 1st_Excel12 中运行的版本和默认设置。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-299">Default settings and behaviors depend on the version to allow for old <b>PivotTable</b> object model code to run in 1st_Excel12 with the same behaviors when the version of the <b>PivotTable</b> corresponds to the version of Excel for which the code was written.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2201,28 +2439,25 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="75c18-206">建立当前工作簿之间的连接和<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />对象。</span>
+          <span data-ttu-id="156a4-300">建立当前工作簿之间的连接和<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-206">Establishes a connection between the current workbook and the <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> object.</span>
+            <span data-stu-id="156a4-300">Establishes a connection between the current workbook and the <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> object.</span>
           </span>
-          <span data-ttu-id="75c18-207">只读。</span>
+          <span data-ttu-id="156a4-301">只读。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="75c18-207">Read-only.</span>
+            <span data-stu-id="156a4-301">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="75c18-208">
-            <para>
-              <b>WorkbookConnection</b>对象代表与外部数据源的连接。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="75c18-208">
-              <para>The <b>WorkbookConnection</b> object represents a connection to an external data source.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="156a4-302">
+              <b>WorkbookConnection</b> 对象代表与外部数据源的连接。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="156a4-302">The <b>WorkbookConnection</b> object represents a connection to an external data source.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>

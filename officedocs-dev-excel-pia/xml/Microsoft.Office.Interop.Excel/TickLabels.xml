@@ -1,10 +1,10 @@
 <Type Name="TickLabels" FullName="Microsoft.Office.Interop.Excel.TickLabels">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fcdd070f496219f0cc3c7df419775ae6cd824dc6" />
+    <Meta Name="ms.openlocfilehash" Value="80b3e086ba4d3ed73fe6b8241b450f89bafae6e6" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20579567" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface TickLabels" />
@@ -30,24 +30,49 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="ee921-101">代表图表坐标轴上刻度线标志相关联刻度线标签。</span>
+      <span data-ttu-id="21de6-101">代表图表坐标轴上刻度线标志相关联刻度线标签。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="ee921-101">Represents the tick mark labels associated with tick marks on a chart axis.</span>
+        <span data-stu-id="21de6-101">Represents the tick mark labels associated with tick marks on a chart axis.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="ee921-102">
-        <para>此对象不是集合。没有对象表示单个刻度线标签;您必须为单位返回所有刻度线标签。分类轴的刻度线标记标签文本来自于图表中关联的类别的名称。默认分类轴的刻度线标记标签文本是数字，用于指示相对于此轴的左端类别的位置。若要更改的未标记的刻度线刻度线标签之间的标记，则必须更改<see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabelSpacing" />属性的分类轴。刻度线标签文本标记的数值轴的计算公式基于<see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" />， <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinimumScale" />，和<see cref="P:Microsoft.Office.Interop.Excel.Axis.MaximumScale" />数值轴的属性。若要更改的数值轴的刻度线标记标签文本，则必须更改这些属性的值。</para>
-        <para>使用<see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabels" />属性可返回<b>TickLabels</b>对象。</para>
-        <para></para>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="ee921-102">
-          <para>This object isn’t a collection. There’s no object that represents a single tick mark label; you must return all the tick mark labels as a unit. Tick mark label text for the category axis comes from the name of the associated category in the chart. The default tick mark label text for the category axis is the number that indicates the position of the category relative to the left end of this axis. To change the number of unlabeled tick marks between tick mark labels, you must change the <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabelSpacing" /> property for the category axis. Tick mark label text for the value axis is calculated based on the <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" />, <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinimumScale" />, and <see cref="P:Microsoft.Office.Interop.Excel.Axis.MaximumScale" /> properties of the value axis. To change the tick mark label text for the value axis, you must change the values of these properties.</para>
-          <para>Use the <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabels" /> property to return the <b>TickLabels</b> object.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="21de6-102">此对象不是集合。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="21de6-102">This object isn’t a collection.</span>
         </span>
-      </span>
+        <span data-ttu-id="21de6-103">没有对象表示单个刻度线标签;您必须为单位返回所有刻度线标签。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="21de6-103">There’s no object that represents a single tick mark label; you must return all the tick mark labels as a unit.</span>
+        </span>
+        <span data-ttu-id="21de6-104">分类轴的刻度线标记标签文本来自于图表中关联的类别的名称。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="21de6-104">Tick mark label text for the category axis comes from the name of the associated category in the chart.</span>
+        </span>
+        <span data-ttu-id="21de6-105">默认分类轴的刻度线标记标签文本是数字，用于指示相对于此轴的左端类别的位置。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="21de6-105">The default tick mark label text for the category axis is the number that indicates the position of the category relative to the left end of this axis.</span>
+        </span>
+        <span data-ttu-id="21de6-106">若要更改的未标记的刻度线刻度线标签之间的标记，则必须更改<see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabelSpacing" />属性的分类轴。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="21de6-106">To change the number of unlabeled tick marks between tick mark labels, you must change the <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabelSpacing" /> property for the category axis.</span>
+        </span>
+        <span data-ttu-id="21de6-107">刻度线标签文本标记的数值轴的计算公式基于<see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" />， <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinimumScale" />，和<see cref="P:Microsoft.Office.Interop.Excel.Axis.MaximumScale" />数值轴的属性。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="21de6-107">Tick mark label text for the value axis is calculated based on the <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" />, <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinimumScale" />, and <see cref="P:Microsoft.Office.Interop.Excel.Axis.MaximumScale" /> properties of the value axis.</span>
+        </span>
+        <span data-ttu-id="21de6-108">若要更改的数值轴的刻度线标记标签文本，则必须更改这些属性的值。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="21de6-108">To change the tick mark label text for the value axis, you must change the values of these properties.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="21de6-109">使用<see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabels" />属性可返回<b>TickLabels</b>对象。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="21de6-109">Use the <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabels" /> property to return the <b>TickLabels</b> object.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -78,42 +103,51 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ee921-103">返回或设置指定刻度线标签的对齐方式。</span>
+          <span data-ttu-id="21de6-110">返回或设置指定刻度线标签的对齐方式。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee921-103">Returns or sets the alignment for the specified tick label.</span>
+            <span data-stu-id="21de6-110">Returns or sets the alignment for the specified tick label.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="ee921-104">
-            <para>
-              <b>Alignment</b>属性可以是下列任一<see cref="T:Microsoft.Office.Interop.Excel.XlHAlign" />常量：</para>
-            <para>
-              <b>XlHAlignCenter</b>
-            </para>
-            <para>
-              <b>XlHAlignLeft</b>
-            </para>
-            <para>
-              <b>XlHAlignRight</b>
-            </para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee921-104">
-              <para>The <b>Alignment</b> property can be one of these <see cref="T:Microsoft.Office.Interop.Excel.XlHAlign" /> constants:</para>
-              <para>
-                <b>XlHAlignCenter</b>
-              </para>
-              <para>
-                <b>XlHAlignLeft</b>
-              </para>
-              <para>
-                <b>XlHAlignRight</b>
-              </para>
-              <para></para>
+          <para>
+            <span data-ttu-id="21de6-111">
+              <b>Alignment</b>属性可以是下列任一<see cref="T:Microsoft.Office.Interop.Excel.XlHAlign" />常量：</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21de6-111">The <b>Alignment</b> property can be one of these <see cref="T:Microsoft.Office.Interop.Excel.XlHAlign" /> constants:</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="21de6-112">
+              <b>XlHAlignCenter</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21de6-112">
+                <b>XlHAlignCenter</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="21de6-113">
+              <b>XlHAlignLeft</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21de6-113">
+                <b>XlHAlignLeft</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="21de6-114">
+              <b>XlHAlignRight</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21de6-114">
+                <b>XlHAlignRight</b>
+              </span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -141,9 +175,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ee921-105">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
+          <span data-ttu-id="21de6-115">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee921-105">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="21de6-115">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -183,14 +217,14 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ee921-106">如果为<b>true</b>对象大小更改时，对象中的文本更改字体大小。</span>
+          <span data-ttu-id="21de6-116">如果为<b>true</b>对象大小更改时，对象中的文本更改字体大小。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee921-106">
+            <span data-stu-id="21de6-116">
               <b>True</b> if the text in the object changes font size when the object size changes.</span>
           </span>
-          <span data-ttu-id="ee921-107">默认值为 <b>True</b> 。</span>
+          <span data-ttu-id="21de6-117">默认值为 <b>True</b> 。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee921-107">The default value is <b>True</b>.</span>
+            <span data-stu-id="21de6-117">The default value is <b>True</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -221,26 +255,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ee921-108">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
+          <span data-ttu-id="21de6-118">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee921-108">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="21de6-118">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="ee921-109">
-            <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
-            <para>
-              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee921-109">
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="21de6-119">如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21de6-119">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="21de6-120">
+              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21de6-120">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="21de6-121">例如，Microsoft Excel 具有 XCEL 的创建者代码。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21de6-121">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -266,9 +305,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="ee921-110">删除对象。</span>
+          <span data-ttu-id="21de6-122">删除对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee921-110">Deletes the object.</span>
+            <span data-stu-id="21de6-122">Deletes the object.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -299,9 +338,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ee921-111">返回类别轴刻度线标签的级别数。</span>
+          <span data-ttu-id="21de6-123">返回类别轴刻度线标签的级别数。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee921-111">Returns the number of levels of category tick labels.</span>
+            <span data-stu-id="21de6-123">Returns the number of levels of category tick labels.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -332,9 +371,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ee921-112">返回<see cref="T:Microsoft.Office.Interop.Excel.Font" />对象，它代表指定对象的字体。</span>
+          <span data-ttu-id="21de6-124">返回<see cref="T:Microsoft.Office.Interop.Excel.Font" />对象，它代表指定对象的字体。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee921-112">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Font" /> object that represents the font of the specified object.</span>
+            <span data-stu-id="21de6-124">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Font" /> object that represents the font of the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -365,13 +404,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ee921-113">返回图表元素格式。</span>
+          <span data-ttu-id="21de6-125">返回图表元素格式。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee921-113">Returns the chart element format.</span>
+            <span data-stu-id="21de6-125">Returns the chart element format.</span>
           </span>
-          <span data-ttu-id="ee921-114">只读。</span>
+          <span data-ttu-id="21de6-126">只读。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee921-114">Read-only.</span>
+            <span data-stu-id="21de6-126">Read-only.</span>
           </span>
         </summary>
         <value>
@@ -407,36 +446,33 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ee921-115">设置坐标轴是否多级。</span>
+          <span data-ttu-id="21de6-127">设置坐标轴是否多级。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee921-115">Sets whether an axis is multilevel or not.</span>
+            <span data-stu-id="21de6-127">Sets whether an axis is multilevel or not.</span>
           </span>
-          <span data-ttu-id="ee921-116">为可读/写属性。</span>
+          <span data-ttu-id="21de6-128">为可读/写属性。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee921-116">Read/write.</span>
+            <span data-stu-id="21de6-128">Read/write.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="ee921-117">
+          <span data-ttu-id="21de6-129">
             <b>Boolean</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee921-117">
+            <span data-stu-id="21de6-129">
               <b>Boolean</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="ee921-118">
-            <para>此属性的默认值为<b>True</b>。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee921-118">
-              <para>The default for this property is <b>True</b>.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="21de6-130">此属性的默认值为<b>True</b>。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21de6-130">The default for this property is <b>True</b>.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -464,9 +500,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ee921-119">返回的对象的名称。</span>
+          <span data-ttu-id="21de6-131">返回的对象的名称。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee921-119">Returns the name of the object.</span>
+            <span data-stu-id="21de6-131">Returns the name of the object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -500,23 +536,20 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ee921-120">返回或设置对象的格式代码。</span>
+          <span data-ttu-id="21de6-132">返回或设置对象的格式代码。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee921-120">Returns or sets the format code for the object.</span>
+            <span data-stu-id="21de6-132">Returns or sets the format code for the object.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="ee921-121">
-            <para>格式代码是作为单元格格式对话框中的格式代码选项相同的字符串。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee921-121">
-              <para>The format code is the same string as the Format Codes option in the Format Cells dialog box.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="21de6-133">格式代码是在 设置单元格格式对话框中 格式代码选项相同的字符串。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21de6-133">The format code is the same string as the Format Codes option in the Format Cells dialog box.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -547,10 +580,10 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ee921-122">
+          <span data-ttu-id="21de6-134">
             <b>如此</b> 如果数字格式指向单元格 (以便在单元格更改时，数字格式更改标签中)。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee921-122">
+            <span data-stu-id="21de6-134">
               <b>True</b> if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).</span>
           </span>
         </summary>
@@ -585,9 +618,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ee921-123">返回或设置对象的格式代码，以用户的语言的字符串形式。</span>
+          <span data-ttu-id="21de6-135">返回或设置对象的格式代码，以用户的语言的字符串形式。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee921-123">Returns or sets the format code for the object as a string in the language of the user.</span>
+            <span data-stu-id="21de6-135">Returns or sets the format code for the object as a string in the language of the user.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -621,23 +654,20 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ee921-124">返回或设置标签的级别和第一级与坐标轴之间的距离之间的距离。</span>
+          <span data-ttu-id="21de6-136">返回或设置标签的级别和第一级与坐标轴之间的距离之间的距离。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee921-124">Returns or sets the distance between the levels of labels and the distance between the first level and the axis line.</span>
+            <span data-stu-id="21de6-136">Returns or sets the distance between the levels of labels and the distance between the first level and the axis line.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="ee921-125">
-            <para>默认距离是 100%，代表坐标轴标签与坐标轴之间的默认间距。值可以是介于 0 到 1000，相对于坐标轴标签的字体大小的一个整数百分比。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee921-125">
-              <para>The default distance is 100 percent, which represents the default spacing between the axis labels and the axis line. The value can be an integer percentage from 0 through 1000, relative to the axis label’s font size.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="21de6-p106">其默认距离为百分之百，代表坐标轴标签之间以及标签与坐标轴线之间的默认距离。其值可以为从 0 到 1000 之间的一个整数百分比，表示相对于坐标轴标签的字号。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21de6-p106">The default distance is 100 percent, which represents the default spacing between the axis labels and the axis line. The value can be an integer percentage from 0 through 1000, relative to the axis label’s font size.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -668,13 +698,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ee921-126">文本方向。</span>
+          <span data-ttu-id="21de6-139">文本方向。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee921-126">The text orientation.</span>
+            <span data-stu-id="21de6-139">The text orientation.</span>
           </span>
-          <span data-ttu-id="ee921-127">可以是介于 – 90 到 90 度或之一的整数值<see cref="T:Microsoft.Office.Interop.Excel.XlTickLabelOrientation" />常量。</span>
+          <span data-ttu-id="21de6-140">可以是介于 – 90 到 90 度或之一的整数值<see cref="T:Microsoft.Office.Interop.Excel.XlTickLabelOrientation" />常量。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee921-127">Can be an integer value from –90 to 90 degrees or one of the <see cref="T:Microsoft.Office.Interop.Excel.XlTickLabelOrientation" /> constants.</span>
+            <span data-stu-id="21de6-140">Can be an integer value from –90 to 90 degrees or one of the <see cref="T:Microsoft.Office.Interop.Excel.XlTickLabelOrientation" /> constants.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -705,9 +735,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ee921-128">返回指定对象的父对象。</span>
+          <span data-ttu-id="21de6-141">返回指定对象的父对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee921-128">Returns the parent object for the specified object.</span>
+            <span data-stu-id="21de6-141">Returns the parent object for the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -741,26 +771,27 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ee921-129">返回或设置指定对象的读取顺序。</span>
+          <span data-ttu-id="21de6-142">返回或设置指定对象的读取顺序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee921-129">Returns or sets the reading order for the specified object.</span>
+            <span data-stu-id="21de6-142">Returns or sets the reading order for the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="ee921-130">
-            <para>
-              <b>ReadingOrder</b>属性可以是下列常量之一： <b>xlRTL</b> （右至左）、 <b>xlLTR</b> （从左到右） 或<b>xlContext</b>。</para>
-            <para>这些常量的一些可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee921-130">
-              <para>The <b>ReadingOrder</b> property can be one of the following constants: <b>xlRTL</b> (right-to-left), <b>xlLTR</b> (left-to-right), or <b>xlContext</b>.</para>
-              <para>Some of these constants may not be available to you, depending on the language support (U.S. English, for example) that you've selected or installed.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="21de6-143">
+              <b>ReadingOrder</b>属性可以是下列常量之一： <b>xlRTL</b> （右至左）、 <b>xlLTR</b> （从左到右） 或<b>xlContext</b>。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21de6-143">The <b>ReadingOrder</b> property can be one of the following constants: <b>xlRTL</b> (right-to-left), <b>xlLTR</b> (left-to-right), or <b>xlContext</b>.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="21de6-144">[!注释] 由于选择或安装的语言支持（例如美国英语）不同，有些常量可能无法使用。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21de6-144">Some of these constants may not be available to you, depending on the language support (U.S. English, for example) that you've selected or installed.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -786,9 +817,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="ee921-131">选择对象。</span>
+          <span data-ttu-id="21de6-145">选择对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee921-131">Selects the object.</span>
+            <span data-stu-id="21de6-145">Selects the object.</span>
           </span>
         </summary>
         <returns>To be added.</returns>

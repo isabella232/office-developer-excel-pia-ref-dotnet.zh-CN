@@ -1,10 +1,10 @@
 <Type Name="WorkbookEvents_BeforeXmlImportEventHandler" FullName="Microsoft.Office.Interop.Excel.WorkbookEvents_BeforeXmlImportEventHandler">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="52cb33b3c4364f6d81cce3321fd2dcdfbca546f7" />
+    <Meta Name="ms.openlocfilehash" Value="481b569bafc01838e418c1b16eae3a7f5a8b8cb7" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578468" />
   </Metadata>
   <TypeSignature Language="C#" Value="public delegate void WorkbookEvents_BeforeXmlImportEventHandler(XmlMap Map, string Url, bool IsRefresh, out bool Cancel);" />
@@ -38,68 +38,65 @@
   </ReturnValue>
   <Docs>
     <param name="Map">
-      <span data-ttu-id="082b1-101">所需<see cref="T:Microsoft.Office.Interop.Excel.XmlMap" />对象。</span>
+      <span data-ttu-id="bbdc0-101">所需<see cref="T:Microsoft.Office.Interop.Excel.XmlMap" />对象。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="082b1-101">Required <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> object.</span>
+        <span data-stu-id="bbdc0-101">Required <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> object.</span>
       </span>
-      <span data-ttu-id="082b1-102">将用于导入数据的 XML 映射。</span>
+      <span data-ttu-id="bbdc0-102">将用于导入数据的 XML 映射。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="082b1-102">The XML map that will be used to import data.</span>
+        <span data-stu-id="bbdc0-102">The XML map that will be used to import data.</span>
       </span>
     </param>
     <param name="Url">
-      <span data-ttu-id="082b1-103">必需的 <b>字符串</b> 。</span>
+      <span data-ttu-id="bbdc0-103">必需的 <b>字符串</b> 。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="082b1-103">Required <b>String</b>.</span>
+        <span data-stu-id="bbdc0-103">Required <b>String</b>.</span>
       </span>
-      <span data-ttu-id="082b1-104">要导入的 XML 文件的位置。</span>
+      <span data-ttu-id="bbdc0-104">要导入的 XML 文件的位置。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="082b1-104">The location of the XML file to be imported.</span>
+        <span data-stu-id="bbdc0-104">The location of the XML file to be imported.</span>
       </span>
     </param>
     <param name="IsRefresh">
-      <span data-ttu-id="082b1-105">所需<b>Boolean</b>。</span>
+      <span data-ttu-id="bbdc0-105">所需<b>Boolean</b>。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="082b1-105">Required <b>Boolean</b>.</span>
+        <span data-stu-id="bbdc0-105">Required <b>Boolean</b>.</span>
       </span>
-      <span data-ttu-id="082b1-106">						如果通过刷新到 XML 数据的现有连接来触发事件，则为 <b>True</b>；如果通过从其他数据源进行导入来触发事件，则为 <b>False</b>。</span>
+      <span data-ttu-id="bbdc0-106">						如果通过刷新到 XML 数据的现有连接来触发事件，则为 <b>True</b>；如果通过从其他数据源进行导入来触发事件，则为 <b>False</b>。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="082b1-106">
+        <span data-stu-id="bbdc0-106">
           <b>True</b> if the event was triggered by refreshing an existing connection to XML data; <b>False</b> if the event was triggered by importing from a different data source.</span>
       </span>
     </param>
     <param name="Cancel">
-      <span data-ttu-id="082b1-107">所需<b>Boolean</b>。</span>
+      <span data-ttu-id="bbdc0-107">所需<b>Boolean</b>。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="082b1-107">Required <b>Boolean</b>.</span>
+        <span data-stu-id="bbdc0-107">Required <b>Boolean</b>.</span>
       </span>
-      <span data-ttu-id="082b1-108">设置为 <b>True</b> 将取消导入或刷新操作。</span>
+      <span data-ttu-id="bbdc0-108">设置为 <b>True</b> 将取消导入或刷新操作。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="082b1-108">Set to <b>True</b> to cancel the import or refresh operation.</span>
+        <span data-stu-id="bbdc0-108">Set to <b>True</b> to cancel the import or refresh operation.</span>
       </span>
     </param>
     <summary>
-      <span data-ttu-id="082b1-109">用于添加事件处理程序<b>委托</b>类型<see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.BeforeXmlImport" />事件。</span>
+      <span data-ttu-id="bbdc0-109">用于添加事件处理程序<b>委托</b>类型<see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.BeforeXmlImport" />事件。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="082b1-109">A <b>Delegate</b> type used to add an event handler for the <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.BeforeXmlImport" /> event.</span>
+        <span data-stu-id="bbdc0-109">A <b>Delegate</b> type used to add an event handler for the <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.BeforeXmlImport" /> event.</span>
       </span>
-      <span data-ttu-id="082b1-110">
+      <span data-ttu-id="bbdc0-110">
         <b>BeforeXmlImport</b>事件发生在刷新现有的 XML 数据连接或新的 xml 数据被导入 Microsoft Excel 工作簿之前。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="082b1-110">The <b>BeforeXmlImport</b> event occurs before an existing XML data connection is refreshed or before new XML data is imported into a Microsoft Excel workbook.</span>
+        <span data-stu-id="bbdc0-110">The <b>BeforeXmlImport</b> event occurs before an existing XML data connection is refreshed or before new XML data is imported into a Microsoft Excel workbook.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="082b1-111">
-        <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
-        <para></para>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="082b1-111">
-          <para>XML features, except for saving files in the XML Spreadsheet format, are available only in Microsoft Office Professional Edition 2003 and Microsoft Office Excel 2003.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="bbdc0-111">仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="bbdc0-111">XML features, except for saving files in the XML Spreadsheet format, are available only in Microsoft Office Professional Edition 2003 and Microsoft Office Excel 2003.</span>
         </span>
-      </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
 </Type>

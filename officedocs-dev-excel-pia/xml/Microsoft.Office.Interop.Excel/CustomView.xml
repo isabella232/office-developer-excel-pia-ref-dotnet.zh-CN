@@ -1,10 +1,10 @@
 <Type Name="CustomView" FullName="Microsoft.Office.Interop.Excel.CustomView">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0f781075a9c6b9184df1189cea9a87228a3c18b5" />
+    <Meta Name="ms.openlocfilehash" Value="182293052e1d394361c3727427d11e41a3a372bd" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576053" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CustomView" />
@@ -30,25 +30,26 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="ba3b8-101">代表自定义工作簿视图。</span>
+      <span data-ttu-id="c4857-101">代表自定义工作簿视图。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="ba3b8-101">Represents a custom workbook view.</span>
+        <span data-stu-id="c4857-101">Represents a custom workbook view.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="ba3b8-102">
-        <para>
-          <b>CustomView</b>对象是成员<see cref="T:Microsoft.Office.Interop.Excel.CustomViews" />集合。</para>
-        <para>使用<b>CustomViews</b>(<paramref name="index" />)，其中<paramref name="index" />是名称或自定义视图，可返回一个<b>CustomView</b>对象的索引号。</para>
-        <para></para>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="ba3b8-102">
-          <para>The <b>CustomView</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.CustomViews" /> collection.</para>
-          <para>Use <b>CustomViews</b>(<paramref name="index" />), where <paramref name="index" /> is the name or index number of the custom view, to return a <b>CustomView</b> object.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="c4857-102">
+          <b>CustomView</b>对象是成员<see cref="T:Microsoft.Office.Interop.Excel.CustomViews" />集合。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="c4857-102">The <b>CustomView</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.CustomViews" /> collection.</span>
         </span>
-      </span>
+      </para>
+      <para>
+        <span data-ttu-id="c4857-103">使用<b>CustomViews</b>(<paramref name="index" />)，其中<paramref name="index" />是名称或自定义视图，可返回一个<b>CustomView</b>对象的索引号。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="c4857-103">Use <b>CustomViews</b>(<paramref name="index" />), where <paramref name="index" /> is the name or index number of the custom view, to return a <b>CustomView</b> object.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -76,9 +77,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ba3b8-103">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
+          <span data-ttu-id="c4857-104">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ba3b8-103">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="c4857-104">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -109,26 +110,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ba3b8-104">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
+          <span data-ttu-id="c4857-105">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ba3b8-104">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="c4857-105">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="ba3b8-105">
-            <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
-            <para>
-              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ba3b8-105">
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="c4857-106">如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="c4857-106">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="c4857-107">
+              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="c4857-107">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="c4857-108">例如，Microsoft Excel 具有 XCEL 的创建者代码。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="c4857-108">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -154,9 +160,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="ba3b8-106">删除对象。</span>
+          <span data-ttu-id="c4857-109">删除对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ba3b8-106">Deletes the object.</span>
+            <span data-stu-id="c4857-109">Deletes the object.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -186,95 +192,140 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ba3b8-107">返回的对象的名称。</span>
+          <span data-ttu-id="c4857-110">返回的对象的名称。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ba3b8-107">Returns the name of the object.</span>
+            <span data-stu-id="c4857-110">Returns the name of the object.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="ba3b8-108">
-            <para>下表显示的<b>名称</b>属性和给定<a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproName1.htm">OLAP</a>的相关的属性的示例值</para>
-            <list type="table">
-              <item>
-                <term>
-                  <b>标题</b>
-                </term>
-                <description>巴黎</description>
-                <description>巴黎</description>
-              </item>
-              <item>
-                <description>[Europe] 的
-              <term><b>名称</b></term>。 [法国]。[Paris]（只读）</description>
-                <description>巴黎</description>
-              </item>
-              <item>
-                <term>
-                  <b>SourceName</b>
-                </term>
-                <description>[Europe]。 [法国]。[Paris]（只读）</description>
-                <description>（与 SQL 属性值，只读相同）</description>
-              </item>
-              <item>
-                <term>
-                  <b>值</b>
-                </term>
-                <description>[Europe]。 [法国]。[Paris]（只读）</description>
-                <description>巴黎</description>
-              </item>
-            </list>
-            <para>指定的索引时<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />集合，您可以使用下表中所示的语法。</para>
-            <list type="table">
-              <item>
-                <term>表达式。PivotItems ("[Europe]。 [法国]。[Paris]")</term>
-                <description>表达式。PivotItems("Paris")</description>
-              </item>
-            </list>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ba3b8-108">
-              <para>The following table shows example values of the <b>Name</b> property and related properties given an <a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproName1.htm">OLAP</a></para>
-              <list type="table">
-                <item>
-                  <term>
-                    <b>Caption</b>
-                  </term>
-                  <description>Paris</description>
-                  <description>Paris</description>
-                </item>
-                <item>
-                  <term>
-                    <b>Name</b>
-                  </term>
-                  <description>[Europe].[France].[Paris] (read-only)</description>
-                  <description>Paris</description>
-                </item>
-                <item>
-                  <term>
-                    <b>SourceName</b>
-                  </term>
-                  <description>[Europe].[France].[Paris] (read-only)</description>
-                  <description>(Same as SQL property value, read-only)</description>
-                </item>
-                <item>
-                  <term>
-                    <b>Value</b>
-                  </term>
-                  <description>[Europe].[France].[Paris] (read-only)</description>
-                  <description>Paris</description>
-                </item>
-              </list>
-              <para>When specifying an index into the <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, you can use the syntax shown in the following table.</para>
-              <list type="table">
-                <item>
-                  <term>expression.PivotItems("[Europe].[France].[Paris]")</term>
-                  <description>expression.PivotItems("Paris")</description>
-                </item>
-              </list>
-              <para></para>
+          <para>
+            <span data-ttu-id="c4857-111">下表显示<b>名称</b>属性和给定<a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproName1.htm">OLAP</a>的相关的属性的示例的值</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="c4857-111">The following table shows example values of the <b>Name</b> property and related properties given an <a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproName1.htm">OLAP</a></span>
             </span>
-          </span>
+          </para>
+          <list type="table">
+            <item>
+              <term>
+                <span data-ttu-id="c4857-112">
+                  <b>标题</b>
+                </span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="c4857-112">
+                    <b>Caption</b>
+                  </span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="c4857-113">Paris</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="c4857-113">Paris</span>
+                </span>
+              </description>
+              <description>
+                <span data-ttu-id="c4857-114">Paris</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="c4857-114">Paris</span>
+                </span>
+              </description>
+            </item>
+            <item>
+              <term>
+                <span data-ttu-id="c4857-115">
+                  <b>名称</b>
+                </span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="c4857-115">
+                    <b>Name</b>
+                  </span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="c4857-116">[Europe].[France].[Paris]（只读）</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="c4857-116">[Europe].[France].[Paris] (read-only)</span>
+                </span>
+              </description>
+              <description>
+                <span data-ttu-id="c4857-117">Paris</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="c4857-117">Paris</span>
+                </span>
+              </description>
+            </item>
+            <item>
+              <term>
+                <span data-ttu-id="c4857-118">
+                  <b>SourceName</b>
+                </span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="c4857-118">
+                    <b>SourceName</b>
+                  </span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="c4857-119">[Europe].[France].[Paris]（只读）</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="c4857-119">[Europe].[France].[Paris] (read-only)</span>
+                </span>
+              </description>
+              <description>
+                <span data-ttu-id="c4857-120">（与 SQL 属性值相同，只读）</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="c4857-120">(Same as SQL property value, read-only)</span>
+                </span>
+              </description>
+            </item>
+            <item>
+              <term>
+                <span data-ttu-id="c4857-121">
+                  <b>值</b>
+                </span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="c4857-121">
+                    <b>Value</b>
+                  </span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="c4857-122">[Europe].[France].[Paris]（只读）</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="c4857-122">[Europe].[France].[Paris] (read-only)</span>
+                </span>
+              </description>
+              <description>
+                <span data-ttu-id="c4857-123">Paris</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="c4857-123">Paris</span>
+                </span>
+              </description>
+            </item>
+          </list>
+          <para>
+            <span data-ttu-id="c4857-124">指定的索引时<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />集合，您可以使用下表中所示的语法。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="c4857-124">When specifying an index into the <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, you can use the syntax shown in the following table.</span>
+            </span>
+          </para>
+          <list type="table">
+            <item>
+              <term>
+                <span data-ttu-id="c4857-125">表达式。PivotItems ("[Europe]。 [法国]。[Paris]")</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="c4857-125">expression.PivotItems("[Europe].[France].[Paris]")</span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="c4857-126">表达式。PivotItems("Paris")</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="c4857-126">expression.PivotItems("Paris")</span>
+                </span>
+              </description>
+            </item>
+          </list>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -302,9 +353,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ba3b8-109">返回指定对象的父对象。</span>
+          <span data-ttu-id="c4857-127">返回指定对象的父对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ba3b8-109">Returns the parent object for the specified object.</span>
+            <span data-stu-id="c4857-127">Returns the parent object for the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -335,10 +386,10 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ba3b8-110">
+          <span data-ttu-id="c4857-128">
             <b>True</b>如果自定义视图中包含打印设置。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ba3b8-110">
+            <span data-stu-id="c4857-128">
               <b>True</b> if print settings are included in the custom view.</span>
           </span>
         </summary>
@@ -370,10 +421,10 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ba3b8-111">
+          <span data-ttu-id="c4857-129">
             <b>True</b>如果自定义视图包括隐藏的行和列 （包括筛选信息） 的设置。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ba3b8-111">
+            <span data-stu-id="c4857-129">
               <b>True</b> if the custom view includes settings for hidden rows and columns (including filter information).</span>
           </span>
         </summary>
@@ -403,9 +454,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="ba3b8-112">显示自定义视图。</span>
+          <span data-ttu-id="c4857-130">显示自定义视图。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ba3b8-112">Displays the custom view.</span>
+            <span data-stu-id="c4857-130">Displays the custom view.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>

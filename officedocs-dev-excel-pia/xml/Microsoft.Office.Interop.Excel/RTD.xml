@@ -1,10 +1,10 @@
 <Type Name="RTD" FullName="Microsoft.Office.Interop.Excel.RTD">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4a18e55ee824741581657ccbcd802e7afe612c7a" />
+    <Meta Name="ms.openlocfilehash" Value="48973547bbb54bd9763612cbc1299d2b56c7cf30" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572518" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface RTD" />
@@ -30,22 +30,19 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="536e5-101">代表一个实时数据对象。</span>
+      <span data-ttu-id="7eb6b-101">代表一个实时数据对象。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="536e5-101">Represents a real-time data object.</span>
+        <span data-stu-id="7eb6b-101">Represents a real-time data object.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="536e5-102">
-        <para>使用<see cref="P:Microsoft.Office.Interop.Excel._Application.RTD" />属性<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象返回一个<b>RTD</b>对象。</para>
-        <para></para>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="536e5-102">
-          <para>Use the <see cref="P:Microsoft.Office.Interop.Excel._Application.RTD" /> property of the <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object to return an <b>RTD</b> object.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="7eb6b-102">使用<see cref="P:Microsoft.Office.Interop.Excel._Application.RTD" />属性<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象返回一个<b>RTD</b>对象。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="7eb6b-102">Use the <see cref="P:Microsoft.Office.Interop.Excel._Application.RTD" /> property of the <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object to return an <b>RTD</b> object.</span>
         </span>
-      </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -71,22 +68,19 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="536e5-103">请求对实时数据服务器中的实时数据进行更新。</span>
+          <span data-ttu-id="7eb6b-103">请求对实时数据服务器中的实时数据进行更新。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="536e5-103">Requests an update of real-time data from the real-time data server.</span>
+            <span data-stu-id="7eb6b-103">Requests an update of real-time data from the real-time data server.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="536e5-104">
-            <para>避免使用<b>RefreshData</b>方法中的用户定义函数，因为在重新计算过程中调用此方法将失败。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="536e5-104">
-              <para>Avoid using the <b>RefreshData</b> method in user-defined functions because this method will fail if it is called during recalculation.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="7eb6b-104">在用户定义的函数中，要避免使用 <b>RefreshData</b> 方法，因为在重新计算过程中调用此方法将失败。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="7eb6b-104">Avoid using the <b>RefreshData</b> method in user-defined functions because this method will fail if it is called during recalculation.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -112,9 +106,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="536e5-105">与实时数据服务器 (RTD) 重新连接。</span>
+          <span data-ttu-id="7eb6b-105">与实时数据服务器 (RTD) 重新连接。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="536e5-105">Reconnects to a real-time data server (RTD).</span>
+            <span data-stu-id="7eb6b-105">Reconnects to a real-time data server (RTD).</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -147,23 +141,24 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="536e5-106">返回或设置一个<b>整数</b>，指示更新之间的时间间隔。</span>
+          <span data-ttu-id="7eb6b-106">返回或设置一个<b>整数</b>，指示更新之间的时间间隔。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="536e5-106">Returns or sets an <b>Integer</b> indicating the time interval between updates.</span>
+            <span data-stu-id="7eb6b-106">Returns or sets an <b>Integer</b> indicating the time interval between updates.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="536e5-107">
-            <para>的默认值为 2000年毫秒。如果更改此值，重新启动 Microsoft Excel 时，将保留的新值。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="536e5-107">
-              <para>The default value is 2000 milliseconds. If this value is changed, the new value will persist when Microsoft Excel is restarted.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="7eb6b-107">默认值为 2000年毫秒。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="7eb6b-107">The default value is 2000 milliseconds.</span>
             </span>
-          </span>
+            <span data-ttu-id="7eb6b-108">如果更改此值，重新启动 Microsoft Excel 时，将保留的新值。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="7eb6b-108">If this value is changed, the new value will persist when Microsoft Excel is restarted.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>

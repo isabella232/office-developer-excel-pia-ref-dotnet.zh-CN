@@ -1,10 +1,10 @@
 <Type Name="ChartEvents_SelectEventHandler" FullName="Microsoft.Office.Interop.Excel.ChartEvents_SelectEventHandler">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="57fc245a310e129812dc5d513e28987f35bf1af2" />
+    <Meta Name="ms.openlocfilehash" Value="d908c92015694a838a0f3791d629e86b7417d344" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580617" />
   </Metadata>
   <TypeSignature Language="C#" Value="public delegate void ChartEvents_SelectEventHandler(int ElementID, int Arg1, int Arg2);" />
@@ -37,440 +37,821 @@
   </ReturnValue>
   <Docs>
     <param name="ElementID">
-      <span data-ttu-id="47e1e-101">必需。</span>
+      <span data-ttu-id="4c19f-101">必需。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="47e1e-101">Required.</span>
+        <span data-stu-id="4c19f-101">Required.</span>
       </span>
-      <span data-ttu-id="47e1e-102">双击的对象。</span>
+      <span data-ttu-id="4c19f-102">双击的对象。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="47e1e-102">The double-clicked object.</span>
+        <span data-stu-id="4c19f-102">The double-clicked object.</span>
       </span>
     </param>
     <param name="Arg1">
-      <span data-ttu-id="47e1e-103">取决于<paramref name="ElementID" />。</span>
+      <span data-ttu-id="4c19f-103">取决于<paramref name="ElementID" />。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="47e1e-103">Depends on <paramref name="ElementID" />.</span>
+        <span data-stu-id="4c19f-103">Depends on <paramref name="ElementID" />.</span>
       </span>
     </param>
     <param name="Arg2">
-      <span data-ttu-id="47e1e-104">取决于<paramref name="ElementID" />。</span>
+      <span data-ttu-id="4c19f-104">取决于<paramref name="ElementID" />。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="47e1e-104">Depends on <paramref name="ElementID" />.</span>
+        <span data-stu-id="4c19f-104">Depends on <paramref name="ElementID" />.</span>
       </span>
     </param>
     <summary>
-      <span data-ttu-id="47e1e-105">用于添加事件处理程序<b>委托</b>类型<see cref="E:Microsoft.Office.Interop.Excel.ChartEvents_Event.Select" />事件。</span>
+      <span data-ttu-id="4c19f-105">用于添加事件处理程序<b>委托</b>类型<see cref="E:Microsoft.Office.Interop.Excel.ChartEvents_Event.Select" />事件。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="47e1e-105">A <b>Delegate</b> type used to add an event handler for the <see cref="E:Microsoft.Office.Interop.Excel.ChartEvents_Event.Select" /> event.</span>
+        <span data-stu-id="4c19f-105">A <b>Delegate</b> type used to add an event handler for the <see cref="E:Microsoft.Office.Interop.Excel.ChartEvents_Event.Select" /> event.</span>
       </span>
-      <span data-ttu-id="47e1e-106">选定图表元素时发生的<b>选择</b>事件。</span>
+      <span data-ttu-id="4c19f-106">选定图表元素时发生的<b>选择</b>事件。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="47e1e-106">The <b>Select</b> event occurs when a chart element is selected.</span>
+        <span data-stu-id="4c19f-106">The <b>Select</b> event occurs when a chart element is selected.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="47e1e-107">
-        <para>下表显示与每个关联的参数<paramref name="ElementID" />。</para>
-        <list type="table">
-          <item>
-            <term>xlAxis</term>
-            <description>AxisIndex</description>
-            <description>AxisType</description>
-          </item>
-          <item>
-            <term>xlAxisTitle</term>
-            <description>AxisIndex</description>
-            <description>AxisType</description>
-          </item>
-          <item>
-            <term>xlDisplayUnitLabel</term>
-            <description>AxisIndex</description>
-            <description>AxisType</description>
-          </item>
-          <item>
-            <term>xlMajorGridlines</term>
-            <description>AxisIndex</description>
-            <description>AxisType</description>
-          </item>
-          <item>
-            <term>xlMinorGridlines</term>
-            <description>AxisIndex</description>
-            <description>AxisType</description>
-          </item>
-          <item>
-            <term>xlPivotChartDropZone</term>
-            <description>DropZoneType</description>
-            <description>无</description>
-          </item>
-          <item>
-            <term>xlPivotChartFieldButton</term>
-            <description>DropZoneType</description>
-            <description>PivotFieldIndex</description>
-          </item>
-          <item>
-            <term>xlDownBars</term>
-            <description>GroupIndex</description>
-            <description>无</description>
-          </item>
-          <item>
-            <term>xlDropLines</term>
-            <description>GroupIndex</description>
-            <description>无</description>
-          </item>
-          <item>
-            <term>xlHiLoLines</term>
-            <description>GroupIndex</description>
-            <description>无</description>
-          </item>
-          <item>
-            <term>xlRadarAxisLabels</term>
-            <description>GroupIndex</description>
-            <description>无</description>
-          </item>
-          <item>
-            <term>xlSeriesLines</term>
-            <description>GroupIndex</description>
-            <description>无</description>
-          </item>
-          <item>
-            <term>xlUpBars</term>
-            <description>GroupIndex</description>
-            <description>无</description>
-          </item>
-          <item>
-            <term>xlChartArea</term>
-            <description>None</description>
-            <description>无</description>
-          </item>
-          <item>
-            <term>xlChartTitle</term>
-            <description>None</description>
-            <description>无</description>
-          </item>
-          <item>
-            <term>xlCorners</term>
-            <description>None</description>
-            <description>无</description>
-          </item>
-          <item>
-            <term>xlDataTable</term>
-            <description>None</description>
-            <description>无</description>
-          </item>
-          <item>
-            <term>xlFloor</term>
-            <description>None</description>
-            <description>无</description>
-          </item>
-          <item>
-            <term>xlLegend</term>
-            <description>None</description>
-            <description>无</description>
-          </item>
-          <item>
-            <term>xlNothing</term>
-            <description>None</description>
-            <description>无</description>
-          </item>
-          <item>
-            <term>xlPlotArea</term>
-            <description>None</description>
-            <description>无</description>
-          </item>
-          <item>
-            <term>xlWalls</term>
-            <description>None</description>
-            <description>无</description>
-          </item>
-          <item>
-            <term>xlDataLabel</term>
-            <description>SeriesIndex</description>
-            <description>PointIndex</description>
-          </item>
-          <item>
-            <term>xlErrorBars</term>
-            <description>SeriesIndex</description>
-            <description>无</description>
-          </item>
-          <item>
-            <term>xlLegendEntry</term>
-            <description>SeriesIndex</description>
-            <description>无</description>
-          </item>
-          <item>
-            <term>xlLegendKey</term>
-            <description>SeriesIndex</description>
-            <description>无</description>
-          </item>
-          <item>
-            <term>xlSeries</term>
-            <description>SeriesIndex</description>
-            <description>PointIndex</description>
-          </item>
-          <item>
-            <term>xlTrendline</term>
-            <description>SeriesIndex</description>
-            <description>TrendLineIndex</description>
-          </item>
-          <item>
-            <term>xlXErrorBars</term>
-            <description>SeriesIndex</description>
-            <description>无</description>
-          </item>
-          <item>
-            <term>xlYErrorBars</term>
-            <description>SeriesIndex</description>
-            <description>无</description>
-          </item>
-          <item>
-            <term>xlShape</term>
-            <description>ShapeIndex</description>
-            <description>无</description>
-          </item>
-        </list>
-        <para>下表介绍对参数含义。</para>
-        <list type="table">
-          <item>
-            <term>AxisIndex</term>
-            <description>指定坐标轴是否主要或次要。可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" />常量： <b>xlPrimary</b>或<b>xlSecondary</b>。</description>
-          </item>
-          <item>
-            <term>AxisType</term>
-            <description>指定坐标轴类型。可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" />常量： <b>xlCategory</b>、 <b>xlSeriesAxis</b>或<b>xlValue</b>。</description>
-          </item>
-          <item>
-            <term>DropZoneType</term>
-            <description>指定拖放区域类型： 列、 数据、 页或行字段。可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlPivotFieldOrientation" />常量： <b>xlColumnField</b>、 <b>xlDataField</b>、 <b>xlPageField</b>或<b>xlRowField</b>。列和行字段常量指定系列和类别字段中，分别。</description>
-          </item>
-          <item>
-            <term>GroupIndex</term>
-            <description>指定中的偏移量<see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" />特定图表组集合。</description>
-          </item>
-          <item>
-            <term>PivotFieldIndex</term>
-            <description>指定中的偏移量<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />特定的列 （系列）、 数据、 页或行 （分类） 字段的集合。</description>
-          </item>
-          <item>
-            <term>PointIndex</term>
-            <description>指定中的偏移量<see cref="T:Microsoft.Office.Interop.Excel.Points" />一系列中特定点的集合。值为-1 表示选定的所有数据点。</description>
-          </item>
-          <item>
-            <term>SeriesIndex</term>
-            <description>指定中的偏移量<see cref="T:Microsoft.Office.Interop.Excel.Series" />特定系列的集合。</description>
-          </item>
-          <item>
-            <term>ShapeIndex</term>
-            <description>指定中的偏移量<see cref="T:Microsoft.Office.Interop.Excel.Shapes" />特定形状的集合。</description>
-          </item>
-          <item>
-            <term>TrendlineIndex</term>
-            <description>指定中的偏移量<see cref="T:Microsoft.Office.Interop.Excel.Trendlines" />一系列中特定趋势线的集合。</description>
-          </item>
-        </list>
-        <para></para>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="47e1e-107">
-          <para>The following table shows the arguments associated with each <paramref name="ElementID" />.</para>
-          <list type="table">
-            <item>
-              <term>xlAxis</term>
-              <description>AxisIndex</description>
-              <description>AxisType</description>
-            </item>
-            <item>
-              <term>xlAxisTitle</term>
-              <description>AxisIndex</description>
-              <description>AxisType</description>
-            </item>
-            <item>
-              <term>xlDisplayUnitLabel</term>
-              <description>AxisIndex</description>
-              <description>AxisType</description>
-            </item>
-            <item>
-              <term>xlMajorGridlines</term>
-              <description>AxisIndex</description>
-              <description>AxisType</description>
-            </item>
-            <item>
-              <term>xlMinorGridlines</term>
-              <description>AxisIndex</description>
-              <description>AxisType</description>
-            </item>
-            <item>
-              <term>xlPivotChartDropZone</term>
-              <description>DropZoneType</description>
-              <description>None</description>
-            </item>
-            <item>
-              <term>xlPivotChartFieldButton</term>
-              <description>DropZoneType</description>
-              <description>PivotFieldIndex</description>
-            </item>
-            <item>
-              <term>xlDownBars</term>
-              <description>GroupIndex</description>
-              <description>None</description>
-            </item>
-            <item>
-              <term>xlDropLines</term>
-              <description>GroupIndex</description>
-              <description>None</description>
-            </item>
-            <item>
-              <term>xlHiLoLines</term>
-              <description>GroupIndex</description>
-              <description>None</description>
-            </item>
-            <item>
-              <term>xlRadarAxisLabels</term>
-              <description>GroupIndex</description>
-              <description>None</description>
-            </item>
-            <item>
-              <term>xlSeriesLines</term>
-              <description>GroupIndex</description>
-              <description>None</description>
-            </item>
-            <item>
-              <term>xlUpBars</term>
-              <description>GroupIndex</description>
-              <description>None</description>
-            </item>
-            <item>
-              <term>xlChartArea</term>
-              <description>None</description>
-              <description>None</description>
-            </item>
-            <item>
-              <term>xlChartTitle</term>
-              <description>None</description>
-              <description>None</description>
-            </item>
-            <item>
-              <term>xlCorners</term>
-              <description>None</description>
-              <description>None</description>
-            </item>
-            <item>
-              <term>xlDataTable</term>
-              <description>None</description>
-              <description>None</description>
-            </item>
-            <item>
-              <term>xlFloor</term>
-              <description>None</description>
-              <description>None</description>
-            </item>
-            <item>
-              <term>xlLegend</term>
-              <description>None</description>
-              <description>None</description>
-            </item>
-            <item>
-              <term>xlNothing</term>
-              <description>None</description>
-              <description>None</description>
-            </item>
-            <item>
-              <term>xlPlotArea</term>
-              <description>None</description>
-              <description>None</description>
-            </item>
-            <item>
-              <term>xlWalls</term>
-              <description>None</description>
-              <description>None</description>
-            </item>
-            <item>
-              <term>xlDataLabel</term>
-              <description>SeriesIndex</description>
-              <description>PointIndex</description>
-            </item>
-            <item>
-              <term>xlErrorBars</term>
-              <description>SeriesIndex</description>
-              <description>None</description>
-            </item>
-            <item>
-              <term>xlLegendEntry</term>
-              <description>SeriesIndex</description>
-              <description>None</description>
-            </item>
-            <item>
-              <term>xlLegendKey</term>
-              <description>SeriesIndex</description>
-              <description>None</description>
-            </item>
-            <item>
-              <term>xlSeries</term>
-              <description>SeriesIndex</description>
-              <description>PointIndex</description>
-            </item>
-            <item>
-              <term>xlTrendline</term>
-              <description>SeriesIndex</description>
-              <description>TrendLineIndex</description>
-            </item>
-            <item>
-              <term>xlXErrorBars</term>
-              <description>SeriesIndex</description>
-              <description>None</description>
-            </item>
-            <item>
-              <term>xlYErrorBars</term>
-              <description>SeriesIndex</description>
-              <description>None</description>
-            </item>
-            <item>
-              <term>xlShape</term>
-              <description>ShapeIndex</description>
-              <description>None</description>
-            </item>
-          </list>
-          <para>The following table describes the meaning of the arguments.</para>
-          <list type="table">
-            <item>
-              <term>AxisIndex</term>
-              <description>Specifies whether the axis is primary or secondary. Can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> constants: <b>xlPrimary</b> or <b>xlSecondary</b>.</description>
-            </item>
-            <item>
-              <term>AxisType</term>
-              <description>Specifies the axis type. Can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" /> constants: <b>xlCategory</b>, <b>xlSeriesAxis</b>, or <b>xlValue</b>.</description>
-            </item>
-            <item>
-              <term>DropZoneType</term>
-              <description>Specifies the drop zone type: column, data, page, or row field. Can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFieldOrientation" /> constants: <b>xlColumnField</b>, <b>xlDataField</b>, <b>xlPageField</b>, or <b>xlRowField</b>. The column and row field constants specify the series and category fields, respectively.</description>
-            </item>
-            <item>
-              <term>GroupIndex</term>
-              <description>Specifies the offset within the <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> collection for a specific chart group.</description>
-            </item>
-            <item>
-              <term>PivotFieldIndex</term>
-              <description>Specifies the offset within the <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> collection for a specific column (series), data, page, or row (category) field.</description>
-            </item>
-            <item>
-              <term>PointIndex</term>
-              <description>Specifies the offset within the <see cref="T:Microsoft.Office.Interop.Excel.Points" /> collection for a specific point within a series. The value –1 indicates that all data points are selected.</description>
-            </item>
-            <item>
-              <term>SeriesIndex</term>
-              <description>Specifies the offset within the <see cref="T:Microsoft.Office.Interop.Excel.Series" /> collection for a specific series.</description>
-            </item>
-            <item>
-              <term>ShapeIndex</term>
-              <description>Specifies the offset within the <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection for a specific shape.</description>
-            </item>
-            <item>
-              <term>TrendlineIndex</term>
-              <description>Specifies the offset within the <see cref="T:Microsoft.Office.Interop.Excel.Trendlines" /> collection for a specific trendline within a series.</description>
-            </item>
-          </list>
-          <para></para>
+      <para>
+        <span data-ttu-id="4c19f-107">下表显示与每个关联的参数<paramref name="ElementID" />。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="4c19f-107">The following table shows the arguments associated with each <paramref name="ElementID" />.</span>
         </span>
-      </span>
+      </para>
+      <list type="table">
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-108">xlAxis</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-108">xlAxis</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-109">AxisIndex</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-109">AxisIndex</span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="4c19f-110">AxisType</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-110">AxisType</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-111">xlAxisTitle</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-111">xlAxisTitle</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-112">AxisIndex</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-112">AxisIndex</span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="4c19f-113">AxisType</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-113">AxisType</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-114">xlDisplayUnitLabel</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-114">xlDisplayUnitLabel</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-115">AxisIndex</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-115">AxisIndex</span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="4c19f-116">AxisType</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-116">AxisType</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-117">xlMajorGridlines</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-117">xlMajorGridlines</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-118">AxisIndex</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-118">AxisIndex</span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="4c19f-119">AxisType</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-119">AxisType</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-120">xlMinorGridlines</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-120">xlMinorGridlines</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-121">AxisIndex</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-121">AxisIndex</span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="4c19f-122">AxisType</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-122">AxisType</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-123">xlPivotChartDropZone</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-123">xlPivotChartDropZone</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-124">DropZoneType</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-124">DropZoneType</span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="4c19f-125">无</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-125">None</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-126">xlPivotChartFieldButton</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-126">xlPivotChartFieldButton</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-127">DropZoneType</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-127">DropZoneType</span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="4c19f-128">PivotFieldIndex</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-128">PivotFieldIndex</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-129">xlDownBars</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-129">xlDownBars</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-130">GroupIndex</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-130">GroupIndex</span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="4c19f-131">无</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-131">None</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-132">xlDropLines</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-132">xlDropLines</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-133">GroupIndex</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-133">GroupIndex</span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="4c19f-134">无</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-134">None</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-135">xlHiLoLines</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-135">xlHiLoLines</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-136">GroupIndex</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-136">GroupIndex</span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="4c19f-137">无</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-137">None</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-138">xlRadarAxisLabels</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-138">xlRadarAxisLabels</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-139">GroupIndex</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-139">GroupIndex</span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="4c19f-140">无</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-140">None</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-141">xlSeriesLines</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-141">xlSeriesLines</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-142">GroupIndex</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-142">GroupIndex</span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="4c19f-143">无</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-143">None</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-144">xlUpBars</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-144">xlUpBars</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-145">GroupIndex</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-145">GroupIndex</span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="4c19f-146">无</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-146">None</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-147">xlChartArea</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-147">xlChartArea</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-148">无</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-148">None</span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="4c19f-149">无</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-149">None</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-150">xlChartTitle</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-150">xlChartTitle</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-151">无</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-151">None</span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="4c19f-152">无</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-152">None</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-153">xlCorners</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-153">xlCorners</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-154">无</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-154">None</span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="4c19f-155">无</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-155">None</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-156">xlDataTable</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-156">xlDataTable</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-157">无</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-157">None</span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="4c19f-158">无</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-158">None</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-159">xlFloor</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-159">xlFloor</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-160">无</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-160">None</span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="4c19f-161">无</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-161">None</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-162">xlLegend</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-162">xlLegend</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-163">无</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-163">None</span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="4c19f-164">无</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-164">None</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-165">xlNothing</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-165">xlNothing</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-166">无</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-166">None</span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="4c19f-167">无</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-167">None</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-168">xlPlotArea</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-168">xlPlotArea</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-169">无</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-169">None</span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="4c19f-170">无</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-170">None</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-171">xlWalls</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-171">xlWalls</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-172">无</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-172">None</span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="4c19f-173">无</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-173">None</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-174">xlDataLabel</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-174">xlDataLabel</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-175">SeriesIndex</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-175">SeriesIndex</span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="4c19f-176">PointIndex</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-176">PointIndex</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-177">xlErrorBars</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-177">xlErrorBars</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-178">SeriesIndex</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-178">SeriesIndex</span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="4c19f-179">无</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-179">None</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-180">xlLegendEntry</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-180">xlLegendEntry</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-181">SeriesIndex</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-181">SeriesIndex</span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="4c19f-182">无</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-182">None</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-183">xlLegendKey</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-183">xlLegendKey</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-184">SeriesIndex</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-184">SeriesIndex</span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="4c19f-185">无</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-185">None</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-186">xlSeries</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-186">xlSeries</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-187">SeriesIndex</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-187">SeriesIndex</span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="4c19f-188">PointIndex</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-188">PointIndex</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-189">xlTrendline</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-189">xlTrendline</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-190">SeriesIndex</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-190">SeriesIndex</span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="4c19f-191">TrendLineIndex</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-191">TrendLineIndex</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-192">xlXErrorBars</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-192">xlXErrorBars</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-193">SeriesIndex</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-193">SeriesIndex</span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="4c19f-194">无</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-194">None</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-195">xlYErrorBars</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-195">xlYErrorBars</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-196">SeriesIndex</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-196">SeriesIndex</span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="4c19f-197">无</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-197">None</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-198">xlShape</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-198">xlShape</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-199">ShapeIndex</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-199">ShapeIndex</span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="4c19f-200">无</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-200">None</span>
+            </span>
+          </description>
+        </item>
+      </list>
+      <para>
+        <span data-ttu-id="4c19f-201">下表对参数含义进行说明。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="4c19f-201">The following table describes the meaning of the arguments.</span>
+        </span>
+      </para>
+      <list type="table">
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-202">AxisIndex</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-202">AxisIndex</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-203">指定轴主要或辅助。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-203">Specifies whether the axis is primary or secondary.</span>
+            </span>
+            <span data-ttu-id="4c19f-204">可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" />常量： <b>xlPrimary</b>或<b>xlSecondary</b>。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-204">Can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> constants: <b>xlPrimary</b> or <b>xlSecondary</b>.</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-205">AxisType</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-205">AxisType</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-206">指定坐标轴类型。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-206">Specifies the axis type.</span>
+            </span>
+            <span data-ttu-id="4c19f-207">可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" />常量： <b>xlCategory</b>、 <b>xlSeriesAxis</b>或<b>xlValue</b>。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-207">Can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" /> constants: <b>xlCategory</b>, <b>xlSeriesAxis</b>, or <b>xlValue</b>.</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-208">DropZoneType</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-208">DropZoneType</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-209">指定拖放区域类型: 列、 数据、 页或行字段。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-209">Specifies the drop zone type: column, data, page, or row field.</span>
+            </span>
+            <span data-ttu-id="4c19f-210">可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlPivotFieldOrientation" />常量： <b>xlColumnField</b>、 <b>xlDataField</b>、 <b>xlPageField</b>或<b>xlRowField</b>。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-210">Can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFieldOrientation" /> constants: <b>xlColumnField</b>, <b>xlDataField</b>, <b>xlPageField</b>, or <b>xlRowField</b>.</span>
+            </span>
+            <span data-ttu-id="4c19f-211">列和行字段常量分别指定系列和分类字段。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-211">The column and row field constants specify the series and category fields, respectively.</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-212">GroupIndex</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-212">GroupIndex</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-213">指定中的偏移量<see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" />特定图表组集合。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-213">Specifies the offset within the <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> collection for a specific chart group.</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-214">PivotFieldIndex</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-214">PivotFieldIndex</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-215">指定中的偏移量<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />的特定列 （系列）、 数据、 页或行 （分类） 字段的集合。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-215">Specifies the offset within the <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> collection for a specific column (series), data, page, or row (category) field.</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-216">PointIndex</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-216">PointIndex</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-217">指定中的偏移量<see cref="T:Microsoft.Office.Interop.Excel.Points" />的一系列中的特定点的集合。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-217">Specifies the offset within the <see cref="T:Microsoft.Office.Interop.Excel.Points" /> collection for a specific point within a series.</span>
+            </span>
+            <span data-ttu-id="4c19f-218">值为-1 表示选定的所有数据点。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-218">The value –1 indicates that all data points are selected.</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-219">SeriesIndex</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-219">SeriesIndex</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-220">指定中的偏移量<see cref="T:Microsoft.Office.Interop.Excel.Series" />特定系列的集合。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-220">Specifies the offset within the <see cref="T:Microsoft.Office.Interop.Excel.Series" /> collection for a specific series.</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-221">ShapeIndex</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-221">ShapeIndex</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-222">指定中的偏移量<see cref="T:Microsoft.Office.Interop.Excel.Shapes" />特定形状的集合。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-222">Specifies the offset within the <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection for a specific shape.</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="4c19f-223">TrendlineIndex</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-223">TrendlineIndex</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="4c19f-224">指定中的偏移量<see cref="T:Microsoft.Office.Interop.Excel.Trendlines" />一系列中特定趋势线的集合。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="4c19f-224">Specifies the offset within the <see cref="T:Microsoft.Office.Interop.Excel.Trendlines" /> collection for a specific trendline within a series.</span>
+            </span>
+          </description>
+        </item>
+      </list>
+      <para></para>
     </remarks>
   </Docs>
 </Type>
