@@ -1,10 +1,10 @@
 <Type Name="Scenarios" FullName="Microsoft.Office.Interop.Excel.Scenarios">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="643f9e1ff16bc3d2d264dd9c590ffbf0e6a728ad" />
+    <Meta Name="ms.openlocfilehash" Value="ae2d83b0cebf35ca68c44e96b1d08c3bd0e82529" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584677" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Scenarios : System.Collections.IEnumerable" />
@@ -34,30 +34,35 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="87964-101">所有的集合<see cref="T:Microsoft.Office.Interop.Excel.Scenario" />指定工作表中的对象。</span>
+      <span data-ttu-id="f4394-101">所有的集合<see cref="T:Microsoft.Office.Interop.Excel.Scenario" />指定工作表中的对象。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="87964-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Excel.Scenario" /> objects on the specified worksheet.</span>
+        <span data-stu-id="f4394-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Excel.Scenario" /> objects on the specified worksheet.</span>
       </span>
-      <span data-ttu-id="87964-102">方案是输入值的一组 (称为<paramref name="changing cells" />) 的已命名和保存。</span>
+      <span data-ttu-id="f4394-102">方案是输入值的一组 (称为<paramref name="changing cells" />) 的已命名和保存。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="87964-102">A scenario is a group of input values (called <paramref name="changing cells" />) that’s named and saved.</span>
+        <span data-stu-id="f4394-102">A scenario is a group of input values (called <paramref name="changing cells" />) that’s named and saved.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="87964-103">
-        <para>使用<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Scenarios(System.Object)" />方法可返回<b>方案</b>集合。</para>
-        <para>使用<see cref="M:Microsoft.Office.Interop.Excel.Scenarios.Add(System.String,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法，以创建新的方案，并将其添加到集合。</para>
-        <para>使用<b>方案</b>(<paramref name="index" />)，其中<paramref name="index" />是方案名称或索引号，可返回单个<b>方案</b>对象。</para>
-        <para></para>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="87964-103">
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Scenarios(System.Object)" /> method to return the <b>Scenarios</b> collection.</para>
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel.Scenarios.Add(System.String,System.Object,System.Object,System.Object,System.Object,System.Object)" /> method to create a new scenario and add it to the collection.</para>
-          <para>Use <b>Scenarios</b>(<paramref name="index" />), where <paramref name="index" /> is the scenario name or index number, to return a single <b>Scenario</b> object.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="f4394-103">使用<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Scenarios(System.Object)" />方法可返回<b>方案</b>集合。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="f4394-103">Use the <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Scenarios(System.Object)" /> method to return the <b>Scenarios</b> collection.</span>
         </span>
-      </span>
+      </para>
+      <para>
+        <span data-ttu-id="f4394-104">使用<see cref="M:Microsoft.Office.Interop.Excel.Scenarios.Add(System.String,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法，以创建新的方案，并将其添加到集合。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="f4394-104">Use the <see cref="M:Microsoft.Office.Interop.Excel.Scenarios.Add(System.String,System.Object,System.Object,System.Object,System.Object,System.Object)" /> method to create a new scenario and add it to the collection.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="f4394-105">使用<b>方案</b>(<paramref name="index" />)，其中<paramref name="index" />是方案名称或索引号，可返回单个<b>方案</b>对象。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="f4394-105">Use <b>Scenarios</b>(<paramref name="index" />), where <paramref name="index" /> is the scenario name or index number, to return a single <b>Scenario</b> object.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -89,103 +94,100 @@
       </Parameters>
       <Docs>
         <param name="Name">
-          <span data-ttu-id="87964-104">必需的 <b>字符串</b> 。</span>
+          <span data-ttu-id="f4394-106">必需的 <b>字符串</b> 。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-104">Required <b>String</b>.</span>
+            <span data-stu-id="f4394-106">Required <b>String</b>.</span>
           </span>
-          <span data-ttu-id="87964-105">方案名。</span>
+          <span data-ttu-id="f4394-107">方案名。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-105">The scenario name.</span>
+            <span data-stu-id="f4394-107">The scenario name.</span>
           </span>
         </param>
         <param name="ChangingCells">
-          <span data-ttu-id="87964-106">所需的<b>对象</b>。</span>
+          <span data-ttu-id="f4394-108">所需的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-106">Required <b>Object</b>.</span>
+            <span data-stu-id="f4394-108">Required <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="87964-107">A<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的引用更改单元格方案。</span>
+          <span data-ttu-id="f4394-109">A<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的引用更改单元格方案。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-107">A <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that refers to the changing cells for the scenario.</span>
+            <span data-stu-id="f4394-109">A <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that refers to the changing cells for the scenario.</span>
           </span>
         </param>
         <param name="Values">
-          <span data-ttu-id="87964-108">可选的<b>对象</b>。</span>
+          <span data-ttu-id="f4394-110">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-108">Optional <b>Object</b>.</span>
+            <span data-stu-id="f4394-110">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="87964-109">一个数组，包含该方案中的单元格的值<paramref name="ChangingCells" />。</span>
+          <span data-ttu-id="f4394-111">一个数组，包含该方案中的单元格的值<paramref name="ChangingCells" />。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-109">An array that contains the scenario values for the cells in <paramref name="ChangingCells" />.</span>
+            <span data-stu-id="f4394-111">An array that contains the scenario values for the cells in <paramref name="ChangingCells" />.</span>
           </span>
-          <span data-ttu-id="87964-110">如果省略此参数，则将假定方案值为中的单元格的当前值<paramref name="ChangingCells" />。</span>
+          <span data-ttu-id="f4394-112">如果省略此参数，则将假定方案值为中的单元格的当前值<paramref name="ChangingCells" />。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-110">If this argument is omitted, the scenario values are assumed to be the current values in the cells in <paramref name="ChangingCells" />.</span>
+            <span data-stu-id="f4394-112">If this argument is omitted, the scenario values are assumed to be the current values in the cells in <paramref name="ChangingCells" />.</span>
           </span>
         </param>
         <param name="Comment">
-          <span data-ttu-id="87964-111">可选的<b>对象</b>。</span>
+          <span data-ttu-id="f4394-113">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-111">Optional <b>Object</b>.</span>
+            <span data-stu-id="f4394-113">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="87964-112">一个字符串，指定的方案的批注文字。</span>
+          <span data-ttu-id="f4394-114">一个字符串，指定的方案的批注文字。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-112">A string that specifies comment text for the scenario.</span>
+            <span data-stu-id="f4394-114">A string that specifies comment text for the scenario.</span>
           </span>
-          <span data-ttu-id="87964-113">当添加新的方案时，作者的名称和日期自动添加注释文本的开头。</span>
+          <span data-ttu-id="f4394-115">当添加新的方案时，作者的名称和日期自动添加注释文本的开头。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-113">When a new scenario is added, the author's name and date are automatically added at the beginning of the comment text.</span>
+            <span data-stu-id="f4394-115">When a new scenario is added, the author's name and date are automatically added at the beginning of the comment text.</span>
           </span>
         </param>
         <param name="Locked">
-          <span data-ttu-id="87964-114">可选的<b>对象</b>。</span>
+          <span data-ttu-id="f4394-116">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-114">Optional <b>Object</b>.</span>
+            <span data-stu-id="f4394-116">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="87964-115">
+          <span data-ttu-id="f4394-117">
             <b>True</b>锁定以防止更改的方案。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-115">
+            <span data-stu-id="f4394-117">
               <b>True</b> to lock the scenario to prevent changes.</span>
           </span>
-          <span data-ttu-id="87964-116">默认值为 <b>True</b> 。</span>
+          <span data-ttu-id="f4394-118">默认值为 <b>True</b> 。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-116">The default value is <b>True</b>.</span>
+            <span data-stu-id="f4394-118">The default value is <b>True</b>.</span>
           </span>
         </param>
         <param name="Hidden">
-          <span data-ttu-id="87964-117">可选的<b>对象</b>。</span>
+          <span data-ttu-id="f4394-119">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-117">Optional <b>Object</b>.</span>
+            <span data-stu-id="f4394-119">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="87964-118">
+          <span data-ttu-id="f4394-120">
             <b>True</b>隐藏方案。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-118">
+            <span data-stu-id="f4394-120">
               <b>True</b> to hide the scenario.</span>
           </span>
-          <span data-ttu-id="87964-119">默认值为 <b>False</b> 。</span>
+          <span data-ttu-id="f4394-121">默认值为 <b>False</b> 。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-119">The default value is <b>False</b>.</span>
+            <span data-stu-id="f4394-121">The default value is <b>False</b>.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="87964-120">新建方案并将其添加到当前工作表可用的方案列表中。</span>
+          <span data-ttu-id="f4394-122">新建方案并将其添加到当前工作表可用的方案列表中。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-120">Creates a new scenario and adds it to the list of scenarios that are available for the current worksheet.</span>
+            <span data-stu-id="f4394-122">Creates a new scenario and adds it to the list of scenarios that are available for the current worksheet.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
         <remarks>
-          <span data-ttu-id="87964-121">
-            <para>A 方案名称必须是唯一的;如果您尝试使用已在使用的名称创建方案，Microsoft Excel 将生成一个错误。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="87964-121">
-              <para>A scenario name must be unique; Microsoft Excel generates an error if you try to create a scenario with a name that's already in use.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="f4394-123">方案名称必须是唯一的；如果试图用已经在使用的名称创建方案，Microsoft Excel 会产生错误。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="f4394-123">A scenario name must be unique; Microsoft Excel generates an error if you try to create a scenario with a name that's already in use.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -213,9 +215,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="87964-122">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
+          <span data-ttu-id="f4394-124">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-122">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="f4394-124">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -246,9 +248,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="87964-123">返回集合中对象的数目。</span>
+          <span data-ttu-id="f4394-125">返回集合中对象的数目。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-123">Returns the number of objects in the collection.</span>
+            <span data-stu-id="f4394-125">Returns the number of objects in the collection.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -279,33 +281,33 @@
       </Parameters>
       <Docs>
         <param name="ReportType">
-          <span data-ttu-id="87964-124">可选<see cref="T:Microsoft.Office.Interop.Excel.XlSummaryReportType" />。</span>
+          <span data-ttu-id="f4394-126">可选<see cref="T:Microsoft.Office.Interop.Excel.XlSummaryReportType" />。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-124">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlSummaryReportType" />.</span>
+            <span data-stu-id="f4394-126">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlSummaryReportType" />.</span>
           </span>
         </param>
         <param name="ResultCells">
-          <span data-ttu-id="87964-125">可选的<b>对象</b>。</span>
+          <span data-ttu-id="f4394-127">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-125">Optional <b>Object</b>.</span>
+            <span data-stu-id="f4394-127">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="87964-126">A<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，表示指定工作表上的结果单元格。</span>
+          <span data-ttu-id="f4394-128">A<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，表示指定工作表上的结果单元格。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-126">A <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the result cells on the specified worksheet.</span>
+            <span data-stu-id="f4394-128">A <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the result cells on the specified worksheet.</span>
           </span>
-          <span data-ttu-id="87964-127">通常，此区域指包含取决于值模型的可变单元格的公式的一个或多个单元格 — 即，显示结果的特定方案的单元格。</span>
+          <span data-ttu-id="f4394-129">通常，此区域指包含取决于值模型的可变单元格的公式的一个或多个单元格 — 即，显示结果的特定方案的单元格。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-127">Normally, this range refers to one or more cells containing the formulas that depend on the changing cell values for your model — that is, the cells that show the results of a particular scenario.</span>
+            <span data-stu-id="f4394-129">Normally, this range refers to one or more cells containing the formulas that depend on the changing cell values for your model — that is, the cells that show the results of a particular scenario.</span>
           </span>
-          <span data-ttu-id="87964-128">如果省略此参数，则没有任何结果单元格的报告中。</span>
+          <span data-ttu-id="f4394-130">如果省略此参数，则没有任何结果单元格的报告中。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-128">If this argument is omitted, there are no result cells included in the report.</span>
+            <span data-stu-id="f4394-130">If this argument is omitted, there are no result cells included in the report.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="87964-129">创建新工作表包含指定工作表上方案的摘要报告。</span>
+          <span data-ttu-id="f4394-131">创建新工作表包含指定工作表上方案的摘要报告。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-129">Creates a new worksheet that contains a summary report for the scenarios on the specified worksheet.</span>
+            <span data-stu-id="f4394-131">Creates a new worksheet that contains a summary report for the scenarios on the specified worksheet.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -336,26 +338,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="87964-130">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
+          <span data-ttu-id="f4394-132">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-130">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="f4394-132">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="87964-131">
-            <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
-            <para>
-              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="87964-131">
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="f4394-133">如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="f4394-133">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="f4394-134">
+              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="f4394-134">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="f4394-135">例如，Microsoft Excel 具有 XCEL 的创建者代码。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="f4394-135">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -415,19 +422,19 @@
       </Parameters>
       <Docs>
         <param name="Index">
-          <span data-ttu-id="87964-132">所需的<b>对象</b>。</span>
+          <span data-ttu-id="f4394-136">所需的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-132">Required <b>Object</b>.</span>
+            <span data-stu-id="f4394-136">Required <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="87964-133">对象的名称或索引号。</span>
+          <span data-ttu-id="f4394-137">对象的名称或索引号。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-133">The name or index number for the object.</span>
+            <span data-stu-id="f4394-137">The name or index number for the object.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="87964-134">从集合中返回一个对象。</span>
+          <span data-ttu-id="f4394-138">从集合中返回一个对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-134">Returns a single object from a collection.</span>
+            <span data-stu-id="f4394-138">Returns a single object from a collection.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -458,33 +465,30 @@
       </Parameters>
       <Docs>
         <param name="Source">
-          <span data-ttu-id="87964-135">所需的<b>对象</b>。</span>
+          <span data-ttu-id="f4394-139">所需的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-135">Required <b>Object</b>.</span>
+            <span data-stu-id="f4394-139">Required <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="87964-136">包含待合并方案的工作表的名称或<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />对象，表示该工作表。</span>
+          <span data-ttu-id="f4394-140">包含待合并方案的工作表的名称或<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />对象，表示该工作表。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-136">The name of the sheet that contains scenarios to be merged, or a <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> object that represents that sheet.</span>
+            <span data-stu-id="f4394-140">The name of the sheet that contains scenarios to be merged, or a <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> object that represents that sheet.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="87964-137">合并到另一个表中的方案<see cref="T:Microsoft.Office.Interop.Excel.Scenarios" />集合。</span>
+          <span data-ttu-id="f4394-141">合并到另一个表中的方案<see cref="T:Microsoft.Office.Interop.Excel.Scenarios" />集合。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-137">Merges the scenarios from another sheet into the <see cref="T:Microsoft.Office.Interop.Excel.Scenarios" /> collection.</span>
+            <span data-stu-id="f4394-141">Merges the scenarios from another sheet into the <see cref="T:Microsoft.Office.Interop.Excel.Scenarios" /> collection.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
         <remarks>
-          <span data-ttu-id="87964-138">
-            <para>该区域左上角的单元格中指定合并区域的值。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="87964-138">
-              <para>The value of a merged range is specified in the cell of the range's upper-left corner.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="f4394-142">合并区域的值在该区域左上角的单元格中指定。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="f4394-142">The value of a merged range is specified in the cell of the range's upper-left corner.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -512,9 +516,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="87964-139">返回指定对象的父对象。</span>
+          <span data-ttu-id="f4394-143">返回指定对象的父对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="87964-139">Returns the parent object for the specified object.</span>
+            <span data-stu-id="f4394-143">Returns the parent object for the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>

@@ -1,10 +1,10 @@
 <Type Name="IRTDUpdateEvent" FullName="Microsoft.Office.Interop.Excel.IRTDUpdateEvent">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1f85b1fa3e25fce2babaf3e1ea57dc694f4a45e5" />
+    <Meta Name="ms.openlocfilehash" Value="d11bd9b734395c326ae11b307cdfec21f36a30a4" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20583949" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface IRTDUpdateEvent" />
@@ -27,22 +27,19 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="909a6-101">代表实时数据更新事件。</span>
+      <span data-ttu-id="80e5b-101">代表实时数据更新事件。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="909a6-101">Represents real-time data update events.</span>
+        <span data-stu-id="80e5b-101">Represents real-time data update events.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="909a6-102">
-        <para>若要实例化或返回一个<b>IRTDUpdateEvent</b>对象，一个变量声明为<b>IRTDUpdateEvent</b>对象，然后将该变量用作回调对象。</para>
-        <para></para>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="909a6-102">
-          <para>To instantiate or to return an <b>IRTDUpdateEvent</b> object, declare a variable as an <b>IRTDUpdateEvent</b> object, and then use that variable as a callback object.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="80e5b-102">若要实例化或返回一个 <b>IRTDUpdateEvent</b> 对象，请将一个变量声明为 <b>IRTDUpdateEvent</b> 对象，然后将该变量用作回调对象。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="80e5b-102">To instantiate or to return an <b>IRTDUpdateEvent</b> object, declare a variable as an <b>IRTDUpdateEvent</b> object, and then use that variable as a callback object.</span>
         </span>
-      </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -68,9 +65,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="909a6-103">指示实时数据服务器 (RTD) 来断开指定<see cref="T:Microsoft.Office.Interop.Excel.IRTDUpdateEvent" />对象。</span>
+          <span data-ttu-id="80e5b-103">指示实时数据服务器 (RTD) 来断开指定<see cref="T:Microsoft.Office.Interop.Excel.IRTDUpdateEvent" />对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="909a6-103">Instructs the real-time data server (RTD) to disconnect from the specified <see cref="T:Microsoft.Office.Interop.Excel.IRTDUpdateEvent" /> object.</span>
+            <span data-stu-id="80e5b-103">Instructs the real-time data server (RTD) to disconnect from the specified <see cref="T:Microsoft.Office.Interop.Excel.IRTDUpdateEvent" /> object.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -103,31 +100,32 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="909a6-104">返回或设置一个<b>整数</b>的实时数据更新之间的间隔。</span>
+          <span data-ttu-id="80e5b-104">返回或设置一个<b>整数</b>的实时数据更新之间的间隔。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="909a6-104">Returns or sets an <b>Integer</b> for the interval between updates for real-time data.</span>
+            <span data-stu-id="80e5b-104">Returns or sets an <b>Integer</b> for the interval between updates for real-time data.</span>
           </span>
-          <span data-ttu-id="909a6-105">为可读/写属性。</span>
+          <span data-ttu-id="80e5b-105">为可读/写属性。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="909a6-105">Read/write.</span>
+            <span data-stu-id="80e5b-105">Read/write.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="909a6-106">
-            <para>设置<see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" />属性设为-1 将导致<see cref="M:Microsoft.Office.Interop.Excel.IRtdServer.Heartbeat" />不能调用的方法。</para>
-            <para>因此心跳间隔不能少于 15,000 毫秒标准的 15 秒超时而设置的
-            <b>注释</b>。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="909a6-106">
-              <para>Setting the <see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" /> property to -1 will result in the <see cref="M:Microsoft.Office.Interop.Excel.IRtdServer.Heartbeat" /> method not being called.</para>
-              <para>
-                <b>Note</b>  The heartbeat interval cannot be set below 15,000 milliseconds due to the standard 15-second time out.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="80e5b-106">设置<see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" />属性设为-1 将导致<see cref="M:Microsoft.Office.Interop.Excel.IRtdServer.Heartbeat" />不能调用的方法。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="80e5b-106">Setting the <see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" /> property to -1 will result in the <see cref="M:Microsoft.Office.Interop.Excel.IRtdServer.Heartbeat" /> method not being called.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="80e5b-107">
+              <b>注释</b> 标准的 15 秒超时而少于 15,000 毫秒，因此心跳间隔不能设置。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="80e5b-107">
+                <b>Note</b>  The heartbeat interval cannot be set below 15,000 milliseconds due to the standard 15-second time out.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -153,9 +151,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="909a6-107">实时数据 (RTD) 服务器使用此方法通知 Microsoft Excel 已收到新数据。</span>
+          <span data-ttu-id="80e5b-108">实时数据 (RTD) 服务器使用此方法通知 Microsoft Excel 已收到新数据。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="909a6-107">The real-time data (RTD) server uses this method to notify Microsoft Excel that new data has been received.</span>
+            <span data-stu-id="80e5b-108">The real-time data (RTD) server uses this method to notify Microsoft Excel that new data has been received.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>

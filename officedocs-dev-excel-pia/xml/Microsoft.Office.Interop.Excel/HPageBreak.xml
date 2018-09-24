@@ -1,10 +1,10 @@
 <Type Name="HPageBreak" FullName="Microsoft.Office.Interop.Excel.HPageBreak">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d7639a911b0b101be74933f305618b0af07f12d1" />
+    <Meta Name="ms.openlocfilehash" Value="810cb48a90322f18dd49494e6eee45563ac06ba7" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585447" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface HPageBreak" />
@@ -30,29 +30,34 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="89bfd-101">代表水平分页符。</span>
+      <span data-ttu-id="5970b-101">代表水平分页符。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="89bfd-101">Represents a horizontal page break.</span>
+        <span data-stu-id="5970b-101">Represents a horizontal page break.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="89bfd-102">
-        <para>
-          <b>HPageBreak</b>对象是成员<see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" />集合。</para>
-        <para>使用<b>HPageBreaks</b>(<paramref name="index" />)，其中<paramref name="index" />是分页符，以返回一个<b>HPageBreak</b>对象的索引号。</para>
-        <para>有
-        <b>备注</b>是每个工作表的 1,026 水平分页符的限制。</para>
-        <para></para>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="89bfd-102">
-          <para>The <b>HPageBreak</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" /> collection.</para>
-          <para>Use <b>HPageBreaks</b>(<paramref name="index" />), where <paramref name="index" /> is the index number of the page break, to return an <b>HPageBreak</b> object.</para>
-          <para>
-            <b>Note</b>  There is a limit of 1,026 horizontal page breaks per sheet.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="5970b-102">
+          <b>HPageBreak</b>对象是成员<see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" />集合。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="5970b-102">The <b>HPageBreak</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" /> collection.</span>
         </span>
-      </span>
+      </para>
+      <para>
+        <span data-ttu-id="5970b-103">使用<b>HPageBreaks</b>(<paramref name="index" />)，其中<paramref name="index" />是分页符，以返回一个<b>HPageBreak</b>对象的索引号。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="5970b-103">Use <b>HPageBreaks</b>(<paramref name="index" />), where <paramref name="index" /> is the index number of the page break, to return an <b>HPageBreak</b> object.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="5970b-104">
+          <b>注释</b> 没有限制为每个工作表的 1,026 水平分页符。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="5970b-104">
+            <b>Note</b>  There is a limit of 1,026 horizontal page breaks per sheet.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -80,9 +85,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="89bfd-103">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
+          <span data-ttu-id="5970b-105">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="89bfd-103">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="5970b-105">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -113,26 +118,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="89bfd-104">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
+          <span data-ttu-id="5970b-106">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="89bfd-104">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="5970b-106">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="89bfd-105">
-            <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
-            <para>
-              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="89bfd-105">
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="5970b-107">如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5970b-107">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="5970b-108">
+              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5970b-108">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="5970b-109">例如，Microsoft Excel 具有 XCEL 的创建者代码。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5970b-109">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -158,9 +168,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="89bfd-106">删除对象。</span>
+          <span data-ttu-id="5970b-110">删除对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="89bfd-106">Deletes the object.</span>
+            <span data-stu-id="5970b-110">Deletes the object.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -191,58 +201,59 @@
       </Parameters>
       <Docs>
         <param name="Direction">
-          <span data-ttu-id="89bfd-107">所需<see cref="T:Microsoft.Office.Interop.Excel.XlDirection" />。</span>
+          <span data-ttu-id="5970b-111">所需<see cref="T:Microsoft.Office.Interop.Excel.XlDirection" />。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="89bfd-107">Required <see cref="T:Microsoft.Office.Interop.Excel.XlDirection" />.</span>
+            <span data-stu-id="5970b-111">Required <see cref="T:Microsoft.Office.Interop.Excel.XlDirection" />.</span>
           </span>
-          <span data-ttu-id="89bfd-108">分页符拖动方向。</span>
+          <span data-ttu-id="5970b-112">分页符拖动方向。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="89bfd-108">The direction in which the page break is dragged.</span>
+            <span data-stu-id="5970b-112">The direction in which the page break is dragged.</span>
           </span>
-          <span data-ttu-id="89bfd-109">
+          <span data-ttu-id="5970b-113">
             <b>XlDirection</b>可为以下常量之一：<b>xlDown</b><b>xlToRight</b><b>xlToLeft</b><b>xlUp</b></span>
           <span class="sxs-lookup">
-            <span data-stu-id="89bfd-109">
+            <span data-stu-id="5970b-113">
               <b>XlDirection</b> can be one of these constants:<b>xlDown</b><b>xlToRight</b><b>xlToLeft</b><b>xlUp</b></span>
           </span>
         </param>
         <param name="RegionIndex">
-          <span data-ttu-id="89bfd-110">
+          <span data-ttu-id="5970b-114">
             <b>必选。</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="89bfd-110">Required <b>Integer</b>.</span>
+            <span data-stu-id="5970b-114">Required <b>Integer</b>.</span>
           </span>
-          <span data-ttu-id="89bfd-111">用于分页符 （如果用户拖动分页符，按下鼠标按钮时鼠标指针所在的位置的区域） 的打印区域索引。</span>
+          <span data-ttu-id="5970b-115">用于分页符 （如果用户拖动分页符，按下鼠标按钮时鼠标指针所在的位置的区域） 的打印区域索引。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="89bfd-111">The print-area region index for the page break (the region where the mouse pointer is located when the mouse button is pressed if the user drags the page break).</span>
+            <span data-stu-id="5970b-115">The print-area region index for the page break (the region where the mouse pointer is located when the mouse button is pressed if the user drags the page break).</span>
           </span>
-          <span data-ttu-id="89bfd-112">如果打印区域是连续的则只有一个打印区域。</span>
+          <span data-ttu-id="5970b-116">如果打印区域是连续的则只有一个打印区域。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="89bfd-112">If the print area is contiguous, there’s only one print region.</span>
+            <span data-stu-id="5970b-116">If the print area is contiguous, there’s only one print region.</span>
           </span>
-          <span data-ttu-id="89bfd-113">如果连续打印区域，则多个打印区域。</span>
+          <span data-ttu-id="5970b-117">如果连续打印区域，则多个打印区域。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="89bfd-113">If the print area is noncontiguous, there’s more than one print region.</span>
+            <span data-stu-id="5970b-117">If the print area is noncontiguous, there’s more than one print region.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="89bfd-114">将一个分页符拖出打印区域。</span>
+          <span data-ttu-id="5970b-118">将一个分页符拖出打印区域。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="89bfd-114">Drags a page break out of the print area.</span>
+            <span data-stu-id="5970b-118">Drags a page break out of the print area.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="89bfd-115">
-            <para>主要用于录制宏存在此方法。您可以使用<see cref="M:Microsoft.Office.Interop.Excel.HPageBreak.Delete" />方法，以编程方式删除一个分页符。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="89bfd-115">
-              <para>This method exists primarily for the macro recorder. You can use the <see cref="M:Microsoft.Office.Interop.Excel.HPageBreak.Delete" /> method to delete a page break programmatically.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="5970b-119">此方法存在主要用于录制宏。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5970b-119">This method exists primarily for the macro recorder.</span>
             </span>
-          </span>
+            <span data-ttu-id="5970b-120">您可以使用<see cref="M:Microsoft.Office.Interop.Excel.HPageBreak.Delete" />方法，以编程方式删除一个分页符。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5970b-120">You can use the <see cref="M:Microsoft.Office.Interop.Excel.HPageBreak.Delete" /> method to delete a page break programmatically.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -270,24 +281,21 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="89bfd-116">返回指定分页符的类型： 全屏幕或仅在打印区域内。</span>
+          <span data-ttu-id="5970b-121">返回指定分页符的类型： 全屏幕或仅在打印区域内。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="89bfd-116">Returns the type of the specified page break: full-screen or only within a print area.</span>
+            <span data-stu-id="5970b-121">Returns the type of the specified page break: full-screen or only within a print area.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="89bfd-117">
-            <para>
-              <b>Extent</b>属性可以是以下任一<see cref="T:Microsoft.Office.Interop.Excel.XlPageBreakExtent" />常量： <b>xlPageBreakFull</b>或<b>xlPageBreakPartial</b>。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="89bfd-117">
-              <para>The <b>Extent</b> property can be either of the following <see cref="T:Microsoft.Office.Interop.Excel.XlPageBreakExtent" /> constants: <b>xlPageBreakFull</b> or <b>xlPageBreakPartial</b>.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="5970b-122">
+              <b>Extent</b>属性可以是以下任一<see cref="T:Microsoft.Office.Interop.Excel.XlPageBreakExtent" />常量： <b>xlPageBreakFull</b>或<b>xlPageBreakPartial</b>。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5970b-122">The <b>Extent</b> property can be either of the following <see cref="T:Microsoft.Office.Interop.Excel.XlPageBreakExtent" /> constants: <b>xlPageBreakFull</b> or <b>xlPageBreakPartial</b>.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -318,23 +326,20 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="89bfd-118">返回或设置的单元格 (<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象) 的定义分页符的位置。</span>
+          <span data-ttu-id="5970b-123">返回或设置的单元格 (<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象) 的定义分页符的位置。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="89bfd-118">Returns or sets the cell (a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object) that defines the page-break location.</span>
+            <span data-stu-id="5970b-123">Returns or sets the cell (a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object) that defines the page-break location.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="89bfd-119">
-            <para>水平分页符的位置单元格的上边缘对齐。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="89bfd-119">
-              <para>Horizontal page breaks are aligned with the top edge of the location cell.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="5970b-124">水平分页符的位置单元格的上边缘对齐。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5970b-124">Horizontal page breaks are aligned with the top edge of the location cell.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -362,9 +367,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="89bfd-120">返回指定对象的父对象。</span>
+          <span data-ttu-id="5970b-125">返回指定对象的父对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="89bfd-120">Returns the parent object for the specified object.</span>
+            <span data-stu-id="5970b-125">Returns the parent object for the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -398,43 +403,52 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="89bfd-121">返回或设置分页符类型。</span>
+          <span data-ttu-id="5970b-126">返回或设置分页符类型。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="89bfd-121">Returns or sets the page break type.</span>
+            <span data-stu-id="5970b-126">Returns or sets the page break type.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="89bfd-122">
-            <para>
-              <see cref="T:Microsoft.Office.Interop.Excel.XlPageBreak" />可以是下列常量之一：</para>
-            <para>
-              <b>xlPageBreakAutomatic</b>
-            </para>
-            <para>
-              <b>xlPageBreakManual</b>
-            </para>
-            <para>
-              <b>xlPageBreakNone</b>
-            </para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="89bfd-122">
-              <para>
-                <see cref="T:Microsoft.Office.Interop.Excel.XlPageBreak" /> can be one of these constants:</para>
-              <para>
-                <b>xlPageBreakAutomatic</b>
-              </para>
-              <para>
-                <b>xlPageBreakManual</b>
-              </para>
-              <para>
-                <b>xlPageBreakNone</b>
-              </para>
-              <para></para>
+          <para>
+            <span data-ttu-id="5970b-127">
+              <see cref="T:Microsoft.Office.Interop.Excel.XlPageBreak" />可以是下列常量之一：</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5970b-127">
+                <see cref="T:Microsoft.Office.Interop.Excel.XlPageBreak" /> can be one of these constants:</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="5970b-128">
+              <b>xlPageBreakAutomatic</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5970b-128">
+                <b>xlPageBreakAutomatic</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="5970b-129">
+              <b>xlPageBreakManual</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5970b-129">
+                <b>xlPageBreakManual</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="5970b-130">
+              <b>xlPageBreakNone</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5970b-130">
+                <b>xlPageBreakNone</b>
+              </span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>

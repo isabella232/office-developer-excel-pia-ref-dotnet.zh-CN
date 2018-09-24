@@ -1,10 +1,10 @@
 <Type Name="Styles" FullName="Microsoft.Office.Interop.Excel.Styles">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d5b16d0cbfdec51d146c93cd55fc38ef3293d37f" />
+    <Meta Name="ms.openlocfilehash" Value="e553a7598a3f9ae8e05db8f343f51fd6b194d460" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587246" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Styles : System.Collections.IEnumerable" />
@@ -34,28 +34,46 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="abde0-101">所有的集合<see cref="T:Microsoft.Office.Interop.Excel.Style" />指定的或活动工作簿中的对象。</span>
+      <span data-ttu-id="e8f02-101">所有的集合<see cref="T:Microsoft.Office.Interop.Excel.Style" />指定的或活动工作簿中的对象。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="abde0-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Excel.Style" /> objects in the specified or active workbook.</span>
+        <span data-stu-id="e8f02-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Excel.Style" /> objects in the specified or active workbook.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="abde0-102">
-        <para>每个<b>样式</b>对象代表区域的样式说明。<b>Style</b>对象包含作为属性的所有样式属性 （字体、 数字格式、 对齐方式，等等）。有几种内置样式 — 包括普通、 货币和 %— 在样式对话框 （格式菜单） 的样式名称框中列出的。</para>
-        <para>使用<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Styles" />属性返回的<b>Styles</b>集合。</para>
-        <para>使用<see cref="M:Microsoft.Office.Interop.Excel.Styles.Add(System.String,System.Object)" />方法，以创建新样式并将其添加到集合。</para>
-        <para>使用<b>样式</b>(<paramref name="index" />)，其中<paramref name="index" />是样式索引号或名称，从工作簿<b>Styles</b>集合中返回单个<b>Style</b>对象。</para>
-        <para></para>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="abde0-102">
-          <para>Each <b>Style</b> object represents a style description for a range. The <b>Style</b> object contains all style attributes (font, number format, alignment, and so on) as properties. There are several built-in styles — including Normal, Currency, and Percent — which are listed in the Style name box in the Style dialog box (Format menu).</para>
-          <para>Use the <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Styles" /> property to return the <b>Styles</b> collection.</para>
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel.Styles.Add(System.String,System.Object)" /> method to create a new style and add it to the collection.</para>
-          <para>Use <b>Styles</b>(<paramref name="index" />), where <paramref name="index" /> is the style index number or name, to return a single <b>Style</b> object from the workbook <b>Styles</b> collection.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="e8f02-102">每个<b>样式</b>对象代表区域的样式说明。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="e8f02-102">Each <b>Style</b> object represents a style description for a range.</span>
         </span>
-      </span>
+        <span data-ttu-id="e8f02-103">
+          <b>Style</b>对象包含作为属性的所有样式属性 （字体、 数字格式、 对齐方式，等等）。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="e8f02-103">The <b>Style</b> object contains all style attributes (font, number format, alignment, and so on) as properties.</span>
+        </span>
+        <span data-ttu-id="e8f02-104">有几种内置样式 — 包括普通、 货币和 %— 在样式对话框 （格式菜单） 的样式名称框中列出的。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="e8f02-104">There are several built-in styles — including Normal, Currency, and Percent — which are listed in the Style name box in the Style dialog box (Format menu).</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="e8f02-105">使用<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Styles" />属性返回的<b>Styles</b>集合。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="e8f02-105">Use the <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Styles" /> property to return the <b>Styles</b> collection.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="e8f02-106">使用<see cref="M:Microsoft.Office.Interop.Excel.Styles.Add(System.String,System.Object)" />方法，以创建新样式并将其添加到集合。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="e8f02-106">Use the <see cref="M:Microsoft.Office.Interop.Excel.Styles.Add(System.String,System.Object)" /> method to create a new style and add it to the collection.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="e8f02-107">使用<b>样式</b>(<paramref name="index" />)，其中<paramref name="index" />是样式索引号或名称，从工作簿<b>Styles</b>集合中返回单个<b>Style</b>对象。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="e8f02-107">Use <b>Styles</b>(<paramref name="index" />), where <paramref name="index" /> is the style index number or name, to return a single <b>Style</b> object from the workbook <b>Styles</b> collection.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -90,9 +108,9 @@
       <Docs>
         <param name="Index">To be added.</param>
         <summary>
-          <span data-ttu-id="abde0-103">仅供内部使用。</span>
+          <span data-ttu-id="e8f02-108">仅供内部使用。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="abde0-103">Reserved for internal use.</span>
+            <span data-stu-id="e8f02-108">Reserved for internal use.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -123,47 +141,44 @@
       </Parameters>
       <Docs>
         <param name="Name">
-          <span data-ttu-id="abde0-104">必需的 <b>字符串</b> 。</span>
+          <span data-ttu-id="e8f02-109">必需的 <b>字符串</b> 。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="abde0-104">Required <b>String</b>.</span>
+            <span data-stu-id="e8f02-109">Required <b>String</b>.</span>
           </span>
-          <span data-ttu-id="abde0-105">新样式的名称。</span>
+          <span data-ttu-id="e8f02-110">新样式的名称。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="abde0-105">The new style name.</span>
+            <span data-stu-id="e8f02-110">The new style name.</span>
           </span>
         </param>
         <param name="BasedOn">
-          <span data-ttu-id="abde0-106">可选的<b>对象</b>。</span>
+          <span data-ttu-id="e8f02-111">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="abde0-106">Optional <b>Object</b>.</span>
+            <span data-stu-id="e8f02-111">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="abde0-107">A<see cref="T:Microsoft.Office.Interop.Excel.Range" />指的是用作新样式的基础的单元格的对象。</span>
+          <span data-ttu-id="e8f02-112">A<see cref="T:Microsoft.Office.Interop.Excel.Range" />指的是用作新样式的基础的单元格的对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="abde0-107">A <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that refers to a cell that's used as the basis for the new style.</span>
+            <span data-stu-id="e8f02-112">A <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that refers to a cell that's used as the basis for the new style.</span>
           </span>
-          <span data-ttu-id="abde0-108">如果省略此参数，则新创建的样式基于正文样式。</span>
+          <span data-ttu-id="e8f02-113">如果省略此参数，则新创建的样式基于正文样式。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="abde0-108">If this argument is omitted, the newly created style is based on the Normal style.</span>
+            <span data-stu-id="e8f02-113">If this argument is omitted, the newly created style is based on the Normal style.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="abde0-109">新建样式并将其添加到当前工作簿的可用样式列表中。</span>
+          <span data-ttu-id="e8f02-114">新建样式并将其添加到当前工作簿的可用样式列表中。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="abde0-109">Creates a new style and adds it to the list of styles that are available for the current workbook.</span>
+            <span data-stu-id="e8f02-114">Creates a new style and adds it to the list of styles that are available for the current workbook.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
         <remarks>
-          <span data-ttu-id="abde0-110">
-            <para>如果已存在具有指定名称的样式，该方法重新定义现有样式基于指定的单元格<paramref name="BasedOn" />。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="abde0-110">
-              <para>If a style with the specified name already exists, this method redefines the existing style based on the cell specified in <paramref name="BasedOn" />.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="e8f02-115">如果已存在具有指定名称的样式，该方法重新定义现有样式基于指定的单元格<paramref name="BasedOn" />。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="e8f02-115">If a style with the specified name already exists, this method redefines the existing style based on the cell specified in <paramref name="BasedOn" />.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -191,9 +206,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="abde0-111">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
+          <span data-ttu-id="e8f02-116">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="abde0-111">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="e8f02-116">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -224,9 +239,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="abde0-112">返回集合中对象的数目。</span>
+          <span data-ttu-id="e8f02-117">返回集合中对象的数目。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="abde0-112">Returns the number of objects in the collection.</span>
+            <span data-stu-id="e8f02-117">Returns the number of objects in the collection.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -257,26 +272,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="abde0-113">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
+          <span data-ttu-id="e8f02-118">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="abde0-113">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="e8f02-118">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="abde0-114">
-            <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
-            <para>
-              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="abde0-114">
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="e8f02-119">如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="e8f02-119">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="e8f02-120">
+              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="e8f02-120">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="e8f02-121">例如，Microsoft Excel 具有 XCEL 的创建者代码。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="e8f02-121">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -339,19 +359,19 @@
       </Parameters>
       <Docs>
         <param name="Index">
-          <span data-ttu-id="abde0-115">所需的<b>对象</b>。</span>
+          <span data-ttu-id="e8f02-122">所需的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="abde0-115">Required <b>Object</b>.</span>
+            <span data-stu-id="e8f02-122">Required <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="abde0-116">对象的名称或索引号。</span>
+          <span data-ttu-id="e8f02-123">对象的名称或索引号。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="abde0-116">The name or index number of the object.</span>
+            <span data-stu-id="e8f02-123">The name or index number of the object.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="abde0-117">从集合中返回一个对象。</span>
+          <span data-ttu-id="e8f02-124">从集合中返回一个对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="abde0-117">Returns a single object from a collection.</span>
+            <span data-stu-id="e8f02-124">Returns a single object from a collection.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -382,33 +402,30 @@
       </Parameters>
       <Docs>
         <param name="Workbook">
-          <span data-ttu-id="abde0-118">所需的<b>对象</b>。</span>
+          <span data-ttu-id="e8f02-125">所需的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="abde0-118">Required <b>Object</b>.</span>
+            <span data-stu-id="e8f02-125">Required <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="abde0-119">A<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />对象，表示包含待合并样式的工作簿。</span>
+          <span data-ttu-id="e8f02-126">A<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />对象，表示包含待合并样式的工作簿。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="abde0-119">A <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> object that represents the workbook containing styles to be merged.</span>
+            <span data-stu-id="e8f02-126">A <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> object that represents the workbook containing styles to be merged.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="abde0-120">合并到另一个工作簿中的样式<see cref="T:Microsoft.Office.Interop.Excel.Styles" />集合。</span>
+          <span data-ttu-id="e8f02-127">合并到另一个工作簿中的样式<see cref="T:Microsoft.Office.Interop.Excel.Styles" />集合。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="abde0-120">Merges the styles from another workbook into the <see cref="T:Microsoft.Office.Interop.Excel.Styles" /> collection.</span>
+            <span data-stu-id="e8f02-127">Merges the styles from another workbook into the <see cref="T:Microsoft.Office.Interop.Excel.Styles" /> collection.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
         <remarks>
-          <span data-ttu-id="abde0-121">
-            <para>该区域左上角的单元格中指定合并区域的值。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="abde0-121">
-              <para>The value of a merged range is specified in the cell of the range's upper-left corner.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="e8f02-128">合并区域的值在该区域左上角的单元格中指定。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="e8f02-128">The value of a merged range is specified in the cell of the range's upper-left corner.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -436,9 +453,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="abde0-122">返回指定对象的父对象。</span>
+          <span data-ttu-id="e8f02-129">返回指定对象的父对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="abde0-122">Returns the parent object for the specified object.</span>
+            <span data-stu-id="e8f02-129">Returns the parent object for the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>

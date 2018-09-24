@@ -1,10 +1,10 @@
 <Type Name="AutoFilter" FullName="Microsoft.Office.Interop.Excel.AutoFilter">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fa1345175f6d6176881a9414ce6635cd3033ad01" />
+    <Meta Name="ms.openlocfilehash" Value="085dbe03cc8ab153375e03745f01e25010542104" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580526" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AutoFilter" />
@@ -30,24 +30,33 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="f51c3-101">代表对指定工作表的自动筛选。</span>
+      <span data-ttu-id="37141-101">代表对指定工作表的自动筛选。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="f51c3-101">Represents autofiltering for the specified worksheet.</span>
+        <span data-stu-id="37141-101">Represents autofiltering for the specified worksheet.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="f51c3-102">
-        <para>使用<see cref="P:Microsoft.Office.Interop.Excel._Worksheet.AutoFilter" />属性返回<b>AutoFilter</b>对象。使用<see cref="P:Microsoft.Office.Interop.Excel.AutoFilter.Filters" />属性可返回单个列筛选器的集合。使用<see cref="P:Microsoft.Office.Interop.Excel.AutoFilter.Range" />属性返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，表示已筛选的全部。</para>
-        <para>若要创建工作表<b>AutoFilter</b>对象，必须打开自动筛选工作表上的某个区域可以手动或使用<see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" /><b>Range</b>对象的方法。</para>
-        <para></para>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="f51c3-102">
-          <para>Use the <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.AutoFilter" /> property to return the <b>AutoFilter</b> object. Use the <see cref="P:Microsoft.Office.Interop.Excel.AutoFilter.Filters" /> property to return a collection of individual column filters. Use the <see cref="P:Microsoft.Office.Interop.Excel.AutoFilter.Range" /> property to return the <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the entire filtered range.</para>
-          <para>To create an <b>AutoFilter</b> object for a worksheet, you must turn autofiltering on for a range on the worksheet either manually or using the <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" /> method of the <b>Range</b> object.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="37141-102">使用<see cref="P:Microsoft.Office.Interop.Excel._Worksheet.AutoFilter" />属性返回<b>AutoFilter</b>对象。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="37141-102">Use the <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.AutoFilter" /> property to return the <b>AutoFilter</b> object.</span>
         </span>
-      </span>
+        <span data-ttu-id="37141-103">使用<see cref="P:Microsoft.Office.Interop.Excel.AutoFilter.Filters" />属性可返回单个列筛选器的集合。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="37141-103">Use the <see cref="P:Microsoft.Office.Interop.Excel.AutoFilter.Filters" /> property to return a collection of individual column filters.</span>
+        </span>
+        <span data-ttu-id="37141-104">使用<see cref="P:Microsoft.Office.Interop.Excel.AutoFilter.Range" />属性返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，表示整个筛选的区域。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="37141-104">Use the <see cref="P:Microsoft.Office.Interop.Excel.AutoFilter.Range" /> property to return the <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the entire filtered range.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="37141-105">若要创建工作表<b>AutoFilter</b>对象，必须打开自动筛选工作表上的某个区域可以手动或使用<see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" /><b>Range</b>对象的方法。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="37141-105">To create an <b>AutoFilter</b> object for a worksheet, you must turn autofiltering on for a range on the worksheet either manually or using the <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" /> method of the <b>Range</b> object.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -75,13 +84,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="f51c3-103">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />值，该值代表指定对象 （可与 OLE 自动化对象使用此属性可返回该对象的应用程序） 的创建者的对象。</span>
+          <span data-ttu-id="37141-106">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />值，该值代表指定对象 （可与 OLE 自动化对象使用此属性可返回该对象的应用程序） 的创建者的对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f51c3-103">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the creator of the specified object (you can use this property with an OLE Automation object to return the application of that object).</span>
+            <span data-stu-id="37141-106">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the creator of the specified object (you can use this property with an OLE Automation object to return the application of that object).</span>
           </span>
-          <span data-ttu-id="f51c3-104">只读。</span>
+          <span data-ttu-id="37141-107">只读。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f51c3-104">Read-only.</span>
+            <span data-stu-id="37141-107">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -110,9 +119,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="f51c3-105">应用指定<see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" />对象。</span>
+          <span data-ttu-id="37141-108">应用指定<see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" />对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f51c3-105">Applies the specified <see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" />object.</span>
+            <span data-stu-id="37141-108">Applies the specified <see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" />object.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -142,32 +151,33 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="f51c3-106">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
+          <span data-ttu-id="37141-109">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f51c3-106">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="37141-109">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
-          <span data-ttu-id="f51c3-107">如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</span>
+          <span data-ttu-id="37141-110">如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f51c3-107">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
+            <span data-stu-id="37141-110">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
           </span>
-          <span data-ttu-id="f51c3-108">只读<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</span>
+          <span data-ttu-id="37141-111">只读<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f51c3-108">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
+            <span data-stu-id="37141-111">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="f51c3-109">
-            <para>
-              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="f51c3-109">
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="37141-112">
+              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="37141-112">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
             </span>
-          </span>
+            <span data-ttu-id="37141-113">例如，Microsoft Excel 具有 XCEL 的创建者代码。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="37141-113">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -195,17 +205,17 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="f51c3-p103">如果工作表的筛选模式为自动筛选，则返回 <b>True</b>。只读 <b>Boolean</b> 类型。</span>
+          <span data-ttu-id="37141-p105">如果工作表的筛选模式为自动筛选，则返回 <b>True</b>。只读 <b>Boolean</b> 类型。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f51c3-p103">Returns <b>True</b> if the worksheet is in the AutoFilter filter mode. Read-only <b>Boolean</b>.</span>
+            <span data-stu-id="37141-p105">Returns <b>True</b> if the worksheet is in the AutoFilter filter mode. Read-only <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="f51c3-112">
+          <span data-ttu-id="37141-116">
             <b>Boolean</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="f51c3-112">
+            <span data-stu-id="37141-116">
               <b>Boolean</b>
             </span>
           </span>
@@ -237,13 +247,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="f51c3-113">返回<see cref="T:Microsoft.Office.Interop.Excel.Filters" />集合，代表自动筛选区域中的所有筛选器。</span>
+          <span data-ttu-id="37141-117">返回<see cref="T:Microsoft.Office.Interop.Excel.Filters" />集合，代表自动筛选区域中的所有筛选器。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f51c3-113">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Filters" /> collection that represents all the filters in an autofiltered range.</span>
+            <span data-stu-id="37141-117">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Filters" /> collection that represents all the filters in an autofiltered range.</span>
           </span>
-          <span data-ttu-id="f51c3-114">只读。</span>
+          <span data-ttu-id="37141-118">只读。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f51c3-114">Read-only.</span>
+            <span data-stu-id="37141-118">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -274,9 +284,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="f51c3-p105">返回指定对象的父对象。只读。</span>
+          <span data-ttu-id="37141-p107">返回指定对象的父对象。只读。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f51c3-p105">Returns the parent object for the specified object. Read-only.</span>
+            <span data-stu-id="37141-p107">Returns the parent object for the specified object. Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -307,9 +317,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="f51c3-117">返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，它代表指定的自动筛选应用于的区域。</span>
+          <span data-ttu-id="37141-121">返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，它代表指定的自动筛选应用于的区域。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f51c3-117">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the range to which the specified AutoFilter applies.</span>
+            <span data-stu-id="37141-121">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the range to which the specified AutoFilter applies.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -338,9 +348,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="f51c3-118">显示所有返回的数据<see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" />对象。</span>
+          <span data-ttu-id="37141-122">显示所有返回的数据<see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" />对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f51c3-118">Displays all the data returned by the <see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" />object.</span>
+            <span data-stu-id="37141-122">Displays all the data returned by the <see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" />object.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -370,9 +380,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="f51c3-119">获取列排序列和排序次序<see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" />集合。</span>
+          <span data-ttu-id="37141-123">获取列排序列和排序次序<see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" />集合。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f51c3-119">Gets the sort column or columns, and sort order for the <see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" /> collection.</span>
+            <span data-stu-id="37141-123">Gets the sort column or columns, and sort order for the <see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" /> collection.</span>
           </span>
         </summary>
         <value>

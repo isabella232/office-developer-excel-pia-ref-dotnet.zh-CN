@@ -1,10 +1,10 @@
 <Type Name="Window" FullName="Microsoft.Office.Interop.Excel.Window">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8c49a6753e6ec53845aee64eafc52c6fc09004d7" />
+    <Meta Name="ms.openlocfilehash" Value="628d319ce41e267cd4a082a94f976467ed8bebe1" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20577768" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Window" />
@@ -30,33 +30,58 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="81e2e-101">代表窗口。</span>
+      <span data-ttu-id="1f7e4-101">代表窗口。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="81e2e-101">Represents a window.</span>
+        <span data-stu-id="1f7e4-101">Represents a window.</span>
       </span>
-      <span data-ttu-id="81e2e-102">多个工作表特征，如滚动条和网格线，实际上是属性的窗口。</span>
+      <span data-ttu-id="1f7e4-102">多个工作表特征，如滚动条和网格线，实际上是属性的窗口。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="81e2e-102">Many worksheet characteristics, such as scroll bars and gridlines, are actually properties of the window.</span>
+        <span data-stu-id="1f7e4-102">Many worksheet characteristics, such as scroll bars and gridlines, are actually properties of the window.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="81e2e-103">
-        <para>
-          <b>Window</b>对象所在的<see cref="T:Microsoft.Office.Interop.Excel.Windows" />集合。返回的<b>Windows</b>集合<see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" />属性<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象包含应用程序中的所有窗口，而<b>Windows</b>集合返回<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" />属性<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />对象都包含仅窗口指定工作簿中。</para>
-        <para>使用<b>Windows</b>(<paramref name="index" />)，其中<paramref name="index" />是窗口名称或索引号，可返回单个<b>Window</b>对象。</para>
-        <para>注意，活动窗口总是 windows(1。</para>
-        <para>窗口标题是时窗口最大化窗口顶部的标题栏中显示的文本。题注还会显示在底部的 Windows 菜单上打开的文件列表中。使用<see cref="P:Microsoft.Office.Interop.Excel.Window.Caption" />属性来设置或返回窗口的标题。更改窗口的标题不会更改工作簿的名称。</para>
-        <para></para>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="81e2e-103">
-          <para>The <b>Window</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> collection. The <b>Windows</b> collection returned by the <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object contains all the windows in the application, whereas the <b>Windows</b> collection returned by the <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> object contains only the windows in the specified workbook.</para>
-          <para>Use <b>Windows</b>(<paramref name="index" />), where <paramref name="index" /> is the window name or index number, to return a single <b>Window</b> object.</para>
-          <para>Note that the active window is always Windows(1).</para>
-          <para>The window caption is the text shown in the title bar at the top of the window when the window isn’t maximized. The caption is also shown in the list of open files on the bottom of the Windows menu. Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.Caption" /> property to set or return the window caption. Changing the window caption doesn’t change the name of the workbook.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="1f7e4-103">
+          <b>Window</b>对象所在的<see cref="T:Microsoft.Office.Interop.Excel.Windows" />集合。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="1f7e4-103">The <b>Window</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> collection.</span>
         </span>
-      </span>
+        <span data-ttu-id="1f7e4-104">返回的<b>Windows</b>集合<see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" />属性<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象包含应用程序中的所有窗口，而<b>Windows</b>集合返回<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" />属性<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />对象都包含仅窗口指定工作簿。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="1f7e4-104">The <b>Windows</b> collection returned by the <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object contains all the windows in the application, whereas the <b>Windows</b> collection returned by the <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> object contains only the windows in the specified workbook.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="1f7e4-105">使用<b>Windows</b>(<paramref name="index" />)，其中<paramref name="index" />是窗口名称或索引号，可返回单个<b>Window</b>对象。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="1f7e4-105">Use <b>Windows</b>(<paramref name="index" />), where <paramref name="index" /> is the window name or index number, to return a single <b>Window</b> object.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="1f7e4-106">注意，活动窗口总是 Windows(1)。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="1f7e4-106">Note that the active window is always Windows(1).</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="1f7e4-107">窗口的标题时窗口最大化窗口顶部的标题栏中显示的文本。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="1f7e4-107">The window caption is the text shown in the title bar at the top of the window when the window isn’t maximized.</span>
+        </span>
+        <span data-ttu-id="1f7e4-108">该题注还显示在列表底部的 窗口 菜单上打开的文件中。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="1f7e4-108">The caption is also shown in the list of open files on the bottom of the Windows menu.</span>
+        </span>
+        <span data-ttu-id="1f7e4-109">使用<see cref="P:Microsoft.Office.Interop.Excel.Window.Caption" />属性来设置或返回窗口的标题。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="1f7e4-109">Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.Caption" /> property to set or return the window caption.</span>
+        </span>
+        <span data-ttu-id="1f7e4-110">更改窗口的标题不会更改工作簿的名称。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="1f7e4-110">Changing the window caption doesn’t change the name of the workbook.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -93,9 +118,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-104">仅供内部使用。</span>
+          <span data-ttu-id="1f7e4-111">仅供内部使用。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-104">Reserved for internal use.</span>
+            <span data-stu-id="1f7e4-111">Reserved for internal use.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -169,24 +194,25 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-105">将窗口提到 z-次序的最前面。</span>
+          <span data-ttu-id="1f7e4-112">将窗口提到 z-次序的最前面。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-105">Brings the window to the front of the z-order.</span>
+            <span data-stu-id="1f7e4-112">Brings the window to the front of the z-order.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
         <remarks>
-          <span data-ttu-id="81e2e-106">
-            <para>
-              <b>激活</b>方法不会运行可能附加在工作簿的任何 Auto_Activate 或 Auto_Deactivate 宏。使用<see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" />方法可运行这些宏。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-106">
-              <para>The <b>Activate</b> method won't run any Auto_Activate or Auto_Deactivate macros that might be attached to the workbook. Use the <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> method to run those macros.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-113">
+              <b>Activate</b>方法不会运行可能附加在工作簿的任何 Auto_Activate 或 Auto_Deactivate 宏。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-113">The <b>Activate</b> method won't run any Auto_Activate or Auto_Deactivate macros that might be attached to the workbook.</span>
             </span>
-          </span>
+            <span data-ttu-id="1f7e4-114">使用<see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" />方法可运行这些宏。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-114">Use the <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> method to run those macros.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -212,9 +238,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-107">激活指定的窗口，然后将其发送到窗口 z-次序的后面。</span>
+          <span data-ttu-id="1f7e4-115">激活指定的窗口，然后将其发送到窗口 z-次序的后面。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-107">Activates the specified window, and then sends it to the back of the window z-order.</span>
+            <span data-stu-id="1f7e4-115">Activates the specified window, and then sends it to the back of the window z-order.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -243,9 +269,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-108">激活指定窗口，然后激活窗口 z-次序末尾的窗口。</span>
+          <span data-ttu-id="1f7e4-116">激活指定窗口，然后激活窗口 z-次序末尾的窗口。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-108">Activates the specified window and then activates the window at the back of the window z-order.</span>
+            <span data-stu-id="1f7e4-116">Activates the specified window and then activates the window at the back of the window z-order.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -276,29 +302,30 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-109">返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，表示活动窗口 （最上面的窗口） 中的活动单元格或指定窗口中。</span>
+          <span data-ttu-id="1f7e4-117">返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，表示活动窗口 （最上面的窗口） 中的活动单元格或指定窗口中。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-109">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the active cell in the active window (the window on top) or in the specified window.</span>
+            <span data-stu-id="1f7e4-117">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the active cell in the active window (the window on top) or in the specified window.</span>
           </span>
-          <span data-ttu-id="81e2e-110">如果窗口中不显示工作表，该属性无效。</span>
+          <span data-ttu-id="1f7e4-118">如果窗口中不显示工作表，该属性无效。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-110">If the window isn't displaying a worksheet, this property fails.</span>
+            <span data-stu-id="1f7e4-118">If the window isn't displaying a worksheet, this property fails.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="81e2e-111">
-            <para>如果不指定对象识别符，此属性返回活动窗口中的活动单元格。</para>
-            <para>注意区分活动单元格和所选内容。活动单元格内当前所选内容的单个单元格。所选内容可能包含多个单元格，但只有一个是活动单元格。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-111">
-              <para>If you don't specify an object qualifier, this property returns the active cell in the active window.</para>
-              <para>Be careful to distinguish between the active cell and the selection. The active cell is a single cell inside the current selection. The selection may contain more than one cell, but only one is the active cell.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-119">如果不指定对象识别符，此属性返回活动窗口中的活动单元格。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-119">If you don't specify an object qualifier, this property returns the active cell in the active window.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="1f7e4-p106">请仔细区分活动单元格和选定区域。活动单元格为选定区域内部的一个单元格。而选定区域可以包含多个单元格，但只有一个单元格为活动单元格。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-p106">Be careful to distinguish between the active cell and the selection. The active cell is a single cell inside the current selection. The selection may contain more than one cell, but only one is the active cell.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -326,31 +353,28 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-112">返回<see cref="T:Microsoft.Office.Interop.Excel.Chart" />对象，表示活动图表 （嵌入的图表或图表工作表）。</span>
+          <span data-ttu-id="1f7e4-123">返回<see cref="T:Microsoft.Office.Interop.Excel.Chart" />对象，表示活动图表 （嵌入的图表或图表工作表）。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-112">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> object that represents the active chart (either an embedded chart or a chart sheet).</span>
+            <span data-stu-id="1f7e4-123">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> object that represents the active chart (either an embedded chart or a chart sheet).</span>
           </span>
-          <span data-ttu-id="81e2e-113">选择或激活时，嵌入的图表被视为活动。</span>
+          <span data-ttu-id="1f7e4-124">选择或激活时，嵌入的图表被视为活动。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-113">An embedded chart is considered active when it's either selected or activated.</span>
+            <span data-stu-id="1f7e4-124">An embedded chart is considered active when it's either selected or activated.</span>
           </span>
-          <span data-ttu-id="81e2e-114">当没有图表处于活动状态时，则此属性返回<b>Nothing</b>。</span>
+          <span data-ttu-id="1f7e4-125">当没有图表处于活动状态时，则此属性返回<b>Nothing</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-114">When no chart is active, this property returns <b>Nothing</b>.</span>
+            <span data-stu-id="1f7e4-125">When no chart is active, this property returns <b>Nothing</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="81e2e-115">
-            <para>如果不指定对象识别符，此属性返回活动工作簿中的活动图表。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-115">
-              <para>If you don't specify an object qualifier, this property returns the active chart in the active workbook.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-126">如果不指定对象识别符，此属性返回活动工作簿中的活动图表。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-126">If you don't specify an object qualifier, this property returns the active chart in the active workbook.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -378,25 +402,26 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-116">返回<see cref="T:Microsoft.Office.Interop.Excel.Pane" />对象，表示窗口中的活动窗格。</span>
+          <span data-ttu-id="1f7e4-127">返回<see cref="T:Microsoft.Office.Interop.Excel.Pane" />对象，表示窗口中的活动窗格。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-116">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> object that represents the active pane in the window.</span>
+            <span data-stu-id="1f7e4-127">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> object that represents the active pane in the window.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="81e2e-117">
-            <para>可仅在工作表和宏工作表上使用此属性。</para>
-            <para>使用<see cref="P:Microsoft.Office.Interop.Excel.Window.Index" />属性获取活动窗格的索引。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-117">
-              <para>This property can be used only on worksheets and macro sheets.</para>
-              <para>Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.Index" /> property to obtain the index of the active pane.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-128">此属性仅用于工作表和宏表。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-128">This property can be used only on worksheets and macro sheets.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="1f7e4-129">使用<see cref="P:Microsoft.Office.Interop.Excel.Window.Index" />属性获取活动窗格的索引。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-129">Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.Index" /> property to obtain the index of the active pane.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -424,38 +449,39 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-118">在活动工作簿或工作簿的指定的窗口中，则返回一个对象，表示活动工作表 （顶部的工作表）。</span>
+          <span data-ttu-id="1f7e4-130">在活动工作簿或工作簿的指定的窗口中，则返回一个对象，表示活动工作表 （顶部的工作表）。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-118">Returns an object that represents the active sheet (the sheet on top) in the active workbook or in the specified window or workbook.</span>
+            <span data-stu-id="1f7e4-130">Returns an object that represents the active sheet (the sheet on top) in the active workbook or in the specified window or workbook.</span>
           </span>
-          <span data-ttu-id="81e2e-119">如果没有工作表处于活动状态，则返回<b>Nothing</b> 。</span>
+          <span data-ttu-id="1f7e4-131">如果没有工作表处于活动状态，则返回<b>Nothing</b> 。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-119">Returns <b>Nothing</b> if no sheet is active.</span>
+            <span data-stu-id="1f7e4-131">Returns <b>Nothing</b> if no sheet is active.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="81e2e-120">
+          <span data-ttu-id="1f7e4-132">
             <b>对象</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-120">
+            <span data-stu-id="1f7e4-132">
               <b>Object</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="81e2e-121">
-            <para>如果不指定对象识别符，此属性返回活动工作簿中的活动工作表。</para>
-            <para>工作簿出现在多个窗口中，如果<b>ActiveSheet</b>属性可能不同在不同的窗口。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-121">
-              <para>If you don’t specify an object qualifier, this property returns the active sheet in the active workbook.</para>
-              <para>If a workbook appears in more than one window, the <b>ActiveSheet</b> property may be different in different windows.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-133">如果不指定对象识别符，则此属性返回活动工作簿中的活动工作表。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-133">If you don’t specify an object qualifier, this property returns the active sheet in the active workbook.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="1f7e4-134">如果某个工作簿出现在若干个窗口中，那么该工作簿的 <b>ActiveSheet</b> 属性在不同窗口中可能不同。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-134">If a workbook appears in more than one window, the <b>ActiveSheet</b> property may be different in different windows.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -483,9 +509,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-p105">返回一个对象，该对象代表指定窗口中活动工作表的视图。只读。</span>
+          <span data-ttu-id="1f7e4-p109">返回一个对象，该对象代表指定窗口中活动工作表的视图。只读。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-p105">Returns an object that represents the view of the active sheet in the specified window. Read-only.</span>
+            <span data-stu-id="1f7e4-p109">Returns an object that represents the view of the active sheet in the specified window. Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -516,9 +542,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-124">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象，表示 Excel 应用程序。</span>
+          <span data-ttu-id="1f7e4-137">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象，表示 Excel 应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-124">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Excel application.</span>
+            <span data-stu-id="1f7e4-137">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -552,22 +578,22 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-125">如果为<b>true</b>的自动筛选的日期分组当前显示在指定的窗口。</span>
+          <span data-ttu-id="1f7e4-138">如果为<b>true</b>的自动筛选的日期分组当前显示在指定的窗口。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-125">
+            <span data-stu-id="1f7e4-138">
               <b>True</b> if the auto filter for date grouping is currently displayed in the specified window.</span>
           </span>
-          <span data-ttu-id="81e2e-126">为可读/写属性。</span>
+          <span data-ttu-id="1f7e4-139">为可读/写属性。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-126">Read/write.</span>
+            <span data-stu-id="1f7e4-139">Read/write.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="81e2e-127">
+          <span data-ttu-id="1f7e4-140">
             <b>Boolean</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-127">
+            <span data-stu-id="1f7e4-140">
               <b>Boolean</b>
             </span>
           </span>
@@ -602,9 +628,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-128">在文档窗口的标题栏中显示的名称。</span>
+          <span data-ttu-id="1f7e4-141">在文档窗口的标题栏中显示的名称。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-128">The name that appears in the title bar of the document window.</span>
+            <span data-stu-id="1f7e4-141">The name that appears in the title bar of the document window.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -636,73 +662,75 @@
       </Parameters>
       <Docs>
         <param name="SaveChanges">
-          <span data-ttu-id="81e2e-129">可选的<b>对象</b>。</span>
+          <span data-ttu-id="1f7e4-142">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-129">Optional <b>Object</b>.</span>
+            <span data-stu-id="1f7e4-142">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="81e2e-130">如果没有对工作簿的更改，则忽略此参数。</span>
+          <span data-ttu-id="1f7e4-143">如果没有对工作簿的更改，则忽略此参数。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-130">If there are no changes to the workbook, this argument is ignored.</span>
+            <span data-stu-id="1f7e4-143">If there are no changes to the workbook, this argument is ignored.</span>
           </span>
-          <span data-ttu-id="81e2e-131">如果有工作簿的更改和工作簿显示在其他打开的窗口，则忽略此参数。</span>
+          <span data-ttu-id="1f7e4-144">如果有工作簿的更改和工作簿显示在其他打开的窗口，则忽略此参数。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-131">If there are changes to the workbook and the workbook appears in other open windows, this argument is ignored.</span>
+            <span data-stu-id="1f7e4-144">If there are changes to the workbook and the workbook appears in other open windows, this argument is ignored.</span>
           </span>
-          <span data-ttu-id="81e2e-132">如果工作簿的更改，但工作簿不会显示在其他任何打开的窗口，此参数指定是否应保存更改下, 表中所示。ValueAction<b>，则返回 True</b>，则将所做的更改保存到工作簿。</span>
+          <span data-ttu-id="1f7e4-145">如果工作簿的更改，但工作簿不会显示在其他任何打开的窗口，此参数指定是否应保存更改下, 表中所示。ValueAction<b>，则返回 True</b>，则将所做的更改保存到工作簿。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-132">If there are changes to the workbook but the workbook doesn't appear in any other open windows, this argument specifies whether changes should be saved, as shown in the following table.ValueAction<b>True</b>Saves the changes to the workbook.</span>
+            <span data-stu-id="1f7e4-145">If there are changes to the workbook but the workbook doesn't appear in any other open windows, this argument specifies whether changes should be saved, as shown in the following table.ValueAction<b>True</b>Saves the changes to the workbook.</span>
           </span>
-          <span data-ttu-id="81e2e-133">如果还没有关联的工作簿，然后文件名<paramref name="FileName" />使用。</span>
+          <span data-ttu-id="1f7e4-146">如果还没有关联的工作簿，然后文件名<paramref name="FileName" />使用。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-133">If there is not yet a file name associated with the workbook, then <paramref name="FileName" /> is used.</span>
+            <span data-stu-id="1f7e4-146">If there is not yet a file name associated with the workbook, then <paramref name="FileName" /> is used.</span>
           </span>
-          <span data-ttu-id="81e2e-134">如果<paramref name="FileName" />是省略，则询问用户是否提供的文件名称。<b>False</b>对此文件，不保存更改。OmittedDisplays 对话框，询问用户保存更改。</span>
+          <span data-ttu-id="1f7e4-147">如果<paramref name="FileName" />是省略，则询问用户是否提供的文件名称。<b>False</b>对此文件，不保存更改。OmittedDisplays 对话框，询问用户保存更改。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-134">If <paramref name="FileName" /> is omitted, the user is asked to supply a file name.<b>False</b>Does not save the changes to this file.OmittedDisplays a dialog box asking the user whether or not to save changes.</span>
+            <span data-stu-id="1f7e4-147">If <paramref name="FileName" /> is omitted, the user is asked to supply a file name.<b>False</b>Does not save the changes to this file.OmittedDisplays a dialog box asking the user whether or not to save changes.</span>
           </span>
         </param>
         <param name="Filename">
-          <span data-ttu-id="81e2e-135">可选的<b>对象</b>。</span>
+          <span data-ttu-id="1f7e4-148">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-135">Optional <b>Object</b>.</span>
+            <span data-stu-id="1f7e4-148">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="81e2e-136">以此文件名保存所做的更改。</span>
+          <span data-ttu-id="1f7e4-149">以此文件名保存所做的更改。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-136">Save changes under this file name.</span>
+            <span data-stu-id="1f7e4-149">Save changes under this file name.</span>
           </span>
         </param>
         <param name="RouteWorkbook">
-          <span data-ttu-id="81e2e-137">可选的<b>对象</b>。</span>
+          <span data-ttu-id="1f7e4-150">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-137">Optional <b>Object</b>.</span>
+            <span data-stu-id="1f7e4-150">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="81e2e-138">如果工作簿不需要路由到下一个收件人 （如果它没有传送名单，或已路由），则忽略此参数。</span>
+          <span data-ttu-id="1f7e4-151">如果工作簿不需要路由到下一个收件人 （如果它没有传送名单，或已路由），则忽略此参数。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-138">If the workbook doesn't need to be routed to the next recipient (if it has no routing slip or has already been routed), this argument is ignored.</span>
+            <span data-stu-id="1f7e4-151">If the workbook doesn't need to be routed to the next recipient (if it has no routing slip or has already been routed), this argument is ignored.</span>
           </span>
-          <span data-ttu-id="81e2e-139">否则，Microsoft Excel 传送工作簿下表中所示。ValueMeaning<b>，则返回 True</b>，则将工作簿发送到下一个收件人。<b>False</b>不发送工作簿。OmittedDisplays 对话框，询问用户是否应发送工作簿。</span>
+          <span data-ttu-id="1f7e4-152">否则，Microsoft Excel 传送工作簿下表中所示。ValueMeaning<b>，则返回 True</b>，则将工作簿发送到下一个收件人。<b>False</b>不发送工作簿。OmittedDisplays 对话框，询问用户是否应发送工作簿。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-139">Otherwise, Microsoft Excel routes the workbook as shown in the following table.ValueMeaning<b>True</b>Sends the workbook to the next recipient.<b>False</b>Doesn't send the workbook.OmittedDisplays a dialog box asking the user whether the workbook should be sent.</span>
+            <span data-stu-id="1f7e4-152">Otherwise, Microsoft Excel routes the workbook as shown in the following table.ValueMeaning<b>True</b>Sends the workbook to the next recipient.<b>False</b>Doesn't send the workbook.OmittedDisplays a dialog box asking the user whether the workbook should be sent.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="81e2e-140">关闭对象。</span>
+          <span data-ttu-id="1f7e4-153">关闭对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-140">Closes the object.</span>
+            <span data-stu-id="1f7e4-153">Closes the object.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
         <remarks>
-          <span data-ttu-id="81e2e-141">
-            <para>的<b>Close</b>方法不运行 Auto_Close 宏工作簿中。使用<see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" />方法可运行自动关闭宏。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-141">
-              <para>The <b>Close</b> method doesn't run any Auto_Close macros in the workbook. Use the <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> method to run the auto close macros.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-154">
+              <b>Close</b>方法不运行 Auto_Close 宏工作簿中。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-154">The <b>Close</b> method doesn't run any Auto_Close macros in the workbook.</span>
             </span>
-          </span>
+            <span data-ttu-id="1f7e4-155">使用<see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" />方法可运行自动关闭宏。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-155">Use the <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> method to run the auto close macros.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -730,26 +758,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-142">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
+          <span data-ttu-id="1f7e4-156">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-142">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="1f7e4-156">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="81e2e-143">
-            <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
-            <para>
-              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-143">
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-157">如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-157">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="1f7e4-158">
+              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-158">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="1f7e4-159">例如，Microsoft Excel 具有 XCEL 的创建者代码。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-159">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -780,25 +813,22 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-144">
+          <span data-ttu-id="1f7e4-160">
             <b>True</b>如果窗口将显示公式;<b>False</b>如果窗口将显示值。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-144">
+            <span data-stu-id="1f7e4-160">
               <b>True</b> if the window is displaying formulas; <b>False</b> if the window is displaying values.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="81e2e-145">
-            <para>此属性仅适用于工作表和宏工作表。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-145">
-              <para>This property applies only to worksheets and macro sheets.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-161">该属性仅应用于工作表和宏工作表。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-161">This property applies only to worksheets and macro sheets.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -829,27 +859,32 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-146">
+          <span data-ttu-id="1f7e4-162">
             <b>True</b>如果显示网格线。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-146">
+            <span data-stu-id="1f7e4-162">
               <b>True</b> if gridlines are displayed.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="81e2e-147">
-            <para>此属性仅适用于工作表和宏工作表。</para>
-            <para>此属性会影响只显示网格线。使用<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintGridlines" />属性控制打印网格线。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-147">
-              <para>This property applies only to worksheets and macro sheets.</para>
-              <para>This property affects only displayed gridlines. Use the <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintGridlines" /> property to control the printing of gridlines.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-163">该属性仅应用于工作表和宏工作表。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-163">This property applies only to worksheets and macro sheets.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="1f7e4-164">此属性会影响只显示网格线。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-164">This property affects only displayed gridlines.</span>
+            </span>
+            <span data-ttu-id="1f7e4-165">使用<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintGridlines" />属性控制打印网格线。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-165">Use the <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintGridlines" /> property to control the printing of gridlines.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -880,27 +915,32 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-148">
+          <span data-ttu-id="1f7e4-166">
             <b>True</b>如果显示行和列标题;<b>False</b>时不显示的标题。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-148">
+            <span data-stu-id="1f7e4-166">
               <b>True</b> if both row and column headings are displayed; <b>False</b> if there are no headings displayed.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="81e2e-149">
-            <para>此属性仅适用于工作表和宏工作表。</para>
-            <para>此属性会影响只显示标题。使用<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintHeadings" />属性控制标题的打印。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-149">
-              <para>This property applies only to worksheets and macro sheets.</para>
-              <para>This property affects only displayed headings. Use the <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintHeadings" /> property to control the printing of headings.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-167">该属性仅应用于工作表和宏工作表。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-167">This property applies only to worksheets and macro sheets.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="1f7e4-168">此属性会影响只显示标题。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-168">This property affects only displayed headings.</span>
+            </span>
+            <span data-ttu-id="1f7e4-169">使用<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintHeadings" />属性控制标题的打印。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-169">Use the <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintHeadings" /> property to control the printing of headings.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -931,9 +971,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-150">如果为<b>true</b>则显示水平滚动条。</span>
+          <span data-ttu-id="1f7e4-170">如果为<b>true</b>则显示水平滚动条。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-150">
+            <span data-stu-id="1f7e4-170">
               <b>True</b> if the horizontal scroll bar is displayed.</span>
           </span>
         </summary>
@@ -968,25 +1008,22 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-151">
+          <span data-ttu-id="1f7e4-171">
             <b>True</b>如果显示分级显示符号。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-151">
+            <span data-stu-id="1f7e4-171">
               <b>True</b> if outline symbols are displayed.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="81e2e-152">
-            <para>此属性仅适用于工作表和宏工作表。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-152">
-              <para>This property applies only to worksheets and macro sheets.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-172">该属性仅应用于工作表和宏工作表。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-172">This property applies only to worksheets and macro sheets.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1017,16 +1054,16 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-153">
+          <span data-ttu-id="1f7e4-173">
             <b>True</b>如果指定的窗口显示从右到左而不是从左到右。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-153">
+            <span data-stu-id="1f7e4-173">
               <b>True</b> if the specified window is displayed from right to left instead of from left to right.</span>
           </span>
-          <span data-ttu-id="81e2e-154">
+          <span data-ttu-id="1f7e4-174">
             <b>False</b>如果对象显示从左到右。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-154">
+            <span data-stu-id="1f7e4-174">
               <b>False</b> if the object is displayed from left to right.</span>
           </span>
         </summary>
@@ -1061,22 +1098,22 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-155">如果为<b>true</b>的指定窗口中显示标尺。</span>
+          <span data-ttu-id="1f7e4-175">如果为<b>true</b>的指定窗口中显示标尺。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-155">
+            <span data-stu-id="1f7e4-175">
               <b>True</b> if a ruler is displayed for the specified window.</span>
           </span>
-          <span data-ttu-id="81e2e-156">为可读/写属性。</span>
+          <span data-ttu-id="1f7e4-176">为可读/写属性。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-156">Read/write.</span>
+            <span data-stu-id="1f7e4-176">Read/write.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="81e2e-157">
+          <span data-ttu-id="1f7e4-177">
             <b>Boolean</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-157">
+            <span data-stu-id="1f7e4-177">
               <b>Boolean</b>
             </span>
           </span>
@@ -1111,9 +1148,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-158">如果为<b>true</b>则显示垂直滚动条。</span>
+          <span data-ttu-id="1f7e4-178">如果为<b>true</b>则显示垂直滚动条。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-158">
+            <span data-stu-id="1f7e4-178">
               <b>True</b> if the vertical scroll bar is displayed.</span>
           </span>
         </summary>
@@ -1148,22 +1185,22 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-159">如果为<b>true</b>将显示空白。</span>
+          <span data-ttu-id="1f7e4-179">如果为<b>true</b>将显示空白。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-159">
+            <span data-stu-id="1f7e4-179">
               <b>True</b> if whitespace is displayed.</span>
           </span>
-          <span data-ttu-id="81e2e-160">为可读/写属性。</span>
+          <span data-ttu-id="1f7e4-180">为可读/写属性。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-160">Read/write.</span>
+            <span data-stu-id="1f7e4-180">Read/write.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="81e2e-161">
+          <span data-ttu-id="1f7e4-181">
             <b>Boolean</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-161">
+            <span data-stu-id="1f7e4-181">
               <b>Boolean</b>
             </span>
           </span>
@@ -1198,10 +1235,10 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-162">
+          <span data-ttu-id="1f7e4-182">
             <b>True</b>如果显示工作簿选项卡。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-162">
+            <span data-stu-id="1f7e4-182">
               <b>True</b> if the workbook tabs are displayed.</span>
           </span>
         </summary>
@@ -1236,25 +1273,22 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-163">
+          <span data-ttu-id="1f7e4-183">
             <b>True</b>如果显示零值。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-163">
+            <span data-stu-id="1f7e4-183">
               <b>True</b> if zero values are displayed.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="81e2e-164">
-            <para>此属性仅适用于工作表和宏工作表。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-164">
-              <para>This property applies only to worksheets and macro sheets.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-184">该属性仅应用于工作表和宏工作表。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-184">This property applies only to worksheets and macro sheets.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1285,9 +1319,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-165">如果为<b>true</b>可调整窗口大小。</span>
+          <span data-ttu-id="1f7e4-185">如果为<b>true</b>可调整窗口大小。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-165">
+            <span data-stu-id="1f7e4-185">
               <b>True</b> if the window can be resized.</span>
           </span>
         </summary>
@@ -1322,27 +1356,28 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-166">
+          <span data-ttu-id="1f7e4-186">
             <b>True</b>如果拆分窗格被冻结。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-166">
+            <span data-stu-id="1f7e4-186">
               <b>True</b> if split panes are frozen.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="81e2e-167">
-            <para>它是为<b>真</b><b>FreezePanes</b>可能为和<see cref="P:Microsoft.Office.Interop.Excel.Window.Split" />为<b>False</b>，反之亦然。</para>
-            <para>此属性仅适用于工作表和宏工作表。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-167">
-              <para>It’s possible for <b>FreezePanes </b>to be <b>True</b> and <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> to be <b>False</b>, or vice versa.</para>
-              <para>This property applies only to worksheets and macro sheets.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-187">它是为<b>真</b><b>FreezePanes</b>可能为和<see cref="P:Microsoft.Office.Interop.Excel.Window.Split" />为<b>False</b>，反之亦然。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-187">It’s possible for <b>FreezePanes </b>to be <b>True</b> and <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> to be <b>False</b>, or vice versa.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="1f7e4-188">该属性仅应用于工作表和宏工作表。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-188">This property applies only to worksheets and macro sheets.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1373,9 +1408,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-168">返回或设置网格线颜色以 RGB 值。</span>
+          <span data-ttu-id="1f7e4-189">返回或设置网格线颜色以 RGB 值。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-168">Returns or sets the gridline color as an RGB value.</span>
+            <span data-stu-id="1f7e4-189">Returns or sets the gridline color as an RGB value.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -1409,23 +1444,20 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-169">返回或设置网格线颜色作为索引，当前调色板或作为<see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" />常量。</span>
+          <span data-ttu-id="1f7e4-190">返回或设置网格线颜色作为索引，当前调色板或作为<see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" />常量。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-169">Returns or sets the gridline color as an index into the current color palette or as an <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constant.</span>
+            <span data-stu-id="1f7e4-190">Returns or sets the gridline color as an index into the current color palette or as an <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constant.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="81e2e-170">
-            <para>将此属性设置为<b>xlColorIndexAutomatic</b>可指定颜色为自动。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-170">
-              <para>Set this property to <b>xlColorIndexAutomatic</b> to specify the automatic color.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-191">将该属性设置为 <b>xlColorIndexAutomatic</b> 可指定颜色为自动。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-191">Set this property to <b>xlColorIndexAutomatic</b> to specify the automatic color.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1456,20 +1488,28 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-171">以磅为单位窗口的高度。</span>
+          <span data-ttu-id="1f7e4-192">以磅为单位窗口的高度。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-171">The height of the window in points.</span>
+            <span data-stu-id="1f7e4-192">The height of the window in points.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="81e2e-172">使用<para><see cref="P:Microsoft.Office.Interop.Excel.Window.UsableHeight" />属性来确定窗口的最大大小。如果窗口处于最大化或最小化，不能设置此属性。使用<see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" />属性来确定窗口状态。</para><para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-172">
-              <para>Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableHeight" /> property to determine the maximum size for the window. You cannot set this property if the window is maximized or minimized. Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> property to determine the window state.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-193">使用<see cref="P:Microsoft.Office.Interop.Excel.Window.UsableHeight" />属性来确定窗口的最大大小。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-193">Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableHeight" /> property to determine the maximum size for the window.</span>
             </span>
-          </span>
+            <span data-ttu-id="1f7e4-194">如果在窗口处于最大化或最小化时，不能设置此属性。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-194">You cannot set this property if the window is maximized or minimized.</span>
+            </span>
+            <span data-ttu-id="1f7e4-195">使用<see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" />属性来确定窗口状态。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-195">Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> property to determine the window state.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1497,15 +1537,15 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-173">返回指定的窗口的窗口句柄。</span>
+          <span data-ttu-id="1f7e4-196">返回指定的窗口的窗口句柄。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-173">Returns the window handle of the specified window.</span>
+            <span data-stu-id="1f7e4-196">Returns the window handle of the specified window.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="81e2e-174">整数 (C# 中 int)</span>
+          <span data-ttu-id="1f7e4-197">整数 (C# 中 int)</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-174">Integer (int in C#)</span>
+            <span data-stu-id="1f7e4-197">Integer (int in C#)</span>
           </span>
         </value>
         <remarks>To be added.</remarks>
@@ -1535,9 +1575,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-175">返回对象在其同类对象所组成的集合内的编号。</span>
+          <span data-ttu-id="1f7e4-198">返回对象在其同类对象所组成的集合内的编号。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-175">Returns the index number of the object within the collection of similar objects.</span>
+            <span data-stu-id="1f7e4-198">Returns the index number of the object within the collection of similar objects.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -1570,67 +1610,80 @@
       </Parameters>
       <Docs>
         <param name="Down">
-          <span data-ttu-id="81e2e-176">可选的<b>对象</b>。</span>
+          <span data-ttu-id="1f7e4-199">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-176">Optional <b>Object</b>.</span>
+            <span data-stu-id="1f7e4-199">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="81e2e-177">向下滚动内容的页数。</span>
+          <span data-ttu-id="1f7e4-200">向下滚动内容的页数。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-177">The number of pages to scroll the contents down.</span>
+            <span data-stu-id="1f7e4-200">The number of pages to scroll the contents down.</span>
           </span>
         </param>
         <param name="Up">
-          <span data-ttu-id="81e2e-178">可选的<b>对象</b>。</span>
+          <span data-ttu-id="1f7e4-201">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-178">Optional <b>Object</b>.</span>
+            <span data-stu-id="1f7e4-201">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="81e2e-179">向上滚动内容的页数。</span>
+          <span data-ttu-id="1f7e4-202">向上滚动内容的页数。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-179">The number of pages to scroll the contents up.</span>
+            <span data-stu-id="1f7e4-202">The number of pages to scroll the contents up.</span>
           </span>
         </param>
         <param name="ToRight">
-          <span data-ttu-id="81e2e-180">可选的<b>对象</b>。</span>
+          <span data-ttu-id="1f7e4-203">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-180">Optional <b>Object</b>.</span>
+            <span data-stu-id="1f7e4-203">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="81e2e-181">向右滚动内容的页数。</span>
+          <span data-ttu-id="1f7e4-204">向右滚动内容的页数。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-181">The number of pages to scroll the contents to the right.</span>
+            <span data-stu-id="1f7e4-204">The number of pages to scroll the contents to the right.</span>
           </span>
         </param>
         <param name="ToLeft">
-          <span data-ttu-id="81e2e-182">可选的<b>对象</b>。</span>
+          <span data-ttu-id="1f7e4-205">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-182">Optional <b>Object</b>.</span>
+            <span data-stu-id="1f7e4-205">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="81e2e-183">向左滚动内容的页数。</span>
+          <span data-ttu-id="1f7e4-206">向左滚动内容的页数。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-183">The number of pages to scroll the contents to the left.</span>
+            <span data-stu-id="1f7e4-206">The number of pages to scroll the contents to the left.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="81e2e-184">按页滚动窗口内容。</span>
+          <span data-ttu-id="1f7e4-207">按页滚动窗口内容。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-184">Scrolls the contents of the window by pages.</span>
+            <span data-stu-id="1f7e4-207">Scrolls the contents of the window by pages.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
         <remarks>
-          <span data-ttu-id="81e2e-185">
-            <para>如果<paramref name="Down" />和<paramref name="Up" />都已指定，则内容的窗口滚动个参数的差。例如，如果<paramref name="Down" />是 3 和<paramref name="Up" />为 6，内容向上滚动三页。</para>
-            <para>如果<paramref name="ToLeft" />和<paramref name="ToRight" />都已指定，则内容的窗口滚动个参数的差。例如，如果<paramref name="ToLeft" />是 3 和<paramref name="ToRight" />为 6，则内容滚动到右三页。</para>
-            <para>任何参数均可为负数。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-185">
-              <para>If <paramref name="Down" /> and <paramref name="Up" /> are both specified, the contents of the window are scrolled by the difference of the arguments. For example, if <paramref name="Down" /> is 3 and <paramref name="Up" /> is 6, the contents are scrolled up three pages.</para>
-              <para>If <paramref name="ToLeft" /> and <paramref name="ToRight" /> are both specified, the contents of the window are scrolled by the difference of the arguments. For example, if <paramref name="ToLeft" /> is 3 and <paramref name="ToRight" /> is 6, the contents are scrolled to the right three pages.</para>
-              <para>Any of the arguments can be a negative number.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-208">如果<paramref name="Down" />和<paramref name="Up" />都已指定，则内容的窗口滚动个参数的差。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-208">If <paramref name="Down" /> and <paramref name="Up" /> are both specified, the contents of the window are scrolled by the difference of the arguments.</span>
             </span>
-          </span>
+            <span data-ttu-id="1f7e4-209">例如，如果<paramref name="Down" />是 3 和<paramref name="Up" />为 6，内容向上滚动三页。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-209">For example, if <paramref name="Down" /> is 3 and <paramref name="Up" /> is 6, the contents are scrolled up three pages.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="1f7e4-210">如果<paramref name="ToLeft" />和<paramref name="ToRight" />都已指定，则内容的窗口滚动个参数的差。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-210">If <paramref name="ToLeft" /> and <paramref name="ToRight" /> are both specified, the contents of the window are scrolled by the difference of the arguments.</span>
+            </span>
+            <span data-ttu-id="1f7e4-211">例如，如果<paramref name="ToLeft" />是 3 和<paramref name="ToRight" />为 6，则内容滚动到右三页。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-211">For example, if <paramref name="ToLeft" /> is 3 and <paramref name="ToRight" /> is 6, the contents are scrolled to the right three pages.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="1f7e4-212">以上任何参数均可为负数。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-212">Any of the arguments can be a negative number.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1661,9 +1714,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-186">以磅为单位的左边缘从客户区到窗口的左边缘之间的距离。</span>
+          <span data-ttu-id="1f7e4-213">以磅为单位的左边缘从客户区到窗口的左边缘之间的距离。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-186">The distance in points from the left edge of the client area to the left edge of the window.</span>
+            <span data-stu-id="1f7e4-213">The distance in points from the left edge of the client area to the left edge of the window.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -1692,9 +1745,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-187">新建一个窗口或者创建指定窗口的副本。</span>
+          <span data-ttu-id="1f7e4-214">新建一个窗口或者创建指定窗口的副本。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-187">Creates a new window or a copy of the specified window.</span>
+            <span data-stu-id="1f7e4-214">Creates a new window or a copy of the specified window.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -1728,25 +1781,30 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-188">返回或设置时激活一个窗口运行过程的名称。</span>
+          <span data-ttu-id="1f7e4-215">返回或设置时激活一个窗口运行过程的名称。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-188">Returns or sets the name of the procedure that’s run whenever you activate a window.</span>
+            <span data-stu-id="1f7e4-215">Returns or sets the name of the procedure that’s run whenever you activate a window.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="81e2e-189">
-            <para>当其他过程切换到窗口或切换到窗口的命令通过 DDE 通道接收时，不运行此属性指定的过程。相反，过程响应用户操作，例如单击鼠标的窗口，单击转到上的编辑菜单中，依次类推。</para>
-            <para>如果表或宏表具有为它定义的 Auto_Activate 或 Auto_Deactivate 宏，将在<b>OnWindow</b>属性指定的过程之后运行这些宏。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-189">
-              <para>The procedure specified by this property isn’t run when other procedures switch to the window or when a command to switch to a window is received through a DDE channel. Instead, the procedure responds to the user's actions, such as clicking a window with the mouse, clicking Go To on the Edit menu, and so on.</para>
-              <para>If a worksheet or macro sheet has an Auto_Activate or Auto_Deactivate macro defined for it, those macros will be run after the procedure specified by the <b>OnWindow</b> property.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-216">当其他过程切换到窗口或切换到窗口的命令通过 DDE 通道接收时，此属性指定的过程不运行。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-216">The procedure specified by this property isn’t run when other procedures switch to the window or when a command to switch to a window is received through a DDE channel.</span>
             </span>
-          </span>
+            <span data-ttu-id="1f7e4-217">而是过程响应用户操作，如单击了鼠标窗口单击转到编辑菜单上，依次类推。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-217">Instead, the procedure responds to the user's actions, such as clicking a window with the mouse, clicking Go To on the Edit menu, and so on.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="1f7e4-218">如果一个工作表或宏表具有为它定义的 Auto_Activate 或 Auto_Deactivate 宏，这些宏将会在 <b>OnWindow</b> 属性指定的过程之后运行。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-218">If a worksheet or macro sheet has an Auto_Activate or Auto_Deactivate macro defined for it, those macros will be run after the procedure specified by the <b>OnWindow</b> property.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1774,23 +1832,20 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-190">返回<see cref="T:Microsoft.Office.Interop.Excel.Panes" />集合，代表指定窗口中的所有窗格。</span>
+          <span data-ttu-id="1f7e4-219">返回<see cref="T:Microsoft.Office.Interop.Excel.Panes" />集合，代表指定窗口中的所有窗格。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-190">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> collection that represents all the panes in the specified window.</span>
+            <span data-stu-id="1f7e4-219">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> collection that represents all the panes in the specified window.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="81e2e-191">
-            <para>此属性是可用于窗口才窗口的<see cref="P:Microsoft.Office.Interop.Excel.Window.Split" />属性可设置为<b>True</b>。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-191">
-              <para>This property is available for a window only if the window’s <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> property can be set to <b>True</b>.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-220">此属性是可用于窗口才窗口的<see cref="P:Microsoft.Office.Interop.Excel.Window.Split" />属性可设置为<b>True</b>。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-220">This property is available for a window only if the window’s <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> property can be set to <b>True</b>.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1818,9 +1873,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-192">返回指定对象的父对象。</span>
+          <span data-ttu-id="1f7e4-221">返回指定对象的父对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-192">Returns the parent object for the specified object.</span>
+            <span data-stu-id="1f7e4-221">Returns the parent object for the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -1851,21 +1906,21 @@
       </Parameters>
       <Docs>
         <param name="Points">
-          <span data-ttu-id="81e2e-193">
+          <span data-ttu-id="1f7e4-222">
             <b>必选。</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-193">Required <b>Integer</b>.</span>
+            <span data-stu-id="1f7e4-222">Required <b>Integer</b>.</span>
           </span>
-          <span data-ttu-id="81e2e-194">从文档窗口的左侧开始沿其顶部水平排列的点数。</span>
+          <span data-ttu-id="1f7e4-223">从文档窗口的左侧开始沿其顶部水平排列的点数。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-194">The number of points horizontally along the top of the document window, starting from the left.</span>
+            <span data-stu-id="1f7e4-223">The number of points horizontally along the top of the document window, starting from the left.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="81e2e-195">将从磅 （文档坐标） 的横向度量值转换为屏幕像素 （屏幕坐标）。</span>
+          <span data-ttu-id="1f7e4-224">将从磅 （文档坐标） 的横向度量值转换为屏幕像素 （屏幕坐标）。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-195">Converts a horizontal measurement from points (document coordinates) to screen pixels (screen coordinates).</span>
+            <span data-stu-id="1f7e4-224">Converts a horizontal measurement from points (document coordinates) to screen pixels (screen coordinates).</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -1896,21 +1951,21 @@
       </Parameters>
       <Docs>
         <param name="Points">
-          <span data-ttu-id="81e2e-196">
+          <span data-ttu-id="1f7e4-225">
             <b>必选。</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-196">Required <b>Integer</b>.</span>
+            <span data-stu-id="1f7e4-225">Required <b>Integer</b>.</span>
           </span>
-          <span data-ttu-id="81e2e-197">从文档窗口的顶部开始沿其左边缘垂直排列的点数。</span>
+          <span data-ttu-id="1f7e4-226">从文档窗口的顶部开始沿其左边缘垂直排列的点数。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-197">The number of points vertically along the left edge of the document window, starting from the top.</span>
+            <span data-stu-id="1f7e4-226">The number of points vertically along the left edge of the document window, starting from the top.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="81e2e-198">将从磅 （文档坐标） 的纵向度量值转换为屏幕像素 （屏幕坐标）。</span>
+          <span data-ttu-id="1f7e4-227">将从磅 （文档坐标） 的纵向度量值转换为屏幕像素 （屏幕坐标）。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-198">Converts a vertical measurement from points (document coordinates) to screen pixels (screen coordinates).</span>
+            <span data-stu-id="1f7e4-227">Converts a vertical measurement from points (document coordinates) to screen pixels (screen coordinates).</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -1947,130 +2002,127 @@
       </Parameters>
       <Docs>
         <param name="From">
-          <span data-ttu-id="81e2e-199">可选的<b>对象</b>。</span>
+          <span data-ttu-id="1f7e4-228">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-199">Optional <b>Object</b>.</span>
+            <span data-stu-id="1f7e4-228">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="81e2e-200">从中开始打印的页的页码。</span>
+          <span data-ttu-id="1f7e4-229">从中开始打印的页的页码。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-200">The number of the page at which to start printing.</span>
+            <span data-stu-id="1f7e4-229">The number of the page at which to start printing.</span>
           </span>
-          <span data-ttu-id="81e2e-201">如果省略此参数，则打印从开头。</span>
+          <span data-ttu-id="1f7e4-230">如果省略此参数，则打印从开头。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-201">If this argument is omitted, printing starts at the beginning.</span>
+            <span data-stu-id="1f7e4-230">If this argument is omitted, printing starts at the beginning.</span>
           </span>
         </param>
         <param name="To">
-          <span data-ttu-id="81e2e-202">可选的<b>对象</b>。</span>
+          <span data-ttu-id="1f7e4-231">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-202">Optional <b>Object</b>.</span>
+            <span data-stu-id="1f7e4-231">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="81e2e-203">要打印的末页数。</span>
+          <span data-ttu-id="1f7e4-232">要打印的末页数。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-203">The number of the last page to print.</span>
+            <span data-stu-id="1f7e4-232">The number of the last page to print.</span>
           </span>
-          <span data-ttu-id="81e2e-204">如果省略此参数，则打印至最后一页。</span>
+          <span data-ttu-id="1f7e4-233">如果省略此参数，则打印至最后一页。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-204">If this argument is omitted, printing ends with the last page.</span>
+            <span data-stu-id="1f7e4-233">If this argument is omitted, printing ends with the last page.</span>
           </span>
         </param>
         <param name="Copies">
-          <span data-ttu-id="81e2e-205">可选的<b>对象</b>。</span>
+          <span data-ttu-id="1f7e4-234">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-205">Optional <b>Object</b>.</span>
+            <span data-stu-id="1f7e4-234">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="81e2e-206">要打印的份数。</span>
+          <span data-ttu-id="1f7e4-235">要打印的份数。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-206">The number of copies to print.</span>
+            <span data-stu-id="1f7e4-235">The number of copies to print.</span>
           </span>
-          <span data-ttu-id="81e2e-207">如果省略此参数，则打印一份。</span>
+          <span data-ttu-id="1f7e4-236">如果省略此参数，则打印一份。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-207">If this argument is omitted, one copy is printed.</span>
+            <span data-stu-id="1f7e4-236">If this argument is omitted, one copy is printed.</span>
           </span>
         </param>
         <param name="Preview">
-          <span data-ttu-id="81e2e-208">可选的<b>对象</b>。</span>
+          <span data-ttu-id="1f7e4-237">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-208">Optional <b>Object</b>.</span>
+            <span data-stu-id="1f7e4-237">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="81e2e-209">
+          <span data-ttu-id="1f7e4-238">
             <b>True</b>由 Microsoft Excel 调用之前打印对象的打印预览。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-209">
+            <span data-stu-id="1f7e4-238">
               <b>True</b> to have Microsoft Excel invoke print preview before printing the object.</span>
           </span>
-          <span data-ttu-id="81e2e-210">
+          <span data-ttu-id="1f7e4-239">
             <b>False</b>（或省略） 若要立即打印对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-210">
+            <span data-stu-id="1f7e4-239">
               <b>False</b> (or omitted) to print the object immediately.</span>
           </span>
         </param>
         <param name="ActivePrinter">
-          <span data-ttu-id="81e2e-211">可选的<b>对象</b>。</span>
+          <span data-ttu-id="1f7e4-240">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-211">Optional <b>Object</b>.</span>
+            <span data-stu-id="1f7e4-240">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="81e2e-212">设置活动打印机的名称。</span>
+          <span data-ttu-id="1f7e4-241">设置活动打印机的名称。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-212">Sets the name of the active printer.</span>
+            <span data-stu-id="1f7e4-241">Sets the name of the active printer.</span>
           </span>
         </param>
         <param name="PrintToFile">
-          <span data-ttu-id="81e2e-213">可选的<b>对象</b>。</span>
+          <span data-ttu-id="1f7e4-242">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-213">Optional <b>Object</b>.</span>
+            <span data-stu-id="1f7e4-242">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="81e2e-214">
+          <span data-ttu-id="1f7e4-243">
             <b>True</b>打印到文件。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-214">
+            <span data-stu-id="1f7e4-243">
               <b>True</b> to print to a file.</span>
           </span>
-          <span data-ttu-id="81e2e-215">如果<paramref name="PrToFileName" />未指定，则 Microsoft Excel 将提示用户输入输出文件的名称。</span>
+          <span data-ttu-id="1f7e4-244">如果<paramref name="PrToFileName" />未指定，则 Microsoft Excel 将提示用户输入输出文件的名称。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-215">If <paramref name="PrToFileName" /> is not specified, Microsoft Excel prompts the user to enter the name of the output file.</span>
+            <span data-stu-id="1f7e4-244">If <paramref name="PrToFileName" /> is not specified, Microsoft Excel prompts the user to enter the name of the output file.</span>
           </span>
         </param>
         <param name="Collate">
-          <span data-ttu-id="81e2e-216">可选的<b>对象</b>。</span>
+          <span data-ttu-id="1f7e4-245">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-216">Optional <b>Object</b>.</span>
+            <span data-stu-id="1f7e4-245">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="81e2e-217">如果为 <b>True</b>，则逐份打印多个副本。</span>
+          <span data-ttu-id="1f7e4-246">如果为 <b>True</b>，则逐份打印多个副本。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-217">
+            <span data-stu-id="1f7e4-246">
               <b>True</b> to collate multiple copies.</span>
           </span>
         </param>
         <param name="PrToFileName">
-          <span data-ttu-id="81e2e-218">可选的<b>对象</b>。</span>
+          <span data-ttu-id="1f7e4-247">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-218">Optional <b>Object</b>.</span>
+            <span data-stu-id="1f7e4-247">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="81e2e-219">如果<paramref name="PrintToFile" />设置为<b>True</b>，则该参数指定要打印到的文件的名称。</span>
+          <span data-ttu-id="1f7e4-248">如果<paramref name="PrintToFile" />设置为<b>True</b>，则该参数指定要打印到的文件的名称。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-219">If <paramref name="PrintToFile" /> is set to <b>True</b>, this argument specifies the name of the file you want to print to.</span>
+            <span data-stu-id="1f7e4-248">If <paramref name="PrintToFile" /> is set to <b>True</b>, this argument specifies the name of the file you want to print to.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="81e2e-220">打印对象。</span>
+          <span data-ttu-id="1f7e4-249">打印对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-220">Prints the object.</span>
+            <span data-stu-id="1f7e4-249">Prints the object.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
         <remarks>
-          <span data-ttu-id="81e2e-221">
-            <para>"页面"的说明中的<paramref name="From" />和<paramref name="To" />指打印页 — 表或工作簿中的未全部页。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-221">
-              <para>"Pages" in the descriptions of <paramref name="From" /> and <paramref name="To" /> refers to printed pages — not overall pages in the sheet or workbook.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-250">说明中的"页面"<paramref name="From" />和<paramref name="To" />指打印页 — 表或工作簿中的未全部页。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-250">"Pages" in the descriptions of <paramref name="From" /> and <paramref name="To" /> refers to printed pages — not overall pages in the sheet or workbook.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2097,15 +2149,15 @@
       </Parameters>
       <Docs>
         <param name="EnableChanges">
-          <span data-ttu-id="81e2e-222">在预览期间允许更改。</span>
+          <span data-ttu-id="1f7e4-251">在预览期间允许更改。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-222">Enables changes during preview.</span>
+            <span data-stu-id="1f7e4-251">Enables changes during preview.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="81e2e-223">按对象打印后的外观效果显示对象的预览。</span>
+          <span data-ttu-id="1f7e4-252">按对象打印后的外观效果显示对象的预览。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-223">Shows a preview of the object as it would look when printed.</span>
+            <span data-stu-id="1f7e4-252">Shows a preview of the object as it would look when printed.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -2137,37 +2189,37 @@
       </Parameters>
       <Docs>
         <param name="x">
-          <span data-ttu-id="81e2e-224">
+          <span data-ttu-id="1f7e4-253">
             <b>必选。</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-224">Required <b>Integer</b>.</span>
+            <span data-stu-id="1f7e4-253">Required <b>Integer</b>.</span>
           </span>
-          <span data-ttu-id="81e2e-225">表示从顶部开始到屏幕左边缘的水平距离的值（以像素为单位）。</span>
+          <span data-ttu-id="1f7e4-254">表示从顶部开始到屏幕左边缘的水平距离的值（以像素为单位）。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-225">The value (in pixels) that represents the horizontal distance from the left edge of the screen, starting at the top.</span>
+            <span data-stu-id="1f7e4-254">The value (in pixels) that represents the horizontal distance from the left edge of the screen, starting at the top.</span>
           </span>
         </param>
         <param name="y">
-          <span data-ttu-id="81e2e-226">
+          <span data-ttu-id="1f7e4-255">
             <b>必选。</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-226">Required <b>Integer</b>.</span>
+            <span data-stu-id="1f7e4-255">Required <b>Integer</b>.</span>
           </span>
-          <span data-ttu-id="81e2e-227">表示从左侧开始到屏幕顶部的垂直距离的值（以像素为单位）。</span>
+          <span data-ttu-id="1f7e4-256">表示从左侧开始到屏幕顶部的垂直距离的值（以像素为单位）。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-227">The value (in pixels) that represents the vertical distance from the top of the screen, starting on the left.</span>
+            <span data-stu-id="1f7e4-256">The value (in pixels) that represents the vertical distance from the top of the screen, starting on the left.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="81e2e-228">返回<see cref="T:Microsoft.Office.Interop.Excel.Shape" />或<see cref="T:Microsoft.Office.Interop.Excel.Range" />位于屏幕坐标的指定对的对象。</span>
+          <span data-ttu-id="1f7e4-257">返回<see cref="T:Microsoft.Office.Interop.Excel.Shape" />或<see cref="T:Microsoft.Office.Interop.Excel.Range" />位于屏幕坐标的指定对的对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-228">Returns the <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> or <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that is positioned at the specified pair of screen coordinates.</span>
+            <span data-stu-id="1f7e4-257">Returns the <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> or <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that is positioned at the specified pair of screen coordinates.</span>
           </span>
-          <span data-ttu-id="81e2e-229">如果没有指定坐标处位于形状，则此方法将返回<b>Nothing</b>。</span>
+          <span data-ttu-id="1f7e4-258">如果没有指定坐标处位于形状，则此方法将返回<b>Nothing</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-229">If there isn’t a shape located at the specified coordinates, this method returns <b>Nothing</b>.</span>
+            <span data-stu-id="1f7e4-258">If there isn’t a shape located at the specified coordinates, this method returns <b>Nothing</b>.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -2198,27 +2250,32 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-230">返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />值，该值代表指定窗口中工作表上的所选单元格，即使 graphic 对象是活动或选定工作表上的对象。</span>
+          <span data-ttu-id="1f7e4-259">返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />值，该值代表指定窗口中工作表上的所选单元格，即使 graphic 对象是活动或选定工作表上的对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-230">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the selected cells on the worksheet in the specified window even if a graphic object is active or selected on the worksheet.</span>
+            <span data-stu-id="1f7e4-259">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the selected cells on the worksheet in the specified window even if a graphic object is active or selected on the worksheet.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="81e2e-231">
-            <para>在工作表中，选择 graphic 对象时<see cref="P:Microsoft.Office.Interop.Excel.Window.Selection" />属性返回 graphic 对象而不是一个<b>Range</b>对象;<b>RangeSelection</b>属性返回 graphic 对象已选择前已选中的单元格区域。</para>
-            <para>此属性和<b>Selection</b>属性返回相同的值 （不图形对象） 的范围选择工作表上时。</para>
-            <para>如果指定窗口中的活动表不是工作表，该属性无效。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-231">
-              <para>When a graphic object is selected on a worksheet, the <see cref="P:Microsoft.Office.Interop.Excel.Window.Selection" /> property returns the graphic object instead of a <b>Range</b> object; the <b>RangeSelection</b> property returns the range of cells that was selected before the graphic object was selected.</para>
-              <para>This property and the <b>Selection</b> property return identical values when a range (not a graphic object) is selected on the worksheet.</para>
-              <para>If the active sheet in the specified window isn’t a worksheet, this property fails.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-260">在工作表中，选择 graphic 对象时<see cref="P:Microsoft.Office.Interop.Excel.Window.Selection" />属性返回 graphic 对象而不是一个<b>Range</b>对象;<b>RangeSelection</b>属性返回 graphic 对象已选择前已选中的单元格区域。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-260">When a graphic object is selected on a worksheet, the <see cref="P:Microsoft.Office.Interop.Excel.Window.Selection" /> property returns the graphic object instead of a <b>Range</b> object; the <b>RangeSelection</b> property returns the range of cells that was selected before the graphic object was selected.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="1f7e4-261">当工作表中选定的是一个单元格区域时（不是一个图形对象），该属性和 <b>Selection</b> 属性将返回相同的值。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-261">This property and the <b>Selection</b> property return identical values when a range (not a graphic object) is selected on the worksheet.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="1f7e4-262">如果指定窗口中的活动表不是一个工作表，则该属性无效。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-262">If the active sheet in the specified window isn’t a worksheet, this property fails.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2249,20 +2306,24 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-232">返回或设置在窗格或窗口的左侧的列数。</span>
+          <span data-ttu-id="1f7e4-263">返回或设置在窗格或窗口的左侧的列数。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-232">Returns or sets the number of the leftmost column in the pane or window.</span>
+            <span data-stu-id="1f7e4-263">Returns or sets the number of the leftmost column in the pane or window.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="81e2e-233">如果指定窗口拆分的<b>ScrollColumn</b>属性<para><see cref="T:Microsoft.Office.Interop.Excel.Window" />对象引用左上角的窗格。如果冻结窗格， <b>Window</b>对象的<b>ScrollColumn</b>属性排除冻结的区域。</para><para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-233">
-              <para>If the window is split, the <b>ScrollColumn</b> property of the <see cref="T:Microsoft.Office.Interop.Excel.Window" /> object refers to the upper-left pane. If the panes are frozen, the <b>ScrollColumn</b> property of the <b>Window</b> object excludes the frozen areas.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-264">如果窗口拆分时的<b>ScrollColumn</b>属性<see cref="T:Microsoft.Office.Interop.Excel.Window" />对象引用左上角的窗格。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-264">If the window is split, the <b>ScrollColumn</b> property of the <see cref="T:Microsoft.Office.Interop.Excel.Window" /> object refers to the upper-left pane.</span>
             </span>
-          </span>
+            <span data-ttu-id="1f7e4-265">如果冻结窗格， <b>Window</b>对象的<b>ScrollColumn</b>属性将排除冻结的区域。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-265">If the panes are frozen, the <b>ScrollColumn</b> property of the <b>Window</b> object excludes the frozen areas.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2293,91 +2354,88 @@
       </Parameters>
       <Docs>
         <param name="Left">
-          <span data-ttu-id="81e2e-234">
+          <span data-ttu-id="1f7e4-266">
             <b>必选。</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-234">Required <b>Integer</b>.</span>
+            <span data-stu-id="1f7e4-266">Required <b>Integer</b>.</span>
           </span>
-          <span data-ttu-id="81e2e-235">矩形距离文档窗口或窗格左边的水平位置（以磅为单位）。</span>
+          <span data-ttu-id="1f7e4-267">矩形距离文档窗口或窗格左边的水平位置（以磅为单位）。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-235">The horizontal position of the rectangle (in points) from the left edge of the document window or pane.</span>
+            <span data-stu-id="1f7e4-267">The horizontal position of the rectangle (in points) from the left edge of the document window or pane.</span>
           </span>
         </param>
         <param name="Top">
-          <span data-ttu-id="81e2e-236">
+          <span data-ttu-id="1f7e4-268">
             <b>必选。</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-236">Required <b>Integer</b>.</span>
+            <span data-stu-id="1f7e4-268">Required <b>Integer</b>.</span>
           </span>
-          <span data-ttu-id="81e2e-237">矩形距离文档窗口或窗格上边的垂直位置（以磅为单位）。</span>
+          <span data-ttu-id="1f7e4-269">矩形距离文档窗口或窗格上边的垂直位置（以磅为单位）。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-237">The vertical position of the rectangle (in points) from the top of the document window or pane.</span>
+            <span data-stu-id="1f7e4-269">The vertical position of the rectangle (in points) from the top of the document window or pane.</span>
           </span>
         </param>
         <param name="Width">
-          <span data-ttu-id="81e2e-238">
+          <span data-ttu-id="1f7e4-270">
             <b>必选。</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-238">Required <b>Integer</b>.</span>
+            <span data-stu-id="1f7e4-270">Required <b>Integer</b>.</span>
           </span>
-          <span data-ttu-id="81e2e-239">矩形的宽度（以磅为单位）。</span>
+          <span data-ttu-id="1f7e4-271">矩形的宽度（以磅为单位）。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-239">The width of the rectangle, in points.</span>
+            <span data-stu-id="1f7e4-271">The width of the rectangle, in points.</span>
           </span>
         </param>
         <param name="Height">
-          <span data-ttu-id="81e2e-240">
+          <span data-ttu-id="1f7e4-272">
             <b>必选。</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-240">Required <b>Integer</b>.</span>
+            <span data-stu-id="1f7e4-272">Required <b>Integer</b>.</span>
           </span>
-          <span data-ttu-id="81e2e-241">矩形的高度（以磅为单位）。</span>
+          <span data-ttu-id="1f7e4-273">矩形的高度（以磅为单位）。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-241">The height of the rectangle, in points.</span>
+            <span data-stu-id="1f7e4-273">The height of the rectangle, in points.</span>
           </span>
         </param>
         <param name="Start">
-          <span data-ttu-id="81e2e-242">可选的<b>整数</b>。</span>
+          <span data-ttu-id="1f7e4-274">可选的<b>整数</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-242">Optional <b>Integer</b>.</span>
+            <span data-stu-id="1f7e4-274">Optional <b>Integer</b>.</span>
           </span>
-          <span data-ttu-id="81e2e-243">在文档窗口或窗格的左上角显示的是<b>，则返回 true</b>左上角的矩形。</span>
+          <span data-ttu-id="1f7e4-275">在文档窗口或窗格的左上角显示的是<b>，则返回 true</b>左上角的矩形。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-243">
+            <span data-stu-id="1f7e4-275">
               <b>True</b> to have the upper-left corner of the rectangle appear in the upper-left corner of the document window or pane.</span>
           </span>
-          <span data-ttu-id="81e2e-244">在文档窗口或窗格的右下角显示的是<b>false</b>矩形的右下角。</span>
+          <span data-ttu-id="1f7e4-276">在文档窗口或窗格的右下角显示的是<b>false</b>矩形的右下角。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-244">
+            <span data-stu-id="1f7e4-276">
               <b>False</b> to have the lower-right corner of the rectangle appear in the lower-right corner of the document window or pane.</span>
           </span>
-          <span data-ttu-id="81e2e-245">默认值为 <b>True</b> 。</span>
+          <span data-ttu-id="1f7e4-277">默认值为 <b>True</b> 。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-245">The default value is <b>True</b>.</span>
+            <span data-stu-id="1f7e4-277">The default value is <b>True</b>.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="81e2e-246">滚动文档窗口，以便在文档窗口或窗格的左上角或右下角显示指定矩形区域中的内容。</span>
+          <span data-ttu-id="1f7e4-278">滚动文档窗口，以便在文档窗口或窗格的左上角或右下角显示指定矩形区域中的内容。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-246">Scrolls the document window so that the contents of a specified rectangular area are displayed in either the upper-left or lower-right corner of the document window or pane.</span>
+            <span data-stu-id="1f7e4-278">Scrolls the document window so that the contents of a specified rectangular area are displayed in either the upper-left or lower-right corner of the document window or pane.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="81e2e-247">
-            <para>
-              <paramref name="Start" />参数对调整屏幕显示当矩形比文档窗口或窗格大时有用处。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-247">
-              <para>The <paramref name="Start" /> argument is useful for orienting the screen display when the rectangle is larger than the document window or pane.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-279">
+              <paramref name="Start" />参数对调整屏幕显示当矩形比文档窗口或窗格大时有用处。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-279">The <paramref name="Start" /> argument is useful for orienting the screen display when the rectangle is larger than the document window or pane.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2408,20 +2466,24 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-248">返回或设置在顶部窗格或窗口中显示的行数。</span>
+          <span data-ttu-id="1f7e4-280">返回或设置在顶部窗格或窗口中显示的行数。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-248">Returns or sets the number of the row that appears at the top of the pane or window.</span>
+            <span data-stu-id="1f7e4-280">Returns or sets the number of the row that appears at the top of the pane or window.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="81e2e-249">如果指定窗口拆分的<b>ScrollRow</b>属性<para><see cref="T:Microsoft.Office.Interop.Excel.Window" />对象引用左上角的窗格。如果冻结窗格， <b>Window</b>对象的<b>ScrollRow</b>属性排除冻结的区域。</para><para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-249">
-              <para>If the window is split, the <b>ScrollRow</b> property of the <see cref="T:Microsoft.Office.Interop.Excel.Window" /> object refers to the upper-left pane. If the panes are frozen, the <b>ScrollRow</b> property of the <b>Window</b> object excludes the frozen areas.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-281">如果窗口拆分时的<b>ScrollRow</b>属性<see cref="T:Microsoft.Office.Interop.Excel.Window" />对象引用左上角的窗格。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-281">If the window is split, the <b>ScrollRow</b> property of the <see cref="T:Microsoft.Office.Interop.Excel.Window" /> object refers to the upper-left pane.</span>
             </span>
-          </span>
+            <span data-ttu-id="1f7e4-282">如果冻结窗格， <b>Window</b>对象的<b>ScrollRow</b>属性将排除冻结的区域。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-282">If the panes are frozen, the <b>ScrollRow</b> property of the <b>Window</b> object excludes the frozen areas.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2449,56 +2511,53 @@
       </Parameters>
       <Docs>
         <param name="Sheets">
-          <span data-ttu-id="81e2e-250">可选的<b>对象</b>。</span>
+          <span data-ttu-id="1f7e4-283">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-250">Optional <b>Object</b>.</span>
+            <span data-stu-id="1f7e4-283">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="81e2e-251">工作表的滚动数。</span>
+          <span data-ttu-id="1f7e4-284">工作表的滚动数。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-251">The number of sheets to scroll by.</span>
+            <span data-stu-id="1f7e4-284">The number of sheets to scroll by.</span>
           </span>
-          <span data-ttu-id="81e2e-252">使用正数向前滚动、 为负数，向右滚动或 0 （零） 不滚动根本。</span>
+          <span data-ttu-id="1f7e4-285">使用正数向前滚动、 为负数，向右滚动或 0 （零） 不滚动根本。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-252">Use a positive number to scroll forward, a negative number to scroll backward, or 0 (zero) not to scroll at all.</span>
+            <span data-stu-id="1f7e4-285">Use a positive number to scroll forward, a negative number to scroll backward, or 0 (zero) not to scroll at all.</span>
           </span>
-          <span data-ttu-id="81e2e-253">必须指定<paramref name="Sheets" />如果不指定<paramref name="Position" />。</span>
+          <span data-ttu-id="1f7e4-286">必须指定<paramref name="Sheets" />如果不指定<paramref name="Position" />。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-253">You must specify <paramref name="Sheets" /> if you don't specify <paramref name="Position" />.</span>
+            <span data-stu-id="1f7e4-286">You must specify <paramref name="Sheets" /> if you don't specify <paramref name="Position" />.</span>
           </span>
         </param>
         <param name="Position">
-          <span data-ttu-id="81e2e-254">可选的<b>对象</b>。</span>
+          <span data-ttu-id="1f7e4-287">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-254">Optional <b>Object</b>.</span>
+            <span data-stu-id="1f7e4-287">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="81e2e-255">使用<b>xlFirst</b>滚动到第一个工作表，或使用<b>xlLast</b>滚动到最后一个工作表。</span>
+          <span data-ttu-id="1f7e4-288">使用<b>xlFirst</b>滚动到第一个工作表，或使用<b>xlLast</b>滚动到最后一个工作表。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-255">Use <b>xlFirst</b> to scroll to the first sheet, or use <b>xlLast</b> to scroll to the last sheet.</span>
+            <span data-stu-id="1f7e4-288">Use <b>xlFirst</b> to scroll to the first sheet, or use <b>xlLast</b> to scroll to the last sheet.</span>
           </span>
-          <span data-ttu-id="81e2e-256">必须指定<paramref name="Position" />如果不指定<paramref name="Sheets" />。</span>
+          <span data-ttu-id="1f7e4-289">必须指定<paramref name="Position" />如果不指定<paramref name="Sheets" />。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-256">You must specify <paramref name="Position" /> if you don't specify <paramref name="Sheets" />.</span>
+            <span data-stu-id="1f7e4-289">You must specify <paramref name="Position" /> if you don't specify <paramref name="Sheets" />.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="81e2e-257">滚动窗口的底部的工作簿选项卡。</span>
+          <span data-ttu-id="1f7e4-290">滚动窗口的底部的工作簿选项卡。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-257">Scrolls through the workbook tabs at the bottom of the window.</span>
+            <span data-stu-id="1f7e4-290">Scrolls through the workbook tabs at the bottom of the window.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
         <remarks>
-          <span data-ttu-id="81e2e-258">
-            <para>
-              <b>ScrollWorkbookTabs</b>方法不会影响工作簿中的活动工作表。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-258">
-              <para>The <b>ScrollWorkbookTabs</b> method doesn't affect the active sheet in the workbook.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-291">
+              <b>ScrollWorkbookTabs</b>方法不会影响工作簿中的活动工作表。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-291">The <b>ScrollWorkbookTabs</b> method doesn't affect the active sheet in the workbook.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2526,9 +2585,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-259">返回<see cref="T:Microsoft.Office.Interop.Excel.Sheets" />值，该值代表指定窗口中的所选工作表的集合。</span>
+          <span data-ttu-id="1f7e4-292">返回<see cref="T:Microsoft.Office.Interop.Excel.Sheets" />值，该值代表指定窗口中的所选工作表的集合。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-259">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection that represents all the selected sheets in the specified window.</span>
+            <span data-stu-id="1f7e4-292">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection that represents all the selected sheets in the specified window.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -2559,25 +2618,30 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-260">返回指定窗口中选定的对象。</span>
+          <span data-ttu-id="1f7e4-293">返回指定窗口中选定的对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-260">Returns the selected object in the specified window.</span>
+            <span data-stu-id="1f7e4-293">Returns the selected object in the specified window.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="81e2e-261">
-            <para>返回的对象类型取决于当前选定内容 (例如，如果所选单元格，则此属性返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象)。如果未选择的<b>Selection</b>属性返回<b>Nothing</b> 。</para>
-            <para>使用此属性与没有对象识别符，等效于使用<see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" />属性<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-261">
-              <para>The returned object type depends on the current selection (for example, if a cell is selected, this property returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object). The <b>Selection</b> property returns <b>Nothing</b> if nothing is selected.</para>
-              <para>Using this property with no object qualifier is equivalent to using the <see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-294">返回的对象类型取决于当前选定内容 (例如，如果所选单元格，则此属性返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象)。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-294">The returned object type depends on the current selection (for example, if a cell is selected, this property returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object).</span>
             </span>
-          </span>
+            <span data-ttu-id="1f7e4-295">如果未选择任何内容， <b>Selection</b>属性返回<b>Nothing</b> 。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-295">The <b>Selection</b> property returns <b>Nothing</b> if nothing is selected.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="1f7e4-296">使用此属性与没有对象识别符，等效于使用<see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" />属性<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-296">Using this property with no object qualifier is equivalent to using the <see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2605,21 +2669,21 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-262">返回<see cref="T:Microsoft.Office.Interop.Excel.SheetViews" />指定窗口的对象。</span>
+          <span data-ttu-id="1f7e4-297">返回<see cref="T:Microsoft.Office.Interop.Excel.SheetViews" />指定窗口的对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-262">Returns the <see cref="T:Microsoft.Office.Interop.Excel.SheetViews" /> object for the specified window.</span>
+            <span data-stu-id="1f7e4-297">Returns the <see cref="T:Microsoft.Office.Interop.Excel.SheetViews" /> object for the specified window.</span>
           </span>
-          <span data-ttu-id="81e2e-263">只读。</span>
+          <span data-ttu-id="1f7e4-298">只读。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-263">Read-only.</span>
+            <span data-stu-id="1f7e4-298">Read-only.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="81e2e-264">
+          <span data-ttu-id="1f7e4-299">
             <b>SheetViews</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-264">
+            <span data-stu-id="1f7e4-299">
               <b>SheetViews</b>
             </span>
           </span>
@@ -2653,67 +2717,80 @@
       </Parameters>
       <Docs>
         <param name="Down">
-          <span data-ttu-id="81e2e-265">可选的<b>对象</b>。</span>
+          <span data-ttu-id="1f7e4-300">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-265">Optional <b>Object</b>.</span>
+            <span data-stu-id="1f7e4-300">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="81e2e-266">将内容向下滚动的行数。</span>
+          <span data-ttu-id="1f7e4-301">将内容向下滚动的行数。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-266">The number of rows to scroll the contents down.</span>
+            <span data-stu-id="1f7e4-301">The number of rows to scroll the contents down.</span>
           </span>
         </param>
         <param name="Up">
-          <span data-ttu-id="81e2e-267">可选的<b>对象</b>。</span>
+          <span data-ttu-id="1f7e4-302">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-267">Optional <b>Object</b>.</span>
+            <span data-stu-id="1f7e4-302">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="81e2e-268">将内容向上滚动的行数。</span>
+          <span data-ttu-id="1f7e4-303">将内容向上滚动的行数。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-268">The number of rows to scroll the contents up.</span>
+            <span data-stu-id="1f7e4-303">The number of rows to scroll the contents up.</span>
           </span>
         </param>
         <param name="ToRight">
-          <span data-ttu-id="81e2e-269">可选的<b>对象</b>。</span>
+          <span data-ttu-id="1f7e4-304">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-269">Optional <b>Object</b>.</span>
+            <span data-stu-id="1f7e4-304">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="81e2e-270">将内容向右滚动的列数。</span>
+          <span data-ttu-id="1f7e4-305">将内容向右滚动的列数。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-270">The number of columns to scroll the contents to the right.</span>
+            <span data-stu-id="1f7e4-305">The number of columns to scroll the contents to the right.</span>
           </span>
         </param>
         <param name="ToLeft">
-          <span data-ttu-id="81e2e-271">可选的<b>对象</b>。</span>
+          <span data-ttu-id="1f7e4-306">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-271">Optional <b>Object</b>.</span>
+            <span data-stu-id="1f7e4-306">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="81e2e-272">将内容向左滚动的列数。</span>
+          <span data-ttu-id="1f7e4-307">将内容向左滚动的列数。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-272">The number of columns to scroll the contents to the left.</span>
+            <span data-stu-id="1f7e4-307">The number of columns to scroll the contents to the left.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="81e2e-273">按行或按列滚动窗口内容。</span>
+          <span data-ttu-id="1f7e4-308">按行或按列滚动窗口内容。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-273">Scrolls the contents of the window by rows or columns.</span>
+            <span data-stu-id="1f7e4-308">Scrolls the contents of the window by rows or columns.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
         <remarks>
-          <span data-ttu-id="81e2e-274">
-            <para>如果<paramref name="Down" />和<paramref name="Up" />都已指定，则内容的窗口滚动个参数的差。例如，如果<paramref name="Down" />是 3 和<paramref name="Up" />为 6，内容向上滚动三行。</para>
-            <para>如果<paramref name="ToLeft" />和<paramref name="ToRight" />都已指定，则内容的窗口滚动个参数的差。例如，如果<paramref name="ToLeft" />是 3 和<paramref name="ToRight" />为 6，则内容滚动到右三列。</para>
-            <para>任何这些参数均可为负数。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-274">
-              <para>If <paramref name="Down" /> and <paramref name="Up" /> are both specified, the contents of the window are scrolled by the difference of the arguments. For example, if <paramref name="Down" /> is 3 and <paramref name="Up" /> is 6, the contents are scrolled up three rows.</para>
-              <para>If <paramref name="ToLeft" /> and <paramref name="ToRight" /> are both specified, the contents of the window are scrolled by the difference of the arguments. For example, if <paramref name="ToLeft" /> is 3 and <paramref name="ToRight" /> is 6, the contents are scrolled to the right three columns.</para>
-              <para>Any of these arguments can be a negative number.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-309">如果<paramref name="Down" />和<paramref name="Up" />都已指定，则内容的窗口滚动个参数的差。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-309">If <paramref name="Down" /> and <paramref name="Up" /> are both specified, the contents of the window are scrolled by the difference of the arguments.</span>
             </span>
-          </span>
+            <span data-ttu-id="1f7e4-310">例如，如果<paramref name="Down" />是 3 和<paramref name="Up" />为 6，内容向上滚动三行。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-310">For example, if <paramref name="Down" /> is 3 and <paramref name="Up" /> is 6, the contents are scrolled up three rows.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="1f7e4-311">如果<paramref name="ToLeft" />和<paramref name="ToRight" />都已指定，则内容的窗口滚动个参数的差。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-311">If <paramref name="ToLeft" /> and <paramref name="ToRight" /> are both specified, the contents of the window are scrolled by the difference of the arguments.</span>
+            </span>
+            <span data-ttu-id="1f7e4-312">例如，如果<paramref name="ToLeft" />是 3 和<paramref name="ToRight" />为 6，则内容滚动到右三列。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-312">For example, if <paramref name="ToLeft" /> is 3 and <paramref name="ToRight" /> is 6, the contents are scrolled to the right three columns.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="1f7e4-313">这四个参数都可以取负值。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-313">Any of these arguments can be a negative number.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2744,26 +2821,27 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-275">如果为<b>true</b>将窗口拆分。</span>
+          <span data-ttu-id="1f7e4-314">如果为<b>true</b>将窗口拆分。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-275">
+            <span data-stu-id="1f7e4-314">
               <b>True</b> if the window is split.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="81e2e-276">
-            <para>可能为<see cref="P:Microsoft.Office.Interop.Excel.Window.FreezePanes" />是<b>True</b>和<b>拆分</b>为<b>False</b>，反之亦然。</para>
-            <para>此属性仅适用于工作表和宏工作表。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-276">
-              <para>It’s possible for <see cref="P:Microsoft.Office.Interop.Excel.Window.FreezePanes" /> to be <b>True</b> and <b>Split</b> to be <b>False</b>, or vice versa.</para>
-              <para>This property applies only to worksheets and macro sheets.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-315">可能为<see cref="P:Microsoft.Office.Interop.Excel.Window.FreezePanes" />是<b>True</b>和<b>拆分</b>为<b>False</b>，反之亦然。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-315">It’s possible for <see cref="P:Microsoft.Office.Interop.Excel.Window.FreezePanes" /> to be <b>True</b> and <b>Split</b> to be <b>False</b>, or vice versa.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="1f7e4-316">该属性仅应用于工作表和宏工作表。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-316">This property applies only to worksheets and macro sheets.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2794,9 +2872,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-277">返回或设置的列号其中窗口拆分成窗格 （拆分，拆分线左侧的列数）。</span>
+          <span data-ttu-id="1f7e4-317">返回或设置的列号其中窗口拆分成窗格 （拆分，拆分线左侧的列数）。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-277">Returns or sets the column number where the window is split into panes (the number of columns to the left of the split line).</span>
+            <span data-stu-id="1f7e4-317">Returns or sets the column number where the window is split into panes (the number of columns to the left of the split line).</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -2830,9 +2908,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-278">返回或设置窗口水平拆分线的位置，以磅为单位。</span>
+          <span data-ttu-id="1f7e4-318">返回或设置窗口水平拆分线的位置，以磅为单位。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-278">Returns or sets the location of the horizontal window split in points.</span>
+            <span data-stu-id="1f7e4-318">Returns or sets the location of the horizontal window split in points.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -2866,9 +2944,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-279">返回或设置行号其中窗口拆分成窗格 （上方拆分的行数）。</span>
+          <span data-ttu-id="1f7e4-319">返回或设置行号其中窗口拆分成窗格 （上方拆分的行数）。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-279">Returns or sets the row number where the window is split into panes (the number of rows above the split).</span>
+            <span data-stu-id="1f7e4-319">Returns or sets the row number where the window is split into panes (the number of rows above the split).</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -2902,9 +2980,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-280">返回或设置窗口垂直拆分线的位置，以磅为单位。</span>
+          <span data-ttu-id="1f7e4-320">返回或设置窗口垂直拆分线的位置，以磅为单位。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-280">Returns or sets the location of the vertical window split in points.</span>
+            <span data-stu-id="1f7e4-320">Returns or sets the location of the vertical window split in points.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -2938,23 +3016,20 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-281">返回或设置窗口的水平滚动条宽度的工作簿的选项卡区宽度的比例 （作为 0 （零） 到 1; 之间的数字的默认值为 0.6）。</span>
+          <span data-ttu-id="1f7e4-321">返回或设置窗口的水平滚动条宽度的工作簿的选项卡区宽度的比例 （作为 0 （零） 到 1; 之间的数字的默认值为 0.6）。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-281">Returns or sets the ratio of the width of the workbook's tab area to the width of the window's horizontal scroll bar (as a number between 0 (zero) and 1; the default value is 0.6).</span>
+            <span data-stu-id="1f7e4-321">Returns or sets the ratio of the width of the workbook's tab area to the width of the window's horizontal scroll bar (as a number between 0 (zero) and 1; the default value is 0.6).</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="81e2e-282">
-            <para>此属性没有影响何时<see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayWorkbookTabs" />设置为<b>False</b> （保留其值，但它不影响显示）。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-282">
-              <para>This property has no effect when <see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayWorkbookTabs" /> is set to <b>False</b> (its value is retained, but it has no effect on the display).</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-322">此属性没有影响何时<see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayWorkbookTabs" />设置为<b>False</b> （保留其值，但它不影响显示）。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-322">This property has no effect when <see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayWorkbookTabs" /> is set to <b>False</b> (its value is retained, but it has no effect on the display).</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2985,23 +3060,24 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-283">以磅为单位的上边缘从窗口的到使用区域 （下方的菜单中，任何停放在顶部和公式栏工具栏） 的上边缘之间的距离。</span>
+          <span data-ttu-id="1f7e4-323">以磅为单位的上边缘从窗口的到使用区域 （下方的菜单中，任何停放在顶部和公式栏工具栏） 的上边缘之间的距离。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-283">The distance in points from the top edge of the window to the top edge of the usable area (below the menus, any toolbars docked at the top, and the formula bar).</span>
+            <span data-stu-id="1f7e4-323">The distance in points from the top edge of the window to the top edge of the usable area (below the menus, any toolbars docked at the top, and the formula bar).</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="81e2e-284">
-            <para>不能设置该属性最大化的窗口。使用<see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" />属性可返回或设置窗口的状态。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-284">
-              <para>You cannot set this property for a maximized window. Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> property to return or set the state of the window.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-324">不能设置该属性最大化的窗口。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-324">You cannot set this property for a maximized window.</span>
             </span>
-          </span>
+            <span data-ttu-id="1f7e4-325">使用<see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" />属性可返回或设置窗口的状态。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-325">Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> property to return or set the state of the window.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3029,9 +3105,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-285">返回或设置窗口类型。</span>
+          <span data-ttu-id="1f7e4-326">返回或设置窗口类型。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-285">Returns or sets the window type.</span>
+            <span data-stu-id="1f7e4-326">Returns or sets the window type.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -3062,9 +3138,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-286">返回的最大高度，以磅为单位的窗口可在应用程序窗口区域占用的空间。</span>
+          <span data-ttu-id="1f7e4-327">返回的最大高度，以磅为单位的窗口可在应用程序窗口区域占用的空间。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-286">Returns the maximum height in points of the space that a window can occupy in the application window area.</span>
+            <span data-stu-id="1f7e4-327">Returns the maximum height in points of the space that a window can occupy in the application window area.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -3095,9 +3171,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-287">返回的最大宽度，以磅为单位的窗口可在应用程序窗口区域占用的空间。</span>
+          <span data-ttu-id="1f7e4-328">返回的最大宽度，以磅为单位的窗口可在应用程序窗口区域占用的空间。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-287">Returns the maximum width in points of the space that a window can occupy in the application window area.</span>
+            <span data-stu-id="1f7e4-328">Returns the maximum width in points of the space that a window can occupy in the application window area.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -3131,9 +3207,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-288">返回或设置窗口中显示的视图。</span>
+          <span data-ttu-id="1f7e4-329">返回或设置窗口中显示的视图。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-288">Returns or sets the view showing in the window.</span>
+            <span data-stu-id="1f7e4-329">Returns or sets the view showing in the window.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -3167,9 +3243,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-289">确定对象是否可见。</span>
+          <span data-ttu-id="1f7e4-330">确定对象是否可见。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-289">Determines whether the object is visible.</span>
+            <span data-stu-id="1f7e4-330">Determines whether the object is visible.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -3200,13 +3276,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-290">返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，表示在窗口或窗格的可见单元格的范围。</span>
+          <span data-ttu-id="1f7e4-331">返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，表示在窗口或窗格的可见单元格的范围。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-290">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the range of cells that are visible in the window or pane.</span>
+            <span data-stu-id="1f7e4-331">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the range of cells that are visible in the window or pane.</span>
           </span>
-          <span data-ttu-id="81e2e-291">如果部分可见的列或行，它包含范围中。</span>
+          <span data-ttu-id="1f7e4-332">如果部分可见的列或行，它包含范围中。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-291">If a column or row is partially visible, it's included in the range.</span>
+            <span data-stu-id="1f7e4-332">If a column or row is partially visible, it's included in the range.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -3240,20 +3316,28 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-292">以磅为单位窗口的宽度。</span>
+          <span data-ttu-id="1f7e4-333">以磅为单位窗口的宽度。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-292">The width in points of the window.</span>
+            <span data-stu-id="1f7e4-333">The width in points of the window.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="81e2e-293">使用<para><see cref="P:Microsoft.Office.Interop.Excel.Window.UsableWidth" />属性来确定窗口的最大大小。如果窗口处于最大化或最小化，不能设置此属性。使用<see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" />属性来确定窗口状态。</para><para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-293">
-              <para>Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableWidth" /> property to determine the maximum size for the window. You cannot set this property if the window is maximized or minimized. Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> property to determine the window state.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-334">使用<see cref="P:Microsoft.Office.Interop.Excel.Window.UsableWidth" />属性来确定窗口的最大大小。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-334">Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableWidth" /> property to determine the maximum size for the window.</span>
             </span>
-          </span>
+            <span data-ttu-id="1f7e4-335">如果在窗口处于最大化或最小化时，不能设置此属性。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-335">You cannot set this property if the window is maximized or minimized.</span>
+            </span>
+            <span data-ttu-id="1f7e4-336">使用<see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" />属性来确定窗口状态。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-336">Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> property to determine the window state.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3281,31 +3365,28 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-294">返回窗口号。</span>
+          <span data-ttu-id="1f7e4-337">返回窗口号。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-294">Returns the window number.</span>
+            <span data-stu-id="1f7e4-337">Returns the window number.</span>
           </span>
-          <span data-ttu-id="81e2e-295">例如，名为"Book1.xls:2"窗口具有其窗口号为 2。</span>
+          <span data-ttu-id="1f7e4-338">例如，名为"Book1.xls:2"窗口具有其窗口号为 2。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-295">For example, a window named "Book1.xls:2" has 2 as its window number.</span>
+            <span data-stu-id="1f7e4-338">For example, a window named "Book1.xls:2" has 2 as its window number.</span>
           </span>
-          <span data-ttu-id="81e2e-296">大多数窗口具有窗口号为 1。</span>
+          <span data-ttu-id="1f7e4-339">大多数窗口具有窗口号为 1。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-296">Most windows have the window number 1.</span>
+            <span data-stu-id="1f7e4-339">Most windows have the window number 1.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="81e2e-297">
-            <para>窗口号与窗口的窗口索引相同 (的返回值<see cref="P:Microsoft.Office.Interop.Excel.Window.Index" />属性)，这是中窗口的位置<see cref="T:Microsoft.Office.Interop.Excel.Windows" />集合。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-297">
-              <para>The window number isn't the same as the window index (the return value of the <see cref="P:Microsoft.Office.Interop.Excel.Window.Index" /> property), which is the position of the window within the <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> collection.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-340">窗口号与窗口的窗口索引相同 (的返回值<see cref="P:Microsoft.Office.Interop.Excel.Window.Index" />属性)，这是中窗口的位置<see cref="T:Microsoft.Office.Interop.Excel.Windows" />集合。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-340">The window number isn't the same as the window index (the return value of the <see cref="P:Microsoft.Office.Interop.Excel.Window.Index" /> property), which is the position of the window within the <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> collection.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3336,9 +3417,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-298">返回或设置窗口的状态。</span>
+          <span data-ttu-id="1f7e4-341">返回或设置窗口的状态。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-298">Returns or sets the state of the window.</span>
+            <span data-stu-id="1f7e4-341">Returns or sets the state of the window.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -3372,25 +3453,26 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="81e2e-299">返回或设置窗口的显示大小为百分比 （100 表示正常大小，200 表示双倍大小等）。</span>
+          <span data-ttu-id="1f7e4-342">返回或设置窗口的显示大小为百分比 （100 表示正常大小，200 表示双倍大小等）。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="81e2e-299">Returns or sets the display size of the window as a percentage (100 equals normal size, 200 equals double size, and so on).</span>
+            <span data-stu-id="1f7e4-342">Returns or sets the display size of the window as a percentage (100 equals normal size, 200 equals double size, and so on).</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="81e2e-300">
-            <para>您还可以将此属性设置为<b>True</b>以使当前选定区域相适应窗口大小。</para>
-            <para>此函数影响在窗口为当前处于活动状态的工作表。若要在其他工作表上使用此属性，您必须先激活。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="81e2e-300">
-              <para>You can also set this property to <b>True</b> to make the window size fit the current selection.</para>
-              <para>This function affects only the sheet that's currently active in the window. To use this property on other sheets, you must first activate them.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="1f7e4-343">将此属性设为 <b>True</b>，可将窗口大小设置成与当前选定区域相适应的大小。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-343">You can also set this property to <b>True</b> to make the window size fit the current selection.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="1f7e4-p163">本功能仅对窗口中当前的活动工作表起作用。若要对其他工作表使用此属性，必须先激活工作表。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1f7e4-p163">This function affects only the sheet that's currently active in the window. To use this property on other sheets, you must first activate them.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>

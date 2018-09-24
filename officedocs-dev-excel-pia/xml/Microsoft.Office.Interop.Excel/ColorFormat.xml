@@ -1,10 +1,10 @@
 <Type Name="ColorFormat" FullName="Microsoft.Office.Interop.Excel.ColorFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="94eccbe19d3d32c07fd1936d4fcbe2799d83801e" />
+    <Meta Name="ms.openlocfilehash" Value="3d031f52b238ec46211ddb6bca7295480f58f00f" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584474" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ColorFormat : Microsoft.Office.Core._IMsoDispObj" />
@@ -31,136 +31,153 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="dd3d6-101">代表单色对象的颜色、带有渐变或图案填充的对象的前景或背景色，或者指针的颜色。</span>
+      <span data-ttu-id="ce509-101">代表单色对象的颜色、带有渐变或图案填充的对象的前景或背景色，或者指针的颜色。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="dd3d6-101">Represents the color of a one-color object, the foreground or background color of an object with a gradient or patterned fill, or the pointer color.</span>
+        <span data-stu-id="ce509-101">Represents the color of a one-color object, the foreground or background color of an object with a gradient or patterned fill, or the pointer color.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="dd3d6-102">
-        <para>可以将颜色设为显式的红-绿-蓝值 (使用<see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.RGB" />属性) 或配色方案中颜色 (使用<see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.SchemeColor" />属性)。</para>
-        <para>使用的属性可返回一个<b>ColorFormat</b>对象，下表中列出。</para>
-        <list type="table">
-          <item>
-            <term>
-              <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.BackColor" />
-            </term>
-            <description>
-              <b>FillFormat</b>
-            </description>
-            <description>（用于底纹或图案填充） 的背景填充颜色</description>
-          </item>
-          <item>
-            <term>
-              <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.ForeColor" />
-            </term>
-            <description>
-              <b>FillFormat</b>
-            </description>
-            <description>的前景填充颜色 （或只需纯色填充的填充颜色）</description>
-          </item>
-          <item>
-            <term>
-              <see cref="P:Microsoft.Office.Interop.Excel.LineFormat.BackColor" />
-            </term>
-            <description>
-              <b>LineFormat</b>
-            </description>
-            <description>背景线条颜色 （用于图案线条）</description>
-          </item>
-          <item>
-            <term>
-              <see cref="P:Microsoft.Office.Interop.Excel.LineFormat.ForeColor" />
-            </term>
-            <description>
-              <b>LineFormat</b>
-            </description>
-            <description>前景线条颜色 （或只是实线的线条颜色）</description>
-          </item>
-          <item>
-            <term>
-              <see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.ForeColor" />
-            </term>
-            <description>
-              <b>ShadowFormat</b>
-            </description>
-            <description>阴影颜色</description>
-          </item>
-          <item>
-            <term>
-              <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.ExtrusionColor" />
-            </term>
-            <description>
-              <b>ThreeDFormat</b>
-            </description>
-            <description>延伸对象的侧边颜色</description>
-          </item>
-        </list>
-        <para></para>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="dd3d6-102">
-          <para>You can set colors to an explicit red-green-blue value (by using the <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.RGB" /> property) or to a color in the color scheme (by using the <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.SchemeColor" /> property).</para>
-          <para>Use one of the properties listed in the following table to return a <b>ColorFormat</b> object.</para>
-          <list type="table">
-            <item>
-              <term>
-                <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.BackColor" />
-              </term>
-              <description>
-                <b>FillFormat</b>
-              </description>
-              <description>The background fill color (used in a shaded or patterned fill)</description>
-            </item>
-            <item>
-              <term>
-                <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.ForeColor" />
-              </term>
-              <description>
-                <b>FillFormat</b>
-              </description>
-              <description>The foreground fill color (or simply the fill color for a solid fill)</description>
-            </item>
-            <item>
-              <term>
-                <see cref="P:Microsoft.Office.Interop.Excel.LineFormat.BackColor" />
-              </term>
-              <description>
-                <b>LineFormat</b>
-              </description>
-              <description>The background line color (used in a patterned line)</description>
-            </item>
-            <item>
-              <term>
-                <see cref="P:Microsoft.Office.Interop.Excel.LineFormat.ForeColor" />
-              </term>
-              <description>
-                <b>LineFormat</b>
-              </description>
-              <description>The foreground line color (or just the line color for a solid line)</description>
-            </item>
-            <item>
-              <term>
-                <see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.ForeColor" />
-              </term>
-              <description>
-                <b>ShadowFormat</b>
-              </description>
-              <description>The shadow color</description>
-            </item>
-            <item>
-              <term>
-                <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.ExtrusionColor" />
-              </term>
-              <description>
-                <b>ThreeDFormat</b>
-              </description>
-              <description>The color of the sides of an extruded object</description>
-            </item>
-          </list>
-          <para></para>
+      <para>
+        <span data-ttu-id="ce509-102">可以将颜色设为显式的红-绿-蓝值 (使用<see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.RGB" />属性) 或配色方案中颜色 (使用<see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.SchemeColor" />属性)。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="ce509-102">You can set colors to an explicit red-green-blue value (by using the <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.RGB" /> property) or to a color in the color scheme (by using the <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.SchemeColor" /> property).</span>
         </span>
-      </span>
+      </para>
+      <para>
+        <span data-ttu-id="ce509-103">使用下表中列出的属性之一来返回一个 <b>ColorFormat</b> 对象。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="ce509-103">Use one of the properties listed in the following table to return a <b>ColorFormat</b> object.</span>
+        </span>
+      </para>
+      <list type="table">
+        <item>
+          <term>
+            <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.BackColor" />
+          </term>
+          <description>
+            <span data-ttu-id="ce509-104">
+              <b>FillFormat</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ce509-104">
+                <b>FillFormat</b>
+              </span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="ce509-105">背景填充色（用于阴影或图案填充格式）</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ce509-105">The background fill color (used in a shaded or patterned fill)</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.ForeColor" />
+          </term>
+          <description>
+            <span data-ttu-id="ce509-106">
+              <b>FillFormat</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ce509-106">
+                <b>FillFormat</b>
+              </span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="ce509-107">前景填充色（对于纯色填充格式，即代表填充颜色）</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ce509-107">The foreground fill color (or simply the fill color for a solid fill)</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <see cref="P:Microsoft.Office.Interop.Excel.LineFormat.BackColor" />
+          </term>
+          <description>
+            <span data-ttu-id="ce509-108">
+              <b>LineFormat</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ce509-108">
+                <b>LineFormat</b>
+              </span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="ce509-109">线条背景色（用于图案线条）</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ce509-109">The background line color (used in a patterned line)</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <see cref="P:Microsoft.Office.Interop.Excel.LineFormat.ForeColor" />
+          </term>
+          <description>
+            <span data-ttu-id="ce509-110">
+              <b>LineFormat</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ce509-110">
+                <b>LineFormat</b>
+              </span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="ce509-111">线条前景色（对于纯色线条，即代表线条颜色）</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ce509-111">The foreground line color (or just the line color for a solid line)</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.ForeColor" />
+          </term>
+          <description>
+            <span data-ttu-id="ce509-112">
+              <b>ShadowFormat</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ce509-112">
+                <b>ShadowFormat</b>
+              </span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="ce509-113">阴影颜色</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ce509-113">The shadow color</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.ExtrusionColor" />
+          </term>
+          <description>
+            <span data-ttu-id="ce509-114">
+              <b>ThreeDFormat</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ce509-114">
+                <b>ThreeDFormat</b>
+              </span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="ce509-115">有延伸的对象的侧边颜色</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ce509-115">The color of the sides of an extruded object</span>
+            </span>
+          </description>
+        </item>
+      </list>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -191,9 +208,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="dd3d6-103">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
+          <span data-ttu-id="ce509-116">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="dd3d6-103">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="ce509-116">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -227,30 +244,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="dd3d6-104">获取或设置指定对象的亮度。</span>
+          <span data-ttu-id="ce509-117">获取或设置指定对象的亮度。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="dd3d6-104">Gets or sets the luminosity of the specified object.</span>
+            <span data-stu-id="ce509-117">Gets or sets the luminosity of the specified object.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="dd3d6-105">指定对象的亮度。</span>
+          <span data-ttu-id="ce509-118">指定对象的亮度。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="dd3d6-105">The luminosity of the specified object.</span>
+            <span data-stu-id="ce509-118">The luminosity of the specified object.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="dd3d6-106">
-            <para>读/写。</para>
-            <para>此属性的值必须是 0.0 （最暗） 到 1.0 （最亮）。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="dd3d6-106">
-              <para>Read/write.</para>
-              <para>The value for this property must be a number from 0.0 (dimmest) to 1.0 (brightest).</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="ce509-119">为可读/写属性。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ce509-119">Read/write.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="ce509-120">此属性的值必须是介于 0.0 (最暗) 到 1.0 (最亮)。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ce509-120">The value for this property must be a number from 0.0 (dimmest) to 1.0 (brightest).</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -281,35 +299,44 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="dd3d6-107">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
+          <span data-ttu-id="ce509-121">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="dd3d6-107">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="ce509-121">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="dd3d6-108">
+          <span data-ttu-id="ce509-122">
             <b>Integer</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="dd3d6-108">
+            <span data-stu-id="ce509-122">
               <b>Integer</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="dd3d6-109">
-            <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
-            <para>
-              <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 具有 XCEL 的创建者代码。另请参阅<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="dd3d6-109">
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
-              <para>The <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.Creator" /> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL. See also <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="ce509-123">如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ce509-123">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="ce509-124">
+              <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ce509-124">The <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.Creator" /> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="ce509-125">例如，Microsoft Excel 具有 XCEL 的创建者代码。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ce509-125">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+            <span data-ttu-id="ce509-126">另请参阅<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ce509-126">See also <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -340,13 +367,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="dd3d6-110">返回或设置颜色，以映射到主题的配色方案。</span>
+          <span data-ttu-id="ce509-127">返回或设置颜色，以映射到主题的配色方案。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="dd3d6-110">Returns or sets a color that is mapped to the theme color scheme.</span>
+            <span data-stu-id="ce509-127">Returns or sets a color that is mapped to the theme color scheme.</span>
           </span>
-          <span data-ttu-id="dd3d6-111">读/写<see cref="T:Microsoft.Office.Core.MsoThemeColorIndex" />。</span>
+          <span data-ttu-id="ce509-128">读/写<see cref="T:Microsoft.Office.Core.MsoThemeColorIndex" />。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="dd3d6-111">Read/write <see cref="T:Microsoft.Office.Core.MsoThemeColorIndex" />.</span>
+            <span data-stu-id="ce509-128">Read/write <see cref="T:Microsoft.Office.Core.MsoThemeColorIndex" />.</span>
           </span>
         </summary>
         <value>
@@ -379,17 +406,17 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="dd3d6-112">返回指定对象的父对象。</span>
+          <span data-ttu-id="ce509-129">返回指定对象的父对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="dd3d6-112">Returns the parent object for the specified object.</span>
+            <span data-stu-id="ce509-129">Returns the parent object for the specified object.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="dd3d6-113">
+          <span data-ttu-id="ce509-130">
             <b>对象</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="dd3d6-113">
+            <span data-stu-id="ce509-130">
               <b>Object</b>
             </span>
           </span>
@@ -427,9 +454,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="dd3d6-114">返回或设置指定颜色的红-绿-蓝值。</span>
+          <span data-ttu-id="ce509-131">返回或设置指定颜色的红-绿-蓝值。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="dd3d6-114">Returns or sets the red-green-blue value of the specified color.</span>
+            <span data-stu-id="ce509-131">Returns or sets the red-green-blue value of the specified color.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -463,9 +490,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="dd3d6-115">返回或设置 color 对象的颜色，作为当前配色方案中的索引。</span>
+          <span data-ttu-id="ce509-132">返回或设置 color 对象的颜色，作为当前配色方案中的索引。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="dd3d6-115">Returns or sets the color of a color object as an index in the current color scheme.</span>
+            <span data-stu-id="ce509-132">Returns or sets the color of a color object as an index in the current color scheme.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -499,23 +526,20 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="dd3d6-116">返回或设置一个<b>单个</b>变浅或变深指定形状的颜色。</span>
+          <span data-ttu-id="ce509-133">返回或设置一个<b>单个</b>变浅或变深指定形状的颜色。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="dd3d6-116">Returns or sets a <b>Single</b> that lightens or darkens the color of a specified shape.</span>
+            <span data-stu-id="ce509-133">Returns or sets a <b>Single</b> that lightens or darkens the color of a specified shape.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="dd3d6-117">
-            <para>可以为<b>TintAndShade</b>属性，0 （零） 适中 （最亮） 之间的 1-1 （最暗） 输入号码。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="dd3d6-117">
-              <para>You can enter a number from -1 (darkest) to 1 (lightest) for the <b>TintAndShade</b> property, 0 (zero) being neutral.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="ce509-134">您可以输入大量从-1 (深) 到 <b>TintAndShade</b> 属性，0 (零) 表示非特定的 (最亮) 1。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ce509-134">You can enter a number from -1 (darkest) to 1 (lightest) for the <b>TintAndShade</b> property, 0 (zero) being neutral.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -543,55 +567,72 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="dd3d6-118">返回或设置标注格式类型。</span>
+          <span data-ttu-id="ce509-135">返回或设置标注格式类型。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="dd3d6-118">Returns or sets the callout format type.</span>
+            <span data-stu-id="ce509-135">Returns or sets the callout format type.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="dd3d6-119">
-            <para>
-              <b>MsoCalloutType</b>可以是下列<b>MsoCalloutType</b>常量之一。</para>
-            <para>
-              <b>msocalloutfour 类型</b>
-            </para>
-            <para>
-              <b>msoCalloutMixed</b>
-            </para>
-            <para>
-              <b>msoCalloutOne</b>
-            </para>
-            <para>
-              <b>msoCalloutThree</b>
-            </para>
-            <para>
-              <b>msoCalloutTwo</b>
-            </para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="dd3d6-119">
-              <para>
-                <b>MsoCalloutType</b> can be one of these <b>MsoCalloutType</b> constants.</para>
-              <para>
-                <b>msoCalloutFour</b>
-              </para>
-              <para>
-                <b>msoCalloutMixed</b>
-              </para>
-              <para>
-                <b>msoCalloutOne</b>
-              </para>
-              <para>
-                <b>msoCalloutThree</b>
-              </para>
-              <para>
-                <b>msoCalloutTwo</b>
-              </para>
-              <para></para>
+          <para>
+            <span data-ttu-id="ce509-136">
+              <b>MsoCalloutType</b> 可以是下列 <b>MsoCalloutType</b> 常量之一。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ce509-136">
+                <b>MsoCalloutType</b> can be one of these <b>MsoCalloutType</b> constants.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="ce509-137">
+              <b>msocalloutfour 类型</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ce509-137">
+                <b>msoCalloutFour</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="ce509-138">
+              <b>msoCalloutMixed</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ce509-138">
+                <b>msoCalloutMixed</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="ce509-139">
+              <b>msoCalloutOne</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ce509-139">
+                <b>msoCalloutOne</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="ce509-140">
+              <b>msoCalloutThree</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ce509-140">
+                <b>msoCalloutThree</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="ce509-141">
+              <b>msoCalloutTwo</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ce509-141">
+                <b>msoCalloutTwo</b>
+              </span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>

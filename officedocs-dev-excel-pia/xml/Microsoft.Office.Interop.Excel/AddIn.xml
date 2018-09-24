@@ -1,10 +1,10 @@
 <Type Name="AddIn" FullName="Microsoft.Office.Interop.Excel.AddIn">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7b2ad4081ea4bdb99cc06e468b6712922b5b097b" />
+    <Meta Name="ms.openlocfilehash" Value="ad740aac6b501b523017ffe9ffd52b91e10dd267" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584145" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AddIn" />
@@ -30,34 +30,90 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="e56f5-101">代表已经安装或尚未安装的单个加载项。</span>
+      <span data-ttu-id="5069f-101">代表已经安装或尚未安装的单个加载项。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="e56f5-101">Represents a single add-in, either installed or not installed.</span>
+        <span data-stu-id="5069f-101">Represents a single add-in, either installed or not installed.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="e56f5-102">
-        <para>
-          <b>AddIn</b>对象是成员<see cref="T:Microsoft.Office.Interop.Excel.AddIns" />集合。<b>AddIns</b>集合包含所有可用加载项到 Microsoft Excel，而不考虑它们是否已安装的列表。此列表对应于显示在加载项对话框 （工具菜单） 的加载宏的列表。</para>
-        <para>使用<b>加载项</b>(<paramref name="index" />)，其中<paramref name="index" />是外接程序标题或索引号，可返回单个<b>AddIn</b>对象。</para>
-        <para>请勿混淆外接程序标题，显示在加载项对话框中添加的名称外, 接程序的文件名称。您必须完全相同书写加载项对话框中，但不一定要匹配大写拼写外接程序标题。</para>
-        <para>索引号表示的加载项的加载项提供框加载项对话框中的位置。</para>
-        <para>
-          <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" />方法外接程序添加到可用加载项的列表，但不安装外接程序集<see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" />属性为<b>True</b>可安装的加载项的加载项。若要安装不显示的外接程序的可用加载项列表中，必须首先使用<b>Add</b>方法，并将<b>Installed</b>属性。这可以在单个步骤</para>
-        <para>使用<b>工作簿</b>(<paramref name="index" />) 其中<paramref name="index" />是外接程序文件名 （不标题） 以返回到工作簿对应于加载的加载项的引用。您必须使用文件名称，因为中加载的加载项通常不显示<see cref="T:Microsoft.Office.Interop.Excel.Workbooks" />集合。</para>如果<b>Installed</b>属性返回<b>True</b>，但仍将对中的加载项的函数的调用失败外, 接程序可能不实际加载
-      <para>。这是因为<b>Addin</b>对象表示存在和安装的加载项的状态，但不代表工作簿中添加的实际内容。若要保证加载已安装加载项时，应打开工作簿加载项。</para><para></para></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="e56f5-102">
-          <para>The <b>AddIn</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.AddIns" /> collection. The <b>AddIns</b> collection contains a list of all the add-ins available to Microsoft Excel, regardless of whether they’re installed. This list corresponds to the list of add-ins displayed in the Add-Ins dialog box (Tools menu).</para>
-          <para>Use <b>AddIns</b>(<paramref name="index" />), where <paramref name="index" /> is the add-in title or index number, to return a single <b>AddIn</b> object.</para>
-          <para>Don’t confuse the add-in title, which appears in the Add-Ins dialog box, with the add-in name, which is the file name of the add-in. You must spell the add-in title exactly as it’s spelled in the Add-Ins dialog box, but the capitalization doesn’t have to match.</para>
-          <para>The index number represents the position of the add-in in the Add-ins available box in the Add-Ins dialog box.</para>
-          <para>The <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" /> method adds an add-in to the list of available add-ins but doesn’t install the add-in. Set the <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> property of the add-in to <b>True</b> to install the add-in. To install an add-in that doesn’t appear in the list of available add-ins, you must first use the <b>Add</b> method and then set the <b>Installed</b> property. This can be done in a single step</para>
-          <para>Use <b>Workbooks</b>(<paramref name="index" />) where <paramref name="index" /> is the add-in filename (not title) to return a reference to the workbook corresponding to a loaded add-in. You must use the file name because loaded add-ins don’t normally appear in the <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> collection.</para>
-          <para>If the <b>Installed</b> property returns <b>True</b>, but calls to functions in the add-in still fail, the add-in may not actually be loaded. This is because the <b>Addin</b> object represents the existence and installed state of the add-in but doesn't represent the actual contents of the add-in workbook. To guarantee that an installed add-in is loaded, you should open the add-in workbook.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="5069f-102">
+          <b>AddIn</b>对象是成员<see cref="T:Microsoft.Office.Interop.Excel.AddIns" />集合。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="5069f-102">The <b>AddIn</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.AddIns" /> collection.</span>
         </span>
-      </span>
+        <span data-ttu-id="5069f-103">
+          <b>AddIns</b>集合包含所有可用加载项到 Microsoft Excel，而不考虑它们是否已安装的列表。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="5069f-103">The <b>AddIns</b> collection contains a list of all the add-ins available to Microsoft Excel, regardless of whether they’re installed.</span>
+        </span>
+        <span data-ttu-id="5069f-104">此列表对应于显示在加载项对话框 （工具菜单） 的加载宏的列表。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="5069f-104">This list corresponds to the list of add-ins displayed in the Add-Ins dialog box (Tools menu).</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="5069f-105">使用<b>加载项</b>(<paramref name="index" />)，其中<paramref name="index" />是外接程序标题或索引号，可返回单个<b>AddIn</b>对象。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="5069f-105">Use <b>AddIns</b>(<paramref name="index" />), where <paramref name="index" /> is the add-in title or index number, to return a single <b>AddIn</b> object.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="5069f-p102">请勿混淆加载宏标题（出现在“加载宏”对话框中）与加载宏名称（加载宏的文件名）。必须严格按照“加载宏”对话框中的标题书写加载宏标题，但不必匹配大小写。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="5069f-p102">Don’t confuse the add-in title, which appears in the Add-Ins dialog box, with the add-in name, which is the file name of the add-in. You must spell the add-in title exactly as it’s spelled in the Add-Ins dialog box, but the capitalization doesn’t have to match.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="5069f-108">索引号表示的加载项的加载项提供框加载项对话框中的位置。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="5069f-108">The index number represents the position of the add-in in the Add-ins available box in the Add-Ins dialog box.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="5069f-109">
+          <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" />方法外接程序添加到可用加载项的列表，但不安装外接程序。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="5069f-109">The <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" /> method adds an add-in to the list of available add-ins but doesn’t install the add-in.</span>
+        </span>
+        <span data-ttu-id="5069f-110">设置<see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" />属性为<b>True</b>可安装的加载项的加载项。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="5069f-110">Set the <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> property of the add-in to <b>True</b> to install the add-in.</span>
+        </span>
+        <span data-ttu-id="5069f-111">若要安装不显示的外接程序的可用加载项列表中，必须首先使用<b>Add</b>方法，并将<b>Installed</b>属性。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="5069f-111">To install an add-in that doesn’t appear in the list of available add-ins, you must first use the <b>Add</b> method and then set the <b>Installed</b> property.</span>
+        </span>
+        <span data-ttu-id="5069f-112">这可以在单个步骤</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="5069f-112">This can be done in a single step</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="5069f-113">使用<b>工作簿</b>(<paramref name="index" />) 其中<paramref name="index" />是外接程序文件名 （不标题） 以返回到工作簿对应于加载的加载项的引用。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="5069f-113">Use <b>Workbooks</b>(<paramref name="index" />) where <paramref name="index" /> is the add-in filename (not title) to return a reference to the workbook corresponding to a loaded add-in.</span>
+        </span>
+        <span data-ttu-id="5069f-114">您必须使用文件名称，因为中加载的加载项通常不显示<see cref="T:Microsoft.Office.Interop.Excel.Workbooks" />集合。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="5069f-114">You must use the file name because loaded add-ins don’t normally appear in the <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> collection.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="5069f-115">如果<b>Installed</b>属性返回<b>True</b>，但呼叫到中外接程序函数仍失败外, 接程序可能不实际加载。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="5069f-115">If the <b>Installed</b> property returns <b>True</b>, but calls to functions in the add-in still fail, the add-in may not actually be loaded.</span>
+        </span>
+        <span data-ttu-id="5069f-116">这是因为<b>Addin</b>对象表示存在和安装的加载项的状态，但不代表工作簿中添加的实际内容。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="5069f-116">This is because the <b>Addin</b> object represents the existence and installed state of the add-in but doesn't represent the actual contents of the add-in workbook.</span>
+        </span>
+        <span data-ttu-id="5069f-117">若要保证加载是已安装加载项，则应打开外接程序工作簿。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="5069f-117">To guarantee that an installed add-in is loaded, you should open the add-in workbook.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -85,9 +141,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="e56f5-103">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
+          <span data-ttu-id="5069f-118">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="e56f5-103">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="5069f-118">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -121,9 +177,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="e56f5-104">仅供内部使用。</span>
+          <span data-ttu-id="5069f-119">仅供内部使用。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="e56f5-104">Reserved for internal use.</span>
+            <span data-stu-id="5069f-119">Reserved for internal use.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -154,9 +210,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="e56f5-105">返回一个只读的唯一标识符，或识别对象的 CLSID。<b>String</b> 类型。</span>
+          <span data-ttu-id="5069f-120">返回一个只读的唯一标识符，或识别对象的 CLSID。<b>String</b> 类型。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="e56f5-105">Returns a read-only unique identifier, or CLSID, identifying an object, as a <b>String</b>.</span>
+            <span data-stu-id="5069f-120">Returns a read-only unique identifier, or CLSID, identifying an object, as a <b>String</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -190,9 +246,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="e56f5-106">仅供内部使用。</span>
+          <span data-ttu-id="5069f-121">仅供内部使用。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="e56f5-106">Reserved for internal use.</span>
+            <span data-stu-id="5069f-121">Reserved for internal use.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -223,26 +279,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="e56f5-107">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
+          <span data-ttu-id="5069f-122">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="e56f5-107">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="5069f-122">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="e56f5-108">
-            <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
-            <para>
-              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e56f5-108">
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="5069f-123">如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5069f-123">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="5069f-124">
+              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5069f-124">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="5069f-125">例如，Microsoft Excel 具有 XCEL 的创建者代码。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5069f-125">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -270,23 +331,20 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="e56f5-109">返回的对象，包括其路径在磁盘上，为字符串的名称。</span>
+          <span data-ttu-id="5069f-126">返回的对象，包括其路径在磁盘上，为字符串的名称。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="e56f5-109">Returns the name of the object, including its path on disk, as a string.</span>
+            <span data-stu-id="5069f-126">Returns the name of the object, including its path on disk, as a string.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="e56f5-110">
-            <para>此属性等效于<see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" />属性当前文件系统分隔符分隔后, 跟<see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" />属性。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e56f5-110">
-              <para>This property is equivalent to the <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" /> property, followed by the current file system separator, followed by the <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" /> property.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="5069f-127">此属性等效于<see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" />属性当前文件系统分隔符分隔后, 跟<see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" />属性。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5069f-127">This property is equivalent to the <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" /> property, followed by the current file system separator, followed by the <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" /> property.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -317,24 +375,21 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="e56f5-111">如果为<b>true</b>安装外接程序。</span>
+          <span data-ttu-id="5069f-128">如果为<b>true</b>安装外接程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="e56f5-111">
+            <span data-stu-id="5069f-128">
               <b>True</b> if the add-in is installed.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="e56f5-112">
-            <para>将此属性设置为<b>True</b>安装外接程序，并调用其 Auto_Add 函数。此属性设置为<b>False</b>外接程序中删除并调用其 Auto_Remove 函数。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e56f5-112">
-              <para>Setting this property to <b>True</b> installs the add-in and calls its Auto_Add functions. Setting this property to <b>False</b> removes the add-in and calls its Auto_Remove functions.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="5069f-p107">将此属性设为 <b>True</b> 将安装指定加载宏，并调用 Auto_Add 函数。将此属性设为 <b>False</b> 则移去指定加载宏，并调用 Auto_Remove 函数。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5069f-p107">Setting this property to <b>True</b> installs the add-in and calls its Auto_Add functions. Setting this property to <b>False</b> removes the add-in and calls its Auto_Remove functions.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -362,32 +417,29 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="e56f5-113">获取外接程序是当前打开。</span>
+          <span data-ttu-id="5069f-131">获取外接程序是当前打开。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="e56f5-113">Gets whether the add-in is currently open.</span>
+            <span data-stu-id="5069f-131">Gets whether the add-in is currently open.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="e56f5-114">
+          <span data-ttu-id="5069f-132">
             <b>true</b>如果外接程序当前打开;否则为<b>false</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="e56f5-114">
+            <span data-stu-id="5069f-132">
               <b>true</b> if the add-in is currently open; otherwise, <b>false</b>.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="e56f5-115">
-            <para>
-              <b>布尔</b>只读的。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e56f5-115">
-              <para>
-                <b>boolean</b> Read-only.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="5069f-133">
+              <b>boolean</b>只读的。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5069f-133">
+                <b>boolean</b> Read-only.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -418,9 +470,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="e56f5-116">仅供内部使用。</span>
+          <span data-ttu-id="5069f-134">仅供内部使用。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="e56f5-116">Reserved for internal use.</span>
+            <span data-stu-id="5069f-134">Reserved for internal use.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -451,9 +503,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="e56f5-117">返回的对象的名称。</span>
+          <span data-ttu-id="5069f-135">返回的对象的名称。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="e56f5-117">Returns the name of the object.</span>
+            <span data-stu-id="5069f-135">Returns the name of the object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -484,9 +536,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="e56f5-118">返回指定对象的父对象。</span>
+          <span data-ttu-id="5069f-136">返回指定对象的父对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="e56f5-118">Returns the parent object for the specified object.</span>
+            <span data-stu-id="5069f-136">Returns the parent object for the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -517,9 +569,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="e56f5-119">返回应用程序，不包括末尾的分隔符和应用程序的名称的完整路径。</span>
+          <span data-ttu-id="5069f-137">返回应用程序，不包括末尾的分隔符和应用程序的名称的完整路径。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="e56f5-119">Returns the complete path to the application, excluding the final separator and name of the application.</span>
+            <span data-stu-id="5069f-137">Returns the complete path to the application, excluding the final separator and name of the application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -550,9 +602,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="e56f5-120">返回对象的编程标识符。</span>
+          <span data-ttu-id="5069f-138">返回对象的编程标识符。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="e56f5-120">Returns the programmatic identifiers for the object.</span>
+            <span data-stu-id="5069f-138">Returns the programmatic identifiers for the object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -586,9 +638,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="e56f5-121">仅供内部使用。</span>
+          <span data-ttu-id="5069f-139">仅供内部使用。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="e56f5-121">Reserved for internal use.</span>
+            <span data-stu-id="5069f-139">Reserved for internal use.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -622,9 +674,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="e56f5-122">仅供内部使用。</span>
+          <span data-ttu-id="5069f-140">仅供内部使用。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="e56f5-122">Reserved for internal use.</span>
+            <span data-stu-id="5069f-140">Reserved for internal use.</span>
           </span>
         </summary>
         <value>To be added.</value>

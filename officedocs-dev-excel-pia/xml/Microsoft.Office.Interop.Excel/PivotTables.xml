@@ -1,10 +1,10 @@
 <Type Name="PivotTables" FullName="Microsoft.Office.Interop.Excel.PivotTables">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fec2de78dcf640219cb44f66becd0a0dbc77878e" />
+    <Meta Name="ms.openlocfilehash" Value="b1b870f7e0d404abd82b95ed4e0d3df8f815f25c" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578020" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotTables : System.Collections.IEnumerable" />
@@ -34,28 +34,41 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="f76da-101">所有的集合<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />指定工作表中的对象。</span>
+      <span data-ttu-id="6bcd5-101">所有的集合<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />指定工作表中的对象。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="f76da-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objects on the specified worksheet.</span>
+        <span data-stu-id="6bcd5-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objects on the specified worksheet.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="f76da-102">
-        <para>使用<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTables(System.Object)" />方法可返回<b>数据透视表</b>集合。</para>
-        <para>使用<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTableWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法可创建新的数据透视表报告并将其添加到集合。</para>
-        <para>使用<b>数据透视表</b>(<paramref name="index" />)，其中<paramref name="index" />是数据透视表的索引号或名称，可返回一个<b>PivotTable</b>对象。</para>
-        <para>因为数据透视表报表编程可能会很复杂，通常最简单数据透视表操作录制，然后再修订录制的代码。录制宏，指向工具菜单上的宏，然后单击记录新宏。</para>
-        <para></para>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="f76da-102">
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTables(System.Object)" /> method to return the <b>PivotTables</b> collection.</para>
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTableWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> method to create a new PivotTable report and add it to the collection.</para>
-          <para>Use <b>PivotTables</b>(<paramref name="index" />), where <paramref name="index" /> is the PivotTable index number or name, to return a single <b>PivotTable</b> object.</para>
-          <para>Because PivotTable report programming can be complex, it’s generally easiest to record PivotTable report actions and then revise the recorded code. To record a macro, point to Macro on the Tools menu and click Record New Macro.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="6bcd5-102">使用<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTables(System.Object)" />方法可返回<b>数据透视表</b>集合。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="6bcd5-102">Use the <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTables(System.Object)" /> method to return the <b>PivotTables</b> collection.</span>
         </span>
-      </span>
+      </para>
+      <para>
+        <span data-ttu-id="6bcd5-103">使用<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTableWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法可创建新的数据透视表报告并将其添加到集合。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="6bcd5-103">Use the <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTableWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> method to create a new PivotTable report and add it to the collection.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="6bcd5-104">使用<b>数据透视表</b>(<paramref name="index" />)，其中<paramref name="index" />是数据透视表的索引号或名称，可返回一个<b>PivotTable</b>对象。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="6bcd5-104">Use <b>PivotTables</b>(<paramref name="index" />), where <paramref name="index" /> is the PivotTable index number or name, to return a single <b>PivotTable</b> object.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="6bcd5-105">因为对数据透视表进行编程可能会很复杂，所以，最方便的做法是将数据透视表操作录制到宏中，然后再修订所录制的宏代码。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="6bcd5-105">Because PivotTable report programming can be complex, it’s generally easiest to record PivotTable report actions and then revise the recorded code.</span>
+        </span>
+        <span data-ttu-id="6bcd5-106">要录制宏，指向工具菜单上的宏，然后单击录制新宏。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="6bcd5-106">To record a macro, point to Macro on the Tools menu and click Record New Macro.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -85,79 +98,79 @@
       </Parameters>
       <Docs>
         <param name="PivotCache">
-          <span data-ttu-id="f76da-103">所需<b>PivotCache</b>。</span>
+          <span data-ttu-id="6bcd5-107">所需<b>PivotCache</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f76da-103">Required <b>PivotCache</b>.</span>
+            <span data-stu-id="6bcd5-107">Required <b>PivotCache</b>.</span>
           </span>
-          <span data-ttu-id="f76da-104">新的数据透视表报表所基于的数据透视表缓存。</span>
+          <span data-ttu-id="6bcd5-108">新的数据透视表报表所基于的数据透视表缓存。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f76da-104">The PivotTable cache on which the new PivotTable report is based.</span>
+            <span data-stu-id="6bcd5-108">The PivotTable cache on which the new PivotTable report is based.</span>
           </span>
-          <span data-ttu-id="f76da-105">缓存提供报告数据。</span>
+          <span data-ttu-id="6bcd5-109">缓存提供报告数据。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f76da-105">The cache provides data for the report.</span>
+            <span data-stu-id="6bcd5-109">The cache provides data for the report.</span>
           </span>
         </param>
         <param name="TableDestination">
-          <span data-ttu-id="f76da-106">所需的<b>对象</b>。</span>
+          <span data-ttu-id="6bcd5-110">所需的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f76da-106">Required <b>Object</b>.</span>
+            <span data-stu-id="6bcd5-110">Required <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="f76da-107">在数据透视表报表的目标区域 （生成的报表的放置位置工作表上的区域） 的左上角单元格。</span>
+          <span data-ttu-id="6bcd5-111">在数据透视表报表的目标区域 （生成的报表的放置位置工作表上的区域） 的左上角单元格。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f76da-107">The cell in the upper-left corner of the PivotTable report's destination range (the range on the worksheet where the resulting report will be placed).</span>
+            <span data-stu-id="6bcd5-111">The cell in the upper-left corner of the PivotTable report's destination range (the range on the worksheet where the resulting report will be placed).</span>
           </span>
-          <span data-ttu-id="f76da-108">您必须指定目标区域上包含的工作表<paramref name="PivotTables" />指定对象<paramref name="expression" />。</span>
+          <span data-ttu-id="6bcd5-112">您必须指定目标区域上包含的工作表<paramref name="PivotTables" />指定对象<paramref name="expression" />。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f76da-108">You must specify a destination range on the worksheet that contains the <paramref name="PivotTables" /> object specified by <paramref name="expression" />.</span>
+            <span data-stu-id="6bcd5-112">You must specify a destination range on the worksheet that contains the <paramref name="PivotTables" /> object specified by <paramref name="expression" />.</span>
           </span>
         </param>
         <param name="TableName">
-          <span data-ttu-id="f76da-109">可选的<b>对象</b>。</span>
+          <span data-ttu-id="6bcd5-113">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f76da-109">Optional <b>Object</b>.</span>
+            <span data-stu-id="6bcd5-113">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="f76da-110">新的数据透视表的名称。</span>
+          <span data-ttu-id="6bcd5-114">新的数据透视表的名称。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f76da-110">The name of the new PivotTable report.</span>
+            <span data-stu-id="6bcd5-114">The name of the new PivotTable report.</span>
           </span>
         </param>
         <param name="ReadData">
-          <span data-ttu-id="f76da-111">可选的<b>对象</b>。</span>
+          <span data-ttu-id="6bcd5-115">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f76da-111">Optional <b>Object</b>.</span>
+            <span data-stu-id="6bcd5-115">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="f76da-112">
+          <span data-ttu-id="6bcd5-116">
             <b>True</b>以创建包含从外部数据库; 所有记录的数据透视表缓存此缓存可能会非常大。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f76da-112">
+            <span data-stu-id="6bcd5-116">
               <b>True</b> to create a PivotTable cache that contains all records from the external database; this cache can be very large.</span>
           </span>
-          <span data-ttu-id="f76da-113">
+          <span data-ttu-id="6bcd5-117">
             <b>False</b>可允许之前实际读取数据，则将某些字段设置为基于服务器的页字段。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f76da-113">
+            <span data-stu-id="6bcd5-117">
               <b>False</b> to enable setting some of the fields as server-based page fields before the data is actually read.</span>
           </span>
         </param>
         <param name="DefaultVersion">
-          <span data-ttu-id="f76da-114">可选的<b>对象</b>。</span>
+          <span data-ttu-id="6bcd5-118">可选的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f76da-114">Optional <b>Object</b>.</span>
+            <span data-stu-id="6bcd5-118">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="f76da-115">以前创建数据透视表所使用的 Microsoft Excel 版本。</span>
+          <span data-ttu-id="6bcd5-119">以前创建数据透视表所使用的 Microsoft Excel 版本。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f76da-115">The version of Microsoft Excel the PivotTable was originally created in.</span>
+            <span data-stu-id="6bcd5-119">The version of Microsoft Excel the PivotTable was originally created in.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="f76da-116">添加新的数据透视表报告。</span>
+          <span data-ttu-id="6bcd5-120">添加新的数据透视表报告。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f76da-116">Adds a new PivotTable report.</span>
+            <span data-stu-id="6bcd5-120">Adds a new PivotTable report.</span>
           </span>
-          <span data-ttu-id="f76da-117">返回<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />对象。</span>
+          <span data-ttu-id="6bcd5-121">返回<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f76da-117">Returns a <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> object.</span>
+            <span data-stu-id="6bcd5-121">Returns a <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> object.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -188,13 +201,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="f76da-118">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
+          <span data-ttu-id="6bcd5-122">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f76da-118">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="6bcd5-122">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
-          <span data-ttu-id="f76da-119">只读。</span>
+          <span data-ttu-id="6bcd5-123">只读。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f76da-119">Read-only.</span>
+            <span data-stu-id="6bcd5-123">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -225,14 +238,14 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="f76da-120">返回集合中对象的数目。</span>
+          <span data-ttu-id="6bcd5-124">返回集合中对象的数目。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f76da-120">Returns the number of objects in the collection.</span>
+            <span data-stu-id="6bcd5-124">Returns the number of objects in the collection.</span>
           </span>
-          <span data-ttu-id="f76da-121">
+          <span data-ttu-id="6bcd5-125">
             <b>Integer</b> 类型，只读。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f76da-121">Read-only <b>Integer</b>.</span>
+            <span data-stu-id="6bcd5-125">Read-only <b>Integer</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -263,32 +276,33 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="f76da-122">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
+          <span data-ttu-id="6bcd5-126">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f76da-122">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="6bcd5-126">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
-          <span data-ttu-id="f76da-123">如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</span>
+          <span data-ttu-id="6bcd5-127">如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f76da-123">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
+            <span data-stu-id="6bcd5-127">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
           </span>
-          <span data-ttu-id="f76da-124">只读<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</span>
+          <span data-ttu-id="6bcd5-128">只读<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f76da-124">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
+            <span data-stu-id="6bcd5-128">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="f76da-125">
-            <para>
-              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="f76da-125">
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="6bcd5-129">
+              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="6bcd5-129">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
             </span>
-          </span>
+            <span data-ttu-id="6bcd5-130">例如，Microsoft Excel 具有 XCEL 的创建者代码。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="6bcd5-130">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -348,19 +362,19 @@
       </Parameters>
       <Docs>
         <param name="Index">
-          <span data-ttu-id="f76da-126">所需的<b>对象</b>。</span>
+          <span data-ttu-id="6bcd5-131">所需的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f76da-126">Required <b>Object</b>.</span>
+            <span data-stu-id="6bcd5-131">Required <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="f76da-127">对象的名称或索引号。</span>
+          <span data-ttu-id="6bcd5-132">对象的名称或索引号。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f76da-127">The name or index number for the object.</span>
+            <span data-stu-id="6bcd5-132">The name or index number for the object.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="f76da-128">从集合中返回一个对象。</span>
+          <span data-ttu-id="6bcd5-133">从集合中返回一个对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f76da-128">Returns a single object from a collection.</span>
+            <span data-stu-id="6bcd5-133">Returns a single object from a collection.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -391,9 +405,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="f76da-p111">返回指定对象的父对象。只读。</span>
+          <span data-ttu-id="6bcd5-p113">返回指定对象的父对象。只读。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="f76da-p111">Returns the parent object for the specified object. Read-only.</span>
+            <span data-stu-id="6bcd5-p113">Returns the parent object for the specified object. Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>

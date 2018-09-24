@@ -1,10 +1,10 @@
 <Type Name="ShapeNode" FullName="Microsoft.Office.Interop.Excel.ShapeNode">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4fdacdabf56342fb3f89aa5ab8888abf01f9989b" />
+    <Meta Name="ms.openlocfilehash" Value="fa83a8cb318b1dacf1a4becb1cd2c657c30e27e3" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580911" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ShapeNode : Microsoft.Office.Core._IMsoDispObj" />
@@ -31,24 +31,35 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="fb755-101">代表用户定义的任意多边形中节点的几何图形以及几何图形编辑属性。</span>
+      <span data-ttu-id="376a8-101">代表的几何图形以及几何图形编辑属性中的用户定义的节点的任意多边形。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="fb755-101">Represents the geometry and the geometry-editing properties of the nodes in a user-defined freeform.</span>
+        <span data-stu-id="376a8-101">Represents the geometry and the geometry-editing properties of the nodes in a user-defined freeform.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="fb755-102">
-        <para>节点包括之间的任意多边形的线段和曲线段的控制点的顶点。<b>ShapeNode</b>对象所在的<see cref="T:Microsoft.Office.Interop.Excel.ShapeNodes" />集合。<b>ShapeNodes</b>集合中包含的任意多边形中所有节点。</para>
-        <para>使用<b>节点</b>(<paramref name="index" />)，其中<paramref name="index" />是节点索引号，可返回单个<b>ShapeNode</b>对象。</para>
-        <para></para>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="fb755-102">
-          <para>Nodes include the vertices between the segments of the freeform and the control points for curved segments. The <b>ShapeNode</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.ShapeNodes" /> collection. The <b>ShapeNodes</b> collection contains all the nodes in a freeform.</para>
-          <para>Use <b>Nodes</b>(<paramref name="index" />), where <paramref name="index" /> is the node index number, to return a single <b>ShapeNode</b> object.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="376a8-102">节点包括任意多边形的线段之间的曲线段的控点的顶点。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="376a8-102">Nodes include the vertices between the segments of the freeform and the control points for curved segments.</span>
         </span>
-      </span>
+        <span data-ttu-id="376a8-103">
+          <b>ShapeNode</b>对象所在的<see cref="T:Microsoft.Office.Interop.Excel.ShapeNodes" />集合。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="376a8-103">The <b>ShapeNode</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.ShapeNodes" /> collection.</span>
+        </span>
+        <span data-ttu-id="376a8-104">
+          <b>ShapeNodes</b> 集合中包含的任意多边形中的所有节点。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="376a8-104">The <b>ShapeNodes</b> collection contains all the nodes in a freeform.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="376a8-105">使用<b>节点</b>(<paramref name="index" />)，其中<paramref name="index" />是节点索引号，可返回单个<b>ShapeNode</b>对象。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="376a8-105">Use <b>Nodes</b>(<paramref name="index" />), where <paramref name="index" /> is the node index number, to return a single <b>ShapeNode</b> object.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -79,9 +90,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="fb755-103">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
+          <span data-ttu-id="376a8-106">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="fb755-103">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="376a8-106">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -115,28 +126,29 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="fb755-104">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
+          <span data-ttu-id="376a8-107">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="fb755-104">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="376a8-107">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
-          <span data-ttu-id="fb755-105">如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</span>
+          <span data-ttu-id="376a8-108">如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="fb755-105">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
+            <span data-stu-id="376a8-108">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="fb755-106">
-            <para>
-              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="fb755-106">
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="376a8-109">
+              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="376a8-109">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
             </span>
-          </span>
+            <span data-ttu-id="376a8-110">例如，Microsoft Excel 具有 XCEL 的创建者代码。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="376a8-110">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -164,23 +176,20 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="fb755-107">如果指定的节点是顶点，则此属性的返回值表示对节点所做的更改如何影响与该节点相连的两条线段。</span>
+          <span data-ttu-id="376a8-111">如果指定的节点是顶点，则此属性的返回值表示对节点所做的更改如何影响与该节点相连的两条线段。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="fb755-107">If the specified node is a vertex, this property returns a value that indicates how changes made to the node affect the two segments connected to the node.</span>
+            <span data-stu-id="376a8-111">If the specified node is a vertex, this property returns a value that indicates how changes made to the node affect the two segments connected to the node.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="fb755-108">
-            <para>使用<see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetEditingType(System.Int32,Microsoft.Office.Core.MsoEditingType)" />方法，以便设置此属性的值。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="fb755-108">
-              <para>Use the <see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetEditingType(System.Int32,Microsoft.Office.Core.MsoEditingType)" /> method to set the value of this property.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="376a8-112">使用<see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetEditingType(System.Int32,Microsoft.Office.Core.MsoEditingType)" />方法，以便设置此属性的值。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="376a8-112">Use the <see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetEditingType(System.Int32,Microsoft.Office.Core.MsoEditingType)" /> method to set the value of this property.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -208,9 +217,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="fb755-109">返回指定对象的父对象。</span>
+          <span data-ttu-id="376a8-113">返回指定对象的父对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="fb755-109">Returns the parent object for the specified object.</span>
+            <span data-stu-id="376a8-113">Returns the parent object for the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -241,27 +250,24 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="fb755-110">返回指定节点的位置坐标对的形式。</span>
+          <span data-ttu-id="376a8-114">返回指定节点的位置坐标对的形式。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="fb755-110">Returns the position of the specified node as a coordinate pair.</span>
+            <span data-stu-id="376a8-114">Returns the position of the specified node as a coordinate pair.</span>
           </span>
-          <span data-ttu-id="fb755-111">每个坐标都以磅表示。</span>
+          <span data-ttu-id="376a8-115">每个坐标都以磅表示。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="fb755-111">Each coordinate is expressed in points.</span>
+            <span data-stu-id="376a8-115">Each coordinate is expressed in points.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="fb755-112">
-            <para>使用<see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetPosition(System.Int32,System.Single,System.Single)" />方法，以便设置此属性的值。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="fb755-112">
-              <para>Use the <see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetPosition(System.Int32,System.Single,System.Single)" /> method to set the value of this property.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="376a8-116">使用<see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetPosition(System.Int32,System.Single,System.Single)" />方法，以便设置此属性的值。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="376a8-116">Use the <see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetPosition(System.Int32,System.Single,System.Single)" /> method to set the value of this property.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -289,13 +295,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="fb755-113">返回一个值，该值指示与指定节点关联的线段是直线段还是曲线段。</span>
+          <span data-ttu-id="376a8-117">返回一个值，该值指示与指定节点关联的线段是直线段还是曲线段。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="fb755-113">Returns a value that indicates whether the segment associated with the specified node is straight or curved.</span>
+            <span data-stu-id="376a8-117">Returns a value that indicates whether the segment associated with the specified node is straight or curved.</span>
           </span>
-          <span data-ttu-id="fb755-114">如果指定节点是曲线段的控制点，则该属性返回 <b>msoSegmentCurve</b> 。</span>
+          <span data-ttu-id="376a8-118">如果指定节点是曲线段的控制点，则该属性返回 <b>msoSegmentCurve</b> 。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="fb755-114">If the specified node is a control point for a curved segment, this property returns <b>msoSegmentCurve</b>.</span>
+            <span data-stu-id="376a8-118">If the specified node is a control point for a curved segment, this property returns <b>msoSegmentCurve</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>

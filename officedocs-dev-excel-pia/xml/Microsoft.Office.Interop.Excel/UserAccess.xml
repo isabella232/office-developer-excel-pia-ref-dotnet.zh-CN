@@ -1,10 +1,10 @@
 <Type Name="UserAccess" FullName="Microsoft.Office.Interop.Excel.UserAccess">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="cbd39fb1f38835efe39fe6d5eb2e5786a179eb1c" />
+    <Meta Name="ms.openlocfilehash" Value="5757d729f5b2ba76353f83174ceb6884fc95261d" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587197" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface UserAccess" />
@@ -30,25 +30,25 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="1181d-101">代表对受保护区域的用户访问。</span>
+      <span data-ttu-id="1d847-101">代表对受保护区域的用户访问。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="1181d-101">Represents the user access for a protected range.</span>
+        <span data-stu-id="1d847-101">Represents the user access for a protected range.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="1181d-102">
-        <para>使用<see cref="M:Microsoft.Office.Interop.Excel.UserAccessList.Add(System.String,System.Boolean)" />方法或<see cref="P:Microsoft.Office.Interop.Excel.UserAccessList.Item(System.Object)" />属性<see cref="T:Microsoft.Office.Interop.Excel.UserAccessList" />可返回一个<b>UserAccess</b>对象的集合。</para>
-        <para>
-          <b>UserAccess</b>对象返回后，您可以确定如果允许对工作表中特定范围访问，则使用<see cref="P:Microsoft.Office.Interop.Excel.UserAccess.AllowEdit" />属性。</para>
-        <para></para>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="1181d-102">
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel.UserAccessList.Add(System.String,System.Boolean)" /> method or the <see cref="P:Microsoft.Office.Interop.Excel.UserAccessList.Item(System.Object)" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.UserAccessList" /> collection to return a <b>UserAccess</b> object.</para>
-          <para>Once a <b>UserAccess</b> object is returned, you can determine if access is allowed for a particular range in a worksheet, using the <see cref="P:Microsoft.Office.Interop.Excel.UserAccess.AllowEdit" /> property.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="1d847-102">使用<see cref="M:Microsoft.Office.Interop.Excel.UserAccessList.Add(System.String,System.Boolean)" />方法或<see cref="P:Microsoft.Office.Interop.Excel.UserAccessList.Item(System.Object)" />属性<see cref="T:Microsoft.Office.Interop.Excel.UserAccessList" />可返回一个<b>UserAccess</b>对象的集合。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="1d847-102">Use the <see cref="M:Microsoft.Office.Interop.Excel.UserAccessList.Add(System.String,System.Boolean)" /> method or the <see cref="P:Microsoft.Office.Interop.Excel.UserAccessList.Item(System.Object)" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.UserAccessList" /> collection to return a <b>UserAccess</b> object.</span>
         </span>
-      </span>
+      </para>
+      <para>
+        <span data-ttu-id="1d847-103">一旦返回了<b>UserAccess</b>对象，就可以确定如果允许对工作表中特定范围访问，则使用<see cref="P:Microsoft.Office.Interop.Excel.UserAccess.AllowEdit" />属性。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="1d847-103">Once a <b>UserAccess</b> object is returned, you can determine if access is allowed for a particular range in a worksheet, using the <see cref="P:Microsoft.Office.Interop.Excel.UserAccess.AllowEdit" /> property.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -79,10 +79,10 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="1181d-103">
+          <span data-ttu-id="1d847-104">
             <b>True</b>如果用户在受保护的工作表上允许访问指定范围。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1181d-103">
+            <span data-stu-id="1d847-104">
               <b>True</b> if the user is allowed access to the specified range on a protected worksheet.</span>
           </span>
         </summary>
@@ -112,9 +112,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="1181d-104">删除对象。</span>
+          <span data-ttu-id="1d847-105">删除对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1181d-104">Deletes the object.</span>
+            <span data-stu-id="1d847-105">Deletes the object.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -144,111 +144,162 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="1181d-105">返回的对象的名称。</span>
+          <span data-ttu-id="1d847-106">返回的对象的名称。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1181d-105">Returns the name of the object.</span>
+            <span data-stu-id="1d847-106">Returns the name of the object.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="1181d-106">
-            <para>下表显示<b>名称</b>属性和给定唯一名称"[Europe] 与数据源相关的属性示例值。[France]。[Paris]"，并将与项目的非 OLAP 数据源命名"巴黎"。</para>
-            <list type="table">
-              <item>
-                <term>
-                  <b>标题</b>
-                </term>
-                <description>巴黎</description>
-                <description>巴黎</description>
-              </item>
-              <item>
-                <term>
-                  <b>名称</b>
-                </term>
-                <description>[Europe]。 [法国]。[Paris]（只读）</description>
-                <description>巴黎</description>
-              </item>
-              <item>
-                <term>
-                  <b>SourceName</b>
-                </term>
-                <description>[Europe]。 [法国]。[Paris]（只读）</description>
-                <description>（与 SQL 属性值，只读相同）</description>
-              </item>
-              <item>
-                <term>
-                  <b>值</b>
-                </term>
-                <description>[Europe]。 [法国]。[Paris]（只读）</description>
-                <description>巴黎</description>
-              </item>
-            </list>
-            <para>指定的索引时<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />集合，您可以使用下表中所示的语法。</para>
-            <list type="table">
-              <item>
-                <term>表达式。PivotItems ("[Europe]。 [法国]。[Paris]")</term>
-                <description>表达式。PivotItems("Paris")</description>
-              </item>
-            </list>
-            <para>时使用<see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" />属性引用集合中的特定成员，您可以使用下表中所示的文本索引名称。</para>
-            <list type="table">
-              <item>
-                <term>[Europe]。 [法国]。[Paris]</term>
-                <description>巴黎</description>
-              </item>
-            </list>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="1181d-106">
-              <para>The following table shows example values of the <b>Name</b> property and related properties given an  data source with the unique name "[Europe].[France].[Paris]" and a non-OLAP data source with the item name "Paris".</para>
-              <list type="table">
-                <item>
-                  <term>
-                    <b>Caption</b>
-                  </term>
-                  <description>Paris</description>
-                  <description>Paris</description>
-                </item>
-                <item>
-                  <term>
-                    <b>Name</b>
-                  </term>
-                  <description>[Europe].[France].[Paris] (read-only)</description>
-                  <description>Paris</description>
-                </item>
-                <item>
-                  <term>
-                    <b>SourceName</b>
-                  </term>
-                  <description>[Europe].[France].[Paris] (read-only)</description>
-                  <description>(Same as SQL property value, read-only)</description>
-                </item>
-                <item>
-                  <term>
-                    <b>Value</b>
-                  </term>
-                  <description>[Europe].[France].[Paris] (read-only)</description>
-                  <description>Paris</description>
-                </item>
-              </list>
-              <para>When specifying an index into the <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, you can use the syntax shown in the following table.</para>
-              <list type="table">
-                <item>
-                  <term>expression.PivotItems("[Europe].[France].[Paris]")</term>
-                  <description>expression.PivotItems("Paris")</description>
-                </item>
-              </list>
-              <para>When using the <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> property to reference a specific member of a collection, you can use the text index name as shown in the following table.</para>
-              <list type="table">
-                <item>
-                  <term>[Europe].[France].[Paris]</term>
-                  <description>Paris</description>
-                </item>
-              </list>
-              <para></para>
+          <para>
+            <span data-ttu-id="1d847-107">下表显示<b>名称</b>属性和给定唯一名称"[Europe] 与数据源相关的属性示例值。[France]。[Paris]"，并将与项目的非 OLAP 数据源命名"巴黎"。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1d847-107">The following table shows example values of the <b>Name</b> property and related properties given an  data source with the unique name "[Europe].[France].[Paris]" and a non-OLAP data source with the item name "Paris".</span>
             </span>
-          </span>
+          </para>
+          <list type="table">
+            <item>
+              <term>
+                <span data-ttu-id="1d847-108">
+                  <b>标题</b>
+                </span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="1d847-108">
+                    <b>Caption</b>
+                  </span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="1d847-109">Paris</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="1d847-109">Paris</span>
+                </span>
+              </description>
+              <description>
+                <span data-ttu-id="1d847-110">Paris</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="1d847-110">Paris</span>
+                </span>
+              </description>
+            </item>
+            <item>
+              <term>
+                <span data-ttu-id="1d847-111">
+                  <b>名称</b>
+                </span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="1d847-111">
+                    <b>Name</b>
+                  </span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="1d847-112">[Europe].[France].[Paris]（只读）</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="1d847-112">[Europe].[France].[Paris] (read-only)</span>
+                </span>
+              </description>
+              <description>
+                <span data-ttu-id="1d847-113">Paris</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="1d847-113">Paris</span>
+                </span>
+              </description>
+            </item>
+            <item>
+              <term>
+                <span data-ttu-id="1d847-114">
+                  <b>SourceName</b>
+                </span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="1d847-114">
+                    <b>SourceName</b>
+                  </span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="1d847-115">[Europe].[France].[Paris]（只读）</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="1d847-115">[Europe].[France].[Paris] (read-only)</span>
+                </span>
+              </description>
+              <description>
+                <span data-ttu-id="1d847-116">（与 SQL 属性值相同，只读）</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="1d847-116">(Same as SQL property value, read-only)</span>
+                </span>
+              </description>
+            </item>
+            <item>
+              <term>
+                <span data-ttu-id="1d847-117">
+                  <b>值</b>
+                </span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="1d847-117">
+                    <b>Value</b>
+                  </span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="1d847-118">[Europe].[France].[Paris]（只读）</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="1d847-118">[Europe].[France].[Paris] (read-only)</span>
+                </span>
+              </description>
+              <description>
+                <span data-ttu-id="1d847-119">Paris</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="1d847-119">Paris</span>
+                </span>
+              </description>
+            </item>
+          </list>
+          <para>
+            <span data-ttu-id="1d847-120">指定的索引时<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />集合，您可以使用下表中所示的语法。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1d847-120">When specifying an index into the <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, you can use the syntax shown in the following table.</span>
+            </span>
+          </para>
+          <list type="table">
+            <item>
+              <term>
+                <span data-ttu-id="1d847-121">表达式。PivotItems ("[Europe]。 [法国]。[Paris]")</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="1d847-121">expression.PivotItems("[Europe].[France].[Paris]")</span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="1d847-122">表达式。PivotItems("Paris")</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="1d847-122">expression.PivotItems("Paris")</span>
+                </span>
+              </description>
+            </item>
+          </list>
+          <para>
+            <span data-ttu-id="1d847-123">当使用<see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" />属性引用集合中的特定成员，您可以使用下表中所示的文本索引名称。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="1d847-123">When using the <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> property to reference a specific member of a collection, you can use the text index name as shown in the following table.</span>
+            </span>
+          </para>
+          <list type="table">
+            <item>
+              <term>
+                <span data-ttu-id="1d847-124">[Europe]。[France]。[Paris]</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="1d847-124">[Europe].[France].[Paris]</span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="1d847-125">Paris</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="1d847-125">Paris</span>
+                </span>
+              </description>
+            </item>
+          </list>
+          <para></para>
         </remarks>
       </Docs>
     </Member>

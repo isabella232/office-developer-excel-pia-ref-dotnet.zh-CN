@@ -1,10 +1,10 @@
 <Type Name="ChartGroups" FullName="Microsoft.Office.Interop.Excel.ChartGroups">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ed49e202a12a761d2ea1f0fade680591aab69567" />
+    <Meta Name="ms.openlocfilehash" Value="d05b335ff2ac16ca069b154e14a4f4ac9e9eb27d" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582766" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ChartGroups : System.Collections.IEnumerable" />
@@ -34,49 +34,122 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="1d469-101">所有的集合<see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" />指定图表中的对象。</span>
+      <span data-ttu-id="b6002-101">所有的集合<see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" />指定图表中的对象。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="1d469-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" /> objects in the specified chart.</span>
+        <span data-stu-id="b6002-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" /> objects in the specified chart.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="1d469-102">
-        <para>每个<see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" />对象都代表一个或多个系列图表中用同一格式绘制。图表包含一个或多个图表组，每个图表组包含一个或多个数据系列，以及每个数据系列包含一个或多个点。例如，单个图表可能包含折线图图表组，其中包含与折线图格式，绘制的所有系列和条形图图表组，其中都包含与条形图格式绘制的所有系列。</para>使用
-      <para><see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" />方法，以返回<b>ChartGroups</b>集合。使用<b>ChartGroups</b>(<paramref name="index" />)，其中<paramref name="index" />是图表组的索引号，可返回单个<b>ChartGroup</b>对象。如果图表已被激活，则可以使用<see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" />。</para><para>因为如果更改组所用的图表格式，可以更改特定图表组的索引号，所以可能更轻松地使用命名的图表组快捷方法之一可返回特定图表组。<see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" />方法在图表中，返回饼图图表组集合的<see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" />方法将返回为折线图图表组中，依次类推集合。每种方法可以用于与索引号可返回单个<b>ChartGroup</b>对象，或不返回<b>ChartGroups</b>集合的索引号。下面的图表组方法是可用：</para><list type="bullet"><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" />方法</description></item><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" />方法</description></item><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" />方法</description></item><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" />方法</description></item><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" />方法</description></item><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" />方法</description></item></list><para></para></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="1d469-102">
-          <para>Each <see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" /> object represents one or more series plotted in a chart with the same format. A chart contains one or more chart groups, each chart group contains one or more series, and each series contains one or more points. For example, a single chart might contain both a line chart group, containing all the series plotted with the line chart format, and a bar chart group, containing all the series plotted with the bar chart format.</para>
-          <para>Use the <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> method to return the <b>ChartGroups</b> collection. Use <b>ChartGroups</b>(<paramref name="index" />), where <paramref name="index" /> is the chart-group index number, to return a single <b>ChartGroup</b> object. If the chart has been activated, you can use <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" />.</para>
-          <para>Because the index number for a particular chart group can change if the chart format used for that group is changed, it may be easier to use one of the named chart group shortcut methods to return a particular chart group. The <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> method returns the collection of pie chart groups in a chart, the <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> method returns the collection of line chart groups, and so on. Each of these methods can be used with an index number to return a single <b>ChartGroup</b> object, or without an index number to return a <b>ChartGroups</b> collection. The following chart group methods are available:</para>
-          <list type="bullet">
-            <item>
-              <description>
-                <see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" /> method</description>
-            </item>
-            <item>
-              <description>
-                <see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" /> method</description>
-            </item>
-            <item>
-              <description>
-                <see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" /> method</description>
-            </item>
-            <item>
-              <description>
-                <see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" /> method</description>
-            </item>
-            <item>
-              <description>
-                <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> method</description>
-            </item>
-            <item>
-              <description>
-                <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> method</description>
-            </item>
-          </list>
-          <para></para>
+      <para>
+        <span data-ttu-id="b6002-102">每个<see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" />对象都代表一个或多个系列图表中用同一格式绘制。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="b6002-102">Each <see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" /> object represents one or more series plotted in a chart with the same format.</span>
         </span>
-      </span>
+        <span data-ttu-id="b6002-103">一张图表包含一个或多个图表组，每个图表组包含一个或多个系列，每个数据系列包含一个或多个点。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="b6002-103">A chart contains one or more chart groups, each chart group contains one or more series, and each series contains one or more points.</span>
+        </span>
+        <span data-ttu-id="b6002-104">例如，单张图表可能既包含折线图图表组，其中包含所有用折线图格式，绘制的数据系列也条形图图表组，其中包含所有用条形图格式绘制的数据系列。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="b6002-104">For example, a single chart might contain both a line chart group, containing all the series plotted with the line chart format, and a bar chart group, containing all the series plotted with the bar chart format.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="b6002-105">使用<see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" />方法，以返回<b>ChartGroups</b>集合。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="b6002-105">Use the <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> method to return the <b>ChartGroups</b> collection.</span>
+        </span>
+        <span data-ttu-id="b6002-106">使用<b>ChartGroups</b>(<paramref name="index" />)，其中<paramref name="index" />是图表组的索引号，可返回单个<b>ChartGroup</b>对象。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="b6002-106">Use <b>ChartGroups</b>(<paramref name="index" />), where <paramref name="index" /> is the chart-group index number, to return a single <b>ChartGroup</b> object.</span>
+        </span>
+        <span data-ttu-id="b6002-107">如果图表已被激活，则可以使用<see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" />。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="b6002-107">If the chart has been activated, you can use <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" />.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="b6002-108">如果更改组所用的图表格式，可以更改特定图表组的索引号，因为它可能更轻松地使用命名的图表组快捷方法之一可返回特定图表组。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="b6002-108">Because the index number for a particular chart group can change if the chart format used for that group is changed, it may be easier to use one of the named chart group shortcut methods to return a particular chart group.</span>
+        </span>
+        <span data-ttu-id="b6002-109">
+          <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" />方法在图表中，返回饼图图表组集合的<see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" />方法将返回为折线图图表组中，依次类推集合。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="b6002-109">The <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> method returns the collection of pie chart groups in a chart, the <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> method returns the collection of line chart groups, and so on.</span>
+        </span>
+        <span data-ttu-id="b6002-110">每种方法可以用于与索引号可返回单个<b>ChartGroup</b>对象，或不返回<b>ChartGroups</b>集合的索引号。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="b6002-110">Each of these methods can be used with an index number to return a single <b>ChartGroup</b> object, or without an index number to return a <b>ChartGroups</b> collection.</span>
+        </span>
+        <span data-ttu-id="b6002-111">以下图表组方法有：</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="b6002-111">The following chart group methods are available:</span>
+        </span>
+      </para>
+      <list type="bullet">
+        <item>
+          <description>
+            <span data-ttu-id="b6002-112">
+              <see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" />方法</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="b6002-112">
+                <see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" /> method</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <description>
+            <span data-ttu-id="b6002-113">
+              <see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" />方法</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="b6002-113">
+                <see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" /> method</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <description>
+            <span data-ttu-id="b6002-114">
+              <see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" />方法</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="b6002-114">
+                <see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" /> method</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <description>
+            <span data-ttu-id="b6002-115">
+              <see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" />方法</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="b6002-115">
+                <see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" /> method</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <description>
+            <span data-ttu-id="b6002-116">
+              <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" />方法</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="b6002-116">
+                <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> method</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <description>
+            <span data-ttu-id="b6002-117">
+              <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" />方法</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="b6002-117">
+                <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> method</span>
+            </span>
+          </description>
+        </item>
+      </list>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -104,13 +177,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="1d469-103">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />值，该值代表指定对象 （可与 OLE 自动化对象使用此属性可返回该对象的应用程序） 的创建者的对象。</span>
+          <span data-ttu-id="b6002-118">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />值，该值代表指定对象 （可与 OLE 自动化对象使用此属性可返回该对象的应用程序） 的创建者的对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1d469-103">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the creator of the specified object (you can use this property with an OLE Automation object to return the application of that object).</span>
+            <span data-stu-id="b6002-118">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the creator of the specified object (you can use this property with an OLE Automation object to return the application of that object).</span>
           </span>
-          <span data-ttu-id="1d469-104">只读。</span>
+          <span data-ttu-id="b6002-119">只读。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1d469-104">Read-only.</span>
+            <span data-stu-id="b6002-119">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -141,14 +214,14 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="1d469-105">返回集合中对象的数目。</span>
+          <span data-ttu-id="b6002-120">返回集合中对象的数目。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1d469-105">Returns the number of objects in the collection.</span>
+            <span data-stu-id="b6002-120">Returns the number of objects in the collection.</span>
           </span>
-          <span data-ttu-id="1d469-106">
+          <span data-ttu-id="b6002-121">
             <b>Integer</b> 类型，只读。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1d469-106">Read-only <b>Integer</b>.</span>
+            <span data-stu-id="b6002-121">Read-only <b>Integer</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -179,32 +252,33 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="1d469-107">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
+          <span data-ttu-id="b6002-122">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1d469-107">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="b6002-122">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
-          <span data-ttu-id="1d469-108">如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</span>
+          <span data-ttu-id="b6002-123">如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1d469-108">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
+            <span data-stu-id="b6002-123">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
           </span>
-          <span data-ttu-id="1d469-109">只读<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</span>
+          <span data-ttu-id="b6002-124">只读<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1d469-109">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
+            <span data-stu-id="b6002-124">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="1d469-110">
-            <para>
-              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="1d469-110">
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="b6002-125">
+              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="b6002-125">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
             </span>
-          </span>
+            <span data-ttu-id="b6002-126">例如，Microsoft Excel 具有 XCEL 的创建者代码。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="b6002-126">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -264,19 +338,19 @@
       </Parameters>
       <Docs>
         <param name="Index">
-          <span data-ttu-id="1d469-111">所需的<b>对象</b>。</span>
+          <span data-ttu-id="b6002-127">所需的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1d469-111">Required <b>Object</b>.</span>
+            <span data-stu-id="b6002-127">Required <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="1d469-112">对象的名称或索引号。</span>
+          <span data-ttu-id="b6002-128">对象的名称或索引号。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1d469-112">The name or index number for the object.</span>
+            <span data-stu-id="b6002-128">The name or index number for the object.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="1d469-113">从集合中返回一个对象。</span>
+          <span data-ttu-id="b6002-129">从集合中返回一个对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1d469-113">Returns a single object from a collection.</span>
+            <span data-stu-id="b6002-129">Returns a single object from a collection.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -307,9 +381,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="1d469-p105">返回指定对象的父对象。只读。</span>
+          <span data-ttu-id="b6002-p109">返回指定对象的父对象。只读。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1d469-p105">Returns the parent object for the specified object. Read-only.</span>
+            <span data-stu-id="b6002-p109">Returns the parent object for the specified object. Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>

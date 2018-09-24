@@ -1,10 +1,10 @@
 <Type Name="Worksheet" FullName="Microsoft.Office.Interop.Excel.Worksheet">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="092a8bd086f190725e346add1ff9bd88a61c6ee6" />
+    <Meta Name="ms.openlocfilehash" Value="f8af3c130d8cd9b8102e484a18e8b5c0f9ce9942" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20577733" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Worksheet : Microsoft.Office.Interop.Excel._Worksheet, Microsoft.Office.Interop.Excel.DocEvents_Event" />
@@ -34,62 +34,127 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="0c24d-101">代表一个工作表。</span>
+      <span data-ttu-id="22fe2-101">代表一个工作表。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="0c24d-101">Represents a worksheet.</span>
+        <span data-stu-id="22fe2-101">Represents a worksheet.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="0c24d-102">
-        <para>这是.NET 接口派生的互操作性与相应的 COM 对象的托管代码需要 COM coclass。使用此派生的接口访问 COM 对象的所有方法、 属性和事件的成员。但是，如果方法或想要使用的事件共享相同的名称相同的 COM 对象下，强制转换为相应的主接口调用方法，并强制转换为最新的事件接口，连接到该事件。请参阅本主题的 COM 对象有关的信息。有关 COM 对象的方法和属性成员的信息，请参阅<see cref="T:Microsoft.Office.Interop.Excel._Worksheet" />。</para>
-        <para>
-          <b>工作表</b>对象是成员<see cref="T:Microsoft.Office.Interop.Excel.Worksheets" />集合。<b>工作表</b>集合包含工作簿中的所有<b>工作表</b>对象。</para>
-        <para>本节中介绍返回<b>Worksheet</b>对象的以下属性：</para>
-        <list type="bullet">
-          <item>
-            <description>
-              <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Worksheets" />属性</description>
-          </item>
-          <item>
-            <description>
-              <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" />属性</description>
-          </item>
-        </list>
-        <para>Worksheets 属性</para>
-        <para>使用<b>工作表</b>(<paramref name="index" />)，其中<paramref name="index" />是工作表的索引号或名称，可返回单个<b>Worksheet</b>对象。</para>
-        <para>工作表的索引号表示工作簿的选项卡栏上的工作表的位置。Worksheets(1) 是工作簿中的第一个 （最左边） 工作表和 Worksheets(Worksheets.Count) 是最后一个。所有工作表包含在索引计数中，即使它们隐藏的。</para>
-        <para>工作表名称时显示工作表选项卡。使用<see cref="P:Microsoft.Office.Interop.Excel._Worksheet.Name" />属性来设置或返回工作表名称。</para>
-        <para>
-          <b>工作表</b>对象也是成员<see cref="T:Microsoft.Office.Interop.Excel.Sheets" />集合。<b>Sheets</b>集合包含工作簿 （图表工作表和工作表） 中的所有工作表。</para>
-        <para>ActiveSheet 属性</para>
-        <para>工作表时活动工作表，您可以使用<b>ActiveSheet</b>属性来引用它。</para>
-        <para></para>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="0c24d-102">
-          <para>This is a .NET interface derived from a COM coclass that is required by managed code for interoperability with the corresponding COM object. Use this derived interface to access all method, property, and event members of the COM object. However, if a method or event you want to use shares the same name under the same COM object, cast to the corresponding primary interface to call the method, and cast to the latest events interface to connect to the event. Refer to this topic for information about the COM object. For information about the method and property members of the COM object, see <see cref="T:Microsoft.Office.Interop.Excel._Worksheet" />.</para>
-          <para>The <b>Worksheet</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.Worksheets" /> collection. The <b>Worksheets</b> collection contains all the <b>Worksheet</b> objects in a workbook.</para>
-          <para>The following properties for returning a <b>Worksheet</b> object are described in this section:</para>
-          <list type="bullet">
-            <item>
-              <description>
-                <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Worksheets" /> property</description>
-            </item>
-            <item>
-              <description>
-                <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" /> property</description>
-            </item>
-          </list>
-          <para>Worksheets Property</para>
-          <para>Use <b>Worksheets</b>(<paramref name="index" />), where <paramref name="index" /> is the worksheet index number or name, to return a single <b>Worksheet</b> object.</para>
-          <para>The worksheet index number denotes the position of the worksheet on the workbook’s tab bar. Worksheets(1) is the first (leftmost) worksheet in the workbook, and Worksheets(Worksheets.Count) is the last one. All worksheets are included in the index count, even if they’re hidden.</para>
-          <para>The worksheet name is shown on the tab for the worksheet. Use the <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.Name" /> property to set or return the worksheet name.</para>
-          <para>The <b>Worksheet</b> object is also a member of the <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection. The <b>Sheets </b>collection contains all the sheets in the workbook (both chart sheets and worksheets).</para>
-          <para>ActiveSheet Property</para>
-          <para>When a worksheet is the active sheet, you can use the <b>ActiveSheet</b> property to refer to it.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="22fe2-102">这是.NET 接口派生的互操作性与相应的 COM 对象的托管代码需要 COM coclass。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="22fe2-102">This is a .NET interface derived from a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span>
         </span>
-      </span>
+        <span data-ttu-id="22fe2-103">使用此派生的接口访问 COM 对象的所有方法、 属性和事件的成员。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="22fe2-103">Use this derived interface to access all method, property, and event members of the COM object.</span>
+        </span>
+        <span data-ttu-id="22fe2-104">但是，如果方法或想要使用的事件共享相同的名称相同的 COM 对象下，强制转换为相应的主接口调用方法，并强制转换为最新的事件接口，连接到该事件。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="22fe2-104">However, if a method or event you want to use shares the same name under the same COM object, cast to the corresponding primary interface to call the method, and cast to the latest events interface to connect to the event.</span>
+        </span>
+        <span data-ttu-id="22fe2-105">请参阅本主题的 COM 对象有关的信息。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="22fe2-105">Refer to this topic for information about the COM object.</span>
+        </span>
+        <span data-ttu-id="22fe2-106">有关 COM 对象的方法和属性成员的信息，请参阅<see cref="T:Microsoft.Office.Interop.Excel._Worksheet" />。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="22fe2-106">For information about the method and property members of the COM object, see <see cref="T:Microsoft.Office.Interop.Excel._Worksheet" />.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="22fe2-107">
+          <b>Worksheet</b>对象所在的<see cref="T:Microsoft.Office.Interop.Excel.Worksheets" />集合。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="22fe2-107">The <b>Worksheet</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.Worksheets" /> collection.</span>
+        </span>
+        <span data-ttu-id="22fe2-108">
+          <b>工作表</b>集合包含工作簿中的所有<b>工作表</b>对象。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="22fe2-108">The <b>Worksheets</b> collection contains all the <b>Worksheet</b> objects in a workbook.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="22fe2-109">本节描述返回<b>Worksheet</b>对象的以下属性：</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="22fe2-109">The following properties for returning a <b>Worksheet</b> object are described in this section:</span>
+        </span>
+      </para>
+      <list type="bullet">
+        <item>
+          <description>
+            <span data-ttu-id="22fe2-110">
+              <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Worksheets" />属性</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="22fe2-110">
+                <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Worksheets" /> property</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <description>
+            <span data-ttu-id="22fe2-111">
+              <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" />属性</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="22fe2-111">
+                <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" /> property</span>
+            </span>
+          </description>
+        </item>
+      </list>
+      <para>
+        <span data-ttu-id="22fe2-112">Worksheets 属性</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="22fe2-112">Worksheets Property</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="22fe2-113">使用<b>工作表</b>(<paramref name="index" />)，其中<paramref name="index" />是工作表的索引号或名称，可返回单个<b>Worksheet</b>对象。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="22fe2-113">Use <b>Worksheets</b>(<paramref name="index" />), where <paramref name="index" /> is the worksheet index number or name, to return a single <b>Worksheet</b> object.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="22fe2-p103">工作表索引号指示该工作表在工作簿的标签栏上的位置。Worksheets(1) 是工作簿中第一个（最左边的）工作表，而 Worksheets(Worksheets.Count) 是最后一个。所有工作表均包括在索引计数中，即便是隐藏工作表也是如此。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="22fe2-p103">The worksheet index number denotes the position of the worksheet on the workbook’s tab bar. Worksheets(1) is the first (leftmost) worksheet in the workbook, and Worksheets(Worksheets.Count) is the last one. All worksheets are included in the index count, even if they’re hidden.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="22fe2-117">在工作表选项卡上显示工作表名称。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="22fe2-117">The worksheet name is shown on the tab for the worksheet.</span>
+        </span>
+        <span data-ttu-id="22fe2-118">使用<see cref="P:Microsoft.Office.Interop.Excel._Worksheet.Name" />属性来设置或返回工作表名称。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="22fe2-118">Use the <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.Name" /> property to set or return the worksheet name.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="22fe2-119">
+          <b>Worksheet</b>对象也是成员的<see cref="T:Microsoft.Office.Interop.Excel.Sheets" />集合。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="22fe2-119">The <b>Worksheet</b> object is also a member of the <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection.</span>
+        </span>
+        <span data-ttu-id="22fe2-120">
+          <b>Sheets</b>集合包含工作簿 （图表工作表和工作表） 中的所有工作表。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="22fe2-120">The <b>Sheets </b>collection contains all the sheets in the workbook (both chart sheets and worksheets).</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="22fe2-121">ActiveSheet 属性</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="22fe2-121">ActiveSheet Property</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="22fe2-122">活动工作表的工作表时，您可以使用<b>ActiveSheet</b>属性引用它。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="22fe2-122">When a worksheet is the active sheet, you can use the <b>ActiveSheet</b> property to refer to it.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members />

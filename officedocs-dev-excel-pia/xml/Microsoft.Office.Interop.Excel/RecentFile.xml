@@ -1,10 +1,10 @@
 <Type Name="RecentFile" FullName="Microsoft.Office.Interop.Excel.RecentFile">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="92bb55c70e6ccba139ad46ab79e749567c68bac3" />
+    <Meta Name="ms.openlocfilehash" Value="4ace00f7ee9a9038c4b71a638b3698e8a0bc4aee" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20579000" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface RecentFile" />
@@ -30,25 +30,26 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="e8246-101">代表最近使用的文件列表中的某个文件。</span>
+      <span data-ttu-id="9abcd-101">代表最近使用的文件列表中的某个文件。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="e8246-101">Represents a file in the list of recently used files.</span>
+        <span data-stu-id="9abcd-101">Represents a file in the list of recently used files.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="e8246-102">
-        <para>
-          <b>RecentFile</b>对象是成员<see cref="T:Microsoft.Office.Interop.Excel.RecentFiles" />集合。</para>
-        <para>使用<b>RecentFiles</b>(<paramref name="index" />)，其中<paramref name="index" />是文件编号，可返回一个<b>RecentFile</b>对象。</para>
-        <para></para>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="e8246-102">
-          <para>The <b>RecentFile</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.RecentFiles" /> collection.</para>
-          <para>Use <b>RecentFiles</b>(<paramref name="index" />), where <paramref name="index" /> is the file number, to return a <b>RecentFile</b> object.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="9abcd-102">
+          <b>RecentFile</b>对象是成员<see cref="T:Microsoft.Office.Interop.Excel.RecentFiles" />集合。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="9abcd-102">The <b>RecentFile</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.RecentFiles" /> collection.</span>
         </span>
-      </span>
+      </para>
+      <para>
+        <span data-ttu-id="9abcd-103">使用<b>RecentFiles</b>(<paramref name="index" />)，其中<paramref name="index" />是文件编号，可返回一个<b>RecentFile</b>对象。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="9abcd-103">Use <b>RecentFiles</b>(<paramref name="index" />), where <paramref name="index" /> is the file number, to return a <b>RecentFile</b> object.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -76,9 +77,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="e8246-103">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
+          <span data-ttu-id="9abcd-104">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="e8246-103">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="9abcd-104">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -109,26 +110,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="e8246-104">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
+          <span data-ttu-id="9abcd-105">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="e8246-104">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="9abcd-105">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="e8246-105">
-            <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
-            <para>
-              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="e8246-105">
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="9abcd-106">如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="9abcd-106">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="9abcd-107">
+              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="9abcd-107">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="9abcd-108">例如，Microsoft Excel 具有 XCEL 的创建者代码。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="9abcd-108">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -154,9 +160,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="e8246-106">删除对象。</span>
+          <span data-ttu-id="9abcd-109">删除对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="e8246-106">Deletes the object.</span>
+            <span data-stu-id="9abcd-109">Deletes the object.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -186,9 +192,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="e8246-107">返回对象在其同类对象所组成的集合内的编号。</span>
+          <span data-ttu-id="9abcd-110">返回对象在其同类对象所组成的集合内的编号。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="e8246-107">Returns the index number of the object within the collection of similar objects.</span>
+            <span data-stu-id="9abcd-110">Returns the index number of the object within the collection of similar objects.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -219,9 +225,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="e8246-108">返回的对象的名称。</span>
+          <span data-ttu-id="9abcd-111">返回的对象的名称。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="e8246-108">Returns the name of the object.</span>
+            <span data-stu-id="9abcd-111">Returns the name of the object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -250,9 +256,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="e8246-109">打开一个最近使用的工作簿。</span>
+          <span data-ttu-id="9abcd-112">打开一个最近使用的工作簿。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="e8246-109">Opens a recent workbook.</span>
+            <span data-stu-id="9abcd-112">Opens a recent workbook.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -283,9 +289,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="e8246-110">返回指定对象的父对象。</span>
+          <span data-ttu-id="9abcd-113">返回指定对象的父对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="e8246-110">Returns the parent object for the specified object.</span>
+            <span data-stu-id="9abcd-113">Returns the parent object for the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -316,9 +322,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="e8246-111">返回应用程序，不包括末尾的分隔符和应用程序的名称的完整路径。</span>
+          <span data-ttu-id="9abcd-114">返回应用程序，不包括末尾的分隔符和应用程序的名称的完整路径。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="e8246-111">Returns the complete path to the application, excluding the final separator and name of the application.</span>
+            <span data-stu-id="9abcd-114">Returns the complete path to the application, excluding the final separator and name of the application.</span>
           </span>
         </summary>
         <value>To be added.</value>

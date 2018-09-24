@@ -1,10 +1,10 @@
 <Type Name="LegendEntries" FullName="Microsoft.Office.Interop.Excel.LegendEntries">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9f439456cc13f822ef976d853af582329ce32bfe" />
+    <Meta Name="ms.openlocfilehash" Value="8e175f39321b99a7e8cc5297856cd4932c8371cc" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20579336" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface LegendEntries : System.Collections.IEnumerable" />
@@ -34,28 +34,49 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="53aab-101">所有的集合<see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" />指定的图表图例中的对象。</span>
+      <span data-ttu-id="8ae5e-101">所有的集合<see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" />指定的图表图例中的对象。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="53aab-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> objects in the specified chart legend.</span>
+        <span data-stu-id="8ae5e-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> objects in the specified chart legend.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="53aab-102">
-        <para>每个图例项都有两个部分： 项，即的系列或趋势线与图例项; 关联的名称的文本和项的标记，以可视方式链接将图例项与及其关联的系列或趋势线图表中。项标记与其关联的系列或趋势线的格式属性包含在<see cref="T:Microsoft.Office.Interop.Excel.LegendKey" />对象。</para>
-        <para>使用<see cref="M:Microsoft.Office.Interop.Excel.Legend.LegendEntries(System.Object)" />方法可返回<b>LegendEntries</b>集合。</para>
-        <para>使用<b>LegendEntries</b>(<paramref name="index" />)，其中<paramref name="index" />是图例项的索引号，返回的单个<b>LegendEntry</b>对象。不能按照名称返回图例项。</para>
-        <para>索引编号代表图例中图例项的位置。LegendEntries(1) 是图例的顶部;图例位于底部。</para>
-        <para></para>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="53aab-102">
-          <para>Each legend entry has two parts: the text of the entry, which is the name of the series or trendline associated with the legend entry; and the entry marker, which visually links the legend entry with its associated series or trendline in the chart. The formatting properties for the entry marker and its associated series or trendline are contained in the <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> object.</para>
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel.Legend.LegendEntries(System.Object)" /> method to return the <b>LegendEntries</b> collection.</para>
-          <para>Use <b>LegendEntries</b>(<paramref name="index" />), where <paramref name="index" /> is the legend entry index number, to return a single <b>LegendEntry</b> object. You cannot return legend entries by name.</para>
-          <para>The index number represents the position of the legend entry in the legend. LegendEntries(1) is at the top of the legend; LegendEntries(LegendEntries.Count) is at the bottom.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="8ae5e-102">每个图例项都有两个部分： 项，即的系列或趋势线与图例项; 关联的名称的文本和项的标记，以可视方式链接将图例项与及其关联的系列或趋势线图表中。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="8ae5e-102">Each legend entry has two parts: the text of the entry, which is the name of the series or trendline associated with the legend entry; and the entry marker, which visually links the legend entry with its associated series or trendline in the chart.</span>
         </span>
-      </span>
+        <span data-ttu-id="8ae5e-103">项标记与其关联的系列或趋势线的格式属性包含在<see cref="T:Microsoft.Office.Interop.Excel.LegendKey" />对象。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="8ae5e-103">The formatting properties for the entry marker and its associated series or trendline are contained in the <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> object.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="8ae5e-104">使用<see cref="M:Microsoft.Office.Interop.Excel.Legend.LegendEntries(System.Object)" />方法可返回<b>LegendEntries</b>集合。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="8ae5e-104">Use the <see cref="M:Microsoft.Office.Interop.Excel.Legend.LegendEntries(System.Object)" /> method to return the <b>LegendEntries</b> collection.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="8ae5e-105">使用<b>LegendEntries</b>(<paramref name="index" />)，其中<paramref name="index" />是图例项的索引号，返回的单个<b>LegendEntry</b>对象。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="8ae5e-105">Use <b>LegendEntries</b>(<paramref name="index" />), where <paramref name="index" /> is the legend entry index number, to return a single <b>LegendEntry</b> object.</span>
+        </span>
+        <span data-ttu-id="8ae5e-106">不能按名称返回图例项。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="8ae5e-106">You cannot return legend entries by name.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="8ae5e-107">索引号代表图例项在图例中的位置。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="8ae5e-107">The index number represents the position of the legend entry in the legend.</span>
+        </span>
+        <span data-ttu-id="8ae5e-108">LegendEntries(1) 是图例的顶部;在底部图例。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="8ae5e-108">LegendEntries(1) is at the top of the legend; LegendEntries(LegendEntries.Count) is at the bottom.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -87,9 +108,9 @@
       <Docs>
         <param name="Index">To be added.</param>
         <summary>
-          <span data-ttu-id="53aab-103">仅供内部使用。</span>
+          <span data-ttu-id="8ae5e-109">仅供内部使用。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="53aab-103">Reserved for internal use.</span>
+            <span data-stu-id="8ae5e-109">Reserved for internal use.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -120,9 +141,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="53aab-104">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
+          <span data-ttu-id="8ae5e-110">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="53aab-104">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="8ae5e-110">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -153,9 +174,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="53aab-105">返回集合中对象的数目。</span>
+          <span data-ttu-id="8ae5e-111">返回集合中对象的数目。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="53aab-105">Returns the number of objects in the collection.</span>
+            <span data-stu-id="8ae5e-111">Returns the number of objects in the collection.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -186,26 +207,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="53aab-106">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
+          <span data-ttu-id="8ae5e-112">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="53aab-106">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="8ae5e-112">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="53aab-107">
-            <para>如果对象在 Microsoft Excel 中创建的此属性返回的字符串 XCEL，这相当于十六进制数字 5843454 c。</para>
-            <para>
-              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Excel 的创建者代码 XCEL。</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="53aab-107">
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="8ae5e-113">如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="8ae5e-113">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="8ae5e-114">
+              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="8ae5e-114">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="8ae5e-115">例如，Microsoft Excel 具有 XCEL 的创建者代码。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="8ae5e-115">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -265,19 +291,19 @@
       </Parameters>
       <Docs>
         <param name="Index">
-          <span data-ttu-id="53aab-108">所需的<b>对象</b>。</span>
+          <span data-ttu-id="8ae5e-116">所需的<b>对象</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="53aab-108">Required <b>Object</b>.</span>
+            <span data-stu-id="8ae5e-116">Required <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="53aab-109">对象的名称或索引号。</span>
+          <span data-ttu-id="8ae5e-117">对象的名称或索引号。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="53aab-109">The name or index number for the object.</span>
+            <span data-stu-id="8ae5e-117">The name or index number for the object.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="53aab-110">从集合中返回一个对象。</span>
+          <span data-ttu-id="8ae5e-118">从集合中返回一个对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="53aab-110">Returns a single object from a collection.</span>
+            <span data-stu-id="8ae5e-118">Returns a single object from a collection.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -308,9 +334,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="53aab-111">返回指定对象的父对象。</span>
+          <span data-ttu-id="8ae5e-119">返回指定对象的父对象。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="53aab-111">Returns the parent object for the specified object.</span>
+            <span data-stu-id="8ae5e-119">Returns the parent object for the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
