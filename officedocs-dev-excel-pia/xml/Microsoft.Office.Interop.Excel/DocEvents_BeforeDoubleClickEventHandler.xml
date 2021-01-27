@@ -1,13 +1,5 @@
 <Type Name="DocEvents_BeforeDoubleClickEventHandler" FullName="Microsoft.Office.Interop.Excel.DocEvents_BeforeDoubleClickEventHandler">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="835ceb31c97dc1f3f7ef20ff621484c06d227a37" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20580638" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public delegate void DocEvents_BeforeDoubleClickEventHandler(Range Target, out bool Cancel);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="835ceb31c97dc1f3f7ef20ff621484c06d227a37" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003806" /></Metadata><TypeSignature Language="C#" Value="public delegate void DocEvents_BeforeDoubleClickEventHandler(Range Target, out bool Cancel);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DocEvents_BeforeDoubleClickEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.DocEvents_BeforeDoubleClickEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DocEvents_BeforeDoubleClickEventHandler(Target As Range, ByRef Cancel As Boolean)" />
@@ -35,42 +27,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="Target">
-      <span data-ttu-id="5913f-101">必需。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="5913f-101">Required.</span>
-      </span>
-      <span data-ttu-id="5913f-102">双击发生时最靠近鼠标指针的单元格。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="5913f-102">The cell nearest to the mouse pointer when the double-click occurs.</span>
-      </span>
-    </param>
-    <param name="Cancel">
-      <span data-ttu-id="5913f-103">可选。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="5913f-103">Optional.</span>
-      </span>
-      <span data-ttu-id="5913f-104">
-        <b>假</b> 的事件发生时。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="5913f-104">
-          <b>False</b> when the event occurs.</span>
-      </span>
-      <span data-ttu-id="5913f-105">如果事件过程将此参数设置为 <b>True</b> ，默认的双击操作在完成此过程后，不执行。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="5913f-105">If the event procedure sets this argument to <b>True</b>, the default double-click action isn't performed when the procedure is finished.</span>
-      </span>
-    </param>
-    <summary>
-      <span data-ttu-id="5913f-106">用于添加事件处理程序<b>委托</b>类型<see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.BeforeDoubleClick" />事件。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="5913f-106">A <b>Delegate</b> type used to add an event handler for the <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.BeforeDoubleClick" /> event.</span>
-      </span>
-      <span data-ttu-id="5913f-107">双击工作表时，默认的双击操作之前，发生此事件<b>BeforeDoubleClick</b>事件。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="5913f-107">The <b>BeforeDoubleClick</b> event occurs when a worksheet is double-clicked, before the default double-click action.</span>
-      </span>
-    </summary>
+    <param name="Target"><span data-ttu-id="53661-101">必需。</span><span class="sxs-lookup"><span data-stu-id="53661-101">Required.</span></span> <span data-ttu-id="53661-102">双击发生时最靠近鼠标指针的单元格。</span><span class="sxs-lookup"><span data-stu-id="53661-102">The cell nearest to the mouse pointer when the double-click occurs.</span></span></param>
+    <param name="Cancel"><span data-ttu-id="53661-103">可选。</span><span class="sxs-lookup"><span data-stu-id="53661-103">Optional.</span></span> <span data-ttu-id="53661-104"><b>假</b> 的事件发生时。</span><span class="sxs-lookup"><span data-stu-id="53661-104"><b>False</b> when the event occurs.</span></span> <span data-ttu-id="53661-105">如果事件过程将此参数设置为 <b>True</b> ，默认的双击操作在完成此过程后，不执行。</span><span class="sxs-lookup"><span data-stu-id="53661-105">If the event procedure sets this argument to <b>True</b>, the default double-click action isn't performed when the procedure is finished.</span></span></param>
+    <summary><span data-ttu-id="53661-106">用于 <b>为</b> 事件添加事件处理程序的委托 <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.BeforeDoubleClick" /> 类型。</span><span class="sxs-lookup"><span data-stu-id="53661-106">A <b>Delegate</b> type used to add an event handler for the <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.BeforeDoubleClick" /> event.</span></span> <span data-ttu-id="53661-107">在默认双击操作之前双击工作表时，将发生 <b>BeforeDoubleClick</b> 事件。</span><span class="sxs-lookup"><span data-stu-id="53661-107">The <b>BeforeDoubleClick</b> event occurs when a worksheet is double-clicked, before the default double-click action.</span></span></summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>
