@@ -1,13 +1,5 @@
 <Type Name="Legend" FullName="Microsoft.Office.Interop.Excel.Legend">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="67108bf0496a38e9f989b18082d38d2c41e4a563" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587617" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Legend" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="67108bf0496a38e9f989b18082d38d2c41e4a563" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50000118" /></Metadata><TypeSignature Language="C#" Value="public interface Legend" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Legend" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Legend" />
   <TypeSignature Language="VB.NET" Value="Public Interface Legend" />
@@ -30,12 +22,10 @@
   </Attributes>
   <Docs>
     <summary>代表图标中的图例。</summary>
-    <remarks>
-      <para>每个图表只能有一个图例。 <b>Legend</b>对象包含一个或多个<see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" />对象;每个<see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" />对象包含<see cref="T:Microsoft.Office.Interop.Excel.LegendKey" />对象。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Excel._Chart.Legend" />属性可返回<b>图例</b>对象。</para>
-      <para>图表图例不见除非<see cref="P:Microsoft.Office.Interop.Excel._Chart.HasLegend" />属性为<b>True</b>。 如果此属性为 <b>False</b> ，则 <b>图例</b> 对象的属性和方法将会失败。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>每个图表只能有一个图例。 Legend <b></b>对象包含一个或多个 <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> 对象;每个 <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> 对象都包含一 <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> 个对象。</para>
+      <para>使用该属性 <see cref="P:Microsoft.Office.Interop.Excel._Chart.Legend" /> 可返回 <b>Legend</b> 对象。</para>
+      <para>图表图例不可见，除非 <see cref="P:Microsoft.Office.Interop.Excel._Chart.HasLegend" /> 该属性为<b>True。</b> 如果此属性为 <b>False</b> ，则 <b>图例</b> 对象的属性和方法将会失败。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -98,7 +88,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>对象大小更改时，对象中的文本更改字体大小。 默认值为 <b>True</b> 。</summary>
+        <summary>如果对象大小更改时，对象内部的文本相应地更改字体大小，则该属性值为 <b>True</b>。 默认值为 <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -129,7 +119,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Border" />对象，它代表对象的边框。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 一个对象，该对象表示对象的边框。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -185,12 +175,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -245,7 +232,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" />对象，其中包含填充格式属性指定的图表图例。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> 一个对象，该对象包含指定图表图例的填充格式属性。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -276,7 +263,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Font" />对象，它代表指定对象的字体。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Font" /> 一个对象，该对象代表指定对象的字体。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -304,10 +291,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />对象。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />
-        </value>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> 对象。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -368,14 +353,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果在确定图表布局时图例将占用图表布局空间，则为 <b>True</b>。默认值是 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>该属性对于图表是否处于自动版式模式没有影响。  如果用户添加标题使用上面图表命令，将更小，请与 Microsoft Office Excel 2003 调整图表。  如果用户随后删除标题，或者选择其中一个覆盖标题选项，则图表将变得较大，就好像标题不在图表上那样。</para>
-          <para></para>
-        </remarks>
+        <summary><b>如此</b> 如果在确定图表布局时，图例将占用图表布局空间。 默认值为 <b>True</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>该属性对于图表是否处于自动版式模式没有影响。  如果用户使用“图表上方”命令添加标题，则图表将变得较小，就像在 Microsoft Office Excel 2003 中一样。  如果用户随后删除标题，或者选择其中一个覆盖标题选项，则图表将变得较大，就好像标题不在图表上那样。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -435,7 +416,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>距离，以磅为单位，从左边缘到图表区的左边缘的对象。</summary>
+        <summary>从对象的左边缘到图表区左边缘的距离（以点表示）。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -462,8 +443,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">可选的<b>对象</b>。 图例输入项的编号。</param>
-        <summary>返回一个 object 值，该值代表之一的单个图例项 (<see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" />对象) 或图例项集合 (<see cref="T:Microsoft.Office.Interop.Excel.LegendEntries" />对象) 的图例。</summary>
+        <param name="Index">可选 <b>对象</b>。 图例项的数量。</param>
+        <summary>返回一个对象，该对象代表对象 (单个图例项) 或 (<see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> 图例) <see cref="T:Microsoft.Office.Interop.Excel.LegendEntries" /> 的图例项集合。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -493,22 +474,21 @@
       <Docs>
         <summary>返回的对象的名称。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>下表显示<b>名称</b>属性和给定<a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproName1.htm">OLAP</a>的相关的属性的示例的值</para>
+        <remarks><para>下表显示了给定<a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproName1.htm">OLAP</a> <b>的 Name</b>属性和相关属性的示例值</para>
           <list type="table">
             <item>
               <term>
                 <b>标题</b>
               </term>
-              <description>Paris</description>
-              <description>Paris</description>
+              <description>巴黎</description>
+              <description>巴黎</description>
             </item>
             <item>
               <term>
                 <b>名称</b>
               </term>
               <description>[Europe].[France].[Paris]（只读）</description>
-              <description>Paris</description>
+              <description>巴黎</description>
             </item>
             <item>
               <term>
@@ -522,18 +502,17 @@
                 <b>值</b>
               </term>
               <description>[Europe].[France].[Paris]（只读）</description>
-              <description>Paris</description>
+              <description>巴黎</description>
             </item>
           </list>
-          <para>指定的索引时<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />集合，您可以使用下表中所示的语法。</para>
+          <para>在集合中指定索引时，可以使用 <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> 下表中所示的语法。</para>
           <list type="table">
             <item>
-              <term>表达式。PivotItems ("[Europe]。 [法国]。[Paris]")</term>
-              <description>表达式。PivotItems("Paris")</description>
+              <term>表达式。PivotItems ("[Europe]。[法国]。[Paris]") </term>
+              <description>表达式。PivotItems ("Paris") </description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -592,9 +571,8 @@
       <Docs>
         <summary>返回或设置图例在图表上的位置。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlLegendPosition" />可以是以下<b>XlLegendPosition</b>常量之一：</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlLegendPosition" /> 可以是以下 <b>XlLegendPosition</b> 常量之一：</para>
           <para>
             <b>xlLegendPositionCorner</b>
           </para>
@@ -610,8 +588,7 @@
           <para>
             <b>xlLegendPositionLeft</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -666,8 +643,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果字体为是阴影字体或对象是否带有阴影。</summary>
+        <summary><b>如此</b> 如果字体是阴影字体或对象有阴影。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -698,7 +674,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>以磅为单位从的图表区域顶部的对象的上边缘的距离。</summary>
+        <summary>从对象上边缘到图表区顶部的距离（以点表示）。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -729,7 +705,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>对象的高度，以磅为单位。</summary>
+        <summary>对象的宽度，以磅为单位。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

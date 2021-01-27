@@ -1,13 +1,5 @@
 <Type Name="Action" FullName="Microsoft.Office.Interop.Excel.Action">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2161b566bfd02a2bafb42673b2e765964172c1df" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584089" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Action" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2161b566bfd02a2bafb42673b2e765964172c1df" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999782" /></Metadata><TypeSignature Language="C#" Value="public interface Action" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Action" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Action" />
   <TypeSignature Language="VB.NET" Value="Public Interface Action" />
@@ -29,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表要中执行的操作<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />或<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />数据。</summary>
+    <summary>表示要执行或数据 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 中的 <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> 操作。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -56,13 +48,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象代表 Microsoft Office Excel 应用程序。 如果使用对象识别符，此属性返回值，该值代表指定对象的创建者<b>Application</b>对象。 只读。</summary>
-        <value>
-          <b>应用程序</b>（请参见上文）</value>
-        <remarks>
-          <para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
-          <para></para>
-        </remarks>
+        <summary>如果不与对象限定符一起使用，则此属性返回一个代表 Excel Microsoft Office  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 对象。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象。 只读。</summary>
+        <value><b>应用程序</b> (请参阅上面的) </value>
+        <remarks><para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Caption">
@@ -88,10 +77,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回分配给的标题<see cref="P:Microsoft.Office.Interop.Excel.Action" />对象。 只读 <b>String</b>。</summary>
-        <value>
-          <b>字符串</b>
-        </value>
+        <summary>返回分配给该对象的标题 <see cref="P:Microsoft.Office.Interop.Excel.Action" /> 。 只读 <b>String</b>。</summary>
+        <value><b>字符串</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,10 +105,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回到关联的内容<see cref="P:Microsoft.Office.Interop.Excel.Action" />对象。 只读 <b>String</b>。</summary>
-        <value>
-          <b>字符串</b>
-        </value>
+        <summary>返回与对象关联的 <see cref="P:Microsoft.Office.Interop.Excel.Action" /> 内容。 只读 <b>String</b>。</summary>
+        <value><b>字符串</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,10 +133,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回的坐标属性<see cref="P:Microsoft.Office.Interop.Excel.Action" />对象。 只读</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <summary>返回对象的坐标 <see cref="P:Microsoft.Office.Interop.Excel.Action" /> 属性。 只读</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,14 +161,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回中的一个常量<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />枚举，指示在其中创建此对象的应用程序。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性将返回字符串 XCEL，这相当于 5843454c 和十进制 1480803660 的十六进制数。 <see cref="P:Microsoft.Office.Interop.Excel.Action.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <summary>返回枚举中的 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 一个常量，该常量指示创建此对象时的应用程序。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>如果对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等效于十六进制数 5843454C 和十进制 1480803660。 该属性设计为在 Microsoft Excel for the Macintosh 中使用，其中每个应用程序都有 <see cref="P:Microsoft.Office.Interop.Excel.Action.Creator" /> 一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -236,10 +215,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回的对象的名称。只读的 <b>字符串</b> 。</summary>
-        <value>
-          <b>字符串</b>
-        </value>
+        <summary>返回的对象的名称。 只读的 <b>字符串</b> 。</summary>
+        <value><b>字符串</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -266,10 +243,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父对象。只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回指定对象的父对象。 只读。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -296,10 +271,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlActionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回操作类型。 只读<see cref="T:Microsoft.Office.Interop.Excel.XlActionType" />。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlActionType" />
-        </value>
+        <summary>返回操作类型。 只读 <see cref="T:Microsoft.Office.Interop.Excel.XlActionType" /> 。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlActionType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

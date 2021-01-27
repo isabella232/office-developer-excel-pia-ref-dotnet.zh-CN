@@ -1,13 +1,5 @@
 <Type Name="Adjustments" FullName="Microsoft.Office.Interop.Excel.Adjustments">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5fbb3122486169cf5cb93352c3646bc1cdd1c0b4" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584138" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Adjustments : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5fbb3122486169cf5cb93352c3646bc1cdd1c0b4" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999740" /></Metadata><TypeSignature Language="C#" Value="public interface Adjustments : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Adjustments implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Adjustments" />
   <TypeSignature Language="VB.NET" Value="Public Interface Adjustments&#xA;Implements _IMsoDispObj" />
@@ -31,15 +23,14 @@
   </Attributes>
   <Docs>
     <summary>包含指定自选图形、艺术字对象或连接符的调整值的集合。</summary>
-    <remarks>
-      <para>每个调整值代表一种调整控点的调整方法。由于某些调整控点可以按两种方法调整（例如，某些控点既可以水平调整也可以垂直调整），所以形状的调整值数量可以大于调整控点数量。一个形状最多可以有八个调整值。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Excel.Shape.Adjustments" />属性返回<b>Adjustments</b>对象。 使用<b>调整</b>(<paramref name="index" />)，其中<paramref name="index" />是调整值的索引号，返回一个调整值。</para>
+    <remarks><para>每个调整值代表一种调整控点的调整方法。由于某些调整控点可以按两种方法调整（例如，某些控点既可以水平调整也可以垂直调整），所以形状的调整值数量可以大于调整控点数量。一个形状最多可以有八个调整值。</para>
+      <para>使用该属性 <see cref="P:Microsoft.Office.Interop.Excel.Shape.Adjustments" /> 可返回 <b>Adjustments</b> 对象。 使用<b></b> <paramref name="index" /> () ，其中调整值的 <paramref name="index" /> 索引号，返回单个调整值。</para>
       <para>不同的形状有不同数量的调整值，不同的调整值以不同的方式改变形状的几何外形，且不同的调整值有不同的有效值范围。</para>
       <para>下表概括了不同类型的调整值的有效取值范围。多数情况下，如果指定的调整值超出了有效取值范围，就将用最接近的有效值来代替。</para>
       <list type="table">
         <item>
           <term>线性（水平或垂直）</term>
-          <description>0.0 通常表示形状的左边缘或上边缘，而值 1.0 代表形状的右或底部边缘。 有效值对应于有效的手动调整。 例如，如果只能将调整控点手动拖动形状的一半宽度，则相应的调整值最大为 0.5。 对于象连接符和标注这样的形状，0.0 和 1.0 值代表由它们的起始和终止点定义的矩形界限，此时负值和大于 1.0 的值是有效的。</description>
+          <description>通常，值 0.0 表示形状的左边缘或上边缘，值 1.0 表示形状的右边缘或下边缘。 有效值对应于有效的手动调整。 例如，如果只能将调整控点手动拖动形状的一半宽度，则相应的调整值最大为 0.5。 对于象连接符和标注这样的形状，0.0 和 1.0 值代表由它们的起始和终止点定义的矩形界限，此时负值和大于 1.0 的值是有效的。</description>
         </item>
         <item>
           <term>射线</term>
@@ -47,11 +38,10 @@
         </item>
         <item>
           <term>角</term>
-          <description>以度为单位表示的值。 如果您指定的值范围为 180-180，它将规范化可在该范围内。</description>
+          <description>以度为单位表示的值。 如果指定一个超出 –180 到 180 范围的值，它将规范化为在此范围内。</description>
         </item>
       </list>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -80,7 +70,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -141,12 +131,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -178,15 +165,12 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>必选。</b> 调整的索引号。</param>
+        <param name="Index">必需 <b>整数</b>。 调整的索引号。</param>
         <summary>返回或设置指定的调整值。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>对于线性调整，调整值 0.0 通常对应于图形的左边或上边边缘，值 1.0 通常对应于图形的右边或下边边缘。但是，调整值可以超出形状的边界的一些形状。对于径向调整，调整值 1.0 对应于图形的宽度。对于角度调整，调整值以度为单位指定。 <b>Item</b> 属性仅适用于具有调整的形状。</para>
+        <remarks><para>对于线性调整，调整值 0.0 通常对应于图形的左边或上边边缘，值 1.0 通常对应于图形的右边或下边边缘。但是，调整值可以超出形状的边界的一些形状。对于径向调整，调整值 1.0 对应于图形的宽度。对于角度调整，调整值以度为单位指定。 <b>Item</b> 属性仅适用于具有调整的形状。</para>
           <para>自选图形、连接符和艺术字对象最多可有八个调整。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

@@ -1,13 +1,5 @@
 <Type Name="XmlNamespace" FullName="Microsoft.Office.Interop.Excel.XmlNamespace">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5dd43a26c376d611db5f8aa65cdfe80ac20735c3" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20580106" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XmlNamespace" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5dd43a26c376d611db5f8aa65cdfe80ac20735c3" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999644" /></Metadata><TypeSignature Language="C#" Value="public interface XmlNamespace" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XmlNamespace" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.XmlNamespace" />
   <TypeSignature Language="VB.NET" Value="Public Interface XmlNamespace" />
@@ -30,12 +22,10 @@
   </Attributes>
   <Docs>
     <summary>代表已添加到工作簿的命名空间。</summary>
-    <remarks>
-      <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Excel.XmlNamespace.Prefix" />属性可返回<b>XmlNamespace</b>对象的前缀。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Excel.XmlNamespace.Uri" />属性可返回<b>XmlNamespace</b>对象的统一资源标识符 (URI)。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>XML 功能（以 XML 电子表格格式保存文件除外）仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中可用。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Excel.XmlNamespace.Prefix" /> 该属性可返回 <b>XmlNamespace</b> 对象的前缀。</para>
+      <para>使用该属性 <see cref="P:Microsoft.Office.Interop.Excel.XmlNamespace.Uri" /> 可返回 <b>XmlNamespace</b> (URI) 统一资源标识符。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -92,7 +82,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,13 +110,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。 如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 只读<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</summary>
+        <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。 如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。 只读 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -152,7 +139,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父对象。只读。</summary>
+        <summary>返回指定对象的父对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -180,12 +167,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 <b>String</b> 类型的数值，该数值表示指定的 XML 命名空间的前缀。只读。</summary>
+        <summary>返回一个 <b>String</b> 类型的数值，该数值表示指定的 XML 命名空间的前缀。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>XML 功能（以 XML 电子表格格式保存文件除外）仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中可用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Uri">
@@ -211,13 +196,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        返回一个 <b>String</b> 类型的数值，该数值表示指定 XML 命名空间的统一资源标识符 (URI)。只读。</summary>
+        <summary>返回一个 <b>String</b> 类型的数值，该数值表示指定 XML 命名空间的统一资源标识符 (URI)。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>XML 功能（以 XML 电子表格格式保存文件除外）仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中可用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

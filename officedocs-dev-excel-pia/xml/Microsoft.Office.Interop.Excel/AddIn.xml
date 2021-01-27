@@ -1,13 +1,5 @@
 <Type Name="AddIn" FullName="Microsoft.Office.Interop.Excel.AddIn">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ad740aac6b501b523017ffe9ffd52b91e10dd267" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584145" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AddIn" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ad740aac6b501b523017ffe9ffd52b91e10dd267" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999761" /></Metadata><TypeSignature Language="C#" Value="public interface AddIn" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AddIn" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AddIn" />
   <TypeSignature Language="VB.NET" Value="Public Interface AddIn" />
@@ -30,18 +22,14 @@
   </Attributes>
   <Docs>
     <summary>代表已经安装或尚未安装的单个加载项。</summary>
-    <remarks>
-      <para>
-        <b>AddIn</b>对象是成员<see cref="T:Microsoft.Office.Interop.Excel.AddIns" />集合。 <b>AddIns</b>集合包含所有可用加载项到 Microsoft Excel，而不考虑它们是否已安装的列表。 此列表对应于显示在加载项对话框 （工具菜单） 的加载宏的列表。</para>
-      <para>使用<b>加载项</b>(<paramref name="index" />)，其中<paramref name="index" />是外接程序标题或索引号，可返回单个<b>AddIn</b>对象。</para>
-      <para>请勿混淆加载宏标题（出现在“加载宏”对话框中）与加载宏名称（加载宏的文件名）。必须严格按照“加载宏”对话框中的标题书写加载宏标题，但不必匹配大小写。</para>
-      <para>索引号表示的加载项的加载项提供框加载项对话框中的位置。</para>
-      <para>
-        <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" />方法外接程序添加到可用加载项的列表，但不安装外接程序。 设置<see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" />属性为<b>True</b>可安装的加载项的加载项。 若要安装不显示的外接程序的可用加载项列表中，必须首先使用<b>Add</b>方法，并将<b>Installed</b>属性。 这可以在单个步骤</para>
-      <para>使用<b>工作簿</b>(<paramref name="index" />) 其中<paramref name="index" />是外接程序文件名 （不标题） 以返回到工作簿对应于加载的加载项的引用。 您必须使用文件名称，因为中加载的加载项通常不显示<see cref="T:Microsoft.Office.Interop.Excel.Workbooks" />集合。</para>
-      <para>如果<b>Installed</b>属性返回<b>True</b>，但呼叫到中外接程序函数仍失败外, 接程序可能不实际加载。 这是因为<b>Addin</b>对象表示存在和安装的加载项的状态，但不代表工作簿中添加的实际内容。 若要保证加载是已安装加载项，则应打开外接程序工作簿。</para>
-      <para></para>
-    </remarks>
+    <remarks><para><b>AddIn</b>对象是集合的 <see cref="T:Microsoft.Office.Interop.Excel.AddIns" /> 一个成员。 <b>AddIns</b> 集合包含 Microsoft Excel 所有可用加载宏的列表（不论这些加载宏是否已安装）。 此列表对应于"工具"菜单的Add-Ins对话框中显示的 (加载项) 。</para>
+      <para>使用 <b>外接程序 () ，</b> 其中是外接程序 <paramref name="index" /> <paramref name="index" /> 标题或索引号，返回单个 <b>外接程序</b> 对象。</para>
+      <para>请勿混淆加载宏标题（出现在“加载宏”对话框中）与加载宏名称（加载宏的文件名）。 必须严格按照“加载宏”对话框中的标题书写加载宏标题，但不必匹配大小写。</para>
+      <para>加载宏索引号代表加载宏在“加载宏”对话框内“可用加载宏”框中的位置。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" />该方法将加载项添加到可用加载项列表中，但不安装加载项。 将 <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> 加载项的属性设置为 <b>True</b> 以安装加载项。 要安装可用加载宏列表中没有的加载宏，必须先使用 <b>Add</b> 方法，然后设置 <b>Installed</b> 属性。 这可以通过一个步骤完成</para>
+      <para>使用 <b>工作簿</b> () 加载项文件名 (不是标题) 返回对与加载的外接程序对应的工作簿 <paramref name="index" /> <paramref name="index" /> 的引用。 您必须使用文件名，因为加载的加载项通常不会显示在 <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> 集合中。</para>
+      <para>如果 <b>Installed</b> 属性返回 <b>True，</b>但对外接程序中函数的调用仍失败，则外接程序可能实际上未加载。 这是因为 <b>Addin</b> 对象表示加载项的存在和安装状态，但不表示加载项工作簿的实际内容。 若要保证已安装的加载项已加载，应打开加载项工作簿。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -67,7 +55,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -187,12 +175,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FullName">
@@ -218,12 +203,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回的对象，包括其路径在磁盘上，为字符串的名称。</summary>
+        <summary>返回对象的名称（以字符串表示），包括其磁盘路径。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性等效于<see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" />属性当前文件系统分隔符分隔后, 跟<see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" />属性。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>此属性等效于 <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" /> 该属性，后跟当前文件系统分隔符，后跟 <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" /> 该属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Installed">
@@ -252,12 +235,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>安装外接程序。</summary>
+        <summary>如果已安装加载项，则其为<b>True。</b></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>将此属性设为 <b>True</b> 将安装指定加载宏，并调用 Auto_Add 函数。将此属性设为 <b>False</b> 则移去指定加载宏，并调用 Auto_Remove 函数。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>将此属性设为 <b>True</b> 将安装指定加载宏，并调用 Auto_Add 函数。 将此属性设为 <b>False</b> 则移去指定加载宏，并调用 Auto_Remove 函数。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsOpen">
@@ -283,14 +264,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取外接程序是当前打开。</summary>
-        <value>
-          <b>true</b>如果外接程序当前打开;否则为<b>false</b>。</value>
-        <remarks>
-          <para>
-            <b>boolean</b>只读的。</para>
-          <para></para>
-        </remarks>
+        <summary>获取加载项当前是否处于打开状态。</summary>
+        <value>如果加载项当前处于打开状态，则其为<b>true;</b>否则为<b>false</b>。</value>
+        <remarks><para>
+            <b>boolean</b> 只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Keywords">
@@ -403,7 +381,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回应用程序，不包括末尾的分隔符和应用程序的名称的完整路径。</summary>
+        <summary>返回应用程序的完整路径，不包括应用程序的最后分隔符和名称。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -431,7 +409,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回对象的编程标识符。</summary>
+        <summary>返回对象的程序标识符。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -462,7 +440,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。 </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -493,7 +471,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="IRTDUpdateEvent" FullName="Microsoft.Office.Interop.Excel.IRTDUpdateEvent">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d11bd9b734395c326ae11b307cdfec21f36a30a4" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20583949" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface IRTDUpdateEvent" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d11bd9b734395c326ae11b307cdfec21f36a30a4" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50001357" /></Metadata><TypeSignature Language="C#" Value="public interface IRTDUpdateEvent" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRTDUpdateEvent" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.IRTDUpdateEvent" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRTDUpdateEvent" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>代表实时数据更新事件。</summary>
-    <remarks>
-      <para>若要实例化或返回一个 <b>IRTDUpdateEvent</b> 对象，请将一个变量声明为 <b>IRTDUpdateEvent</b> 对象，然后将该变量用作回调对象。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>若要实例化或返回一个 <b>IRTDUpdateEvent</b> 对象，请将一个变量声明为 <b>IRTDUpdateEvent</b> 对象，然后将该变量用作回调对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Disconnect">
@@ -54,7 +44,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指示实时数据服务器 (RTD) 来断开指定<see cref="T:Microsoft.Office.Interop.Excel.IRTDUpdateEvent" />对象。</summary>
+        <summary>指示实时数据服务器 (RTD) 断开与指定对象的 <see cref="T:Microsoft.Office.Interop.Excel.IRTDUpdateEvent" /> 连接。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,14 +74,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>整数</b>的实时数据更新之间的间隔。 为可读/写属性。</summary>
+        <summary>返回或设置 <b>实时</b> 数据更新之间的间隔的整数。 读/写。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>设置<see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" />属性设为-1 将导致<see cref="M:Microsoft.Office.Interop.Excel.IRtdServer.Heartbeat" />不能调用的方法。</para>
+        <remarks><para>将 <see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" /> 该属性设置为 -1 将导致 <see cref="M:Microsoft.Office.Interop.Excel.IRtdServer.Heartbeat" /> 不调用该方法。</para>
           <para>
-            <b>注释</b> 标准的 15 秒超时而少于 15,000 毫秒，因此心跳间隔不能设置。</para>
-          <para></para>
-        </remarks>
+            <b>注意</b>  检测间隔不能设置为低于 15，000 毫秒，因为标准超时为 15 秒。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateNotify">

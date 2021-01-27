@@ -1,13 +1,5 @@
 <Type Name="IconCriteria" FullName="Microsoft.Office.Interop.Excel.IconCriteria">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="dee775d3bd8923235b1ef96a3cdebab5cd05c778" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20572917" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface IconCriteria : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dee775d3bd8923235b1ef96a3cdebab5cd05c778" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50000237" /></Metadata><TypeSignature Language="C#" Value="public interface IconCriteria : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IconCriteria implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.IconCriteria" />
   <TypeSignature Language="VB.NET" Value="Public Interface IconCriteria&#xA;Implements IEnumerable" />
@@ -33,14 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>表示集合的<see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" />对象。 每个<b>IconCriterion</b>表示的值和阈值类型图标中每个图标集条件格式规则。</summary>
-    <remarks>
-      <para>
-        <b>IconCriteria</b>集合返回从<see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconCriteria" />属性<see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" />对象。 您可以通过传递到集合的索引来访问集合中的每个<b>IconCriterion</b>对象。 请参阅详细信息的示例。</para>
-      <para></para>
-    </remarks>
-    <example>
-      <para>以下代码示例创建了一个代表测试分数的数字范围，然后对该范围应用了图标集条件格式规则。图标集的类型将从默认图标变为五箭头图标集。最后，将阈值类型从百分点修改为硬编码数字。</para>
+    <summary>表示对象 <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /> 的集合。 每个 <b>IconCriterion</b> 代表图标集条件格式规则中每个图标的值和阈值类型。</summary>
+    <remarks><para><b>IconCriteria</b>集合从对象 <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconCriteria" /> 的属性 <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> 中返回。 通过将索引传递到集合中，您可以访问集合中的每个 <b>IconCriterion</b> 对象。 有关详细信息，请参阅示例。</para>
+      <para> </para></remarks>
+    <example><para>以下代码示例创建了一个代表测试分数的数字范围，然后对该范围应用了图标集条件格式规则。图标集的类型将从默认图标变为五箭头图标集。最后，将阈值类型从百分点修改为硬编码数字。</para>
       <code>&lt;span class="label"&gt;Sub CreateIconSetCF() 
 
 
@@ -26665,8 +26653,7 @@
 
 
 
-End Sub&lt;/span&gt;</code>
-    </example>
+End Sub&lt;/span&gt;</code></example>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -26727,12 +26714,10 @@ End Sub&lt;/span&gt;</code>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个用于指定图标集条件格式规则的条件数目的 <b>Long</b> 值。只读。</summary>
+        <summary>返回一个用于指定图标集条件格式规则的条件数目的 <b>Long</b> 值。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>条件数目等于为图标集分配的阈值的数目。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>条件数目等于为图标集分配的阈值的数目。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -26793,14 +26778,11 @@ End Sub&lt;/span&gt;</code>
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>IconCriterion</b> 对象的索引号。</param>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /><b>IconCriteria</b>集合中的对象。 只读。</summary>
+        <param name="Index"><b>IconCriterion</b> 对象的索引号。</param>
+        <summary>从 <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /> <b>IconCriteria 集合中返回单个</b> 对象。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>值<paramref name="Index" />参数不能大于设置对于图标集条件格式的条件数目。 条件是等于为图标集分配的阈值。 若要查找的阈值数目，请使用<see cref="P:Microsoft.Office.Interop.Excel.IconCriteria.Count" />属性。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>参数的值不能大于为图标集条件 <paramref name="Index" /> 格式设置的条件数。 条件与为图标集分配的阈值等效。 若要查找阈值数，请使用 <see cref="P:Microsoft.Office.Interop.Excel.IconCriteria.Count" /> 该属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

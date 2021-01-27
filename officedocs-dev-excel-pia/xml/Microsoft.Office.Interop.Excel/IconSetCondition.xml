@@ -1,13 +1,5 @@
 <Type Name="IconSetCondition" FullName="Microsoft.Office.Interop.Excel.IconSetCondition">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="60529c90129fadd3409df7f77d68bfab6f56e963" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20580722" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface IconSetCondition" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="60529c90129fadd3409df7f77d68bfab6f56e963" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50000209" /></Metadata><TypeSignature Language="C#" Value="public interface IconSetCondition" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IconSetCondition" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.IconSetCondition" />
   <TypeSignature Language="VB.NET" Value="Public Interface IconSetCondition" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>代表图标集条件格式规则。</summary>
-    <remarks>
-      <para>所有条件格式对象包含在<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />集合对象，该元素是子对象的<see cref="T:Microsoft.Office.Interop.Excel.Range" />集合。 您可以创建使用任何一个格式规则的图标集<see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法或<see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddIconSetCondition" /><b>FormatConditions</b>集合的方法。</para>
-      <para>每个图标集包含三、 四个或五个图标。 您使用<see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" />属性<see cref="T:Microsoft.Office.Interop.Excel._Workbook" />对象返回<see cref="T:Microsoft.Office.Interop.Excel.IconSets" />对象指定一个内置图标集。 每个图标集中的单个图标然后由的成员分配给范围的值的子集<see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />对象。 此对象还指定阈值的类型。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>所有条件格式对象都包含在集合对象（集合的子对象 <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> ） <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 中。 可以使用 <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddIconSetCondition" /> <b>FormatConditions</b> 集合的方法创建图标集格式规则。</para>
+      <para>每个图标集包含三个、四个或五个图标。 使用 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" /> 对象的属性 <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> 可返回一个对象，以指定内置图标集 <see cref="T:Microsoft.Office.Interop.Excel.IconSets" /> 之一。 然后，图标集中的每个图标都由指定对象的成员分配给区域值的 <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" /> 子集。 阈值的类型也是由此对象指定的。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,13 +50,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象代表 Microsoft Office Excel 应用程序。 如果使用对象识别符，此属性返回值，该值代表指定对象的创建者<b>Application</b>对象。 只读。</summary>
-        <value>
-          <b>应用程序</b>（请参见上文）</value>
-        <remarks>
-          <para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
-          <para></para>
-        </remarks>
+        <summary>如果不与对象限定符一起使用，则此属性返回一个对象，该对象Microsoft Office  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> Excel 应用程序。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象。 只读。</summary>
+        <value><b>应用程序</b> (请参阅上面的) </value>
+        <remarks><para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AppliesTo">
@@ -92,10 +79,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />指定格式规则所应用于的单元格区域的对象。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Range" />
-        </value>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 一个对象，该对象指定应用格式规则的单元格区域。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Range" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,14 +107,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数等效于<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />值，该值指示在其中创建此对象的应用程序。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。<b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。例如，Microsoft Excel 的创建者代码为 XCEL。</para>
-          <para></para>
-        </remarks>
+        <summary>返回一个 32 位整数，该值等效于一个值，该值指示创建 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 此对象时的应用程序。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。  <b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -184,13 +165,9 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置一个代表公式（该公式确定将对图标集应用的值）的 <b>String</b>。</summary>
-        <value>
-          <b>字符串</b>
-        </value>
-        <remarks>
-          <para>此属性用于限制将显示条件格式的值的范围。一种典型的情形是您具有一个包含正值和负值的数字范围。您可能需要为此数字范围创建多个条件格式，一个用于正值，另一个用于负值。</para>
-          <para></para>
-        </remarks>
+        <value><b>字符串</b></value>
+        <remarks><para>此属性用于限制将显示条件格式的值的范围。一种典型的情形是您具有一个包含正值和负值的数字范围。您可能需要为此数字范围创建多个条件格式，一个用于正值，另一个用于负值。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IconCriteria">
@@ -216,14 +193,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.IconCriteria</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />集合，代表一组条件的图标集条件格式规则。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />
-        </value>
-        <remarks>
-          <para>后<see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />集合，您可以使用<see cref="P:Microsoft.Office.Interop.Excel.IconCriteria.Item(System.Object)" />属性返回的集合的<see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" />对象。 <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" />对象代表一个条件的图标集。</para>
-          <para></para>
-        </remarks>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" /> 一个集合，该集合代表图标集条件格式规则的条件集。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" /></value>
+        <remarks><para>拥有集合 <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" /> 后，可以使用集合 <see cref="P:Microsoft.Office.Interop.Excel.IconCriteria.Item(System.Object)" /> 的属性返回 <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /> 对象。 该对象 <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /> 表示图标集的单一条件。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IconSet">
@@ -252,14 +225,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Excel.IconSets" />指定的图标集条件格式中使用的集合。</summary>
-        <value>
-          <b>对象</b>
-        </value>
-        <remarks>
-          <para>您可以分配的图标集使用<see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" />属性<see cref="T:Microsoft.Office.Interop.Excel._Workbook" />对象。 </para>
-          <para></para>
-        </remarks>
+        <summary>返回或设置 <see cref="T:Microsoft.Office.Interop.Excel.IconSets" /> 一个集合，该集合指定条件格式中使用的图标集。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>可以使用对象的属性分配 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" /> 图标 <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> 集。 </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ModifyAppliesToRange">
@@ -286,11 +255,9 @@
       <Docs>
         <param name="Range">此格式规则将应用于的区域。</param>
         <summary>设置此格式规则所应用于的单元格区域。</summary>
-        <remarks>
-          <para>范围必须以 A1 引用样式和完全包含在工作表的父级的<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />集合。 它可以包括区域运算符 （冒号）、 交点运算符 （空格） 或 union 运算符 （逗号分隔）。 也可以使用美元符号，但会被忽略。</para>
+        <remarks><para>区域必须采用 A1 引用样式，并且完全包含在作为集合父项的 <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> 工作表中。 可包括区域操作符（冒号）、相交区域操作符（空格）或合并区域操作符（逗号）。 也可以使用货币符号，但会被忽略。</para>
           <para>您也可以在区域的任意部分中使用局部定义名称，但该名称必须使用宏语言。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -316,10 +283,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父对象。只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回指定对象的父对象。 只读。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -350,13 +315,9 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置一个 <b>Boolean</b> 值，该值指明是否使用百分点确定图标集条件格式的阈值。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>如果未将每个阈值设置为百分点，则此属性将返回 <b>False</b>。如果将此属性设置为 <b>True</b>，则会将每个阈值类型设置为百分点。</para>
-          <para></para>
-        </remarks>
+        <value><b>Boolean</b></value>
+        <remarks><para>如果未将每个阈值设置为百分点，则此属性将返回 <b>False</b>。 如果将此属性设置为 <b>True</b>，则会将每个阈值类型设置为百分点。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Priority">
@@ -386,13 +347,9 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置条件格式规则的优先级值。当工作表中存在多个条件格式规则时，优先级确定求值的顺序。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>设置优先级时，值必须为介于 1 和工作表上条件格式规则总数之间的正整数。对于工作表上的所有规则，优先级必须为唯一值，因此，如果更改指定条件格式规则的优先级，将可能会导致工作表上其他规则的优先级值移位。</para>
-          <para></para>
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>设置优先级时，值必须为介于 1 和工作表上条件格式规则总数之间的正整数。对于工作表上的所有规则，优先级必须为唯一值，因此，如果更改指定条件格式规则的优先级，将可能会导致工作表上其他规则的优先级值移位。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PTCondition">
@@ -418,10 +375,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 <b>Boolean</b> 值，指明是否将条件格式应用于数据透视表图表。只读。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>返回一个 <b>Boolean</b> 值，指明是否将条件格式应用于数据透视表图表。 只读。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -452,13 +407,9 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置一个 <b>Boolean</b> 值，该值指示是否保留图标集的图标次序。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>默认情况下，可以使用的大多数图标集都将使用较多的图像与较大值关联。例如，“三色交通灯”图标集将绿色圆应用于区域上限值，而将红色圆应用于区域的最低值。如果数据的较低值更有意义，如马拉松时间结果，则可能希望反转这些图标应用于区域的次序，使绿色圆与最低值关联。</para>
-          <para></para>
-        </remarks>
+        <value><b>Boolean</b></value>
+        <remarks><para>默认情况下，可以使用的大多数图标集都将使用较多的图像与较大值关联。例如，“三色交通灯”图标集将绿色圆应用于区域上限值，而将红色圆应用于区域的最低值。如果数据的较低值更有意义，如马拉松时间结果，则可能希望反转这些图标应用于区域的次序，使绿色圆与最低值关联。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScopeType">
@@ -487,14 +438,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotConditionScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置的常量之一，<see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />是必需的条件格式应用于数据透视表图表时的枚举。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />
-        </value>
-        <remarks>
-          <para>默认值是<see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />，其设置范围使用<see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.AppliesTo" />属性。</para>
-          <para></para>
-        </remarks>
+        <summary>返回或设置枚举的常量之一，该常量确定条件格式应用于数据透视表 <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> 图表时的范围。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /></value>
+        <remarks><para>默认值为 <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" /> ，它使用属性设置 <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.AppliesTo" /> 范围。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetFirstPriority">
@@ -519,10 +466,8 @@
       <Parameters />
       <Docs>
         <summary>将此条件格式规则的优先级值设置为“1”，以便在工作表上的所有其他规则之前计算此规则。</summary>
-        <remarks>
-          <para>如果您有多个工作表中的条件格式规则如果规则以前没有设置为"1"的优先级，此方法将导致加一工作表上的所有其他现有规则的优先级。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果工作表中有多个条件格式规则，如果以前未将规则设置为优先级"1"，此方法将导致工作表上所有其他现有规则的优先级增加 1。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetLastPriority">
@@ -547,10 +492,8 @@
       <Parameters />
       <Docs>
         <summary>为此条件格式规则设置求值顺序，以便在工作表上的所有其他规则之后计算此规则。</summary>
-        <remarks>
-          <para>优先级的实际值将等于的工作表上的条件格式规则的总数。 如果您在工作表中有多个条件格式规则，此方法将导致的优先级值大于加一该规则的规则的优先级。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>优先级实际值值将等于工作表上条件格式规则的总数。 当工作表中有多个条件格式规则时，此方法将导致优先级值大于此规则的规则的优先级提高 1。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowIconOnly">
@@ -580,13 +523,9 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置一个 <b>Boolean</b> 值，该值指示是否仅显示图标集条件格式的图标。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>此属性的默认值为 <b>False</b> 。</para>
-          <para></para>
-        </remarks>
+        <value><b>Boolean</b></value>
+        <remarks><para>此属性的默认值为 <b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StopIfTrue">
@@ -613,13 +552,9 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置一个 <b>Boolean</b> 值，该值确定在当前规则的计算结果为 <b>True</b> 时是否应计算单元格上的其他格式规则。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>为了支持向后兼容性，此属性的默认值为 <b>True</b>，而这与在用户界面中创建的格式规则的行为相反。</para>
-          <para></para>
-        </remarks>
+        <value><b>Boolean</b></value>
+        <remarks><para>为了支持向后兼容性，此属性的默认值为 <b>True</b>，而这与在用户界面中创建的格式规则的行为相反。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -645,14 +580,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回的常量之一<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />枚举，指定条件格式的类型。 只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>此属性将始终返回值 6，它等效于<see cref="T:Microsoft.Office.Interop.Excel.XlIconSet" />。</para>
-          <para></para>
-        </remarks>
+        <summary>返回枚举的常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> ，该常量指定条件格式的类型。 只读。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>此属性将始终返回值 6，这等效 <see cref="T:Microsoft.Office.Interop.Excel.XlIconSet" /> 于 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="ListObjects" FullName="Microsoft.Office.Interop.Excel.ListObjects">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="297eaae8b8252f38795243645194d97dbacd5ca5" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20580939" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListObjects : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="297eaae8b8252f38795243645194d97dbacd5ca5" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999922" /></Metadata><TypeSignature Language="C#" Value="public interface ListObjects : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListObjects implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ListObjects" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListObjects&#xA;Implements IEnumerable" />
@@ -33,11 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>所有的集合<see cref="T:Microsoft.Office.Interop.Excel.ListObject" />工作表上的对象。 每个<see cref="T:Microsoft.Office.Interop.Excel.ListObject" />对象代表工作表中的列表。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Excel._Worksheet.ListObjects" />属性<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />对象可返回<b>ListObjects</b>集合。</para>
-      <para></para>
-    </remarks>
+    <summary>工作表上所有 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> 对象的集合。 每个 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> 对象表示工作表中的列表。</summary>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.ListObjects" /> 对象的属性 <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> 可返回 <b>ListObjects</b> 集合。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -104,17 +94,15 @@
         <Parameter Name="Destination" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SourceType">Optional <b>XlListObjectSourceType</b>。 表示查询的来源类型。 可以是下列<b>XlListObjectSourceType</b>常量之一：<b>参数</b>或<b>xlSrcRange</b>。 如果省略，<paramref name="SourceType" />将默认为<b>xlSrcRange</b>。</param>
-        <param name="Source">可选时<paramref name="SourceType" />是<b>xlSrcRange</b>。 A<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，表示数据源。 如果省略，<paramref name="Source" />将默认为列表范围检测代码返回的范围。 时需要<paramref name="SourceType" />是<b>参数</b>。 指定与源的连接<b>字符串</b>值的数组。为 SharePoint 网站 1ListName 2ViewGUID 元素 # Contents0URL</param>
-        <param name="LinkSource">可选属性，类型为 <b>Boolean</b>。 指示是否链接到<b>ListObject</b>对象的外部数据源。 如果<paramref name="SourceType" />是<b>参数</b>，默认值为<b>True</b>。 无效的 if<paramref name="SourceType" />是<b>xlSrcRange</b>，，如果不会被省略，则将返回错误。</param>
-        <param name="XlListObjectHasHeaders">可选的<b>对象</b>。 <see cref="T:Microsoft.Office.Interop.Excel.XlYesNoGuess" />常量，指示正在导入的数据是否已列标签。 如果源不包含标头，Excel 将自动生成标头。</param>
-        <param name="Destination">可选的<b>对象</b>。 为新的列表对象的左上角的目标指定的单个单元格引用一个<b>Range</b>对象。 如果<b>Range</b>对象引用多个单元格，则生成错误。 <paramref name="Destination" />参数必须时指定<paramref name="SourceType" />设置为<b>参数</b>。 <paramref name="Destination" />如果参数，则忽略<paramref name="SourceType" />设置为<b>xlSrcRange</b>。 目标区域必须包含指定的工作表上<see cref="T:Microsoft.Office.Interop.Excel.ListObjects" />集合。 将在插入新列<paramref name="Destination" />以适应新的列表。 因此，不会覆盖现有数据。</param>
-        <summary>创建新的列表对象。 返回<see cref="T:Microsoft.Office.Interop.Excel.ListObject" />对象。</summary>
+        <param name="SourceType">可选 <b>XlListObjectSourceType</b>。 表示查询的来源类型。 可以是以下 <b>XlListObjectSourceType</b> 常量之一 <b>：xlSrcExternal</b> 或 <b>xlSrcRange</b>。 如果省略， <paramref name="SourceType" /> 则默认为 <b>xlSrcRange</b>。</param>
+        <param name="Source">可选时 <paramref name="SourceType" /> 为 <b>xlSrcRange</b>。 <see cref="T:Microsoft.Office.Interop.Excel.Range" />一个代表数据源的对象。 如果省略， <paramref name="Source" /> 则默认为列表范围检测代码返回的范围。 当为 <paramref name="SourceType" /> <b>xlSrcExternal 时是必需的</b>。 指定与源的连接的 <b>String</b> 值的数组。Element#Contents0URL to SharePoint site 1ListName 2ViewGUID</param>
+        <param name="LinkSource">可选属性，类型为 <b>Boolean</b>。 表示外部数据源是否链接到 <b>ListObject</b> 对象。 如果 <paramref name="SourceType" /> 为 <b>xlSrcExternal</b>，则默认值 <b>为 True</b>。 如果为 <paramref name="SourceType" /> <b>xlSrcRange，</b>则无效，如果未省略，将返回错误。</param>
+        <param name="XlListObjectHasHeaders">可选 <b>对象</b>。 一 <see cref="T:Microsoft.Office.Interop.Excel.XlYesNoGuess" /> 个常量，指示要导入的数据是否具有列标签。 如果 Source 没有标题，Excel 将自动生成标题。</param>
+        <param name="Destination">可选 <b>对象</b>。 一个 <b>Range</b> 对象，作用是将一个单元格引用指定为新列表对象左上角的目标区域。 如果 <b>Range</b> 对象引用多个单元格，将生成错误。 参数 <paramref name="Destination" /> 必须设置为 <paramref name="SourceType" /> <b>xlSrcExternal</b>时指定。 如果 <paramref name="Destination" /> 设置为 <paramref name="SourceType" /> <b>xlSrcRange，则忽略该参数</b>。 目标区域必须位于包含指定集合的 <see cref="T:Microsoft.Office.Interop.Excel.ListObjects" /> 工作表上。 新列将插入到新列表的 <paramref name="Destination" /> 合适位置。 因此，现有数据不会被覆盖。</param>
+        <summary>创建新的列表对象。 返回一 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> 个对象。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>当列表有标题时，单元格的第一行将转换为<b>文本</b>，如果还未被设为文本。 转换将基于单元格的可见文本。 这意味着，如果没有更改区域设置<b>日期</b>格式的 date 值，对列表的转换可能产生不同的结果，具体取决于当前的系统区域设置。 此外，如果有两个单元格标题行具有相同的可见文本，将追加递增的<b>整数</b>以使每个列标题唯一。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>当列表有标题时，第一行单元格将转换为 <b>Text</b>（如果还未被设为文本）。 转换将基于单元格的可见文本。 这意味着，如果有一个日期值，该日期值的 <b>Date</b> 格式随区域设置的更改而更改，则对列表的转换可能产生不同的结果，具体取决于当前的系统区域设置。 而且，如果标题行中有两个单元格包含相同的可见文本，则会追加递增的 <b>Integer</b> 以使每个列标题唯一。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddEx">
@@ -178,7 +166,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -206,7 +194,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回集合中对象的数目。 <b>Integer</b> 类型，只读。</summary>
+        <summary>返回集合中对象的数目。 只读 <b>Integer</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -234,13 +222,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。 如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 只读<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</summary>
+        <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。 如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。 只读 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -301,7 +286,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">所需的<b>对象</b>。 对象的名称或索引号。</param>
+        <param name="Index">必需 <b>对象</b>。 对象的名称或索引号。</param>
         <summary>从集合中返回一个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -330,7 +315,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父对象。只读。</summary>
+        <summary>返回指定对象的父对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
