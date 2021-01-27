@@ -1,13 +1,5 @@
 <Type Name="XlAutoFillType" FullName="Microsoft.Office.Interop.Excel.XlAutoFillType">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="47872086612ee372703200cd8a60d01035be66c1" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20573666" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public enum XlAutoFillType" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="47872086612ee372703200cd8a60d01035be66c1" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50008300" /></Metadata><TypeSignature Language="C#" Value="public enum XlAutoFillType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XlAutoFillType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.XlAutoFillType" />
   <TypeSignature Language="VB.NET" Value="Public Enum XlAutoFillType" />
@@ -135,7 +127,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>扩展到目标区域为一系列中的源区域的值 （例如，1，2 被扩展为"3、 4、 5）。 格式复制到目标区域，如有必要可重复源区域。</summary>
+        <summary>将源范围中的值作为系列扩展到目标区域 (例如，"1，2"扩展为"3、4、5") 。 格式从源区域复制到目标区域，如有必要可重复执行。</summary>
       </Docs>
     </Member>
     <Member MemberName="xlFillValues">
@@ -211,7 +203,7 @@
       </ReturnValue>
       <MemberValue>11</MemberValue>
       <Docs>
-        <summary>到基于上一用户操作，如有必要可重复检测模式目标区域扩展源区域的值。</summary>
+        <summary>根据检测到的先前用户操作模式将值从源区域扩展到目标区域，如有必要可重复执行。</summary>
       </Docs>
     </Member>
     <Member MemberName="xlGrowthTrend">
@@ -230,7 +222,7 @@
       </ReturnValue>
       <MemberValue>10</MemberValue>
       <Docs>
-        <summary>将源区域的数值扩展到目标区域，如假定源区域中的数字之间的关系乘法 (例如，1，2 被扩展为"4，8，16" 假定每个数字相乘以前的结果某些值数字）。 格式复制到目标区域，如有必要可重复源区域。</summary>
+        <summary>将数值从源区域扩展到目标区域，假定源范围中的数字之间的关系是乘法 (例如，"1， 2"扩展为"4， 8， 16"，假定每个数字是上一个数字乘以一个值) 的结果。 格式从源区域复制到目标区域，如有必要可重复执行。</summary>
       </Docs>
     </Member>
     <Member MemberName="xlLinearTrend">
@@ -249,7 +241,7 @@
       </ReturnValue>
       <MemberValue>9</MemberValue>
       <Docs>
-        <summary>将源区域的数值扩展到目标区域，如假定数字之间的关系累加 (例如，1，2 被扩展为"3，4，5" 假定每个数字前一个数字加上某个值的结果)。 格式复制到目标区域，如有必要可重复源区域。</summary>
+        <summary>将数值从源区域扩展到目标区域，假定数字之间的关系是累加的 (例如，"1， 2"扩展为"3， 4， 5"，假定每个数字都是向上一个数字) 添加值的结果。 格式从源区域复制到目标区域，如有必要可重复执行。</summary>
       </Docs>
     </Member>
   </Members>

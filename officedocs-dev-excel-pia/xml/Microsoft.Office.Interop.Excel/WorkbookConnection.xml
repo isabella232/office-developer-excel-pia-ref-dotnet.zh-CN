@@ -1,13 +1,5 @@
 <Type Name="WorkbookConnection" FullName="Microsoft.Office.Interop.Excel.WorkbookConnection">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a6d1fef0add7e32139d0f7d1970c0354fbd328c7" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20581065" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface WorkbookConnection" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a6d1fef0add7e32139d0f7d1970c0354fbd328c7" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009210" /></Metadata><TypeSignature Language="C#" Value="public interface WorkbookConnection" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WorkbookConnection" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />
   <TypeSignature Language="VB.NET" Value="Public Interface WorkbookConnection" />
@@ -29,15 +21,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>连接是信息的一套从 1st_Excel12 工作簿之外的外部数据源获取数据所需。</summary>
-    <remarks>
-      <para>连接可存储在 Excel 工作簿中。工作簿打开时，Excel 创建连接的内存副本，称为连接对象。连接对象包含服务器名称和服务器上打开的对象的名称等信息。连接对象也可以选择包含身份验证凭据和/或一个命令，该命令可传递给服务器执行（例如：由 SQL Server 执行的 SELECT 语句）。</para>
+    <summary>连接是一组从外部数据源（而不是工作簿外部数据源）1st_Excel12的信息。</summary>
+    <remarks><para>连接可存储在 Excel 工作簿中。工作簿打开时，Excel 创建连接的内存副本，称为连接对象。连接对象包含服务器名称和服务器上打开的对象的名称等信息。连接对象也可以选择包含身份验证凭据和/或一个命令，该命令可传递给服务器执行（例如：由 SQL Server 执行的 SELECT 语句）。</para>
       <para>
-        <b>注意</b>： 该连接的确切形式取决于用于检索数据 – ODBC 连接、 OLEDB 连接的机制和 Web 查询包含不同的信息。</para>
+        <b>注意</b>：连接的确切形式取决于用于检索数据的机制 - ODBC 连接、OLEDB 连接和 Web 查询将包含不同的信息。</para>
       <para>连接还可以存储在单独的连接文件中。Excel 工作簿中的大多数连接都包含一个指向外部连接文件的指针。连接文件的扩展名清楚地表明这类文件为连接文件（*.ODC、*.IQY 等），可在用户的本地计算机、其他熟知或受信任的位置（如 WSS，即数据连接库）或其他公司服务器上找到连接文件。通过连接文件，同一组织中的多个用户可重复使用连接。通过更改单个连接文件，网络管理员可以更改整个组织连接到后端数据源的方式。连接外部数据源时，连接文件不是必需使用的。</para>
       <para>连接名称是字符串，唯一标识使用这些连接的工作簿中的连接。连接还有一些属性不具有唯一性。只要 Excel 中携带参数的公式是一个连接，则以直接方式（字符串形式）或间接方式（引用包含字符串形式的连接名称的单元格）引用连接的名称即可。</para>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -100,12 +90,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象代表 Microsoft Office Excel 应用程序。 如果使用对象识别符，此属性返回值，该值代表指定对象的创建者<b>Application</b>对象。 只读。</summary>
+        <summary>如果不与对象限定符一起使用，则此属性返回一个代表 Excel Microsoft Office  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 对象。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -131,12 +119,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。 <b>Integer</b> 类型，只读。</summary>
+        <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。 只读 <b>Integer</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。<b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。例如，Microsoft Excel 的创建者代码为 XCEL。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。  <b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataFeedConnection">
@@ -162,7 +148,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DataFeedConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个包含的数据和功能需要连接到数据源的<b>DataFeedConnection</b>对象。 只读</summary>
+        <summary>返回一 <b>个 DataFeedConnection</b> 对象，该对象包含连接到数据源所需的数据和功能。 只读</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -189,14 +175,12 @@
       <Parameters />
       <Docs>
         <summary>删除工作簿连接。</summary>
-        <remarks>
-          <para>使用此方法可以删除一个外部数据连接。此方法不适用于与其他工作簿之间的链接。 </para>
-          <para>删除连接将删除或移除任何正在使用该连接的对象。
+        <remarks><para>使用此方法可以删除一个外部数据连接。 此方法不适用于与其他工作簿之间的链接。 </para>
+          <para>删除连接将不会删除正在使用该连接的任何对象。
 
-删除连接不会导致任何要从文件系统中删除的连接文件。  如果您编辑任何这些对象以使用另一个连接，所有内容将启动再次使用。</para>
+删除连接将不会导致从文件系统中删除任何连接文件。  如果编辑任何这些对象以使用另一个连接，则一切都将重新开始工作。</para>
           <para>那些使用已删除链接的对象所表现出的行为就好像无法建立连接一样。  </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -225,13 +209,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置的简要说明<see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />对象。 可读写 <b>String</b>。</summary>
+        <summary>返回或设置对象的简要 <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> 说明。 读/写 <b>String</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>在“连接属性”对话框中，用户可以编辑连接的名称和/或说明。在该对话框中更改名称和说明只会更改 Excel 连接对象中的相应字段。</para>
+        <remarks><para>在“连接属性”对话框中，用户可以编辑连接的名称和/或说明。  在该对话框中更改名称和说明只会更改 Excel 连接对象中的相应字段。</para>
           <para>说明的最大长度为 255 个字符。如果用户指定的连接文件的说明长于 255 个字符，则说明会被截断，以满足 255 个字符的限制。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InModel">
@@ -257,12 +239,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定<b>WorkbookConnection</b>对象已添加到模型。 <b>Boolean</b>(C# 中<b>bool</b> )只读的。</summary>
+        <summary>指定是否已将 <b>WorkbookConnection</b> 对象添加到模型中。 <b>Boolean</b> (<b>bool</b> in C#) 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>必须为 false 的旧的连接。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>对于旧连接，必须为 false。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ModelConnection">
@@ -288,7 +268,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个对象，包含在 Excel 2013 进行交互和集成的数据模型中引入的新模型连接类型的信息。 只读</summary>
+        <summary>返回一个对象，该对象包含 Excel 2013 中引入的新模型连接类型与集成数据模型交互的信息。 只读</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -316,7 +296,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTables</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.ModelTables" />对象的特定连接相关联。 只读</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.ModelTables" /> 与特定连接关联的对象。 只读</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -347,7 +327,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置工作簿连接对象的名称。可读/写 <b>String</b> 类型。</summary>
+        <summary>返回或设置工作簿连接对象的名称。 读/写 <b>String</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -375,7 +355,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ODBCConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retuns ODBC 连接的详细信息指定<see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />对象。 只读<see cref="T:Microsoft.Office.Interop.Excel.ODBCConnection" />。</summary>
+        <summary>Retuns the ODBC Connection details for the specified <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> object. 只读 <see cref="T:Microsoft.Office.Interop.Excel.ODBCConnection" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -403,7 +383,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.OLEDBConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retuns OLEDB 连接的详细信息指定<see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />对象。 只读<see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" />。</summary>
+        <summary>Retuns the OLEDB Connection details for the specified <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> object. 只读 <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -431,7 +411,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父对象。只读。</summary>
+        <summary>返回指定对象的父对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -459,7 +439,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Ranges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回的范围为指定的对象的<see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />对象。 只读<see cref="T:Microsoft.Office.Interop.Excel.Ranges" />。</summary>
+        <summary>返回指定对象的对象 <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> 范围。 只读 <see cref="T:Microsoft.Office.Interop.Excel.Ranges" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -486,12 +466,10 @@
       <Parameters />
       <Docs>
         <summary>刷新工作簿连接。</summary>
-        <remarks>
-          <para>如果<see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" />属性为<b>false，则</b>不显示对话框， <b>Refresh</b>方法将失败并连接信息不足异常。</para>
-          <para>刷新连接失败对刷新其他操作没有任何影响。
+        <remarks><para>如果该属性 <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> 为 <b>False，</b>则不显示对话框， <b>并且 Refresh</b> 方法失败，但连接信息不足异常。</para>
+          <para>刷新连接失败对刷新其他操作没有任何影响。 
 </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshWithRefreshAll">
@@ -520,7 +498,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定应刷新连接的所有刷新时都执行。 <b>Boolean</b>(<b>bool</b> C# 中)。 读/写。</summary>
+        <summary>确定是否应在执行全部刷新时刷新连接。 <b>Boolean</b> (<b>bool</b> in C#) . 读/写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -548,7 +526,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TextConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.TextConnection" />对象，其中包含到文本文件查询的信息。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.TextConnection" /> 一个对象，该对象包含对文本文件的查询的信息。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -576,7 +554,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlConnectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回工作簿连接类型。 只读<see cref="T:Microsoft.Office.Interop.Excel.XlConnectionType" />。</summary>
+        <summary>返回工作簿连接类型。 只读 <see cref="T:Microsoft.Office.Interop.Excel.XlConnectionType" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -604,7 +582,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorksheetDataConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个对象，包含用于从 PowerPivot 模型连接到工作簿如范围、 命名的范围或表内数据的信息。 只读。</summary>
+        <summary>返回一个对象，该对象包含从 PowerPivot Model 到工作簿中数据（如区域、命名区域或表）的连接的信息。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

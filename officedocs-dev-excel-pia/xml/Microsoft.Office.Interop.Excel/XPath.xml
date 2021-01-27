@@ -1,13 +1,5 @@
 <Type Name="XPath" FullName="Microsoft.Office.Interop.Excel.XPath">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d73d2c6682dfafc4ccfddfe3f9001a4e4768bd0e" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20573596" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XPath" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d73d2c6682dfafc4ccfddfe3f9001a4e4768bd0e" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50008496" /></Metadata><TypeSignature Language="C#" Value="public interface XPath" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XPath" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.XPath" />
   <TypeSignature Language="VB.NET" Value="Public Interface XPath" />
@@ -29,13 +21,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表已被映射到 XPath<see cref="T:Microsoft.Office.Interop.Excel.Range" />或<see cref="T:Microsoft.Office.Interop.Excel.ListColumn" />对象。</summary>
-    <remarks>
-      <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Excel.XPath.SetValue(Microsoft.Office.Interop.Excel.XmlMap,System.String,System.Object,System.Object)" />方法映射到 range 或列表列的 XPath。 <b>SetValue</b>方法还用于更改现有 XPath 的属性。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Excel.XPath.Clear" />方法，以删除已被映射到的区域或列表列的 XPath。</para>
-      <para></para>
-    </remarks>
+    <summary>表示已映射到或对象的 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> XPath。</summary>
+    <remarks><para>XML 功能（以 XML 电子表格格式保存文件除外）仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中可用。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.XPath.SetValue(Microsoft.Office.Interop.Excel.XmlMap,System.String,System.Object,System.Object)" /> 该方法将 XPath 映射到区域或列表列。 <b>SetValue</b>方法还用于更改现有 XPath 的属性。</para>
+      <para>使用此方法可删除已映射到区域或列表列 <see cref="M:Microsoft.Office.Interop.Excel.XPath.Clear" /> 的 XPath。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -92,7 +82,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -118,12 +108,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>清除从映射到指定的 XPath 单元格的架构映射。</summary>
-        <remarks>
-          <para>此方法不会清除映射到指定的 XPath 单元格的数据。 使用<see cref="M:Microsoft.Office.Interop.Excel.Range.Clear" />方法<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象以清除单元格的数据。</para>
+        <summary>清除映射到指定 XPath 的单元格中的架构映射。</summary>
+        <remarks><para>此方法不从映射到指定 XPath 的单元格中清除数据。 使用 <see cref="M:Microsoft.Office.Interop.Excel.Range.Clear" /> 对象的方法 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 从单元格中清除数据。</para>
           <para>如果指定的 XPath 在 XML 列表中被映射，则将删除架构映射，但列表不会从工作表中删除。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -149,13 +137,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。 如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 只读<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</summary>
+        <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。 如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。 只读 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Map">
@@ -181,12 +166,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XmlMap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.XmlMap" />对象，表示包含指定的架构映射<see cref="T:Microsoft.Office.Interop.Excel.XPath" />对象。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> 一个对象，该对象表示包含指定对象的架构 <see cref="T:Microsoft.Office.Interop.Excel.XPath" /> 映射。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>XML 功能（以 XML 电子表格格式保存文件除外）仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中可用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -212,7 +195,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父对象。只读。</summary>
+        <summary>返回指定对象的父对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -240,12 +223,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果返回<b>True</b>指定<see cref="T:Microsoft.Office.Interop.Excel.XPath" />对象映射到 XML 列表;如果<b>XPath</b>对象映射到单个单元格，则返回<b>False</b> 。 只读 <b>Boolean</b>。</summary>
+        <summary>如果<b>指定</b>对象映射到 XML 列表，则返回 <see cref="T:Microsoft.Office.Interop.Excel.XPath" /> True;如果<b></b> <b>XPath</b>对象映射到单个单元格，则返回 False。 只读 <b>Boolean</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>XML 功能（以 XML 电子表格格式保存文件除外）仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中可用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetValue">
@@ -273,15 +254,13 @@
         <Parameter Name="Repeating" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Map">所需<see cref="T:Microsoft.Office.Interop.Excel.XmlMap" />。 包含<b>XPath</b>对象有关的信息架构映射。</param>
-        <param name="XPath">必需的 <b>字符串</b> 。 一个有效的 XPath 语句。</param>
-        <param name="SelectionNamespace">可选的<b>对象</b>。 指定用于任何命名空间前缀<paramref name="XPath" />参数。 如果<b>XPath</b>对象不包含任何前缀，或者<b>XPath</b>对象使用的 Microsoft Excel 前缀，则可省略此参数。</param>
-        <param name="Repeating">可选属性，类型为 <b>Boolean</b>。 指定是否要绑定到 XML 列表中的列或映射到单个单元格的<b>XPath</b>对象。 设置为<b>True</b>以绑定到 XML 列表中的列的<b>XPath</b>对象。</param>
-        <summary>映射指定<see cref="T:Microsoft.Office.Interop.Excel.XPath" />对象传递给<see cref="T:Microsoft.Office.Interop.Excel.ListColumn" />对象或<see cref="T:Microsoft.Office.Interop.Excel.Range" />集合。 如果<b>XPath</b>对象之前已映射到<b>Range</b>集合的<b>ListColumn</b>对象， <b>SetValue</b>方法设置<b>XPath</b>对象的属性。</summary>
-        <remarks>
-          <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
-          <para></para>
-        </remarks>
+        <param name="Map">必需 <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> 。 包含有关 <b>XPath 对象的信息的架构</b> 映射。</param>
+        <param name="XPath">必需的 <b>字符串</b> 。 有效的 XPath 语句。</param>
+        <param name="SelectionNamespace">可选 <b>对象</b>。 指定参数中使用的任何命名空间 <paramref name="XPath" /> 前缀。 如果 <b>XPath</b> 对象不包含任何前缀，或者 <b>XPath</b> 对象使用 Microsoft Excel 前缀，则省略此参数。</param>
+        <param name="Repeating">可选属性，类型为 <b>Boolean</b>。 指定 <b>XPath</b> 对象是否绑定到 XML 列表的某一列，或是否映射到单个单元格。 设置为 <b>True</b> 会将 <b>XPath</b> 对象绑定到 XML 列表的某一列。</param>
+        <summary>将指定 <see cref="T:Microsoft.Office.Interop.Excel.XPath" /> 对象映射到对象 <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> 或 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 集合。 如果 <b>XPath</b> 对象先前已被映射到 <b>ListColumn</b> 对象或 <b>Range</b> 集合，则 <b>SetValue</b> 方法将设置 <b>XPath</b> 对象的属性。</summary>
+        <remarks><para>XML 功能（以 XML 电子表格格式保存文件除外）仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中可用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">

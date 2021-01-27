@@ -1,13 +1,5 @@
 <Type Name="WorksheetView" FullName="Microsoft.Office.Interop.Excel.WorksheetView">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6d639f6ce96c01d378daef71d514ccd7be53adeb" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20577096" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface WorksheetView" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6d639f6ce96c01d378daef71d514ccd7be53adeb" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50008517" /></Metadata><TypeSignature Language="C#" Value="public interface WorksheetView" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WorksheetView" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.WorksheetView" />
   <TypeSignature Language="VB.NET" Value="Public Interface WorksheetView" />
@@ -31,10 +23,8 @@
   <Docs>
     <summary>指定的或活动工作簿中所有 <b>WorksheetView</b> 对象的集合。
 </summary>
-    <remarks>
-      <para>通过使用如属性控制应用程序或工作簿级视图的外观<see cref="P:Microsoft.Office.Interop.Excel.WorksheetView.DisplayFormulas" />， <see cref="P:Microsoft.Office.Interop.Excel.WorksheetView.DisplayGridlines" />，和<see cref="P:Microsoft.Office.Interop.Excel.WorksheetView.DisplayHeadings" />。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>通过使用属性（如 ，和）控制应用程序或工作簿级别视图 <see cref="P:Microsoft.Office.Interop.Excel.WorksheetView.DisplayFormulas" /> <see cref="P:Microsoft.Office.Interop.Excel.WorksheetView.DisplayGridlines" /> 的外观 <see cref="P:Microsoft.Office.Interop.Excel.WorksheetView.DisplayHeadings" /> 。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,14 +50,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象代表 Microsoft Office Excel 应用程序。 如果使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel._Application" />值，该值代表指定对象的创建者的对象。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel._Application" />
-        </value>
-        <remarks>
-          <para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
-          <para></para>
-        </remarks>
+        <summary>如果不与对象限定符一起使用，则此属性返回一个对象，该对象Microsoft Office  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> Excel 应用程序。 当与对象限定符一起使用时，此属性返回 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 一个对象，该对象表示指定对象的创建者。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel._Application" /></value>
+        <remarks><para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -93,14 +79,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，该整数指示在其中创建此对象的应用程序。只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。<b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。例如，Microsoft Excel 的创建者代码为 XCEL。</para>
-          <para></para>
-        </remarks>
+        <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。  <b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayFormulas">
@@ -129,10 +111,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置如果应在当前工作表视图中隐藏或显示公式。 为可读/写属性。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>返回或设置在当前工作表视图中是显示还是隐藏公式。 读/写。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,16 +142,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果显示网格线。 为可读/写属性。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>该属性仅应用于工作表和宏工作表。</para>
-          <para>此属性会影响只显示网格线。 使用<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintGridlines" />属性控制打印网格线。</para>
-          <para></para>
-        </remarks>
+        <summary>如果显示网格线，则为 <b>True</b>。 读/写。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>该属性仅应用于工作表和宏工作表。
+
+</para>
+          <para>此属性仅影响显示的网格线。 使用 <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintGridlines" /> 该属性可控制网格线的打印。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayHeadings">
@@ -200,16 +177,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果显示行和列标题;<b>False</b>如果显示没有标题。 为可读/写属性。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>该属性仅应用于工作表和宏工作表。</para>
-          <para>此属性会影响只显示标题。 使用<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintHeadings" />属性控制标题的打印。</para>
-          <para></para>
-        </remarks>
+        <summary><b>如此</b>如果同时显示行标题和列标题;如果未显示标题，则其为<b>False。</b> 读/写。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>该属性仅应用于工作表和宏工作表。
+
+</para>
+          <para>此属性仅影响显示的标题。 使用 <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintHeadings" /> 该属性可控制标题的打印。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayOutline">
@@ -238,15 +212,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果显示分级显示符号。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>该属性仅应用于工作表和宏工作表。</para>
-          <para></para>
-        </remarks>
+        <summary>如果显示分级显示符号，则为 <b>True</b>。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>该属性仅应用于工作表和宏工作表。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayZeros">
@@ -275,15 +244,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果显示零值。 读/写<b />。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>该属性仅应用于工作表和宏工作表。</para>
-          <para></para>
-        </remarks>
+        <summary>如果显示零值，则为 <b>True</b>。 读/写 <b /> 。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>该属性仅应用于工作表和宏工作表。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -309,10 +273,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父对象。只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回指定对象的父对象。 只读。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -339,10 +301,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定的工作表名称<see cref="T:Microsoft.Office.Interop.Excel.WorksheetView" />对象。 只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回指定对象的工作表 <see cref="T:Microsoft.Office.Interop.Excel.WorksheetView" /> 名称。 只读。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
