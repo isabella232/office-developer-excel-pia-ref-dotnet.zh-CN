@@ -1,13 +1,5 @@
 <Type Name="PivotLineCells" FullName="Microsoft.Office.Interop.Excel.PivotLineCells">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3e17fefb12ab29fe0f0cdb70ed58c6f881230fa3" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20574688" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PivotLineCells : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3e17fefb12ab29fe0f0cdb70ed58c6f881230fa3" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49997339" /></Metadata><TypeSignature Language="C#" Value="public interface PivotLineCells : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotLineCells implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotLineCells" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotLineCells&#xA;Implements IEnumerable" />
@@ -33,11 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>集合的<see cref="T:Microsoft.Office.Interop.Excel.PivotCell" />对象的特定<see cref="T:Microsoft.Office.Interop.Excel.PivotLine" />。</summary>
-    <remarks>
-      <para>使用<see cref="T:Microsoft.Office.Interop.Excel.PivotLineCells" />(<paramref name="index" />) 方法可返回或指定的特定位置<see cref="T:Microsoft.Office.Interop.Excel.PivotCell" />集合中的对象。 您还可以指定<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />对象或<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />名称返回单个<see cref="T:Microsoft.Office.Interop.Excel.PivotCell" />对象。</para>
-      <para></para>
-    </remarks>
+    <summary>特定 <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> 对象的集合 <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> 。</summary>
+    <remarks><para>使用 () 方法可返回或指定集合中 <see cref="T:Microsoft.Office.Interop.Excel.PivotLineCells" /> <paramref name="index" /> 特定 <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> 对象的位置。 还可以指定要返回 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 单个对象的对象 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 或 <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> 名称。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -98,14 +88,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象代表 Microsoft Office Excel 应用程序。 如果使用对象识别符，此属性返回指定对象的创建者。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel._Application" />
-        </value>
-        <remarks>
-          <para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
-          <para></para>
-        </remarks>
+        <summary>如果不与对象限定符一起使用，则此属性返回一个对象，该对象Microsoft Office <see cref="T:Microsoft.Office.Interop.Excel._Application" /> Excel 应用程序。 当与对象限定符一起使用时，此属性返回指定对象的创建者。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel._Application" /></value>
+        <remarks><para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -131,10 +117,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回中的项目数<see cref="T:Microsoft.Office.Interop.Excel.PivotLineCells" />集合。 只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>返回集合中的项 <see cref="T:Microsoft.Office.Interop.Excel.PivotLineCells" /> 数。 只读。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,14 +145,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位<b>整数</b>，它指示在其中创建此对象的应用程序。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。<b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。例如，Microsoft Excel 的创建者代码为 XCEL。</para>
-          <para></para>
-        </remarks>
+        <summary>返回一个 32 位 <b>整数</b> ，指示创建此对象时的应用程序。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。  <b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Full">
@@ -194,7 +174,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>时<b>，则返回 True</b>，所有<b>PivotLineCells</b><b>PivotLine</b> （包括那些处于隐藏状态 compact 窗体中） 中都检索。 <b>Boolean</b>(C# 中<b>bool</b> )只读</summary>
+        <summary>如果<b>为 True，</b>则检索<b>PivotLine</b> (中隐藏的所有<b>PivotLineCells</b>) 隐藏。 <b>Boolean</b> (<b>bool</b> in C#) 只读</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -257,11 +237,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">所需<b>对象</b>指定集合的元素的位置。</param>
-        <summary>返回特定元素的<see cref="T:Microsoft.Office.Interop.Excel.PivotLineCells" />的集中位置标识集合对象。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" />
-        </value>
+        <param name="Index">Required <b>Object</b> 指定集合元素的位置。</param>
+        <summary>返回集合对象的特定 <see cref="T:Microsoft.Office.Interop.Excel.PivotLineCells" /> 元素，该元素由集合对象在集合中的位置标识。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -288,10 +266,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回为指定的父对象<see cref="T:Microsoft.Office.Interop.Excel.PivotLineCells" />对象。 只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回指定对象的父 <see cref="T:Microsoft.Office.Interop.Excel.PivotLineCells" /> 对象。 只读。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

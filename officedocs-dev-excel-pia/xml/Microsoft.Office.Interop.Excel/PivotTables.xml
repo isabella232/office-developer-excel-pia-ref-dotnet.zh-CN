@@ -1,13 +1,5 @@
 <Type Name="PivotTables" FullName="Microsoft.Office.Interop.Excel.PivotTables">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b1b870f7e0d404abd82b95ed4e0d3df8f815f25c" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20578020" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PivotTables : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b1b870f7e0d404abd82b95ed4e0d3df8f815f25c" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49997220" /></Metadata><TypeSignature Language="C#" Value="public interface PivotTables : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotTables implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotTables" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotTables&#xA;Implements IEnumerable" />
@@ -33,14 +25,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>所有的集合<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />指定工作表中的对象。</summary>
-    <remarks>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTables(System.Object)" />方法可返回<b>数据透视表</b>集合。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTableWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法可创建新的数据透视表报告并将其添加到集合。</para>
-      <para>使用<b>数据透视表</b>(<paramref name="index" />)，其中<paramref name="index" />是数据透视表的索引号或名称，可返回一个<b>PivotTable</b>对象。</para>
-      <para>因为对数据透视表进行编程可能会很复杂，所以，最方便的做法是将数据透视表操作录制到宏中，然后再修订所录制的宏代码。 要录制宏，指向工具菜单上的宏，然后单击录制新宏。</para>
-      <para></para>
-    </remarks>
+    <summary>指定工作表上 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 所有对象的集合。</summary>
+    <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTables(System.Object)" /> 该方法可返回 <b>数据透视表</b> 集合。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTableWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 该方法可创建新的数据透视表并将其添加到集合中。</para>
+      <para>使用<b>数据透视</b> () 返回单个数据透视表对象，其中数据透视表是索引号或 <paramref name="index" /> <paramref name="index" /> 名称。 <b></b></para>
+      <para>因为对数据透视表进行编程可能会很复杂，所以，最方便的做法是将数据透视表操作录制到宏中，然后再修订所录制的宏代码。 若要录制宏，请在"工具"菜单上指向"宏"，然后单击"录制新宏"。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -68,12 +58,12 @@
         <Parameter Name="DefaultVersion" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="PivotCache">所需<b>PivotCache</b>。 新的数据透视表报表所基于的数据透视表缓存。 缓存提供报告数据。</param>
-        <param name="TableDestination">所需的<b>对象</b>。 在数据透视表报表的目标区域 （生成的报表的放置位置工作表上的区域） 的左上角单元格。 您必须指定目标区域上包含的工作表<paramref name="PivotTables" />指定对象<paramref name="expression" />。</param>
-        <param name="TableName">可选的<b>对象</b>。 新的数据透视表的名称。</param>
-        <param name="ReadData">可选的<b>对象</b>。 <b>True</b>以创建包含从外部数据库; 所有记录的数据透视表缓存此缓存可能会非常大。 <b>False</b>可允许之前实际读取数据，则将某些字段设置为基于服务器的页字段。</param>
-        <param name="DefaultVersion">可选的<b>对象</b>。 以前创建数据透视表所使用的 Microsoft Excel 版本。</param>
-        <summary>添加新的数据透视表报告。 返回<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />对象。</summary>
+        <param name="PivotCache">必需 <b>PivotCache</b>。 表示一个数据透视表缓存，而新的数据透视表将基于此缓存。 缓存用于为报表提供数据。</param>
+        <param name="TableDestination">必需 <b>对象</b>。 数据透视表目标区域（工作表中用于放置所生成的报表的区域）左上角的单元格。 您必须在工作表上指定一个目标区域，该范围包含 <paramref name="PivotTables" /> 由 <paramref name="expression" /> 指定的对象。</param>
+        <param name="TableName">可选 <b>对象</b>。 新的数据透视表的名称。</param>
+        <param name="ReadData">可选 <b>对象</b>。 如果为 <b>True</b>，则创建数据透视表缓存以包含外部数据库中的所有记录；此时缓存可能会很大。 如果为 <b>False</b>，则允许在实际读取数据之前将某些字段设置为基于服务器的页字段。</param>
+        <param name="DefaultVersion">可选 <b>对象</b>。 以前创建数据透视表所使用的 Microsoft Excel 版本。</param>
+        <summary>添加新的数据透视表。 返回一 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 个对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -101,7 +91,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -129,7 +119,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回集合中对象的数目。 <b>Integer</b> 类型，只读。</summary>
+        <summary>返回集合中对象的数目。 只读 <b>Integer</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -157,13 +147,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。 如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 只读<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</summary>
+        <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。 如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。 只读 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -221,7 +208,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">所需的<b>对象</b>。 对象的名称或索引号。</param>
+        <param name="Index">必需 <b>对象</b>。 对象的名称或索引号。</param>
         <summary>从集合中返回一个对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -250,7 +237,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父对象。只读。</summary>
+        <summary>返回指定对象的父对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

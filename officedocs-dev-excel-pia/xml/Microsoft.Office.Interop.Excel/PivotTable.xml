@@ -1,13 +1,5 @@
 <Type Name="PivotTable" FullName="Microsoft.Office.Interop.Excel.PivotTable">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="364b8d02df1ff32fe7432d4ed2dd804098003fda" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587708" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PivotTable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="364b8d02df1ff32fe7432d4ed2dd804098003fda" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49997311" /></Metadata><TypeSignature Language="C#" Value="public interface PivotTable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotTable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotTable" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotTable" />
@@ -29,12 +21,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表工作表上的数据透视表。 <b>PivotTable</b>对象所在的<see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />集合。 <b>数据透视表</b>集合包含在单张工作表上的所有<b>数据透视表</b>对象。</summary>
-    <remarks>
-      <para>使用<b>数据透视表</b>(<paramref name="index" />)，其中<paramref name="index" />是数据透视表的索引号或名称，可返回一个<b>PivotTable</b>对象。</para>
-      <para>因为对数据透视表进行编程可能会很复杂，所以，最方便的做法是将数据透视表操作录制到宏中，然后再修订所录制的宏代码。 录制宏，指向工具菜单上的宏，然后单击录制新宏。</para>
-      <para></para>
-    </remarks>
+    <summary>代表工作表上的数据透视表。 <b>数据透视表</b>对象是集合 <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> 的一个成员。 <b>PivotTables</b> 集合包含某一张工作表上的所有 <b>PivotTable</b> 对象。</summary>
+    <remarks><para>使用 <b>数据透视</b> () ，其中数据透视表的索引号或名称是返回 <paramref name="index" /> <paramref name="index" /> 单个 <b>数据透视表</b> 对象。</para>
+      <para>因为对数据透视表进行编程可能会很复杂，所以，最方便的做法是将数据透视表操作录制到宏中，然后再修订所录制的宏代码。 若要录制宏，请指向"工具"菜单上的"宏"，然后单击"录制新宏"。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -69,7 +59,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。 </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -102,7 +92,7 @@
       <Docs>
         <param name="Name">To be added.</param>
         <param name="Mode">To be added.</param>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,10 +119,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotFilters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指示在指定的当前活动的筛选器<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" />
-        </value>
+        <summary>指示指定中的当前活动筛选器 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,10 +148,10 @@
         <Parameter Name="Function" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Field">所需的<b>对象</b>。 在服务器上唯一字段。 如果源数据联机分析处理 (OLAP)，则唯一字段是多维数据集字段。 如果源数据非 OLAP （非 OLAP 源数据），则唯一字段是数据透视表字段。</param>
-        <param name="Caption">可选的<b>对象</b>。 数据透视表中使用的标签，用于识别该数据字段。</param>
-        <param name="Function">可选的<b>对象</b>。 在已添加数据字段中执行的函数。</param>
-        <summary>向数据透视表数据字段。 返回<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />对象，代表新的数据字段。</summary>
+        <param name="Field">必需 <b>对象</b>。 服务器上的唯一字段。 如果源数据是联机分析处理 (OLAP)，则唯一字段是多维数据集字段。 如果源数据不是 OLAP（非 OLAP 源数据），则唯一字段是数据透视表字段。</param>
+        <param name="Caption">可选 <b>对象</b>。 数据透视表中使用的标签，用于识别该数据字段。</param>
+        <param name="Function">可选 <b>对象</b>。 在已添加数据字段中执行的函数。</param>
+        <summary>将数据字段添加到数据透视表中。 返回 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 一个代表新数据字段的对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -193,18 +181,16 @@
         <Parameter Name="AddToTable" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="RowFields">可选的<b>对象</b>。 指定字段名 （或字段名数组） 作为行添加或要添加到类别坐标轴。</param>
-        <param name="ColumnFields">可选的<b>对象</b>。 指定字段名 （或字段名数组） 要作为列添加或要添加到序列坐标轴。</param>
-        <param name="PageFields">可选的<b>对象</b>。 指定字段名 （或字段名数组） 要作为页添加或要添加到页区域。</param>
-        <param name="AddToTable">可选的<b>对象</b>。 仅适用于数据透视表报告。 <b>True</b>将指定的字段添加到报表 （无现有字段的替换）。 <b>False</b>用新的字段替换现有的字段。 默认值为 <b>False</b> 。</param>
+        <param name="RowFields">可选 <b>对象</b>。 指定要添加 (或要添加到分类轴的字段名称) 字段名称数组。</param>
+        <param name="ColumnFields">可选 <b>对象</b>。 指定要作为列 (或要添加到系列轴) 字段名称的字段名称数组。</param>
+        <param name="PageFields">可选 <b>对象</b>。 指定要添加为 (或要添加到页面区域中) 字段名称的字段名称或字段名称数组。</param>
+        <param name="AddToTable">可选 <b>对象</b>。 仅适用于数据透视表。 如果为 <b>True</b>，则将指定的字段添加到报表中（不替换现有字段）。 如果为 <b>False</b>，则用新的字段替换现有的字段。 默认值为 <b>False</b>。</param>
         <summary>向数据透视表或数据透视图中添加行字段、列字段和页字段。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>必须指定其中某个字段参数。</para>
-          <para>字段名指定由返回的唯一名称<see cref="P:Microsoft.Office.Interop.Excel.PivotField.SourceName" />属性<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />对象。</para>
+        <remarks><para>必须指定其中某个字段参数。</para>
+          <para>字段名称指定对象的属性 <see cref="P:Microsoft.Office.Interop.Excel.PivotField.SourceName" /> 返回的唯一 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 名称。</para>
           <para>这个方法对 OLAP 数据源不可用。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllocateChanges">
@@ -229,11 +215,8 @@
       <Parameters />
       <Docs>
         <summary>在基于 OLAP 数据源的数据透视表中的所有已编辑的单元格上执行回写操作。</summary>
-        <remarks>
-          <para>
-            <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.AllocateChanges" />方法将执行的自上次应用更改操作已提交，或更改从不如果提交应用创建数据透视表以来已执行以来进行的数据透视表值区域中的所有更改更新多维数据集语句。 如果数据透视表报表基于非 OLAP 数据源上执行，此方法将产生一个运行时错误。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>该方法将针对自上次提交应用更改操作以来，或在从未执行提交应用更改时创建数据透视表以来在数据透视表的值区域中进行的所有更改执行 <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.AllocateChanges" /> UPDATE CUBE 语句。 如果对基于非 OLAP 数据源的数据透视表执行此方法，那么将生成运行时错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Allocation">
@@ -262,15 +245,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlAllocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置是否运行<b>更新多维数据集</b>进行编辑的每个单元格的语句，或仅当用户选择基于 OLAP 数据源对数据透视表执行模拟分析时计算更改。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlAllocation" />对象。</value>
-        <remarks>
-          <para>为可读/写属性。</para>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Allocation" />属性对应于计算设置在模拟分析设置对话框中的更改。 默认设置是<see cref="F:Microsoft.Office.Interop.Excel.XlAllocation.xlManualAllocation" />，对应于手动 （时选择计算更改的数据透视表） 设置。</para>
-          <para></para>
-        </remarks>
+        <summary>获取或设置是编辑每个单元格的 <b>UPDATE CUBE</b> 语句，还是仅在用户选择在基于 OLAP 数据源对数据透视表执行按结果分析时计算更改时。</summary>
+        <value>对象 <see cref="T:Microsoft.Office.Interop.Excel.XlAllocation" /> 。</value>
+        <remarks><para>读/写。</para>
+          <para>该属性 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Allocation" /> 对应于"分析设置"对话框中的What-If更改设置。 默认设置为，对应于选择具有更改的数据透视表 (<see cref="F:Microsoft.Office.Interop.Excel.XlAllocation.xlManualAllocation" /> 手动) 设置。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllocationMethod">
@@ -299,15 +278,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlAllocationMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置什么方法用来在基于 OLAP 数据源的数据透视表执行模拟分析时分配值。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlAllocationMethod" />对象。</value>
-        <remarks>
-          <para>为可读/写属性。</para>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" />属性对应于模拟分析设置对话框中的分配方法设置。 默认设置是<see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlEqualAllocation" />，对应于等于分配设置。 如果<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" />属性设置为<see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlWeightedAllocation" />，其对应的加权分配设置，您可以选择指定加权表达式，用于通过设置<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" />属性。 如果您不指定加权表达式，等价于加权表达式&lt;的叶单元格值&gt; / &lt;现有值&gt;使用。</para>
-          <para></para>
-        </remarks>
+        <summary>获取或设置在基于 OLAP 数据源对数据透视表执行按结果分析时用于分配值的方法。</summary>
+        <value>对象 <see cref="T:Microsoft.Office.Interop.Excel.XlAllocationMethod" /> 。</value>
+        <remarks><para>读/写。</para>
+          <para>该属性 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" /> 对应于"分析设置"对话框中What-If方法设置。 默认设置为 <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlEqualAllocation" /> ，对应于"相等分配"设置。 如果该属性设置为 ，对应于加权分配设置，您可以选择通过设置该属性来指定 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" /> <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlWeightedAllocation" /> 使用的 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" /> 权重表达式。 如果不指定权重表达式，则使用与叶单元格值 &lt; &gt;  /  &lt; 现有值等效的 &gt; 权重表达式。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllocationValue">
@@ -336,15 +311,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlAllocationValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置要在基于 OLAP 数据源的数据透视表执行模拟分析时分配什么值。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlAllocationValue" />对象。</value>
-        <remarks>
-          <para>为可读/写属性。</para>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationValue" />属性对应于模拟分析设置对话框中的分配设置的值。 默认设置是<see cref="F:Microsoft.Office.Interop.Excel.XlAllocationValue.xlAllocateValue" />，对应于输入的值除以分配设置的数。</para>
-          <para></para>
-        </remarks>
+        <summary>获取或设置在基于 OLAP 数据源对数据透视表执行按结果分析时要分配的值。</summary>
+        <value>对象 <see cref="T:Microsoft.Office.Interop.Excel.XlAllocationValue" /> 。</value>
+        <remarks><para>读/写。</para>
+          <para>该属性 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationValue" /> 对应于"分析设置"对话框中What-If"分配值"设置。 默认设置是 <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationValue.xlAllocateValue" /> ，它对应于输入的值除以分配数设置。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllocationWeightExpression">
@@ -373,14 +344,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置在基于 OLAP 数据源的数据透视表执行模拟分析时要使用 MDX 表达式。</summary>
-        <value>要在基于 OLAP 数据源的数据透视表执行模拟分析时使用的 MDX 权重表达式。</value>
-        <remarks>
-          <para>为可读/写属性。</para>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" />属性对应于模拟分析设置对话框中的加权表达式设置。 之前<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" />属性进行设置，则必须设置<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" />属性设为<see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlWeightedAllocation" />。</para>
-          <para></para>
-        </remarks>
+        <summary>获取或设置在基于 OLAP 数据源对数据透视表执行按结果分析时使用的 MDX 加权表达式。</summary>
+        <value>对基于 OLAP 数据源的数据透视表执行按结果分析时使用的 MDX 加权表达式。</value>
+        <remarks><para>读/写。</para>
+          <para>该属性 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" /> 对应于"分析设置"对话框中的What-If表达式设置。 在 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" /> 该属性可以设置之前，必须将该属性 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" /> 设置为 <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlWeightedAllocation" /> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowMultipleFilters">
@@ -409,18 +377,14 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置或检索值，该值指示是否<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />可以同时于多个筛选器。
-为可读/写属性。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>默认值为 <b>False</b> 。</para>
-          <para>当此属性设置为<b>True</b>时，多个筛选器可以应用于单个<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />。 设置为<b>False</b>时, 应用筛选器<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />是已筛选的将删除现有的筛选器并应用新。
+        <summary>设置或检索一个值，该值指示 a <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 是否可以同时应用多个筛选器。
+读/写。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>默认值为 <b>False</b> 。</para>
+          <para>当此属性设置为 <b>True</b>时，多个筛选器可以应用于单个 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 。 设置为 <b>False</b>时，将筛选器应用于已筛选的筛选器将删除现有筛选器并 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 应用新筛选器。
 
-此属性设置为<b>False</b>时<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />具有多个筛选器应用将带有字段以无提示方式删除所有筛选器中的<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />而不显示任何警告。 但是，没有通知时这是通过用户界面。</para>
-          <para></para>
-        </remarks>
+如果应用了多个筛选器的字段，则此属性设置为 <b>False</b> 将静默删除所有筛选器，而不会 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />  显示任何警报。 但是通过用户界面删除筛选时，将显示警告。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AlternativeText">
@@ -449,13 +413,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置为指定数据透视表 （可选） 的描述性文本字符串。</summary>
-        <value>指定数据透视表 （可选） 的描述性文本字符串。</value>
-        <remarks>
-          <para>为可读/写属性。</para>
-          <para>值<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AlternativeText" />属性对应于数据透视表选项对话框的标题框替换文字选项卡中的值。</para>
-          <para></para>
-        </remarks>
+        <summary>获取或设置指定 (数据) 文本字符串的描述性参数。</summary>
+        <value>描述性 (指定) 数据透视表的文本字符串。</value>
+        <remarks><para>读/写。</para>
+          <para>该属性的值对应于数据透视表选项对话框的 Alt Text 选项卡上标题框中 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AlternativeText" /> 的值。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -481,7 +443,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -512,12 +474,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置数据透视表缓存的索引号。 可读写 <b>Integer</b>。</summary>
+        <summary>返回或设置数据透视表缓存的索引号。 <b>Integer</b> 型，可读/写。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果设置 <b>CacheIndex</b> 属性，以便于数据透视表使用第二张数据透视表的高速缓存，则第一个报表的字段必须是第二个报表中字段的有效子集。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果设置 <b>CacheIndex</b> 属性，以便于数据透视表使用第二张数据透视表的高速缓存，则第一个报表的字段必须是第二个报表中字段的有效子集。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CalculatedFields">
@@ -541,7 +501,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.CalculatedFields" />值，该值代表指定数据透视表报告中的所有计算的字段的集合。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.CalculatedFields" /> 一个集合，该集合代表指定数据透视表中所有计算字段。 只读。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -569,12 +529,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.CalculatedMembers</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" />集合表示 OLAP 数据透视表的所有计算的成员和计算度量值。</summary>
+        <summary>返回一个集合，该集合代表 OLAP 数据透视表的所有计算成员和计算 <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> 度量值。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>本属性用于联机分析处理 (OLAP) 源，非 OLAP 源将返回一个运行时错误。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>本属性用于联机分析处理 (OLAP) 源，非 OLAP 源将返回一个运行时错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CalculatedMembersInFilters">
@@ -603,16 +561,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置是否评估在筛选器中的 OLAP 服务器中的计算的成员。</summary>
-        <value>
-          <b>true</b>如果应在筛选器; 中计算 OLAP 服务器中的计算的成员否则为<b>false</b>。</value>
-        <remarks>
-          <para>为可读/写属性。</para>
-          <para>如果为
-            <b>true</b>筛选器; 计算计算的成员否则为<b>false</b>。</para>
-          <para>此属性的值对应的求值计算成员设置汇总上的筛选器复选框中的 OLAP 服务器中&amp;的数据透视表选项对话框的数据透视表报告的筛选器选项卡基于 OLAP 数据源。</para>
-          <para></para>
-        </remarks>
+        <summary>获取或设置是否在筛选器中计算 OLAP 服务器的计算成员。</summary>
+        <value><b>如此</b> 如果应在筛选器中评估 OLAP 服务器的计算成员;否则为 <b>false</b>。</value>
+        <remarks><para>读/写。</para>
+          <para>如果在筛选器中计算计算成员，则其值为
+            <b>true;</b>否则<b>为 false</b>。</para>
+          <para>此属性的值对应于基于 OLAP 数据源的数据透视表的数据透视表的"数据透视表选项"对话框的"总计筛选器"选项卡上"筛选器"复选框中来自 OLAP 服务器的 Evaluate 计算成员的设置。 &amp;</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChangeConnection">
@@ -638,13 +593,10 @@
         <Parameter Name="conn" Type="Microsoft.Office.Interop.Excel.WorkbookConnection" />
       </Parameters>
       <Docs>
-        <param name="conn">所需<see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />对象，表示的新连接<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。</param>
-        <summary>更改指定的连接<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。</summary>
-        <remarks>
-          <para>
-            <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangeConnection(Microsoft.Office.Interop.Excel.WorkbookConnection)" />方法仅可用于<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />，连接到外部数据源。 如果将发生运行时错误<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangeConnection(Microsoft.Office.Interop.Excel.WorkbookConnection)" />方法用于<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />使用存储在工作表作为其数据源上的数据。</para>
-          <para></para>
-        </remarks>
+        <param name="conn">必需 <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> 对象，该对象表示的新连接 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。</param>
+        <summary>更改指定 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 连接。</summary>
+        <remarks><para><see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangeConnection(Microsoft.Office.Interop.Excel.WorkbookConnection)" />该方法只能与连接到外部数据源的 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 数据源一同使用。 如果该方法与使用工作表上存储的数据作为数据源的方法一同使用，将 <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangeConnection(Microsoft.Office.Interop.Excel.WorkbookConnection)" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 发生运行时错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChangeList">
@@ -670,13 +622,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotTableChangeList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />基于 OLAP 数据源的集合，代表对指定数据透视表所做的更改的列表。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />基于 OLAP 数据源的集合，代表对指定数据透视表所做的更改的列表。</value>
-        <remarks>
-          <para>只读。</para>
-          <para></para>
-        </remarks>
+        <summary>获取一个集合，该集合代表基于 OLAP 数据源对指定数据透视表所做的更改 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> 的列表。</summary>
+        <value>该集合代表基于 OLAP 数据源对指定数据透视表所做的更改 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> 的列表。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChangePivotCache">
@@ -702,13 +651,10 @@
         <Parameter Name="PivotCache" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="PivotCache">所需<b>字符串</b><see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />或<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />对象，表示新<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />指定<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。</param>
-        <summary>更改<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />指定的<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。</summary>
-        <remarks>
-          <para>
-            <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangePivotCache(System.Object)" />方法仅可用于<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />使用存储在工作表作为其数据源上的数据。 如果将发生运行时错误<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangePivotCache(System.Object)" />方法用于<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />，连接到外部数据源。</para>
-          <para></para>
-        </remarks>
+        <param name="PivotCache">必需 <b>字符串</b> a <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 或 <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />  对象，表示 <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />  指定的新 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。</param>
+        <summary>更改 <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> 指定的 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。</summary>
+        <remarks><para>该方法只能与使用工作表上存储的数据作为数据源的一 <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangePivotCache(System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />  同使用。 如果该方法与连接到外部数据源的数据源一起使用，将 <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangePivotCache(System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 发生运行时错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearAllFilters">
@@ -732,12 +678,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ClearAllFilters" />方法删除当前应用于所有筛选器<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。 这包括删除中的所有筛选器<see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" />的集合<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />对象，删除任何应用手动筛选和设置所有<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s 为默认项报告筛选区域中的。</summary>
-        <remarks>
-          <para>之后调用<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ClearAllFilters" />方法，<see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" />集合将为空。</para>
-          <para></para>
-        </remarks>
+        <summary>该方法 <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ClearAllFilters" /> 删除当前应用于的所有筛选器 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。 这包括删除对象集合中所有的筛选器、删除应用的任何手动筛选，以及将"报告筛选"区域中的所有筛选器设置为 <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 默认项目。</summary>
+        <remarks><para>调用该方法 <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ClearAllFilters" /> 后， <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" /> 集合将为空。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearTable">
@@ -761,13 +704,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ClearTable" />方法用于交换<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。 清除<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s 包括所有字段中都移除并删除所有的筛选和排序应用于<see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />。 此方法重置<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />为状态它具有右创建后之前已向其添加任何字段。</summary>
-        <remarks>
-          <para>
-            <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ClearTable" />函数不采用任何参数，可用于关系和 OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s。 </para>
-          <para></para>
-        </remarks>
+        <summary><see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ClearTable" />该方法用于清除 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。 清除 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 包括删除所有字段以及删除应用于的所有筛选和排序 <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> 。 此方法在将任何字段添加到它之前，将重置为创建后的状态 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。</summary>
+        <remarks><para>该 <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ClearTable" /> 函数不采用任何参数，并且可用于关系和 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> OLAP。 </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ColumnFields">
@@ -796,8 +735,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">可选的<b>对象</b>。 字段的名称或编号（可为指定多个字段的数组）。</param>
-        <summary>返回一个 object 值，该值代表之一的单个数据透视表字段 (<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />对象) 或所有字段的集合 (<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />对象) 的当前显示为列字段。 只读。</summary>
+        <param name="Index">可选 <b>对象</b>。 字段的名称或编号（可为指定多个字段的数组）。</param>
+        <summary>返回一个对象，该对象代表对象 (数据透视表) 或当前显示为列字段 (对象) 字段 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> 的集合。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -828,7 +767,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果数据透视表显示列总计，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary><b>如此</b> 如果数据透视表显示列总计。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -856,7 +795,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，表示包含数据透视表报告中的列区域的区域。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 一个对象，该对象代表数据透视表中包含列区域的区域。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -882,12 +821,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>执行提交操作在基于 OLAP 数据源的数据透视表报告的数据源。</summary>
-        <remarks>
-          <para>
-            <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.CommitChanges" />方法将提交事务语句发送到 OLAP 服务器，并清除所有已编辑通过输入一个值，但不是会清除中的值单元格的公式的单元格。 如果数据透视表报表基于非 OLAP 数据源上执行，此方法将产生一个运行时错误。</para>
-          <para></para>
-        </remarks>
+        <summary>对基于 OLAP 数据源的数据透视表的数据源执行提交操作。</summary>
+        <remarks><para>该方法将 COMMIT TRANSACTION 语句发送到 OLAP 服务器，并清除通过输入值编辑的所有单元格，但不清除值单元格 <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.CommitChanges" /> 中的公式。 如果对基于非 OLAP 数据源的数据透视表执行此方法，那么将生成运行时错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CompactLayoutColumnHeader">
@@ -916,12 +852,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定标题的列标题中显示的<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />何时压缩行布局窗体中。 为可读/写属性。</summary>
+        <summary>指定在压缩行布局窗体中时在列标题 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 中显示的标题。 读/写。</summary>
         <value>String</value>
-        <remarks>
-          <para>用户在网格中自定义这些标题时，这些标题也会反映到这些属性中。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>用户在网格中自定义这些标题时，这些标题也会反映到这些属性中。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CompactLayoutRowHeader">
@@ -950,14 +884,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定的行标题中显示的标题<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />何时压缩行布局窗体中。 为可读/写属性。</summary>
-        <value>
-          <b>字符串</b>
-        </value>
-        <remarks>
-          <para>用户在网格中自定义这些标题时，这些标题也会反映到这些属性中。</para>
-          <para></para>
-        </remarks>
+        <summary>指定在压缩行布局窗体中时在行标题 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 中显示的标题。 读/写。</summary>
+        <value><b>字符串</b></value>
+        <remarks><para>用户在网格中自定义这些标题时，这些标题也会反映到这些属性中。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CompactRowIndent">
@@ -986,14 +916,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置的缩进增量<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />当启用压缩行布局表单。 为可读/写属性。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>默认值为 1。此设置的有效值为 0 到 Microsoft Excel 中指定的最大缩进。</para>
-          <para></para>
-        </remarks>
+        <summary>返回或设置打开压缩行布局窗体 <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> 时缩进增量。 读/写。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>默认值为 1。 此设置的有效值为 0 到 Microsoft Excel 中指定的最大缩进。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertToFormulas">
@@ -1019,13 +945,10 @@
         <Parameter Name="ConvertFilters" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="ConvertFilters">必需的<b>布尔值</b>包含<b>True</b>或<b>False</b>以指明 ReportFilter 区域的状态。</param>
-        <summary>
-          <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ConvertToFormulas(System.Boolean)" />方法在 1st_Excel12 中新增和用于转换<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />为多维数据集公式。</summary>
-        <remarks>
-          <para>此参数控制是否转换 ReportFilter 区域的<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。 </para>
-          <para></para>
-        </remarks>
+        <param name="ConvertFilters">必需 <b>布尔值</b> 包含 <b>True</b> 或 <b>False</b> 以指示 ReportFilter 区域的状态。</param>
+        <summary><see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ConvertToFormulas(System.Boolean)" />该方法是 1st_Excel12中的新增功能，用于将公式 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 转换为多维数据集公式。</summary>
+        <remarks><para>该参数控制是否转换的 ReportFilter 区域 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。 </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateCubeFile">
@@ -1054,11 +977,11 @@
         <Parameter Name="Properties" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="File">必需的 <b>字符串</b> 。 要创建的多维数据集文件的名称。 如果它已存在，它将覆盖该文件。</param>
-        <param name="Measures">可选的<b>对象</b>。 度量的唯一名称的数组，该度量是扇面的一部分。</param>
-        <param name="Levels">可选的<b>对象</b>。 字符串数组。 每个数组项是一个唯一的级别名称。 它表示扇面中的层次结构的最低级别。</param>
-        <param name="Members">可选的<b>对象</b>。 字符串数组的数组。 元素对应，到中表示的层次结构顺序<paramref name="Levels" />数组。 每个元素是维度中将包括切片中的顶级成员的唯一名称包含字符串数组的数组。</param>
-        <param name="Properties">可选属性，类型为 <b>Boolean</b>。 <b>False</b>结果中包括在扇面没有成员属性。 默认值为 <b>True</b> 。</param>
+        <param name="File">必需的 <b>字符串</b> 。 要创建的多维数据集文件的名称。 如果该文件已存在，则将被覆盖。</param>
+        <param name="Measures">可选 <b>对象</b>。 度量的唯一名称的数组，该度量是扇面的一部分。</param>
+        <param name="Levels">可选 <b>对象</b>。 字符串数组。 每个数组项都是一个唯一的级别名称。 该参数表示扇面中的层次结构的最低级别。</param>
+        <param name="Members">可选 <b>对象</b>。 字符串数组的数组。 元素顺序对应于数组中表示的 <paramref name="Levels" /> 层次结构。 每个元素都是字符串数组的一个数组，由维（包括在扇面中）中的最高级别成员的唯一名称组成。</param>
+        <param name="Properties">可选属性，类型为 <b>Boolean</b>。 如果该值为 <b>False</b>，则扇区中不包含成员属性。 默认值为 <b>True</b>。</param>
         <summary>创建数据透视表的多维数据集文件，该数据透视表与联机分析处理 (OLAP) 数据源相连接。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1087,13 +1010,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。 如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 只读<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</summary>
+        <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。 如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。 只读 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CubeFields">
@@ -1119,7 +1039,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.CubeFields</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.CubeFields" />集合。 每个<see cref="T:Microsoft.Office.Interop.Excel.CubeField" />对象包含多维数据集 field 元素的属性。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.CubeFields" /> 集合。 每个 <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> 对象都包含多维数据集字段元素的属性。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1147,7 +1067,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，表示包含在列表中的标题行之间插入行的数据区域的区域。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 一个对象，该对象代表标题行和插入行之间的列表中包含数据区域的区域。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1178,8 +1098,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">可选的<b>对象</b>。 字段的名称或编号（可为指定多个字段的数组）。</param>
-        <summary>返回一个 object 值，该值代表之一的单个数据透视表字段 (<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />对象) 或所有字段的集合 (<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />对象) 的当前显示为数据字段。 只读。</summary>
+        <param name="Index">可选 <b>对象</b>。 字段的名称或编号（可为指定多个字段的数组）。</param>
+        <summary>返回一个对象，该对象代表对象 (数据透视表) 或当前显示为数据字段 (对象) 所有字段 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> 的集合。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1207,7 +1127,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，表示包含数据透视表报告中的数据字段的标签的区域。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 一个对象，该对象代表包含数据透视表中数据字段的标签的范围。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1235,7 +1155,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />对象，它代表数据透视表中的所有数据字段。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 一个对象，该对象代表数据透视表中的所有数据字段。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1262,11 +1182,9 @@
       <Parameters />
       <Docs>
         <summary>放弃基于 OLAP 数据源的数据透视表中经过编辑的单元格中的所有更改。</summary>
-        <remarks>
-          <para>对于数据透视表报表基于 OLAP 数据源，该方法删除所有值和输入值单元格中的公式，，然后运行从数据源检索的最新值的数据透视表更新操作。 数据源值设置为空引用 (在 Visual Basic 中为 Nothing) 的所有值单元格的编辑，且还执行针对 OLAP 服务器的回滚事务语句。</para>
+        <remarks><para>对于基于 OLAP 数据源的数据透视表，此方法删除在值单元格中输入的所有值和公式，然后运行数据透视表更新操作从数据源中检索最新值。 它将编辑的所有值单元格的数据源值 (不为 Visual Basic) 中的空引用，并且还会对 OLAP 服务器执行 ROLLBACK TRANSACTION 语句。</para>
           <para>如果尝试对基于非 OLAP 数据源的数据透视表执行此方法，则会生成运行时错误。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayContextTooltips">
@@ -1295,14 +1213,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>控制是否显示工具提示<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />单元格。 为可读/写属性。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>如果<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DisplayContextTooltips" />设置为<b>False</b>，上下文的工具提示<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />将不会显示单元格。 如果它设置为<b>True</b>，工具提示的<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />将显示的行、 列和数据区域中的单元格。</para>
-          <para></para>
-        </remarks>
+        <summary>控制是否显示单元格的工具 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 提示。 读/写。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>如果 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DisplayContextTooltips" /> 设置为 <b>False，</b>将不会显示单元格的 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 上下文工具提示。 如果设置为 <b>True，</b>将显示行、列和数据区域单元格 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 的工具提示。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayEmptyColumn">
@@ -1331,12 +1245,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果对数值轴的 OLAP 提供程序的查询中包括非空 MDX 关键字，则返回 <b>True</b>。在结果集中，OLAP 提供程序不返回空列。如果省略非空关键字，则返回 <b>False</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果对数值轴的 OLAP 提供程序的查询中包括非空 MDX 关键字，则返回 <b>True</b>。 在结果集中，OLAP 提供程序不返回空列。 如果省略非空关键字，则返回 <b>False</b>。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>数据透视表必须与一个联机分析处理 (OLAP) 数据源相连，以避免运行时错误。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>数据透视表必须与一个联机分析处理 (OLAP) 数据源相连，以避免运行时错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayEmptyRow">
@@ -1365,12 +1277,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果对分类轴的 OLAP 提供程序的查询中包括非空 MDX 关键字，则返回 <b>True</b>。在结果集中，OLAP 提供程序不返回空行。如果省略非空关键字，则返回 <b>False</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果对分类轴的 OLAP 提供程序的查询中包括非空 MDX 关键字，则返回 <b>True</b>。 在结果集中，OLAP 提供程序不返回空行。 如果省略非空关键字，则返回 <b>False</b>。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>数据透视表必须与一个联机分析处理 (OLAP) 数据源相连，以避免运行时错误。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>数据透视表必须与一个联机分析处理 (OLAP) 数据源相连，以避免运行时错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayErrorString">
@@ -1399,13 +1309,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果数据透视表在有错误的单元格中显示用户自定义的错误字符串，则该值为 <b>True</b>。默认值为 <b>False</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果数据透视表在有错误的单元格中显示用户自定义的错误字符串，则该值为 <b>True</b>。 默认值为 <b>False</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ErrorString" />属性设置的自定义错误字符串。</para>
+        <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ErrorString" /> 该属性可设置自定义错误字符串。</para>
           <para>当透视处理计算字段时，该属性对于消除被零除错误尤其有用。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayFieldCaptions">
@@ -1434,14 +1342,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>控件是否筛选器按钮和<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />行和列标题显示在网格中。 为可读/写属性。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>默认值为 <b>True</b> 。</para>
-          <para></para>
-        </remarks>
+        <summary>控制是否在网格中显示筛选按钮以及行和 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 列的标题。 读/写。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>默认值为 <b>True</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayImmediateItems">
@@ -1470,7 +1374,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置 <b>Boolean</b>，用于指明当数据透视表的数据区域为空时，行和列区域中的项是否可见。如果该属性为 <b>False</b>，则当数据透视表的数据区域为空时，将隐藏行和列区域中的项。默认值为 <b>True</b>。</summary>
+        <summary>返回或设置 <b>Boolean</b>，用于指明当数据透视表的数据区域为空时，行和列区域中的项是否可见。 如果该属性为 <b>False</b>，则当数据透视表的数据区域为空时，将隐藏行和列区域中的项。 默认值为 <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1501,14 +1405,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>控制在工具提示中显示成员属性。 为可读/写属性。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>如果<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DisplayMemberPropertyTooltips" />设置为<b>False</b>，将在工具提示中显示属性的任何成员。 如果设置为<b>True</b>，则将在工具提示中显示成员属性。</para>
-          <para></para>
-        </remarks>
+        <summary>控制是否在工具提示中显示成员属性。 读/写。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>如果 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DisplayMemberPropertyTooltips" /> 设置为 <b>False，</b>则工具提示中不会显示任何成员属性。 如果它设置为 <b>True</b>，则将在工具提示中显示成员属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayNullString">
@@ -1537,12 +1437,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果数据透视表在包含空值的单元格中显示用户自定义的字符串，则该值为 <b>True</b>。默认值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果数据透视表在包含空值的单元格中显示用户自定义的字符串，则该值为 <b>True</b>。 默认值为 <b>True</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.NullString" />属性来设置自定义空字符串。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.NullString" /> 该属性可设置自定义 null 字符串。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DrillDown">
@@ -1567,9 +1465,9 @@
         <Parameter Name="PivotLine" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="PivotItem">从中执行向下的钻取的成员。</param>
-        <param name="PivotLine">操作开始成员所在的数据透视表中指定的行。 在不指定 PivotLine 的位置的情况下，将默认为顶部 PivotLine 成员的显示位置。</param>
-        <summary>使您能够向下钻取内 OLAP 数据或 PowerPivot 基于多维数据集层次结构。</summary>
+        <param name="PivotItem">从中执行向下钻取的成员。</param>
+        <param name="PivotLine">指定操作起始成员所在的数据透视表中的行。 如果未指定 PivotLine，则默认为显示成员的顶部 PivotLine。</param>
+        <summary>使您可以深入到基于 OLAP 或基于 PowerPivot多维数据集层次结构内的数据。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1597,9 +1495,9 @@
       </Parameters>
       <Docs>
         <param name="PivotItem">从中执行钻取操作的成员。</param>
-        <param name="CubeField">要深化到目标层次结构。</param>
-        <param name="PivotLine">操作开始成员所在的数据透视表中指定的行。 在不指定 PivotLine 的位置的情况下，将默认为顶部 PivotLine 成员的显示位置。</param>
-        <summary>使您能够钻取到 OLAP 内的位置或 PowerPivot 基于多维数据集层次结构。</summary>
+        <param name="CubeField">要深化到的目标层次结构。</param>
+        <param name="PivotLine">指定操作起始成员所在的数据透视表中的行。 如果未指定 PivotLine，则默认为显示成员的顶部 PivotLine。</param>
+        <summary>使您可以钻取到基于 OLAP 或基于 PowerPivot多维数据集层次结构中的位置。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1626,10 +1524,10 @@
         <Parameter Name="LevelUniqueName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="PivotItem">从中执行向上钻取的成员。</param>
-        <param name="PivotLine">操作开始成员所在的数据透视表中指定的行。 在不指定 PivotLine 的位置的情况下，将默认为顶部 PivotLine 成员的显示位置。</param>
-        <param name="LevelUniqueName">向上多级钻取目标。 如果未指定的默认操作未按下一个级别钻取。</param>
-        <summary>使您能够深入内 OLAP 数据或 PowerPivot 基于多维数据集层次结构。</summary>
+        <param name="PivotItem">执行向上钻取的成员。</param>
+        <param name="PivotLine">指定操作起始成员所在的数据透视表中的行。 如果未指定 PivotLine，则默认为显示成员的顶部 PivotLine。</param>
+        <param name="LevelUniqueName">多级深化的目标。 如果未指定，则默认操作为一级钻取。</param>
+        <summary>使您可以深入了解基于 OLAP 或基于 PowerPivot多维数据集层次结构内的数据。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1785,12 +1683,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为 <b>True</b>，则当用户覆盖数据透视表数据区域中的值时禁用警告。设置为 <b>True</b> 也可以使用户更改先前无法更改的数据值。默认值为 <b>False</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果为 <b>True</b>，则当用户覆盖数据透视表数据区域中的值时禁用警告。 设置为 <b>True</b> 也可以使用户更改先前无法更改的数据值。 默认值为 <b>False</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>在数据值上进行的任何编辑，在刷新时都将丢失。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>在数据值上进行的任何编辑，在刷新时都将丢失。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableDrilldown">
@@ -1819,13 +1715,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果启用“显示明细数据”，则该值为 <b>True</b>。默认值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果启用“显示明细数据”，则该值为 <b>True</b>。 默认值为 <b>True</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>为数据透视表设置该属性将对该表中的所有字段有效。</para>
+        <remarks><para>为数据透视表设置该属性将对该表中的所有字段有效。</para>
           <para>对于 OLAP 数据源，该属性值总是 <b>True</b>。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableFieldDialog">
@@ -1854,12 +1748,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果当用户双击数据透视表字段时，<b>“数据透视表字段”</b>对话框可用，则该属性值为 <b>True</b>。默认值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果当用户双击数据透视表字段时，<b>“数据透视表字段”</b>对话框可用，则该属性值为 <b>True</b>。 默认值为 <b>True</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>为数据透视表设置该属性将对该表中的所有字段有效。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>为数据透视表设置该属性将对该表中的所有字段有效。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableFieldList">
@@ -1888,8 +1780,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>False</b>可禁用对数据透视表中显示字段列表的能力。 如果字段列表已经显示它将消失。 默认值为 <b>True</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
+        <summary><b>如果为 False，</b> 则禁止显示数据透视表的字段列表。 如果已经显示字段列表，则该列表将消失。 默认值为 <b>True</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1920,12 +1811,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果“数据透视表向导”可用，则该属性值为 <b>True</b>。默认值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary><b>如此</b> 如果数据透视表向导可用。 默认值为 <b>True</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>在设置该属性时，字段井并不会显示在工作表上。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>在设置该属性时，字段井并不会显示在工作表上。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableWriteback">
@@ -1954,18 +1843,15 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置是否为指定数据透视表启用了写回数据源。</summary>
-        <value>启用指定数据透视表; 如果为<b>true</b>将写回数据源否则为<b>false</b>。 默认值为 <b>false</b> 。</value>
-        <remarks>
-          <para>为可读/写属性。</para>
-          <para>对于 OLAP 数据源，设置为<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" />属性设置为<b>true</b>到启用写回并禁用当用户覆盖值的数据透视表数据区域中的警报。 对于非 OLAP 数据源，设置<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" />属性设置为<b>true</b>支持写回在代码中，并且还允许用户更改之前无法更改的数据值。</para>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" />和<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" />属性<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />对象不能同时设置为<b>true</b> 。</para>
-          <para>如果<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" />属性设置为<b>true</b> ，然后<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" />属性设置为<b>true</b>，<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" />属性自动设置为<b>false</b> ，刷新数据透视表和数据值上进行的任何编辑都将丢失。</para>
-          <para>如果<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" />属性设置为<b>true</b> ，然后<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" />属性设置为<b>true</b>，<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" />属性自动设置为<b>false</b> ，不会刷新数据透视表，和还原数据源值。</para>
+        <summary>获取或设置是否对指定的数据透视表启用写回数据源。</summary>
+        <value><b>如果</b> 为指定的数据透视表启用了写回数据源，则其返回 true;否则为 <b>false</b>。 默认值为 <b>false</b>。</value>
+        <remarks><para>读/写。</para>
+          <para>对于 OLAP 数据源，将属性设置为 true 可启用写回，并禁用当用户覆盖数据透视表的数据区域中的值时 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> 发出警报。 <b></b> 对于非 OLAP 数据源，将该属性设置为 true 将启用代码写回，还允许用户更改以前无法更改 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> 的数据值。 <b></b></para>
+          <para>不能 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> 同时将对象的 and 属性 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> 设置为 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> <b>true。</b></para>
+          <para>如果该属性设置为 true，然后将该属性设置为 true，则该属性将自动设置为 false，刷新数据透视表，并且对数据值执行的任何编辑 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> 都会丢失。 <b></b></para>
+          <para>如果该属性设置为 true，然后将该属性设置为 true，则该属性将自动设置为 false，不刷新数据透视表，并还原 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> 数据源值。 <b></b></para>
           <para>对于非 OLAP 数据源，设置此属性将会生成运行时错误。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ErrorString">
@@ -1994,7 +1880,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置包含错误的单元格中显示的字符串时<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DisplayErrorString" />属性为<b>True</b>。 默认值为空字符串 ("")。 可读写 <b>String</b>。</summary>
+        <summary>返回或设置当属性为 True 时，在包含错误的 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DisplayErrorString" /> 单元格中显示的 <b>字符串</b>。 默认值为空字符串 ("")。 读/写 <b>String</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2025,15 +1911,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>控件中的字段的排序顺序<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />字段列表。 为可读/写属性。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>当此属性设置为<b>True</b>时，字段以升序排序。 当设置为<b>False</b>时，数据源顺序排序字段。 </para>
-          <para>不应用于<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />连接到 OLAP 数据源。</para>
-          <para></para>
-        </remarks>
+        <summary>控制字段列表中的字段的 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 排序顺序。 读/写。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>当此属性设置为 <b>True</b> 时，字段按升序顺序排序。 当它设置为 <b>False</b> 时，字段按数据源顺序排序。 </para>
+          <para>不适用于连接到 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> OLAP 数据源。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -2062,8 +1944,8 @@
         <Parameter Name="Format" Type="Microsoft.Office.Interop.Excel.XlPivotFormatType" />
       </Parameters>
       <Docs>
-        <param name="Format">所需<see cref="T:Microsoft.Office.Interop.Excel.XlPivotFormatType" />。 指定要应用于指定数据透视表的报表格式类型。</param>
-        <summary>将数据透视表设置为一种预定义的缩进、 非缩进，或交叉表格格式。</summary>
+        <param name="Format">必需 <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFormatType" /> 。 指定要应用于指定数据透视表的报表格式类型。</param>
+        <summary>将数据透视表设置为预定义的缩进格式、非缩进格式或交叉制表符格式之一。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2090,8 +1972,8 @@
         <Parameter Name="Name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name">必需的 <b>字符串</b> 。 介绍在数据透视表报告中，使用类似的语法的单个单元格<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.PivotSelect(System.String,Microsoft.Office.Interop.Excel.XlPTSelectionMode,System.Object)" />方法或中的数据透视表报表引用计算项公式。</param>
-        <summary>从指定的数据透视表单元格返回数据。</summary>
+        <param name="Name">必需的 <b>字符串</b> 。 使用与计算项目公式中方法或数据透视表引用类似的语法描述数据透视表中的 <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.PivotSelect(System.String,Microsoft.Office.Interop.Excel.XlPTSelectionMode,System.Object)" /> 单个单元格。</param>
+        <summary>从指定的数据透视表单元格中返回数据。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2146,35 +2028,35 @@
         <Parameter Name="Item14" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="DataField">可选的<b>对象</b>。 包含数据透视表数据的字段的名称。</param>
-        <param name="Field1">可选的<b>对象</b>。 数据透视表中的列或行字段的名称。</param>
-        <param name="Item1">可选的<b>对象</b>。 名称中的项目的<paramref name="Field1" />。</param>
-        <param name="Field2">可选的<b>对象</b>。 数据透视表中的列或行字段的名称。</param>
-        <param name="Item2">可选的<b>对象</b>。 名称中的项目的<paramref name="Field2" />。</param>
-        <param name="Field3">可选的<b>对象</b>。 数据透视表中的列或行字段的名称。</param>
-        <param name="Item3">可选的<b>对象</b>。 名称中的项目的<paramref name="Field3" />。</param>
-        <param name="Field4">可选的<b>对象</b>。 数据透视表中的列或行字段的名称。</param>
-        <param name="Item4">可选的<b>对象</b>。 名称中的项目的<paramref name="Field4" />。</param>
-        <param name="Field5">可选的<b>对象</b>。 数据透视表中的列或行字段的名称。</param>
-        <param name="Item5">可选的<b>对象</b>。 名称中的项目的<paramref name="Field5" />。</param>
-        <param name="Field6">可选的<b>对象</b>。 数据透视表中的列或行字段的名称。</param>
-        <param name="Item6">可选的<b>对象</b>。 名称中的项目的<paramref name="Field6" />。</param>
-        <param name="Field7">可选的<b>对象</b>。 数据透视表中的列或行字段的名称。</param>
-        <param name="Item7">可选的<b>对象</b>。 名称中的项目的<paramref name="Field7" />。</param>
-        <param name="Field8">可选的<b>对象</b>。 数据透视表中的列或行字段的名称。</param>
-        <param name="Item8">可选的<b>对象</b>。 名称中的项目的<paramref name="Field8" />。</param>
-        <param name="Field9">可选的<b>对象</b>。 数据透视表中的列或行字段的名称。</param>
-        <param name="Item9">可选的<b>对象</b>。 名称中的项目的<paramref name="Field9" />。</param>
-        <param name="Field10">可选的<b>对象</b>。 数据透视表中的列或行字段的名称。</param>
-        <param name="Item10">可选的<b>对象</b>。 名称中的项目的<paramref name="Field10" />。</param>
-        <param name="Field11">可选的<b>对象</b>。 数据透视表中的列或行字段的名称。</param>
-        <param name="Item11">可选的<b>对象</b>。 名称中的项目的<paramref name="Field11" />。</param>
-        <param name="Field12">可选的<b>对象</b>。 数据透视表中的列或行字段的名称。</param>
-        <param name="Item12">可选的<b>对象</b>。 名称中的项目的<paramref name="Field12" />。</param>
-        <param name="Field13">可选的<b>对象</b>。 数据透视表中的列或行字段的名称。</param>
-        <param name="Item13">可选的<b>对象</b>。 名称中的项目的<paramref name="Field13" />。</param>
-        <param name="Field14">可选的<b>对象</b>。 数据透视表中的列或行字段的名称。</param>
-        <param name="Item14">可选的<b>对象</b>。 名称中的项目的<paramref name="Field14" />。</param>
+        <param name="DataField">可选 <b>对象</b>。 包含数据透视表数据的字段的名称。</param>
+        <param name="Field1">可选 <b>对象</b>。 数据透视表中的列或行字段的名称。</param>
+        <param name="Item1">可选 <b>对象</b>。 中项目的名称 <paramref name="Field1" /> 。</param>
+        <param name="Field2">可选 <b>对象</b>。 数据透视表中的列或行字段的名称。</param>
+        <param name="Item2">可选 <b>对象</b>。 中项目的名称 <paramref name="Field2" /> 。</param>
+        <param name="Field3">可选 <b>对象</b>。 数据透视表中的列或行字段的名称。</param>
+        <param name="Item3">可选 <b>对象</b>。 中项目的名称 <paramref name="Field3" /> 。</param>
+        <param name="Field4">可选 <b>对象</b>。 数据透视表中的列或行字段的名称。</param>
+        <param name="Item4">可选 <b>对象</b>。 中项目的名称 <paramref name="Field4" /> 。</param>
+        <param name="Field5">可选 <b>对象</b>。 数据透视表中的列或行字段的名称。</param>
+        <param name="Item5">可选 <b>对象</b>。 中项目的名称 <paramref name="Field5" /> 。</param>
+        <param name="Field6">可选 <b>对象</b>。 数据透视表中的列或行字段的名称。</param>
+        <param name="Item6">可选 <b>对象</b>。 中项目的名称 <paramref name="Field6" /> 。</param>
+        <param name="Field7">可选 <b>对象</b>。 数据透视表中的列或行字段的名称。</param>
+        <param name="Item7">可选 <b>对象</b>。 中项目的名称 <paramref name="Field7" /> 。</param>
+        <param name="Field8">可选 <b>对象</b>。 数据透视表中的列或行字段的名称。</param>
+        <param name="Item8">可选 <b>对象</b>。 中项目的名称 <paramref name="Field8" /> 。</param>
+        <param name="Field9">可选 <b>对象</b>。 数据透视表中的列或行字段的名称。</param>
+        <param name="Item9">可选 <b>对象</b>。 中项目的名称 <paramref name="Field9" /> 。</param>
+        <param name="Field10">可选 <b>对象</b>。 数据透视表中的列或行字段的名称。</param>
+        <param name="Item10">可选 <b>对象</b>。 中项目的名称 <paramref name="Field10" /> 。</param>
+        <param name="Field11">可选 <b>对象</b>。 数据透视表中的列或行字段的名称。</param>
+        <param name="Item11">可选 <b>对象</b>。 中项目的名称 <paramref name="Field11" /> 。</param>
+        <param name="Field12">可选 <b>对象</b>。 数据透视表中的列或行字段的名称。</param>
+        <param name="Item12">可选 <b>对象</b>。 中项目的名称 <paramref name="Field12" /> 。</param>
+        <param name="Field13">可选 <b>对象</b>。 数据透视表中的列或行字段的名称。</param>
+        <param name="Item13">可选 <b>对象</b>。 中项目的名称 <paramref name="Field13" /> 。</param>
+        <param name="Field14">可选 <b>对象</b>。 数据透视表中的列或行字段的名称。</param>
+        <param name="Item14">可选 <b>对象</b>。 中项目的名称 <paramref name="Field14" /> 。</param>
         <summary>返回一个 <b>Range</b> 对象，该对象带有数据透视表中数据项的相关信息。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -2206,7 +2088,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置显示在指定数据透视表的总计列或行标题中的文本串标志。默认值为字符串“Grand Total”。<b>String</b> 类型，可读写。</summary>
+        <summary>返回或设置显示在指定数据透视表的总计列或行标题中的文本串标志。 默认值为字符串“Grand Total”。 读/写 <b>String</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2237,7 +2119,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>时刷新时就或者移动字段时，将自动格式数据透视表。 可读写 <b>Boolean</b>。</summary>
+        <summary><b>如果</b> 数据透视表在刷新或移动字段时自动设置格式，则其为 True。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2265,12 +2147,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>检查工作表级别中是否存在数据透视表。 <b>Boolean</b>(<b>bool</b> C# 中)。 只读</summary>
+        <summary>检查数据透视表是否存在于工作表级别。 <b>Boolean</b> (<b>bool</b> in C#) . 只读</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>当<b>Hidden</b>属性设置为<b>True</b>时，<b>数据透视表</b>对象隐藏工作表级别中。 当该属性设置为<b>False</b>时，数据透视表存在工作表上。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>当 <b>Hidden</b> 属性设置为 <b>True</b>时，数据透视 <b>表</b> 对象在工作表级别中处于隐藏状态。 当该属性设置为 <b>False</b>时，数据透视表位于工作表上。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HiddenFields">
@@ -2299,13 +2179,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">可选的<b>对象</b>。 指定要返回的字段的名称或编号（可以是指定多个字段的数组）。</param>
-        <summary>返回一个 object 值，该值代表之一的单个数据透视表字段 (<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />对象) 或所有字段的集合 (<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />对象) 的当前不显示为行、 列、 页或数据字段。 只读。</summary>
+        <param name="Index">可选 <b>对象</b>。 指定要返回的字段的名称或编号（可以是指定多个字段的数组）。</param>
+        <summary>返回一个对象，该对象代表单个数据透视表字段 (对象) 或对象 (中当前未显示为行、列、页或数据字段的所有字段) 集合。 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>对于 OLAP 数据源，该属性总返回一个空集合。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>对于 OLAP 数据源，该属性总返回一个空集合。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InGridDropZones">
@@ -2334,14 +2212,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>此属性用于切换网格中的拖放区域的<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />对象。  在某些情况下，它还会影响的布局<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。 为可读/写属性。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>当<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.InGridDropZones" />属性设置为<b>True</b>，网格中表示形式<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />与 Excel 2003 中是相同的。 当该属性设置为<b>False</b>时，没有网格中的拖放区域。 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />布局也会更改使用此属性。</para>
-          <para></para>
-        </remarks>
+        <summary>此属性用于切换对象的网格内拖放 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 区域。  在某些情况下，它还会影响的布局 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。 读/写。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>当该属性设置为 True 时，其网格内表示形式与 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.InGridDropZones" /> 在 Excel <b></b> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 2003 中相同。 当此属性设置为 <b>False</b> 时，不存在网格中的拖放区域。 布局 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 也会随此属性更改。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InnerDetail">
@@ -2370,12 +2244,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置的详细信息时，将显示的字段名称<see cref="P:Microsoft.Office.Interop.Excel.PivotItem.ShowDetail" />属性为<b>True</b>的最里层的行或列字段。 可读写 <b>String</b>。</summary>
+        <summary>返回或设置当最里层的行或列字段的属性为 True 时将显示为明细的 <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.ShowDetail" /> 字段的名称。 <b></b> 读/写 <b>String</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性不可用于 OLAP 数据源。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>该属性不可用于 OLAP 数据源。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LayoutRowDefault">
@@ -2404,15 +2276,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlLayoutRowType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>此属性指定的布局设置为<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />时添加到<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />第一次。 为可读/写属性。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlLayoutRowType" />
-        </value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlLayoutRowType" />可以是 xlCompactRow、 xlTabularRow 或 xlOutlineRow。</para>
-          <para></para>
-        </remarks>
+        <summary>此属性指定首次将布局设置添加到 <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 布局设置的时间。 读/写。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlLayoutRowType" /></value>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlLayoutRowType" /> 可以是 xlCompactRow、xlTabularRow 或 xlOutlineRow。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListFormulas">
@@ -2437,10 +2305,8 @@
       <Parameters />
       <Docs>
         <summary>在分离工作表上创建数据透视表的计算项和计算字段的列表。</summary>
-        <remarks>
-          <para>本方法对 OLAP 数据源无效。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>本方法对 OLAP 数据源无效。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -2469,10 +2335,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置一个<b>String</b>值，该值代表指定的正文中的左上角单元格<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。 为可读/写属性。</summary>
-        <value>
-          <b>字符串</b>
-        </value>
+        <summary>获取或设置一 <b>个</b> 字符串 ，表示指定的正文中的左上单元格 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。 读/写。</summary>
+        <value><b>字符串</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2502,12 +2366,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果数据透视表仅在用户请求时重新计算，则该值为 <b>True</b>。默认值为 <b>False</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果数据透视表仅在用户请求时重新计算，则该值为 <b>True</b>。 默认值为 <b>False</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>程序终止后立即此属性设置为<b>False</b> 。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>在程序终止后立即将此属性设置为<b>False。</b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MDX">
@@ -2533,12 +2395,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个指示将发送到提供程序以填充当前的数据透视表视图的 MDX （多维表达式） 的<b>字符串</b>。 只读。</summary>
+        <summary>返回一 <b>个</b> 字符串 ，指示 MDX (多维表达式) 将发送到提供程序以填充当前数据透视表视图。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>查询非联机分析处理 OLAP 数据透视表，或者当没有任何数据透视表视图 （无数据项） 时，此值将返回一个运行时错误。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>查询非联机分析处理 (OLAP) 数据透视表的此值，或者当没有数据透视表视图 (没有数据项) 时，将返回运行时错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MergeLabels">
@@ -2567,7 +2427,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果指定的数据透视表的外部行项、列项、分类汇总和总计标志使用合并单元格，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果指定的数据透视表的外部行项、列项、分类汇总和总计标志使用合并单元格，则该属性值为 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2629,7 +2489,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置时显示在包含空单元格的字符串值<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DisplayNullString" />属性为<b>True</b>。 默认值为空字符串 ("")。 可读写 <b>String</b>。</summary>
+        <summary>返回或设置当属性为 True 时，在包含空值的单元格 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DisplayNullString" /> 中显示的 <b>字符串</b>。 默认值为空字符串 ("")。 读/写 <b>String</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2660,7 +2520,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置在哪一页字段添加到数据透视表报表的布局的顺序。 可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlOrder" />常量： <b>xlDownThenOver</b>或<b>xlOverThenDown</b>。 采用默认常量是<b>xlDownThenOver</b>。 可读写 <b>Integer</b>。</summary>
+        <summary>返回或设置页字段在数据透视表布局上的顺序。 可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlOrder" /> <b>：xlDownThenOver</b> 或 <b>xlOverThenDown</b>。 默认常量是 <b>xlDownThenOver</b>。 <b>Integer</b> 型，可读/写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2691,14 +2551,12 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">可选的<b>对象</b>。 指定要返回的字段的名称或编号（可以是指定多个字段的数组）。</param>
-        <summary>返回一个 object 值，该值代表之一的单个数据透视表字段 (<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />对象) 或所有字段的集合 (<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />对象) 的当前显示作为页字段。 只读。</summary>
+        <param name="Index">可选 <b>对象</b>。 指定要返回的字段的名称或编号（可以是指定多个字段的数组）。</param>
+        <summary>返回一个对象，该对象 (一个数据透视表字段) 或一个当前 (页字段) <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 所有字段 <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> 的集合。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>一个层次只能包含一个页字段。</para>
+        <remarks><para>一个层次只能包含一个页字段。</para>
           <para>对基于数据透视表高速缓存的数据透视表而言，返回的数据透视表字段的集合反应了当前高速缓存中的内容。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageFieldStyle">
@@ -2727,12 +2585,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置用于边界页字段区域中的样式。默认值为 null 字符串（默认时无样式）。<b>String</b> 类型，可读写。</summary>
+        <summary>返回或设置用于边界页字段区域中的样式。 默认值为 null 字符串（默认时无样式）。 读/写 <b>String</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此样式用作背景区域的默认样式，并且在用户指定格式前起作用。当对某字段进行数据透视时，从页字段区域移到其他位置的单元格保留此样式。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>此样式用作背景区域的默认样式，并且在用户指定格式前起作用。当对某字段进行数据透视时，从页字段区域移到其他位置的单元格保留此样式。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageFieldWrapCount">
@@ -2761,7 +2617,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置在每个数据透视表报告中的行或列的页字段的数量。 可读写 <b>Integer</b>。</summary>
+        <summary>返回或设置数据透视表中每行或每列的页字段数目。 <b>Integer</b> 型，可读/写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2789,7 +2645,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，表示包含数据透视表报告中的页区域的区域。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 一个对象，该对象代表数据透视表中包含页区域的区域。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2817,7 +2673,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />仅表示单元格指定的数据透视表报告中包含页字段和项下拉列表的对象。</summary>
+        <summary>返回一个对象，该对象仅代表指定数据透视表中包含页字段和 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 项目下拉列表的单元格。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2845,7 +2701,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父对象。只读</summary>
+        <summary>返回指定对象的父对象。 只读</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2871,7 +2727,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />对象，表示指定数据透视表报表的缓存。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> 一个对象，该对象代表指定数据透视表的缓存。 只读。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2899,7 +2755,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Shape" />值，该值代表指定隐藏数据透视表报表的数据透视图独立的对象。 只读。</summary>
+        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 个对象，该对象代表指定隐藏数据透视表的独立数据透视图。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2927,10 +2783,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotAxis</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.PivotAxis" />对象，表示的整个列轴。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.PivotAxis" />
-        </value>
+        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.PivotAxis" /> 个对象，该对象代表整个列轴。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.PivotAxis" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2956,13 +2810,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">可选的<b>对象</b>。 要返回的字段的名称或编号。</param>
-        <summary>返回一个 object 值，该值代表之一的单个数据透视表字段 (<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />对象) 或可见和隐藏字段的集合 (<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />对象) 的数据透视表报告中。 只读。</summary>
+        <param name="Index">可选 <b>对象</b>。 要返回的字段的名称或编号。</param>
+        <summary>返回一个对象，该对象 (一个数据透视表字段) 或一个同时包含数据透视表 (数据透视表中) 可见字段和隐藏字段的集合。 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> 只读。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>对于 OLAP 数据源，有没有隐藏的字段的对象或返回的集合，反映了当前可见的内容。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>对于 OLAP 数据源，没有隐藏的字段，并且返回的对象或集合反映了当前可见的内容。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PivotFormulas">
@@ -2988,12 +2840,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotFormulas</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.PivotFormulas" />对象，表示为指定的公式集合<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />报告。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.PivotFormulas" /> 一个对象，该对象代表指定报表的公式 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 集合。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>对于 OLAP 数据源，该属性将返回一个空集合。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>对于 OLAP 数据源，该属性将返回一个空集合。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PivotRowAxis">
@@ -3019,10 +2869,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotAxis</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.PivotAxis" />代表整行 axis 对象。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.PivotAxis" />
-        </value>
+        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.PivotAxis" /> 个对象，该对象代表整个行轴。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.PivotAxis" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3050,14 +2898,12 @@
         <Parameter Name="UseStandardName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Name">必需的 <b>字符串</b> 。 标准数据透视表报表选择格式中的选择。</param>
-        <param name="Mode">可选<see cref="T:Microsoft.Office.Interop.Excel.XlPTSelectionMode" />。 指定结构化选择模式。</param>
-        <param name="UseStandardName">可选的<b>对象</b>。 如果为 <b>True</b>，则表示将在其他位置运行录制的宏。</param>
+        <param name="Name">必需的 <b>字符串</b> 。 所选内容，采用标准数据透视表选择格式。</param>
+        <param name="Mode">可选 <see cref="T:Microsoft.Office.Interop.Excel.XlPTSelectionMode" /> 。 指定结构化选择模式。</param>
+        <param name="UseStandardName">可选 <b>对象</b>。 如果为 <b>True</b>，则表示将在其他位置运行录制的宏。</param>
         <summary>选定数据透视表的一部分。</summary>
-        <remarks>
-          <para>只能使用指定模式来选择数据透视表中的相应项。例如，无法通过 <b>xlButton</b> 模式来选择数据和标志；同样，也无法通过 <b>xlDataOnly</b> 模式来选择按钮。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>只能使用指定模式来选择数据透视表中的相应项。 例如，无法通过 <b>xlButton</b> 模式来选择数据和标志；同样，也无法通过 <b>xlDataOnly</b> 模式来选择按钮。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PivotSelection">
@@ -3086,12 +2932,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>以标准数据透视表的选定区域格式返回或设置数据透视表的选定区域。<b>String</b> 类型，可读写。</summary>
+        <summary>以标准数据透视表的选定区域格式返回或设置数据透视表的选定区域。 读/写 <b>String</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>设置此属性等效于调用<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.PivotSelect(System.String,Microsoft.Office.Interop.Excel.XlPTSelectionMode,System.Object)" />方法与<paramref name="Mode" />参数设置为<b>xldataandlabel 时</b>。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>设置此属性等效于调用参数设置为 <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.PivotSelect(System.String,Microsoft.Office.Interop.Excel.XlPTSelectionMode,System.Object)" /> <paramref name="Mode" /> <b>xlDataAndLabel 的方法</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PivotSelectionStandard">
@@ -3120,13 +2964,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置用英语（美国）设置的标准数据透视表格式的数据透视表选定内容的 <b>String</b> 类型的数值。可读写。</summary>
+        <summary>返回或设置用英语（美国）设置的标准数据透视表格式的数据透视表选定内容的 <b>String</b> 类型的数值。 读/写。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Pivotselection</b>属性是"国际友好"而<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.PivotSelection" />属性不是。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>PivotSelectionStandard</b>属性是"国际友好"属性，而 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.PivotSelection" /> 该属性不是。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PivotTableWizard">
@@ -3166,23 +3007,26 @@
         <Parameter Name="Connection" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SourceType">可选<see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" />。 报告数据的源。</param>
-        <param name="SourceData">可选的<b>对象</b>。 新报表的数据。 可以是<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象、 数组的范围或一个文本常量，代表其他报表的名称。 对于外部数据库，<paramref name="SourceData" />是包含 SQL 查询字符串，其中每个元素是长度最多 255 个字符的字符串的数组。 您应使用<paramref name="Connection" />参数指定的 ODBC 连接字符串。 与早期版本的 Excel 的兼容性<paramref name="SourceData" />可以是一个两个元素的数组。 指定 ODBC 数据源的连接字符串的第一个元素。 第二个元素都是用来获取数据的 SQL 查询字符串。 如果指定<paramref name="SourceData" />，则还必须指定<paramref name="SourceType" />。 如果活动单元格位于<paramref name="SourceData" />范围，则必须指定<paramref name="TableDestination" />以及。</param>
-        <param name="TableDestination">可选的<b>对象</b>。 指定报表在工作表的位置的<b>Range</b>对象。 如果省略此参数，则报表将放置到活动单元格。</param>
-        <param name="TableName">可选的<b>对象</b>。 用于指定新报表名称的字符串。</param>
-        <param name="RowGrand">可选的<b>对象</b>。 						如果为 <b>True</b>，则显示报表中的行总计。</param>
-        <param name="ColumnGrand">可选的<b>对象</b>。 						如果为 <b>True</b>，则显示报表中的列总计。</param>
-        <param name="SaveData">可选的<b>对象</b>。 <b>True</b>保存报表数据。 <b>False</b>可保存仅报告定义。</param>
-        <param name="HasAutoFormat">可选的<b>对象</b>。 						如果为 <b>True</b>，当刷新报表或移动字段时，Microsoft Excel 将自动设置其格式。</param>
-        <param name="AutoPage">可选的<b>对象</b>。 有效才<paramref name="SourceType" />是<b>xlConsolidation</b>。 <b>True</b>已创建的合并页字段的 Microsoft Excel。 如果<paramref name="AutoPage" />是<b>False</b>，您必须创建的页字段。</param>
-        <param name="Reserved">可选的<b>对象</b>。 不在 Microsoft Excel 中使用。</param>
-        <param name="BackgroundQuery">可选的<b>对象</b>。 <b>True</b>以让 Excel 报表异步 （在后台） 执行查询。 默认值为 <b>False</b> 。</param>
-        <param name="OptimizeCache">可选的<b>对象</b>。 <b>True</b>构造时优化数据透视表缓存。 默认值为 <b>False</b> 。</param>
-        <param name="PageFieldOrder">可选的<b>对象</b>。 在哪一页字段添加到数据透视表报表的布局的顺序。 可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlOrder" />常量： <b>xlDownThenOver</b>或<b>xlOverThenDown</b>。 默认值是<b>xlDownThenOver</b>。</param>
-        <param name="PageFieldWrapCount">可选的<b>对象</b>。 每个列中的页字段或数据透视表报告中的行数。 默认值为 0（零）。</param>
-        <param name="ReadData">可选的<b>对象</b>。 <b>True</b>以创建包含从外部数据库; 所有记录的数据透视表缓存此缓存可能会非常大。 如果<paramref name="ReadData" />是<b>False</b>，您可以设置某些字段为基于服务器的页字段之前实际读取数据。</param>
-        <param name="Connection">可选的<b>对象</b>。 一个字符串，包含允许 Excel 连接到 ODBC 数据源的 ODBC 设置。 连接字符串有窗体"ODBC;&lt;连接字符串&gt;"。 此参数覆盖任何以前设置<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />对象的<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" />属性。</param>
-        <summary>创建<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />对象。 此方法才会显示数据透视表向导。 此方法不可用于 OLE DB 数据源。 使用<see cref="M:Microsoft.Office.Interop.Excel.PivotTables.Add(Microsoft.Office.Interop.Excel.PivotCache,System.Object,System.Object,System.Object,System.Object)" />方法，以添加数据透视表缓存，然后创建数据透视表报告基于该缓存。</summary>
+        <param name="SourceType">可选 <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> 。 报告数据源。</param>
+        <param name="SourceData">可选 <b>对象</b>。 新报告的数据。 可以是对象、区域数组或代表其他报表名称的文本 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 常量。 对于外部数据库，是一个字符串数组，其中包含 SQL 查询字符串，其中每个元素的长度最多 <paramref name="SourceData" /> 为 255 个字符。 您应使用该 <paramref name="Connection" /> 参数指定 ODBC 连接字符串。 为了与早期版本的 Excel 兼容，可以是 <paramref name="SourceData" /> 一个双元素数组。 第一个元素是指定数据的 ODBC 源的连接字符串。 第二个元素是SQL数据所使用的查询字符串。 如果指定 <paramref name="SourceData" /> ，则还必须指定 <paramref name="SourceType" /> 。 如果活动单元格位于该 <paramref name="SourceData" /> 范围内，则还必须 <paramref name="TableDestination" /> 指定。</param>
+        <param name="TableDestination">可选 <b>对象</b>。 一个 <b>Range</b> 对象，它指定报表在工作表中的位置。 如果省略此参数，则将报表置于活动单元格中。</param>
+        <param name="TableName">可选 <b>对象</b>。 用于指定新报表名称的字符串。</param>
+        <param name="RowGrand">可选 <b>对象</b>。 
+						如果为 <b>True</b>，则显示报表中的行总计。</param>
+        <param name="ColumnGrand">可选 <b>对象</b>。 
+						如果为 <b>True</b>，则显示报表中的列总计。</param>
+        <param name="SaveData">可选 <b>对象</b>。 如果为 <b>True</b>，则保存报表中的数据。 如果为 <b>False</b>，则仅保存报表的定义。</param>
+        <param name="HasAutoFormat">可选 <b>对象</b>。 
+						如果为 <b>True</b>，当刷新报表或移动字段时，Microsoft Excel 将自动设置其格式。</param>
+        <param name="AutoPage">可选 <b>对象</b>。 仅在 <paramref name="SourceType" /> <b>xlConsolidation 时有效</b>。 如果值为 <b>True</b>，Microsoft Excel 将为合并创建页字段。 如果 <paramref name="AutoPage" /> 为 <b>False，</b>则必须创建页字段。</param>
+        <param name="Reserved">可选 <b>对象</b>。 不在 Microsoft Excel 中使用。</param>
+        <param name="BackgroundQuery">可选 <b>对象</b>。 如果为 <b>True</b>，则 Excel 将异步执行（后台执行）报表查询。 默认值为 <b>False</b>。</param>
+        <param name="OptimizeCache">可选 <b>对象</b>。 如果为 <b>True</b>，则在构造数据透视表的缓存时对其进行优化。 默认值为 <b>False</b>。</param>
+        <param name="PageFieldOrder">可选 <b>对象</b>。 在数据透视表布局中添加页字段的顺序。 可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlOrder" /> <b>：xlDownThenOver</b> 或 <b>xlOverThenDown</b>。 默认值为 <b>xlDownThenOver</b>。</param>
+        <param name="PageFieldWrapCount">可选 <b>对象</b>。 数据透视表中每列或每行的页字段数。 默认值为 0（零）。</param>
+        <param name="ReadData">可选 <b>对象</b>。 如果为 <b>True</b>，则创建数据透视表缓存以包含外部数据库中的所有记录；此时缓存可能会很大。 如果为 False，可以在实际读取数据之前将某些字段设置为基于 <paramref name="ReadData" /> 服务器的页字段。 <b></b></param>
+        <param name="Connection">可选 <b>对象</b>。 包含 ODBC 设置的字符串，这些设置使得 Excel 可以连接 ODBC 数据源。 连接字符串的形式为"ODBC; &lt;连接字符串 &gt; "。 此参数会覆盖对象属性之前 <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> 的任何 <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> 设置。</param>
+        <summary>创建对象 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。 此方法不显示数据透视表向导。 此方法对 OLE DB 数据源不可用。 使用 <see cref="M:Microsoft.Office.Interop.Excel.PivotTables.Add(Microsoft.Office.Interop.Excel.PivotCache,System.Object,System.Object,System.Object,System.Object)" /> 该方法可添加数据透视表缓存，然后基于缓存创建数据透视表。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3209,9 +3053,9 @@
         <Parameter Name="columnline" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="rowline">如果的类型<b>PivotLine</b>，在与对齐<b>PivotValueCell</b>行区域中指定<b>PivotLine</b> 。 如果的类型<b>Int</b>，然后与对齐<b>PivotValueCell</b>行区域上指定<b>PivotLine</b>的位置。 如果缺少，为空，Null，或 0 指定总计行。</param>
-        <param name="columnline">如果类型<b>PivotLine</b>的<b>PivotValueCell</b>与列区域中指定<b>PivotLine</b> 。 如果的类型<b>Int</b>，然后<b>PivotValueCell</b>与列区域上指定<b>PivotLine</b>的位置。 如果缺少，则为空，Null 或 0，指定总计列。</param>
-        <summary>检索<see cref="T:Microsoft.Office.Interop.Excel.PivotValueCell" />对象的给定数据透视表提供特定行和列的索引。</summary>
+        <param name="rowline">如果为<b>PivotLine 类型</b>，则指定<b>PivotValueCell</b>所对齐的行区域中的<b>PivotLine。</b> 如果类型 <b>为 Int，</b>则指定 <b>PivotLine</b> 在 <b>PivotValueCell</b> 所对齐的行区域上的位置。 如果缺少，空、Null 或 0 指定总计行。</param>
+        <param name="columnline">如果类型 <b>为 PivotLine，</b>则指定 <b>PivotValueCell</b> 与列区域中的 <b>PivotLine</b> 对齐。 如果类型 <b>为 Int，</b>则指定 <b>PivotLine</b> 在 <b>PivotValueCell</b> 所对齐的列区域上的位置。 如果缺少空、Null 或 0，则指定总计列。</param>
+        <summary>检索 <see cref="T:Microsoft.Office.Interop.Excel.PivotValueCell" /> 给定数据透视表的对象，该对象提供特定的行和列索引。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3242,7 +3086,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>此属性为<b>True</b>如果格式时保留对报表进行刷新或重新计算的操作，例如数据透视、 排序或更改页字段项。 可读写 <b>Boolean</b>。</summary>
+        <summary>如果通过透视、排序或更改页字段项等操作刷新或重新计算报表时保留格式，则此属性为<b>True。</b> 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3273,15 +3117,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定是否与打印深化指示符<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。 为可读/写属性。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>返回<b>True</b> ，如果深化指示符的打印<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />，则返回<b>False</b> ，如果深化指示符的不打印<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。</para>
-          <para>当<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowDrillIndicators" />属性设置为<b>False</b><see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowDrillIndicators" />属性不起作用。 当中不显示不打印深化指示符<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。</para>
-          <para></para>
-        </remarks>
+        <summary>指定是否使用 . <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 读/写。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>如果<b>打印</b>钻取指示符时返回 True，如果钻取指示符没有与打印一起打印，则返回 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> <b>False。</b> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /></para>
+          <para>当 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowDrillIndicators" /> 该属性设置为 <b>False</b>时， <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowDrillIndicators" /> 该属性不起作用。 当钻取指示器未显示在中时，不会打印它们 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintTitles">
@@ -3310,13 +3150,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果基于数据透视表设置工作表的打印标题，则该属性值为 <b>True</b>。如果使用工作表的打印标题，则该属性值为 <b>False</b>。默认值为 <b>False</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果基于数据透视表设置工作表的打印标题，则该属性值为 <b>True</b>。 如果使用工作表的打印标题，则该属性值为 <b>False</b>。 默认值为 <b>False</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>行打印标题设置为包含数据透视表的列字段项的行。列打印标题设置为包含行项目的列。</para>
-          <para>数据透视表必须是唯一打印区域中。 若要设置数据透视表的缩进的格式，使用<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.Format(Microsoft.Office.Interop.Excel.XlPivotFormatType)" />方法。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>行打印标题设置为包含数据透视表的列字段项的行。列打印标题设置为包含行项目的列。</para>
+          <para>数据透视表必须是打印区域中的唯一数据透视表。 若要为数据透视表设置缩进格式，请使用 <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.Format(Microsoft.Office.Interop.Excel.XlPivotFormatType)" /> 该方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshDataSourceValues">
@@ -3340,13 +3178,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>针对处于回写模式的数据透视表中的所有已编辑的单元格，从数据源中检索当前值。</summary>
-        <remarks>
-          <para>若要确定数据透视表是否处于回写模式，请查看<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" />或<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" />属性<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />对象，其中任一将返回 True。 对于不处于回写模式的数据透视表报表，尝试执行此方法将生成运行时错误。</para>
-          <para>对于 OLAP 数据源，执行的数据透视表报表<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.RefreshDataSourceValues" />方法创建一个单独的连接到 OLAP 服务器，并执行完整的 MDX 查询 (的值<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.MDX" /> 属性），用于执行更新操作填充数据透视表。 Excel 中提取返回在数据透视表视图中，已编辑的所有单元格的值，然后将其存储<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" />属性对这些单元格。</para>
+        <summary>为处于回写模式的数据透视表中所有编辑过的单元格，从数据源检索当前值。</summary>
+        <remarks><para>若要确定数据透视表是否位于写回模式下，请检查对象的或属性，其中任一属性 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 将返回 True。 对于不处于回写模式的数据透视表，尝试执行此方法将会生成运行时错误。</para>
+          <para>对于具有 OLAP 数据源的数据透视表，执行该方法将创建与 OLAP 服务器的单独连接，并执行完整的 MDX 查询 (值 <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.RefreshDataSourceValues" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.MDX" /> 属性) 用于执行更新操作以填充数据透视表。 Excel 提取为数据透视表视图中已编辑的所有单元格返回的值，然后将这些值存储在这些 <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> 单元格的属性中。</para>
           <para>此方法仅适用于使用 OLAP 数据源的数据透视表。尝试对使用非 OLAP 数据源的数据透视表执行此方法将会生成运行时错误。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshDate">
@@ -3372,12 +3208,10 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回最近一次刷新数据透视表的日期。 只读的<b>DateTime</b>。</summary>
+        <summary>返回数据透视表或缓存最近一次刷新的日期。 只读的 <b>DateTime</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>对于 OLAP 数据源，在每次查询后都会更新此属性。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>对于 OLAP 数据源，在每次查询后都会更新此属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshName">
@@ -3403,12 +3237,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回最近一次刷新数据透视表或数据透视表缓存的人员的名称。 只读 <b>String</b>。</summary>
+        <summary>返回上次刷新数据透视表数据或数据透视表缓存的人的姓名。 只读 <b>String</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>对于 OLAP 数据源，在每次查询后都会更新此属性。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>对于 OLAP 数据源，在每次查询后都会更新此属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshTable">
@@ -3432,7 +3264,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>用源数据刷新数据透视表。如果成功，则该值为 <b>True</b>。</summary>
+        <summary>用源数据刷新数据透视表。 如果成功，则该值为 <b>True</b>。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3460,13 +3292,11 @@
         <Parameter Name="Repeat" Type="Microsoft.Office.Interop.Excel.XlPivotFieldRepeatLabels" />
       </Parameters>
       <Docs>
-        <param name="Repeat">指定在指定的数据透视表中是否为所有 PivotField 重复项目标签。</param>
-        <summary>设置是否为指定数据透视表中的所有透视字段重复项目标签。</summary>
-        <remarks>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.RepeatAllLabels(Microsoft.Office.Interop.Excel.XlPivotFieldRepeatLabels)" />方法对应于在报表布局下拉列表的数据透视表工具设计选项卡上重复所有项目标签和执行不重复项目标签命令。</para>
-          <para>若要指定是否为单个 PivotField 重复项目标签，请使用<see cref="P:Microsoft.Office.Interop.Excel.PivotField.RepeatLabels" />属性。</para>
-          <para></para>
-        </remarks>
+        <param name="Repeat">指定是否要对指定数据透视表中的所有透视字段重复项目标签。</param>
+        <summary>设置是否对指定数据透视表中的所有数据透视字段重复项目标签。</summary>
+        <remarks><para>使用该方法对应于"数据透视表工具设计"选项卡的"报表布局"下拉列表上的"重复所有项目标签"和"不重复项目标签" <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.RepeatAllLabels(Microsoft.Office.Interop.Excel.XlPivotFieldRepeatLabels)" /> 命令。</para>
+          <para>若要指定是否对单个透视字段重复项目标签，请使用 <see cref="P:Microsoft.Office.Interop.Excel.PivotField.RepeatLabels" /> 该属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RepeatItemsOnEachPrintedPage">
@@ -3495,13 +3325,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当打印指定的数据透视表时，如果每页第一行上都显示行、列和项标志，则该值为 <b>True</b>。如果仅在第一页上打印这些标志，则该值为 <b>False</b>。默认值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>当打印指定的数据透视表时，如果每页第一行上都显示行、列和项标志，则该值为 <b>True</b>。 如果仅在第一页上打印这些标志，则该值为 <b>False</b>。 默认值为 <b>True</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>数据透视表必须是唯一打印区域中。 若要设置数据透视表的缩进的格式，使用<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.Format(Microsoft.Office.Interop.Excel.XlPivotFormatType)" />方法。</para>
-          <para>Microsoft Excel 打印代替设置工作表的任何打印标题行和列标签。 使用<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.PrintTitles" />属性可以确定是否打印标题设置数据透视表。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>数据透视表必须是打印区域中的唯一数据透视表。 若要为数据透视表设置缩进格式，请使用 <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.Format(Microsoft.Office.Interop.Excel.XlPivotFormatType)" /> 该方法。</para>
+          <para>对于工作表，Microsoft Excel 打印行和列标签，而不是打印标题。 使用 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.PrintTitles" /> 该属性可确定是否为数据透视表设置了打印标题。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RowAxisLayout">
@@ -3527,12 +3355,10 @@
         <Parameter Name="RowLayout" Type="Microsoft.Office.Interop.Excel.XlLayoutRowType" />
       </Parameters>
       <Docs>
-        <param name="RowLayout">所需<see cref="T:Microsoft.Office.Interop.Excel.XlLayoutRowType" />可以是<b>xlCompactRow</b>、 <b>xlTabularRow</b>或<b>xlOutlineRow</b>。</param>
-        <summary>此方法用于同时设置为所有现有的版式选项<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s。</summary>
-        <remarks>
-          <para>此方法是原子，因此它可确保如果不能在任何上设置版式选项<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />，将更改的任何字段的布局选项以及对进行任何更改<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。</para>
-          <para></para>
-        </remarks>
+        <param name="RowLayout">必需 <see cref="T:Microsoft.Office.Interop.Excel.XlLayoutRowType" /> 项可以是<b>xlCompactRow</b> <b>、xlTabularRow</b>或<b>xlOutlineRow。</b></param>
+        <summary>此方法用于同时设置所有现有布局选项 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 。</summary>
+        <remarks><para>此方法是原子的，因此它确保如果无法在任何字段上设置布局选项，则任何字段的布局选项都不会改变，并且不会对 。 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RowFields">
@@ -3561,8 +3387,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">可选的<b>对象</b>。 指定要返回的字段的名称或编号（可以是指定多个字段的数组）。</param>
-        <summary>数据透视表报告中返回一个对象，表示单个字段 (<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />对象) 或所有字段的集合 (<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />对象) 的当前显示为行字段。 只读。</summary>
+        <param name="Index">可选 <b>对象</b>。 指定要返回的字段的名称或编号（可以是指定多个字段的数组）。</param>
+        <summary>返回一个对象，该对象代表数据透视表中的单个字段 (对象) 或当前 (行字段) 对象的所有字段的集合。 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3593,7 +3419,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果数据透视表显示行的总数，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary><b>如此</b> 如果数据透视表显示行总计。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3621,7 +3447,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，它代表包括在数据透视表的行区域的区域。 只读。</summary>
+        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 个对象，该对象代表数据透视表上包括行区域的区域。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3652,12 +3478,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果数据透视表的数据随工作簿一起保存，则为 <b>True</b>。如果仅保存数据透视表的定义，则为 <b>False</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果数据透视表的数据随工作簿一起保存，则为 <b>True</b>。 如果仅保存数据透视表的定义，则为 <b>False</b>。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>对于 OLAP 数据源，此属性始终设置为 <b>False</b>。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>对于 OLAP 数据源，此属性始终设置为 <b>False</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionMode">
@@ -3686,12 +3510,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPTSelectionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置数据透视表报告结构化的选择模式。 读/写<see cref="T:Microsoft.Office.Interop.Excel.XlPTSelectionMode" />。</summary>
+        <summary>返回或设置数据透视表的结构化选择模式。 读/写 <see cref="T:Microsoft.Office.Interop.Excel.XlPTSelectionMode" /> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果数据透视表字段不是分级显示的，则指定任意常量与 <b>xlFirstRow</b> 的和将等价于单独指定该常量。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果数据透视表字段不是分级显示的，则指定任意常量与 <b>xlFirstRow</b> 的和将等价于单独指定该常量。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowCellBackgroundFromOLAP">
@@ -3726,13 +3548,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果 Microsoft Excel 将发送到服务器的 MDX （多维表达式） 包括<see cref="P:Microsoft.Office.Interop.Excel.ChartFillFormat.BackColor" />属性对应于的单元格中联机分析处理 (OLAP) 数据集数据区域中的每个单元格。 默认值为 <b>False</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
+        <summary><b></b>如此 如果 Microsoft Excel 发送到服务器的 MDX (多维表达式) 包括数据区域中对应于联机分析处理 (OLAP) 数据集中的单元格 <see cref="P:Microsoft.Office.Interop.Excel.ChartFillFormat.BackColor" /> 的属性。 默认值为 <b>False</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 OLAP 数据集返回<b>BackColor</b>属性值，则会将单元格的填充颜色设置为最接近的工作表的 Microsoft Excel 的调色板中颜色。 如果用户应用手动到单元格格式的单元格图案，它将覆盖 OLAP 数据集的所有格式。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果 OLAP 数据集返回 <b>BackColor</b> 属性值，则单元格填充颜色将设置为该工作表的 Microsoft Excel 调色板中最接近的颜色。 如果用户手动将单元格模式格式应用于单元格，则它将覆盖 OLAP 数据集的任何格式。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowDrillIndicators">
@@ -3761,15 +3580,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowDrillIndicators" />属性用于切换的深化指示符中显示<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。 为可读/写属性。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>返回<b>True</b> ，如果深化指示符显示在<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />，则返回<b>False</b> ，如果深化指示符未显示在<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。 </para>
-          <para></para>
-        </remarks>
+        <summary><see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowDrillIndicators" />该属性用于切换钻取指示器在中的显示 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。 读/写。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>如果钻取指示器显示在中，则返回<b>True;</b>如果钻取指示器未显示在中，则返回 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> <b>False。</b> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowPageMultipleItemLabel">
@@ -3798,7 +3612,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为 <b>True</b>（默认），那么只要隐藏了项，并且在数据透视表视图中显示非隐藏项的总计，“( 多个项目 )”将显示在工作表的数据透视表单元格中。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果为 <b>True</b>（默认），那么只要隐藏了项，并且在数据透视表视图中显示非隐藏项的总计，“( 多个项目 )”将显示在工作表的数据透视表单元格中。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3825,13 +3639,11 @@
         <Parameter Name="PageField" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="PageField">可选的<b>对象</b>。 命名报表中单个页字段的字符串。</param>
-        <summary>为页字段中的每个数据项创建新的数据透视表。每个新报表都创建在新的工作表上。</summary>
+        <param name="PageField">可选 <b>对象</b>。 命名报表中单个页字段的字符串。</param>
+        <summary>为页字段中的每个数据项创建新的数据透视表。 每个新报表都创建在新的工作表上。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>本方法对 OLAP 数据源无效。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>本方法对 OLAP 数据源无效。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowTableStyleColumnHeaders">
@@ -3860,8 +3672,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowTableStyleColumnHeaders" />属性设置为 True，如果 coulmn 标头应显示在<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。 为可读/写属性。</summary>
+        <summary>如果 coulmn 标头应显示在中，则该属性设置为 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowTableStyleColumnHeaders" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> True。 读/写。</summary>
         <value>Boolean</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3892,7 +3703,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>布尔值属性显示其偶数列奇数列中的格式不同的条带的列。 这使得<see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />更容易阅读。 为可读/写属性。</summary>
+        <summary>Boolean 属性显示带形列，其中偶数列的格式与奇数列不同。 这样 <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> 更易于阅读。 读/写。</summary>
         <value>Boolean</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3924,7 +3735,7 @@
       </ReturnValue>
       <Docs>
         <summary>仅供内部使用。</summary>
-        <value>返回<see cref="T:System.Boolean" />。</value>
+        <value>返回 <see cref="T:System.Boolean" /> 。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3954,8 +3765,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowTableStyleRowHeaders" />属性设置为 True，如果行标头应显示在<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。 为可读/写属性。</summary>
+        <summary>如果行标题应显示在中，则该属性设置为 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowTableStyleRowHeaders" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> True。 读/写。</summary>
         <value>Boolean</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3986,8 +3796,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowTableStyleRowStripes" />属性显示其偶数行从奇数行的格式不同的带状的行。 这使得<see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />更容易阅读。 为可读/写属性。</summary>
+        <summary>该属性 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowTableStyleRowStripes" /> 显示带区行，其中偶数行的格式与奇数行的格式不同。 这样 <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> 更易于阅读。 读/写。</summary>
         <value>Boolean</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4019,13 +3828,10 @@
       </ReturnValue>
       <Docs>
         <summary>获取或设置是否显示值行。</summary>
-        <value>
-          <b>true</b>如果显示值行，则否则为<b>false</b>。</value>
-        <remarks>
-          <para>为可读/写属性。</para>
+        <value><b>如此</b> 如果显示值行;否则为 <b>false</b>。</value>
+        <remarks><para>读/写。</para>
           <para>此属性对应于“数据透视表选项”对话框的“显示”选项卡上的“显示值行”复选框的设置。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Slicers">
@@ -4051,14 +3857,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Slicers</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Excel.Slicers" />指定数据透视表的集合。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Slicers" />指定数据透视表的集合。</value>
-        <remarks>
-          <para>只读。</para>
-          <para>可以使用切片器筛选数据透视表报告中的数据。 <see cref="T:Microsoft.Office.Interop.Excel.Slicers" />集合包含<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />对象表示与指定的数据透视表关联的切片器。</para>
-          <para></para>
-        </remarks>
+        <summary>获取 <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> 指定数据透视表的集合。</summary>
+        <value>指定 <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> 数据透视表的集合。</value>
+        <remarks><para>只读。</para>
+          <para>切片器可用于筛选数据透视表中的数据。 该 <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> 集合包含表示与指定数据透视表关联的 <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> 切片器的对象。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SmallGrid">
@@ -4087,12 +3890,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果 Microsoft Excel 为新建的数据透视表使用一个具有两个单元格宽度和两个单元格高度的网格，则该值为 <b>True</b>。如果 Excel 使用一个空白模板边框，则该值为 <b>False</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果 Microsoft Excel 为新建的数据透视表使用一个具有两个单元格宽度和两个单元格高度的网格，则该值为 <b>True</b>。 如果 Excel 使用一个空白模板边框，则该值为 <b>False</b>。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>应使用模板边框。使用网格的目的仅是为了与早期版本的 Excel 兼容。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>应使用模板边框。 使用网格的目的仅是为了与早期版本的 Excel 兼容。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SortUsingCustomLists">
@@ -4121,15 +3922,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.SortUsingCustomLists" />属性控制是否用于自定义列表的项目进行排序字段，同时最初时<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />初始化和<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />按其标题; 排序和更高版本时用户应用排序。 为可读/写属性。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>将此属性设置为 <b>False</b> 可优化具有多个项的字段的性能，并且它还允许不需要基于自定义列表排序的用户避免基于自定义列表进行排序。</para>
-          <para></para>
-        </remarks>
+        <summary>该属性控制自定义列表是否用于对字段的项进行排序，最初是在初始化字段时，还是按标题进行排序;稍后在用户应用 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.SortUsingCustomLists" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 排序时 <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> 。 读/写。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>将此属性设置为 <b>False</b> 可优化具有多个项的字段的性能，并且它还允许不需要基于自定义列表排序的用户避免基于自定义列表进行排序。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceData">
@@ -4158,10 +3954,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回数据透视表的数据源。 读写<b>对象</b>。</summary>
+        <summary>返回数据透视表的数据源。 读/写 <b>对象</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>返回的值取决于数据源，如下所示：</para>
+        <remarks><para>返回的值取决于数据源，如下所示：</para>
           <list type="table">
             <item>
               <term>Microsoft Excel 列表或数据库</term>
@@ -4169,7 +3964,7 @@
             </item>
             <item>
               <term>外部数据源</term>
-              <description>数组。 每个行作为查询字符串，细分为 255 个字符段包含的剩余元素的 SQL 连接字符串。</description>
+              <description>数组。 每一行包含一SQL连接字符串，其余元素作为查询字符串，细分为 255 个字符的段。</description>
             </item>
             <item>
               <term>多个合并区域</term>
@@ -4181,8 +3976,7 @@
             </item>
           </list>
           <para>该属性不可用于 OLE DB 数据源。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SubtotalHiddenPageItems">
@@ -4211,12 +4005,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果在行或列的分类汇总、块汇总和总计中包括数据透视表中的隐藏页字段项，则该值为 <b>True</b>。默认值为 <b>False</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果在行或列的分类汇总、块汇总和总计中包括数据透视表中的隐藏页字段项，则该值为 <b>True</b>。 默认值为 <b>False</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>对于 OLAP 数据源，该属性值总是 <b>True</b>。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>对于 OLAP 数据源，该属性值总是 <b>True</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SubtotalLocation">
@@ -4242,13 +4034,10 @@
         <Parameter Name="Location" Type="Microsoft.Office.Interop.Excel.XlSubtototalLocationType" />
       </Parameters>
       <Docs>
-        <param name="Location">所需<see cref="T:Microsoft.Office.Interop.Excel.XlSubtototalLocationType" />可以是<b>xlattop，</b>也<b>xlAtBottom</b>。</param>
-        <summary>此方法可更改所有现有的分类汇总位置<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />。 更改分类汇总位置具有直接的视觉效果，仅对字段大纲形式，但它将被设置为字段以表格形式以及。</summary>
-        <remarks>
-          <para>
-            <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.SubtotalLocation(Microsoft.Office.Interop.Excel.XlSubtototalLocationType)" />方法设置<see cref="P:Microsoft.Office.Interop.Excel.PivotField.LayoutSubtotalLocation" />为所有现有属性<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s 自动。</para>
-          <para></para>
-        </remarks>
+        <param name="Location">必需 <see cref="T:Microsoft.Office.Interop.Excel.XlSubtototalLocationType" /> 项可以是 <b>xlAtTop</b> 或 <b>xlAtBottom</b>。</param>
+        <summary>此方法更改所有现有汇总位置 <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> 。 更改分类汇总位置仅对大纲形式的字段产生直接的视觉效果，但是也会对表格形式的字段设置该方法。</summary>
+        <remarks><para><see cref="M:Microsoft.Office.Interop.Excel.PivotTable.SubtotalLocation(Microsoft.Office.Interop.Excel.XlSubtototalLocationType)" />该方法自动 <see cref="P:Microsoft.Office.Interop.Excel.PivotField.LayoutSubtotalLocation" /> 设置所有现有 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 属性的属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Summary">
@@ -4277,13 +4066,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置指定数据透视表相关联的可选文本字符串的说明。</summary>
-        <value>指定数据透视表关联的可选文本字符串的说明。</value>
-        <remarks>
-          <para>为可读/写属性。</para>
-          <para>值<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Summary" />属性对应于数据透视表选项对话框的可选文字选项卡上的说明框中的值。</para>
-          <para></para>
-        </remarks>
+        <summary>获取或设置与指定数据透视表的可选文本字符串相关联的说明。</summary>
+        <value>与指定数据透视表的可选文本字符串关联的说明。</value>
+        <remarks><para>读/写。</para>
+          <para>该属性的值对应于数据透视表选项对话框的"可选文字"选项卡上"说明"框中 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Summary" /> 的值。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TableRange1">
@@ -4309,13 +4096,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，它代表区域包含整个数据透视表，但不包括页字段。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 一个对象，该对象代表包含整个数据透视表但不包括页字段的范围。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableRange2" />属性包括页字段。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>该属性 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableRange2" /> 包括页字段。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TableRange2">
@@ -4341,13 +4125,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，表示包含整个数据透视表，包括页字段的范围。 只读。</summary>
+        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 个对象，该对象代表包含整个数据透视表（包括页字段）的范围。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableRange1" />属性不包括页字段。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableRange1" />该属性不包括页字段。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TableStyle">
@@ -4382,12 +4163,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置数据透视表在正文中使用的样式。 默认值为空字符串 （默认情况下应用无样式）。 可读写 <b>String</b>。</summary>
+        <summary>返回或设置数据透视表的正文中使用的样式。 默认值为 null 字符串（默认时无样式）。 读/写 <b>String</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>该样式用于作为默认样式的背景区域，并应用任何用户格式之前。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>此样式用作背景区域的默认样式，并且在用户指定格式前起作用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TableStyle2">
@@ -4416,15 +4195,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableStyle2" />属性指定<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />当前应用于样式<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。 为可读/写属性。</summary>
-        <value>
-          <b>对象</b>
-        </value>
-        <remarks>
-          <para>该属性称为<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableStyle2" />因为没有现有属性名为<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableStyle" />。</para>
-          <para></para>
-        </remarks>
+        <summary>该属性 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableStyle2" /> 指定当前 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 应用于的样式 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。 读/写。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>由于存在一 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableStyle2" /> 个名为 "."的现有属性，因此调用该属性 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableStyle" /> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Tag">
@@ -4453,7 +4227,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置与数据透视表一起保存的字符串。<b>String</b> 类型，可读写。</summary>
+        <summary>返回或设置与数据透视表一起保存的字符串。 读/写 <b>String</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4484,13 +4258,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果在基于 OLAP 数据源的指定数据透视表中，每个分类汇总和总计旁都显示有星号 (*)，则该值为 <b>True</b>。默认值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果在基于 OLAP 数据源的指定数据透视表中，每个分类汇总和总计旁都显示有星号 (*)，则该值为 <b>True</b>。 默认值为 <b>True</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>当本属性设置为 <b>True</b> 时，星号表示汇总中包含隐藏项。而无论报表中是否隐藏了任何项，星号都会出现。</para>
+        <remarks><para>当本属性设置为 <b>True</b> 时，星号表示汇总中包含隐藏项。 而无论报表中是否隐藏了任何项，星号都会出现。</para>
           <para>对于非 OLAP 数据源，该属性的值总为 <b>False</b>。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -4514,7 +4286,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>更新链接表或数据透视表。</summary>
+        <summary>更新链接或数据透视表。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4544,7 +4316,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置当数据透视表刷新时，应用于空单元格的样式。默认值为无效字符串。（默认状态下没有样式应用）。<b>String</b> 类型，可读写。</summary>
+        <summary>返回或设置应用于刷新数据透视表时空出单元格的样式。 默认值为 null 字符串（默认时无样式）。 读/写 <b>String</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4575,7 +4347,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>数据透视表的名称。 可读写 <b>String</b>。</summary>
+        <summary>数据透视表的名称。 读/写 <b>String</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4603,7 +4375,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotTableVersionList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 Microsoft Excel 版本号。 只读<see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableVersionList" />。</summary>
+        <summary>返回 Microsoft Excel 版本号。 只读 <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableVersionList" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4634,7 +4406,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果设置为 <b>True</b>（默认），则可以查看联机分析处理 (OLAP) 数据透视表的计算成员。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果设置为 <b>True</b>（默认），则可以查看联机分析处理 (OLAP) 数据透视表的计算成员。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4665,13 +4437,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">可选的<b>对象</b>。 指定要返回的字段的名称或编号（可以是指定多个字段的数组）。</param>
-        <summary>数据透视表报告中返回一个对象，表示单个字段 (<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />对象) 或所有可见字段的集合 (<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />对象)。 可见字段显示为行、 列、 页或数据字段。 只读。</summary>
+        <param name="Index">可选 <b>对象</b>。 指定要返回的字段的名称或编号（可以是指定多个字段的数组）。</param>
+        <summary>返回一个对象，该对象代表数据透视表中的单个字段 (一个对象) 或对象集中 (<see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> 所有) 。 可见字段显示为行、列、页或数据字段。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>对于 OLAP 数据源存在不隐藏的字段，并在数据透视表缓存，此属性返回的所有字段。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>对于 OLAP 数据源，没有隐藏的字段，此属性返回数据透视表缓存中所有字段。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VisualTotals">
@@ -4700,15 +4470,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>（默认） 启用联机分析处理 (OLAP) 数据透视表项已从视图中隐藏后，重新计算总。 可读写 <b>Boolean</b>。</summary>
+        <summary><b>True</b> (默认值) 启用联机分析处理 (OLAP) 数据透视表重新计算从视图中隐藏项目后总计。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>在非 OLAP 数据透视表中，如果隐藏了项目，则将重新进行汇总以只反映数据透视表中剩余的可见项目。在 OLAP 数据透视表中，汇总将在服务器上进行，因此无论数据透视表中是否隐藏了项目，都不会影响汇总。但是，如果 OLAP 数据透视表的 <b>VisualTotals</b> 属性为 <b>False</b>，那么 OLAP 数据透视表的结果将与非 OLAP 数据透视表的结果相匹配。</para>
+        <remarks><para>在非 OLAP 数据透视表中，如果隐藏了项目，则将重新进行汇总以只反映数据透视表中剩余的可见项目。 在 OLAP 数据透视表中，汇总将在服务器上进行，因此无论数据透视表中是否隐藏了项目，都不会影响汇总。 但是，如果 OLAP 数据透视表的 <b>VisualTotals</b> 属性为 <b>False</b>，那么 OLAP 数据透视表的结果将与非 OLAP 数据透视表的结果相匹配。</para>
           <para>对于 OLAP 数据透视表，将 <b>VisualTotals</b> 属性设置为 <b>True</b>（默认值）时，其工作方式与非 OLAP 数据透视表中描述的一样。</para>
-          <para>为所有新数据透视表的<b>VisualTotals</b>属性返回<b>True</b> 。 但是，如果当前版本的 Microsoft Excel 中打开工作簿，具有已在以前版本的 Excel 中创建数据透视表的<b>VisualTotals</b>属性将返回<b>False</b>。</para>
-          <para></para>
-        </remarks>
+          <para>所有新的数据透视表的 <b>VisualTotals</b> 属性返回 <b>True</b>。 但是，如果在当前版本的 Microsoft Excel 中打开工作簿，并且已在以前版本的 Excel 中创建数据透视表<b>，VisualTotals</b>属性将返回<b>False。</b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VisualTotalsForSets">
@@ -4737,16 +4504,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置是否包括过滤为指定数据透视表命名集的汇总中的项。</summary>
-        <value>
-          <b>true</b>如果过滤为指定数据透视表命名集的汇总中的项都包含;否则为<b>false</b>。 默认值为<b>false</b></value>
-        <remarks>
-          <para>为可读/写属性。</para>
-          <para>如果为
-            <b>true</b>的命名集; 汇总中包含筛选的项目否则为<b>false</b>。 此属性的默认值为<b>false</b>。</para>
-          <para>在基于 OLAP 数据源的数据透视表，您可以配置是否汇总在数据透视表命名集将包括已筛选的项目。 设置<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.VisualTotalsForSets" />属性对应于组上汇总的汇总复选框中包含筛选项目&amp;数据透视表选项对话框的筛选器选项卡。</para>
-          <para></para>
-        </remarks>
+        <summary>获取或设置是否将筛选的项目包括在指定数据透视表的命名集总数中。</summary>
+        <value>如果包含指定数据透视表的命名集总数中的筛选项，则其值为<b>true;</b>否则为<b>false</b>。 默认值为 <b>false</b></value>
+        <remarks><para>读/写。</para>
+          <para>
+            <b>如此</b> 如果已筛选的项目包含在命名集的总计中;否则 <b>为 false</b>。 此属性的默认值为 <b>false</b>。</para>
+          <para>在基于 OLAP 数据源的数据透视表中，可配置数据透视表中命名集的总计是否将包含已筛选的项目。 该属性的设置对应于"数据透视表选项"对话框的"总计筛选器"选项卡上的"在集合总计中包括筛选的项目 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.VisualTotalsForSets" /> &amp; "复选框。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
