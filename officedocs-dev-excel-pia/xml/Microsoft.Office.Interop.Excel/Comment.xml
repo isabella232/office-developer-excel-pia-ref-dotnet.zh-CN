@@ -1,13 +1,5 @@
 <Type Name="Comment" FullName="Microsoft.Office.Interop.Excel.Comment">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="aee055e9a2656dedc02e66bab44aba17d315d4f9" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20585846" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Comment" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="aee055e9a2656dedc02e66bab44aba17d315d4f9" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003981" /></Metadata><TypeSignature Language="C#" Value="public interface Comment" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Comment" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Comment" />
   <TypeSignature Language="VB.NET" Value="Public Interface Comment" />
@@ -30,14 +22,11 @@
   </Attributes>
   <Docs>
     <summary>代表单元格批注。</summary>
-    <remarks>
-      <para>
-        <b>Comment</b>对象是成员<see cref="T:Microsoft.Office.Interop.Excel.Comments" />集合。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Excel.Range.Comment" />属性返回一个<b>Comment</b>对象。</para>
-      <para>使用<b>注释</b>(<paramref name="index" />)，其中<paramref name="index" />是注释编号，从<b>Comments</b>集合中返回的单个注释。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Excel.Range.AddComment(System.Object)" />方法，以将注释添加到区域。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Comment <b></b>对象是集合的 <see cref="T:Microsoft.Office.Interop.Excel.Comments" /> 一个成员。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Excel.Range.Comment" /> 该属性可返回 <b>Comment</b> 对象。</para>
+      <para>使用 <b>注释</b> <paramref name="index" /> () ，其中注释 <paramref name="index" /> 编号，返回注释 集合 <b>中的单个</b> 注释。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.Range.AddComment(System.Object)" /> 该方法向区域添加注释。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -63,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,12 +110,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -175,12 +161,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Comment" />对象，表示下一条批注。</summary>
+        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.Comment" /> 个对象，该对象代表下一个批注。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>本方法仅对单张工作表有效。对工作表中最后一条批注使用本方法可返回 <b>Null</b>（不是下一张工作表的第一条批注）。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>本方法仅对单张工作表有效。 对工作表中最后一条批注使用本方法可返回 <b>Null</b>（不是下一张工作表的第一条批注）。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -232,12 +216,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Comment" />对象，表示上一批注。</summary>
+        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.Comment" /> 个代表上一批注的对象。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>本方法仅对单张工作表有效。对工作表中第一条批注使用本方法可返回 <b>Null</b>（不是前一张工作表的最后一条批注）。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>本方法仅对单张工作表有效。 对工作表中第一条批注使用本方法可返回 <b>Null</b>（不是前一张工作表的最后一条批注）。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shape">
@@ -263,7 +245,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象代表形状附加到指定的注释。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 一个对象，该对象代表附加到指定批注的形状。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -292,9 +274,9 @@
         <Parameter Name="Overwrite" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Text">可选的<b>对象</b>。 要添加的文本。</param>
-        <param name="Start">可选的<b>对象</b>。 添加的文本的放置位置字符数。 如果省略此参数，则将删除任何已有文本的注释中。</param>
-        <param name="Overwrite">可选的<b>对象</b>。 <b>True</b>以覆盖现有文本。 默认值为<b>False</b> （插入文本）。</param>
+        <param name="Text">可选 <b>对象</b>。 要添加的文本。</param>
+        <param name="Start">可选 <b>对象</b>。 所添加文本的起始位置（字符数）。 如果省略此参数，则删除批注中的所有现有文字。</param>
+        <param name="Overwrite">可选 <b>对象</b>。 如果为 <b>True</b>，则覆盖现有文件。 默认值是 <b>False</b>（插入文本）。</param>
         <summary>设置批注文本。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -326,7 +308,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定对象是否可见。</summary>
+        <summary>决定对象是否可见。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

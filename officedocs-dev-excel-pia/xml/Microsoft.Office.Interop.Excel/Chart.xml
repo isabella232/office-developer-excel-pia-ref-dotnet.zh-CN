@@ -1,13 +1,5 @@
 <Type Name="Chart" FullName="Microsoft.Office.Interop.Excel.Chart">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="27bd453c5b6413f47df900780ebfd03d3cabd7c6" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20577152" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Chart : Microsoft.Office.Interop.Excel._Chart, Microsoft.Office.Interop.Excel.ChartEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="27bd453c5b6413f47df900780ebfd03d3cabd7c6" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50004254" /></Metadata><TypeSignature Language="C#" Value="public interface Chart : Microsoft.Office.Interop.Excel._Chart, Microsoft.Office.Interop.Excel.ChartEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Chart implements class Microsoft.Office.Interop.Excel._Chart, class Microsoft.Office.Interop.Excel.ChartEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Chart" />
   <TypeSignature Language="VB.NET" Value="Public Interface Chart&#xA;Implements _Chart, ChartEvents_Event" />
@@ -33,44 +25,39 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表工作簿中的图表。 图表可以是嵌入的图表 (包含在<see cref="T:Microsoft.Office.Interop.Excel.ChartObject" />) 或单独的图表工作表。</summary>
-    <remarks>
-      <para>这是.NET 接口派生的互操作性与相应的 COM 对象的托管代码需要 COM coclass。 使用此派生的接口访问 COM 对象的所有方法、 属性和事件的成员。 但是，如果方法或想要使用的事件共享相同的名称相同的 COM 对象下，强制转换为相应的主接口调用方法，并强制转换为最新的事件接口，连接到该事件。 请参阅本主题的 COM 对象有关的信息。 有关 COM 对象的方法和属性成员的信息，请参阅<see cref="T:Microsoft.Office.Interop.Excel._Chart" />。</para>
-      <para>以下属性用于返回<see cref="T:Microsoft.Office.Interop.Excel.Chart" />对象本节中所述：</para>
+    <summary>代表工作簿中的图表。 该图表可以是嵌入的图表 (包含在图表) <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> 或单独的图表工作表中。</summary>
+    <remarks><para>这是派生自 COM Coclass（托管代码要求此 Coclass 来实现与相应的 COM 对象的互操作性）的 .NET 接口。 使用此派生的接口来访问所有方法、属性和 COM 对象的事件成员。 但是，如果您想要使用的方法或事件共享同一名称并且位于相同的 COM 对象下，请转换为相应的主接口以调用该方法，并转换为最新的事件接口以连接到该事件。 参考此主题以获取有关 COM 对象的信息。 有关 COM 对象的方法和属性成员的信息，请参阅 <see cref="T:Microsoft.Office.Interop.Excel._Chart" /> 。</para>
+      <para>本节将介绍以下用于返回 <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> 对象的属性：</para>
       <list type="bullet">
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel.ChartObject.Chart" />属性</description>
+            <see cref="P:Microsoft.Office.Interop.Excel.ChartObject.Chart" /> property</description>
         </item>
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" />属性</description>
+            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" /> property</description>
         </item>
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" />属性</description>
+            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" /> property</description>
         </item>
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" />属性</description>
+            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" /> property</description>
         </item>
       </list>
       <para>Chart 属性</para>
-      <para>
-        <b>Chart</b>属性用于返回<b>Chart</b>对象，表示包含在<b>ChartObject</b>对象的图表。</para>
+      <para>使用 <b>Chart</b> 属性可返回 <b>一个 Chart</b> 对象，该对象代表 <b>ChartObject</b> 对象中包含的图表。</para>
       <para>Charts 属性</para>
-      <para>
-        <see cref="T:Microsoft.Office.Interop.Excel.Charts" />集合包含为每个工作簿中的图表工作表的<b>图表</b>对象。 使用<b>图表</b>(<paramref name="index" />)，其中<paramref name="index" />是图表工作表的索引号或名称，可返回单个<b>图表</b>对象。</para>
-      <para>图表索引号表示图表工作表在工作簿标签栏上的位置。 所有图表工作表都包含在索引计数中，即使它们隐藏的。 图表工作表名称时显示工作簿选项卡的图表。 您可以使用<see cref="P:Microsoft.Office.Interop.Excel._Chart.Name" />属性来设置或返回图表名称。</para>
-      <para>
-        <b>Chart</b>对象也是成员的<see cref="T:Microsoft.Office.Interop.Excel.Sheets" />集合。 <b>Sheets</b>集合包含工作簿 （图表工作表和工作表） 中的所有工作表。 使用<b>工作表</b>(<paramref name="index" />)，其中<paramref name="index" />是工作表的索引号或名称，可返回一个工作表。</para>
+      <para>该 <see cref="T:Microsoft.Office.Interop.Excel.Charts" /> 集合包含工作簿中每个图表工作表的 <b>Chart</b> 对象。 使用 <b>图表</b> () 图表工作表索引号或名称，返回 <paramref name="index" /> <paramref name="index" /> 单个 <b>Chart</b> 对象。</para>
+      <para>图表索引号表示图表工作表在工作簿标签栏上的位置。 所有图表工作表都包含在索引计数中，即使它们处于隐藏状态。 图表工作表名称显示在图表的工作簿选项卡上。 可以使用该属性 <see cref="P:Microsoft.Office.Interop.Excel._Chart.Name" /> 设置或返回图表名称。</para>
+      <para><b>Chart</b>对象也是集合的 <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> 一个成员。 <b>Sheets</b> 集合包含工作簿中所有的工作表（图表工作表和工作表）。 使用 <b>工作表</b> <paramref name="index" /> () ，其中工作表索引号或名称， <paramref name="index" /> 返回单个工作表。</para>
       <para>ActiveChart 属性</para>
-      <para>如果图表是活动对象，可以使用 <b>ActiveChart</b> 属性引用它。 图表工作表处于活动状态，如果用户已选择或已使用激活<see cref="M:Microsoft.Office.Interop.Excel._Chart.Activate" />方法。</para>
-      <para>内嵌的图表处于活动状态，如果用户已选择或<see cref="T:Microsoft.Office.Interop.Excel.ChartObject" />中包含的对象使用<b>Activate</b>方法已激活。</para>
+      <para>如果图表是活动对象，可以使用 <b>ActiveChart</b> 属性引用它。 如果用户已选择图表工作表或已使用该方法激活图表工作表，则图表工作表 <see cref="M:Microsoft.Office.Interop.Excel._Chart.Activate" /> 处于活动状态。</para>
+      <para>如果用户已选择嵌入图表，或者嵌入图表中包含的对象已使用 Activate 方法激活，则嵌入图表 <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> 处于活动状态。 <b></b></para>
       <para>ActiveSheet 属性</para>
-      <para>如果图表工作表是活动工作表，可以使用 <b>ActiveSheet</b> 属性引用它。</para>
-      <para></para>
-    </remarks>
+      <para>如果图表工作表是活动工作表，可以使用 <b>ActiveSheet</b> 属性引用它。 </para>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

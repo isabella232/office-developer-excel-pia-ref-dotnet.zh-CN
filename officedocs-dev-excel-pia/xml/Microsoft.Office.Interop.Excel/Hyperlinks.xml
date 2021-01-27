@@ -1,13 +1,5 @@
 <Type Name="Hyperlinks" FullName="Microsoft.Office.Interop.Excel.Hyperlinks">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="384731b744bc8d5ac5fc450f7f7db1aaeb7f87e6" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20582703" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Hyperlinks : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="384731b744bc8d5ac5fc450f7f7db1aaeb7f87e6" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003428" /></Metadata><TypeSignature Language="C#" Value="public interface Hyperlinks : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Hyperlinks implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Hyperlinks" />
   <TypeSignature Language="VB.NET" Value="Public Interface Hyperlinks&#xA;Implements IEnumerable" />
@@ -33,12 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表工作表或区域的超链接的集合。 每个超链接都由<see cref="T:Microsoft.Office.Interop.Excel.Hyperlink" />对象。</summary>
-    <remarks>
-      <para>使用 <b>超链接</b> 属性返回 <b>超链接</b> 的集合。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Excel.Hyperlinks.Add(System.Object,System.String,System.Object,System.Object,System.Object)" />方法创建的超链接并将其添加到的<b>Hyperlinks</b>集合。</para>
-      <para></para>
-    </remarks>
+    <summary>代表工作表或区域的超链接的集合。 每个超链接都由一个对象 <see cref="T:Microsoft.Office.Interop.Excel.Hyperlink" /> 表示。</summary>
+    <remarks><para>使用 <b>超链接</b> 属性返回 <b>超链接</b> 的集合。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.Hyperlinks.Add(System.Object,System.String,System.Object,System.Object,System.Object)" /> 该方法可创建超链接并将其添加到 <b>Hyperlinks</b> 集合中。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -102,17 +92,15 @@
         <Parameter Name="TextToDisplay" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Anchor">所需的<b>对象</b>。 超链接定位标记。 可以为<see cref="T:Microsoft.Office.Interop.Excel.Range" />或<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象。</param>
+        <param name="Anchor">必需 <b>对象</b>。 超链接的定位标记。 可以是 a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 或 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 对象。</param>
         <param name="Address">必需的 <b>字符串</b> 。 超链接的地址。</param>
-        <param name="SubAddress">可选的<b>对象</b>。 超链接的子地址。</param>
-        <param name="ScreenTip">可选的<b>对象</b>。 当鼠标指针停留在超链接上时所显示的屏幕提示。</param>
-        <param name="TextToDisplay">可选的<b>对象</b>。 要显示的超链接的文本。</param>
-        <summary>向指定的区域或形状添加超链接。 返回<see cref="T:Microsoft.Office.Interop.Excel.Hyperlink" />对象。</summary>
+        <param name="SubAddress">可选 <b>对象</b>。 超链接的子地址。</param>
+        <param name="ScreenTip">可选 <b>对象</b>。 当鼠标指针停留在超链接上时所显示的屏幕提示。</param>
+        <param name="TextToDisplay">可选 <b>对象</b>。 要为超链接显示的文本。</param>
+        <summary>向指定的区域或形状添加超链接。 返回一 <see cref="T:Microsoft.Office.Interop.Excel.Hyperlink" /> 个对象。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>当您指定<paramref name="TextToDisplay" />参数，文本必须是字符串。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>指定参数 <paramref name="TextToDisplay" /> 时，文本必须是字符串。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -138,7 +126,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -196,12 +184,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -287,7 +272,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">所需的<b>对象</b>。 对象的名称或索引号。</param>
+        <param name="Index">必需 <b>对象</b>。 对象的名称或索引号。</param>
         <summary>从集合中返回一个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

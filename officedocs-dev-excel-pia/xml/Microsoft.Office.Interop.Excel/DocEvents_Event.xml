@@ -1,13 +1,5 @@
 <Type Name="DocEvents_Event" FullName="Microsoft.Office.Interop.Excel.DocEvents_Event">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5e626628e90f279c5e3d34630e7bc5d563d84aae" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20572609" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DocEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5e626628e90f279c5e3d34630e7bc5d563d84aae" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003778" /></Metadata><TypeSignature Language="C#" Value="public interface DocEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DocEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.DocEvents_Event" />
   <TypeSignature Language="VB.NET" Value="Public Interface DocEvents_Event" />
@@ -29,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>事件接口 Microsoft Excel 的<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />对象的事件。</summary>
+    <summary>Microsoft Excel 对象事件 <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> 的事件接口。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,7 +40,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DocEvents_ActivateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>激活工作表时发生此事件。</summary>
+        <summary>在激活工作表时发生。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,8 +59,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DocEvents_BeforeDeleteEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>BeforeDelete</b>事件发生之前删除任何工作表。</summary>
+        <summary><b>BeforeDelete</b>事件在删除任何工作表之前发生。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,12 +79,9 @@
       </ReturnValue>
       <Docs>
         <summary>当双击工作表时发生此事件，此事件先于默认的双击操作。</summary>
-        <remarks>
-          <para>
-            <see cref="M:Microsoft.Office.Interop.Excel._Application.DoubleClick" />方法不会发生此事件。</para>
+        <remarks><para><see cref="M:Microsoft.Office.Interop.Excel._Application.DoubleClick" />该方法不会导致此事件发生。</para>
           <para>用户双击单元格的边框时不触发此事件。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BeforeRightClick">
@@ -112,10 +100,8 @@
       </ReturnValue>
       <Docs>
         <summary>右键单击工作表时发生此事件，此事件先于默认的右键单击操作。</summary>
-        <remarks>
-          <para>与其他工作表事件相似，当指针在形状或命令栏（工具栏或菜单栏）上时，右键单击不触发此事件。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>与其他工作表事件相似，当指针在形状或命令栏（工具栏或菜单栏）上时，右键单击不触发此事件。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Calculate">
@@ -133,7 +119,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DocEvents_CalculateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>在重新计算工作表时发生此事件。</summary>
+        <summary>在重新计算工作表之后发生。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,10 +139,8 @@
       </ReturnValue>
       <Docs>
         <summary>当用户更改工作表中的单元格，或外部链接引起单元格的更改时发生此事件。</summary>
-        <remarks>
-          <para>重新计算过程中更改的单元格时，不会发生此事件。 使用<see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.Calculate" />捕获工作表重新计算的事件。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>当单元格在重新计算期间更改时，不会发生此事件。 使用 <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.Calculate" /> 该事件可捕获工作表重新计算。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Deactivate">
@@ -174,7 +158,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DocEvents_DeactivateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>停用工作表时发生此事件。</summary>
+        <summary>在工作表停用时发生。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,7 +177,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DocEvents_FollowHyperlinkEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>单击工作表上的任意超链接时，发生此事件。 应用程序和工作簿级事件，请参阅<b>SheetFollowHyperlink</b>事件。</summary>
+        <summary>当单击工作表上的任意超链接时，发生此事件。 有关应用程序和工作簿级事件，请参阅 <b>SheetFollowHyperlink</b> 事件。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,11 +196,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DocEvents_LensGalleryRenderCompleteEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>标注库的图标 （动态和静态） 完成呈现时发生。</summary>
-        <remarks>
-          <para>此事件可用于指示时重新启用屏幕更新或其他显示对话框，例如。</para>
-          <para></para>
-        </remarks>
+        <summary>当标注库的图标与动态和静态 (已完成呈现) 时发生。</summary>
+        <remarks><para>例如，此事件可用于指示何时重新启用屏幕更新或显示其他对话框。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PivotTableAfterValueChange">
@@ -234,12 +216,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DocEvents_PivotTableAfterValueChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>在编辑或重新计算（针对包含公式的单元格）数据透视表中的单元格或单元格区域后发生此事件。</summary>
-        <remarks>
-          <para>
-            <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableAfterValueChange" />编辑或重新计算的单元格以外的任何情况下不会发生事件。 例如，它不会发生在数据透视表进行刷新、 排序、 筛选，或深化，即使这些操作移动单元格，并可能从 OLAP 数据源检索新值。</para>
-          <para></para>
-        </remarks>
+        <summary>在编辑或重新计算（对于包含公式的单元格）数据透视表中的单元格或单元格区域后发生。</summary>
+        <remarks><para>除了编辑或重新计算单元格外，该事件 <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableAfterValueChange" /> 不会在任何条件下发生。 例如，它不会在刷新、排序、筛选或向下钻取数据透视表时发生，即使这些操作移动单元格，并可能从 OLAP 数据源检索新值也是如此。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PivotTableBeforeAllocateChanges">
@@ -257,12 +236,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DocEvents_PivotTableBeforeAllocateChangesEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>在向数据透视表应用更改前发生此事件。</summary>
-        <remarks>
-          <para>
-            <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableBeforeAllocateChanges" /> Excel 立即执行所有更改应用于数据透视表的 OLAP 数据源，更新多维数据集语句之前，且用户已选择要应用的用户界面中更改后一刻发生的事件。</para>
-          <para></para>
-        </remarks>
+        <summary>在将更改应用到数据透视表前发生。</summary>
+        <remarks><para>该事件在 Excel 执行 UPDATE CUBE 语句以将所有更改应用到数据透视表的 OLAP 数据源之前，以及用户选择在用户界面中应用更改后立即 <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableBeforeAllocateChanges" /> 发生。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PivotTableBeforeCommitChanges">
@@ -280,12 +256,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DocEvents_PivotTableBeforeCommitChangesEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>在针对 OLAP 数据源提交对数据透视表的更改前发生此事件。</summary>
-        <remarks>
-          <para>
-            <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableBeforeAllocateChanges" /> Excel 立即执行 TRANSACTION 数据透视表的 OLAP 数据源之前，且用户已选择保存的更改整个数据透视表的后一刻发生的事件。</para>
-          <para></para>
-        </remarks>
+        <summary>在向数据透视表的 OLAP 数据源提交更改之前发生。</summary>
+        <remarks><para>该事件在 Excel 对数据透视表的 OLAP 数据源执行 COMMIT TRANSACTION 之前，以及用户选择保存整个数据透视表的更改后立即 <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableBeforeAllocateChanges" /> 发生。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PivotTableBeforeDiscardChanges">
@@ -303,11 +276,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DocEvents_PivotTableBeforeDiscardChangesEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>在放弃对数据透视表所做的更改之前发生此事件。</summary>
-        <remarks>
-          <para>Excel 执行回滚事务语句对 OLAP 数据源，如果事务仍处于活动状态，并且用户已选择放弃更改后然后放弃对数据透视表中的所有已编辑的值前一刻发生。</para>
-          <para></para>
-        </remarks>
+        <summary>在放弃对数据透视表所做的更改之前发生。</summary>
+        <remarks><para>在 Excel 对 OLAP 数据源执行 ROLLBACK TRANSACTION 语句之前，如果事务仍处于活动状态，然后在用户选择放弃更改后放弃数据透视表中所有编辑的值，则立即发生。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PivotTableChangeSync">
@@ -325,12 +296,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DocEvents_PivotTableChangeSyncEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>在对数据透视表进行更改之后发生此事件。</summary>
-        <remarks>
-          <para>
-            <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableChangeSync" />事件大多数更改期间发生在数据透视表，以便您可以编写代码以响应用户操作，例如交换，分组或刷新数据透视表中的项目。</para>
-          <para></para>
-        </remarks>
+        <summary>在更改了数据透视表之后发生。</summary>
+        <remarks><para>此事件在数据透视表大多数更改期间发生，以便您可以编写代码以响应用户操作，例如清除、分组或刷新数据透视表中的 <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableChangeSync" /> 项目。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PivotTableUpdate">
@@ -386,7 +354,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DocEvents_TableUpdateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>连接到数据模型的查询表更新工作表上之后，发生此事件。</summary>
+        <summary>在工作表上更新连接到数据模型的查询表后发生。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

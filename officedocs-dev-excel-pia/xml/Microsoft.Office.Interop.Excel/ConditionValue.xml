@@ -1,13 +1,5 @@
 <Type Name="ConditionValue" FullName="Microsoft.Office.Interop.Excel.ConditionValue">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="81c793a0733604f15df8956de448166bd0681dac" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587309" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ConditionValue" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="81c793a0733604f15df8956de448166bd0681dac" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003967" /></Metadata><TypeSignature Language="C#" Value="public interface ConditionValue" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ConditionValue" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ConditionValue" />
   <TypeSignature Language="VB.NET" Value="Public Interface ConditionValue" />
@@ -30,12 +22,9 @@
   </Attributes>
   <Docs>
     <summary>代表数据条条件格式规则计算最短数据条和最长数据条的方法。</summary>
-    <remarks>
-      <para>
-        <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" />对象返回使用<see cref="P:Microsoft.Office.Interop.Excel.Databar.MaxPoint" />或<see cref="P:Microsoft.Office.Interop.Excel.Databar.MinPoint" />属性<see cref="T:Microsoft.Office.Interop.Excel.Databar" />对象。</para>
-      <para>您可以使用更改从默认设置 （最低值的最短数据条），最长数据条的最高值的计算类型<see cref="M:Microsoft.Office.Interop.Excel.ConditionValue.Modify(Microsoft.Office.Interop.Excel.XlConditionValueTypes,System.Object)" />方法。</para>
-      <para></para>
-    </remarks>
+    <remarks><para><see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" />使用对象的 or 属性 <see cref="P:Microsoft.Office.Interop.Excel.Databar.MaxPoint" /> <see cref="P:Microsoft.Office.Interop.Excel.Databar.MinPoint" /> 返回 <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> 对象。</para>
+      <para>您可以使用该方法将计算类型从默认设置更改为 (最短数据条的默认值，以及最长数据条的) <see cref="M:Microsoft.Office.Interop.Excel.ConditionValue.Modify(Microsoft.Office.Interop.Excel.XlConditionValueTypes,System.Object)" /> 值。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,13 +50,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象代表 Microsoft Office Excel 应用程序。 如果使用对象识别符，此属性返回值，该值代表指定对象的创建者<b>Application</b>对象。 只读。</summary>
-        <value>
-          <b>应用程序</b>（请参见上文）</value>
-        <remarks>
-          <para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
-          <para></para>
-        </remarks>
+        <summary>如果不与对象限定符一起使用，则此属性返回一个对象，该对象Microsoft Office  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> Excel 应用程序。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象。 只读。</summary>
+        <value><b>应用程序</b> (请参阅上面的) </value>
+        <remarks><para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -93,14 +79,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回中的一个常量<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />枚举，指示在其中创建此对象的应用程序。 <b>Integer</b> 类型，只读。</summary>
-        <value>
-          <see cref="F:Microsoft.Office.Interop.Excel.XlCreator.xlCreatorCode" />
-        </value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。  <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <summary>返回枚举中的 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 一个常量，该常量指示创建此对象时的应用程序。 只读 <b>Integer</b>。</summary>
+        <value><see cref="F:Microsoft.Office.Interop.Excel.XlCreator.xlCreatorCode" /></value>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。  该属性设计为在 Microsoft Excel for the Macintosh 中使用，其中每个应用程序都有 <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Creator" /> 一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Modify">
@@ -126,51 +108,49 @@
         <Parameter Name="newvalue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="newtype">指定如何计算最短数据条或最长数据条。 默认值是<see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionLowestValue" />的最短数据条和<see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionHighestValue" />的最长数据条。</param>
-        <param name="newvalue">分配给最短或最长数据条的值。 根据<paramref name="newtype" />参数，这可以是数字或计算结果为数字的公式。</param>
+        <param name="newtype">指定最短数据条或最长数据条的计算方法。 默认值用于 <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionLowestValue" /> 最短数据条和最长 <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionHighestValue" /> 数据条。</param>
+        <param name="newvalue">分配给最短或最长数据条的值。 根据参数 <paramref name="newtype" /> 的不同，它可以是数字或计算结果为数字的公式。</param>
         <summary>修改数据条条件格式规则计算最长数据条或最短数据条的方法。</summary>
-        <remarks>
-          <para>下表描述了每种计算类型的可接受阈值。</para>
+        <remarks><para>下表描述了每种计算类型的可接受阈值。</para>
           <list type="table">
             <item>
               <term>
                 <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionLowestValue" />
               </term>
-              <description>忽略参数</description>
+              <description>参数被忽略</description>
             </item>
             <item>
               <term>
                 <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionHighestValue" />
               </term>
-              <description>忽略参数</description>
+              <description>参数被忽略</description>
             </item>
             <item>
               <term>
                 <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueNumber" />
               </term>
-              <description>任何数字</description>
+              <description>任意数字</description>
             </item>
             <item>
               <term>
                 <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercent" />
               </term>
-              <description>0 到 100 之间的任何数字 </description>
+              <description>0 到 100 之间的任意数字 </description>
             </item>
             <item>
               <term>
                 <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercentile" />
               </term>
-              <description>0 到 100 之间的任何数字</description>
+              <description>0 到 100 之间的任意数字</description>
             </item>
             <item>
               <term>
                 <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueFormula" />
               </term>
-              <description>一个返回单一数字的公式</description>
+              <description>一个返回单个数字的公式</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -196,10 +176,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父对象。只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回指定对象的父对象。 只读。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,10 +204,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlConditionValueTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回的常量之一<see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" />确定枚举，指定如何为数据栏、 颜色刻度或图标的阈值设置条件格式。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" />
-        </value>
+        <summary>返回枚举的常量之一，该常量指定如何确定数据条、色标或图标集条件格式的 <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" /> 阈值。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,15 +232,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置的最短条形图或条形图的数据条条件格式阈值最长。 读取/写入 <b>对象</b> 。</summary>
-        <value>
-          <b>对象</b>
-        </value>
-        <remarks>
-          <para>您可以设置值才<see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Type" />的条件格式的属性设置为以下常量之一： <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueNumber" />， <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercent" />， <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercentile" />，或<see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueFormula" />。</para>
-          <para>如果阈值类型是公式，您可以将公式设置为 <b>String</b>。此公式必须返回单一数字。</para>
-          <para></para>
-        </remarks>
+        <summary>针对数据条条件格式返回或设置最短或最长的数据条的阈值。 读取/写入 <b>对象</b> 。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>只有当条件格式的属性设置为下列常量之一时，才能设置该值： ， <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Type" /> <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueNumber" /> ， 或 <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercent" /> <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercentile" /> <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueFormula" /> 。</para>
+          <para>如果阈值类型是公式，您可以将公式设置为 <b>String</b>。 此公式必须返回单一数字。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

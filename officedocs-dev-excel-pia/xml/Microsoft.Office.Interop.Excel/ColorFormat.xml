@@ -1,13 +1,5 @@
 <Type Name="ColorFormat" FullName="Microsoft.Office.Interop.Excel.ColorFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3d031f52b238ec46211ddb6bca7295480f58f00f" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584474" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ColorFormat : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3d031f52b238ec46211ddb6bca7295480f58f00f" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50004009" /></Metadata><TypeSignature Language="C#" Value="public interface ColorFormat : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ColorFormat implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ColorFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ColorFormat&#xA;Implements _IMsoDispObj" />
@@ -31,8 +23,7 @@
   </Attributes>
   <Docs>
     <summary>代表单色对象的颜色、带有渐变或图案填充的对象的前景或背景色，或者指针的颜色。</summary>
-    <remarks>
-      <para>可以将颜色设为显式的红-绿-蓝值 (使用<see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.RGB" />属性) 或配色方案中颜色 (使用<see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.SchemeColor" />属性)。</para>
+    <remarks><para>可以使用属性) 将颜色设置为明确的红-绿-蓝值 (，或者通过使用属性 (将颜色设置为配色方案中 <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.RGB" /> <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.SchemeColor" />) 。</para>
       <para>使用下表中列出的属性之一来返回一个 <b>ColorFormat</b> 对象。</para>
       <list type="table">
         <item>
@@ -90,8 +81,7 @@
           <description>有延伸的对象的侧边颜色</description>
         </item>
       </list>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -120,7 +110,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -153,11 +143,9 @@
       <Docs>
         <summary>获取或设置指定对象的亮度。</summary>
         <value>指定对象的亮度。</value>
-        <remarks>
-          <para>为可读/写属性。</para>
+        <remarks><para>读/写。</para>
           <para>此属性的值必须是介于 0.0 (最暗) 到 1.0 (最亮)。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -187,15 +175,10 @@
       </ReturnValue>
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。 另请参阅<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</para>
-          <para></para>
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para>该属性设计为在 Microsoft Excel for the Macintosh 中使用，其中每个应用程序都有 <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.Creator" /> 一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。 另请参阅 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ObjectThemeColor">
@@ -224,10 +207,8 @@
         <ReturnType>Microsoft.Office.Core.MsoThemeColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置颜色，以映射到主题的配色方案。 读/写<see cref="T:Microsoft.Office.Core.MsoThemeColorIndex" />。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoThemeColorIndex" />
-        </value>
+        <summary>返回或设置一种映射到主题配色方案的颜色。 读/写 <see cref="T:Microsoft.Office.Core.MsoThemeColorIndex" /> 。</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoThemeColorIndex" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,9 +236,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回指定对象的父对象。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -321,7 +300,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置 color 对象的颜色，作为当前配色方案中的索引。</summary>
+        <summary>返回或设置颜色 对象的颜色作为当前配色方案中的索引。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -352,12 +331,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>单个</b>变浅或变深指定形状的颜色。</summary>
+        <summary>返回或设置一 <b>个</b> 值，使指定形状的颜色变亮或变暗。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>您可以输入大量从-1 (深) 到 <b>TintAndShade</b> 属性，0 (零) 表示非特定的 (最亮) 1。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>您可以输入大量从-1 (深) 到 <b>TintAndShade</b> 属性，0 (零) 表示非特定的 (最亮) 1。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -385,11 +362,10 @@
       <Docs>
         <summary>返回或设置标注格式类型。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>MsoCalloutType</b> 可以是下列 <b>MsoCalloutType</b> 常量之一。</para>
           <para>
-            <b>msocalloutfour 类型</b>
+            <b>msoCalloutFour</b>
           </para>
           <para>
             <b>msoCalloutMixed</b>
@@ -403,8 +379,7 @@
           <para>
             <b>msoCalloutTwo</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="FreeformBuilder" FullName="Microsoft.Office.Interop.Excel.FreeformBuilder">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="49bbc8d21ea36b32da44ca3a92e3697a77f26497" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20582647" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FreeformBuilder" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="49bbc8d21ea36b32da44ca3a92e3697a77f26497" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003547" /></Metadata><TypeSignature Language="C#" Value="public interface FreeformBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FreeformBuilder" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.FreeformBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Interface FreeformBuilder" />
@@ -30,10 +22,8 @@
   </Attributes>
   <Docs>
     <summary>代表任意多边形创建时的几何属性。</summary>
-    <remarks>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" />方法，以返回<b>FreeformBuilder</b>对象。 使用<see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" />方法将节点添加到 freefrom。 使用<see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" />方法可创建<b>FreeformBuilder</b>对象中定义的形状，并将其添加到<see cref="T:Microsoft.Office.Interop.Excel.Shapes" />集合。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> 该方法可返回 <b>FreeformBuilder</b> 对象。 使用此方法 <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> 将节点添加到 freefrom。 使用 <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> 该方法创建在 <b>FreeformBuilder</b> 对象中定义的形状，并将其添加到 <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> 集合中。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddNodes">
@@ -65,17 +55,15 @@
         <Parameter Name="Y3" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SegmentType">所需<see cref="T:Microsoft.Office.Interop.Office.MsoSegmentType" />。 要添加的线段的类型。<b>MsoSegmentType</b>可以是下列常量之一：<b>msoSegmentLine</b><b>msoSegmentCurve</b></param>
-        <param name="EditingType">所需<see cref="T:Microsoft.Office.Interop.Office.MsoEditingType" />。 顶点的编辑属性。<b>MsoEditingType</b>可以是下列常量之一：<b>msoEditingAuto</b><b>msoEditingCorner</b>不能是<b>msoEditingSmooth</b>或<b>msoEditingSymmetric</b>。如果<paramref name="SegmentType" />是<b>msoSegmentLine</b>，<paramref name="EditingType" />必须是<b>msoEditingAuto</b>。</param>
-        <param name="X1">
-          <b>必选。</b>如果<paramref name="EditingType" />新线段是<b>msoEditingAuto</b>时，此参数可指定文档的左上角到新线段结束点的水平距离 （以磅为单位）。如果<paramref name="EditingType" />的新节点是<b>msoEditingCorner</b>时，此参数可指定文档的左上角到新的段的第一个控件点的水平距离 （以磅为单位）。</param>
-        <param name="Y1">
-          <b>必选。</b>如果<paramref name="EditingType" />新线段是<b>msoEditingAuto</b>时，此参数可指定文档的左上角到新线段结束点的水平距离 （以磅为单位）。如果<paramref name="EditingType" />的新节点是<b>msoEditingCorner</b>时，此参数可指定文档的左上角到新的段的第一个控件点的水平距离 （以磅为单位）。</param>
-        <param name="X2">可选的<b>对象</b>。如果<paramref name="EditingType" />新线段是<b>msoEditingCorner</b>时，此参数可指定文档的左上角到新段的第二个控制点的水平距离 （以磅为单位）。如果<paramref name="EditingType" />的新线段是<b>msoEditingAuto</b>，不指定此参数的值。</param>
-        <param name="Y2">可选的<b>对象</b>。如果<paramref name="EditingType" />新线段是<b>msoEditingCorner</b>时，此参数可指定文档的左上角到新段的第二个控制点的水平距离 （以磅为单位）。如果<paramref name="EditingType" />的新线段是<b>msoEditingAuto</b>，不指定此参数的值。</param>
-        <param name="X3">可选的<b>对象</b>。如果<paramref name="EditingType" />新线段是<b>msoEditingCorner</b>时，此参数可指定文档的左上角到新线段结束点的水平距离 （以磅为单位）。如果<paramref name="EditingType" />的新线段是<b>msoEditingAuto</b>，不指定此参数的值。</param>
-        <param name="Y3">可选的<b>对象</b>。如果<paramref name="EditingType" />新线段是<b>msoEditingCorner</b>时，此参数可指定文档的左上角到新线段结束点的垂直距离 （以磅为单位）。如果<paramref name="EditingType" />的新线段是<b>msoEditingAuto</b>，不指定此参数的值。</param>
-        <summary>将节点添加到任意多边形。</summary>
+        <param name="SegmentType">必需 <see cref="T:Microsoft.Office.Interop.Office.MsoSegmentType" /> 。 要添加的线段的类型。<b>MsoSegmentType</b> 可以是以下常量之一<b>：msoSegmentLine</b><b>msoSegmentCurve</b></param>
+        <param name="EditingType">必需 <see cref="T:Microsoft.Office.Interop.Office.MsoEditingType" /> 。 顶点的编辑属性。<b>MsoEditingType</b> 可以是以下常量之一：<b>msoEditingAuto</b><b>msoEditingCorner</b>Cannot be <b>msoEditingSmooth</b> or <b>msoEditingSymmetric</b>.如果 <paramref name="SegmentType" /> 为 <b>msoSegmentLine</b>， <paramref name="EditingType" /> 必须为 <b>msoEditingAuto</b>。</param>
+        <param name="X1">必需 <b>单个</b>。如果新线段为 <paramref name="EditingType" /> <b>msoEditingAuto，</b>则此参数指定从文档左上角到新线段终点的水平距离 (（以) 点表示）。如果新节点为 <paramref name="EditingType" /> <b>msoEditingCorner，</b>则此参数指定从文档左上角到新线段的第一个控制点的水平距离 (（以) 点表示）。</param>
+        <param name="Y1">必需 <b>单个</b>。如果新线段为 <paramref name="EditingType" /> <b>msoEditingAuto，</b>则此参数指定从文档左上角到新线段终点的水平距离 (（以) 点表示）。如果新节点为 <paramref name="EditingType" /> <b>msoEditingCorner，</b>则此参数指定从文档左上角到新线段的第一个控制点的水平距离 (（以) 点表示）。</param>
+        <param name="X2">可选 <b>对象</b>。如果新线段为 <paramref name="EditingType" /> <b>msoEditingCorner，</b>则此参数指定从文档左上角到新线段的第二个控制点的水平距离 (（以) 点表示）。如果 <paramref name="EditingType" /> 新线段的属性值为 <b>msoEditingAuto，</b>则不为此参数指定值。</param>
+        <param name="Y2">可选 <b>对象</b>。如果新线段为 <paramref name="EditingType" /> <b>msoEditingCorner，</b>则此参数指定从文档左上角到新线段的第二个控制点的水平距离 (（以) 点表示）。如果 <paramref name="EditingType" /> 新线段的属性值为 <b>msoEditingAuto，</b>则不为此参数指定值。</param>
+        <param name="X3">可选 <b>对象</b>。如果新线段为 <paramref name="EditingType" /> <b>msoEditingCorner，</b>则此参数指定从文档左上角到新线段终点的水平距离 (（以) 点表示）。如果 <paramref name="EditingType" /> 新线段的属性值为 <b>msoEditingAuto，</b>则不为此参数指定值。</param>
+        <param name="Y3">可选 <b>对象</b>。如果新线段为 <paramref name="EditingType" /> <b>msoEditingCorner，</b>则此参数指定从文档左上角到新线段终点的垂直距离 (（以) 点表示）。如果 <paramref name="EditingType" /> 新线段的属性值为 <b>msoEditingAuto，</b>则不为此参数指定值。</param>
+        <summary>向任意多边形添加节点。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,7 +90,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -128,13 +116,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>创建具有指定的几何特征的形状<see cref="T:Microsoft.Office.Interop.Excel.FreeformBuilder" />对象。 返回<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象，表示新形状。</summary>
+        <summary>创建具有指定对象的几何特征 <see cref="T:Microsoft.Office.Interop.Excel.FreeformBuilder" /> 的形状。 返回 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 一个代表新形状的对象。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <b>注释</b>  您必须应用<see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" />方法<b>FreeformBuilder</b>对象至少应用一次才能使用<b>ConvertToShape</b>方法。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>
+            <b>注意</b>  使用 <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> <b>ConvertToShape</b>方法之前，至少必须将该方法应用于<b>FreeformBuilder</b>对象一次。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -162,12 +148,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

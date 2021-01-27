@@ -1,13 +1,5 @@
 <Type Name="ColorScaleCriteria" FullName="Microsoft.Office.Interop.Excel.ColorScaleCriteria">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="589e9e7df115b961e73fd7901c8f7f0502669047" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587435" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ColorScaleCriteria : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="589e9e7df115b961e73fd7901c8f7f0502669047" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50004002" /></Metadata><TypeSignature Language="C#" Value="public interface ColorScaleCriteria : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ColorScaleCriteria implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" />
   <TypeSignature Language="VB.NET" Value="Public Interface ColorScaleCriteria&#xA;Implements IEnumerable" />
@@ -33,13 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>一<see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" />代表色阶条件格式的条件的所有对象。 每个条件指定最小、 中点或色阶的最大阈值。</summary>
-    <remarks>
-      <para>若要返回<b>ColorScaleCriteria</b>集合，请使用<see cref="P:Microsoft.Office.Interop.Excel.ColorScale.ColorScaleCriteria" />属性<see cref="T:Microsoft.Office.Interop.Excel.ColorScale" />对象。</para>
-      <para></para>
-    </remarks>
-    <example>
-      <para>以下代码示例创建了一个数字范围，然后将双色色阶条件格式规则应用于该范围。然后通过在 <b>ColorScaleCriteria</b> 集合中编制索引来设置单独的条件，从而指定最小阈值的颜色为红色，最大阈值的颜色为蓝色。</para>
+    <summary>代表色 <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> 标条件格式的所有条件的对象集合。 每个条件指定了色阶的最小、中点或最大阈值。</summary>
+    <remarks><para>若要返回 <b>ColorScaleCriteria</b> 集合，请使用 <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.ColorScaleCriteria" /> 对象 <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" /> 的属性。</para>
+      <para> </para></remarks>
+    <example><para>以下代码示例创建了一个数字范围，然后将双色色阶条件格式规则应用于该范围。 然后通过在 <b>ColorScaleCriteria</b> 集合中编制索引来设置单独的条件，从而指定最小阈值的颜色为红色，最大阈值的颜色为蓝色。</para>
       <code>&lt;span class="label"&gt;Sub CreateColorScaleCF()  
 
 
@@ -4396,8 +4385,7 @@
 &lt;i&gt;ColorScaleCriteria(1)&lt;/i&gt;
 &lt;span class="label"&gt;.FormatColor.Color = RGB(255, 0, 0)     cfColorScale.&lt;/span&gt;
 &lt;i&gt;ColorScaleCriteria(2)&lt;/i&gt;
-&lt;span class="label"&gt;.FormatColor.Color = RGB(0, 0, 255)          End Sub &lt;/span&gt;</code>
-    </example>
+&lt;span class="label"&gt;.FormatColor.Color = RGB(0, 0, 255)          End Sub &lt;/span&gt;</code></example>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -4458,14 +4446,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>整数</b>值，指定标准色阶条件格式规则的数。 只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>条件的数目等于为色阶分配的阈值的数目。此值要么为 2，要么为 3，具体情况取决于您为条件格式规则使用双色色阶还是使用三色色阶。</para>
-          <para></para>
-        </remarks>
+        <summary>返回一 <b>个</b> Integer 值，该值指定色标条件格式规则的条件数。 只读。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>条件的数目等于为色阶分配的阈值的数目。此值要么为 2，要么为 3，具体情况取决于您为条件格式规则使用双色色阶还是使用三色色阶。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -4526,15 +4510,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">索引号的<see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" />对象。</param>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" />对象从<see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" />集合。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" />
-        </value>
-        <remarks>
-          <para>值<paramref name="Index" />参数不能大于的条件为色阶条件格式设置的数目。 条件是等价于色阶分配的阈值。 若要查找的阈值数目，请使用<see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriteria.Count" />属性。</para>
-          <para></para>
-        </remarks>
+        <param name="Index">对象的索引 <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> 号。</param>
+        <summary>从集合 <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> 中返回单个 <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> 对象。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /></value>
+        <remarks><para>参数的值不能大于为色标条件 <paramref name="Index" /> 格式设置的条件数。 条件与为色阶分配的阈值等效。 若要查找阈值数，请使用 <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriteria.Count" /> 该属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
