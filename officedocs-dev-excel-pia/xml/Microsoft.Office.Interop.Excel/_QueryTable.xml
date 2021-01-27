@@ -1,13 +1,5 @@
 <Type Name="_QueryTable" FullName="Microsoft.Office.Interop.Excel._QueryTable">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="249f2de0b7c9698a20aab3d689ca0d60d9e16373" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587841" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _QueryTable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="249f2de0b7c9698a20aab3d689ca0d60d9e16373" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012689" /></Metadata><TypeSignature Language="C#" Value="public interface _QueryTable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _QueryTable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel._QueryTable" />
   <TypeSignature Language="VB.NET" Value="Public Interface _QueryTable" />
@@ -29,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>这是与相应的 COM 对象的互操作性的托管代码需要 COM coclass 中的主接口。 仅当您想要使用的方法共享相同的名称的 COM 对象; 事件时，才使用此主接口在这种情况下，强制转换为此接口调用方法，并强制转换为最新的事件接口，连接到该事件。 否则，使用.NET 接口派生自 COM coclass 访问方法、 属性和事件的 COM 对象。 有关 COM 对象的详细信息，请参阅<see cref="T:Microsoft.Office.Interop.Excel.QueryTable" />。</summary>
+    <summary>这是 COM coclass（托管代码需要此 Coclass 来实现与相应的 COM 对象的互操作性）中的主接口。 仅当您想要使用的方法与 COM 对象的事件共享同一名称时才使用此主接口；在这种情况下，转换为此接口以调用该方法，转换为最新的事件接口以连接到该事件。 否则，请使用派生自 COM coclass 的 .NET 接口来访问方法、属性和 COM 对象的事件。 有关 COM 对象详细信息，请参阅 <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> 。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -59,13 +51,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果列宽自动调整为最适合每次刷新指定的查询表或 XML 映射。 <b>False</b>如果列宽不自动调整每次刷新。 默认值为 <b>True</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
+        <summary><b>如此</b> 如果每次刷新指定的查询表或 XML 映射时自动调整列宽以最适合。 如果每次刷新时列宽不自动调整，则为 <b>False</b>。 默认值为 <b>True</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>最大列宽为屏幕宽度的三分之二。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>最大列宽为屏幕宽度的三分之二。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -91,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -122,7 +111,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>的数据透视表报表或查询表的查询执行异步 （在后台）。 可读写 <b>Boolean</b>。</summary>
+        <summary><b>如此</b> 如果对数据透视表或查询表的查询在后台 (异步执行) 。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -148,7 +137,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>取消指定的查询表的所有后台查询。 使用<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Refreshing" />属性可以确定后台查询当前是否正在运行。</summary>
+        <summary>取消指定查询表的所有后台查询。 使用 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Refreshing" /> 该属性可确定后台查询当前是否正在进行。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,12 +167,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定的数据源的命令字符串。 读取/写入 <b>对象</b> 。</summary>
+        <summary>返回或设置指定数据源的命令字符串。 读取/写入 <b>对象</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>对于 OLE DB 源，<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.CommandType" />属性描述了<b>CommandText</b>属性的值。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>对于 OLE DB 源， <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.CommandType" /> 该属性描述 <b>CommandText</b> 属性的值。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandType">
@@ -212,13 +199,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCmdType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" />描述命令类型的常量与<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.CommandText" />属性。 默认值是<b>xlCmdSQL</b>。 读/写<see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" />。</summary>
+        <summary>返回或设置 <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" /> 一个常量，该常量描述与属性关联的命令 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.CommandText" /> 类型。 默认值为 <b>xlCmdSQL</b>。 读/写 <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" /> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>您可以设置<b>CommandType</b>属性仅当查询表的<b>QueryType</b>属性的值或数据透视表缓存为<b>xloledbquery 时</b>。</para>
+        <remarks><para>只有当查询表或数据透视表缓存的<b>QueryType</b>属性的值为<b>xlOLEDBQuery</b>时，才能设置<b>CommandType</b>属性。</para>
           <para>当 <b>CommandType</b> 属性的值为 <b>xlCmdCube</b> 时，如果没有与查询表相关联的数据透视表，则不能更改该值。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Connection">
@@ -247,18 +232,14 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个字符串，包含查询表的连接信息。 读取/写入 <b>对象</b> 。</summary>
+        <summary>返回或设置一个字符串，其中包含查询表的连接信息。 读取/写入 <b>对象</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Connection</b>属性可以是下列选项之一： OLE DB 设置，使 Microsoft Excel 连接到 OLE DB 数据源，ODBC 设置，使 Microsoft Excel 连接到 ODBC 数据源，使 Microsoft Excel 连接到的 URLWeb 数据源、 路径和文件名的文本文件，或的路径和文件名指定的数据库或 Web 查询的文件。</para>
-          <para>
-            <b>连接</b>属性设置不立即启动与数据源的连接。 您必须使用<see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" />方法以进行连接，并检索数据。</para>
-          <para>使用脱机多维数据集文件时，设置<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" />属性设为<b>True</b>和使用<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.LocalConnection" />属性而不是<b>在 Connection</b>属性。</para>
-          <para>有关连接字符串语法的详细信息，请参阅<see cref="M:Microsoft.Office.Interop.Excel.QueryTables.Add(System.Object,Microsoft.Office.Interop.Excel.Range,System.Object)" />方法<see cref="T:Microsoft.Office.Interop.Excel.QueryTables" />集合和<see cref="M:Microsoft.Office.Interop.Excel.PivotCaches.Add(Microsoft.Office.Interop.Excel.XlPivotTableSourceType,System.Object)" />方法<see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" />集合。</para>
-          <para>此外，您可以选择直接通过使用 Microsoft ActiveX 数据对象 (ADO) 访问数据源。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Connection</b>属性可以是下列值之一：允许 Microsoft Excel 连接到 OLE DB 数据源的 OLE DB 设置、允许 Microsoft Excel 连接到 ODBC 数据源的 ODBC 设置、允许 Microsoft Excel 连接到 Web 数据源的 URL、文本文件的路径和文件名，或指定数据库或 Web 查询的文件的路径和文件名。</para>
+          <para>设置 <b>Connection</b> 属性不会立即与数据源建立连接。 必须使用该方法 <see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" /> 建立连接并检索数据。</para>
+          <para>使用脱机多维数据集文件时，将 <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" /> 该属性设置为 <b>True，</b> 并使用 <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.LocalConnection" /> 属性而不是 <b>Connection</b> 属性。</para>
+          <para>有关连接字符串语法的信息，请参阅集合的方法和 <see cref="M:Microsoft.Office.Interop.Excel.QueryTables.Add(System.Object,Microsoft.Office.Interop.Excel.Range,System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.QueryTables" /> <see cref="M:Microsoft.Office.Interop.Excel.PivotCaches.Add(Microsoft.Office.Interop.Excel.XlPivotTableSourceType,System.Object)" /> 集合 <see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" /> 的方法。</para>
+          <para>或者，可以选择通过使用 Microsoft ActiveX Data Objects (ADO) 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -284,13 +265,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回中的一个常量<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />枚举，指示在其中创建此对象的应用程序。 如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 只读<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</summary>
+        <summary>返回枚举中的 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 一个常量，该常量指示创建此对象时的应用程序。 如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。 只读 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -341,7 +319,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回查询表目标区域 （查询结果表的放置位置的区域） 的左上角单元格。 目标区域必须包含的工作表上<see cref="T:Microsoft.Office.Interop.Excel.QueryTable" />对象。 只读 <b>区域</b> 。</summary>
+        <summary>返回查询表目标区域（查询结果表放置的区域）的左上角单元格。 目标区域必须位于包含该对象的 <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> 工作表上。 只读 <b>区域</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -372,14 +350,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置 web 查询的网页统一资源定位器 (URL)。 读取/写入 <b>对象</b> 。</summary>
+        <summary>返回或设置网页统一资源定位器 (URL) Web 查询的 URL。 读取/写入 <b>对象</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>EditWebPage</b>属性返回<b>Null</b> ，如果未设置。 <b>EditWebPage</b>属性才有意义，如果查询类型为<b>xlWebQuery</b>或<b>xloledbquery 时</b>。</para>
-          <para>如果<b>EditWebPage</b>不为 null，则忽略<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.WebTables" />刷新的属性。 结果 XML 查询和<b>WebTable</b>属性是指原始 Web 页中的表和只应在编辑情况下预填充 Web 查询对话框。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果未<b>设置 EditWebPage</b>属性，则返回<b>Null。</b> 只有当查询类型为<b>xlWebQuery</b>或<b>xlOLEDBQuery</b>时<b>，EditWebPage</b>属性才有意义。</para>
+          <para>如果 <b>EditWebPage</b> 不为空，则忽略 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.WebTables" /> 该属性以刷新。 因此，XML 查询和 <b>WebTable</b> 属性将引用原始网页中的表，并且只用于编辑情况以预先填充“Web 查询”对话框。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableEditing">
@@ -408,7 +383,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果允许用户对指定查询表进行编辑，则该值为 <b>True</b>；如果用户只能刷新查询表，则该值为 <b>False</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary><b>如此</b> 如果用户可以编辑指定的查询表。 <b>假</b> 如果用户只能刷新查询表。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -439,14 +414,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>			如果用户可刷新数据透视表高速缓存或查询表，则为 <b>True</b>。默认值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果用户可刷新数据透视表高速缓存或查询表，则为 <b>True</b>。 默认值为 <b>True</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.RefreshOnFileOpen" />如果<b>EnableRefresh</b>属性设置为<b>False</b>，则忽略属性。</para>
-          <para>对于 OLAP 数据源，将此属性设置为 <b>False</b> 会禁用更新。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.RefreshOnFileOpen" /> <b>EnableRefresh</b> 属性设置为 <b>False，</b>则忽略该属性。</para>
+          <para>对于 OLAP 数据源，如果将此属性设置为 <b>False</b>，则会禁用更新。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FetchedRowOverflow">
@@ -472,8 +444,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果最后一次使用返回的行数<see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" />方法大于工作表上可用的行数。 只读 <b>Boolean</b>。</summary>
+        <summary><b>如此</b> 如果最后一次使用该方法所返回的行数大于工作表上的 <see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" /> 可用行数。 只读 <b>Boolean</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -504,7 +475,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果数据源的字段名称作为返回数据的列标题显示，则该值为 <b>True</b>。默认值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果数据源的字段名称作为返回数据的列标题显示，则该值为 <b>True</b>。 默认值为 <b>True</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -535,7 +506,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果每当查询表刷新时，指定查询表右侧的公式就自动更新，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果每当查询表刷新时，指定查询表右侧的公式就自动更新，则该属性值为 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -600,7 +571,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ListObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.ListObject" />对象的<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象或<see cref="T:Microsoft.Office.Interop.Excel.QueryTable" />对象。 只读<b>ListObject</b>对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> 对象或 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 对象 <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> 的对象。 <b>ListObject</b> 对象类型，只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -631,13 +602,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>			如果从刷新数据开始直至关闭工作簿，都一直保留指向指定数据源的连接，则为 <b>True</b>。默认值是 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果从刷新数据开始直至关闭工作簿，都一直保留指向指定数据源的连接，则为 <b>True</b>。 默认值为 <b>True</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>您可以设置<b>MaintainConnection</b>属性才<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />的查询表或数据透视表缓存的属性设置为<b>xloledbquery 时</b>。</para>
-          <para>如果预计会频繁对服务器进行查询，则可将此属性设置为 <b>True</b>，这样能减少重新连接的时间因而可提高性能。将此属性设置为 <b>False</b>，将会关闭一个打开的连接。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>只有当查询表或<b></b>数据透视表缓存的属性设置为 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlOLEDBQuery</b>时，才能设置 MaintainConnection 属性。</para>
+          <para>如果预计会频繁对服务器进行查询，则可将此属性设置为 <b>True</b>，这样能减少重新连接的时间因而可提高性能。 将此属性设置为 <b>False</b>，将会关闭一个打开的连接。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -668,22 +637,21 @@
       <Docs>
         <summary>返回或设置对象的名称。 <b>String</b> 类型，可读写。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>下表显示<b>名称</b>属性和给定唯一名称"[Europe] 与数据源相关的属性示例值。[France]。[Paris]"，并将与项目的非 OLAP 数据源命名"巴黎"。</para>
+        <remarks><para>下表显示了 Name 属性和相关属性<b></b>的示例值，给定了具有唯一名称"[Europe]的数据源。[法国]。[Paris]"，以及项目名称为"Paris"的非 OLAP 数据源。</para>
           <list type="table">
             <item>
               <term>
                 <b>标题</b>
               </term>
-              <description>Paris</description>
-              <description>Paris</description>
+              <description>巴黎</description>
+              <description>巴黎</description>
             </item>
             <item>
               <term>
                 <b>名称</b>
               </term>
               <description>[Europe].[France].[Paris]（只读）</description>
-              <description>Paris</description>
+              <description>巴黎</description>
             </item>
             <item>
               <term>
@@ -697,25 +665,24 @@
                 <b>值</b>
               </term>
               <description>[Europe].[France].[Paris]（只读）</description>
-              <description>Paris</description>
+              <description>巴黎</description>
             </item>
           </list>
-          <para>指定的索引时<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />集合，您可以使用下表中所示的语法。</para>
+          <para>在集合中指定索引时，可以使用 <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> 下表中所示的语法。</para>
           <list type="table">
             <item>
-              <term>表达式。PivotItems ("[Europe]。 [法国]。[Paris]")</term>
-              <description>Expression.PivotItems("Paris")</description>
+              <term>表达式。PivotItems ("[Europe]。[法国]。[Paris]") </term>
+              <description>Expression.PivotItems ("Paris") </description>
             </item>
           </list>
-          <para>当使用<see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" />属性引用集合中的特定成员，您可以使用下表中所示的文本索引名称。</para>
+          <para>使用该属性引用集合的特定成员时，可以使用文本 <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> 索引名称，如下表所示。</para>
           <list type="table">
             <item>
-              <term>[Europe]。[France]。[Paris]</term>
-              <description>Paris</description>
+              <term>[欧洲]。[法国]。[巴黎]</term>
+              <description>巴黎</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parameters">
@@ -741,7 +708,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Parameters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Parameters" />代表查询表参数的集合。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Parameters" /> 一个代表查询表参数的集合。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -769,7 +736,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父对象。只读。</summary>
+        <summary>返回指定对象的父对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -800,13 +767,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置用于 post 方法的字符串，post 方法用于向 Web 服务器输入数据以从 Web 查询中返回数据。<b>String</b> 类型，可读写。</summary>
+        <summary>返回或设置用于 post 方法的字符串，post 方法用于向 Web 服务器输入数据以从 Web 查询中返回数据。 读/写 <b>String</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>本主题中的内容的一些可能不适用于某些语言版本。</para>
+        <remarks><para>本主题中的某些内容可能不适用于某些语言。</para>
           <para>Microsoft Excel 带有 Web 查询示例，使用 WordPad 或其他文本编辑器可对其中的 HTML 代码进行更改。查询示例在 Microsoft Office 的安装文件夹的“Queries”文件夹中。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PreserveColumnInfo">
@@ -835,13 +800,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果每次刷新查询表时，列排序、筛选和布局信息都会保留，则该值为 <b>True</b>。默认值为 <b>False</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果每次刷新查询表时，列排序、筛选和布局信息都会保留，则该值为 <b>True</b>。 默认值为 <b>False</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>只有当查询表使用数据库连接时，该属性才有效。</para>
+        <remarks><para>只有当查询表使用数据库连接时，该属性才有效。</para>
           <para>可以将该属性设置为 <b>False</b>，以便与 Microsoft Excel 的早期版本兼容。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PreserveFormatting">
@@ -870,13 +833,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果任何常规格式设置的前五个数据行应用于新的查询表中的数据行，则此属性为<b>True</b> 。 未使用的单元格不设置格式。 该属性是<b>False</b>如果的最后一个自动套用格式应用于该查询表应用于新数据行。 默认值为<b>True</b> (除非该查询表在 Microsoft Excel 97 中创建和<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.HasAutoFormat" />属性为<b>True</b>，在其中案例<b>PreserveFormatting</b>为<b>False</b>)。 可读写 <b>Boolean</b>。</summary>
+        <summary>如果将前五行数据的任何通用格式应用于查询表中的新数据行，则此属性为<b>True。</b> 对未使用的单元格不进行格式设置。 如果将应用到查询表的最新一次自动套用格式应用于新数据行，则属性为 <b>False</b>。 默认值为 <b>True</b> (除非查询表是在 Microsoft Excel 97 中创建的，而该属性为 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.HasAutoFormat" /> <b>True，</b>在这种情况下 <b>PreserveFormatting</b> 为 <b>False</b>) 。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>对于数据库查询表，默认的格式设置为 <b>xlSimple</b>。</para>
-          <para>刷新查询表时，将对查询表应用新的自动套用格式样式。只要 <b>PreserveFormatting</b> 的值为 <b>False</b>，则 AutoFormat（自动套用格式）就会被设置为 <b>None</b>。这样，任何在 <b>PreserveFormatting</b> 被设置为 <b>False</b> 或在查询表刷新之前设置的自动套用格式都不会起作用，且相应产生的查询表也不会被应用任何格式。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>对于数据库查询表，默认的格式设置为 <b>xlSimple</b>。</para>
+          <para>刷新查询表时，将对查询表应用新的自动套用格式样式。 只要 <b>PreserveFormatting</b> 的值为 <b>False</b>，则 AutoFormat（自动套用格式）就会被设置为 <b>None</b>。 这样，任何在 <b>PreserveFormatting</b> 被设置为 <b>False</b> 或在查询表刷新之前设置的自动套用格式都不会起作用，且相应产生的查询表也不会被应用任何格式。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="QueryType">
@@ -902,12 +863,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlQueryType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指示 Microsoft Excel 用于填充查询表或数据透视表缓存的查询的类型。 只读<see cref="T:Microsoft.Office.Interop.Excel.XlQueryType" />。</summary>
+        <summary>指示 Microsoft Excel 用于填充查询表或数据透视表缓存的查询类型。 只读 <see cref="T:Microsoft.Office.Interop.Excel.XlQueryType" /> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>前缀中指定的数据源<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" />属性的值。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>在属性值的前缀中 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> 指定数据源。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Recordset">
@@ -936,12 +895,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个用作数据源指定的查询表或数据透视表缓存的<b>Recordset</b>对象。 为可读/写属性。</summary>
+        <summary>返回或设置 <b>一个 Recordset</b> 对象，该对象用作指定查询表或数据透视表缓存的数据源。 读/写。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果此属性用来覆盖现有记录集，更改将生效时<see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" />方法运行。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果此属性用于覆盖现有记录集，则更改在该方法运行时 <see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" /> 生效。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Refresh">
@@ -966,21 +923,18 @@
         <Parameter Name="BackgroundQuery" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="BackgroundQuery">可选的<b>对象</b>。 仅用于<b>查询表</b>基于 SQL 查询的结果。 提交<b>true</b>以返回到只要建立数据库连接的过程和查询的控件。 <b>QueryTable</b>是在后台进行了更新。 <b>False</b>可在所有数据返回到该过程的控件，并具有已取回到工作表。 如果不指定此参数，设置<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.BackgroundQuery" />属性确定查询模式。</param>
-        <summary>更新外部数据区域 (<see cref="T:Microsoft.Office.Interop.Excel.QueryTable" />)。 <b>Boolean 类型的值</b> 。</summary>
+        <param name="BackgroundQuery">可选 <b>对象</b>。 只用于基于 SQL 查询结果的 <b>QueryTables</b>。 如果为 <b>True</b>，则在数据库建立连接并提交查询之后，将控制返回给过程。 <b>QueryTable</b> 在后台进行更新。 如果为 <b>False</b>，则在所有数据被取回到工作表之后，将控制返回给过程。 如果未指定此参数，则该属性 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.BackgroundQuery" /> 的设置将确定查询模式。</param>
+        <summary>更新外部数据范围 <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> () 。 <b>Boolean 类型的值</b> 。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>下列说明适用于基于 SQL 查询结果的 <b>QueryTable</b> 对象。</para>
-          <para>
-            <b>Refresh</b> 方法使 Microsoft Excel 连接到 <b>QueryTable</b> 对象的数据源，执行 SQL 查询，并将数据返回到基于 <b>QueryTable</b> 对象的区域。除非调用该方法，否则 <b>QueryTable</b> 对象不与数据源通信。</para>
-          <para>OLE DB 或 ODBC 数据源的连接时，Microsoft Excel 将使用指定的连接字符串<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" />属性。 如果指定的连接字符串缺少必需的值，则将显示对话框提示用户输入所需的信息。 如果<see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" />属性为<b>false，则</b>不显示对话框和<b>Refresh</b>方法将失败并连接信息不足异常。</para>
-          <para>Microsoft Excel 将成功连接后，它会存储已完成的连接字符串，以便在同一个编辑会话期间，不会提示显示后续调用<b>Refresh</b>方法。 您可以通过检查的值来获取完整的连接字符串<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" />属性。</para>
-          <para>完成数据库连接后，将检查 SQL 查询的有效性。如果该查询无效，<b>Refresh</b> 方法将失败并导致“SQL 语法错误”异常。</para>
-          <para>如果查询需要参数，<see cref="T:Microsoft.Office.Interop.Excel.Parameters" />调用<b>Refresh</b>方法之前，必须用参数绑定信息初始化集合。 如果没有已绑定足够的参数， <b>Refresh</b>方法将失败并参数错误异常。 如果参数设置为提示它们的值，而不考虑设置的用户显示的对话框<see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" />属性。 如果用户取消参数对话框， <b>Refresh</b>方法将暂停并返回<b>False</b>。 如果额外的参数的<b>Parameters</b>集合与绑定，这些额外的参数将被忽略。</para>
+        <remarks><para>下列说明适用于基于 SQL 查询结果的 <b>QueryTable</b> 对象。</para>
+          <para><b>Refresh</b> 方法使 Microsoft Excel 连接到 <b>QueryTable</b> 对象的数据源，执行 SQL 查询，并将数据返回到基于 <b>QueryTable</b> 对象的区域。 除非调用该方法，否则 <b>QueryTable</b> 对象不与数据源通信。</para>
+          <para>与 OLE DB 或 ODBC 数据源建立连接时，Microsoft Excel 使用属性指定的连接 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> 字符串。 如果指定的连接字符串缺少必需的值，将显示对话框，提示用户提供必需的信息。 如果 <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> 该属性为 <b>False，</b>则不显示对话框， <b>并且 Refresh</b> 方法失败，出现"连接信息不足"异常。</para>
+          <para>在 Microsoft Excel 建立一个成功的连接之后，将存储完整的连接字符串，这样，以后在同一编辑会话中调用 <b>Refresh</b> 方法时就不会再显示提示。 您可以通过检查属性的值来获取已完成的连接 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> 字符串。</para>
+          <para>完成数据库连接后，将检查 SQL 查询的有效性。 如果该查询无效，<b>Refresh</b> 方法将失败并导致“SQL 语法错误”异常。</para>
+          <para>如果查询需要参数，则必须在调用 Refresh 方法之前使用参数 <see cref="T:Microsoft.Office.Interop.Excel.Parameters" /> 绑定信息 <b>初始化</b> 集合。 如果未绑定足够的参数，<b>Refresh</b> 方法将失败并导致“参数错误”异常。 如果将参数设置为提示输入其值，则无论该属性的设置如何，都会向用户显示 <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> 对话框。 如果用户取消参数对话框，<b>Refresh</b> 将停止并返回 <b>False</b>。 如果额外参数与 <b>Parameters</b> 集合绑定，则忽略这些额外的参数。</para>
           <para>如果成功地完成或启动查询，则 <b>Refresh</b> 方法返回 <b>True</b>；如果用户取消连接或参数对话框，该方法返回 <b>False</b>。</para>
-          <para>若要查看是否读取的行数超过的工作表上可用的行数，请检查<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.FetchedRowOverflow" />属性。 每次调用<b>Refresh</b>方法时，此属性被初始化。</para>
-          <para></para>
-        </remarks>
+          <para>若要了解提取的行数是否超过了工作表上的可用行数，请检查 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.FetchedRowOverflow" /> 该属性。 每次调用 <b>Refresh</b> 方法之前，该属性都将被初始化。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Refreshing">
@@ -1006,13 +960,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果指定的查询表正在进行后台查询。 可读写 <b>Boolean</b>。</summary>
+        <summary><b>如此</b> 如果指定的查询表正在进行后台查询。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Excel._QueryTable.CancelRefresh" />方法可取消后台查询。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>使用此方法 <see cref="M:Microsoft.Office.Interop.Excel._QueryTable.CancelRefresh" /> 取消后台查询。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshOnFileOpen">
@@ -1041,12 +992,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>			如果每次打开工作簿时，数据透视表高速缓存或查询表自动更新，则为 <b>True</b>。默认值为 <b>False</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果每次打开工作簿时，数据透视表高速缓存或查询表自动更新，则为 <b>True</b>。 默认值为 <b>False</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>查询表和数据透视表报表不会自动刷新时使用打开工作簿<see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法。 使用<see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" />方法，以打开工作簿后，刷新数据。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>使用该方法打开工作簿时，不会自动刷新查询表和数据透视 <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 表。 使用 <see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" /> 该方法在工作簿打开后刷新数据。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshPeriod">
@@ -1075,14 +1024,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置的刷新间隔的分钟数。 可读写 <b>Integer</b>。</summary>
+        <summary>返回或设置两次刷新之间的时间间隔。 <b>Integer</b> 型，可读/写。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>将周期设置为 0（零），则会禁用自动定时刷新，并且等同于将该属性设置为 <b>Null</b>。</para>
-          <para>
-            <b>RefreshPeriod</b>属性的值可以是介于 0 到 32767 之间的整数。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>将时间段设置为 0（零）会禁用定时自动刷新，等同于将此属性设置为 <b>Null</b>。</para>
+          <para><b>RefreshPeriod</b>属性的值可以是 0 到 32，767 的整数。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshStyle">
@@ -1111,7 +1057,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCellInsertionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定工作表中的行中添加或删除容纳的查询返回的 recordset 中的行数的方式。 读/写<see cref="T:Microsoft.Office.Interop.Excel.XlCellInsertionMode" />。</summary>
+        <summary>返回或设置指定工作表上的行的添加或删除方式，以适应查询返回的记录集的行数。 读/写 <see cref="T:Microsoft.Office.Interop.Excel.XlCellInsertionMode" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1137,7 +1083,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>将指定的查询表或数据透视表的刷新计时器重置使用设置的最后一个时间间隔为<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.RefreshPeriod" />属性。</summary>
+        <summary>将指定查询表或数据透视表的刷新计时器重置为使用该属性设置的上一 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.RefreshPeriod" /> 个间隔。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1164,12 +1110,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，表示指定的查询表所占用的工作表的区域。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 一个对象，该对象代表指定查询表所占用的工作表区域。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>该区域不包括字段名称行或行号列。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>该区域不包括字段名称行或行号列。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RobustConnect">
@@ -1198,7 +1142,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlRobustConnect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置数据透视表缓存与其数据源连接的方式。 读/写<see cref="T:Microsoft.Office.Interop.Excel.XlRobustConnect" />。</summary>
+        <summary>返回或设置数据透视表缓存与其数据源连接的方式。 读/写 <see cref="T:Microsoft.Office.Interop.Excel.XlRobustConnect" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1229,12 +1173,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果行号作为第一列添加到指定查询表，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果行号作为第一列添加到指定查询表，则该属性值为 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>设置该属性为 <b>True</b> 并不会使行号立即显示。在查询表下一次刷新时行号将显示，而且在查询表每次刷新时将重新配置这些行号。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>设置该属性为 <b>True</b> 并不会使行号立即显示。 在查询表下一次刷新时行号将显示，而且在查询表每次刷新时将重新配置这些行号。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveAsODC">
@@ -1261,10 +1203,10 @@
         <Parameter Name="Keywords" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ODCFileName">必需的 <b>字符串</b> 。 将文件保存到的位置。</param>
-        <param name="Description">可选的<b>对象</b>。 将保存在文件中的说明。</param>
-        <param name="Keywords">可选的<b>对象</b>。 可用于搜索该文件的以空格分隔的关键字。</param>
-        <summary>将数据透视表缓存的源保存为 Microsoft Office 数据连接文件。</summary>
+        <param name="ODCFileName">必需的 <b>字符串</b> 。 文件保存到的位置。</param>
+        <param name="Description">可选 <b>对象</b>。 将保存在文件中的说明。</param>
+        <param name="Keywords">可选 <b>对象</b>。 可用于搜索该文件的以空格分隔的关键字。</param>
+        <summary>将数据透视表缓存源保存为Microsoft Office数据连接文件。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1294,12 +1236,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果数据透视表的数据随工作簿一起保存，则为 <b>True</b>。如果仅保存数据透视表的定义，则为 <b>False</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果数据透视表的数据随工作簿一起保存，则为 <b>True</b>。 如果仅保存数据透视表的定义，则为 <b>False</b>。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>对于 OLAP 数据源，此属性始终设置为 <b>False</b>。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>对于 OLAP 数据源，此属性始终设置为 <b>False</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SavePassword">
@@ -1328,12 +1268,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>			如果将 ODBC 连接字符串中的密码信息与指定查询一起保存，则为 <b>True</b>。如果不保存密码信息，则该值为 <b>False</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果将 ODBC 连接字符串中的密码信息与指定查询一起保存，则为 <b>True</b>。 如果删除密码，则为 <b>False</b>。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性会影响仅 ODBC 查询。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>此属性仅影响 ODBC 查询。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -1359,17 +1297,12 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Sort</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回查询表范围的排序条件。只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Sort" />
-        </value>
-        <remarks>
-          <para>如果您导入使用用户界面的数据，来自 Web 查询或文本查询的数据将导入为<see cref="T:Microsoft.Office.Interop.Excel._QueryTable" />对象，而所有其他外部数据将导入为<see cref="T:Microsoft.Office.Interop.Excel.ListObject" />对象。</para>
+        <summary>返回查询表范围的排序条件。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Sort" /></value>
+        <remarks><para>如果使用用户界面导入数据，则来自 Web 查询或文本查询的数据作为对象导入，而所有其他外部数据作为对象 <see cref="T:Microsoft.Office.Interop.Excel._QueryTable" /> <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> 导入。</para>
           <para>如果使用对象模型导入数据，来自 Web 查询或文本查询的数据必须作为 <b>QueryTable</b> 导入，而所有其他外部数据既可作为 <b>ListObject</b> 导入，也可作为 <b>QueryTable</b> 导入。</para>
-          <para>可以使用 <b>ListObject</b> 的 <b>QueryTable</b> 属性访问 <b>Sort</b> 属性。
-</para>
-          <para></para>
-        </remarks>
+          <para>可以使用 <b>ListObject</b> 的 <b>QueryTable</b> 属性访问 <b>Sort</b> 属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceConnectionFile">
@@ -1398,7 +1331,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个 <b>String</b>，它指明用于创建数据透视表的 Microsoft Office 数据连接文件或类似的文件。可读写。</summary>
+        <summary>返回或设置一个 <b>String</b>，它指明用于创建数据透视表的 Microsoft Office 数据连接文件或类似的文件。 读/写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1429,12 +1362,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>String</b> ，指示查询表的源数据文件。</summary>
+        <summary>返回或设置一 <b>个字符串</b> ，指示查询表的源数据文件。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>对于基于文件的数据源 （如访问） 的<b>SourceDataFile</b>属性包含源数据文件的完全限定的路径。 它为 null 的基于服务器的数据源 (如 SQL Server)。 <b>SourceDataFile</b>属性设置为 null<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" />以编程方式更改属性。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>对于基于文件的数据源 (例如，Access) <b>SourceDataFile</b> 属性包含源数据文件的完全限定路径。 对于基于服务器的数据源（例如 (，它SQL Server) 。 如果以编程方式更改了 <b>SourceDataFile</b> 属性，则 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> 该属性设置为 null。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Sql">
@@ -1508,12 +1439,9 @@
       <Docs>
         <summary>依据输入值和工作表上定义的公式创建模拟运算表。</summary>
         <value>Variant</value>
-        <remarks>
-          <para>使用模拟运算表，通过更改工作表上特定常量的值，并观察其他单元格相应的变化情况，可进行模拟分析。</para>
-          <para></para>
-        </remarks>
-        <example>
-          <para>本示例在工作表 Sheet1 的 A1:K11 单元格中创建一个带格式的乘法运算表。</para>
+        <remarks><para>使用模拟运算表，通过更改工作表上特定常量的值，并观察其他单元格相应的变化情况，可进行模拟分析。</para>
+          <para> </para></remarks>
+        <example><para>本示例在工作表 Sheet1 的 A1:K11 单元格中创建一个带格式的乘法运算表。</para>
           <code>&lt;span class="label"&gt;Set dataTableRange = Worksheets("Sheet1").Range("A1:K11")  
  
  
@@ -10732,10 +10660,8 @@ Next i
  
 dataTableRange.&lt;/span&gt;
 &lt;i&gt;Table&lt;/i&gt;
-&lt;span class="label"&gt;rowInputCell, columnInputCell With Worksheets("Sheet1").Range("A1").CurrentRegion     .Rows(1).Font.Bold = True     .Columns(1).Font.Bold = True     .Columns.AutoFit End With&lt;/span&gt;</code>
-        </example>
-        <example>
-          <para>本示例在工作表 Sheet1 的 A1:K11 单元格中创建一个带格式的乘法运算表。</para>
+&lt;span class="label"&gt;rowInputCell, columnInputCell With Worksheets("Sheet1").Range("A1").CurrentRegion     .Rows(1).Font.Bold = True     .Columns(1).Font.Bold = True     .Columns.AutoFit End With&lt;/span&gt;</code></example>
+        <example><para>本示例在工作表 Sheet1 的 A1:K11 单元格中创建一个带格式的乘法运算表。</para>
           <code>&lt;span class="label"&gt;Set dataTableRange = Worksheets("Sheet1").Range("A1:K11")  
  
  
@@ -19954,10 +19880,8 @@ Next i
  
 dataTableRange.&lt;/span&gt;
 &lt;i&gt;Table&lt;/i&gt;
-&lt;span class="label"&gt;rowInputCell, columnInputCell With Worksheets("Sheet1").Range("A1").CurrentRegion     .Rows(1).Font.Bold = True     .Columns(1).Font.Bold = True     .Columns.AutoFit End With&lt;/span&gt;</code>
-        </example>
-        <example>
-          <para>本示例在工作表 Sheet1 的 A1:K11 单元格中创建一个带格式的乘法运算表。</para>
+&lt;span class="label"&gt;rowInputCell, columnInputCell With Worksheets("Sheet1").Range("A1").CurrentRegion     .Rows(1).Font.Bold = True     .Columns(1).Font.Bold = True     .Columns.AutoFit End With&lt;/span&gt;</code></example>
+        <example><para>本示例在工作表 Sheet1 的 A1:K11 单元格中创建一个带格式的乘法运算表。</para>
           <code>&lt;span class="label"&gt;Set dataTableRange = Worksheets("Sheet1").Range("A1:K11")  
  
  
@@ -29176,8 +29100,7 @@ Next i
  
 dataTableRange.&lt;/span&gt;
 &lt;i&gt;Table&lt;/i&gt;
-&lt;span class="label"&gt;rowInputCell, columnInputCell With Worksheets("Sheet1").Range("A1").CurrentRegion     .Rows(1).Font.Bold = True     .Columns(1).Font.Bold = True     .Columns.AutoFit End With&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;rowInputCell, columnInputCell With Worksheets("Sheet1").Range("A1").CurrentRegion     .Rows(1).Font.Bold = True     .Columns(1).Font.Bold = True     .Columns.AutoFit End With&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="TextFileColumnDataTypes">
@@ -29206,10 +29129,9 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个已排序的常量指定应用于正在导入查询表的文本文件中的相应列的数据类型的数组。 每个列采用默认常量是<b>xlGeneral</b>。 读取/写入 <b>对象</b> 。</summary>
+        <summary>返回或设置一个有序的常量数组，用于指定文本文件中相应列的数据类型，而该文本文件则是正要导入查询表中的文本文件。 每一列的默认常量为 <b>xlGeneral</b>。 读取/写入 <b>对象</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>您可以使用<see cref="T:Microsoft.Office.Interop.Excel.XlColumnDataType" />下表指定使用的列数据类型或数据导入过程中执行的操作中列出的常量。</para>
+        <remarks><para>可以使用下表中列出的常量指定使用的列数据类型或在数据导入 <see cref="T:Microsoft.Office.Interop.Excel.XlColumnDataType" /> 过程中采取的操作。</para>
           <list type="table">
             <item>
               <term>
@@ -29272,11 +29194,10 @@ dataTableRange.&lt;/span&gt;
               <description>“年-月-日”日期格式</description>
             </item>
           </list>
-          <para>仅当查询表基于文本文件数据时使用此属性 (使用<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />属性设置为<b>xlTextImport</b>)。</para>
-          <para>如果指定数组中的元素大于的列数，则这些值将被忽略。</para>
-          <para>仅当安装和选择繁体中文语言支持，您可以使用<b>xlEMDFormat</b> 。 <b>XlEMDFormat</b>常量指定繁体中文卡时代日历日期正在被使用。</para>
-          <para></para>
-        </remarks>
+          <para>只有当查询表基于文本文件数据，而该属性设置为 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlTextImport</b> (时，才使用) 。</para>
+          <para>如果在数组中指定的元素数多于列数，则这些值将被忽略。</para>
+          <para>只有在安装并选定了中国台湾地区语言时才可以使用 <b>xlEMDFormat</b>。<b>xlEMDFormat</b> 常量指定使用中国台湾地区纪元日期。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFileCommaDelimiter">
@@ -29305,12 +29226,10 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果将文本文件导入查询表中时，以逗号作为分隔符，则该值为 <b>True</b>。如果以其他字符作为分隔符，则该值为 <b>False</b>。默认值为 <b>False</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果将文本文件导入查询表中时，以逗号作为分隔符，则该值为 <b>True</b>。 如果以其他字符作为分隔符，则该值为 <b>False</b>。 默认值为 <b>False</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>仅当查询表基于文本文件数据时使用此属性 (使用<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />属性设置为<b>xlTextImport</b>)，并且仅当的值<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" />属性为<b>xlDelimited</b>。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>只有当查询表基于文本文件 (且属性设置为 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlTextImport</b>) 的数据，并且该属性的值为 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" /> <b>xlDelimited</b>时，才使用此属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFileConsecutiveDelimiter">
@@ -29339,12 +29258,10 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>文本文件导入查询表时，连续分隔符被视为一个分隔符。 默认值是<b>Fals</b>e。 可读写 <b>Boolean</b>。</summary>
+        <summary>当向查询表中导入文本文件时，如果将连续分隔符看作是一个分隔符，则该值为 <b>True</b>。 默认值为 <b>Fals</b>e。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>仅当查询表基于文本文件数据时使用此属性 (使用<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />属性设置为<b>xlTextImport</b>)，并且仅当的值<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" />属性为<b>xlDelimited</b>。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>只有当查询表基于文本文件 (且属性设置为 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlTextImport</b>) 的数据，并且该属性的值为 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" /> <b>xlDelimited</b>时，才使用此属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFileDecimalSeparator">
@@ -29373,10 +29290,9 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置小数分隔符，在将文本文件导入查询表中时，Microsoft Excel 将使用小数分隔符。默认值为系统小数分隔符。<b>String</b> 类型，可读写。</summary>
+        <summary>返回或设置小数分隔符，在将文本文件导入查询表中时，Microsoft Excel 将使用小数分隔符。 默认值为系统小数分隔符。 读/写 <b>String</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>仅当查询表基于文本文件数据时使用此属性 (使用<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />属性设置为<b>xlTextImport</b>)，其中包含小数和千位分隔符不同于所用的计算机上，由于不同的语言正在使用的设置。</para>
+        <remarks><para>只有当查询表基于文本文件 (（该属性设置为 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlTextImport</b>) ，其中包含与计算机上所使用的分隔符不同的小数和千位分隔符）的数据时，才使用此属性，因为所使用的语言设置不同。</para>
           <para>下表显示当使用不同分隔符向 Microsoft Excel 中导入文本时得到的不同结果。数字结果显示在最右边的列中。</para>
           <list type="table">
             <item>
@@ -29420,8 +29336,7 @@ dataTableRange.&lt;/span&gt;
               <description>123,123.45（数字）</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFileFixedColumnWidths">
@@ -29450,13 +29365,11 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置要导入查询表的文本文件中的整数 （以字符为单位） 的列的列宽与对应的数组。 有效的宽度为介于 1 到 32,767 个字符。 读取/写入 <b>对象</b> 。</summary>
+        <summary>返回或设置一个整数数组，该数组对应于正要向查询表中导入的文本文件的列宽（按字符）。 有效宽度为 1 到 32，767 个字符。 读取/写入 <b>对象</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>仅当查询表基于文本文件数据时使用此属性 (使用<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />属性设置为<b>xlTextImport</b>)，并且仅当的值<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" />属性是<b>xlFixedWidth</b>。</para>
+        <remarks><para>只有当查询表基于文本文件 (中属性设置为 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlTextImport</b>) 的数据时，以及仅在属性的值为 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" /> <b>xlFixedWidth</b>时，才使用此属性。</para>
           <para>必须指定一个有效的非负值列宽。如果指定的列超出了文本文件的宽度，则会忽略那些值。如果文本文件的宽度大于指定的列的总宽度，则文本文件的剩余部分将会导入到一个附加列中。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFileOtherDelimiter">
@@ -29485,13 +29398,11 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个文本文件导入查询表时用作分隔符的字符。 默认值为 <b>Null</b>。 可读写 <b>String</b>。</summary>
+        <summary>返回或设置在向查询表中导入文本文件时用作分隔符的字符。 默认值为 <b>Null</b>。 读/写 <b>String</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>仅当查询表基于文本文件数据时使用此属性 (使用<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />属性设置为<b>xlTextImport</b>)，并且仅当的值<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" />属性为<b>xlDelimited</b>。</para>
+        <remarks><para>只有当查询表基于文本文件 (且属性设置为 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlTextImport</b>) 的数据，并且该属性的值为 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" /> <b>xlDelimited</b>时，才使用此属性。</para>
           <para>如果在字符串中指定了多个字符，则只使用第一个字符。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFileParseType">
@@ -29520,12 +29431,10 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Excel.XlTextParsingType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置要导入查询表的文本文件中数据的列格式。 读/写<see cref="T:Microsoft.Office.Interop.Excel.XlTextParsingType" />。</summary>
+        <summary>返回或设置要导入查询表的文本文件中数据的列格式。 读/写 <see cref="T:Microsoft.Office.Interop.Excel.XlTextParsingType" /> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>仅当查询表基于文本文件数据时使用此属性 (使用<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />属性设置为<b>xlTextImport</b>)。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>只有当查询表基于文本文件数据，而该属性设置为 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlTextImport</b> (时，才使用) 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFilePlatform">
@@ -29554,12 +29463,10 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置要导入查询表的文本文件的原点而言的。 此属性确定数据导入过程中使用的代码页。 默认值是在“文本文件导入向导”的“文件原始格式”选项中的当前设置。 读/写<see cref="T:Microsoft.Office.Interop.Excel.XlPlatform" />。</summary>
+        <summary>返回或设置正向查询表中导入的文本文件的原始格式。 该属性确定在数据导入过程中使用何种代码页。 默认值是在“文本文件导入向导”的“文件原始格式”选项中的当前设置。 读/写 <see cref="T:Microsoft.Office.Interop.Excel.XlPlatform" /> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>仅当查询表基于文本文件数据时使用此属性 (使用<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />属性设置为<b>xlTextImport</b>)。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>只有当查询表基于文本文件数据，而该属性设置为 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlTextImport</b> (时，才使用) 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFilePromptOnRefresh">
@@ -29588,14 +29495,12 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果每次刷新查询表时都要指定导入文本文件的名称，则该属性值为 <b>True</b>。“导入文本文件”对话框允许用户指定路径和文件名。默认值为 <b>False</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果每次刷新查询表时都要指定导入文本文件的名称，则该属性值为 <b>True</b>。 “导入文本文件”对话框允许用户指定路径和文件名。 默认值为 <b>False</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>仅当查询表基于文本文件数据时使用此属性 (使用<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />属性设置为<b>xlTextImport</b>)。</para>
+        <remarks><para>只有当查询表基于文本文件数据，而该属性设置为 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlTextImport</b> (时，才使用) 。</para>
           <para>如果该属性值为 <b>True</b>，则第一次刷新查询表时，并不显示对话框。</para>
           <para>在用户界面中，其默认值为 <b>True</b>。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFileSemicolonDelimiter">
@@ -29624,13 +29529,10 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果当文本文件导入查询表，并且如果，使用分号作为分隔符的值<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" />属性为<b>xlDelimited</b>。 默认值为 <b>False</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
+        <summary><b>如此</b> 如果分号是在将文本文件导入查询表时分隔符，如果属性值为 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" /> <b>xlDelimited</b>。 默认值为 <b>False</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>仅当查询表基于文本文件数据时使用此属性 (使用<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />属性设置为<b>xlTextImport</b>)。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>只有当查询表基于文本文件数据，而该属性设置为 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlTextImport</b> (时，才使用) 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFileSpaceDelimiter">
@@ -29659,12 +29561,10 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果向查询表中导入文本文件时，使用空格字符作为分隔符，则该值为 <b>True</b>。默认值为 <b>False</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果向查询表中导入文本文件时，使用空格字符作为分隔符，则该值为 <b>True</b>。 默认值为 <b>False</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>仅当查询表基于文本文件数据时使用此属性 (使用<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />属性设置为<b>xlTextImport</b>)，并且仅当的值<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" />属性为<b>xlDelimited</b>。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>只有当查询表基于文本文件 (且属性设置为 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlTextImport</b>) 的数据，并且该属性的值为 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" /> <b>xlDelimited</b>时，才使用此属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFileStartRow">
@@ -29693,12 +29593,10 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置进行文本分析时开始一个文本文件导入查询表的行号。 有效值为 1 到 32767 之间的整数。 默认值为 1。 可读写 <b>Integer</b>。</summary>
+        <summary>返回或设置向查询表中导入文本文件时进行文本分列的起始行号。 有效值为 1 到 32，767 的整数。 默认值为 1。 <b>Integer</b> 型，可读/写。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>仅当查询表基于文本文件数据时使用此属性 (使用<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />属性设置为<b>xlTextImport</b>)。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>只有当查询表基于文本文件数据，而该属性设置为 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlTextImport</b> (时，才使用) 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFileTabDelimiter">
@@ -29727,12 +29625,10 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果向查询表中导入文本文件时使用 Tab 作为分隔符，则该值为 <b>True</b>。默认值为 <b>False</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果向查询表中导入文本文件时使用 Tab 作为分隔符，则该值为 <b>True</b>。 默认值为 <b>False</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>仅当查询表基于文本文件数据时使用此属性 (使用<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />属性设置为<b>xlTextImport</b>)，并且仅当的值<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" />属性为<b>xlDelimited</b>。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>只有当查询表基于文本文件 (且属性设置为 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlTextImport</b>) 的数据，并且该属性的值为 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" /> <b>xlDelimited</b>时，才使用此属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFileTextQualifier">
@@ -29761,12 +29657,10 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Excel.XlTextQualifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个文本文件导入查询表时的文本识别符号。 文本识别符号指定包含的数据是以文本格式。 读/写<see cref="T:Microsoft.Office.Interop.Excel.XlTextQualifier" />。</summary>
+        <summary>返回或设置向查询表中导入文本文件时的文本识别符。 文本识别符用于指定包含的数据是文本格式。 读/写 <see cref="T:Microsoft.Office.Interop.Excel.XlTextQualifier" /> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>仅当查询表基于文本文件数据时使用此属性 (使用<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />属性设置为<b>xlTextImport</b>)。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>只有当查询表基于文本文件数据，而该属性设置为 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlTextImport</b> (时，才使用) 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFileThousandsSeparator">
@@ -29795,10 +29689,9 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置千位分隔符的文本文件导入查询表时，将使用 Microsoft Excel。 默认值是系统千位分隔符。 可读写 <b>String</b>。</summary>
+        <summary>返回或设置在将文本文件导入查询表中时 Microsoft Excel 使用的千位分隔符。 默认为系统千位分隔符。 读/写 <b>String</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>仅当查询表基于文本文件数据时使用此属性 (使用<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />属性设置为<b>xlTextImport</b>)，尤其是当该文件包含小数和千位分隔符的不同的计算机上，使用 0:正在使用不同的语言设置。</para>
+        <remarks><para>只有当查询表基于文本文件 (（该属性设置为 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlTextImport</b>) ）的数据时，才使用此属性，尤其是当文件包含与计算机上使用的分隔符不同的小数和千位分隔符时，由于所使用的语言设置不同。</para>
           <para>下表显示当使用不同分隔符向 Microsoft Excel 中导入文本时得到的不同结果。数字结果显示在最右边的列中。</para>
           <list type="table">
             <item>
@@ -29842,8 +29735,7 @@ dataTableRange.&lt;/span&gt;
               <description>123,123.45（数字）</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFileTrailingMinusNumbers">
@@ -29872,8 +29764,7 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>表示 Microsoft Excel 将导入开头的文本形式的数字"-"符号作为为负数。 <b>False</b> Excel 将导入开头的文本形式的数字"-"以文本形式的符号。 可读写 <b>Boolean</b>。</summary>
+        <summary><b>真正</b> 的 Microsoft Excel 将导入的数字视为以"-"符号开头的文本为负数。 如果为 <b>False</b>，则表示 Excel 将导入的数字作为以“-”符号开头的文本，“-”符号为文本。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -29904,7 +29795,7 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Excel.XlTextVisualLayoutType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Excel.XlTextVisualLayoutType" />常量，指示正在导入的文本的可视布局是从左到右还是从右到左。</summary>
+        <summary>返回或设置一个常量，该常量指示要导入的文本的视觉布局是从左到右还是从右 <see cref="T:Microsoft.Office.Interop.Excel.XlTextVisualLayoutType" /> 到左。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -29935,13 +29826,10 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果连续分隔符被视为一个分隔符，从 HTML 导入数据时&lt;之前&gt;在查询表，到网页中的标记和如果分列分析数据。 <b>False</b>如果您想要连续分隔符视为多个分隔符。 默认值为 <b>True</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
+        <summary><b>如此</b> 如果将连续分隔符视为单个分隔符，当您将数据从网页中的 HTML PRE 标记导入查询表中时，以及是否将数据解析为 &lt; &gt; 列。 如果将连续多个分隔符看作多个分隔符，则该值为 <b>False</b>。 默认值为 <b>True</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用此属性仅当查询表的<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />属性设置为<b>xlWebQuery</b>，查询返回 HTML 文档，和<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.WebPreFormattedTextToColumns" />属性设置为<b>True</b>。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>只有在查询表的属性设置为 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlWebQuery</b>时，查询返回 HTML 文档，并且该属性设置为 True 时，才 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.WebPreFormattedTextToColumns" /> <b>使用此属性</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WebDisableDateRecognition">
@@ -29970,12 +29858,10 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>向查询表中导入网页时，如果将类似日期的数据当作文本进行处理，则该值为 <b>True</b>。如果使用了日期识别，则该值为 <b>False</b>。默认值为 <b>False</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>向查询表中导入网页时，如果将类似日期的数据当作文本进行处理，则该值为 <b>True</b>。 如果使用了日期识别，则该值为 <b>False</b>。 默认值为 <b>False</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用此属性仅当查询表的<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />属性设置为<b>xlWebQuery</b>并且查询返回 HTML 文档。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>只有当查询表的属性设置为 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlWebQuery</b> 且查询返回 HTML 文档时，才使用此属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WebDisableRedirections">
@@ -30004,7 +29890,7 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>禁用 Web 查询重定向<see cref="T:Microsoft.Office.Interop.Excel.QueryTable" />对象。 默认值为 <b>False</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
+        <summary><b>如果</b> 为对象禁用 Web 查询重定向，则其 <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> 返回 True。 默认值为 <b>False</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -30035,12 +29921,10 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Excel.XlWebFormatting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个值，确定多少应用格式设置从 Web 页中，如果有，页导入查询表时。 读/写<see cref="T:Microsoft.Office.Interop.Excel.XlWebFormatting" />。</summary>
+        <summary>返回或设置一个值，该值确定向查询表中导入网页时网页中应用了多少格式设置（如果有）。 读/写 <see cref="T:Microsoft.Office.Interop.Excel.XlWebFormatting" /> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用此属性仅当查询表的<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />属性设置为<b>xlWebQuery</b>并且查询返回 HTML 文档。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>只有当查询表的属性设置为 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlWebQuery</b> 且查询返回 HTML 文档时，才使用此属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WebPreFormattedTextToColumns">
@@ -30069,12 +29953,10 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置是否数据包含在 HTML&lt;之前&gt;页导入查询表时网页中的标记进行分列分析。 默认值为 <b>True</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
+        <summary>返回或设置在将网页导入查询表时，是否将网页 HTML PRE 标记中包含的数据分列 &lt; &gt; 。 默认值为 <b>True</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用此属性仅在<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />的查询表的属性为<b>xlWebQuery</b>并且查询返回 HTML 文档。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>此属性仅在查询表的属性为 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlWebQuery</b> 且查询返回 HTML 文档时使用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WebSelectionType">
@@ -30103,13 +29985,11 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Excel.XlWebSelectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个值，确定是否向查询表中导入整个网页、 所有在网页上的表或 Web 页上的特定表格。 读/写<see cref="T:Microsoft.Office.Interop.Excel.XlWebSelectionType" />。</summary>
+        <summary>返回或设置一个值，该值决定是向查询表中导入整个网页、网页上的所有表格还是仅网页上的特定表格。 读/写 <see cref="T:Microsoft.Office.Interop.Excel.XlWebSelectionType" /> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用此属性仅当查询表的<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />属性设置为<b>xlWebQuery</b>并且查询返回 HTML 文档。</para>
-          <para>如果此属性的值为<b>xlSpecifiedTables</b>，则可以使用<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.WebTables" />属性指定要导入的表。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>只有当查询表的属性设置为 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlWebQuery</b> 且查询返回 HTML 文档时，才使用此属性。</para>
+          <para>如果此属性的值为 <b>xlSpecifiedTables，</b>则您可以使用该属性指定要 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.WebTables" /> 导入的表。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WebSingleBlockTextImport">
@@ -30138,13 +30018,10 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果从 HTML 数据&lt;之前&gt;页导入查询表时同时处理指定网页中的标记。 <b>False</b>如果导入数据块的连续行中，以便将此类识别标题行。 默认值为 <b>False</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
+        <summary><b>如此</b> 如果导入查询表时，将同时处理指定网页中 HTML &lt; PRE &gt; 标记的数据。 如果数据是以连续行的数据块方式导入的，以便能识别标题行，则该值为 <b>False</b>。 默认值为 <b>False</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用此属性仅当查询表的<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />属性设置为<b>xlWebQuery</b>并且查询返回 HTML 文档。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>只有当查询表的属性设置为 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b>xlWebQuery</b> 且查询返回 HTML 文档时，才使用此属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WebTables">
@@ -30173,12 +30050,10 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置表名称或表格索引号的逗号分隔列表时将网页导入查询表。 可读写 <b>String</b>。</summary>
+        <summary>向查询表中导入网页时，返回或设置由逗号分隔的表格名称或表格索引号的列表。可读写 <b>String</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用此属性仅当查询表的<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />属性设置为<b>xlWebQuery</b>，查询返回 HTML 文档和值<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.WebSelectionType" />属性为<b>xlSpecifiedTables</b>。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>只有当查询表的属性设置为 xlWebQuery 时，才使用此属性，查询将返回 HTML 文档，并且该属性的值为 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.WebSelectionType" /> <b>xlSpecifiedTables。</b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WorkbookConnection">
@@ -30204,17 +30079,12 @@ dataTableRange.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />查询表使用的对象。 只读。</summary>
-        <value>
-          <b>WorkbookConnection</b>
-        </value>
-        <remarks>
-          <para>如果您导入使用用户界面的数据，来自 Web 查询或文本查询的数据导入为<see cref="T:Microsoft.Office.Interop.Excel._QueryTable" />对象，而所有其他外部数据将导入为<see cref="T:Microsoft.Office.Interop.Excel.ListObject" />对象。</para>
-          <para>如果您使用导入数据的对象模型，来自 Web 查询或文本查询必须导入为<b>QueryTable</b>时可将所有其他外部数据导入为<b>ListObject</b>或<b>QueryTable</b>。</para>
-          <para>
-            <b>WorkbookConnection</b> 属性仅适用于 <b>QueryTable</b> 对象。</para>
-          <para></para>
-        </remarks>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> 查询表使用的对象。 只读。</summary>
+        <value><b>WorkbookConnection</b></value>
+        <remarks><para>如果使用用户界面导入数据，则来自 Web 查询或文本查询的数据作为对象导入，而所有其他外部数据作为对象 <see cref="T:Microsoft.Office.Interop.Excel._QueryTable" /> <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> 导入。</para>
+          <para>如果使用对象模型导入数据，来自 Web 查询或文本查询的数据必须作为 <b>QueryTable</b> 导入，而所有其他外部数据既可作为 <b>ListObject</b> 导入，也可作为 <b>QueryTable</b> 导入。</para>
+          <para><b>WorkbookConnection</b> 属性仅适用于 <b>QueryTable</b> 对象。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

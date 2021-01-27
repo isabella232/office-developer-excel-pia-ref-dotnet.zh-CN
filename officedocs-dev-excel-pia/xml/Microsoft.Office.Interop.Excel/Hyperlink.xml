@@ -1,13 +1,5 @@
 <Type Name="Hyperlink" FullName="Microsoft.Office.Interop.Excel.Hyperlink">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0dfd3a08d223fb5d9858e759d9369366737cb84c" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20580687" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Hyperlink" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0dfd3a08d223fb5d9858e759d9369366737cb84c" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012073" /></Metadata><TypeSignature Language="C#" Value="public interface Hyperlink" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Hyperlink" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Hyperlink" />
   <TypeSignature Language="VB.NET" Value="Public Interface Hyperlink" />
@@ -30,13 +22,10 @@
   </Attributes>
   <Docs>
     <summary>代表一个超链接。</summary>
-    <remarks>
-      <para>
-        <b>Hyperlink</b>对象所在的<see cref="T:Microsoft.Office.Interop.Excel.Hyperlinks" />集合。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Excel.Shape.Hyperlink" />属性返回 （形状可以有只有一个超链接） 形状的超链接。</para>
-      <para>区域或工作表可以有多个超链接。 使用<b>超链接</b>(<paramref name="index" />)，其中<paramref name="index" />是超链接数，返回单个<b>Hyperlink</b>对象。</para>
-      <para></para>
-    </remarks>
+    <remarks><para><b>Hyperlink</b>对象是集合的一 <see cref="T:Microsoft.Office.Interop.Excel.Hyperlinks" /> 个成员。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Excel.Shape.Hyperlink" /> 该属性可返回形状的超链接 (形状只能有一个超链接) 。</para>
+      <para>区域或工作表可以有多个超链接。 使用 <b>超链接</b> <paramref name="index" /> () 超链接编号，返回 <paramref name="index" /> 单个 <b>超链接</b> 对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Address">
@@ -65,7 +54,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置的目标文档的地址。</summary>
+        <summary>返回或设置目标文档的地址。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -118,7 +107,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -149,8 +138,8 @@
       </Parameters>
       <Docs>
         <param name="Filename">必需的 <b>字符串</b> 。 指定文档的文件名。</param>
-        <param name="EditNow">所需<b>Boolean</b>。 <b>True</b>在其关联的编辑环境中立即打开指定文档。 默认值为 True 。</param>
-        <param name="Overwrite">所需<b>Boolean</b>。 <b>True</b>覆盖同一文件夹中的相同名称的任何现有文件。 <b>False</b>如果保留相同名称的任何现有文件和<paramref name="Filename" />参数指定一个新的文件名称。 默认值为 <b>False</b> 。</param>
+        <param name="EditNow">必需 <b>布尔值</b>。 如果为 <b>True</b>，则立即在相关编辑环境中打开指定文档。 默认值为 True。</param>
+        <param name="Overwrite">必需 <b>布尔值</b>。 如果为 <b>True</b>，则覆盖相同文件夹中任何现有的同名文件。 <b>假</b> 如果保留同名的任何现有文件，并且 <paramref name="Filename" /> 参数指定新的文件名。 默认值为 <b>False</b>。</param>
         <summary>新建一篇链接到指定超链接的文档。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -180,12 +169,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -239,13 +225,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定超链接的电子邮件主题行的文本字符串。 主题行追加到超链接的地址。</summary>
+        <summary>返回或设置指定超链接的电子邮件主题行的文本字符串。 主题行是添加到超链接地址上的。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>该属性常与电子邮件超链接一起使用。</para>
-          <para>此属性的值优先于使用指定的任何电子邮件主题行<see cref="P:Microsoft.Office.Interop.Excel.Hyperlink.Address" />相同的<b>Hyperlink</b>对象的属性。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>该属性常与电子邮件超链接一起使用。</para>
+          <para>此属性的值优先于使用同一 Hyperlink 对象的属性指定的任何 <see cref="P:Microsoft.Office.Interop.Excel.Hyperlink.Address" /> 电子邮件主题行。 <b></b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Follow">
@@ -274,12 +258,12 @@
         <Parameter Name="HeaderInfo" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="NewWindow">可选的<b>对象</b>。 <b>True</b>在新窗口中显示目标应用程序。 默认值为 <b>False</b> 。</param>
-        <param name="AddHistory">可选的<b>对象</b>。 不使用。 保留以备今后使用。</param>
-        <param name="ExtraInfo">可选的<b>对象</b>。 <b>字符串</b>或字节数组的指定 HTTP 用于解析超链接的其他信息。 例如，您可以使用<paramref name="ExtraInfo" />指定图像映射的坐标、 窗体或 FAT 文件名称的内容。</param>
-        <param name="Method">可选的<b>对象</b>。 指定的方式<paramref name="ExtraInfo" />附加。 可以是以下项之一<see cref="T:Microsoft.Office.Core.MsoExtraInfoMethod" />常量。</param>
-        <param name="HeaderInfo">可选的<b>对象</b>。 一个<b>字符串</b>，指定 HTTP 请求标头信息。 默认值为空字符串。</param>
-        <summary>如果已下载，显示缓存的文档。 否则为此方法解析超链接，下载目标文档，并在相应的应用程序中显示的文档。</summary>
+        <param name="NewWindow">可选 <b>对象</b>。 如果为 <b>True</b>，则在新窗口中显示目标应用程序。 默认值为 <b>False</b>。</param>
+        <param name="AddHistory">可选 <b>对象</b>。 未使用。 保留供将来使用。</param>
+        <param name="ExtraInfo">可选 <b>对象</b>。 字符串 <b>或</b> 字节数组，指定 HTTP 用于解析超链接的其他信息。 例如，可以使用指定图像映射的坐标、窗体的内容或 <paramref name="ExtraInfo" /> FAT 文件名。</param>
+        <param name="Method">可选 <b>对象</b>。 指定附加 <paramref name="ExtraInfo" /> 方式。 可以是下列常量 <see cref="T:Microsoft.Office.Core.MsoExtraInfoMethod" /> 之一。</param>
+        <param name="HeaderInfo">可选 <b>对象</b>。 一 <b>个</b> 字符串，指定 HTTP 请求的标题信息。 默认值为空字符串。</param>
+        <summary>如果已下载缓存文档，则显示该文档。 否则，此方法将解析该超链接，下载目标文档，并在相应的应用程序中显示此文档。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -306,7 +290,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回的对象的名称。只读的 <b>字符串</b> 。</summary>
+        <summary>返回的对象的名称。 只读的 <b>字符串</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -362,7 +346,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，它代表指定的超链接的区域附加到。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 一个对象，该对象代表指定超链接所附加到的范围。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -393,12 +377,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定的超链接的屏幕提示文字。</summary>
+        <summary>返回或设置指定超链接的屏幕提示文字。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>在将文档保存到网页中之后，如果在 Web 浏览器中查看该文档，则当鼠标移动到超链接上时，“屏幕提示”文字就会显示。某些浏览器可能不支持“屏幕提示”。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>在将文档保存到网页中之后，如果在 Web 浏览器中查看该文档，则当鼠标移动到超链接上时，“屏幕提示”文字就会显示。某些浏览器可能不支持“屏幕提示”。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shape">
@@ -424,7 +406,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象代表形状附加到指定的注释、 图表节点或超链接。</summary>
+        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 个对象，该对象代表附加到指定批注、图表节点或超链接的形状。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -455,7 +437,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置与超链接相关联的文档中的位置。</summary>
+        <summary>返回或设置文档中与指定超链接相关联的位置。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -486,7 +468,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定超链接显示的文本。 默认值是超链接的地址。</summary>
+        <summary>返回或设置要为指定超链接显示的文本。 默认值为超链接的地址。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -514,13 +496,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回的 HTML 框架的位置。</summary>
+        <summary>返回 HTML 框架的位置。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Type</b>属性可以是以下项之一<see cref="T:Microsoft.Office.Core.MsoHyperlinkType" />常量： <b>msoHyperlinkInlineShape</b>、 <b>msoHyperlinkRange</b>或<b>msoHyperlinkShape</b>。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Type</b>属性可以是下列常量之一 <see cref="T:Microsoft.Office.Core.MsoHyperlinkType" /> ： <b>msoHyperlinkInlineShape</b>、 <b>msoHyperlinkRange</b>或<b>msoHyperlinkShape</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

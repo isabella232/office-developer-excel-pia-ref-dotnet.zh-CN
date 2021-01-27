@@ -1,13 +1,5 @@
 <Type Name="FullSeriesCollection" FullName="Microsoft.Office.Interop.Excel.FullSeriesCollection">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="dbf91769667eadbda6ee7df78219248217f94800" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20586189" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FullSeriesCollection : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dbf91769667eadbda6ee7df78219248217f94800" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012178" /></Metadata><TypeSignature Language="C#" Value="public interface FullSeriesCollection : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FullSeriesCollection implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.FullSeriesCollection" />
   <TypeSignature Language="VB.NET" Value="Public Interface FullSeriesCollection&#xA;Implements IEnumerable" />
@@ -33,12 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表整套<see cref="T:Microsoft.Office.Interop.Excel.Series" />图表中的对象。</summary>
-    <remarks>
-      <para>
-        <b>FullSeriesCollection</b>对象，可以获取筛选出<b>Series</b>对象和回的筛选器。 它还可以进行迭代的整套<b>Series</b>对象，以编程方式筛选出或可见。 通过现有<see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" />对象包含仅可见的系列可以以编程方式执行操作仅可见的系列。 它还可以阻止 Excel 取消现有图表上图表的解决方案筛选掉数据。</para>
-      <para></para>
-    </remarks>
+    <summary>表示图表中 <see cref="T:Microsoft.Office.Interop.Excel.Series" /> 的完整对象集。</summary>
+    <remarks><para><b>FullSeriesCollection</b>对象使你能够获取筛选出<b>Series</b>对象，然后重新进行筛选。 它还允许您以编程方式对经过筛选或可见的整个 <b>Series</b> 对象集进行访问。 通过使现有对象仅包含可见系列，您可以编程方式仅对可见系列 <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> 执行操作。 它还可以防止 Excel 使用筛选出的数据破坏图表上的现有图表解决方案。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -96,7 +85,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象，表示 Excel 应用程序。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Excel 应用程序的对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -124,7 +113,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个代表数的<b>整数</b>(C# 中<b>int</b> ) 值<see cref="T:Microsoft.Office.Interop.Excel.Series" /><b>FullSeriesCollection</b>对象中的对象。 只读。</summary>
+        <summary>以<b>C# (</b>整数<b></b>) 整数值，该值代表 <see cref="T:Microsoft.Office.Interop.Excel.Series" /> <b>FullSeriesCollection</b>对象中的对象数。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,12 +141,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读的<b>整数</b>(C# 中<b>int</b> )。</summary>
+        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读<b>Integer</b>类型 (以<b></b>C# ) 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>在 Excel 中创建对象，因为此属性返回的十六进制值，5843454c、 表示"XCEL"的字符串。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>由于对象是在 Excel 中创建的，因此此属性返回十六进制值 5843454C，它表示字符串"XCEL"。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -216,7 +203,7 @@
       </Parameters>
       <Docs>
         <param name="Index">对象的索引号。</param>
-        <summary>从<b>FullSeriesCollection</b>对象返回单个对象。</summary>
+        <summary>从 <b>FullSeriesCollection 对象中返回单个</b> 对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -246,10 +233,8 @@
       <Docs>
         <summary>返回一个 <b>对象</b> ，表示指定的 <b>FullSeriesCollection</b> 对象的父对象。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>通常为父级返回此<b>FullSeriesCollection</b>对象所属的图表。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>通常，此 <b>FullSeriesCollection</b> 对象所属的图表作为父对象返回。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

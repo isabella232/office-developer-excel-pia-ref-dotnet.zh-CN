@@ -1,13 +1,5 @@
 <Type Name="DiagramNode" FullName="Microsoft.Office.Interop.Excel.DiagramNode">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="86e622fca7f83a44ee8326d13178a7a41108a865" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20576144" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DiagramNode : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="86e622fca7f83a44ee8326d13178a7a41108a865" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012521" /></Metadata><TypeSignature Language="C#" Value="public interface DiagramNode : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DiagramNode implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.DiagramNode" />
   <TypeSignature Language="VB.NET" Value="Public Interface DiagramNode&#xA;Implements _IMsoDispObj" />
@@ -30,46 +22,40 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表图表中的节点。</summary>
-    <remarks>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" />方法，以将节点添加到图表或图表顶点。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.Delete" />方法，以从图表或图表节点中删除一个节点。</para>
-      <para>若要返回<b>DiagramNode</b>对象，请使用下列选项之一：</para>
+    <summary>表示图表中的节点。</summary>
+    <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" /> 该方法将节点添加到图表或图表节点。</para>
+      <para>使用此方法 <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.Delete" /> 从图表或图表节点中删除节点。</para>
+      <para>若要返回 <b>DiagramNode</b> 对象，请使用下列方法之一：</para>
       <list type="bullet">
         <item>
-          <description>
-            <b>DiagramNode</b>对象的<see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" />， <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.CloneNode(System.Boolean,Microsoft.Office.Interop.Excel.DiagramNode,Microsoft.Office.Core.MsoRelativeNodePosition)" />， <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.NextNode" />，或<see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.PrevNode" />方法或其<see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Root" />属性</description>
+          <description><b>DiagramNode</b>对象的 <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" /> 、 <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.CloneNode(System.Boolean,Microsoft.Office.Interop.Excel.DiagramNode,Microsoft.Office.Core.MsoRelativeNodePosition)" /> 、 <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.NextNode" /> 或 <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.PrevNode" /> 方法或其 <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Root" /> 属性</description>
         </item>
         <item>
-          <description>
-            <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodeChildren" />集合的<see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.AddNode(System.Object,Microsoft.Office.Core.MsoDiagramNodeType)" />或<see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.Item(System.Object)" />方法或<see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.FirstChild" />或<see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.LastChild" />属性</description>
+          <description><see cref="T:Microsoft.Office.Interop.Excel.DiagramNodeChildren" />集合或 <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.AddNode(System.Object,Microsoft.Office.Core.MsoDiagramNodeType)" /> 方法 <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.Item(System.Object)" /> 或 <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.FirstChild" /> <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.LastChild" /> 属性</description>
         </item>
         <item>
-          <description>
-            <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodes" />集合的<see cref="M:Microsoft.Office.Interop.Excel.DiagramNodes.Item(System.Object)" />方法</description>
+          <description><see cref="T:Microsoft.Office.Interop.Excel.DiagramNodes" />集合 <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodes.Item(System.Object)" /> 的方法</description>
         </item>
         <item>
-          <description>
-            <see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象的或<see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />集合的<b>DiagramNode</b>属性</description>
+          <description><see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象的或集合的 <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> <b>DiagramNode</b>属性</description>
         </item>
       </list>
-      <para>图表节点可以终止，或者可以包含其他子图表、 图示子节点或子形状。 请参阅替换为以下这些：</para>
+      <para>图表节点可以终止，也可以包含其他子图表、子图表节点或子形状。 请参阅以下内容：</para>
       <list type="bullet">
         <item>
-          <description>要引用的子图表，请使用<see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Diagram" />属性。</description>
+          <description>若要引用子图表，请使用 <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Diagram" /> 该属性。</description>
         </item>
         <item>
-          <description>要引用图示单个子节点，请使用<b>AddNode</b>、 <b>CloneNode</b>、 <b>NextNode</b>或<b>PrevNode</b>方法或<b>根</b>属性。</description>
+          <description>若要引用单个子图表节点，请使用<b>AddNode</b> <b>、CloneNode、NextNode</b>或<b>PrevNode</b>方法或<b>Root</b>属性。 <b></b></description>
         </item>
         <item>
-          <description>要引用图示子节点的集合，请使用<see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Children" />属性。</description>
+          <description>若要引用子图表节点的集合，请使用 <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Children" /> 该属性。</description>
         </item>
         <item>
-          <description>要引用一个形状，请使用<see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Shape" />或<see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.TextShape" />属性。</description>
+          <description>若要引用形状，请使用 <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Shape" /> 或 <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.TextShape" /> 属性。</description>
         </item>
       </list>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddNode">
@@ -95,9 +81,9 @@
         <Parameter Name="nodeType" Type="Microsoft.Office.Core.MsoDiagramNodeType" />
       </Parameters>
       <Docs>
-        <param name="pos">可选<see cref="T:Microsoft.Office.Interop.Office.MsoRelativeNodePosiiton" />。 其中将添加节点，相对于另一个节点。<b>MsoRelativeNodePosition</b>可以是下列常量之一：<b>msoAfterLastSibling</b><b>msoAfterNode</b>默认<b>msoBeforeFirstSibling</b><b>msoBeforeNode</b></param>
-        <param name="nodeType">可选<see cref="T:Microsoft.Office.Interop.Office.MsoDiagramNodeType" />。 节点的类型。 可以是下列<b>MsoDiagramNodeType</b>常量之一：<b>msoDiagramAssistant</b><b>msoDiagramNode</b>默认</param>
-        <summary>创建图表节点。 返回<see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" />对象，表示新节点。</summary>
+        <param name="pos">可选 <see cref="T:Microsoft.Office.Interop.Office.MsoRelativeNodePosiiton" /> 。 节点的添加位置，相对于另一个节点。<b>MsoRelativeNodePosition</b> 可以是以下常量之一<b>：msoAfterLastSibling</b><b>msoAfterNode </b>Default<b>msoBeforeFirstSibling</b><b>msoBeforeNode</b></param>
+        <param name="nodeType">可选 <see cref="T:Microsoft.Office.Interop.Office.MsoDiagramNodeType" /> 。 节点的类型。 可以是以下 <b>MsoDiagramNodeType</b> 常量之一<b>：msoDiagramAssistant</b><b>msoDiagramNode</b> Default</param>
+        <summary>创建图表节点。 返回 <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> 一个代表新节点的对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -128,7 +114,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -156,7 +142,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DiagramNodeChildren</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.DiagramNodeChildren" />对象，表示的特定节点的子节点的集合。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodeChildren" /> 一个对象，该对象代表特定节点的子节点的集合。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -185,10 +171,10 @@
         <Parameter Name="pos" Type="Microsoft.Office.Core.MsoRelativeNodePosition" />
       </Parameters>
       <Docs>
-        <param name="copyChildren">所需<b>Boolean</b>。 <b>True</b>克隆以及图节点的子级。</param>
-        <param name="pTargetNode">所需的<b>DiagramNode</b>对象。 该表达式返回一个<b>DiagramNode</b>对象，代表节点的新节点的放置位置。</param>
-        <param name="pos">可选<see cref="T:Microsoft.Office.Interop.Office.MsoRelativeNodePosiiton" />。 如果<paramref name="pTargetNode" />指定时，指示将将节点添加相对于<paramref name="pTargetNode" />。<b>MsoRelativeNodePosition</b>可以是下列常量之一：<b>msoAfterLastSibling</b><b>msoAfterNode</b>默认<b>msoBeforeFirstSibling</b><b>msoBeforeNode</b></param>
-        <summary>复制图表节点。 返回<see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" />对象，代表克隆的节点。</summary>
+        <param name="copyChildren">必需 <b>布尔值</b>。 <b>真</b> 要克隆图表节点的子级。</param>
+        <param name="pTargetNode">所需的 <b>DiagramNode</b> 对象。 一个返回 <b>DiagramNode</b> 对象的表达式，该对象代表将放置新节点的节点。</param>
+        <param name="pos">可选 <see cref="T:Microsoft.Office.Interop.Office.MsoRelativeNodePosiiton" /> 。 如果 <paramref name="pTargetNode" /> 已指定，则指示节点的添加位置相对于 <paramref name="pTargetNode" /> 。<b>MsoRelativeNodePosition</b> 可以是以下常量之一<b>：msoAfterLastSibling</b><b>msoAfterNode </b>Default<b>msoBeforeFirstSibling</b><b>msoBeforeNode</b></param>
+        <summary>克隆图表节点。 返回 <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> 一个对象，该对象代表克隆的节点。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -221,12 +207,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -277,7 +260,7 @@
         <ReturnType>Microsoft.Office.Core.IMsoDiagram</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Diagram" />对象，它代表图表。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Diagram" /> 一个代表图表的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -308,25 +291,23 @@
         <ReturnType>Microsoft.Office.Core.MsoOrgChartLayoutType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个常量，以指示组织结构图的子节点的格式。</summary>
+        <summary>返回或设置一个常量，该常量指示组织结构图的子节点的格式。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <b>MsoOrgChartLayoutType</b> 可以是其中一个 <b>MsoOrgChartLayoutType</b> 常量。</para>
           <para>
-            <b>MsoOrgChartLayoutType</b>可以是下列<b>MsoOrgChartLayoutType</b>常量之一。</para>
+            <b>msoOrgChartLayoutAssistant</b> 将子节点作为助理。</para>
           <para>
-            <b>msoOrgChartLayoutAssistant</b>作为助理将子节点。</para>
+            <b>msoOrgChartLayoutBothHanging</b> 将子节点从父节点垂直放置到左侧和右侧。</para>
           <para>
-            <b>msoOrgChartLayoutBothHanging</b>将子节点垂直从父节点放在左侧和右侧。</para>
+            <b>msoOrgChartLayoutLeftHanging</b> 将子节点从父节点垂直放置到左侧。</para>
           <para>
-            <b>msoOrgChartLayoutLeftHanging</b>在左侧将垂直从父节点的子节点。</para>
+            <b>msoOrgChartLayoutMixed</b> 返回具有多个 <b>MsoOrgChartLayoutType</b>格式的子级父节点的值。</para>
           <para>
-            <b>msoOrgChartLayoutMixed</b>返回父节点包含子使用多个<b>MsoOrgChartLayoutType</b>设置格式的值。</para>
+            <b>msoOrgChartLayoutRightHanging</b> 将子节点从父节点垂直放置到右侧。</para>
           <para>
-            <b>msoOrgChartLayoutRightHanging</b>将子节点垂直从父节点放在右侧。</para>
-          <para>
-            <b>msoOrgChartLayoutStandard</b>将子节点的父节点之下水平。</para>
-          <para></para>
-        </remarks>
+            <b>msoOrgChartLayoutStandard</b> 将子节点水平放置到父节点下方。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveNode">
@@ -353,9 +334,9 @@
         <Parameter Name="pos" Type="Microsoft.Office.Core.MsoRelativeNodePosition" />
       </Parameters>
       <Docs>
-        <param name="pTargetNode">所需<see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" />对象。 图节点将其中移动指定的节点。</param>
-        <param name="pos">所需<see cref="T:Microsoft.Office.Interop.Office.MsoRelativeNodePosiiton" />。 要将节点，移动相对于的位置<paramref name="TargetNode" />。<b>MsoRelativeNodePosition</b>可以是下列常量之一：<b>msoAfterLastSibling</b><b>msoAfterNode</b><b>msoBeforeFirstSibling</b><b>msoBeforeNode</b></param>
-        <summary>移动图表节点和任何图表中及其子节点。</summary>
+        <param name="pTargetNode">必需 <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> 对象。 将在其中移动指定节点的图表节点。</param>
+        <param name="pos">必需 <see cref="T:Microsoft.Office.Interop.Office.MsoRelativeNodePosiiton" /> 。 要移动节点的位置，相对于 <paramref name="TargetNode" /> 。<b>MsoRelativeNodePosition</b> 可以是以下常量之一<b>：msoAfterLastSibling</b><b>msoAfterNode</b><b>msoBeforeFirstSibling</b><b>msoBeforeNode</b></param>
+        <summary>移动图表节点及其在图表中的任何子节点。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -380,7 +361,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>在一系列节点中选择下一步图表节点。 返回<see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" />对象，它代表新所选节点。</summary>
+        <summary>选择一系列节点中的下一个图表节点。 返回 <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> 一个对象，该对象代表新选定的节点。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -434,7 +415,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" />对象，表示图表节点集合中的上一图表节点。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> 一个对象，该对象代表图表节点集合中的上一个图表节点。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -462,12 +443,10 @@
         <Parameter Name="pTargetNode" Type="Microsoft.Office.Interop.Excel.DiagramNode" />
       </Parameters>
       <Docs>
-        <param name="pTargetNode">所需<see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" />对象。 要替换目标图示节点。</param>
-        <summary>目标图示节点替换为源图表顶点。</summary>
-        <remarks>
-          <para>删除目标图示节点，并将源图表节点，包括任何子节点，移动到目标图节点所在。</para>
-          <para></para>
-        </remarks>
+        <param name="pTargetNode">必需 <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> 对象。 要替换的目标图表节点。</param>
+        <summary>将目标图表节点替换为源图表节点。</summary>
+        <remarks><para>删除目标图表节点，源图表节点（包括其任何子节点）移动到目标图表节点的位置。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Root">
@@ -493,7 +472,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DiagramNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回根<see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" />根图表节点所属的对象。</summary>
+        <summary>返回根 <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> 图表节点所属的根对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -521,7 +500,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象代表形状附加到指定的图表节点</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 一个对象，该对象代表附加到指定图表节点的形状</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -549,9 +528,9 @@
         <Parameter Name="swapChildren" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="pTargetNode">所需<see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" />对象。 要替换目标图示节点。</param>
-        <param name="swapChildren">可选属性，类型为 <b>Boolean</b>。 目标和源节点被交换的子节点。 关系图的任何子节点移以及相应的根节点。 默认值为<b>True</b>，这交换子节点。</param>
-        <summary>交换源图节点与目标图示节点。</summary>
+        <param name="pTargetNode">必需 <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> 对象。 要替换的目标图表节点。</param>
+        <param name="swapChildren">可选属性，类型为 <b>Boolean</b>。 要交换的目标节点和源节点的子节点。 所有子图表节点都随其对应的根节点一起移动。 默认值为 <b>True，</b>这将交换子节点。</param>
+        <summary>将源图表节点与目标图表节点交换。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -578,7 +557,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象，代表文本框的形状关联的图示节点。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 一个对象，该对象代表与图表节点相关联的文本框的形状。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -606,8 +585,8 @@
         <Parameter Name="pReceivingNode" Type="Microsoft.Office.Interop.Excel.DiagramNode" />
       </Parameters>
       <Docs>
-        <param name="pReceivingNode">所需<see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" />对象。 图表节点接收传输从指定节点的子节点。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象，代表文本框的形状关联的图示节点。</summary>
+        <param name="pReceivingNode">必需 <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> 对象。 接收正在从指定节点传输的子节点的图表节点。</param>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 一个对象，该对象代表与图表节点相关联的文本框的形状。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

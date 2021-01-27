@@ -1,13 +1,5 @@
 <Type Name="ModelChanges" FullName="Microsoft.Office.Interop.Excel.ModelChanges">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9f59d830c9bcb2ca9333087af48cbeb26d3d390d" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20572826" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ModelChanges" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9f59d830c9bcb2ca9333087af48cbeb26d3d390d" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011758" /></Metadata><TypeSignature Language="C#" Value="public interface ModelChanges" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ModelChanges" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ModelChanges" />
   <TypeSignature Language="VB.NET" Value="Public Interface ModelChanges" />
@@ -29,12 +21,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表数据模型所做的更改。</summary>
-    <remarks>
-      <para>
-        <b>ModelChanges</b>对象包含有关哪些更改到的数据的信息模型何时<see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.ModelChange" />事件模型操作之后发生。 Excel 对数据模型进行更改，当多个更改可在同一操作和<b>ModelChanges</b>对象将包含在一个模型操作中所做的所有更改的信息。</para>
-      <para></para>
-    </remarks>
+    <summary>表示对数据模型所做的更改。</summary>
+    <remarks><para><b>ModelChanges</b>对象包含有关在模型操作后发生事件时对数据 <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.ModelChange" /> 模型进行了哪些更改的信息。 当 Excel 更改数据模型时，可能在同一操作中进行多项更改，且 <b>ModelChanges</b> 对象将包含关于在一个模型操作中所做的所有更改的信息。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象，表示 Excel 应用程序。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Excel 应用程序的对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,7 +77,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelColumnNames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.ModelColumnNames" />的集合<see cref="T:Microsoft.Office.Interop.Excel.ModelColumnName" />对象这些对象代表添加模型操作的一部分的所有列。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnNames" /> 表示 <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnName" /> 作为模型操作一部分添加的所有列的对象的集合。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -116,7 +105,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelColumnChanges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.ModelColumnChanges" />的集合<see cref="T:Microsoft.Office.Interop.Excel.ModelColumnChange" />对象这些对象代表的所有表格列为其更改的数据类型的表名称和列的名称 （可能添加多个类型的更改此处将来） 作为模型操作的一部分。 只读。</summary>
+        <summary>返回一组对象，这些对象代表已更改其 数据类型 的所有表列的表名和列名 (以后在模型操作过程中) 在此处添加更多类型的更改。 <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnChanges" /> <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnChange" /> 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -144,7 +133,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelColumnNames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.ModelColumnNames" />的集合<see cref="T:Microsoft.Office.Interop.Excel.ModelColumnName" />对象这些对象代表已删除的模型操作的一部分的所有列。 只读。</summary>
+        <summary>返回一组对象，这些对象代表作为模型操作一部分删除 <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnNames" /> <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnName" /> 的所有列。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -172,12 +161,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读的<b>整数</b>(C# 中<b>int</b> )。</summary>
+        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读<b>Integer</b>类型 (以<b></b>C# ) 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>在 Excel 中创建对象，因为此属性返回的十六进制值，5843454c、 表示"XCEL"的字符串。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>由于对象是在 Excel 中创建的，因此此属性返回十六进制值 5843454C，它表示字符串"XCEL"。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MeasuresAdded">
@@ -203,7 +190,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelMeasureNames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.ModelMeasureNames" />的集合<see cref="T:Microsoft.Office.Interop.Excel.ModelMeasureName" />对象这些对象代表已删除的模型操作的一部分的所有列。 只读。</summary>
+        <summary>返回一组对象，这些对象代表作为模型操作一部分删除 <see cref="T:Microsoft.Office.Interop.Excel.ModelMeasureNames" /> <see cref="T:Microsoft.Office.Interop.Excel.ModelMeasureName" /> 的所有列。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -231,7 +218,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>对象</b>，代表指定<b>ModelChanges</b>对象的父对象。 只读。</summary>
+        <summary>返回一 <b>个对象</b> ，表示指定的 <b>ModelChanges</b> 对象的父对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -259,8 +246,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>，则返回 True</b>，模型中的一个或多个关系是何时更改 （添加、 删除或修改） 作为模型操作的一部分。 <b>False</b>，没有关系已发生更改时期间操作。 <b>Boolean</b>(C# 中<b>bool</b> )只读的。</summary>
+        <summary>如果 <b>为 True，</b>则模型中的一个或多个关系 (添加、删除或修改) 模型操作一部分。 如果 <b>为 False，</b>则操作期间不会更改任何关系。 <b>Boolean</b> (<b>bool</b> in C#) 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -290,10 +276,8 @@
       <Docs>
         <summary>数据模型的源。</summary>
         <value>XlModelChangeSource</value>
-        <remarks>
-          <para>源可以是 Excel 或的 PowerPivot 加载项。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>源可以是 Excel，也可以PowerPivot加载项。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TableNamesChanged">
@@ -319,7 +303,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTableNameChanges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.ModelTableNameChanges" />的集合<see cref="T:Microsoft.Office.Interop.Excel.ModelTableNameChange" />对象表示旧的和新的已重命名模型中的模型操作的一部分的所有表的名称。 只读。</summary>
+        <summary>返回一组对象，这些对象代表作为模型操作一部分在模型中重命名的所有表 <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNameChanges" /> <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNameChange" /> 的旧名称和新名称。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -347,7 +331,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTableNames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.ModelTableNames" />作为字符串表示添加到模型模型操作的一部分的所有表的表名称的集合。 只读。</summary>
+        <summary>作为字符串返回表名称的集合，这些字符串表示作为模型操作一部分添加到 <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNames" /> 模型的所有表。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -375,7 +359,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTableNames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.ModelTableNames" />的表名称以字符串代表该模型中删除的模型操作的一部分的所有表的集合。 只读。</summary>
+        <summary>作为字符串返回表名称的集合，这些字符串表示作为模型操作一部分从模型 <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNames" /> 中删除的所有表。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -403,7 +387,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTableNames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.ModelTableNames" />的表名称以字符串代表已刷新或重新计算模型操作的一部分的所有表的集合。 只读。</summary>
+        <summary>作为字符串返回表名称的集合，这些字符串表示作为模型操作一部分刷新或 <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNames" /> 重新计算的所有表。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -431,7 +415,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果在模型交易中对模型进行了非指定更改，则为  <b>True</b>。 <b>Boolean</b>(C# 中<b>bool</b> )只读</summary>
+        <summary>如果在模型交易中对模型进行了非指定更改，则为  <b>True</b>。 <b>Boolean</b> (<b>bool</b> in C#) 只读</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

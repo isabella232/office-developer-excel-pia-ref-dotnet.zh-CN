@@ -1,13 +1,5 @@
 <Type Name="CubeFields" FullName="Microsoft.Office.Interop.Excel.CubeFields">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b43cd9331b37889c562364401c8dc346d0d623b2" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20572749" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CubeFields : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b43cd9331b37889c562364401c8dc346d0d623b2" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012570" /></Metadata><TypeSignature Language="C#" Value="public interface CubeFields : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CubeFields implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.CubeFields" />
   <TypeSignature Language="VB.NET" Value="Public Interface CubeFields&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>所有的集合<see cref="T:Microsoft.Office.Interop.Excel.CubeField" />基于 OLAP 多维数据集数据透视表中的对象。</summary>
-    <remarks>
-      <para>每个<b>CubeField</b>对象代表中多维数据集的层次结构或度量字段。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.CubeFields" />属性可返回<b>CubeFields</b>集合。</para>
-      <para>使用<b>CubeFields</b>(<paramref name="index" />)，其中<paramref name="index" />是多维数据集字段的索引号，可返回单个<b>CubeField</b>对象。</para>
-      <para></para>
-    </remarks>
+    <summary>基于数据 <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> 透视表的数据透视表中所有对象OLAP 多维数据集。</summary>
+    <remarks><para>每个 <b>CubeField</b> 对象代表多维数据集的层次结构或度量字段。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.CubeFields" /> 该属性可返回 <b>CubeFields</b> 集合。</para>
+      <para>使用 <b>CubeFields</b> () 多维数据集字段的索引号，其中返回 <paramref name="index" /> 单个 <paramref name="index" /> <b>CubeField</b> 对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -100,14 +90,11 @@
       <Docs>
         <param name="Name">必需的 <b>字符串</b> 。 SETS 架构行集中的有效名称。</param>
         <param name="Caption">必需的 <b>字符串</b> 。 一个字符串，该字符串表示将在数据透视表视图中显示的字段。</param>
-        <summary>添加一个新的<see cref="T:Microsoft.Office.Interop.Excel.CubeField" />对象传递给<see cref="T:Microsoft.Office.Interop.Excel.CubeFields" />集合。</summary>
+        <summary>向集合 <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> 添加新 <see cref="T:Microsoft.Office.Interop.Excel.CubeFields" /> 对象。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <b>CubeField</b>对象对应于一定义上联机分析处理 (OLAP) 多维数据集的提供程序。</para>
-          <para>如果参数中指定的名称与一组<paramref name="Name" />不存在， <b>AddSet</b>方法将返回一个运行时错误。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>CubeField</b>对象对应于在 OLAP 联机分析处理 (中定义的) 多维数据集的提供程序。</para>
+          <para>如果参数中给定名称的集 <paramref name="Name" /> 不存在 <b>，AddSet</b> 方法将返回运行时错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -133,7 +120,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -191,12 +178,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -255,16 +239,14 @@
         <Parameter Name="Caption" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="AttributeHierarchy">唯一多维数据集字段的属性层次结构 (XlCubeFieldType = xlHierarchy 和 XlCubeFieldSubType = xlCubeAttribute)。</param>
+        <param name="AttributeHierarchy">作为 XlCubeFieldType = xlHierarchy 和 XlCubeFieldSubType = xlCubeAttribute) 的属性层次结构的唯一多维数据集字段。 (</param>
         <param name="Function">在已添加数据字段中执行的函数。</param>
-        <param name="Caption">使用数据透视表报告中标识此度量值的标签。 如果度量值已存在，则标题将覆盖此度量值的现有标签。</param>
-        <summary>给定属性层次结构，此属性返回对应的给定函数隐式度量。 新的隐式度量值"隐式度量值"不存在，如果是创建并添加到<see cref="T:Microsoft.Office.Interop.Excel.CubeFields" />集合。</summary>
+        <param name="Caption">数据透视表中用于标识此度量值的标签。 如果度量值已存在，标题将覆盖此度量值的现有标签。</param>
+        <summary>给定属性层次结构后，返回与此属性对应的给定函数的隐式度量值。 如果"隐式度量值"不存在，将创建一个新的隐式度量值并添加到 <see cref="T:Microsoft.Office.Interop.Excel.CubeFields" /> 集合中。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <b>重要说明</b>： 使用<b>GetMeasure</b>函数获取度量值将用于仅这些函数： <b>Count</b>、 <b>Sum</b>、<b>平均</b>、 <b>Max</b>和<b>Min</b>。 例如： 这些将 workGet CubeField0 = modelPivotTable.CubeFields.GetMeasure ("[客户]。 [num_cars_owned]"，xlCount，"NumCarsOwnedCount") 设置 CubeField1 = modelPivotTable.CubeFields.GetMeasure ("[客户]。 [[num_cars_owned]"，xlSum，"NumCarsOwnedSum") 设置 CubeField2 = modelPivotTable.CubeFields.GetMeasure ("[客户]。 [[num_cars_owned]"，xlAverage，"NumCarsOwnedAverage") 设置 CubeField4 = modelPivotTable.CubeFields.GetMeasure ("[客户]。 [[num_cars_owned]"，xlMax，"NumCarsOwnedMax") 设置 CubeField5 = modelPivotTable.CubeFields.GetMeasure ("[客户]。 [[num_cars_owned]"，xlMin，"NumCarsOwnedMin") 这些将不 workSet CubeField3 = modelPivotTable.CubeFields.GetMeasure ("[客户]。 [[num_cars_owned]"，xlCountNums，"NumCarsOwnedCountNums") 设置 CubeField6 = modelPivotTable.CubeFields.GetMeasure ("[客户]。 [[num_cars_owned]"，xlProduct，"NumCarsOwnedProduct") 设置 CubeField7 = modelPivotTable.CubeFields.GetMeasure ("[客户]。 [[num_cars_owned]"，xlStDev，"NumCarsOwnedStDev") 设置 CubeField8 = modelPivotTable.CubeFields.GetMeasure ("[客户]。 [[num_cars_owned]"，xlStDevP，"NumCarsOwnedStDevP")</para>
-          <para></para>
-        </remarks>
+        <remarks><para>
+            <b>重要</b>提示：使用<b>GetMeasure</b>函数获取度量值仅适用于以下函数：Count、Sum、Average、Max<b></b>和<b></b> <b>Min。</b> <b></b> <b></b> 例如：这些将 workGet CubeField0 = modelPivotTable.CubeFields.GetMeasure ("[customer]。[num_cars_owned]"，xlCount，"NumCarsOwnedCount") Set CubeField1 = modelPivotTable.CubeFields.GetMeasure ("[customer]。[num_cars_owned]"，xlSum，"NumCarsOwnedSum") Set CubeField2 = modelPivotTable.CubeFields.GetMeasure ("[customer]。[num_cars_owned]"，xlAverage，"NumCarsOwnedAverage") Set CubeField4 = modelPivotTable.CubeFields.GetMeasure ("[customer]。[num_cars_owned]"，xlMax，"NumCarsOwnedMax") Set CubeField5 = modelPivotTable.CubeFields.GetMeasure ("[customer]。[num_cars_owned]"，xlMin，"NumCarsOwnedMin") These will not workSet CubeField3 = modelPivotTable.CubeFields.GetMeasure ("[customer]。[num_cars_owned]"，xlCountNums，"NumCarsOwnedCountNums") Set CubeField6 = modelPivotTable.CubeFields.GetMeasure ("[customer]。[num_cars_owned]"，xlProduct，"NumCarsOwnedProduct") Set CubeField7 = modelPivotTable.CubeFields.GetMeasure ("[customer]。[num_cars_owned]"，xlStDev，"NumCarsOwnedStDev") Set CubeField8 = modelPivotTable.CubeFields.GetMeasure ("[customer]。[num_cars_owned]"，xlStDevP，"NumCarsOwnedStDevP") </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -293,7 +275,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">所需的<b>对象</b>。 对象的名称或索引号。</param>
+        <param name="Index">必需 <b>对象</b>。 对象的名称或索引号。</param>
         <summary>从集合中返回一个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

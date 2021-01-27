@@ -1,13 +1,5 @@
 <Type Name="OLEFormat" FullName="Microsoft.Office.Interop.Excel.OLEFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="61a7c8fcda1ae1bb96bf7ac4ce6f4954d1baef24" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584369" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OLEFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="61a7c8fcda1ae1bb96bf7ac4ce6f4954d1baef24" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011331" /></Metadata><TypeSignature Language="C#" Value="public interface OLEFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OLEFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.OLEFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface OLEFormat" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>包含 OLE 对象的属性。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Excel.Shape.OLEFormat" />属性可返回<b>OLEFormat</b>对象。</para>
-      <para>如果<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象不代表一个链接或嵌入对象，则<b>OLEFormat</b>属性失败。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.Shape.OLEFormat" /> 该属性可返回 <b>OLEFormat</b> 对象。</para>
+      <para>如果 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 该对象不代表链接或嵌入的对象， <b>则 OLEFormat</b> 属性将失败。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -85,7 +75,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -115,12 +105,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Object">
@@ -146,7 +133,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回与此 OLE 对象关联的 OLE 自动化对象。</summary>
+        <summary>返回与此 OLE 对象相联系的 OLE 自动化对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -202,7 +189,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回对象的编程标识符。</summary>
+        <summary>返回对象的程序标识符。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -229,7 +216,7 @@
         <Parameter Name="Verb" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Verb">可选的<b>对象</b>。 OLE 对象的服务器执行操作的动作。 如果省略此参数，则发送默认动词。 由对象的源应用程序确定的可用动作。 OLE 对象的典型谓词是开放和主 (由<see cref="T:Microsoft.Office.Interop.Excel.XlOLEVerb" />常量<b>xlOpen</b>和<b>xlPrimary</b>)。</param>
+        <param name="Verb">可选 <b>对象</b>。 OLE 对象服务器将执行其操作的动词。 如果省略此参数，则发送默认动词。 对象的源应用程序决定哪些动词可用。 OLE 对象的典型动作是 Open 和 Primary (常量 <see cref="T:Microsoft.Office.Interop.Excel.XlOLEVerb" /> <b>xlOpen</b> 和 <b>xlPrimary</b>) 。</param>
         <summary>向指定的 OLE 对象服务器发送动词。</summary>
         <remarks>To be added.</remarks>
       </Docs>

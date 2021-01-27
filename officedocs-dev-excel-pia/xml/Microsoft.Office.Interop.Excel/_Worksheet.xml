@@ -1,13 +1,5 @@
 <Type Name="_Worksheet" FullName="Microsoft.Office.Interop.Excel._Worksheet">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7f0ab611aa4d579db9ac504ef7ee328ea8f5b52e" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20583130" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _Worksheet" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7f0ab611aa4d579db9ac504ef7ee328ea8f5b52e" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012668" /></Metadata><TypeSignature Language="C#" Value="public interface _Worksheet" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Worksheet" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel._Worksheet" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Worksheet" />
@@ -26,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>这是与相应的 COM 对象的互操作性的托管代码需要 COM coclass 中的主接口。 仅当您想要使用的方法共享相同的名称的 COM 对象; 事件时，才使用此主接口在这种情况下，强制转换为此接口调用方法，并强制转换为最新的事件接口，连接到该事件。 否则，使用.NET 接口派生自 COM coclass 访问方法、 属性和事件的 COM 对象。 有关 COM 对象的详细信息，请参阅<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />。</summary>
+    <summary>这是 COM coclass（托管代码需要此 Coclass 来实现与相应的 COM 对象的互操作性）中的主接口。 仅当您想要使用的方法与 COM 对象的事件共享同一名称时才使用此主接口；在这种情况下，转换为此接口以调用该方法，转换为最新的事件接口以连接到该事件。 否则，请使用派生自 COM coclass 的 .NET 接口来访问方法、属性和 COM 对象的事件。 有关 COM 对象详细信息，请参阅 <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> 。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -69,7 +61,7 @@
         <param name="SpellLang">To be added.</param>
         <param name="IgnoreFinalYaa">To be added.</param>
         <param name="SpellScript">To be added.</param>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。 </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,7 +97,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -148,7 +140,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -183,7 +175,7 @@
       </Parameters>
       <Docs>
         <param name="Name">To be added.</param>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -227,7 +219,7 @@
         <param name="IconFileName">To be added.</param>
         <param name="IconIndex">To be added.</param>
         <param name="IconLabel">To be added.</param>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -272,7 +264,7 @@
         <param name="ActivePrinter">To be added.</param>
         <param name="PrintToFile">To be added.</param>
         <param name="Collate">To be added.</param>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -313,7 +305,7 @@
         <param name="Contents">To be added.</param>
         <param name="Scenarios">To be added.</param>
         <param name="UserInterfaceOnly">To be added.</param>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -362,7 +354,7 @@
         <param name="AddToMru">To be added.</param>
         <param name="TextCodepage">To be added.</param>
         <param name="TextVisualLayout">To be added.</param>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -417,7 +409,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
+        <summary>如果不与对象限定符一起使用，则此属性 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 返回一个代表 Microsoft Excel 应用程序的对象。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -479,12 +471,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AutoFilter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" />如果筛选已打开的对象。 如果筛选已关闭，则返回<b>Nothing</b> 。 只读。</summary>
+        <summary>如果筛选 <see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" /> 已打开，则返回对象。 如果 <b>筛选</b> 关闭，则返回 Nothing。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>若要创建工作表<b>AutoFilter</b>对象，必须打开自动筛选工作表上的某个区域可以手动或使用<see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" />方法<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>若要为工作表创建 <b>自动</b> 筛选对象，您必须手动或通过使用对象的方法打开工作表上某个范围的自动 <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 筛选。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFilterMode">
@@ -525,13 +515,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果当前工作表上显示自动筛选下拉箭头。 此属性是独立的<see cref="P:Microsoft.Office.Interop.Excel._Worksheet.FilterMode" />属性。 可读写 <b>Boolean</b>。</summary>
+        <summary>如果当前在工作表上显示有“自动筛选”下拉箭头，则该值为 <b>True</b>。 此属性与该属性 <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.FilterMode" /> 无关。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果当前显示的下拉箭头，则此属性返回<b>True</b> 。 您可以将此属性设置为<b>False</b>可删除该箭头，但不能将它设置为<b>True</b>。 使用<see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" />方法，以筛选列表和显示的下拉箭头。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果当前显示下拉箭头，则此属性返回 <b>True</b>。 可以将该属性设置为 <b>False</b> 以删除箭头，但不能将其设置为 <b>True</b>。 使用 <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" /> 该方法筛选列表并显示下拉箭头。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Buttons">
@@ -593,23 +580,21 @@
       <Parameters />
       <Docs>
         <summary>计算所有打开的工作簿、工作簿中的某张特定工作表或工作表指定区域中的单元格，如下表所示。</summary>
-        <remarks>
-          <list type="table">
+        <remarks><list type="table">
             <item>
               <term>所有打开的工作簿</term>
               <description>Application.Calculate</description>
             </item>
             <item>
               <term>指定工作表</term>
-              <description>Worksheets(1)。计算</description>
+              <description>工作表 (1) 。计算</description>
             </item>
             <item>
               <term>指定区域</term>
-              <description>Worksheets(1)。Rows(2)。计算</description>
+              <description>工作表 (1) 。行 (2) 。计算</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cells">
@@ -635,13 +620,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，表示工作表 （而不仅仅是当前正在使用的单元） 上的所有单元格。 只读。</summary>
+        <summary>返回一个对象，该对象代表工作表上的所有 (当前使用的单元格 <see cref="T:Microsoft.Office.Interop.Excel.Range" />) 。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>因为<see cref="P:Microsoft.Office.Interop.Excel.Worksheets.Item(System.Object)" />属性是<b>Range</b>对象的默认属性，则可以在<b>单元格</b>关键字后面立即指定的行和列的索引。 有关详细信息，请参阅<b>Item</b>属性。</para>
-          <para>使用对象识别符的此属性返回一个<b>Range</b>对象，该对象代表活动工作表上的所有单元格。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>由于该属性是 Range 对象的默认属性，因此您可以紧接在 Cells 关键字之后指定行和 <see cref="P:Microsoft.Office.Interop.Excel.Worksheets.Item(System.Object)" /> <b>列</b>索引。 <b></b> 有关详细信息，请参阅 <b>Item</b> 属性。</para>
+          <para>在不使用对象识别符的情况下，使用此属性将返回一个 <b>Range</b> 对象，它代表活动工作表中所有的单元格。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChartObjects">
@@ -669,13 +652,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">可选<b>Variant</b>。 名称或图表的数目。 此参数可以是指定多个图表的数组。</param>
-        <summary>返回一个 object 值，该值代表以下任意一个嵌入式的图表 (<see cref="T:Microsoft.Office.Interop.Excel.ChartObject" />对象) 或所有嵌入式图表的集合 (<see cref="T:Microsoft.Office.Interop.Excel.ChartObjects" />对象) 工作表上。</summary>
+        <param name="Index">一个介于 0（零）和 100 之间的十进制数字，用于指定“整数最优”<b></b>百分比公差。 图表的名称或号码。 此参数可以是指定多个图表的数组。</param>
+        <summary>返回一个对象，该对象代表对象 (图表) 或工作表上 (嵌入) <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> <see cref="T:Microsoft.Office.Interop.Excel.ChartObjects" /> 图表的集合。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>此方法不等于<see cref="T:Microsoft.Office.Interop.Excel.Charts" />属性。 此方法返回嵌入式的图表;<b>图表</b>属性返回图表工作表。 使用<see cref="T:Microsoft.Office.Interop.Excel.Chart" />属性返回<see cref="T:Microsoft.Office.Interop.Excel.Chart" />嵌入式图表的对象。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>此方法与属性不 <see cref="T:Microsoft.Office.Interop.Excel.Charts" /> 等效。 此方法返回嵌入图表; <b>Charts</b> 属性返回图表工作表。 使用 <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> 该属性可返回 <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> 嵌入图表的对象。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckBoxes">
@@ -740,15 +721,13 @@
         <Parameter Name="SpellLang" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="CustomDictionary">可选的<b>对象</b>。 指示 word 不在主词典中找到要检查的自定义词典的文件名的字符串。 如果省略此参数，则使用当前指定的词典。</param>
-        <param name="IgnoreUppercase">可选的<b>对象</b>。 <b>True</b>由 Microsoft Excel 忽略全部大写的单词。 <b>False</b>可具有都是大写的 Microsoft Excel 复选单词。 如果省略此参数，则将使用的当前设置。</param>
-        <param name="AlwaysSuggest">可选的<b>对象</b>。 <b>True</b>由 Microsoft Excel 在找到错误拼写时显示备用拼写建议的列表。 <b>False</b>可让 Microsoft Excel 等待您输入正确的拼写。 如果省略此参数，则将使用的当前设置。</param>
-        <param name="SpellLang">可选的<b>对象</b>。 正在使用的词典语言。 可以使用的<b>MsoLanguageID</b>值之一<see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" />属性。</param>
-        <summary>检查对象的拼写。 该窗体有没有返回值;Microsoft Excel 显示拼写对话框。</summary>
-        <remarks>
-          <para>使用此方法来检查页眉、 页脚和工作表上的对象。</para>
-          <para></para>
-        </remarks>
+        <param name="CustomDictionary">可选 <b>对象</b>。 一个字符串，它表示自定义词典的文件名，如果在主词典中找不到单词，则会到此词典中查找。 如果省略此参数，则使用当前指定的词典。</param>
+        <param name="IgnoreUppercase">可选 <b>对象</b>。 如果为 <b>True</b>，则 Microsoft Excel 忽略所有字母都是大写的单词。 如果为 <b>False</b>，则 Microsoft Excel 检查所有字母都是大写的单词。 如果省略此参数，将使用当前的设置。</param>
+        <param name="AlwaysSuggest">可选 <b>对象</b>。 如果为 <b>True</b>，则 Microsoft Excel 在找到不正确拼写时显示建议的替换拼写列表。 如果为 <b>False</b>，Microsoft Excel 将等待输入正确的拼写。 如果省略此参数，将使用当前的设置。</param>
+        <param name="SpellLang">可选 <b>对象</b>。 当前所用词典的语言。 可以是属性使用的 <b>MsoLanguageID</b> 值 <see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" /> 之一。</param>
+        <summary>检查对象的拼写。 此窗体没有返回值;Microsoft Excel 显示拼写对话框。</summary>
+        <remarks><para>使用此方法检查工作表上的页眉、页脚和对象。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CircleInvalid">
@@ -802,7 +781,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，它代表包含的工作表上第一个循环引用的区域或工作表上没有循环引用时返回<b>Nothing</b> 。 必须先计算就可以继续进行删除循环引用。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 一个对象，该对象代表工作表上包含第一个循环引用的范围;如果工作表上<b></b>没有循环引用，则返回 Nothing。 在继续执行计算之前，必须删除循环引用。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -831,7 +810,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>清除指定工作表的追踪箭头。使用审核功能可添加追踪箭头。</summary>
+        <summary>清除指定工作表的追踪箭头。 使用审核功能可添加追踪箭头。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -857,10 +836,8 @@
       <Parameters />
       <Docs>
         <summary>清除指定工作表的无效数据项的圈释。</summary>
-        <remarks>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.CircleInvalid" />圆单元格包含无效数据的方法。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.CircleInvalid" /> 该方法可圈出包含无效数据的单元格。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CodeName">
@@ -886,14 +863,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回对象的代码名。<b>String</b> 型，只读。</summary>
+        <summary>返回对象的代码名。 只读 <b>String</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>您看到属性窗口中的<b>（名称）</b>右侧的单元格中的值是所选对象的代码名。 在设计时，您可以通过更改此值更改对象的代码名。 以编程方式不能在运行时更改此属性。</para>
-          <para>对象的代码名称可代替返回对象的表达式。</para>
-          <para>工作表的名称可以与其代码名不同。创建一张工作表时，其工作表名称和代码名是相同的，不过，更改工作表名称时并不影响其代码名，并且，更改工作表代码名（在 Visual Basic 编辑器中使用“属性”窗口）也不影响其名称。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>在"属性"窗口中 (名称 <b>) 单元格中 </b> 看到的值是所选对象的代码名称。 可以在设计过程中通过更改该值来改变对象的代码名。 不能在运行过程中更改该属性。</para>
+          <para>对于一个返回指定对象的表达式，该表达式可使用对象的代码名。</para>
+          <para>工作表的名称可以与其代码名不同。 创建一张工作表时，其工作表名称和代码名是相同的，不过，更改工作表名称时并不影响其代码名，并且，更改工作表代码名（在 Visual Basic 编辑器中使用“属性”窗口）也不影响其名称。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Columns">
@@ -922,7 +897,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，表示指定工作表上的所有列。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 一个对象，该对象代表指定工作表上的所有列。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -950,7 +925,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Comments</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Comments" />值，该值代表指定工作表中的所有批注的集合。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Comments" /> 一个集合，该集合代表指定工作表的所有批注。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -981,7 +956,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlConsolidationFunction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回用于当前合并计算的函数代码。 可以是一个<see cref="T:Microsoft.Office.Interop.Excel.XlConsolidationFunction" />常量。 只读。</summary>
+        <summary>返回当前合并计算所使用的函数代码。 可以是常量 <see cref="T:Microsoft.Office.Interop.Excel.XlConsolidationFunction" /> 之一。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1012,25 +987,23 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>下表中所示，则返回整合选项的三个元素数组。 如果该元素是<b>True</b>，将设置该选项。 只读 <b>对象</b> 。</summary>
+        <summary>返回表示合并计算选项的三元素数组，如下表所示。 某元素为 <b>True</b> 就表示设置了该选项。 只读 <b>对象</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <list type="table">
+        <remarks><list type="table">
             <item>
-              <term>1</term>
-              <description>使用首行的标签。</description>
+              <term>1 </term>
+              <description>使用首行中的标签。</description>
             </item>
             <item>
-              <term>2</term>
-              <description>使用左列的标签。</description>
+              <term>2 </term>
+              <description>使用左列中的标签。</description>
             </item>
             <item>
               <term>3</term>
-              <description>创建到数据源的链接。</description>
+              <description>创建指向源数据的链接。</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ConsolidationSources">
@@ -1059,7 +1032,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回工作表的当前合并源工作表名称的字符串值的数组。 如果没有合并计算工作表上，则返回<b>空</b>。 只读 <b>对象</b> 。</summary>
+        <summary>返回一个字符串数组，这些字符串是工作表中当前合并计算的数据源的名称。 如果工作表中没有合并计算，将返回 <b>Empty</b>。 只读 <b>对象</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1090,13 +1063,11 @@
         <Parameter Name="After" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Before">可选的<b>对象</b>。 将在其前面放置复制的工作表的表。 不能指定<paramref name="Before" />如果指定<paramref name="After" />。</param>
-        <param name="After">可选的<b>对象</b>。 将在其后放置复制的工作表的表。 不能指定<paramref name="After" />如果指定<paramref name="Before" />。</param>
+        <param name="Before">可选 <b>对象</b>。 将要在其之前放置所复制工作表的工作表。 不能指定 <paramref name="Before" /> 是否指定 <paramref name="After" /> 。</param>
+        <param name="After">可选 <b>对象</b>。 将要在其之后放置所复制工作表的工作表。 不能指定 <paramref name="After" /> 是否指定 <paramref name="Before" /> 。</param>
         <summary>将工作表复制到工作簿的另一位置。</summary>
-        <remarks>
-          <para>如果不指定<paramref name="Before" />或<paramref name="After" />，Microsoft Excel 将新建一个包含复制的工作表的新工作簿。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果未指定或 <paramref name="Before" /> <paramref name="After" /> ，Microsoft Excel 将创建一个新工作簿，其中包含复制的工作表。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -1122,15 +1093,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回中的一个常量<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />枚举，指示在其中创建此对象的应用程序。 如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 只读<b>xlCreatorCode</b>。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <summary>返回枚举中的 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 一个常量，该常量指示创建此对象时的应用程序。 如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。 只读 <b>xlCreatorCode</b>。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomProperties">
@@ -1156,12 +1122,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.CustomProperties</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.CustomProperties" />对象，表示与工作表关联的标识符信息。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.CustomProperties" /> 一个对象，该对象代表与工作表关联的标识符信息。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>对于 <b>CustomProperties</b> 属性，工作表的标识符信息可以表示 XML 的元数据。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>对于 <b>CustomProperties</b> 属性，工作表的标识符信息可以表示 XML 的元数据。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -1189,10 +1153,8 @@
       <Parameters />
       <Docs>
         <summary>删除对象。</summary>
-        <remarks>
-          <para>当您删除<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />，此方法将显示一个对话框，提示用户确认删除。 默认情况下显示此对话框。 <b>Delete</b>方法返回一个<b>Boolean</b>值，如果用户单击取消对话框上的或<b>，则返回 True</b> ，如果用户单击删除为<b>False</b> 。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>删除时 <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> ，此方法将显示一个对话框，提示用户确认删除。 默认显示此对话框。 如果用户<b>在</b>对话框中单击了<b></b>"取消"，Delete<b></b>方法将返回一个布尔值;如果用户单击"删除"，则返回<b>True。</b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayAutomaticPageBreaks">
@@ -1264,12 +1226,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果显示指定工作表中的分页符（包括自动和手动分页符），则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果显示指定工作表中的分页符（包括自动和手动分页符），则该属性值为 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果没有安装打印机，不能设置该属性。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果没有安装打印机，不能设置该属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayRightToLeft">
@@ -1304,8 +1264,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果指定的窗口、 工作表或<b>ListObject</b>显示从右到左而不是从左到右。 <b>False</b>如果对象显示从左到右。 只读 <b>Boolean</b>。</summary>
+        <summary><b>如此</b> 如果指定的窗口、 工作表或 <b>ListObject</b> 显示从右到左而不是从左到右。 如果对象从左到右显示，则为 <b>False</b>。 只读 <b>Boolean</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1339,7 +1298,7 @@
       </Parameters>
       <Docs>
         <param name="Index">To be added.</param>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。 </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1373,7 +1332,7 @@
       </Parameters>
       <Docs>
         <param name="Index">To be added.</param>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1407,7 +1366,7 @@
       </Parameters>
       <Docs>
         <param name="Index">To be added.</param>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1444,12 +1403,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果当仅限于用户界面保护处于打开状态时，启用自动筛选箭头，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果当仅限于用户界面保护处于打开状态时，启用自动筛选箭头，则该属性值为 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>该属性可应用于每一张工作表，而不随工作表或会话一起保存。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>该属性可应用于每一张工作表，而不随工作表或会话一起保存。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableCalculation">
@@ -1478,12 +1435,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果在必要的情况下 Microsoft Excel 自动重新计算工作表，则该值为 <b>True</b>。如果 Excel 不重新计算工作表，则该值为 <b>False</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果在必要的情况下 Microsoft Excel 自动重新计算工作表，则该值为 <b>True</b>。 如果 Excel 不重新计算工作表，则该值为 <b>False</b>。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>当本属性的值为 <b>False</b> 时，则不能请求重新计算。如果将其值从 <b>False</b> 更改为 <b>True</b>，则 Excel 将重新计算工作表。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>当本属性的值为 <b>False</b> 时，则不能请求重新计算。 如果将其值从 <b>False</b> 更改为 <b>True</b>，则 Excel 将重新计算工作表。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableFormatConditionsCalculation">
@@ -1512,15 +1467,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置条件格式，则会发生自动根据需要。 可读写 <b>Boolean</b>。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>当设置为<b>True</b> （默认值） 时，将自动根据需要进行评估的条件格式。  设置为<b>False</b>时，条件格式不会重新计算。  任何以前应用的条件格式将仍可见，但它不会更新为单元格的值或<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.AppliesTo" />更改范围。  </para>
-          <para>此标志的用途是允许程序员完整地配置规则评估它之前。  当条件应用于较大的区域，性能可能会比较慢在这些情况下，这是特别有用。</para>
-          <para></para>
-        </remarks>
+        <summary>返回或设置条件格式是否将根据需要自动出现。 读/写 <b>Boolean</b>。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>设置为 <b>True</b> (默认值) ，将根据需要自动计算条件格式。  设置为 <b>False</b>时，将不会重新评估条件格式。  任何以前应用的条件格式仍将可见，但将不会随着单元格值或区域更改 <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.AppliesTo" /> 而更新。  </para>
+          <para>此标志的目的是允许程序员在评估规则之前完全配置规则。  在条件应用于较大区域，因而性能较低的情况下，这种方式尤其有用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableOutlining">
@@ -1555,12 +1506,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果当仅限于用户界面保护处于打开状态时，启用分级显示符号，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果当仅限于用户界面保护处于打开状态时，启用分级显示符号，则该属性值为 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>该属性可应用于每一张工作表，而不随工作表或会话一起保存。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>该属性可应用于每一张工作表，而不随工作表或会话一起保存。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnablePivotTable">
@@ -1595,13 +1544,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果当仅限于用户界面保护处于打开状态时，启用数据透视表控件和操作，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果当仅限于用户界面保护处于打开状态时，启用数据透视表控件和操作，则该属性值为 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>该属性可应用于每一张工作表，而不随工作表或会话一起保存。</para>
+        <remarks><para>该属性可应用于每一张工作表，而不随工作表或会话一起保存。</para>
           <para>在数据透视表的下方或右侧必须有足够的未锁定单元格，这样 Microsoft Excel 才能重新计算并显示该数据透视表。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableSelection">
@@ -1630,12 +1577,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlEnableSelection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置工作表上可选择的内容。 读/写<see cref="T:Microsoft.Office.Interop.Excel.XlEnableSelection" />。</summary>
+        <summary>返回或设置工作表中可被选择的内容。 读/写 <see cref="T:Microsoft.Office.Interop.Excel.XlEnableSelection" /> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>仅当工作表处于保护状态时，本属性才能起作用：<b>xlNoSelection</b> 防止在工作表上进行任何选择操作，<b>xlUnlockedCells</b> 仅允许 <b>Locked</b> 属性为 <b>False</b> 的单元格才能被选定，而 <b>xlNoRestrictions</b> 允许选定任意单元格。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>仅当工作表处于保护状态时，本属性才能起作用：<b>xlNoSelection</b> 防止在工作表上进行任何选择操作，<b>xlUnlockedCells</b> 仅允许 <b>Locked</b> 属性为 <b>False</b> 的单元格才能被选定，而 <b>xlNoRestrictions</b> 允许选定任意单元格。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Evaluate">
@@ -1665,20 +1610,18 @@
       </Parameters>
       <Docs>
         <param name="Name">必需的 <b>字符串</b> 。 使用 Microsoft Excel 命名约定的对象名称。</param>
-        <summary>将一个 Microsoft Excel 名称转换为一个对象或者一个值。</summary>
+        <summary>将 Microsoft Excel 名称转换为一个对象或值。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>该方法可使用下列 Microsoft Excel 名称类型：</para>
+        <remarks><para>该方法可使用下列 Microsoft Excel 名称类型：</para>
           <list type="bullet">
             <item>
-              <description>已定义的名称。 您可以指定任何名称。</description>
+              <description>定义的名称。 可以指定任何名称。</description>
             </item>
             <item>
-              <description>外部引用。 您可以使用 ！ 要引用在其他工作簿中定义的工作表的运算符。</description>
+              <description>外部引用。 可使用 ! 运算符引用在另一个工作簿中定义的工作表。</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportAsFixedFormat">
@@ -1711,21 +1654,20 @@
         <Parameter Name="FixedFormatExtClassPtr" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">要导出为的文件格式类型。</param>
-        <param name="Filename">要保存的文件的文件名。 您可以包括完整路径，或 short_Excel2007 将文件保存在当前文件夹中。</param>
-        <param name="Quality">可选<see cref="T:Microsoft.Office.Interop.Excel.XlFixedFormatQuality" />。 指定将发布的文件的质量。</param>
-        <param name="IncludeDocProperties">						若要包括文档属性，则为 <b>True</b>；否则为 <b>False</b>。</param>
-        <param name="IgnorePrintAreas">						若要忽略发布时设置的任何打印区域，则为 <b>True</b>；否则为 <b>False</b>。</param>
-        <param name="From">发布的起始页码。如果省略此参数，则从起始位置开始发布。</param>
-        <param name="To">发布的终止页码。如果省略此参数，则发布至最后一页。</param>
-        <param name="OpenAfterPublish">
-          <b>True</b>以发布; 后在查看器中显示的文件否则为<b>False</b>。</param>
-        <param name="FixedFormatExtClassPtr">指向<b>FixedFormatExt</b>类的指针。</param>
+        <param name="Type">要导出的文件格式类型。</param>
+        <param name="Filename">要保存的文件的文件名。 可以包括完整路径，也可以short_Excel2007文件保存到当前文件夹中。</param>
+        <param name="Quality">可选 <see cref="T:Microsoft.Office.Interop.Excel.XlFixedFormatQuality" /> 。 指定已发布文件的质量。</param>
+        <param name="IncludeDocProperties">
+						若要包括文档属性，则为 <b>True</b>；否则为 <b>False</b>。</param>
+        <param name="IgnorePrintAreas">
+						若要忽略发布时设置的任何打印区域，则为 <b>True</b>；否则为 <b>False</b>。</param>
+        <param name="From">要开始发布的页码。 如果省略此参数，则从头开始发布。</param>
+        <param name="To">发布的终止页码。 如果省略此参数，则发布至最后一页。</param>
+        <param name="OpenAfterPublish"><b>如果</b> 为 True，则发布文件后在查看器中显示文件;否则 <b>为 False</b>。</param>
+        <param name="FixedFormatExtClassPtr">指向 <b>FixedFormatExt</b> 类的指针。</param>
         <summary>导出为指定格式的文件。</summary>
-        <remarks>
-          <para>此方法还支持初始化加载项，以将文件导出为固定格式的文件。例如，如果存在转换器，则 Excel 将执行文件格式转换。转换通常由用户执行。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>此方法还支持初始化加载项，以将文件导出为固定格式的文件。例如，如果存在转换器，则 Excel 将执行文件格式转换。转换通常由用户执行。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FilterMode">
@@ -1754,13 +1696,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果工作表处于筛选模式。 只读 <b>Boolean</b>。</summary>
+        <summary>如果工作表在筛选模式下，则其为<b>True。</b> 只读 <b>Boolean</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果工作表包含已筛选的列表中隐藏的行，则此属性为<b>True</b> 。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果工作表包含包含隐藏行的已筛选列表，则此属性为<b>True。</b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GroupBoxes">
@@ -1792,7 +1731,7 @@
       </Parameters>
       <Docs>
         <param name="Index">To be added.</param>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。 </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1826,7 +1765,7 @@
       </Parameters>
       <Docs>
         <param name="Index">To be added.</param>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1854,12 +1793,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.HPageBreaks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" />集合，代表水平分页符工作表上。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" /> 一个集合，该集合代表工作表上的水平分页符。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>没有限制为每个工作表的 1,026 水平分页符。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>每个工作表有 1，026 个水平分页符的限制。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Hyperlinks">
@@ -1885,7 +1822,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Hyperlinks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Hyperlinks" />代表范围或工作表的超链接的集合。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Hyperlinks" /> 一个集合，该集合代表区域或工作表的超链接。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1916,7 +1853,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回对象在其同类对象所组成的集合内的编号。 <b>Integer</b> 类型，只读。</summary>
+        <summary>返回对象在其同类对象所组成的集合内的编号。 只读 <b>Integer</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1950,7 +1887,7 @@
       </Parameters>
       <Docs>
         <param name="Index">To be added.</param>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。 </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1984,7 +1921,7 @@
       </Parameters>
       <Docs>
         <param name="Index">To be added.</param>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2018,7 +1955,7 @@
       </Parameters>
       <Docs>
         <param name="Index">To be added.</param>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2046,7 +1983,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ListObjects</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回的集合<see cref="T:Microsoft.Office.Interop.Excel.ListObject" />工作表中的对象。 只读<b>ListObjects</b>集合。</summary>
+        <summary>返回工作 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> 表中的对象集合。 <b>ListObjects</b> 集合，只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2074,7 +2011,7 @@
         <ReturnType>Microsoft.Office.Core.MsoEnvelope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>代表文档的电子邮件标题。</summary>
+        <summary>表示文档的电子邮件头。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2105,13 +2042,11 @@
         <Parameter Name="After" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Before">可选的<b>对象</b>。 将在其前面放置移动的工作表的表。 不能指定<paramref name="Before" />如果指定<paramref name="After" />。</param>
-        <param name="After">可选的<b>对象</b>。 将在其后放置移动的工作表的表。 不能指定<paramref name="After" />如果指定<paramref name="Before" />。</param>
+        <param name="Before">可选 <b>对象</b>。 在其之前放置移动工作表的工作表。 不能指定 <paramref name="Before" /> 是否指定 <paramref name="After" /> 。</param>
+        <param name="After">可选 <b>对象</b>。 在其之后放置移动工作表的工作表。 不能指定 <paramref name="After" /> 是否指定 <paramref name="Before" /> 。</param>
         <summary>将工作表移到工作簿中的另一个位置</summary>
-        <remarks>
-          <para>如果不指定<paramref name="Before" />或<paramref name="After" />，Microsoft Excel 将新建一个包含移动的工作表的新工作簿。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果不指定或，Microsoft Excel 将创建一个包含移动工作表 <paramref name="Before" /> <paramref name="After" /> 的新工作簿。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -2168,7 +2103,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Names</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Names" />集合，代表所有特定于工作表的名称 （使用"WorksheetName ！"定义的名称 前缀）。 只读<b>Names</b>对象。</summary>
+        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.Names" /> 个集合，该集合代表使用"WorksheetName！" (所有特定于工作表的名称。 前缀) 。 <b>Names</b> 对象，只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2196,13 +2131,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Chart" />， <see cref="T:Microsoft.Office.Interop.Excel.Range" />，或<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />对象，表示的下一个工作表或单元格。 只读。</summary>
+        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 个 ，或 <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> 对象，该对象表示下一个工作表或单元格。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果该对象为区域，则此属性会模拟 Tab 键，但会返回下一个单元格，而不选中它。</para>
+        <remarks><para>如果该对象为区域，则此属性会模拟 Tab 键，但会返回下一个单元格，而不选中它。</para>
           <para>在处于保护状态的工作表中，此属性返回下一个未锁定单元格。在未保护的工作表中，此属性总是返回紧靠指定单元格右边的单元格。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OLEObjects">
@@ -2230,8 +2163,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">可选的<b>对象</b>。 OLE 对象的名称或编号。</param>
-        <summary>返回一个 object 值，该值代表之一的单个 OLE 对象 ( <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" />) 或所有 OLE 对象的集合 (<see cref="T:Microsoft.Office.Interop.Excel.OLEObjects" />集合) 图表或工作表上。 只读。</summary>
+        <param name="Index">可选 <b>对象</b>。 OLE 对象的名称或编号。</param>
+        <summary>返回一个对象，该对象代表图表或工作表 (集合) 单个 OLE 对象或 (集合) <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" /> OLE <see cref="T:Microsoft.Office.Interop.Excel.OLEObjects" /> 对象的集合。 只读。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2274,7 +2207,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。 </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2317,7 +2250,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2360,7 +2293,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2403,7 +2336,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2446,7 +2379,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2489,7 +2422,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2523,7 +2456,7 @@
       </Parameters>
       <Docs>
         <param name="Index">To be added.</param>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2551,7 +2484,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Outline</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Outline" />对象，表示指定工作表的分级显示。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Outline" /> 一个对象，该对象代表指定工作表的大纲。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2613,7 +2546,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PageSetup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.PageSetup" />包含指定对象的所有页面设置的对象。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.PageSetup" /> 一个对象，该对象包含指定对象的所有页面设置。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2641,7 +2574,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父对象。只读。</summary>
+        <summary>返回指定对象的父对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2672,14 +2605,12 @@
         <Parameter Name="Link" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Destination">可选的<b>对象</b>。 A<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，它指定要粘贴剪贴板内容的位置。 如果省略此参数，则使用当前所选内容。 此参数可以是仅指定是否可以将剪贴板的内容粘贴到区域。 如果指定此参数，则<paramref name="Link" />不能使用参数。</param>
-        <param name="Link">可选的<b>对象</b>。 <b>True</b>建立到将粘贴数据源的链接。 如果指定此参数，则<paramref name="Destination" />不能使用参数。 默认值为 <b>False</b> 。</param>
+        <param name="Destination">可选 <b>对象</b>。 <see cref="T:Microsoft.Office.Interop.Excel.Range" />指定剪贴板内容的粘贴位置的对象。 如果省略此参数，则使用当前选中范围。 只有在“剪贴板”中的内容可以粘贴到某个范围内时，才能指定此参数。 如果指定此参数， <paramref name="Link" /> 则不能使用该参数。</param>
+        <param name="Link">可选 <b>对象</b>。 如果为 <b>True</b>，则建立指向粘贴数据来源的链接。 如果指定此参数， <paramref name="Destination" /> 则不能使用该参数。 默认值为 <b>False</b>。</param>
         <summary>将“剪贴板”中的内容粘贴到工作表上。</summary>
-        <remarks>
-          <para>如果不指定<paramref name="Destination" />参数，您必须选择目标区域才能使用此方法。</para>
-          <para>该方法可能会修改工作表的选定区域，这取决于剪贴板中的内容。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果不指定参数，则必须在使用此方法 <paramref name="Destination" /> 之前选择目标区域。</para>
+          <para>该方法可能会修改工作表中的选中范围，这取决于“剪贴板”中的内容。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PasteSpecial">
@@ -2713,21 +2644,19 @@
         <Parameter Name="NoHTMLFormatting" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Format">可选的<b>对象</b>。 指定数据的剪贴板格式的字符串。</param>
-        <param name="Link">可选的<b>对象</b>。 <b>True</b>建立到将粘贴数据源的链接。 如果源数据不适于链接或源应用程序不支持的链接，则忽略此参数。 默认值为 <b>False</b> 。</param>
-        <param name="DisplayAsIcon">可选的<b>对象</b>。 <b>True</b>将粘贴的数据显示为图标。 默认值为 <b>False</b> 。</param>
-        <param name="IconFileName">可选的<b>对象</b>。 包含要使用的图标文件的名称<paramref name="DisplayAsIcon" />是<b>，则返回 True</b>。</param>
-        <param name="IconIndex">可选的<b>对象</b>。 图标文件内的图标索引号。</param>
-        <param name="IconLabel">可选的<b>对象</b>。 图标的文本标签。</param>
-        <param name="NoHTMLFormatting">可选的<b>对象</b>。 <b>True</b> HTML 中删除所有格式、 超链接和图像。 <b>False</b>粘贴 HTML 原样。 默认值为 <b>False</b> 。</param>
-        <summary>粘贴到使用指定的格式工作表剪贴板的内容。 粘贴从其他应用程序的数据或以特定格式粘贴数据，请使用此方法。</summary>
-        <remarks>
-          <para>
-            <paramref name="NoHTMLFormatting" />将仅专家时<paramref name="Format" />="HTML"。 在所有其他情况下，<paramref name="NoHTMLFormatting" />将被忽略。</para>
+        <param name="Format">可选 <b>对象</b>。 指定数据的剪贴板格式的字符串。</param>
+        <param name="Link">可选 <b>对象</b>。 如果为 <b>True</b>，则建立指向粘贴数据来源的链接。 如果源数据不适于链接，或源应用程序不支持链接，将忽略此参数。 默认值为 <b>False</b>。</param>
+        <param name="DisplayAsIcon">可选 <b>对象</b>。 <b>真</b> 要显示为图标粘贴的数据。 默认值为 <b>False</b>。</param>
+        <param name="IconFileName">可选 <b>对象</b>。 如果为 True，则包含要使用图标 <paramref name="DisplayAsIcon" /> 的文件 <b>的名称</b>。</param>
+        <param name="IconIndex">可选 <b>对象</b>。 图标文件内的图标索引号。</param>
+        <param name="IconLabel">可选 <b>对象</b>。 图标的文本标签。</param>
+        <param name="NoHTMLFormatting">可选 <b>对象</b>。 如果为 <b>True</b>，则从 HTML 中删除所有的格式设置、超链接和图像。 如果为 <b>False</b>，则完整粘贴 HTML。 默认值为 <b>False</b>。</param>
+        <summary>使用指定格式将剪贴板的内容粘贴到工作表上。 可用本方法从其他应用程序中粘贴数据，或以特定格式粘贴数据。</summary>
+        <remarks><para>
+            <paramref name="NoHTMLFormatting" /> 仅在 = <paramref name="Format" /> "HTML" 时重要。 在所有其他情况下 <paramref name="NoHTMLFormatting" /> ，将被忽略。</para>
           <para>必须在使用本方法之前选定目标区域。</para>
           <para>该方法可能会修改工作表的选定区域，这取决于剪贴板中的内容。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Pictures">
@@ -2789,8 +2718,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">可选的<b>对象</b>。 报表的名称或编号。</param>
-        <summary>返回一个 object 值，该值代表以下任意一个数据透视表报表 (<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />对象) 或所有数据透视表的集合 (<see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />对象) 的工作表上。 只读。</summary>
+        <param name="Index">可选 <b>对象</b>。 报表的名称或编号。</param>
+        <summary>返回一个对象，该对象代表 (数据透视表) 或工作表上 (数据透视表) <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> 集合。 只读。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2835,23 +2764,26 @@
         <Parameter Name="Connection" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SourceType">可选的<b>对象</b>。 报告数据的源。 可以是一个<see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" />.constants。</param>
-        <param name="SourceData">可选的<b>对象</b>。 新报表的数据。 可以是<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象、 数组的范围或一个文本常量，代表其他报表的名称。 对于外部数据库，<paramref name="SourceData" />是包含 SQL 查询字符串，其中每个元素是长度最多 255 个字符的字符串的数组。 您应使用<paramref name="Connection" />参数指定的 ODBC 连接字符串。 与早期版本的 Excel 的兼容性<paramref name="SourceData" />可以是一个两个元素的数组。 指定 ODBC 数据源的连接字符串的第一个元素。 第二个元素都是用来获取数据的 SQL 查询字符串。 如果指定<paramref name="SourceData" />，则还必须指定<paramref name="SourceType" />。 如果活动单元格位于<paramref name="SourceData" />范围，则必须指定<paramref name="TableDestination" />以及。</param>
-        <param name="TableDestination">可选的<b>对象</b>。 指定报表在工作表的位置的<b>Range</b>对象。 如果省略此参数，则报表将放置到活动单元格。</param>
-        <param name="TableName">可选的<b>对象</b>。 用于指定新报表名称的字符串。</param>
-        <param name="RowGrand">可选的<b>对象</b>。 						如果为 <b>True</b>，则显示报表中的行总计。</param>
-        <param name="ColumnGrand">可选的<b>对象</b>。 						如果为 <b>True</b>，则显示报表中的列总计。</param>
-        <param name="SaveData">可选的<b>对象</b>。 <b>True</b>保存报表数据。 <b>False</b>可保存仅报告定义。</param>
-        <param name="HasAutoFormat">可选的<b>对象</b>。 						如果为 <b>True</b>，当刷新报表或移动字段时，Microsoft Excel 将自动设置其格式。</param>
-        <param name="AutoPage">可选的<b>对象</b>。 有效才<paramref name="SourceType" />是<b>xlConsolidation</b>。 <b>True</b>已创建的合并页字段的 Microsoft Excel。 如果<paramref name="AutoPage" />是<b>False</b>，您必须创建的页字段。</param>
-        <param name="Reserved">可选的<b>对象</b>。 不在 Microsoft Excel 中使用。</param>
-        <param name="BackgroundQuery">可选的<b>对象</b>。 <b>True</b>以让 Excel 报表异步 （在后台） 执行查询。 默认值为 <b>False</b> 。</param>
-        <param name="OptimizeCache">可选的<b>对象</b>。 <b>True</b>构造时优化数据透视表缓存。 默认值为 <b>False</b> 。</param>
-        <param name="PageFieldOrder">可选的<b>对象</b>。 在哪一页字段添加到数据透视表报表的布局的顺序。 可以是下列<b>XlOrder</b>常量之一： <b>xlDownThenOver</b>或<b>xlOverThenDown</b>。 默认值是<b>xlDownThenOver</b>。</param>
-        <param name="PageFieldWrapCount">可选的<b>对象</b>。 每个列中的页字段或数据透视表报告中的行数。 默认值为 0（零）。</param>
-        <param name="ReadData">可选的<b>对象</b>。 <b>True</b>以创建包含从外部数据库; 所有记录的数据透视表缓存此缓存可能会非常大。 如果<paramref name="ReadData" />是<b>False</b>，您可以设置某些字段为基于服务器的页字段之前实际读取数据。</param>
-        <param name="Connection">可选的<b>对象</b>。 一个字符串，包含允许 Excel 连接到 ODBC 数据源的 ODBC 设置。 连接字符串有窗体"ODBC;&lt;连接字符串&gt;"。 此参数覆盖任何以前设置<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />对象的<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" />属性。</param>
-        <summary>创建<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />对象。 此方法才会显示数据透视表向导。 此方法不可用于 OLE DB 数据源。 使用<see cref="M:Microsoft.Office.Interop.Excel.Worksheets.Add(System.Object,System.Object,System.Object,System.Object)" />方法，以添加数据透视表缓存，然后创建数据透视表报告基于该缓存。 <b>PivotTable</b>对象。</summary>
+        <param name="SourceType">可选 <b>对象</b>。 报告数据源。 可以是 <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> .constants 之一。</param>
+        <param name="SourceData">可选 <b>对象</b>。 新报告的数据。 可以是对象、区域数组或代表其他报表名称 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 的文本常量。 对于外部数据库，是一个字符串数组，其中包含 SQL 查询字符串，其中每个元素的长度最多 <paramref name="SourceData" /> 为 255 个字符。 您应使用该 <paramref name="Connection" /> 参数指定 ODBC 连接字符串。 为了与早期版本的 Excel 兼容，可以是 <paramref name="SourceData" /> 一个双元素数组。 第一个元素是指定数据的 ODBC 源的连接字符串。 第二个元素是SQL数据所使用的查询字符串。 如果指定 <paramref name="SourceData" /> ，则还必须指定 <paramref name="SourceType" /> 。 如果活动单元格位于该 <paramref name="SourceData" /> 范围内，则还必须 <paramref name="TableDestination" /> 指定。</param>
+        <param name="TableDestination">可选 <b>对象</b>。 一个 <b>Range</b> 对象，它指定报表在工作表中的位置。 如果省略此参数，则将报表置于活动单元格中。</param>
+        <param name="TableName">可选 <b>对象</b>。 用于指定新报表名称的字符串。</param>
+        <param name="RowGrand">可选 <b>对象</b>。 
+						如果为 <b>True</b>，则显示报表中的行总计。</param>
+        <param name="ColumnGrand">可选 <b>对象</b>。 
+						如果为 <b>True</b>，则显示报表中的列总计。</param>
+        <param name="SaveData">可选 <b>对象</b>。 如果为 <b>True</b>，则保存报表中的数据。 如果为 <b>False</b>，则仅保存报表的定义。</param>
+        <param name="HasAutoFormat">可选 <b>对象</b>。 
+						如果为 <b>True</b>，当刷新报表或移动字段时，Microsoft Excel 将自动设置其格式。</param>
+        <param name="AutoPage">可选 <b>对象</b>。 仅在 <paramref name="SourceType" /> <b>xlConsolidation 时有效</b>。 如果值为 <b>True</b>，Microsoft Excel 将为合并创建页字段。 如果 <paramref name="AutoPage" /> 为 <b>False，</b>则必须创建页字段。</param>
+        <param name="Reserved">可选 <b>对象</b>。 不在 Microsoft Excel 中使用。</param>
+        <param name="BackgroundQuery">可选 <b>对象</b>。 如果为 <b>True</b>，则 Excel 将异步执行（后台执行）报表查询。 默认值为 <b>False</b>。</param>
+        <param name="OptimizeCache">可选 <b>对象</b>。 如果为 <b>True</b>，则在构造数据透视表的缓存时对其进行优化。 默认值为 <b>False</b>。</param>
+        <param name="PageFieldOrder">可选 <b>对象</b>。 在数据透视表布局中添加页字段的顺序。 可为以下 <b>XlOrder</b> 常量之一：<b>xlDownThenOver</b> 或 <b>xlOverThenDown</b>。 默认值为 <b>xlDownThenOver</b>。</param>
+        <param name="PageFieldWrapCount">可选 <b>对象</b>。 数据透视表中每列或每行的页字段数。 默认值为 0（零）。</param>
+        <param name="ReadData">可选 <b>对象</b>。 如果为 <b>True</b>，则创建数据透视表缓存以包含外部数据库中的所有记录；此时缓存可能会很大。 如果为 False，可以在实际读取数据之前将某些字段设置为基于 <paramref name="ReadData" /> 服务器的页字段。 <b></b></param>
+        <param name="Connection">可选 <b>对象</b>。 包含 ODBC 设置的字符串，这些设置使得 Excel 可以连接 ODBC 数据源。 连接字符串的形式为"ODBC; &lt;连接字符串 &gt; "。 此参数会覆盖对象属性之前 <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> 的任何 <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> 设置。</param>
+        <summary>创建对象 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。 此方法不显示数据透视表向导。 此方法对 OLE DB 数据源不可用。 使用 <see cref="M:Microsoft.Office.Interop.Excel.Worksheets.Add(System.Object,System.Object,System.Object,System.Object)" /> 该方法可添加数据透视表缓存，然后基于缓存创建数据透视表。 <b>PivotTable</b> 对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2879,13 +2811,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Chart" />， <see cref="T:Microsoft.Office.Interop.Excel.Range" />，或<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />对象，表示的上一个工作表或单元格。 只读。</summary>
+        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 个 ，或 <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> 对象，该对象表示上一个工作表或单元格。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定对象为区域，则此属性的作用是仿效 Shift+Tab；但此属性只是返回上一单元格，并不选定它。</para>
+        <remarks><para>如果指定对象为区域，则此属性的作用是仿效 Shift+Tab；但此属性只是返回上一单元格，并不选定它。</para>
           <para>在保护工作表上，该属性返回上一个未锁定的单元格。在未保护的工作表上，该属性通常返回指定单元格左侧相邻的单元格。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintedCommentPages">
@@ -2911,14 +2841,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取当前工作表的打印的注释页数。</summary>
-        <value>将打印当前工作表的备注页的数目。</value>
-        <remarks>
-          <para>只读。</para>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.PrintedCommentPages" />属性将仅返回一个数字大于零如果注释的页面设置工作表选项卡上设置对话框中设置为在工作表的末尾。 如果工作表为图表工作表或 MS Excel 5.0 对话框工作表，此属性将返回零。</para>
-          <para></para>
-        </remarks>
+        <summary>获取将为当前工作表打印的批注页数。</summary>
+        <value>将为当前工作表打印的批注页数。</value>
+        <remarks><para>只读。</para>
+          <para>如果"页面设置"对话框的"工作表"选项卡上的"注释"设置设置为工作表的末尾，则该属性将仅返回大于零 <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.PrintedCommentPages" /> 的编号。 如果工作表是“图表”工作表或“MS Excel 5.0 对话框”工作表，此属性将返回零。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintOut">
@@ -2956,19 +2883,17 @@
         <Parameter Name="PrToFileName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="From">可选的<b>对象</b>。 从中开始打印的页的页码。 如果省略此参数，则打印从开头。</param>
-        <param name="To">可选的<b>对象</b>。 要打印的末页数。 如果省略此参数，则打印至最后一页。</param>
-        <param name="Copies">可选的<b>对象</b>。 要打印的份数。 如果省略此参数，则打印一份。</param>
-        <param name="Preview">可选的<b>对象</b>。 <b>True</b>由 Microsoft Excel 调用之前打印对象的打印预览。 <b>False</b>（或省略） 若要立即打印对象。</param>
-        <param name="ActivePrinter">可选的<b>对象</b>。 设置活动打印机的名称。</param>
-        <param name="PrintToFile">可选的<b>对象</b>。 <b>True</b>打印到文件。 如果<paramref name="PrToFileName" />未指定，则 Microsoft Excel 将提示用户输入输出文件的名称。</param>
-        <param name="Collate">可选的<b>对象</b>。 如果为 <b>True</b>，则逐份打印多个副本。</param>
-        <param name="PrToFileName">可选的<b>对象</b>。 如果<paramref name="PrintToFile" />设置为<b>True</b>，则该参数指定要打印到的文件的名称。</param>
+        <param name="From">可选 <b>对象</b>。 打印的开始页号。 如果省略此参数，则从起始位置开始打印。</param>
+        <param name="To">可选 <b>对象</b>。 打印的终止页号。 如果省略此参数，则打印至最后一页。</param>
+        <param name="Copies">可选 <b>对象</b>。 打印份数。 如果省略此参数，则只打印一份。</param>
+        <param name="Preview">可选 <b>对象</b>。 如果为 <b>True</b>，Microsoft Excel 将在打印对象之前调用打印预览。 如果为 <b>False</b>（或省略该参数），则立即打印对象。</param>
+        <param name="ActivePrinter">可选 <b>对象</b>。 设置活动打印机的名称。</param>
+        <param name="PrintToFile">可选 <b>对象</b>。 如果为 <b>True</b>，则打印到文件。 如果 <paramref name="PrToFileName" /> 未指定，Microsoft Excel 将提示用户输入输出文件的名称。</param>
+        <param name="Collate">可选 <b>对象</b>。 如果为 <b>True</b>，则逐份打印多个副本。</param>
+        <param name="PrToFileName">可选 <b>对象</b>。 如果 <paramref name="PrintToFile" /> 设置为 <b>True，</b>则此参数指定要打印到的文件的名称。</param>
         <summary>打印对象。</summary>
-        <remarks>
-          <para>说明中的"页面"<paramref name="From" />和<paramref name="To" />指打印页、 工作表或工作簿中不整个页面。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>"页面"在工作表或工作簿的说明中引用打印页，而不是整个 <paramref name="From" /> <paramref name="To" /> 页面。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintOutEx">
@@ -3042,7 +2967,7 @@
         <Parameter Name="EnableChanges" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="EnableChanges">可选的<b>对象</b>。 <b>True</b>启用对指定工作表的更改。</param>
+        <param name="EnableChanges">可选 <b>对象</b>。 <b>如果</b> 为 True，则启用对指定工作表的更改。</param>
         <summary>按对象打印后的外观效果显示对象的预览。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3084,30 +3009,28 @@
         <Parameter Name="AllowUsingPivotTables" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Password">可选的<b>对象</b>。 指定工作表或工作簿的密码区分大小写的字符串。 如果省略此参数，则可以取消的工作表或工作簿保护不使用密码。 否则，您必须指定要取消的工作表或工作簿的密码。 如果您忘记了密码，则无法取消的工作表或工作簿。 最好在安全的地方保留您的密码和其对应的文档名称的列表。</param>
-        <param name="DrawingObjects">可选的<b>对象</b>。 <b>True</b>保护形状。 默认值为 <b>False</b> 。</param>
-        <param name="Contents">可选的<b>对象</b>。 <b>True</b>保护内容。 有关图表，此保护整个图表。 对于工作表，此保护锁定的单元格。 默认值为 <b>True</b> 。</param>
-        <param name="Scenarios">可选的<b>对象</b>。 <b>True</b>保护方案。 此参数是仅供工作表。 默认值为 <b>True</b> 。</param>
-        <param name="UserInterfaceOnly">可选的<b>对象</b>。 <b>True</b>保护用户界面但不是宏。 如果省略此参数，则保护应用宏和用户界面。</param>
-        <param name="AllowFormattingCells">可选的<b>对象</b>。 <b>True</b>允许用户在受保护的工作表上的任意单元格进行格式设置。 默认值为 <b>False</b> 。</param>
-        <param name="AllowFormattingColumns">可选的<b>对象</b>。 <b>True</b>允许用户在受保护的工作表上的任何列进行格式设置。 默认值为 <b>False</b> 。</param>
-        <param name="AllowFormattingRows">可选的<b>对象</b>。 <b>True</b>允许用户在受保护的工作表上的任何行进行格式设置。 默认值为 <b>False</b> 。</param>
-        <param name="AllowInsertingColumns">可选的<b>对象</b>。 <b>True</b>允许用户在受保护的工作表上插入列。 默认值为 <b>False</b> 。</param>
-        <param name="AllowInsertingRows">可选的<b>对象</b>。 <b>True</b>允许用户在受保护的工作表上插入行。 默认值为 <b>False</b> 。</param>
-        <param name="AllowInsertingHyperlinks">可选的<b>对象</b>。 <b>True</b>允许用户在工作表插入超链接。 默认值为 <b>False</b> 。</param>
-        <param name="AllowDeletingColumns">可选的<b>对象</b>。 <b>True</b>允许用户在受保护的工作表上删除列删除列中的每个单元格所在的锁定。 默认值为 <b>False</b> 。</param>
-        <param name="AllowDeletingRows">可选的<b>对象</b>。 <b>True</b>允许用户在受保护的工作表上删除行的每个要删除的行中的单元格是解除锁定。 默认值为 <b>False</b> 。</param>
-        <param name="AllowSorting">可选的<b>对象</b>。 <b>True</b>允许用户对受保护的工作表进行排序。 必须锁定或未受保护排序区域中的每个单元格。 默认值为 <b>False</b> 。</param>
-        <param name="AllowFiltering">可选的<b>对象</b>。 <b>True</b>允许用户在受保护的工作表上设置筛选器。 用户可以更改筛选条件，但可以不启用或禁用自动筛选。 用户可以在现有的自动筛选器上设置筛选器。 默认值为 <b>False</b> 。</param>
-        <param name="AllowUsingPivotTables">可选的<b>对象</b>。 <b>True</b>允许用户在受保护的工作表上使用数据透视表报告。 默认值为 <b>False</b> 。</param>
-        <summary>保护工作表使其不能被修改。</summary>
-        <remarks>
-          <para>如果应用<b>Protect</b>方法与<paramref name="UserInterfaceOnly" />参数设置为<b>True</b>向工作表，然后保存工作簿，整张工作表 （而不仅仅是接口） 将受到完全保护时重新打开工作簿。 要重新启用用户界面保护后打开工作簿时，必须重新应用<b>Protect</b>方法与<paramref name="UserInterfaceOnly" />将设置为<b>True</b>。</para>
-          <para>如果您想要对受保护的工作表进行更改，则可以使用<b>Protect</b>方法在受保护的工作表上，如果提供密码。 另一种方法是取消保护工作表和进行必要的更改，然后再次保护工作表。</para>
+        <param name="Password">可选 <b>对象</b>。 指定工作表或工作簿的区分大小写密码的字符串。 如果省略此参数，可以不使用密码地解除对工作表或工作簿的保护。 否则，必须指定密码才能解除对工作表或工作簿的保护。 如果忘记密码，则无法解除对工作表或工作簿的保护。 建议将密码和对应文档名妥善保存。</param>
+        <param name="DrawingObjects">可选 <b>对象</b>。 如果为 <b>True</b>，则保护形状。 默认值为 <b>False</b>。</param>
+        <param name="Contents">可选 <b>对象</b>。 如果为 <b>True</b>，则保护内容。 对于图表，这将保护整个图表。 对于工作表，这将保护锁定单元格。 默认值为 <b>True</b>。</param>
+        <param name="Scenarios">可选 <b>对象</b>。 如果为 <b>True</b>，则保护方案。 此参数仅对工作表有效。 默认值为 <b>True</b>。</param>
+        <param name="UserInterfaceOnly">可选 <b>对象</b>。 <b>如果为 True，</b> 则保护用户界面，但不保护宏。 如果省略此参数，保护将应用于宏和用户界面。</param>
+        <param name="AllowFormattingCells">可选 <b>对象</b>。 如果为 <b>True</b>，则允许用户格式化受保护工作表上的任何单元格。 默认值为 <b>False</b>。</param>
+        <param name="AllowFormattingColumns">可选 <b>对象</b>。 如果为 <b>True</b>，则允许用户格式化受保护工作表上的任何列。 默认值为 <b>False</b>。</param>
+        <param name="AllowFormattingRows">可选 <b>对象</b>。 <b>True</b> 允许用户格式化受保护的工作表上的任何行。 默认值为 <b>False</b>。</param>
+        <param name="AllowInsertingColumns">可选 <b>对象</b>。 如果为 <b>True</b>，则允许用户在受保护工作表上插入列。 默认值为 <b>False</b>。</param>
+        <param name="AllowInsertingRows">可选 <b>对象</b>。 如果为 <b>True</b>，则允许用户在受保护工作表上插入行。 默认值为 <b>False</b>。</param>
+        <param name="AllowInsertingHyperlinks">可选 <b>对象</b>。 如果为 <b>True</b>，则允许用户在受保护工作表上插入超链接。 默认值为 <b>False</b>。</param>
+        <param name="AllowDeletingColumns">可选 <b>对象</b>。 如果为 <b>True</b>，则允许用户在受保护的工作表上删除列，其中要删除的列中的每个单元格都处于解锁状态。 默认值为 <b>False</b>。</param>
+        <param name="AllowDeletingRows">可选 <b>对象</b>。 <b>True</b> 允许用户删除受保护的工作表上的行，其中要删除的行中每个单元格都会解锁。 默认值为 <b>False</b>。</param>
+        <param name="AllowSorting">可选 <b>对象</b>。 如果为 <b>True</b>，则允许用户对受保护工作表进行排序。 排序范围内的每个单元都必须处于解锁或不受保护的状态。 默认值为 <b>False</b>。</param>
+        <param name="AllowFiltering">可选 <b>对象</b>。 如果为 <b>True</b>，则允许用户在受保护的工作表上设置筛选。 用户可以更改筛选条件，但无法启用或禁用自动筛选。 用户可以在现有自动筛选上设置筛选。 默认值为 <b>False</b>。</param>
+        <param name="AllowUsingPivotTables">可选 <b>对象</b>。 如果为 <b>True</b>，则允许用户在受保护的工作表上设置数据透视表报告。 默认值为 <b>False</b>。</param>
+        <summary>保护工作表使其不被修改。</summary>
+        <remarks><para>如果将参数设置为 True 的<b>Protect</b>方法应用于工作表，然后保存工作簿，则当您重新打开工作簿时，整个工作表 (而不只是界面) 将受到完全保护。 <paramref name="UserInterfaceOnly" /> <b></b> 若要在打开工作簿后重新启用用户界面保护，必须再次应用<b>Protect</b>方法，并设置为 <paramref name="UserInterfaceOnly" /> <b>True。</b></para>
+          <para>如果要更改受保护的工作表，则如果提供密码，则有可能在受保护的工作表上使用 Protect<b></b>方法。 另一个方法是取消工作表保护，进行必要的更改，然后再次保护工作表。</para>
           <para>
-            <b>注意</b>: 未受保护意味着单元格可能被锁定 （单元格格式对话框） 中编辑区域对话框，允许用户定义的范围包含但和用户已取消保护密码的范围或已 NT 权限通过验证。</para>
-          <para></para>
-        </remarks>
+            <b></b>注意："未受保护的"表示单元格可能锁定在 ("设置单元格格式"对话框) 但包含在"允许用户编辑区域"对话框中定义的范围中，并且用户已使用密码取消范围保护或通过 NT 权限进行验证。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ProtectContents">
@@ -3136,7 +3059,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>的工作表的内容处于保护状态。 有关图表，此保护整个图表。 对于工作表，此保护的单个单元格。 只读 <b>Boolean</b>。</summary>
+        <summary>如果工作表内容是受保护的，则为 <b>True</b>。 对于图表，这将保护整个图表。 对于工作表，这将保护各个单元格。 只读 <b>Boolean</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3167,8 +3090,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果形状处于保护状态。 只读 <b>Boolean</b>。</summary>
+        <summary>如果形状是受保护的，则为 <b>True</b>。 只读 <b>Boolean</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3196,7 +3118,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Protection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Protection" />对象，表示工作表的保护选项。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Protection" /> 一个对象，该对象代表工作表的保护选项。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3227,8 +3149,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果在打开仅限用户界面的保护。 若要启用用户界面保护，请使用<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Protect(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法与<paramref name="UserInterfaceOnly" />参数设置为<b>True</b>。 只读 <b>Boolean</b>。</summary>
+        <summary>如果启用了用户界面专用保护，则为 <b>True</b>。 若要打开用户界面保护，请使用参数设置为 <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Protect(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> <paramref name="UserInterfaceOnly" /> True <b>的方法</b>。 只读 <b>Boolean</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3259,7 +3180,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果工作表的方案处于保护状态，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，只读。</summary>
+        <summary>如果工作表的方案处于保护状态，则该属性值为 <b>True</b>。 只读 <b>Boolean</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3287,7 +3208,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.QueryTables</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.QueryTables" />值，该值代表指定工作表中的所有查询表的集合。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.QueryTables" /> 一个集合，该集合代表指定工作表上的所有查询表。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3319,9 +3240,9 @@
         <Parameter Name="Cell2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Cell1">所需的<b>对象</b>。 区域名称。 这必须是在宏语言中 A1 样式的引用。 它可以包括区域运算符 （冒号）、 交点运算符 （空格） 或 union 运算符 （逗号分隔）。 它还可以包含美元符号，但它们被忽略。 您可以使用局部定义的名称在该范围的任何部分。 如果您使用的名称，被假定该名称为宏的语言。</param>
-        <param name="Cell2">可选的<b>对象</b>。 区域左上角和右下角中的单元格。 可以是一个<b>Range</b>对象，该对象包含单个单元格、 整列或整行，也可以是命名的宏语言中的单个单元格的字符串。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，它代表单元格区域。</summary>
+        <param name="Cell1">必需 <b>对象</b>。 区域名称。 必须为采用宏语言的 A1 样式引用。 可包括区域操作符（冒号）、相交区域操作符（空格）或合并区域操作符（逗号）。 也可包括货币符号，但它们会被忽略掉。 您可以在区域中任一部分使用局部定义名称。 如果使用名称，则假定该名称使用的是宏语言。</param>
+        <param name="Cell2">可选 <b>对象</b>。 区域左上角和右下角的单元格。 可以是一个包含单个单元格、整列或整行的 <b>Range</b> 对象，或者也可以是一个用宏语言为单个单元格命名的字符串。</param>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 一个对象，该对象代表单元格或单元格区域。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3411,7 +3332,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，表示指定工作表上的所有行。 只读<b>Range</b>对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 一个对象，该对象代表指定工作表上的所有行。 此为只读 <b>Range</b> 对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3447,16 +3368,16 @@
         <Parameter Name="Local" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Filename">可选的<b>对象</b>。 一个指示要保存的文件的名称的字符串。 您可以包括完整路径。否则，Microsoft Excel 将保存在当前文件夹中的文件。</param>
-        <param name="FileFormat">可选的<b>对象</b>。 要保存文件时使用的文件格式。 一个有效的选项列表，请参阅<see cref="P:Microsoft.Office.Interop.Excel._Workbook.FileFormat" />属性。 对于现有文件，默认格式是指定; 的最后一个文件格式新的文件，默认值为版本的 Excel 正在使用的格式。</param>
-        <param name="Password">可选的<b>对象</b>。 它是一个区分大小写的字符串（最长不超过 15 个字符），用于指定文件的保护密码。</param>
-        <param name="WriteResPassword">可选的<b>对象</b>。 String 值，该值指示此文件的写保护密码。 如果使用密码保存文件，打开该文件时，不输入密码以只读方式打开文件。</param>
-        <param name="ReadOnlyRecommended">可选的<b>对象</b>。 <b>True</b>建议以只读方式打开该文件打开该文件时显示一条消息。</param>
-        <param name="CreateBackup">可选的<b>对象</b>。 如果为  <b>True</b> ，则创建备份文件。</param>
-        <param name="AddToMru">可选的<b>对象</b>。 <b>True</b>将此工作簿添加到列表中最近使用的文件。 默认值为 <b>False</b> 。</param>
-        <param name="TextCodepage">可选的<b>对象</b>。 不在美国英语版的 Microsoft Excel 中使用。</param>
-        <param name="TextVisualLayout">可选的<b>对象</b>。 不在美国英语版的 Microsoft Excel 中使用。</param>
-        <param name="Local">可选的<b>对象</b>。 <b>True</b>将保存对 Microsoft Excel （包括控制面板设置） 的语言文件。 <b>False</b>（默认值） 保存文件，针对语言的 Visual Basic for Applications (VBA) （即通常美国英语除非从运行 Workbooks.Open VBA 项目是旧国际化的 XL5/95 VBA 项目）。</param>
+        <param name="Filename">可选 <b>对象</b>。 一个表示要保存文件的文件名的字符串。 可包含完整路径，如果不指定路径，Microsoft Excel 将文件保存到当前文件夹中。</param>
+        <param name="FileFormat">可选 <b>对象</b>。 保存文件时使用的文件格式。 有关有效选项的列表，请参阅 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.FileFormat" /> 属性。 对于现有文件，默认采用上一次指定的文件格式；对于新文件，默认采用当前所用 Excel 版本的格式。</param>
+        <param name="Password">可选 <b>对象</b>。 它是一个区分大小写的字符串（最长不超过 15 个字符），用于指定文件的保护密码。</param>
+        <param name="WriteResPassword">可选 <b>对象</b>。 一个表示文件写保护密码的字符串。 如果文件保存时带有密码，但打开文件时不输入密码，则该文件以只读方式打开。</param>
+        <param name="ReadOnlyRecommended">可选 <b>对象</b>。 <b>如果</b> 为 True，则打开文件时显示一条消息，建议以只读方式打开文件。</param>
+        <param name="CreateBackup">可选 <b>对象</b>。 如果为 <b>True</b>，则创建备份文件。</param>
+        <param name="AddToMru">可选 <b>对象</b>。 如果为 <b>True</b>，则将该工作簿添加到最近使用的文件列表中。 默认值为 <b>False</b> 。</param>
+        <param name="TextCodepage">可选 <b>对象</b>。 不在美国英语版的 Microsoft Excel 中使用。</param>
+        <param name="TextVisualLayout">可选 <b>对象</b>。 不在美国英语版的 Microsoft Excel 中使用。</param>
+        <param name="Local">可选 <b>对象</b>。 如果为 <b>True</b>，则以 Microsoft Excel（包括控制面板设置）的语言保存文件。 <b>如果</b> (默认值) 则根据 Visual Basic for Applications (VBA)  (（通常为美国英语）保存文件，除非运行 Workbooks.Open 的 VBA 项目是旧的国际化 XL5/95 VBA 项目) 。</param>
         <summary>将对图表或工作表的更改保存到另一不同文件中。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3486,8 +3407,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">可选的<b>对象</b>。 名称或编号方案。 使用数组来指定多个方案。</param>
-        <summary>返回一个 object 值，该值代表之一的单个方案 (<see cref="T:Microsoft.Office.Interop.Excel.Scenario" />对象) 或方案集合 (<see cref="T:Microsoft.Office.Interop.Excel.Scenarios" />对象) 工作表上。</summary>
+        <param name="Index">可选 <b>对象</b>。 方案名称或方案号。 使用数组指定多个方案。</param>
+        <summary>返回一个对象，该对象表示 (对象) 的单个方案，或 (工作表上) <see cref="T:Microsoft.Office.Interop.Excel.Scenario" /> <see cref="T:Microsoft.Office.Interop.Excel.Scenarios" /> 方案的集合。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3518,7 +3439,7 @@
         <ReturnType>Microsoft.Office.Core.Scripts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Core.Scripts" />集合，它包含<see cref="T:Microsoft.Office.Core.Script" />对象保存为网页时，表示指定文档中的脚本或代码块。</summary>
+        <summary>返回集合，该集合包含表示指定文档中的脚本块或代码块的对象，当文档另存 <see cref="T:Microsoft.Office.Core.Scripts" /> <see cref="T:Microsoft.Office.Core.Script" /> 为网页时。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3549,12 +3470,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置允许滚动的区域以 A1-样式区域引用。 不能选择滚动区域以外的单元格。 可读写 <b>String</b>。</summary>
+        <summary>返回或设置允许滚动作为 A1 样式的范围引用的范围。 用户不能选定滚动区域之外的单元格。 读/写 <b>String</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>可将该属性设置为空字符串 ("") 以允许对整张工作表内所有单元格的选定。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>可将该属性设置为空字符串 ("") 以允许对整张工作表内所有单元格的选定。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollBars">
@@ -3616,12 +3535,10 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Replace">可选的<b>对象</b>。 要替换的对象。</param>
+        <param name="Replace">可选 <b>对象</b>。 要替换的对象。</param>
         <summary>选择对象。</summary>
-        <remarks>
-          <para>若要选择一个单元格的范围，请使用<b>Select</b>方法。 若要使单个单元格活动单元格，请使用<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" />方法。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>要选择单元格或单元格区域，请使用 <b>Select</b> 方法。 若要使单个单元格成为活动单元格，请使用 <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" /> 该方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetBackgroundPicture">
@@ -3675,7 +3592,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Shapes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Shapes" />对象，表示工作表或图表工作表上的所有形状。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> 一个对象，该对象代表工作表或图表工作表上的所有形状。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3704,7 +3621,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>使当前筛选列表的所有行均可见。如果正在使用自动筛选，则本方法将下拉列表框内容改为“（全部）”。</summary>
+        <summary>使当前筛选列表的所有行均可见。 如果正在使用自动筛选，则本方法将下拉列表框内容改为“（全部）”。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3733,11 +3650,9 @@
       <Parameters />
       <Docs>
         <summary>显示与指定工作表相关联的数据表单。</summary>
-        <remarks>
-          <para>您正在使用的数据表单时，会暂停执行。 关闭数据表单时，处行的下<b>ShowDataForm</b>方法将继续执行。</para>
+        <remarks><para>使用数据表单时，执行将暂停。 关闭数据表单时，继续执行 <b>ShowDataForm</b> 方法后一行。</para>
           <para>如果存在自定义数据表单，则本方法将运行此表单。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SmartTags">
@@ -3766,7 +3681,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SmartTags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.SmartTags" />对象，它代表指定单元格的标识符。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.SmartTags" /> 一个对象，该对象代表指定单元格的标识符。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3794,10 +3709,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Sort</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>在当前工作表中返回经过排序的值。只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Sort" />
-        </value>
+        <summary>在当前工作表中返回经过排序的值。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Sort" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3861,7 +3774,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回以磅为单位工作表中的所有行的标准 （默认值） 高度。 只读的 <b>双</b> 。</summary>
+        <summary>返回工作表 (行) 行的高度（以点表示）的标准值。 只读 <b>Double</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3898,12 +3811,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置工作表中所有列的标准列宽（默认值）。<b>Double</b> 类型，可读写。</summary>
+        <summary>返回或设置工作表中所有列的标准（默认）列宽。 读/写 <b>Double</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>一个列宽单位等于"常规"样式中一个字符的宽度。对于比例字体，则使用字符 0（零）的宽度。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>一个列宽单位等于“常规”样式中一个字符的宽度。对于比例字体，则使用字符 0（零）的宽度。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Tab">
@@ -3929,7 +3840,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Tab</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Tab" />chart 或 worksheet 对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Tab" /> 图表或工作表的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4006,7 +3917,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果 Microsoft Excel 对工作表使用 Lotus 1-2-3 的表达式求值规则，则该属性的值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果 Microsoft Excel 对工作表使用 Lotus 1-2-3 的表达式求值规则，则该属性的值为 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4049,7 +3960,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果 Microsoft Excel 对工作表使用 Lotus 1-2-3 的公式输入规则，则该属性的值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果 Microsoft Excel 对工作表使用 Lotus 1-2-3 的公式输入规则，则该属性的值为 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4080,7 +3991,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSheetType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置工作表类型。 只读<see cref="T:Microsoft.Office.Interop.Excel.XlSheetType" />。</summary>
+        <summary>返回或设置工作表类型。 只读 <see cref="T:Microsoft.Office.Interop.Excel.XlSheetType" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4110,12 +4021,10 @@
         <Parameter Name="Password" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Password">可选的<b>对象</b>。 一个字符串，用于取消的工作表或工作簿的保护密码区分大小写。 如果表或工作簿不受密码保护，则忽略此参数。 如果省略此参数受密码保护的工作表时，系统将提示您输入密码。 如果省略此参数受密码保护的工作簿，该方法将失败。</param>
-        <summary>取消工作表或工作簿的保护。如果工作表或工作簿不是受保护的，则此方法不起作用。</summary>
-        <remarks>
-          <para>如果您忘记了密码，将不能取消工作表或工作簿的保护。建议将密码和对应文档名妥善保存。</para>
-          <para></para>
-        </remarks>
+        <param name="Password">可选 <b>对象</b>。 一个字符串，指定用于解除工作表或工作簿保护的密码，此密码是区分大小写的。 如果工作表或工作簿不设密码保护，则省略此参数。 如果对工作表省略此参数，而该工作表又设有密码保护，Microsoft Excel 将提示您输入密码。 如果对工作簿省略此参数，而该工作簿又设有密码保护，则该方法将失效。</param>
+        <summary>取消工作表或工作簿的保护。 如果工作表或工作簿不是受保护的，则此方法不起作用。</summary>
+        <remarks><para>如果您忘记了密码，将不能取消工作表或工作簿的保护。建议将密码和对应文档名妥善保存。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UsedRange">
@@ -4144,7 +4053,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，表示指定工作表上的已用的区域。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 一个对象，该对象代表指定工作表上的已用区域。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4181,13 +4090,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSheetVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定对象是否可见。 读/写<see cref="T:Microsoft.Office.Interop.Excel.XlSheetVisibility" />。</summary>
+        <summary>决定对象是否可见。 读/写 <see cref="T:Microsoft.Office.Interop.Excel.XlSheetVisibility" /> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果数据透视表中的某一项在当前是可见的，则该项的 <b>Visible</b> 属性为 <b>True</b>。</para>
-          <para>如果将一个名称的 <b>Visible</b> 属性设为 <b>False</b>，则该名称将不出现在“定义名称”对话框中。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果数据透视表中的某一项在当前是可见的，则该项的 <b>Visible</b> 属性为 <b>True</b>。</para>
+          <para>如果将名称的 <b>Visible</b> 属性设置为 <b>False，</b>该名称将不会显示在"定义名称"对话框中。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VPageBreaks">
@@ -4213,7 +4120,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.VPageBreaks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.VPageBreaks" />集合，代表垂直分页符工作表上。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.VPageBreaks" /> 一个集合，该集合代表工作表上的垂直分页符。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4242,16 +4149,14 @@
         <Parameter Name="Map" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="XPath">所需的<b>对象</b>。 要查询的 XPath。</param>
-        <param name="SelectionNamespaces">可选的<b>对象</b>。 空格分隔的<b>字符串</b>包含 XPath 参数中引用的命名空间。 如果无法解析之一指定的命名空间，则将生成运行时错误。</param>
-        <param name="Map">可选<see cref="T:Microsoft.Office.Interop.Excel.XmlMap" />。 如果希望在特定的映射中查询 XPath，请指定 XML 映射。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，表示映射到特定 XPath 单元格。 如果尚未映射到工作表中指定的 XPath，或者如果映射的区域为空，则返回<b>Nothing</b> 。</summary>
+        <param name="XPath">必需 <b>对象</b>。 要查询的 XPath。</param>
+        <param name="SelectionNamespaces">可选 <b>对象</b>。 以空格分隔的 <b>String</b> 类型，包含在 XPath 参数中引用的命名空间。 如果无法解析某个指定的命名空间，将产生运行时错误。</param>
+        <param name="Map">可选 <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> 。 如果希望在特定的映射中查询 XPath，请指定 XML 映射。</param>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 一个对象，该对象代表映射到特定 XPath 的单元格。 如果 <b>指定的</b> XPath 尚未映射到工作表或映射区域为空，则返回 Nothing。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
-          <para>如果 XPath 存在于 XML 列表中的列，返回的<b>Range</b>对象不包括标题行或插入行。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>XML 功能（以 XML 电子表格格式保存文件除外）仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中可用。</para>
+          <para>如果 XPath 存在于 XML 列表中的列内，则返回的 <b>Range</b> 对象不包括标题行或 Insert 行。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlMapQuery">
@@ -4278,16 +4183,14 @@
         <Parameter Name="Map" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="XPath">所需的<b>对象</b>。 要查询的 XPath。</param>
-        <param name="SelectionNamespaces">可选的<b>对象</b>。 空格分隔的<b>字符串</b>包含 XPath 参数中引用的命名空间。 如果无法解析之一指定的命名空间，则将生成运行时错误。</param>
-        <param name="Map">可选<see cref="T:Microsoft.Office.Interop.Excel.XmlMap" />。 如果希望在特定的映射中查询 XPath，请指定 XML 映射。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，表示映射到特定 XPath 单元格。 如果尚未映射到工作表中指定的 XPath，则返回<b>Nothing</b> 。</summary>
+        <param name="XPath">必需 <b>对象</b>。 要查询的 XPath。</param>
+        <param name="SelectionNamespaces">可选 <b>对象</b>。 以空格分隔的 <b>String</b> 类型，包含在 XPath 参数中引用的命名空间。 如果无法解析某个指定的命名空间，将产生运行时错误。</param>
+        <param name="Map">可选 <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> 。 如果希望在特定的映射中查询 XPath，请指定 XML 映射。</param>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 一个对象，该对象代表映射到特定 XPath 的单元格。 如果指定的 XPath 路径尚未映射到工作表，则返回 <b>Nothing</b>。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</para>
-          <para>与不同<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.XmlDataQuery(System.String,System.Object,System.Object)" />方法， <b>XmlMapQuery</b>方法返回 XML 列表，包括标题行和插入行的整个列。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>XML 功能（以 XML 电子表格格式保存文件除外）仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中可用。</para>
+          <para>与该方法 <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.XmlDataQuery(System.String,System.Object,System.Object)" /> 不同 <b>，XmlMapQuery</b> 方法返回 XML 列表的整个列，包括标题行和插入行。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

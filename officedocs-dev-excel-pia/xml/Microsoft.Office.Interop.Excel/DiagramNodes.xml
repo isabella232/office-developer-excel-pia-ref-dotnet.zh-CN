@@ -1,13 +1,5 @@
 <Type Name="DiagramNodes" FullName="Microsoft.Office.Interop.Excel.DiagramNodes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8b783198df288a3b7154523a089925c4fe1d17c2" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20578272" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DiagramNodes : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8b783198df288a3b7154523a089925c4fe1d17c2" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012514" /></Metadata><TypeSignature Language="C#" Value="public interface DiagramNodes : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DiagramNodes implements class Microsoft.Office.Core._IMsoDispObj, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.DiagramNodes" />
   <TypeSignature Language="VB.NET" Value="Public Interface DiagramNodes&#xA;Implements _IMsoDispObj, IEnumerable" />
@@ -33,12 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>一<see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" />代表图表中的所有节点的对象。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Excel.Diagram.Nodes" /><b>关系图</b>对象返回<b>DiagramNodes</b>集合的属性。 使用<see cref="M:Microsoft.Office.Interop.Excel.DiagramNodes.Item(System.Object)" />方法，以选择并使用的图表中单个图表节点。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Excel.DiagramNodes.SelectAll" />方法，以选择并使用的图表中的所有节点。</para>
-      <para></para>
-    </remarks>
+    <summary>对象的集合 <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> ，该集合代表图表中的所有节点。</summary>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.Diagram.Nodes" /> Diagram 对象<b></b>的属性可返回<b>DiagramNodes</b>集合。 使用此方法 <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodes.Item(System.Object)" /> 选择和使用图表中的单个图表节点。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodes.SelectAll" /> 该方法选择并处理图表中的所有节点。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -67,7 +57,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -128,12 +118,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -191,7 +178,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">所需的<b>对象</b>。 对象的名称或索引号。</param>
+        <param name="Index">必需 <b>对象</b>。 对象的名称或索引号。</param>
         <summary>从集合中返回一个对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -246,7 +233,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>选择指定集合中的所有形状。</summary>
+        <summary>选择指定集合中所有的形状。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

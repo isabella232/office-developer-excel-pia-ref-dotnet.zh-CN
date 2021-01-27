@@ -1,13 +1,5 @@
 <Type Name="Errors" FullName="Microsoft.Office.Interop.Excel.Errors">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="73bd6a9f765a75f5056ac06000a5ad65696c4627" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20576396" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Errors" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="73bd6a9f765a75f5056ac06000a5ad65696c4627" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012255" /></Metadata><TypeSignature Language="C#" Value="public interface Errors" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Errors" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Errors" />
   <TypeSignature Language="VB.NET" Value="Public Interface Errors" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>代表区域内的各种电子表格错误。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Excel.Range.Errors" />属性<see cref="T:Microsoft.Office.Interop.Excel.Range" />可返回<b>Errors</b>对象的集合。</para>
-      <para>一旦返回<b>Errors</b>对象，您可以使用<see cref="P:Microsoft.Office.Interop.Excel.Error.Value" />属性<see cref="T:Microsoft.Office.Interop.Excel.Error" />检查的特定错误检查的条件的对象。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.Range.Errors" /> 集合的属性返回 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Errors 对象。 <b></b></para>
+      <para>返回 <b>Errors</b> 对象后，可以使用该对象的属性 <see cref="P:Microsoft.Office.Interop.Excel.Error.Value" /> <see cref="T:Microsoft.Office.Interop.Excel.Error" /> 检查特定的错误检查条件。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -69,12 +59,9 @@
         <param name="Index">To be added.</param>
         <summary>允许用户访问错误检查选项。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>参考 （英文）<see cref="T:Microsoft.Office.Interop.Excel.Errors" />对象可查看的索引值列表与错误检查选项相关联。</para>
-          <para></para>
-        </remarks>
-        <example>
-          <para>在本例中，单元格 A1 中放置了文本格式的数字。然后，Microsoft Excel 判断单元格 A1 中的数字是否为文本格式，并通知用户。</para>
+        <remarks><para>引用 <see cref="T:Microsoft.Office.Interop.Excel.Errors" /> 该对象以查看与错误检查选项关联的索引值列表。</para>
+          <para> </para></remarks>
+        <example><para>在本例中，单元格 A1 中放置了文本格式的数字。然后，Microsoft Excel 判断单元格 A1 中的数字是否为文本格式，并通知用户。</para>
           <code>&lt;span class="label"&gt;Sub CheckForErrors()
 
 
@@ -1101,8 +1088,7 @@
 
     If Range("A1").&lt;/span&gt;
 &lt;i&gt;Errors&lt;/i&gt;
-&lt;span class="label"&gt;.Item(xlNumberAsText).Value = True Then        MsgBox "The number is written as text."    Else        MsgBox "The number is not written as text."    End IfEnd Sub&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;.Item(xlNumberAsText).Value = True Then        MsgBox "The number is written as text."    Else        MsgBox "The number is not written as text."    End IfEnd Sub&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -1128,7 +1114,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1158,12 +1144,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -1192,8 +1175,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">所需的<b>对象</b>。 <paramref name="Index" />也可以是下列常量之一：<b>xlevaluatetoerror：</b>单元格计算为错误值。<b>xltextdate:</b>单元格包含用 2 位数表示年份的文本日期。<b>xlNumberAsText</b>单元格包含以文本形式存储的数字。<b>xlinconsistentformula:</b>单元格包含区域不一致的公式。<b>xlomittedcells:</b>单元格包含一个忽略的单元格区域的公式。<b>xlunlockedformulacells： 取消锁定</b>解除锁定的单元格包含一个公式。<b>xlemptycellreferences:</b>单元格包含引用空单元格的公式。</param>
-        <summary>返回单个成员的<see cref="T:Microsoft.Office.Interop.Excel.Error" />对象。</summary>
+        <param name="Index">必需 <b>对象</b>。 The <paramref name="Index" /> can also be one of these constants：<b>xlEvaluateToError</b> The cell evaluates to an error value.<b>xlTextDate</b> 单元格包含 2 位数年份的文本日期。<b>xlNumberAsText</b> 单元格包含存储为文本的编号。<b>xlInconsistentFormula</b> 单元格包含一个不一致的区域公式。<b>xlOmittedCells</b> 单元格包含省略区域单元格的公式。<b>xlUnlockedFormulaCells</b> 未锁定的单元格包含公式。<b>xlEmptyCellReferences</b> 单元格包含引用空单元格的公式。</param>
+        <summary>返回对象的单个 <see cref="T:Microsoft.Office.Interop.Excel.Error" /> 成员。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

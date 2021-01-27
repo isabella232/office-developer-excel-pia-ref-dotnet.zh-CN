@@ -1,13 +1,5 @@
 <Type Name="OLEDBError" FullName="Microsoft.Office.Interop.Excel.OLEDBError">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a18ac30019f24f95aff6f5894f53852a7d6cfb61" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20581506" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OLEDBError" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a18ac30019f24f95aff6f5894f53852a7d6cfb61" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011352" /></Metadata><TypeSignature Language="C#" Value="public interface OLEDBError" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OLEDBError" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.OLEDBError" />
   <TypeSignature Language="VB.NET" Value="Public Interface OLEDBError" />
@@ -30,12 +22,9 @@
   </Attributes>
   <Docs>
     <summary>代表由上一次 OLE DB 查询所返回的 OLE DB 错误。</summary>
-    <remarks>
-      <para>
-        <b>OLEDBError</b>对象所在的<see cref="T:Microsoft.Office.Interop.Excel.OLEDBErrors" />集合。 如果指定的 OLE DB 查询运行不会出错，则<b>OLEDBErrors</b>集合为空。 生成 OLE DB 提供程序时的顺序索引集合中的错误。</para>
-      <para>使用<b>OLEDBErrors</b>(<paramref name="index" />)，其中<paramref name="index" />是 OLE DB 错误，可返回单个<b>OLEDBError</b>对象的索引号。</para>
-      <para></para>
-    </remarks>
+    <remarks><para><b>OLEDBError</b>对象是集合 <see cref="T:Microsoft.Office.Interop.Excel.OLEDBErrors" /> 的一个成员。 如果指定的 OLE DB 查询运行时没有出现错误，则 <b>OLEDBErrors</b> 集合为空。 集合中错误的索引次序与 OLE DB 提供程序生成它们时的次序相同。</para>
+      <para>使用 <b>OLEDBErrors</b> () （OLE DB 错误的索引号）返回 <paramref name="index" /> 单个 <paramref name="index" /> <b>OLEDBError</b> 对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,12 +80,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ErrorString">
@@ -122,7 +108,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回的 ODBC 错误字符串。</summary>
+        <summary>返回 ODBC 错误字符串。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,7 +136,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个特定于提供程序的数字值，该值指定错误。 错误号对应于最新的 OLE DB 查询所产生的错误条件。</summary>
+        <summary>返回一个提供程序指定的数值，该数值用于指定一个错误。 而错号对应于最近一次 OLE DB 查询所产生的错误条件。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -178,7 +164,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个数字值，指定一个错误。 错误号对应于对应于错误条件最新的 OLE DB 查询所产生的唯一陷阱号。</summary>
+        <summary>返回用于指定错误号的数值。 该错误号对应于某个唯一的陷阱，而该陷阱又对应于最近一次 OLE DB 查询所产生的错误条件。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -234,12 +220,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回的 SQL 状态错误。</summary>
+        <summary>返回 SQL 状态错误。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>有关特定错误的说明，请参阅 SQL 文档。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>有关特定错误的说明，请参阅您的SQL文档。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Stage">
@@ -265,7 +249,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个数字值，指定错误最新的 OLE DB 查询所产生的阶段。</summary>
+        <summary>返回一个数字值，此值指定最近一次 OLE DB 查询所产生的错误的阶段。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

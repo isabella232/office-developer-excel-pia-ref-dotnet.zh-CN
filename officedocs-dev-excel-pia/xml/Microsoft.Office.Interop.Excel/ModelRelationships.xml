@@ -1,13 +1,5 @@
 <Type Name="ModelRelationships" FullName="Microsoft.Office.Interop.Excel.ModelRelationships">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ff2c861dc129a90c82535937f7b7bb06e86060a9" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587589" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ModelRelationships : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ff2c861dc129a90c82535937f7b7bb06e86060a9" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011611" /></Metadata><TypeSignature Language="C#" Value="public interface ModelRelationships : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ModelRelationships implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ModelRelationships" />
   <TypeSignature Language="VB.NET" Value="Public Interface ModelRelationships&#xA;Implements IEnumerable" />
@@ -33,7 +25,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>此集合包含所有当前之间的数据模型的 Excel 2013 中的模拟运算表的关系。</summary>
+    <summary>此集合包含 Excel 2013 数据模型中数据表之间当前的所有关系。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -96,9 +88,9 @@
         <Parameter Name="PrimaryKeyColumn" Type="Microsoft.Office.Interop.Excel.ModelTableColumn" />
       </Parameters>
       <Docs>
-        <param name="ForeignKeyColumn">A<see cref="T:Microsoft.Office.Interop.Excel.ModelTableColumn" />对象，代表侧-一对多关系的多个表中的外键列。</param>
-        <param name="PrimaryKeyColumn">A<see cref="T:Microsoft.Office.Interop.Excel.ModelTableColumn" />对象，表示一侧的-一对多关系表中的主关键字列。</param>
-        <summary>向模型中添加新关系。</summary>
+        <param name="ForeignKeyColumn">一个对象，代表一对多关系多端表中外 <see cref="T:Microsoft.Office.Interop.Excel.ModelTableColumn" /> 键列。</param>
+        <param name="PrimaryKeyColumn">一个对象，表示一对多关系一侧的表中的 <see cref="T:Microsoft.Office.Interop.Excel.ModelTableColumn" /> 主键列。</param>
+        <summary>向模型添加新关系。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -126,7 +118,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象，表示 Excel 应用程序。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Excel 应用程序的对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -154,7 +146,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个代表数的<b>整数</b>(C# 中<b>int</b> ) 值<see cref="T:Microsoft.Office.Interop.Excel.ModelRelationship" />对象中<see cref="T:Microsoft.Office.Interop.Excel.ModelRelationships" />集合。 只读。</summary>
+        <summary>返回一 <b> (</b> 整数 ， <b>以</b> C#) 表示集合 <see cref="T:Microsoft.Office.Interop.Excel.ModelRelationship" /> 中的对象 <see cref="T:Microsoft.Office.Interop.Excel.ModelRelationships" /> 数。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -182,12 +174,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读的<b>整数</b>(C# 中<b>int</b> )。</summary>
+        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读 <b>Integer</b> (<b>int int</b> int c#) 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>在 Excel 中创建对象，因为此属性返回的十六进制值，5843454c、 表示"XCEL"的字符串。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>由于对象是在 Excel 中创建的，因此此属性返回十六进制值 5843454C，它表示字符串"XCEL"。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -246,7 +236,7 @@
       </Parameters>
       <Docs>
         <param name="Index">对象的索引号。</param>
-        <summary>返回一个对象从<see cref="T:Microsoft.Office.Interop.Excel.ModelRelationships" />对象。</summary>
+        <summary>从对象中返回单个 <see cref="T:Microsoft.Office.Interop.Excel.ModelRelationships" /> 对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -274,7 +264,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>对象</b>（C# 中的<b>对象</b>） 值，该值代表指定的父对象<see cref="T:Microsoft.Office.Interop.Excel.ModelRelationships" />对象。 只读。</summary>
+        <summary>返回一<b> (</b><b>对象</b>在 C#) 表示指定对象的父 <see cref="T:Microsoft.Office.Interop.Excel.ModelRelationships" /> 对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

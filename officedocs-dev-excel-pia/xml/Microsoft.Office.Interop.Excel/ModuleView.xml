@@ -1,13 +1,5 @@
 <Type Name="ModuleView" FullName="Microsoft.Office.Interop.Excel.ModuleView">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="19cb4ef15ded6d881e2d623f856debafb90eb693" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20581415" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ModuleView" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="19cb4ef15ded6d881e2d623f856debafb90eb693" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011492" /></Metadata><TypeSignature Language="C#" Value="public interface ModuleView" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ModuleView" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ModuleView" />
   <TypeSignature Language="VB.NET" Value="Public Interface ModuleView" />
@@ -29,11 +21,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表现有<see cref="T:Microsoft.Office.Interop.Excel.Module" />工作簿中的视图。</summary>
-    <remarks>
-      <para>模块区域中包括所有内容，包括图表的绘图区。 但是，绘图区有它自己的填充，因此填充绘图区未填充模块区域。</para>
-      <para></para>
-    </remarks>
+    <summary>表示 <see cref="T:Microsoft.Office.Interop.Excel.Module" /> 工作簿中的现有视图。</summary>
+    <remarks><para>模块区域包含所有内容，包括图表的绘图区。 但是，绘图区具有它自己的填充方式，因此填充绘图区并不会填充模块区。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,13 +49,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象代表 Microsoft Office Excel 应用程序。 如果使用对象识别符，此属性返回值，该值代表指定对象的创建者<b>Application</b>对象。 只读。</summary>
-        <value>
-          <b>应用程序</b>（请参见上文）</value>
-        <remarks>
-          <para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
-          <para></para>
-        </remarks>
+        <summary>如果不与对象限定符一起使用，则此属性返回一个代表 Excel Microsoft Office  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 对象。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象。 只读。</summary>
+        <value><b>应用程序</b> (请参阅上面的) </value>
+        <remarks><para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -91,14 +78,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数等效于<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />常量，指示在其中创建此对象的应用程序。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。  <see cref="P:Microsoft.Office.Interop.Excel.ModuleView.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <summary>返回一个 32 位整数，该整数等效于一个常量，该常量指示创建 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 此对象时的应用程序。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。  该属性设计为在 Microsoft Excel for the Macintosh 中使用，其中每个应用程序都有 <see cref="P:Microsoft.Office.Interop.Excel.ModuleView.Creator" /> 一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -124,10 +107,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父对象。只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回指定对象的父对象。 只读。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,10 +135,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定的工作表名称<see cref="T:Microsoft.Office.Interop.Excel.ModuleView" />对象。 只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回指定对象的工作表 <see cref="T:Microsoft.Office.Interop.Excel.ModuleView" /> 名称。 只读。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

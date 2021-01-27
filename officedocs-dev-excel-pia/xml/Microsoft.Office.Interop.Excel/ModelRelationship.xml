@@ -1,13 +1,5 @@
 <Type Name="ModelRelationship" FullName="Microsoft.Office.Interop.Excel.ModelRelationship">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6fc648eea32b62003d9ee49c3b39d35edfe74844" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575577" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ModelRelationship" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6fc648eea32b62003d9ee49c3b39d35edfe74844" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011632" /></Metadata><TypeSignature Language="C#" Value="public interface ModelRelationship" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ModelRelationship" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ModelRelationship" />
   <TypeSignature Language="VB.NET" Value="Public Interface ModelRelationship" />
@@ -59,7 +51,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>时<b>，则返回 True</b>，关系处于活动状态。 当<b>False</b>，这种关系处于非活动状态。 <b>Boolean</b>(<b>bool</b> C# 中)。 读/写</summary>
+        <summary>如果 <b>为 True，</b>则关系处于活动状态。 如果 <b>为 False，</b>则此关系处于非活动状态。 <b>Boolean</b> (<b>bool</b> in C#) . 读/写</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象，表示 Excel 应用程序。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Excel 应用程序的对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -115,12 +107,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读的<b>整数</b>(C# 中<b>int</b> )。</summary>
+        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读<b>Integer</b>类型 (以<b></b>C# ) 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>在 Excel 中创建对象，因为此属性返回的十六进制值，5843454c、 表示"XCEL"的字符串。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>由于对象是在 Excel 中创建的，因此此属性返回十六进制值 5843454C，它表示字符串"XCEL"。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -144,7 +134,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>删除的关系。</summary>
+        <summary>删除关系。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,7 +161,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTableColumn</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>包含<see cref="T:Microsoft.Office.Interop.Excel.ModelTableColumn" />对象，代表多侧-一对多关系的外键列。 只读</summary>
+        <summary>包含一对多关系多端代表外键 <see cref="T:Microsoft.Office.Interop.Excel.ModelTableColumn" /> 列的对象。 只读</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -199,7 +189,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>包含<see cref="T:Microsoft.Office.Interop.Excel.ModelTable" />对象代表多侧-一对多关系的表格。 只读</summary>
+        <summary>包含 <see cref="T:Microsoft.Office.Interop.Excel.ModelTable" /> 表示一对多关系多端上的表的对象。 只读</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -227,7 +217,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>对象</b>（C# 中的<b>对象</b>） 值，该值代表指定的父对象<see cref="T:Microsoft.Office.Interop.Excel.ModelRelationship" />对象。 只读。</summary>
+        <summary>返回一<b> (</b><b>对象</b>在 C#) 表示指定对象的父 <see cref="T:Microsoft.Office.Interop.Excel.ModelRelationship" /> 对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -255,7 +245,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTableColumn</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>包含<see cref="T:Microsoft.Office.Interop.Excel.ModelTableColumn" />对象，表示一侧的-一对多关系表中的主关键字列。</summary>
+        <summary>包含表示一对多关系一侧的表中的主 <see cref="T:Microsoft.Office.Interop.Excel.ModelTableColumn" /> 键列的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -283,7 +273,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>包含<see cref="T:Microsoft.Office.Interop.Excel.ModelTable" />对象，表示一侧的-一对多关系表。</summary>
+        <summary>包含 <see cref="T:Microsoft.Office.Interop.Excel.ModelTable" /> 表示一对多关系一侧的表的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
