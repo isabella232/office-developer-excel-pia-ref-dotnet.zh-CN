@@ -1,13 +1,5 @@
 <Type Name="ColorScale" FullName="Microsoft.Office.Interop.Excel.ColorScale">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1f67e87764cc01fd4ea79e3073b361913e5007f2" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20585587" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ColorScale" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1f67e87764cc01fd4ea79e3073b361913e5007f2" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005759" /></Metadata><TypeSignature Language="C#" Value="public interface ColorScale" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ColorScale" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ColorScale" />
   <TypeSignature Language="VB.NET" Value="Public Interface ColorScale" />
@@ -30,14 +22,11 @@
   </Attributes>
   <Docs>
     <summary>代表色阶条件格式规则。</summary>
-    <remarks>
-      <para>所有条件格式对象包含在<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />集合对象，该元素是子对象的<see cref="T:Microsoft.Office.Interop.Excel.Range" />集合。 您可以创建使用任何一个格式规则的色阶<see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />或<see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddColorScale(System.Int32)" /><b>FormatConditions</b>集合的方法。</para>
+    <remarks><para>所有条件格式对象都包含在集合对象（集合的子对象 <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> ） <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 中。 可以使用 <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddColorScale(System.Int32)" /> <b>FormatConditions</b> 集合的 or 方法创建色标格式规则。</para>
       <para>色阶是直观的参照，可以帮助您了解数据的分布和变化。您可以对数据范围、表中的数据或数据透视表中的数据应用双色或三色色阶。对于双色色阶条件格式，您可以将值、类型和颜色分配给范围的最小和最大阈值。三色色阶还具有中点阈值。</para>
-      <para>每个这些阈值由设置属性的<see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" />对象。 <b>ColorScaleCriteria</b>对象，即<b>ColorScale</b>对象的子元素是一系列的所有<see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" />色阶的对象。</para>
-      <para></para>
-    </remarks>
-    <example>
-      <para>以下代码示例创建了一个数字范围，然后将双色色阶条件格式规则应用于该范围。然后指定最小阈值的颜色为红色，最大阈值的颜色为蓝色。</para>
+      <para>每个阈值都通过设置对象的属性 <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> 来确定。 <b>ColorScaleCriteria</b>对象是<b>ColorScale</b>对象的子对象，它是色阶的所有 <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> 对象的集合。</para>
+      <para> </para></remarks>
+    <example><para>以下代码示例创建了一个数字范围，然后将双色色阶条件格式规则应用于该范围。然后指定最小阈值的颜色为红色，最大阈值的颜色为蓝色。</para>
       <code>&lt;span class="label"&gt;Sub CreateColorScaleCF() 
 
 
@@ -296,8 +285,7 @@
 
     Dim cfColorScale As &lt;/span&gt;
 &lt;i&gt;ColorScale&lt;/i&gt;
-&lt;span class="label"&gt;'Fill cells with sample data from 1 to 10     With ActiveSheet         .Range("C1") = 1         .Range("C2") = 2         .Range("C1:C2").AutoFill Destination:=Range("C1:C10")     End With          Range("C1:C10").Select          'Create a two-color ColorScale object for the created sample data range     Set cfColorScale = Selection.FormatConditions.AddColorScale(ColorScaleType:=2)          'Set the minimum threshold to red and maximum threshold to blue     cfColorScale.ColorScaleCriteria(1).FormatColor.Color = RGB(255, 0, 0)     cfColorScale.ColorScaleCriteria(2).FormatColor.Color = RGB(0, 0, 255)          End Sub&lt;/span&gt;</code>
-    </example>
+&lt;span class="label"&gt;'Fill cells with sample data from 1 to 10     With ActiveSheet         .Range("C1") = 1         .Range("C2") = 2         .Range("C1:C2").AutoFill Destination:=Range("C1:C10")     End With          Range("C1:C10").Select          'Create a two-color ColorScale object for the created sample data range     Set cfColorScale = Selection.FormatConditions.AddColorScale(ColorScaleType:=2)          'Set the minimum threshold to red and maximum threshold to blue     cfColorScale.ColorScaleCriteria(1).FormatColor.Color = RGB(255, 0, 0)     cfColorScale.ColorScaleCriteria(2).FormatColor.Color = RGB(0, 0, 255)          End Sub&lt;/span&gt;</code></example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -323,13 +311,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象代表 Microsoft Office Excel 应用程序。 如果使用对象识别符，此属性返回值，该值代表指定对象的创建者<b>Application</b>对象。 只读。</summary>
-        <value>
-          <b>应用程序</b>（请参见上文）</value>
-        <remarks>
-          <para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
-          <para></para>
-        </remarks>
+        <summary>如果不与对象限定符一起使用，则此属性返回一个对象，该对象Microsoft Office  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> Excel 应用程序。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象。 只读。</summary>
+        <value><b>应用程序</b> (请参阅上面的) </value>
+        <remarks><para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AppliesTo">
@@ -355,10 +340,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />指定格式规则所应用于的单元格区域的对象。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Range" />
-        </value>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 一个对象，该对象指定应用格式规则的单元格区域。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Range" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -385,10 +368,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ColorScaleCriteria</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" />对象，它是一系列个人<see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" />对象。 <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" />对象指定类型、 值和阈值标准色阶条件格式中使用的颜色。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" />
-        </value>
+        <summary>返回   <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> 一个对象，该对象是单个对象 <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> 的集合。 该对象指定色标条件格式中使用的阈值条件的类型、值 <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> 和颜色。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -415,14 +396,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回中的一个常量<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />枚举，指示在其中创建此对象的应用程序。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。  <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <summary>返回枚举中的 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 一个常量，该常量指示创建此对象时的应用程序。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。  该属性设计为在 Microsoft Excel for the Macintosh 中使用，其中每个应用程序都有 <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.Creator" /> 一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -477,13 +454,9 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置一个代表公式（该公式确定将对图标集应用的值）的 <b>String</b>。</summary>
-        <value>
-          <b>字符串</b>
-        </value>
-        <remarks>
-          <para>此属性用于限制将显示条件格式的值的范围。一种典型的情形是您具有一个包含正值和负值的数字范围。您可能需要为此数字范围创建多个条件格式，一个用于正值，另一个用于负值。</para>
-          <para></para>
-        </remarks>
+        <value><b>字符串</b></value>
+        <remarks><para>此属性用于限制将显示条件格式的值的范围。一种典型的情形是您具有一个包含正值和负值的数字范围。您可能需要为此数字范围创建多个条件格式，一个用于正值，另一个用于负值。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ModifyAppliesToRange">
@@ -510,11 +483,9 @@
       <Docs>
         <param name="Range">此格式规则将应用于的区域。</param>
         <summary>设置此格式规则所应用于的单元格区域。</summary>
-        <remarks>
-          <para>范围必须以 A1 引用样式和完全包含在工作表的父级的<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />集合。 它可以包括区域运算符 （冒号）、 交点运算符 （空格） 或 union 运算符 （逗号分隔）。 也可以使用美元符号，但会被忽略。</para>
+        <remarks><para>区域必须采用 A1 引用样式，并且完全包含在作为集合父项的 <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> 工作表中。 可包括区域操作符（冒号）、相交区域操作符（空格）或合并区域操作符（逗号）。 也可以使用货币符号，但会被忽略。</para>
           <para>您也可以在区域的任意部分中使用局部定义名称，但该名称必须使用宏语言。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -540,10 +511,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父对象。只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回指定对象的父对象。 只读。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -574,13 +543,9 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置条件格式规则的优先级值。当工作表中存在多个条件格式规则时，优先级确定求值的顺序。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>设置优先级时，值必须为介于 1 和工作表上条件格式规则总数之间的正整数。对于工作表上的所有规则，优先级必须为唯一值，因此，如果更改指定条件格式规则的优先级，将可能会导致工作表上其他规则的优先级值移位。</para>
-          <para></para>
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>设置优先级时，值必须为介于 1 和工作表上条件格式规则总数之间的正整数。对于工作表上的所有规则，优先级必须为唯一值，因此，如果更改指定条件格式规则的优先级，将可能会导致工作表上其他规则的优先级值移位。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PTCondition">
@@ -606,10 +571,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>Boolean</b>值，该值指示是否对应用条件格式<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />图表。 只读。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>返回一 <b>个布尔</b> 值，该值指示条件格式是否应用于 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 图表。 只读。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -639,14 +602,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotConditionScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置的常量之一，<see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />是必需的条件格式应用于数据透视表图表时的枚举。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />
-        </value>
-        <remarks>
-          <para>默认值是<see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />，其设置范围使用<see cref="P:Microsoft.Office.Interop.Excel.ColorScale.AppliesTo" />属性。</para>
-          <para></para>
-        </remarks>
+        <summary>返回或设置枚举的常量之一，该常量确定条件格式应用于数据透视表 <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> 图表时的范围。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /></value>
+        <remarks><para>默认值为 <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" /> ，它使用属性设置 <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.AppliesTo" /> 范围。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetFirstPriority">
@@ -671,12 +630,10 @@
       <Parameters />
       <Docs>
         <summary>将此条件格式规则的优先级值设置为“1”，以便在工作表上的所有其他规则之前计算此规则。</summary>
-        <remarks>
-          <para>当工作表中有多个条件格式规则时，如果之前未将此规则设置为优先级“1”，此方法将导致工作表上的所有其他现有规则的优先级都增加 1。</para>
+        <remarks><para>当工作表中有多个条件格式规则时，如果之前未将此规则设置为优先级“1”，此方法将导致工作表上的所有其他现有规则的优先级都增加 1。</para>
           <para>
-            <b>注意</b>： 基于工作表级别应用条件格式规则的优先级。</para>
-          <para></para>
-        </remarks>
+            <b>注意</b>：条件格式规则的优先级级别基于工作表级别应用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetLastPriority">
@@ -701,12 +658,10 @@
       <Parameters />
       <Docs>
         <summary>为此条件格式规则设置求值顺序，以便在工作表上的所有其他规则之后计算此规则。</summary>
-        <remarks>
-          <para>优先级的实际值将等于工作表上条件格式规则的总数。当工作表中有多个条件格式规则时，此方法将导致优先级值大于此规则的规则的优先级增加 1。</para>
+        <remarks><para>优先级的实际值将等于工作表上条件格式规则的总数。当工作表中有多个条件格式规则时，此方法将导致优先级值大于此规则的规则的优先级增加 1。</para>
           <para>
-            <b>注意</b>： 基于工作表级别应用条件格式规则的优先级。</para>
-          <para></para>
-        </remarks>
+            <b>注意</b>：条件格式规则的优先级级别基于工作表级别应用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StopIfTrue">
@@ -733,13 +688,9 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置一个 <b>Boolean</b> 值，该值确定在当前规则的计算结果为 <b>True</b> 时是否应计算单元格上的其他格式规则。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>为了支持向后兼容性，此属性的默认值为 <b>True</b>，而这与在用户界面中创建的格式规则的行为相反。</para>
-          <para></para>
-        </remarks>
+        <value><b>Boolean</b></value>
+        <remarks><para>为了支持向后兼容性，此属性的默认值为 <b>True</b>，而这与在用户界面中创建的格式规则的行为相反。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -765,14 +716,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回的常量之一<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />枚举，指定条件格式的类型。 只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>此属性将始终返回<b>整数</b>值"3"，它等效于<see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlColorScale" />。</para>
-          <para></para>
-        </remarks>
+        <summary>返回枚举的常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> ，该常量指定条件格式的类型。 只读。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>此属性将始终返回一 <b>个整数</b> 值"3"，它等效 <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlColorScale" /> 于 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

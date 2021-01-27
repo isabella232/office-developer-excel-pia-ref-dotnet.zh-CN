@@ -1,13 +1,5 @@
 <Type Name="CalculatedMembers" FullName="Microsoft.Office.Interop.Excel.CalculatedMembers">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2ef237f29eff8550f0d57ac22a72517d08855192" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20572833" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CalculatedMembers : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2ef237f29eff8550f0d57ac22a72517d08855192" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006046" /></Metadata><TypeSignature Language="C#" Value="public interface CalculatedMembers : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CalculatedMembers implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.CalculatedMembers" />
   <TypeSignature Language="VB.NET" Value="Public Interface CalculatedMembers&#xA;Implements IEnumerable" />
@@ -33,12 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>所有的集合<see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" />指定数据透视表上的对象。</summary>
-    <remarks>
-      <para>每个<see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" />对象代表计算的成员或计算度量值。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.CalculatedMembers" />属性<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />对象返回<see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" />集合。</para>
-      <para></para>
-    </remarks>
+    <summary>指定数据透视表 <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> 上所有对象的集合。</summary>
+    <remarks><para>每个 <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> 对象表示计算成员或计算度量值。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.CalculatedMembers" /> 对象的属性 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 返回集合 <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> 。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -106,16 +96,13 @@
       <Docs>
         <param name="Name">必需的 <b>字符串</b> 。 计算成员的名称。</param>
         <param name="Formula">必需的 <b>字符串</b> 。 计算成员的公式。</param>
-        <param name="SolveOrder">可选的<b>对象</b>。 计算成员的求解次序。</param>
-        <param name="Type">可选的<b>对象</b>。 计算成员的类型。</param>
-        <summary>向数据透视表计算的字段或计算的项。</summary>
+        <param name="SolveOrder">可选 <b>对象</b>。 计算成员的求解次序。</param>
+        <param name="Type">可选 <b>对象</b>。 计算成员的类型。</param>
+        <summary>向数据透视表中添加计算字段或计算项。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <paramref name="Formula" />参数必须具有有效的 MDX （多维表达式） 语法语句。 <paramref name="Name" />参数必须是可接受的联机分析处理 (OLAP) 提供程序和<paramref name="Type" />参数必须定义。</para>
-          <para>如果您设置<paramref name="Type" />到此方法的参数<paramref name="xlCalculatedSet" />，然后必须调用<see cref="M:Microsoft.Office.Interop.Excel.CubeFields.AddSet(System.String,System.String)" />方法以使新的字段集在数据透视表中可见。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>该 <paramref name="Formula" /> 参数必须具有有效的 MDX (多维表达式) 语法语句。 OLAP 提供程序的联机分析处理 (参数) 参数必须 <paramref name="Name" /> <paramref name="Type" /> 定义。</para>
+          <para>如果将此方法的参数设置为 ，则必须调用该方法，使新字段集在数据透视表中 <paramref name="Type" /> <paramref name="xlCalculatedSet" /> <see cref="M:Microsoft.Office.Interop.Excel.CubeFields.AddSet(System.String,System.String)" /> 可见。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Add2">
@@ -154,7 +141,7 @@
         <param name="DisplayFolder">To be added.</param>
         <param name="HierarchizeDistinct">To be added.</param>
         <summary>仅供内部使用。</summary>
-        <returns>返回<see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" />。</returns>
+        <returns>返回 <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> 。</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -192,33 +179,29 @@
         <param name="Formula">计算成员的公式。</param>
         <param name="SolveOrder">计算成员的求解次序。</param>
         <param name="Type">计算成员的类型。</param>
-        <param name="DisplayFolder">存在显示计算度量值的文件夹。</param>
-        <param name="MeasureGroup">向其计算所属的组。</param>
-        <param name="ParentHierarchy">
-          <b>ParentMember</b>父路径。</param>
-        <param name="ParentMember">计算成员的父对象。</param>
-        <param name="NumberFormat">用于计算成员的号码的格式。</param>
-        <summary>向数据透视表计算的字段或计算的项。</summary>
+        <param name="DisplayFolder">用于显示计算度量值的文件夹。</param>
+        <param name="MeasureGroup">计算所属的组。</param>
+        <param name="ParentHierarchy"><b>ParentMember 的父路径</b>。</param>
+        <param name="ParentMember">计算成员父级。</param>
+        <param name="NumberFormat">用于计算成员的数字格式。</param>
+        <summary>向数据透视表中添加计算字段或计算项。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <b>公式</b>参数必须有有效的 MDX （多维表达式） 语法语句。 <b>名称</b>参数必须是可接受的联机分析处理 (OLAP) 提供程序。</para>
+        <remarks><para>Formula <b></b>参数必须具有有效的 MDX (多维表达式) 语法语句。 <b>OlAP</b>提供程序的联机分析处理 (Name) 可接受。</para>
           <list type="bullet">
             <item>
               <description>
-                <b>DisplayFolder</b>： 显示文件夹仅供计算度量值。 它们不是有效的计算成员的。 字符串可以具有分号;在它。 分号指定多个显示文件夹。 例如，如果您使用的字符串我 folder1; myfolder2 然后计算度量值将显示在两个显示文件夹一个命名 myfolder1 其他命名 myfolder2。 字符串可以具有反斜杠 \。 这将指定的显示文件夹的分层路径。 例如，如果您使用将会字符串 welcome\to\seattle 调用欢迎包含显示文件夹的显示文件夹调用到其中包含一个名为西雅图的显示文件夹。 显示文件夹是虚拟文件夹。  它们真正不存在同一意义上说，我们认为系统文件夹中。 仅存在为了显示计算度量值。</description>
+                <b>DisplayFolder：</b>显示文件夹仅对计算度量值有效。 它们无效计算成员。 字符串可以有分号;。 分号指定多个显示文件夹。 例如，如果使用字符串 my folder1;myfolder2，则计算度量值会显示在两个显示文件夹中，一个名为 myfolder1，另一个名为"myfolder2"。 字符串可以有反杠 \。 这将指定层次结构的层次结构显示文件夹。 例如，如果使用字符串 welcome\to\seattle，则显示文件夹一个称为 welcome 的 显示文件夹，该显示文件夹称为 seattle。 显示文件夹是虚拟文件夹。它们并不真正存在于我们认为系统文件夹的同一个意义上。 它们仅存在用于显示计算度量值。</description>
             </item>
             <item>
               <description>
-                <b>NumberFormat</b>： 只能通过宏设置数字格式。 没有设置其用户界面。 这是不能通过用户界面设置的唯一属性。 类型始终是<b>xlNumberFormatTypeDefault</b>时通过用户界面创建的计算的成员。 仅供计算成员的数字格式。 不计算度量值无效。</description>
+                <b>NumberFormat</b>：数字格式只能由宏设置。 没有用于设置设置的用户界面。 这是无法通过用户界面设置的唯一属性。 当通过用户界面创建计算成员时，键入的值始终为<b>xlNumberFormatTypeDefault。</b> 数字格式仅对计算成员有效。 它们无效计算度量值。</description>
             </item>
             <item>
               <description>
-                <b>ParentHierarchy</b>： 父层次结构可以是任何有效的 MDX 层次结构。 父层次结构仅供计算成员。 不计算度量值无效。 如果这另一父层次结构中选择父成员，父层次结构将自动更改要匹配的父成员的父级层次结构。</description>
+                <b>ParentHierarchy：</b>父层次结构可以是任何有效的 MDX 层次结构。 父层次结构仅对计算成员有效。 它们无效计算度量值。 如果选择位于其他父层次结构中的父成员，则父层次结构将自动更改以匹配父成员父层次结构。</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -244,7 +227,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -302,12 +285,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -368,7 +348,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">所需的<b>对象</b>。 对象的名称或索引号。</param>
+        <param name="Index">必需 <b>对象</b>。 对象的名称或索引号。</param>
         <summary>从集合中返回一个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

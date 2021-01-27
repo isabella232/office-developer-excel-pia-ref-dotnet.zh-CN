@@ -1,13 +1,5 @@
 <Type Name="Characters" FullName="Microsoft.Office.Interop.Excel.Characters">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="175d99118aa50595e1cd1bb6597be66d75d3d559" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20582360" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Characters" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="175d99118aa50595e1cd1bb6597be66d75d3d559" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005990" /></Metadata><TypeSignature Language="C#" Value="public interface Characters" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Characters" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Characters" />
   <TypeSignature Language="VB.NET" Value="Public Interface Characters" />
@@ -30,12 +22,9 @@
   </Attributes>
   <Docs>
     <summary>代表包含文本的对象中的字符。 使用 <b>Characters</b> 对象可修改包含在全文本字符串中的任意字符序列。</summary>
-    <remarks>
-      <para>使用<b>字符</b>(<paramref name="start" />， <paramref name="length" />)，其中<paramref name="start" />为起始字符号和<paramref name="length" />是字符数，返回<b>Characters</b>对象。</para>
-      <para>
-        <b>字符</b>方法是文本的必需的仅当您需要更改某些对象而不影响的其他 （不能使用<b>字符</b>方法设置某文本部分的格式，如果对象不支持使用格式文本）。 若要同时更改所有文本，通常可以对该对象直接应用相应的方法或属性。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>使用 <b>字符</b> (<paramref name="start" /> <paramref name="length" /> ，) ，其中起始字符号和字符数，返回 <paramref name="start" /> <paramref name="length" /> <b>字符</b> 对象。</para>
+      <para>仅当需要更改对象中文本的一部分而不影响其余部分时，才有必要使用 <b>Characters</b> 方法（如果对象不支持格式文本，则不能使用 <b>Characters</b> 方法对文本中的一部分单独设置格式）。 若要同时更改所有文本，通常可直接将适当的方法或属性应用于对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -92,7 +81,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>此字符区域的文本。</summary>
+        <summary>此字符范围的文本。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,12 +139,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -207,7 +193,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Font" />对象，它代表指定对象的字体。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Font" /> 一个对象，该对象代表指定对象的字体。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -294,13 +280,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置中指定的拼音文本<see cref="T:Microsoft.Office.Interop.Excel.Characters" />对象。</summary>
+        <summary>返回或设置指定对象中的音 <see cref="T:Microsoft.Office.Interop.Excel.Characters" /> 体文本。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>而不是使用此属性，您应使用<see cref="M:Microsoft.Office.Interop.Excel.Phonetics.Add(System.Int32,System.Int32,System.String)" />方法<see cref="T:Microsoft.Office.Interop.Excel.Phonetics" />集合单元格中，添加拼音信息和使用<see cref="P:Microsoft.Office.Interop.Excel.Phonetic.Text" />属性<see cref="T:Microsoft.Office.Interop.Excel.Phonetic" />对象可返回或设置单元格的拼音文本字符串。</para>
-          <para>此属性仅使用所基于的单个单元格的<b>字符</b>对象。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>应该使用集合的方法将音信息添加到单元格，并使用对象的属性返回或设置单元格中的音体文本字符串，而不是使用 <see cref="M:Microsoft.Office.Interop.Excel.Phonetics.Add(System.Int32,System.Int32,System.String)" /> <see cref="T:Microsoft.Office.Interop.Excel.Phonetics" /> <see cref="P:Microsoft.Office.Interop.Excel.Phonetic.Text" /> <see cref="T:Microsoft.Office.Interop.Excel.Phonetic" /> 此属性。</para>
+          <para>此属性只能用于基于单个单元格 <b>的 Characters</b> 对象。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">

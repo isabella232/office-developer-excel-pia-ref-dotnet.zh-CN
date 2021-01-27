@@ -1,13 +1,5 @@
 <Type Name="DataFeedConnection" FullName="Microsoft.Office.Interop.Excel.DataFeedConnection">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6e9ab9b71f15cad689d5836c7164a39d28a7e6fb" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20582836" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DataFeedConnection" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6e9ab9b71f15cad689d5836c7164a39d28a7e6fb" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005696" /></Metadata><TypeSignature Language="C#" Value="public interface DataFeedConnection" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DataFeedConnection" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.DataFeedConnection" />
   <TypeSignature Language="VB.NET" Value="Public Interface DataFeedConnection" />
@@ -29,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>包含的数据和功能需要连接到数据源。 同一对象用于的所有数据源类型。</summary>
+    <summary>包含连接到数据源所需的数据和功能。 同一对象用于所有数据源类型。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -59,7 +51,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>的连接文件始终用于建立与数据源连接。 <b>Boolean</b>(<b>bool</b> C# 中)。 读/写</summary>
+        <summary>如果连接文件始终用于建立与数据源的连接，则为 <b>True</b>。 <b>boolean</b> (<b>bool</b> in C#) . 读/写</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象，表示 Excel 应用程序。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Excel 应用程序的对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -113,7 +105,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>取消在数据源连接刷新操作。</summary>
+        <summary>取消对数据源连接的刷新操作。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,7 +135,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定的数据源的命令字符串。 <b>对象</b>（C# 中的<b>对象</b>）读/写</summary>
+        <summary>返回或设置指定数据源的命令字符串。 <b>使用</b> <b>C# (</b> 对象的对象) 读/写</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -174,7 +166,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCmdType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定的数据源的命令字符串。 <b>对象</b>（C# 中的<b>对象</b>）读/写</summary>
+        <summary>返回或设置指定数据源的命令字符串。 <b>使用</b> <b>C# (</b> 对象的对象) 可读/写</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -205,7 +197,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个字符串，包含启用 Excel 连接到数据源的数据源的服务合同设置。 <b>对象</b>（C# 中的<b>对象</b>）读/写</summary>
+        <summary>返回或设置一个字符串，其中包含允许 Excel 连接到数据源的服务合同设置。 <b>使用</b> <b>C# (</b> 对象的对象) 可读/写</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -233,12 +225,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 <b>整数</b>(C# 中<b>int</b> )只读</summary>
+        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 <b>Integer</b> (<b>int int</b> int int inc#) 只读</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>在 Excel 中创建对象，因为此属性返回的十六进制值，5843454c、 表示"XCEL"的字符串。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>由于对象是在 Excel 中创建的，因此此属性返回十六进制值 5843454C，它表示字符串"XCEL"。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableRefresh">
@@ -267,7 +257,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>可由用户刷新连接。 默认值为 <b>True</b> 。 <b>Boolean</b>(C# 中<b>bool</b> )读/写</summary>
+        <summary>如果用户可刷新连接，则为 <b>True</b>。 默认值为 <b>True</b>。 <b>Boolean</b> (<b>bool</b> in C#) 可读/写</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -295,7 +285,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>对象</b>（C# 中的<b>对象</b>） 值，该值代表指定<b>DataFeedConnection</b>对象的父对象。 只读。</summary>
+        <summary>以 <b>C# (</b> 返回一个对象 <b>) </b> 对象，该对象代表指定 <b>DataFeedConnection</b> 对象的父对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -321,7 +311,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>刷新数据源连接。</summary>
+        <summary>刷新数据馈送连接。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -348,7 +338,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回最近一次刷新 OLE DB 连接的日期。 <b>DateTime</b>。 只读</summary>
+        <summary>返回上次刷新 OLE DB 连接的日期。 <b>DateTime</b>。 只读</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -376,8 +366,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果 OLE DB 查询中指定的数据源连接的进度。 <b>Boolean</b>(C# 中<b>bool</b> )读/写</summary>
+        <summary><b>如此</b> 如果 OLE DB 查询正在进行指定的数据源连接。 <b>Boolean</b> (<b>bool</b> in C#) 可读/写</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -408,8 +397,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果每次打开工作簿时自动更新连接。 默认值为 <b>False</b> 。</summary>
+        <summary>如果每次打开工作簿都自动更新连接，则为 <b>True</b>。 默认值为 <b>False</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -440,7 +428,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置的刷新间隔的分钟数。 <b>整数</b>(C# 中<b>int</b> )读/写</summary>
+        <summary>返回或设置两次刷新之间的时间间隔。 <b>整数</b> (以 <b>C#) </b> int 表示，可读/写</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -472,7 +460,7 @@
         <param name="ODCFileName">保存文件的位置。</param>
         <param name="Description">将保存在文件中的说明。</param>
         <param name="Keywords">可用于搜索该文件的以空格分隔的关键字。</param>
-        <summary>保存数据源为 Office 数据连接文件的连接。</summary>
+        <summary>将数据馈送连接保存为 Office 数据连接文件。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -502,8 +490,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果中数据的密码信息源的连接字符串保存在连接字符串。 <b>False</b>如果删除密码。</summary>
+        <summary><b>如此</b> 如果数据馈送连接字符串中的密码信息保存在连接字符串中。 如果删除密码，则为 <b>False</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -534,10 +521,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCredentialsMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置的应用于服务器身份验证凭据的类型。 <see cref="T:Microsoft.Office.Interop.Excel.XlCredentialsMethod" />读/写</summary>
+        <summary>返回或设置应该用于服务器验证的凭据的类型。 <see cref="T:Microsoft.Office.Interop.Excel.XlCredentialsMethod" /> 读/写</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>以下是凭据的可能使用的类型：</para>
+        <remarks><para>以下是可能使用的凭据类型：</para>
           <list type="bullet">
             <item>
               <description>
@@ -555,8 +541,7 @@
               </description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceConnectionFile">
@@ -585,7 +570,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个 String （C# 中的<b>字符串</b>），该值指示的 Office 数据连接文件或类似的文件，用于创建连接。 读/写</summary>
+        <summary>返回或设置 <b>C# (</b> 字符串，) 表示用于创建连接的 Office 数据连接文件或类似文件。 读/写</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -616,7 +601,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>用于创建连接的原始文件路径。 对于 OData 连接，这是用于创建连接的 *.atom 或 *.atomsvc 文件的位置。 <b>字符串</b>（C# 中的<b>字符串</b>）读/写</summary>
+        <summary>用于创建连接的原始文件的路径。 对于 OData 连接，这是用于创建连接的 *.atom 或 *.atomvc 文件的位置。 <b>使用</b>C# (<b></b>读/写) 字符串</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

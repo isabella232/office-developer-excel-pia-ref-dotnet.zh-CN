@@ -1,13 +1,5 @@
 <Type Name="DisplayFormat" FullName="Microsoft.Office.Interop.Excel.DisplayFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4ddcd9f96de4128a0ca313e475935d98703af7f3" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20573526" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DisplayFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4ddcd9f96de4128a0ca313e475935d98703af7f3" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005591" /></Metadata><TypeSignature Language="C#" Value="public interface DisplayFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DisplayFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.DisplayFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface DisplayFormat" />
@@ -29,12 +21,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表关联的显示设置<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象。</summary>
-    <remarks>
-      <para>只读。</para>
-      <para>如更改一个范围的条件格式或表样式的操作将导致不一致使用中的相应属性的值在当前用户界面中显示的内容<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象。 使用的属性<see cref="T:Microsoft.Office.Interop.Excel.DisplayFormat" />对象的当前用户界面中所显示返回的值。</para>
-      <para></para>
-    </remarks>
+    <summary>表示关联对象的显示 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 设置。</summary>
+    <remarks><para>只读。</para>
+      <para>更改区域的条件格式或表格样式等操作可能导致当前用户界面中显示的内容与对象相应属性中的值 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 不一致。 使用对象的属性可返回当前用户界面中显示的 <see cref="T:Microsoft.Office.Interop.Excel.DisplayFormat" /> 值。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddIndent">
@@ -60,13 +50,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个值，指示是否 Microsoft Excel 自动缩进文本关联的<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的单元格中的文本对齐方式设置为等距分布 （水平或垂直等距） 时, 显示在当前用户界面中。</summary>
-        <value>指示是否 Microsoft Excel 自动缩进文本关联的<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的单元格中的文本对齐方式设置为等距分布 （水平或垂直等距） 时, 显示在当前用户界面中。</value>
-        <remarks>
-          <para>只读。</para>
-          <para>如果单元格中的文本对齐方式设置时，为水平或垂直等距分布到自动缩进文本，则返回<b>true</b> 。</para>
-          <para></para>
-        </remarks>
+        <summary>获取一个值，该值指示当单元格中的文本对齐方式设置为与当前用户界面中显示的 (水平或垂直) 相等分布时，Microsoft Excel 是否自动缩进关联对象的文本。 <see cref="T:Microsoft.Office.Interop.Excel.Range" /></summary>
+        <value>指示当单元格中的文本对齐方式设置为与当前用户界面中显示的 (水平或垂直) 相等分布时，Microsoft Excel 是否自动缩进关联对象的文本。 <see cref="T:Microsoft.Office.Interop.Excel.Range" /></value>
+        <remarks><para>只读。</para>
+          <para>如果将单元格中的文本对齐方式设置为水平或垂直相等的分布，则返回<b>true。</b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -92,13 +80,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。 如果使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />值，该值代表指定对象的创建者的对象。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Application" />对象。</value>
-        <remarks>
-          <para>只读。</para>
-          <para></para>
-        </remarks>
+        <summary>如果不与对象限定符一起使用，则此属性 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 返回一个代表 Microsoft Excel 应用程序的对象。 当与对象限定符一起使用时，此属性返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象表示指定对象的创建者。</summary>
+        <value>对象 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Borders">
@@ -124,12 +109,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Excel.Borders" />对象，表示关联的边框<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象在当前用户界面中显示。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Excel.Borders" />对象，表示关联的边框<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象在当前用户界面中显示。</value>
-        <remarks>
-          <para>只读。</para>
-          <para></para>
-        </remarks>
+        <summary>获取一个对象，该对象代表当前用户界面中显示的关联 <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 对象的边框。</summary>
+        <value>一个代表当前用户界面中显示的关联对象的 <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 边框的对象。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Characters">
@@ -160,9 +143,9 @@
       </Parameters>
       <Docs>
         <param name="Start">要返回的第一个字符。如果此参数是 1 或被省略，则此属性返回一个以第一个字符为开头的字符区域。</param>
-        <param name="Length">要返回的字符数。 如果省略此参数，则此属性返回的字符串的其余部分 (之后的所有<paramref name="Start" />字符)。</param>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Excel.Characters" />对象，表示关联的文本中的字符范围<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象在当前用户界面中显示。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Excel.Characters" />对象，表示关联的文本中的字符范围<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象在当前用户界面中显示。</value>
+        <param name="Length">要返回的字符数。 如果省略此参数，则此属性返回字符串的剩余部分 (字符后的所有 <paramref name="Start" />) 。</param>
+        <summary>获取一个对象，该对象表示当前用户界面中显示的关联对象的文本 <see cref="T:Microsoft.Office.Interop.Excel.Characters" /> <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 中的字符范围。</summary>
+        <value>一 <see cref="T:Microsoft.Office.Interop.Excel.Characters" /> 个对象，表示当前用户界面中显示的关联对象的文本 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 中的字符范围。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -189,13 +172,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个指示在其中创建此对象的应用程序的 32 位<b>整数</b>。</summary>
-        <value>32 位<b>整数</b>，指示在其中创建此对象的应用程序。</value>
-        <remarks>
-          <para>只读的<b>long</b>。</para>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <see cref="P:Microsoft.Office.Interop.Excel.DisplayFormat.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <summary>获取一个 32 <b>位整数</b> ，指示创建此对象时的应用程序。</summary>
+        <value>一个 32 <b>位整数</b> ，指示创建此对象时的应用程序。</value>
+        <remarks><para>只读的 <b>长</b>。</para>
+          <para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。 该属性设计为在 Microsoft Excel for the Macintosh 中使用，其中每个应用程序都有 <see cref="P:Microsoft.Office.Interop.Excel.DisplayFormat.Creator" /> 一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -221,12 +202,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Excel.Font" />对象，表示关联的字体<see cref="T:Microsoft.Office.Interop.Excel.Range" />是显示在当前用户界面。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Excel.Font" />对象，表示关联的字体<see cref="T:Microsoft.Office.Interop.Excel.Range" />是显示在当前用户界面。</value>
-        <remarks>
-          <para>只读。</para>
-          <para></para>
-        </remarks>
+        <summary>获取 <see cref="T:Microsoft.Office.Interop.Excel.Font" /> 一个对象，该对象代表当前用户界面中显示的关联 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 字体。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Font" />一个代表当前用户界面中显示的关联字体 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 的对象。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaHidden">
@@ -252,13 +231,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个值，指示如果关联的公式<see cref="T:Microsoft.Office.Interop.Excel.Range" />是当前用户界面中显示工作表处于保护状态时隐藏对象。</summary>
-        <value>指示如果关联的公式<see cref="T:Microsoft.Office.Interop.Excel.Range" />是当前用户界面中显示工作表处于保护状态时隐藏对象。</value>
-        <remarks>
-          <para>只读。</para>
-          <para>如果工作表时隐藏公式，则返回<b>true</b>保护，空引用 (在 Visual Basic 中为 Nothing) 如果该区域包含有些单元格的<see cref="P:Microsoft.Office.Interop.Excel.DisplayFormat.FormulaHidden" />等于<b>true</b>和有些单元格的<see cref="P:Microsoft.Office.Interop.Excel.DisplayFormat.FormulaHidden" />等于<b>false</b>。</para>
-          <para></para>
-        </remarks>
+        <summary>获取一个值，该值指示当工作表在当前用户界面中显示的工作表受保护时，关联的对象的公式是否 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 隐藏。</summary>
+        <value>指示当工作表在当前用户界面中显示的工作表受保护时，关联的对象的公式是否 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 隐藏。</value>
+        <remarks><para>只读。</para>
+          <para>如果<b>公式</b>在工作表受保护时隐藏，则返回 true;如果区域包含一些等于 true 的单元格和一些等于 false 的单元格，则返回 null 引用 (不在 Visual Basic) 中为 <see cref="P:Microsoft.Office.Interop.Excel.DisplayFormat.FormulaHidden" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.DisplayFormat.FormulaHidden" /> <b>Null</b>引用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlignment">
@@ -284,12 +261,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个值，代表相关联的水平对齐方式<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</summary>
-        <value>关联的水平对齐方式<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</value>
-        <remarks>
-          <para>只读。</para>
-          <para></para>
-        </remarks>
+        <summary>获取一个值，该值代表当前用户界面中显示的关联对象 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 的水平对齐方式。</summary>
+        <value>当前用户界面中显示的关联对象 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 的水平对齐方式。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IndentLevel">
@@ -315,12 +290,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个值，代表相关联的缩进级别<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</summary>
-        <value>关联的缩进级别<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</value>
-        <remarks>
-          <para>只读。</para>
-          <para></para>
-        </remarks>
+        <summary>获取一个值，该值代表当前用户界面中显示的关联对象的 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 缩进级别。</summary>
+        <value>当前用户界面中显示的关联对象的缩进 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 级别。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -346,13 +319,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Excel.Interior" />对象，表示关联的内部<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象在当前用户界面中显示。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Interior" />对象，表示关联的内部<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象在当前用户界面中显示。</value>
-        <remarks>
-          <para>只读。</para>
-          <para></para>
-        </remarks>
+        <summary>获取一个对象，该对象代表当前用户界面中显示的关联 <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 对象的内部。</summary>
+        <value>一 <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> 个对象，表示当前用户界面中显示的关联 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 对象的内部。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Locked">
@@ -378,13 +348,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个值，指示如果关联<see cref="T:Microsoft.Office.Interop.Excel.Range" />是显示在当前用户界面对象已被锁定。</summary>
-        <value>指示如果关联<see cref="T:Microsoft.Office.Interop.Excel.Range" />是显示在当前用户界面对象已被锁定。</value>
-        <remarks>
-          <para>只读。</para>
-          <para>返回<b>true</b>如果区域已锁定， <b>false</b>如果工作表受保护，或空引用 (在 Visual Basic 中为 Nothing) 该区域是否包含同时锁定和未锁定单元格时，可以修改该区域。</para>
-          <para></para>
-        </remarks>
+        <summary>获取一个值，该值指示当前用户界面中显示的关联对象是否 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 锁定。</summary>
+        <value>指示当前用户界面中显示的关联对象是否 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 锁定。</value>
+        <remarks><para>只读。</para>
+          <para>如果<b></b>区域被锁定，则返回 true;如果区域受保护时可以修改，则返回<b>false;</b>如果区域同时包含锁定单元格和未锁定单元格，则返回 null 引用 (不在 Visual Basic) 中。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MergeCells">
@@ -410,13 +378,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个值，指示如果关联<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示包含合并单元格。</summary>
-        <value>指示如果关联<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示包含合并单元格。</value>
-        <remarks>
-          <para>只读。</para>
-          <para>如果该区域包含合并单元格，则返回<b>true</b> 。</para>
-          <para></para>
-        </remarks>
+        <summary>获取一个值，该值指示当前用户界面中显示的关联对象是否包含 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 合并的单元格。</summary>
+        <value>指示当前用户界面中显示的关联对象是否包含 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 合并单元格。</value>
+        <remarks><para>只读。</para>
+          <para>如果 <b>区域</b> 包含合并单元格，则返回 true。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormat">
@@ -442,13 +408,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个值，代表关联的格式代码<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</summary>
-        <value>关联的格式代码<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</value>
-        <remarks>
-          <para>只读。</para>
-          <para>如果指定范围中的所有单元格不具有相同的数字格式，则此属性返回空引用 (在 Visual Basic 中为 Nothing)。</para>
-          <para></para>
-        </remarks>
+        <summary>获取一个值，该值代表当前用户界面中显示的关联对象的格式 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 代码。</summary>
+        <value>当前用户界面中显示的关联对象的格式 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 代码。</value>
+        <remarks><para>只读。</para>
+          <para>如果指定区域的所有单元格都具有相同的数字格式 (则此属性返回空引用Visual Basic) 不返回任何值。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormatLocal">
@@ -474,12 +438,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个值，代表关联的格式代码<see cref="T:Microsoft.Office.Interop.Excel.Range" />作为其用户语言字符串形式中显示的当前用户界面。</summary>
-        <value>关联的格式代码<see cref="T:Microsoft.Office.Interop.Excel.Range" />作为其用户语言字符串形式中显示的当前用户界面。</value>
-        <remarks>
-          <para>只读。</para>
-          <para></para>
-        </remarks>
+        <summary>获取一个值，该值代表当前用户界面中显示的以用户语言作为字符串关联的格式 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 代码。</summary>
+        <value>与当前用户界面中显示的用户语言中的字符串相关联的格式 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 代码。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -505,12 +467,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个值，代表文本方向关联的<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</summary>
-        <value>关联的文本方向<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</value>
-        <remarks>
-          <para>只读。</para>
-          <para></para>
-        </remarks>
+        <summary>获取一个值，该值代表当前用户界面中显示的关联对象 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 的文本方向。</summary>
+        <value>当前用户界面中显示的关联对象的文本 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 方向。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -537,11 +497,9 @@
       </ReturnValue>
       <Docs>
         <summary>获取指定对象的父对象。</summary>
-        <value>指定的对象的的父对象。 的</value>
-        <remarks>
-          <para>只读。</para>
-          <para></para>
-        </remarks>
+        <value>指定对象的父对象。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadingOrder">
@@ -567,12 +525,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取关联的阅读顺序<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</summary>
-        <value>关联的阅读顺序<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</value>
-        <remarks>
-          <para>只读。</para>
-          <para></para>
-        </remarks>
+        <summary>获取当前用户界面中显示的关联对象的 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 读取顺序。</summary>
+        <value>当前用户界面中显示的关联对象的 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 读取顺序。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShrinkToFit">
@@ -598,13 +554,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个值，指示是否 Microsoft Excel 会自动缩小文本以适应可用列宽关联的<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</summary>
-        <value>指示是否 Microsoft Excel 会自动缩小文本以适应可用列宽关联的<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</value>
-        <remarks>
-          <para>只读。</para>
-          <para>如果文本会自动缩小以适应可用列宽，则返回<b>true</b> 。</para>
-          <para></para>
-        </remarks>
+        <summary>获取一个值，该值指示 Microsoft Excel 是否自动缩小文本以适应当前用户界面中显示的关联对象的可用列 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 宽。</summary>
+        <value>指示 Microsoft Excel 是否自动缩小文本以适应当前用户界面中显示的关联对象的可用列 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 宽。</value>
+        <remarks><para>只读。</para>
+          <para>如果 <b>文本</b> 自动缩小以适应可用列宽，则返回 true。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -630,8 +584,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个值，包含<see cref="T:Microsoft.Office.Interop.Excel.Style" />对象，代表相关联的样式的<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象在当前用户界面中显示。</summary>
-        <value>一个值，包含<see cref="T:Microsoft.Office.Interop.Excel.Style" />对象，代表相关联的样式的<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象在当前用户界面中显示。</value>
+        <summary>获取一个包含对象的值，该值代表当前用户界面中显示的关联 <see cref="T:Microsoft.Office.Interop.Excel.Style" /> <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 对象的样式。</summary>
+        <value>一个包含对象的值，表示当前用户界面中显示的关联 <see cref="T:Microsoft.Office.Interop.Excel.Style" /> <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 对象的样式。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -658,12 +612,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个值，代表相关联的垂直对齐方式<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</summary>
-        <value>关联的垂直对齐方式<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</value>
-        <remarks>
-          <para>只读。</para>
-          <para></para>
-        </remarks>
+        <summary>获取一个值，该值代表当前用户界面中显示的关联对象的 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 垂直对齐方式。</summary>
+        <value>当前用户界面中显示的关联对象的 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 垂直对齐方式。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WrapText">
@@ -689,13 +641,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个值，指示是否 Microsoft Excel 中关联的文字环绕<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</summary>
-        <value>指示是否 Microsoft Excel 中关联的文字环绕<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的当前用户界面中显示。</value>
-        <remarks>
-          <para>只读。</para>
-          <para>如果在范围内的所有单元格文本换行，则返回<b>true</b> 。</para>
-          <para></para>
-        </remarks>
+        <summary>获取一个值，该值指示 Microsoft Excel 在当前用户界面中显示的关联对象的文本是否 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 自动换行。</summary>
+        <value>指示 Microsoft Excel 是否在当前用户界面中显示关联对象的文本换 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 行。</value>
+        <remarks><para>只读。</para>
+          <para>如果 <b>文字</b> 在区域内的所有单元格中换行，则返回 true。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

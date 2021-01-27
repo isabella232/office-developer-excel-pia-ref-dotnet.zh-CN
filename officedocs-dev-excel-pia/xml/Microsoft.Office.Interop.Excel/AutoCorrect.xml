@@ -1,13 +1,5 @@
 <Type Name="AutoCorrect" FullName="Microsoft.Office.Interop.Excel.AutoCorrect">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="782c79cfc9bebcca05b2fc4c4e554571d4077391" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20572721" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AutoCorrect" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="782c79cfc9bebcca05b2fc4c4e554571d4077391" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006228" /></Metadata><TypeSignature Language="C#" Value="public interface AutoCorrect" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoCorrect" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AutoCorrect" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoCorrect" />
@@ -30,10 +22,8 @@
   </Attributes>
   <Docs>
     <summary>包含 Microsoft Excel 的 AutoCorrect 属性（自动将日期名改为大写、自动更正连续两个大写字母、自动更正词条列表等等）。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Excel._Application.AutoCorrect" />属性返回<b>AutoCorrect</b>对象。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel._Application.AutoCorrect" /> 该属性可返回 <b>AutoCorrect</b> 对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddReplacement">
@@ -60,7 +50,7 @@
         <Parameter Name="Replacement" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="What">必需的 <b>字符串</b> 。 要替换的文本。 如果自动更正替换文本数组中已存在此字符串，被新文本替换现有的替换文本。</param>
+        <param name="What">必需的 <b>字符串</b> 。 要替换的文本。 如果该字符串已存在于自动更正替换文本数组中，则现有的替换文本将被新文本替换。</param>
         <param name="Replacement">必需的 <b>字符串</b> 。 替换文字。</param>
         <summary>向“自动更正”替换文本数组中添加项。</summary>
         <returns>To be added.</returns>
@@ -90,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,12 +111,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>一个<b>布尔</b>值，该值指示是否对列表启用自动扩展。</summary>
+        <summary>一 <b>个布尔</b> 值，指示是否对列表启用自动扩展。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>时为空的行或列列表旁边的单元格中键入时，列表将扩展以包含的行或列，如果已启用自动扩展。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>在列表旁边的空行或空列的单元格中键入时，如果启用了自动扩展，列表将展开以包含该行或列。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFillFormulasInLists">
@@ -155,14 +143,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>影响由自动填充列表创建的计算列的创建。可读/写 <b>Boolean</b> 类型。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>该属性不影响现有计算列或非自动填充创建的计算列。</para>
-          <para></para>
-        </remarks>
+        <summary>影响由自动填充列表创建的计算列的创建。 读/写 <b>Boolean</b>。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>该属性不影响现有计算列或非自动填充创建的计算列。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CapitalizeNamesOfDays">
@@ -191,8 +175,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果日期名称的第一个字母自动大写。</summary>
+        <summary>如果日期名称的第一个字母自动大写，则该属性值为 <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -223,8 +206,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果 Microsoft Excel 自动更正因偶然误用 CAPS LOCK 键。</summary>
+        <summary>如果 Microsoft Excel 自动更正无意中使用 Caps Lock 键，则该属性值为 <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -255,8 +237,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果 Microsoft Excel 自动更正句子 (首先 word) 大小写。</summary>
+        <summary>如果 Microsoft Excel 自动更正句子（第一个单词）的大写，则该属性值为 <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -286,12 +267,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteReplacement">
@@ -317,7 +295,7 @@
         <Parameter Name="What" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="What">必需的 <b>字符串</b> 。 要替换，从自动更正替换文本数组中删除的行中所示的文本。 如果自动更正替换数组中不存在此字符串，此方法将失败。</param>
+        <param name="What">必需的 <b>字符串</b> 。 要替换的文本（当文本出现在要从“自动更正”替换数组中删除的行上时）。 如果该字符串不在“自动更正”替换数组中，此方法将失败。</param>
         <summary>删除“自动更正”替换数组中的一个输入项。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -349,14 +327,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>允许用户显示或隐藏自动更正选项按钮。 默认值为 <b>True</b> 。</summary>
+        <summary>允许用户显示或隐藏“自动更正选项”按钮。 默认值为 <b>True</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>DisplayAutoCorrectOptions</b> 属性是一个 Microsoft Office 范围的设置。在 Microsoft Excel 中更改该属性将影响其他的 Office 应用程序。</para>
+        <remarks><para><b>DisplayAutoCorrectOptions</b> 属性是 Microsoft Office 范围的设置。 在 Microsoft Excel 中更改该属性将影响其他的 Office 应用程序。</para>
           <para>在 Excel 中，只有在自动创建超链接时才会显示“自动更正选项”按钮。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -416,24 +391,22 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">可选的<b>对象</b>。 要返回的自动更正替换数组的行索引。 该行包含两个元素的一维数组的形式返回： 第一个元素是 1，列中的文本和第二个元素是列 2 中的文本。</param>
+        <param name="Index">可选 <b>对象</b>。 要返回的“自动更正”替换内容数组的行索引。 该行以二元一维数组的形式返回：第一个元素为第一列中的文本，第二个元素为第二列中的文本。</param>
         <summary>返回“自动更正”替换内容的数组。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果<paramref name="Index" />未指定，则此方法返回一个二维数组。 下表中所示，数组中的每一行包含一个替换。</para>
+        <remarks><para>如果 <paramref name="Index" /> 未指定，此方法将返回一个二维数组。 数组中每一行包含一对自动更正替换文本，如下表所示。</para>
           <list type="table">
             <item>
-              <term>1</term>
+              <term>1 </term>
               <description>要被替换的文本</description>
             </item>
             <item>
-              <term>2</term>
+              <term>2 </term>
               <description>替换文本</description>
             </item>
           </list>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Excel.AutoCorrect.AddReplacement(System.String,System.String)" />方法可向替换列表添加条目。</para>
-          <para></para>
-        </remarks>
+          <para>使用此方法 <see cref="M:Microsoft.Office.Interop.Excel.AutoCorrect.AddReplacement(System.String,System.String)" /> 将条目添加到替换列表。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReplaceText">
@@ -462,7 +435,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>将被自动替换列表中的自动更正替换文本。</summary>
+        <summary>如果“自动更正”替换列表中的文本将被自动替换，则该属性值为 <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -493,7 +466,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>自动更正以两个大写字母开头的单词。</summary>
+        <summary>如果自动更正以两个大写字母开头的单词，则该属性值为 <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

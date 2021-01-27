@@ -1,13 +1,5 @@
 <Type Name="Axes" FullName="Microsoft.Office.Interop.Excel.Axes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="16133b78fe6ef635f84e7e24582e31b62c79a469" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20572777" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Axes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="16133b78fe6ef635f84e7e24582e31b62c79a469" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006186" /></Metadata><TypeSignature Language="C#" Value="public interface Axes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Axes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Axes" />
   <TypeSignature Language="VB.NET" Value="Public Interface Axes&#xA;Implements IEnumerable" />
@@ -33,12 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>所有的集合<see cref="T:Microsoft.Office.Interop.Excel.Axis" />指定图表中的对象。</summary>
-    <remarks>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Excel._Chart.Axes(System.Object,Microsoft.Office.Interop.Excel.XlAxisGroup)" />方法返回<b>Axes</b>集合。</para>
-      <para>使用<b>Axes</b>(<paramref name="type" />， <paramref name="group" />)，其中<paramref name="type" />为坐标轴类型和<paramref name="group" />是要返回的单个<b>Axis</b>对象的坐标轴组。 <paramref name="Type" />可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" />常量： <b>xlCategory</b>、 <b>xlSeries</b>或<b>xlValue</b>。 <paramref name="Group" />可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" />常量： <b>xlPrimary</b>或<b>xlSecondary</b>。 有关详细信息，请参阅此 <b>轴</b> 方法。</para>
-      <para></para>
-    </remarks>
+    <summary>指定图表中所有 <see cref="T:Microsoft.Office.Interop.Excel.Axis" /> 对象的集合。</summary>
+    <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Excel._Chart.Axes(System.Object,Microsoft.Office.Interop.Excel.XlAxisGroup)" /> 该方法可返回 <b>Axes</b> 集合。</para>
+      <para>使用 <b>轴</b> (<paramref name="type" /> <paramref name="group" /> ，) ，其中坐标轴类型和坐标轴组， <paramref name="type" /> <paramref name="group" /> 返回单个 <b>轴</b> 对象。 <paramref name="Type" /> 可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" /> ： <b>xlCategory</b>、 <b>xlSeries</b>或 <b>xlValue</b>。 <paramref name="Group" /> 可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> <b>：xlPrimary</b> 或 <b>xlSecondary</b>。 有关详细信息，请参阅此 <b>轴</b> 方法。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -97,7 +87,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -155,12 +145,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -218,9 +205,9 @@
         <Parameter Name="AxisGroup" Type="Microsoft.Office.Interop.Excel.XlAxisGroup" />
       </Parameters>
       <Docs>
-        <param name="Type">所需<see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" />。 坐标轴类型。<b>XlAxisType</b>可为以下常量之一：<b>xlCategory</b>。<b>xlseriesaxis:</b>仅对三维图表有效。<b>xlValue</b>。</param>
-        <param name="AxisGroup">可选<see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" />。 坐标轴。<b>XlAxisGroup</b>可为以下常量之一：<b>xlPrimary</b>默认<b>xlSecondary</b></param>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Excel.Axis" />对象从<see cref="T:Microsoft.Office.Interop.Excel.Axes" />集合。</summary>
+        <param name="Type">必需 <see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" /> 。 坐标轴类型。<b>XlAxisType</b> 可以是以下常量之一：<b>xlCategory</b>。<b>xlSeriesAxis</b> 仅对三维图表有效。<b>xlValue</b>。</param>
+        <param name="AxisGroup">可选 <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> 。 坐标轴。<b>XlAxisGroup</b> 可以是以下常量之一<b>：xlPrimary</b> Default<b>xlSecondary</b></param>
+        <summary>从集合 <see cref="T:Microsoft.Office.Interop.Excel.Axis" /> 中返回单个 <see cref="T:Microsoft.Office.Interop.Excel.Axes" /> 对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

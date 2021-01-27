@@ -1,13 +1,5 @@
 <Type Name="ChartEvents_Event" FullName="Microsoft.Office.Interop.Excel.ChartEvents_Event">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8fa24bd36a40b86e1c8eda5d1c429fc248c390f6" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20576641" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8fa24bd36a40b86e1c8eda5d1c429fc248c390f6" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005913" /></Metadata><TypeSignature Language="C#" Value="public interface ChartEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ChartEvents_Event" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartEvents_Event" />
@@ -29,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>事件接口 Microsoft Excel 的<see cref="T:Microsoft.Office.Interop.Excel.Chart" />对象的事件。</summary>
+    <summary>Microsoft Excel 对象事件 <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> 的事件接口。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,7 +40,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartEvents_ActivateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当激活图表工作表或嵌入式的图表时发生。</summary>
+        <summary>在激活图表工作表或嵌入图表时发生。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,13 +59,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartEvents_BeforeDoubleClickEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>内嵌的图表双击时，默认的双击操作之前，发生此事件。</summary>
-        <remarks>
-          <para>
-            <see cref="M:Microsoft.Office.Interop.Excel._Application.DoubleClick" />方法不会发生此事件。</para>
+        <summary>在默认双击操作之前双击嵌入图表时发生。</summary>
+        <remarks><para><see cref="M:Microsoft.Office.Interop.Excel._Application.DoubleClick" />该方法不会导致此事件发生。</para>
           <para>用户双击单元格的边框时不触发此事件。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BeforeRightClick">
@@ -91,11 +80,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartEvents_BeforeRightClickEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>内嵌的图表右击时，默认右击操作之前，发生此事件。</summary>
-        <remarks>
-          <para>与其他工作表事件相似，当指针在形状或命令栏（工具栏或菜单栏）上时，右键单击不触发此事件。</para>
-          <para></para>
-        </remarks>
+        <summary>在默认右键单击操作之前右键单击嵌入图表时发生。</summary>
+        <remarks><para>与其他工作表事件相似，当指针在形状或命令栏（工具栏或菜单栏）上时，右键单击不触发此事件。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Calculate">
@@ -113,7 +100,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartEvents_CalculateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>图表绘制新的或更改数据之后发生。</summary>
+        <summary>在图表绘制新的或已更改的数据之后发生。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,7 +119,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartEvents_DeactivateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>停用图表时发生此事件。</summary>
+        <summary>在图表停用时发生。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,7 +138,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartEvents_DragOverEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>单元格区域拖动到图表上时，发生此事件。</summary>
+        <summary>在图表上拖动单元格区域时发生。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,7 +157,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartEvents_DragPlotEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>单元格区域拖放在图表中时发生。</summary>
+        <summary>在图表上拖放单元格区域时发生。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -284,7 +271,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartEvents_SeriesChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>在用户更改图表数据点的值时，发生此事件。</summary>
+        <summary>当用户更改图表数据点的值时发生。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
