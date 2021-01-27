@@ -1,13 +1,5 @@
 <Type Name="AppEvents_Event" FullName="Microsoft.Office.Interop.Excel.AppEvents_Event">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9bf90f2833e35c96400ee1d99e1cdd02fe945d69" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20580239" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AppEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9bf90f2833e35c96400ee1d99e1cdd02fe945d69" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999594" /></Metadata><TypeSignature Language="C#" Value="public interface AppEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AppEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AppEvents_Event" />
   <TypeSignature Language="VB.NET" Value="Public Interface AppEvents_Event" />
@@ -29,12 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="71e95-101">事件接口 Microsoft Excel 的<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象的事件。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="71e95-101">Events interface for Microsoft Excel <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object events.</span>
-      </span>
-    </summary>
+    <summary><span data-ttu-id="24499-101">Microsoft Excel 对象事件 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 的事件接口。</span><span class="sxs-lookup"><span data-stu-id="24499-101">Events interface for Microsoft Excel <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object events.</span></span></summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -53,40 +40,13 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_AfterCalculateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-102">
-            <see cref="E:Microsoft.Office.Interop.Excel.ApplicationClass.AfterCalculate" />事件发生时所有挂起刷新活动 （同步和异步） 和已完成的所有结果计算活动。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-102">The <see cref="E:Microsoft.Office.Interop.Excel.ApplicationClass.AfterCalculate" /> event occurs when all pending refresh activity (both synchronous and asynchronous) and all of the resultant calculation activities have been completed.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="71e95-p101">只要计算已完成且不存在未完成的查询，就会发生此事件。必须同时满足这两个条件才能发生此事件。即使工作簿中没有工作表数据，也可能会引发此事件，例如，只要整个工作簿中的计算已完成且不存在正在运行的查询。
+        <summary><span data-ttu-id="24499-102">当所有挂起的刷新活动 (同步和异步) 且所有结果计算活动都已完成时，将发生 <see cref="E:Microsoft.Office.Interop.Excel.ApplicationClass.AfterCalculate" /> 此事件。</span><span class="sxs-lookup"><span data-stu-id="24499-102">The <see cref="E:Microsoft.Office.Interop.Excel.ApplicationClass.AfterCalculate" /> event occurs when all pending refresh activity (both synchronous and asynchronous) and all of the resultant calculation activities have been completed.</span></span></summary>
+        <remarks><para><span data-ttu-id="24499-103">只要计算已完成且不存在未完成的查询，就会发生此事件。</span><span class="sxs-lookup"><span data-stu-id="24499-103">This event occurs whenever calculation is completed and there are no outstanding queries.</span></span>  <span data-ttu-id="24499-104">必须同时满足这两个条件才能发生此事件。</span><span class="sxs-lookup"><span data-stu-id="24499-104">It is mandatory for both conditions to be met before the event occurs.</span></span>  <span data-ttu-id="24499-105">即使工作簿中没有工作表数据，也可能会引发此事件，例如，只要整个工作簿中的计算已完成且不存在正在运行的查询。</span><span class="sxs-lookup"><span data-stu-id="24499-105">The event can be raised even when there is no sheet data in the workbook, such as whenever calculation finishes for the entire workbook and there are no queries running.</span></span>
 
-</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="71e95-p101">This event occurs whenever calculation is completed and there are no outstanding queries.  It is mandatory for both conditions to be met before the event occurs.  The event can be raised even when there is no sheet data in the workbook, such as whenever calculation finishes for the entire workbook and there are no queries running.  </span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="71e95-106">外接程序开发人员使用<see cref="E:Microsoft.Office.Interop.Excel.ApplicationClass.AfterCalculate" />事件，以了解当工作簿中的所有数据已经完全都更新任何查询和/或可能已在进行中的计算。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="71e95-106">Add-in developers use the <see cref="E:Microsoft.Office.Interop.Excel.ApplicationClass.AfterCalculate" /> event to know when all the data in the workbook has been fully updated by any queries and/or calculations that may have been in progress.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="71e95-107">此事件发生后所有<see cref="E:Microsoft.Office.Interop.Excel.ChartEvents_Event.Calculate" />， <see cref="E:Microsoft.Office.Interop.Excel.RefreshEvents_Event.AfterRefresh" />，和<see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetChange" />事件。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="71e95-107">This event occurs after all <see cref="E:Microsoft.Office.Interop.Excel.ChartEvents_Event.Calculate" />, <see cref="E:Microsoft.Office.Interop.Excel.RefreshEvents_Event.AfterRefresh" />, and <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetChange" /> events.</span>
-            </span>
-            <span data-ttu-id="71e95-108">它是所有刷新处理和所有计算处理已完成，并且它之后发生此事件发生的最后一个事件<see cref="P:Microsoft.Office.Interop.Excel._Application.CalculationState" />设置为<see cref="F:Microsoft.Office.Interop.Excel.XlCalculationState.xlDone" />。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="71e95-108">It is the last event to occur after all refresh processing and all calc processing have completed, and it occurs after<see cref="P:Microsoft.Office.Interop.Excel._Application.CalculationState" /> is set to <see cref="F:Microsoft.Office.Interop.Excel.XlCalculationState.xlDone" />.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+</para>
+          <para><span data-ttu-id="24499-106">加载项开发人员使用该事件了解工作簿中所有数据何时已由任何查询和/或计算完全更新，这些查询和/或计算 <see cref="E:Microsoft.Office.Interop.Excel.ApplicationClass.AfterCalculate" /> 可能在进行中。</span><span class="sxs-lookup"><span data-stu-id="24499-106">Add-in developers use the <see cref="E:Microsoft.Office.Interop.Excel.ApplicationClass.AfterCalculate" /> event to know when all the data in the workbook has been fully updated by any queries and/or calculations that may have been in progress.</span></span></para>
+          <para><span data-ttu-id="24499-107">此事件发生在所有 、 <see cref="E:Microsoft.Office.Interop.Excel.ChartEvents_Event.Calculate" /> 和 <see cref="E:Microsoft.Office.Interop.Excel.RefreshEvents_Event.AfterRefresh" /> <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetChange" /> 事件之后。</span><span class="sxs-lookup"><span data-stu-id="24499-107">This event occurs after all <see cref="E:Microsoft.Office.Interop.Excel.ChartEvents_Event.Calculate" />, <see cref="E:Microsoft.Office.Interop.Excel.RefreshEvents_Event.AfterRefresh" />, and <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetChange" /> events.</span></span>  <span data-ttu-id="24499-108">它是所有刷新处理以及所有计算处理完成后的最后一个事件，并且该事件在设置为之后 <see cref="P:Microsoft.Office.Interop.Excel._Application.CalculationState" /> 发生 <see cref="F:Microsoft.Office.Interop.Excel.XlCalculationState.xlDone" /> 。</span><span class="sxs-lookup"><span data-stu-id="24499-108">It is the last event to occur after all refresh processing and all calc processing have completed, and it occurs after<see cref="P:Microsoft.Office.Interop.Excel._Application.CalculationState" /> is set to <see cref="F:Microsoft.Office.Interop.Excel.XlCalculationState.xlDone" />.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NewWorkbook">
@@ -104,12 +64,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_NewWorkbookEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-109">当新建一个工作簿时发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-109">Occurs when a new workbook is created.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="24499-109">当新建一个工作簿时发生此事件。</span><span class="sxs-lookup"><span data-stu-id="24499-109">Occurs when a new workbook is created.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,12 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_ProtectedViewWindowActivateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-110">在激活“受保护的视图”窗口时发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-110">Occurs when a Protected View window is activated.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="24499-110">在“受保护的视图”窗口激活时发生。</span><span class="sxs-lookup"><span data-stu-id="24499-110">Occurs when a Protected View window is activated.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,12 +102,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_ProtectedViewWindowBeforeCloseEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-111">在“受保护的视图”窗口或“受保护的视图”窗口中的工作簿关闭前一刻发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-111">Occurs immediately before a Protected View window or a workbook in a Protected View window closes.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="24499-111">紧接“受保护的视图”窗口或“受保护的视图”窗口中的工作簿关闭之前发生。</span><span class="sxs-lookup"><span data-stu-id="24499-111">Occurs immediately before a Protected View window or a workbook in a Protected View window closes.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,12 +121,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_ProtectedViewWindowBeforeEditEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-112">在指定的“受保护的视图”窗口中启用对工作簿的编辑前一刻发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-112">Occurs immediately before editing is enabled on the workbook in the specified Protected View window.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="24499-112">紧接为指定“受保护的视图”窗口中的工作簿启用编辑操作之前发生。</span><span class="sxs-lookup"><span data-stu-id="24499-112">Occurs immediately before editing is enabled on the workbook in the specified Protected View window.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,12 +140,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_ProtectedViewWindowDeactivateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-113">受保护的视图窗口停用时发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-113">Occurs when a Protected View window is deactivated.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="24499-113">在"受保护的视图"窗口被停用时发生。</span><span class="sxs-lookup"><span data-stu-id="24499-113">Occurs when a Protected View window is deactivated.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,12 +159,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_ProtectedViewWindowOpenEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-114">在“受保护的视图”窗口中打开工作簿时发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-114">Occurs when a workbook is opened in a Protected View window.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="24499-114">当在“受保护的视图”窗口中打开工作簿时发生。</span><span class="sxs-lookup"><span data-stu-id="24499-114">Occurs when a workbook is opened in a Protected View window.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,12 +178,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_ProtectedViewWindowResizeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-115">在调整任意“受保护的视图”窗口的大小时发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-115">Occurs when any Protected View window is resized.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="24499-115">在任何“受保护的视图”窗口调整大小时发生。</span><span class="sxs-lookup"><span data-stu-id="24499-115">Occurs when any Protected View window is resized.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -272,12 +197,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_SheetActivateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-116">当激活任何工作表时发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-116">Occurs when any sheet is activated.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="24499-116">当激活任何工作表时发生此事件。</span><span class="sxs-lookup"><span data-stu-id="24499-116">Occurs when any sheet is activated.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -315,21 +235,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_SheetBeforeDoubleClickEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-117">当双击任何工作表时发生此事件，此事件先于默认的双击操作发生。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-117">Occurs when any worksheet is double-clicked, before the default double-click action.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="71e95-118">图表工作表中不发生此事件。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="71e95-118">This event doesn't occur on chart sheets.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="24499-117">当双击任何工作表时发生此事件，此事件先于默认的双击操作发生。</span><span class="sxs-lookup"><span data-stu-id="24499-117">Occurs when any worksheet is double-clicked, before the default double-click action.</span></span></summary>
+        <remarks><para><span data-ttu-id="24499-118">图表工作表中不发生此事件。</span><span class="sxs-lookup"><span data-stu-id="24499-118">This event doesn't occur on chart sheets.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetBeforeRightClick">
@@ -347,21 +255,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_SheetBeforeRightClickEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-119">右键单击任一工作表时发生此事件，此事件先于默认的右键单击操作。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-119">Occurs when any worksheet is right-clicked, before the default right-click action.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="71e95-120">图表工作表中不发生此事件。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="71e95-120">This event doesn't occur on chart sheets.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="24499-119">右键单击任一工作表时发生此事件，此事件先于默认的右键单击操作。</span><span class="sxs-lookup"><span data-stu-id="24499-119">Occurs when any worksheet is right-clicked, before the default right-click action.</span></span></summary>
+        <remarks><para><span data-ttu-id="24499-120">图表工作表中不发生此事件。</span><span class="sxs-lookup"><span data-stu-id="24499-120">This event doesn't occur on chart sheets.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetCalculate">
@@ -379,12 +275,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_SheetCalculateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-121">在重新计算工作表时或在图表上绘制更改的数据之后发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-121">Occurs after any worksheet is recalculated or after any changed data is plotted on a chart.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="24499-121">在重新计算工作表时或在图表上绘制更改的数据之后发生此事件。</span><span class="sxs-lookup"><span data-stu-id="24499-121">Occurs after any worksheet is recalculated or after any changed data is plotted on a chart.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -403,21 +294,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_SheetChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-122">当用户或外部链接更改了任何工作表中的单元格时发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-122">Occurs when cells in any worksheet are changed by the user or by an external link.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="71e95-123">图表工作表中不发生此事件。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="71e95-123">This event doesn't occur on chart sheets.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="24499-122">当用户或外部链接更改了任何工作表中的单元格时发生此事件。</span><span class="sxs-lookup"><span data-stu-id="24499-122">Occurs when cells in any worksheet are changed by the user or by an external link.</span></span></summary>
+        <remarks><para><span data-ttu-id="24499-123">图表工作表中不发生此事件。</span><span class="sxs-lookup"><span data-stu-id="24499-123">This event doesn't occur on chart sheets.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetDeactivate">
@@ -435,12 +314,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_SheetDeactivateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-124">当任何工作表被停用时发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-124">Occurs when any sheet is deactivated.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="24499-124">当任何工作表被停用时发生此事件。</span><span class="sxs-lookup"><span data-stu-id="24499-124">Occurs when any sheet is deactivated.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -459,21 +333,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_SheetFollowHyperlinkEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-125">单击 Microsoft Excel 中的任意超链接时，发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-125">Occurs when you click any hyperlink in Microsoft Excel.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="71e95-126">工作表级事件，请参阅<see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.FollowHyperlink" />事件。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="71e95-126">For worksheet-level events, see the <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.FollowHyperlink" /> event.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="24499-125">单击 Microsoft Excel 中的任何超链接时发生此事件。</span><span class="sxs-lookup"><span data-stu-id="24499-125">Occurs when you click any hyperlink in Microsoft Excel.</span></span></summary>
+        <remarks><para><span data-ttu-id="24499-126">有关工作表级事件，请参阅 <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.FollowHyperlink" /> 事件。</span><span class="sxs-lookup"><span data-stu-id="24499-126">For worksheet-level events, see the <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.FollowHyperlink" /> event.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetLensGalleryRenderComplete">
@@ -491,12 +353,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_SheetLensGalleryRenderCompleteEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-127">标注库的图标 （动态和静态） 完成呈现后，发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-127">Occurs after a callout gallery’s icons (dynamic and static) have finished rendering.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="24499-127">在标注库的图标 (动态和静态) 呈现后发生。</span><span class="sxs-lookup"><span data-stu-id="24499-127">Occurs after a callout gallery’s icons (dynamic and static) have finished rendering.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -515,26 +372,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_SheetPivotTableAfterValueChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-128">在编辑或重新计算（针对包含公式的单元格）数据透视表中的单元格或单元格区域后发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-128">Occurs after a cell or range of cells inside a PivotTable are edited or recalculated (for cells that contain formulas).</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="71e95-129">
-              <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableAfterValueChange" />编辑或重新计算的单元格以外的任何情况下不会发生事件。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="71e95-129">The <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableAfterValueChange" /> event does not occur under any conditions other than editing or recalculating cells.</span>
-            </span>
-            <span data-ttu-id="71e95-130">例如，它不会发生在数据透视表进行刷新、 排序、 筛选，或深化，即使这些操作移动单元格，并可能从 OLAP 数据源检索新值。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="71e95-130">For example, it will not occur when the PivotTable is refreshed, sorted, filtered, or drilled down on, even though those operations move cells and potentially retrieve new values from the OLAP data source.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="24499-128">在编辑或重新计算（对于包含公式的单元格）数据透视表中的单元格或单元格区域后发生。</span><span class="sxs-lookup"><span data-stu-id="24499-128">Occurs after a cell or range of cells inside a PivotTable are edited or recalculated (for cells that contain formulas).</span></span></summary>
+        <remarks><para><span data-ttu-id="24499-129">除了编辑或重新计算单元格外，该事件 <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableAfterValueChange" /> 不会在任何条件下发生。</span><span class="sxs-lookup"><span data-stu-id="24499-129">The <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableAfterValueChange" /> event does not occur under any conditions other than editing or recalculating cells.</span></span> <span data-ttu-id="24499-130">例如，它不会在刷新、排序、筛选或向下钻取数据透视表时发生，即使这些操作移动单元格，并可能从 OLAP 数据源检索新值也是如此。</span><span class="sxs-lookup"><span data-stu-id="24499-130">For example, it will not occur when the PivotTable is refreshed, sorted, filtered, or drilled down on, even though those operations move cells and potentially retrieve new values from the OLAP data source.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetPivotTableBeforeAllocateChanges">
@@ -552,22 +392,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_SheetPivotTableBeforeAllocateChangesEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-131">在向数据透视表应用更改前发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-131">Occurs before changes are applied to a PivotTable.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="71e95-132">
-              <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeAllocateChanges" /> Excel 立即执行所有更改应用于数据透视表的 OLAP 数据源，更新多维数据集语句之前，且用户已选择要应用的用户界面中更改后一刻发生的事件。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="71e95-132">The <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeAllocateChanges" /> event occurs immediately before Excel executes an UPDATE CUBE statement to apply all changes to the PivotTable's OLAP data source, and immediately after the user has chosen to apply changes in the user interface.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="24499-131">在将更改应用到数据透视表前发生。</span><span class="sxs-lookup"><span data-stu-id="24499-131">Occurs before changes are applied to a PivotTable.</span></span></summary>
+        <remarks><para><span data-ttu-id="24499-132">该事件在 Excel 执行 UPDATE CUBE 语句以将所有更改应用到数据透视表的 OLAP 数据源之前，以及用户选择在用户界面中应用更改后立即 <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeAllocateChanges" /> 发生。</span><span class="sxs-lookup"><span data-stu-id="24499-132">The <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeAllocateChanges" /> event occurs immediately before Excel executes an UPDATE CUBE statement to apply all changes to the PivotTable's OLAP data source, and immediately after the user has chosen to apply changes in the user interface.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetPivotTableBeforeCommitChanges">
@@ -585,22 +412,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_SheetPivotTableBeforeCommitChangesEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-133">在针对 OLAP 数据源提交对数据透视表的更改前发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-133">Occurs before changes are committed against the OLAP data source for a PivotTable.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="71e95-134">
-              <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeCommitChanges" /> Excel 立即执行 TRANSACTION 数据透视表的 OLAP 数据源之前，且用户已选择保存的更改整个数据透视表的后一刻发生的事件。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="71e95-134">The <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeCommitChanges" /> event occurs immediately before Excel executes a COMMIT TRANSACTION against the PivotTable's OLAP data source, and immediately after the user has chosen to save changes for the whole PivotTable.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="24499-133">在向数据透视表的 OLAP 数据源提交更改之前发生。</span><span class="sxs-lookup"><span data-stu-id="24499-133">Occurs before changes are committed against the OLAP data source for a PivotTable.</span></span></summary>
+        <remarks><para><span data-ttu-id="24499-134">该事件在 Excel 对数据透视表的 OLAP 数据源执行 COMMIT TRANSACTION 之前，以及用户选择保存整个数据透视表的更改后立即 <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeCommitChanges" /> 发生。</span><span class="sxs-lookup"><span data-stu-id="24499-134">The <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeCommitChanges" /> event occurs immediately before Excel executes a COMMIT TRANSACTION against the PivotTable's OLAP data source, and immediately after the user has chosen to save changes for the whole PivotTable.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetPivotTableBeforeDiscardChanges">
@@ -618,21 +432,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_SheetPivotTableBeforeDiscardChangesEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-135">在放弃对数据透视表所做的更改之前发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-135">Occurs before changes to a PivotTable are discarded.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="71e95-136">Excel 执行回滚事务语句对 OLAP 数据源，如果事务仍处于活动状态，并且用户已选择放弃更改后然后放弃对数据透视表中的所有已编辑的值前一刻发生。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="71e95-136">Occurs immediately before Excel executes a ROLLBACK TRANSACTION statement against the OLAP data source, if a transaction is still active, and then discards all edited values in the PivotTable, after the user has chosen to discard changes.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="24499-135">在放弃对数据透视表所做的更改之前发生。</span><span class="sxs-lookup"><span data-stu-id="24499-135">Occurs before changes to a PivotTable are discarded.</span></span></summary>
+        <remarks><para><span data-ttu-id="24499-136">在 Excel 对 OLAP 数据源执行 ROLLBACK TRANSACTION 语句之前，如果事务仍处于活动状态，然后在用户选择放弃更改后放弃数据透视表中所有编辑的值，则立即发生。</span><span class="sxs-lookup"><span data-stu-id="24499-136">Occurs immediately before Excel executes a ROLLBACK TRANSACTION statement against the OLAP data source, if a transaction is still active, and then discards all edited values in the PivotTable, after the user has chosen to discard changes.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetPivotTableUpdate">
@@ -650,12 +452,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_SheetPivotTableUpdateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-137">在数据透视表的工作表更新之后发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-137">Occurs after the sheet of the PivotTable report has been updated.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="24499-137">在数据透视表的工作表更新之后发生此事件。</span><span class="sxs-lookup"><span data-stu-id="24499-137">Occurs after the sheet of the PivotTable report has been updated.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -674,12 +471,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_SheetSelectionChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-138">任一工作表上的选定区域发生更改时，将发生此事件（但图表工作表上的选定区域发生改变时，不会发生此事件）。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-138">Occurs when the selection changes on any worksheet (doesn't occur if the selection is on a chart sheet).</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="24499-138">任一工作表上的选定区域发生更改时，将发生此事件（但图表工作表上的选定区域发生改变时，不会发生此事件）。</span><span class="sxs-lookup"><span data-stu-id="24499-138">Occurs when the selection changes on any worksheet (doesn't occur if the selection is on a chart sheet).</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -698,12 +490,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_SheetTableUpdateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-139">更新工作表的表时，发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-139">Occurs when a table on a worksheet is updated.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="24499-139">在工作表上的表更新时发生。</span><span class="sxs-lookup"><span data-stu-id="24499-139">Occurs when a table on a worksheet is updated.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -722,12 +509,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_WindowActivateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-140">工作簿窗口被激活时，将发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-140">Occurs when any workbook window is activated.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="24499-140">工作簿窗口被激活时，将发生此事件。</span><span class="sxs-lookup"><span data-stu-id="24499-140">Occurs when any workbook window is activated.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -746,12 +528,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_WindowDeactivateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-141">任何工作簿窗口被停用时将发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-141">Occurs when any workbook window is deactivated.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="24499-141">任何工作簿窗口被停用时将发生此事件。</span><span class="sxs-lookup"><span data-stu-id="24499-141">Occurs when any workbook window is deactivated.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -770,12 +547,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_WindowResizeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-142">任何工作簿窗口调整大小时将发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-142">Occurs when any workbook window is resized.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="24499-142">任何工作簿窗口调整大小时将发生此事件。</span><span class="sxs-lookup"><span data-stu-id="24499-142">Occurs when any workbook window is resized.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -794,12 +566,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_WorkbookActivateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-143">当激活任一工作簿时发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-143">Occurs when any workbook is activated.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="24499-143">当激活任一工作簿时发生此事件。</span><span class="sxs-lookup"><span data-stu-id="24499-143">Occurs when any workbook is activated.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -818,12 +585,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_WorkbookAddinInstallEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-144">当工作簿作为加载宏安装时，发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-144">Occurs when a workbook is installed as an add-in.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="24499-144">当工作簿作为加载宏安装时，发生此事件。</span><span class="sxs-lookup"><span data-stu-id="24499-144">Occurs when a workbook is installed as an add-in.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -842,12 +604,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_WorkbookAddinUninstallEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-145">当任一作为加载宏的工作簿卸载时发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-145">Occurs when any add-in workbook is uninstalled.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="24499-145">当任一作为加载宏的工作簿卸载时发生此事件。</span><span class="sxs-lookup"><span data-stu-id="24499-145">Occurs when any add-in workbook is uninstalled.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -866,12 +623,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_WorkbookAfterSaveEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-146">在保存工作簿之后发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-146">Occurs after the workbook is saved.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="24499-146">保存工作簿之后发生此事件。</span><span class="sxs-lookup"><span data-stu-id="24499-146">Occurs after the workbook is saved.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -890,27 +642,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_WorkbookAfterXmlExportEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-147">Microsoft Excel 保存或导出到 XML 数据文件的任何打开的工作簿中的数据后发生。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-147">Occurs after Microsoft Excel saves or exports data from any open workbook to an XML data file.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="71e95-148">如果希望在 XML 数据已从特定的工作簿导出后执行某一操作，可使用 <b>AfterXmlExport</b> 事件。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="71e95-148">Use the <b>AfterXmlExport</b> event if you want to perform an operation after XML data has been exported from a particular workbook.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="71e95-149">仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="71e95-149">XML features, except for saving files in the XML Spreadsheet format, are available only in Microsoft Office Professional Edition 2003 and Microsoft Office Excel 2003.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="24499-147">在 Microsoft Excel 保存数据或将数据从任何打开的工作簿导出到 XML 数据文件之后发生。</span><span class="sxs-lookup"><span data-stu-id="24499-147">Occurs after Microsoft Excel saves or exports data from any open workbook to an XML data file.</span></span></summary>
+        <remarks><para><span data-ttu-id="24499-148">如果希望在 XML 数据已从特定的工作簿导出后执行某一操作，可使用 <b>AfterXmlExport</b> 事件。</span><span class="sxs-lookup"><span data-stu-id="24499-148">Use the <b>AfterXmlExport</b> event if you want to perform an operation after XML data has been exported from a particular workbook.</span></span></para>
+          <para><span data-ttu-id="24499-149">XML 功能（以 XML 电子表格格式保存文件除外）仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中可用。</span><span class="sxs-lookup"><span data-stu-id="24499-149">XML features, except for saving files in the XML Spreadsheet format, are available only in Microsoft Office Professional Edition 2003 and Microsoft Office Excel 2003.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WorkbookAfterXmlImport">
@@ -928,27 +663,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_WorkbookAfterXmlImportEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-150">刷新现有的 XML 数据连接或新的 XML 数据导入任一打开的 Microsoft Excel 工作簿后发生。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-150">Occurs after an existing XML data connection is refreshed or new XML data is imported into any open Microsoft Excel workbook.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="71e95-151">如果希望在 XML 数据已导入到特定的工作簿之后执行某一操作，可使用 <b>AfterXmlImport</b> 事件。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="71e95-151">Use the <b>AfterXmlImport</b> event if you want to perform an operation after XML data has been imported into a particular workbook.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="71e95-152">仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="71e95-152">XML features, except for saving files in the XML Spreadsheet format, are available only in Microsoft Office Professional Edition 2003 and Microsoft Office Excel 2003.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="24499-150">在刷新现有 XML 数据连接或将新的 XML 数据导入任何打开的 Microsoft Excel 工作簿后发生。</span><span class="sxs-lookup"><span data-stu-id="24499-150">Occurs after an existing XML data connection is refreshed or new XML data is imported into any open Microsoft Excel workbook.</span></span></summary>
+        <remarks><para><span data-ttu-id="24499-151">如果希望在 XML 数据已导入到特定的工作簿之后执行某一操作，可使用 <b>AfterXmlImport</b> 事件。</span><span class="sxs-lookup"><span data-stu-id="24499-151">Use the <b>AfterXmlImport</b> event if you want to perform an operation after XML data has been imported into a particular workbook.</span></span></para>
+          <para><span data-ttu-id="24499-152">XML 功能（以 XML 电子表格格式保存文件除外）仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中可用。</span><span class="sxs-lookup"><span data-stu-id="24499-152">XML features, except for saving files in the XML Spreadsheet format, are available only in Microsoft Office Professional Edition 2003 and Microsoft Office Excel 2003.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WorkbookBeforeClose">
@@ -966,12 +684,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_WorkbookBeforeCloseEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-153">当任一打开的工作簿关闭之前立即发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-153">Occurs immediately before any open workbook closes.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="24499-153">当任一打开的工作簿关闭之前立即发生此事件。</span><span class="sxs-lookup"><span data-stu-id="24499-153">Occurs immediately before any open workbook closes.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -990,12 +703,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_WorkbookBeforePrintEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-154">在打印任一打开的工作簿之前发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-154">Occurs before any open workbook is printed.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="24499-154">在打印任一打开的工作簿之前发生此事件。</span><span class="sxs-lookup"><span data-stu-id="24499-154">Occurs before any open workbook is printed.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1014,12 +722,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_WorkbookBeforeSaveEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-155">在保存任一打开工作簿之前发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-155">Occurs before any open workbook is saved.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="24499-155">在保存任一打开工作簿之前发生此事件。</span><span class="sxs-lookup"><span data-stu-id="24499-155">Occurs before any open workbook is saved.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1038,27 +741,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_WorkbookBeforeXmlExportEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-156">Microsoft Excel 保存或导出到 XML 数据文件的任何打开的工作簿中的数据之前发生。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-156">Occurs before Microsoft Excel saves or exports data from any open workbook to an XML data file.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="71e95-157">如果希望获取正在导出或保存的来自特定工作簿的 XML 数据，可使用 <b>BeforeXmlExport</b> 事件。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="71e95-157">Use the <b>BeforeXmlExport</b> event if you want to capture XML data that is being exported or saved from a particular workbook.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="71e95-158">仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="71e95-158">XML features, except for saving files in the XML Spreadsheet format, are available only in Microsoft Office Professional Edition 2003 and Microsoft Office Excel 2003.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="24499-156">在 Microsoft Excel 保存数据或将数据从任何打开的工作簿导出到 XML 数据文件之前发生。</span><span class="sxs-lookup"><span data-stu-id="24499-156">Occurs before Microsoft Excel saves or exports data from any open workbook to an XML data file.</span></span></summary>
+        <remarks><para><span data-ttu-id="24499-157">如果希望获取正在导出或保存的来自特定工作簿的 XML 数据，可使用 <b>BeforeXmlExport</b> 事件。</span><span class="sxs-lookup"><span data-stu-id="24499-157">Use the <b>BeforeXmlExport</b> event if you want to capture XML data that is being exported or saved from a particular workbook.</span></span></para>
+          <para><span data-ttu-id="24499-158">XML 功能（以 XML 电子表格格式保存文件除外）仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中可用。</span><span class="sxs-lookup"><span data-stu-id="24499-158">XML features, except for saving files in the XML Spreadsheet format, are available only in Microsoft Office Professional Edition 2003 and Microsoft Office Excel 2003.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WorkbookBeforeXmlImport">
@@ -1076,27 +762,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_WorkbookBeforeXmlImportEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-159">在刷新现有的 XML 数据连接或新的 XML 数据被导入任一打开的 Microsoft Excel 工作簿之前发生。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-159">Occurs before an existing XML data connection is refreshed or new XML data is imported into any open Microsoft Excel workbook.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="71e95-160">如果希望获取正在向特定工作簿导入或刷新的 XML 数据，可使用 <b>BeforeXmlImport</b> 事件。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="71e95-160">Use the <b>BeforeXmlImport</b> event if you want to capture XML data that is being imported or refreshed to a particular workbook.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="71e95-161">仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中提供了 XML 功能，除了 XML 电子表格格式保存文件。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="71e95-161">XML features, except for saving files in the XML Spreadsheet format, are available only in Microsoft Office Professional Edition 2003 and Microsoft Office Excel 2003.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="24499-159">在刷新现有 XML 数据连接或将新 XML 数据导入任何打开的 Microsoft Excel 工作簿之前发生。</span><span class="sxs-lookup"><span data-stu-id="24499-159">Occurs before an existing XML data connection is refreshed or new XML data is imported into any open Microsoft Excel workbook.</span></span></summary>
+        <remarks><para><span data-ttu-id="24499-160">如果希望获取正在向特定工作簿导入或刷新的 XML 数据，可使用 <b>BeforeXmlImport</b> 事件。</span><span class="sxs-lookup"><span data-stu-id="24499-160">Use the <b>BeforeXmlImport</b> event if you want to capture XML data that is being imported or refreshed to a particular workbook.</span></span></para>
+          <para><span data-ttu-id="24499-161">XML 功能（以 XML 电子表格格式保存文件除外）仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中可用。</span><span class="sxs-lookup"><span data-stu-id="24499-161">XML features, except for saving files in the XML Spreadsheet format, are available only in Microsoft Office Professional Edition 2003 and Microsoft Office Excel 2003.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WorkbookDeactivate">
@@ -1114,12 +783,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_WorkbookDeactivateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-162">当打开的工作簿转为非活动状态时发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-162">Occurs when any open workbook is deactivated.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="24499-162">当打开的工作簿转为非活动状态时发生此事件。</span><span class="sxs-lookup"><span data-stu-id="24499-162">Occurs when any open workbook is deactivated.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1138,12 +802,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_WorkbookModelChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-163">更新数据模型时，发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-163">Occurs when the data model is updated.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="24499-163">更新数据模型时发生。</span><span class="sxs-lookup"><span data-stu-id="24499-163">Occurs when the data model is updated.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1162,41 +821,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_WorkbookNewChartEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-164">在任何打开的工作簿中新建图表时发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-164">Occurs when a new chart is created in any open workbook.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="71e95-165">
-              <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookNewChart" />插入新图表或将其粘贴到工作表、 图表工作表或其他工作表类型中时事件发生。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="71e95-165">The <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookNewChart" /> event occurs when a new chart is inserted or pasted in a worksheet, a chart sheet, or other sheet types.</span>
-            </span>
-            <span data-ttu-id="71e95-166">如果多个图表插入或者粘贴，则会发生事件的每个图表的顺序插入或粘贴。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="71e95-166">If multiple charts are inserted or pasted, the event will occur for each chart in the order they are inserted or pasted.</span>
-            </span>
-            <span data-ttu-id="71e95-167">如果 chart 对象或图表工作表从一个位置移动到另一个，不会发生该事件。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="71e95-167">If a chart object or chart sheet is moved from one location to another, the event will not occur.</span>
-            </span>
-            <span data-ttu-id="71e95-168">但是，如果 chart 对象和图表工作表之间移动图表时，因为必须创建一个新的图表，将发生该事件。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="71e95-168">However, if the chart is moved between a chart object and a chart sheet, the event will occur because a new chart must be created.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="71e95-169">
-              <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookNewChart" />事件不会发生以下情况方案： 复制或粘贴图表工作表、 更改图表类型或图表数据源，撤消或恢复插入或粘贴图表，并加载包含图表的工作簿的更改。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="71e95-169">The <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookNewChart" /> event will not occur in the following scenarios: copying or pasting a chart sheet, changing a chart type, changing a chart data source, undoing or redoing inserting or pasting a chart, and loading a workbook that contains a chart.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="24499-164">在任何打开的工作簿中创建新图表时发生。</span><span class="sxs-lookup"><span data-stu-id="24499-164">Occurs when a new chart is created in any open workbook.</span></span></summary>
+        <remarks><para><span data-ttu-id="24499-165">当在工作表、图表工作表或其他工作表类型中插入或粘贴新图表时 <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookNewChart" /> ，将发生该事件。</span><span class="sxs-lookup"><span data-stu-id="24499-165">The <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookNewChart" /> event occurs when a new chart is inserted or pasted in a worksheet, a chart sheet, or other sheet types.</span></span> <span data-ttu-id="24499-166">如果插入或粘贴多个图表，那么按照图表的插入或粘贴顺序，每个图表都会发生一次该事件。</span><span class="sxs-lookup"><span data-stu-id="24499-166">If multiple charts are inserted or pasted, the event will occur for each chart in the order they are inserted or pasted.</span></span> <span data-ttu-id="24499-167">如果将图表对象或图表工作表从一个位置移到另一个位置，则不会发生该事件。</span><span class="sxs-lookup"><span data-stu-id="24499-167">If a chart object or chart sheet is moved from one location to another, the event will not occur.</span></span> <span data-ttu-id="24499-168">但是，如果在图表对象和图表工作表之间移动图表，仍会发生该事件，因为必须创建新图表。</span><span class="sxs-lookup"><span data-stu-id="24499-168">However, if the chart is moved between a chart object and a chart sheet, the event will occur because a new chart must be created.</span></span></para>
+          <para><span data-ttu-id="24499-169">以下情况下不会发生该事件：复制或粘贴图表工作表、更改图表类型、更改图表数据源、撤消或恢复插入或粘贴图表以及加载包含图表的工作簿。 <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookNewChart" /></span><span class="sxs-lookup"><span data-stu-id="24499-169">The <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookNewChart" /> event will not occur in the following scenarios: copying or pasting a chart sheet, changing a chart type, changing a chart data source, undoing or redoing inserting or pasting a chart, and loading a workbook that contains a chart.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WorkbookNewSheet">
@@ -1214,12 +842,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_WorkbookNewSheetEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-170">在任何打开的工作簿中新建工作表时发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-170">Occurs when a new sheet is created in any open workbook.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="24499-170">在任何打开的工作簿中新建工作表时发生此事件。</span><span class="sxs-lookup"><span data-stu-id="24499-170">Occurs when a new sheet is created in any open workbook.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1238,12 +861,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_WorkbookOpenEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-171">当打开一个工作簿时发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-171">Occurs when a workbook is opened.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="24499-171">当打开一个工作簿时发生此事件。</span><span class="sxs-lookup"><span data-stu-id="24499-171">Occurs when a workbook is opened.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1262,12 +880,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_WorkbookPivotTableCloseConnectionEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-172">在数据透视表的连接关闭之后发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-172">Occurs after a PivotTable report connection has been closed.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="24499-172">在数据透视表的连接关闭之后发生此事件。</span><span class="sxs-lookup"><span data-stu-id="24499-172">Occurs after a PivotTable report connection has been closed.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1286,12 +899,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_WorkbookPivotTableOpenConnectionEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-173">之后，发生此事件<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />已打开的连接。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-173">Occurs after a <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />report connection has been opened.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="24499-173">在打开 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 报表连接之后发生。</span><span class="sxs-lookup"><span data-stu-id="24499-173">Occurs after a <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />report connection has been opened.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1310,22 +918,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_WorkbookRowsetCompleteEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-174">
-            <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookRowsetComplete" />用户深化记录集或调用行集操作在 OLAP 数据透视表时事件发生。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-174">The <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookRowsetComplete" />event  occurs when the user either drills through the recordset or invokes the rowset action on an OLAP PivotTable.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="71e95-p105">由于记录集是以异步方式创建的，所以此事件允许自动确定已在何时完成操作。此外，由于记录集是在单独的工作表上创建的，所以需要将此事件置于工作簿级别上。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="71e95-p105">Because the recordset is created asynchronously, the event allows automation to determine when the action has been completed. Additionally, because the recordset is created on a separate sheet, the event needs to be on the workbook level.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="24499-174">当用户在 OLAP 数据透视表上钻取记录集或调用行集操作时， <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookRowsetComplete" /> 将发生该事件。</span><span class="sxs-lookup"><span data-stu-id="24499-174">The <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookRowsetComplete" />event  occurs when the user either drills through the recordset or invokes the rowset action on an OLAP PivotTable.</span></span></summary>
+        <remarks><para><span data-ttu-id="24499-p105">由于记录集是以异步方式创建的，所以此事件允许自动确定已在何时完成操作。此外，由于记录集是在单独的工作表上创建的，所以需要将此事件置于工作簿级别上。</span><span class="sxs-lookup"><span data-stu-id="24499-p105">Because the recordset is created asynchronously, the event allows automation to determine when the action has been completed. Additionally, because the recordset is created on a separate sheet, the event needs to be on the workbook level.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WorkbookSync">
@@ -1343,12 +938,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_WorkbookSyncEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="71e95-177">当作为“文档工作区”一部分的工作簿的本地副本与服务器上的副本进行同步时，发生此事件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="71e95-177">Occurs when the local copy of a workbook that is part of a Document Workspace is synchronized with the copy on the server.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="24499-177">当作为“文档工作区”一部分的工作簿的本地副本与服务器上的副本进行同步时，发生此事件。</span><span class="sxs-lookup"><span data-stu-id="24499-177">Occurs when the local copy of a workbook that is part of a Document Workspace is synchronized with the copy on the server.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
