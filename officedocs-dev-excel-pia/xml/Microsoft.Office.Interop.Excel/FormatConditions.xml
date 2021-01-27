@@ -1,13 +1,5 @@
 <Type Name="FormatConditions" FullName="Microsoft.Office.Interop.Excel.FormatConditions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ba5c29fb9f36cf63da85041a757db4dd4b830ce1" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587512" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FormatConditions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ba5c29fb9f36cf63da85041a757db4dd4b830ce1" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012171" /></Metadata><TypeSignature Language="C#" Value="public interface FormatConditions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FormatConditions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.FormatConditions" />
   <TypeSignature Language="VB.NET" Value="Public Interface FormatConditions&#xA;Implements IEnumerable" />
@@ -33,52 +25,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="46906-101">代表一个区域内所有条件格式的集合。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="46906-101">Represents the collection of conditional formats for a single range.</span>
-      </span>
-    </summary>
-    <remarks>
-      <para>
-        <span data-ttu-id="46906-102">
-          <b>FormatConditions</b>集合可包含三个条件格式。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="46906-102">The <b>FormatConditions</b> collection can contain up to three conditional formats.</span>
-        </span>
-        <span data-ttu-id="46906-103">每种格式由<see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" />对象。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="46906-103">Each format is represented by a <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> object.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="46906-104">使用<see cref="P:Microsoft.Office.Interop.Excel.Range.FormatConditions" />属性可返回<b>FormatConditions</b>对象。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="46906-104">Use the <see cref="P:Microsoft.Office.Interop.Excel.Range.FormatConditions" /> property to return a <b>FormatConditions</b> object.</span>
-        </span>
-        <span data-ttu-id="46906-105">使用<see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" />方法创建一个新的条件格式，并使用<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" />方法更改现有条件格式。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="46906-105">Use the <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> method to create a new conditional format, and use the <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> method to change an existing conditional format.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="46906-106">如果您尝试创建一个区域内的三个以上条件格式， <b>Add</b>方法将失败。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="46906-106">If you try to create more than three conditional formats for a single range, the <b>Add</b> method fails.</span>
-        </span>
-        <span data-ttu-id="46906-107">如果一个区域有三种格式，您可以使用<b>Modify</b>方法更改某个格式，或者您可以使用<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" />方法删除格式，然后使用<b>Add</b>方法创建新的格式。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="46906-107">If a range has three formats, you can use the <b>Modify</b> method to change one of the formats, or you can use the <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> method to delete a format and then use the <b>Add</b> method to create a new format.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="46906-108">有关条件格式的详细信息，请参阅<see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" />对象。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="46906-108">For more information about conditional formats, see the <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> object.</span>
-        </span>
-      </para>
-      <para></para>
-    </remarks>
+    <summary><span data-ttu-id="db6af-101">代表一个区域内所有条件格式的集合。</span><span class="sxs-lookup"><span data-stu-id="db6af-101">Represents the collection of conditional formats for a single range.</span></span></summary>
+    <remarks><para><span data-ttu-id="db6af-102"><b>FormatConditions</b>集合可以包含最多三种条件格式。</span><span class="sxs-lookup"><span data-stu-id="db6af-102">The <b>FormatConditions</b> collection can contain up to three conditional formats.</span></span> <span data-ttu-id="db6af-103">每个格式都由一个对象 <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> 表示。</span><span class="sxs-lookup"><span data-stu-id="db6af-103">Each format is represented by a <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> object.</span></span></para>
+      <para><span data-ttu-id="db6af-104">使用 <see cref="P:Microsoft.Office.Interop.Excel.Range.FormatConditions" /> 该属性可返回 <b>FormatConditions</b> 对象。</span><span class="sxs-lookup"><span data-stu-id="db6af-104">Use the <see cref="P:Microsoft.Office.Interop.Excel.Range.FormatConditions" /> property to return a <b>FormatConditions</b> object.</span></span> <span data-ttu-id="db6af-105">使用 <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> 该方法可创建新的条件格式，并使用该方法 <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> 更改现有条件格式。</span><span class="sxs-lookup"><span data-stu-id="db6af-105">Use the <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> method to create a new conditional format, and use the <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> method to change an existing conditional format.</span></span></para>
+      <para><span data-ttu-id="db6af-106">如果尝试为单个区域创建三种以上条件格式 <b>，Add</b> 方法将失败。</span><span class="sxs-lookup"><span data-stu-id="db6af-106">If you try to create more than three conditional formats for a single range, the <b>Add</b> method fails.</span></span> <span data-ttu-id="db6af-107">如果某个区域有三种格式，可以使用 <b>Modify</b> 方法更改其中一种格式，或者可以使用该方法删除格式，然后使用 <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> <b>Add</b> 方法创建新的格式。</span><span class="sxs-lookup"><span data-stu-id="db6af-107">If a range has three formats, you can use the <b>Modify</b> method to change one of the formats, or you can use the <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> method to delete a format and then use the <b>Add</b> method to create a new format.</span></span></para>
+      <para><span data-ttu-id="db6af-108">有关条件格式的信息，请参阅 <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> 对象。</span><span class="sxs-lookup"><span data-stu-id="db6af-108">For more information about conditional formats, see the <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> object.</span></span></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -111,12 +63,7 @@
       </Parameters>
       <Docs>
         <param name="Index">To be added.</param>
-        <summary>
-          <span data-ttu-id="46906-109">仅供内部使用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-109">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="db6af-109">仅供内部使用。</span><span class="sxs-lookup"><span data-stu-id="db6af-109">Reserved for internal use.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,83 +97,18 @@
         <Parameter Name="ScopeType" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">
-          <span data-ttu-id="46906-110">.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-110"></span>
-          </span>
-          <span data-ttu-id="46906-111">(<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-111"></span>
-          </span>
-          <span data-ttu-id="46906-112">指定条件格式是基于单元格值还是基于表达式。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-112">Specifies whether the conditional format is based on a cell value or an expression.</span>
-          </span>
-        </param>
-        <param name="Operator">
-          <span data-ttu-id="46906-113">条件格式运算符。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-113">The conditional format operator.</span>
-          </span>
-          <span data-ttu-id="46906-114">可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />常量： <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlBetween" />， <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlEqual" />， <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlGreater" />， <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlGreaterEqual" />， <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlLess" />， <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlLessEqual" />， <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotBetween" />，或<see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotEqual" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-114">Can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> constants: <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlBetween" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlEqual" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlGreater" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlGreaterEqual" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlLess" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlLessEqual" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotBetween" />, or <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotEqual" />.</span>
-          </span>
-          <span data-ttu-id="46906-115">如果<paramref name="Type" />是<see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlExpression" />，键入<paramref name="Operator" />参数被忽略。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-115">If <paramref name="Type" /> is <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlExpression" />, the <paramref name="Operator" /> argument is ignored.</span>
-          </span>
-        </param>
-        <param name="Formula1">
-          <span data-ttu-id="46906-116">值或与条件格式的表达式。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-116">The value or expression associated with the conditional format.</span>
-          </span>
-          <span data-ttu-id="46906-117">可以是以常量值、 一个<b>String</b>值、 单元格引用或公式。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-117">Can be a constant value, a <b>String</b> value, a cell reference, or a formula.</span>
-          </span>
-        </param>
-        <param name="Formula2">
-          <span data-ttu-id="46906-118">值或表达式的条件的第二部分相关联的格式时<paramref name="Operator" />是<see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlBetween" />或<see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotBetween" />（否则，则忽略此参数）。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-118">The value or expression associated with the second part of the conditional format when <paramref name="Operator" /> is <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlBetween" /> or <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotBetween" /> (otherwise, this argument is ignored).</span>
-          </span>
-          <span data-ttu-id="46906-119">可以是以常量值、 一个 string 值、 单元格引用或公式。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-119">Can be a constant value, a string value, a cell reference, or a formula.</span>
-          </span>
-        </param>
+        <param name="Type"><span data-ttu-id="db6af-110">.</span><span class="sxs-lookup"><span data-stu-id="db6af-110">.</span></span> <span data-ttu-id="db6af-111">(<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />.</span><span class="sxs-lookup"><span data-stu-id="db6af-111">(<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />.</span></span> <span data-ttu-id="db6af-112">指定条件格式是基于单元格值还是基于表达式。</span><span class="sxs-lookup"><span data-stu-id="db6af-112">Specifies whether the conditional format is based on a cell value or an expression.</span></span></param>
+        <param name="Operator"><span data-ttu-id="db6af-113">条件格式运算符。</span><span class="sxs-lookup"><span data-stu-id="db6af-113">The conditional format operator.</span></span> <span data-ttu-id="db6af-114">可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> ： ， <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlBetween" /> 或 <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlEqual" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlGreater" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlGreaterEqual" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlLess" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlLessEqual" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotBetween" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotEqual" /> 。</span><span class="sxs-lookup"><span data-stu-id="db6af-114">Can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> constants: <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlBetween" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlEqual" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlGreater" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlGreaterEqual" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlLess" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlLessEqual" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotBetween" />, or <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotEqual" />.</span></span> <span data-ttu-id="db6af-115">如果 <paramref name="Type" /> 为 <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlExpression" /> ， <paramref name="Operator" /> 则忽略该参数。</span><span class="sxs-lookup"><span data-stu-id="db6af-115">If <paramref name="Type" /> is <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlExpression" />, the <paramref name="Operator" /> argument is ignored.</span></span></param>
+        <param name="Formula1"><span data-ttu-id="db6af-116">与条件格式关联的值或表达式。</span><span class="sxs-lookup"><span data-stu-id="db6af-116">The value or expression associated with the conditional format.</span></span> <span data-ttu-id="db6af-117">可以是常量值、 <b>字符串</b> 值、单元格引用或公式。</span><span class="sxs-lookup"><span data-stu-id="db6af-117">Can be a constant value, a <b>String</b> value, a cell reference, or a formula.</span></span></param>
+        <param name="Formula2"><span data-ttu-id="db6af-118">与条件格式的第二部分关联的值或表达式为或 (，则忽略此参数 <paramref name="Operator" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlBetween" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotBetween" />) 。</span><span class="sxs-lookup"><span data-stu-id="db6af-118">The value or expression associated with the second part of the conditional format when <paramref name="Operator" /> is <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlBetween" /> or <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotBetween" /> (otherwise, this argument is ignored).</span></span> <span data-ttu-id="db6af-119">可为常量值、字符串值、单元格引用或公式。</span><span class="sxs-lookup"><span data-stu-id="db6af-119">Can be a constant value, a string value, a cell reference, or a formula.</span></span></param>
         <param name="String">To be added.</param>
         <param name="TextOperator">To be added.</param>
         <param name="DateOperator">To be added.</param>
         <param name="ScopeType">To be added.</param>
-        <summary>
-          <span data-ttu-id="46906-120">添加新的条件格式。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-120">Adds a new conditional format.</span>
-          </span>
-        </summary>
-        <returns>
-          <span data-ttu-id="46906-121">A<see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" />对象，表示新的条件格式。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-121">A <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> object that represents the new conditional format.</span>
-          </span>
-        </returns>
-        <remarks>
-          <para>
-            <span data-ttu-id="46906-122">不能定义范围内的三个以上条件格式。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="46906-122">You cannot define more than three conditional formats for a range.</span>
-            </span>
-            <span data-ttu-id="46906-123">使用<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" />方法，以修改现有条件格式，或使用<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" />方法删除之前添加一个新的现有格式。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="46906-123">Use the <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> method to modify an existing conditional format, or use the <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> method to delete an existing format before adding a new one.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="db6af-120">添加新的条件格式。</span><span class="sxs-lookup"><span data-stu-id="db6af-120">Adds a new conditional format.</span></span></summary>
+        <returns><span data-ttu-id="db6af-121">一 <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> 个代表新条件格式的对象。</span><span class="sxs-lookup"><span data-stu-id="db6af-121">A <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> object that represents the new conditional format.</span></span></returns>
+        <remarks><para><span data-ttu-id="db6af-122">对单个区域定义的条件格式不能超过三个。</span><span class="sxs-lookup"><span data-stu-id="db6af-122">You cannot define more than three conditional formats for a range.</span></span> <span data-ttu-id="db6af-123">使用该方法可修改现有条件格式，或使用此方法在添加新格式之前 <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> 删除现有格式。</span><span class="sxs-lookup"><span data-stu-id="db6af-123">Use the <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> method to modify an existing conditional format, or use the <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> method to delete an existing format before adding a new one.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddAboveAverage">
@@ -250,34 +132,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="46906-124">返回一个新<see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" />对象，它代表指定区域条件格式规则。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-124">Returns a new <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> object representing a conditional formatting rule for the specified range.</span>
-          </span>
-        </summary>
-        <returns>
-          <span data-ttu-id="46906-125">
-            <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" />对象</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-125">
-              <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> object</span>
-          </span>
-        </returns>
-        <remarks>
-          <para>
-            <span data-ttu-id="46906-126">
-              <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" />对象用于在单元格区域中查找高于或低于平均值或标准偏差的值。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="46906-126">The <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> object is used to find values above or below an average or standard deviation in a range of cells.</span>
-            </span>
-            <span data-ttu-id="46906-127">例如，您可以每年的绩效考核中找到上述平均业绩的人员，或者查找制造低于质量评级中的两个标准偏差的材料。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="46906-127">For example, you can find the above average performers in an annual performance review or you can locate manufactured materials that fall below two standard deviations in a quality rating.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="db6af-124">返回一 <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> 个新对象，该对象代表指定区域的条件格式规则。</span><span class="sxs-lookup"><span data-stu-id="db6af-124">Returns a new <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> object representing a conditional formatting rule for the specified range.</span></span></summary>
+        <returns><span data-ttu-id="db6af-125"><see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> object</span><span class="sxs-lookup"><span data-stu-id="db6af-125"><see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> object</span></span></returns>
+        <remarks><para><span data-ttu-id="db6af-126">该对象用于查找区域单元格中高于或低于平均值或 <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> 标准偏差的值。</span><span class="sxs-lookup"><span data-stu-id="db6af-126">The <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> object is used to find values above or below an average or standard deviation in a range of cells.</span></span> <span data-ttu-id="db6af-127">例如，可在年度业绩评估中查找高于平均业绩的人员，或者在质量评估中查找低于两个标准偏差的加工原料。</span><span class="sxs-lookup"><span data-stu-id="db6af-127">For example, you can find the above average performers in an annual performance review or you can locate manufactured materials that fall below two standard deviations in a quality rating.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddColorScale">
@@ -303,35 +161,11 @@
         <Parameter Name="ColorScaleType" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ColorScaleType">
-          <span data-ttu-id="46906-128">色阶的类型。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-128">The type of color scale.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="46906-129">返回一个新<see cref="T:Microsoft.Office.Interop.Excel.ColorScale" />对象，它代表条件格式规则的使用单元格颜色渐变来表示选定范围中包含的单元格的值相对差异。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-129">Returns a new <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" /> object representing a conditional formatting rule that uses gradations in cell colors to indicate relative differences in the values of cells included in a selected range.</span>
-          </span>
-        </summary>
-        <returns>
-          <span data-ttu-id="46906-130">
-            <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" />对象</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-130">
-              <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" /> object</span>
-          </span>
-        </returns>
-        <remarks>
-          <para>
-            <span data-ttu-id="46906-p110">色阶是直观的参照，可以帮助您了解数据的分布和变化。色阶可帮助您利用颜色的变化来标出给定区域中单元格值的相对差异。不同的颜色和颜色之间的渐变代表单元格值的差异。例如，在三色色阶中，您可以指定包含最高相对数据值的单元格为绿色，包含中间值的单元格为黄色，包含最低值的单元格为红色。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="46906-p110">Color scales are visual guides that help you understand data distribution and variation. A color scale helps you identify relative differences in the values of cells in a given range by using color variation. Different colors and gradations between colors represent differences in cell values. For example, in a three-color scale, you can specify that cells with the highest relative data values are green, cells with intermediate values are yellow, and cells with the lowest values are red.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <param name="ColorScaleType"><span data-ttu-id="db6af-128">色阶的类型。</span><span class="sxs-lookup"><span data-stu-id="db6af-128">The type of color scale.</span></span></param>
+        <summary><span data-ttu-id="db6af-129">返回一个新对象，该对象代表一个条件格式规则，该规则使用单元格颜色中的渐变来指示选定区域中包含的单元格值 <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" /> 的相对差异。</span><span class="sxs-lookup"><span data-stu-id="db6af-129">Returns a new <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" /> object representing a conditional formatting rule that uses gradations in cell colors to indicate relative differences in the values of cells included in a selected range.</span></span></summary>
+        <returns><span data-ttu-id="db6af-130"><see cref="T:Microsoft.Office.Interop.Excel.ColorScale" /> object</span><span class="sxs-lookup"><span data-stu-id="db6af-130"><see cref="T:Microsoft.Office.Interop.Excel.ColorScale" /> object</span></span></returns>
+        <remarks><para><span data-ttu-id="db6af-p110">色阶是直观的参照，可以帮助您了解数据的分布和变化。色阶可帮助您利用颜色的变化来标出给定区域中单元格值的相对差异。不同的颜色和颜色之间的渐变代表单元格值的差异。例如，在三色色阶中，您可以指定包含最高相对数据值的单元格为绿色，包含中间值的单元格为黄色，包含最低值的单元格为红色。</span><span class="sxs-lookup"><span data-stu-id="db6af-p110">Color scales are visual guides that help you understand data distribution and variation. A color scale helps you identify relative differences in the values of cells in a given range by using color variation. Different colors and gradations between colors represent differences in cell values. For example, in a three-color scale, you can specify that cells with the highest relative data values are green, cells with intermediate values are yellow, and cells with the lowest values are red.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddDatabar">
@@ -355,29 +189,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="46906-135">返回<see cref="T:Microsoft.Office.Interop.Excel.Databar" />对象，它代表数据条条件格式规则指定区域。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-135">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> object representing a data bar conditional formatting rule for the specified range.</span>
-          </span>
-        </summary>
-        <returns>
-          <span data-ttu-id="46906-136">
-            <see cref="T:Microsoft.Office.Interop.Excel.Databar" />对象</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-136">
-              <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> object</span>
-          </span>
-        </returns>
-        <remarks>
-          <para>
-            <span data-ttu-id="46906-p111">数据条可帮助您查看某个单元格相对于其他单元格的值。数据条的长度代表单元格中的值。较长的数据条代表较高的值，较短的数据条代表较低的值。数据条在辨认较高和较低数值，特别是有大量数据存在的情况下很有帮助，比如，辨认假日销售报告中的最高玩具销量和最低玩具销量。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="46906-p111">Data bars help you see the value of a cell relative to other cells. The length of the data bar represents the value in the cell. A longer bar represents a higher value and a shorter bar represents a lower value. Data bars are useful in spotting higher and lower numbers especially with large amounts of data, such as top and bottom selling toys in a holiday sales report.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="db6af-135">返回 <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> 一个对象，该对象代表指定区域的数据栏条件格式规则。</span><span class="sxs-lookup"><span data-stu-id="db6af-135">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> object representing a data bar conditional formatting rule for the specified range.</span></span></summary>
+        <returns><span data-ttu-id="db6af-136"><see cref="T:Microsoft.Office.Interop.Excel.Databar" /> object</span><span class="sxs-lookup"><span data-stu-id="db6af-136"><see cref="T:Microsoft.Office.Interop.Excel.Databar" /> object</span></span></returns>
+        <remarks><para><span data-ttu-id="db6af-p111">数据条可帮助您查看某个单元格相对于其他单元格的值。数据条的长度代表单元格中的值。较长的数据条代表较高的值，较短的数据条代表较低的值。数据条在辨认较高和较低数值，特别是有大量数据存在的情况下很有帮助，比如，辨认假日销售报告中的最高玩具销量和最低玩具销量。</span><span class="sxs-lookup"><span data-stu-id="db6af-p111">Data bars help you see the value of a cell relative to other cells. The length of the data bar represents the value in the cell. A longer bar represents a higher value and a shorter bar represents a lower value. Data bars are useful in spotting higher and lower numbers especially with large amounts of data, such as top and bottom selling toys in a holiday sales report.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddIconSetCondition">
@@ -401,29 +216,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="46906-141">返回一个新<see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" />对象代表图标集指定区域条件格式规则。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-141">Returns a new <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> object which represents an icon set conditional formatting rule for the specified range.</span>
-          </span>
-        </summary>
-        <returns>
-          <span data-ttu-id="46906-142">
-            <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" />对象</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-142">
-              <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> object</span>
-          </span>
-        </returns>
-        <remarks>
-          <para>
-            <span data-ttu-id="46906-p112">使用图标集为数据添加注释并将数据分为按阈值隔开的三到五类数据。每种图标均代表某一值范围。例如，在 3 箭头图标集中，红色向上箭头代表较高值，黄色侧箭头代表中间值，绿色向下箭头代表较低值。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="46906-p112">Use an icon set to annotate and classify data into three to five categories separated by a threshold value. Each icon represents a range of values. For example, in the 3 Arrows icon set, the red up arrow represents higher values, the yellow sideways arrow represents middle values, and the green down arrow represents lower values.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="db6af-141">返回一 <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> 个新对象，该对象代表指定范围的图标集条件格式规则。</span><span class="sxs-lookup"><span data-stu-id="db6af-141">Returns a new <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> object which represents an icon set conditional formatting rule for the specified range.</span></span></summary>
+        <returns><span data-ttu-id="db6af-142"><see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> object</span><span class="sxs-lookup"><span data-stu-id="db6af-142"><see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> object</span></span></returns>
+        <remarks><para><span data-ttu-id="db6af-p112">使用图标集为数据添加注释并将数据分为按阈值隔开的三到五类数据。每种图标均代表某一值范围。例如，在 3 箭头图标集中，红色向上箭头代表较高值，黄色侧箭头代表中间值，绿色向下箭头代表较低值。</span><span class="sxs-lookup"><span data-stu-id="db6af-p112">Use an icon set to annotate and classify data into three to five categories separated by a threshold value. Each icon represents a range of values. For example, in the 3 Arrows icon set, the red up arrow represents higher values, the yellow sideways arrow represents middle values, and the green down arrow represents lower values.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddTop10">
@@ -447,33 +243,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="46906-146">返回<see cref="T:Microsoft.Office.Interop.Excel.Top10" />对象，它代表指定区域条件格式规则。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-146">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> object representing a conditional formatting rule for the specified range.</span>
-          </span>
-        </summary>
-        <returns>
-          <span data-ttu-id="46906-147">
-            <see cref="T:Microsoft.Office.Interop.Excel.Top10" />对象</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-147">
-              <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> object</span>
-          </span>
-        </returns>
-        <remarks>
-          <para>
-            <span data-ttu-id="46906-148">使用<see cref="T:Microsoft.Office.Interop.Excel.Top10" />对象，您可以根据您指定的截止值的单元格区域中找到最小值。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="46906-148">Using the <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> object, you can find the highest and lowest values in a range of cells based on a cutoff value that you specify.</span>
-            </span>
-            <span data-ttu-id="46906-149">例如，您可以在区域报表中，底部 15%的客户调查中的产品或部门人员分析中的顶部 25 薪水找到前五个销售产品。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="46906-149">For example, you can find the top five selling products in a regional report, the bottom 15 percent of products in a customer survey, or the top 25 salaries in a department personnel analysis.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="db6af-146">返回 <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> 一个对象，该对象代表指定区域的条件格式规则。</span><span class="sxs-lookup"><span data-stu-id="db6af-146">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> object representing a conditional formatting rule for the specified range.</span></span></summary>
+        <returns><span data-ttu-id="db6af-147"><see cref="T:Microsoft.Office.Interop.Excel.Top10" /> object</span><span class="sxs-lookup"><span data-stu-id="db6af-147"><see cref="T:Microsoft.Office.Interop.Excel.Top10" /> object</span></span></returns>
+        <remarks><para><span data-ttu-id="db6af-148">使用该对象，您可以基于指定的截止值查找单元格区域的最高值和 <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> 最低值。</span><span class="sxs-lookup"><span data-stu-id="db6af-148">Using the <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> object, you can find the highest and lowest values in a range of cells based on a cutoff value that you specify.</span></span> <span data-ttu-id="db6af-149">例如，可以查找区域报告中位居前五位的销售产品、客户调查中位居最后百分之十五的产品，或者部门人员分析中位居前 25 位的薪金。</span><span class="sxs-lookup"><span data-stu-id="db6af-149">For example, you can find the top five selling products in a regional report, the bottom 15 percent of products in a customer survey, or the top 25 salaries in a department personnel analysis.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddUniqueValues">
@@ -497,29 +270,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="46906-150">返回一个新<see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" />对象，它代表指定区域条件格式规则。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-150">Returns a new <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> object representing a conditional formatting rule for the specified range.</span>
-          </span>
-        </summary>
-        <returns>
-          <span data-ttu-id="46906-151">
-            <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" />对象</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-151">
-              <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> object</span>
-          </span>
-        </returns>
-        <remarks>
-          <para>
-            <span data-ttu-id="46906-152">您可以使用<see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" />对象快速显现包含唯一或重复值的单元格。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="46906-152">You can use the <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> object to quickly visualize cells that contain either unique or duplicate values.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="db6af-150">返回一 <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> 个新对象，该对象代表指定区域的条件格式规则。</span><span class="sxs-lookup"><span data-stu-id="db6af-150">Returns a new <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> object representing a conditional formatting rule for the specified range.</span></span></summary>
+        <returns><span data-ttu-id="db6af-151"><see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> object</span><span class="sxs-lookup"><span data-stu-id="db6af-151"><see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> object</span></span></returns>
+        <remarks><para><span data-ttu-id="db6af-152">可以使用该对象快速可视化包含唯一值或重复 <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> 值的单元格。</span><span class="sxs-lookup"><span data-stu-id="db6af-152">You can use the <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> object to quickly visualize cells that contain either unique or duplicate values.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -545,12 +299,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="46906-153">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-153">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="db6af-153">返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</span><span class="sxs-lookup"><span data-stu-id="db6af-153">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -578,12 +327,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="46906-154">返回集合中对象的数目。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-154">Returns the number of objects in the collection.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="db6af-154">返回集合中对象的数目。</span><span class="sxs-lookup"><span data-stu-id="db6af-154">Returns the number of objects in the collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -611,33 +355,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="46906-155">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-155">Returns a 32-bit integer that indicates the application in which this object was created.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="db6af-155">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span><span class="sxs-lookup"><span data-stu-id="db6af-155">Returns a 32-bit integer that indicates the application in which this object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="46906-156">如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="46906-156">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="46906-157">
-              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="46906-157">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
-            </span>
-            <span data-ttu-id="46906-158">例如，Microsoft Excel 具有 XCEL 的创建者代码。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="46906-158">For example, Microsoft Excel has the creator code XCEL.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="db6af-156">如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</span><span class="sxs-lookup"><span data-stu-id="db6af-156">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span></span></para>
+          <para><span data-ttu-id="db6af-157"><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。</span><span class="sxs-lookup"><span data-stu-id="db6af-157">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="db6af-158">例如，Microsoft Excel 的创建者代码为 XCEL。</span><span class="sxs-lookup"><span data-stu-id="db6af-158">For example, Microsoft Excel has the creator code XCEL.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -661,12 +383,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="46906-159">删除对象。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-159">Deletes the object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="db6af-159">删除对象。</span><span class="sxs-lookup"><span data-stu-id="db6af-159">Deletes the object.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -725,32 +442,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="46906-160">所需的<b>对象</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-160">Required <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="46906-161">对象的索引号。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-161">The index number for the object.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="46906-162">从集合中返回一个对象。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-162">Returns a single object from a collection.</span>
-          </span>
-        </summary>
-        <returns>
-          <span data-ttu-id="46906-163">
-            <b>对象</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-163">
-              <b>Object</b>
-            </span>
-          </span>
-        </returns>
+        <param name="Index"><span data-ttu-id="db6af-160">必需 <b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="db6af-160">Required <b>Object</b>.</span></span> <span data-ttu-id="db6af-161">对象的索引号。</span><span class="sxs-lookup"><span data-stu-id="db6af-161">The index number for the object.</span></span></param>
+        <summary><span data-ttu-id="db6af-162">从集合中返回一个对象。</span><span class="sxs-lookup"><span data-stu-id="db6af-162">Returns a single object from a collection.</span></span></summary>
+        <returns><span data-ttu-id="db6af-163"><b>Object</b></span><span class="sxs-lookup"><span data-stu-id="db6af-163"><b>Object</b></span></span></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -777,12 +471,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="46906-164">返回指定对象的父对象。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="46906-164">Returns the parent object for the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="db6af-164">返回指定对象的父对象。</span><span class="sxs-lookup"><span data-stu-id="db6af-164">Returns the parent object for the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
