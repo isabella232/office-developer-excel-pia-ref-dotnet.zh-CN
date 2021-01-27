@@ -1,13 +1,5 @@
 <Type Name="PivotCaches" FullName="Microsoft.Office.Interop.Excel.PivotCaches">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a96fa5538045c8441266412dcd431b316fe7edd6" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20586875" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PivotCaches : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a96fa5538045c8441266412dcd431b316fe7edd6" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010924" /></Metadata><TypeSignature Language="C#" Value="public interface PivotCaches : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotCaches implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotCaches" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotCaches&#xA;Implements IEnumerable" />
@@ -33,27 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="cbdfc-101">代表工作簿中数据透视表的内存缓存的集合。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="cbdfc-101">Represents the collection of memory caches from the PivotTable reports in a workbook.</span>
-      </span>
-    </summary>
-    <remarks>
-      <para>
-        <span data-ttu-id="cbdfc-102">每一个内存缓存都由<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />对象。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="cbdfc-102">Each memory cache is represented by a <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> object.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="cbdfc-103">使用<see cref="M:Microsoft.Office.Interop.Excel._Workbook.PivotCaches" />方法，以返回<b>PivotCaches</b>集合。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="cbdfc-103">Use the <see cref="M:Microsoft.Office.Interop.Excel._Workbook.PivotCaches" /> method to return the <b>PivotCaches</b> collection.</span>
-        </span>
-      </para>
-      <para></para>
-    </remarks>
+    <summary><span data-ttu-id="2c4bc-101">代表工作簿中数据透视表的内存缓存的集合。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-101">Represents the collection of memory caches from the PivotTable reports in a workbook.</span></span></summary>
+    <remarks><para><span data-ttu-id="2c4bc-102">每个内存缓存都由一个对象 <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> 表示。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-102">Each memory cache is represented by a <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> object.</span></span></para>
+      <para><span data-ttu-id="2c4bc-103">使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.PivotCaches" /> 该方法可返回 <b>PivotCaches</b> 集合。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-103">Use the <see cref="M:Microsoft.Office.Interop.Excel._Workbook.PivotCaches" /> method to return the <b>PivotCaches</b> collection.</span></span></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -86,12 +61,7 @@
       </Parameters>
       <Docs>
         <param name="Index">To be added.</param>
-        <summary>
-          <span data-ttu-id="cbdfc-104">仅供内部使用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cbdfc-104">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="2c4bc-104">仅供内部使用。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-104">Reserved for internal use.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -122,70 +92,12 @@
         <Parameter Name="SourceData" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SourceType">
-          <span data-ttu-id="cbdfc-105">所需<see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cbdfc-105">Required <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" />.</span>
-          </span>
-          <span data-ttu-id="cbdfc-106">数据透视表缓存数据的源。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cbdfc-106">The source of the PivotTable cache data.</span>
-          </span>
-          <span data-ttu-id="cbdfc-107">可以是以下<b>XlPivotTableSourceType</b>常量之一：<b>xlConsolidation</b><b>xlDatabase</b><b>xlExternal</b><b>xlPivotTable</b><b>xlScenario</b></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cbdfc-107">Can be one of the following <b>XlPivotTableSourceType</b> constants:<b>xlConsolidation</b><b>xlDatabase</b><b>xlExternal</b><b>xlPivotTable</b><b>xlScenario</b></span>
-          </span>
-        </param>
-        <param name="SourceData">
-          <span data-ttu-id="cbdfc-108">可选的<b>对象</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cbdfc-108">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="cbdfc-109">新数据透视表缓存的数据。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cbdfc-109">The data for the new PivotTable cache.</span>
-          </span>
-          <span data-ttu-id="cbdfc-110">如果此参数是必需<paramref name="SourceType" />不<b>xlExternal</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cbdfc-110">This argument is required if <paramref name="SourceType" /> isn't <b>xlExternal</b>.</span>
-          </span>
-          <span data-ttu-id="cbdfc-111">可以是<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象、 数组的范围或一个文本常量值，该值代表现有数据透视表报表的名称。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cbdfc-111">Can be a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object, an array of ranges, or a text constant that represents the name of an existing PivotTable report.</span>
-          </span>
-          <span data-ttu-id="cbdfc-112">对于外部数据库，这是一个两个元素的数组。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cbdfc-112">For an external database, this is a two-element array.</span>
-          </span>
-          <span data-ttu-id="cbdfc-113">第一个元素是指定的数据提供程序的连接字符串。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cbdfc-113">The first element is the connection string specifying the provider of the data.</span>
-          </span>
-          <span data-ttu-id="cbdfc-114">第二个元素都是用来获取数据的 SQL 查询字符串。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cbdfc-114">The second element is the SQL query string used to get the data.</span>
-          </span>
-          <span data-ttu-id="cbdfc-115">如果指定此参数，则还必须指定<paramref name="SourceType" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cbdfc-115">If you specify this argument, you must also specify <paramref name="SourceType" />.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="cbdfc-116">添加到新的数据透视表缓存<see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" />集合。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cbdfc-116">Adds a new PivotTable cache to a <see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" /> collection.</span>
-          </span>
-        </summary>
+        <param name="SourceType"><span data-ttu-id="2c4bc-105">必需 <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> 。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-105">Required <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" />.</span></span> <span data-ttu-id="2c4bc-106">数据透视表缓存数据的源。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-106">The source of the PivotTable cache data.</span></span> <span data-ttu-id="2c4bc-107">可以是以下 <b>XlPivotTableSourceType</b> 常量之一<b>：xlConsolidation</b><b>xlDatabase</b><b>xlExternal</b><b>xlPivotTable</b><b>xlScenario</b></span><span class="sxs-lookup"><span data-stu-id="2c4bc-107">Can be one of the following <b>XlPivotTableSourceType</b> constants:<b>xlConsolidation</b><b>xlDatabase</b><b>xlExternal</b><b>xlPivotTable</b><b>xlScenario</b></span></span></param>
+        <param name="SourceData"><span data-ttu-id="2c4bc-108">可选 <b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-108">Optional <b>Object</b>.</span></span> <span data-ttu-id="2c4bc-109">新数据透视表缓存的数据。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-109">The data for the new PivotTable cache.</span></span> <span data-ttu-id="2c4bc-110">如果不是 <paramref name="SourceType" /> <b>xlExternal，则此参数是必需的</b>。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-110">This argument is required if <paramref name="SourceType" /> isn't <b>xlExternal</b>.</span></span> <span data-ttu-id="2c4bc-111">可以是对象、区域数组或代表现有数据透视表 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 名称的文本常量。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-111">Can be a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object, an array of ranges, or a text constant that represents the name of an existing PivotTable report.</span></span> <span data-ttu-id="2c4bc-112">对于外部数据库，这是一个双元素数组。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-112">For an external database, this is a two-element array.</span></span> <span data-ttu-id="2c4bc-113">第一个元素是指定数据提供程序的连接字符串。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-113">The first element is the connection string specifying the provider of the data.</span></span> <span data-ttu-id="2c4bc-114">第二个元素是SQL数据所使用的查询字符串。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-114">The second element is the SQL query string used to get the data.</span></span> <span data-ttu-id="2c4bc-115">如果指定此参数，则还必须指定 <paramref name="SourceType" /> 。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-115">If you specify this argument, you must also specify <paramref name="SourceType" />.</span></span></param>
+        <summary><span data-ttu-id="2c4bc-116">向集合添加新的数据透视表 <see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" /> 缓存。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-116">Adds a new PivotTable cache to a <see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" /> collection.</span></span></summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <span data-ttu-id="cbdfc-117">如果数据透视表缓存不引用<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />对象之前保存工作簿时，会自动删除的数据透视表缓存。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="cbdfc-117">If the PivotTable cache isn't referenced by a <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> object, the PivotTable cache is automatically deleted before the workbook is saved.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="2c4bc-117">如果数据透视表缓存未由对象引用，则数据透视表缓存会在保存 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 工作簿之前自动删除。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-117">If the PivotTable cache isn't referenced by a <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> object, the PivotTable cache is automatically deleted before the workbook is saved.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -211,12 +123,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="cbdfc-118">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cbdfc-118">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="2c4bc-118">返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-118">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -244,12 +151,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="cbdfc-119">返回集合中对象的数目。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cbdfc-119">Returns the number of objects in the collection.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="2c4bc-119">返回集合中对象的数目。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-119">Returns the number of objects in the collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -278,72 +180,15 @@
         <Parameter Name="Version" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SourceType">
-          <span data-ttu-id="cbdfc-120">所需<paramref name="SourceType" />可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" />常量： <b>xlConsolidation</b>、 <b>xlDatabase</b>或<b>xlExternal</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cbdfc-120">Required <paramref name="SourceType" /> can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> constants: <b>xlConsolidation</b>, <b>xlDatabase</b>, or <b>xlExternal</b>.</span>
-          </span>
-        </param>
-        <param name="SourceData">
-          <span data-ttu-id="cbdfc-121">可选<b>对象</b>的新数据<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />缓存。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cbdfc-121">Optional <b>Object</b> The data for the new <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> cache.</span>
-          </span>
-        </param>
-        <param name="Version">
-          <span data-ttu-id="cbdfc-122">可选<b>对象</b>版本<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cbdfc-122">Optional <b>Object</b> Version of the <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</span>
-          </span>
-          <span data-ttu-id="cbdfc-123">版本可以是一个<see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableVersionList" />常量。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cbdfc-123">The version can be one of the <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableVersionList" /> constants.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="cbdfc-124">创建一个新<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cbdfc-124">Creates a new <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />.</span>
-          </span>
-        </summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />
-        </returns>
-        <remarks>
-          <para>
-            <span data-ttu-id="cbdfc-125">以下两个<see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" />时使用此方法不支持常量： <b>xlPivotTable</b>和<b>xlScenario</b>。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="cbdfc-125">The following two <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> constants are not supported when using this method: <b>xlPivotTable</b> and <b>xlScenario</b>.</span>
-            </span>
-            <span data-ttu-id="cbdfc-126">如果提供这两个常量之一，则返回一个运行时错误。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="cbdfc-126">A run-time error is returned if one of these two constants is supplied.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="cbdfc-127">
-              <paramref name="SourceData" />参数是必需的如果<paramref name="SourceType" />不 xlExternal。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="cbdfc-127">The <paramref name="SourceData" /> argument is required if <paramref name="SourceType" /> isn't xlExternal.</span>
-            </span>
-            <span data-ttu-id="cbdfc-128">它可以是<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象 (时<paramref name="SourceType" />是 xlConsolidation 或 xlDatabase) 或 Excel<see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />对象 (时<paramref name="SourceType" />是 xlExternal)。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="cbdfc-128">It can be a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object (when <paramref name="SourceType" /> is either xlConsolidation or xlDatabase) or an Excel <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> object (when <paramref name="SourceType" /> is xlExternal).</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="cbdfc-129">不能提供的版本时<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />将 xlPivotTableVersion12。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="cbdfc-129">When not supplied, the version of the <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> will be xlPivotTableVersion12.</span>
-            </span>
-            <span data-ttu-id="cbdfc-130">
-              <b>XlPivotTableVersionCurrent</b>常量使用不允许，并返回一个运行时错误，如果它提供。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="cbdfc-130">The use of the <b>xlPivotTableVersionCurrent</b> constant is not allowed and returns a run-time error if it is supplied.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <param name="SourceType"><span data-ttu-id="2c4bc-120">必需 <paramref name="SourceType" /> 可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> <b>：xlConsolidation、xlDatabase</b>或<b>xlExternal。</b> <b></b></span><span class="sxs-lookup"><span data-stu-id="2c4bc-120">Required <paramref name="SourceType" /> can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> constants: <b>xlConsolidation</b>, <b>xlDatabase</b>, or <b>xlExternal</b>.</span></span></param>
+        <param name="SourceData"><span data-ttu-id="2c4bc-121"><b>可选对象</b>新缓存 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 的数据。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-121">Optional <b>Object</b> The data for the new <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> cache.</span></span></param>
+        <param name="Version"><span data-ttu-id="2c4bc-122">的 <b>可选</b> 对象版本 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-122">Optional <b>Object</b> Version of the <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</span></span>  <span data-ttu-id="2c4bc-123">版本可以是常量 <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableVersionList" /> 之一。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-123">The version can be one of the <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableVersionList" /> constants.</span></span></param>
+        <summary><span data-ttu-id="2c4bc-124">创建新的 <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> 。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-124">Creates a new <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />.</span></span></summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /></returns>
+        <remarks><para><span data-ttu-id="2c4bc-125">使用此方法时不支持以下两个常量 <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> <b>：xlPivotTable</b>和<b>xlScenario。</b></span><span class="sxs-lookup"><span data-stu-id="2c4bc-125">The following two <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> constants are not supported when using this method: <b>xlPivotTable</b> and <b>xlScenario</b>.</span></span> <span data-ttu-id="2c4bc-126">如果提供这两个常量之一，将返回运行时错误。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-126">A run-time error is returned if one of these two constants is supplied.</span></span></para>
+          <para><span data-ttu-id="2c4bc-127">如果 <paramref name="SourceData" /> 参数不是 <paramref name="SourceType" /> xlExternal，则参数是必需的。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-127">The <paramref name="SourceData" /> argument is required if <paramref name="SourceType" /> isn't xlExternal.</span></span> <span data-ttu-id="2c4bc-128">当为 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> <paramref name="SourceType" /> xlConsolidation (xlDatabase) 或 Excel 对象为 <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> xlExternal (时，它可以是一个对象 <paramref name="SourceType" />) 。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-128">It can be a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object (when <paramref name="SourceType" /> is either xlConsolidation or xlDatabase) or an Excel <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> object (when <paramref name="SourceType" /> is xlExternal).</span></span></para>
+          <para><span data-ttu-id="2c4bc-129">未提供时，版本将为 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> xlPivotTableVersion12。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-129">When not supplied, the version of the <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> will be xlPivotTableVersion12.</span></span>  <span data-ttu-id="2c4bc-130">不允许使用 <b>xlPivotTableVersionCurrent</b> 常量，如果提供该常量，则返回运行时错误。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-130">The use of the <b>xlPivotTableVersionCurrent</b> constant is not allowed and returns a run-time error if it is supplied.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -369,33 +214,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="cbdfc-131">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cbdfc-131">Returns a 32-bit integer that indicates the application in which this object was created.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="2c4bc-131">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-131">Returns a 32-bit integer that indicates the application in which this object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="cbdfc-132">如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="cbdfc-132">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="cbdfc-133">
-              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="cbdfc-133">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
-            </span>
-            <span data-ttu-id="cbdfc-134">例如，Microsoft Excel 具有 XCEL 的创建者代码。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="cbdfc-134">For example, Microsoft Excel has the creator code XCEL.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="2c4bc-132">如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-132">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span></span></para>
+          <para><span data-ttu-id="2c4bc-133"><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-133">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="2c4bc-134">例如，Microsoft Excel 的创建者代码为 XCEL。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-134">For example, Microsoft Excel has the creator code XCEL.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -453,22 +276,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="cbdfc-135">所需的<b>对象</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cbdfc-135">Required <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="cbdfc-136">对象的索引号。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cbdfc-136">The index number for the object.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="cbdfc-137">从集合中返回一个对象。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cbdfc-137">Returns a single object from a collection.</span>
-          </span>
-        </summary>
+        <param name="Index"><span data-ttu-id="2c4bc-135">必需 <b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-135">Required <b>Object</b>.</span></span> <span data-ttu-id="2c4bc-136">对象的索引号。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-136">The index number for the object.</span></span></param>
+        <summary><span data-ttu-id="2c4bc-137">从集合中返回一个对象。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-137">Returns a single object from a collection.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -496,12 +305,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="cbdfc-138">返回指定对象的父对象。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="cbdfc-138">Returns the parent object for the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="2c4bc-138">返回指定对象的父对象。</span><span class="sxs-lookup"><span data-stu-id="2c4bc-138">Returns the parent object for the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

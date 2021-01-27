@@ -1,13 +1,5 @@
 <Type Name="Validation" FullName="Microsoft.Office.Interop.Excel.Validation">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="64490ccfa07c156fb946aaf6fbcab62bd0310122" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575801" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Validation" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="64490ccfa07c156fb946aaf6fbcab62bd0310122" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009350" /></Metadata><TypeSignature Language="C#" Value="public interface Validation" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Validation" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Validation" />
   <TypeSignature Language="VB.NET" Value="Public Interface Validation" />
@@ -29,27 +21,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="2307e-101">代表工作表区域的数据有效性规则。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="2307e-101">Represents data validation for a worksheet range.</span>
-      </span>
-    </summary>
-    <remarks>
-      <para>
-        <span data-ttu-id="2307e-102">使用<see cref="P:Microsoft.Office.Interop.Excel.Range.Validation" />属性返回<b>Validation</b>对象。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="2307e-102">Use the <see cref="P:Microsoft.Office.Interop.Excel.Range.Validation" /> property to return the <b>Validation</b> object.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="2307e-103">使用<see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" />添加到区域的数据验证并创建新的<b>Validation</b>对象的方法。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="2307e-103">Use the <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> method to add data validation to a range and create a new <b>Validation</b> object.</span>
-        </span>
-      </para>
-      <para></para>
-    </remarks>
+    <summary><span data-ttu-id="18625-101">代表工作表区域的数据有效性规则。</span><span class="sxs-lookup"><span data-stu-id="18625-101">Represents data validation for a worksheet range.</span></span></summary>
+    <remarks><para><span data-ttu-id="18625-102">使用 <see cref="P:Microsoft.Office.Interop.Excel.Range.Validation" /> 该属性可返回 <b>Validation</b> 对象。</span><span class="sxs-lookup"><span data-stu-id="18625-102">Use the <see cref="P:Microsoft.Office.Interop.Excel.Range.Validation" /> property to return the <b>Validation</b> object.</span></span></para>
+      <para><span data-ttu-id="18625-103">使用此方法 <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> 向区域添加数据验证并创建新的 <b>Validation</b> 对象。</span><span class="sxs-lookup"><span data-stu-id="18625-103">Use the <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> method to add data validation to a range and create a new <b>Validation</b> object.</span></span></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -78,170 +53,52 @@
         <Parameter Name="Formula2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">
-          <span data-ttu-id="2307e-104">所需<see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-104">Required <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />.</span>
-          </span>
-          <span data-ttu-id="2307e-105">有效性验证类型。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-105">The validation type.</span>
-          </span>
-        </param>
-        <param name="AlertStyle">
-          <span data-ttu-id="2307e-106">可选的<b>对象</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-106">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="2307e-107">有效性验证警告样式。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-107">The validation alert style.</span>
-          </span>
-          <span data-ttu-id="2307e-108">可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />常量： <b>xlValidAlertInformation</b>、 <b>xlValidAlertStop</b>或<b>xlValidAlertWarning</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-108">Can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" /> constants: <b>xlValidAlertInformation</b>, <b>xlValidAlertStop</b>, or <b>xlValidAlertWarning</b>.</span>
-          </span>
-        </param>
-        <param name="Operator">
-          <span data-ttu-id="2307e-109">可选的<b>对象</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-109">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="2307e-110">数据有效性验证运算符。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-110">The data validation operator.</span>
-          </span>
-          <span data-ttu-id="2307e-111">可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />常量： <b>xlBetween</b>、 <b>xlEqual</b>、 <b>xlGreater</b>、 <b>xlGreaterEqual</b>、 <b>xlLess</b>、 <b>xlLessEqual</b>、 <b>xlNotBetween</b>或<b>xlNotEqual</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-111">Can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> constants: <b>xlBetween</b>, <b>xlEqual</b>, <b>xlGreater</b>, <b>xlGreaterEqual</b>, <b>xlLess</b>, <b>xlLessEqual</b>, <b>xlNotBetween</b>, or <b>xlNotEqual</b>.</span>
-          </span>
-        </param>
-        <param name="Formula1">
-          <span data-ttu-id="2307e-112">可选的<b>对象</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-112">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="2307e-113">数据验证公式中的第一部分。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-113">The first part of the data validation equation.</span>
-          </span>
-        </param>
-        <param name="Formula2">
-          <span data-ttu-id="2307e-114">可选的<b>对象</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-114">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="2307e-115">数据有效性的第二部分时<paramref name="Operator" />为<b>xlBetween</b>或<b>xlNotBetween</b> （否则，则忽略此参数）。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-115">The second part of the data validation when <paramref name="Operator" /> is <b>xlBetween</b> or <b>xlNotBetween</b> (otherwise, this argument is ignored).</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="2307e-116">向指定区域内添加数据有效性验证。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-116">Adds data validation to the specified range.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="2307e-117">Add 方法要求的参数，具体取决于有效性验证类型下, 表中所示。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="2307e-117">The Add method requires different arguments, depending on the validation type, as shown in the following table.</span>
-            </span>
-          </para>
+        <param name="Type"><span data-ttu-id="18625-104">必需 <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" /> 。</span><span class="sxs-lookup"><span data-stu-id="18625-104">Required <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />.</span></span> <span data-ttu-id="18625-105">有效性验证类型。</span><span class="sxs-lookup"><span data-stu-id="18625-105">The validation type.</span></span></param>
+        <param name="AlertStyle"><span data-ttu-id="18625-106">可选 <b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="18625-106">Optional <b>Object</b>.</span></span> <span data-ttu-id="18625-107">验证警报样式。</span><span class="sxs-lookup"><span data-stu-id="18625-107">The validation alert style.</span></span> <span data-ttu-id="18625-108">可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" /> ： <b>xlValidAlertInformation</b>、 <b>xlValidAlertStop</b>或 <b>xlValidAlertWarning</b>。</span><span class="sxs-lookup"><span data-stu-id="18625-108">Can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" /> constants: <b>xlValidAlertInformation</b>, <b>xlValidAlertStop</b>, or <b>xlValidAlertWarning</b>.</span></span></param>
+        <param name="Operator"><span data-ttu-id="18625-109">可选 <b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="18625-109">Optional <b>Object</b>.</span></span> <span data-ttu-id="18625-110">数据验证运算符。</span><span class="sxs-lookup"><span data-stu-id="18625-110">The data validation operator.</span></span> <span data-ttu-id="18625-111">可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> <b>：xlBetween</b>、 <b>xlEqual</b>、 <b>xlGreater</b>、 <b>xlGreaterEqual</b>、 <b>xlLess</b>、 <b>xlLessEqual</b>、 <b>xlNotBetween</b>或 <b>xlNotEqual</b>。</span><span class="sxs-lookup"><span data-stu-id="18625-111">Can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> constants: <b>xlBetween</b>, <b>xlEqual</b>, <b>xlGreater</b>, <b>xlGreaterEqual</b>, <b>xlLess</b>, <b>xlLessEqual</b>, <b>xlNotBetween</b>, or <b>xlNotEqual</b>.</span></span></param>
+        <param name="Formula1"><span data-ttu-id="18625-112">可选 <b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="18625-112">Optional <b>Object</b>.</span></span> <span data-ttu-id="18625-113">数据验证公式中的第一部分。</span><span class="sxs-lookup"><span data-stu-id="18625-113">The first part of the data validation equation.</span></span></param>
+        <param name="Formula2"><span data-ttu-id="18625-114">可选 <b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="18625-114">Optional <b>Object</b>.</span></span> <span data-ttu-id="18625-115">数据验证的第二部分是 <paramref name="Operator" /> <b>xlBetween</b> 或 <b>xlNotBetween</b> (，否则，此参数将被忽略) 。</span><span class="sxs-lookup"><span data-stu-id="18625-115">The second part of the data validation when <paramref name="Operator" /> is <b>xlBetween</b> or <b>xlNotBetween</b> (otherwise, this argument is ignored).</span></span></param>
+        <summary><span data-ttu-id="18625-116">向指定区域内添加数据有效性验证。</span><span class="sxs-lookup"><span data-stu-id="18625-116">Adds data validation to the specified range.</span></span></summary>
+        <remarks><para><span data-ttu-id="18625-117">Add 方法需要不同的参数，具体取决于验证类型，如下表所示。</span><span class="sxs-lookup"><span data-stu-id="18625-117">The Add method requires different arguments, depending on the validation type, as shown in the following table.</span></span></para>
           <list type="table">
             <item>
-              <term>
-                <span data-ttu-id="2307e-118">
-                  <b>xlValidateCustom</b>
-                </span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="2307e-118">
-                    <b>xlValidateCustom</b>
-                  </span>
-                </span>
-              </term>
-              <description>
-                <span data-ttu-id="2307e-119">
-                  <paramref name="Formula1" />需要;<paramref name="Formula2" /> ，则忽略。</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="2307e-119">
-                    <paramref name="Formula1" /> is required; <paramref name="Formula2" /> is ignored.</span>
-                </span>
-                <span data-ttu-id="2307e-120">
-                  <paramref name="Formula1" />必须包含无效数据项时计算结果为<b>True</b>时是有效的数据输入和<b>False</b>的表达式。</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="2307e-120">
-                    <paramref name="Formula1" /> must contain an expression that evaluates to <b>True</b> when data entry is valid and <b>False</b> when data entry is invalid.</span>
-                </span>
-              </description>
+              <term><span data-ttu-id="18625-118">
+                <b>xlValidateCustom</b>
+              </span><span class="sxs-lookup"><span data-stu-id="18625-118">
+                <b>xlValidateCustom</b>
+              </span></span></term>
+              <description><span data-ttu-id="18625-119">
+                <paramref name="Formula1" /> 必需; <paramref name="Formula2" /> 将被忽略。</span><span class="sxs-lookup"><span data-stu-id="18625-119">
+                <paramref name="Formula1" /> is required; <paramref name="Formula2" /> is ignored.</span></span> <span data-ttu-id="18625-120"><paramref name="Formula1" />必须包含一个表达式，当数据输入有效时，其计算结果为<b>True;</b>如果数据输入无效，则其计算结果为<b>False。</b></span><span class="sxs-lookup"><span data-stu-id="18625-120"><paramref name="Formula1" /> must contain an expression that evaluates to <b>True</b> when data entry is valid and <b>False</b> when data entry is invalid.</span></span></description>
             </item>
             <item>
-              <term>
-                <span data-ttu-id="2307e-121">
-                  <b>xlInputOnly</b>
-                </span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="2307e-121">
-                    <b>xlInputOnly</b>
-                  </span>
-                </span>
-              </term>
-              <description>
-                <span data-ttu-id="2307e-122">
-                  <paramref name="AlertStyle" />
-                  <paramref name="Formula1" />，或<paramref name="Formula2" />使用。</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="2307e-122">
-                    <paramref name="AlertStyle" />, <paramref name="Formula1" />, or <paramref name="Formula2" /> are used.</span>
-                </span>
-              </description>
+              <term><span data-ttu-id="18625-121">
+                <b>xlInputOnly</b>
+              </span><span class="sxs-lookup"><span data-stu-id="18625-121">
+                <b>xlInputOnly</b>
+              </span></span></term>
+              <description><span data-ttu-id="18625-122">
+                <paramref name="AlertStyle" />， <paramref name="Formula1" /> 或 <paramref name="Formula2" /> 已使用。</span><span class="sxs-lookup"><span data-stu-id="18625-122">
+                <paramref name="AlertStyle" />, <paramref name="Formula1" />, or <paramref name="Formula2" /> are used.</span></span></description>
             </item>
             <item>
-              <term>
-                <span data-ttu-id="2307e-123">
-                  <b>xlValidateList</b>
-                </span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="2307e-123">
-                    <b>xlValidateList</b>
-                  </span>
-                </span>
-              </term>
-              <description>
-                <span data-ttu-id="2307e-124">
-                  <paramref name="Formula1" />需要;<paramref name="Formula2" /> ，则忽略。</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="2307e-124">
-                    <paramref name="Formula1" /> is required; <paramref name="Formula2" /> is ignored.</span>
-                </span>
-                <span data-ttu-id="2307e-125">
-                  <paramref name="Formula1" />必须包含逗号分隔的值列表或对此列表的工作表引用。</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="2307e-125">
-                    <paramref name="Formula1" /> must contain either a comma-delimited list of values or a worksheet reference to this list.</span>
-                </span>
-              </description>
+              <term><span data-ttu-id="18625-123">
+                <b>xlValidateList</b>
+              </span><span class="sxs-lookup"><span data-stu-id="18625-123">
+                <b>xlValidateList</b>
+              </span></span></term>
+              <description><span data-ttu-id="18625-124">
+                <paramref name="Formula1" /> 必需; <paramref name="Formula2" /> 将被忽略。</span><span class="sxs-lookup"><span data-stu-id="18625-124">
+                <paramref name="Formula1" /> is required; <paramref name="Formula2" /> is ignored.</span></span> <span data-ttu-id="18625-125"><paramref name="Formula1" /> 必须包含以逗号分隔的值列表或对此列表的工作表引用。</span><span class="sxs-lookup"><span data-stu-id="18625-125"><paramref name="Formula1" /> must contain either a comma-delimited list of values or a worksheet reference to this list.</span></span></description>
             </item>
             <item>
-              <term>
-                <span data-ttu-id="2307e-126">
-                  <b>xlValidateWholeNumber</b>、<b>xlValidateDate</b>、<b>xlValidateDecimal</b>、<b>xlValidateTextLength</b> 或 <b>xlValidateTime</b></span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="2307e-126">
-                    <b>xlValidateWholeNumber</b>, <b>xlValidateDate</b>, <b>xlValidateDecimal</b>, <b>xlValidateTextLength</b>, or <b>xlValidateTime</b></span>
-                </span>
-              </term>
-              <description>
-                <span data-ttu-id="2307e-127">一种：<paramref name="Formula1" />或<paramref name="Formula2" />必须指定或指定这两个月。</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="2307e-127">One of either <paramref name="Formula1" /> or <paramref name="Formula2" /> must be specified, or both may be specified.</span>
-                </span>
-              </description>
+              <term><span data-ttu-id="18625-126">
+                <b>xlValidateWholeNumber</b>、<b>xlValidateDate</b>、<b>xlValidateDecimal</b>、<b>xlValidateTextLength</b> 或 <b>xlValidateTime</b></span><span class="sxs-lookup"><span data-stu-id="18625-126">
+                <b>xlValidateWholeNumber</b>, <b>xlValidateDate</b>, <b>xlValidateDecimal</b>, <b>xlValidateTextLength</b>, or <b>xlValidateTime</b></span></span></term>
+              <description><span data-ttu-id="18625-127">可指定 <paramref name="Formula1" /> 其中一个 <paramref name="Formula2" /> 或必须指定两者之一，也可以同时指定这两者。</span><span class="sxs-lookup"><span data-stu-id="18625-127">One of either <paramref name="Formula1" /> or <paramref name="Formula2" /> must be specified, or both may be specified.</span></span></description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AlertStyle">
@@ -267,30 +124,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="2307e-128">返回有效性验证警告样式。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-128">Returns the validation alert style.</span>
-          </span>
-          <span data-ttu-id="2307e-129">只读<see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-129">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="18625-128">返回有效性检验警告样式。</span><span class="sxs-lookup"><span data-stu-id="18625-128">Returns the validation alert style.</span></span> <span data-ttu-id="18625-129">只读 <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" /> 。</span><span class="sxs-lookup"><span data-stu-id="18625-129">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="2307e-130">使用<see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" />方法，以便设置范围的警告样式。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="2307e-130">Use the <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> method to set the alert style for a range.</span>
-            </span>
-            <span data-ttu-id="2307e-131">如果该区域已有数据有效性，使用<see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" />方法，以更改警告样式。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="2307e-131">If the range already has data validation, use the <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> method to change the alert style.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="18625-130">使用 <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> 该方法可设置范围的警报样式。</span><span class="sxs-lookup"><span data-stu-id="18625-130">Use the <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> method to set the alert style for a range.</span></span> <span data-ttu-id="18625-131">如果区域已具有数据验证，请使用 <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> 该方法更改警报样式。</span><span class="sxs-lookup"><span data-stu-id="18625-131">If the range already has data validation, use the <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> method to change the alert style.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -316,12 +153,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="2307e-132">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-132">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="18625-132">返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</span><span class="sxs-lookup"><span data-stu-id="18625-132">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -349,35 +181,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="2307e-133">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-133">Returns a 32-bit integer that indicates the application in which this object was created.</span>
-          </span>
-          <span data-ttu-id="2307e-134">如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-134">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
-          </span>
-          <span data-ttu-id="2307e-135">只读<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-135">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="18625-133">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span><span class="sxs-lookup"><span data-stu-id="18625-133">Returns a 32-bit integer that indicates the application in which this object was created.</span></span> <span data-ttu-id="18625-134">如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</span><span class="sxs-lookup"><span data-stu-id="18625-134">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span></span> <span data-ttu-id="18625-135">只读 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 。</span><span class="sxs-lookup"><span data-stu-id="18625-135">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="2307e-136">
-              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="2307e-136">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
-            </span>
-            <span data-ttu-id="2307e-137">例如，Microsoft Excel 具有 XCEL 的创建者代码。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="2307e-137">For example, Microsoft Excel has the creator code XCEL.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="18625-136"><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。</span><span class="sxs-lookup"><span data-stu-id="18625-136">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="18625-137">例如，Microsoft Excel 的创建者代码为 XCEL。</span><span class="sxs-lookup"><span data-stu-id="18625-137">For example, Microsoft Excel has the creator code XCEL.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -401,12 +208,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="2307e-138">删除对象。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-138">Deletes the object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="18625-138">删除对象。</span><span class="sxs-lookup"><span data-stu-id="18625-138">Deletes the object.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -436,12 +238,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="2307e-p112">返回或设置数据有效性检验错误消息。<b>String</b> 类型，可读写。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-p112">Returns or sets the data validation error message. Read/write <b>String</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="18625-139">返回或设置数据有效性检验错误消息。</span><span class="sxs-lookup"><span data-stu-id="18625-139">Returns or sets the data validation error message.</span></span> <span data-ttu-id="18625-140">读/写 <b>String</b>。</span><span class="sxs-lookup"><span data-stu-id="18625-140">Read/write <b>String</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -472,12 +269,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="2307e-p113">返回或设置数据有效性错误对话框的标题。<b>String</b> 类型，可读写。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-p113">Returns or sets the title of the data-validation error dialog box. Read/write <b>String</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="18625-141">返回或设置数据有效性错误对话框的标题。</span><span class="sxs-lookup"><span data-stu-id="18625-141">Returns or sets the title of the data-validation error dialog box.</span></span> <span data-ttu-id="18625-142">读/写 <b>String</b>。</span><span class="sxs-lookup"><span data-stu-id="18625-142">Read/write <b>String</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -505,12 +297,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="2307e-p114">返回与条件格式或者数据有效性相关联的值或表达式。可为常量值、字符串值、单元格引用或公式。<b>String</b> 型，只读。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-p114">Returns the value or expression associated with the conditional format or data validation. Can be a constant value, a string value, a cell reference, or a formula. Read-only <b>String</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="18625-143">返回与条件格式或者数据有效性相关联的值或表达式。</span><span class="sxs-lookup"><span data-stu-id="18625-143">Returns the value or expression associated with the conditional format or data validation.</span></span> <span data-ttu-id="18625-144">可为常量值、字符串值、单元格引用或公式。</span><span class="sxs-lookup"><span data-stu-id="18625-144">Can be a constant value, a string value, a cell reference, or a formula.</span></span> <span data-ttu-id="18625-145">只读 <b>String</b>。</span><span class="sxs-lookup"><span data-stu-id="18625-145">Read-only <b>String</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -538,30 +325,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="2307e-146">返回的值或条件格式或数据有效性的第二部分相关联的表达式。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-146">Returns the value or expression associated with the second part of a conditional format or data validation.</span>
-          </span>
-          <span data-ttu-id="2307e-147">只读 <b>String</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-147">Read-only <b>String</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="18625-146">返回与条件格式或数据有效性验证第二部分相关联的值或表达式。</span><span class="sxs-lookup"><span data-stu-id="18625-146">Returns the value or expression associated with the second part of a conditional format or data validation.</span></span> <span data-ttu-id="18625-147">只读 <b>String</b>。</span><span class="sxs-lookup"><span data-stu-id="18625-147">Read-only <b>String</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="2307e-148">此属性仅用于数据验证条件格式时<see cref="P:Microsoft.Office.Interop.Excel.Validation.Operator" />属性为<b>xlBetween</b>或<b>xlNotBetween</b>。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="2307e-148">This property is used only when the data validation conditional format <see cref="P:Microsoft.Office.Interop.Excel.Validation.Operator" /> property is <b>xlBetween</b> or <b>xlNotBetween</b>.</span>
-            </span>
-            <span data-ttu-id="2307e-149">它可以是以常量值、 一个 string 值、 单元格引用或公式。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="2307e-149">It can be a constant value, a string value, a cell reference, or a formula.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="18625-148">此属性仅在数据有效性条件格式属性为 <see cref="P:Microsoft.Office.Interop.Excel.Validation.Operator" /> <b>xlBetween</b> 或 <b>xlNotBetween 时使用</b>。</span><span class="sxs-lookup"><span data-stu-id="18625-148">This property is used only when the data validation conditional format <see cref="P:Microsoft.Office.Interop.Excel.Validation.Operator" /> property is <b>xlBetween</b> or <b>xlNotBetween</b>.</span></span> <span data-ttu-id="18625-149">它可以是常量值、字符串值、单元格引用或公式。</span><span class="sxs-lookup"><span data-stu-id="18625-149">It can be a constant value, a string value, a cell reference, or a formula.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IgnoreBlank">
@@ -590,23 +357,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="2307e-p117">如果指定区域内的数据有效性检验允许空值，则该值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-p117">
-              <b>True</b> if blank values are permitted by the range data validation. Read/write <b>Boolean</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="18625-150">如果指定区域内的数据有效性检验允许空值，则该值为 <b>True</b>。</span><span class="sxs-lookup"><span data-stu-id="18625-150"><b>True</b> if blank values are permitted by the range data validation.</span></span> <span data-ttu-id="18625-151">读/写 <b>Boolean</b>。</span><span class="sxs-lookup"><span data-stu-id="18625-151">Read/write <b>Boolean</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="2307e-152">如果<b>IgnoreBlank</b>属性为<b>True</b>，如果单元格为空，或者通过以下任一方式引用的单元格中，单元格数据被视为有效<see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MinNumber" />或<see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MaxNumber" />属性为空。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="2307e-152">If the <b>IgnoreBlank</b> property is <b>True</b>, cell data is considered valid if the cell is blank, or if a cell referenced by either the <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MinNumber" /> or <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MaxNumber" /> property is blank.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="18625-152">如果 <b>IgnoreBlank</b> 属性 <b>为 True，</b>则单元格数据在单元格为空或由 or 属性引用的单元格为空时 <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MinNumber" /> <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MaxNumber" /> 被视为有效。</span><span class="sxs-lookup"><span data-stu-id="18625-152">If the <b>IgnoreBlank</b> property is <b>True</b>, cell data is considered valid if the cell is blank, or if a cell referenced by either the <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MinNumber" /> or <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MaxNumber" /> property is blank.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IMEMode">
@@ -635,30 +389,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="2307e-153">返回或设置日语输入规则的说明。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-153">Returns or sets the description of the Japanese input rules.</span>
-          </span>
-          <span data-ttu-id="2307e-154">可以是一个<see cref="T:Microsoft.Office.Interop.Excel.XlIMEMode" />常量。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-154">Can be one of the <see cref="T:Microsoft.Office.Interop.Excel.XlIMEMode" /> constants.</span>
-          </span>
-          <span data-ttu-id="2307e-155">可读写 <b>Integer</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-155">Read/write <b>Integer</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="18625-153">返回或设置日文输入规则的说明。</span><span class="sxs-lookup"><span data-stu-id="18625-153">Returns or sets the description of the Japanese input rules.</span></span> <span data-ttu-id="18625-154">可以是常量 <see cref="T:Microsoft.Office.Interop.Excel.XlIMEMode" /> 之一。</span><span class="sxs-lookup"><span data-stu-id="18625-154">Can be one of the <see cref="T:Microsoft.Office.Interop.Excel.XlIMEMode" /> constants.</span></span> <span data-ttu-id="18625-155"><b>Integer</b> 型，可读/写。</span><span class="sxs-lookup"><span data-stu-id="18625-155">Read/write <b>Integer</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="2307e-156">只有安装和选择了日文语言支持时，才可设置该属性。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="2307e-156">Note that this property can be set only when Japanese language support has been installed and selected.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="18625-156">只有安装和选择了日文语言支持时，才可设置该属性。</span><span class="sxs-lookup"><span data-stu-id="18625-156">Note that this property can be set only when Japanese language support has been installed and selected.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InCellDropdown">
@@ -687,29 +421,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="2307e-p119">如果数据有效性显示含有有效取值的下拉列表，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-p119">
-              <b>True</b> if data validation displays a drop-down list that contains acceptable values. Read/write <b>Boolean</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="18625-157">如果数据有效性显示含有有效取值的下拉列表，则该属性值为 <b>True</b>。</span><span class="sxs-lookup"><span data-stu-id="18625-157"><b>True</b> if data validation displays a drop-down list that contains acceptable values.</span></span> <span data-ttu-id="18625-158">读/写 <b>Boolean</b>。</span><span class="sxs-lookup"><span data-stu-id="18625-158">Read/write <b>Boolean</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="2307e-159">如果数据有效性检验类型不是 <b>xlValidateList</b>，将忽略该属性。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="2307e-159">This property is ignored if the validation type isn’t <b>xlValidateList</b>.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="2307e-160">使用<paramref name="Minimum" />参数<see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" />或<see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" />方法<see cref="T:Microsoft.Office.Interop.Excel.Validation" />对象以指定包含有效数据的区域。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="2307e-160">Use the <paramref name="Minimum" /> argument of the <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> or <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.Office.Interop.Excel.Validation" /> object to specify the range that contains valid data.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="18625-159">如果数据有效性检验类型不是 <b>xlValidateList</b>，将忽略该属性。</span><span class="sxs-lookup"><span data-stu-id="18625-159">This property is ignored if the validation type isn’t <b>xlValidateList</b>.</span></span></para>
+          <para><span data-ttu-id="18625-160">使用 <paramref name="Minimum" /> 对象的 <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> 或 <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> 方法的参数 <see cref="T:Microsoft.Office.Interop.Excel.Validation" /> 指定包含有效数据的范围。</span><span class="sxs-lookup"><span data-stu-id="18625-160">Use the <paramref name="Minimum" /> argument of the <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> or <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.Office.Interop.Excel.Validation" /> object to specify the range that contains valid data.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InputMessage">
@@ -738,12 +454,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="2307e-p120">返回或设置数据有效性检验输入信息。<b>String</b> 类型，可读写。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-p120">Returns or sets the data validation input message. Read/write <b>String</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="18625-161">返回或设置数据有效性检验输入信息。</span><span class="sxs-lookup"><span data-stu-id="18625-161">Returns or sets the data validation input message.</span></span> <span data-ttu-id="18625-162">读/写 <b>String</b>。</span><span class="sxs-lookup"><span data-stu-id="18625-162">Read/write <b>String</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -774,12 +485,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="2307e-p121">返回或设置数据有效性输入对话框的标题。<b>String</b> 类型，可读写。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-p121">Returns or sets the title of the data-validation input dialog box. Read/write <b>String</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="18625-163">返回或设置数据有效性输入对话框的标题。</span><span class="sxs-lookup"><span data-stu-id="18625-163">Returns or sets the title of the data-validation input dialog box.</span></span> <span data-ttu-id="18625-164">读/写 <b>String</b>。</span><span class="sxs-lookup"><span data-stu-id="18625-164">Read/write <b>String</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -810,165 +516,54 @@
         <Parameter Name="Formula2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">
-          <span data-ttu-id="2307e-165">所需<see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-165">Required <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />.</span>
-          </span>
-          <span data-ttu-id="2307e-166">有效性验证类型。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-166">The validation type.</span>
-          </span>
-        </param>
-        <param name="AlertStyle">
-          <span data-ttu-id="2307e-167">可选<see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-167">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />.</span>
-          </span>
-          <span data-ttu-id="2307e-168">有效性验证警告样式。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-168">The validation alert style.</span>
-          </span>
-        </param>
-        <param name="Operator">
-          <span data-ttu-id="2307e-169">可选<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-169">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />.</span>
-          </span>
-          <span data-ttu-id="2307e-170">数据有效性验证运算符。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-170">The data validation operator.</span>
-          </span>
-        </param>
-        <param name="Formula1">
-          <span data-ttu-id="2307e-171">可选的<b>对象</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-171">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="2307e-172">数据验证公式中的第一部分。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-172">The first part of the data validation equation.</span>
-          </span>
-        </param>
-        <param name="Formula2">
-          <span data-ttu-id="2307e-173">可选的<b>对象</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-173">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="2307e-174">数据有效性的第二部分时<paramref name="Operator" />为<b>xlBetween</b>或<b>xlNotBetween</b> （否则，则忽略此参数）。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-174">The second part of the data validation when <paramref name="Operator" /> is <b>xlBetween</b> or <b>xlNotBetween</b> (otherwise, this argument is ignored).</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="2307e-175">修改指定区域的数据有效性验证。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-175">Modifies data validation for a range.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="2307e-176">
-              <b>Modify</b> 方法所要求的参数依有效性验证的类型而定，如下表所示。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="2307e-176">The <b>Modify</b> method requires different arguments, depending on the validation type, as shown in the following table.</span>
-            </span>
-          </para>
+        <param name="Type"><span data-ttu-id="18625-165">必需 <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" /> 。</span><span class="sxs-lookup"><span data-stu-id="18625-165">Required <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />.</span></span> <span data-ttu-id="18625-166">有效性验证类型。</span><span class="sxs-lookup"><span data-stu-id="18625-166">The validation type.</span></span></param>
+        <param name="AlertStyle"><span data-ttu-id="18625-167">可选 <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" /> 。</span><span class="sxs-lookup"><span data-stu-id="18625-167">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />.</span></span> <span data-ttu-id="18625-168">验证警报样式。</span><span class="sxs-lookup"><span data-stu-id="18625-168">The validation alert style.</span></span></param>
+        <param name="Operator"><span data-ttu-id="18625-169">可选 <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> 。</span><span class="sxs-lookup"><span data-stu-id="18625-169">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />.</span></span> <span data-ttu-id="18625-170">数据验证运算符。</span><span class="sxs-lookup"><span data-stu-id="18625-170">The data validation operator.</span></span></param>
+        <param name="Formula1"><span data-ttu-id="18625-171">可选 <b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="18625-171">Optional <b>Object</b>.</span></span> <span data-ttu-id="18625-172">数据验证公式中的第一部分。</span><span class="sxs-lookup"><span data-stu-id="18625-172">The first part of the data validation equation.</span></span></param>
+        <param name="Formula2"><span data-ttu-id="18625-173">可选 <b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="18625-173">Optional <b>Object</b>.</span></span> <span data-ttu-id="18625-174">数据验证的第二部分是 <paramref name="Operator" /> <b>xlBetween</b> 或 <b>xlNotBetween</b> (，否则，此参数将被忽略) 。</span><span class="sxs-lookup"><span data-stu-id="18625-174">The second part of the data validation when <paramref name="Operator" /> is <b>xlBetween</b> or <b>xlNotBetween</b> (otherwise, this argument is ignored).</span></span></param>
+        <summary><span data-ttu-id="18625-175">修改指定区域的数据有效性验证。</span><span class="sxs-lookup"><span data-stu-id="18625-175">Modifies data validation for a range.</span></span></summary>
+        <remarks><para><span data-ttu-id="18625-176"><b>Modify</b> 方法所要求的参数依有效性验证的类型而定，如下表所示。</span><span class="sxs-lookup"><span data-stu-id="18625-176">The <b>Modify</b> method requires different arguments, depending on the validation type, as shown in the following table.</span></span></para>
           <list type="table">
             <item>
-              <term>
-                <span data-ttu-id="2307e-177">
-                  <b>xlInputOnly</b>
-                </span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="2307e-177">
-                    <b>xlInputOnly</b>
-                  </span>
-                </span>
-              </term>
-              <description>
-                <span data-ttu-id="2307e-178">
-                  <paramref name="AlertStyle" />
-                  <paramref name="Formula1" />，和<paramref name="Formula2" />未使用。</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="2307e-178">
-                    <paramref name="AlertStyle" />, <paramref name="Formula1" />, and <paramref name="Formula2" /> are not used.</span>
-                </span>
-              </description>
+              <term><span data-ttu-id="18625-177">
+                <b>xlInputOnly</b>
+              </span><span class="sxs-lookup"><span data-stu-id="18625-177">
+                <b>xlInputOnly</b>
+              </span></span></term>
+              <description><span data-ttu-id="18625-178">
+                <paramref name="AlertStyle" />， <paramref name="Formula1" /> <paramref name="Formula2" /> 则不进行使用。</span><span class="sxs-lookup"><span data-stu-id="18625-178">
+                <paramref name="AlertStyle" />, <paramref name="Formula1" />, and <paramref name="Formula2" /> are not used.</span></span></description>
             </item>
             <item>
-              <term>
-                <span data-ttu-id="2307e-179">
-                  <b>xlValidateCustom</b>
-                </span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="2307e-179">
-                    <b>xlValidateCustom</b>
-                  </span>
-                </span>
-              </term>
-              <description>
-                <span data-ttu-id="2307e-180">
-                  <paramref name="Formula1" />需要;<paramref name="Formula2" /> ，则忽略。</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="2307e-180">
-                    <paramref name="Formula1" /> is required; <paramref name="Formula2" /> is ignored.</span>
-                </span>
-                <span data-ttu-id="2307e-181">
-                  <paramref name="Formula1" />必须包含无效数据项时计算结果为<b>True</b>时是有效的数据输入和<b>False</b>的表达式。</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="2307e-181">
-                    <paramref name="Formula1" /> must contain an expression that evaluates to <b>True</b> when data entry is valid and <b>False</b> when data entry is invalid.</span>
-                </span>
-              </description>
+              <term><span data-ttu-id="18625-179">
+                <b>xlValidateCustom</b>
+              </span><span class="sxs-lookup"><span data-stu-id="18625-179">
+                <b>xlValidateCustom</b>
+              </span></span></term>
+              <description><span data-ttu-id="18625-180">
+                <paramref name="Formula1" /> 必需; <paramref name="Formula2" /> 将被忽略。</span><span class="sxs-lookup"><span data-stu-id="18625-180">
+                <paramref name="Formula1" /> is required; <paramref name="Formula2" /> is ignored.</span></span> <span data-ttu-id="18625-181"><paramref name="Formula1" />必须包含一个表达式，当数据输入有效时，其计算结果为<b>True;</b>如果数据输入无效，则其计算结果为<b>False。</b></span><span class="sxs-lookup"><span data-stu-id="18625-181"><paramref name="Formula1" /> must contain an expression that evaluates to <b>True</b> when data entry is valid and <b>False</b> when data entry is invalid.</span></span></description>
             </item>
             <item>
-              <term>
-                <span data-ttu-id="2307e-182">
-                  <b>xlValidateList</b>
-                </span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="2307e-182">
-                    <b>xlValidateList</b>
-                  </span>
-                </span>
-              </term>
-              <description>
-                <span data-ttu-id="2307e-183">
-                  <paramref name="Formula1" />需要;<paramref name="Formula2" /> ，则忽略。</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="2307e-183">
-                    <paramref name="Formula1" /> is required; <paramref name="Formula2" /> is ignored.</span>
-                </span>
-                <span data-ttu-id="2307e-184">
-                  <paramref name="Formula1" />必须包含逗号分隔的值列表或对列表的工作表引用。</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="2307e-184">
-                    <paramref name="Formula1" /> must contain either a comma-delimited list of values or a worksheet reference to the list.</span>
-                </span>
-              </description>
+              <term><span data-ttu-id="18625-182">
+                <b>xlValidateList</b>
+              </span><span class="sxs-lookup"><span data-stu-id="18625-182">
+                <b>xlValidateList</b>
+              </span></span></term>
+              <description><span data-ttu-id="18625-183">
+                <paramref name="Formula1" /> 必需; <paramref name="Formula2" /> 将被忽略。</span><span class="sxs-lookup"><span data-stu-id="18625-183">
+                <paramref name="Formula1" /> is required; <paramref name="Formula2" /> is ignored.</span></span> <span data-ttu-id="18625-184"><paramref name="Formula1" /> 必须包含以逗号分隔的值列表或列表的工作表引用。</span><span class="sxs-lookup"><span data-stu-id="18625-184"><paramref name="Formula1" /> must contain either a comma-delimited list of values or a worksheet reference to the list.</span></span></description>
             </item>
             <item>
-              <term>
-                <span data-ttu-id="2307e-185">
-                  <b>xlValidateDate</b>、<b>xlValidateDecimal</b>、<b>xlValidateTextLength</b>、 <b>xlValidateTime</b> 或 <b>xlValidateWholeNumber</b></span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="2307e-185">
-                    <b>xlValidateDate</b>, <b>xlValidateDecimal</b>, <b>xlValidateTextLength</b>, <b>xlValidateTime</b>, or <b>xlValidateWholeNumber</b></span>
-                </span>
-              </term>
-              <description>
-                <span data-ttu-id="2307e-186">
-                  <paramref name="Formula1" />或<paramref name="Formula2" />，必须指定和 / 或。</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="2307e-186">
-                    <paramref name="Formula1" /> or <paramref name="Formula2" />, or both, must be specified.</span>
-                </span>
-              </description>
+              <term><span data-ttu-id="18625-185">
+                <b>xlValidateDate</b>、<b>xlValidateDecimal</b>、<b>xlValidateTextLength</b>、 <b>xlValidateTime</b> 或 <b>xlValidateWholeNumber</b></span><span class="sxs-lookup"><span data-stu-id="18625-185">
+                <b>xlValidateDate</b>, <b>xlValidateDecimal</b>, <b>xlValidateTextLength</b>, <b>xlValidateTime</b>, or <b>xlValidateWholeNumber</b></span></span></term>
+              <description><span data-ttu-id="18625-186">
+                <paramref name="Formula1" /> 或 <paramref name="Formula2" /> ，或两者都必须指定。</span><span class="sxs-lookup"><span data-stu-id="18625-186">
+                <paramref name="Formula1" /> or <paramref name="Formula2" />, or both, must be specified.</span></span></description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Operator">
@@ -994,17 +589,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="2307e-187">返回条件格式或数据有效性的运算符。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-187">Returns the operator for the conditional format or data validation.</span>
-          </span>
-          <span data-ttu-id="2307e-188">
-            <b>Integer</b> 类型，只读。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-188">Read-only <b>Integer</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="18625-187">返回条件格式或数据验证的运算符。</span><span class="sxs-lookup"><span data-stu-id="18625-187">Returns the operator for the conditional format or data validation.</span></span> <span data-ttu-id="18625-188">只读 <b>Integer</b>。</span><span class="sxs-lookup"><span data-stu-id="18625-188">Read-only <b>Integer</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1032,12 +617,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="2307e-p130">返回指定对象的父对象。只读。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-p130">Returns the parent object for the specified object. Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="18625-189">返回指定对象的父对象。</span><span class="sxs-lookup"><span data-stu-id="18625-189">Returns the parent object for the specified object.</span></span> <span data-ttu-id="18625-190">只读。</span><span class="sxs-lookup"><span data-stu-id="18625-190">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1068,13 +648,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="2307e-p131">如果用户输入无效数据时显示数据有效性检查错误消息，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-p131">
-              <b>True</b> if the data validation error message will be displayed whenever the user enters invalid data. Read/write <b>Boolean</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="18625-191">如果用户输入无效数据时显示数据有效性检查错误消息，则该属性值为 <b>True</b>。</span><span class="sxs-lookup"><span data-stu-id="18625-191"><b>True</b> if the data validation error message will be displayed whenever the user enters invalid data.</span></span> <span data-ttu-id="18625-192">读/写 <b>Boolean</b>。</span><span class="sxs-lookup"><span data-stu-id="18625-192">Read/write <b>Boolean</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1105,13 +679,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="2307e-p132">如果用户在数据有效性检查区域内选定了某一单元格时，显示数据有效性检查输入消息，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-p132">
-              <b>True</b> if the data validation input message will be displayed whenever the user selects a cell in the data validation range. Read/write <b>Boolean</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="18625-193">如果用户在数据有效性检查区域内选定了某一单元格时，显示数据有效性检查输入消息，则该属性值为 <b>True</b>。</span><span class="sxs-lookup"><span data-stu-id="18625-193"><b>True</b> if the data validation input message will be displayed whenever the user selects a cell in the data validation range.</span></span> <span data-ttu-id="18625-194">读/写 <b>Boolean</b>。</span><span class="sxs-lookup"><span data-stu-id="18625-194">Read/write <b>Boolean</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1139,16 +707,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="2307e-195">返回范围内的数据类型有效性验证。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-195">Returns data type validation for a range.</span>
-          </span>
-          <span data-ttu-id="2307e-196">可以是常量之一只读<b>整数</b><see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-196">Read-only <b>Integer</b> that can be one of the constants of <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="18625-195">返回数据类型的验证值。</span><span class="sxs-lookup"><span data-stu-id="18625-195">Returns data type validation for a range.</span></span> <span data-ttu-id="18625-196">只读 <b>Integer</b> 类型，可以是常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" /> 。</span><span class="sxs-lookup"><span data-stu-id="18625-196">Read-only <b>Integer</b> that can be one of the constants of <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1176,18 +735,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="2307e-197">
-            <b>True</b>如果满足所有的有效性验证条件 （即，如果该区域包含有效数据）。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-197">
-              <b>True</b> if all the validation criteria are met (that is, if the range contains valid data).</span>
-          </span>
-          <span data-ttu-id="2307e-198">只读 <b>Boolean</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="2307e-198">Read-only <b>Boolean</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="18625-197"><b>如此</b> 如果所有验证条件都满足 (，即，如果区域包含有效的数据) 。</span><span class="sxs-lookup"><span data-stu-id="18625-197"><b>True</b> if all the validation criteria are met (that is, if the range contains valid data).</span></span> <span data-ttu-id="18625-198">只读 <b>Boolean</b>。</span><span class="sxs-lookup"><span data-stu-id="18625-198">Read-only <b>Boolean</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

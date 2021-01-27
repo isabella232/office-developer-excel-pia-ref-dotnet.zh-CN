@@ -1,13 +1,5 @@
 <Type Name="Parameters" FullName="Microsoft.Office.Interop.Excel.Parameters">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6941b2d7f4dfb9eda0f671667102e7c868310e4e" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20586819" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Parameters : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6941b2d7f4dfb9eda0f671667102e7c868310e4e" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011051" /></Metadata><TypeSignature Language="C#" Value="public interface Parameters : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Parameters implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Parameters" />
   <TypeSignature Language="VB.NET" Value="Public Interface Parameters&#xA;Implements IEnumerable" />
@@ -33,45 +25,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="11452-101">一<see cref="T:Microsoft.Office.Interop.Excel.Parameter" />指定的查询表的对象。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="11452-101">A collection of <see cref="T:Microsoft.Office.Interop.Excel.Parameter" /> objects for the specified query table.</span>
-      </span>
-      <span data-ttu-id="11452-102">每个<b>参数</b>对象代表单个查询参数。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="11452-102">Each <b>Parameter</b> object represents a single query parameter.</span>
-      </span>
-      <span data-ttu-id="11452-103">每个查询表包含一个<b>参数</b>集，但集合为空，除非该查询表使用参数查询。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="11452-103">Every query table contains a <b>Parameters</b> collection, but the collection is empty unless the query table is using a parameter query.</span>
-      </span>
-    </summary>
-    <remarks>
-      <para>
-        <span data-ttu-id="11452-104">使用<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Parameters" />属性返回的<b>Parameters</b>集合。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="11452-104">Use the <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Parameters" /> property to return the <b>Parameters</b> collection.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="11452-105">使用<see cref="M:Microsoft.Office.Interop.Excel.Parameters.Add(System.String,System.Object)" />方法，以创建新的查询表的参数。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="11452-105">Use the <see cref="M:Microsoft.Office.Interop.Excel.Parameters.Add(System.String,System.Object)" /> method to create a new parameter for a query table.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="11452-106">不能使用<b>Add</b>方法在 URL 连接查询表。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="11452-106">You cannot use the <b>Add</b> method on a URL connection query table.</span>
-        </span>
-        <span data-ttu-id="11452-107">对于 URL 连接查询表，Microsoft Excel 将新建基于参数<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" />和<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.PostText" />属性。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="11452-107">For URL connection query tables, Microsoft Excel creates the parameters based on the <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> and <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.PostText" /> properties.</span>
-        </span>
-      </para>
-      <para></para>
-    </remarks>
+    <summary><span data-ttu-id="eb953-101">指定 <see cref="T:Microsoft.Office.Interop.Excel.Parameter" /> 查询表的对象集合。</span><span class="sxs-lookup"><span data-stu-id="eb953-101">A collection of <see cref="T:Microsoft.Office.Interop.Excel.Parameter" /> objects for the specified query table.</span></span> <span data-ttu-id="eb953-102">每一个 <b>Parameter</b> 对象都代表一个查询参数。</span><span class="sxs-lookup"><span data-stu-id="eb953-102">Each <b>Parameter</b> object represents a single query parameter.</span></span> <span data-ttu-id="eb953-103">每一个查询表都包含一个 <b>Parameters</b> 集合，但集合是空的，除非查询表使用的是参数查询。</span><span class="sxs-lookup"><span data-stu-id="eb953-103">Every query table contains a <b>Parameters</b> collection, but the collection is empty unless the query table is using a parameter query.</span></span></summary>
+    <remarks><para><span data-ttu-id="eb953-104">使用 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Parameters" /> 该属性可返回 <b>Parameters</b> 集合。</span><span class="sxs-lookup"><span data-stu-id="eb953-104">Use the <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Parameters" /> property to return the <b>Parameters</b> collection.</span></span></para>
+      <para><span data-ttu-id="eb953-105">使用 <see cref="M:Microsoft.Office.Interop.Excel.Parameters.Add(System.String,System.Object)" /> 该方法可创建查询表的新参数。</span><span class="sxs-lookup"><span data-stu-id="eb953-105">Use the <see cref="M:Microsoft.Office.Interop.Excel.Parameters.Add(System.String,System.Object)" /> method to create a new parameter for a query table.</span></span></para>
+      <para><span data-ttu-id="eb953-106">您不能在 URL 连接查询表上使用 <b>Add</b> 方法。</span><span class="sxs-lookup"><span data-stu-id="eb953-106">You cannot use the <b>Add</b> method on a URL connection query table.</span></span> <span data-ttu-id="eb953-107">对于 URL 连接查询表，Microsoft Excel 基于和属性创建 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.PostText" /> 参数。</span><span class="sxs-lookup"><span data-stu-id="eb953-107">For URL connection query tables, Microsoft Excel creates the parameters based on the <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> and <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.PostText" /> properties.</span></span></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -104,12 +62,7 @@
       </Parameters>
       <Docs>
         <param name="Index">To be added.</param>
-        <summary>
-          <span data-ttu-id="11452-108">仅供内部使用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="11452-108">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="eb953-108">仅供内部使用。</span><span class="sxs-lookup"><span data-stu-id="eb953-108">Reserved for internal use.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -137,44 +90,9 @@
         <Parameter Name="iDataType" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <span data-ttu-id="11452-109">必需的 字符串 。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="11452-109">Required String.</span>
-          </span>
-          <span data-ttu-id="11452-110">指定参数的名称。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="11452-110">The name of the specified parameter.</span>
-          </span>
-          <span data-ttu-id="11452-111">参数名称应匹配的 SQL 语句中的参数子句。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="11452-111">The parameter name should match the parameter clause in the SQL statement.</span>
-          </span>
-        </param>
-        <param name="iDataType">
-          <span data-ttu-id="11452-112">可选的<b>对象</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="11452-112">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="11452-113">参数的数据类型。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="11452-113">The data type of the parameter.</span>
-          </span>
-          <span data-ttu-id="11452-114">可以是任意<see cref="T:Microsoft.Office.Interop.Excel.XlParameterDataType" />常量。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="11452-114">Can be any <see cref="T:Microsoft.Office.Interop.Excel.XlParameterDataType" /> constant.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="11452-115">创建新查询参数。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="11452-115">Creates a new query parameter.</span>
-          </span>
-          <span data-ttu-id="11452-116">返回<see cref="T:Microsoft.Office.Interop.Excel.Parameter" />对象。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="11452-116">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Parameter" /> object.</span>
-          </span>
-        </summary>
+        <param name="Name"><span data-ttu-id="eb953-109">必需的 字符串 。</span><span class="sxs-lookup"><span data-stu-id="eb953-109">Required String.</span></span> <span data-ttu-id="eb953-110">指定参数的名称。</span><span class="sxs-lookup"><span data-stu-id="eb953-110">The name of the specified parameter.</span></span> <span data-ttu-id="eb953-111">该参数名称必须与 SQL 语句中的参数子句相符。</span><span class="sxs-lookup"><span data-stu-id="eb953-111">The parameter name should match the parameter clause in the SQL statement.</span></span></param>
+        <param name="iDataType"><span data-ttu-id="eb953-112">可选 <b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="eb953-112">Optional <b>Object</b>.</span></span> <span data-ttu-id="eb953-113">参数的数据类型。</span><span class="sxs-lookup"><span data-stu-id="eb953-113">The data type of the parameter.</span></span> <span data-ttu-id="eb953-114">可以是任意 <see cref="T:Microsoft.Office.Interop.Excel.XlParameterDataType" /> 常量。</span><span class="sxs-lookup"><span data-stu-id="eb953-114">Can be any <see cref="T:Microsoft.Office.Interop.Excel.XlParameterDataType" /> constant.</span></span></param>
+        <summary><span data-ttu-id="eb953-115">创建新查询参数。</span><span class="sxs-lookup"><span data-stu-id="eb953-115">Creates a new query parameter.</span></span> <span data-ttu-id="eb953-116">返回一 <see cref="T:Microsoft.Office.Interop.Excel.Parameter" /> 个对象。</span><span class="sxs-lookup"><span data-stu-id="eb953-116">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Parameter" /> object.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -202,16 +120,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="11452-117">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="11452-117">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
-          </span>
-          <span data-ttu-id="11452-118">只读。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="11452-118">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="eb953-117">返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</span><span class="sxs-lookup"><span data-stu-id="eb953-117">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span></span> <span data-ttu-id="eb953-118">只读。</span><span class="sxs-lookup"><span data-stu-id="eb953-118">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -239,17 +148,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="11452-119">返回集合中对象的数目。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="11452-119">Returns the number of objects in the collection.</span>
-          </span>
-          <span data-ttu-id="11452-120">
-            <b>Integer</b> 类型，只读。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="11452-120">Read-only <b>Integer</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="eb953-119">返回集合中对象的数目。</span><span class="sxs-lookup"><span data-stu-id="eb953-119">Returns the number of objects in the collection.</span></span> <span data-ttu-id="eb953-120">只读 <b>Integer</b>。</span><span class="sxs-lookup"><span data-stu-id="eb953-120">Read-only <b>Integer</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -277,35 +176,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="11452-121">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="11452-121">Returns a 32-bit integer that indicates the application in which this object was created.</span>
-          </span>
-          <span data-ttu-id="11452-122">如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="11452-122">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
-          </span>
-          <span data-ttu-id="11452-123">只读<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="11452-123">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="eb953-121">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span><span class="sxs-lookup"><span data-stu-id="eb953-121">Returns a 32-bit integer that indicates the application in which this object was created.</span></span> <span data-ttu-id="eb953-122">如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</span><span class="sxs-lookup"><span data-stu-id="eb953-122">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span></span> <span data-ttu-id="eb953-123">只读 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 。</span><span class="sxs-lookup"><span data-stu-id="eb953-123">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="11452-124">
-              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="11452-124">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
-            </span>
-            <span data-ttu-id="11452-125">例如，Microsoft Excel 具有 XCEL 的创建者代码。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="11452-125">For example, Microsoft Excel has the creator code XCEL.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="eb953-124"><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。</span><span class="sxs-lookup"><span data-stu-id="eb953-124">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="eb953-125">例如，Microsoft Excel 的创建者代码为 XCEL。</span><span class="sxs-lookup"><span data-stu-id="eb953-125">For example, Microsoft Excel has the creator code XCEL.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -329,12 +203,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="11452-126">删除对象。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="11452-126">Deletes the object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="eb953-126">删除对象。</span><span class="sxs-lookup"><span data-stu-id="eb953-126">Deletes the object.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -393,22 +262,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="11452-127">所需的<b>对象</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="11452-127">Required <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="11452-128">对象的名称或索引号。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="11452-128">The name or index number for the object.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="11452-129">从集合中返回一个对象。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="11452-129">Returns a single object from a collection.</span>
-          </span>
-        </summary>
+        <param name="Index"><span data-ttu-id="eb953-127">必需 <b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="eb953-127">Required <b>Object</b>.</span></span> <span data-ttu-id="eb953-128">对象的名称或索引号。</span><span class="sxs-lookup"><span data-stu-id="eb953-128">The name or index number for the object.</span></span></param>
+        <summary><span data-ttu-id="eb953-129">从集合中返回一个对象。</span><span class="sxs-lookup"><span data-stu-id="eb953-129">Returns a single object from a collection.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -436,12 +291,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="11452-p111">返回指定对象的父对象。只读。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="11452-p111">Returns the parent object for the specified object. Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="eb953-130">返回指定对象的父对象。</span><span class="sxs-lookup"><span data-stu-id="eb953-130">Returns the parent object for the specified object.</span></span> <span data-ttu-id="eb953-131">只读。</span><span class="sxs-lookup"><span data-stu-id="eb953-131">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
