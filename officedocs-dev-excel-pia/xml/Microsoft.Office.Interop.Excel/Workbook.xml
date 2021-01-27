@@ -1,13 +1,5 @@
 <Type Name="Workbook" FullName="Microsoft.Office.Interop.Excel.Workbook">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="38fbc25ab1d7bdcab1f5c79b80d9c636b7fd7389" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587351" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Workbook : Microsoft.Office.Interop.Excel._Workbook, Microsoft.Office.Interop.Excel.WorkbookEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="38fbc25ab1d7bdcab1f5c79b80d9c636b7fd7389" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009245" /></Metadata><TypeSignature Language="C#" Value="public interface Workbook : Microsoft.Office.Interop.Excel._Workbook, Microsoft.Office.Interop.Excel.WorkbookEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Workbook implements class Microsoft.Office.Interop.Excel._Workbook, class Microsoft.Office.Interop.Excel.WorkbookEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Workbook" />
   <TypeSignature Language="VB.NET" Value="Public Interface Workbook&#xA;Implements _Workbook, WorkbookEvents_Event" />
@@ -33,160 +25,37 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="a271b-101">代表一个 Microsoft Excel 工作簿.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="a271b-101">Represents a Microsoft Excel workbook.</span>
-      </span>
-    </summary>
-    <remarks>
-      <para>
-        <span data-ttu-id="a271b-102">这是.NET 接口派生的互操作性与相应的 COM 对象的托管代码需要 COM coclass。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="a271b-102">This is a .NET interface derived from a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span>
-        </span>
-        <span data-ttu-id="a271b-103">使用此派生的接口访问 COM 对象的所有方法、 属性和事件的成员。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="a271b-103">Use this derived interface to access all method, property, and event members of the COM object.</span>
-        </span>
-        <span data-ttu-id="a271b-104">但是，如果方法或想要使用的事件共享相同的名称相同的 COM 对象下，强制转换为相应的主接口调用方法，并强制转换为最新的事件接口，连接到该事件。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="a271b-104">However, if a method or event you want to use shares the same name under the same COM object, cast to the corresponding primary interface to call the method, and cast to the latest events interface to connect to the event.</span>
-        </span>
-        <span data-ttu-id="a271b-105">请参阅本主题的 COM 对象有关的信息。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="a271b-105">Refer to this topic for information about the COM object.</span>
-        </span>
-        <span data-ttu-id="a271b-106">有关 COM 对象的方法和属性成员的信息，请参阅<see cref="T:Microsoft.Office.Interop.Excel._Workbook" />。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="a271b-106">For information about the method and property members of the COM object, see <see cref="T:Microsoft.Office.Interop.Excel._Workbook" />.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="a271b-107">
-          <see cref="T:Microsoft.Office.Interop.Excel.Workbook" />对象是成员<see cref="T:Microsoft.Office.Interop.Excel.Workbooks" />集合。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="a271b-107">The <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> collection.</span>
-        </span>
-        <span data-ttu-id="a271b-108">
-          <b>工作簿</b>集合包含所有当前在 Microsoft Excel 中打开的<b>工作簿</b>对象。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="a271b-108">The <b>Workbooks</b> collection contains all the <b>Workbook</b> objects currently open in Microsoft Excel.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="a271b-109">返回一个<b>Workbook</b>对象的以下属性本节所述：</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="a271b-109">The following properties for returning a <b>Workbook</b> object are described in this section:</span>
-        </span>
-      </para>
+    <summary><span data-ttu-id="e1f96-101">代表一个 Microsoft Excel 工作簿.</span><span class="sxs-lookup"><span data-stu-id="e1f96-101">Represents a Microsoft Excel workbook.</span></span></summary>
+    <remarks><para><span data-ttu-id="e1f96-102">这是派生自 COM Coclass（托管代码要求此 Coclass 来实现与相应的 COM 对象的互操作性）的 .NET 接口。</span><span class="sxs-lookup"><span data-stu-id="e1f96-102">This is a .NET interface derived from a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span></span> <span data-ttu-id="e1f96-103">使用此派生的接口来访问所有方法、属性和 COM 对象的事件成员。</span><span class="sxs-lookup"><span data-stu-id="e1f96-103">Use this derived interface to access all method, property, and event members of the COM object.</span></span> <span data-ttu-id="e1f96-104">但是，如果您想要使用的方法或事件共享同一名称并且位于相同的 COM 对象下，请转换为相应的主接口以调用该方法，并转换为最新的事件接口以连接到该事件。</span><span class="sxs-lookup"><span data-stu-id="e1f96-104">However, if a method or event you want to use shares the same name under the same COM object, cast to the corresponding primary interface to call the method, and cast to the latest events interface to connect to the event.</span></span> <span data-ttu-id="e1f96-105">参考此主题以获取有关 COM 对象的信息。</span><span class="sxs-lookup"><span data-stu-id="e1f96-105">Refer to this topic for information about the COM object.</span></span> <span data-ttu-id="e1f96-106">有关 COM 对象的方法和属性成员的信息，请参阅 <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> 。</span><span class="sxs-lookup"><span data-stu-id="e1f96-106">For information about the method and property members of the COM object, see <see cref="T:Microsoft.Office.Interop.Excel._Workbook" />.</span></span></para>
+      <para><span data-ttu-id="e1f96-107"><see cref="T:Microsoft.Office.Interop.Excel.Workbook" />对象是集合的 <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> 一个成员。</span><span class="sxs-lookup"><span data-stu-id="e1f96-107">The <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> collection.</span></span> <span data-ttu-id="e1f96-108"><b>Workbooks</b> 集合包含 Microsoft Excel 中当前打开的所有 <b>Workbook</b> 对象。</span><span class="sxs-lookup"><span data-stu-id="e1f96-108">The <b>Workbooks</b> collection contains all the <b>Workbook</b> objects currently open in Microsoft Excel.</span></span></para>
+      <para><span data-ttu-id="e1f96-109">本节介绍了以下用于返回 <b>Workbook</b> 对象的属性：</span><span class="sxs-lookup"><span data-stu-id="e1f96-109">The following properties for returning a <b>Workbook</b> object are described in this section:</span></span></para>
       <list type="bullet">
         <item>
-          <description>
-            <span data-ttu-id="a271b-110">
-              <see cref="P:Microsoft.Office.Interop.Excel._Application.Workbooks" />属性</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="a271b-110">
-                <see cref="P:Microsoft.Office.Interop.Excel._Application.Workbooks" /> property</span>
-            </span>
-          </description>
+          <description><span data-ttu-id="e1f96-110">
+            <see cref="P:Microsoft.Office.Interop.Excel._Application.Workbooks" /> property</span><span class="sxs-lookup"><span data-stu-id="e1f96-110">
+            <see cref="P:Microsoft.Office.Interop.Excel._Application.Workbooks" /> property</span></span></description>
         </item>
         <item>
-          <description>
-            <span data-ttu-id="a271b-111">
-              <see cref="P:Microsoft.Office.Interop.Excel._Application.ActiveWorkbook" />属性</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="a271b-111">
-                <see cref="P:Microsoft.Office.Interop.Excel._Application.ActiveWorkbook" /> property</span>
-            </span>
-          </description>
+          <description><span data-ttu-id="e1f96-111">
+            <see cref="P:Microsoft.Office.Interop.Excel._Application.ActiveWorkbook" /> property</span><span class="sxs-lookup"><span data-stu-id="e1f96-111">
+            <see cref="P:Microsoft.Office.Interop.Excel._Application.ActiveWorkbook" /> property</span></span></description>
         </item>
         <item>
-          <description>
-            <span data-ttu-id="a271b-112">
-              <see cref="P:Microsoft.Office.Interop.Excel._Application.ThisWorkbook" />属性</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="a271b-112">
-                <see cref="P:Microsoft.Office.Interop.Excel._Application.ThisWorkbook" /> property</span>
-            </span>
-          </description>
+          <description><span data-ttu-id="e1f96-112">
+            <see cref="P:Microsoft.Office.Interop.Excel._Application.ThisWorkbook" /> property</span><span class="sxs-lookup"><span data-stu-id="e1f96-112">
+            <see cref="P:Microsoft.Office.Interop.Excel._Application.ThisWorkbook" /> property</span></span></description>
         </item>
       </list>
-      <para>
-        <span data-ttu-id="a271b-113">Workbooks 属性</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="a271b-113">Workbooks Property</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="a271b-114">使用<b>工作簿</b>(<paramref name="index" />)，其中<paramref name="index" />是工作簿的名称或索引号，可返回一个<b>Workbook</b>对象。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="a271b-114">Use <b>Workbooks</b>(<paramref name="index" />), where <paramref name="index" /> is the workbook name or index number, to return a single <b>Workbook</b> object.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="a271b-p103">编号指示创建或打开工作簿的顺序。Workbooks(1) 是创建的第一个工作簿，而 Workbooks(Workbooks.Count)Workbooks 是最后一个。激活某工作簿并不更改其索引号。所有工作簿均包括在索引计数中，即便是隐藏工作簿也是如此。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="a271b-p103">The index number denotes the order in which the workbooks were opened or created. Workbooks(1) is the first workbook created, and Workbooks(Workbooks.Count) is the last one created. Activating a workbook doesn’t change its index number. All workbooks are included in the index count, even if they’re hidden.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="a271b-119">
-          <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Name" />属性返回工作簿的名称。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="a271b-119">The <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Name" /> property returns the workbook name.</span>
-        </span>
-        <span data-ttu-id="a271b-120">您不能使用此属性; 设置名称如果您需要更改的名称，请使用<see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法，以保存工作簿以其他文件名。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="a271b-120">You cannot set the name by using this property; if you need to change the name, use the <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> method to save the workbook under a different name.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="a271b-121">ActiveWorkbook 属性</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="a271b-121">ActiveWorkbook Property</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="a271b-122">
-          <b>ActiveWorkbook</b>属性返回当前处于活动状态的工作簿。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="a271b-122">The <b>ActiveWorkbook</b> property returns the workbook that’s currently active.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="a271b-123">ThisWorkbook 属性</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="a271b-123">ThisWorkbook Property</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="a271b-124">
-          <b>ThisWorkbook</b>属性返回工作簿运行的 Visual Basic 代码。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="a271b-124">The <b>ThisWorkbook</b> property returns the workbook where the Visual Basic code is running.</span>
-        </span>
-        <span data-ttu-id="a271b-125">在大多数情况下，这是活动工作簿相同。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="a271b-125">In most cases, this is the same as the active workbook.</span>
-        </span>
-        <span data-ttu-id="a271b-126">但是，如果 Visual Basic 代码外, 接程序的一部分的<b>ThisWorkbook</b>属性不会返回活动工作簿。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="a271b-126">However, if the Visual Basic code is part of an add-in, the <b>ThisWorkbook</b> property won’t return the active workbook.</span>
-        </span>
-        <span data-ttu-id="a271b-127">在这种情况下，活动工作簿是工作簿调用外接程序，因此<b>ThisWorkbook</b>属性返回外接程序工作簿。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="a271b-127">In this case, the active workbook is the workbook calling the add-in, so the <b>ThisWorkbook</b> property returns the add-in workbook.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="a271b-128">如果用 Visual Basic 代码创建加载宏，那么对于那些编译到加载宏中的工作簿，在其中运行的语句应当用 <b>ThisWorkbook</b> 属性加以限定。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="a271b-128">If you’ll be creating an add-in from your Visual Basic code, you should use the <b>ThisWorkbook</b> property to qualify any statement that must be run on the workbook you compile into the add-in.</span>
-        </span>
-      </para>
-      <para></para>
-    </remarks>
+      <para><span data-ttu-id="e1f96-113">Workbooks 属性</span><span class="sxs-lookup"><span data-stu-id="e1f96-113">Workbooks Property</span></span></para>
+      <para><span data-ttu-id="e1f96-114">使用 <b>工作簿</b> () 工作簿名称或 <paramref name="index" /> 索引号，返回 <paramref name="index" /> 单个 <b>Workbook</b> 对象。</span><span class="sxs-lookup"><span data-stu-id="e1f96-114">Use <b>Workbooks</b>(<paramref name="index" />), where <paramref name="index" /> is the workbook name or index number, to return a single <b>Workbook</b> object.</span></span></para>
+      <para><span data-ttu-id="e1f96-115">索引号指示在其中打开或创建工作簿的顺序。</span><span class="sxs-lookup"><span data-stu-id="e1f96-115">The index number denotes the order in which the workbooks were opened or created.</span></span> <span data-ttu-id="e1f96-116">Workbooks(1) 是创建的第一个工作簿，而 Workbooks(Workbooks.Count)Workbooks 是最后一个。</span><span class="sxs-lookup"><span data-stu-id="e1f96-116">Workbooks(1) is the first workbook created, and Workbooks(Workbooks.Count) is the last one created.</span></span> <span data-ttu-id="e1f96-117">激活某工作簿并不更改其索引号。</span><span class="sxs-lookup"><span data-stu-id="e1f96-117">Activating a workbook doesn’t change its index number.</span></span> <span data-ttu-id="e1f96-118">所有工作簿均包括在索引计数中，即便是隐藏工作簿也是如此。</span><span class="sxs-lookup"><span data-stu-id="e1f96-118">All workbooks are included in the index count, even if they’re hidden.</span></span></para>
+      <para><span data-ttu-id="e1f96-119">该属性 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Name" /> 返回工作簿名称。</span><span class="sxs-lookup"><span data-stu-id="e1f96-119">The <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Name" /> property returns the workbook name.</span></span> <span data-ttu-id="e1f96-120">不能使用此属性设置名称;如果需要更改名称，请使用该方法以其他名称 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 保存工作簿。</span><span class="sxs-lookup"><span data-stu-id="e1f96-120">You cannot set the name by using this property; if you need to change the name, use the <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> method to save the workbook under a different name.</span></span></para>
+      <para><span data-ttu-id="e1f96-121">ActiveWorkbook 属性</span><span class="sxs-lookup"><span data-stu-id="e1f96-121">ActiveWorkbook Property</span></span></para>
+      <para><span data-ttu-id="e1f96-122"><b>ActiveWorkbook</b>属性返回当前处于活动状态的工作簿。</span><span class="sxs-lookup"><span data-stu-id="e1f96-122">The <b>ActiveWorkbook</b> property returns the workbook that’s currently active.</span></span></para>
+      <para><span data-ttu-id="e1f96-123">ThisWorkbook 属性</span><span class="sxs-lookup"><span data-stu-id="e1f96-123">ThisWorkbook Property</span></span></para>
+      <para><span data-ttu-id="e1f96-124"><b>ThisWorkbook</b>属性返回运行代码Visual Basic工作簿。</span><span class="sxs-lookup"><span data-stu-id="e1f96-124">The <b>ThisWorkbook</b> property returns the workbook where the Visual Basic code is running.</span></span> <span data-ttu-id="e1f96-125">在大多数情况下，该工作簿与活动工作簿是同一个。</span><span class="sxs-lookup"><span data-stu-id="e1f96-125">In most cases, this is the same as the active workbook.</span></span> <span data-ttu-id="e1f96-126">但是，如果 Visual Basic 代码是加载宏的组成部分，<b>ThisWorkbook</b> 属性就不会返回活动工作簿。</span><span class="sxs-lookup"><span data-stu-id="e1f96-126">However, if the Visual Basic code is part of an add-in, the <b>ThisWorkbook</b> property won’t return the active workbook.</span></span> <span data-ttu-id="e1f96-127">在这种情况下，活动工作簿是调用加载项的工作簿，因此 <b>ThisWorkbook</b> 属性返回加载项工作簿。</span><span class="sxs-lookup"><span data-stu-id="e1f96-127">In this case, the active workbook is the workbook calling the add-in, so the <b>ThisWorkbook</b> property returns the add-in workbook.</span></span> </para>
+      <para><span data-ttu-id="e1f96-128">如果用 Visual Basic 代码创建加载宏，那么对于那些编译到加载宏中的工作簿，在其中运行的语句应当用 <b>ThisWorkbook</b> 属性加以限定。</span><span class="sxs-lookup"><span data-stu-id="e1f96-128">If you’ll be creating an add-in from your Visual Basic code, you should use the <b>ThisWorkbook</b> property to qualify any statement that must be run on the workbook you compile into the add-in.</span></span></para>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

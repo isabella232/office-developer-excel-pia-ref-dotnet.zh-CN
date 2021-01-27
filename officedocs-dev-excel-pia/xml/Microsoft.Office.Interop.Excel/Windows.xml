@@ -1,13 +1,5 @@
 <Type Name="Windows" FullName="Microsoft.Office.Interop.Excel.Windows">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="216071def9d8f4a2c63cf628170e2d5fcd646a71" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20574919" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Windows : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="216071def9d8f4a2c63cf628170e2d5fcd646a71" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009252" /></Metadata><TypeSignature Language="C#" Value="public interface Windows : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Windows implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Windows" />
   <TypeSignature Language="VB.NET" Value="Public Interface Windows&#xA;Implements IEnumerable" />
@@ -33,39 +25,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="3c140-101">所有的集合<see cref="T:Microsoft.Office.Interop.Excel.Window" />Microsoft Excel 中的对象。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="3c140-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Excel.Window" /> objects in Microsoft Excel.</span>
-      </span>
-    </summary>
-    <remarks>
-      <para>
-        <span data-ttu-id="3c140-102">返回的<b>Windows</b>集合<see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" />属性<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象包含应用程序中的所有窗口，而<b>Windows</b>集合返回<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" />属性<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />对象都包含仅窗口指定工作簿。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="3c140-102">The <b>Windows</b> collection returned by the <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object contains all the windows in the application, whereas the <b>Windows</b> collection returned by the <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> object contains only the windows in the specified workbook.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="3c140-103">使用一个<b>窗口</b>或<b>工作簿</b>对象的<b>NewWindow</b>方法创建一个新窗口，并将其添加到集合。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="3c140-103">Use the <b>NewWindow</b> method of a <b>Window</b> or <b>Workbook</b> object to create a new window and add it to the collection.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="3c140-104">使用<b>Windows</b>(<paramref name="index" />)，其中<paramref name="index" />是窗口名称或索引号，可返回单个<b>Window</b>对象。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="3c140-104">Use <b>Windows</b>(<paramref name="index" />), where <paramref name="index" /> is the window name or index number, to return a single <b>Window</b> object.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="3c140-105">注意，活动窗口总是 Windows(1)。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="3c140-105">Note that the active window is always Windows(1).</span>
-        </span>
-      </para>
-      <para></para>
-    </remarks>
+    <summary><span data-ttu-id="97c5a-101">Microsoft Excel 中所有 <see cref="T:Microsoft.Office.Interop.Excel.Window" /> 对象的集合。</span><span class="sxs-lookup"><span data-stu-id="97c5a-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Excel.Window" /> objects in Microsoft Excel.</span></span></summary>
+    <remarks><para><span data-ttu-id="97c5a-102">对象属性返回的<b>Windows</b>集合包含应用程序的所有窗口，而对象的属性返回的 Windows 集合仅包含指定工作簿 <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> <see cref="T:Microsoft.Office.Interop.Excel.Application" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> 中的窗口。</span><span class="sxs-lookup"><span data-stu-id="97c5a-102">The <b>Windows</b> collection returned by the <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object contains all the windows in the application, whereas the <b>Windows</b> collection returned by the <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> object contains only the windows in the specified workbook.</span></span></para>
+      <para><span data-ttu-id="97c5a-103">使用 Window 或<b>Workbook</b>对象的<b>NewWindow</b>方法可创建新窗口并将其添加到集合中。 <b></b></span><span class="sxs-lookup"><span data-stu-id="97c5a-103">Use the <b>NewWindow</b> method of a <b>Window</b> or <b>Workbook</b> object to create a new window and add it to the collection.</span></span></para>
+      <para><span data-ttu-id="97c5a-104">使用<b>Windows</b> () 返回单个 Window 对象，其中窗口名称或索引 <paramref name="index" /> <paramref name="index" /> 号<b></b>。</span><span class="sxs-lookup"><span data-stu-id="97c5a-104">Use <b>Windows</b>(<paramref name="index" />), where <paramref name="index" /> is the window name or index number, to return a single <b>Window</b> object.</span></span></para>
+      <para><span data-ttu-id="97c5a-105">注意，活动窗口总是 Windows(1)。</span><span class="sxs-lookup"><span data-stu-id="97c5a-105">Note that the active window is always Windows(1).</span></span></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -98,12 +63,7 @@
       </Parameters>
       <Docs>
         <param name="Index">To be added.</param>
-        <summary>
-          <span data-ttu-id="3c140-106">仅供内部使用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="3c140-106">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="97c5a-106">仅供内部使用。</span><span class="sxs-lookup"><span data-stu-id="97c5a-106">Reserved for internal use.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -131,12 +91,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="3c140-107">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="3c140-107">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="97c5a-107">返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</span><span class="sxs-lookup"><span data-stu-id="97c5a-107">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -166,92 +121,11 @@
         <Parameter Name="SyncVertical" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ArrangeStyle">
-          <span data-ttu-id="3c140-108">可选<see cref="T:Microsoft.Office.Interop.Excel.XlArrangeStyle" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="3c140-108">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlArrangeStyle" />.</span>
-          </span>
-        </param>
-        <param name="ActiveWorkbook">
-          <span data-ttu-id="3c140-109">可选的<b>对象</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="3c140-109">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="3c140-110">
-            <b>True</b>排列仅活动工作簿的可见窗口。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="3c140-110">
-              <b>True</b> to arrange only the visible windows of the active workbook.</span>
-          </span>
-          <span data-ttu-id="3c140-111">
-            <b>False</b>可以将所有窗口。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="3c140-111">
-              <b>False</b> to arrange all windows.</span>
-          </span>
-          <span data-ttu-id="3c140-112">默认值为 <b>False</b> 。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="3c140-112">The default value is <b>False</b>.</span>
-          </span>
-        </param>
-        <param name="SyncHorizontal">
-          <span data-ttu-id="3c140-113">可选的<b>对象</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="3c140-113">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="3c140-114">如果忽略<paramref name="ActiveWorkbook" />为<b>False</b>或被省略。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="3c140-114">Ignored if <paramref name="ActiveWorkbook" /> is <b>False</b> or omitted.</span>
-          </span>
-          <span data-ttu-id="3c140-115">
-            <b>True</b>在水平滚动时同步活动工作簿的窗口。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="3c140-115">
-              <b>True</b> to synchronize the windows of the active workbook when scrolling horizontally.</span>
-          </span>
-          <span data-ttu-id="3c140-116">
-            <b>False</b>不以同步窗口。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="3c140-116">
-              <b>False</b> not to synchronize the windows.</span>
-          </span>
-          <span data-ttu-id="3c140-117">默认值为 <b>False</b> 。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="3c140-117">The default value is <b>False</b>.</span>
-          </span>
-        </param>
-        <param name="SyncVertical">
-          <span data-ttu-id="3c140-118">可选的<b>对象</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="3c140-118">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="3c140-119">如果忽略<paramref name="ActiveWorkbook" />为<b>False</b>或被省略。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="3c140-119">Ignored if <paramref name="ActiveWorkbook" /> is <b>False</b> or omitted.</span>
-          </span>
-          <span data-ttu-id="3c140-120">
-            <b>True</b>在垂直滚动时同步活动工作簿的窗口。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="3c140-120">
-              <b>True</b> to synchronize the windows of the active workbook when scrolling vertically.</span>
-          </span>
-          <span data-ttu-id="3c140-121">
-            <b>False</b>不以同步窗口。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="3c140-121">
-              <b>False</b> not to synchronize the windows.</span>
-          </span>
-          <span data-ttu-id="3c140-122">默认值为 <b>False</b> 。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="3c140-122">The default value is <b>False</b>.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="3c140-123">对屏幕上的窗口进行排列。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="3c140-123">Arranges the windows on the screen.</span>
-          </span>
-        </summary>
+        <param name="ArrangeStyle"><span data-ttu-id="97c5a-108">可选 <see cref="T:Microsoft.Office.Interop.Excel.XlArrangeStyle" /> 。</span><span class="sxs-lookup"><span data-stu-id="97c5a-108">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlArrangeStyle" />.</span></span></param>
+        <param name="ActiveWorkbook"><span data-ttu-id="97c5a-109">可选 <b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="97c5a-109">Optional <b>Object</b>.</span></span> <span data-ttu-id="97c5a-110">如果为 <b>True</b>，则只排列活动工作簿的可见窗口。</span><span class="sxs-lookup"><span data-stu-id="97c5a-110"><b>True</b> to arrange only the visible windows of the active workbook.</span></span> <span data-ttu-id="97c5a-111">如果为 <b>False</b>，则排列所有窗口。</span><span class="sxs-lookup"><span data-stu-id="97c5a-111"><b>False</b> to arrange all windows.</span></span> <span data-ttu-id="97c5a-112">默认值为 <b>False</b>。</span><span class="sxs-lookup"><span data-stu-id="97c5a-112">The default value is <b>False</b>.</span></span></param>
+        <param name="SyncHorizontal"><span data-ttu-id="97c5a-113">可选 <b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="97c5a-113">Optional <b>Object</b>.</span></span> <span data-ttu-id="97c5a-114">如果为 <paramref name="ActiveWorkbook" /> <b>False 或省略，</b> 则忽略。</span><span class="sxs-lookup"><span data-stu-id="97c5a-114">Ignored if <paramref name="ActiveWorkbook" /> is <b>False</b> or omitted.</span></span> <span data-ttu-id="97c5a-115">如果为 <b>True</b>，则在水平滚动时同步活动工作簿的窗口。</span><span class="sxs-lookup"><span data-stu-id="97c5a-115"><b>True</b> to synchronize the windows of the active workbook when scrolling horizontally.</span></span> <span data-ttu-id="97c5a-116"><b>False</b> 不同步窗口。</span><span class="sxs-lookup"><span data-stu-id="97c5a-116"><b>False</b> not to synchronize the windows.</span></span> <span data-ttu-id="97c5a-117">默认值为 <b>False</b>。</span><span class="sxs-lookup"><span data-stu-id="97c5a-117">The default value is <b>False</b>.</span></span></param>
+        <param name="SyncVertical"><span data-ttu-id="97c5a-118">可选 <b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="97c5a-118">Optional <b>Object</b>.</span></span> <span data-ttu-id="97c5a-119">如果为 <paramref name="ActiveWorkbook" /> <b>False 或省略，</b> 则忽略。</span><span class="sxs-lookup"><span data-stu-id="97c5a-119">Ignored if <paramref name="ActiveWorkbook" /> is <b>False</b> or omitted.</span></span> <span data-ttu-id="97c5a-120">如果为 <b>True</b>，则在垂直滚动时同步活动工作簿的窗口。</span><span class="sxs-lookup"><span data-stu-id="97c5a-120"><b>True</b> to synchronize the windows of the active workbook when scrolling vertically.</span></span> <span data-ttu-id="97c5a-121"><b>False</b> 不同步窗口。</span><span class="sxs-lookup"><span data-stu-id="97c5a-121"><b>False</b> not to synchronize the windows.</span></span> <span data-ttu-id="97c5a-122">默认值为 <b>False</b>。</span><span class="sxs-lookup"><span data-stu-id="97c5a-122">The default value is <b>False</b>.</span></span></param>
+        <summary><span data-ttu-id="97c5a-123">对屏幕上的窗口进行排列。</span><span class="sxs-lookup"><span data-stu-id="97c5a-123">Arranges the windows on the screen.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -277,12 +151,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="3c140-124">如果两个窗口的并排模式中，结束-并排模式。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="3c140-124">Ends side-by-side mode if two windows are in side-by-side mode.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="97c5a-124">使用此方法可结束两个窗口的并排模式。</span><span class="sxs-lookup"><span data-stu-id="97c5a-124">Ends side-by-side mode if two windows are in side-by-side mode.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -310,28 +179,11 @@
         <Parameter Name="WindowName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="WindowName">
-          <span data-ttu-id="3c140-125">要打开的窗口的名称。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="3c140-125">The name of a window to open.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="3c140-126">以-并排模式打开两个窗口。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="3c140-126">Opens two windows in side-by-side mode.</span>
-          </span>
-        </summary>
+        <param name="WindowName"><span data-ttu-id="97c5a-125">要打开的窗口的名称。</span><span class="sxs-lookup"><span data-stu-id="97c5a-125">The name of a window to open.</span></span></param>
+        <summary><span data-ttu-id="97c5a-126">以并排模式打开两个窗口。</span><span class="sxs-lookup"><span data-stu-id="97c5a-126">Opens two windows in side-by-side mode.</span></span></summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <span data-ttu-id="3c140-127">不能使用与<b>CompareSideBySideWith</b>方法<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象或<see cref="P:Microsoft.Office.Interop.Excel._Application.ActiveWorkbook" />属性。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="3c140-127">You cannot use the <b>CompareSideBySideWith</b> method with the <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object or the <see cref="P:Microsoft.Office.Interop.Excel._Application.ActiveWorkbook" /> property.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="97c5a-127">不能将 <b>CompareSideBySideWith</b> 方法与 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 对象或属性 <see cref="P:Microsoft.Office.Interop.Excel._Application.ActiveWorkbook" /> 一同使用。</span><span class="sxs-lookup"><span data-stu-id="97c5a-127">You cannot use the <b>CompareSideBySideWith</b> method with the <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object or the <see cref="P:Microsoft.Office.Interop.Excel._Application.ActiveWorkbook" /> property.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -357,12 +209,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="3c140-128">返回集合中对象的数目。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="3c140-128">Returns the number of objects in the collection.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="97c5a-128">返回集合中对象的数目。</span><span class="sxs-lookup"><span data-stu-id="97c5a-128">Returns the number of objects in the collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -390,33 +237,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="3c140-129">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="3c140-129">Returns a 32-bit integer that indicates the application in which this object was created.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="97c5a-129">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span><span class="sxs-lookup"><span data-stu-id="97c5a-129">Returns a 32-bit integer that indicates the application in which this object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="3c140-130">如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="3c140-130">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="3c140-131">
-              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="3c140-131">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
-            </span>
-            <span data-ttu-id="3c140-132">例如，Microsoft Excel 具有 XCEL 的创建者代码。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="3c140-132">For example, Microsoft Excel has the creator code XCEL.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="97c5a-130">如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</span><span class="sxs-lookup"><span data-stu-id="97c5a-130">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span></span></para>
+          <para><span data-ttu-id="97c5a-131"><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。</span><span class="sxs-lookup"><span data-stu-id="97c5a-131">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="97c5a-132">例如，Microsoft Excel 的创建者代码为 XCEL。</span><span class="sxs-lookup"><span data-stu-id="97c5a-132">For example, Microsoft Excel has the creator code XCEL.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -477,22 +302,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="3c140-133">所需的<b>对象</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="3c140-133">Required <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="3c140-134">对象的名称或索引号。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="3c140-134">The name or index number of the object.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="3c140-135">从集合中返回一个对象。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="3c140-135">Returns a single object from a collection.</span>
-          </span>
-        </summary>
+        <param name="Index"><span data-ttu-id="97c5a-133">必需 <b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="97c5a-133">Required <b>Object</b>.</span></span> <span data-ttu-id="97c5a-134">对象的名称或索引号。</span><span class="sxs-lookup"><span data-stu-id="97c5a-134">The name or index number of the object.</span></span></param>
+        <summary><span data-ttu-id="97c5a-135">从集合中返回一个对象。</span><span class="sxs-lookup"><span data-stu-id="97c5a-135">Returns a single object from a collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -520,12 +331,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="3c140-136">返回指定对象的父对象。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="3c140-136">Returns the parent object for the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="97c5a-136">返回指定对象的父对象。</span><span class="sxs-lookup"><span data-stu-id="97c5a-136">Returns the parent object for the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -551,25 +357,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="3c140-137">重置正在进行并排比较的两个工作表窗口的位置。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="3c140-137">Resets the position of two worksheet windows that are being compared side by side.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="3c140-138">使用<b>ResetPositionsSideBySide</b>方法重置进行并排比较的两个工作表的位置。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="3c140-138">Use the <b>ResetPositionsSideBySide</b> method to reset the position of two worksheets that are being compared side by side.</span>
-            </span>
-            <span data-ttu-id="3c140-139">例如，如果用户将最小化或最大化进行比较两个工作表窗口之一， <b>ResetPositionsSideBySide</b>方法将重置显示，以便再次并排显示两个窗口。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="3c140-139">For example, if a user minimizes or maximizes one of the two worksheet windows being compared, the <b>ResetPositionsSideBySide</b> method resets the display so that the two windows are displayed side by side again.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="97c5a-137">重置正在进行并排比较的两个工作表窗口的位置。</span><span class="sxs-lookup"><span data-stu-id="97c5a-137">Resets the position of two worksheet windows that are being compared side by side.</span></span></summary>
+        <remarks><para><span data-ttu-id="97c5a-138">使用 <b>ResetPositionsSideBySide</b> 方法可重置并排比较的两个工作表的位置。</span><span class="sxs-lookup"><span data-stu-id="97c5a-138">Use the <b>ResetPositionsSideBySide</b> method to reset the position of two worksheets that are being compared side by side.</span></span> <span data-ttu-id="97c5a-139">例如，如果用户将正在进行比较的两个工作表窗口中的其中一个窗框最小化或最大化，就可以使用 <b>ResetPositionsSideBySide</b> 方法重置显示，以便这两个窗口再次并排显示。</span><span class="sxs-lookup"><span data-stu-id="97c5a-139">For example, if a user minimizes or maximizes one of the two worksheet windows being compared, the <b>ResetPositionsSideBySide</b> method resets the display so that the two windows are displayed side by side again.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SyncScrollingSideBySide">
@@ -598,13 +388,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="3c140-p107">			如果为 <b>True</b>，在对文档进行并排比较的同时启用窗口内容的滚动功能。若为 <b>False</b>，则在对文档进行并排比较的同时禁用窗口内容的滚动功能。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="3c140-p107">
-              <b>True</b> enables scrolling the contents of windows at the same time when documents are being compared side by side. <b>False</b> disables scrolling the windows at the same time.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="97c5a-140">如果为 <b>True</b>，在对文档进行并排比较的同时启用窗口内容的滚动功能。</span><span class="sxs-lookup"><span data-stu-id="97c5a-140"><b>True</b> enables scrolling the contents of windows at the same time when documents are being compared side by side.</span></span> <span data-ttu-id="97c5a-141">若为 <b>False</b>，则在对文档进行并排比较的同时禁用窗口内容的滚动功能。</span><span class="sxs-lookup"><span data-stu-id="97c5a-141"><b>False</b> disables scrolling the windows at the same time.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
