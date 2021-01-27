@@ -1,13 +1,5 @@
 <Type Name="AppEvents_ProtectedViewWindowBeforeCloseEventHandler" FullName="Microsoft.Office.Interop.Excel.AppEvents_ProtectedViewWindowBeforeCloseEventHandler">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f6770db538522765ee8ce8845416a64151f90f38" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20580260" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public delegate void AppEvents_ProtectedViewWindowBeforeCloseEventHandler(ProtectedViewWindow Pvw, XlProtectedViewCloseReason Reason, out bool Cancel);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f6770db538522765ee8ce8845416a64151f90f38" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50002288" /></Metadata><TypeSignature Language="C#" Value="public delegate void AppEvents_ProtectedViewWindowBeforeCloseEventHandler(ProtectedViewWindow Pvw, XlProtectedViewCloseReason Reason, out bool Cancel);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AppEvents_ProtectedViewWindowBeforeCloseEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AppEvents_ProtectedViewWindowBeforeCloseEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub AppEvents_ProtectedViewWindowBeforeCloseEventHandler(Pvw As ProtectedViewWindow, Reason As XlProtectedViewCloseReason, ByRef Cancel As Boolean)" />
@@ -37,10 +29,9 @@
   </ReturnValue>
   <Docs>
     <param name="Pvw">一个代表已关闭的“受保护的视图”窗口的对象。</param>
-    <param name="Reason">关闭指定受保护的视图窗口的原因的常量。</param>
-    <param name="Cancel">
-      <b>false</b>时，事件发生。 如果事件过程将此参数设置为<b>true</b>，完成此过程后不会关闭窗口。</param>
-    <summary>用于添加事件处理程序<b>委托</b>类型<see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.ProtectedViewWindowBeforeClose" />事件。 <b>ProtectedViewWindowBeforeClose</b>事件发生之前的受保护的视图窗口或受保护的视图窗口中的工作簿关闭。</summary>
+    <param name="Reason">一个常量，指定关闭"受保护的视图"窗口的原因。</param>
+    <param name="Cancel"><b>假</b> 的事件发生时。 如果事件过程将此参数设置 <b>为 true，</b>则该过程完成后窗口不会关闭。</param>
+    <summary>用于 <b>为</b> 事件添加事件处理程序的委托 <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.ProtectedViewWindowBeforeClose" /> 类型。 <b>ProtectedViewWindowBeforeClose</b>事件在受保护的视图窗口或受保护的视图窗口中的工作簿关闭之前立即发生。</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>
