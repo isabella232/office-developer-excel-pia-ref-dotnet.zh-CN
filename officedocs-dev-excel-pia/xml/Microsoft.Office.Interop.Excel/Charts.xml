@@ -1,13 +1,5 @@
 <Type Name="Charts" FullName="Microsoft.Office.Interop.Excel.Charts">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="21bb7adb80852e2d82d5897dcd0ffec87dcefadd" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20581737" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Charts : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="21bb7adb80852e2d82d5897dcd0ffec87dcefadd" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005801" /></Metadata><TypeSignature Language="C#" Value="public interface Charts : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Charts implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Charts" />
   <TypeSignature Language="VB.NET" Value="Public Interface Charts&#xA;Implements IEnumerable" />
@@ -33,60 +25,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="d4330-101">指定的或活动工作簿中所有图表工作表的集合。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="d4330-101">A collection of all the chart sheets in the specified or active workbook.</span>
-      </span>
-      <span data-ttu-id="d4330-102">每个图表工作表由<see cref="T:Microsoft.Office.Interop.Excel.Chart" />对象。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="d4330-102">Each chart sheet is represented by a <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> object.</span>
-      </span>
-      <span data-ttu-id="d4330-103">这不包括工作表或对话框工作表上嵌入图表。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="d4330-103">This doesn’t include charts embedded on worksheets or dialog sheets.</span>
-      </span>
-      <span data-ttu-id="d4330-104">有关嵌入式图表的信息，请参阅<see cref="T:Microsoft.Office.Interop.Excel.ChartObject" />对象。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="d4330-104">For information about embedded charts, see the <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> object.</span>
-      </span>
-    </summary>
-    <remarks>
-      <para>
-        <span data-ttu-id="d4330-105">使用<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" />属性返回<b>Charts</b>集合。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="d4330-105">Use the <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" /> property to return the <b>Charts</b> collection.</span>
-        </span>
-        <span data-ttu-id="d4330-106">使用<see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" />方法可创建新图表工作表并将其添加到工作簿。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="d4330-106">Use the <see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" /> method to create a new chart sheet and add it to the workbook.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="d4330-107">可以组合<see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" />方法与<see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法添加新图表包含从工作表中的数据。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="d4330-107">You can combine the <see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" /> method with the <see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> method to add a new chart that contains data from a worksheet.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="d4330-108">使用<b>图表</b>(<paramref name="index" />)，其中<paramref name="index" />是图表工作表的索引号或名称，可返回单个<b>图表</b>对象。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="d4330-108">Use <b>Charts</b>(<paramref name="index" />), where <paramref name="index" /> is the chart sheet index number or name, to return a single <b>Chart</b> object.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="d4330-109">
-          <see cref="T:Microsoft.Office.Interop.Excel.Sheets" />集合包含工作簿 （图表工作表和工作表） 中的所有工作表。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="d4330-109">The <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection contains all the sheets in the workbook (both chart sheets and worksheets).</span>
-        </span>
-        <span data-ttu-id="d4330-110">使用<b>工作表</b>(<paramref name="index" />)，其中<paramref name="index" />工作表名称或编号，就可以返回一个工作表。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="d4330-110">Use <b>Sheets</b>(<paramref name="index" />), where <paramref name="index" /> is the sheet name or number, to return a single sheet.</span>
-        </span>
-      </para>
-      <para></para>
-    </remarks>
+    <summary><span data-ttu-id="9c7d9-101">指定的或活动工作簿中所有图表工作表的集合。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-101">A collection of all the chart sheets in the specified or active workbook.</span></span> <span data-ttu-id="9c7d9-102">每个图表工作表都由一个对象 <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> 表示。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-102">Each chart sheet is represented by a <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> object.</span></span> <span data-ttu-id="9c7d9-103">这不包括嵌入在工作表或对话框工作表上的图表。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-103">This doesn’t include charts embedded on worksheets or dialog sheets.</span></span> <span data-ttu-id="9c7d9-104">有关嵌入图表的信息，请参阅 <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> 对象。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-104">For information about embedded charts, see the <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> object.</span></span></summary>
+    <remarks><para><span data-ttu-id="9c7d9-105">使用 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" /> 该属性可返回 <b>Charts</b> 集合。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-105">Use the <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" /> property to return the <b>Charts</b> collection.</span></span> <span data-ttu-id="9c7d9-106">使用 <see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" /> 该方法可创建新的图表工作表并将其添加到工作簿中。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-106">Use the <see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" /> method to create a new chart sheet and add it to the workbook.</span></span></para>
+      <para><span data-ttu-id="9c7d9-107">可以将该方法 <see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" /> 与该方法结合使用，以添加包含工作表 <see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 数据的新图表。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-107">You can combine the <see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" /> method with the <see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> method to add a new chart that contains data from a worksheet.</span></span></para>
+      <para><span data-ttu-id="9c7d9-108">使用 <b>图表</b> () 图表工作表索引号或名称，返回 <paramref name="index" /> <paramref name="index" /> 单个 <b>Chart</b> 对象。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-108">Use <b>Charts</b>(<paramref name="index" />), where <paramref name="index" /> is the chart sheet index number or name, to return a single <b>Chart</b> object.</span></span></para>
+      <para><span data-ttu-id="9c7d9-109">该 <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> 集合包含工作簿中所有工作表 (图表工作表和工作表) 。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-109">The <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection contains all the sheets in the workbook (both chart sheets and worksheets).</span></span> <span data-ttu-id="9c7d9-110">使用 <b>工作表</b> <paramref name="index" /> () ，其中工作表的名称 <paramref name="index" /> 或编号，返回单个工作表。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-110">Use <b>Sheets</b>(<paramref name="index" />), where <paramref name="index" /> is the sheet name or number, to return a single sheet.</span></span></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -119,12 +63,7 @@
       </Parameters>
       <Docs>
         <param name="Index">To be added.</param>
-        <summary>
-          <span data-ttu-id="d4330-111">仅供内部使用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-111">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="9c7d9-111">保留以供内部使用。 </span><span class="sxs-lookup"><span data-stu-id="9c7d9-111">Reserved for internal use.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -153,12 +92,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="d4330-112">仅供内部使用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-112">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="9c7d9-112">保留以供内部使用。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-112">Reserved for internal use.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,12 +134,7 @@
         <param name="ActivePrinter">To be added.</param>
         <param name="PrintToFile">To be added.</param>
         <param name="Collate">To be added.</param>
-        <summary>
-          <span data-ttu-id="d4330-113">仅供内部使用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-113">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="9c7d9-113">保留以供内部使用。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-113">Reserved for internal use.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,12 +168,7 @@
         <param name="Before">To be added.</param>
         <param name="After">To be added.</param>
         <param name="Count">To be added.</param>
-        <summary>
-          <span data-ttu-id="d4330-114">此对象、成员或枚举已被弃用并且不适合在您的代码中使用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-114">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="9c7d9-114">此对象、成员或枚举已被弃用并且不适合在您的代码中使用。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-114">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -274,36 +198,11 @@
         <Parameter Name="NewLayout" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Before">
-          <span data-ttu-id="d4330-115">指定工作表的对象，新建的工作表将置于此工作表之前。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-115">An object that specifies the sheet before which the new sheet is added.</span>
-          </span>
-        </param>
-        <param name="After">
-          <span data-ttu-id="d4330-116">指定工作表的对象，新建的工作表将置于此工作表之后。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-116">An object that specifies the sheet after which the new sheet is added.</span>
-          </span>
-        </param>
-        <param name="Count">
-          <span data-ttu-id="d4330-p104">要添加的工作表数。默认值为 1。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-p104">The number of sheets to be added. The default value is one.</span>
-          </span>
-        </param>
-        <param name="NewLayout">
-          <span data-ttu-id="d4330-119">如果<b>NewLayout</b>为<b>True</b>，将图表插入使用动态的新格式设置规则 （标题位于和图例才上是否有多个系列）。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-119">If <b>NewLayout</b> is <b>True</b>, the chart is inserted by using the new dynamic formatting rules (Title is on, and Legend is on only if there are multiple series).</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="d4330-120">插入图表直接向网格。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-120">Inserts a chart directly onto the grid.</span>
-          </span>
-        </summary>
+        <param name="Before"><span data-ttu-id="9c7d9-115">指定工作表的对象，新建的工作表将置于此工作表之前。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-115">An object that specifies the sheet before which the new sheet is added.</span></span></param>
+        <param name="After"><span data-ttu-id="9c7d9-116">指定工作表的对象，新建的工作表将置于此工作表之后。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-116">An object that specifies the sheet after which the new sheet is added.</span></span></param>
+        <param name="Count"><span data-ttu-id="9c7d9-117">要添加的工作表数。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-117">The number of sheets to be added.</span></span> <span data-ttu-id="9c7d9-118">默认值为 1。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-118">The default value is one.</span></span></param>
+        <param name="NewLayout"><span data-ttu-id="9c7d9-119">如果 <b>NewLayout</b> 为 <b>True，</b>则通过使用新的动态格式规则插入图表 (标题打开，并且只有有多个系列时，图例才) 。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-119">If <b>NewLayout</b> is <b>True</b>, the chart is inserted by using the new dynamic formatting rules (Title is on, and Legend is on only if there are multiple series).</span></span></param>
+        <summary><span data-ttu-id="9c7d9-120">将图表直接插入到网格中。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-120">Inserts a chart directly onto the grid.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -331,16 +230,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="d4330-121">返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-121">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
-          </span>
-          <span data-ttu-id="d4330-122">只读。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-122">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="9c7d9-121">返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-121">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span></span> <span data-ttu-id="9c7d9-122">只读。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-122">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -368,49 +258,11 @@
         <Parameter Name="After" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Before">
-          <span data-ttu-id="d4330-123">可选的<b>对象</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-123">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="d4330-124">将在其前面放置复制的工作表的表。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-124">The sheet before which the copied sheet will be placed.</span>
-          </span>
-          <span data-ttu-id="d4330-125">不能指定<paramref name="Before" />如果指定<paramref name="After" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-125">You cannot specify <paramref name="Before" /> if you specify <paramref name="After" />.</span>
-          </span>
-        </param>
-        <param name="After">
-          <span data-ttu-id="d4330-126">可选的<b>对象</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-126">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="d4330-127">将在其后放置复制的工作表的表。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-127">The sheet after which the copied sheet will be placed.</span>
-          </span>
-          <span data-ttu-id="d4330-128">不能指定<paramref name="After" />如果指定<paramref name="Before" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-128">You cannot specify <paramref name="After" /> if you specify <paramref name="Before" />.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="d4330-129">将工作表复制到工作簿的另一位置。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-129">Copies the sheet to another location in the workbook.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="d4330-130">如果不指定<paramref name="Before" />或<paramref name="After" />，Microsoft Excel 将新建一个包含复制的工作表的新工作簿。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="d4330-130">If you don't specify either <paramref name="Before" /> or <paramref name="After" />, Microsoft Excel creates a new workbook that contains the copied sheet.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <param name="Before"><span data-ttu-id="9c7d9-123">可选 <b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-123">Optional <b>Object</b>.</span></span> <span data-ttu-id="9c7d9-124">将要在其之前放置所复制工作表的工作表。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-124">The sheet before which the copied sheet will be placed.</span></span> <span data-ttu-id="9c7d9-125">不能指定 <paramref name="Before" /> 是否指定 <paramref name="After" /> 。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-125">You cannot specify <paramref name="Before" /> if you specify <paramref name="After" />.</span></span></param>
+        <param name="After"><span data-ttu-id="9c7d9-126">可选 <b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-126">Optional <b>Object</b>.</span></span> <span data-ttu-id="9c7d9-127">将要在其之后放置所复制工作表的工作表。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-127">The sheet after which the copied sheet will be placed.</span></span> <span data-ttu-id="9c7d9-128">不能指定 <paramref name="After" /> 是否指定 <paramref name="Before" /> 。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-128">You cannot specify <paramref name="After" /> if you specify <paramref name="Before" />.</span></span></param>
+        <summary><span data-ttu-id="9c7d9-129">将工作表复制到工作簿的另一位置。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-129">Copies the sheet to another location in the workbook.</span></span></summary>
+        <remarks><para><span data-ttu-id="9c7d9-130">如果未指定或 <paramref name="Before" /> <paramref name="After" /> ，Microsoft Excel 将创建一个新工作簿，其中包含复制的工作表。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-130">If you don't specify either <paramref name="Before" /> or <paramref name="After" />, Microsoft Excel creates a new workbook that contains the copied sheet.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -436,16 +288,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="d4330-131">返回集合中对象的数目。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-131">Returns the number of objects in the collection.</span>
-          </span>
-          <span data-ttu-id="d4330-132">Integer 类型，只读。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-132">Read-only Integer.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="9c7d9-131">返回集合中对象的数目。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-131">Returns the number of objects in the collection.</span></span> <span data-ttu-id="9c7d9-132">Integer 类型，只读。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-132">Read-only Integer.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -473,35 +316,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="d4330-133">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-133">Returns a 32-bit integer that indicates the application in which this object was created.</span>
-          </span>
-          <span data-ttu-id="d4330-134">如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-134">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
-          </span>
-          <span data-ttu-id="d4330-135">只读<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-135">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="9c7d9-133">返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-133">Returns a 32-bit integer that indicates the application in which this object was created.</span></span> <span data-ttu-id="9c7d9-134">如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-134">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span></span> <span data-ttu-id="9c7d9-135">只读 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-135">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="d4330-136">
-              <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="d4330-136">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
-            </span>
-            <span data-ttu-id="d4330-137">例如，Microsoft Excel 具有 XCEL 的创建者代码。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="d4330-137">For example, Microsoft Excel has the creator code XCEL.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="9c7d9-136"><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-136">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="9c7d9-137">例如，Microsoft Excel 的创建者代码为 XCEL。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-137">For example, Microsoft Excel has the creator code XCEL.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -525,12 +343,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="d4330-138">删除对象。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-138">Deletes the object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="9c7d9-138">删除对象。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-138">Deletes the object.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -589,26 +402,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.HPageBreaks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="d4330-139">返回<see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" />集合，代表水平分页符工作表上。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-139">Returns an <see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" /> collection that represents the horizontal page breaks on the sheet.</span>
-          </span>
-          <span data-ttu-id="d4330-140">只读。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-140">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="9c7d9-139">返回 <see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" /> 一个集合，该集合代表工作表上的水平分页符。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-139">Returns an <see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" /> collection that represents the horizontal page breaks on the sheet.</span></span> <span data-ttu-id="9c7d9-140">只读。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-140">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="d4330-141">每张工作表最多有 1026 个水平分页符。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="d4330-141">There is a limit of 1026 horizontal page breaks per sheet.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="9c7d9-141">每张工作表最多有 1026 个水平分页符。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-141">There is a limit of 1026 horizontal page breaks per sheet.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -637,22 +434,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="d4330-142">所需的<b>对象</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-142">Required <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="d4330-143">对象的名称或索引号。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-143">The name or index number of the object.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="d4330-144">从集合中返回一个对象。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-144">Returns a single object from a collection.</span>
-          </span>
-        </summary>
+        <param name="Index"><span data-ttu-id="9c7d9-142">必需 <b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-142">Required <b>Object</b>.</span></span> <span data-ttu-id="9c7d9-143">对象的名称或索引号。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-143">The name or index number of the object.</span></span></param>
+        <summary><span data-ttu-id="9c7d9-144">从集合中返回一个对象。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-144">Returns a single object from a collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -680,49 +463,11 @@
         <Parameter Name="After" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Before">
-          <span data-ttu-id="d4330-145">可选的<b>对象</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-145">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="d4330-146">将在其前面放置移动的工作表的表。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-146">The sheet before which the moved sheet will be placed.</span>
-          </span>
-          <span data-ttu-id="d4330-147">不能指定<paramref name="Before" />如果指定<paramref name="After" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-147">You cannot specify <paramref name="Before" /> if you specify <paramref name="After" />.</span>
-          </span>
-        </param>
-        <param name="After">
-          <span data-ttu-id="d4330-148">可选的<b>对象</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-148">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="d4330-149">将在其后放置移动的工作表的表。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-149">The sheet after which the moved sheet will be placed.</span>
-          </span>
-          <span data-ttu-id="d4330-150">不能指定<paramref name="After" />如果指定<paramref name="Before" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-150">You cannot specify <paramref name="After" /> if you specify <paramref name="Before" />.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="d4330-151">将工作表移到工作簿中的其他位置。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-151">Moves the sheet to another location in the workbook.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="d4330-152">如果不指定<paramref name="Before" />或<paramref name="After" />，Microsoft Excel 将新建一个包含移动的工作表的新工作簿。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="d4330-152">If you don't specify either <paramref name="Before" /> or <paramref name="After" />, Microsoft Excel creates a new workbook that contains the moved sheet.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <param name="Before"><span data-ttu-id="9c7d9-145">可选 <b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-145">Optional <b>Object</b>.</span></span> <span data-ttu-id="9c7d9-146">在其之前放置移动工作表的工作表。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-146">The sheet before which the moved sheet will be placed.</span></span> <span data-ttu-id="9c7d9-147">不能指定 <paramref name="Before" /> 是否指定 <paramref name="After" /> 。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-147">You cannot specify <paramref name="Before" /> if you specify <paramref name="After" />.</span></span></param>
+        <param name="After"><span data-ttu-id="9c7d9-148">可选 <b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-148">Optional <b>Object</b>.</span></span> <span data-ttu-id="9c7d9-149">在其之后放置移动工作表的工作表。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-149">The sheet after which the moved sheet will be placed.</span></span> <span data-ttu-id="9c7d9-150">不能指定 <paramref name="After" /> 是否指定 <paramref name="Before" /> 。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-150">You cannot specify <paramref name="After" /> if you specify <paramref name="Before" />.</span></span></param>
+        <summary><span data-ttu-id="9c7d9-151">将工作表移到工作簿中的其他位置。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-151">Moves the sheet to another location in the workbook.</span></span></summary>
+        <remarks><para><span data-ttu-id="9c7d9-152">如果不指定或，Microsoft Excel 将创建一个包含移动工作表 <paramref name="Before" /> <paramref name="After" /> 的新工作簿。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-152">If you don't specify either <paramref name="Before" /> or <paramref name="After" />, Microsoft Excel creates a new workbook that contains the moved sheet.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -748,12 +493,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="d4330-p115">返回指定对象的父对象。只读。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-p115">Returns the parent object for the specified object. Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="9c7d9-153">返回指定对象的父对象。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-153">Returns the parent object for the specified object.</span></span> <span data-ttu-id="9c7d9-154">只读。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-154">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -790,128 +530,17 @@
         <Parameter Name="PrToFileName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="From">
-          <span data-ttu-id="d4330-155">可选的<b>对象</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-155">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="d4330-156">从中开始打印的页的页码。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-156">The number of the page at which to start printing.</span>
-          </span>
-          <span data-ttu-id="d4330-157">如果省略此参数，则打印从开头。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-157">If this argument is omitted, printing starts at the beginning.</span>
-          </span>
-        </param>
-        <param name="To">
-          <span data-ttu-id="d4330-158">可选的<b>对象</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-158">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="d4330-159">要打印的末页数。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-159">The number of the last page to print.</span>
-          </span>
-          <span data-ttu-id="d4330-160">如果省略此参数，则打印至最后一页。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-160">If this argument is omitted, printing ends with the last page.</span>
-          </span>
-        </param>
-        <param name="Copies">
-          <span data-ttu-id="d4330-161">可选的<b>对象</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-161">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="d4330-162">要打印的份数。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-162">The number of copies to print.</span>
-          </span>
-          <span data-ttu-id="d4330-163">如果省略此参数，则打印一份。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-163">If this argument is omitted, one copy is printed.</span>
-          </span>
-        </param>
-        <param name="Preview">
-          <span data-ttu-id="d4330-164">可选的<b>对象</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-164">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="d4330-165">
-            <b>True</b>由 Microsoft Excel 调用之前打印对象的打印预览。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-165">
-              <b>True</b> to have Microsoft Excel invoke print preview before printing the object.</span>
-          </span>
-          <span data-ttu-id="d4330-166">
-            <b>False</b>（或省略） 若要立即打印对象。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-166">
-              <b>False</b> (or omitted) to print the object immediately.</span>
-          </span>
-        </param>
-        <param name="ActivePrinter">
-          <span data-ttu-id="d4330-167">可选的<b>对象</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-167">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="d4330-168">设置活动打印机的名称。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-168">Sets the name of the active printer.</span>
-          </span>
-        </param>
-        <param name="PrintToFile">
-          <span data-ttu-id="d4330-169">可选的<b>对象</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-169">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="d4330-170">
-            <b>True</b>打印到文件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-170">
-              <b>True</b> to print to a file.</span>
-          </span>
-          <span data-ttu-id="d4330-171">如果<paramref name="PrToFileName" />未指定，则 Microsoft Excel 将提示用户输入输出文件的名称。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-171">If <paramref name="PrToFileName" /> is not specified, Microsoft Excel prompts the user to enter the name of the output file.</span>
-          </span>
-        </param>
-        <param name="Collate">
-          <span data-ttu-id="d4330-172">可选的<b>对象</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-172">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="d4330-173">如果为 <b>True</b>，则逐份打印多个副本。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-173">
-              <b>True</b> to collate multiple copies.</span>
-          </span>
-        </param>
-        <param name="PrToFileName">
-          <span data-ttu-id="d4330-174">可选的<b>对象</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-174">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="d4330-175">如果<paramref name="PrintToFile" />设置为<b>True</b>，则该参数指定要打印到的文件的名称。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-175">If <paramref name="PrintToFile" /> is set to <b>True</b>, this argument specifies the name of the file you want to print to.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="d4330-176">打印对象。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-176">Prints the object.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="d4330-177">说明中的"页面"<paramref name="From" />和<paramref name="To" />指打印页、 工作表或工作簿中不整个页面。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="d4330-177">"Pages" in the descriptions of <paramref name="From" /> and <paramref name="To" /> refers to printed pages, not overall pages in the sheet or workbook.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <param name="From"><span data-ttu-id="9c7d9-155">可选 <b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-155">Optional <b>Object</b>.</span></span> <span data-ttu-id="9c7d9-156">打印的开始页号。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-156">The number of the page at which to start printing.</span></span> <span data-ttu-id="9c7d9-157">如果省略此参数，则从起始位置开始打印。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-157">If this argument is omitted, printing starts at the beginning.</span></span></param>
+        <param name="To"><span data-ttu-id="9c7d9-158">可选 <b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-158">Optional <b>Object</b>.</span></span> <span data-ttu-id="9c7d9-159">打印的终止页号。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-159">The number of the last page to print.</span></span> <span data-ttu-id="9c7d9-160">如果省略此参数，则打印至最后一页。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-160">If this argument is omitted, printing ends with the last page.</span></span></param>
+        <param name="Copies"><span data-ttu-id="9c7d9-161">可选 <b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-161">Optional <b>Object</b>.</span></span> <span data-ttu-id="9c7d9-162">打印份数。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-162">The number of copies to print.</span></span> <span data-ttu-id="9c7d9-163">如果省略此参数，则只打印一份。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-163">If this argument is omitted, one copy is printed.</span></span></param>
+        <param name="Preview"><span data-ttu-id="9c7d9-164">可选 <b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-164">Optional <b>Object</b>.</span></span> <span data-ttu-id="9c7d9-165">如果为 <b>True</b>，Microsoft Excel 将在打印对象之前调用打印预览。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-165"><b>True</b> to have Microsoft Excel invoke print preview before printing the object.</span></span> <span data-ttu-id="9c7d9-166">如果为 <b>False</b>（或省略该参数），则立即打印对象。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-166"><b>False</b> (or omitted) to print the object immediately.</span></span></param>
+        <param name="ActivePrinter"><span data-ttu-id="9c7d9-167">可选 <b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-167">Optional <b>Object</b>.</span></span> <span data-ttu-id="9c7d9-168">设置活动打印机的名称。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-168">Sets the name of the active printer.</span></span></param>
+        <param name="PrintToFile"><span data-ttu-id="9c7d9-169">可选 <b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-169">Optional <b>Object</b>.</span></span> <span data-ttu-id="9c7d9-170">如果为 <b>True</b>，则打印到文件。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-170"><b>True</b> to print to a file.</span></span> <span data-ttu-id="9c7d9-171">如果 <paramref name="PrToFileName" /> 未指定，Microsoft Excel 将提示用户输入输出文件的名称。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-171">If <paramref name="PrToFileName" /> is not specified, Microsoft Excel prompts the user to enter the name of the output file.</span></span></param>
+        <param name="Collate"><span data-ttu-id="9c7d9-172">可选 <b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-172">Optional <b>Object</b>.</span></span> <span data-ttu-id="9c7d9-173">如果为 <b>True</b>，则逐份打印多个副本。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-173"><b>True</b> to collate multiple copies.</span></span></param>
+        <param name="PrToFileName"><span data-ttu-id="9c7d9-174">可选 <b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-174">Optional <b>Object</b>.</span></span> <span data-ttu-id="9c7d9-175">如果 <paramref name="PrintToFile" /> 设置为 <b>True，</b>则此参数指定要打印到的文件的名称。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-175">If <paramref name="PrintToFile" /> is set to <b>True</b>, this argument specifies the name of the file you want to print to.</span></span></param>
+        <summary><span data-ttu-id="9c7d9-176">打印对象。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-176">Prints the object.</span></span></summary>
+        <remarks><para><span data-ttu-id="9c7d9-177">说明中的"页面"，是指打印的页面，而不是工作表或工作簿 <paramref name="From" /> <paramref name="To" /> 中的整个页面。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-177">"Pages" in the descriptions of <paramref name="From" /> and <paramref name="To" /> refers to printed pages, not overall pages in the sheet or workbook.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintOut_2">
@@ -951,12 +580,7 @@
         <param name="PrintToFile">To be added.</param>
         <param name="Collate">To be added.</param>
         <param name="PrToFileName">To be added.</param>
-        <summary>
-          <span data-ttu-id="d4330-178">仅供内部使用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-178">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="9c7d9-178">仅供内部使用。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-178">Reserved for internal use.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -982,24 +606,8 @@
         <Parameter Name="EnableChanges" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="EnableChanges">
-          <span data-ttu-id="d4330-179">可选的<b>对象</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-179">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="d4330-180">
-            <b>True</b>启用对指定图表的更改。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-180">
-              <b>True</b> to enable changes to the specified charts.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="d4330-181">按对象打印后的外观效果显示对象的预览。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-181">Shows a preview of the object as it would look when printed.</span>
-          </span>
-        </summary>
+        <param name="EnableChanges"><span data-ttu-id="9c7d9-179">可选 <b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-179">Optional <b>Object</b>.</span></span> <span data-ttu-id="9c7d9-180"><b>如果</b> 为 True，则启用对指定图表的更改。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-180"><b>True</b> to enable changes to the specified charts.</span></span></param>
+        <summary><span data-ttu-id="9c7d9-181">按对象打印后的外观效果显示对象的预览。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-181">Shows a preview of the object as it would look when printed.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1025,22 +633,8 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Replace">
-          <span data-ttu-id="d4330-182">可选的<b>对象</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-182">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="d4330-183">要替换的对象。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-183">The object to replace.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="d4330-184">选择对象。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-184">Selects the object.</span>
-          </span>
-        </summary>
+        <param name="Replace"><span data-ttu-id="9c7d9-182">可选 <b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-182">Optional <b>Object</b>.</span></span> <span data-ttu-id="9c7d9-183">要替换的对象。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-183">The object to replace.</span></span></param>
+        <summary><span data-ttu-id="9c7d9-184">选择对象。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-184">Selects the object.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1070,16 +664,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="d4330-185">确定对象是否可见。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-185">Determines whether the object is visible.</span>
-          </span>
-          <span data-ttu-id="d4330-186">读取/写入 <b>对象</b> 。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-186">Read/write <b>Object</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="9c7d9-185">决定对象是否可见。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-185">Determines whether the object is visible.</span></span> <span data-ttu-id="9c7d9-186">读取/写入 <b>对象</b> 。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-186">Read/write <b>Object</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1107,16 +692,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.VPageBreaks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="d4330-187">返回<see cref="T:Microsoft.Office.Interop.Excel.VPageBreaks" />集合，代表垂直分页符工作表上。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-187">Returns a <see cref="T:Microsoft.Office.Interop.Excel.VPageBreaks" /> collection that represents the vertical page breaks on the sheet.</span>
-          </span>
-          <span data-ttu-id="d4330-188">只读。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d4330-188">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="9c7d9-187">返回 <see cref="T:Microsoft.Office.Interop.Excel.VPageBreaks" /> 一个集合，该集合代表工作表上的垂直分页符。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-187">Returns a <see cref="T:Microsoft.Office.Interop.Excel.VPageBreaks" /> collection that represents the vertical page breaks on the sheet.</span></span> <span data-ttu-id="9c7d9-188">只读。</span><span class="sxs-lookup"><span data-stu-id="9c7d9-188">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
