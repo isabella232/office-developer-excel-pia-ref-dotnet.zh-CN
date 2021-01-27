@@ -1,13 +1,5 @@
 <Type Name="SmartTagAction" FullName="Microsoft.Office.Interop.Excel.SmartTagAction">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0a10fef880f7ed0c7daae5414a8fa44a05aefdd9" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20578076" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SmartTagAction" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0a10fef880f7ed0c7daae5414a8fa44a05aefdd9" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010113" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagAction" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTagAction" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SmartTagAction" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTagAction" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>代表可用智能标记执行的操作</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Excel.SmartTagActions.Item(System.Object)" />属性<see cref="T:Microsoft.Office.Interop.Excel.SmartTagActions" />返回<b>SmartTagAction</b>对象的集合。</para>
-      <para>一旦返回<b>SmartTagAction</b>对象后，您可以激活自动添加批注数据使用智能标记<see cref="M:Microsoft.Office.Interop.Excel.SmartTagAction.Execute" />方法。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.SmartTagActions.Item(System.Object)" /> 集合的属性 <see cref="T:Microsoft.Office.Interop.Excel.SmartTagActions" /> 可返回 <b>SmartTagAction</b> 对象。</para>
+      <para>返回 <b>SmartTagAction</b> 对象后，可以激活智能标记以使用该方法自动批注 <see cref="M:Microsoft.Office.Interop.Excel.SmartTagAction.Execute" /> 数据。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -91,7 +81,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>对象</b>，表示文档操作任务窗格中显示的 ActiveX 控件。</summary>
+        <summary>返回一 <b>个对象</b> ，表示ActiveX操作任务窗格中显示一个控件。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,7 +109,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,13 +140,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>Boolean</b>值，该值指示是否选中智能文档中的复选框。</summary>
+        <summary>返回或设置一个 <b>Boolean</b> 值，表示是否选中了智能文档中的某个复选框。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>CheckboxState</b>属性设置为<b>True</b>选中该复选框。 此属性设置为<b>False</b>清除复选框。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>将 <b>CheckboxState</b> 属性设置为 <b>True</b> 将选中复选框。 将此属性设为 <b>False</b> 则清除复选框。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -184,12 +171,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -213,7 +197,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>激活与上一个单元格的智能标记类型相关联的智能标记操作。</summary>
+        <summary>激活与单元格上的智能标记类型相关联的智能标记操作。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,7 +227,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置或返回一个 <b>Boolean</b> 值，代表指定的智能文档“帮助”文字控件在“文档操作”任务窗格中被展开还是被折叠。<b>True</b> 表示控件被展开。<b>False</b> 表示控件被折叠。</summary>
+        <summary>设置或返回一 <b>个布尔</b> 值，该值代表指定的智能文档帮助文本控件是展开还是折叠在文档操作任务窗格中。 <b>True</b> 表示控件被展开。 <b>False</b> 表示控件被折叠。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -274,7 +258,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置或返回一个<b>整数</b>值，该值代表智能文档列表框控件中选定项的索引号。</summary>
+        <summary>设置或返回一 <b>个 Integer</b> 值，该值代表智能文档列表框控件中选定项目的索引号。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -304,22 +288,21 @@
       <Docs>
         <summary>返回的对象的名称。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>下表显示<b>名称</b>属性和给定唯一名称"[Europe] 与数据源相关的属性示例值。[France]。[Paris]"，并将与项目的非 OLAP 数据源命名"巴黎"。</para>
+        <remarks><para>下表显示了 Name 属性和相关属性<b></b>的示例值，给定了具有唯一名称"[Europe]的数据源。[法国]。[Paris]"，以及项目名称为"Paris"的非 OLAP 数据源。</para>
           <list type="table">
             <item>
               <term>
                 <b>标题</b>
               </term>
-              <description>Paris</description>
-              <description>Paris</description>
+              <description>巴黎</description>
+              <description>巴黎</description>
             </item>
             <item>
               <term>
                 <b>名称</b>
               </term>
               <description>[Europe].[France].[Paris]（只读）</description>
-              <description>Paris</description>
+              <description>巴黎</description>
             </item>
             <item>
               <term>
@@ -333,25 +316,24 @@
                 <b>值</b>
               </term>
               <description>[Europe].[France].[Paris]（只读）</description>
-              <description>Paris</description>
+              <description>巴黎</description>
             </item>
           </list>
-          <para>指定的索引时<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />集合，您可以使用下表中所示的语法。</para>
+          <para>在集合中指定索引时，可以使用 <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> 下表中所示的语法。</para>
           <list type="table">
             <item>
-              <term>Expression.PivotItems ("[Europe]。 [法国]。[Paris]")</term>
-              <description>表达式。PivotItems("Paris")</description>
+              <term>Expression.PivotItems ("[Europe]。[法国]。[Paris]") </term>
+              <description>表达式。PivotItems ("Paris") </description>
             </item>
           </list>
-          <para>当使用<see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" />属性引用集合中的特定成员，您可以使用下表中所示的文本索引名称。</para>
+          <para>使用该属性引用集合的特定成员时，可以使用文本 <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> 索引名称，如下表所示。</para>
           <list type="table">
             <item>
-              <term>[Europe]。[France]。[Paris]</term>
-              <description>Paris</description>
+              <term>[欧洲]。[法国]。[巴黎]</term>
+              <description>巴黎</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -405,7 +387,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>布尔</b>值，该值代表智能文档控件当前是否显示在文档操作任务窗格中。</summary>
+        <summary>返回一 <b>个布尔</b> 值，该值表示智能文档控件当前是否显示在文档操作任务窗格中。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -436,7 +418,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置或返回一个<b>整数</b>，表示中的一组单选按钮控件智能文档中的选定项的索引号。</summary>
+        <summary>设置或返回一 <b>个 Integer</b> 类型的值，代表智能文档中一组单选按钮控件中选定项目的索引号。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -467,7 +449,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置或返回一个<b>String</b>值，该值代表智能文档 textbox 控件中的文本。</summary>
+        <summary>设置或返回一 <b>个字符串</b> ，表示智能文档文本框控件中的文本。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -495,11 +477,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSmartTagControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.XlSmartTagControlType" />，表示的文档操作任务窗格中显示的智能文档控件的类型。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.XlSmartTagControlType" /> 一个 表示在文档操作任务窗格中显示的智能文档控件的类型。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlSmartTagControlType" />可以是下列<b>XlSmartTagControlType</b>常量之一：</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlSmartTagControlType" /> 可以是以下 <b>XlSmartTagControlType</b> 常量之一：</para>
           <para>
             <b>xlSmartTagControlActiveX</b>
           </para>
@@ -542,8 +523,7 @@
           <para>
             <b>xlSmartTagControlTextbox</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

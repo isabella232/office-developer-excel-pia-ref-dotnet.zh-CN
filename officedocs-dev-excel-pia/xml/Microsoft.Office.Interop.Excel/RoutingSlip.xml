@@ -1,13 +1,5 @@
 <Type Name="RoutingSlip" FullName="Microsoft.Office.Interop.Excel.RoutingSlip">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d1e265b4ea2021fff6dba4ef91746a75aeaa3e17" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20572700" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface RoutingSlip" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d1e265b4ea2021fff6dba4ef91746a75aeaa3e17" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010491" /></Metadata><TypeSignature Language="C#" Value="public interface RoutingSlip" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract RoutingSlip" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.RoutingSlip" />
   <TypeSignature Language="VB.NET" Value="Public Interface RoutingSlip" />
@@ -30,12 +22,9 @@
   </Attributes>
   <Docs>
     <summary>代表工作簿的传送名单。传送名单用于在电子邮件系统中发送工作簿。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Excel._Workbook.RoutingSlip" />属性可返回<b>RoutingSlip</b>对象。</para>
-      <para>
-        <b>RoutingSlip</b>对象不存在，除非无法返回<see cref="P:Microsoft.Office.Interop.Excel._Workbook.HasRoutingSlip" />工作簿的属性为<b>True</b>。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.RoutingSlip" /> 该属性可返回 <b>RoutingSlip</b> 对象。</para>
+      <para><b>RoutingSlip</b>对象不存在，除非工作簿的属性为 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.HasRoutingSlip" /> <b>True，</b>否则无法返回该对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,12 +80,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delivery">
@@ -125,12 +111,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlRoutingSlipDelivery</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置传送传递方法。 可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlRoutingSlipDelivery" />常量： <b>xlOneAfterAnother</b>或<b>xlAllAtOnce</b>。</summary>
+        <summary>返回或设置邮件传递的方法。 可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlRoutingSlipDelivery" /> <b>：xlOneAfterAnother</b> 或 <b>xlAllAtOnce</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果正在进行传送，则无法设置该属性。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果正在进行传送，则无法设置该属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Message">
@@ -159,7 +143,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置传送名单的消息文本。 此文本将用作用于传送工作簿的邮件的正文文本。</summary>
+        <summary>返回或设置传送名单的消息文字。 这些文字将作为传送指定工作簿时的邮件消息内容。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -221,14 +205,12 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">可选的<b>对象</b>。 收件人。 如果此参数不指定，则<b>收件人</b>属性返回 （或可设为） 包含所有收件人的数组。</param>
+        <param name="Index">可选 <b>对象</b>。 表示收件人。 如果不指定该参数，则 <b>Recipients</b> 属性将返回（或可设置为）包含所有收件人的一个数组。</param>
         <summary>返回或设置传送名单上的收件人。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果传送过程的递送选项设置为 <b>xlOneAfterAnother</b>，则收件人列表的顺序就定义了传递的顺序。</para>
+        <remarks><para>如果传送过程的递送选项设置为 <b>xlOneAfterAnother</b>，则收件人列表的顺序就定义了传递的顺序。</para>
           <para>如果某个传送名单正在进行中，则只会返回或设置那些还没有收到和传送该文档的收件人。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -252,12 +234,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>重新设置传送名单，以便可以通过 （使用相同的收件人列表和传递信息） 的同一名单启动一个新的传送。</summary>
+        <summary>重新设置传送名单，从而可用同一名单初始化一个新的传送过程（使用同一收件人列表和收件人地址信息）。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>使用此方法之前必须完成的传送。 在其他情况下使用此方法将导致出错。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>使用本方法之前，该传送过程必须已完成。 否则本方法将导致错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReturnWhenDone">
@@ -286,7 +266,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>时传送工作簿返回给发件人已完成。</summary>
+        <summary>如果传送过程结束后，工作簿返回给发件人，则该属性值为 <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -314,7 +294,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlRoutingSlipStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指示的传送名单的状态。</summary>
+        <summary>指示传送名单的状态。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -347,10 +327,8 @@
       <Docs>
         <summary>返回或设置邮件或传送名单的主题。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>主题<see cref="T:Microsoft.Office.Interop.Excel.RoutingSlip" />对象用作用于传送工作簿的邮件的主题。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>对象的主题用作用于路由工作簿 <see cref="T:Microsoft.Office.Interop.Excel.RoutingSlip" /> 的邮件的主题。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TrackStatus">
@@ -379,12 +357,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>的传送名单为启用状态跟踪。</summary>
+        <summary>如果允许对传送名单进行状态追踪，则该属性值为 <b>True</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果正在进行传送，则无法设置该属性。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果正在进行传送，则无法设置该属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

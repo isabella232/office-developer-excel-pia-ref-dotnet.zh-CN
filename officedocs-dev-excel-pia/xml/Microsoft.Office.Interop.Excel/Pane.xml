@@ -1,13 +1,5 @@
 <Type Name="Pane" FullName="Microsoft.Office.Interop.Excel.Pane">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="88411cce6007dd3bdb19bfe1fbfa29a798d89eed" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20586903" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Pane" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="88411cce6007dd3bdb19bfe1fbfa29a798d89eed" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011086" /></Metadata><TypeSignature Language="C#" Value="public interface Pane" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Pane" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Pane" />
   <TypeSignature Language="VB.NET" Value="Public Interface Pane" />
@@ -30,12 +22,10 @@
   </Attributes>
   <Docs>
     <summary>表示窗口的窗格。</summary>
-    <remarks>
-      <para>
-        <see cref="T:Microsoft.Office.Interop.Excel.Pane" />对象只对于工作表和 Microsoft Excel 4.0 宏表存在。 <see cref="T:Microsoft.Office.Interop.Excel.Pane" />对象是成员<see cref="T:Microsoft.Office.Interop.Excel.Panes" />集合。 <see cref="T:Microsoft.Office.Interop.Excel.Panes" />集合包含所有单个窗口中显示的窗格。</para>
-      <para>使用<see cref="T:Microsoft.Office.Interop.Excel.Panes" />(<paramref name="index" />)，其中<paramref name="index" />是窗格索引号，若要返回单个<see cref="T:Microsoft.Office.Interop.Excel.Pane" />对象。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>
+        <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> 对象仅存在于工作表和 Microsoft Excel 4.0 宏工作表中。 <see cref="T:Microsoft.Office.Interop.Excel.Pane" />对象是集合的 <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> 一个成员。 该 <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> 集合包含单个窗口中显示的所有窗格。</para>
+      <para>使用 <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> <paramref name="index" /> () ， <paramref name="index" /> 其中窗格索引号，返回单个 <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> 对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -61,10 +51,8 @@
       <Docs>
         <summary>激活窗格。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>如果窗格不在活动窗口中，则该窗格所属的窗口也将被激活。不能激活冻结的窗格。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果窗格不在活动窗口中，则该窗格所属的窗口也将被激活。不能激活冻结的窗格。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -90,7 +78,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,12 +108,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -181,18 +166,16 @@
         <Parameter Name="ToLeft" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Down">可选的<b>对象</b>。 向下滚动内容的页数。</param>
-        <param name="Up">可选的<b>对象</b>。 向上滚动内容的页数。</param>
-        <param name="ToRight">可选的<b>对象</b>。 向右滚动内容的页数。</param>
-        <param name="ToLeft">可选的<b>对象</b>。 向左滚动内容的页数。</param>
+        <param name="Down">可选 <b>对象</b>。 向下滚动内容的页数。</param>
+        <param name="Up">可选 <b>对象</b>。 向上滚动内容的页数。</param>
+        <param name="ToRight">可选 <b>对象</b>。 向右滚动内容的页数。</param>
+        <param name="ToLeft">可选 <b>对象</b>。 向左滚动内容的页数。</param>
         <summary>按页滚动窗口内容。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>如果<paramref name="Down" />和<paramref name="Up" />都已指定，则内容的窗口滚动个参数的差。 例如，如果<paramref name="Down" />是 3 和<paramref name="Up" />为 6，内容向上滚动三页。</para>
-          <para>如果<paramref name="ToLeft" />和<paramref name="ToRight" />都已指定，则内容的窗口滚动个参数的差。 例如，如果<paramref name="ToLeft" />是 3 和<paramref name="ToRight" />为 6，则内容滚动到右三页。</para>
+        <remarks><para>如果同时指定了这两个参数，窗口的内容将滚动两个参数 <paramref name="Down" /> <paramref name="Up" /> 的差。 例如，如果 <paramref name="Down" /> 为 3 且 <paramref name="Up" /> 为 6，则内容向上滚动三页。</para>
+          <para>如果同时指定了这两个参数，窗口的内容将滚动两个参数 <paramref name="ToLeft" /> <paramref name="ToRight" /> 的差。 例如，如果 <paramref name="ToLeft" /> 为 3 且 <paramref name="ToRight" /> 为 6，内容将滚动到右侧三页。</para>
           <para>以上任何参数均可为负数。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -248,9 +231,7 @@
       <Docs>
         <param name="Points">屏幕象素的位置。</param>
         <summary>返回或设置屏幕上的象素点。</summary>
-        <returns>
-          <b>Integer</b>
-        </returns>
+        <returns><b>Integer</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -279,9 +260,7 @@
       <Docs>
         <param name="Points">起始点的位置。</param>
         <summary>返回或设置屏幕象素的位置。</summary>
-        <returns>
-          <b>Integer</b>
-        </returns>
+        <returns><b>Integer</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -311,7 +290,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置在窗格中的最左侧的列数。</summary>
+        <summary>返回或设置窗格中最左边的列的编号。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -342,21 +321,14 @@
         <Parameter Name="Start" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Left">
-          <b>必选。</b> 矩形 （以磅为单位） 从窗格的左边缘的水平位置。</param>
-        <param name="Top">
-          <b>必选。</b> 垂直位置 （以磅为单位） 从窗格顶部的矩形。</param>
-        <param name="Width">
-          <b>必选。</b> 以磅为单位的矩形的宽度。</param>
-        <param name="Height">
-          <b>必选。</b> 以磅为单位的矩形的高度。</param>
-        <param name="Start">可选的<b>对象</b>。 窗格的左上角显示的是<b>，则返回 true</b>左上角的矩形。 在窗格的右下角显示的是<b>false</b>矩形的右下角。 默认值为 <b>True</b> 。</param>
-        <summary>以便指定矩形区域中的内容显示在窗格的左上角或右下角的窗格滚动。</summary>
-        <remarks>
-          <para>
-            <paramref name="Start" />参数对调整屏幕显示当矩形比窗格大时有用处。</para>
-          <para></para>
-        </remarks>
+        <param name="Left">必需 <b>整数</b>。 矩形的水平位置 (从) 左边缘开始以点表示。</param>
+        <param name="Top">必需 <b>整数</b>。 矩形的垂直位置 (从窗格) 以点表示。</param>
+        <param name="Width">必需 <b>整数</b>。 矩形的宽度（以点表示）。</param>
+        <param name="Height">必需 <b>整数</b>。 矩形的高度（以点表示）。</param>
+        <param name="Start">可选 <b>对象</b>。 <b>真</b> 使矩形的左上角显示在窗格的左上角。 <b>假</b> 使矩形的右下角出现在窗格的右下角。 默认值为 <b>True</b>。</param>
+        <summary>滚动窗格，以便指定矩形区域的内容显示在窗格的左上角或右下角。</summary>
+        <remarks><para>当矩形大于窗格时，该参数对于确定屏幕显示 <paramref name="Start" /> 方向非常有用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollRow">
@@ -385,7 +357,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置在顶部窗格中显示的行数。</summary>
+        <summary>返回或设置显示在窗格顶部的行数。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -415,18 +387,16 @@
         <Parameter Name="ToLeft" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Down">可选的<b>对象</b>。 将内容向下滚动的行数。</param>
-        <param name="Up">可选的<b>对象</b>。 将内容向上滚动的行数。</param>
-        <param name="ToRight">可选的<b>对象</b>。 将内容向右滚动的列数。</param>
-        <param name="ToLeft">可选的<b>对象</b>。 将内容向左滚动的列数。</param>
+        <param name="Down">可选 <b>对象</b>。 将内容向下滚动的行数。</param>
+        <param name="Up">可选 <b>对象</b>。 将内容向上滚动的行数。</param>
+        <param name="ToRight">可选 <b>对象</b>。 将内容向右滚动的列数。</param>
+        <param name="ToLeft">可选 <b>对象</b>。 将内容向左滚动的列数。</param>
         <summary>按行或按列滚动窗口内容。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>如果<paramref name="Down" />和<paramref name="Up" />都已指定，则内容的窗口滚动个参数的差。 例如，如果<paramref name="Down" />是 3 和<paramref name="Up" />为 6，内容向上滚动三行。</para>
-          <para>如果<paramref name="ToLeft" />和<paramref name="ToRight" />都已指定，则内容的窗口滚动个参数的差。 例如，如果<paramref name="ToLeft" />是 3 和<paramref name="ToRight" />为 6，则内容滚动到右三列。</para>
+        <remarks><para>如果同时指定了这两个参数，窗口的内容将滚动两个参数 <paramref name="Down" /> <paramref name="Up" /> 的差。 例如，如果 <paramref name="Down" /> 为 3 且 <paramref name="Up" /> 为 6，则内容向上滚动三行。</para>
+          <para>如果同时指定了这两个参数，窗口的内容将滚动两个参数 <paramref name="ToLeft" /> <paramref name="ToRight" /> 的差。 例如，如果 <paramref name="ToLeft" /> 为 3 且为 6，则内容滚动到右侧 <paramref name="ToRight" /> 三列。</para>
           <para>这四个参数都可以取负值。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VisibleRange">
@@ -452,7 +422,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，表示显示在窗格中的单元格区域。 如果部分可见的列或行，它包含范围中。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 一个对象，该对象代表窗格中可见的单元格区域。 如果列或行只显示了一部分，则说明它是包括在区域之内的。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

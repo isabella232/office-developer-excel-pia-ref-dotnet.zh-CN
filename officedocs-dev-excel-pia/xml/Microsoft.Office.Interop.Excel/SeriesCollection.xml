@@ -1,13 +1,5 @@
 <Type Name="SeriesCollection" FullName="Microsoft.Office.Interop.Excel.SeriesCollection">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9b503045ebef3ddb75466923708250f026284484" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20578965" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SeriesCollection : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9b503045ebef3ddb75466923708250f026284484" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010414" /></Metadata><TypeSignature Language="C#" Value="public interface SeriesCollection : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SeriesCollection implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SeriesCollection" />
   <TypeSignature Language="VB.NET" Value="Public Interface SeriesCollection&#xA;Implements IEnumerable" />
@@ -33,13 +25,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>所有的集合<see cref="T:Microsoft.Office.Interop.Excel.Series" />指定的图表或图表组中的对象。</summary>
-    <remarks>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Excel._Chart.SeriesCollection(System.Object)" />方法可返回<b>SeriesCollection</b>集合。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Excel.SeriesCollection.Add(System.Object,Microsoft.Office.Interop.Excel.XlRowCol,System.Object,System.Object,System.Object)" />方法可创建一个新系列并将其添加到图表。</para>
-      <para>使用<b>SeriesCollection</b>(<paramref name="index" />)，其中 index 是数据系列的编号或名称，可返回单个<b>Series</b>对象。</para>
-      <para></para>
-    </remarks>
+    <summary>指定图表或 <see cref="T:Microsoft.Office.Interop.Excel.Series" /> 图表组中所有对象的集合。</summary>
+    <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Excel._Chart.SeriesCollection(System.Object)" /> 该方法可返回 <b>SeriesCollection</b> 集合。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.SeriesCollection.Add(System.Object,Microsoft.Office.Interop.Excel.XlRowCol,System.Object,System.Object,System.Object)" /> 该方法创建新系列并将其添加到图表中。</para>
+      <para>使用 <b>SeriesCollection</b> () （其中 index 是系列索引号或名称） <paramref name="index" /> 返回单个 <b>Series</b> 对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -100,17 +90,15 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Source">所需的<b>对象</b>。 新的数据中，为一个 Range 对象或数据点的数组。</param>
-        <param name="Rowcol">可选<see cref="T:Microsoft.Office.Interop.Excel.XlRowCol" />。 指定新值位于行或列指定的区域。</param>
-        <param name="SeriesLabels">可选的<b>对象</b>。 如果忽略<paramref name="Source" />是一个数组。 <b>如此</b> 如果第一行或列包含数据系列的名称。 <b>假</b> 如果第一行或列中包含第一个系列的数据点。 如果省略此参数，则 Microsoft Excel 将尝试确定的位置中的第一个行或列的内容的系列名称。</param>
-        <param name="CategoryLabels">可选的<b>对象</b>。 如果忽略<paramref name="Source" />是一个数组。 <b>如此</b> 如果第一行或第一列包含分类标签的名称。 <b>假</b> 如果第一行或列中包含第一个系列的数据点。 如果省略此参数，则 Microsoft Excel 将尝试确定从第一个行或列的内容类别标签的位置。</param>
-        <param name="Replace">可选的<b>对象</b>。 如果<paramref name="CategoryLabels" />是<b>True</b>和<paramref name="Replace" />为<b>True</b>，类别的当前存在的系列指定的类别替换。 如果<paramref name="Replace" />是<b>False</b>，不会替换现有类别。 默认值为 <b>False</b> 。</param>
-        <summary>添加到一个或多个新系列<see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" />集合。</summary>
+        <param name="Source">必需 <b>对象</b>。 新数据，可以是 Range 对象或数据点数组。</param>
+        <param name="Rowcol">可选 <see cref="T:Microsoft.Office.Interop.Excel.XlRowCol" /> 。 指定新值是否在指定区域的行或列中。</param>
+        <param name="SeriesLabels">可选 <b>对象</b>。 如果为 <paramref name="Source" /> 数组，则忽略。 <b>如此</b> 如果第一行或列包含数据系列的名称。 如果第一行或第一列包含系列的第一个数据点，则为 <b>False</b>。 如果省略此参数，Microsoft Excel 将尝试确定第一行或第一列内容的系列名称的位置。</param>
+        <param name="CategoryLabels">可选 <b>对象</b>。 如果为 <paramref name="Source" /> 数组，则忽略。 <b>如此</b> 如果第一行或第一列包含分类标签的名称。 如果第一行或第一列包含系列的第一个数据点，则为 <b>False</b>。 如果省略此参数，Microsoft Excel 将尝试确定第一行或第一列内容的分类标签的位置。</param>
+        <param name="Replace">可选 <b>对象</b>。 如果 <paramref name="CategoryLabels" /> 为 <b>True</b> 且 <paramref name="Replace" /> 为 <b>True，</b>则指定的类别将替换系列中当前存在的类别。 如果 <paramref name="Replace" /> 为 <b>False，</b>将不会替换现有类别。 默认值为 <b>False</b>。</param>
+        <summary>向集合添加一个或多个新 <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> 系列。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>此方法对数据透视表无效。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>此方法对数据透视表无效。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -136,7 +124,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -194,12 +182,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Extend">
@@ -226,15 +211,13 @@
         <Parameter Name="CategoryLabels" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Source">所需的<b>对象</b>。 新的数据添加到<see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" />对象，作为<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象或数据点的数组。</param>
-        <param name="Rowcol">可选的<b>对象</b>。 如果忽略<paramref name="Source" />是一个数组。 指定新值位于行或列的给定的范围源。 可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlRowCol" />常量： <b>xlRows</b>或<b>xlColumns</b>。 如果省略此参数，则 Microsoft Excel 将尝试确定值是通过的大小和方向的选定区域或数组维度。</param>
-        <param name="CategoryLabels">可选的<b>对象</b>。 如果忽略<paramref name="Source" />是一个数组。 <b>如此</b> ，则第一行或列包含分类标签的名称。 <b>False</b> ，则第一行或列包含第一个系列的数据点。 如果省略此参数，则 Microsoft Excel 将尝试确定从第一个行或列的内容类别标签的位置。</param>
-        <summary>向现有系列集合中添加新的数据点。</summary>
+        <param name="Source">必需 <b>对象</b>。 要作为对象或数据点数组添加到对象 <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 的新数据。</param>
+        <param name="Rowcol">可选 <b>对象</b>。 如果为 <paramref name="Source" /> 数组，则忽略。 指定新值是位于给定区域源的行中还是列中。 可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlRowCol" /> <b>：xlRows</b> 或 <b>xlColumns</b>。 如果省略本参数，Microsoft Excel 将依据选定区域的大小和方向，或数组的维度确定数值的位置。</param>
+        <param name="CategoryLabels">可选 <b>对象</b>。 如果为 <paramref name="Source" /> 数组，则忽略。 <b>如此</b> ，则第一行或列包含分类标签的名称。 <b>False</b> ，则第一行或列包含第一个系列的数据点。 如果省略此参数，Microsoft Excel 将尝试确定第一行或第一列内容的分类标签的位置。</param>
+        <summary>向已存在的系列集合中添加新的数据点。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>此方法对数据透视表无效。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>此方法对数据透视表无效。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -292,7 +275,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">所需的<b>对象</b>。 对象的名称或索引号。</param>
+        <param name="Index">必需 <b>对象</b>。 对象的名称或索引号。</param>
         <summary>从集合中返回一个对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -319,12 +302,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>创建新系列。 返回<see cref="T:Microsoft.Office.Interop.Excel.Series" />对象，它代表新系列。</summary>
+        <summary>创建新系列。 返回 <see cref="T:Microsoft.Office.Interop.Excel.Series" /> 一个代表新系列的对象。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>本方法对数据透视图无效。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>本方法对数据透视图无效。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -381,11 +362,11 @@
         <Parameter Name="NewSeries" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Rowcol">可选<see cref="T:Microsoft.Office.Interop.Excel.XlRowCol" />。 指定对应于特定数据系列的数值是处于行中还是列中。 可以是以下<b>XlRowCol</b>常量之一：<b>xlColumns</b>默认<b>xlRows</b></param>
-        <param name="SeriesLabels">可选的<b>对象</b>。 <b>，则返回 true</b>的每一行 （或每个列的第一行） 的第一列中的单元格内容用作数据系列中的行 （或列） 的名称。 <b>False</b>作为第一个数据点的数据系列中使用的每一行 （或每个列的第一行） 的第一列中的单元格的内容。 默认值为 <b>False</b> 。</param>
-        <param name="CategoryLabels">可选的<b>对象</b>。 <b>True</b>所选内容第一行 （或列） 的内容作为类别用于图表。 <b>False</b>用作图表上第一个数据系列的第一行 （或列） 的内容。 默认值为 <b>False</b> 。</param>
-        <param name="Replace">可选的<b>对象</b>。 <b>True</b>在现有类别替换复制区域的信息时应用类别。 <b>False</b>插入新类别，而不替换任何旧的。 默认值为 <b>True</b> 。</param>
-        <param name="NewSeries">可选的<b>对象</b>。 <b>True</b>将粘贴数据作为新系列。 <b>False</b>粘贴为新点现有系列的数据。 默认值为 <b>True</b> 。</param>
+        <param name="Rowcol">可选 <see cref="T:Microsoft.Office.Interop.Excel.XlRowCol" /> 。 指定对应于特定数据系列的数值是处于行中还是列中。 可以是以下 <b>XlRowCol</b> 常量之一<b>：xlColumns</b> 默认<b>xlRows</b></param>
+        <param name="SeriesLabels">可选 <b>对象</b>。 如果为 <b>True</b>，则用每一行的第一列（或每一列的第一行）中的单元格内容作为该行（或列）中数据系列的名称。 如果为 <b>False</b>，则用每一行的第一列（或每一列的第一行）中的单元格内容作为数据系列的第一个数据点。 默认值为 <b>False</b>。</param>
+        <param name="CategoryLabels">可选 <b>对象</b>。 如果为 <b>True</b>，则用选定区域的第一行（或第一列）中的内容作为图表的分类。 如果为 <b>False</b>，则用选定区域的第一行（或第一列）中的内容作为图表的第一个数据系列。 默认值为 <b>False</b>。</param>
+        <param name="Replace">可选 <b>对象</b>。 如果为 <b>True</b>，则在用所复制区域的信息替换现有的分类时应用分类。 如果为 <b>False</b>，则插入新分类而不替换任何原有分类。 默认值为 <b>True</b>。</param>
+        <param name="NewSeries">可选 <b>对象</b>。 如果为 <b>True</b>，则将数据作为新系列粘贴。 如果为 <b>False</b>，则将数据作为现有系列的新数据点粘贴。 默认值为 <b>True</b>。</param>
         <summary>将剪贴板中的数据粘贴到指定的系列集合中。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

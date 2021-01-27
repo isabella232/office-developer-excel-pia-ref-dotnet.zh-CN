@@ -1,13 +1,5 @@
 <Type Name="Trendline" FullName="Microsoft.Office.Interop.Excel.Trendline">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="43cabd68ae83576c2d2f307683fffd5d099fc7d7" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575731" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Trendline" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="43cabd68ae83576c2d2f307683fffd5d099fc7d7" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009476" /></Metadata><TypeSignature Language="C#" Value="public interface Trendline" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Trendline" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Trendline" />
   <TypeSignature Language="VB.NET" Value="Public Interface Trendline" />
@@ -30,13 +22,10 @@
   </Attributes>
   <Docs>
     <summary>代表图表上的趋势线。 趋势线显示的趋势，或者方向，一系列中的数据。</summary>
-    <remarks>
-      <para>
-        <b>Trendline</b>对象所在的<see cref="T:Microsoft.Office.Interop.Excel.Trendlines" />集合。 <b>趋势线</b> 集合包含单个数据系列的所有 <b>趋势线</b> 对象。</para>
-      <para>使用<b>Trendlines</b>(<paramref name="index" />)，其中<paramref name="index" />是趋势线索引号，可返回单个<b>Trendline</b>对象。</para>
-      <para>索引号指出趋势线添加到系列中的顺序。Trendlines(1) 是第一个添加到系列中的趋势线，而 Trendlines(Trendlines.Count) 是最后一个。</para>
-      <para></para>
-    </remarks>
+    <remarks><para><b>Trendline</b>对象是集合的 <see cref="T:Microsoft.Office.Interop.Excel.Trendlines" /> 一个成员。 <b>趋势线</b> 集合包含单个数据系列的所有 <b>趋势线</b> 对象。</para>
+      <para>使用 <b>趋势线</b> <paramref name="index" /> () ，其中趋势线索引号， <paramref name="index" /> 返回单个 <b>趋势线</b> 对象。</para>
+      <para>索引号指出趋势线添加到系列中的顺序。 Trendlines(1) 是第一个添加到系列中的趋势线，而 Trendlines(Trendlines.Count) 是最后一个。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -130,10 +119,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置数期 (或散点图中的单位) 的趋势线向后延伸。 为可读/写属性。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>返回或设置数期 (或散点图中的单位) 的趋势线向后延伸。 读/写。</summary>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,7 +147,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Border" />对象，它代表对象的边框。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 一个对象，该对象表示对象的边框。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -216,12 +203,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLabel">
@@ -247,12 +231,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DataLabel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.DataLabel" />代表的数据标签的对象相关联的点或趋势线。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /> 一个对象，该对象代表与点或趋势线关联的数据标签。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>要打开趋势线在您需要设置数据标签<see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayEquation" />属性或<see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayRSquared" />属性设置为<b>True</b>。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>若要打开趋势线的数据标签，需要将 <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayEquation" /> 该属性或 <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayRSquared" /> 属性设置为<b>True。</b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -307,8 +289,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>真</b> 如果趋势线公式显示在图表上 (中数据标签与 R 平方值相同)。 将此属性设 <b>为 True</b> 可自动显示数据标签。</summary>
+        <summary>如果在图表中显示趋势线公式，则该属性值为 <b>True</b>（其数据标签与 R 平方值相同）。 将该属性设为 <b>True</b> 可自动打开数据标签。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -339,8 +320,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果趋势线的 R 平方值显示在图表上 (中数据标签与公式的相同)。 将此属性设 <b>为 True</b> 可自动显示数据标签。</summary>
+        <summary>如果在图表上显示趋势线的 R 平方值，则该属性值为 <b>True</b>（其数据标签与公式的相同）。 将该属性设为 <b>True</b> 可自动打开数据标签。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -368,10 +348,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回对图表元素的格式。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />
-        </value>
+        <summary>返回图表元素的格式。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -438,10 +416,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置趋势线向前延伸的周期 (或散点图中的单位) 数。 为可读/写属性。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>返回或设置趋势线向前延伸的周期 (或散点图中的单位) 数。 读/写。</summary>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -501,10 +477,8 @@
       <Docs>
         <summary>返回或设置趋势线与数值轴的交叉点。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>设置此属性设置<see cref="P:Microsoft.Office.Interop.Excel.Trendline.InterceptIsAuto" />属性设为<b>False</b>。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>设置此属性将 <see cref="P:Microsoft.Office.Interop.Excel.Trendline.InterceptIsAuto" /> 该属性设置为 <b>False</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InterceptIsAuto">
@@ -535,10 +509,8 @@
       <Docs>
         <summary>如果趋势线与数值轴的交叉点由回归分析自动确定，则该属性值为 <b>True</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>设置<see cref="P:Microsoft.Office.Interop.Excel.Trendline.Intercept" />属性将该属性设置为<b>False</b>。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>设置该属性 <see cref="P:Microsoft.Office.Interop.Excel.Trendline.Intercept" /> 将此属性设置为 <b>False</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -598,8 +570,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果 Microsoft Excel 会自动确定趋势线的名称。</summary>
+        <summary>如果 Microsoft Excel 自动确定趋势线的名称，则该属性值为 <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

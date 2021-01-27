@@ -1,13 +1,5 @@
 <Type Name="SlicerCacheLevel" FullName="Microsoft.Office.Interop.Excel.SlicerCacheLevel">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3e50741c9a2b1462398bc2cd7a9e64c639d93725" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587267" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SlicerCacheLevel" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3e50741c9a2b1462398bc2cd7a9e64c639d93725" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010225" /></Metadata><TypeSignature Language="C#" Value="public interface SlicerCacheLevel" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SlicerCacheLevel" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />
   <TypeSignature Language="VB.NET" Value="Public Interface SlicerCacheLevel" />
@@ -29,11 +21,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>表示由切片器筛选的 OLAP 数据源中某个层次结构的一个级别。</summary>
-    <remarks>
-      <para>使用切片器筛选的 OLAP 数据源时, 与其关联的切片器缓存可以包含的数据源中的多个层次结构级别。 使用<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" />对象的父集合<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />对象传递给访问<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />表示这些层次结构级别的对象。</para>
-      <para></para>
-    </remarks>
+    <summary>代表按切片器筛选的 OLAP 数据源中层次结构的一个级别。</summary>
+    <remarks><para>当切片器用来筛选 OLAP 数据源时，与其关联的切片器缓存可包含来自数据源的多个层次结构级别。 使用 <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" /> 父对象 <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> 的集合访问 <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> 表示这些层次结构级别的对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,13 +49,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>使用对象识别符，此属性获取<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。 如果使用对象识别符，此属性获取<see cref="T:Microsoft.Office.Interop.Excel.Application" />值，该值代表指定对象的创建者的对象。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Application" />对象。</value>
-        <remarks>
-          <para>只读。</para>
-          <para></para>
-        </remarks>
+        <summary>如果不与对象限定符一起使用，则此属性获取 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。 当与对象限定符一起使用时，此属性获取一个对象，该对象表示指定 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 对象的创建者。</summary>
+        <value>对象 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -91,12 +78,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取数<see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" />中指定的对象<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />对象。</summary>
-        <value>数<see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" />中指定的对象<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />对象。</value>
-        <remarks>
-          <para>只读。</para>
-          <para></para>
-        </remarks>
+        <summary>获取指定 <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> 对象中的对象 <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> 数。</summary>
+        <value>指定 <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> 对象中的对象 <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> 数。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -122,13 +107,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个指示在其中创建此对象的应用程序的 32 位<b>整数</b>。</summary>
-        <value>32 位<b>整数</b>，指示在其中创建此对象的应用程序。</value>
-        <remarks>
-          <para>只读的<b>long</b>。</para>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <summary>获取一个 32 <b>位整数</b> ，指示创建此对象时的应用程序。</summary>
+        <value>一个 32 <b>位整数</b> ，指示创建此对象时的应用程序。</value>
+        <remarks><para>只读的 <b>长</b>。</para>
+          <para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。 该属性设计为在 Microsoft Excel for the Macintosh 中使用，其中每个应用程序都有 <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.Creator" /> 一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CrossFilterType">
@@ -157,15 +140,13 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置是否切片器参与跨用共享相同的切片器缓存，其他切片器筛选和交叉筛选的显示方式。</summary>
-        <value>指定是否切片器参与显示与其他切片器的共享相同的切片器缓存，以及如何跨筛选的交叉筛选。</value>
-        <remarks>
-          <para>为可读/写属性。</para>
+        <summary>获取或设置切片器是否与共享同一切片器缓存的其他切片器参与交叉筛选，以及交叉筛选的显示方式。</summary>
+        <value>指定切片器是否与共享同一切片器缓存的其他切片器参与交叉筛选，以及交叉筛选的显示方式。</value>
+        <remarks><para>读/写。</para>
           <para>如果多个切片器与同一数据透视表关联，那么默认情况下，如果在一个切片器中作为筛选依据的项目在另一个切片器中没有对应的数据，那么这些项目将变灰。例如，如果有 Country 切片器和 State 切片器，您单击 Country 切片器中的某个国家/地区，那么 State 切片器中不属于该国家/地区的所有州将变灰。此功能称为“交叉筛选”。</para>
-          <para>用户界面设置对应于的设置<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" />属性直观地指明空数据项和显示项目的切片器设置对话框中没有数据最后一个复选框。 设置<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" />属性设为<see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithDataAtTop" />对应于同时选中这两直观地指明没有数据的项并显示项目没有数据上次复选框。 设置<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" />属性设为<see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithNoData" />对应于仅选择直观地指明项目没有数据复选框。 清除两个复选框对应于设置<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" />属性设为<see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerNoCrossFilter" />。</para>
-          <para>切片器筛选非 OLAP 数据源 (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>false</b>)不支持<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" />属性<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />对象。 筛选数据透视表的切片器基于范围、 列表和非 OLAP 关系数据源，则使用<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" />属性<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />对象，而是。</para>
-          <para></para>
-        </remarks>
+          <para>与该属性的设置对应的用户界面设置是"切片器设置"对话框中的"直观地指示没有数据的项目"和"显示没有最后一个数据的项目 <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> "复选框。 将该属性设置为与选中"直观指示没有数据的项目"和"显示没有最后一个数据的项目" <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithDataAtTop" /> 复选框相对应。 将 <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> 该属性设置为与仅选中"直观指示没有数据 <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithNoData" /> 的项目"复选框相对应。 清除这两个复选框对应于将 <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> 该属性设置为 <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerNoCrossFilter" /> 。</para>
+          <para>筛选非 OLAP 数据源的切片器 <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> (。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>false</b>) 对象 <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> 的属性不支持 <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> 。 对于基于范围、列表和非 OLAP 关系数据源筛选数据透视表的切片器，请改为使用对象 <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> 的属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -191,8 +172,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取对象所代表的 OLAP 层次结构级别的 MDX 唯一名称。</summary>
-        <value>对象所代表的 OLAP 层次结构级别的 MDX 唯一名称。</value>
+        <summary>获取由对象表示的 OLAP 层次结构级别的 MDX 唯一名称。</summary>
+        <value>由对象表示的 OLAP 层次结构级别的 MDX 唯一名称。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,12 +200,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取由指定的层次结构级别的从 1 开始的序号值<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />对象。</summary>
-        <value>由指定的层次结构级别的从 1 开始的序号值<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />对象。</value>
-        <remarks>
-          <para>只读。</para>
-          <para></para>
-        </remarks>
+        <summary>获取由指定对象表示的层次结构级别的从 1 开始序 <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> 号值。</summary>
+        <value>由指定对象表示的层次结构级别的从 1 到 1 的序 <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> 号值。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -250,13 +229,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />指定的对象的<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />对象。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />指定的对象的<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />对象。</value>
-        <remarks>
-          <para>只读。</para>
-          <para></para>
-        </remarks>
+        <summary>获取 <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> 指定对象 <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> 的对象。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />指定对象 <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> 的对象。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SlicerItems">
@@ -282,12 +258,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SlicerItems</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" />集合，其中包含指定级别的所有切片器项的集合。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" />集合，其中包含指定级别的所有切片器项的集合。</value>
-        <remarks>
-          <para>只读。</para>
-          <para></para>
-        </remarks>
+        <summary>获取 <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> 一个集合，该集合包含指定级别的所有切片器项的集合。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" />包含指定级别的所有切片器项的集合的集合。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SortItems">
@@ -316,13 +290,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSlicerSort</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置是否对切片器中的项目进行排序。</summary>
+        <summary>获取或设置是否对切片器中的项进行排序。</summary>
         <value>指定是否对切片器中的项进行排序。</value>
-        <remarks>
-          <para>为可读/写属性。</para>
+        <remarks><para>读/写。</para>
           <para>此属性的默认设置是 <b>xlDataSourceOrder</b> (1)。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VisibleSlicerItemsList">
@@ -348,13 +320,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取的切片器的列表的切片器筛选器中当前包括的项目。</summary>
-        <value>切片器筛选器中当前包括的切片器项的列表。</value>
-        <remarks>
-          <para>只读。</para>
+        <summary>获取切片器筛选器中当前包含的切片器项的列表。</summary>
+        <value>切片器筛选器中当前包含的切片器项的列表。</value>
+        <remarks><para>只读。</para>
           <para>切片器项的列表作为 MDX 唯一名称字符串返回。如果此列表为空，切片器未筛选数据源，并且所有切片器平铺都显示为选中。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

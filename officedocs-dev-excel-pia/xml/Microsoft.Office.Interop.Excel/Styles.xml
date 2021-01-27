@@ -1,13 +1,5 @@
 <Type Name="Styles" FullName="Microsoft.Office.Interop.Excel.Styles">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e553a7598a3f9ae8e05db8f343f51fd6b194d460" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587246" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Styles : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e553a7598a3f9ae8e05db8f343f51fd6b194d460" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009784" /></Metadata><TypeSignature Language="C#" Value="public interface Styles : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Styles implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Styles" />
   <TypeSignature Language="VB.NET" Value="Public Interface Styles&#xA;Implements IEnumerable" />
@@ -33,14 +25,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>所有的集合<see cref="T:Microsoft.Office.Interop.Excel.Style" />指定的或活动工作簿中的对象。</summary>
-    <remarks>
-      <para>每个<b>样式</b>对象代表区域的样式说明。 <b>Style</b>对象包含作为属性的所有样式属性 （字体、 数字格式、 对齐方式，等等）。 有几种内置样式 — 包括普通、 货币和 %— 在样式对话框 （格式菜单） 的样式名称框中列出的。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Styles" />属性返回的<b>Styles</b>集合。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Excel.Styles.Add(System.String,System.Object)" />方法，以创建新样式并将其添加到集合。</para>
-      <para>使用<b>样式</b>(<paramref name="index" />)，其中<paramref name="index" />是样式索引号或名称，从工作簿<b>Styles</b>集合中返回单个<b>Style</b>对象。</para>
-      <para></para>
-    </remarks>
+    <summary>指定工作簿或 <see cref="T:Microsoft.Office.Interop.Excel.Style" /> 活动工作簿中所有对象的集合。</summary>
+    <remarks><para>每一个 <b>Style</b> 对象都代表对某区域的样式描述。 <b>Style</b> 对象包含样式的所有属性（字体、数字格式、对齐方式，等等）。 "格式"菜单的"样式"对话框中的"样式名称"框中列出了几种内置样式（包括"常规"、"货币"和"百分比 (") 。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Styles" /> 该属性可返回 <b>Styles</b> 集合。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.Styles.Add(System.String,System.Object)" /> 该方法创建新样式并将其添加到集合中。</para>
+      <para>使用<b>样式</b> () ，其中样式索引号或名称，从工作簿样式 集合中返回单个 <paramref name="index" /> <paramref name="index" /> <b>样式</b>对象。 <b></b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -102,13 +92,11 @@
       </Parameters>
       <Docs>
         <param name="Name">必需的 <b>字符串</b> 。 新样式的名称。</param>
-        <param name="BasedOn">可选的<b>对象</b>。 A<see cref="T:Microsoft.Office.Interop.Excel.Range" />指的是用作新样式的基础的单元格的对象。 如果省略此参数，则新创建的样式基于正文样式。</param>
+        <param name="BasedOn">可选 <b>对象</b>。 引用用作新样式基础的 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 单元格的对象。 如果省略此参数，则新创建的样式基于 Normal 样式。</param>
         <summary>新建样式并将其添加到当前工作簿的可用样式列表中。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>如果已存在具有指定名称的样式，该方法重新定义现有样式基于指定的单元格<paramref name="BasedOn" />。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果已存在具有指定名称的样式，此方法将基于中指定的单元格重新定义现有的样式 <paramref name="BasedOn" /> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -134,7 +122,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -192,12 +180,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -258,7 +243,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">所需的<b>对象</b>。 对象的名称或索引号。</param>
+        <param name="Index">必需 <b>对象</b>。 对象的名称或索引号。</param>
         <summary>从集合中返回一个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -287,13 +272,11 @@
         <Parameter Name="Workbook" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Workbook">所需的<b>对象</b>。 A<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />对象，表示包含待合并样式的工作簿。</param>
-        <summary>合并到另一个工作簿中的样式<see cref="T:Microsoft.Office.Interop.Excel.Styles" />集合。</summary>
+        <param name="Workbook">必需 <b>对象</b>。 一 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> 个代表包含要合并的样式的工作簿的对象。</param>
+        <summary>将另一个工作簿中的样式合并到 <see cref="T:Microsoft.Office.Interop.Excel.Styles" /> 集合中。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>合并区域的值在该区域左上角的单元格中指定。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>合并区域的值在该区域左上角的单元格中指定。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

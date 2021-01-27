@@ -1,13 +1,5 @@
 <Type Name="OLEObjects" FullName="Microsoft.Office.Interop.Excel.OLEObjects">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c7a55aea3278bf57d03536464456af6c54d9afe8" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575633" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OLEObjects : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c7a55aea3278bf57d03536464456af6c54d9afe8" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011205" /></Metadata><TypeSignature Language="C#" Value="public interface OLEObjects : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OLEObjects implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.OLEObjects" />
   <TypeSignature Language="VB.NET" Value="Public Interface OLEObjects&#xA;Implements IEnumerable" />
@@ -33,14 +25,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>所有的集合<see cref="T:Microsoft.Office.Interop.Excel.OLEObject" />指定工作表中的对象。 每一个 <b>OLEObject</b> 对象都代表一个 ActiveX 控件或者一个链接或嵌入的 OLE 对象。</summary>
-    <remarks>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.OLEObjects(System.Object)" />方法可返回<b>OLEObjects</b>集合。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Excel.OLEObjects.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法可创建新的 OLE 对象并将其添加到<b>OLEObjects</b>集合。</para>
-      <para>工作表上的 ActiveX 控件有两个名称：一个是包含该控件的形状的名称，查看工作表时可在“名称”框中看到它；另一个是控件的代码名称，可以在“属性”窗口中“(名称)”右边的单元格中看到它。在您首次向工作表添加控件时，形状名称和代码名称是一致的。但是，如果您更改这两个名称中的任意一个，另一个不会随之自动更改。</para>
-      <para>在名称的事件过程，您使用控件的代码名称。 但是，当您返回控件从<see cref="T:Microsoft.Office.Interop.Excel.Shapes" />或工作表的<b>OLEObjects</b>集合，您必须使用形状的名称，而不是代码名称，按名称引用的控件。 例如，假定您向工作表添加复选框和默认形状的名称和默认代码名称是 CheckBox1。 如果您后来更改控件代码名称，通过在属性窗口中键入 chkFinished 旁边 （名称），您必须使用 chkFinished 在事件过程名称，但您仍需要使用 CheckBox1 从<b>形状</b>或<b>OLEObjects</b>返回控件集合。</para>
-      <para></para>
-    </remarks>
+    <summary>指定工作表上 <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" /> 所有对象的集合。 每一个 <b>OLEObject</b> 对象都代表一个 ActiveX 控件或者一个链接或嵌入的 OLE 对象。</summary>
+    <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.OLEObjects(System.Object)" /> 该方法可返回 <b>OLEObjects</b> 集合。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.OLEObjects.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 该方法可创建新的 OLE 对象，并将其添加到 <b>OLEObjects</b> 集合中。</para>
+      <para>工作表上的 ActiveX 控件有两个名称：一个是包含该控件的形状的名称，查看工作表时可在“名称”框中看到它；另一个是控件的代码名称，可以在“属性”窗口中“(名称)”右边的单元格中看到它。 在您首次向工作表添加控件时，形状名称和代码名称是一致的。 但是，如果您更改这两个名称中的任意一个，另一个不会随之自动更改。</para>
+      <para>在控件事件过程名称中使用的是控件代码名称。 但是，从工作表的 <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> <b>或 OLEObjects</b> 集合返回控件时，必须使用形状名称而不是代码名称来按名称引用控件。 例如，假定你给工作表添加一个复选框，那么默认形状名称和默认代码名称都是 CheckBox1。 如果随后在"属性"窗口中键入 (Name) 旁边的 chkFinished 更改控件代码名称，则必须在事件过程名称中使用 chkFinished，但仍必须使用 CheckBox1 从 <b>Shapes</b> 或 <b>OLEObjects</b> 集合中返回控件。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Dummy12">
@@ -67,7 +57,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。 </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,7 +85,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,7 +113,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,7 +141,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,7 +169,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,7 +197,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -235,7 +225,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -263,7 +253,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -291,7 +281,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -319,7 +309,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -347,7 +337,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -375,7 +365,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -403,7 +393,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -431,7 +421,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -467,18 +457,18 @@
         <Parameter Name="Height" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ClassType">可选的<b>对象</b>。 (必须指定<paramref name="ClassType" />或<paramref name="FileName" />。)一个字符串，包含要创建的对象的编程标识符。 如果<paramref name="ClassType" />指定，则<paramref name="FileName" />和<paramref name="Link" />将被忽略。</param>
-        <param name="Filename">可选的<b>对象</b>。 (必须指定<paramref name="ClassType" />或<paramref name="FileName" />。)一个字符串，指定要用于创建 OLE 对象的文件。</param>
-        <param name="Link">可选的<b>对象</b>。 <b>True</b>以具有新的 OLE 对象基于<paramref name="FileName" />链接到该文件。 如果不链接对象，该对象被创建为文件的副本。 默认值为 <b>False</b> 。</param>
-        <param name="DisplayAsIcon">可选的<b>对象</b>。 <b>True</b>作为图标或者作为正常图片显示新的 OLE 对象。 如果该参数为<b>True</b>，<paramref name="IconFileName" />和<paramref name="IconIndex" />可以用来指定图标。</param>
-        <param name="IconFileName">可选的<b>对象</b>。 一个字符串，指定包含要显示的图标的文件。 此参数才使用<paramref name="DisplayAsIcon" />是<b>，则返回 True</b>。 如果不指定此参数或者文件中包含没有图标，使用的 OLE 类的默认图标</param>
-        <param name="IconIndex">可选的<b>对象</b>。 图标文件中的图标数。 仅当使用此<paramref name="DisplayAsIcon" />是<b>True</b>和<paramref name="IconFileName" />指的是一个包含图标的有效文件。 如果具有给定的索引号的图标中指定的文件不存在<paramref name="IconFileName" />，使用文件中的第一个图标。</param>
-        <param name="IconLabel">可选的<b>对象</b>。 一个字符串，指定要显示在图标下面的标签。 仅当使用此<paramref name="DisplayAsIcon" />是<b>，则返回 True</b>。 如果省略此参数，或为空字符串 ("")，不显示任何标题。</param>
-        <param name="Left">可选的<b>对象</b>。 以磅为单位的相对于左上角单元格 A1 的工作表，或图表的左上角的新对象的初始坐标。</param>
-        <param name="Top">可选的<b>对象</b>。 以磅为单位的相对于左上角单元格 A1 的工作表，或图表的左上角的新对象的初始坐标。</param>
-        <param name="Width">可选的<b>对象</b>。 以磅为单位的新对象的初始大小。</param>
-        <param name="Height">可选的<b>对象</b>。 新对象的初始大小（以磅为单位）。</param>
-        <summary>向工作表中添加新的 OLE 对象。 返回<see cref="T:Microsoft.Office.Interop.Excel.OLEObject" />对象。</summary>
+        <param name="ClassType">可选 <b>对象</b>。  (必须指定或 .) 一个字符串，其中包含要创建 <paramref name="ClassType" /> <paramref name="FileName" /> 的对象的编程标识符。 如果 <paramref name="ClassType" /> 已指定 <paramref name="FileName" /> ， <paramref name="Link" /> 则忽略。</param>
+        <param name="Filename">可选 <b>对象</b>。  (必须指定或 .) 一个字符串，用于指定用于创建 <paramref name="ClassType" /> <paramref name="FileName" /> OLE 对象的文件。</param>
+        <param name="Link">可选 <b>对象</b>。 <b>真</b> 要基于链接到该文件的新 OLE <paramref name="FileName" /> 对象。 如果该对象未链接到文件，则该对象被创建为文件副本。 默认值为 <b>False</b>。</param>
+        <param name="DisplayAsIcon">可选 <b>对象</b>。 如果为 <b>True</b>，则以图标或正常图片方式显示新的 OLE 对象。 如果此参数 <b>为</b> <paramref name="IconFileName" /> True， <paramref name="IconIndex" /> 并且可用于指定图标。</param>
+        <param name="IconFileName">可选 <b>对象</b>。 一个字符串，指定要显示的图标所在的文件。 此参数仅在为 <paramref name="DisplayAsIcon" /> True 时 <b>使用</b>。 如果未指定此参数或文件不包含图标，则使用 OLE 类的默认图标</param>
+        <param name="IconIndex">可选 <b>对象</b>。 图标文件中包含的图标数目。 仅在为 True 且引用包含图标的有效 <paramref name="DisplayAsIcon" /> <b></b> <paramref name="IconFileName" /> 文件时，才使用此功能。 如果指定文件中不存在具有给定索引号的图标，则使用该文件 <paramref name="IconFileName" /> 的第一个图标。</param>
+        <param name="IconLabel">可选 <b>对象</b>。 一个字符串，指定在图标下方显示一个标签。 只有在为 True <paramref name="DisplayAsIcon" /> 时，才<b>使用。</b> 如果省略该参数，或者该参数为空字符串 ("")，则不显示任何标题。</param>
+        <param name="Left">可选 <b>对象</b>。 新对象的初始坐标（以点表示，相对于工作表上单元格 A1 的左上角或图表的左上角）。</param>
+        <param name="Top">可选 <b>对象</b>。 新对象的初始坐标（以点表示，相对于工作表上单元格 A1 的左上角或图表的左上角）。</param>
+        <param name="Width">可选 <b>对象</b>。 新对象的初始大小（以点表示）。</param>
+        <param name="Height">可选 <b>对象</b>。 以磅为单位给出新对象的初始大小。</param>
+        <summary>向工作表中添加新的 OLE 对象。 返回一 <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" /> 个对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -506,7 +496,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -537,13 +527,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>打开<b>，则返回 true</b>如果包含该工作簿时自动加载的 OLE 对象。</summary>
+        <summary>如果打开包含指定 OLE 对象的工作簿时自动载入该 OLE 对象，则为 <b>True</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>ActiveX 忽略此属性。打开一个工作簿时总会载入 ActiveX 控件。</para>
-          <para>对于大多数 OLE 对象类型，此属性不能设为 <b>True</b>。对于新 OLE 对象，默认情况下其 <b>AutoLoad</b> 属性设为 <b>False</b>；当 Microsoft Excel 载入工作簿时，设为“False”可节省时间和内存。自动载入 OLE 对象的好处在于，对于代表易变动的数据的对象，可立即重建到数据源的链接，而且，如果需要，可对这些对象进行重新映射。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>ActiveX 忽略此属性。 打开一个工作簿时总会载入 ActiveX 控件。</para>
+          <para>对于大多数 OLE 对象类型，此属性不能设为 <b>True</b>。 对于新 OLE 对象，默认情况下其 <b>AutoLoad</b> 属性设为 <b>False</b>；当 Microsoft Excel 载入工作簿时，设为“False”可节省时间和内存。 自动载入 OLE 对象的好处在于，对于代表易变动的数据的对象，可立即重建到数据源的链接，而且，如果需要，可对这些对象进行重新映射。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Border">
@@ -569,7 +557,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Border" />对象，它代表对象的边框。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 一个对象，该对象表示对象的边框。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -649,8 +637,8 @@
         <Parameter Name="Format" Type="Microsoft.Office.Interop.Excel.XlCopyPictureFormat" />
       </Parameters>
       <Docs>
-        <param name="Appearance">可选<see cref="T:Microsoft.Office.Interop.Excel.XlPictureAppearance" />。 指定图片的复制方式。</param>
-        <param name="Format">可选<see cref="T:Microsoft.Office.Interop.Excel.XlCopyPictureFormat" />。 图片的格式。</param>
+        <param name="Appearance">可选 <see cref="T:Microsoft.Office.Interop.Excel.XlPictureAppearance" /> 。 指定图片的复制方式。</param>
+        <param name="Format">可选 <see cref="T:Microsoft.Office.Interop.Excel.XlCopyPictureFormat" /> 。 图片的格式。</param>
         <summary>将所选对象作为图片复制到剪贴板。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -709,12 +697,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -740,11 +725,9 @@
       <Docs>
         <summary>将对象剪切到剪贴板，或者将其粘贴到指定的目的地。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>剪切的区域必须由相邻的单元格组成。</para>
+        <remarks><para>剪切的区域必须由相邻的单元格组成。</para>
           <para>只可剪切嵌入式图表。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -825,7 +808,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>的对象启用。</summary>
+        <summary>如果启用对象，则为 <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -945,7 +928,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Interior" />值，该值代表指定对象的内部的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> 一个对象，该对象代表指定对象的内部。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -973,7 +956,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">所需的<b>对象</b>。 对象的名称或索引号。</param>
+        <param name="Index">必需 <b>对象</b>。 对象的名称或索引号。</param>
         <summary>从集合中返回一个对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1036,8 +1019,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果对象已锁定;<b>False</b>工作表处于保护状态时，可以修改对象。</summary>
+        <summary>如果对象被锁定，则其为<b>True;</b><b>假</b>如果工作表受保护时可以修改对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1133,10 +1115,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置该对象附加到它的单元格的方式。</summary>
+        <summary>返回或设置对象附加到其下方的单元格的方式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用以下常量之一：</para>
+        <remarks><para>使用以下常量之一：</para>
           <para>
             <b>xlFreeFloating</b>
           </para>
@@ -1146,8 +1127,7 @@
           <para>
             <b>xlMoveAndSize</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintObject">
@@ -1176,7 +1156,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>时打印文档将打印指定对象。</summary>
+        <summary>如果打印文档时也打印指定对象，则为 <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1203,7 +1183,7 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Replace">可选的<b>对象</b>。 <b>为</b> 当前所选内容替换为指定的对象。 <b>False</b> 来扩展当前选定内容以包括任何以前选定的对象和指定的对象。</param>
+        <param name="Replace">可选 <b>对象</b>。 <b>为</b> 当前所选内容替换为指定的对象。 <b>False</b> 来扩展当前选定内容以包括任何以前选定的对象和指定的对象。</param>
         <summary>选择对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1261,8 +1241,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果字体为是阴影字体或对象是否带有阴影。</summary>
+        <summary><b>如此</b> 如果字体是阴影字体或对象有阴影。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1290,7 +1269,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ShapeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />对象，表示指定的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> 一个对象，该对象表示指定的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1321,7 +1300,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定的对象的链接源名称。</summary>
+        <summary>返回或设置指定对象的链接源名称。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1352,7 +1331,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>以磅为单位从行 1 （在工作表） 的顶部或顶部的图表区域 （在图表上） 对象的上边缘的距离。</summary>
+        <summary>从对象上边缘到工作表上第 1 行顶部的距离（以 () 或图表区域上图表区域 (顶部）) 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1383,7 +1362,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定对象是否可见。</summary>
+        <summary>决定对象是否可见。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1414,7 +1393,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>对象的高度，以磅为单位。</summary>
+        <summary>对象的宽度，以磅为单位。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1442,12 +1421,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回对象的 z-顺序位置。</summary>
+        <summary>返回指定对象的 z-次序位置。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>在任何对象的集合，该对象 z-次序末尾在<paramref name="collection" />(1)，且在 z-顺序的顶层对象为<paramref name="collection" />(<paramref name="collection" />。<b>Count</b>)。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>在任何对象集合中，z 顺序后面的对象为 <paramref name="collection" /> (1) ，z-顺序前面的对象为 <paramref name="collection" /> <paramref name="collection" /> (。<b>计数</b>) 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

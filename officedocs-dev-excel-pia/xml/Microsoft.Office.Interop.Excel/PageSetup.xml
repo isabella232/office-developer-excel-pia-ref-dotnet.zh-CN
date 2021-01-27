@@ -1,13 +1,5 @@
 <Type Name="PageSetup" FullName="Microsoft.Office.Interop.Excel.PageSetup">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="50c5531a9636ff8479dc8d559960466d2a73af0f" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20578951" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PageSetup" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="50c5531a9636ff8479dc8d559960466d2a73af0f" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011121" /></Metadata><TypeSignature Language="C#" Value="public interface PageSetup" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PageSetup" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PageSetup" />
   <TypeSignature Language="VB.NET" Value="Public Interface PageSetup" />
@@ -29,11 +21,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表页面设置说明。 <see cref="T:Microsoft.Office.Interop.Excel.PageSetup" />对象包含所有页面设置属性 （左边的距、 底部边距、 纸张大小等） 作为属性。</summary>
-    <remarks>
-      <para>使用<see cref="T:Microsoft.Office.Interop.Excel.PageSetup" />属性<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />或<see cref="T:Microsoft.Office.Interop.Excel.Chart" />对象返回<see cref="T:Microsoft.Office.Interop.Excel.PageSetup" />对象。</para>
-      <para></para>
-    </remarks>
+    <summary>代表页面设置说明。 该对象包含所有页面设置属性 (左边距、下边距、纸张大小等) <see cref="T:Microsoft.Office.Interop.Excel.PageSetup" /> 属性。</summary>
+    <remarks><para>使用 <see cref="T:Microsoft.Office.Interop.Excel.PageSetup" /> or <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> 对象 <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> 的属性可返回 <see cref="T:Microsoft.Office.Interop.Excel.PageSetup" /> 对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AlignMarginsHeaderFooter">
@@ -62,10 +52,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果 Excel 以页面设置选项中设置的边距对齐页眉和页脚，则返回 <b>True</b>。可读/写 <b>Boolean</b> 类型。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>如果 Excel 以页面设置选项中设置的边距对齐页眉和页脚，则返回 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -123,7 +111,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>以黑白方式打印文档中的元素。</summary>
+        <summary>如果指定文档中的元素以黑白方式打印，则该属性值为 <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -154,12 +142,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置边距的大小，以磅为单位。</summary>
+        <summary>返回或设置下边距的大小（以点表示）。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>边距设置或返回以磅为单位。 使用任意一种<see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" />方法或<see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" />执行转换的方法。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>边距的设置和返回均以磅为单位。 使用 <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> 方法或 <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> 方法来执行转换。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CenterFooter">
@@ -216,7 +202,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Graphic</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Graphic" />对象，表示页脚的中心部分的图片。 用于设置图片的属性。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Graphic" /> 一个对象，该对象代表页脚中心部分的图片。 用于设置与图片相关的属性。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -275,7 +261,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Graphic</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Graphic" />对象，表示为中部的标头的图片。 用于设置图片的属性。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Graphic" /> 一个对象，该对象代表页眉中心部分的图片。 用于设置与图片相关的属性。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -306,8 +292,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果在上的水平居中对齐打印工作表。</summary>
+        <summary>如果在页面的水平居中位置打印指定工作表，则该属性值为 <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -338,8 +323,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果在上的垂直居中位置打印工作表。</summary>
+        <summary>如果在页面的垂直居中位置打印指定工作表，则该属性值为 <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -376,12 +360,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlObjectSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置图表扩展以适应页面上的方式。</summary>
+        <summary>返回或设置图表缩放以适应页面的方式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性仅适用于图表工作表 （其不能用于嵌入式图表）。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>此属性仅适用于图表工作表 (它不能与嵌入的图表) 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -409,12 +391,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DifferentFirstPageHeaderFooter">
@@ -443,10 +422,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果在第一页使用不同的页眉或页脚，则为 <b>True</b>。可读/写 <b>Boolean</b> 类型。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary><b>如此</b> 如果不同的页眉或页脚使用第一页上。 读/写 <b>Boolean</b>。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -476,12 +453,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>将图形不打印工作表。</summary>
+        <summary>如果打印工作表时不打印其中的图形，则该属性值为 <b>True</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>将该属性设置为 <b>True</b> 可加快打印速度（但是不打印其中的图形）。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>将该属性设置为 <b>True</b> 可加快打印速度（但是不打印其中的图形）。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EvenPage">
@@ -508,9 +483,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置工作簿或节的偶数页上的文本对齐方式。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Page" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Page" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -538,9 +511,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置工作簿或节的第一页上的文本对齐方式。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Page" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Page" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -570,7 +541,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置将用于此工作表打印第一页号。 如果<b>xlAutomatic</b>，Microsoft Excel 选择第一页号。 默认值为<b>xlAutomatic</b>。</summary>
+        <summary>返回或设置打印指定工作表时第一页的页号。 如果设为 <b>xlAutomatic</b>，则 Microsoft Excel 采用第一页的页号。 默认值为 <b>xlAutomatic</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -601,13 +572,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置的页高打印工作表将缩放到的数。 仅适用于工作表。</summary>
+        <summary>返回或设置打印工作表时，对工作表进行缩放使用的页高。 仅应用于工作表。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果此属性为<b>False</b>，Microsoft Excel 将根据工作表缩放<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesWide" />属性。</para>
-          <para>如果<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.Zoom" />属性为<b>True</b>时，将忽略<b>FitToPagesTall</b>属性。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果此属性为 <b>False，Microsoft</b>Excel 将基于该属性缩放 <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesWide" /> 工作表。</para>
+          <para>如果该属性 <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.Zoom" /> 为<b>True，</b><b>则忽略 FitToPagesTall</b>属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FitToPagesWide">
@@ -636,13 +605,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置的页宽打印工作表将缩放到的数。 仅适用于工作表。</summary>
+        <summary>返回或设置打印工作表时，对工作表进行缩放使用的页宽。 仅应用于工作表。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果此属性为<b>False</b>，Microsoft Excel 将根据工作表缩放<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesTall" />属性。</para>
-          <para>如果<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.Zoom" />属性为<b>True</b>，则忽略<b>FitToPagesWide</b>属性。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果此属性为 <b>False，</b>则 Microsoft Excel 根据该属性缩放 <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesTall" /> 工作表。</para>
+          <para>如果该属性 <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.Zoom" /> 为<b>True，</b><b>则忽略 FitToPagesWide</b>属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FooterMargin">
@@ -671,7 +638,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置从页面底部的距离，页脚，以磅为单位。</summary>
+        <summary>以磅为单位返回或设置页脚到页面底端的距离。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -702,12 +669,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置从页面顶部的距离，页眉，以磅为单位。</summary>
+        <summary>以磅为单位返回或设置页面顶端到页眉的距离。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>边距设置或返回以磅为单位。 使用<see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" />方法或<see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" />方法可将度量单位从英寸或厘米为单位指定转换。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>边距的设置和返回均以磅为单位。 使用 <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> 该方法或 <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> 方法可转换英寸或厘米的度量单位。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LeftFooter">
@@ -736,7 +701,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置左边的页脚部分。</summary>
+        <summary>返回或设置页脚的左侧部分。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -764,7 +729,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Graphic</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Graphic" />对象，表示左侧的页脚节的图片。 用于设置图片的属性。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Graphic" /> 一个对象，该对象代表页脚左侧部分的图片。 用于设置与图片相关的属性。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -795,7 +760,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置左边的标头的各个部分。</summary>
+        <summary>返回或设置页眉的左侧部分。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -823,7 +788,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Graphic</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Graphic" />对象，表示的标头的左侧部分的图片。 用于设置图片的属性。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Graphic" /> 一个对象，该对象代表页眉左侧部分的图片。 用于设置与图片相关的属性。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -854,12 +819,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置的左边距的大小，以磅为单位。</summary>
+        <summary>返回或设置左边距的大小（以点表示）。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>边距设置或返回以磅为单位。 使用<see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" />方法或<see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" />方法可将度量单位从英寸或厘米为单位指定转换。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>边距的设置和返回均以磅为单位。 使用 <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> 该方法或 <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> 方法可转换英寸或厘米的度量单位。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OddAndEvenPagesHeaderFooter">
@@ -888,11 +851,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> 指定的 <b>PageSetup</b> 对象是否的奇数和偶数页不同的页眉和页脚。 可读写 <b>Boolean</b>。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary><b>True</b> 指定的 <b>PageSetup</b> 对象是否的奇数和偶数页不同的页眉和页脚。 读/写 <b>Boolean</b>。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -922,7 +882,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置 Microsoft Excel 使用号码的顺序页面时打印一张大工作表。</summary>
+        <summary>返回或设置 Microsoft Excel 在打印大型工作表时对页面进行编号的顺序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -955,10 +915,8 @@
       <Docs>
         <summary>纵向或横向打印模式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>对于 OLAP 数据源，当设置某一层中的一个字段的此属性值时，也会同时设置同一层中所有其他字段的方向。维字段只能在数据透视表的行、列和页字段区域中进行定向。度量字段则只能在数据区域中进行定向。将某一层或数据字段设置为 <b>xlHidden</b> 时，会将该层或字段从数据透视表中移出。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>对于 OLAP 数据源，当设置某一层中的一个字段的此属性值时，也会同时设置同一层中所有其他字段的方向。 维字段只能在数据透视表的行、列和页字段区域中进行定向。 度量字段则只能在数据区域中进行定向。 将某一层或数据字段设置为 <b>xlHidden</b> 时，会将该层或字段从数据透视表中移出。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Pages">
@@ -984,10 +942,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Pages</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置计数或项目中的页面数<see cref="T:Microsoft.Office.Interop.Excel.Pages" />集合。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Pages" />
-        </value>
+        <summary>返回或设置集合中页的计数或项目 <see cref="T:Microsoft.Office.Interop.Excel.Pages" /> 编号。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Pages" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1017,7 +973,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPaperSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置的纸张大小。</summary>
+        <summary>返回或设置纸张大小。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1076,13 +1032,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置要在宏语言中使用 A1-样式引用的字符串作为打印的范围。</summary>
+        <summary>以字符串返回或设置要打印的区域，该字符串使用宏语言的 A1 样式的引用。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>将该属性设置为 <b>False</b> 或空字符串 ("")，可打印整个工作表。</para>
+        <remarks><para>将该属性设置为 <b>False</b> 或空字符串 ("")，可打印整个工作表。</para>
           <para>该属性仅适用于工作表页面。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintComments">
@@ -1111,7 +1065,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPrintLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置批注的打印工作表的方式。</summary>
+        <summary>返回或设置批注随工作表打印的方式。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1142,7 +1096,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPrintErrors</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置或返回<see cref="T:Microsoft.Office.Interop.Excel.XlPrintErrors" />指定显示的打印错误类型常量。 此功能允许用户打印工作表时禁止显示错误值。</summary>
+        <summary>设置或返回 <see cref="T:Microsoft.Office.Interop.Excel.XlPrintErrors" /> 一个常量，该常量指定显示的打印错误的类型。 该功能允许用户在打印工作表时取消错误显示。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1173,8 +1127,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果在上打印单元格网格线。 仅适用于工作表。</summary>
+        <summary>如果在页面上打印单元格网格线，则该值为 <b>True</b>。 仅应用于工作表。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1205,13 +1158,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>行和列标题的打印此页。 仅适用于工作表。</summary>
+        <summary>如果打印本页时同时打印行标题和列标题，则该值为 <b>True</b>。 仅应用于工作表。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayHeadings" />属性控制标题的屏幕上显示。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>该属性 <see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayHeadings" /> 控制标题的屏幕显示。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintNotes">
@@ -1240,13 +1190,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果单元格注释打印作为表的尾注。 仅适用于工作表。</summary>
+        <summary>如果打印工作表时单元格批注作为尾注一起打印，则该值为 <b>True</b>。 仅应用于工作表。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintComments" />属性打印批注为文本框或尾注。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintComments" /> 该属性以文本框或尾注方式打印批注。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintQuality">
@@ -1278,7 +1225,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">可选的<b>对象</b>。 水平方向打印质量 （1） 或垂直方向打印质量 (2)。 某些打印机可能不支持垂直方向打印质量。 如果不指定此参数，则<b>PrintQuality</b>属性返回 （或可设为） 包含水平和垂直打印质量的两个元素数组。</param>
+        <param name="Index">可选 <b>对象</b>。 水平方向打印质量 (1) 或垂直方向打印质量 (2)。 有些打印机可能不支持垂直方向打印质量设置。 如果不指定该参数，则 <b>PrintQuality</b> 属性将返回（或可被设置为）一个二元数组，该数组包含水平方向和垂直方向的打印质量。</param>
         <summary>返回或设置打印质量。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1310,14 +1257,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置包含在每页的左边界上重复 A1 样式表示法语言宏的字符串形式的单元格的列。</summary>
+        <summary>以宏语言 A1 样式表示法的字符串形式返回或设置包含要在每个页面左侧重复的单元格的列。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果仅指定列的一部分，Microsoft Excel 将自动把该区域扩展为整个列。</para>
+        <remarks><para>如果仅指定列的一部分，Microsoft Excel 将自动把该区域扩展为整个列。</para>
           <para>将该属性设置为 <b>False</b> 或空字符串 ("")，将会关闭标题列。</para>
           <para>该属性仅适用于工作表页面。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintTitleRows">
@@ -1346,14 +1291,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置包含要重复在每页的顶部，在语言的宏的 A1 样式表示法字符串形式的单元格的行。</summary>
+        <summary>返回或设置包含要在每个页面顶部重复的单元格的行，以宏语言 A1 样式表示法表示的字符串。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果仅指定行的一部分，Microsoft Excel 将把该区域扩展为整个行。</para>
+        <remarks><para>如果仅指定行的一部分，Microsoft Excel 将把该区域扩展为整个行。</para>
           <para>将该属性设置为 <b>False</b> 或空字符串 ("")，将会关闭标题行。</para>
           <para>该属性仅适用于工作表页面。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RightFooter">
@@ -1410,7 +1353,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Graphic</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Graphic" />对象，表示右部分的页脚的图片。 用于设置图片的属性。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Graphic" /> 一个对象，该对象代表页脚右侧部分的图片。 用于设置图片的属性。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1441,7 +1384,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置页眉的右侧部分。</summary>
+        <summary>返回或设置页眉的右边部分内容。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1469,7 +1412,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Graphic</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Graphic" />对象，表示的标头的右部分的图片。 用于设置图片的属性。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Graphic" /> 一个对象，该对象代表标题右侧部分的图片。 用于设置与图片相关的属性。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1500,12 +1443,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置的右边距的大小，以磅为单位。</summary>
+        <summary>返回或设置右边距的大小（以点表示）。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>边距设置或返回以磅为单位。 使用<see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" />方法或<see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" />方法可将度量单位从英寸或厘米为单位指定转换。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>边距的设置和返回均以磅为单位。 使用 <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> 该方法或 <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> 方法可转换英寸或厘米的度量单位。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScaleWithDocHeaderFooter">
@@ -1534,10 +1475,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置页眉和页脚是否在文档大小更改时随文档缩放。可读/写 <b>Boolean</b> 类型。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>返回或设置页眉和页脚是否在文档大小更改时随文档缩放。 读/写 <b>Boolean</b>。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1567,12 +1506,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置边距的大小，以磅为单位。</summary>
+        <summary>返回或设置上边距的大小（以点表示）。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>边距设置或返回以磅为单位。 使用<see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" />方法或<see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" />方法可将度量单位从英寸或厘米为单位指定转换。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>边距的设置和返回均以磅为单位。 使用 <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> 该方法或 <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> 方法可转换英寸或厘米的度量单位。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Zoom">
@@ -1601,13 +1538,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置 Microsoft Excel 将按其进行扩展打印工作表 （之间 10%到 400%） 百分比。 仅适用于工作表。</summary>
+        <summary>返回或设置一个百 (10% 到 400%) Microsoft Excel 将缩放工作表进行打印。 仅应用于工作表。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果此属性为<b>False</b>，<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesWide" />和<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesTall" />属性控制工作表缩放的方式。</para>
+        <remarks><para>如果此属性为 <b>False，</b>则 <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesWide" /> and <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesTall" /> 属性控制如何缩放工作表。</para>
           <para>所有缩放均保持原文档的长宽比例。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

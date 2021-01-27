@@ -1,13 +1,5 @@
 <Type Name="Shape" FullName="Microsoft.Office.Interop.Excel.Shape">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="79407cc874dc91aaa0bdd4a827ab38f1c0fb6b0b" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20585083" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Shape" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="79407cc874dc91aaa0bdd4a827ab38f1c0fb6b0b" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010365" /></Metadata><TypeSignature Language="C#" Value="public interface Shape" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Shape" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Shape" />
   <TypeSignature Language="VB.NET" Value="Public Interface Shape" />
@@ -29,9 +21,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表绘图层中的对象，例如自选图形、任意多边形、OLE 对象或图片。 <b>Shape</b>对象是成员<see cref="T:Microsoft.Office.Interop.Excel.Shapes" />集合。 <b>Shapes</b>集合包含幻灯片上的所有形状。</summary>
-    <remarks>
-      <para>有三个对象，代表形状： 表示文档，则上的所有形状的<b>Shapes</b>集合<see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />集合，代表指定文档的形状的子集 （例如，一个<b>ShapeRange</b>对象，可能表示形状一和第四个文档，或者它无法代表文档的所有选定的形状）;和<b>Shape</b>对象，代表文档的单个形状。 如果您想要使用多个形状，同时或所选内容中的形状，使用<b>ShapeRange</b>集合。</para>
+    <summary>代表绘图层中的对象，例如自选图形、任意多边形、OLE 对象或图片。 <b>Shape</b>对象是集合的一 <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> 个成员。 <b>Shapes</b>集合包含幻灯片上的所有形状。</summary>
+    <remarks><para>有三个对象代表形状<b>：Shapes</b>集合，该集合代表文档中的所有形状;该集合代表文档 (上形状的指定子集，例如 <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> <b>，ShapeRange</b>对象可以代表文档中的一个和四个形状，也可以代表文档) <b></b>上的所有选定形状;Shape 对象代表文档中的单个形状。 如果您需要同时处理几个形状，或处理选定区域中的多个形状，请使用 <b>ShapeRange</b> 集合。</para>
       <para>本部分介绍如何︰</para>
       <list type="bullet">
         <item>
@@ -54,20 +45,19 @@
         </item>
       </list>
       <para>返回现有的形状</para>
-      <para>使用<b>形状</b>(<paramref name="index" />)，其中<paramref name="index" />是形状名称或索引号，若要返回的值，该值代表形状的<b>Shape</b>对象。</para>
-      <para>每个形状时将其添加到<b>Shapes</b>集合分配默认名称。 若要赋予形状更有意义的名称，请使用<see cref="P:Microsoft.Office.Interop.Excel.Shape.Name" />属性。</para>
+      <para>使用 <b>形状</b> () 形状名称或索引号，返回一个代表形状的 <paramref name="index" /> <paramref name="index" /> <b>Shape</b> 对象。</para>
+      <para>每个添加到 <b>Shapes</b> 集合的形状将被分配一个默认名称。 若要为形状指定更有意义的名称，请使用 <see cref="P:Microsoft.Office.Interop.Excel.Shape.Name" /> 该属性。</para>
       <para>返回选定区域中的形状</para>
-      <para>使用<b>Selection.ShapeRange</b>(<paramref name="index" />)，其中<paramref name="index" />是形状名称或索引号，可返回一个<b>Shape</b>对象，该对象代表选定区域中的形状。</para>
+      <para>使用<b>Selection.ShapeRange</b> () 形状名称或索引号，返回一个 Shape 对象，该对象代表选定内容 <paramref name="index" /> <paramref name="index" /> 中的形状。 <b></b></para>
       <para>返回与连接符的端点相连的形状</para>
-      <para>若要返回一个代表连接符所连接的形状之一的<b>Shape</b>对象，请使用<see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnectedShape" />或<see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnectedShape" />属性。</para>
+      <para>要返回一 <b>个 Shape</b> 对象，该对象代表连接符所连接的形状之一，请使用 <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnectedShape" /> or <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnectedShape" /> 属性。</para>
       <para>返回新建的任意多边形</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" />和<see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" />方法，以定义一个新任意多边形、 的几何图形以及使用<see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" />方法可创建任意多边形并返回代表它的<b>Shape</b>对象。</para>
+      <para>使用 and 方法可定义新任意多边形的几何图形，并使用该方法创建任意多边形并返回代表该任意多边形的 <see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> <b>Shape</b> 对象。</para>
       <para>返回组中的单个形状</para>
-      <para>使用<b>GroupItems</b>(<paramref name="index" />)，其中<paramref name="index" />是形状名称或组，返回代表组合形状中的单个形状的<b>Shape</b>对象中的索引号。</para>
+      <para>使用<b>GroupItems</b> () 形状名称或组合中的索引号，返回一个 Shape 对象，该对象代表组合形状中的单个 <paramref name="index" /> <paramref name="index" /> 形状。 <b></b></para>
       <para>返回新组成的形状组</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Group" />或<see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Regroup" />方法以组形状范围并返回单个<b>Shape</b>对象，表示新组成的组。 一组形成之后，处理组相同的方式使用任何其他形状。</para>
-      <para></para>
-    </remarks>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Group" /> or <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Regroup" /> 方法对形状区域进行分组并返回一个 <b>Shape</b> 对象，该对象代表新形成的组。 一组形成之后，处理组相同的方式使用任何其他形状。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Adjustments">
@@ -93,12 +83,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Adjustments</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Adjustments" />对象，其中包含指定形状中的所有调整的调整值。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Adjustments" /> 一个对象，该对象包含指定形状中所有调整的调整值。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性适用于任何<see cref="T:Microsoft.Office.Interop.Excel.Shape" />或<see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />代表自选图形、 艺术字或连接器的对象。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>该属性适用于代表自画图、艺术字或连接符 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> 的任何或对象。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AlternativeText">
@@ -127,12 +115,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置的 （可选） 的描述性文本字符串<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象，该对象保存到网页时。 可读写 <b>String</b>。</summary>
+        <summary>返回或设置将 (保存到) 时对象的可选文本 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 字符串的描述性值。 读/写 <b>String</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>可选文字可以代替在 Web 浏览器或直接通过图像的形状的图像时鼠标指针悬停于 （中支持这些功能的浏览器） 的图像上会显示。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>当鼠标指针悬停在支持这些功能的浏览器上的图像上时，替代文本可以代替形状的图像显示在 Web 浏览器中，也可以直接显示在 (图像上方) 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -158,7 +144,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -184,7 +170,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>通过使用复制的指定的形状格式应用于<see cref="M:Microsoft.Office.Interop.Excel.Shape.PickUp" />方法。</summary>
+        <summary>适用于使用该方法复制的指定形状 <see cref="M:Microsoft.Office.Interop.Excel.Shape.PickUp" /> 格式。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,13 +200,11 @@
         <ReturnType>Microsoft.Office.Core.MsoAutoShapeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定的形状类型<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象，它代表行、 任意多边形，或连接器自选。 读/写<see cref="T:Microsoft.Office.Core.MsoAutoShapeType" />。</summary>
+        <summary>返回或设置指定对象的形状类型，该对象必须代表自Shape 而不是线条、任意多边形 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 图形或连接符。 读/写 <see cref="T:Microsoft.Office.Core.MsoAutoShapeType" /> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>[!注释] 改变一个形状的类型时，该形状保留其大小、颜色和其他属性。</para>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.Type" />属性<see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" />对象来设置或返回连接符类型。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>改变一个形状的类型时，该形状保留其大小、颜色和其他属性。</para>
+          <para>使用 <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.Type" /> 对象的属性 <see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" /> 设置或返回连接器类型。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundStyle">
@@ -249,10 +233,8 @@
         <ReturnType>Microsoft.Office.Core.MsoBackgroundStyleIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置的背景样式。 为可读/写属性。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoBackgroundStyleIndex" />
-        </value>
+        <summary>返回或设置背景样式。 读/写。</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoBackgroundStyleIndex" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -282,7 +264,7 @@
         <ReturnType>Microsoft.Office.Core.MsoBlackWhiteMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个值，该值指示以黑白模式查看演示文稿时指定形状的出现形式。 读/写<see cref="T:Microsoft.Office.Core.MsoBlackWhiteMode" />。</summary>
+        <summary>返回或设置一个值，该值指示以黑白模式查看演示文稿时指定形状的出现形式。 读/写 <see cref="T:Microsoft.Office.Core.MsoBlackWhiteMode" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -310,7 +292,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，表示位于下该对象右下角的单元格。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 一个对象，该对象代表对象右下角的单元格。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -338,7 +320,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.CalloutFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.CalloutFormat" />对象，其中包含格式属性指定的形状的标注。 适用于<see cref="T:Microsoft.Office.Interop.Excel.Shape" />代表线形标注的对象。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.CalloutFormat" /> 一个对象，该对象包含指定形状的标注格式属性。 应用于表示 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 线标注的对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -370,7 +352,7 @@
       </Parameters>
       <Docs>
         <param name="Increment">To be added.</param>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。 </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -401,7 +383,7 @@
       </Parameters>
       <Docs>
         <param name="Increment">To be added.</param>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -432,7 +414,7 @@
       </Parameters>
       <Docs>
         <param name="Increment">To be added.</param>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -463,7 +445,7 @@
       </Parameters>
       <Docs>
         <param name="Increment">To be added.</param>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -493,7 +475,7 @@
         <ReturnType>Microsoft.Office.Core.CanvasShapes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -521,10 +503,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Chart</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 object 值，该值代表<see cref="T:Microsoft.Office.Interop.Excel._Chart" />中包含<see cref="T:Microsoft.Office.Interop.Excel.Shape" />。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel._Chart" />
-        </value>
+        <summary>返回一个对象，该对象 <see cref="T:Microsoft.Office.Interop.Excel._Chart" /> 表示包含在 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel._Chart" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -551,7 +531,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果指定的形状是子形状或形状范围中的所有形状都的形状的同一个父子形状，则返回<b>属性值为 msoTrue</b> 。 只读<see cref="T:Microsoft.Office.Core.MsoTriState" />。</summary>
+        <summary>如果指定的形状是子形状，或者如果形状区域中的所有形状都是同一个父形状的子形状，则返回 <b>msoTrue</b>。 只读 <see cref="T:Microsoft.Office.Core.MsoTriState" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -579,7 +559,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定形状中的连结点的数量。 <b>Integer</b> 类型，只读。</summary>
+        <summary>返回指定形状中的连结点的数量。 只读 <b>Integer</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -607,8 +587,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果指定的形状是连接符。 只读<see cref="T:Microsoft.Office.Core.MsoTriState" />。</summary>
+        <summary>如果指定的形状是连接符，则此属性为 <b>True</b>。 只读 <see cref="T:Microsoft.Office.Core.MsoTriState" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -636,7 +615,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ConnectorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" />对象，其中包含格式设置属性的连接器。 适用于<see cref="T:Microsoft.Office.Interop.Excel.Shape" />代表连接器的对象。 只读。</summary>
+        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" /> 个包含连接符格式属性的对象。 应用于表示 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 连接线的对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -664,7 +643,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ControlFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.ControlFormat" />对象，包含 Microsoft Excel 控件属性。 只读。</summary>
+        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.ControlFormat" /> 个包含 Microsoft Excel 控件属性的对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -717,8 +696,8 @@
         <Parameter Name="Format" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Appearance">可选的<b>对象</b>。 指定图片的复制方式。</param>
-        <param name="Format">可选的<b>对象</b>。 图片的格式。</param>
+        <param name="Appearance">可选 <b>对象</b>。 指定图片的复制方式。</param>
+        <param name="Format">可选 <b>对象</b>。 图片的格式。</param>
         <summary>将所选对象作为图片复制到剪贴板。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -746,13 +725,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。 如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 只读<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</summary>
+        <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。 如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。 只读 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -777,11 +753,9 @@
       <Parameters />
       <Docs>
         <summary>将对象剪切到剪贴板，或者将其粘贴到指定的目的地。</summary>
-        <remarks>
-          <para>剪切的区域必须由相邻的单元格组成。</para>
+        <remarks><para>剪切的区域必须由相邻的单元格组成。</para>
           <para>只可剪切嵌入式图表。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -835,7 +809,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Diagram</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Diagram" />对象，它代表图表。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Diagram" /> 一个代表图表的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -866,7 +840,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DiagramNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" />对象，它代表图表中的节点。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> 一个对象，该对象代表图表中的节点。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -951,7 +925,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.FillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.FillFormat" />对象，其中包含填充格式指定的图表或形状的属性。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> 一个对象，该对象包含指定图表或形状的填充格式属性。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -979,7 +953,7 @@
         <Parameter Name="FlipCmd" Type="Microsoft.Office.Core.MsoFlipCmd" />
       </Parameters>
       <Docs>
-        <param name="FlipCmd">所需<see cref="T:Microsoft.Office.Core.MsoFlipCmd" />。 指定形状是水平翻转还是垂直翻转。</param>
+        <param name="FlipCmd">必需 <see cref="T:Microsoft.Office.Core.MsoFlipCmd" /> 。 指定形状是水平翻转还是垂直翻转。</param>
         <summary>绕指定形状的水平或垂直对称轴翻转该形状。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1007,12 +981,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlFormControl</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 Microsoft Excel 控件类型。 只读<see cref="T:Microsoft.Office.Interop.Excel.XlFormControl" />。</summary>
+        <summary>返回 Microsoft Excel 控件类型。 只读 <see cref="T:Microsoft.Office.Interop.Excel.XlFormControl" /> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>不能使用此属性与 ActiveX 控件 (<see cref="P:Microsoft.Office.Interop.Excel.Shape.Type" />属性<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象必须返回<b>msoFormControl</b>)。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>不能将此属性与ActiveX控件 (返回 <see cref="P:Microsoft.Office.Interop.Excel.Shape.Type" /> <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> <b>msoFormControl</b> 属性) 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Glow">
@@ -1038,14 +1010,10 @@
         <ReturnType>Microsoft.Office.Core.GlowFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个对象，用于指定的形状包含发光格式设置为该形状的属性。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.GlowFormat" />
-        </value>
-        <remarks>
-          <para>发光效果为图形添加了色彩鲜明的彩色边缘。  </para>
-          <para></para>
-        </remarks>
+        <summary>返回指定形状的对象，该对象包含该形状的发光格式属性。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Core.GlowFormat" /></value>
+        <remarks><para>发光效果为图形添加了色彩鲜明的彩色边缘。  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GroupItems">
@@ -1071,7 +1039,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.GroupShapes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.GroupShapes" />对象，它代表指定组中的单个形状。 使用<see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" />要从组中返回的单个形状的<b>GroupShapes</b>对象的方法。 适用于<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象，代表组合的形状。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.GroupShapes" /> 一个对象，该对象代表指定组合中的单个形状。 使用 <see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" /> <b>GroupShapes</b> 对象的方法从组合中返回单个形状。 应用于表示 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 组合形状的对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1099,10 +1067,8 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果返回信息<see cref="T:Microsoft.Office.Interop.Excel.Shape" />包含图表。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoTriState" />
-        </value>
+        <summary>返回有关图表 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 是否包含的信息。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoTriState" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1132,7 +1098,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回形状或形状范围是否包含图表。 只读<see cref="T:Microsoft.Office.Core.MsoTriState" />。</summary>
+        <summary>返回形状或形状范围是否包含图表。 只读 <see cref="T:Microsoft.Office.Core.MsoTriState" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1163,7 +1129,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值，该值指定的形状或形状范围中是否存在图表节点。 只读<see cref="T:Microsoft.Office.Core.MsoTriState" />。</summary>
+        <summary>返回一个值，该值指示图表节点是否存在于给定形状或形状范围中。 只读 <see cref="T:Microsoft.Office.Core.MsoTriState" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1191,14 +1157,12 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取指定的形状上存在 SmartArt 图是否。</summary>
-        <value>A<see cref="T:Microsoft.Office.Core.MsoTriState" />对象。</value>
-        <remarks>
-          <para>只读。</para>
+        <summary>获取指定形状上是否有 SmartArt 图表。</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoTriState" /> 对象。</value>
+        <remarks><para>只读。</para>
           <para>如果形状上存在 SmartArt 图，则为 
             <b>msoTrue</b> (-1)；否则为 <b>msoFalse</b> (0)。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -1255,8 +1219,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果指定的形状绕水平轴翻转。 只读<see cref="T:Microsoft.Office.Core.MsoTriState" />。</summary>
+        <summary>如果指定的形状绕水平对称轴翻转，则为 <b>True</b>。 只读 <see cref="T:Microsoft.Office.Core.MsoTriState" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1284,7 +1247,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Hyperlink</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Hyperlink" />对象，表示形状的超链接。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Hyperlink" /> 一个对象，该对象代表形状的超链接。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1312,12 +1275,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的类型。 <b>Integer</b> 类型，只读。</summary>
+        <summary>返回指定对象的类型。 只读 <b>Integer</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>可将 ID 标签用作其他 HTML 文档或相同网页上的超链接引用。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>可将 ID 标签用作其他 HTML 文档或相同网页上的超链接引用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncrementLeft">
@@ -1343,9 +1304,8 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>必选。</b> 指定距离该形状是水平移动以磅为单位。 正值表示将形状向右移动，负值表示将形状向左移动。</param>
-        <summary>以指定点数水平移动指定形状。</summary>
+        <param name="Increment">必需 <b>单个</b>。 指定形状水平移动距离（以点表示）。 为正值时将形状右移；为负值时将形状左移。</param>
+        <summary>将指定形状水平移动指定的磅数。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1372,13 +1332,10 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>必选。</b> 指定距离该形状是水平旋转度中。 正值表示使形状按顺时针方向旋转；负值表示使形状按逆时针方向旋转。</param>
-        <summary>按指定度数值，改变指定形状绕 z 轴的旋转角度。 使用<see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" />属性设置形状的绝对旋转角度。</summary>
-        <remarks>
-          <para>若要将三维形状绕 x 轴或 y 轴的旋转，使用<see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationX(System.Single)" />方法或<see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationY(System.Single)" />方法。</para>
-          <para></para>
-        </remarks>
+        <param name="Increment">必需 <b>单个</b>。 指定形状水平旋转的程度（以度数表示）。 为正值时顺时针旋转形状，为负值时逆时针旋转形状。</param>
+        <summary>使指定的形状绕 Z 轴旋转指定的角度。 使用 <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> 该属性可设置形状的绝对旋转角度。</summary>
+        <remarks><para>若要使三维形状绕 x 轴或 y 轴旋转，请使用 <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationX(System.Single)" /> 方法 <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationY(System.Single)" /> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncrementTop">
@@ -1404,9 +1361,8 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>必选。</b> 指定远的 shape 对象是垂直移动以磅为单位。 正值表示将形状向下移动，负值表示将形状向上移动。</param>
-        <summary>以指定点数垂直移动指定形状。</summary>
+        <param name="Increment">必需 <b>单个</b>。 指定形状对象垂直移动距离（以点表示）。 为正值时将形状下移；为负值时将形状上移。</param>
+        <summary>以指定磅数垂直移动指定形状。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1436,7 +1392,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>从对象左边缘到工作表） 的 A 列的左边的缘或 （在图表上） 的图表区的左边的缘的距离。 读/写 <b>单个</b> 。</summary>
+        <summary>从对象左边缘到工作表上 A (列左边缘的距离) 图表区左边缘 (图表区域) 。 读/写 <b>单个</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1464,12 +1420,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.LineFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.LineFormat" />对象，其中包含线条格式指定形状的属性。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.LineFormat" /> 一个对象，该对象包含指定形状的线条格式属性。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>对于线条， <b>LineFormat</b> 对象代表线条本身;具有边框的形状， <b>LineFormat</b> 对象表示的边框。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>对于线条， <b>LineFormat</b> 对象代表线条本身;具有边框的形状， <b>LineFormat</b> 对象表示的边框。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LinkFormat">
@@ -1495,7 +1449,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.LinkFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.LinkFormat" />对象，其中包含链接的 OLE 对象的属性。 只读。</summary>
+        <summary>返回包含 <see cref="T:Microsoft.Office.Interop.Excel.LinkFormat" /> 链接的 OLE 对象属性的对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1526,8 +1480,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果指定的形状在调整保留其原始比例。 <b>False</b>如果时调整其大小，您可以更改的高度和彼此的形状的宽度。 读/写<see cref="T:Microsoft.Office.Core.MsoTriState" />。</summary>
+        <summary>如果指定的形状在调整大小时其原始比例保持不变，则此属性为 <b>True</b>。 如果调整大小时可以分别更改形状的高度和宽度，则此属性为 <b>False</b>。 读/写 <see cref="T:Microsoft.Office.Core.MsoTriState" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1558,8 +1511,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果对象已锁定，则为<b>False</b>时工作表受保护，可以修改对象。 可读写 <b>Boolean</b>。</summary>
+        <summary><b>如果</b>对象被锁定，则其为 True;如果工作表受保护时可以修改该对象，则其为<b>False。</b> 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1592,22 +1544,21 @@
       <Docs>
         <summary>返回或设置对象的名称。 <b>String</b> 类型，可读写。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>下表显示了 <b>Name</b> 属性和相关属性的示例值，同时假设有一个具有唯一名称为“[Europe].[France].[Paris]”的 OLAP 数据源，有一个包含项名称为“Paris”的非 OLAP 数据源。</para>
+        <remarks><para>下表列出了 <b>Name</b> 属性和相关属性的示例值，同时假设有一个具有唯一名称“[Europe].[France].[Paris]”的 OLAP 数据源，还有一个包含项名称“Paris”的非 OLAP 数据源。</para>
           <list type="table">
             <item>
               <term>
                 <b>标题</b>
               </term>
-              <description>Paris</description>
-              <description>Paris</description>
+              <description>巴黎</description>
+              <description>巴黎</description>
             </item>
             <item>
               <term>
                 <b>名称</b>
               </term>
               <description>[Europe].[France].[Paris]（只读）</description>
-              <description>Paris</description>
+              <description>巴黎</description>
             </item>
             <item>
               <term>
@@ -1621,25 +1572,24 @@
                 <b>值</b>
               </term>
               <description>[Europe].[France].[Paris]（只读）</description>
-              <description>Paris</description>
+              <description>巴黎</description>
             </item>
           </list>
-          <para>指定的索引时<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />集合，您可以使用下表中所示的语法。</para>
+          <para>在集合中指定索引时，可以使用 <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> 下表中所示的语法。</para>
           <list type="table">
             <item>
-              <term>表达式。PivotItems ("[Europe]。 [法国]。[Paris]")</term>
-              <description>Expression.PivotItems("Paris")</description>
+              <term>表达式。PivotItems ("[Europe]。[法国]。[Paris]") </term>
+              <description>Expression.PivotItems ("Paris") </description>
             </item>
           </list>
-          <para>当使用<see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" />属性引用集合中的特定成员，您可以使用下表中所示的文本索引名称。</para>
+          <para>使用该属性引用集合的特定成员时，可以使用文本 <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> 索引名称，如下表所示。</para>
           <list type="table">
             <item>
-              <term>[Europe]。[France]。[Paris]</term>
-              <description>Paris</description>
+              <term>[欧洲]。[法国]。[巴黎]</term>
+              <description>巴黎</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Nodes">
@@ -1665,7 +1615,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ShapeNodes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.ShapeNodes" />集合，代表指定形状的几何描述。 适用于<see cref="T:Microsoft.Office.Interop.Excel.Shape" />代表任意多边形的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.ShapeNodes" /> 一个集合，该集合代表指定形状的几何描述。 应用于代表 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 任意多边形图形的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1693,7 +1643,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.OLEFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" />对象，其中包含 OLE 对象的属性。 只读。</summary>
+        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" /> 个包含 OLE 对象属性的对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1724,12 +1674,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置单击指定对象时运行的宏的名称。<b>String</b> 类型，可读写。</summary>
+        <summary>返回或设置单击指定对象时运行的宏的名称。 读/写 <b>String</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>为菜单项设置该属性，该属性可取代为菜单项和指定宏设定的自定义帮助信息。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>为菜单项设置该属性，该属性可取代为菜单项和指定宏设定的自定义帮助信息。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -1755,7 +1703,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父对象。只读。</summary>
+        <summary>返回指定对象的父对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1783,7 +1731,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象代表子形状的通用父形状或子形状范围。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 一个对象，该对象代表子形状或子形状范围的常见父形状。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1809,7 +1757,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>复制指定形状的格式。 使用<see cref="M:Microsoft.Office.Interop.Excel.Shape.Apply" />方法，以应用于另一个形状复制格式。</summary>
+        <summary>复制指定形状的格式。 使用 <see cref="M:Microsoft.Office.Interop.Excel.Shape.Apply" /> 该方法将复制的格式应用于另一个形状。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1836,7 +1784,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PictureFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.PictureFormat" />对象，其中包含图片格式指定形状的属性。 适用于<see cref="T:Microsoft.Office.Interop.Excel.Shape" />代表图片或 OLE 对象的对象。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.PictureFormat" /> 一个对象，该对象包含指定形状的图片格式属性。 应用于表示 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 图片或 OLE 对象的对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1867,7 +1815,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPlacement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置该对象附加到它的单元格的方式。 读/写<see cref="T:Microsoft.Office.Interop.Excel.XlPlacement" />。</summary>
+        <summary>返回或设置对象附加到其下方的单元格的方式。 读/写 <see cref="T:Microsoft.Office.Interop.Excel.XlPlacement" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1895,10 +1843,8 @@
         <ReturnType>Microsoft.Office.Core.ReflectionFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个对象，包含反射格式形状属性。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.ReflectionFormat" />
-        </value>
+        <summary>返回一个对象，该对象包含形状的反射格式属性。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Core.ReflectionFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1924,11 +1870,9 @@
       <Parameters />
       <Docs>
         <summary>重置连接符，使它们可以采用最短的路径连接的形状。</summary>
-        <remarks>
-          <para>若要使用的最短路径， <b>RerouteConnections</b>方法可以分离连接符的端点并将其重新附加到上连接的形状的不同连接网站。 此方法将重排连接在指定形状上的所有连接符；如果指定的形状是连接符，就重排该连接符。</para>
+        <remarks><para>若要使用最短路径 <b>，RerouteConnections</b> 方法可能会分离连接符的终点，并重新将它们连接到所连接形状上的不同连接结点。 此方法将重排连接在指定形状上的所有连接符；如果指定的形状是连接符，就重排该连接符。</para>
           <para>如果该方法应用于一个连接符，则只重置该连接符；如果该方法应用于一个已连接的形状，则重置该形状上所有的连接符。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Rotation">
@@ -1957,7 +1901,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置形状的旋转度。 读/写 <b>单个</b> 。</summary>
+        <summary>返回或设置形状的旋转角度（以度数表示）。 读/写 <b>单个</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1986,15 +1930,12 @@
         <Parameter Name="Scale" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Factor">
-          <b>必选。</b> 指定形状调整后的高度与当前或原始高度的比例。 例如，要将一个矩形放大百分之五十，请将此参数指定为 1.5。</param>
-        <param name="RelativeToOriginalSize">所需<see cref="T:Microsoft.Office.Core.MsoTriState" />。 <b>msoTrue</b>来调整形状相对于原始尺寸。 <b>msoFalse</b> ，则相对于当前尺寸缩放形状。 仅当指定的形状是图片或 OLE 对象，您可以指定此参数<b>，则为 msoTrue</b> 。</param>
-        <param name="Scale">可选<see cref="T:Microsoft.Office.Core.MsoScaleFrom" />。 指定在缩放形状时，该形状的哪一部分将保持在原有的位置。</param>
-        <summary>按指定因子调整形状的高度。</summary>
-        <remarks>
-          <para>对于图片和 OLE 对象，您可以指示您是否要扩展的形状相对于原始或当前大小。 对于除图片和 OLE 对象以外的其他形状来说，缩放总是相对于其当前高度而言。</para>
-          <para></para>
-        </remarks>
+        <param name="Factor">必需 <b>单个</b>。 指定形状调整后的高度与当前或原始高度的比例。 例如，要将一个矩形放大百分之五十，请将此参数指定为 1.5。</param>
+        <param name="RelativeToOriginalSize">必需 <see cref="T:Microsoft.Office.Core.MsoTriState" /> 。 如果为 <b>msoTrue</b>，则相对于形状的原有尺寸来调整高度。 <b>msoFalse</b> 可相对于其当前大小缩放它。 仅当指定的形状是图片或 OLE 对象时，才能将此参数指定为 <b>msoTrue</b>。</param>
+        <param name="Scale">可选 <see cref="T:Microsoft.Office.Core.MsoScaleFrom" /> 。 指定在缩放形状时，该形状的哪一部分将保持在原有的位置。</param>
+        <summary>按指定的比例调整形状的高度。</summary>
+        <remarks><para>对于图片和 OLE 对象，可以指定是相对于原有尺寸还是相对于当前尺寸来调整该形状。 对于不是图片和 OLE 对象的形状，总是相对于其当前大小来调整高度。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScaleWidth">
@@ -2021,15 +1962,12 @@
         <Parameter Name="Scale" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Factor">
-          <b>必选。</b> 指定形状调整后的宽度与当前或原始宽度的比例。 例如，要将一个矩形放大百分之五十，请将此参数指定为 1.5。</param>
-        <param name="RelativeToOriginalSize">所需<see cref="T:Microsoft.Office.Core.MsoTriState" />。 False ，则相对于当前大小缩放形状。 仅当指定的形状是图片或 OLE 对象时，可以将此参数指定 为 True 。</param>
-        <param name="Scale">可选<see cref="T:Microsoft.Office.Core.MsoScaleFrom" />。 指定在缩放形状时，该形状的哪一部分将保持在原有的位置。</param>
-        <summary>按指定因子调整形状的宽度。</summary>
-        <remarks>
-          <para>对于图片和 OLE 对象，您可以指示您是否要扩展的形状相对于原始或当前大小。 图片和 OLE 对象以外的形状总是相对于当前宽度缩放。</para>
-          <para></para>
-        </remarks>
+        <param name="Factor">必需 <b>单个</b>。 指定形状调整后的宽度与当前或原始宽度的比例。 例如，要将一个矩形放大百分之五十，请将此参数指定为 1.5。</param>
+        <param name="RelativeToOriginalSize">必需 <see cref="T:Microsoft.Office.Core.MsoTriState" /> 。 False ，则相对于当前大小缩放形状。 仅当指定的形状是图片或 OLE 对象时，可以将此参数指定 为 True 。</param>
+        <param name="Scale">可选 <see cref="T:Microsoft.Office.Core.MsoScaleFrom" /> 。 指定在缩放形状时，该形状的哪一部分将保持在原有的位置。</param>
+        <summary>按指定的比例调整形状的宽度。</summary>
+        <remarks><para>对于图片和 OLE 对象，可以指定是相对于原有尺寸还是相对于当前尺寸来调整该形状。 对于不是图片和 OLE 对象的形状，总是相对于其当前大小来调整宽度。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Script">
@@ -2058,7 +1996,7 @@
         <ReturnType>Microsoft.Office.Core.Script</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <b>Script</b> 对象，该对象代表指定网页上的一段脚本或代码。如果该网页中不包含任何脚本，则没有返回内容。</summary>
+        <summary>返回 <b>Script</b> 对象，该对象代表指定网页上的一段脚本或代码。 如果该网页中不包含任何脚本，则不返回任何内容。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2085,12 +2023,10 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Replace">可选的<b>对象</b>。 要替换的对象。</param>
+        <param name="Replace">可选 <b>对象</b>。 要替换的对象。</param>
         <summary>选择对象。</summary>
-        <remarks>
-          <para>若要选择一个单元格的范围，请使用<b>Select</b>方法。 若要使单个单元格活动单元格，请使用<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" />方法。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>要选择单元格或单元格区域，请使用 <b>Select</b> 方法。 若要使单个单元格成为活动单元格，请使用 <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" /> 该方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetShapesDefaultProperties">
@@ -2141,8 +2077,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ShadowFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>对象是否带有阴影。 可读写 <b>Boolean</b>。</summary>
+        <summary><b>如此</b> 如果对象有阴影。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2173,10 +2108,8 @@
         <ReturnType>Microsoft.Office.Core.MsoShapeStyleIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" />，表示形状的形状样式。 为可读/写属性。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" />
-        </value>
+        <summary>返回或设置 <see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" /> 一个 表示形状的形状样式。 读/写。</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2203,12 +2136,10 @@
         <ReturnType>Microsoft.Office.Core.SmartArt</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取表示与形状关联 SmartArt 对象。</summary>
-        <value>表示与形状关联 SmartArt 对象。</value>
-        <remarks>
-          <para>只读。</para>
-          <para></para>
-        </remarks>
+        <summary>获取一个对象，该对象代表与形状关联的 SmartArt。</summary>
+        <value>一个代表与形状关联的 SmartArt 的对象。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SoftEdge">
@@ -2234,10 +2165,8 @@
         <ReturnType>Microsoft.Office.Core.SoftEdgeFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Core.SoftEdgeFormat" />指定的形状包含柔化边缘格式形状属性的对象。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.SoftEdgeFormat" />
-        </value>
+        <summary>返回 <see cref="T:Microsoft.Office.Core.SoftEdgeFormat" /> 指定形状的对象，该形状包含该形状的柔化边缘格式属性。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Core.SoftEdgeFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2264,7 +2193,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TextEffectFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" />对象，包含指定形状的文本效果格式属性。 适用于代表艺术字的<b>T:Microsoft.Office.Interop.Excel.Shape</b>对象。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> 一个对象，该对象包含指定形状的文本效果格式属性。 适用于代表艺术字的 <b>T：Microsoft.Office.Interop.Excel.Shape</b> 对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2292,7 +2221,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TextFrame</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.TextFrame" />对象，其中包含的对齐方式和定位属性指定的形状。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.TextFrame" /> 一个对象，该对象包含指定形状的对齐方式和定位属性。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2320,10 +2249,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TextFrame2</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个对象，包含指定形状格式的文本。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.TextFrame2" />
-        </value>
+        <summary>返回一个对象，该对象包含指定形状的文本格式。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.TextFrame2" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2350,7 +2277,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ThreeDFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" />对象，其中包含三维 – 效果格式指定形状的属性。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> 一个对象，该对象包含指定形状的三维效果格式属性。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2381,13 +2308,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置与指定形状相关联的替代文本的标题。</summary>
-        <value>与指定形状关联的可选文字标题。</value>
-        <remarks>
-          <para>为可读/写属性。</para>
-          <para>若要设置形状的可选文本的描述性文本字符串，使用<see cref="P:Microsoft.Office.Interop.Excel.Shape.AlternativeText" />属性。</para>
-          <para></para>
-        </remarks>
+        <summary>获取或设置与指定形状关联的可选文字的标题。</summary>
+        <value>与指定形状关联的可选文字的标题。</value>
+        <remarks><para>读/写。</para>
+          <para>若要设置形状的可选文本的描述性文本字符串，请使用 <see cref="P:Microsoft.Office.Interop.Excel.Shape.AlternativeText" /> 该属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -2416,7 +2341,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>从形状范围中的顶层形状的上边缘到工作表的上边缘的距离。 读/写 <b>单个</b> 。</summary>
+        <summary>从形状范围中最顶端形状的上边缘到工作表的上边缘的距离。 读/写 <b>单个</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2444,7 +2369,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，它代表位于指定对象的左上角下面的单元格。 只读。</summary>
+        <summary>返回一个对象，该对象代表位于指定对象的左上角 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 下的单元格。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2472,7 +2397,7 @@
         <ReturnType>Microsoft.Office.Core.MsoShapeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置形状类型。 只读<see cref="T:Microsoft.Office.Core.MsoShapeType" />。</summary>
+        <summary>返回或设置形状类型。 只读 <see cref="T:Microsoft.Office.Core.MsoShapeType" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2498,12 +2423,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>取消指定的形状或形状范围中所有组合的形状的组合。 分解图片和 OLE 对象中指定的形状。 作为 single 类型返回取消组合的形状<see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />对象。</summary>
+        <summary>取消指定的形状或形状范围中所有组合的形状的组合。 分解指定形状中的图片和 OLE 对象。 将取消组合的形状作为单个对象 <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> 返回。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>由于一组形状被视为单个对象，组合和取消组合的形状的 <b>Shapes</b> 集合中项的数目，并更改集合中受影响的项之后的项的索引号。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>由于一组形状被视为单个对象，组合和取消组合的形状的 <b>Shapes</b> 集合中项的数目，并更改集合中受影响的项之后的项的索引号。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalFlip">
@@ -2529,8 +2452,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果指定的形状绕垂直轴翻转。 只读<see cref="T:Microsoft.Office.Core.MsoTriState" />。</summary>
+        <summary>如果指定形状围绕垂直轴进行翻转，则该属性值为 <b>True</b>。 只读 <see cref="T:Microsoft.Office.Core.MsoTriState" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2558,39 +2480,37 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回为一系列的坐标对指定任意多边形顶点 （和贝赛尔曲线的控制点） 的坐标。 只读 <b>对象</b> 。</summary>
+        <summary>将指定任意多边形形状的顶点（及贝塞尔曲线的控制点）坐标作为一系列坐标对返回。 只读 <b>对象</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>您可以使用此属性返回用作参数的数组<see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddCurve(System.Object)" />方法或<see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddPolyline(System.Object)" />方法。</para>
-          <para>下表显示 <b>Vertices</b> 属性如何将 vertArray() 数组中的值与三角形的顶点坐标相关联。</para>
+        <remarks><para>可以使用此属性返回的数组作为方法 <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddCurve(System.Object)" /> 的参数 <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddPolyline(System.Object)" /> 。</para>
+          <para>下表显示 <b>Vertices</b> 属性数组 vertArray() 中的值如何与三角形的 vertices 坐标相关联。</para>
           <list type="table">
             <item>
-              <term>vertArray （1，1）</term>
+              <term>vertArray (1， 1) </term>
               <description>第一个顶点与文档的左边界之间的水平距离</description>
             </item>
             <item>
-              <term>vertArray （1，2）</term>
+              <term>vertArray (1， 2) </term>
               <description>第一个顶点与文档的顶端之间的垂直距离</description>
             </item>
             <item>
-              <term>vertArray （2，1）</term>
+              <term>vertArray (2，1) </term>
               <description>第二个顶点与文档的左边界之间的水平距离</description>
             </item>
             <item>
-              <term>vertArray （2，2）</term>
+              <term>vertArray (2，2) </term>
               <description>第二个顶点与文档的顶端之间的垂直距离</description>
             </item>
             <item>
-              <term>vertArray （3，1）</term>
+              <term>vertArray (3， 1) </term>
               <description>第三个顶点与文档的左边界之间的水平距离</description>
             </item>
             <item>
-              <term>vertArray （3、 2）</term>
+              <term>vertArray (3，2) </term>
               <description>第三个顶点与文档的顶端之间的垂直距离</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -2619,7 +2539,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定对象是否可见。 读/写<see cref="T:Microsoft.Office.Core.MsoTriState" />。</summary>
+        <summary>决定对象是否可见。 读/写 <see cref="T:Microsoft.Office.Core.MsoTriState" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2678,12 +2598,10 @@
         <Parameter Name="ZOrderCmd" Type="Microsoft.Office.Core.MsoZOrderCmd" />
       </Parameters>
       <Docs>
-        <param name="ZOrderCmd">所需<see cref="T:Microsoft.Office.Core.MsoZOrderCmd" />。 指定针对其他形状将指定形状移动到的位置。</param>
-        <summary>将指定的形状移到集合中其他形状的前面或后面（即更改该形状在 z-顺序中的位置）。</summary>
-        <remarks>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Excel.Shape.ZOrderPosition" />属性确定形状的 z-顺序中的当前位置。</para>
-          <para></para>
-        </remarks>
+        <param name="ZOrderCmd">必需 <see cref="T:Microsoft.Office.Core.MsoZOrderCmd" /> 。 指定相对于其他形状将指定形状移动到的位置。</param>
+        <summary>将指定形状移动到集合中的其他形状的前面或后面（即更改 z 顺序中的形状位置）。</summary>
+        <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.Shape.ZOrderPosition" /> 该属性可确定形状在 z 顺序中的当前位置。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ZOrderPosition">
@@ -2709,14 +2627,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定的形状在 z 顺序中的位置。 <b>Integer</b> 类型，只读。</summary>
+        <summary>返回指定的形状在 z 顺序中的位置。 只读 <b>Integer</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>若要设置形状的 z-顺序中的位置，请使用<see cref="M:Microsoft.Office.Interop.Excel.Shape.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" />方法。</para>
-          <para>对应于中的形状的索引号的 z-顺序中的形状的位置<see cref="T:Microsoft.Office.Interop.Excel.Shapes" />集合。 例如，Shapes(1) 返回 z-次序末尾的形状和 Shapes(4) 返回的形状在 z-次序前面。</para>
+        <remarks><para>若要设置形状在 z 顺序中的位置，请使用 <see cref="M:Microsoft.Office.Interop.Excel.Shape.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" /> 该方法。</para>
+          <para>形状在 z 顺序中的位置对应于该形状在集合中的索引 <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> 号。 例如，Shapes (1) 返回 z 顺序的后面的形状，而 Shapes (4) 返回 z-顺序前面的形状。</para>
           <para>每次向集合中添加一个新的形状时，默认情况下它会被添加到 z-次序的最前端。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

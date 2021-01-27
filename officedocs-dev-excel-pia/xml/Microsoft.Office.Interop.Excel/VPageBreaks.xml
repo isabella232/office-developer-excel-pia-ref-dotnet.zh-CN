@@ -1,13 +1,5 @@
 <Type Name="VPageBreaks" FullName="Microsoft.Office.Interop.Excel.VPageBreaks">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9f1ccf11f0bbaf483e28c650605da8bce1726a26" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20581954" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface VPageBreaks : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9f1ccf11f0bbaf483e28c650605da8bce1726a26" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009364" /></Metadata><TypeSignature Language="C#" Value="public interface VPageBreaks : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract VPageBreaks implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.VPageBreaks" />
   <TypeSignature Language="VB.NET" Value="Public Interface VPageBreaks&#xA;Implements IEnumerable" />
@@ -33,15 +25,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>打印区域中垂直分页符的集合。 每个垂直分页符都由<see cref="T:Microsoft.Office.Interop.Excel.VPageBreak" />对象。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Excel._Worksheet.VPageBreaks" />属性可返回<b>VPageBreaks</b>集合。 使用<see cref="M:Microsoft.Office.Interop.Excel.VPageBreaks.Add(System.Object)" />方法添加垂直分页符。</para>
-      <para>如果添加的分页符不和打印区域交叠，则新添加的 <b>VPageBreak</b> 对象将不会出现在打印区域的 <b>VPageBreaks</b> 集合中。如果重新调整打印区域或重新定义打印区域，将会改变集合的内容。</para>
-      <para>当<see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Application" />属性，<see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Count" />属性，<see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Creator" />属性，<see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Item(System.Int32)" />属性，<see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Parent" />属性或<see cref="M:Microsoft.Office.Interop.Excel.VPageBreaks.Add(System.Object)" />方法与<b>VPageBreaks</b>属性一起使用：</para>
+    <summary>打印区域中垂直分页符的集合。 每个垂直分页符由一个对象 <see cref="T:Microsoft.Office.Interop.Excel.VPageBreak" /> 表示。</summary>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.VPageBreaks" /> 该属性可返回 <b>VPageBreaks</b> 集合。 使用 <see cref="M:Microsoft.Office.Interop.Excel.VPageBreaks.Add(System.Object)" /> 该方法可添加垂直分页符。</para>
+      <para>如果添加的分页符不和打印区域交叠，则新添加的 <b>VPageBreak</b> 对象将不会出现在打印区域的 <b>VPageBreaks</b> 集合中。 如果重新调整打印区域或重新定义打印区域，将会改变集合的内容。</para>
+      <para>将属性、属性或方法与 <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Application" /> <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Count" /> <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Creator" /> <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Item(System.Int32)" /> <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Parent" /> <see cref="M:Microsoft.Office.Interop.Excel.VPageBreaks.Add(System.Object)" /> <b>VPageBreaks</b> 属性结合使用时：</para>
       <para>对于自动打印区域，<b>VPageBreaks</b> 属性只应用于打印区域内的分页符。</para>
       <para>对于同一区域中的用户定义的打印区域，<b>VPageBreaks</b> 属性应用于所有的分页符。</para>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -102,8 +92,8 @@
         <Parameter Name="Before" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Before">所需的<b>对象</b>。 A<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象。 将添加到新的分页符的左侧区域。</param>
-        <summary>添加垂直分页符。 返回<see cref="T:Microsoft.Office.Interop.Excel.VPageBreak" />对象。</summary>
+        <param name="Before">必需 <b>对象</b>。 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 对象。 新的分页符将添加到该区域左侧。</param>
+        <summary>添加垂直分页符。 返回一 <see cref="T:Microsoft.Office.Interop.Excel.VPageBreak" /> 个对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -131,7 +121,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -189,12 +179,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -255,7 +242,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">所需的<b>对象</b>。 对象的名称或索引号。</param>
+        <param name="Index">必需 <b>对象</b>。 对象的名称或索引号。</param>
         <summary>从集合中返回一个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

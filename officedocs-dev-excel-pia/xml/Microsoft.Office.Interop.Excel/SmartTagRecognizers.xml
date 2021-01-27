@@ -1,13 +1,5 @@
 <Type Name="SmartTagRecognizers" FullName="Microsoft.Office.Interop.Excel.SmartTagRecognizers">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="cabd0c4ccc7f108022f184024fb2429ab7d8015b" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20580771" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SmartTagRecognizers : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="cabd0c4ccc7f108022f184024fb2429ab7d8015b" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010057" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagRecognizers : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTagRecognizers implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SmartTagRecognizers" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTagRecognizers&#xA;Implements IEnumerable" />
@@ -33,11 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>一<see cref="T:Microsoft.Office.Interop.Excel.SmartTagRecognizer" />对象，后者表示标签数据类型的信息，Microsoft Excel 中工作时使用的识别引擎。</summary>
-    <remarks>
-      <para>使用<b>SmartTagRecognizers</b>属性<see cref="T:Microsoft.Office.Interop.Excel.Application" />要返回的一个<b>SmartTagRecognizers</b>集合对象。</para>
-      <para></para>
-    </remarks>
+    <summary>表示识别引擎的对象集合，这些引擎在 Microsoft Excel 中工作时用信息类型 <see cref="T:Microsoft.Office.Interop.Excel.SmartTagRecognizer" /> 标记数据。</summary>
+    <remarks><para>使用 <b>对象的 SmartTagRecognizers</b> 属性可 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 返回 <b>SmartTagRecognizers</b> 集合。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -98,7 +88,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -156,12 +146,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -222,7 +209,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">所需的<b>对象</b>。 对象的名称或索引号。</param>
+        <param name="Index">必需 <b>对象</b>。 对象的名称或索引号。</param>
         <summary>从集合中返回一个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -282,7 +269,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果数据可以为智能标记进行标记，则返回<b>True</b> 。</summary>
+        <summary>如果数据可识别为智能标记，则返回 <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

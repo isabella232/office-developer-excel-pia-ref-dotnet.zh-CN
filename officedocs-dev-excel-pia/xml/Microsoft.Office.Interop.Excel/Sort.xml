@@ -1,13 +1,5 @@
 <Type Name="Sort" FullName="Microsoft.Office.Interop.Excel.Sort">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="de93568167346f288fb7536946cca4f98f1c34cd" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20586413" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Sort" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="de93568167346f288fb7536946cca4f98f1c34cd" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010036" /></Metadata><TypeSignature Language="C#" Value="public interface Sort" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Sort" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Sort" />
   <TypeSignature Language="VB.NET" Value="Public Interface Sort" />
@@ -56,14 +48,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象代表 Microsoft Office Excel 应用程序。 如果使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel._Application" />值，该值代表指定对象的创建者的对象。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel._Application" />
-        </value>
-        <remarks>
-          <para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
-          <para></para>
-        </remarks>
+        <summary>如果不与对象限定符一起使用，则此属性返回一个对象，该对象Microsoft Office  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> Excel 应用程序。 当与对象限定符一起使用时，此属性返回 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 一个对象，该对象表示指定对象的创建者。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel._Application" /></value>
+        <remarks><para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Apply">
@@ -114,14 +102,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，该整数指示在其中创建此对象的应用程序。只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。  <see cref="P:Microsoft.Office.Interop.Excel.Sort.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。  该属性设计为在 Microsoft Excel for the Macintosh 中使用，其中每个应用程序都有 <see cref="P:Microsoft.Office.Interop.Excel.Sort.Creator" /> 一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Header">
@@ -150,15 +134,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlYesNoGuess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定第一行是否包含标题信息。 为可读/写属性。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlYesNoGuess" />
-        </value>
-        <remarks>
-          <para>
-            <see cref="F:Microsoft.Office.Interop.Excel.XlYesNoGuess.xlNo" />为默认值。 您可以指定<see cref="F:Microsoft.Office.Interop.Excel.XlYesNoGuess.xlGuess" />如果您希望 Excel 尝试确定标头。</para>
-          <para></para>
-        </remarks>
+        <summary>指定第一行是否包含标题信息。 读/写。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlYesNoGuess" /></value>
+        <remarks><para>
+            <see cref="F:Microsoft.Office.Interop.Excel.XlYesNoGuess.xlNo" /> 为默认值。 您可以指定 <see cref="F:Microsoft.Office.Interop.Excel.XlYesNoGuess.xlGuess" /> 是否希望 Excel 尝试确定标头。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchCase">
@@ -187,10 +167,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果设置为 <b>True</b>，则执行区分大小写的排序，如果设置为 <b>False</b>，则执行不区分大小写的排序。可读/写。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>如果设置为 <b>True</b>，则执行区分大小写的排序，如果设置为 <b>False</b>，则执行不区分大小写的排序。 读/写。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,10 +198,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSortOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定用于排序的方向。 为可读/写属性。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlSortOrientation" />
-        </value>
+        <summary>指定排序方向。 读/写。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlSortOrientation" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -250,10 +226,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父对象。只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回指定对象的父对象。 只读。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -280,10 +254,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回要执行排序的值的区域。只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Range" />
-        </value>
+        <summary>返回要执行排序的值的区域。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Range" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -310,8 +282,8 @@
         <Parameter Name="Rng" Type="Microsoft.Office.Interop.Excel.Range" />
       </Parameters>
       <Docs>
-        <param name="Rng">指定的范围<see cref="T:Microsoft.Office.Interop.Excel.Sort" />集合。</param>
-        <summary>设置起始和结束字符的位置<see cref="T:Microsoft.Office.Interop.Excel.Sort" />对象。</summary>
+        <param name="Rng">指定集合 <see cref="T:Microsoft.Office.Interop.Excel.Sort" /> 的范围。</param>
+        <summary>设置对象的起始字符和结束字符 <see cref="T:Microsoft.Office.Interop.Excel.Sort" /> 位置。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -338,10 +310,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SortFields</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>可用来在工作簿、列表和自动筛选上存储排序状态。只读 SortFields 类型。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.SortFields" />
-        </value>
+        <summary>可用来在工作簿、列表和自动筛选上存储排序状态。  只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.SortFields" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -371,10 +341,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSortMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定中文排序方法。 可读/写。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlSortMethod" />
-        </value>
+        <summary>指定中文排序方法。 读/写。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlSortMethod" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

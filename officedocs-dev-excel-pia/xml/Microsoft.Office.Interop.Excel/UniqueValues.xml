@@ -1,13 +1,5 @@
 <Type Name="UniqueValues" FullName="Microsoft.Office.Interop.Excel.UniqueValues">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7327266440c4ce7862c175d5e4fbece11422832f" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20578475" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface UniqueValues" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7327266440c4ce7862c175d5e4fbece11422832f" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009441" /></Metadata><TypeSignature Language="C#" Value="public interface UniqueValues" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UniqueValues" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.UniqueValues" />
   <TypeSignature Language="VB.NET" Value="Public Interface UniqueValues" />
@@ -29,8 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <b>UniqueValues</b>对象使用<see cref="P:Microsoft.Office.Interop.Excel.UniqueValues.DupeUnique" />属性返回或设置确定规则是否查找重复值还是唯一值范围中的枚举。</summary>
+    <summary><b>UniqueValues</b>对象使用该属性返回或设置一个枚举，该枚举确定规则应在范围中查找重复值还是 <see cref="P:Microsoft.Office.Interop.Excel.UniqueValues.DupeUnique" /> 唯一值。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -57,14 +48,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象代表 Microsoft Office Excel 应用程序。 如果使用对象识别符，此属性返回值，该值代表指定对象的创建者<b>Application</b>对象。 只读。</summary>
-        <value>
-          <b>应用程序</b>
-        </value>
-        <remarks>
-          <para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
-          <para></para>
-        </remarks>
+        <summary>如果不与对象限定符一起使用，则此属性返回一个代表 Excel Microsoft Office  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 对象。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象。 只读。</summary>
+        <value><b>应用程序</b></value>
+        <remarks><para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AppliesTo">
@@ -90,10 +77,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回格式规则所应用于的单元格区域。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Range" />
-        </value>
+        <summary>返回应用格式规则的单元格区域。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Range" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,14 +105,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Borders" />指定条件格式规则计算结果为<b>True</b>的单元格边框格式的集合。 只读。</summary>
-        <value>
-          <b>Borders</b>
-        </value>
-        <remarks>
-          <para>对于条件格式对象，您只能为单元格的上边框、下边框和侧边框设置属性。</para>
-          <para></para>
-        </remarks>
+        <summary>返回一个集合，如果条件格式规则计算结果为 True ，则指定单元格边框 <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> <b>的格式</b>。 只读。</summary>
+        <value><b>Borders</b></value>
+        <remarks><para>对于条件格式对象，您只能为单元格的上边框、下边框和侧边框设置属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -153,14 +134,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，该整数指示在其中创建此对象的应用程序。只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。<b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。例如，Microsoft Excel 的创建者代码为 XCEL。</para>
-          <para></para>
-        </remarks>
+        <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。  <b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -214,10 +191,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlDupeUnique</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置如果条件格式规则查找的唯一值或重复值。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlDupeUnique" />
-        </value>
+        <summary>返回或设置条件格式规则是否查找唯一值或重复值。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlDupeUnique" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -244,14 +219,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回的字体格式指定条件格式规则计算结果为<b>True</b>。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Font" />
-        </value>
-        <remarks>
-          <para>条件格式对象并不支持 <b>Font</b> 对象的所有属性。您可以设置字体样式、下划线、颜色和删除线属性。</para>
-          <para></para>
-        </remarks>
+        <summary>返回在条件格式规则计算结果为 True 时指定的 <b>字体格式</b>。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Font" /></value>
+        <remarks><para>条件格式对象并不支持 <b>Font</b> 对象的所有属性。 您可以设置字体样式、下划线、颜色和删除线属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -277,10 +248,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回单元格的条件格式规则计算结果的 interior 属性为<b>True</b>。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Interior" />
-        </value>
+        <summary>返回计算结果为 True 的条件格式规则的单元格的内部 <b>属性</b>。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Interior" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -308,11 +277,9 @@
       <Docs>
         <param name="Range">此格式规则将应用于的区域。</param>
         <summary>设置此格式规则所应用于的单元格区域。</summary>
-        <remarks>
-          <para>范围必须以 A1 引用样式和完全包含在工作表的父级的<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />集合。 它可以包括区域运算符 （冒号）、 交点运算符 （空格） 或 union 运算符 （逗号分隔）。 也可以使用美元符号，但会被忽略。</para>
+        <remarks><para>区域必须采用 A1 引用样式，并且完全包含在作为集合父项的 <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> 工作表中。 可包括区域操作符（冒号）、相交区域操作符（空格）或合并区域操作符（逗号）。 也可以使用货币符号，但会被忽略。</para>
           <para>您也可以在区域的任意部分中使用局部定义名称，但该名称必须使用宏语言。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormat">
@@ -341,14 +308,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置条件格式规则计算结果为<b>True</b>的情况下应用于单元格的数字格式。 为可读/写属性。</summary>
-        <value>
-          <b>对象</b>
-        </value>
-        <remarks>
-          <para>数字格式是使用“单元格格式”对话框的“数字”选项卡上显示的相同格式代码指定的。您可以使用内置的数字格式，例如 "General" 或者创建自定义数字格式。</para>
-          <para></para>
-        </remarks>
+        <summary>在条件格式规则的计算结果为 <b>True</b> 时返回或设置应用于单元格的数字格式。 读/写。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>数字格式是使用“单元格格式”对话框的“数字”选项卡上显示的相同格式代码指定的。 您可以使用内置的数字格式，例如 "General" 或者创建自定义数字格式。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -374,10 +337,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父对象。只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回指定对象的父对象。 只读。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -408,13 +369,9 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置条件格式规则的优先级值。当工作表中存在多个条件格式规则时，优先级确定求值的顺序。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>设置优先级时，值必须为介于 1 和工作表上条件格式规则总数之间的正整数。对于工作表上的所有规则，优先级必须为唯一值，因此，如果更改指定条件格式规则的优先级，将可能会导致工作表上其他规则的优先级值移位。</para>
-          <para></para>
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>设置优先级时，值必须为介于 1 和工作表上条件格式规则总数之间的正整数。对于工作表上的所有规则，优先级必须为唯一值，因此，如果更改指定条件格式规则的优先级，将可能会导致工作表上其他规则的优先级值移位。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PTCondition">
@@ -440,10 +397,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 <b>Boolean</b> 值，指明是否将条件格式应用于数据透视表图表。只读。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>返回一个 <b>Boolean</b> 值，指明是否将条件格式应用于数据透视表图表。 只读。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -473,14 +428,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotConditionScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置应用于数据透视表图表时的条件格式的范围。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />
-        </value>
-        <remarks>
-          <para>默认值是<see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />，其设置范围使用<see cref="P:Microsoft.Office.Interop.Excel.UniqueValues.AppliesTo" />属性。</para>
-          <para></para>
-        </remarks>
+        <summary>返回或设置条件格式应用于数据透视表图表时的范围。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /></value>
+        <remarks><para>默认值为 <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" /> ，它使用属性设置 <see cref="P:Microsoft.Office.Interop.Excel.UniqueValues.AppliesTo" /> 范围。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetFirstPriority">
@@ -505,12 +456,10 @@
       <Parameters />
       <Docs>
         <summary>将此条件格式规则的优先级值设置为“1”，以便在工作表上的所有其他规则之前计算此规则。</summary>
-        <remarks>
-          <para>当工作表中有多个条件格式规则时，如果之前未将此规则设置为优先级“1”，此方法将导致工作表上的所有其他现有规则的优先级都增加 1。</para>
+        <remarks><para>当工作表中有多个条件格式规则时，如果之前未将此规则设置为优先级“1”，此方法将导致工作表上的所有其他现有规则的优先级都增加 1。</para>
           <para>
-            <b>注意</b>： 基于工作表级别应用条件格式规则的优先级。</para>
-          <para></para>
-        </remarks>
+            <b>注意</b>：条件格式规则的优先级级别基于工作表级别应用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetLastPriority">
@@ -535,12 +484,10 @@
       <Parameters />
       <Docs>
         <summary>为此条件格式规则设置求值顺序，以便在工作表上的所有其他规则之后计算此规则。</summary>
-        <remarks>
-          <para>优先级的实际值将等于工作表上条件格式规则的总数。当工作表中有多个条件格式规则时，此方法将导致优先级值大于此规则的规则的优先级增加 1。</para>
+        <remarks><para>优先级的实际值将等于工作表上条件格式规则的总数。当工作表中有多个条件格式规则时，此方法将导致优先级值大于此规则的规则的优先级增加 1。</para>
           <para>
-            <b>注意</b>： 基于工作表级别应用条件格式规则的优先级。</para>
-          <para></para>
-        </remarks>
+            <b>注意</b>：条件格式规则的优先级级别基于工作表级别应用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StopIfTrue">
@@ -570,13 +517,9 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置一个 <b>Boolean</b> 值，该值确定在当前规则的计算结果为 <b>True</b> 时是否应计算单元格上的其他格式规则。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>为了支持向后兼容性，此属性的默认值为 <b>True</b>，而这与在用户界面中创建的格式规则的行为相反。</para>
-          <para></para>
-        </remarks>
+        <value><b>Boolean</b></value>
+        <remarks><para>为了支持向后兼容性，此属性的默认值为 <b>True</b>，而这与在用户界面中创建的格式规则的行为相反。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -602,14 +545,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回的常量之一<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />枚举，指定条件格式的类型。 只读。</summary>
-        <value>
-          <b>XlFormatConditionType</b>
-        </value>
-        <remarks>
-          <para>此属性将始终返回<b>整数</b>值"8"，它等效于<see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlUniqueValues" />。</para>
-          <para></para>
-        </remarks>
+        <summary>返回枚举的常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> ，该常量指定条件格式的类型。 只读。</summary>
+        <value><b>XlFormatConditionType</b></value>
+        <remarks><para>此属性将始终返回一 <b>个整数</b> 值"8"，它等效 <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlUniqueValues" /> 于 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="Validation" FullName="Microsoft.Office.Interop.Excel.Validation">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="64490ccfa07c156fb946aaf6fbcab62bd0310122" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575801" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Validation" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="64490ccfa07c156fb946aaf6fbcab62bd0310122" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009350" /></Metadata><TypeSignature Language="C#" Value="public interface Validation" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Validation" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Validation" />
   <TypeSignature Language="VB.NET" Value="Public Interface Validation" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>代表工作表区域的数据有效性规则。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Excel.Range.Validation" />属性返回<b>Validation</b>对象。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" />添加到区域的数据验证并创建新的<b>Validation</b>对象的方法。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.Range.Validation" /> 该属性可返回 <b>Validation</b> 对象。</para>
+      <para>使用此方法 <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> 向区域添加数据验证并创建新的 <b>Validation</b> 对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,45 +53,42 @@
         <Parameter Name="Formula2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">所需<see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />。 有效性验证类型。</param>
-        <param name="AlertStyle">可选的<b>对象</b>。 有效性验证警告样式。 可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />常量： <b>xlValidAlertInformation</b>、 <b>xlValidAlertStop</b>或<b>xlValidAlertWarning</b>。</param>
-        <param name="Operator">可选的<b>对象</b>。 数据有效性验证运算符。 可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />常量： <b>xlBetween</b>、 <b>xlEqual</b>、 <b>xlGreater</b>、 <b>xlGreaterEqual</b>、 <b>xlLess</b>、 <b>xlLessEqual</b>、 <b>xlNotBetween</b>或<b>xlNotEqual</b>。</param>
-        <param name="Formula1">可选的<b>对象</b>。 数据验证公式中的第一部分。</param>
-        <param name="Formula2">可选的<b>对象</b>。 数据有效性的第二部分时<paramref name="Operator" />为<b>xlBetween</b>或<b>xlNotBetween</b> （否则，则忽略此参数）。</param>
+        <param name="Type">必需 <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" /> 。 有效性验证类型。</param>
+        <param name="AlertStyle">可选 <b>对象</b>。 验证警报样式。 可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" /> ： <b>xlValidAlertInformation</b>、 <b>xlValidAlertStop</b>或 <b>xlValidAlertWarning</b>。</param>
+        <param name="Operator">可选 <b>对象</b>。 数据验证运算符。 可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> <b>：xlBetween</b>、 <b>xlEqual</b>、 <b>xlGreater</b>、 <b>xlGreaterEqual</b>、 <b>xlLess</b>、 <b>xlLessEqual</b>、 <b>xlNotBetween</b>或 <b>xlNotEqual</b>。</param>
+        <param name="Formula1">可选 <b>对象</b>。 数据验证公式中的第一部分。</param>
+        <param name="Formula2">可选 <b>对象</b>。 数据验证的第二部分是 <paramref name="Operator" /> <b>xlBetween</b> 或 <b>xlNotBetween</b> (，否则，此参数将被忽略) 。</param>
         <summary>向指定区域内添加数据有效性验证。</summary>
-        <remarks>
-          <para>Add 方法要求的参数，具体取决于有效性验证类型下, 表中所示。</para>
+        <remarks><para>Add 方法需要不同的参数，具体取决于验证类型，如下表所示。</para>
           <list type="table">
             <item>
               <term>
                 <b>xlValidateCustom</b>
               </term>
               <description>
-                <paramref name="Formula1" />需要;<paramref name="Formula2" /> ，则忽略。 <paramref name="Formula1" />必须包含无效数据项时计算结果为<b>True</b>时是有效的数据输入和<b>False</b>的表达式。</description>
+                <paramref name="Formula1" /> 必需; <paramref name="Formula2" /> 将被忽略。 <paramref name="Formula1" />必须包含一个表达式，当数据输入有效时，其计算结果为<b>True;</b>如果数据输入无效，则其计算结果为<b>False。</b></description>
             </item>
             <item>
               <term>
                 <b>xlInputOnly</b>
               </term>
               <description>
-                <paramref name="AlertStyle" />
-                <paramref name="Formula1" />，或<paramref name="Formula2" />使用。</description>
+                <paramref name="AlertStyle" />， <paramref name="Formula1" /> 或 <paramref name="Formula2" /> 已使用。</description>
             </item>
             <item>
               <term>
                 <b>xlValidateList</b>
               </term>
               <description>
-                <paramref name="Formula1" />需要;<paramref name="Formula2" /> ，则忽略。 <paramref name="Formula1" />必须包含逗号分隔的值列表或对此列表的工作表引用。</description>
+                <paramref name="Formula1" /> 必需; <paramref name="Formula2" /> 将被忽略。 <paramref name="Formula1" /> 必须包含以逗号分隔的值列表或对此列表的工作表引用。</description>
             </item>
             <item>
               <term>
                 <b>xlValidateWholeNumber</b>、<b>xlValidateDate</b>、<b>xlValidateDecimal</b>、<b>xlValidateTextLength</b> 或 <b>xlValidateTime</b></term>
-              <description>一种：<paramref name="Formula1" />或<paramref name="Formula2" />必须指定或指定这两个月。</description>
+              <description>可指定 <paramref name="Formula1" /> 其中一个 <paramref name="Formula2" /> 或必须指定两者之一，也可以同时指定这两者。</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AlertStyle">
@@ -127,12 +114,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回有效性验证警告样式。 只读<see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />。</summary>
+        <summary>返回有效性检验警告样式。 只读 <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" /> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" />方法，以便设置范围的警告样式。 如果该区域已有数据有效性，使用<see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" />方法，以更改警告样式。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> 该方法可设置范围的警报样式。 如果区域已具有数据验证，请使用 <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> 该方法更改警报样式。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -158,7 +143,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -186,13 +171,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。 如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 只读<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</summary>
+        <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。 如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。 只读 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -246,7 +228,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置数据有效性检验错误消息。<b>String</b> 类型，可读写。</summary>
+        <summary>返回或设置数据有效性检验错误消息。 读/写 <b>String</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -277,7 +259,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置数据有效性错误对话框的标题。<b>String</b> 类型，可读写。</summary>
+        <summary>返回或设置数据有效性错误对话框的标题。 读/写 <b>String</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -305,7 +287,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回与条件格式或者数据有效性相关联的值或表达式。可为常量值、字符串值、单元格引用或公式。<b>String</b> 型，只读。</summary>
+        <summary>返回与条件格式或者数据有效性相关联的值或表达式。 可为常量值、字符串值、单元格引用或公式。 只读 <b>String</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -333,12 +315,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回的值或条件格式或数据有效性的第二部分相关联的表达式。 只读 <b>String</b>。</summary>
+        <summary>返回与条件格式或数据有效性验证第二部分相关联的值或表达式。 只读 <b>String</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性仅用于数据验证条件格式时<see cref="P:Microsoft.Office.Interop.Excel.Validation.Operator" />属性为<b>xlBetween</b>或<b>xlNotBetween</b>。 它可以是以常量值、 一个 string 值、 单元格引用或公式。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>此属性仅在数据有效性条件格式属性为 <see cref="P:Microsoft.Office.Interop.Excel.Validation.Operator" /> <b>xlBetween</b> 或 <b>xlNotBetween 时使用</b>。 它可以是常量值、字符串值、单元格引用或公式。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IgnoreBlank">
@@ -367,12 +347,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果指定区域内的数据有效性检验允许空值，则该值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果指定区域内的数据有效性检验允许空值，则该值为 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果<b>IgnoreBlank</b>属性为<b>True</b>，如果单元格为空，或者通过以下任一方式引用的单元格中，单元格数据被视为有效<see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MinNumber" />或<see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MaxNumber" />属性为空。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果 <b>IgnoreBlank</b> 属性 <b>为 True，</b>则单元格数据在单元格为空或由 or 属性引用的单元格为空时 <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MinNumber" /> <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MaxNumber" /> 被视为有效。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IMEMode">
@@ -401,12 +379,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置日语输入规则的说明。 可以是一个<see cref="T:Microsoft.Office.Interop.Excel.XlIMEMode" />常量。 可读写 <b>Integer</b>。</summary>
+        <summary>返回或设置日文输入规则的说明。 可以是常量 <see cref="T:Microsoft.Office.Interop.Excel.XlIMEMode" /> 之一。 <b>Integer</b> 型，可读/写。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>只有安装和选择了日文语言支持时，才可设置该属性。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>只有安装和选择了日文语言支持时，才可设置该属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InCellDropdown">
@@ -435,13 +411,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果数据有效性显示含有有效取值的下拉列表，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果数据有效性显示含有有效取值的下拉列表，则该属性值为 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果数据有效性检验类型不是 <b>xlValidateList</b>，将忽略该属性。</para>
-          <para>使用<paramref name="Minimum" />参数<see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" />或<see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" />方法<see cref="T:Microsoft.Office.Interop.Excel.Validation" />对象以指定包含有效数据的区域。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果数据有效性检验类型不是 <b>xlValidateList</b>，将忽略该属性。</para>
+          <para>使用 <paramref name="Minimum" /> 对象的 <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> 或 <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> 方法的参数 <see cref="T:Microsoft.Office.Interop.Excel.Validation" /> 指定包含有效数据的范围。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InputMessage">
@@ -470,7 +444,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置数据有效性检验输入信息。<b>String</b> 类型，可读写。</summary>
+        <summary>返回或设置数据有效性检验输入信息。 读/写 <b>String</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -501,7 +475,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置数据有效性输入对话框的标题。<b>String</b> 类型，可读写。</summary>
+        <summary>返回或设置数据有效性输入对话框的标题。 读/写 <b>String</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -532,47 +506,43 @@
         <Parameter Name="Formula2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">所需<see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />。 有效性验证类型。</param>
-        <param name="AlertStyle">可选<see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />。 有效性验证警告样式。</param>
-        <param name="Operator">可选<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />。 数据有效性验证运算符。</param>
-        <param name="Formula1">可选的<b>对象</b>。 数据验证公式中的第一部分。</param>
-        <param name="Formula2">可选的<b>对象</b>。 数据有效性的第二部分时<paramref name="Operator" />为<b>xlBetween</b>或<b>xlNotBetween</b> （否则，则忽略此参数）。</param>
+        <param name="Type">必需 <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" /> 。 有效性验证类型。</param>
+        <param name="AlertStyle">可选 <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" /> 。 验证警报样式。</param>
+        <param name="Operator">可选 <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> 。 数据验证运算符。</param>
+        <param name="Formula1">可选 <b>对象</b>。 数据验证公式中的第一部分。</param>
+        <param name="Formula2">可选 <b>对象</b>。 数据验证的第二部分是 <paramref name="Operator" /> <b>xlBetween</b> 或 <b>xlNotBetween</b> (，否则，此参数将被忽略) 。</param>
         <summary>修改指定区域的数据有效性验证。</summary>
-        <remarks>
-          <para>
-            <b>Modify</b> 方法所要求的参数依有效性验证的类型而定，如下表所示。</para>
+        <remarks><para><b>Modify</b> 方法所要求的参数依有效性验证的类型而定，如下表所示。</para>
           <list type="table">
             <item>
               <term>
                 <b>xlInputOnly</b>
               </term>
               <description>
-                <paramref name="AlertStyle" />
-                <paramref name="Formula1" />，和<paramref name="Formula2" />未使用。</description>
+                <paramref name="AlertStyle" />， <paramref name="Formula1" /> <paramref name="Formula2" /> 则不进行使用。</description>
             </item>
             <item>
               <term>
                 <b>xlValidateCustom</b>
               </term>
               <description>
-                <paramref name="Formula1" />需要;<paramref name="Formula2" /> ，则忽略。 <paramref name="Formula1" />必须包含无效数据项时计算结果为<b>True</b>时是有效的数据输入和<b>False</b>的表达式。</description>
+                <paramref name="Formula1" /> 必需; <paramref name="Formula2" /> 将被忽略。 <paramref name="Formula1" />必须包含一个表达式，当数据输入有效时，其计算结果为<b>True;</b>如果数据输入无效，则其计算结果为<b>False。</b></description>
             </item>
             <item>
               <term>
                 <b>xlValidateList</b>
               </term>
               <description>
-                <paramref name="Formula1" />需要;<paramref name="Formula2" /> ，则忽略。 <paramref name="Formula1" />必须包含逗号分隔的值列表或对列表的工作表引用。</description>
+                <paramref name="Formula1" /> 必需; <paramref name="Formula2" /> 将被忽略。 <paramref name="Formula1" /> 必须包含以逗号分隔的值列表或列表的工作表引用。</description>
             </item>
             <item>
               <term>
                 <b>xlValidateDate</b>、<b>xlValidateDecimal</b>、<b>xlValidateTextLength</b>、 <b>xlValidateTime</b> 或 <b>xlValidateWholeNumber</b></term>
               <description>
-                <paramref name="Formula1" />或<paramref name="Formula2" />，必须指定和 / 或。</description>
+                <paramref name="Formula1" /> 或 <paramref name="Formula2" /> ，或两者都必须指定。</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Operator">
@@ -598,7 +568,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回条件格式或数据有效性的运算符。 <b>Integer</b> 类型，只读。</summary>
+        <summary>返回条件格式或数据验证的运算符。 只读 <b>Integer</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -626,7 +596,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父对象。只读。</summary>
+        <summary>返回指定对象的父对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -657,7 +627,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果用户输入无效数据时显示数据有效性检查错误消息，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果用户输入无效数据时显示数据有效性检查错误消息，则该属性值为 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -688,7 +658,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果用户在数据有效性检查区域内选定了某一单元格时，显示数据有效性检查输入消息，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
+        <summary>如果用户在数据有效性检查区域内选定了某一单元格时，显示数据有效性检查输入消息，则该属性值为 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -716,7 +686,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回范围内的数据类型有效性验证。 可以是常量之一只读<b>整数</b><see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />。</summary>
+        <summary>返回数据类型的验证值。 只读 <b>Integer</b> 类型，可以是常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -744,8 +714,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果满足所有的有效性验证条件 （即，如果该区域包含有效数据）。 只读 <b>Boolean</b>。</summary>
+        <summary><b>如此</b> 如果所有验证条件都满足 (，即，如果区域包含有效的数据) 。 只读 <b>Boolean</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

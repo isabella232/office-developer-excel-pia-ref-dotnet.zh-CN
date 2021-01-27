@@ -1,13 +1,5 @@
 <Type Name="TableStyleElement" FullName="Microsoft.Office.Interop.Excel.TableStyleElement">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4539961ebad2a3fc05442269d4ef16529e67948a" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587218" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TableStyleElement" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4539961ebad2a3fc05442269d4ef16529e67948a" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009742" /></Metadata><TypeSignature Language="C#" Value="public interface TableStyleElement" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TableStyleElement" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TableStyleElement" />
   <TypeSignature Language="VB.NET" Value="Public Interface TableStyleElement" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>代表单个表格样式元素。</summary>
-    <remarks>
-      <para>表样式定义格式设置为一个或所有表或数据透视表的元素。  例如，标题行是表格的元素。 表格样式可以定义标题行的填充颜色为红色。  </para>
+    <remarks><para>表格样式定义表格或数据透视表的一个或所有元素的格式。  例如，标题行是表格的元素。 表格样式可以规定标题行的填充色为红色。  </para>
       <para>表格中每个表格样式元素的格式设置可在适用于该元素的表格样式中指定。</para>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,14 +50,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象代表 Microsoft Office Excel 应用程序。 如果使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel._Application" />值，该值代表指定对象的创建者的对象。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel._Application" />
-        </value>
-        <remarks>
-          <para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
-          <para></para>
-        </remarks>
+        <summary>如果不与对象限定符一起使用，则此属性返回一个对象，该对象Microsoft Office  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> Excel 应用程序。 当与对象限定符一起使用时，此属性返回 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 一个对象，该对象表示指定对象的创建者。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel._Application" /></value>
+        <remarks><para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Borders">
@@ -94,9 +80,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回表格样式元素的边框。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Borders" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Borders" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,14 +132,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，该整数指示在其中创建此对象的应用程序。只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。  <see cref="P:Microsoft.Office.Interop.Excel.TableStyleElement.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。  该属性设计为在 Microsoft Excel for the Macintosh 中使用，其中每个应用程序都有 <see cref="P:Microsoft.Office.Interop.Excel.TableStyleElement.Creator" /> 一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -182,9 +162,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回指定对象的字体。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Font" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Font" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,10 +189,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回表格样式元素是否具有格式应用于指定的元素。 只读。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>返回表格样式元素是否对指定元素应用了格式。 只读。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,10 +217,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Interior" />值，该值代表指定对象的内部的对象。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Interior" />
-        </value>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> 一个对象，该对象代表指定对象的内部。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Interior" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -271,10 +245,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父对象。只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回指定对象的父对象。 只读。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -304,14 +276,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置的分级的大小。 为可读/写属性。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>此属性不适用于所有<see cref="T:Microsoft.Office.Interop.Excel.TableStyleElement" />对象。 它仅适用于<see cref="F:Microsoft.Office.Interop.Excel.XlTableStyleElementType.xlColumnStripe1" />， <see cref="F:Microsoft.Office.Interop.Excel.XlTableStyleElementType.xlColumnStripe2" />，<see cref="F:Microsoft.Office.Interop.Excel.XlTableStyleElementType.xlRowStripe1" />和<see cref="F:Microsoft.Office.Interop.Excel.XlTableStyleElementType.xlRowStripe2" />类型。</para>
-          <para></para>
-        </remarks>
+        <summary>返回或设置条带的大小。 读/写。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>此属性不应用于所有 <see cref="T:Microsoft.Office.Interop.Excel.TableStyleElement" /> 对象。 它仅适用于 、 <see cref="F:Microsoft.Office.Interop.Excel.XlTableStyleElementType.xlColumnStripe1" /> <see cref="F:Microsoft.Office.Interop.Excel.XlTableStyleElementType.xlColumnStripe2" /> 和 <see cref="F:Microsoft.Office.Interop.Excel.XlTableStyleElementType.xlRowStripe1" /> <see cref="F:Microsoft.Office.Interop.Excel.XlTableStyleElementType.xlRowStripe2" /> 类型。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

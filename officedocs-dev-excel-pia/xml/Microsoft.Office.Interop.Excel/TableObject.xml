@@ -1,13 +1,5 @@
 <Type Name="TableObject" FullName="Microsoft.Office.Interop.Excel.TableObject">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0e083aa43c5aa4dac5d58ee3a90f965dfd50e41a" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20579581" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TableObject" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0e083aa43c5aa4dac5d58ee3a90f965dfd50e41a" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009770" /></Metadata><TypeSignature Language="C#" Value="public interface TableObject" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TableObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TableObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface TableObject" />
@@ -29,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表构建 PowerPivot 模型从返回的数据从一个工作表表格。</summary>
+    <summary>表示基于从模型返回的数据构建的PowerPivot表。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -59,7 +51,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定如果列宽都会自动调整为最适合每次刷新指定的查询表。 默认值为 <b>True</b> 。 <b>Boolean</b>(C# 中<b>bool</b> )读/写</summary>
+        <summary>指定每次刷新指定的查询表时是否自动调整列宽以获得最佳调整效果。 默认值为 <b>True</b>。 <b>Boolean</b> (<b>bool</b> in C#) 可读/写</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象，表示 Excel 应用程序。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Excel 应用程序的对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -115,12 +107,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读的<b>整数</b>(C# 中<b>int</b> )。</summary>
+        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读<b>Integer</b>类型 (以<b></b>C# ) 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>在 Excel 中创建对象，因为此属性返回的十六进制值，5843454c、 表示"XCEL"的字符串。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>由于对象是在 Excel 中创建的，因此此属性返回十六进制值 5843454C，它表示字符串"XCEL"。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -144,7 +134,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>删除<b>TableObject</b>对象。</summary>
+        <summary>删除 <b>TableObject</b> 对象。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,7 +161,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回查询表目标区域 （查询结果表的放置位置的区域） 的左上角单元格。 目标区域必须包含<b>TableObject</b>对象的工作表上。 <b>范围</b>。 只读</summary>
+        <summary>返回查询表目标区域（查询结果表放置的区域）的左上角单元格。 目标区域必须位于包含 <b>TableObject</b> 对象的工作表上。 <b>Range</b>。 只读</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -202,7 +192,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>用户可以编辑该指定的查询表。 <b>False</b>如果用户仅可以刷新该查询表。 <b>Boolean</b>(C# 中<b>bool</b> )读/写</summary>
+        <summary><b>如此</b> 如果用户可以编辑指定的查询表。 <b>假</b> 如果用户只能刷新查询表。 <b>Boolean</b> (<b>bool</b> in C#) 可读/写</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -233,7 +223,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定是否用户可刷新该查询表。 <b>Boolean</b>(C# 中<b>bool</b> )读/写</summary>
+        <summary>指定用户能否刷新查询表。 <b>Boolean</b> (<b>bool</b> in C#) 可读/写</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -261,7 +251,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定是否的最后一次使用 Refresh 方法返回的行数大于工作表上可用的行数。 <b>Boolean</b>(C# 中<b>bool</b> )只读</summary>
+        <summary>指定上次使用 Refresh 方法返回的行数是否大于工作表上可用的行数。 <b>Boolean</b> (<b>bool</b> in C#) 只读</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -289,7 +279,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ListObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.ListObject" />对象的<see cref="T:Microsoft.Office.Interop.Excel.TableObject" />对象。 只读</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> 对象 <see cref="T:Microsoft.Office.Interop.Excel.TableObject" /> 的对象。 只读</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -317,7 +307,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>对象</b>，代表指定<b>TableObject</b>对象的父对象。 只读。</summary>
+        <summary>返回一 <b>个对象</b> ，表示指定的 <b>TableObject</b> 对象的父对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -348,7 +338,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定每次刷新查询表时，是否保留列排序、 筛选和布局信息。 默认值为 <b>False</b> 。 <b>Boolean</b>(C# 中<b>bool</b> )读/写</summary>
+        <summary>指定每当刷新查询表时是否保留列排序、筛选和布局信息。 默认值为 <b>False</b>。 <b>Boolean</b> (<b>bool</b> in C#) 可读/写</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -379,7 +369,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>的前五个数据行常见任何格式都会应用于新表的查询表的数据行。 未使用的单元格不设置格式。 该属性是<b>False</b>如果的最后一个自动套用格式应用于该查询表应用于新数据行。 默认值为 <b>True</b> 。 <b>Boolean</b>(C# 中<b>bool</b> )读/写</summary>
+        <summary>如果将数据前五行的任何常用格式设置应用到查询表的新数据行，则为 <b>True</b>。 对未使用的单元格不进行格式设置。 如果将应用到查询表的最新一次自动套用格式应用于新数据行，则属性为 <b>False</b>。 默认值为 <b>True</b>。 <b>Boolean</b> (<b>bool</b> in C#) 可读/写</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -405,7 +395,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>此方法更新<b>TableObject</b>对象。</summary>
+        <summary>此方法更新 <b>TableObject</b> 对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -436,7 +426,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCellInsertionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定工作表中的行中添加或删除以适应中的查询返回的记录集的行数的方式。 <see cref="T:Microsoft.Office.Interop.Excel.XlCellInsertionMode" />读/写</summary>
+        <summary>返回或设置指定工作表上的行的添加或删除方式，以适应查询返回的记录集的行数。 <see cref="T:Microsoft.Office.Interop.Excel.XlCellInsertionMode" /> 读/写</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -464,7 +454,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，表示指定的查询表所占用的工作表的区域。 只读</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 一个对象，该对象代表指定查询表所占用的工作表区域。 只读</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -495,7 +485,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定是否行号被添加为指定的查询表的第一列。 <b>Boolean</b>(C# 中<b>bool</b> )读/写</summary>
+        <summary>指定是否将行号添加为指定查询表的第一列。 <b>Boolean</b> (<b>bool</b> in C#) 可读/写</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -523,7 +513,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /><b>TableObject</b>用于连接到模型。 <see cref="P:Microsoft.Office.Interop.Excel.WorkbookConnection.ModelConnection" />然后可以使用<b>WorkbookConnection</b>对象的属性来获取并编辑 DAX 等。只读</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> <b>TableObject</b> 用于连接到模型。 然后 <see cref="P:Microsoft.Office.Interop.Excel.WorkbookConnection.ModelConnection" /> <b>，WorkbookConnection</b> 对象上的属性可用于获取和编辑 DAX 等。只读</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

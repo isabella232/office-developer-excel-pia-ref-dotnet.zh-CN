@@ -1,13 +1,5 @@
 <Type Name="SortFields" FullName="Microsoft.Office.Interop.Excel.SortFields">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="053d286026d02ae74ebae1ee6cae51deb4e561ec" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20578111" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SortFields : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="053d286026d02ae74ebae1ee6cae51deb4e561ec" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010008" /></Metadata><TypeSignature Language="C#" Value="public interface SortFields : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SortFields implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SortFields" />
   <TypeSignature Language="VB.NET" Value="Public Interface SortFields&#xA;Implements IEnumerable" />
@@ -33,12 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <see cref="T:Microsoft.Office.Interop.Excel.SortFields" />集合是一系列<see cref="T:Microsoft.Office.Interop.Excel.SortField" />对象。 它允许开发人员存储在工作簿、 列表和自动筛选的排序状态。</summary>
-    <remarks>
-      <para>该对象包含要添加、 计数、 排序和删除属性<see cref="T:Microsoft.Office.Interop.Excel.SortField" />对象。</para>
-      <para></para>
-    </remarks>
+    <summary>该 <see cref="T:Microsoft.Office.Interop.Excel.SortFields" /> 集合是对象 <see cref="T:Microsoft.Office.Interop.Excel.SortField" /> 的集合。 开发人员可以使用该集合存储工作簿、列表和自动筛选的排序状态。</summary>
+    <remarks><para>该对象包含要添加、计数、排序和删除对象 <see cref="T:Microsoft.Office.Interop.Excel.SortField" /> 的属性。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -107,10 +96,8 @@
         <param name="Order">指定排序次序。</param>
         <param name="CustomOrder">指定是否应使用自定义排序次序。</param>
         <param name="DataOption">指定数据选项。</param>
-        <summary>创建新的排序字段，并返回<see cref="T:Microsoft.Office.Interop.Excel.SortField" />对象。</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Excel.SortField" />
-        </returns>
+        <summary>创建新的排序字段并返回 <see cref="T:Microsoft.Office.Interop.Excel.SortField" /> 一个对象。</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Excel.SortField" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,14 +124,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel._Application" />对象代表 Microsoft Office Excel 应用程序。 如果使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel._Application" />值，该值代表指定对象的创建者的对象。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel._Application" />
-        </value>
-        <remarks>
-          <para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
-          <para></para>
-        </remarks>
+        <summary>如果不与对象限定符一起使用，则此属性返回一个代表 Excel Microsoft Office  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 对象。 当与对象限定符一起使用时，此属性返回 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 一个对象，该对象表示指定对象的创建者。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel._Application" /></value>
+        <remarks><para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -168,7 +151,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>清除所有<see cref="T:Microsoft.Office.Interop.Excel.SortField" />对象。</summary>
+        <summary>清除所有 <see cref="T:Microsoft.Office.Interop.Excel.SortField" /> 对象。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,10 +178,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回集合中对象的数量。只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>返回集合中的对象数目。 只读。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,14 +206,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，该整数指示在其中创建此对象的应用程序。只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。<b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。例如，Microsoft Excel 的创建者代码为 XCEL。</para>
-          <para></para>
-        </remarks>
+        <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。  <b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -293,8 +270,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">索引值<see cref="T:Microsoft.Office.Interop.Excel.SortField" />。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.SortField" />对象，表示可以排序工作簿中的项的集合。 只读。</summary>
+        <param name="Index">的索引值 <see cref="T:Microsoft.Office.Interop.Excel.SortField" /> 。</param>
+        <summary>返回一个对象，该对象代表可在工作簿中排序 <see cref="T:Microsoft.Office.Interop.Excel.SortField" /> 的项目集合。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -322,10 +299,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父对象。只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回指定对象的父对象。 只读。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

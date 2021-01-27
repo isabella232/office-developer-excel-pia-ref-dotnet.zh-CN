@@ -1,13 +1,5 @@
 <Type Name="PivotFormula" FullName="Microsoft.Office.Interop.Excel.PivotFormula">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ce492b9d9661d497cae1980426cde80b49102656" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20585146" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PivotFormula" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ce492b9d9661d497cae1980426cde80b49102656" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010855" /></Metadata><TypeSignature Language="C#" Value="public interface PivotFormula" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotFormula" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotFormula" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotFormula" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>代表在数据透视表中用于计算的公式。</summary>
-    <remarks>
-      <para>使用<b>PivotFormulas</b>(<paramref name="index" />)，其中<paramref name="index" />是返回<b>PivotFormula</b>对象的公式的编号或公式，左侧的字符串。</para>
+    <remarks><para>使用 <b>PivotFormulas</b> <paramref name="index" /> () 返回 <paramref name="index" /> <b>PivotFormula</b> 对象，其中公式左侧是公式编号或字符串。</para>
       <para>本对象及其相关属性和方法对于 OLAP 数据源无效，这是因为它不支持计算字段和计算项。</para>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -97,7 +87,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -127,12 +117,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -188,14 +175,12 @@
       <Docs>
         <summary>使用 A1 样式表示法返回或设置对象的公式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性对于 OLAP 数据源无效。</para>
-          <para>如果单元格包含一个常量，此属性返回该常量。如果单元格为空，此 <b>Formula</b> 属性返回一个空字符串。如果单元格包含公式，<b>Formula</b> 属性将该公式作为字符串返回，所用格式与在编辑栏（包括等号）中显示时的格式相同。</para>
+        <remarks><para>此属性对于 OLAP 数据源无效。</para>
+          <para>如果单元格包含一个常量，此属性返回该常量。 如果单元格为空，此 <b>Formula</b> 属性返回一个空字符串。 如果单元格包含公式，<b>Formula</b> 属性将该公式作为字符串返回，所用格式与在编辑栏（包括等号）中显示时的格式相同。</para>
           <para>如果将单元格的值或者公式设置为日期类型，则 Microsoft Excel 将检查此单元格的数字格式是否符合日期或者时间格式。如果不符合，Microsoft Excel 将把数字格式设置为默认的短日期格式。</para>
-          <para>如果该区域是一个-或两维范围时，您可以设置为相同尺寸的数组的公式。 同样，您可以将公式放入数组。</para>
+          <para>如果区域是一维或二维区域，可以将公式设置为相同维度的数组。 同样，可以将公式放入数组中。</para>
           <para>如果为多单元格区域设置公式，则会用公式填充该区域所有的单元格。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -224,7 +209,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置中对象的索引号<see cref="T:Microsoft.Office.Interop.Excel.PivotFormulas" />集合。</summary>
+        <summary>返回或设置集合中对象的索引 <see cref="T:Microsoft.Office.Interop.Excel.PivotFormulas" /> 号。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -283,15 +268,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个指定使用标准英语 （美国） 格式的公式的<b>字符串</b>。</summary>
+        <summary>返回或设置一个 <b>String</b> 值，该值指定使用标准英语（美国）格式的公式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>StandardFormula</b> 属性主要影响具有日期或数字格式的项目名称。该属性提供了一种方法可指定或查询给定计算项的公式。</para>
-          <para>
-            <b>StandardFormula</b>属性是则"国际-"而<see cref="P:Microsoft.Office.Interop.Excel.PivotFormula.Formula" />属性不是。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>StandardFormula</b> 属性主要影响具有日期或数字格式的项目名称。 该属性提供了一种方法可指定或查询给定计算项的公式。</para>
+          <para><b>StandardFormula</b>属性是"国际友好"属性，而 <see cref="P:Microsoft.Office.Interop.Excel.PivotFormula.Formula" /> 该属性不是。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -320,7 +301,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>在数据透视表公式中指定的公式的名称。</summary>
+        <summary>数据透视表中指定公式的名称。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

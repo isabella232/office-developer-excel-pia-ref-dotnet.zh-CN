@@ -1,13 +1,5 @@
 <Type Name="Protection" FullName="Microsoft.Office.Interop.Excel.Protection">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f9996163076ffe6bcb7674a54fe7b673141d992b" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20585188" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Protection" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f9996163076ffe6bcb7674a54fe7b673141d992b" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010792" /></Metadata><TypeSignature Language="C#" Value="public interface Protection" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Protection" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Protection" />
   <TypeSignature Language="VB.NET" Value="Public Interface Protection" />
@@ -30,9 +22,8 @@
   </Attributes>
   <Docs>
     <summary>代表工作表可使用的各种保护选项类型。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Excel._Worksheet.Protection" />属性<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />对象返回一个<b>Protection</b>对象。</para>
-      <para>一旦返回一个<b>Protection</b>对象，您可以使用以下属性来设置或返回保护选项：</para>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.Protection" /> 对象的属性 <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> 可返回 <b>Protection</b> 对象。</para>
+      <para>返回 <b>Protection</b> 对象后，可以使用下列属性设置或返回保护选项：</para>
       <list type="bullet">
         <item>
           <description>
@@ -90,8 +81,7 @@
           </description>
         </item>
       </list>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AllowDeletingColumns">
@@ -117,13 +107,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果在受保护的工作表上允许的列删除，则返回<b>True</b> 。</summary>
+        <summary>如果允许删除受保护工作表上的列，则返回 <b>True</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>可以通过使用设置<b>AllowDeletingColumns</b>属性<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />方法参数。</para>
+        <remarks><para><b>可以使用方法参数设置 AllowDeletingColumns</b> <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> 属性。</para>
           <para>对于受保护的工作表，必须取消对包含要删除的单元格的列的锁定。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowDeletingRows">
@@ -149,13 +137,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果行的删除允许在受保护的工作表上，则返回<b>True</b> 。</summary>
+        <summary>如果允许删除受保护工作表上的行，则返回 <b>True</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>可以通过使用设置<b>AllowDeletingRows</b>属性<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />方法参数。</para>
+        <remarks><para>可以使用 <b>方法参数设置 AllowDeletingRows</b> <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> 属性。</para>
           <para>对于受保护的工作表，必须取消对包含要删除的单元格的行的锁定。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowEditRanges">
@@ -181,7 +167,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AllowEditRanges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.AllowEditRanges" />对象。</summary>
+        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.AllowEditRanges" /> 个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -209,15 +195,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果允许用户使用的受保护工作表之前创建自动筛选，则返回<b>True</b> 。</summary>
+        <summary>如果允许用户使用工作表受保护之前设置的“自动筛选”，则返回 <b>True</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>可以通过使用设置<b>AllowFiltering</b>属性<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />方法参数。</para>
-          <para>
-            <b>AllowFiltering</b> 属性允许用户更改已有的“自动筛选”上的筛选条件。用户不能创建或删除受保护的工作表上的“自动筛选”。</para>
+        <remarks><para>可以使用 <b>方法参数设置 AllowFiltering</b> <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> 属性。</para>
+          <para><b>AllowFiltering</b> 属性允许用户更改已有的“自动筛选”上的筛选条件。 用户不能创建或删除受保护的工作表上的“自动筛选”。</para>
           <para>若要筛选受保护的工作表上的单元格，则必须先取消对这些单元格的锁定。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowFormattingCells">
@@ -243,13 +226,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果单元格的格式允许对受保护的工作表上，则返回<b>True</b> 。</summary>
+        <summary>如果允许对受保护的工作表上的单元格进行格式设置，则返回 <b>True</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>可以通过使用设置<b>AllowFormattingCells</b>属性<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />方法参数。</para>
-          <para>使用此属性禁用保护选项卡，允许用户更改所有格式但不是能锁定或隐藏范围。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>可以使用 <b>方法参数设置 AllowFormattingCells</b> <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> 属性。</para>
+          <para>使用此属性可禁用保护选项卡，允许用户更改所有格式，但不能解锁或取消隐藏范围。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowFormattingColumns">
@@ -275,12 +256,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果在受保护的工作表上允许列的格式，则，返回<b>True</b> 。</summary>
+        <summary>如果允许对受保护的工作表上的列进行格式设置，则返回 <b>True</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>可以通过使用设置<b>AllowFormattingColumns</b>属性<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />方法参数。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>可以使用 <b>方法参数设置 AllowFormattingColumns</b> <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> 属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowFormattingRows">
@@ -306,12 +285,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果行的格式允许对受保护的工作表上，则返回<b>True</b> 。</summary>
+        <summary>如果允许对受保护的工作表上的行进行格式设置，则返回 <b>True</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>可以通过使用设置<b>AllowFormattingRows</b>属性<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />方法参数。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>可以使用 <b>方法参数设置 AllowFormattingRows</b> <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> 属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowInsertingColumns">
@@ -337,13 +314,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果允许受保护的工作表上插入列，则，返回<b>True</b> 。</summary>
+        <summary>如果允许在受保护的工作表上插入列，则返回 <b>True</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>默认情况下，插入的列继承了其左边的列的格式设置，这意味着该列可能包含锁定的单元格。也就是说，用户可能不能删除插入的列。</para>
-          <para>可以通过使用设置<b>AllowInsertingColumns</b>属性<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />方法参数。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>默认情况下，插入的列继承了其左边的列的格式设置，这意味着该列可能包含锁定的单元格。也就是说，用户可能不能删除插入的列。</para>
+          <para>可以使用 <b>方法参数设置 AllowInsertingColumns</b> <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> 属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowInsertingHyperlinks">
@@ -369,13 +344,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果允许受保护的工作表上插入超链接，则，返回<b>True</b> 。</summary>
+        <summary>如果允许在受保护的工作表上插入超链接，则返回 <b>True</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>在受保护的工作表上，只能将超链接插入未锁定或未保护的单元格中。</para>
-          <para>可以通过使用设置<b>AllowInsertingHyperlinks</b>属性<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />方法参数。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>在受保护的工作表上，只能将超链接插入未锁定或未保护的单元格中。</para>
+          <para><b>可以使用方法参数设置 AllowInsertingHyperlinks</b> <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> 属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowInsertingRows">
@@ -401,12 +374,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果允许受保护的工作表上插入行，则，返回<b>True</b> 。</summary>
+        <summary>如果允许用户在受保护的工作表上插入行，则返回 <b>True</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>可以通过使用设置<b>AllowInsertingRows</b>属性<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />方法参数。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>可以使用方法参数设置 AllowInsertingRows</b> <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> 属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowSorting">
@@ -432,13 +403,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果排序选项允许在受保护的工作表上，则返回<b>True</b> 。</summary>
+        <summary>如果允许在受保护的工作表上使用排序选项，则返回 <b>True</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>在受保护的工作表，排序只能执行对未锁定或未受保护的单元格。</para>
-          <para>可以通过使用设置<b>AllowSorting</b>属性<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />方法参数。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>在受保护的工作表中，排序只能在未锁定或不受保护的单元格上执行。</para>
+          <para>可以使用 <b>方法参数设置 AllowSorting</b> <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> 属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowUsingPivotTables">
@@ -464,14 +433,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果允许用户操作在受保护的工作表上的数据透视表，则返回<b>True</b> 。</summary>
+        <summary>如果允许用户在受保护的工作表上处理数据透视表，则返回 <b>True</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>AllowUsingPivotTables</b> 属性应用于非 OLAP 源数据。</para>
-          <para>可以通过使用设置<b>AllowUsingPivotTables</b>属性<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />方法参数。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>AllowUsingPivotTables</b> 属性应用于非 OLAP 源数据。</para>
+          <para><b>可以使用方法参数设置 AllowUsingPivotTables</b> <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> 属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

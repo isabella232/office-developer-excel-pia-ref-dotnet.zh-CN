@@ -1,13 +1,5 @@
 <Type Name="Scenarios" FullName="Microsoft.Office.Interop.Excel.Scenarios">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ae2d83b0cebf35ca68c44e96b1d08c3bd0e82529" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584677" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Scenarios : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ae2d83b0cebf35ca68c44e96b1d08c3bd0e82529" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010463" /></Metadata><TypeSignature Language="C#" Value="public interface Scenarios : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Scenarios implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Scenarios" />
   <TypeSignature Language="VB.NET" Value="Public Interface Scenarios&#xA;Implements IEnumerable" />
@@ -33,13 +25,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>所有的集合<see cref="T:Microsoft.Office.Interop.Excel.Scenario" />指定工作表中的对象。 方案是输入值的一组 (称为<paramref name="changing cells" />) 的已命名和保存。</summary>
-    <remarks>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Scenarios(System.Object)" />方法可返回<b>方案</b>集合。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Excel.Scenarios.Add(System.String,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法，以创建新的方案，并将其添加到集合。</para>
-      <para>使用<b>方案</b>(<paramref name="index" />)，其中<paramref name="index" />是方案名称或索引号，可返回单个<b>方案</b>对象。</para>
-      <para></para>
-    </remarks>
+    <summary>指定工作表上 <see cref="T:Microsoft.Office.Interop.Excel.Scenario" /> 所有对象的集合。 方案是一组称为 (保存) <paramref name="changing cells" /> 的输入值。</summary>
+    <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Scenarios(System.Object)" /> 该方法可返回 <b>Scenarios</b> 集合。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.Scenarios.Add(System.String,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 该方法创建新方案并将其添加到集合中。</para>
+      <para>使用 <b>方案</b> <paramref name="index" /> () 方案名称 <paramref name="index" /> 或索引号，返回单个 <b>Scenario</b> 对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -70,17 +60,15 @@
       </Parameters>
       <Docs>
         <param name="Name">必需的 <b>字符串</b> 。 方案名。</param>
-        <param name="ChangingCells">所需的<b>对象</b>。 A<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象的引用更改单元格方案。</param>
-        <param name="Values">可选的<b>对象</b>。 一个数组，包含该方案中的单元格的值<paramref name="ChangingCells" />。 如果省略此参数，则将假定方案值为中的单元格的当前值<paramref name="ChangingCells" />。</param>
-        <param name="Comment">可选的<b>对象</b>。 一个字符串，指定的方案的批注文字。 当添加新的方案时，作者的名称和日期自动添加注释文本的开头。</param>
-        <param name="Locked">可选的<b>对象</b>。 <b>True</b>锁定以防止更改的方案。 默认值为 <b>True</b> 。</param>
-        <param name="Hidden">可选的<b>对象</b>。 <b>True</b>隐藏方案。 默认值为 <b>False</b> 。</param>
+        <param name="ChangingCells">必需 <b>对象</b>。 <see cref="T:Microsoft.Office.Interop.Excel.Range" />引用方案的更改单元格的对象。</param>
+        <param name="Values">可选 <b>对象</b>。 包含中单元格的方案值的数组 <paramref name="ChangingCells" /> 。 如果省略此参数，则假定方案值是单元格中的当前值 <paramref name="ChangingCells" /> 。</param>
+        <param name="Comment">可选 <b>对象</b>。 一个指定方案批注文本的字符串。 添加新方案时，作者的姓名和日期自动添加在批注文本的开始部分。</param>
+        <param name="Locked">可选 <b>对象</b>。 如果为 <b>True</b>，则锁定方案以防更改。 默认值为 <b>True</b>。</param>
+        <param name="Hidden">可选 <b>对象</b>。 如果为 <b>True</b>，则隐藏方案。 默认值为 <b>False</b>。</param>
         <summary>新建方案并将其添加到当前工作表可用的方案列表中。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>方案名称必须是唯一的；如果试图用已经在使用的名称创建方案，Microsoft Excel 会产生错误。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>方案名称必须是唯一的；如果试图用已经在使用的名称创建方案，Microsoft Excel 会产生错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -106,7 +94,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -162,9 +150,9 @@
         <Parameter Name="ResultCells" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ReportType">可选<see cref="T:Microsoft.Office.Interop.Excel.XlSummaryReportType" />。</param>
-        <param name="ResultCells">可选的<b>对象</b>。 A<see cref="T:Microsoft.Office.Interop.Excel.Range" />对象，表示指定工作表上的结果单元格。 通常，此区域指包含取决于值模型的可变单元格的公式的一个或多个单元格 — 即，显示结果的特定方案的单元格。 如果省略此参数，则没有任何结果单元格的报告中。</param>
-        <summary>创建新工作表包含指定工作表上方案的摘要报告。</summary>
+        <param name="ReportType">可选 <see cref="T:Microsoft.Office.Interop.Excel.XlSummaryReportType" /> 。</param>
+        <param name="ResultCells">可选 <b>对象</b>。 一 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 个代表指定工作表上的结果单元格的对象。 一般而言，此区域指一个或多个包含公式的单元格，即显示特定方案计算结果的单元格；这些单元格中的公式的值由模型中的可变单元格值计算而得。 如果省略此参数，报表中将没有任何结果单元格。</param>
+        <summary>新建一个工作表，并在其中显示指定工作表中所有方案的摘要报表。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -194,12 +182,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -257,7 +242,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">所需的<b>对象</b>。 对象的名称或索引号。</param>
+        <param name="Index">必需 <b>对象</b>。 对象的名称或索引号。</param>
         <summary>从集合中返回一个对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -286,13 +271,11 @@
         <Parameter Name="Source" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Source">所需的<b>对象</b>。 包含待合并方案的工作表的名称或<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />对象，表示该工作表。</param>
-        <summary>合并到另一个表中的方案<see cref="T:Microsoft.Office.Interop.Excel.Scenarios" />集合。</summary>
+        <param name="Source">必需 <b>对象</b>。 包含要合并的方案的工作表的名称，或表示 <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> 该工作表的对象的名称。</param>
+        <summary>将方案从另一个工作表合并到 <see cref="T:Microsoft.Office.Interop.Excel.Scenarios" /> 集合中。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>合并区域的值在该区域左上角的单元格中指定。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>合并区域的值在该区域左上角的单元格中指定。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

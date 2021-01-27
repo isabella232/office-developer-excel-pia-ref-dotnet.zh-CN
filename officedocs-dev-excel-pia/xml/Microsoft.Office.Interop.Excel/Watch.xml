@@ -1,13 +1,5 @@
 <Type Name="Watch" FullName="Microsoft.Office.Interop.Excel.Watch">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="02fb5dd92bbc159aef8ba059d280b188213a0ab7" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20577607" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Watch" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="02fb5dd92bbc159aef8ba059d280b188213a0ab7" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009301" /></Metadata><TypeSignature Language="C#" Value="public interface Watch" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Watch" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Watch" />
   <TypeSignature Language="VB.NET" Value="Public Interface Watch" />
@@ -29,15 +21,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表重新计算工作表时跟踪的区域。</summary>
-    <remarks>
-      <para>
-        <b>Watch</b>对象允许用户确认其模型的准确性和调试遇到的问题。 <b>Watch</b>对象是成员<see cref="T:Microsoft.Office.Interop.Excel.Watches" />集合。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Excel.Watches.Add(System.Object)" />方法或<see cref="P:Microsoft.Office.Interop.Excel.Watches.Item(System.Object)" />要返回一个<b>Watch</b>对象的<b>Watches</b>集合的属性。</para>
-      <para>您可以指定要使用从监视工具删除单个单元格<see cref="M:Microsoft.Office.Interop.Excel.Watches.Delete" /><b>Watches</b>集合的方法。</para>
-      <para>您还可以指定要使用<b>Watches</b>集合的<b>Delete</b>方法从监视窗口中删除所有单元格。</para>
-      <para></para>
-    </remarks>
+    <summary>代表在重新计算工作表时跟踪的区域。</summary>
+    <remarks><para><b>Watch</b> 对象允许用户验证其模型的准确性并调试其遇到的问题。 <b>Watch</b>对象是集合的一 <see cref="T:Microsoft.Office.Interop.Excel.Watches" /> 个成员。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.Watches.Add(System.Object)" /> Watches 集合 <see cref="P:Microsoft.Office.Interop.Excel.Watches.Item(System.Object)" /> 的方法或属性<b></b>可返回<b>Watch</b>对象。</para>
+      <para>可以使用 Watches 集合的方法指定从监视设备中删除单个 <see cref="M:Microsoft.Office.Interop.Excel.Watches.Delete" /> 单元格。 <b></b></para>
+      <para>您还可以使用<b>Watches</b>集合的<b>Delete</b>方法指定从监视窗口删除所有单元格。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -63,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,12 +82,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -177,7 +163,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回标识范围重新计算工作表时跟踪的唯一名称。</summary>
+        <summary>返回标识重新计算工作表时跟踪的范围的唯一名称。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

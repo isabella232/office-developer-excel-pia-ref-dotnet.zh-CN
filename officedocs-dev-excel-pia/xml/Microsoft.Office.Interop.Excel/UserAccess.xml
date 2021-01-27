@@ -1,13 +1,5 @@
 <Type Name="UserAccess" FullName="Microsoft.Office.Interop.Excel.UserAccess">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5757d729f5b2ba76353f83174ceb6884fc95261d" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587197" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface UserAccess" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5757d729f5b2ba76353f83174ceb6884fc95261d" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009392" /></Metadata><TypeSignature Language="C#" Value="public interface UserAccess" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UserAccess" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.UserAccess" />
   <TypeSignature Language="VB.NET" Value="Public Interface UserAccess" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>代表对受保护区域的用户访问。</summary>
-    <remarks>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Excel.UserAccessList.Add(System.String,System.Boolean)" />方法或<see cref="P:Microsoft.Office.Interop.Excel.UserAccessList.Item(System.Object)" />属性<see cref="T:Microsoft.Office.Interop.Excel.UserAccessList" />可返回一个<b>UserAccess</b>对象的集合。</para>
-      <para>一旦返回了<b>UserAccess</b>对象，就可以确定如果允许对工作表中特定范围访问，则使用<see cref="P:Microsoft.Office.Interop.Excel.UserAccess.AllowEdit" />属性。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Excel.UserAccessList.Add(System.String,System.Boolean)" /> 集合的方法 <see cref="P:Microsoft.Office.Interop.Excel.UserAccessList.Item(System.Object)" /> 或属性可返回 <see cref="T:Microsoft.Office.Interop.Excel.UserAccessList" /> <b>UserAccess</b> 对象。</para>
+      <para>返回 <b>UserAccess</b> 对象后，可以使用该属性确定是否允许访问工作表中的特定 <see cref="P:Microsoft.Office.Interop.Excel.UserAccess.AllowEdit" /> 区域。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AllowEdit">
@@ -63,8 +53,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果用户在受保护的工作表上允许访问指定范围。</summary>
+        <summary><b>如此</b> 如果允许用户访问受保护的工作表上的指定区域。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,22 +108,21 @@
       <Docs>
         <summary>返回的对象的名称。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>下表显示<b>名称</b>属性和给定唯一名称"[Europe] 与数据源相关的属性示例值。[France]。[Paris]"，并将与项目的非 OLAP 数据源命名"巴黎"。</para>
+        <remarks><para>下表显示了 Name 属性和相关属性<b></b>的示例值，给定了具有唯一名称"[Europe]的数据源。[法国]。[Paris]"，以及项目名称为"Paris"的非 OLAP 数据源。</para>
           <list type="table">
             <item>
               <term>
                 <b>标题</b>
               </term>
-              <description>Paris</description>
-              <description>Paris</description>
+              <description>巴黎</description>
+              <description>巴黎</description>
             </item>
             <item>
               <term>
                 <b>名称</b>
               </term>
               <description>[Europe].[France].[Paris]（只读）</description>
-              <description>Paris</description>
+              <description>巴黎</description>
             </item>
             <item>
               <term>
@@ -148,25 +136,24 @@
                 <b>值</b>
               </term>
               <description>[Europe].[France].[Paris]（只读）</description>
-              <description>Paris</description>
+              <description>巴黎</description>
             </item>
           </list>
-          <para>指定的索引时<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />集合，您可以使用下表中所示的语法。</para>
+          <para>在集合中指定索引时，可以使用 <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> 下表中所示的语法。</para>
           <list type="table">
             <item>
-              <term>表达式。PivotItems ("[Europe]。 [法国]。[Paris]")</term>
-              <description>表达式。PivotItems("Paris")</description>
+              <term>表达式。PivotItems ("[Europe]。[法国]。[Paris]") </term>
+              <description>表达式。PivotItems ("Paris") </description>
             </item>
           </list>
-          <para>当使用<see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" />属性引用集合中的特定成员，您可以使用下表中所示的文本索引名称。</para>
+          <para>使用该属性引用集合的特定成员时，可以使用文本 <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> 索引名称，如下表所示。</para>
           <list type="table">
             <item>
-              <term>[Europe]。[France]。[Paris]</term>
-              <description>Paris</description>
+              <term>[欧洲]。[法国]。[巴黎]</term>
+              <description>巴黎</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="Phonetic" FullName="Microsoft.Office.Interop.Excel.Phonetic">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="968b33512b8ee5525d7c2fa249064b898613c020" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587645" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Phonetic" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="968b33512b8ee5525d7c2fa249064b898613c020" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011016" /></Metadata><TypeSignature Language="C#" Value="public interface Phonetic" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Phonetic" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Phonetic" />
   <TypeSignature Language="VB.NET" Value="Public Interface Phonetic" />
@@ -30,13 +22,10 @@
   </Attributes>
   <Docs>
     <summary>包含单元格中特定拼音文本串的有关信息。</summary>
-    <remarks>
-      <para>在 Microsoft Excel 97 中，此对象包含指定区域中任意拼音文本的格式属性。</para>
-      <para>使用<b>拼音</b>(<paramref name="index" />)，其中<paramref name="index" />是要返回单个<b>Phonetic</b>对象的拼音文本的索引号。</para>
-      <para>
-        <see cref="P:Microsoft.Office.Interop.Excel.Range.Phonetic" />属性提供了与 Microsoft Excel 的早期版本兼容。 您应使用<b>拼音</b>(<paramref name="index" />)，其中<paramref name="index" />是要返回单个<b>Phonetic</b>对象的拼音文本的索引号。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>在 Microsoft Excel 97 中，此对象包含指定区域中任意拼音文本的格式属性。</para>
+      <para>使用 <b>Phonetics</b> () 返回单个 Phonetic 对象，其中是 Phonetic 文本的 <paramref name="index" /> <paramref name="index" /> <b>索引</b> 号。</para>
+      <para>该属性 <see cref="P:Microsoft.Office.Interop.Excel.Range.Phonetic" /> 提供与早期版本的 Microsoft Excel 的兼容性。 应该使用 <b>Phonetics</b> () （其中是该 phonetic 文本的索引号）返回 <paramref name="index" /> <paramref name="index" /> 单个 <b>Phonetic</b> 对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Alignment">
@@ -65,11 +54,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定的拼音文本的对齐方式。</summary>
+        <summary>返回或设置指定音文本的对齐方式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Alignment</b>属性可以是下列任一<see cref="T:Microsoft.Office.Interop.Excel.XlPhoneticAlignment" />常量：</para>
+        <remarks><para><b>Alignment</b>属性可以是以下常量 <see cref="T:Microsoft.Office.Interop.Excel.XlPhoneticAlignment" /> 之一：</para>
           <para>
             <b>XlPhoneticAlignCenter</b>
           </para>
@@ -82,8 +69,7 @@
           <para>
             <b>XlPhoneticAlignNoControl</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -109,7 +95,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -140,7 +126,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定单元格中拼音文字的类型。</summary>
+        <summary>返回或设置指定单元格中拼音文本的类型。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -170,12 +156,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -201,7 +184,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Font" />对象，它代表指定对象的字体。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Font" /> 一个对象，该对象代表指定对象的字体。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -262,10 +245,8 @@
       <Docs>
         <summary>返回或设置指定对象中的文本。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回或设置的拼音文本<see cref="T:Microsoft.Office.Interop.Excel.Phonetic" />对象。 您不能将此属性设置为<b>Null</b>。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>此属性返回或设置对象的音 <see cref="T:Microsoft.Office.Interop.Excel.Phonetic" /> 体文本。 不能将此属性设为 <b>Null</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -294,7 +275,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定对象是否可见。</summary>
+        <summary>决定对象是否可见。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

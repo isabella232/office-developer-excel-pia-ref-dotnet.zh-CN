@@ -1,13 +1,5 @@
 <Type Name="PivotCache" FullName="Microsoft.Office.Interop.Excel.PivotCache">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7195435ce0a1b6444d578842bbbfb476577c6bb3" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20579497" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PivotCache" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7195435ce0a1b6444d578842bbbfb476577c6bb3" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010946" /></Metadata><TypeSignature Language="C#" Value="public interface PivotCache" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotCache" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotCache" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotCache" />
@@ -30,13 +22,10 @@
   </Attributes>
   <Docs>
     <summary>代表数据透视表的缓存。</summary>
-    <remarks>
-      <para>
-        <b>PivotCache</b>对象所在的<see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" />集合。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.PivotCache" />方法，以返回数据透视表报表 （每个报告具有只有一个缓存） 的一个<b>PivotCache</b>对象。</para>
-      <para>使用<b>PivotCaches</b>(<paramref name="index" />)，其中<paramref name="index" />是数据透视表缓存编号，从工作簿的<b>PivotCaches</b>集合中返回单个<b>PivotCache</b>对象。</para>
-      <para></para>
-    </remarks>
+    <remarks><para><b>PivotCache</b>对象是集合的 <see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" /> 一个成员。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.PivotCache" /> 该方法可返回数据透视表 <b>的 PivotCache</b> 对象 (每个报表只有一个缓存) 。</para>
+      <para>使用<b>PivotCaches</b> () 数据透视表缓存号，从工作簿的 PivotCaches 集合中返回单个 <paramref name="index" /> <paramref name="index" /> <b>PivotCache</b>对象。 <b></b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="ADOConnection">
@@ -62,17 +51,12 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果数据透视表缓存连接到一个 OLE DB 数据源，则返回的 ADO connection 对象。</summary>
+        <summary>如果将数据透视表缓存连接到 OLE DB 数据源，则返回一个 ADO Connection 对象。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>ADOConnection</b>属性公开 Microsoft Excel 连接到数据提供程序，允许用户 Excel 使用 ADO （关系源） 或 ADOMD （OLAP 源） 的同一会话的上下文中编写代码。</para>
-          <para>
-            <b>ADOConnection</b>属性位于只为会话其中的数据源是一个 OLE DB 数据源。 没有 ADO 会话时查询将导致运行时错误。</para>
-          <para>
-            <b>ADOConnection</b>属性可用于用 ADO 任何基于 OLEDB 缓存。 ADO connection 对象可用于与 ADOMD 查找有关缓存基于 OLAP 多维数据集的信息。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>ADOConnection</b>属性公开 Microsoft Excel 与数据提供程序的连接，允许用户在 Excel 用于 ADO (关系源) 或 ADOMD (OLAP 源) 的同一会话上下文中编写代码。</para>
+          <para><b>ADOConnection</b> 属性只可用于数据源是 OLE DB 数据源的会话。 如果没有 ADO 会话，查询将导致运行时错误。</para>
+          <para><b>ADOConnection</b>属性可用于任何具有 ADO 的基于 OLEDB 的缓存。 ADO 连接对象可以与 ADOMD 一起用于查找有关缓存所基于的 OLAP 多维数据集的信息。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -98,7 +82,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -129,12 +113,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>的数据透视表报表或查询表的查询执行异步 （在后台）。</summary>
+        <summary><b>如此</b> 如果对数据透视表或查询表的查询在后台 (异步执行) 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>对于 OLAP 数据源，此属性是只读的，并且始终返回 <b>False</b>。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>对于 OLAP 数据源，此属性是只读的，并且始终返回 <b>False</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandText">
@@ -163,12 +145,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定的数据源的命令字符串。</summary>
+        <summary>返回或设置指定数据源的命令字符串。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>对于 OLE DB 源，<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.CommandType" />属性描述了<b>CommandText</b>属性的值类型。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>对于 OLE DB 源， <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.CommandType" /> 该属性描述 <b>CommandText</b> 属性的值类型。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandType">
@@ -197,23 +177,21 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCmdType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个常量，该常量描述值类型的<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.CommandText" />属性。 默认值是<b>xlCmdSQL</b>。</summary>
+        <summary>返回或设置一个常量，该常量描述属性的值 <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.CommandText" /> 类型。 默认值为 <b>xlCmdSQL</b>。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" /> 可以是以下 <b>XlCmdType</b> 常量之一：</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" />可以是下列<b>XlCmdType</b>常量之一：</para>
+            <b>xlCmdCube</b>。 包含 OLAP 数据源的多维数据集名称。</para>
           <para>
-            <b>xlCmdCube</b>。包含 OLAP 数据源的多维数据集名称。</para>
-          <para>
-            <b>xlCmdDefault</b>。包含 OLE DB 提供者可识别的命令文本。</para>
+            <b>xlCmdDefault</b>。 包含 OLE DB 提供者可识别的命令文本。</para>
           <para>
             <b>xlCmdSql</b>。 包含 SQL 语句。</para>
           <para>
-            <b>xlCmdTable</b>。包含用于访问 OLE DB 数据源的表名称。</para>
-          <para>您才可以设置<b>CommandType</b>属性的值<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.QueryType" />查询表或数据透视表缓存的属性为<b>xloledbquery 时</b>。</para>
+            <b>xlCmdTable</b>。 包含用于访问 OLE DB 数据源的表名称。</para>
+          <para>只有当查询表 <b>或</b> 数据透视表缓存的属性的值为 <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.QueryType" /> <b>xlOLEDBQuery</b>时，才能设置 CommandType 属性。</para>
           <para>当 <b>CommandType</b> 属性的值为 <b>xlCmdCube</b> 时，如果没有与查询表相关联的数据透视表，则不能更改该值。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Connection">
@@ -244,16 +222,12 @@
       <Docs>
         <summary>返回或设置数据透视表缓存的连接信息。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Connection</b>属性可以是下列选项之一： OLE DB 设置，使 Microsoft Excel 连接到 OLE DB 数据源，ODBC 设置，使 Microsoft Excel 连接到 ODBC 数据源，使 Microsoft Excel 连接到的 URLWeb 数据源、 路径和文件名的文本文件，或的路径和文件名指定的数据库或 Web 查询的文件。</para>
-          <para>
-            <b>连接</b>属性设置不立即启动与数据源的连接。 您必须使用<see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" />方法以进行连接，并检索数据。</para>
-          <para>使用脱机多维数据集文件时，设置<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" />属性设为<b>True</b>和使用<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.LocalConnection" />属性而不是<b>在 Connection</b>属性。</para>
-          <para>有关连接字符串语法的详细信息，请参阅<see cref="M:Microsoft.Office.Interop.Excel.PivotCaches.Add(Microsoft.Office.Interop.Excel.XlPivotTableSourceType,System.Object)" /><b>PivotCaches</b>集合的方法。</para>
+        <remarks><para><b>Connection</b>属性可以是下列值之一：允许 Microsoft Excel 连接到 OLE DB 数据源的 OLE DB 设置、允许 Microsoft Excel 连接到 ODBC 数据源的 ODBC 设置、允许 Microsoft Excel 连接到 Web 数据源的 URL、文本文件的路径和文件名，或指定数据库或 Web 查询的文件的路径和文件名。</para>
+          <para>设置 <b>Connection</b> 属性不会立即与数据源建立连接。 必须使用该方法 <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" /> 建立连接并检索数据。</para>
+          <para>使用脱机多维数据集文件时，将 <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" /> 该属性设置为 <b>True，</b> 并使用 <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.LocalConnection" /> 属性而不是 <b>Connection</b> 属性。</para>
+          <para>有关连接字符串语法的信息，请参阅 <see cref="M:Microsoft.Office.Interop.Excel.PivotCaches.Add(Microsoft.Office.Interop.Excel.XlPivotTableSourceType,System.Object)" /> <b>PivotCaches</b> 集合的方法。</para>
           <para>另外，也可以通过选择 Microsoft ActiveX 数据对象 (ADO) 库直接访问数据源。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CreatePivotChart">
@@ -283,22 +257,21 @@
         <Parameter Name="Height" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ChartDestination">目标工作表</param>
-        <param name="XlChartType">图表的类型</param>
+        <param name="ChartDestination">"目标"工作表</param>
+        <param name="XlChartType">图表类型</param>
         <param name="Left">从对象左边界至 A 列左边界（在工作表上）或图表区左边界（在图表上）的距离，以磅为单位。</param>
         <param name="Top">从图形区域中最上端的图形的顶端到工作表顶端的距离，以磅为单位。</param>
-        <param name="Width">对象的高度，以磅为单位。</param>
-        <param name="Height">对象的高度，以磅为单位。</param>
-        <summary>从一个<b>PivotCache</b>对象创建独立的数据透视图。 A<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象返回。</summary>
+        <param name="Width">对象的宽度，以磅为单位。</param>
+        <param name="Height">对象的宽度，以磅为单位。</param>
+        <summary>从 <b>PivotCache</b> 对象创建独立数据透视图。 返回 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 一个对象。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>如果<b>PivotCache</b>对象的从调用该方法没有附加的数据透视表：</para>
+        <remarks><para>如果 <b>调用该方法的 PivotCache</b> 对象没有附加的数据透视表：</para>
           <list type="bullet">
             <item>
-              <description>工作簿级数据透视表创建从现有的 PivotCache。</description>
+              <description>从现有 PivotCache 创建工作簿级数据透视表。</description>
             </item>
             <item>
-              <description>独立对新创建的数据透视表的引用，将创建数据透视图。</description>
+              <description>将创建一个独立的数据透视图，并引用新创建的数据透视表。</description>
             </item>
           </list>
           <para>如果 PivotCache 已有关联的数据透视表：</para>
@@ -307,14 +280,13 @@
               <description>克隆 PivotCache</description>
             </item>
             <item>
-              <description>新的工作簿级数据透视表创建基于克隆的 PivotCache。</description>
+              <description>基于克隆的 PivotCache 创建一个新的工作簿级数据透视表。</description>
             </item>
             <item>
-              <description>创建独立的数据透视图对新的工作簿级数据透视表的引用。</description>
+              <description>使用对新的工作簿级数据透视表的引用创建独立数据透视图。</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CreatePivotTable">
@@ -342,16 +314,14 @@
         <Parameter Name="DefaultVersion" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="TableDestination">所需的<b>对象</b>。 在数据透视表报表的目标区域 （生成的数据透视表报表的放置位置工作表上的区域） 的左上角单元格。 目标区域必须包含由表达式指定的<b>PivotCache</b>对象的工作簿中的工作表上。</param>
-        <param name="TableName">可选的<b>对象</b>。 新的数据透视表的名称。</param>
-        <param name="ReadData">可选的<b>对象</b>。 <b>True</b>以创建包含从外部数据库; 记录的所有数据透视表缓存此缓存可能会非常大。 <b>False</b>可允许之前实际读取数据，则将某些字段设置为基于服务器的页字段。</param>
-        <param name="DefaultVersion">可选的<b>对象</b>。 数据透视表的默认版本。</param>
-        <summary>创建基于数据透视表报告<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />对象。</summary>
+        <param name="TableDestination">必需 <b>对象</b>。 数据透视表目标区域（工作表中用于放置所生成的数据透视表的区域）左上角的单元格。 目标区域必须位于工作簿中由表达式指定的 <b>PivotCache</b> 对象的工作表上。</param>
+        <param name="TableName">可选 <b>对象</b>。 新的数据透视表的名称。</param>
+        <param name="ReadData">可选 <b>对象</b>。 如果该值为 <b>True</b>，则创建一个包含外部数据库中所有记录的数据透视表高速缓存；此高速缓存可以很大。 如果为 <b>False</b>，则允许在实际读取数据之前将某些字段设置为基于服务器的页字段。</param>
+        <param name="DefaultVersion">可选 <b>对象</b>。 数据透视表的默认版本。</param>
+        <summary>基于对象创建数据透视 <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> 表。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>创建基于数据透视表高速缓存数据透视表报表的替代方法，请参阅<see cref="M:Microsoft.Office.Interop.Excel.PivotTables.Add(Microsoft.Office.Interop.Excel.PivotCache,System.Object,System.Object,System.Object,System.Object)" />方法<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />对象。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>有关基于数据透视表缓存创建数据透视表的替代方法，请参阅 <see cref="M:Microsoft.Office.Interop.Excel.PivotTables.Add(Microsoft.Office.Interop.Excel.PivotCache,System.Object,System.Object,System.Object,System.Object)" /> 对象 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 的方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -379,12 +349,9 @@
       <Docs>
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。</para>
-          <para>
-            <b>Creator</b>属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
+          <para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableRefresh">
@@ -413,14 +380,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>可由用户刷新数据透视表高速缓存或查询表。 默认值为 <b>True</b> 。</summary>
+        <summary>如果用户可刷新数据透视表高速缓存或查询表，则为 <b>True</b>。 默认值为 <b>True</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.RefreshOnFileOpen" />如果<b>EnableRefresh</b>属性设置为<b>False</b>，则忽略属性。</para>
-          <para>对于 OLAP 数据源，将此属性设置为 <b>False</b> 会禁用更新。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果 <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.RefreshOnFileOpen" /> <b>EnableRefresh</b> 属性设置为 <b>False，</b>则忽略该属性。</para>
+          <para>对于 OLAP 数据源，如果将此属性设置为 <b>False</b>，则会禁用更新。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -474,15 +438,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<b>True</b> ，如果<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.MaintainConnection" />属性为<b>True</b> ，并且数据透视表缓存当前连接到其源。 如果当前未其源相连，则返回<b>False</b> 。</summary>
+        <summary>如果<b>该属性</b>为 True 并且数据透视表缓存当前已连接到其源，则返回 <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.MaintainConnection" /> True。 <b></b> 如果数据透视表缓存当前未与其源相连，则返回 <b>False</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>IsConnected</b>属性不检查连接是否连接。 即使该属性返回<b>True</b>，发送到提供程序的命令如果可能导致错误连接不再有效。</para>
-          <para>要求缓存的源类型是外部的，并且是一个 OLE DB 数据源。
-</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>IsConnected</b> 属性不检查是否建立了连接。 即使此属性返回 <b>True，</b>如果连接不再有效，向提供程序发送命令也可能会导致错误。</para>
+          <para>要求缓存的源类型是外部的，并且是一个 OLE DB 数据源。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LocalConnection">
@@ -511,16 +471,13 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置到脱机多维数据集文件的连接字符串。</summary>
+        <summary>返回或设置脱机多维数据集文件的连接字符串。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>对于非 OLAP 数据源， <b>LocalConnection</b>属性的值为空字符串，和<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" />属性设置为<b>False</b>。</para>
-          <para>
-            <b>LocalConnection</b>属性设置不立即启动与数据源的连接。 您必须首先使用<see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" />方法以进行连接，并检索数据。</para>
-          <para>如果使用<b>LocalConnection</b>属性的值<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" />属性设置为<b>True</b>。 如果<b>UseLocalConnection</b>属性设置为 False，<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" />属性指定用于查询表基于非本地多维数据集文件的源的连接字符串。</para>
-          <para>有关连接字符串的语法的详细信息，请参阅帮助主题<see cref="M:Microsoft.Office.Interop.Excel.PivotTables.Add(Microsoft.Office.Interop.Excel.PivotCache,System.Object,System.Object,System.Object,System.Object)" /><b>数据透视表</b>集合的方法。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>对于非 OLAP 数据源<b>，LocalConnection</b>属性的值为空字符串，并且 <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" /> 该属性设置为<b>False。</b></para>
+          <para>设置 <b>LocalConnection</b> 属性不会立即启动与数据源的连接。 必须先使用 <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" /> 该方法建立连接并检索数据。</para>
+          <para>如果 <b>LocalConnection</b> 属性的值设置为 <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" /> <b>True，</b>则使用该属性。 如果 <b>UseLocalConnection</b> 属性设置为 False，则该属性指定基于除文件外源的查询表 <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> 本地多维数据集字符串。</para>
+          <para>有关连接字符串的语法的详细信息，请参阅数据透视表集合方法的帮助 <see cref="M:Microsoft.Office.Interop.Excel.PivotTables.Add(Microsoft.Office.Interop.Excel.PivotCache,System.Object,System.Object,System.Object,System.Object)" /> 主题。 <b></b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MaintainConnection">
@@ -549,14 +506,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果刷新后，直到关闭工作簿维护与指定的数据源的连接。 默认值为 <b>True</b> 。</summary>
+        <summary>如果从刷新数据开始直至关闭工作簿，都一直保留指向指定数据源的连接，则为 <b>True</b>。 默认值为 <b>True</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>您可以设置<b>MaintainConnection</b>属性才<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.QueryType" />的查询表或数据透视表缓存的属性设置为<b>xloledbquery 时</b>。</para>
-          <para>如果预计会频繁对服务器进行查询，则可将此属性设置为 <b>True</b>，这样能减少重新连接的时间因而可提高性能。将此属性设置为 <b>False</b>，将会关闭一个打开的连接。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>只有当查询表或<b></b>数据透视表缓存的属性设置为 <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.QueryType" /> <b>xlOLEDBQuery</b>时，才能设置 MaintainConnection 属性。</para>
+          <para>如果预计会频繁对服务器进行查询，则可将此属性设置为 <b>True</b>，这样能减少重新连接的时间因而可提高性能。 将此属性设置为 <b>False</b>，将会关闭一个打开的连接。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MakeConnection">
@@ -581,13 +535,10 @@
       <Parameters />
       <Docs>
         <summary>为指定的数据透视表缓存建立连接。</summary>
-        <remarks>
-          <para>
-            <b>MakeConnection</b>方法可在缓存断开连接和用户想要重新建立连接之后。</para>
+        <remarks><para>在缓存丢弃连接并且用户希望重新建立连接后，可以使用 <b>MakeConnection</b> 方法。</para>
           <para>如果没有连接缓存，各种对象和方法可能都会返回运行错误。使用该方法可确保在执行其他对象或方法之前已建立一个连接。</para>
-          <para>如果，此方法将导致运行时错误<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.MaintainConnection" />指定的数据透视表缓存的属性已设置为<b>False</b>，<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceType" />具有未指定数据透视表缓存的属性设置为<b>xlExternal</b>，或者如果不 OLEDB 连接。.</para>
-          <para></para>
-        </remarks>
+          <para>如果指定数据透视表缓存的属性已设置为 False、指定数据透视表缓存的属性尚未设置为 <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.MaintainConnection" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceType" /> <b>xlExternal</b>或连接不是 OLEDB，则此方法将导致运行时错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MemoryUsed">
@@ -613,14 +564,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>以字节为单位当前正在使用该对象返回内存的量。</summary>
+        <summary>返回对象当前使用的内存量（以字节为单位）。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>MemoryUsed</b>属性反映了查询时的缓存的瞬时状态。</para>
-          <para>如果<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />对象中的任何附加到它的数据透视表报告，此属性返回 0 （零）。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>MemoryUsed</b>属性反映了查询缓存时缓存的瞬态状态。</para>
+          <para>如果对象没有附加数据透视表，则此属性返回 0 (<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> 0) 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MissingItemsLimit">
@@ -649,22 +597,19 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotTableMissingItems</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置的每个数据透视表字段即使不支持的数据进行缓存记录保留的唯一项的最大数量。</summary>
+        <summary>返回或设置每个数据透视表字段的唯一项的最大数量，即使在缓存记录中没有支持数据，唯一项也能保留。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableMissingItems" />可以是以下<b>XlPivotTableMissingItems</b>常量之一：</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableMissingItems" /> 可以是以下 <b>XlPivotTableMissingItems 常量</b> 之一：</para>
           <para>
             <b>xlMissingItemsDefault</b> 每个允许的数据透视表字段中唯一项的默认个数。</para>
           <para>
             <b>xlMissingItemsMax</b> 每个允许的数据透视表字段中唯一项的最大个数 (32,500)。</para>
           <para>
             <b>xlMissingItemsNone</b> 每个允许的数据透视表中没有唯一项（零）。</para>
-          <para>该属性的值可以介于 0 到 32500。如果指定一个小于零的整数，则其等价于指定 <b>xlMissingItemsDefault</b>。可以指定大于 32,500 的整数，但等价于指定 <b>xlMissingItemsMax</b>。</para>
-          <para>
-            <b>MissingItemsLimit</b> 属性只用于非 OLAP 数据透视表，否则将出现运行时错误。</para>
-          <para></para>
-        </remarks>
+          <para>该属性的值可以介于 0 到 32500。 如果指定一个小于零的整数，则其等价于指定 <b>xlMissingItemsDefault</b>。 可以指定大于 32,500 的整数，但等价于指定 <b>xlMissingItemsMax</b>。</para>
+          <para><b>MissingItemsLimit</b> 属性只用于非 OLAP 数据透视表，否则将出现运行时错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OLAP">
@@ -690,7 +635,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果数据透视表缓存连接到联机分析处理 (OLAP) 服务器，则返回<b>True</b> 。</summary>
+        <summary>如果数据透视表缓存与联机分析处理 (OLAP) 服务器相连，则返回 <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -721,14 +666,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果数据透视表缓存在构造时进行了优化。 默认值为 <b>False</b> 。</summary>
+        <summary>如果构造数据透视表的高速缓存时，需要对其进行优化，则该值为 <b>True</b>。 默认值为 <b>False</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>高速缓存的优化将导致附加的查询，并会降低数据透视表的初始性能。</para>
+        <remarks><para>高速缓存的优化将导致附加的查询，并会降低数据透视表的初始性能。</para>
           <para>对于 OLE DB 数据源，该属性是只读的，并且总返回 <b>False</b>。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -782,26 +724,24 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlQueryType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指示 Microsoft Excel 用于填充的数据透视表缓存的查询的类型。</summary>
+        <summary>可表示 Microsoft Excel 在生成数据透视表缓存时所使用的查询类型。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlQueryType" /> 可以是以下 <b>XlQueryType</b> 常量之一：</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlQueryType" />可以是下列<b>XlQueryType</b>常量之一：</para>
+            <b>xlTextImport</b>。 基于文本文件;仅适用于查询表。</para>
           <para>
-            <b>xlTextImport</b>。 基于文本文件;仅用于查询表。</para>
+            <b>xlOLEDBQuery</b>。 基于 OLE DB 查询，包括 OLAP 数据源。</para>
           <para>
-            <b>xloledbquery 时</b>。 基于 OLE DB 查询，包括 OLAP 数据源。</para>
-          <para>
-            <b>xlWebQuery</b>。 基于 Web 的网页;仅用于查询表。</para>
+            <b>xlWebQuery</b>。 基于网页;仅适用于查询表。</para>
           <para>
             <b>xlADORecordset</b>。 基于 ADO 记录集查询。</para>
           <para>
-            <b>xlDAORecordSet</b>。 基于 DAO 记录集查询;仅用于查询表。</para>
+            <b>xlDAORecordSet</b>。 基于 DAO 记录集查询;仅适用于查询表。</para>
           <para>
             <b>xlODBCQuery</b>。 基于 ODBC 数据源。</para>
-          <para>前缀中指定的数据源<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" />属性的值。</para>
-          <para></para>
-        </remarks>
+          <para>在属性值的前缀中指定 <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> 数据源。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RecordCount">
@@ -827,12 +767,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>在数据透视表缓存或包含的指定的项的缓存记录数目返回记录的数。</summary>
+        <summary>返回数据透视表缓存中的记录数目或包含指定内容的缓存记录数目。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性反映了查询高速缓存时的瞬时状态。该高速缓存可对不同查询而更改。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>此属性反映了查询高速缓存时的瞬时状态。 该高速缓存可对不同查询而更改。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Recordset">
@@ -861,12 +799,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个用作数据源指定的查询表或数据透视表缓存的<b>Recordset</b>对象。</summary>
+        <summary>返回或设置 <b>一个 Recordset</b> 对象，该对象用作指定查询表或数据透视表缓存的数据源。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果此属性用来覆盖现有记录集，更改将生效时<see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" />方法运行。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>如果此属性用于覆盖现有记录集，则更改在该方法运行时 <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" /> 生效。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Refresh">
@@ -890,7 +826,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>更新的高速缓存<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />对象。</summary>
+        <summary>更新对象的 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 缓存。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -917,13 +853,11 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回最近一次刷新数据透视表缓存的日期。</summary>
+        <summary>返回上次刷新数据透视表缓存的日期。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>该缓存必须至少一个与之关联的数据透视表报告。</para>
+        <remarks><para>缓存必须至少具有一个与之关联的数据透视表。</para>
           <para>对于 OLAP 数据源，在每次查询后都会更新此属性。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshName">
@@ -949,7 +883,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回最近一次刷新数据透视表缓存的人员的名称。</summary>
+        <summary>返回最近一次刷新数据透视表缓存的人员的名字。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -980,12 +914,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>打开<b>，则返回 true</b>如果每次工作簿数据透视表缓存自动更新。 默认值为 <b>False</b> 。</summary>
+        <summary>如果每次打开工作簿时，数据透视表缓存都自动进行更新，则为 <b>True</b>。 默认值为 <b>False</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>不自动刷新数据透视表报告。 使用<see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" />方法，以打开工作簿后，刷新数据。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>数据透视表不会自动刷新。 使用 <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" /> 该方法在工作簿打开后刷新数据。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshPeriod">
@@ -1014,14 +946,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置的刷新间隔的分钟数。</summary>
+        <summary>返回或设置两次刷新之间的时间间隔。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>将周期设置为 0（零），则会禁用自动定时刷新，并且等同于将该属性设置为 <b>Null</b>。</para>
-          <para>
-            <b>RefreshPeriod</b>属性的值可以是介于 0 到 32767 之间的整数。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>将时间段设置为 0（零）会禁用定时自动刷新，等同于将此属性设置为 <b>Null</b>。</para>
+          <para><b>RefreshPeriod</b>属性的值可以是 0 到 32，767 的整数。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetTimer">
@@ -1045,7 +974,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>将指定数据透视表的刷新计时器重置使用设置的最后一个时间间隔为<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.RefreshPeriod" />属性。</summary>
+        <summary>将指定数据透视表的刷新计时器重置为使用该属性设置的上一 <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.RefreshPeriod" /> 个间隔。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1077,17 +1006,15 @@
       <Docs>
         <summary>返回或设置数据透视表缓存与其数据源连接的方式。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlRobustConnect" /> 可以是以下 <b>XlRobustConnect 常量</b> 之一：</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlRobustConnect" />可以是下列<b>XlRobustConnect</b>常量之一：</para>
+            <b>xlAlways</b> 缓存始终使用外部源 (<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceConnectionFile" /> 或 <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceDataFile" /> 属性定义) 重新连接。</para>
           <para>
-            <b>xlAlways</b>缓存始终使用外部源信息 (如由定义<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceConnectionFile" />或<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceDataFile" />属性) 重新连接。</para>
+            <b>xlAsRequired</b> 缓存使用外部源信息使用属性重新 <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> 连接。</para>
           <para>
-            <b>xlAsRequired</b>缓存使用外部源信息进行重新连接使用<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" />属性。</para>
-          <para>
-            <b>xlNever</b>缓存从不使用源信息进行重新连接。</para>
-          <para></para>
-        </remarks>
+            <b>xlNever</b> 缓存从不使用源信息重新连接。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveAsODC">
@@ -1115,9 +1042,9 @@
       </Parameters>
       <Docs>
         <param name="ODCFileName">必需的 <b>字符串</b> 。 保存文件的位置。</param>
-        <param name="Description">可选的<b>对象</b>。 将保存在文件中的说明。</param>
-        <param name="Keywords">可选的<b>对象</b>。 可用于搜索该文件的以空格分隔的关键字。</param>
-        <summary>将数据透视表缓存的源保存为 Microsoft Office 数据连接文件。</summary>
+        <param name="Description">可选 <b>对象</b>。 将保存在文件中的说明。</param>
+        <param name="Keywords">可选 <b>对象</b>。 可用于搜索该文件的以空格分隔的关键字。</param>
+        <summary>将数据透视表缓存源保存为Microsoft Office数据连接文件。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1147,12 +1074,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>将 ODBC 连接字符串中的密码信息保存与指定的查询。 <b>False</b>如果删除密码。</summary>
+        <summary>如果将 ODBC 连接字符串中的密码信息与指定查询一起保存，则为 <b>True</b>。 如果删除密码，则为 <b>False</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性会影响仅 ODBC 查询。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>此属性仅影响 ODBC 查询。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceConnectionFile">
@@ -1181,7 +1106,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>字符串</b>，指示用来创建数据透视表的类似文件的 Microsoft Office 数据连接文件。</summary>
+        <summary>返回或设置一个 <b>String</b>，它指明用于创建数据透视表的 Microsoft Office 数据连接文件或类似的文件。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1214,16 +1139,15 @@
       <Docs>
         <summary>返回数据透视表的数据源。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>下表显示<b>SourceDate</b>属性返回的值：</para>
+        <remarks><para>下表显示 <b>SourceDate</b> 属性返回的值：</para>
           <list type="table">
             <item>
               <term>Microsoft Excel 列表或数据库</term>
-              <description>以文本形式的单元格引用。</description>
+              <description>作为文本的单元格引用。</description>
             </item>
             <item>
               <term>外部数据源</term>
-              <description>数组。 每个行作为查询字符串，细分为 255 个字符段包含的剩余元素的 SQL 连接字符串。</description>
+              <description>数组。 每一行包含一SQL连接字符串，其余元素作为查询字符串，细分为 255 个字符的段。</description>
             </item>
             <item>
               <term>多个合并区域</term>
@@ -1235,8 +1159,7 @@
             </item>
           </list>
           <para>该属性不可用于 OLE DB 数据源。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceDataFile">
@@ -1262,12 +1185,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个指示的数据透视表缓存的源数据文件的<b>字符串</b>。</summary>
+        <summary>返回 <b>一个</b> 字符串 ，指示数据透视表的缓存的源文件。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>对于基于文件的数据源 (如 Microsoft Access) <b>SourceDataFile</b>属性包含源数据文件的完全限定的路径。 它为<b>Null</b>的基于服务器的数据源 (如 SQL Server)。 <b>SourceDataFile</b>属性设置为<b>Null</b> ，如果<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" />以编程方式更改属性。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>对于基于文件的数据源 (例如 Microsoft Access) <b>SourceDataFile</b> 属性包含源数据文件的完全限定路径。 对于 <b>基于</b> 服务器的数据源（例如 (，此参数SQL Server) 。 如果 <b>以编程</b> 方式更改了 <b>SourceDataFile</b> 属性，则 <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> 该属性设置为 Null。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceType">
@@ -1293,11 +1214,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotTableSourceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值，标识要发布的项目的类型。</summary>
+        <summary>返回一个值，该值标识要发布的项目的类型。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" />可以是以下<b>XlPivotTableSourceType</b>常量之一：</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> 可以是以下 <b>XlPivotTableSourceType</b> 常量之一：</para>
           <para>
             <b>xlConsolidation</b>
           </para>
@@ -1313,8 +1233,7 @@
           <para>
             <b>xlScenario</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Sql">
@@ -1380,16 +1299,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>包含信息是否升级<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />和所有连接<see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />上的下一个刷新。 为可读/写属性。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>默认值为 <b>False</b> 。 如果为<b>PivotCache</b>属性设置为<b>True</b> ，则刷新任何<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />附加到的<b>PivotCache</b>将<b>PivotCache</b>和升级所有附加的<b>数据透视表</b>到 2007年版 (PivotTable.Version = 3) 的一部分刷新。</para>
-          <para>如果为<b>PivotCache</b>属性设置为<b>False</b> ，刷新<b>数据透视表</b>的任何附加到的<b>PivotCache</b>将不会更改的版本<b>PivotCache</b>，也不任何附加的<b>数据透视表</b>的版本。 它们都刷新前保持相同的版本。</para>
-          <para>将保存到 short_Excel2007 文件格式，当在兼容性模式将设置此属性为<b>True</b>的所有<see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" />工作簿中。</para>
-          <para></para>
-        </remarks>
+        <summary>包含有关是否升级下一次刷新 <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />  时连接 <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> 的所有连接的信息。 读/写。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>默认值为 <b>False</b>。 如果<b>PivotCache</b>的属性设置为<b>True，</b>刷新附加到该 PivotCache 的任何数据透视表，将在刷新过程中将 PivotCache 和所有附加的数据透视表升级到版本 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 2007 (PivotTable.Version = 3) 。 <b></b> <b></b> <b></b></para>
+          <para>如果<b>PivotCache</b>的属性设置为<b>False，</b>刷新附加到该<b></b><b>PivotCache</b>的任何数据透视表将不会更改<b>PivotCache</b>的版本，也不会更改任何附加的数据透视表<b>的版本</b>。 它们都与刷新前的版本保持一致。</para>
+          <para>保存为short_Excel2007文件格式时，当在兼容模式下将此属性设置为 <b>True</b> 时，工作簿 <see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" /> 中所有属性都将为 True。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UseLocalConnection">
@@ -1418,8 +1333,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.LocalConnection" />属性用于指定的字符串，使 Microsoft Excel 连接到数据源。 <b>False</b>如果指定的连接字符串<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" />使用属性。</summary>
+        <summary><b>如此</b> 如果 <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.LocalConnection" /> 该属性用于指定使 Microsoft Excel 连接到数据源的字符串。 <b>假</b> 如果使用属性指定的 <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> 连接字符串。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1447,14 +1361,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotTableVersionList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>在其中返回的 Microsoft Excel 版本<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />创建。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableVersionList" />
-        </value>
-        <remarks>
-          <para>此属性返回的版本<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。 行为取决于要允许旧的<b>数据透视表</b>对象模型代码以<b>数据透视表</b>的版本对应的为其编写代码的 Excel 版本时，在相同的行为的 1st_Excel12 中运行的版本和默认设置。</para>
-          <para></para>
-        </remarks>
+        <summary>返回创建 Microsoft Excel <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> 的版本。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableVersionList" /></value>
+        <remarks><para>此属性返回的版本 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。 默认设置和行为取决于允许旧数据透视表对象模型代码在<b></b>1st_Excel12 中运行的版本，当数据透视表的版本与编写代码的 Excel 版本<b></b>对应时，其行为相同。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WorkbookConnection">
@@ -1480,13 +1390,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>建立当前工作簿之间的连接和<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />对象。 只读。</summary>
+        <summary>在当前工作簿和对象之间建立 <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> 连接。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>WorkbookConnection</b> 对象代表与外部数据源的连接。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>WorkbookConnection</b> 对象代表与外部数据源的连接。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

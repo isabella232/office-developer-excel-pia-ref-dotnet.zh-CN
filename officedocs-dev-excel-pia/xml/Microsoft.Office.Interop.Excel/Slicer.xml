@@ -1,13 +1,5 @@
 <Type Name="Slicer" FullName="Microsoft.Office.Interop.Excel.Slicer">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3a23eef4e7b55760a8f9b05aacbfcb4b526de165" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587666" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Slicer" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3a23eef4e7b55760a8f9b05aacbfcb4b526de165" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010253" /></Metadata><TypeSignature Language="C#" Value="public interface Slicer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Slicer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Slicer" />
   <TypeSignature Language="VB.NET" Value="Public Interface Slicer" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>代表工作簿中的一个切片器。</summary>
-    <remarks>
-      <para>每个<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />对象代表工作簿中的一个切片器。 切片器用于筛选数据透视表报表或 OLAP 数据源中的数据。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Excel.Slicers.Add" />方法添加<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />对象传递给<see cref="T:Microsoft.Office.Interop.Excel.Slicers" />集合。 访问<see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" />对象表示切片器，使用中的当前所选的按钮<see cref="P:Microsoft.Office.Interop.Excel.Slicer.ActiveItem" />属性<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />对象。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>每个 <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> 对象表示工作簿中的切片器。 切片器用于筛选数据透视表或 OLAP 数据源中的数据。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.Slicers.Add" /> 该方法将对象 <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> 添加到 <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> 集合中。 若要访问 <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> 表示切片器中当前选定的按钮的对象，请使用 <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ActiveItem" /> 该对象 <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> 的属性。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="ActiveItem">
@@ -60,12 +50,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SlicerItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" />对象，表示当前正在关注点指定的切片器的切片器按钮。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> 一个对象，该对象代表指定切片器当前处于焦点的切片器按钮。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>当指定的切片器有焦点，并且活动的控件是切片器中的按钮时，<b>ActiveItem</b> 属性将返回 <b>SlicerItem</b> 对象（例如，在此状态下，用户使用键盘切换切片器中的按钮）。</para>
-          <para>
-            <b>ActiveItem</b>属性将返回<b>Nothing</b> （中的空引用 (在 Visual Basic 中为 Nothing) C#） 在以下情况下：</para>
+        <remarks><para>当指定的切片器有焦点，并且活动的控件是切片器中的按钮时，<b>ActiveItem</b> 属性将返回 <b>SlicerItem</b> 对象（例如，在此状态下，用户使用键盘切换切片器中的按钮）。</para>
+          <para>在下列情况下 <b>，ActiveItem</b> <b> (返回</b> 空引用 (在 C#Visual Basic) 中) 不返回任何内容：</para>
           <list type="bullet">
             <item>
               <description>指定的切片器没有焦点（未选中或处于非活动状态）。</description>
@@ -77,8 +65,7 @@
               <description>指定的切片器有焦点，并且活动的控件是切片器标题中的<b>“清除筛选”</b>按钮。</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -104,13 +91,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。 如果使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />值，该值代表指定对象的创建者的对象。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Application" />对象。</value>
-        <remarks>
-          <para>只读。</para>
-          <para></para>
-        </remarks>
+        <summary>如果不与对象限定符一起使用，则此属性 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 返回一个代表 Microsoft Excel 应用程序的对象。 当与对象限定符一起使用时，此属性返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象表示指定对象的创建者。</summary>
+        <value>对象 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Caption">
@@ -139,13 +123,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置指定的切片器的标题。</summary>
-        <value>指定的切片器的标题。</value>
-        <remarks>
-          <para>为可读/写属性。</para>
-          <para>为指定的值<see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" />切片器的标头中显示属性。 如果<see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" />属性未指定，则 Excel 将使用的值<see cref="P:Microsoft.Office.Interop.Excel.PivotField.Caption" />属性基础<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />对象。</para>
-          <para></para>
-        </remarks>
+        <summary>获取或设置指定切片器的标题。</summary>
+        <value>指定切片器的标题。</value>
+        <remarks><para>读/写。</para>
+          <para>为该属性指定的值显示在切片器的标题 <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> 中。 如果 <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> 未指定该属性，Excel 将使用基础 <see cref="P:Microsoft.Office.Interop.Excel.PivotField.Caption" /> 对象的 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 属性值。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ColumnWidth">
@@ -174,14 +156,11 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置的宽度，以磅为单位的切片器中的每个列。</summary>
-        <value>以磅为单位的切片器中的每个列的宽度。</value>
-        <remarks>
-          <para>为可读/写属性。</para>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" />属性<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />对象会自动调整的值根据<see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" />属性和<see cref="P:Microsoft.Office.Interop.Excel.Slicer.NumberOfColumns" />属性。</para>
-          <para></para>
-        </remarks>
+        <summary>获取或设置切片器中每一列的宽度（以点表示）。</summary>
+        <value>切片器中每一列的宽度（以点表示）。</value>
+        <remarks><para>读/写。</para>
+          <para><see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" />对象的属性根据属性值和属性值自动 <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" /> <see cref="P:Microsoft.Office.Interop.Excel.Slicer.NumberOfColumns" /> 调整。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -232,13 +211,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个指示在其中创建此对象的应用程序的 32 位<b>整数</b>。</summary>
-        <value>32 位<b>整数</b>，指示在其中创建此对象的应用程序。</value>
-        <remarks>
-          <para>只读的<b>long</b>。</para>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <summary>获取一个 32 <b>位整数</b> ，指示创建此对象时的应用程序。</summary>
+        <value>一个 32 <b>位整数</b> ，指示创建此对象时的应用程序。</value>
+        <remarks><para>只读的 <b>长</b>。</para>
+          <para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。 该属性设计为在 Microsoft Excel for the Macintosh 中使用，其中每个应用程序都有 <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Creator" /> 一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -287,7 +264,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>删除切片器，并将其删除从关联<see cref="T:Microsoft.Office.Interop.Excel.Slicers" />集合。</summary>
+        <summary>删除切片器并从关联的集合中删除 <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> 它。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -317,14 +294,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置是否可以移动指定的切片器或通过使用用户界面调整大小。</summary>
-        <value>如果为<b>true</b>可以移动指定的切片器或通过使用用户界面中; 调整大小否则为<b>false</b>。 默认值为 <b>false</b> 。</value>
-        <remarks>
-          <para>为可读/写属性。</para>
+        <summary>获取或设置是否可以使用用户界面移动指定的切片器或调整其大小。</summary>
+        <value><b>如此</b> 如果指定的切片器可以使用用户界面移动或调整大小;否则为 <b>false</b>。 默认值为 <b>false</b>。</value>
+        <remarks><para>读/写。</para>
           <para>
-            <b>true</b>如果切片器无法移动或调整通过用户界面中; 中选择手柄或边框否则为<b>false</b>。 默认值为 <b>false</b> 。 设置<see cref="P:Microsoft.Office.Interop.Excel.Slicer.DisableMoveResizeUI" />属性设置为<b>true</b>会影响仅在用户界面。 移动或调整切片器大小通过设置属性，如<see cref="P:Microsoft.Office.Interop.Excel.Slicer.Top" />， <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Left" />， <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Width" />，或<see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" />属性<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />对象从代码是否已启用。</para>
-          <para></para>
-        </remarks>
+            <b>如此</b> 如果无法通过在用户界面中选择边框或句柄来移动或调整切片器的大小;否则 <b>为 false</b>。 默认值为 <b>false</b>。 将 <see cref="P:Microsoft.Office.Interop.Excel.Slicer.DisableMoveResizeUI" /> 该属性设置为 <b>true</b> 仅影响用户界面。 不禁用通过设置属性（如代码中的对象的 、 或属性）移动或 <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Top" /> <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Left" /> 调整切片 <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Width" /> <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" /> <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> 器大小。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayHeader">
@@ -353,15 +328,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置是否页眉的显示切片器<see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" />是可见的。</summary>
-        <value>
-          <b>true</b>如果页眉的显示切片器<see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" />可见，则否则为<b>false</b>。 默认值为 <b>true</b> 。</value>
-        <remarks>
-          <para>为可读/写属性。</para>
-          <para>
-            <b>true</b>如果可见，则标头否则为<b>false</b>。 默认值为 <b>true</b> 。</para>
-          <para></para>
-        </remarks>
+        <summary>获取或设置显示切片器的标题是否 <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> 可见。</summary>
+        <value><b>如此</b> 如果显示切片器的标题 <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> 是可见的;否则为 <b>假</b>。 默认值为 <b>true</b>。</value>
+        <remarks><para>读/写。</para>
+          <para>如果标头可见，则其为
+            <b>true;</b>否则<b>为 false</b>。 默认值为 <b>true</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -390,12 +362,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置指定的切片器的高度，以磅为单位。</summary>
-        <value>指定的切片器，以磅为单位的高度。</value>
-        <remarks>
-          <para>为可读/写属性。</para>
-          <para></para>
-        </remarks>
+        <summary>获取或设置指定切片器的高度（以点表示）。</summary>
+        <value>指定切片器的高度（以点表示）。</value>
+        <remarks><para>读/写。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -424,12 +394,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置指定的切片器的水平位置，以磅为单位的相对于工作表上单元格 A1 左上角。</summary>
-        <value>指定的切片器，以磅为单位的相对于工作表上单元格 A1 左上角水平位置。</value>
-        <remarks>
-          <para>为可读/写属性。</para>
-          <para></para>
-        </remarks>
+        <summary>获取或设置指定切片器相对于工作表上单元格 A1 左上角的水平位置（以点表示）。</summary>
+        <value>指定切片器相对于工作表上单元格 A1 左上角的水平位置（以点表示）。</value>
+        <remarks><para>读/写。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Locked">
@@ -458,14 +426,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置是否包含它的工作表处于保护状态时，可以修改指定的切片器。</summary>
-        <value>受保护时<b>，则返回 true</b>如果包含它的工作表时，可以修改指定的切片器否则为<b>false</b>。 默认值为<b>true</b></value>
-        <remarks>
-          <para>为可读/写属性。</para>
+        <summary>获取或设置在包含指定切片器的工作表受保护时是否可以修改该切片器。</summary>
+        <value><b>如此</b> 如果指定的切片器可以在包含该切片器工作表受保护时进行修改;否则为 <b>false</b>。 默认值为 <b>true</b></value>
+        <remarks><para>读/写。</para>
           <para>
-            <b>true</b>如果切片器已锁定时工作表受保护。 <b>false</b>如果工作表受保护时仍能修改切片器。 默认值为 <b>true</b> 。</para>
-          <para></para>
-        </remarks>
+            <b>如此</b> 如果切片器在工作表受保护时被锁定。 <b>假</b> 如果可在工作表受保护时修改切片器。 默认值为 <b>true</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -494,13 +460,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置指定的切片器的名称。</summary>
-        <value>指定的切片器的名称。</value>
-        <remarks>
-          <para>为可读/写属性。</para>
-          <para>工作薄内的所有切片器名称必须唯一。 使用文本格式的默认名称的切片器所基于的透视字段的字段名称，如果需要，将追加的空间和编号，以使唯一的名称。</para>
-          <para></para>
-        </remarks>
+        <summary>获取或设置指定切片器的名称。</summary>
+        <value>指定切片器的名称。</value>
+        <remarks><para>读/写。</para>
+          <para>该名称必须在工作簿中的所有切片器中是唯一的。 默认名称使用切片器所基于的透视字段的字段名称的文本，如有必要，追加空格和数字使名称唯一。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberOfColumns">
@@ -529,13 +493,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置中指定的切片器的列数。</summary>
-        <value>指定的切片器中的列数。 默认值为 1。</value>
-        <remarks>
-          <para>为可读/写属性。</para>
+        <summary>获取或设置指定切片器中的列数。</summary>
+        <value>指定切片器中的列数。 默认值为 1。</value>
+        <remarks><para>读/写。</para>
           <para>默认值为 1。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -561,13 +523,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />对象，表示包含切片器的工作表。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />对象，表示包含切片器的工作表。</value>
-        <remarks>
-          <para>只读。</para>
-          <para></para>
-        </remarks>
+        <summary>获取 <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> 表示包含切片器工作表的对象。</summary>
+        <value>表示 <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> 包含切片器工作表的对象。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RowHeight">
@@ -596,13 +555,11 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置的高度，以磅为单位指定的切片器中的各行。</summary>
-        <value>以磅为单位指定的切片器中的各行的高度。</value>
-        <remarks>
-          <para>为可读/写属性。</para>
-          <para>此属性不影响切片器的高度。 使用<see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" />属性<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />对象可返回或设置切片器的高度。</para>
-          <para></para>
-        </remarks>
+        <summary>获取或设置指定切片器中每行的高度（以点表示）。</summary>
+        <value>指定切片器中每行的高度（以点表示）。</value>
+        <remarks><para>读/写。</para>
+          <para>此属性不影响切片器控件的高度。 使用 <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" /> 对象的属性 <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> 可返回或设置切片器的高度。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shape">
@@ -628,14 +585,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象与指定的切片器关联。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象与指定的切片器关联。</value>
-        <remarks>
-          <para>只读。</para>
-          <para>某些属性的切片器，如<see cref="P:Microsoft.Office.Interop.Excel.Shape.AlternativeText" />属性，只能访问从<see cref="T:Microsoft.Office.Interop.Excel.Shape" />与切片器关联的对象。</para>
-          <para></para>
-        </remarks>
+        <summary>获取 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 与指定切片器关联的对象。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Shape" />与指定切片器关联的对象。</value>
+        <remarks><para>只读。</para>
+          <para>切片器中的某些属性（如属性）只能从与该切片器 <see cref="P:Microsoft.Office.Interop.Excel.Shape.AlternativeText" /> <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 关联的对象访问。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SlicerCache">
@@ -661,13 +615,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SlicerCache</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />与切片器关联的对象。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />与切片器关联的对象。</value>
-        <remarks>
-          <para>只读。</para>
-          <para></para>
-        </remarks>
+        <summary>获取 <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> 与切片器关联的对象。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />与切片器关联的对象。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SlicerCacheLevel">
@@ -693,14 +644,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SlicerCacheLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />与切片器关联的对象。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />与切片器关联的对象。</value>
-        <remarks>
-          <para>只读。</para>
+        <summary>获取 <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> 与切片器关联的对象。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />与切片器关联的对象。</value>
+        <remarks><para>只读。</para>
           <para>此属性仅适用于 OLAP 数据源。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SlicerCacheType">
@@ -726,7 +674,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSlicerCacheType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回的切片器缓存 – 切片器或日程表的类型。 <b>XlSlicerCacheType</b>只读</summary>
+        <summary>返回切片器缓存的类型 – 切片器或时间线。 <b>XlSlicerCacheType</b> 只读</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -757,12 +705,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置当前应用于指定的切片器的样式。</summary>
-        <value>当前应用于指定的切片器的样式。</value>
-        <remarks>
-          <para>为可读/写属性。</para>
-          <para></para>
-        </remarks>
+        <summary>获取或设置当前应用于指定切片器的样式。</summary>
+        <value>当前应用于指定切片器的样式。</value>
+        <remarks><para>读/写。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TimelineViewState">
@@ -788,7 +734,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TimelineViewState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>特定于日程表的切片器的状态。 <b>TimelineViewState</b>只读</summary>
+        <summary>切片器特定于时间线的状态。 <b>TimelineViewState</b> 只读</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -819,12 +765,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置指定的切片器的垂直位置，以磅为单位的相对于工作表上单元格 A1 左上角。</summary>
-        <value>以磅为单位的相对于工作表上单元格 A1 左上角指定的切片器，垂直位置。</value>
-        <remarks>
-          <para>为可读/写属性。</para>
-          <para></para>
-        </remarks>
+        <summary>获取或设置指定切片器相对于工作表上单元格 A1 左上角的垂直位置（以点表示）。</summary>
+        <value>指定切片器相对于工作表上单元格 A1 左上角的垂直位置（以点表示）。</value>
+        <remarks><para>读/写。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -853,12 +797,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置指定的切片器的宽度，以磅为单位。</summary>
-        <value>指定的切片器，以磅为单位的宽度。</value>
-        <remarks>
-          <para>可读/写。</para>
-          <para></para>
-        </remarks>
+        <summary>获取或设置指定切片器的宽度（以点表示）。</summary>
+        <value>指定切片器的宽度（以点表示）。</value>
+        <remarks><para>读/写。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="ValueChange" FullName="Microsoft.Office.Interop.Excel.ValueChange">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b2dce604b01b455e4f9c71554372a322f7c7c2fe" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20586287" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ValueChange" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b2dce604b01b455e4f9c71554372a322f7c7c2fe" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009308" /></Metadata><TypeSignature Language="C#" Value="public interface ValueChange" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ValueChange" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ValueChange" />
   <TypeSignature Language="VB.NET" Value="Public Interface ValueChange" />
@@ -29,13 +21,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表已在基于 OLAP 数据源的数据透视表中更改的值。</summary>
-    <remarks>
-      <para>
-        <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />集合包含<see cref="T:Microsoft.Office.Interop.Excel.ValueChange" />对象表示更改用户所做的数据透视表报告中的值单元格。</para>
-      <para>属性<see cref="T:Microsoft.Office.Interop.Excel.ValueChange" />对象指定所做更改，如的更改，值与已更改，顺序更改相对于其他更改，以及是否中可见单元格的单元格关联的元组有关详细信息对数据透视表。 <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" />对象还提供<see cref="P:Microsoft.Office.Interop.Excel.ValueChange.PivotCell" />属性返回的<see cref="T:Microsoft.Office.Interop.Excel.PivotCell" />对象，表示已更改，并提供有关更改的单元格的其他信息的单元格。</para>
-      <para></para>
-    </remarks>
+    <summary>表示基于 OLAP 数据源的数据透视表中已更改的值。</summary>
+    <remarks><para>该集合包含表示用户对数据透视表中的值单元格 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> 所做的更改的对象。</para>
+      <para>对象的属性指定有关所做的更改的详细信息，例如更改的值、与更改的单元格关联的元组、更改相对于其他更改的顺序，以及单元格在数据透视表中是否可见。 <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> 该对象还提供了返回一个对象的属性，该对象表示已更改的单元格，并提供有关已更改单元格 <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.PivotCell" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> 的其他信息。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AllocationMethod">
@@ -61,14 +50,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlAllocationMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取要用来分配此值表执行模拟分析时哪种方法。</summary>
-        <value>要使用表执行模拟分析时分配此值的方法。</value>
-        <remarks>
-          <para>只读。</para>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.AllocationMethod" />属性对应于模拟分析设置对话框中为基于 OLAP 数据源，如它已在最初应用此更改的时间设置数据透视表报告中的分配方法设置。 如果指定<see cref="T:Microsoft.Office.Interop.Excel.ValueChange" />对象通过使用创建<see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" />方法<see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />集合和相应<paramref name="AllocationMethod" />不提供参数，则返回 OLAP 服务器的默认分配方法。</para>
-          <para></para>
-        </remarks>
+        <summary>获取在执行按结果分析时用于分配此值的方法。</summary>
+        <value>执行模拟分析时要用来分配此值的方法。</value>
+        <remarks><para>只读。</para>
+          <para>该属性对应于基于 OLAP 数据源的数据透视表的 What-If 分析设置对话框中的"分配方法"设置，该设置是在最初应用此更改时设置的 <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.AllocationMethod" /> 。 如果指定的对象是使用集合的方法创建的，并且未提供相应的参数，则返回 <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> <paramref name="AllocationMethod" /> OLAP 服务器的默认分配方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllocationValue">
@@ -94,14 +80,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlAllocationValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取表执行模拟分析时，要分配什么值。</summary>
-        <value>要分配表执行模拟分析时的值。</value>
-        <remarks>
-          <para>只读。</para>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.AllocationValue" />属性对应于基于 OLAP 数据源，如它已在最初应用此更改的时间设置数据透视表报告模拟分析设置对话框中的分配设置的值。 如果指定<see cref="T:Microsoft.Office.Interop.Excel.ValueChange" />对象通过使用创建<see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" />方法<see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />集合和相应<paramref name="AllocationValue" />不提供参数，则返回 OLAP 服务器的默认分配值。</para>
-          <para></para>
-        </remarks>
+        <summary>获取在执行按结果分析时要分配的值。</summary>
+        <value>执行模拟分析时要分配的值。</value>
+        <remarks><para>只读。</para>
+          <para>该属性对应于基于 OLAP 数据源的数据透视表的 What-If 分析设置对话框中"要分配的值"设置，该设置是在最初应用此更改时设置的。 <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.AllocationValue" /> 如果指定的对象是使用集合的方法创建的，并且未提供相应的参数，则返回 <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> <paramref name="AllocationValue" /> OLAP 服务器的默认分配值。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllocationWeightExpression">
@@ -127,14 +110,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取 MDX 表达式表执行模拟分析时用于此值。</summary>
-        <value>MDX 表达式表执行模拟分析时用于此值。</value>
-        <remarks>
-          <para>只读。</para>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.AllocationWeightExpression" />属性对应于模拟分析设置对话框中为基于 OLAP 数据源，如它已在最初应用此更改的时间设置数据透视表报表的加权表达式设置。 如果指定<see cref="T:Microsoft.Office.Interop.Excel.ValueChange" />对象通过使用创建<see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" />方法<see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />集合和相应<paramref name="AllocationWeightExpression" />不提供参数，则返回 OLAP 服务器的默认加权表达式。</para>
-          <para></para>
-        </remarks>
+        <summary>获取在执行"如果"分析时要用于此值的 MDX 加权表达式。</summary>
+        <value>执行模拟分析时要用于此值的 MDX 加权表达式。</value>
+        <remarks><para>只读。</para>
+          <para>该属性对应于基于 OLAP 数据源的数据透视表的 What-If 分析设置对话框中的"加权表达式"设置，该设置是在最初应用此更改时设置的 <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.AllocationWeightExpression" /> 。 如果指定的对象是使用集合的方法创建的，并且未提供相应的参数，则返回 <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" /> OLAP 服务器 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> <paramref name="AllocationWeightExpression" /> 的默认权重表达式。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -160,13 +140,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象代表 Microsoft Excel 应用程序。 如果使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Excel.Application" />值，该值代表指定对象的创建者的对象。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Application" />对象。</value>
-        <remarks>
-          <para>只读。</para>
-          <para></para>
-        </remarks>
+        <summary>如果不与对象限定符一起使用，则此属性 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 返回一个代表 Microsoft Excel 应用程序的对象。 当与对象限定符一起使用时，此属性返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象表示指定对象的创建者。</summary>
+        <value>对象 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -192,13 +169,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个指示在其中创建此对象的应用程序的 32 位<b>整数</b>。</summary>
-        <value>32 位<b>整数</b>，指示在其中创建此对象的应用程序。</value>
-        <remarks>
-          <para>只读的<b>long</b>。</para>
-          <para>如果在 Microsoft Excel 中创建对象，此属性返回的字符串 XCEL，这相当于十六进制数字 5843454c。 <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Creator" />属性用于在 Microsoft Excel 中用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。 例如，Microsoft Excel 具有 XCEL 的创建者代码。</para>
-          <para></para>
-        </remarks>
+        <summary>获取一个 32 <b>位整数</b> ，指示创建此对象时的应用程序。</summary>
+        <value>一个 32 <b>位整数</b> ，指示创建此对象时的应用程序。</value>
+        <remarks><para>只读的 <b>长</b>。</para>
+          <para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。 该属性设计为在 Microsoft Excel for the Macintosh 中使用，其中每个应用程序都有 <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Creator" /> 一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -222,11 +197,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>删除指定<see cref="T:Microsoft.Office.Interop.Excel.ValueChange" />对象从<see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />集合。</summary>
-        <remarks>
-          <para>此外可以删除<see cref="T:Microsoft.Office.Interop.Excel.ValueChange" />对象使用<see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Delete" />方法<see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />集合。</para>
-          <para></para>
-        </remarks>
+        <summary>从集合中删除 <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> 指定的 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> 对象。</summary>
+        <remarks><para>您还可以使用集合 <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> 的方法 <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Delete" /> 删除 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> 对象。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Order">
@@ -252,13 +225,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个值，指示此更改已执行相对于中的其他更改顺序<see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />集合。</summary>
-        <value>相对于中的其他更改此更改已执行顺序<see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />集合。</value>
-        <remarks>
-          <para>只读。</para>
-          <para>值<see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" />属性自动分配由 Excel 基于用户的应用于数据透视表报告中的值单元格所做的更改的顺序。 如果一次操作中应用了多个更改，Excel 将任意分配更改该集内的顺序。</para>
-          <para></para>
-        </remarks>
+        <summary>获取一个值，该值指示相对于集合中其他更改执行此更改 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> 的顺序。</summary>
+        <value>相对于集合中其他更改执行此更改 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> 的顺序。</value>
+        <remarks><para>只读。</para>
+          <para>Excel 根据用户对数据透视表中的值单元格应用更改的顺序自动分配 <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> 该属性的值。 如果一次操作中应用了多个更改，Excel 将随意分配该组更改中各个更改的顺序。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -285,11 +256,9 @@
       </ReturnValue>
       <Docs>
         <summary>获取指定对象的父对象。</summary>
-        <value>指定的对象的的父对象。 的</value>
-        <remarks>
-          <para>只读。</para>
-          <para></para>
-        </remarks>
+        <value>指定对象的父对象。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PivotCell">
@@ -315,13 +284,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotCell</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Excel.PivotCell" />对象，表示已更改的单元格 （元组）。</summary>
-        <value>单元格 （元组） 的已更改。</value>
-        <remarks>
-          <para>只读。</para>
-          <para>时的值<see cref="P:Microsoft.Office.Interop.Excel.ValueChange.VisibleInPivotTable" />属性指定的<see cref="T:Microsoft.Office.Interop.Excel.ValueChange" />对象为<b>true</b>，<see cref="P:Microsoft.Office.Interop.Excel.ValueChange.PivotCell" />属性将返回<see cref="T:Microsoft.Office.Interop.Excel.PivotCell" />已更改的单元格 （元组） 的对象。 时的值<see cref="P:Microsoft.Office.Interop.Excel.ValueChange.VisibleInPivotTable" />属性指定的<see cref="T:Microsoft.Office.Interop.Excel.ValueChange" />对象为<b>false</b>，<see cref="P:Microsoft.Office.Interop.Excel.ValueChange.PivotCell" />属性返回空引用 (在 Visual Basic 中为 Nothing)。</para>
-          <para></para>
-        </remarks>
+        <summary>获取一 <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> 个对象，该对象代表 (元) 单元格。</summary>
+        <value>单元格 (元) 已更改。</value>
+        <remarks><para>只读。</para>
+          <para>当指定对象的属性值为 true 时，该属性返回已更改的元 (<see cref="P:Microsoft.Office.Interop.Excel.ValueChange.VisibleInPivotTable" /> <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> 元) <b></b> <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.PivotCell" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> 对象。 当指定对象的属性值为 false 时，该属性返回空引用 (<see cref="P:Microsoft.Office.Interop.Excel.ValueChange.VisibleInPivotTable" /> <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.PivotCell" /> 不Visual Basic) 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Tuple">
@@ -347,12 +314,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取值的 MDX 元组已更改的 OLAP 数据源中。</summary>
-        <value>OLAP 数据源中已更改的值的 MDX 元组。</value>
-        <remarks>
-          <para>只读。</para>
-          <para></para>
-        </remarks>
+        <summary>获取 OLAP 数据源中已更改值的 MDX 元组。</summary>
+        <value>该值的 MDX 元组在 OLAP 数据源中已更改。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -378,12 +343,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取用户的单元格中输入或更新多维数据集语句上次运行对 OLAP 数据源时单元格中的公式的计算结果为的值。</summary>
+        <summary>获取用户在单元格中输入的值或计算单元格中的公式时上次对 OLAP 数据源运行 UPDATE CUBE 语句时的值。</summary>
         <value>值。</value>
-        <remarks>
-          <para>只读。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VisibleInPivotTable">
@@ -409,14 +372,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取当前可见的数据透视表报告中的单元格 （元组） 是否。</summary>
-        <value>
-          <b>true</b>如果数据透视表报告中; 中当前可见单元格 （元组）否则为<b>false</b>。</value>
-        <remarks>
-          <para>只读。</para>
-          <para>返回<b>true</b> ，如果在数据透视表报表; 中当前可见单元格 （元组）否则为<b>false</b>。</para>
-          <para></para>
-        </remarks>
+        <summary>获取当前在数据 (中) 元组单元格是否可见。</summary>
+        <value><b>如此</b> 如果单元格 (元) 当前在数据透视表中可见;否则为 <b>false</b>。</value>
+        <remarks><para>只读。</para>
+          <para>如果 <b>数据</b> 透视表中当前 (元) ，则返回 true;否则 <b>为 false</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
