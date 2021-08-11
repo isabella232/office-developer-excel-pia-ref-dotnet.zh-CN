@@ -1,5 +1,5 @@
 <Type Name="_Workbook" FullName="Microsoft.Office.Interop.Excel._Workbook">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="0dc241801e29cd7a9aa2098f883cf029f3c40f54" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012675" /></Metadata><TypeSignature Language="C#" Value="public interface _Workbook" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="525b0c0643ce97e370c33ada053f45415ea85b7d79474f154008ca03e7904ba1" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54515603" /></Metadata><TypeSignature Language="C#" Value="public interface _Workbook" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Workbook" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel._Workbook" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Workbook" />
@@ -320,26 +320,26 @@
       </ReturnValue>
       <Docs>
         <summary>获取或设置某些工作表函数是否使用最新的精度算法来计算其结果。</summary>
-        <value>指定用于特定工作表函数的算法版本。</value>
+        <value>指定用于某些工作表函数的算法版本。</value>
         <remarks><para>读/写</para>
-          <para>默认情况下，来自 Excel 2007 Microsoft Office早期版本的一些工作表函数使用提高其准确性的新算法。 但是，在某些情况下，新算法会降低这些函数的性能（相对于这些函数在 Microsoft Office Excel 2007 和更早版本的 Excel 中的性能）。 若要指定这些工作表函数使用较旧的算法来提高性能，请将 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> 该属性设置为 1。 下表介绍了属性的可能 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> 设置。</para>
+          <para>默认情况下，2007 Microsoft Office Excel及早期版本的一些工作表Microsoft Excel使用新算法提高其准确性。 但是，在某些情况下，新算法会降低这些函数的性能（相对于在 Microsoft Office Excel 2007 和早期版本的 Excel 中的性能）。 若要指定这些工作表函数使用较旧的算法来提高性能，请设置 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> 属性 1。 下表介绍了属性的可能 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> 设置。</para>
           <list type="table">
             <item>
               <term>0</term>
               <description>使用最新、最精确的算法（默认）</description>
             </item>
             <item>
-              <term>1 </term>
-              <description>使用 Microsoft Office Excel 2007 或早期版本的算法</description>
+              <term>1</term>
+              <description>使用 Microsoft Office Excel 2007 或更早版本算法</description>
             </item>
             <item>
-              <term>2 </term>
-              <description>使用 Microsoft Excel 2010 算法</description>
+              <term>2</term>
+              <description>使用Microsoft Excel 2010算法</description>
             </item>
           </list>
           <para>
-            <b>警告</b>：将 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> 该属性设置为非 0、1 或 2 的值将导致未定义的行为。</para>
-          <para>下表汇总了将属性设置为 1 时受影响的 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> 函数。 "函数不受影响"列中列出的函数将始终使用最新的精度算法，或在 Excel 2010 中未发生更改。 对于名称中包括一个期间 (.) 的函数名称，若要确定在 VBA 中作为对象的方法实现的相应函数的名称，请用下划线字符 ( _ ) 替换该期间。 <see cref="T:Microsoft.Office.Interop.Excel.WorksheetFunction" /> 例如，对应于 BETA 的 VBA 方法。DIST 函数 <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Beta_Dist(System.Double,System.Double,System.Double,System.Boolean,System.Object,System.Object)" /> 是方法。</para>
+            <b>警告</b>： <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> 将该属性设置为非 0、1 或 2 的值将导致未定义的行为。</para>
+          <para>下表总结了将属性设置为 1 时受影响的 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> 函数。 "不受影响的函数"列中列出的函数将始终使用最新的精度算法，或在 2010 年 2 月Excel更改。 对于名称中包括一个时间段 (.) 的函数名称，若要确定在 VBA 中作为对象的方法实现的相应函数的名称，请用下划线字符 ( _ ) 替换该期间。 <see cref="T:Microsoft.Office.Interop.Excel.WorksheetFunction" /> 例如，对应于 BETA 的 VBA 方法。DIST 函数 <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Beta_Dist(System.Double,System.Double,System.Double,System.Boolean,System.Object,System.Object)" /> 是 方法。</para>
           <list type="table">
             <item>
               <term>BETADIST</term>
@@ -391,11 +391,11 @@
             </item>
             <item>
               <term>EXPONDIST</term>
-              <description>置信度。NORM</description>
+              <description>CONFIDENCE。NORM</description>
             </item>
             <item>
               <term>FDIST</term>
-              <description>置信度。T</description>
+              <description>CONFIDENCE。T</description>
             </item>
             <item>
               <term>FINV</term>
@@ -487,11 +487,11 @@
             </item>
             <item>
               <term>TTEST</term>
-              <description>模式。MULT</description>
+              <description>MODE。MULT</description>
             </item>
             <item>
               <term>VAR</term>
-              <description>模式。SNGL</description>
+              <description>MODE。SNGL</description>
             </item>
             <item>
               <term>VARA</term>
@@ -563,11 +563,11 @@
             </item>
             <item>
               <term />
-              <description>排名。AVG</description>
+              <description>RANK。AVG</description>
             </item>
             <item>
               <term />
-              <description>排名。EQ</description>
+              <description>RANK。EQ</description>
             </item>
             <item>
               <term />
@@ -665,7 +665,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>激活与工作簿相关的第一个窗口。 这样不会运行任何Auto_Activate或Auto_Deactivate附加到工作簿的宏 (使用此方法运行这些宏 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" />) 。</summary>
+        <summary>激活与工作簿相关的第一个窗口。 这样不会运行任何Auto_Activate Auto_Deactivate工作簿的任何宏， (使用 方法运行这些宏 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" />) 。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -724,7 +724,7 @@
         <summary>返回一个对象，它表示活动工作簿中或指定的窗口或工作簿中的活动工作表（顶部工作表）。 如果没有活动的工作表，则返回 <b>Nothing</b>。 只读。</summary>
         <value>To be added.</value>
         <remarks><para>如果不指定对象识别符，则此属性返回活动工作簿中的活动工作表。</para>
-          <para>如果工作簿出现在多个窗口中，则 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" /> 不同窗口中的属性可能不同。</para>
+          <para>如果工作簿出现在多个窗口中，则 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" /> 该属性在不同窗口中可能不同。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -753,9 +753,9 @@
       <Docs>
         <summary>获取一个对象，该对象代表活动工作簿或指定工作簿中的活动切片器。</summary>
         <value>一个代表活动工作簿或指定工作簿中的活动切片器的对象。</value>
-        <remarks><para>如果没有处于活动状态的切片器 (，则Visual Basic) 中无值引用。</para>
+        <remarks><para>如果没有处于活动状态的切片 (，Visual Basic) Nothing 中返回空引用。</para>
           <para>只读。</para>
-          <para>如果不指定对象，则此属性返回活动工作簿中的 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> 活动切片器。</para>
+          <para>如果不指定对象，则此属性 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> 返回活动工作簿中的活动切片器。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -780,7 +780,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>向工作簿添加快捷方式或指向"收藏夹"文件夹的超链接。</summary>
+        <summary>将快捷方式添加到工作簿或指向"收藏夹"文件夹的超链接。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -807,7 +807,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果不与对象限定符一起使用，则此属性 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 返回一个代表 Microsoft Excel 应用程序的对象。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
+        <summary>如果不与对象限定符一起使用，则此属性返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表应用程序Microsoft Excel对象。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -878,7 +878,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置批注的作者。 只读 <b>String</b>。</summary>
+        <summary>返回或设置批注的作者。<b>String</b> 类型，只读。</summary>
         <value>返回 <see cref="T:System.String" /> 。</value>
         <remarks>To be added.</remarks>
         <example><para>本示例删除活动工作表中由 Jean Selva 添加的所有批注。</para>
@@ -953,9 +953,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果共享工作簿自动更新时，对其所做的更改将传送到其他用户，则该值为 <b>True</b>。 如果不传送所做的更改（该工作簿还须与其他用户所做的更改保持同步），则该值为 <b>False</b>。 默认值为 <b>True</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
+        <summary>如果共享工作簿自动更新时，对其所做的更改将传送到其他用户，则该值为 <b>True</b>。如果不传送所做的更改（该工作簿还须与其他用户所做的更改保持同步），则该值为 <b>False</b>。默认值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
-        <remarks><para>此属性 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AutoUpdateFrequency" /> 必须设置为 5 到 1，440 的值，此属性生效。</para>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Excel._Workbook.AutoUpdateFrequency" />此属性必须设置为 5 到 1，440 的值，此属性生效。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1014,8 +1014,8 @@
       <Docs>
         <summary>返回 <see cref="T:Microsoft.Office.Core.DocumentProperties" /> 一个集合，该集合代表指定工作簿的所有内置文档属性。 只读。</summary>
         <value>To be added.</value>
-        <remarks><para>本属性返回的是内置文档属性的整个集合。 使用该方法可返回对象集合 (单个成员，方法是) 属性的名称或集合索引 (一个数字 <see cref="P:Microsoft.Office.Core.DocumentProperties.Item(System.Object)" /> <see cref="T:Microsoft.Office.Core.DocumentProperty" />) 。</para>
-          <para>可通过索引值或名称来引用文档属性。 下面的列表显示的是可用的内置文档属性的名称：</para>
+        <remarks><para>本属性返回的是内置文档属性的整个集合。 使用 方法通过指定属性的名称或集合索引) 作为一个数字 (返回对象集合 (成员 <see cref="P:Microsoft.Office.Core.DocumentProperties.Item(System.Object)" /> <see cref="T:Microsoft.Office.Core.DocumentProperty" />) 。</para>
+          <para>可通过索引值或名称来引用文档属性。下面的列表显示的是可用的内置文档属性的名称：</para>
           <para>标题 </para>
           <para>主题</para>
           <para>作者</para>
@@ -1034,9 +1034,9 @@
           <para>字符数</para>
           <para>安全性</para>
           <para>类别</para>
-          <para>Format</para>
+          <para>格式</para>
           <para>Manager</para>
-          <para>Company</para>
+          <para>公司</para>
           <para>字节数</para>
           <para>行数</para>
           <para>段落数</para>
@@ -1045,10 +1045,10 @@
           <para>隐藏幻灯片数</para>
           <para>多媒体剪辑数</para>
           <para>超链接基础</para>
-          <para>包含空格 (字符数) </para>
-          <para>无须通过容器应用程序对每一内置文档属性值进行定义。 如果 Microsoft Excel 不为其中一个内置文档属性定义值，则读取该文档属性的属性将导致 <see cref="P:Microsoft.Office.Core.DocumentProperty.Value" /> 错误。</para>
+          <para>带空格 (的字符数) </para>
+          <para>无须通过容器应用程序对每一内置文档属性值进行定义。 如果Microsoft Excel未为其中一个内置文档属性定义值，则读取该文档属性 <see cref="P:Microsoft.Office.Core.DocumentProperty.Value" /> 的属性将导致错误。</para>
           <para><b>Item</b>方法是<b>DocumentProperties</b>集合的默认方法。</para>
-          <para>使用 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.CustomDocumentProperties" /> 该属性可返回自定义文档属性的集合。</para>
+          <para>使用 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.CustomDocumentProperties" /> 属性可返回自定义文档属性的集合。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1075,9 +1075,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个数字，其最右边四个数字是次要计算引擎版本号，其左侧 (其他) 是 Microsoft Excel 的主要版本。 对于对象，此属性返回有关上次完全重新计算工作簿的 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> Excel 版本的信息。 只读 <b>Integer</b>。</summary>
+        <summary>返回一个数字，其最右边的四位数是次要计算引擎版本号，其左侧 (的其他数字) 是计算引擎Microsoft Excel。 对于 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> 对象，此属性返回有关上次Excel重新计算对象的版本的信息。 只读 <b>Integer</b>。</summary>
         <value>To be added.</value>
-        <remarks><para>如果工作簿保存在早期版本的 Excel 中，并且工作簿尚未完全重新计算，则此属性返回 0。</para>
+        <remarks><para>如果工作簿保存在早期版本的 Excel，并且工作簿尚未完全重新计算，则此属性返回 0。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1130,7 +1130,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>如果</b> 工作簿在比较内容时区分大小写，则其为 True。 使用 <b>C# (</b> <b>bool，只读 Boolean</b> ) 。</summary>
+        <summary>如果工作簿在比较内容时区分大小写，则其为<b>True。</b> 只读<b>Boolean (</b> <b>bool C#) 。</b></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1163,9 +1163,9 @@
       </Parameters>
       <Docs>
         <param name="Mode">必需 <see cref="T:Microsoft.Office.Interop.Excel.XlFileAccess" /> 。 指定新的访问模式。</param>
-        <param name="WritePassword">可选 <b>对象</b>。 如果文件是写保留的且为 <paramref name="Mode" /> <b>xlReadWrite，</b>则指定写保护的密码。 如果文件没有密码或 <paramref name="Mode" /> <b>xlReadOnly，则忽略</b>。</param>
+        <param name="WritePassword">可选 <b>对象</b>。 如果文件是写保留的且为 <paramref name="Mode" /> <b>xlReadWrite</b>，则指定写保护密码。 如果文件没有密码或为 <paramref name="Mode" /> <b>xlReadOnly，则忽略</b>。</param>
         <param name="Notify">可选 <b>对象</b>。 如果该值为 <b>True</b>（或省略该参数），则当无法立即访问文件时通知用户。</param>
-        <summary>更改工作簿的访问权限。 本方法需要从磁盘加载工作簿的更新版本。</summary>
+        <summary>更改工作簿的访问权限。本方法需要从磁盘加载工作簿的更新版本。</summary>
         <remarks><para>如果以只读模式打开文件，则不可独占访问此文件。如果将此文件从只读更改为可读写，Microsoft Excel 必须载入该文件的新副本以确认在以只读模式打开该文件后没有进行过更改。</para>
           <para> </para></remarks>
       </Docs>
@@ -1229,7 +1229,7 @@
         <Parameter Name="Type" Type="Microsoft.Office.Interop.Excel.XlLinkType" />
       </Parameters>
       <Docs>
-        <param name="Name">必需的 <b>字符串</b> 。 要更改的 Microsoft Excel 或 DDE/OLE 链接的名称，因为它从方法 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.LinkSources(System.Object)" /> 返回。</param>
+        <param name="Name">必需的 <b>字符串</b> 。 要更改Microsoft Excel DDE/OLE 链接的名称（从 方法 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.LinkSources(System.Object)" /> 返回）。</param>
         <param name="NewName">必需的 <b>字符串</b> 。 链接的新名称。</param>
         <param name="Type">可选 <see cref="T:Microsoft.Office.Interop.Excel.XlLinkType" /> 。 链接类型。</param>
         <summary>将链接从某一文档更改到另一文档。</summary>
@@ -1262,7 +1262,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> 将导致当前文档中的所有图表跟踪它所附加到的实际数据点。 <b>False</b> 将恢复为跟踪数据点的索引。 <b>Boolean</b> (<b>bool</b> in C#) 读/写。</summary>
+        <summary><b>如果为 True，</b> 则当前文档中的所有图表都将跟踪它所附加到的实际数据点。 <b>如果为 False，</b> 则恢复为跟踪数据点的索引。 <b>Boolean</b> (<b>读</b> /C#) 中的布尔值。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1292,7 +1292,7 @@
       <Docs>
         <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> 一个集合，该集合代表指定工作簿中所有的图表工作表。 只读。</summary>
         <value>To be added.</value>
-        <remarks><para>使用不带对象限定符的此属性将返回活动工作簿中所有图表工作表。</para>
+        <remarks><para>使用不带对象限定符的此属性可返回活动工作簿中所有的图表工作表。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1352,9 +1352,9 @@
       </Parameters>
       <Docs>
         <param name="SaveChanges">可选 <b>对象</b>。 <b>为 true</b> ，则保存更改并签入该文档。 <b>False</b> ，则不保存修订，并将文档恢复到签入状态。</param>
-        <param name="Comments">可选 <b>对象</b>。 允许用户为要签入的工作簿的修订输入签入注释 (True <paramref name="SaveChanges" />) 。 <b></b></param>
-        <param name="MakePublic">可选 <b>对象</b>。 <b>True</b> 允许用户在工作簿签入后发布工作簿。 这将提交工作簿进行审批过程，这最终会导致将工作簿版本发布到对工作簿具有只读权限的用户 (仅在 <paramref name="SaveChanges" /> <b>等于 True</b>) 。</param>
-        <summary>将工作簿从本地计算机返回到服务器，并设置本地工作簿为只读，以便不能在本地编辑该工作簿。 调用此方法还会关闭此工作簿。</summary>
+        <param name="Comments">可选 <b>对象</b>。 允许用户为要签入的工作簿的修订输入签入注释 (仅在 True 为 <paramref name="SaveChanges" /> <b>True</b> 时) 。</param>
+        <param name="MakePublic">可选 <b>对象</b>。 <b>True</b> 允许用户在工作簿签入后发布工作簿。 这将提交工作簿以用于审批过程，并最终将一个版本的工作簿发布到对工作簿具有只读权限的用户 (仅在等于 <paramref name="SaveChanges" /> <b>True</b>) 。</param>
+        <summary>将工作簿从本地计算机返回到服务器，并设置本地工作簿为只读，以便不能在本地进行编辑。 调用此方法还会关闭此工作簿。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1384,12 +1384,12 @@
       </Parameters>
       <Docs>
         <param name="SaveChanges"><b>true</b> 将工作簿保存到服务器位置。 默认值为 <b>true</b>。</param>
-        <param name="Comments">要签入的工作簿的修订批注 (仅在设置为 <paramref name="SaveChanges" /> <b>true</b> 时) 。</param>
-        <param name="MakePublic"><b>true</b> 以允许用户在工作簿签入后发布工作簿。</param>
+        <param name="Comments">要签入的工作簿的修订批注 (仅在工作簿设置为 true 时 <paramref name="SaveChanges" /> <b>) 。</b></param>
+        <param name="MakePublic"><b>如果为 true，</b> 则允许用户在工作簿签入后发布工作簿。</param>
         <param name="VersionType">指定工作簿的版本信息。</param>
         <summary>将工作簿从本地计算机保存到服务器，并将本地工作簿设置为只读，以便无法在本地编辑。</summary>
-        <remarks><para>将参数设置为 true 将提交工作簿进行审批过程，这最终会导致将工作簿版本发布到对工作簿具有只读权限的用户 (仅在设置为 true 时 <paramref name="MakePublic" /> <b></b> <paramref name="SaveChanges" />) 。 <b></b> </para>
-          <para>要利用 Microsoft Excel 中内置的协作功能，文档必须存储在 Microsoft SharePoint Server 上。 </para>
+        <remarks><para>将参数设置为 true 将提交工作簿以用于审批过程，这最终会导致发布给用户的工作簿版本对工作簿具有只读权限 (仅在设置为 true) 时 <paramref name="MakePublic" /> <b></b> <paramref name="SaveChanges" /> 适用<b></b>。 </para>
+          <para>要利用 Microsoft Excel 中内置的协作功能，文档必须存储在 Microsoft SharePoint Server 上。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1420,11 +1420,11 @@
         <Parameter Name="RouteWorkbook" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SaveChanges">可选 <b>对象</b>。 如果工作簿无更改，则忽略该参数。 如果工作簿存在更改且其在其他打开的窗口中显示，则忽略此参数。 如果工作簿发生更改，但该工作簿未显示在任何其他打开的窗口中，则此参数指定是否应该保存更改，如下表所示。ValueAction<b>True</b>保存对工作簿所做的更改。 如果还没有与工作簿关联的文件名，则 <paramref name="FileName" /> 使用。 如果 <paramref name="FileName" /> 省略，则要求用户提供文件名。<b>False</b>不保存对此文件的更改。OmittedDisplays a dialog box asking the user whether or not to save changes.</param>
+        <param name="SaveChanges">可选 <b>对象</b>。 如果工作簿无更改，则忽略该参数。 如果工作簿存在更改且其在其他打开的窗口中显示，则忽略此参数。 如果工作簿发生更改，但工作簿未显示在任何其他打开的窗口中，则此参数指定是否应该保存更改，如下表所示。ValueAction<b>True</b>保存对工作簿所做的更改。 如果还没有与工作簿关联的文件名，则 <paramref name="FileName" /> 使用 。 如果 <paramref name="FileName" /> 省略，则要求用户提供文件名。<b>False</b>不保存对此文件所做的更改。OmittedDisplays a dialog box asking the user whether or not to save changes.</param>
         <param name="Filename">可选 <b>对象</b>。 以此文件名保存所做的更改。</param>
-        <param name="RouteWorkbook">可选 <b>对象</b>。 如果无需将工作簿路由到下一收件人（在其没有传送名单或已路由的情况下），忽略此参数。 否则，Microsoft Excel 将路由工作簿，如下表所示。ValueMeaning<b>True</b>将工作簿发送给下一个收件人。<b>False</b>不发送工作簿。OmittedDisplays a dialog box asking the user whether the workbook should be sent.</param>
+        <param name="RouteWorkbook">可选 <b>对象</b>。 如果无需将工作簿路由到下一收件人（在其没有传送名单或已路由的情况下），忽略此参数。 否则，Microsoft Excel如下表所示路由工作簿。ValueMeaning<b>True</b>将工作簿发送给下一个收件人。<b>False</b>不发送工作簿。OmittedDisplays a dialog box asking the user whether the workbook should be sent.</param>
         <summary>关闭对象。</summary>
-        <remarks><para>使用 Close 方法 <b>关闭工作簿</b> 不会运行工作簿Auto_Close宏。 使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> 该方法可运行Auto_Close宏。</para>
+        <remarks><para>使用 <b>Close</b> 方法关闭工作簿不会在工作簿Auto_Close任何宏。 使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> 方法可运行Auto_Close宏。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1451,10 +1451,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回对象的代码名。 只读 <b>String</b>。 在"属性"窗口中 (名称 <b>) 单元格中 </b> 看到的值是所选对象的代码名称。 可以在设计过程中通过更改该值来改变对象的代码名。 不能在运行过程中更改该属性。</summary>
+        <summary>返回对象的代码名。 只读 <b>String</b>。 在"属性"窗口中"名称" (右边) 的值<b></b>是所选对象的代码名称。 可以在设计过程中通过更改该值来改变对象的代码名。 不能在运行过程中更改该属性。</summary>
         <value>To be added.</value>
         <remarks><para>对于一个返回指定对象的表达式，该表达式可使用对象的代码名。</para>
-          <para>工作表的名称可以与其代码名不同。 创建一张工作表时，其工作表名称和代码名是相同的，不过，更改工作表名称时并不影响其代码名，并且，更改工作表代码名（在 Visual Basic 编辑器中使用“属性”窗口）也不影响其名称。</para>
+          <para>工作表的名称可以与其代码名不同。创建一张工作表时，其工作表名称和代码名是相同的，不过，更改工作表名称时并不影响其代码名，并且，更改工作表代码名（在 Visual Basic 编辑器中使用“属性”窗口）也不影响其名称。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1522,9 +1522,9 @@
         <ReturnType>Microsoft.Office.Core.CommandBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.CommandBars" /> 个对象，该对象代表 Microsoft Excel 命令栏。 只读。</summary>
+        <summary>返回一 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.CommandBars" /> 个对象，该对象Microsoft Excel栏。 只读。</summary>
         <value>To be added.</value>
-        <remarks><para>当一个工作簿嵌入在另一个应用程序中并且用户通过双击它将其激活时，此属性与 <b>Workbook</b> 对象一起使用会返回可在其他应用程序中使用的 Microsoft Excel 命令栏集。 在所有其他情况下，此属性与 <b>Workbook</b> 对象一起使用会返回 <b>Nothing</b>。</para>
+        <remarks><para>当一个工作簿嵌入在另一个应用程序中并且用户通过双击它将其激活时，此属性与 <b>Workbook</b> 对象一起使用会返回可在其他应用程序中使用的 Microsoft Excel 命令栏集。在所有其他情况下，此属性与 <b>Workbook</b> 对象一起使用会返回 <b>Nothing</b>。</para>
           <para>没有编程的方法可用来返回附属于工作簿的命令栏集。</para>
           <para> </para></remarks>
       </Docs>
@@ -1666,7 +1666,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>显示工作簿中的外部连接或链接。 只读</summary>
+        <summary>显示工作簿中的外部连接或链接。只读。</summary>
         <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1694,7 +1694,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回包含指定 OLE 对象的容器应用程序的对象。 只读 <b>对象</b> 。</summary>
+        <summary>返回包含指定 OLE 对象的容器应用程序的对象。<b>Object</b> 类型，只读。</summary>
         <value>To be added.</value>
         <remarks><para>此属性提供了一种在主机应用程序内（如 Microsoft Internet Explorer）打开 Excel 工作簿时访问容器应用程序对象模型的方法。</para>
           <para> </para></remarks>
@@ -1754,7 +1754,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果保存文件时创建备份文件，则该属性值为 <b>True</b>。 只读 <b>Boolean</b>。</summary>
+        <summary>如果保存文件时创建备份文件，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1782,7 +1782,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回枚举中的 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 一个常量，该常量指示创建此对象时的应用程序。 如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。 只读 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 。</summary>
+        <summary>返回枚举中的 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 一个常量，该常量指示创建此对象时所使用应用程序。 如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。 只读 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 。</summary>
         <value>To be added.</value>
         <remarks><para><b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
           <para> </para></remarks>
@@ -1813,9 +1813,9 @@
       <Docs>
         <summary>返回或设置 <see cref="T:Microsoft.Office.Core.DocumentProperties" /> 一个集合，该集合代表指定工作簿的所有自定义文档属性。</summary>
         <value>To be added.</value>
-        <remarks><para>本属性返回的是自定义文档属性的整个集合。 使用该方法可返回对象集合 (一个成员) 属性的名称或集合索引 (一个数字 <see cref="P:Microsoft.Office.Core.DocumentProperties.Item(System.Object)" /> <see cref="T:Microsoft.Office.Core.DocumentProperty" />) 。</para>
+        <remarks><para>本属性返回的是自定义文档属性的整个集合。 使用 方法通过指定属性的名称或集合索引) 作为一个数字 (返回对象集合 (成员 <see cref="P:Microsoft.Office.Core.DocumentProperties.Item(System.Object)" /> <see cref="T:Microsoft.Office.Core.DocumentProperty" />) 。</para>
           <para><b>Item</b>方法是<b>DocumentProperties</b>集合的默认方法。</para>
-          <para>使用 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties" /> 该属性可返回内置文档属性的集合。</para>
+          <para>使用 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties" /> 属性可返回内置文档属性的集合。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1870,7 +1870,7 @@
         <ReturnType>Microsoft.Office.Core.CustomXMLParts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个。 <see cref="T:Microsoft.Office.Core.CustomXMLParts" /> 集合，该集合代表 XML 数据存储中的自定义 XML。 只读。</summary>
+        <summary>返回 。 <see cref="T:Microsoft.Office.Core.CustomXMLParts" /> 集合，该集合代表 XML 数据存储中的自定义 XML。 只读。</summary>
         <value><b>CustomXMLParts</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1907,7 +1907,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>如此</b> 如果工作簿使用 1904 日期系统。 读/写 <b>Boolean</b>。</summary>
+        <summary>如果工作簿使用 1904 日期系统，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1944,7 +1944,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定集合中用作数据透视表的默认样式 <see cref="T:Microsoft.Office.Interop.Excel.TableStyles" /> 的表格样式。 读/写。</summary>
+        <summary>指定集合中用作数据透视表默认样式 <see cref="T:Microsoft.Office.Interop.Excel.TableStyles" /> 的表格样式。 读/写。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1981,8 +1981,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置对象中用作切片器默认 <see cref="T:Microsoft.Office.Interop.Excel.TableStyles" /> 样式的样式。</summary>
-        <value>对象中用作 <see cref="T:Microsoft.Office.Interop.Excel.TableStyles" /> 切片器默认样式的样式。</value>
+        <summary>获取或设置对象中用作 <see cref="T:Microsoft.Office.Interop.Excel.TableStyles" /> 切片器默认样式的样式。</summary>
+        <value>对象中 <see cref="T:Microsoft.Office.Interop.Excel.TableStyles" /> 用作切片器默认样式的样式。</value>
         <remarks><para>读/写。</para>
           <para> </para></remarks>
       </Docs>
@@ -2056,7 +2056,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>工作簿的默认切片器样式的名称。 <b>对象</b> (<b>C#) 。</b> 读/写</summary>
+        <summary>工作簿的默认切片器样式的名称。 <b>对象</b> (<b>对象</b> C#) 。 读/写</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2207,7 +2207,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定墨迹批注是否显示在工作簿中的 <b>Boolean</b> 值。 读/写 <b>Boolean</b>。</summary>
+        <summary>确定墨迹批注是否显示在工作簿中的 <b>Boolean</b> 值。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2235,7 +2235,7 @@
         <ReturnType>Microsoft.Office.Core.DocumentInspectors</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Core.DocumentInspectors" /> 一个集合，该集合代表指定工作簿的文档检查器模块。 只读。</summary>
+        <summary>返回一 <see cref="T:Microsoft.Office.Core.DocumentInspectors" /> 个集合，该集合代表指定工作簿的文档检查器模块。 只读。</summary>
         <value><b>DocumentInspectors</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2295,7 +2295,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置如果工作簿包含的 Excel 版本早于 short_Excel2007 版本不支持的功能，是否提示用户转换short_Excel2007。 读/写</summary>
+        <summary>返回或设置当工作簿包含的工作簿版本不支持的、Excel版本不支持的功能时，是否提示用户转换short_Excel2007。 读/写</summary>
         <value>Boolean</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2441,9 +2441,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>根据规定的时间间隔保存全部格式的已更改文件。 读/写 <b>Boolean</b>。</summary>
+        <summary>根据规定的时间间隔保存全部格式的已更改文件。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
-        <remarks><para>如果 Microsoft Excel 出现故障、系统出现故障，或者系统非正常关闭（不允许 Excel 保存更改的文件），则会打开备份的文件，使用户有机会保存否则会丢失的更改。 当用户重新启动 Excel 时，将打开一个文档恢复窗口，该窗口为用户提供一个选择，以恢复他们正在处理的文件。 如果将该属性设置为 <b>True</b>（默认值），将启用该功能。</para>
+        <remarks><para>如果 Microsoft Excel 出现故障、系统出现故障，或者系统非正常关闭（不允许 Excel 保存更改的文件），则会打开备份的文件，使用户有机会保存否则会丢失的更改。当用户重新启动 Excel 时，将打开一个文档恢复窗口，该窗口为用户提供一个选择，以恢复他们正在处理的文件。如果将该属性设置为 <b>True</b>（默认值），将启用该功能。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2498,7 +2498,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一 <b>个</b> 字符串 ，指定加密文档时1st_Excel12加密提供程序的名称。 读/写。</summary>
+        <summary>返回一 <b>个 String</b> 值，指定加密文档时1st_Excel12加密提供程序的名称。 读/写。</summary>
         <value><b>s</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2524,7 +2524,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>终止对已使用该方法发送供审阅的文件 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SendForReview(System.Object,System.Object,System.Object,System.Object)" /> 的审阅。</summary>
+        <summary>使用 方法终止对已发送进行审阅的文件 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SendForReview(System.Object,System.Object,System.Object,System.Object)" /> 的审阅。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2554,7 +2554,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果显示电子邮件标题和信封工具栏，则该属性值为 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
+        <summary>如果显示电子邮件标题和信封工具栏，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2582,7 +2582,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Sheets</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> 个集合，该集合代表指定工作簿中所有的 Microsoft Excel 4.0 国际宏工作表。 只读。</summary>
+        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> 个集合，该集合代表Microsoft Excel工作簿中所有的 4.0 国际宏表。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2610,7 +2610,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Sheets</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> 个集合，该集合代表指定工作簿中所有的 Microsoft Excel 4.0 宏工作表。 只读。</summary>
+        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> 个集合，该集合代表Microsoft Excel 4.0 宏表的所有工作表。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2640,7 +2640,7 @@
       <Docs>
         <summary>该属性 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel8CompatibilityMode" /> 为开发人员提供了一种检查工作簿是否位于兼容模式的方法。 只读</summary>
         <value><b>Boolean</b></value>
-        <remarks><para>在兼容模式下，某功能被禁用，或以不同的方式发挥作用。  例如，在short_Excel2007 Excel 早期版本相比，可用的行和列更多。 此外，结构化引用在 short_Excel2007 中short_Excel2007。</para>
+        <remarks><para>在兼容模式下，某功能被禁用，或以不同的方式发挥作用。  例如，在short_Excel2007相比早期版本的索引中，可用的行和列Excel。 此外，结构化引用在 short_Excel2007。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2671,7 +2671,7 @@
         <summary>指定当前用户对共享清单中的工作簿进行独占访问。</summary>
         <returns>To be added.</returns>
         <remarks><para><b>ExclusiveAccess</b> 方法保存对指定工作簿的任何更改，并要求其他打开该工作簿的用户将所作改变保存到另外的文件。</para>
-          <para>如果指定工作簿不是以共享清单形式打开，则本方法无效。 若要确定工作簿是否作为共享列表打开，请使用 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.MultiUserEditing" /> 该属性。</para>
+          <para>如果指定工作簿不是以共享清单形式打开，则本方法无效。 若要确定工作簿是否以共享列表打开，请使用 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.MultiUserEditing" /> 属性。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2705,16 +2705,16 @@
         <Parameter Name="FixedFormatExtClassPtr" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">可以是或 <see cref="F:Microsoft.Office.Interop.Excel.XlFixedFormatType.xlTypePDF" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFixedFormatType.xlTypeXPS" /> 。</param>
-        <param name="Filename"><b>一</b>个字符串，指示要保存的文件的名称。 可以包括完整路径或短路径。  Excel2007 将文件保存在当前文件夹中。</param>
-        <param name="Quality">可以设置为或 <see cref="F:Microsoft.Office.Interop.Excel.XlFixedFormatQuality.xlQualityStandard" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFixedFormatQuality.xlQualityMinimum" /> 。</param>
+        <param name="Type">可以是 或 <see cref="F:Microsoft.Office.Interop.Excel.XlFixedFormatType.xlTypePDF" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFixedFormatType.xlTypeXPS" /> 。</param>
+        <param name="Filename">一 <b>个</b> String，指示要保存的文件的名称。 可以包括完整路径或短路径。  Excel2007 将文件保存在当前文件夹中。</param>
+        <param name="Quality">可以设置为 或 <see cref="F:Microsoft.Office.Interop.Excel.XlFixedFormatQuality.xlQualityStandard" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFixedFormatQuality.xlQualityMinimum" /> 。</param>
         <param name="IncludeDocProperties">设置为 <b>True</b> 以指明应包含文档属性，或设置为 <b>False</b> 以指明应省略文档属性。</param>
-        <param name="IgnorePrintAreas">如果设置为 <b>True</b>，则忽略在发布时设置的任何打印区域。 如果设置为 <b>False</b>，则使用在发布时设置的打印区域。</param>
-        <param name="From">要开始发布的页码。 如果省略此参数，则从头开始发布。</param>
-        <param name="To">要发布的最后一页的编码。 如果省略此参数，则发布以最后一页结束。</param>
+        <param name="IgnorePrintAreas">如果设置为 <b>True</b>，则忽略在发布时设置的任何打印区域。如果设置为 <b>False</b>，则使用在发布时设置的打印区域。</param>
+        <param name="From">发布的起始页码。如果省略此参数，则从起始位置开始发布。</param>
+        <param name="To">发布的终止页码。如果省略此参数，则发布至最后一页。</param>
         <param name="OpenAfterPublish">如果设置为 <b>True</b>，则在发布文件后在查看器中显示文件。 如果设置为 <b>False</b>，则会发布文件而不是显式文件。</param>
         <param name="FixedFormatExtClassPtr">指向 <b>FixedFormatExt</b> 类的指针。</param>
-        <summary>该方法 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.ExportAsFixedFormat(Microsoft.Office.Interop.Excel.XlFixedFormatType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 用于将工作簿发布为 PDF 或 XPS 格式。</summary>
+        <summary><see cref="M:Microsoft.Office.Interop.Excel._Workbook.ExportAsFixedFormat(Microsoft.Office.Interop.Excel.XlFixedFormatType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法用于将工作簿发布为 PDF 或 XPS 格式。</summary>
         <remarks>To be added.</remarks>
         <example><para>以下示例在当前文件的目录中以标准质量创建 PDF，并发布后在查看器中显示文件。</para>
           <para>
@@ -2817,7 +2817,7 @@
         <param name="SubAddress">可选 <b>对象</b>。 目标文档中的位置。 默认值为空字符串。</param>
         <param name="NewWindow">可选 <b>对象</b>。 如果为 <b>True</b>，则在新窗口中显示目标应用程序。 默认值为 <b>False</b>。</param>
         <param name="AddHistory">可选 <b>对象</b>。 未使用。 保留供将来使用。</param>
-        <param name="ExtraInfo">可选 <b>对象</b>。 指定用于解析超链接的 HTTP 附加信息的字符串或字节数组。 例如，可以使用指定图像映射的坐标、窗体的内容或 <paramref name="ExtraInfo" /> FAT 文件名。</param>
+        <param name="ExtraInfo">可选 <b>对象</b>。 指定用于解析超链接的 HTTP 附加信息的字符串或字节数组。 例如，可以使用 指定图像映射的坐标、窗体的内容或 <paramref name="ExtraInfo" /> FAT 文件名。</param>
         <param name="Method">可选 <b>对象</b>。 指定附加 <paramref name="ExtraInfo" /> 方式。 可以是常量 <see cref="T:Microsoft.Office.Core.MsoExtraInfoMethod" /> 之一。</param>
         <param name="HeaderInfo">可选 <b>对象</b>。 指定 HTTP 请求的标头信息的字符串。 默认值为一个空字符串。</param>
         <summary>如果已下载缓存文档，则显示该文档。 否则，此方法将解析该超链接，下载目标文档，并在相应的应用程序中显示此文档。</summary>
@@ -2909,9 +2909,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回对象的名称（以字符串表示），包括其磁盘路径。 只读 <b>String</b>。</summary>
+        <summary>返回对象的名称（以字符串表示），包括其磁盘路径。<b>String</b> 型，只读。</summary>
         <value>To be added.</value>
-        <remarks><para>此属性等效于 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Path" /> 该属性，后跟当前文件系统分隔符，后跟 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Name" /> 该属性。</para>
+        <remarks><para>此属性与 属性等效 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Path" /> ，后跟当前文件系统分隔符，后跟 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Name" /> 属性。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2941,7 +2941,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 <b>String</b> 值，该值表示对象名称（包括其磁盘路径）。 只读。</summary>
+        <summary>返回一个 <b>String</b> 值，该值表示对象名称（包括其磁盘路径）。只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3067,9 +3067,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果指定工作簿有密码保护，则该属性值为 <b>True</b>。 只读 <b>Boolean</b>。</summary>
+        <summary>如果指定工作簿有密码保护，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，只读。</summary>
         <value>To be added.</value>
-        <remarks><para>可以使用该方法为工作簿分配保护 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 密码。</para>
+        <remarks><para>可以使用 方法为工作簿分配保护 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 密码。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3111,9 +3111,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果指定工作簿含有传送名单，则该属性值为 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
+        <summary>如果指定工作簿含有传送名单，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
-        <remarks><para>将此属性设置为 <b>True</b> 将创建具有默认值的传送名单。 将该属性设置为 <b>False</b> 将删除传送名单。</para>
+        <remarks><para>将该属性设为 <b>True</b>，则用默认值创建一个传送名单；将该属性设为 <b>False</b>，则删除传送名单。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3172,7 +3172,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果将指定共享工作簿的更改在屏幕上突出显示，则该属性值为 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
+        <summary>如果将指定共享工作簿的更改在屏幕上突出显示，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3234,7 +3234,7 @@
         <ReturnType>Microsoft.Office.Core.HTMLProject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定工作簿中的对象，该对象代表顶级项目分支，就像在 Microsoft 脚本 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.HTMLProject" /> 编辑器的项目资源管理器中一样。 只读。</summary>
+        <summary>返回指定工作簿中的对象，该对象代表顶级项目分支，Project <see cref="P:Microsoft.Office.Interop.Excel._Workbook.HTMLProject" /> 资源管理器中的Microsoft 脚本编辑器。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3293,7 +3293,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>一个 <b>Boolean</b> 值，指定当列表不处于活动状态时，此列表的边框是否可见。 如果边框可见，则返回 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
+        <summary>一个 <b>Boolean</b> 值，指定当列表不处于活动状态时，此列表的边框是否可见。如果边框可见，则返回 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks><para>该属性的设置将影响工作表上的所有列表。</para>
           <para> </para></remarks>
@@ -3325,7 +3325,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果指定工作簿作为加载宏运行，则该属性值为 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
+        <summary>如果指定工作簿作为加载宏运行，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks><para>如果将该属性设置为 <b>True</b>，则指定工作簿将具有下列特征：</para>
           <list type="bullet">
@@ -3339,7 +3339,7 @@
               <description>该工作簿中的任何宏都不在“宏”对话框中显示（指向“工具”菜单中的“宏”项，并单击“宏”命令可显示该对话框）。</description>
             </item>
             <item>
-              <description>尽管该工作簿中的宏在“宏”对话框中不可见，仍然可以通过“宏”对话框运行该工作簿中的宏。 另外，宏名无须使用工作簿名称进行标识。</description>
+              <description>尽管该工作簿中的宏在“宏”对话框中不可见，仍然可以通过“宏”对话框运行该工作簿中的宏。另外，宏名无须使用工作簿名称进行标识。</description>
             </item>
             <item>
               <description>在打开工作簿时按住 Shift 键不起作用。</description>
@@ -3371,7 +3371,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果指定工作簿正在适当位置上进行编辑，则该值为 <b>True</b>。 如果该工作簿已在 Microsoft Excel 中打开，并准备进行编辑，则该值为 <b>False</b>。 只读 <b>Boolean</b>。</summary>
+        <summary>如果指定工作簿正在适当位置上进行编辑，则该值为 <b>True</b>。如果该工作簿已在 Microsoft Excel 中打开，并准备进行编辑，则该值为 <b>False</b>。<b>Boolean</b> 类型，只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3402,7 +3402,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果对共享工作簿启用了修订记录功能，则该属性值为 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
+        <summary>如果对共享工作簿启用了修订记录功能，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3478,7 +3478,7 @@
         <Parameter Name="EditionRef" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Name">可选 <b>字符串</b>。</param>
+        <param name="Name">可选<b>属性，类型为 String。</b></param>
         <param name="LinkInfo">必需 <see cref="T:Microsoft.Office.Interop.Excel.XlLinkInfo" /> 。 要返回的信息的类型。</param>
         <param name="Type">可选 <see cref="T:Microsoft.Office.Interop.Excel.XlLinkInfoType" /> 。 要返回的链接的类型。</param>
         <param name="EditionRef">可选 <b>对象</b>。 如果链接为一个版本，则该参数以 R1C1 样式的字符串形式指定版本引用。 如果工作簿中存在多个同名的发布者和订阅者，则该参数为必选参数。</param>
@@ -3546,7 +3546,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果在单个工作表中显示共享工作簿的更改，则该属性值为 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
+        <summary>如果在单个工作表中显示共享工作簿的更改，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3627,7 +3627,7 @@
         <Parameter Name="Filename" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Filename">必需 <b>对象</b>。 工作簿名称，该工作簿包含将合并到打开的工作簿中的更改。</param>
+        <param name="Filename">必需的 <b>对象</b>。 工作簿名称，该工作簿包含将合并到打开的工作簿中的更改。</param>
         <summary>将某工作簿中的改动合并到已打开的工作簿中。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3717,9 +3717,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果工作簿以共享列表方式打开，则该属性值为 <b>True</b>。 只读 <b>Boolean</b>。</summary>
+        <summary>如果工作簿以共享列表方式打开，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，只读。</summary>
         <value>To be added.</value>
-        <remarks><para>若要将工作簿另存为共享列表，请使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 该方法。 若要将工作簿从共享模式切换到独占模式，请使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.ExclusiveAccess" /> 该方法。</para>
+        <remarks><para>若要将工作簿另存为共享列表，请使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 方法。 若要将工作簿从共享模式切换到独占模式，请使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.ExclusiveAccess" /> 方法。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3746,7 +3746,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回的对象的名称。 只读的 <b>字符串</b> 。</summary>
+        <summary>返回的对象的名称。只读的 <b>字符串</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3774,7 +3774,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Names</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Names" /> 一个集合，该集合代表指定工作簿中 (，包括所有特定于工作表的名称) 。 <b>Names</b> 对象，只读。</summary>
+        <summary>返回一个集合，该集合代表指定工作簿中所有 <see cref="T:Microsoft.Office.Interop.Excel.Names" /> (，包括所有特定于工作表的名称) 。 <b>Names</b> 对象，只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3964,7 +3964,7 @@
         <Parameter Name="Type" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Name">必需的 <b>字符串</b> 。 从方法返回的 Microsoft Excel 或 DDE/OLE 链接 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.LinkSources(System.Object)" /> 的名称。</param>
+        <param name="Name">必需的 <b>字符串</b> 。 方法返回Microsoft Excel DDE/OLE 链接的名称 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.LinkSources(System.Object)" /> 。</param>
         <param name="ReadOnly">可选 <b>对象</b>。 如果为 <b>True</b>，则以只读形式打开文档。 默认值为 <b>False</b>。</param>
         <param name="Type">可选 <see cref="T:Microsoft.Office.Interop.Excel.XlLink" /> 。 链接类型。</param>
         <summary>打开链接的支持文档。</summary>
@@ -3994,7 +3994,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父对象。 只读。</summary>
+        <summary>返回指定对象的父对象。只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4025,7 +4025,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置在打开指定工作簿时必须提供的密码。 读/写 <b>String</b>。</summary>
+        <summary>返回或设置在打开指定工作簿时必须提供的密码。<b>String</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks><para>[!注释] 使用同时包含大小写字母、数字和符号的强密码。弱密码不混合使用这些元素。例如，强密码：Y6dh!et5。弱密码：House27。请使用可以记住的强密码，这样就不必记录密码了。</para>
           <para> </para></remarks>
@@ -4054,9 +4054,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 <b>String</b> 类型的数值，该数值表示 Microsoft Excel 对指定的工作簿编写密码时使用的算法。 只读。</summary>
+        <summary>返回一个 <b>String</b> 类型的数值，该数值表示 Microsoft Excel 对指定的工作簿编写密码时使用的算法。只读。</summary>
         <value>To be added.</value>
-        <remarks><para>使用此方法可指定 Excel 是否对受密码保护的工作簿 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SetPasswordEncryptionOptions(System.Object,System.Object,System.Object,System.Object)" /> 的文件属性进行加密。</para>
+        <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SetPasswordEncryptionOptions(System.Object,System.Object,System.Object,System.Object)" /> 方法指定是否Excel受密码保护的工作簿的文件属性进行加密。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -4083,9 +4083,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果 Microsoft Excel 对受密码保护的指定工作簿的文件属性进行加密，则该属性值为 <b>True</b>。 只读 <b>Boolean</b>。</summary>
+        <summary>如果 Microsoft Excel 对受密码保护的指定工作簿的文件属性进行加密，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，只读。</summary>
         <value>To be added.</value>
-        <remarks><para>使用此方法可指定 Excel 是否对受密码保护的指定工作簿的文件属性 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SetPasswordEncryptionOptions(System.Object,System.Object,System.Object,System.Object)" /> 进行加密。</para>
+        <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SetPasswordEncryptionOptions(System.Object,System.Object,System.Object,System.Object)" /> 方法指定是否Excel受密码保护的工作簿的文件属性进行加密。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -4112,9 +4112,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一 <b>个</b> Integer 类型的值，指示在加密指定工作簿的密码时 Microsoft Excel 使用的算法的密钥长度。 只读。</summary>
+        <summary>返回一<b>个</b>Integer 类型的值，指示Microsoft Excel工作簿的密码时使用的算法的密钥长度。 只读。</summary>
         <value>To be added.</value>
-        <remarks><para>使用此方法可指定 Excel 是否对受密码保护的指定工作簿的文件属性 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SetPasswordEncryptionOptions(System.Object,System.Object,System.Object,System.Object)" /> 进行加密。</para>
+        <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SetPasswordEncryptionOptions(System.Object,System.Object,System.Object,System.Object)" /> 方法指定是否Excel受密码保护的工作簿的文件属性进行加密。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -4141,8 +4141,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 <b>String</b> 类型的数值，该数值指定在对指定工作簿加密时 Microsoft Excel 使用的算法加密提供程序的名称。 只读。</summary>
-        <value><b>字符串</b></value>
+        <summary>返回一个 <b>String</b> 类型的数值，该数值指定在对指定工作簿加密时 Microsoft Excel 使用的算法加密提供程序的名称。只读。</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4172,7 +4172,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回应用程序的完整路径，不包括应用程序的最后分隔符和名称。 只读 <b>String</b>。</summary>
+        <summary>返回应用程序的完整路径，不包括应用程序的最终分隔符和名称。 只读 <b>String</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4231,7 +4231,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果在共享工作簿的用户个人视图中包括列表的筛选和排序设置，则该属性值为 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
+        <summary>如果在共享工作簿的用户个人视图中包括列表的筛选和排序设置，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4262,7 +4262,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果在共享工作簿的用户个人视图中包括打印设置，则该属性值为 <b>True</b>。 读/写 <b>boolean 值</b>。</summary>
+        <summary>如果在共享工作簿的用户个人视图中包括打印设置，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4410,7 +4410,7 @@
       </Parameters>
       <Docs>
         <param name="DestName">可选 <b>对象</b>。 忽略该参数。 <b>Post</b> 方法提示用户指定工作簿的目标。</param>
-        <summary>将指定工作簿发送到一个公共文件夹。 本方法仅应用于与 Microsoft Exchange 服务器连接的 Microsoft Exchange 客户端。</summary>
+        <summary>将指定工作簿发送到一个公共文件夹。本方法仅应用于与 Microsoft Exchange 服务器连接的 Microsoft Exchange 客户端。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4446,7 +4446,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>如此</b> 如果此工作簿中的计算将仅使用数字显示的精度完成。 读/写 <b>Boolean</b>。</summary>
+        <summary>如果工作簿中的计算将按照屏幕显示的数字精度完成，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4491,11 +4491,11 @@
         <param name="Copies">可选 <b>对象</b>。 打印份数。 如果省略此参数，则只打印一份。</param>
         <param name="Preview">可选 <b>对象</b>。 如果为 <b>True</b>，Microsoft Excel 将在打印对象之前调用打印预览。 如果为 <b>False</b>（或省略该参数），则立即打印对象。</param>
         <param name="ActivePrinter">可选 <b>对象</b>。 设置活动打印机的名称。</param>
-        <param name="PrintToFile">可选 <b>对象</b>。 如果为 <b>True</b>，则打印到文件。 如果 <paramref name="PrToFileName" /> 未指定，Microsoft Excel 将提示用户输入输出文件的名称。</param>
+        <param name="PrintToFile">可选 <b>对象</b>。 如果为 <b>True</b>，则打印到文件。 如果 <paramref name="PrToFileName" /> 未指定，Microsoft Excel提示用户输入输出文件的名称。</param>
         <param name="Collate">可选 <b>对象</b>。 如果为 <b>True</b>，则逐份打印多个副本。</param>
-        <param name="PrToFileName">可选 <b>对象</b>。 如果 <paramref name="PrintToFile" /> 设置为 <b>True，</b>则此参数指定要打印到的文件的名称。</param>
+        <param name="PrToFileName">可选 <b>对象</b>。 如果 <paramref name="PrintToFile" /> 设置为 <b>True</b>，则此参数指定要打印到的文件的名称。</param>
         <summary>打印对象。</summary>
-        <remarks><para>说明中的"页面"，是指打印的页面，而不是工作表或工作簿 <paramref name="From" /> <paramref name="To" /> 中的整个页面。</para>
+        <remarks><para>说明中的"页面"， <paramref name="From" /> <paramref name="To" /> 是指打印的页面，而不是工作表或工作簿中的整个页面。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -4639,7 +4639,7 @@
         <param name="Filename">可选 <b>对象</b>。 一个表示保存文件的名称的字符串。 可以包含一个完整路径；否则 Microsoft Excel 将该文件保存到当前文件夹中。</param>
         <param name="Password">可选 <b>对象</b>。 一个区分大小写的字符串，表示保护此文件所用的密码。 长度不应超过 15 个字符。</param>
         <param name="WriteResPassword">可选 <b>对象</b>。 一个字符串，表示此文件的写保护密码。 如果保存文件时使用了密码，但在打开文件时未提供密码，则该文件以只读方式打开。</param>
-        <param name="ReadOnlyRecommended">可选 <b>对象</b>。 <b>如果</b> 为 True，则当打开文件时显示一条消息，建议以只读方式打开文件。</param>
+        <param name="ReadOnlyRecommended">可选 <b>对象</b>。 <b>如果为 True，</b> 则打开文件时显示一条消息，建议以只读方式打开文件。</param>
         <param name="CreateBackup">可选 <b>对象</b>。 如果为 <b>True</b>，则创建备份文件。</param>
         <param name="SharingPassword">可选 <b>对象</b>。 一个字符串，表示文件共享保护密码。</param>
         <summary>保存工作簿并设置共享保护。</summary>
@@ -4709,7 +4709,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果工作簿中的工作表次序处于保护状态，则该属性值为 <b>True</b>。 只读 <b>Boolean</b>。</summary>
+        <summary>如果工作簿中的工作表次序处于保护状态，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4737,7 +4737,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果工作簿窗口受保护，则该属性值为 <b>True</b>。 只读 <b>Boolean</b>。</summary>
+        <summary>如果工作簿窗口受保护，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4793,7 +4793,7 @@
         <Parameter Name="SharingPassword" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Days">必需 <b>整数</b>。 要在更改日志中保留更改的天数。</param>
+        <param name="Days">必需<b>类型，类型为 Integer。</b> 要在更改日志中保留更改的天数。</param>
         <param name="SharingPassword">可选 <b>对象</b>。 工作簿的取消共享保护密码。 如果工作簿有共享保护密码，同时省略了该参数，将提示用户输入密码。</param>
         <summary>从更改日志中删除指定工作簿的条目。</summary>
         <remarks>To be added.</remarks>
@@ -4825,7 +4825,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果对象以只读方式打开，则返回 <b>True</b>。 只读 <b>Boolean</b>。</summary>
+        <summary>如果对象以只读方式打开，则返回 <b>True</b>。<b>Boolean</b> 类型，只读。</summary>
         <value>To be added.</value>
         <remarks><para>此属性仅用于链接到 SharePoint 网站的列表。</para>
           <para> </para></remarks>
@@ -4857,10 +4857,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果工作簿以建议只读方式保存，则该属性值为 <b>True</b>。 只读 <b>Boolean</b>。</summary>
+        <summary>如果工作簿以建议只读方式保存，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，只读。</summary>
         <value>To be added.</value>
         <remarks><para>当打开一个建议为只读的工作簿时，Microsoft Excel 将显示一条信息，建议以只读方式打开此工作簿。</para>
-          <para>使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 该方法可更改此属性。</para>
+          <para>使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 方法可更改此属性。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -4888,7 +4888,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>导致前台智能标记检查发生，自动批注之前未批注的数据。</summary>
+        <summary>导致发生前台智能标记检查，自动批注以前未批注的数据。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4914,7 +4914,7 @@
       <Parameters />
       <Docs>
         <summary>刷新指定工作簿中的所有外部数据区域和数据透视表。</summary>
-        <remarks><para>属性设置为 <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.BackgroundQuery" /> <b>True</b> 的对象将在后台刷新。</para>
+        <remarks><para>在后台刷新 <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.BackgroundQuery" /> 属性设置为 <b>True</b> 的对象。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -4974,7 +4974,7 @@
       <Docs>
         <param name="Encoding">必需 <see cref="T:Microsoft.Office.Core.MsoEncoding" /> 。 要应用于工作簿的编码。</param>
         <summary>使用指定的文档编码方式，重新加载基于 HTML 文档的工作簿。</summary>
-        <remarks><para>只有 <b>适用于 HTML 的 msoEncoding</b> 常量才适用于 <b>ReloadAs</b> 方法。</para>
+        <remarks><para>只有 <b>适用于 HTML 的 msoEncoding</b> 常量才使用 <b>ReloadAs</b> 方法。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5032,7 +5032,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果能从指定的工作簿中删除个人信息，则该值为 <b>True</b>。 默认值为 <b>False</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
+        <summary>如果能从指定的工作簿中删除个人信息，则该值为 <b>True</b>。默认值为 <b>False</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5060,7 +5060,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">必需 <b>整数</b>。 用户索引。</param>
+        <param name="Index">必需<b>类型，类型为 Integer。</b> 用户索引。</param>
         <summary>断开指定用户与共享工作簿的连接。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5145,7 +5145,7 @@
       <Docs>
         <param name="ShowMessage">可选 <b>对象</b>。 如果为 <b>False</b>，则不显示消息。 如果为 <b>True</b>，则显示消息。</param>
         <summary>向已发送候审的工作簿的作者发送电子邮件消息，通知审阅者已经完成工作簿的审阅。</summary>
-        <remarks><para>使用此方法 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SendForReview(System.Object,System.Object,System.Object,System.Object)" /> 开始对工作簿进行协作审阅。 如果在工作簿上执行 <b>ReplyWithChanges</b> 方法，而该工作簿不是协作审阅阶段的一部分，则用户将收到一个错误。</para>
+        <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SendForReview(System.Object,System.Object,System.Object,System.Object)" /> 方法可启动工作簿的协作审阅。 如果在工作簿上执行 <b>ReplyWithChanges</b> 方法，而该工作簿不是协作审阅阶段的一部分，则用户将收到一个错误。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5172,7 +5172,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Research</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Research" /> 一个对象，该对象代表工作簿研究服务。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Research" /> 一个对象，该对象代表工作簿的研究服务。 只读。</summary>
         <value><b>Research</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5262,7 +5262,7 @@
       <Parameters />
       <Docs>
         <summary>使用工作簿的当前传送名单传送工作簿。</summary>
-        <remarks><para>传送工作簿将 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Routed" /> 该属性设置为 <b>True</b>。</para>
+        <remarks><para>传送工作簿将该属性 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Routed" /> 设置为 <b>True</b>。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5295,7 +5295,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>如此</b> 如果工作簿已路由到下一个收件人。 <b>假</b> 如果需要传送工作簿。 只读 <b>Boolean</b>。</summary>
+        <summary>如果指定工作簿已经传送给下一个收件人，则该值为 <b>True</b>；如果该工作簿需要进行传送，则该值为 <b>False</b>。<b>Boolean</b> 类型，只读。</summary>
         <value>To be added.</value>
         <remarks><para>如果工作簿不是传送给当前收件人，则该值总是 <b>False</b>（例如，如果指定文档没有传送名单，或者刚创建了一个传送名单）。</para>
           <para> </para></remarks>
@@ -5327,7 +5327,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.RoutingSlip</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.RoutingSlip" /> 一个对象，该对象代表工作簿的传送名单。 如果没有传送名单，则读取此属性将导致错误 (<see cref="P:Microsoft.Office.Interop.Excel._Workbook.HasRoutingSlip" /> 检查该属性) 。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.RoutingSlip" /> 一个对象，该对象代表工作簿的传送名单。 如果没有传送名单，则读取此属性会导致错误， (<see cref="P:Microsoft.Office.Interop.Excel._Workbook.HasRoutingSlip" /> 检查该属性) 。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5359,7 +5359,7 @@
       </Parameters>
       <Docs>
         <param name="Which">必需 <see cref="T:Microsoft.Office.Interop.Excel.XlRunAutoMacro" /> 。</param>
-        <summary>运行附属于指定工作簿的 Auto_Open、Auto_Close、Auto_Activate 或 Auto_Deactivate 宏。 保留本方法是为了保持向后兼容性。 您应该使用 Open、Close、Activate 和 Deactivate 事件，而不是这些宏。</summary>
+        <summary>运行附属于指定工作簿的 Auto_Open、Auto_Close、Auto_Activate 或 Auto_Deactivate 宏。 保留本方法是为了保持向后兼容性。 应该使用 Open、Close、Activate 和 Deactivate 事件，而不是这些宏。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -5388,9 +5388,9 @@
       <Parameters />
       <Docs>
         <summary>保存对指定工作簿所做的更改。</summary>
-        <remarks><para>若要打开工作簿文件，请使用 <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 该方法。</para>
-          <para>若要在未将工作簿写入磁盘的情况下将其标记为已保存，请将其 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Saved" /> 属性设置为<b>True。</b></para>
-          <para>第一次保存工作簿时，使用该方法 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 指定文件的名称。</para>
+        <remarks><para>若要打开工作簿文件，请使用 <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 方法。</para>
+          <para>若要在未将工作簿写入磁盘的情况下将其标记为已保存，请将其 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Saved" /> 属性设置为 <b>True</b>。</para>
+          <para>首次保存工作簿时，请使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 方法指定文件的名称。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5434,14 +5434,14 @@
         <param name="FileFormat">可选 <b>对象</b>。 保存文件时使用的文件格式。 有关有效选项的列表，请参阅 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.FileFormat" /> 属性。 对于现有文件，默认采用上一次指定的文件格式；对于新文件，默认采用当前所用 Excel 版本的格式。</param>
         <param name="Password">可选 <b>对象</b>。 它是一个区分大小写的字符串（最长不超过 15 个字符），用于指定文件的保护密码。</param>
         <param name="WriteResPassword">可选 <b>对象</b>。 一个表示文件写保护密码的字符串。 如果文件保存时带有密码，但打开文件时不输入密码，则该文件以只读方式打开。</param>
-        <param name="ReadOnlyRecommended">可选 <b>对象</b>。 <b>如果</b> 为 True，则打开文件时显示一条消息，建议以只读方式打开文件。</param>
+        <param name="ReadOnlyRecommended">可选 <b>对象</b>。 <b>如果为 True，</b> 则打开文件时显示一条消息，建议以只读方式打开文件。</param>
         <param name="CreateBackup">可选 <b>对象</b>。 如果为 <b>True</b>，则创建备份文件。</param>
         <param name="AccessMode">可选 <see cref="T:Microsoft.Office.Interop.Excel.XlSaveAsAccessMode" /> 。</param>
         <param name="ConflictResolution">可选 <see cref="T:Microsoft.Office.Interop.Excel.XlSaveConflictResolution" /> 。</param>
         <param name="AddToMru">可选 <b>对象</b>。 如果为 <b>True</b>，则将该工作簿添加到最近使用的文件列表中。 默认值为 <b>False</b> 。</param>
         <param name="TextCodepage">可选 <b>对象</b>。 不在美国英语版的 Microsoft Excel 中使用。</param>
         <param name="TextVisualLayout">可选 <b>对象</b>。 不在美国英语版的 Microsoft Excel 中使用。</param>
-        <param name="Local">可选 <b>对象</b>。 如果为 <b>True</b>，则以 Microsoft Excel（包括控制面板设置）的语言保存文件。 <b>如果</b> (默认值) 则根据 Visual Basic for Applications (VBA)  (（通常为美国英语）保存文件，除非运行 Workbooks.Open 的 VBA 项目是旧的国际化 XL5/95 VBA 项目) 。</param>
+        <param name="Local">可选 <b>对象</b>。 如果为 <b>True</b>，则以 Microsoft Excel（包括控制面板设置）的语言保存文件。 <b>如果</b> (默认值) 则以 Visual Basic for Applications (VBA)  (（通常为美国英语）的语言保存文件，除非运行 Workbooks.Open 的 VBA 项目是旧的国际化 XL5/95 VBA 项目) 。</param>
         <summary>在另一不同文件中保存对工作簿所做的更改。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5474,7 +5474,7 @@
         <param name="Map">必需 <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> 对象。 应用于数据的架构映射。</param>
         <summary>将已映射到指定 XML 架构映射的数据导出到 XML 数据文件中。</summary>
         <remarks><para>XML 功能（以 XML 电子表格格式保存文件除外）仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中可用。</para>
-          <para>如果 Excel 不能使用指定的架构映射导出数据，则此方法会产生运行时错误。 若要检查 Excel 是否可以使用指定的架构映射导出数据，请使用 <see cref="P:Microsoft.Office.Interop.Excel.XmlMap.IsExportable" /> 该属性。</para>
+          <para>如果 Excel 不能使用指定的架构映射导出数据，则此方法会产生运行时错误。 若要检查Excel是否可以使用指定的架构映射导出数据，请使用 <see cref="P:Microsoft.Office.Interop.Excel.XmlMap.IsExportable" /> 属性。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5503,7 +5503,7 @@
         <Parameter Name="Filename" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Filename">必需。 指定副本的文件名称。</param>
+        <param name="Filename">必填。 指定副本的文件名称。</param>
         <summary>将工作簿副本保存到文件中，但不修改内存中打开的工作簿。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5540,9 +5540,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>如此</b> 如果自上次保存以来没有对指定的工作簿进行更改。 读/写 <b>Boolean</b>。</summary>
+        <summary>如果指定工作簿从上次保存至今未发生过更改，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
-        <remarks><para>如果工作簿从未保存过，则其属性返回空字符串 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Path" /> ("") 。</para>
+        <remarks><para>如果工作簿从未保存过，则其 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Path" /> 属性返回空字符串 ("") 。</para>
           <para>如果要关闭某个已更改的工作簿，但又不想保存它或者不想出现保存提示，则可将此属性设为 <b>True</b>。</para>
           <para> </para></remarks>
       </Docs>
@@ -5579,7 +5579,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果 Microsoft Excel 保存指定工作簿的外部链接值，则该属性值为 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
+        <summary>如果 Microsoft Excel 保存指定工作簿的外部链接值，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5640,11 +5640,11 @@
       </Parameters>
       <Docs>
         <param name="Recipients">可选 <b>对象</b>。 一个字符串，表示传真将发送到的联系人的传真号码和电子邮件地址。 用分号分隔多个收件人。</param>
-        <param name="Subject">可选 <b>对象</b>。 一个字符串，表示传真文档的主题行。</param>
+        <param name="Subject">可选 <b>对象</b>。 一个代表传真文档的主题行的字符串。</param>
         <param name="ShowMessage">可选 <b>对象</b>。 <b>为</b> 传真邮件发送传真之前显示。 <b>False</b> ，则发送传真而不显示传真邮件。</param>
         <summary>将工作表作为传真发送给指定的收件人。</summary>
         <remarks><para>使用 <b>SendFaxOverInternet</b> 方法时要求在用户的计算机上启用传真服务。</para>
-          <para>用于指定参数中的传真号码 <paramref name="Recipients" /> 的格式为 <paramref name="recipientsfaxnumber@usersfaxprovider" /> 或 <paramref name="recipientsname@recipientsfaxnumber" /> 。 可通过使用以下注册表路径访问用户的传真提供商信息：</para>
+          <para>参数中用于指定传真号码 <paramref name="Recipients" /> 的格式为 <paramref name="recipientsfaxnumber@usersfaxprovider" /> 或 <paramref name="recipientsname@recipientsfaxnumber" /> 。 可通过使用以下注册表路径访问用户的传真提供商信息：</para>
           <para>HKEY_CURRENT_USER\Software\Microsoft\Office\11.0\Common\Services\Fax</para>
           <para>使用此注册表路径中的 FaxAddress 项的值可确定要用于收件人的格式。</para>
           <para> </para></remarks>
@@ -5675,12 +5675,12 @@
         <Parameter Name="IncludeAttachment" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Recipients">可选 <b>对象</b>。 一个字符串，列出向其发送邮件的人。 这可能是未解析的名称和别名的电子邮件电话簿或完整电子邮件地址中。 用分号 (;) 分隔多个收件人。 如果留空且 <paramref name="ShowMessage" /> 为 <b>False，</b>您将收到一条错误消息，并且不会发送该邮件。</param>
+        <param name="Recipients">可选 <b>对象</b>。 一个字符串，列出向其发送邮件的人。 这可能是未解析的名称和别名的电子邮件电话簿或完整电子邮件地址中。 用分号 (;) 分隔多个收件人。 如果留空 <paramref name="ShowMessage" /> 且 <b>为 False</b>，您将收到一条错误消息，并且不会发送该消息。</param>
         <param name="Subject">可选 <b>对象</b>。 邮件主题字符串。 如果留空，主题将为：请查看" <paramref name="filename" /> "。</param>
         <param name="ShowMessage">可选 <b>对象</b>。 一个 <b>布尔</b> 值，该值指示是否应执行该方法时显示该消息。 默认值为 <b>True</b> 。 如果设置为 <b>False</b> ，邮件自动发送给收件人，而不先向发送者显示邮件。</param>
         <param name="IncludeAttachment">可选 <b>对象</b>。 一个 <b>布尔</b> 值，该值指示邮件是否应包含附件或到服务器位置的链接。 默认值为 <b>True</b> 。 如果设置为 <b>False</b> 时，该文档必须存储在共享位置。</param>
         <summary>在电子邮件中将供审阅的工作簿发送到指定的收件人。</summary>
-        <remarks><para><b>SendForReview</b> 方法开始协作审阅周期。 使用此方法 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.EndReview" /> 结束审阅周期。</para>
+        <remarks><para><b>SendForReview</b> 方法开始协作审阅周期。 使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.EndReview" /> 方法结束审阅周期。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5711,9 +5711,9 @@
         <Parameter Name="ReturnReceipt" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Recipients">必需 <b>对象</b>。 以文本形式指定收件人名称，如果有多个收件人，则以文本字符串数组的形式指定它。 必须至少指定一个收件人，并将所有收件人都添加到“收件人”中。</param>
+        <param name="Recipients">必需的 <b>对象</b>。 以文本形式指定收件人名称，如果有多个收件人，则以文本字符串数组的形式指定它。 必须至少指定一个收件人，并将所有收件人都添加到“收件人”中。</param>
         <param name="Subject">可选 <b>对象</b>。 指定邮件主题。 如果省略该参数，则使用文档名称。</param>
-        <param name="ReturnReceipt">可选 <b>对象</b>。 如果为 <b>True</b>，则请求返回收件人。 <b>假</b> 不请求返回回执。 默认值为 <b>False</b>。</param>
+        <param name="ReturnReceipt">可选 <b>对象</b>。 如果为 <b>True</b>，则请求返回收件人。 <b>如果为 False，</b> 不请求返回回执。 默认值为 <b>False</b>。</param>
         <summary>使用已安装的邮件系统发送工作簿。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5773,7 +5773,7 @@
         <ReturnType>Microsoft.Office.Core.ServerPolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个对象，该对象代表为存储在运行 2nd_OSS_NoVersion <see cref="T:Microsoft.Office.Core.ServerPolicy" /> 2007 的服务器上存储的工作簿指定的策略。 只读。</summary>
+        <summary>返回一 <see cref="T:Microsoft.Office.Core.ServerPolicy" /> 个对象，该对象代表为存储在 2007 年 12 月 2007 日运行的2nd_OSS_NoVersion指定的策略。 只读。</summary>
         <value><b>ServerPolicy</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5801,9 +5801,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ServerViewableItems</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>允许开发人员与服务器上显示的工作簿中已发布对象的列表进行交互。 只读。</summary>
+        <summary>允许开发人员与服务器上显示的工作簿中已发布对象的列表进行交互。只读。</summary>
         <value><see cref="P:Microsoft.Office.Interop.Excel._Workbook.ServerViewableItems" /></value>
-        <remarks><para>此属性返回一个可以发布到 Excel Services 的项目集。  它可以包括“表格”、“数据透视表”、“命名区域”和“图表”。  它还可以包含“工作表”（只要它不是“工作表”和之前提到的列表的混合体）。  </para>
+        <remarks><para>此属性返回一个可以发布到 Excel Services 的项目集。它可以包括“表格”、“数据透视表”、“命名区域”和“图表”。它还可以包含“工作表”（只要它不是“工作表”和之前提到的列表的混合体）。  </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5833,7 +5833,7 @@
         <Parameter Name="Procedure" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Name">必需的 <b>字符串</b> 。 从该方法返回的 DDE/OLE 链接 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.LinkSources(System.Object)" /> 的名称。</param>
+        <param name="Name">必需的 <b>字符串</b> 。 从 方法返回的 DDE/OLE 链接 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.LinkSources(System.Object)" /> 的名称。</param>
         <param name="Procedure">必需的 <b>字符串</b> 。 当更新链接时所运行过程的名称。 可以是一个 Microsoft Excel 4.0 宏或一个 Visual Basic 过程。 将该参数设置为空字符串 ("") 表示更新链接时不运行任何过程。</param>
         <summary>设置每当更新 DDE 链接时所运行过程的名称。</summary>
         <remarks>To be added.</remarks>
@@ -5869,8 +5869,8 @@
         <param name="PasswordEncryptionKeyLength">可选 <b>对象</b>。 加密密钥的长度，为 8 的倍数（40 或更大）。</param>
         <param name="PasswordEncryptionFileProperties">可选 <b>对象</b>。 如果为 <b>True</b>（默认值），则加密文件属性。</param>
         <summary>使用密码来设置对工作簿进行加密的选项。</summary>
-        <remarks><para><paramref name="PasswordEncryptionProvider" />、 <paramref name="PasswordEncryptionAlgorithm" /> 和 <paramref name="PasswordEncryptionKeyLength" /> 参数不相互独立。 选定的加密提供商限制了可以选择的算法和密钥长度的设置。</para>
-          <para>对于 <paramref name="PasswordEncryptionKeyLength" /> 参数，键长度的范围没有固有限制。 该范围是由“加密服务提供商”确定的，同时还确定加密算法。</para>
+        <remarks><para>、 <paramref name="PasswordEncryptionProvider" /> <paramref name="PasswordEncryptionAlgorithm" /> 和 <paramref name="PasswordEncryptionKeyLength" /> 参数不相互独立。 选定的加密提供商限制了可以选择的算法和密钥长度的设置。</para>
+          <para>对于 <paramref name="PasswordEncryptionKeyLength" /> 参数，对键长度的范围没有固有限制。 该范围是由“加密服务提供商”确定的，同时还确定加密算法。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5962,9 +5962,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果“冲突的历史记录”工作表在作为共享列表打开的工作簿中可见，则该属性值为 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
+        <summary>如果“冲突的历史记录”工作表在作为共享列表打开的工作簿中可见，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
-        <remarks><para>如果指定工作簿不是以共享清单方式打开的，则该属性无效。 若要确定工作簿是否作为共享列表打开，请使用 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.MultiUserEditing" /> 该属性。</para>
+        <remarks><para>如果指定工作簿不是以共享清单方式打开的，则该属性无效。 若要确定工作簿是否以共享列表打开，请使用 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.MultiUserEditing" /> 属性。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5996,7 +5996,7 @@
       <Docs>
         <summary>此属性控制数据透视图筛选窗格的可见性。 读/写。</summary>
         <value><b>Boolean</b></value>
-        <remarks><para>此属性控制数据透视图筛选窗格的可见性（打开/关闭窗格）。  为了使窗格可见，必须选择一个 <b>PivotChart</b> 对象。 </para>
+        <remarks><para>此属性控制数据透视图筛选窗格的可见性（打开/关闭窗格）。为了使窗格可见，必须选择一个 <b>PivotChart</b> 对象。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -6026,7 +6026,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果该属性值为 <b>True</b>（默认），则能显示数据透视表字段列表。 读/写 <b>Boolean</b>。</summary>
+        <summary>如果该属性值为 <b>True</b>（默认），则能显示数据透视表字段列表。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6054,7 +6054,7 @@
         <ReturnType>Microsoft.Office.Core.SignatureSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回工作簿的数字签名。 只读。</summary>
+        <summary>返回工作簿的数字签名。只读。</summary>
         <value><see cref="T:Microsoft.Office.Core.SignatureSet" /></value>
         <remarks><para>若要对 Excel2007 工作簿进行数字签名并验证其中的其他签名，您需要 Microsoft CryptoAPI 和唯一的数字签名证书。 CryptoAPI 随 Microsoft Internet Explorer 4.01 或更高版本一起安装。 可从证书颁发机构获得数字签名证书。
 </para>
@@ -6243,7 +6243,7 @@
         <ReturnType>Microsoft.Office.Core.Sync</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个对象，该对象提供对属于文档工作区的文档 <see cref="T:Microsoft.Office.Core.Sync" /> 的方法和属性的访问权限。</summary>
+        <summary>返回一个对象，该对象提供对作为文档工作区一部分的文档 <see cref="T:Microsoft.Office.Core.Sync" /> 的方法和属性的访问。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6303,7 +6303,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果工作簿保存为模板时删除外部数据引用，则该属性值为 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
+        <summary>如果工作簿保存为模板时删除外部数据引用，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6331,7 +6331,7 @@
         <ReturnType>Microsoft.Office.Core.OfficeTheme</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回应用于当前工作簿的主题。 只读。</summary>
+        <summary>返回应用于当前工作簿的主题。只读。</summary>
         <value><see cref="T:Microsoft.Office.Core.OfficeTheme" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6401,7 +6401,7 @@
       <Parameters />
       <Docs>
         <summary>打开或关闭窗体设计模式。</summary>
-        <remarks><para>当 Excel 在窗体设计模式下时，将显示控件工具箱工具栏。 使用该工具箱可以插入各种 ActiveX 控件，如命令按钮、滚动条和选项按钮。 在窗体设计模式下，不会运行事件过程，并且单击一个嵌入的控件后，就会出现控件的尺寸控点。</para>
+        <remarks><para>当Excel窗体设计模式时，将显示"控件工具箱"工具栏。 使用该工具箱可以插入各种 ActiveX 控件，如命令按钮、滚动条和选项按钮。 在窗体设计模式下，不会运行事件过程，并且单击一个嵌入的控件后，就会出现控件的尺寸控点。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -6431,7 +6431,7 @@
       </Parameters>
       <Docs>
         <param name="Password">可选 <b>对象</b>。 一个字符串，指定用于解除工作表或工作簿保护的密码，此密码是区分大小写的。 如果工作表或工作簿不设密码保护，则省略此参数。 如果对工作表省略此参数，而该工作表又设有密码保护，Microsoft Excel 将提示您输入密码。 如果对工作簿省略此参数，而该工作簿又设有密码保护，则该方法将失效。</param>
-        <summary>取消工作表或工作簿的保护。 如果工作表或工作簿不是受保护的，则此方法不起作用。</summary>
+        <summary>取消工作表或工作簿的保护。如果工作表或工作簿不是受保护的，则此方法不起作用。</summary>
         <remarks><para>如果您忘记了密码，将不能取消工作表或工作簿的保护。建议将密码和对应文档名妥善保存。</para>
           <para> </para></remarks>
       </Docs>
@@ -6489,7 +6489,7 @@
       <Parameters />
       <Docs>
         <summary>如果磁盘上的工作簿版本比内存中的当前工作簿副本新，则用磁盘上保存的工作簿文件更新只读工作簿。如果载入工作簿之后，磁盘上的副本无改变，则不必重新载入内存中的副本。</summary>
-        <remarks><para>本方法适用于用户 A 以只读方式打开工作簿，同时用户 B 以可读写方式打开该工作簿。 如果用户 B 将工作簿新版存盘而用户 A 仍在使用原工作簿，那么用户 A 必须先关闭该工作簿再打开才能获得更新版本的工作簿，<b>UpdateFromFile</b> 方法使用磁盘文件更新内存中的工作簿副本。</para>
+        <remarks><para>本方法适用于用户 A 以只读方式打开工作簿，同时用户 B 以可读写方式打开该工作簿。如果用户 B 将工作簿新版存盘而用户 A 仍在使用原工作簿，那么用户 A 必须先关闭该工作簿再打开才能获得更新版本的工作簿，<b>UpdateFromFile</b> 方法使用磁盘文件更新内存中的工作簿副本。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -6519,7 +6519,7 @@
         <Parameter Name="Type" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Name">可选 <b>对象</b>。 要更新的 Microsoft Excel 或 DDE/OLE 链接的名称，从该方法 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.LinkSources(System.Object)" /> 返回。</param>
+        <param name="Name">可选 <b>对象</b>。 要更新Microsoft Excel DDE/OLE 链接的名称，从 方法 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.LinkSources(System.Object)" /> 返回。</param>
         <param name="Type">可选 <see cref="T:Microsoft.Office.Interop.Excel.XlLinkType" /> 。</param>
         <summary>更新 Microsoft Excel 链接、DDE 链接或 OLE 链接。</summary>
         <remarks><para>如果在没有任何参数的情况下调用 <b>UpdateLink</b> 方法，Excel 将默认更新所有的工作表链接。</para>
@@ -6552,7 +6552,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlUpdateLinks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置 <see cref="T:Microsoft.Office.Interop.Excel.XlUpdateLinks" /> 一个常量，该常量指示工作簿更新嵌入的 OLE 链接的设置。 读/写。</summary>
+        <summary>返回或设置 <see cref="T:Microsoft.Office.Interop.Excel.XlUpdateLinks" /> 一个常量，该常量指示工作簿用于更新嵌入 OLE 链接的设置。 读/写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6589,7 +6589,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果 Microsoft Excel 对工作簿中的远程引用进行更新，则该值为 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
+        <summary>如果 Microsoft Excel 对工作簿中的远程引用进行更新，则该值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6686,7 +6686,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>如果</b> 工作簿使用的搜索模式与单元格的整个内容匹配，则其为 True。 使用 <b>C# (</b> <b>bool，只读 Boolean</b> ) 。</summary>
+        <summary>如果工作簿使用的搜索模式与单元格的整个内容匹配，则其为<b>True。</b> 只读<b>Boolean (</b> <b>bool C#) 。</b></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6714,7 +6714,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>如果</b> 工作簿为字符串比较和搜索启用通配符，则其为 True。 使用 <b>C# (</b> <b>bool，只读 Boolean</b> ) 。</summary>
+        <summary>如果工作簿启用通配符进行字符串比较和搜索，则其为<b>True。</b> 只读<b>Boolean (</b> <b>bool C#) 。</b></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6742,7 +6742,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果指定工作簿的 Visual Basic for Applications 项目已经过数字签名，则该属性的值为 <b>True</b>。 只读 <b>Boolean</b>。</summary>
+        <summary>如果指定工作簿的 Visual Basic for Applications 项目已经过数字签名，则该属性的值为 <b>True</b>。<b>Boolean</b> 类型，只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6770,7 +6770,7 @@
         <ReturnType>Microsoft.Vbe.Interop.VBProject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 <b>VBProject</b> 对象，该对象表示指定工作簿中的 Visual Basic 项目。 只读。</summary>
+        <summary>返回一个 <b>VBProject</b> 对象，该对象表示指定工作簿中的 Visual Basic 项目。只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6798,7 +6798,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WebOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回集合，其中包含在将文档另存为网页或打开网页时 Microsoft Excel 使用的 <see cref="T:Microsoft.Office.Interop.Excel.WebOptions" /> 工作簿级属性。 只读。</summary>
+        <summary>返回集合，其中包含在将文档另存为网页或打开网页时Microsoft Excel使用的工作簿 <see cref="T:Microsoft.Office.Interop.Excel.WebOptions" /> 级属性。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6883,7 +6883,7 @@
         <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> 一个集合，该集合代表指定工作簿中所有工作表。 <b>Sheets</b> 对象，只读。</summary>
         <value>To be added.</value>
         <remarks><para>在不使用对象识别符的情况下，使用此属性将返回活动工作簿中所有的工作表。</para>
-          <para>此属性不返回宏工作表;使用 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel4MacroSheets" /> 属性或 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel4IntlMacroSheets" /> 属性返回这些工作表。</para>
+          <para>此属性不返回宏表;使用 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel4MacroSheets" /> 属性或 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel4IntlMacroSheets" /> 属性返回这些工作表。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -6913,7 +6913,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>为工作簿的写密码返回或设置一个 <b>String</b> 类型的数值。 读/写。</summary>
+        <summary>为工作簿的写密码返回或设置一个 <b>String</b> 类型的数值。可读写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6944,9 +6944,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果指定工作簿是写保护的，则该属性的值为 <b>True</b>。 只读 <b>Boolean</b>。</summary>
+        <summary>如果指定工作簿是写保护的，则该属性的值为 <b>True</b>。<b>Boolean</b> 类型，只读。</summary>
         <value>To be added.</value>
-        <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 该方法可设置此属性。</para>
+        <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 方法可设置此属性。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -6976,7 +6976,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回当前对指定工作簿有写权限的用户的名称。 只读 <b>String</b>。</summary>
+        <summary>返回当前对指定工作簿有写权限的用户的名称。<b>String</b> 类型，只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7008,7 +7008,7 @@
       <Docs>
         <param name="Url">必需的 <b>字符串</b> 。 统一资源定位 (URL) 或统一命名约定 (UNC) XML 数据文件的路径。</param>
         <param name="ImportMap">必需 <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> 。 导入文件时要应用的架构映射。</param>
-        <param name="Overwrite">可选属性，类型为 <b>Boolean</b>。 如果没有为参数指定值，则此参数指定是否覆盖已映射到参数中指定的架构映射 <paramref name="Destination" /> <paramref name="ImportMap" /> 的数据。 设置为 <b>True</b> 将覆盖数据，设置为 <b>False</b> 将把新数据追加到现有数据中。 默认值为 <b>True</b>。 如果为参数指定了值，则此参数指定是否 <paramref name="Destination" /> 覆盖现有数据。 设置为 <b>True</b> 将覆盖现有数据，设置为 <b>False</b> 将在数据要被覆盖时取消导入。 默认值为 <b>True</b>。</param>
+        <param name="Overwrite">可选属性，类型为 <b>Boolean</b>。 如果没有为参数指定值，则此参数指定是否覆盖已映射到参数中指定的架构 <paramref name="Destination" /> 映射 <paramref name="ImportMap" /> 的数据。 设置为 <b>True</b> 将覆盖数据，设置为 <b>False</b> 将把新数据追加到现有数据中。 默认值为 <b>True</b>。 如果为参数指定了值，则此参数指定是否 <paramref name="Destination" /> 覆盖现有数据。 设置为 <b>True</b> 将覆盖现有数据，设置为 <b>False</b> 将在数据要被覆盖时取消导入。 默认值为 <b>True</b>。</param>
         <param name="Destination">可选 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 。 数据将导入到指定范围的新 XML 列表中。</param>
         <summary>将 XML 数据文件导入当前工作簿。 返回 <see cref="T:Microsoft.Office.Interop.Excel.XlXmlImportResult" /> 。</summary>
         <returns>To be added.</returns>
@@ -7023,7 +7023,7 @@
               <description>导入过程被取消，因为指定的数据与工作表不符。</description>
             </item>
           </list>
-          <para>使用对象的方法导入之前已加载到内存中的 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.XmlImportXml(System.String,Microsoft.Office.Interop.Excel.XmlMap@,System.Object,System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> XML 数据。</para>
+          <para>使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.XmlImportXml(System.String,Microsoft.Office.Interop.Excel.XmlMap@,System.Object,System.Object)" /> 对象的 方法导入之前已加载到内存中的 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> XML 数据。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -7054,7 +7054,7 @@
       <Docs>
         <param name="Data">必需的 <b>字符串</b> 。 要导入的数据。</param>
         <param name="ImportMap">必需 <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> 。 导入文件时要应用的架构映射。</param>
-        <param name="Overwrite">可选属性，类型为 <b>Boolean</b>。 如果没有为参数指定值，则此参数指定是否覆盖已映射到参数中指定的架构映射 <paramref name="Destination" /> <paramref name="ImportMap" /> 的数据。 设置为 <b>True</b> 将覆盖数据，设置为 <b>False</b> 将把新数据追加到现有数据中。 默认值为 <b>True</b>。 如果为参数指定了值，则此参数指定是否 <paramref name="Destination" /> 覆盖现有数据。 设置为 <b>True</b> 将覆盖现有数据，设置为 <b>False</b> 将在数据要被覆盖时取消导入。 默认值为 <b>True</b>。</param>
+        <param name="Overwrite">可选属性，类型为 <b>Boolean</b>。 如果没有为参数指定值，则此参数指定是否覆盖已映射到参数中指定的架构 <paramref name="Destination" /> 映射 <paramref name="ImportMap" /> 的数据。 设置为 <b>True</b> 将覆盖数据，设置为 <b>False</b> 将把新数据追加到现有数据中。 默认值为 <b>True</b>。 如果为参数指定了值，则此参数指定是否 <paramref name="Destination" /> 覆盖现有数据。 设置为 <b>True</b> 将覆盖现有数据，设置为 <b>False</b> 将在数据要被覆盖时取消导入。 默认值为 <b>True</b>。</param>
         <param name="Destination">可选 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 。 数据将导入到指定范围中的新 XML 列表中。</param>
         <summary>导入先前已被加载到内存的 XML 数据流。 返回 <see cref="T:Microsoft.Office.Interop.Excel.XlXmlImportResult" /> 。</summary>
         <returns>To be added.</returns>
@@ -7069,7 +7069,7 @@
               <description>导入过程被取消，因为指定的数据与工作表不符。</description>
             </item>
           </list>
-          <para>使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.XmlImport(System.String,Microsoft.Office.Interop.Excel.XmlMap@,System.Object,System.Object)" /> 对象的方法将 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> XML 数据文件导入到当前工作簿中。</para>
+          <para>使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.XmlImport(System.String,Microsoft.Office.Interop.Excel.XmlMap@,System.Object,System.Object)" /> 对象的 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> 方法将 XML 数据文件导入当前工作簿。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

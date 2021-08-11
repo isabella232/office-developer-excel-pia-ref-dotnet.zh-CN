@@ -1,5 +1,5 @@
 <Type Name="Walls" FullName="Microsoft.Office.Interop.Excel.Walls">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="694e055e0616d70a2ab7c59205f377db0e237a53" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009329" /></Metadata><TypeSignature Language="C#" Value="public interface Walls" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6088466a59d1bae343493218c02ecb4fd44a03c2d971cec38265aa319c7c465f" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54505411" /></Metadata><TypeSignature Language="C#" Value="public interface Walls" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Walls" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Walls" />
   <TypeSignature Language="VB.NET" Value="Public Interface Walls" />
@@ -23,7 +23,7 @@
   <Docs>
     <summary>代表三维图表的背景墙。</summary>
     <remarks><para>此对象不是集合。 没有代表单个背景墙的对象；只能将所有的背景墙作为一个单位同时返回。</para>
-      <para>使用 <see cref="P:Microsoft.Office.Interop.Excel._Chart.Walls" /> 该属性可返回 <b>Walls</b> 对象。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Excel._Chart.Walls" /> 属性可返回 <b>Walls</b> 对象。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -50,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -81,7 +81,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 一个对象，该对象表示对象的边框。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 一个对象，该对象代表对象的边框。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -168,7 +168,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> 指定图表的对象，该图表包含图表的填充格式属性。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> 指定图表的对象，该指定图表包含图表的填充格式属性。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -261,7 +261,7 @@
           <list type="table">
             <item>
               <term>
-                <b>标题</b>
+                <b>Caption</b>
               </term>
               <description>巴黎</description>
               <description>巴黎</description>
@@ -288,7 +288,7 @@
               <description>巴黎</description>
             </item>
           </list>
-          <para>在集合中指定索引时，可以使用 <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> 下表中所示的语法。</para>
+          <para>在集合中指定索引 <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> 时，可以使用下表中所示的语法。</para>
           <list type="table">
             <item>
               <term>表达式。PivotItems ("[Europe]。[法国]。[Paris]") </term>
@@ -378,9 +378,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置图片在三维图表的墙壁和人脸上的显示方式。</summary>
+        <summary>返回或设置图片在三维图表的墙壁和面的显示方式。</summary>
         <value>To be added.</value>
-        <remarks><para><b>PictureType</b>属性可以是下列常量之一<b>：xlStack</b>或<b>xlStretch。</b></para>
+        <remarks><para><b>PictureType</b>属性可以是下列常量之一： <b>xlStack</b>或<b>xlStretch</b>。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -410,7 +410,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置图表上每张图片的单位，如果该属性设置为 <see cref="P:Microsoft.Office.Interop.Excel.Walls.PictureType" /> <b>xlStackScale</b> (，则此属性将被忽略) 。</summary>
+        <summary>如果该属性设置为 <see cref="P:Microsoft.Office.Interop.Excel.Walls.PictureType" /> <b>xlStackScale，</b> 则返回或设置图表上每张图片的单位 (如果没有，则忽略此属性) 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -469,7 +469,7 @@
       <Docs>
         <summary>返回或设置壁的厚度。 读/写。</summary>
         <value><b>Integer</b></value>
-        <remarks><para>使用此属性设置边框的粗细。  默认粗细为 0。</para>
+        <remarks><para>使用此属性设置边框的粗细。默认粗细为 0。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

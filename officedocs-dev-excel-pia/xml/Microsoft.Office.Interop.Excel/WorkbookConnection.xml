@@ -1,5 +1,5 @@
 <Type Name="WorkbookConnection" FullName="Microsoft.Office.Interop.Excel.WorkbookConnection">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d36e4e18681b0c11f20840120b3306f1349f22ec" /><Meta Name="ms.sourcegitcommit" Value="b9fb06b594d56da0590a163c774e236b6362c059" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/25/2021" /><Meta Name="ms.locfileid" Value="53147291" /></Metadata><TypeSignature Language="C#" Value="public interface WorkbookConnection" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2df29bf1c0ea3e9dd829b7e56d42c72d3a1dc9dc8714a6a0f8a934249a80041b" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54505383" /></Metadata><TypeSignature Language="C#" Value="public interface WorkbookConnection" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WorkbookConnection" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />
   <TypeSignature Language="VB.NET" Value="Public Interface WorkbookConnection" />
@@ -22,7 +22,7 @@
   </Attributes>
   <Docs>
     <summary>连接是从外部数据源（而不是工作簿外部数据源）获取1st_Excel12的信息。</summary>
-    <remarks><para>连接可存储在 Excel 工作簿中。  打开工作簿时，Excel创建一个称为 connection 对象的连接的内存副本。  连接对象包含服务器名称和服务器上打开的对象的名称等信息。  连接对象也可以选择包含身份验证凭据和/或一个命令，该命令可传递给服务器执行（例如：由 SQL Server 执行的 SELECT 语句）。  </para>
+    <remarks><para>连接可存储在 Excel 工作簿中。工作簿打开时，Excel 创建连接的内存副本，称为连接对象。连接对象包含服务器名称和服务器上打开的对象的名称等信息。连接对象也可以选择包含身份验证凭据和/或一个命令，该命令可传递给服务器执行（例如：由 SQL Server 执行的 SELECT 语句）。</para>
       <para>
         <b>注意</b>：连接的确切形式取决于用于检索数据的机制 - ODBC 连接、OLEDB 连接和 Web 查询将包含不同的信息。</para>
       <para>连接还可以存储在单独的连接文件中。Excel 工作簿中的大多数连接都包含一个指向外部连接文件的指针。连接文件的扩展名清楚地表明这类文件为连接文件（*.ODC、*.IQY 等），可在用户的本地计算机、其他熟知或受信任的位置（如 WSS，即数据连接库）或其他公司服务器上找到连接文件。通过连接文件，同一组织中的多个用户可重复使用连接。通过更改单个连接文件，网络管理员可以更改整个组织连接到后端数据源的方式。连接外部数据源时，连接文件不是必需使用的。</para>

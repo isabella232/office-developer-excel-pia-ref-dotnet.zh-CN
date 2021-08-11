@@ -1,5 +1,5 @@
 <Type Name="Name" FullName="Microsoft.Office.Interop.Excel.Name">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="03c7a9b67e0c5237abc6e68749010ea9f9840fdb" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011436" /></Metadata><TypeSignature Language="C#" Value="public interface Name" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="783b096b30fb7910984ea78858a7922c88c208c4d0fa4ce46ad6bc61eba0c338" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54515281" /></Metadata><TypeSignature Language="C#" Value="public interface Name" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Name" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Name" />
   <TypeSignature Language="VB.NET" Value="Public Interface Name" />
@@ -24,11 +24,11 @@
     <summary>代表单元格区域的定义名。</summary>
     <remarks><para>名称可以是内置名称（如“Database”、“Print_Area”和“Auto_Open”）或自定义名称。</para>
       <para>应用程序、工作簿和 Worksheet 对象</para>
-      <para>Name <b></b>对象是集合的一个成员 <see cref="T:Microsoft.Office.Interop.Excel.Names" /> ， <see cref="T:Microsoft.Office.Interop.Excel.Application" /> <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> 和 <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> 对象。 使用 <b>名称</b> <paramref name="index" /> () ，其中的名称 <paramref name="index" /> 索引号或定义的名称，返回单个 <b>名称</b> 对象。</para>
-      <para>索引号表明名称在集合中的位置。 名称按字母顺序从 a 到 z 排列，不区分大小写 (该顺序与单击"插入"菜单上的"名称"命令返回的"定义名称和应用名称"对话框中显示的顺序相同) 。</para>
-      <para>使用 <see cref="P:Microsoft.Office.Interop.Excel.Name.Name" /> 该属性可返回或设置名称本身的文本。</para>
+      <para><b>Name</b>对象是 、 和 <see cref="T:Microsoft.Office.Interop.Excel.Names" /> 对象的集合 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> 的成员。 使用 <b>名称</b> <paramref name="index" /> () ， <paramref name="index" /> 其中的名称索引号或定义的名称，返回单个 <b>名称</b> 对象。</para>
+      <para>索引号表明名称在集合中的位置。 名称按字母顺序（从 a 到 z）放置，不区分大小写 (该顺序与"定义名称"和"应用名称"对话框中显示的顺序相同，单击"插入"菜单上的"名称"命令) 返回该对话框。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Excel.Name.Name" /> 属性可返回或设置名称本身的文本。</para>
       <para>Range 对象</para>
-      <para>虽然 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 对象可以具有多个名称，但 Range 对象没有<b>Names</b>集合。 <b></b> 将 <b>Name</b> 与一个 <b>Range</b> 对象一起使用可从名称列表（按字母顺序排序）中返回第一个名称。</para>
+      <para>尽管 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 对象可以具有多个名称，但 Range 对象没有<b>Names</b>集合。 <b></b> 将 <b>Name</b> 与一个 <b>Range</b> 对象一起使用可从名称列表（按字母顺序排序）中返回第一个名称。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -86,7 +86,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -180,8 +180,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置与名称关联的批注。 读/写 <b>String</b>。</summary>
-        <value><b>字符串</b></value>
+        <summary>返回或设置与名称关联的批注。可读/写 <b>String</b> 类型。</summary>
+        <value><b>String</b></value>
         <remarks><para>批注文本不能超过 255 个字符。 </para>
           <para> </para></remarks>
       </Docs>
@@ -543,7 +543,7 @@
         <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 对象引用 <see cref="T:Microsoft.Office.Interop.Excel.Name" /> 的对象。</summary>
         <value>To be added.</value>
         <remarks><para>如果 <b>Name</b> 对象并不引用区域（例如，如果该对象引用的是一个常量或公式），则该属性无效。</para>
-          <para>若要更改名称引用的范围，请使用 <see cref="P:Microsoft.Office.Interop.Excel.Name.RefersTo" /> 该属性。</para>
+          <para>若要更改名称引用的范围，请使用 <see cref="P:Microsoft.Office.Interop.Excel.Name.RefersTo" /> 属性。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -601,7 +601,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果指定的 <b>Name</b> 对象是有效的工作簿参数，则返回 <b>True</b>。 只读 <b>Boolen</b> 类型。</summary>
+        <summary>如果指定的 <b>Name</b> 对象是有效的工作簿参数，则返回 <b>True</b>。只读 <b>Boolen</b> 类型。</summary>
         <value><b>Boolen</b></value>
         <remarks>To be added.</remarks>
       </Docs>

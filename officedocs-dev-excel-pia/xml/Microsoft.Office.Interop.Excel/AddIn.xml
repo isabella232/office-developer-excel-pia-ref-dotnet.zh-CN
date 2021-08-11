@@ -1,5 +1,5 @@
 <Type Name="AddIn" FullName="Microsoft.Office.Interop.Excel.AddIn">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ad740aac6b501b523017ffe9ffd52b91e10dd267" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999761" /></Metadata><TypeSignature Language="C#" Value="public interface AddIn" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7e8650ba6cb179a124139c37ac5fcf0524fd83bf176e8e6aa27ea8ab5c37af68" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54506272" /></Metadata><TypeSignature Language="C#" Value="public interface AddIn" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AddIn" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AddIn" />
   <TypeSignature Language="VB.NET" Value="Public Interface AddIn" />
@@ -22,13 +22,13 @@
   </Attributes>
   <Docs>
     <summary>代表已经安装或尚未安装的单个加载项。</summary>
-    <remarks><para><b>AddIn</b>对象是集合的 <see cref="T:Microsoft.Office.Interop.Excel.AddIns" /> 一个成员。 <b>AddIns</b> 集合包含 Microsoft Excel 所有可用加载宏的列表（不论这些加载宏是否已安装）。 此列表对应于"工具"菜单的Add-Ins对话框中显示的 (加载项) 。</para>
-      <para>使用 <b>外接程序 () ，</b> 其中是外接程序 <paramref name="index" /> <paramref name="index" /> 标题或索引号，返回单个 <b>外接程序</b> 对象。</para>
-      <para>请勿混淆加载宏标题（出现在“加载宏”对话框中）与加载宏名称（加载宏的文件名）。 必须严格按照“加载宏”对话框中的标题书写加载宏标题，但不必匹配大小写。</para>
+    <remarks><para><b>AddIn</b>对象是集合的一 <see cref="T:Microsoft.Office.Interop.Excel.AddIns" /> 个成员。 <b>AddIns</b> 集合包含 Microsoft Excel 所有可用加载宏的列表（不论这些加载宏是否已安装）。 此列表对应于"工具"菜单的"Add-Ins"对话框中 (加载项) 。</para>
+      <para>使用 <b>AddIns</b> <paramref name="index" /> () ，其中 是外接程序 <paramref name="index" /> 标题或索引号，返回单个 <b>AddIn</b> 对象。</para>
+      <para>请勿混淆加载宏标题（出现在“加载宏”对话框中）与加载宏名称（加载宏的文件名）。必须严格按照“加载宏”对话框中的标题书写加载宏标题，但不必匹配大小写。</para>
       <para>加载宏索引号代表加载宏在“加载宏”对话框内“可用加载宏”框中的位置。</para>
-      <para><see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" />该方法将加载项添加到可用加载项列表中，但不安装加载项。 将 <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> 加载项的属性设置为 <b>True</b> 以安装加载项。 要安装可用加载宏列表中没有的加载宏，必须先使用 <b>Add</b> 方法，然后设置 <b>Installed</b> 属性。 这可以通过一个步骤完成</para>
-      <para>使用 <b>工作簿</b> () 加载项文件名 (不是标题) 返回对与加载的外接程序对应的工作簿 <paramref name="index" /> <paramref name="index" /> 的引用。 您必须使用文件名，因为加载的加载项通常不会显示在 <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> 集合中。</para>
-      <para>如果 <b>Installed</b> 属性返回 <b>True，</b>但对外接程序中函数的调用仍失败，则外接程序可能实际上未加载。 这是因为 <b>Addin</b> 对象表示加载项的存在和安装状态，但不表示加载项工作簿的实际内容。 若要保证已安装的加载项已加载，应打开加载项工作簿。</para>
+      <para>方法将加载项添加到可用加载项列表中，但不 <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" /> 安装加载项。 将 <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> 外接程序的 属性设置为 <b>True</b> 以安装外接程序。 要安装可用加载宏列表中没有的加载宏，必须先使用 <b>Add</b> 方法，然后设置 <b>Installed</b> 属性。 这可以通过一个步骤完成</para>
+      <para>使用 <b>Workbooks</b> () （其中是外接程序文件名 (而不是标题) ）可返回对与加载的外接程序对应的工作簿 <paramref name="index" /> <paramref name="index" /> 的引用。 您必须使用文件名，因为已加载的外接程序通常不会显示在集合 <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> 中。</para>
+      <para>如果 <b>Installed</b> 属性返回 <b>True</b>，但对外接程序中函数的调用仍然失败，则实际上可能不会加载外接程序。 这是因为 <b>Addin</b> 对象表示加载项的存在和安装状态，但不表示加载项工作簿的实际内容。 若要保证已安装的加载项已加载，应打开加载项工作簿。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -55,7 +55,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -205,7 +205,7 @@
       <Docs>
         <summary>返回对象的名称（以字符串表示），包括其磁盘路径。</summary>
         <value>To be added.</value>
-        <remarks><para>此属性等效于 <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" /> 该属性，后跟当前文件系统分隔符，后跟 <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" /> 该属性。</para>
+        <remarks><para>此属性与 属性等效 <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" /> ，后跟当前文件系统分隔符，后跟 <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" /> 属性。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -237,7 +237,7 @@
       <Docs>
         <summary>如果已安装加载项，则其为<b>True。</b></summary>
         <value>To be added.</value>
-        <remarks><para>将此属性设为 <b>True</b> 将安装指定加载宏，并调用 Auto_Add 函数。 将此属性设为 <b>False</b> 则移去指定加载宏，并调用 Auto_Remove 函数。</para>
+        <remarks><para>将此属性设为 <b>True</b> 将安装指定加载宏，并调用 Auto_Add 函数。将此属性设为 <b>False</b> 则移去指定加载宏，并调用 Auto_Remove 函数。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -381,7 +381,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回应用程序的完整路径，不包括应用程序的最后分隔符和名称。</summary>
+        <summary>返回应用程序的完整路径，不包括应用程序的最终分隔符和名称。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
