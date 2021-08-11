@@ -1,5 +1,5 @@
 <Type Name="ControlFormat" FullName="Microsoft.Office.Interop.Excel.ControlFormat">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d88e80486b6e3c8db83afbc148105146372d3b01" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003918" /></Metadata><TypeSignature Language="C#" Value="public interface ControlFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5354d519a8c84db7f31557e715c7aca0e92b3d07d5a7f742ac1ebeb87ad7ea2a" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508708" /></Metadata><TypeSignature Language="C#" Value="public interface ControlFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ControlFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ControlFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ControlFormat" />
@@ -22,8 +22,8 @@
   </Attributes>
   <Docs>
     <summary>包含 Microsoft Excel 控件属性。</summary>
-    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.Shape.ControlFormat" /> 该属性可返回 <b>ControlFormat</b> 对象。</para>
-      <para>如果形状不是控件 <b>，ControlFormat</b> 属性将失败，如果该控件不是列表框， <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> 则该属性将失败。</para>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.Shape.ControlFormat" /> 属性可返回 <b>ControlFormat</b> 对象。</para>
+      <para>如果该形状不是控件 <b>，ControlFormat</b> 属性将失败，如果该控件不是列表框， <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> 则该属性将失败。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -117,7 +117,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -307,7 +307,7 @@
         <param name="Index">可选 <b>对象</b>。 要设置或返回的单个文本项的索引号。 如果省略该参数，则以字符串数组的形式返回或设置整个列表。</param>
         <summary>以字符串数组的形式，返回或设置指定列表框或组合框中的文字项，也可返回或设置单个文字项。如果指定列表框中没有数据项将出错。</summary>
         <value>To be added.</value>
-        <remarks><para>设置此属性将清除该属性指定的任何 <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> 区域。</para>
+        <remarks><para>设置该属性将清除该属性指定的任何 <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> 区域。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -372,7 +372,7 @@
         <value>To be added.</value>
         <remarks><para>对该属性进行设置将破坏列表框中的所有列表项。</para>
           <para>Microsoft Excel 阅读区域中的每一单元格的内容，并将单元格值插入到列表框中。列表对该区域中单元格的修订进行追踪。</para>
-          <para>如果列表框中的列表是使用该方法创建的，则此属性返回空字符串 <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.AddItem(System.String,System.Object)" /> ("") 。</para>
+          <para>如果列表框中的列表是使用 方法创建的，则此属性返回空字符串 <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.AddItem(System.String,System.Object)" /> ("") 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -530,11 +530,11 @@
       <Docs>
         <summary>返回或设置指定列表框的选择模式。 可为以下常量之一：<b>xlNone</b>、<b>xlSimple</b> 或 <b>xlExtended</b>。</summary>
         <value>To be added.</value>
-        <remarks><para>如果为单项选择 (<b>xlNone</b>)，则每次只允许选择一项。 单击鼠标或按空格键将取消原先的选择项，并选定正在单击的项。</para>
-          <para>简单多选 (<b>xlSimple</b>) 切换列表项上的选择，用鼠标单击它或在焦点位于项目上时按空格键。 此模式适用于选取列表，其中通常选择了多个项目。</para>
+        <remarks><para>如果为单项选择 (<b>xlNone</b>)，则每次只允许选择一项。单击鼠标或按空格键将取消原先的选择项，并选定正在单击的项。</para>
+          <para>简单多选 (<b>xlSimple</b>) 切换列表项上的选择，用鼠标单击列表项或在焦点位于项目上时按空格键。 此模式适用于选取列表，其中通常选择了多个项目。</para>
           <para><b>xlExtended</b> (扩展的多选) 通常像单选列表框一样。 单击某个项目时，将取消所有其他选择。 按住 Shift 单击鼠标或按箭头键，可从当前选项开始顺序选定多个选项。 按住 Ctrl 单击选项，可在选定项集合中添加选中项。 此方式适用于允许多项选择但又不经常使用的列表。</para>
-          <para>可以使用 or 属性返回和设置单选列表框中 <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Value" /> <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListIndex" /> 的选定项。</para>
-          <para>不能使用该属性链接多选项列表 <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.LinkedCell" /> 框。</para>
+          <para>可以使用 或 <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Value" /> <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListIndex" /> 属性返回和设置单选列表框中的选定项。</para>
+          <para>不能使用 属性链接多选择列表 <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.LinkedCell" /> 框。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -645,11 +645,11 @@
         <Parameter Name="Count" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">必需 <b>整数</b>。 第一个要删除的数据项编号。 有效值为从 1 到由属性返回 (<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListCount" /> 列表中的项目) 。</param>
-        <param name="Count">可选 <b>对象</b>。 要删除的项数，从项开始 <paramref name="Index" /> 。 如果省略该参数，则只删除一个数据项。 如果超过列表中的项数，则删除从列表结尾开始的所有项目，而不会 <paramref name="Index" />  +  <paramref name="Count" /> <paramref name="Index" /> 出现错误。</param>
+        <param name="Index">必需<b>类型，类型为 Integer。</b> 第一个要删除的数据项编号。 有效值为从 1 到属性属性返回 (列表中的项目 <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListCount" />) 。</param>
+        <param name="Count">可选 <b>对象</b>。 要删除的项数，从项 开始 <paramref name="Index" /> 。 如果省略该参数，则只删除一个数据项。 如果超过列表中的项数，将删除从列表结尾到列表末尾的所有项， <paramref name="Index" />  +  <paramref name="Count" /> <paramref name="Index" /> 而不会出现错误。</param>
         <summary>从列表框或组合框中删除一个或多个数据项。</summary>
         <remarks><para>如果指定对象定义了填充区域，则该方法无效。</para>
-          <para>使用此方法 <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.RemoveAllItems" /> 从 Microsoft Excel 列表框或组合框中删除所有条目。</para>
+          <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.RemoveAllItems" /> 方法可删除列表框或组合Microsoft Excel的所有条目。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

@@ -1,5 +1,5 @@
 <Type Name="CalculatedItems" FullName="Microsoft.Office.Interop.Excel.CalculatedItems">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="803d3690114439928c366959ebf02ca6bbb754d4" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006060" /></Metadata><TypeSignature Language="C#" Value="public interface CalculatedItems : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7ab5a996cb5853521973268ecf0bc355f8a53eca63dd5681e5f31fd99ed15d89" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54506657" /></Metadata><TypeSignature Language="C#" Value="public interface CalculatedItems : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CalculatedItems implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.CalculatedItems" />
   <TypeSignature Language="VB.NET" Value="Public Interface CalculatedItems&#xA;Implements IEnumerable" />
@@ -25,10 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表指定 <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> 数据透视表中所有计算项的对象集合。</summary>
+    <summary>对象的集合 <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> ，这些对象代表指定数据透视表中的所有计算项。</summary>
     <remarks><para>例如，包含 1 月、2 月和 3 月项目的数据透视表可具有一个名为"FirstQuarter"的计算项，该项目定义为 1 月、2 月和 3 月的金额的总和。</para>
-      <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.PivotField.CalculatedItems" /> 该方法可返回 <b>CalculatedItems</b> 集合。</para>
-      <para>使用<b>CalculatedItems</b> () ，其中字段的名称或索引号，返回 CalculatedItems 集合中的单个 <paramref name="index" /> <paramref name="index" /> <b>PivotItem</b>对象。 <b></b></para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.PivotField.CalculatedItems" /> 方法可返回 <b>CalculatedItems</b> 集合。</para>
+      <para>使用<b>CalculatedItems</b> () 返回 CalculatedItems 集合中的单个 <paramref name="index" /> <paramref name="index" /> <b>PivotItem</b><b></b>对象，其中是字段的名称或索引号。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -127,8 +127,8 @@
       <Docs>
         <param name="Name">必需的 <b>字符串</b> 。 项目名称。</param>
         <param name="Formula">必需的 <b>字符串</b> 。 项的公式。</param>
-        <param name="UseStandardFormula">可选 <b>对象</b>。 为实现向上兼容，该值默认为 <b>False</b>。 <b>对于</b> 作为项目名称的任何参数中包含的字符串， (解释为已采用标准美国英语格式，而不是本地设置) 。</param>
-        <summary>新建计算项。 返回一 <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> 个对象。</summary>
+        <param name="UseStandardFormula">可选 <b>对象</b>。 为实现向上兼容，该值默认为 <b>False</b>。 <b>如果为 True，</b> 则任何参数中包含的作为项目名称 (字符串将被解释为已采用标准美国英语格式，而不是本地设置) 。</param>
+        <summary>新建计算项。 返回 <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> 一个对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -156,7 +156,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -274,10 +274,10 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">必需 <b>对象</b>。 对象的名称或索引号。</param>
+        <param name="Index">必需的 <b>对象</b>。 对象的名称或索引号。</param>
         <summary>从集合中返回一个对象。</summary>
         <returns>To be added.</returns>
-        <remarks><para>对象的文本名称是和 <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Name" /> <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Value" /> 属性的值。</para>
+        <remarks><para>对象的文本名称是 和 <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Name" /> <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Value" /> 属性的值。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

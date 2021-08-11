@@ -1,5 +1,5 @@
 <Type Name="Comment" FullName="Microsoft.Office.Interop.Excel.Comment">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="aee055e9a2656dedc02e66bab44aba17d315d4f9" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003981" /></Metadata><TypeSignature Language="C#" Value="public interface Comment" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fc70efde080ee8912ffacb83b87b055c98fd47851e01ce0e2cd98cd0c8e06c4a" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508729" /></Metadata><TypeSignature Language="C#" Value="public interface Comment" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Comment" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Comment" />
   <TypeSignature Language="VB.NET" Value="Public Interface Comment" />
@@ -22,10 +22,10 @@
   </Attributes>
   <Docs>
     <summary>代表单元格批注。</summary>
-    <remarks><para>Comment <b></b>对象是集合的 <see cref="T:Microsoft.Office.Interop.Excel.Comments" /> 一个成员。</para>
-      <para>使用 <see cref="P:Microsoft.Office.Interop.Excel.Range.Comment" /> 该属性可返回 <b>Comment</b> 对象。</para>
-      <para>使用 <b>注释</b> <paramref name="index" /> () ，其中注释 <paramref name="index" /> 编号，返回注释 集合 <b>中的单个</b> 注释。</para>
-      <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.Range.AddComment(System.Object)" /> 该方法向区域添加注释。</para>
+    <remarks><para><b>Comment</b>对象是集合的成员 <see cref="T:Microsoft.Office.Interop.Excel.Comments" /> 。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Excel.Range.Comment" /> 属性可返回 <b>Comment</b> 对象。</para>
+      <para>使用 <b>Comments</b> () ，其中 是批注编号，从 Comments 集合中返回 <paramref name="index" /> <paramref name="index" /> <b>单个</b> 批注。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.Range.AddComment(System.Object)" /> 方法向区域添加注释。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -52,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -161,9 +161,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.Comment" /> 个对象，该对象代表下一个批注。</summary>
+        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.Comment" /> 个代表下一条批注的对象。</summary>
         <returns>To be added.</returns>
-        <remarks><para>本方法仅对单张工作表有效。 对工作表中最后一条批注使用本方法可返回 <b>Null</b>（不是下一张工作表的第一条批注）。</para>
+        <remarks><para>本方法仅对单张工作表有效。对工作表中最后一条批注使用本方法可返回 <b>Null</b>（不是下一张工作表的第一条批注）。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -218,7 +218,7 @@
       <Docs>
         <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.Comment" /> 个代表上一批注的对象。</summary>
         <returns>To be added.</returns>
-        <remarks><para>本方法仅对单张工作表有效。 对工作表中第一条批注使用本方法可返回 <b>Null</b>（不是前一张工作表的最后一条批注）。</para>
+        <remarks><para>本方法仅对单张工作表有效。对工作表中第一条批注使用本方法可返回 <b>Null</b>（不是前一张工作表的最后一条批注）。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

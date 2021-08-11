@@ -1,5 +1,5 @@
 <Type Name="PivotValueCell" FullName="Microsoft.Office.Interop.Excel.PivotValueCell">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="a54dc53a361d17536e0f89e90248c89704782a9c" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49997234" /></Metadata><TypeSignature Language="C#" Value="public interface PivotValueCell" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3770d4cde42043844a8c5e786f172528f8290e8a89f572152c78eea3c5f0f67b" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54517157" /></Metadata><TypeSignature Language="C#" Value="public interface PivotValueCell" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotValueCell" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotValueCell" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotValueCell" />
@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>提供一种在 Range 对象中 (<b>单元格</b>) 单元格值的方法。</summary>
+    <summary>提供一种在 Range 对象中的实际单元格不可用时 (<b>单元格</b>) 的方法。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 个 Application 对象，该对象代表 Excel 应用程序。 只读。</summary>
+        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 个 Application 对象，该对象Excel应用程序。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -76,7 +76,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读 <b>Integer</b> (<b>int int</b> int c#) 。</summary>
+        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读<b>Integer</b>类型 (<b>整数C#) 。</b></summary>
         <value>To be added.</value>
         <remarks><para>由于对象是在 Excel 中创建的，因此此属性返回十六进制值 5843454C，它表示字符串"XCEL"。</para>
           <para> </para></remarks>
@@ -105,7 +105,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一<b> (</b><b>对象</b>在 C#) 表示指定对象的父 <see cref="T:Microsoft.Office.Interop.Excel.PivotValueCell" /> 对象。 只读。</summary>
+        <summary>返回一<b> (</b><b>对象</b>C#) 对象，该对象代表指定对象的父 <see cref="T:Microsoft.Office.Interop.Excel.PivotValueCell" /> 对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -133,7 +133,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotCell</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> 指定 <b>PivotValueCell 的位置</b>。 只读</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> 指定 <b>PivotValueCell 的位置</b>的 。 只读</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -161,9 +161,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Actions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 OLAP 操作名称对象的集合，这些对象代表可以执行的 OLAP 定义的操作。 只读</summary>
+        <summary>返回 OLAP 操作名称对象的集合，这些对象代表可以执行的 OLAP 定义操作。 只读</summary>
         <value>To be added.</value>
-        <remarks><para>服务器操作是一项可选功能，OLAP 多维数据集管理员可在使用多维数据集成员或度量作为参数进入查询以获取多维数据集中的详细信息或启动另一个应用程序时定义的一项可选功能。</para>
+        <remarks><para>服务器操作是一项可选功能，OLAP 多维数据集管理员可以在将多维数据集成员或度量用作查询的参数以在多维数据集中获取详细信息或启动另一个应用程序时定义此功能。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -188,7 +188,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>将参与聚合的 OLAP 数据源的单个行置于其自己的 Excel 工作表中。</summary>
+        <summary>将参与聚合的 OLAP 数据源的单个行置于它们自己的Excel工作表中。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,9 +215,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回位置处的值。 该值是 <b>应用 ShowAs 和其他</b> 计算之后的值。 变量可以 <b>为空</b>、 <b>数字</b>、 <b>日期</b>、 <b>字符串</b>或 <b>错误</b> 值。</summary>
+        <summary>返回位置处的值。 该值是 <b>应用 ShowAs 和其他</b> 计算后的值。 Variant 可以是<b>Empty、Number、Date、String</b>或<b>Error</b>值。 <b></b> <b></b> <b></b></summary>
         <value>To be added.</value>
-        <remarks><para>此属性的工作方式与数据透视表是否位于工作表上无关。</para>
+        <remarks><para>此属性的工作方式与数据透视表是否位于 Worksheet 上无关。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

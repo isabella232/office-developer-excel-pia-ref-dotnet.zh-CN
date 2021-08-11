@@ -1,5 +1,5 @@
 <Type Name="FillFormat" FullName="Microsoft.Office.Interop.Excel.FillFormat">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d51378ea225e992f908efc9e6730e1e261e2887c" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003589" /></Metadata><TypeSignature Language="C#" Value="public interface FillFormat : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e6941046cb274214eba59e7508ed1f1a94ed23f3fbbf93ff913470294cbfbc32" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54509226" /></Metadata><TypeSignature Language="C#" Value="public interface FillFormat : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FillFormat implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.FillFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface FillFormat&#xA;Implements _IMsoDispObj" />
@@ -24,7 +24,7 @@
   <Docs>
     <summary>代表形状的填充格式。</summary>
     <remarks><para>形状可以有单色、渐变、纹理、图案、图片或半透明填充。</para>
-      <para>使用 <see cref="P:Microsoft.Office.Interop.Excel.Shape.Fill" /> 该属性可返回 <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> 一个对象。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Excel.Shape.Fill" /> 属性可返回 <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> 对象。</para>
       <para>对象的许多属性 <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> 都是只读的。 若要设置这些属性，必须应用相应的方法。</para>
       <para> </para></remarks>
   </Docs>
@@ -55,7 +55,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,7 +86,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ColorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.ColorFormat" /> 个对象，该对象代表指定的填充背景色。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.ColorFormat" /> 一个对象，该对象代表指定的填充背景色。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -178,7 +178,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ColorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.ColorFormat" /> 个对象，该对象代表指定的前景填充或纯色。</summary>
+        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.ColorFormat" /> 个对象，该对象代表指定的前景色或纯色。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -212,7 +212,7 @@
         <summary>获取或设置指定填充格式的渐变填充的角度。</summary>
         <value>指定填充格式的渐变填充的角度。</value>
         <remarks><para>读/写。</para>
-          <para>在图表中的各种元素 (形状) 的格式，可以指定渐变填充。 例如，可以使用 数据系列格式对话框中设置为渐变填充的 柱形 图中的列的格式。 在这种情况下，该属性对应于"设置数据系列格式"对话框的"填充"类别中"角度 <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.GradientAngle" /> "框的设置。 该属性的值的有效范围是 0 到 <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.GradientAngle" /> 359.9。</para>
+          <para>在图表中的各种元素 (形状) 的格式，可以指定渐变填充。 例如，可以使用 数据系列格式对话框中设置为渐变填充的 柱形 图中的列的格式。 在这种情况下，该属性对应于"设置数据系列格式"对话框的"填充"类别中"角度"框 <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.GradientAngle" /> 的设置。 属性值的有效范围是 0 到 <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.GradientAngle" /> 359.9。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -242,7 +242,7 @@
         <summary>返回指定填充的渐变颜色类型。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Core.MsoGradientColorType" /> 可以是下列 <b>MsoGradientColorType</b> 常量之一：</para>
+            <see cref="T:Microsoft.Office.Core.MsoGradientColorType" /> 可以是下列 <b>MsoGradientColorType 常量之</b> 一：</para>
           <para>
             <b>msoGradientColorMixed</b>
           </para>
@@ -256,7 +256,7 @@
             <b>msoGradientTwoColors</b>
           </para>
           <para>
-            <b>MsoGradientColorMixed</b> 是一个返回值，它仅指明指定区域中其他状态的组合。 使用 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> ， <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" /> 或 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> 方法设置填充的渐变类型。</para>
+            <b>MsoGradientColorMixed</b> 是一个返回值，它仅指明指定区域中其他状态的组合。 使用 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> 、 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" /> 或 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> 方法可设置填充的渐变类型。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -285,7 +285,7 @@
       <Docs>
         <summary>以浮点数值的方式返回单色阴影填充的渐变程度，数值大小介于 0.0（暗）到 1.0（亮）之间。</summary>
         <value>To be added.</value>
-        <remarks><para><b>GrantantDegree</b>属性为只读。 使用 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> 该方法可设置填充的渐变程度。</para>
+        <remarks><para><b>GrantDegree</b>属性是只读的。 使用 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> 方法可设置填充的渐变程度。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -312,7 +312,7 @@
         <ReturnType>Microsoft.Office.Core.GradientStops</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回渐变填充的终点。 只读。</summary>
+        <summary>返回渐变填充的终点。只读。</summary>
         <value><see cref="T:Microsoft.Office.Core.GradientStops" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -397,7 +397,7 @@
         <summary>以整数值（1 至 4）的形式返回指定填充的底纹变量。</summary>
         <value>To be added.</value>
         <remarks><para>此属性的值对应于填充效果对话框中渐变选项卡上的渐变变量 (按从左到右和从上到下的顺序编号)。</para>
-          <para>此属性是只读的。 使用 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> or <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> 方法可设置填充的渐变变量。</para>
+          <para>此属性是只读的。 使用 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> 或 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> 方法可设置填充的渐变变量。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -426,8 +426,8 @@
         <Parameter Name="Degree" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Style">必需 <see cref="T:Microsoft.Office.Core.MsoGradientStyle" /> 。可以是下列<b>MsoGradientStyle</b>常量之一<b>：msoGradientDiagonalDown</b><b>msoGradientDiagonalUp</b><b>msoGradientFromCenter msoGradientFromCorner</b><b>msoGradientFromTitle</b><b>msoGradientHorizontal</b><b>msoGradientMixed</b><b>msoGradientVertical</b> <b></b></param>
-        <param name="Variant">必需 <b>整数</b>。 渐变变量。 取值范围为 1 到 4，分别与“填充效果”对话框中“渐变”选项卡上的四个变量相对应。 如果 <paramref name="GradientStyle" /> 为 <b>msoGradientFromCenter，</b>则 <paramref name="Variant" /> 参数只能是 1 或 2。</param>
+        <param name="Style">必需 <see cref="T:Microsoft.Office.Core.MsoGradientStyle" /> 。可以是下列<b>MsoGradientStyle</b>常量之一<b>：msoGradientDiagonalDown</b><b>msoGradientDiagonalUp</b><b>msoGradientFromCenter msoGradientFromCorner</b><b></b><b>msoGradientFromTitle</b><b>msoGradientHorizontal</b><b>msoGradientMixed</b><b>msoGradientVertical</b></param>
+        <param name="Variant">必需<b>类型，类型为 Integer。</b> 渐变变量。 取值范围为 1 到 4，分别与“填充效果”对话框中“渐变”选项卡上的四个变量相对应。 如果 <paramref name="GradientStyle" /> 为 <b>msoGradientFromCenter</b>， <paramref name="Variant" /> 则参数只能是 1 或 2。</param>
         <param name="Degree">必需 <b>单个</b>。 渐变程度。 可以为 0.0（暗）到 1.0（亮）之间的值。</param>
         <summary>将指定填充设置为单色渐变。</summary>
         <remarks>To be added.</remarks>
@@ -487,7 +487,7 @@
         <summary>返回或设置填充图案。</summary>
         <value>To be added.</value>
         <remarks><para><b>Pattern</b>属性可以是常量 <see cref="T:Microsoft.Office.Core.MsoPatternType" /> 之一。</para>
-          <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.Patterned(Microsoft.Office.Core.MsoPatternType)" /> 该方法可设置填充的图案类型。</para>
+          <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.Patterned(Microsoft.Office.Core.MsoPatternType)" /> 方法可设置填充的图案类型。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -545,7 +545,7 @@
         <summary>获取一个对象，该对象代表指定填充格式的图片或纹理填充。</summary>
         <value>代表指定填充格式的图片或纹理填充。</value>
         <remarks><para>只读。</para>
-          <para>在图表中的各种元素 (形状) 的格式，可以指定图片或纹理填充。 例如，可以使用 数据系列格式对话框来设置为图片或纹理填充的 柱形图中的列的格式。 在这种情况下，该属性返回一个集合，该集合与"设置数据系列格式"对话框的"填充"类别中与图片或纹理填充选项相关联的 <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.PictureEffects" /> <see cref="T:Microsoft.Office.Core.PictureEffects" /> 设置相对应。</para>
+          <para>在图表中的各种元素 (形状) 的格式，可以指定图片或纹理填充。 例如，可以使用 数据系列格式对话框来设置为图片或纹理填充的 柱形图中的列的格式。 在这种情况下，该属性返回与"设置数据系列格式"对话框的"填充"类别中的"图片或纹理填充"选项关联的设置 <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.PictureEffects" /> <see cref="T:Microsoft.Office.Core.PictureEffects" /> 相对应的集合。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -574,8 +574,8 @@
         <Parameter Name="PresetGradientType" Type="Microsoft.Office.Core.MsoPresetGradientType" />
       </Parameters>
       <Docs>
-        <param name="Style">必需 <see cref="T:Microsoft.Office.Core.MsoGradientStyle" /> 。可以是下列<b>MsoGradientStyle</b>常量之一<b>：msoGradientDiagonalDown</b><b>msoGradientDiagonalUp</b><b>msoGradientFromCenter msoGradientFromCorner</b><b>msoGradientFromTitle</b><b>msoGradientHorizontal</b><b>msoGradientMixed</b><b>msoGradientVertical</b> <b></b></param>
-        <param name="Variant">必需 <b>整数</b>。 渐变变量。 取值范围为 1 到 4，分别与“填充效果”对话框中“渐变”选项卡上的四个变量相对应。 如果 <paramref name="GradientStyle" /> 为 <b>msoGradientFromCenter，</b>则 <paramref name="Variant" /> 参数只能是 1 或 2。</param>
+        <param name="Style">必需 <see cref="T:Microsoft.Office.Core.MsoGradientStyle" /> 。可以是下列<b>MsoGradientStyle</b>常量之一<b>：msoGradientDiagonalDown</b><b>msoGradientDiagonalUp</b><b>msoGradientFromCenter msoGradientFromCorner</b><b></b><b>msoGradientFromTitle</b><b>msoGradientHorizontal</b><b>msoGradientMixed</b><b>msoGradientVertical</b></param>
+        <param name="Variant">必需<b>类型，类型为 Integer。</b> 渐变变量。 取值范围为 1 到 4，分别与“填充效果”对话框中“渐变”选项卡上的四个变量相对应。 如果 <paramref name="GradientStyle" /> 为 <b>msoGradientFromCenter</b>， <paramref name="Variant" /> 则参数只能是 1 或 2。</param>
         <param name="PresetGradientType">必需 <see cref="T:Microsoft.Office.Core.MsoPresetGradientType" /> 。</param>
         <summary>将指定填充设置为一个预设的渐变。</summary>
         <remarks>To be added.</remarks>
@@ -607,7 +607,7 @@
         <summary>返回指定填充的预设渐变类型。</summary>
         <value>To be added.</value>
         <remarks><para><b>PresetGradiantType</b>属性可以是常量 <see cref="T:Microsoft.Office.Core.MsoPresetGradientType" /> 之一。</para>
-          <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" /> 该方法可设置填充的预设渐变类型。</para>
+          <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" /> 方法可设置填充的预设渐变类型。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -637,7 +637,7 @@
         <summary>返回指定填充的预设纹理。</summary>
         <value>To be added.</value>
         <remarks><para><b>PresetTexture</b>属性可以是常量 <see cref="T:Microsoft.Office.Core.MsoPresetTexture" /> 之一。</para>
-          <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.PresetTextured(Microsoft.Office.Core.MsoPresetTexture)" /> 该方法可设置填充的预设纹理。</para>
+          <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.PresetTextured(Microsoft.Office.Core.MsoPresetTexture)" /> 方法可设置填充的预设纹理。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -843,7 +843,7 @@
       <Docs>
         <summary>返回指定填充的自定义纹理文件的名称。</summary>
         <value>To be added.</value>
-        <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserPicture(System.String)" /> or <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserTextured(System.String)" /> 方法设置填充的纹理文件。</para>
+        <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserPicture(System.String)" /> 或 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserTextured(System.String)" /> 方法设置填充的纹理文件。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -873,7 +873,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定填充的偏移 X 值。 读/写 <b>单个</b> 。</summary>
+        <summary>返回指定填充的偏移 X 值。可读/写 <b>Single</b> 类型。</summary>
         <value><b>Single</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -904,7 +904,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定填充的偏移 Y 值。 读/写 <b>单个</b> 。</summary>
+        <summary>返回指定填充的偏移 Y 值。可读/写 <b>Single</b> 类型。</summary>
         <value><b>Single</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -993,7 +993,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTextureType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定填充的纹理类型。 只读。</summary>
+        <summary>返回指定填充的纹理类型。只读。</summary>
         <value><see cref="T:Microsoft.Office.Core.MsoTextureType" /></value>
         <remarks><para>
             <see cref="T:Microsoft.Office.Core.MsoTextureType" /> 可以是下列 <b>MsoTextureType</b> 常量之一：</para>
@@ -1006,7 +1006,7 @@
           <para>
             <see cref="F:Microsoft.Office.Core.MsoTextureType.msoTextureUserDefined" />
           </para>
-          <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserTextured(System.String)" /> 该方法可设置填充的纹理类型。</para>
+          <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserTextured(System.String)" /> 方法可设置填充的纹理类型。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1036,7 +1036,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定填充的纹理垂直缩放。 读/写 <b>单个</b> 。</summary>
+        <summary>返回指定填充的纹理垂直缩放。可读/写 <b>Single</b> 类型。</summary>
         <value><b>Single</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1097,8 +1097,8 @@
         <Parameter Name="Variant" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Style">必需 <see cref="T:Microsoft.Office.Core.MsoGradientStyle" /> 。可以是下列<b>MsoGradientStyle</b>常量之一<b>：msoGradientDiagonalDown</b><b>msoGradientDiagonalUp</b><b>msoGradientFromCenter msoGradientFromCorner</b><b>msoGradientFromTitle</b><b>msoGradientHorizontal</b><b>msoGradientMixed</b><b>msoGradientVertical</b> <b></b></param>
-        <param name="Variant">必需 <b>整数</b>。 渐变变量。 取值范围为 1 到 4，分别与“填充效果”对话框中“渐变”选项卡上的四个变量相对应。 如果 <paramref name="Style" /> 为 <b>msoGradientFromCenter，</b>则 <paramref name="Variant" /> 参数只能是 1 或 2。</param>
+        <param name="Style">必需 <see cref="T:Microsoft.Office.Core.MsoGradientStyle" /> 。可以是下列<b>MsoGradientStyle</b>常量之一<b>：msoGradientDiagonalDown</b><b>msoGradientDiagonalUp</b><b>msoGradientFromCenter msoGradientFromCorner</b><b></b><b>msoGradientFromTitle</b><b>msoGradientHorizontal</b><b>msoGradientMixed</b><b>msoGradientVertical</b></param>
+        <param name="Variant">必需<b>类型，类型为 Integer。</b> 渐变变量。 取值范围为 1 到 4，分别与“填充效果”对话框中“渐变”选项卡上的四个变量相对应。 如果 <paramref name="Style" /> 为 <b>msoGradientFromCenter</b>， <paramref name="Variant" /> 则参数只能是 1 或 2。</param>
         <summary>将指定填充设置为双色渐变。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1210,7 +1210,7 @@
       <Docs>
         <param name="TextureFile">必需的 <b>字符串</b> 。 图片文件名。</param>
         <summary>用一张图像的平铺形式填充指定形状。</summary>
-        <remarks><para>如果要用一张大图像填充形状，请使用 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserPicture(System.String)" /> 该方法。</para>
+        <remarks><para>如果要用一张大图像填充形状，请使用 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserPicture(System.String)" /> 方法。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1243,7 +1243,7 @@
         <summary>决定对象是否可见。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Core.MsoTriState" /> 可以是下列 <b>MsoTriState</b> 常量之一：</para>
+            <see cref="T:Microsoft.Office.Core.MsoTriState" /> 可以是下列 <b>MsoTriState 常量之</b> 一：</para>
           <para>
             <b>msoCTrue</b>
           </para>

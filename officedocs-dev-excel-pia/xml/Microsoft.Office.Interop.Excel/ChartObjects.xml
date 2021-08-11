@@ -1,5 +1,5 @@
 <Type Name="ChartObjects" FullName="Microsoft.Office.Interop.Excel.ChartObjects">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="2c2b455b605d204bbd8ef7f4faf0116be7341efd" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50004016" /></Metadata><TypeSignature Language="C#" Value="public interface ChartObjects : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a900d6d073f43a6c95f5ed18210ecc4933cd2bd3247b286873e08d4945f0bc15" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508848" /></Metadata><TypeSignature Language="C#" Value="public interface ChartObjects : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartObjects implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ChartObjects" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartObjects&#xA;Implements IEnumerable" />
@@ -25,10 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>指定图表工作表、对话框工作表或工作表上所有 <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> 对象的集合。</summary>
+    <summary>指定图表工作表、对话框工作表或工作表上 <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> 所有对象的集合。</summary>
     <remarks><para>每个 <b>ChartObject</b> 对象都代表一个嵌入图表。 <b>ChartObject</b>对象充当对象的 <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> 容器。 <b>ChartObject</b> 对象的属性和方法控制工作表上嵌入图表的外观和大小。</para>
-      <para>使用 <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.ChartObjects(System.Object)" /> 该方法可返回 <b>ChartObjects</b> 集合。 使用 <see cref="M:Microsoft.Office.Interop.Excel.ChartObjects.Add(System.Double,System.Double,System.Double,System.Double)" /> 该方法可新建一个空的嵌入图表，并将其添加到集合中。 使用 <see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 该方法可添加数据和设置新图表的格式。</para>
-      <para>使用 <b>ChartObjects</b> () ，其中嵌入的图表索引号或名称，返回 <paramref name="index" /> 单个 <paramref name="index" /> <b>ChartObject</b> 对象。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.ChartObjects(System.Object)" /> 方法可返回 <b>ChartObjects</b> 集合。 使用 <see cref="M:Microsoft.Office.Interop.Excel.ChartObjects.Add(System.Double,System.Double,System.Double,System.Double)" /> 方法创建一个新的空嵌入式图表，并将其添加到集合中。 使用 <see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 方法可添加数据和设置新图表的格式。</para>
+      <para>使用 <b>ChartObjects</b> () ChartObject 对象返回单个 ChartObject 对象，其中 是嵌入图表的 <paramref name="index" /> <paramref name="index" /> <b>索引号或</b> 名称。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -315,11 +315,11 @@
         <Parameter Name="Height" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="Left">必需 <b>Double</b>。 以磅为单位给出新对象的初始坐标，该坐标是相对于工作表上单元格 A1 的左上角或图表的左上角的坐标。</param>
-        <param name="Top">必需 <b>Double</b>。 以磅为单位给出新对象的初始坐标，该坐标是相对于工作表上单元格 A1 的左上角或图表的左上角的坐标。</param>
-        <param name="Width">必需 <b>Double</b>。 新对象的初始大小（以点表示）。</param>
-        <param name="Height">必需 <b>Double</b>。 新对象的初始大小（以点表示）。</param>
-        <summary>创建新的嵌入式图表。 返回一 <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> 个对象。</summary>
+        <param name="Left">必需 <b>双精度型</b>。 以磅为单位给出新对象的初始坐标，该坐标是相对于工作表上单元格 A1 的左上角或图表的左上角的坐标。</param>
+        <param name="Top">必需 <b>双精度型</b>。 以磅为单位给出新对象的初始坐标，该坐标是相对于工作表上单元格 A1 的左上角或图表的左上角的坐标。</param>
+        <param name="Width">必需 <b>双精度型</b>。 新对象的初始大小（以点表示）。</param>
+        <param name="Height">必需 <b>双精度型</b>。 新对象的初始大小（以点表示）。</param>
+        <summary>创建新的嵌入式图表。 返回 <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> 一个对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -347,7 +347,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -378,7 +378,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 一个对象，该对象表示对象的边框。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 一个对象，该对象代表对象的边框。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -787,7 +787,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">必需 <b>对象</b>。 对象的名称或索引号。</param>
+        <param name="Index">必需的 <b>对象</b>。 对象的名称或索引号。</param>
         <summary>从集合中返回一个对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -819,9 +819,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>从对象左边缘到工作表上 A (列左边缘的距离) 图表区左边缘 (图表区域) 。</summary>
+        <summary>从对象左边缘到工作表上 A (列左边缘的距离) 或图表区左边缘 (图表) 。</summary>
         <value>To be added.</value>
-        <remarks><para>如果窗口最大化，则此属性返回一个负数，该负数根据窗口边框的宽度而异。 如果将此属性设置为 0 (为零) 则会使窗口在应用程序窗口最大化时略小一点。 换句话说，如果此属性为 0 (为零) ，Microsoft Excel 主窗口的左边框将在屏幕上几乎不可见。</para>
+        <remarks><para>如果窗口最大化，则此属性返回一个负数，该负数因窗口边框的宽度而异。 如果将此属性设置为 0 (零) 则会使窗口在应用程序窗口最大化时略小一些。 换句话说，如果此属性为 0 (零) ，则主 Microsoft Excel 窗口的左边框将在屏幕上几乎不可见。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -851,7 +851,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果对象被锁定，则其为<b>True;</b><b>假</b>如果工作表受保护时可以修改对象。</summary>
+        <summary><b>如此</b> 如果对象被锁定; <b>假</b> 如果工作表受保护时可以修改对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1009,7 +1009,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果不能通过用户界面对嵌入图表框架执行移动、调整大小或删除操作，则该属性值为 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
+        <summary>如果不能通过用户界面对嵌入图表框架执行移动、调整大小或删除操作，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value><b>Boolean</b></value>
         <remarks><para>将此属性设置为 <b>True</b>，嵌入式图表框还是可以通过对象模型进行修改。</para>
           <para> </para></remarks>
@@ -1169,7 +1169,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ShapeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> 个对象，该对象表示指定的一个或多个对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> 一个对象，该对象表示指定的一个或多个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1200,7 +1200,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>从对象上边缘到工作表上第 1 (行顶边) 或图表区顶部的 (图表区域) 。</summary>
+        <summary>从对象上边缘到工作表上第 1 (行顶边的距离) 或图表区顶部的 (图表) 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

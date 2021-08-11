@@ -1,5 +1,5 @@
 <Type Name="TextEffectFormat" FullName="Microsoft.Office.Interop.Excel.TextEffectFormat">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="fbb84779b82f0d04327c445fb2dede8ff19b5468" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009651" /></Metadata><TypeSignature Language="C#" Value="public interface TextEffectFormat : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e8f3ae739158fd1702c8341c6ed61e782925c4b99779e9b46e91a0ada3d11532" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54517577" /></Metadata><TypeSignature Language="C#" Value="public interface TextEffectFormat : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextEffectFormat implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TextEffectFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextEffectFormat&#xA;Implements _IMsoDispObj" />
@@ -83,7 +83,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -428,8 +428,8 @@
       <Docs>
         <summary>如果指定艺术字对象中的字符相对于该对象旋转了 90 度，则该值为 <b>True</b>。 如果指定艺术字对象中的字符相对于该对象保持原有方向，则该值为 <b>False</b>。</summary>
         <value>To be added.</value>
-        <remarks><para>如果艺术字横排文本中，将 <b>RotatedChars</b> 属性设置为 <b>msoTrue</b> 旋转字符逆时针旋转 90 度。 如果艺术字竖排文字，将 <b>RotatedChars</b> 属性设置为 <b>msoFalse</b> 旋转字符顺时针旋转 90 度。 使用 <see cref="M:Microsoft.Office.Interop.Excel.TextEffectFormat.ToggleVerticalText" /> 该方法在水平和垂直文本流之间切换。</para>
-          <para>对象 <see cref="M:Microsoft.Office.Interop.Excel.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" /> 的方法 <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> 和 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 属性以及<b>对象的 RotatedChars</b>属性和方法都影响代表艺术字的 Shape 对象中文本流的字符方向 <see cref="M:Microsoft.Office.Interop.Excel.TextEffectFormat.ToggleVerticalText" /> <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> 和方向<b></b>。 您可能需要多次试验，才能找出如何组合这些属性和方法，从而得到所需的效果。</para>
+        <remarks><para>如果艺术字横排文本中，将 <b>RotatedChars</b> 属性设置为 <b>msoTrue</b> 旋转字符逆时针旋转 90 度。 如果艺术字竖排文字，将 <b>RotatedChars</b> 属性设置为 <b>msoFalse</b> 旋转字符顺时针旋转 90 度。 使用 <see cref="M:Microsoft.Office.Interop.Excel.TextEffectFormat.ToggleVerticalText" /> 方法在水平和垂直文字排列之间切换。</para>
+          <para>对象的 方法和属性以及 <see cref="M:Microsoft.Office.Interop.Excel.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" /> <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> 对象的 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> <b>RotatedChars</b>属性和方法都会影响代表艺术字的 Shape 对象中的字符方向和文字 <see cref="M:Microsoft.Office.Interop.Excel.TextEffectFormat.ToggleVerticalText" /> <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> 流动方向<b></b>。 您可能需要多次试验，才能找出如何组合这些属性和方法，从而得到所需的效果。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -486,8 +486,8 @@
       <Parameters />
       <Docs>
         <summary>将指定的艺术字中的文字排列从水平切换为垂直，反之亦然。</summary>
-        <remarks><para>使用<b>ToggleVerticalText</b>方法交换代表艺术字的 Shape 对象的值和属性值，并保留 <see cref="P:Microsoft.Office.Interop.Excel.Shape.Width" /> <see cref="P:Microsoft.Office.Interop.Excel.Shape.Height" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.Shape.Left" /> 和 <see cref="P:Microsoft.Office.Interop.Excel.Shape.Top" /> 属性不变。</para>
-          <para>对象的方法和属性以及该对象的属性和 <see cref="M:Microsoft.Office.Interop.Excel.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" /> <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> <see cref="P:Microsoft.Office.Interop.Excel.TextEffectFormat.RotatedChars" /> <b>ToggleVerticalText</b>方法 <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> <b></b>都影响代表艺术字的 Shape 对象中的字符方向和文本流方向。 您可能需要多次试验，才能找出如何组合这些属性和方法，从而得到所需的效果。</para>
+        <remarks><para>使用<b>ToggleVerticalText</b>方法可交换代表艺术字的 Shape 对象的 和 属性的值，并保留 <see cref="P:Microsoft.Office.Interop.Excel.Shape.Width" /> <see cref="P:Microsoft.Office.Interop.Excel.Shape.Height" /> 和<b></b> <see cref="P:Microsoft.Office.Interop.Excel.Shape.Left" /> <see cref="P:Microsoft.Office.Interop.Excel.Shape.Top" /> 属性不变。</para>
+          <para>对象的方法和属性以及对象的 属性和 <see cref="M:Microsoft.Office.Interop.Excel.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" /> <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> <see cref="P:Microsoft.Office.Interop.Excel.TextEffectFormat.RotatedChars" /> <b>ToggleVerticalText</b>方法都会影响代表 <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> <b></b>艺术字的 Shape 对象中的字符方向和文字流动方向。 您可能需要多次试验，才能找出如何组合这些属性和方法，从而得到所需的效果。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -517,9 +517,9 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定艺术字中每个字符的水平间距相对于字符宽度的比例。 可以是从 0 到 5 (0) 的值。</summary>
+        <summary>返回或设置指定艺术字中每个字符的水平间距相对于字符宽度的比例。 可以是 0 到 5 (0) 5。</summary>
         <value>To be added.</value>
-        <remarks><para>此属性的大值指定字符之间的足够空间;值小于 1 会产生字符重叠。</para>
+        <remarks><para>此属性的大型值指定字符之间的足够空间;小于 1 的值会产生字符重叠。</para>
           <para>下表提供在用户界面中可用的设置 <b>跟踪</b> 属性对应的值。</para>
           <list type="table">
             <item>

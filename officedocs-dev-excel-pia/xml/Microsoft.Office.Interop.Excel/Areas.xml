@@ -1,5 +1,5 @@
 <Type Name="Areas" FullName="Microsoft.Office.Interop.Excel.Areas">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="3d66092e7ce8a02412645f2fcf1c40d1d7d63d9e" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006256" /></Metadata><TypeSignature Language="C#" Value="public interface Areas : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c5ab8827592d9d74239b97b8ff0a6caefd9705fb1a777535ffeab95e7803a519" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54506727" /></Metadata><TypeSignature Language="C#" Value="public interface Areas : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Areas implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Areas" />
   <TypeSignature Language="VB.NET" Value="Public Interface Areas&#xA;Implements IEnumerable" />
@@ -27,8 +27,8 @@
   <Docs>
     <summary>由选定区域内的多个子区域或连续单元格块组成的集合。</summary>
     <remarks><para>没有单数 <b>Area</b> 对象;Areas 集合的 <b>单个</b> 成员是 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 对象。 在 <b>Areas</b> 集合中，选定区域内每个离散的连续单元格区域都有一个 <b>Range</b> 对象。 如果选定区域内只有一个子区域，则 <b>Areas</b> 集合包含一个与该选定区域对应的 <b>Range</b> 对象。</para>
-      <para>使用 <see cref="P:Microsoft.Office.Interop.Excel.Range.Areas" /> 该属性可返回 <b>Areas</b> 集合。</para>
-      <para>使用<b>Areas</b> <paramref name="index" /> () ，其中区域索引号，返回集合中的单个 <paramref name="index" /> Range 对象。 <b></b> 该索引号对应选定这些区域的顺序。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Excel.Range.Areas" /> 属性可返回 <b>Areas</b> 集合。</para>
+      <para>使用 <b>Areas</b> <paramref name="index" /> () ，其中 <paramref name="index" /> 是区域索引号，从集合中返回单个 <b>Range</b> 对象。 该索引号对应选定这些区域的顺序。</para>
       <para>某些操作不能在选定区域内的多个子区域上同时执行；必须在选定区域内的单个子区域上循环，对每个单独的子区域分别执行该操作。</para>
       <para> </para></remarks>
   </Docs>
@@ -91,7 +91,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -212,7 +212,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">必需 <b>整数</b>。 对象的索引号。</param>
+        <param name="Index">必需<b>类型，类型为 Integer。</b> 对象的索引号。</param>
         <summary>从集合中返回一个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

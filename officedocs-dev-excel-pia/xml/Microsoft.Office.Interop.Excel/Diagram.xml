@@ -1,5 +1,5 @@
 <Type Name="Diagram" FullName="Microsoft.Office.Interop.Excel.Diagram">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="9a421c6b190452977e49a87c2df60fb4cf93d756" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005626" /></Metadata><TypeSignature Language="C#" Value="public interface Diagram" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8f23e88bc435fafb03c88a3768f511496656666559e1cc38d9b9bfaee6a4d380" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54509478" /></Metadata><TypeSignature Language="C#" Value="public interface Diagram" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Diagram" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Diagram" />
   <TypeSignature Language="VB.NET" Value="Public Interface Diagram" />
@@ -22,11 +22,11 @@
   </Attributes>
   <Docs>
     <summary>表示图表。</summary>
-    <remarks><para>使用 <b>对象</b> 或集合的 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Diagram 属性 <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> 返回一个 <b>Diagram</b> 对象。</para>
-      <para>您还可以使用该方法将当前图表转换为其他 <see cref="M:Microsoft.Office.Interop.Excel.Diagram.Convert(Microsoft.Office.Core.MsoDiagramType)" /> 图表。</para>
+    <remarks><para>使用 <b>对象</b> 或集合的 Diagram <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 属性 <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> 可返回一个 <b>Diagram</b> 对象。</para>
+      <para>您还可以使用 方法将当前图表转换为其他 <see cref="M:Microsoft.Office.Interop.Excel.Diagram.Convert(Microsoft.Office.Core.MsoDiagramType)" /> 图表。</para>
       <para>
-        <b>注意</b>   如果当前图表是组织结构图 (<b>msoDiagramOrgChart) </b> 将发生运行时错误。</para>
-      <para>使用 Diagram 对象时，有几种类型的 <b>图表可供选择</b> 。 参考该方法 <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddDiagram(Microsoft.Office.Core.MsoDiagramType,System.Single,System.Single,System.Single,System.Single)" /> 以查看可用图表类型的列表。</para>
+        <b>注意</b>   如果当前图表是组织图表 (<b>msoDiagramOrgChart</b>) 将发生运行时错误。</para>
+      <para>使用 Diagram 对象时，有若干类型的 <b>图表可供选择</b> 。 请参阅 <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddDiagram(Microsoft.Office.Core.MsoDiagramType,System.Single,System.Single,System.Single,System.Single)" /> 方法以查看可用图表类型的列表。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -53,7 +53,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,8 +86,8 @@
       <Docs>
         <summary>设置或返回一个常量，该常量指示图表的自动格式设置状态。</summary>
         <value>To be added.</value>
-        <remarks><para>将 <b>AutoFormat</b> 设置为 <b>msoFalse</b> 会禁用图表的自动格式设置。 将 <b>AutoFormat</b> 设置为 <b>msoTrue</b> 可启用图表的自动格式设置。</para>
-          <para>以下 <b>MsoTriState</b> 常量不应用于此属性： <b>msoCTrue</b>， <b>msoTriStateMixed</b>， <b>msoTriStateToggle</b>。</para>
+        <remarks><para>将 <b>AutoFormat 设置为</b> <b>msoFalse</b> 会禁用图表的自动格式设置。 将 <b>AutoFormat</b> 设置为 <b>msoTrue</b> 可启用图表的自动格式设置。</para>
+          <para>以下 <b>MsoTriState</b> 常量不适用于此属性： <b>msoCTrue</b>、 <b>msoTriStateMixed</b>、 <b>msoTriStateToggle</b>。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -120,7 +120,7 @@
         <summary>返回或设置一个常量，该常量确定节点和连接线在图表中的自动定位。</summary>
         <value>To be added.</value>
         <remarks><para>将 <b>AutoLayout</b> 设置为 <b>msoFalse</b> 会禁用图表的自动格式设置。 将 <b>AutoLayout</b> 设置为 <b>msoTrue</b> 可启用图表的自动格式设置。</para>
-          <para>以下 <b>MsoTriState</b> 常量不应用于此属性： <b>msoCTrue</b>， <b>msoTriStateMixed</b>， <b>msoTriStateToggle</b>。</para>
+          <para>以下 <b>MsoTriState</b> 常量不适用于此属性： <b>msoCTrue</b>、 <b>msoTriStateMixed</b>、 <b>msoTriStateToggle</b>。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -147,7 +147,7 @@
         <Parameter Name="Type" Type="Microsoft.Office.Core.MsoDiagramType" />
       </Parameters>
       <Docs>
-        <param name="Type">必需 <see cref="T:Microsoft.Office.Core.MsoDiagramType" /> 。 要转换为的图表的类型。<b>MsoDiagramType</b> 可以是以下常量之一。 <b>msoDiagramCycle</b> 具有连续周期图表类型的流程图。<b>msoDiagramMixed</b> 混合图表类型。<b>msoDiagramOrgChart</b> 分层关系图表类型。<b>msoDiagramPyramid</b> 基于基础的关系图表类型。<b>msoDiagramRadial</b> 显示核心元素关系的图表类型。<b>msoDiagramTarget</b> 显示目标步骤的图表类型。<b>msoDiagramVenn</b> 显示元素之间重叠的区域的图表类型。</param>
+        <param name="Type">必需 <see cref="T:Microsoft.Office.Core.MsoDiagramType" /> 。 要转换为的图表的类型。<b>MsoDiagramType</b> 可以是其中一个常量。 <b>msoDiagramCycle</b> 具有连续周期图表类型的流程图。<b>msoDiagramMixed</b> 混合图表类型。<b>msoDiagramOrgChart</b> 分层关系图表类型。<b>msoDiagramPyramid</b> 基于基础的关系图表类型。<b>msoDiagramRadial</b> 显示核心元素关系的图表类型。<b>msoDiagramTarget</b> 显示目标的步骤的图表类型。<b>msoDiagramVenn</b> 显示元素之间重叠的区域的图表类型。</param>
         <summary>将当前图表转换为其他图表。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -204,7 +204,7 @@
       <Parameters />
       <Docs>
         <summary>调整图表中节点中的文本大小，以适应节点的边界。</summary>
-        <remarks><para>此方法仅在 PowerPoint 2003 Microsoft Office中运行。</para>
+        <remarks><para>此方法仅在 Microsoft Office PowerPoint 2003 中工作。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -292,8 +292,8 @@
       <Docs>
         <summary>反转图表中的节点。</summary>
         <value>To be added.</value>
-        <remarks><para>将 <b>Reverse</b> <b>设置为 msoFalse</b> 会保留图表节点。 将 <b>Reverse</b> <b>设置为 msoTrue</b> 会反转图表中的节点。</para>
-          <para>以下 <b>MsoTriState</b> 常量不应用于此属性： <b>msoCTrue</b>， <b>msoTriStateMixed</b>， <b>msoTriStateToggle</b>。</para>
+        <remarks><para>将 <b>Reverse</b> 设置为 <b>msoFalse</b> 会保留图表节点。 将 <b>Reverse</b> 设置为 <b>msoTrue</b> 会反转图表中的节点。</para>
+          <para>以下 <b>MsoTriState</b> 常量不适用于此属性： <b>msoCTrue</b>、 <b>msoTriStateMixed</b>、 <b>msoTriStateToggle</b>。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -323,7 +323,7 @@
         <summary>返回或设置图表类型。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Core.MsoDiagramType" /> 可以是以下 <b>MsoDiagramType</b> 常量之一：</para>
+            <see cref="T:Microsoft.Office.Core.MsoDiagramType" /> 可以是以下 <b>MsoDiagramType 常量之</b> 一：</para>
           <para>
             <b>msoDiagramCycle</b>
           </para>

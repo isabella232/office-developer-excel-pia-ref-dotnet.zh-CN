@@ -1,5 +1,5 @@
 <Type Name="Pane" FullName="Microsoft.Office.Interop.Excel.Pane">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="88411cce6007dd3bdb19bfe1fbfa29a798d89eed" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011086" /></Metadata><TypeSignature Language="C#" Value="public interface Pane" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="624803d39d25bb9e8c2bcfe4a75685d59460885911756b4bee01c5070511f71e" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54517605" /></Metadata><TypeSignature Language="C#" Value="public interface Pane" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Pane" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Pane" />
   <TypeSignature Language="VB.NET" Value="Public Interface Pane" />
@@ -23,8 +23,8 @@
   <Docs>
     <summary>表示窗口的窗格。</summary>
     <remarks><para>
-        <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> 对象仅存在于工作表和 Microsoft Excel 4.0 宏工作表中。 <see cref="T:Microsoft.Office.Interop.Excel.Pane" />对象是集合的 <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> 一个成员。 该 <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> 集合包含单个窗口中显示的所有窗格。</para>
-      <para>使用 <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> <paramref name="index" /> () ， <paramref name="index" /> 其中窗格索引号，返回单个 <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> 对象。</para>
+        <see cref="T:Microsoft.Office.Interop.Excel.Pane" />对象仅对工作表和 4.0 Microsoft Excel对象存在。 <see cref="T:Microsoft.Office.Interop.Excel.Pane" />对象是集合的成员 <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> 。 该 <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> 集合包含单个窗口中显示的所有窗格。</para>
+      <para>使用 () 返回单个对象，其中 是窗格 <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> <paramref name="index" /> <paramref name="index" /> 索引 <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> 号。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -78,7 +78,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -172,8 +172,8 @@
         <param name="ToLeft">可选 <b>对象</b>。 向左滚动内容的页数。</param>
         <summary>按页滚动窗口内容。</summary>
         <returns>To be added.</returns>
-        <remarks><para>如果同时指定了这两个参数，窗口的内容将滚动两个参数 <paramref name="Down" /> <paramref name="Up" /> 的差。 例如，如果 <paramref name="Down" /> 为 3 且 <paramref name="Up" /> 为 6，则内容向上滚动三页。</para>
-          <para>如果同时指定了这两个参数，窗口的内容将滚动两个参数 <paramref name="ToLeft" /> <paramref name="ToRight" /> 的差。 例如，如果 <paramref name="ToLeft" /> 为 3 且 <paramref name="ToRight" /> 为 6，内容将滚动到右侧三页。</para>
+        <remarks><para>如果指定了 和 ，窗口的内容将滚动这 <paramref name="Down" /> <paramref name="Up" /> 两个参数的差。 例如，如果 <paramref name="Down" /> 为 3 且 <paramref name="Up" /> 为 6，则内容向上滚动三页。</para>
+          <para>如果指定了 和 ，窗口的内容将滚动这 <paramref name="ToLeft" /> <paramref name="ToRight" /> 两个参数的差。 例如，如果 <paramref name="ToLeft" /> 为 3 且 <paramref name="ToRight" /> 为 6，则内容滚动到右侧三页。</para>
           <para>以上任何参数均可为负数。</para>
           <para> </para></remarks>
       </Docs>
@@ -290,7 +290,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置窗格中最左边的列的编号。</summary>
+        <summary>返回或设置窗格中最左侧的列数。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -321,13 +321,13 @@
         <Parameter Name="Start" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Left">必需 <b>整数</b>。 矩形的水平位置 (从) 左边缘开始以点表示。</param>
-        <param name="Top">必需 <b>整数</b>。 矩形的垂直位置 (从窗格) 以点表示。</param>
-        <param name="Width">必需 <b>整数</b>。 矩形的宽度（以点表示）。</param>
-        <param name="Height">必需 <b>整数</b>。 矩形的高度（以点表示）。</param>
-        <param name="Start">可选 <b>对象</b>。 <b>真</b> 使矩形的左上角显示在窗格的左上角。 <b>假</b> 使矩形的右下角出现在窗格的右下角。 默认值为 <b>True</b>。</param>
+        <param name="Left">必需<b>类型，类型为 Integer。</b> 矩形的水平位置 (窗格左) 以点表示。</param>
+        <param name="Top">必需<b>类型，类型为 Integer。</b> 矩形的垂直位置 (窗格) 以点表示。</param>
+        <param name="Width">必需<b>类型，类型为 Integer。</b> 矩形的宽度（以点表示）。</param>
+        <param name="Height">必需<b>类型，类型为 Integer。</b> 矩形的高度（以点表示）。</param>
+        <param name="Start">可选 <b>对象</b>。 <b>如果为 True，</b> 则矩形的左上角显示在窗格的左上角。 <b>如果为 False，</b> 则使矩形的右下角出现在窗格的右下角。 默认值为 <b>True</b>。</param>
         <summary>滚动窗格，以便指定矩形区域的内容显示在窗格的左上角或右下角。</summary>
-        <remarks><para>当矩形大于窗格时，该参数对于确定屏幕显示 <paramref name="Start" /> 方向非常有用。</para>
+        <remarks><para>当矩形大于窗格时，该参数对于确定屏幕 <paramref name="Start" /> 显示方向非常有用。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -393,8 +393,8 @@
         <param name="ToLeft">可选 <b>对象</b>。 将内容向左滚动的列数。</param>
         <summary>按行或按列滚动窗口内容。</summary>
         <returns>To be added.</returns>
-        <remarks><para>如果同时指定了这两个参数，窗口的内容将滚动两个参数 <paramref name="Down" /> <paramref name="Up" /> 的差。 例如，如果 <paramref name="Down" /> 为 3 且 <paramref name="Up" /> 为 6，则内容向上滚动三行。</para>
-          <para>如果同时指定了这两个参数，窗口的内容将滚动两个参数 <paramref name="ToLeft" /> <paramref name="ToRight" /> 的差。 例如，如果 <paramref name="ToLeft" /> 为 3 且为 6，则内容滚动到右侧 <paramref name="ToRight" /> 三列。</para>
+        <remarks><para>如果指定了 和 ，窗口的内容将滚动这 <paramref name="Down" /> <paramref name="Up" /> 两个参数的差。 例如，如果 <paramref name="Down" /> 为 3 且 <paramref name="Up" /> 为 6，则内容向上滚动三行。</para>
+          <para>如果指定了 和 ，窗口的内容将滚动这 <paramref name="ToLeft" /> <paramref name="ToRight" /> 两个参数的差。 例如，如果 <paramref name="ToLeft" /> 为 3 且为 6，则内容向右滚动 <paramref name="ToRight" /> 三列。</para>
           <para>这四个参数都可以取负值。</para>
           <para> </para></remarks>
       </Docs>

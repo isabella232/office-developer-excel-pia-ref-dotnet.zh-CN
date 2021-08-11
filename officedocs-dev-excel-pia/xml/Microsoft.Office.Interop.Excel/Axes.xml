@@ -1,5 +1,5 @@
 <Type Name="Axes" FullName="Microsoft.Office.Interop.Excel.Axes">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="16133b78fe6ef635f84e7e24582e31b62c79a469" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006186" /></Metadata><TypeSignature Language="C#" Value="public interface Axes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="cf3d01496de9135526a5f8e9e2caa49d1b0ecd7f97371405cda3424d82709271" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54506692" /></Metadata><TypeSignature Language="C#" Value="public interface Axes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Axes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Axes" />
   <TypeSignature Language="VB.NET" Value="Public Interface Axes&#xA;Implements IEnumerable" />
@@ -25,9 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>指定图表中所有 <see cref="T:Microsoft.Office.Interop.Excel.Axis" /> 对象的集合。</summary>
-    <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Excel._Chart.Axes(System.Object,Microsoft.Office.Interop.Excel.XlAxisGroup)" /> 该方法可返回 <b>Axes</b> 集合。</para>
-      <para>使用 <b>轴</b> (<paramref name="type" /> <paramref name="group" /> ，) ，其中坐标轴类型和坐标轴组， <paramref name="type" /> <paramref name="group" /> 返回单个 <b>轴</b> 对象。 <paramref name="Type" /> 可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" /> ： <b>xlCategory</b>、 <b>xlSeries</b>或 <b>xlValue</b>。 <paramref name="Group" /> 可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> <b>：xlPrimary</b> 或 <b>xlSecondary</b>。 有关详细信息，请参阅此 <b>轴</b> 方法。</para>
+    <summary>指定图表中 <see cref="T:Microsoft.Office.Interop.Excel.Axis" /> 所有对象的集合。</summary>
+    <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Excel._Chart.Axes(System.Object,Microsoft.Office.Interop.Excel.XlAxisGroup)" /> 方法可返回 <b>Axes</b> 集合。</para>
+      <para>使用 <b>Axes</b> (，) ，其中是坐标轴类型和坐标轴组， <paramref name="type" /> <paramref name="group" /> <paramref name="type" /> <paramref name="group" /> 返回单个 <b>Axis</b> 对象。 <paramref name="Type" />可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" /> <b>：xlCategory、xlSeries</b>或<b>xlValue</b>。 <b></b> <paramref name="Group" /> 可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> <b>：xlPrimary</b> 或 <b>xlSecondary</b>。 有关详细信息，请参阅此 <b>轴</b> 方法。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -87,7 +87,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -205,7 +205,7 @@
         <Parameter Name="AxisGroup" Type="Microsoft.Office.Interop.Excel.XlAxisGroup" />
       </Parameters>
       <Docs>
-        <param name="Type">必需 <see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" /> 。 坐标轴类型。<b>XlAxisType</b> 可以是以下常量之一：<b>xlCategory</b>。<b>xlSeriesAxis</b> 仅对三维图表有效。<b>xlValue</b>。</param>
+        <param name="Type">必需 <see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" /> 。 坐标轴类型。<b>XlAxisType</b> 可以是以下常量之一<b>：xlCategory</b>。<b>xlSeriesAxis</b> 仅对三维图表有效。<b>xlValue</b>。</param>
         <param name="AxisGroup">可选 <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> 。 坐标轴。<b>XlAxisGroup</b> 可以是以下常量之一<b>：xlPrimary</b> Default<b>xlSecondary</b></param>
         <summary>从集合 <see cref="T:Microsoft.Office.Interop.Excel.Axis" /> 中返回单个 <see cref="T:Microsoft.Office.Interop.Excel.Axes" /> 对象。</summary>
         <returns>To be added.</returns>
