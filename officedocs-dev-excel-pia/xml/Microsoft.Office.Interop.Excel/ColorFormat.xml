@@ -1,5 +1,5 @@
 <Type Name="ColorFormat" FullName="Microsoft.Office.Interop.Excel.ColorFormat">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="3d031f52b238ec46211ddb6bca7295480f58f00f" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50004009" /></Metadata><TypeSignature Language="C#" Value="public interface ColorFormat : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="282699bc22927817e416906a7a38027c41140f4ff1eef15b420cb7cd73d52efd" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54510227" /></Metadata><TypeSignature Language="C#" Value="public interface ColorFormat : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ColorFormat implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ColorFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ColorFormat&#xA;Implements _IMsoDispObj" />
@@ -23,7 +23,7 @@
   </Attributes>
   <Docs>
     <summary>代表单色对象的颜色、带有渐变或图案填充的对象的前景或背景色，或者指针的颜色。</summary>
-    <remarks><para>可以使用属性) 将颜色设置为明确的红-绿-蓝值 (，或者通过使用属性 (将颜色设置为配色方案中 <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.RGB" /> <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.SchemeColor" />) 。</para>
+    <remarks><para>可以使用属性) 将颜色设置为明确的红-绿-蓝值 (，或者使用 (属性将颜色设置为 <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.RGB" /> <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.SchemeColor" />) 。</para>
       <para>使用下表中列出的属性之一来返回一个 <b>ColorFormat</b> 对象。</para>
       <list type="table">
         <item>
@@ -110,7 +110,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -177,7 +177,7 @@
         <summary>返回一个 32 位整数，该整数指示在其中创建了此对象的应用程序。</summary>
         <value><b>Integer</b></value>
         <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。</para>
-          <para>该属性设计为在 Microsoft Excel for the Macintosh 中使用，其中每个应用程序都有 <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.Creator" /> 一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。 另请参阅 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 。</para>
+          <para>该属性旨在用于 Macintosh Microsoft Excel，其中每个应用程序都有一个四字符的 <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.Creator" /> 创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。 另请参阅 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -300,7 +300,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置颜色 对象的颜色作为当前配色方案中的索引。</summary>
+        <summary>以当前配色方案中的索引返回或设置颜色对象的颜色。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -331,7 +331,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一 <b>个</b> 值，使指定形状的颜色变亮或变暗。</summary>
+        <summary>返回或设置 <b>一个 Single，</b> 它会使指定形状的颜色变亮或变暗。</summary>
         <value>To be added.</value>
         <remarks><para>您可以输入大量从-1 (深) 到 <b>TintAndShade</b> 属性，0 (零) 表示非特定的 (最亮) 1。</para>
           <para> </para></remarks>

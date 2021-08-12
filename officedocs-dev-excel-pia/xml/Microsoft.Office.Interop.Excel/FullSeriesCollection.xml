@@ -1,5 +1,5 @@
 <Type Name="FullSeriesCollection" FullName="Microsoft.Office.Interop.Excel.FullSeriesCollection">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="dbf91769667eadbda6ee7df78219248217f94800" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012178" /></Metadata><TypeSignature Language="C#" Value="public interface FullSeriesCollection : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="68a3838121e2a8ddfac833cf1eed35ebb47224637609f4533dc13918dee6e6ab" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54510640" /></Metadata><TypeSignature Language="C#" Value="public interface FullSeriesCollection : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FullSeriesCollection implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.FullSeriesCollection" />
   <TypeSignature Language="VB.NET" Value="Public Interface FullSeriesCollection&#xA;Implements IEnumerable" />
@@ -26,7 +26,7 @@
   </Attributes>
   <Docs>
     <summary>表示图表中 <see cref="T:Microsoft.Office.Interop.Excel.Series" /> 的完整对象集。</summary>
-    <remarks><para><b>FullSeriesCollection</b>对象使你能够获取筛选出<b>Series</b>对象，然后重新进行筛选。 它还允许您以编程方式对经过筛选或可见的整个 <b>Series</b> 对象集进行访问。 通过使现有对象仅包含可见系列，您可以编程方式仅对可见系列 <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> 执行操作。 它还可以防止 Excel 使用筛选出的数据破坏图表上的现有图表解决方案。</para>
+    <remarks><para><b>FullSeriesCollection</b>对象使您能够获取筛选出<b>Series</b>对象，然后重新筛选它。 它还允许您以编程方式对整组 <b>Series</b> 对象进行访问，这些对象已筛选掉或可见。 通过使现有 <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> 对象仅包含可见系列，您可以编程方式仅对可见系列执行操作。 它还防止Excel筛选出数据的图表上的现有图表解决方案。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -85,7 +85,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Excel 应用程序的对象。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Excel应用程序。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -113,7 +113,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>以<b>C# (</b>整数<b></b>) 整数值，该值代表 <see cref="T:Microsoft.Office.Interop.Excel.Series" /> <b>FullSeriesCollection</b>对象中的对象数。 只读。</summary>
+        <summary>返回一<b> (</b><b>整数C#) 整数</b>值，该值代表 <see cref="T:Microsoft.Office.Interop.Excel.Series" /> <b>FullSeriesCollection 对象中的对象</b>数。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -141,7 +141,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读<b>Integer</b>类型 (以<b></b>C# ) 。</summary>
+        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读<b>Integer</b>类型 (<b>整数C#) 。</b></summary>
         <value>To be added.</value>
         <remarks><para>由于对象是在 Excel 中创建的，因此此属性返回十六进制值 5843454C，它表示字符串"XCEL"。</para>
           <para> </para></remarks>
@@ -203,7 +203,7 @@
       </Parameters>
       <Docs>
         <param name="Index">对象的索引号。</param>
-        <summary>从 <b>FullSeriesCollection 对象中返回单个</b> 对象。</summary>
+        <summary>从 <b>FullSeriesCollection 对象返回单个</b> 对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

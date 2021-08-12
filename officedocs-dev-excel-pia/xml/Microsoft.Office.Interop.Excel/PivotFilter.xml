@@ -1,5 +1,5 @@
 <Type Name="PivotFilter" FullName="Microsoft.Office.Interop.Excel.PivotFilter">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="8ca490d3d62655bdb53770e1be334fbb762008fb" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010869" /></Metadata><TypeSignature Language="C#" Value="public interface PivotFilter" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d7125387017b779474c0b8eda06ea2a2023fb42d9091b0e2b896dd281b509eb8" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54510318" /></Metadata><TypeSignature Language="C#" Value="public interface PivotFilter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotFilter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotFilter" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotFilter" />
@@ -21,8 +21,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>A <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" /> 应用于 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 对象。</summary>
-    <remarks><para>由于索引不可靠，因此开发人员可以选择指定引用筛选。 该属性 <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.DataField" /> 指定要 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 基于的值筛选器的。</para>
+    <summary><see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" />将应用于 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 对象。</summary>
+    <remarks><para>由于索引不可靠，因此开发人员可以选择指定引用筛选。 <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.DataField" />属性指定 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 作为值筛选器基础的 。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -51,7 +51,7 @@
       <Docs>
         <summary>返回指定的是否 <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter" /> 处于活动状态。 只读。</summary>
         <value><b>Boolean</b></value>
-        <remarks><para>当筛选器位于 中时，此属性返回 <b>True，</b> 并且更新筛选器时将 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 计算 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 该筛选器。 如果 <b>筛选器</b> 不在 中并且对计算没有影响，则返回 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> False。</para>
+        <remarks><para>如果筛选器位于<b></b>中，且在更新 时评估筛选器，则 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 此属性 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 返回 True。 如果 <b>筛选器</b> 不在 中，且对计算没有影响，则返回 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> False。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -78,7 +78,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果不与对象限定符一起使用，则此属性返回 Microsoft Office Excel <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 。 当与对象限定符一起使用时，此属性返回指定对象的创建者。 只读。</summary>
+        <summary>如果不与对象限定符一同使用，则此属性返回 Microsoft Office Excel <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 。 当与对象限定符一同使用时，此属性返回指定对象的创建者。 只读。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel._Application" /></value>
         <remarks><para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
           <para> </para></remarks>
@@ -107,9 +107,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位 <b>整数</b> ，指示创建此对象时的应用程序。 只读。</summary>
+        <summary>返回一个 32 位 <b>Integer</b> 类型的值，指示创建此对象时所使用应用程序。 只读。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
-        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。  <b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。<b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。例如，Microsoft Excel 的创建者代码为 XCEL。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -136,7 +136,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.CubeField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>此属性仅适用于 OLAP，并提供字段 (<see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Value" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 值区域) 筛选的值筛选器。 读/写。</summary>
+        <summary>此属性仅适用于 OLAP，并提供 (值筛选) 值筛选的值 <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Value" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 区域中的字段。 读/写。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.CubeField" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -164,7 +164,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>此属性仅适用于非 OLAP，并提供 (值区域中的字段) 筛选的值 <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Value" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 筛选器。 读/写。</summary>
+        <summary>此属性仅适用于非 OLAP，并提供 (值筛选) 筛选的值 <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Value" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 区域中的字段。 读/写。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.PivotField" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -218,8 +218,8 @@
       </ReturnValue>
       <Docs>
         <summary>提供对象的可选 <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" /> 说明。 只读。</summary>
-        <value><b>字符串</b></value>
-        <remarks><para>说明字符串 <b>的最大长度为</b> 255 个字符。</para>
+        <value><b>String</b></value>
+        <remarks><para>说明 String <b>的最大长度为</b> 255 个字符。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -248,7 +248,7 @@
       <Docs>
         <summary>指定要应用的筛选器类型。 只读。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlPivotFilterType" /></value>
-        <remarks><para>下表显示了可添加到的筛选器类型 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 。 必须为该筛选器类型的方法提供的参数标记为"必需"，无法提供的参数 <see cref="T:Microsoft.Office.Interop.Excel.xlPivotFilters.Add" /> 标记为"不可用"。</para>
+        <remarks><para>下表显示了可以添加到 的筛选器类型 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 。 必须为该筛选器类型的方法提供的参数标记为" <see cref="T:Microsoft.Office.Interop.Excel.xlPivotFilters.Add" /> 必需"，无法提供的参数标记为"不可用"。</para>
           <list type="table">
             <item>
               <term>
@@ -323,84 +323,84 @@
               <term>xlCaptionEquals</term>
               <description>不可用</description>
               <description>不可用</description>
-              <description>必需</description>
+              <description>必填</description>
               <description>不可用</description>
             </item>
             <item>
               <term>xlCaptionDoesNotEqual</term>
               <description>不可用</description>
               <description>不可用</description>
-              <description>必需</description>
+              <description>必填</description>
               <description>不可用</description>
             </item>
             <item>
               <term>xlCaptionIsGreaterThan</term>
               <description>不可用</description>
               <description>不可用</description>
-              <description>必需</description>
+              <description>必填</description>
               <description>不可用</description>
             </item>
             <item>
               <term>xlCaptionIsGreaterThanOrEqualTo</term>
               <description>不可用</description>
               <description>不可用</description>
-              <description>必需</description>
+              <description>必填</description>
               <description>不可用</description>
             </item>
             <item>
               <term>xlCaptionIsLessThan</term>
               <description>不可用</description>
               <description>不可用</description>
-              <description>必需</description>
+              <description>必填</description>
               <description>不可用</description>
             </item>
             <item>
               <term>xlCaptionIsLessThanOrEqualTo</term>
               <description>不可用</description>
               <description>不可用</description>
-              <description>必需</description>
+              <description>必填</description>
               <description>不可用</description>
             </item>
             <item>
               <term>xlCaptionBeginsWith</term>
               <description>不可用</description>
               <description>不可用</description>
-              <description>必需</description>
+              <description>必填</description>
               <description>不可用</description>
             </item>
             <item>
               <term>xlCaptionDoesNotBeginWith</term>
               <description>不可用</description>
               <description>不可用</description>
-              <description>必需</description>
+              <description>必填</description>
               <description>不可用</description>
             </item>
             <item>
               <term>xlCaptionEndsWith</term>
               <description>不可用</description>
               <description>不可用</description>
-              <description>必需</description>
+              <description>必填</description>
               <description>不可用</description>
             </item>
             <item>
               <term>xlCaptionDoesNotEndWith</term>
               <description>不可用</description>
               <description>不可用</description>
-              <description>必需</description>
+              <description>必填</description>
               <description>不可用</description>
             </item>
             <item>
               <term>xlCaptionContains</term>
               <description>不可用</description>
               <description>不可用</description>
-              <description>必需</description>
+              <description>必填</description>
               <description>不可用</description>
             </item>
             <item>
               <term>xlCaptionDoesNotContain</term>
               <description>不可用</description>
               <description>不可用</description>
-              <description>必需</description>
+              <description>必填</description>
               <description>不可用</description>
             </item>
             <item>
@@ -477,56 +477,56 @@
               <term>xlSpecificDate</term>
               <description>不可用</description>
               <description>不可用</description>
-              <description>必需</description>
+              <description>必填</description>
               <description>不可用</description>
             </item>
             <item>
               <term>xlNotSpecificDate</term>
               <description>不可用</description>
               <description>不可用</description>
-              <description>必需</description>
+              <description>必填</description>
               <description>不可用</description>
             </item>
             <item>
               <term>xlBefore</term>
               <description>不可用</description>
               <description>不可用</description>
-              <description>必需</description>
+              <description>必填</description>
               <description>不可用</description>
             </item>
             <item>
               <term>xlBeforeOrEqualTo</term>
               <description>不可用</description>
               <description>不可用</description>
-              <description>必需</description>
+              <description>必填</description>
               <description>不可用</description>
             </item>
             <item>
               <term>xlAfter</term>
               <description>不可用</description>
               <description>不可用</description>
-              <description>必需</description>
+              <description>必填</description>
               <description>不可用</description>
             </item>
             <item>
               <term>xlAfterOrEqualTo</term>
               <description>不可用</description>
               <description>不可用</description>
-              <description>必需</description>
+              <description>必填</description>
               <description>不可用</description>
             </item>
             <item>
               <term>xlBetween</term>
               <description>不可用</description>
               <description>不可用</description>
-              <description>必需</description>
+              <description>必填</description>
               <description>不可用</description>
             </item>
             <item>
               <term>xlNotBetween</term>
               <description>不可用</description>
               <description>不可用</description>
-              <description>必需</description>
+              <description>必填</description>
               <description>不可用</description>
             </item>
             <item>
@@ -780,10 +780,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定标签筛选器是基于字段标题成员属性还是基于本身 <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 的标题。 只读。</summary>
+        <summary>指定标签筛选器是基于字段标题成员属性还是基于其本身 <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 的标题。 只读。</summary>
         <value><b>Boolean</b></value>
         <remarks><para>此属性的默认值为 <b>False</b> 。</para>
-          <para>如果<b>标签</b>筛选器基于 成员属性 的标题，则返回 True;如果筛选器基于 c 的标题，则返回 <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <b>False。</b> <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> 此属性仅对标签筛选器有效，并且仅对至少具有一个属性的 OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> 成员属性。</para>
+          <para>如果标签筛选器基于 的标题的 成员属性，则返回<b>True;</b>如果筛选器基于 c 的标题，则返回 <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <b></b> <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> False。 此属性仅对标签筛选器有效，并且仅对至少具有一个标签的 OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> 成员属性。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -810,9 +810,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>此属性指定成员属性 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 筛选器所基于的属性。 读/写。</summary>
+        <summary>此属性指定成员属性 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 筛选器所基于的属性值。 读/写。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.PivotField" /></value>
-        <remarks><para>此属性仅对标签筛选器和至少具有一个属性的 OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> 成员属性。</para>
+        <remarks><para>此属性仅对标签筛选器和至少具有一个标签的 OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> 成员属性。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -840,7 +840,7 @@
       </ReturnValue>
       <Docs>
         <summary>此属性提供选项可指定引用筛选。索引值可能发生更改，因此不能依赖于这些值获得准确的引用。</summary>
-        <value><b>字符串</b></value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -870,13 +870,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定应用于整个值筛选器的筛选器的评估顺序 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。 读/写</summary>
+        <summary>指定应用于整个 的所有值筛选器中筛选器的评估顺序 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。 读/写</summary>
         <value><b>整数</b>。</value>
-        <remarks><para>此属性仅对<b>Value</b>和<b>Top</b> <paramref name="n" /> 类型 <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" /> 有效。 如果尝试设置或获取标签和日期筛选器的此属性，则返回<b>运行时</b>错误。 <b></b> 1 表示计算的第一个筛选器，2 表示评估的下一个筛选器，以此类表示，直到达到 <paramref name="n" /> 第 1 个值。 -1 代表非活动筛选器。</para>
-          <para>如果在添加新筛选器时未指定该属性，则该属性将设置为 (当前筛选器集合中当前最大数目 <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" /> <paramref name="N+1" /> <paramref name="N" /> <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" />) 。</para>
-          <para>该属性可以在方法中指定，也可以稍后通过更改属性为字段 <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters.Add" /> 设置。</para>
+        <remarks><para>此属性仅对<b>Value</b>和<b>Top</b> <paramref name="n" /> 类型 <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" /> 有效。 如果尝试设置或获取 Label 和 <b>Date</b> 筛选器的此属性，则返回 <b>运行时</b> 错误。 1 表示评估的第一个筛选器，2 表示评估的下一个筛选器，以此类比，直到达到 <paramref name="n" /> 第 1 个值。 -1 代表非活动筛选器。</para>
+          <para>如果在添加新筛选器时未指定该属性，则此属性将设置为 (其中是筛选集合中当前最大 <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" /> <paramref name="N+1" /> <paramref name="N" /> <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" />) 。</para>
+          <para>属性可以在方法中指定，也可以稍后通过更改属性 <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters.Add" /> 为字段设置。</para>
           <para>如果提高某个字段的求值顺序，则会将原来具有该求值顺序值的字段（以及这两个字段之间的所有字段）的求值顺序降低 1。将求值顺序设置为和原来一样将不会产生变化。如果降低某个字段的求值顺序，则会将原来具有该求值顺序值的字段（以及这两个字段之间的所有字段）的求值顺序提高 1。</para>
-          <para>集合中的顺序与计算它们的顺序 <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" /> 相同。 因此，开发人员可以更改评估 a <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 的顺序。 从集合 (非 OLAP) 或 (OLAP) 时，对于应用于字段的值或顶部筛选器，此属性设置为 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> -1。 <paramref name="n" /> 如果未指定值，则重新添加该字段将设置应用于"值"或"顶部" <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" /> <paramref name="N+1" /> <paramref name="n" /> 筛选器的属性。</para>
+          <para>集合中 <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" /> 的顺序与求值顺序相同。 因此，开发人员可以更改评估 的顺序 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 。 从集合 (非 OLAP) 或 (OLAP) 时，对于应用于字段的 Value 或 Top 筛选器，此属性设置为 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> -1。 <paramref name="n" /> 如果尚未显式指定值，则再次添加该字段将针对应用的 Value 或 Top 筛选器将该属性 <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" /> <paramref name="N+1" /> 设置为 <paramref name="n" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -903,7 +903,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定 <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" /> 。 只读。</summary>
+        <summary>返回指定 的父级 <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" /> 。 只读。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -931,7 +931,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 应用筛选器的项。 只读。</summary>
+        <summary>指定 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 应用筛选器的 。 只读。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.PivotField" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -959,7 +959,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>此属性是用户提供的用于定义筛选器的参数 <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.PivotField" /> 。 读/写。</summary>
+        <summary>此属性是用户提供的用于定义 筛选器的参数 <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.PivotField" /> 。 读/写。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -987,7 +987,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>此属性是用户提供的用于定义筛选器的参数 <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.PivotField" /> 。 读/写。</summary>
+        <summary>此属性是用户提供的用于定义 筛选器的参数 <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.PivotField" /> 。 读/写。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1018,18 +1018,18 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置或获取日期筛选器的筛选语义。 <b>使用</b> C# (<b>中的布尔</b> 值) 。 读/写</summary>
+        <summary>设置或获取日期筛选器的筛选语义。 <b>Boolean</b> (<b>bool</b> in C#) 。 读/写</summary>
         <value>To be added.</value>
-        <remarks><para>下面介绍了以前和当前属性设置的结果：</para>
+        <remarks><para>下面介绍了上一个和当前属性设置的结果：</para>
           <list type="bullet">
             <item>
-              <description>False (Office 2010 行为) ：可指定任何时间;日期是指定日期 (午夜的精确时间) 。 筛选日期范围在午夜开始或结束。</description>
+              <description>False (Office 2010 behavior) ： Any time can be specified;date 是指定日期 (午夜的精确时间) 。 筛选日期范围在午夜开始或结束。</description>
             </item>
             <item>
-              <description>真正 (Office 2013 行为) ：对时间线控件强制执行此行为。 仅指定整个日期;日期包括直到午夜的所有时间，不包括第二天。</description>
+              <description>True (Office 2013 behavior) ： This behavior is enforced for Timeline controls. 仅指定整个日期;日期包括直到一天的所有时间，不包括第二天午夜。</description>
             </item>
           </list>
-          <para>对于日程表，始终返回 <b>True;</b>设置为 False 时，返回运行时 <b>错误</b>。</para>
+          <para>对于 Timeline，始终返回 <b>True</b>;将 设置为 False 时，返回运行时 <b>错误</b>。</para>
           <para>对于非日期筛选器，任何访问都返回运行时错误。</para>
           <para> </para></remarks>
       </Docs>

@@ -1,5 +1,5 @@
 <Type Name="AppEvents_SheetBeforeRightClickEventHandler" FullName="Microsoft.Office.Interop.Excel.AppEvents_SheetBeforeRightClickEventHandler">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d4ed560ab03a9544ff779e9f9cd51ae371c5957a" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50004723" /></Metadata><TypeSignature Language="C#" Value="public delegate void AppEvents_SheetBeforeRightClickEventHandler(object Sh, Range Target, out bool Cancel);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a70154e488bbbc562ec1c3933ccd1839d4a424293e99484cad96754ca651cd48" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54506979" /></Metadata><TypeSignature Language="C#" Value="public delegate void AppEvents_SheetBeforeRightClickEventHandler(object Sh, Range Target, out bool Cancel);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AppEvents_SheetBeforeRightClickEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AppEvents_SheetBeforeRightClickEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub AppEvents_SheetBeforeRightClickEventHandler(Sh As Object, Target As Range, ByRef Cancel As Boolean)" />
@@ -30,8 +30,9 @@
   <Docs>
     <param name="Sh">一个代表工作表的 <b>Worksheet</b> 对象。</param>
     <param name="Target">右键单击发生时最靠近鼠标指针的单元格。</param>
-    <param name="Cancel"><b>False</b> 在事件发生时。 如果事件过程将此参数设为 <b>True</b>，则在完成此过程后，不执行默认的右键单击操作。</param>
-    <summary>用于 <b>为</b> 事件添加事件处理程序的委托 <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetBeforeRightClick" /> 类型。 当右键单击任何工作表时（在默认右键单击操作之前）发生 <b>SheetBeforeRightClick</b> 事件。</summary>
+    <param name="Cancel">
+						当事件发生时为 <b>False</b>。如果事件过程将此参数设为 <b>True</b>，则在完成此过程后，不执行默认的右键单击操作。</param>
+    <summary>用于为事件添加事件处理程序的 <b>Delegate</b> <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetBeforeRightClick" /> 类型。 在默认的右键单击操作之前右键单击任何工作表时，将发生 <b>SheetBeforeRightClick</b> 事件。</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

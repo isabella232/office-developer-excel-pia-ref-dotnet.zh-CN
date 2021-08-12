@@ -1,5 +1,5 @@
 <Type Name="TreeviewControl" FullName="Microsoft.Office.Interop.Excel.TreeviewControl">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="1afb6b42e9222ca9571894f88d24856a84c5f717" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009490" /></Metadata><TypeSignature Language="C#" Value="public interface TreeviewControl" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="240298a09f2e5c3b1d1cbbdd4ac7797406f59f87b6ed92c393ff18371df063fe" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54519257" /></Metadata><TypeSignature Language="C#" Value="public interface TreeviewControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TreeviewControl" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TreeviewControl" />
   <TypeSignature Language="VB.NET" Value="Public Interface TreeviewControl" />
@@ -19,7 +19,7 @@
   </Attributes>
   <Docs>
     <summary>代表多维数据集字段的层次成员选择控件。 此对象主要用于录制宏，不作其他用途。</summary>
-    <remarks><para>使用该属性 <see cref="P:Microsoft.Office.Interop.Excel.CubeField.TreeviewControl" /> 可返回 <b>TreeviewControl</b> 对象。</para>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.CubeField.TreeviewControl" /> 属性可返回 <b>TreeviewControl</b> 对象。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -46,7 +46,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -109,7 +109,7 @@
       <Docs>
         <summary>设置多维数据集字段的分级成员选择控件中多维数据集字段成员的“drilled”（展开或可见）状态。 该属性主要用于录制宏，而不用于其他用途。</summary>
         <value>To be added.</value>
-        <remarks><para><b>Drilled</b> 属性接受数组。 数组的每个元素对应于已经展开的多维数据集字段的一个级别。 元素的最大数目是该多维数据集字段中的级别数。 数组中的每个元素都是一个 <b>String</b> 类型的数组，其中包含在控件的对应级别显示的（展开的）唯一成员名称。 请参阅 <see cref="T:Microsoft.Office.Interop.Excel.TreeviewControl" /> 对象的属性以确定何时在展开的视图中 <see cref="P:Microsoft.Office.Interop.Excel.TreeviewControl.Hidden" /> 显式隐藏成员。</para>
+        <remarks><para><b>Drilled</b> 属性接受数组。 数组的每个元素对应于已经展开的多维数据集字段的一个级别。 元素的最大数目是该多维数据集字段中的级别数。 数组中的每个元素都是一个 <b>String</b> 类型的数组，其中包含在控件的对应级别显示的（展开的）唯一成员名称。 请参阅 <see cref="T:Microsoft.Office.Interop.Excel.TreeviewControl" /> 对象的 <see cref="P:Microsoft.Office.Interop.Excel.TreeviewControl.Hidden" /> 属性，以确定何时在展开的视图中显式隐藏成员。</para>
           <para>
             <b>注意</b>：此属性不返回一个数组，该数组表示多维数据集字段的分层成员选择控件中多维数据集字段成员的钻取状态。</para>
           <para> </para></remarks>
@@ -143,7 +143,7 @@
       <Docs>
         <summary>返回或设置多维数据集字段的分层成员选择控件中多维数据集字段成员的隐藏状态。</summary>
         <value>To be added.</value>
-        <remarks><para><b>Hidden</b> 属性返回或设置一个数组。 数组的每个元素都与隐藏的多维数据集字段的 level 相对应。 元素的最大数目是多维数据集的最大级别数。 每个数组元素都是一个 <b>String</b> 型的数组，它包含在控件的相应级别隐藏的唯一成员名称。 请参阅 <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.DrilledDown" /> 对象的属性以确定成员在控件中 (<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> 展开) 时可见。</para>
+        <remarks><para><b>Hidden</b> 属性返回或设置一个数组。 数组的每个元素都与隐藏的多维数据集字段的 level 相对应。 元素的最大数目是多维数据集的最大级别数。 每个数组元素都是一个 <b>String</b> 型的数组，它包含在控件的相应级别隐藏的唯一成员名称。 请参阅 <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.DrilledDown" /> 对象的 属性 <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> ，以确定在控件中展开 (成员) 时可见。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

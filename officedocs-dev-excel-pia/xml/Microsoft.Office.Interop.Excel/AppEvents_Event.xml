@@ -1,5 +1,5 @@
 <Type Name="AppEvents_Event" FullName="Microsoft.Office.Interop.Excel.AppEvents_Event">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="9bf90f2833e35c96400ee1d99e1cdd02fe945d69" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999594" /></Metadata><TypeSignature Language="C#" Value="public interface AppEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e1d5426db3fdd73039eb90a2316828f6de6725fec9f4970bf9a842b4b73a639d" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54507119" /></Metadata><TypeSignature Language="C#" Value="public interface AppEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AppEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AppEvents_Event" />
   <TypeSignature Language="VB.NET" Value="Public Interface AppEvents_Event" />
@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Microsoft Excel 对象事件 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 的事件接口。</summary>
+    <summary>对象事件Microsoft Excel <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 事件接口。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,12 +40,12 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_AfterCalculateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当所有挂起的刷新活动 (同步和异步) 且所有结果计算活动都已完成时，将发生 <see cref="E:Microsoft.Office.Interop.Excel.ApplicationClass.AfterCalculate" /> 此事件。</summary>
-        <remarks><para>只要计算已完成且不存在未完成的查询，就会发生此事件。  必须同时满足这两个条件才能发生此事件。  即使工作簿中没有工作表数据，也可能会引发此事件，例如，只要整个工作簿中的计算已完成且不存在正在运行的查询。
+        <summary>当所有挂起的刷新活动同时 (和异步刷新) 并且所有结果计算活动都已完成时，将 <see cref="E:Microsoft.Office.Interop.Excel.ApplicationClass.AfterCalculate" /> 发生该事件。</summary>
+        <remarks><para>只要计算已完成且不存在未完成的查询，就会发生此事件。必须同时满足这两个条件才能发生此事件。即使工作簿中没有工作表数据，也可能会引发此事件，例如，只要整个工作簿中的计算已完成且不存在正在运行的查询。
 
 </para>
-          <para>加载项开发人员使用该事件了解工作簿中所有数据何时已由任何查询和/或计算完全更新，这些查询和/或计算 <see cref="E:Microsoft.Office.Interop.Excel.ApplicationClass.AfterCalculate" /> 可能在进行中。</para>
-          <para>此事件发生在所有 、 <see cref="E:Microsoft.Office.Interop.Excel.ChartEvents_Event.Calculate" /> 和 <see cref="E:Microsoft.Office.Interop.Excel.RefreshEvents_Event.AfterRefresh" /> <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetChange" /> 事件之后。  它是所有刷新处理以及所有计算处理完成后的最后一个事件，并且该事件在设置为之后 <see cref="P:Microsoft.Office.Interop.Excel._Application.CalculationState" /> 发生 <see cref="F:Microsoft.Office.Interop.Excel.XlCalculationState.xlDone" /> 。</para>
+          <para>加载项开发人员使用 事件了解工作簿中所有数据何时已由任何查询和/或计算完全更新，这些查询和/或计算 <see cref="E:Microsoft.Office.Interop.Excel.ApplicationClass.AfterCalculate" /> 可能在进行中。</para>
+          <para>此事件在所有 、 和 事件 <see cref="E:Microsoft.Office.Interop.Excel.ChartEvents_Event.Calculate" /> <see cref="E:Microsoft.Office.Interop.Excel.RefreshEvents_Event.AfterRefresh" /> 之后 <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetChange" /> 发生。  它是所有刷新处理以及所有计算处理完成后的最后一个事件，并且该事件在设置为 之后 <see cref="P:Microsoft.Office.Interop.Excel._Application.CalculationState" /> 发生 <see cref="F:Microsoft.Office.Interop.Excel.XlCalculationState.xlDone" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -353,7 +353,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_SheetLensGalleryRenderCompleteEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>在标注库的图标 (动态和静态) 呈现后发生。</summary>
+        <summary>在标注库的图标与动态 (静态视图) 呈现之后发生。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -373,7 +373,7 @@
       </ReturnValue>
       <Docs>
         <summary>在编辑或重新计算（对于包含公式的单元格）数据透视表中的单元格或单元格区域后发生。</summary>
-        <remarks><para>除了编辑或重新计算单元格外，该事件 <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableAfterValueChange" /> 不会在任何条件下发生。 例如，它不会在刷新、排序、筛选或向下钻取数据透视表时发生，即使这些操作移动单元格，并可能从 OLAP 数据源检索新值也是如此。</para>
+        <remarks><para><see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableAfterValueChange" />除了编辑或重新计算单元格外，该事件不会在任何条件下发生。 例如，它不会在刷新、排序、筛选或向下钻取数据透视表时发生，即使这些操作移动单元格，并可能从 OLAP 数据源检索新值也是如此。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -393,7 +393,7 @@
       </ReturnValue>
       <Docs>
         <summary>在将更改应用到数据透视表前发生。</summary>
-        <remarks><para>该事件在 Excel 执行 UPDATE CUBE 语句以将所有更改应用到数据透视表的 OLAP 数据源之前，以及用户选择在用户界面中应用更改后立即 <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeAllocateChanges" /> 发生。</para>
+        <remarks><para>该事件在 Excel 执行 UPDATE CUBE 语句以将所有更改应用到数据透视表的 OLAP 数据源之前，以及用户选择在用户界面中应用更改后立即发生 <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeAllocateChanges" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -413,7 +413,7 @@
       </ReturnValue>
       <Docs>
         <summary>在向数据透视表的 OLAP 数据源提交更改之前发生。</summary>
-        <remarks><para>该事件在 Excel 对数据透视表的 OLAP 数据源执行 COMMIT TRANSACTION 之前，以及用户选择保存整个数据透视表的更改后立即 <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeCommitChanges" /> 发生。</para>
+        <remarks><para>该事件在数据透视表Excel OLAP 数据源执行 COMMIT TRANSACTION 之前，以及用户选择保存整个数据透视表的更改后立即 <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeCommitChanges" /> 发生。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -433,7 +433,7 @@
       </ReturnValue>
       <Docs>
         <summary>在放弃对数据透视表所做的更改之前发生。</summary>
-        <remarks><para>在 Excel 对 OLAP 数据源执行 ROLLBACK TRANSACTION 语句之前，如果事务仍处于活动状态，然后在用户选择放弃更改后放弃数据透视表中所有编辑的值，则立即发生。</para>
+        <remarks><para>如果事务仍处于活动状态，Excel对 OLAP 数据源执行 ROLLBACK TRANSACTION 语句，然后在用户选择放弃更改后放弃数据透视表中的所有编辑值，则立即发生。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -642,7 +642,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_WorkbookAfterXmlExportEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>在 Microsoft Excel 保存数据或将数据从任何打开的工作簿导出到 XML 数据文件之后发生。</summary>
+        <summary>在将Microsoft Excel工作簿中保存或导出数据到 XML 数据文件之后发生。</summary>
         <remarks><para>如果希望在 XML 数据已从特定的工作簿导出后执行某一操作，可使用 <b>AfterXmlExport</b> 事件。</para>
           <para>XML 功能（以 XML 电子表格格式保存文件除外）仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中可用。</para>
           <para> </para></remarks>
@@ -663,7 +663,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_WorkbookAfterXmlImportEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>在刷新现有 XML 数据连接或将新的 XML 数据导入任何打开的 Microsoft Excel 工作簿后发生。</summary>
+        <summary>在刷新现有 XML 数据连接或将新 XML 数据导入到任何打开的工作簿中Microsoft Excel发生。</summary>
         <remarks><para>如果希望在 XML 数据已导入到特定的工作簿之后执行某一操作，可使用 <b>AfterXmlImport</b> 事件。</para>
           <para>XML 功能（以 XML 电子表格格式保存文件除外）仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中可用。</para>
           <para> </para></remarks>
@@ -741,7 +741,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_WorkbookBeforeXmlExportEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>在 Microsoft Excel 保存数据或将数据从任何打开的工作簿导出到 XML 数据文件之前发生。</summary>
+        <summary>在将Microsoft Excel工作簿中保存或导出数据到 XML 数据文件之前发生。</summary>
         <remarks><para>如果希望获取正在导出或保存的来自特定工作簿的 XML 数据，可使用 <b>BeforeXmlExport</b> 事件。</para>
           <para>XML 功能（以 XML 电子表格格式保存文件除外）仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中可用。</para>
           <para> </para></remarks>
@@ -762,7 +762,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_WorkbookBeforeXmlImportEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>在刷新现有 XML 数据连接或将新 XML 数据导入任何打开的 Microsoft Excel 工作簿之前发生。</summary>
+        <summary>在刷新现有 XML 数据连接或将新 XML 数据导入到任何打开的工作簿中之前Microsoft Excel发生。</summary>
         <remarks><para>如果希望获取正在向特定工作簿导入或刷新的 XML 数据，可使用 <b>BeforeXmlImport</b> 事件。</para>
           <para>XML 功能（以 XML 电子表格格式保存文件除外）仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中可用。</para>
           <para> </para></remarks>
@@ -822,8 +822,8 @@
       </ReturnValue>
       <Docs>
         <summary>在任何打开的工作簿中创建新图表时发生。</summary>
-        <remarks><para>当在工作表、图表工作表或其他工作表类型中插入或粘贴新图表时 <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookNewChart" /> ，将发生该事件。 如果插入或粘贴多个图表，那么按照图表的插入或粘贴顺序，每个图表都会发生一次该事件。 如果将图表对象或图表工作表从一个位置移到另一个位置，则不会发生该事件。 但是，如果在图表对象和图表工作表之间移动图表，仍会发生该事件，因为必须创建新图表。</para>
-          <para>以下情况下不会发生该事件：复制或粘贴图表工作表、更改图表类型、更改图表数据源、撤消或恢复插入或粘贴图表以及加载包含图表的工作簿。 <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookNewChart" /></para>
+        <remarks><para>在工作表、图表工作表或其他工作表类型中插入或粘贴新图表时 <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookNewChart" /> ，将发生该事件。 如果插入或粘贴多个图表，那么按照图表的插入或粘贴顺序，每个图表都会发生一次该事件。 如果将图表对象或图表工作表从一个位置移到另一个位置，则不会发生该事件。 但是，如果在图表对象和图表工作表之间移动图表，仍会发生该事件，因为必须创建新图表。</para>
+          <para>在下列情况下不会发生该事件：复制或粘贴图表工作表、更改图表类型、更改图表数据源、撤消或恢复插入或粘贴图表以及加载包含图表的工作簿。 <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookNewChart" /></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -899,7 +899,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_WorkbookPivotTableOpenConnectionEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>在打开 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 报表连接之后发生。</summary>
+        <summary>在打开报表 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 连接后发生。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -918,7 +918,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AppEvents_WorkbookRowsetCompleteEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当用户在 OLAP 数据透视表上钻取记录集或调用行集操作时， <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookRowsetComplete" /> 将发生该事件。</summary>
+        <summary>当用户在 OLAP 数据透视表上深化记录集或调用行集操作时 <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookRowsetComplete" /> ，将发生该事件。</summary>
         <remarks><para>由于记录集是以异步方式创建的，所以此事件允许自动确定已在何时完成操作。此外，由于记录集是在单独的工作表上创建的，所以需要将此事件置于工作簿级别上。</para>
           <para> </para></remarks>
       </Docs>

@@ -1,5 +1,5 @@
 <Type Name="HPageBreak" FullName="Microsoft.Office.Interop.Excel.HPageBreak">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="810cb48a90322f18dd49494e6eee45563ac06ba7" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012115" /></Metadata><TypeSignature Language="C#" Value="public interface HPageBreak" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a0836860c36560669a118173bf0313e740b287ac0b081c343330dfb768f7a025" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54510584" /></Metadata><TypeSignature Language="C#" Value="public interface HPageBreak" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HPageBreak" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.HPageBreak" />
   <TypeSignature Language="VB.NET" Value="Public Interface HPageBreak" />
@@ -22,8 +22,8 @@
   </Attributes>
   <Docs>
     <summary>代表水平分页符。</summary>
-    <remarks><para><b>HPageBreak</b>对象是集合的一 <see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" /> 个成员。</para>
-      <para>使用 <b>HPageBreaks</b> <paramref name="index" /> () 返回一个 HPageBreak 对象，其中是分页符的 <paramref name="index" /> <b>索引</b> 号。</para>
+    <remarks><para><b>HPageBreak</b>对象是集合的 <see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" /> 一个成员。</para>
+      <para>使用 <b>HPageBreaks</b> () ，其中是分页符的索引号 <paramref name="index" /> <paramref name="index" /> ，返回 <b>HPageBreak</b> 对象。</para>
       <para>
         <b>注意</b>  每个工作表有 1，026 个水平分页符的限制。</para>
       <para> </para></remarks>
@@ -52,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -137,9 +137,9 @@
       </Parameters>
       <Docs>
         <param name="Direction">必需 <see cref="T:Microsoft.Office.Interop.Excel.XlDirection" /> 。 分页符拖动方向。 <b>XlDirection</b> 可以是以下常量之一<b>：xlDown</b><b>xlToRight</b><b>xlToLeft</b><b>xlUp</b></param>
-        <param name="RegionIndex">必需 <b>整数</b>。 分页符的打印区域索引（当用户按下鼠标按钮拖动分页符时鼠标指针所在的位置）。 如果打印区域是连续的，则只有一个打印区域。 如果打印区域不连续，则存在多个打印区域。</param>
+        <param name="RegionIndex">必需<b>类型，类型为 Integer。</b> 分页符的打印区域索引（当用户按下鼠标按钮拖动分页符时鼠标指针所在的位置）。 如果打印区域是连续的，则只有一个打印区域。 如果打印区域是非连续的，则存在多个打印区域。</param>
         <summary>将一个分页符拖出打印区域。</summary>
-        <remarks><para>该方法主要用于宏记录器。 可以使用该方法 <see cref="M:Microsoft.Office.Interop.Excel.HPageBreak.Delete" /> 以编程方式删除分页符。</para>
+        <remarks><para>该方法主要用于宏记录器。 可以使用 方法 <see cref="M:Microsoft.Office.Interop.Excel.HPageBreak.Delete" /> 以编程方式删除分页符。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -198,7 +198,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置 (分页) 位置的对象 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 集合中的单元格。</summary>
+        <summary>返回或设置用于 (<see cref="T:Microsoft.Office.Interop.Excel.Range" /> 分页) 对象集合中的单元格。</summary>
         <value>To be added.</value>
         <remarks><para>水平分页符与位置单元格的上边缘对齐。</para>
           <para> </para></remarks>

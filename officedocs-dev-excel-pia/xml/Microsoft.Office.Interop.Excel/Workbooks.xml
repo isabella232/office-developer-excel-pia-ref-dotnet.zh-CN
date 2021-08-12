@@ -1,5 +1,5 @@
 <Type Name="Workbooks" FullName="Microsoft.Office.Interop.Excel.Workbooks">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="e216142f85071dc6b33c9b1eb3c9ddffaa7369de" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50008614" /></Metadata><TypeSignature Language="C#" Value="public interface Workbooks : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4412cafa67d52ea9efc54de3f1e443c5836dcde473b44fb60a4dbfe60f2517cc" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54507268" /></Metadata><TypeSignature Language="C#" Value="public interface Workbooks : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Workbooks implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Workbooks" />
   <TypeSignature Language="VB.NET" Value="Public Interface Workbooks&#xA;Implements IEnumerable" />
@@ -22,10 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Microsoft Excel 应用程序中当前打开的所有对象 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> 的集合。</summary>
-    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel._Application.Workbooks" /> 该属性可返回 <b>Workbooks</b> 集合。</para>
-      <para>使用此方法 <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Add(System.Object)" /> 创建一个新的空工作簿，并将其添加到集合中。</para>
-      <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 该方法打开文件。</para>
+    <summary>当前在应用程序 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> 内打开的所有Microsoft Excel的集合。</summary>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel._Application.Workbooks" /> 属性可返回 <b>Workbooks</b> 集合。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Add(System.Object)" /> 方法可创建一个新的空工作簿，并将其添加到集合中。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 方法打开文件。</para>
       <para>有关使用单个 <b>Workbook</b> 对象的信息，请参阅 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> 该对象。</para>
       <para> </para></remarks>
   </Docs>
@@ -303,10 +303,10 @@
         <Parameter Name="Template" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Template">可选 <b>对象</b>。 确定如何创建新工作簿。 如果此参数为指定现有 Microsoft Excel 文件名的字符串，那么创建新工作簿将以该指定的文件作为模板。 如果此参数为常量，新工作簿将包含一个指定类型的工作表。 可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlWBATemplate" /> <b>：xlWBATChart</b> <b>、xlWBATExcel4IntlMacroSheet、xlWBATExcel4MacroSheet</b>或<b>xlWBATWorksheet。</b> <b></b> 如果省略此参数，Microsoft Excel 将创建包含一定数目空白工作表的新工作簿（该数目由 <b>SheetsInNewWorkbook</b> 属性设置）。</param>
-        <summary>新建一个工作表。 新工作表将成为活动工作表。 返回一 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> 个对象。</summary>
+        <param name="Template">可选 <b>对象</b>。 确定如何创建新工作簿。 如果此参数为指定现有 Microsoft Excel 文件名的字符串，那么创建新工作簿将以该指定的文件作为模板。 如果此参数为常量，新工作簿将包含一个指定类型的工作表。 可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlWBATemplate" /> ：xlWBATChart、xlWBATExcel4IntlMacroSheet、xlWBATExcel4MacroSheet 或<b>xlWBATWorksheet</b>。 <b></b> <b></b> <b></b> 如果省略此参数，Microsoft Excel 将创建包含一定数目空白工作表的新工作簿（该数目由 <b>SheetsInNewWorkbook</b> 属性设置）。</param>
+        <summary>新建一个工作表。 新工作表将成为活动工作表。 返回 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> 一个对象。</summary>
         <returns>To be added.</returns>
-        <remarks><para>如果 <paramref name="Template" /> 参数指定文件，则文件名可以包含路径。</para>
+        <remarks><para>如果 <paramref name="Template" /> 参数指定文件，则文件名可以包括路径。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -333,7 +333,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -362,7 +362,7 @@
       </Parameters>
       <Docs>
         <param name="Filename">必需的 <b>字符串</b> 。 要签出的文件的名称。</param>
-        <summary>如果 Microsoft Excel 可以将指定的工作簿从服务器签出，则该值为 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
+        <summary>如果 Microsoft Excel 可以将指定的工作簿从服务器签出，则该值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -420,7 +420,7 @@
       <Parameters />
       <Docs>
         <summary>关闭对象。</summary>
-        <remarks><para>使用 Close 方法 <b>关闭工作簿</b> 不会运行工作簿Auto_Close宏。 使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> 该方法运行自动关闭宏。</para>
+        <remarks><para>使用 <b>Close</b> 方法关闭工作簿不会在工作簿Auto_Close任何宏。 使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> 方法可运行自动关闭宏。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -539,7 +539,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">必需 <b>对象</b>。 对象的名称或索引号。</param>
+        <param name="Index">必需的 <b>对象</b>。 对象的名称或索引号。</param>
         <summary>从集合中返回一个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -585,23 +585,23 @@
       </Parameters>
       <Docs>
         <param name="Filename">必需的 <b>字符串</b> 。 要打开的工作簿的文件名。</param>
-        <param name="UpdateLinks">可选 <b>对象</b>。 指定更新文件中的链接的方式。 如果省略此参数，则会提示用户指定链接的更新方式。 否则，此参数是下表中列出的值之一。如果 Microsoft Excel 以 WKS、WK1 或 WK3 格式打开文件，并且参数为 2，则 Microsoft Excel 从附加到该文件的图形中生成 <paramref name="UpdateLinks" /> 图表。 如果参数为 0，则不创建图表。</param>
+        <param name="UpdateLinks">可选 <b>对象</b>。 指定更新文件中链接的方式。 如果省略此参数，则会提示用户指定链接的更新方式。 否则，此参数为下表中列出的值之一。如果Microsoft Excel WKS、WK1 或 WK3 格式打开文件，且参数为 2，Microsoft Excel则从附加到该文件的图形中生成 <paramref name="UpdateLinks" /> 图表。 如果参数为 0，则不创建图表。</param>
         <param name="ReadOnly">可选 <b>对象</b>。 如果为 True，则以只读模式打开工作簿。</param>
-        <param name="Format">可选 <b>对象</b>。 如果 Microsoft Excel 打开文本文件，则此参数指定分隔符字符，如下表所示。 如果省略此参数，则使用当前分隔符。</param>
+        <param name="Format">可选 <b>对象</b>。 如果Microsoft Excel打开文本文件，则此参数指定分隔符字符，如下表所示。 如果省略此参数，则使用当前分隔符。</param>
         <param name="Password">可选 <b>对象</b>。 包含打开受保护工作簿所需密码的字符串。 如果省略此参数并且工作簿需要密码，则会提示用户输入密码。</param>
         <param name="WriteResPassword">可选 <b>对象</b>。 包含写入写保护的工作簿所需密码的字符串。 如果省略此参数并且工作簿需要密码，则将提示用户输入密码。</param>
         <param name="IgnoreReadOnlyRecommended">可选 <b>对象</b>。 如果为 <b>True</b>，则不让 Microsoft Excel 显示只读的建议消息（如果该工作簿以<b>建议只读</b>选项保存）。</param>
-        <param name="Origin">可选 <b>对象</b>。 如果文件是文本文件，则此参数指示其来源 (以便代码页和回车/换行 (CR/LF) 可以正确映射) 。 可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlPlatform" /> <b>：xlMacintosh、xlWindows</b>或<b>xlMSDOS。</b> <b></b> 如果省略此参数，则使用当前操作系统。</param>
-        <param name="Delimiter">可选 <b>对象</b>。 如果文件是文本文件，并且 <b>Format</b> 参数为 6，则此参数是一个字符串，指定要用作分隔符的字符。 例如，将 Chr (9) 用于选项卡、将"，"用于逗号、将";"用于分号或使用自定义字符。 仅使用字符串的第一个字符。</param>
-        <param name="Editable">可选 <b>对象</b>。 如果文件是 Microsoft Excel 4.0 加载项，则此参数 <b>为 True，</b> 可打开该加载项，以便它是一个可见窗口。 如果此参数为 <b>False</b> 或省略，则加载项将以隐藏方式打开，并且无法取消隐藏。 此选项不适用于在 Microsoft Excel 5.0 或更高版本中创建的加载项。 如果文件是 Excel 模板，则使用 <b>True</b> 打开指定的模板进行编辑，使用 <b>False</b> 打开基于指定模板的新工作簿。 默认值为 <b>False</b>。</param>
+        <param name="Origin">可选 <b>对象</b>。 如果文件是文本文件，则此参数指示其来源 (以便代码页和回车/换行 (CR/LF) 可以正确映射) 。 可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlPlatform" /> <b>：xlMacintosh、xlWindows</b>或<b>xlMSDOS</b>。 <b></b> 如果省略此参数，则使用当前操作系统。</param>
+        <param name="Delimiter">可选 <b>对象</b>。 如果文件是文本文件并且 <b>Format</b> 参数为 6，则此参数是一个字符串，指定要用作分隔符的字符。 例如，将 Chr (9) 选项卡，将"，"用于逗号，将";"用于分号或使用自定义字符。 仅使用字符串的第一个字符。</param>
+        <param name="Editable">可选 <b>对象</b>。 如果文件是 Microsoft Excel 4.0 加载项，则此参数为<b>True</b>可打开该加载项，以便它是一个可见窗口。 如果此参数为 <b>False</b> 或省略，则加载项将以隐藏方式打开，并且无法取消隐藏。 此选项不适用于在 5.0 或更高版本中创建Microsoft Excel加载项。 如果文件是Excel模板，则使用<b>True</b>打开指定的模板进行编辑，使用<b>False</b>打开基于指定模板的新工作簿。 默认值为 <b>False</b>。</param>
         <param name="Notify">可选 <b>对象</b>。 当文件不能以可读写模式打开时，如果此参数为 <b>True</b>，则可将该文件添加到文件通知列表。 Microsoft Excel 将以只读模式打开该文件并轮询文件通知列表，并在文件可用时向用户发出通知。 如果此参数为 <b>False</b> 或省略，则不会请求通知，并且任何打开不可用文件的尝试都将失败。</param>
-        <param name="Converter">可选 <b>对象</b>。 打开文件时要尝试的第一个文件转换器的索引。 首先尝试指定的文件转换器;如果此转换器无法识别该文件，则尝试所有其他转换器。 转换器索引由属性返回的转换器的行 <see cref="P:Microsoft.Office.Interop.Excel._Application.FileConverters(System.Object,System.Object)" /> 号组成。</param>
+        <param name="Converter">可选 <b>对象</b>。 打开文件时要尝试的第一个文件转换器的索引。 首先尝试指定的文件转换器;如果此转换器无法识别该文件，则尝试所有其他转换器。 转换器索引由 属性返回的转换器的行 <see cref="P:Microsoft.Office.Interop.Excel._Application.FileConverters(System.Object,System.Object)" /> 号组成。</param>
         <param name="AddToMru">可选 <b>对象</b>。 如果为 <b>True</b>，则将该工作簿添加到最近使用的文件列表中。 默认值为 <b>False</b> 。</param>
-        <param name="Local">可选 <b>对象</b>。 如果为 <b>True</b>，则以 Microsoft Excel（包括控制面板设置）的语言保存文件。 <b>如果</b> (默认值) 则根据 Visual Basic for Applications (VBA)  (（通常为美国英语）保存文件，除非运行 Workbooks.Open 的 VBA 项目是旧的国际化 XL5/95 VBA 项目) 。</param>
-        <param name="CorruptLoad">可选 <b>对象</b>。 可以是下列常量之一<b>：xlNormalLoad、xlRepairFile</b>和<b>xlExtractData。</b> <b></b> 如果未指定任何值，则默认行为通常是正常行为，但如果 Excel 已尝试打开文件，则可能是安全加载或数据恢复。 第一次尝试是正常的。 如果 Excel 在打开文件时停止操作，则第二次尝试是安全加载。 如果 Excel 再次停止运行，则下一次尝试是数据恢复。</param>
+        <param name="Local">可选 <b>对象</b>。 如果为 <b>True</b>，则以 Microsoft Excel（包括控制面板设置）的语言保存文件。 <b>如果</b> (默认值) 则以 Visual Basic for Applications (VBA)  (（通常为美国英语）的语言保存文件，除非运行 Workbooks.Open 的 VBA 项目是旧的国际化 XL5/95 VBA 项目) 。</param>
+        <param name="CorruptLoad">可选 <b>对象</b>。 可以是下列常量之一<b>：xlNormalLoad、xlRepairFile</b>和<b>xlExtractData</b>。 <b></b> 如果未指定任何值，则默认行为通常是正常行为，但如果已尝试打开Excel，则可能是安全加载或数据恢复。 第一次尝试是正常的。 如果Excel文件时停止操作，则第二次尝试是安全加载。 如果Excel停止操作，则下一次尝试是数据恢复。</param>
         <summary>打开一个工作簿。</summary>
         <returns>To be added.</returns>
-        <remarks><para>默认情况下，以编程方式打开文件时将启用宏。 使用 <see cref="P:Microsoft.Office.Interop.Excel._Application.AutomationSecurity" /> 该属性可设置以编程方式打开文件时所使用的宏安全模式。</para>
+        <remarks><para>默认情况下，以编程方式打开文件时将启用宏。 使用 <see cref="P:Microsoft.Office.Interop.Excel._Application.AutomationSecurity" /> 属性可设置以编程方式打开文件时所使用的宏安全模式。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -684,21 +684,21 @@
       </Parameters>
       <Docs>
         <param name="Filename">必需的 <b>字符串</b> 。 指定要打开和分列的文本文件的名称。</param>
-        <param name="Origin">可选 <b>对象</b>。 指定的文本文件来源。 可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlPlatform" /> <b>：xlMacintosh、xlWindows</b>或<b>xlMSDOS。</b> <b></b> 此外，这可以是表示所需代码页的代码页号的整数。 例如，“1256”将指定源文本文件的编码是阿拉伯语 (Windows)。 如果省略此参数，该方法将使用文本导入向导中的文件源选项 <b>的当前设置</b>。</param>
+        <param name="Origin">可选 <b>对象</b>。 指定的文本文件来源。 可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlPlatform" /> <b>：xlMacintosh、xlWindows</b>或<b>xlMSDOS</b>。 <b></b> 此外，这可以是表示所需代码页的代码页号的整数。 例如，“1256”将指定源文本文件的编码是阿拉伯语 (Windows)。 如果省略此参数，该方法将使用文本导入向导中的文件原点 <b>选项的当前设置</b>。</param>
         <param name="StartRow">可选 <b>对象</b>。 文本分析开始处的行号。 默认值为 1。</param>
         <param name="DataType">可选 <b>对象</b>。 在文件中指定数据的列格式。 可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlTextParsingType" /> <b>：xlDelimited</b> 或 <b>xlFixedWidth</b>。 如果未指定此参数，Microsoft Excel 将尝试在打开该文件时确定列格式。</param>
         <param name="TextQualifier">可选 <see cref="T:Microsoft.Office.Interop.Excel.XlTextQualifier" /> 。 指定文本限定符。 可以是其中一个 <see cref="T:Microsoft.Office.Interop.Excel.XlTextQualifier" /> 常量。<b>xlTextQualifierDoubleQuote</b> <paramref name="default" /> <b>xlTextQualifierNone</b><b>xlTextQualifierSingleQuote</b></param>
         <param name="ConsecutiveDelimiter">可选 <b>对象</b>。 如果为 <b>True</b>，则将连续分隔符视为一个分隔符。 默认值为 <b>False</b> 。</param>
-        <param name="Tab">可选 <b>对象</b>。 真 若要将制表符作为分隔符 (<paramref name="DataType" /> 必须<b>xlDelimited) 。</b> 默认值为 <b>False</b>。</param>
-        <param name="Semicolon">可选 <b>对象</b>。 <b>真</b>若要将分号字符作为分隔符 (<paramref name="DataType" /> 必须是<b>xlDelimited) 。</b> 默认值为 <b>False</b>。</param>
-        <param name="Comma">可选 <b>对象</b>。 <b>真</b>要逗号字符作为分隔符 (<paramref name="DataType" /> <b>必须 xlDelimited) 。</b> 默认值为 <b>False</b>。</param>
-        <param name="Space">可选 <b>对象</b>。 <b>真</b>若要将空格字符作为分隔符 (<paramref name="DataType" /> <b>必须 xlDelimited) 。</b> 默认值为 <b>False</b>。</param>
-        <param name="Other">可选 <b>对象</b>。 <b>如果为 True，</b>则参数指定的字符必须是分隔符 (<paramref name="OtherChar" /> <paramref name="DataType" /> <b>xlDelimited) 。</b> 默认值为 <b>False</b>。</param>
-        <param name="OtherChar">如果 <b>为 true</b> <paramref name="Other" /> (，则可选 <b>对象</b>) 。 指定当为 True 时分隔 <paramref name="Other" /> <b>符字符</b>。 如果指定了多个字符，则仅使用字符串中的第一个字符而忽略剩余字符。</param>
-        <param name="FieldInfo">可选 <see cref="T:Microsoft.Office.Interop.Excel.XlColumnDataType" /> 。 包含各个数据列解析信息的数组。 解释取决于 . <paramref name="DataType" /> 分隔数据时，此参数是一个双元素数组，每个双元素数组指定特定列的转换选项。 第一个元素是 (1 的列号) ，第二个元素是指定列分析方法的<b>XlColumnDataType</b> 常量之一。<b>xlGeneralFormat</b> 常规<b>xlTextFormat</b> Text<b>xlMDYFormat</b> MDY date<b>xlDMYFormat</b> DMY date<b>xlYMDFormat</b> YMD date<b>xlMYDFormat</b> MYD date<b>xlDYMFormat</b> DYM date<b>xlYDMFormat</b> YDM date<b>xlEMDFormat</b> EMD date<b>xlSkipColumn</b> Skip ColumnYou can use <b>xlEMDFormat</b> only if you have installed and selected Taiwanese language support. <b>xlEMDFormat</b>常量指定使用台湾地区纪元日期。列说明符可以按任意顺序。 如果输入数据中某个特定列没有列说明器，则使用"常规"设置分析该列。<b>备注</b>如果指定要跳过列，则必须显式声明其余所有列的类型，否则数据无法正确分析。如果数据中包含可识别的日期，则即使列设置为"常规"，单元格也会格式化为工作表中的日期。 此外，如果为列指定上述日期格式之一，并且数据不包含可识别的日期，则工作表中的单元格格式将为 General。如果源数据具有固定宽度的列，则每个双元素数组的第一个元素将起始字符在列 (中的位置指定为整数;字符 0 (为零) 为第一个字符) 。 如上表中所列，双元素数组的第二个元素将列的解析选项指定为 0 到 9 之间的数字。</param>
+        <param name="Tab">可选 <b>对象</b>。 如果为 True，则必须将制表符作为分隔符 (<paramref name="DataType" /> <b>xlDelimited) 。</b> 默认值为 <b>False</b>。</param>
+        <param name="Semicolon">可选 <b>对象</b>。 <b>如果为 True，</b> 将分号字符作为分隔符 (<paramref name="DataType" /> <b>xlDelimited</b>) 。 默认值为 <b>False</b>。</param>
+        <param name="Comma">可选 <b>对象</b>。 <b>如果为 True，</b>将逗号字符作为分隔符 (必须为 <paramref name="DataType" /> <b>xlDelimited) 。</b> 默认值为 <b>False</b>。</param>
+        <param name="Space">可选 <b>对象</b>。 <b>如果为 True，</b>则必须将空格字符作为 (<paramref name="DataType" /> <b>xlDelimited) 。</b> 默认值为 <b>False</b>。</param>
+        <param name="Other">可选 <b>对象</b>。 <b>如果为 True，</b> 则参数指定的字符必须是分隔符 (<paramref name="OtherChar" /> <paramref name="DataType" /> <b>xlDelimited</b>) 。 默认值为 <b>False</b>。</param>
+        <param name="OtherChar">如果 <b>为 True</b> <paramref name="Other" /> (，则可选 <b>Object</b>) 。 指定当 为 True 时分隔 <paramref name="Other" /> 符 <b>字符</b>。 如果指定了多个字符，则仅使用字符串中的第一个字符而忽略剩余字符。</param>
+        <param name="FieldInfo">可选 <see cref="T:Microsoft.Office.Interop.Excel.XlColumnDataType" /> 。 包含各个数据列解析信息的数组。 解释取决于 的值 <paramref name="DataType" /> 。 分隔数据时，此参数是一个双元素数组，每个双元素数组指定特定列的转换选项。 第一个元素是基于 1 (列号) ，第二个元素是指定列分析方法的<b>XlColumnDataType</b> 常量之一。<b>xlGeneralFormat</b> 常规<b>xlTextFormat</b> Text<b>xlMDYFormat</b> MDY date<b>xlDMYFormat</b> DMY date<b>xlYMDFormat</b> YMD date<b>xlMYDFormat</b> MYD date<b>xlDYMFormat</b> DYM date<b>xlYDMFormat</b> YDM date<b>xlEMDFormat</b> EMD date<b>xlSkipColumn</b> Skip ColumnYou can use <b>xlEMDFormat</b> only if you have installed and selected Taiwanese language support. <b>xlEMDFormat</b>常量指定使用中国台湾地区纪元日期。列说明符可以按任意顺序排列。 如果输入数据中特定列没有列说明器，则使用"常规"设置对列进行分析。<b>备注</b>如果指定要跳过列，则必须明确声明其余所有列的类型，否则数据无法正确分析。如果数据中包含可识别的日期，即使列设置为"常规"，单元格也会格式化为工作表中的日期。 此外，如果为列指定上述日期格式之一，并且数据不包含可识别的日期，则工作表中的单元格格式将为"常规"。如果源数据具有固定宽度的列，则每个双元素数组的第一个元素将起始字符在列 (中的位置指定为整数;字符 0 (零) 是字符的第一个字符) 。 如上表中所列，双元素数组的第二个元素将列的解析选项指定为 0 到 9 之间的数字。</param>
         <param name="TextVisualLayout">可选 <b>对象</b>。 文本的可视布局。</param>
         <param name="DecimalSeparator">可选 <b>对象</b>。 识别数字时，Microsoft Excel 使用的小数分隔符。 默认设置为系统设置。</param>
-        <param name="ThousandsSeparator">可选 <b>对象</b>。 识别数字时，Excel 使用的千位分隔符。 默认设置是系统设置。下表显示了针对各种导入设置将文本导入 Excel 的结果。 数字结果显示在最右边的列中。</param>
+        <param name="ThousandsSeparator">可选 <b>对象</b>。 识别数字时，Excel 使用的千位分隔符。 默认设置是系统设置。下表显示了针对各种导入设置将文本Excel导入文档的结果。 数字结果显示在最右边的列中。</param>
         <param name="TrailingMinusNumbers">可选 <b>对象</b>。</param>
         <param name="Local">可选 <b>对象</b>。</param>
         <summary>使用包含已分析的文本文件数据的单个工作表加载和分析文本文件作为新工作簿。</summary>
@@ -730,9 +730,9 @@
       </Parameters>
       <Docs>
         <param name="Filename">必需的 <b>字符串</b> 。 要打开的文件名。</param>
-        <param name="Stylesheets">可选 <b>对象</b>。 指定要应用样式表处理指令的 XSL 转换 (一个值或) 数组。</param>
-        <param name="LoadOption">可选 <b>对象</b>。 指定 Excel 打开 XML 数据文件的方式。 可以是以下常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlXmlLoadOption" /> <b>：xlXmlLoadImportToList</b> 将 XML 数据文件的内容提交到 XML 列表中。<b>xlXmlLoadMapXml</b> 在"XML 结构"任务窗格中显示 <b>XML</b> 数据文件的架构。<b>xlXmlLoadOpenXml</b> 打开 XML 数据文件。 文件的内容将被平展。<b>xlXmlLoadPromptUser</b> 提示用户选择如何打开文件。</param>
-        <summary>打开一个 XML 数据文件。 返回一 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> 个对象。</summary>
+        <param name="Stylesheets">可选 <b>对象</b>。 一个值或一组值，用于指定要应用样式表 (XSLT) XSL 转换。</param>
+        <param name="LoadOption">可选 <b>对象</b>。 指定 Excel 打开 XML 数据文件的方式。 可以是以下常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlXmlLoadOption" /> <b>：xlXmlLoadImportToList</b> 将 XML 数据文件的内容提交到 XML 列表中。<b>xlXmlLoadMapXml</b> 在"XML 结构"任务窗格中显示 <b>XML 数据文件</b> 的架构。<b>xlXmlLoadOpenXml</b> 打开 XML 数据文件。 文件的内容将被平展。<b>xlXmlLoadPromptUser</b> 提示用户选择如何打开文件。</param>
+        <summary>打开一个 XML 数据文件。 返回 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> 一个对象。</summary>
         <returns>To be added.</returns>
         <remarks><para>XML 功能（以 XML 电子表格格式保存文件除外）仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中可用。</para>
           <para> </para></remarks>
@@ -761,7 +761,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父对象。 只读。</summary>
+        <summary>返回指定对象的父对象。只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

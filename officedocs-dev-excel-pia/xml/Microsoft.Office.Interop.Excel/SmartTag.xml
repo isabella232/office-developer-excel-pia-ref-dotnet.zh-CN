@@ -1,5 +1,5 @@
 <Type Name="SmartTag" FullName="Microsoft.Office.Interop.Excel.SmartTag">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="c097490d40a579edaf6a024de2d42f5d5c8fb233" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010127" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTag" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b6c389bf93a6c548b3842f5f8e9feae6ef2c408bd3a32e827962f659cd8a4924" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54519845" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTag" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTag" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SmartTag" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTag" />
@@ -22,9 +22,9 @@
   </Attributes>
   <Docs>
     <summary>代表分配给单元格的标识符。</summary>
-    <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Excel.SmartTags.Add(System.String)" /> 集合的方法 <see cref="T:Microsoft.Office.Interop.Excel.SmartTags" /> 可返回 <b>SmartTag</b> 对象。</para>
-      <para>返回 <b>SmartTag</b> 对象后，可以通过将方法与属性一同使用，将额外的元数据 <see cref="M:Microsoft.Office.Interop.Excel.CustomProperties.Add(System.String,System.Object)" /> 存储到智能 <see cref="P:Microsoft.Office.Interop.Excel.SmartTag.Properties" /> 标记。</para>
-      <para>若要查看额外的元数据，请使用 <see cref="P:Microsoft.Office.Interop.Excel.SmartTag.XML" /> <b>SmartTag 对象</b> 的属性。</para>
+    <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Excel.SmartTags.Add(System.String)" /> 集合的 <see cref="T:Microsoft.Office.Interop.Excel.SmartTags" /> 方法可返回 <b>一个 SmartTag</b> 对象。</para>
+      <para>返回 <b>SmartTag</b> 对象后，可以通过将 方法与 属性一同使用，将额外的元数据 <see cref="M:Microsoft.Office.Interop.Excel.CustomProperties.Add(System.String,System.Object)" /> 存储到智能 <see cref="P:Microsoft.Office.Interop.Excel.SmartTag.Properties" /> 标记。</para>
+      <para>若要查看额外的元数据，请使用 <see cref="P:Microsoft.Office.Interop.Excel.SmartTag.XML" /> <b>SmartTag</b> 对象的 属性。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -82,7 +82,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -200,7 +200,7 @@
           <list type="table">
             <item>
               <term>
-                <b>标题</b>
+                <b>Caption</b>
               </term>
               <description>巴黎</description>
               <description>巴黎</description>
@@ -227,17 +227,17 @@
               <description>巴黎</description>
             </item>
           </list>
-          <para>在集合中指定索引时，可以使用 <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> 下表中所示的语法。</para>
+          <para>在集合中指定索引 <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> 时，可以使用下表中所示的语法。</para>
           <list type="table">
             <item>
               <term>表达式。PivotItems ("[Europe]。[法国]。[Paris]") </term>
               <description>表达式。PivotItems ("Paris") </description>
             </item>
           </list>
-          <para>使用该属性引用集合的特定成员时，可以使用文本 <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> 索引名称，如下表所示。</para>
+          <para>使用 属性引用集合的特定成员时，可以使用文本索引名称 <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> ，如下表所示。</para>
           <list type="table">
             <item>
-              <term>[欧洲]。[法国]。[巴黎]</term>
+              <term>[欧洲]。[法国]。[Paris]</term>
               <description>巴黎</description>
             </item>
           </list>
@@ -297,7 +297,7 @@
       <Docs>
         <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.CustomProperties" /> 一个对象，该对象代表智能标记的属性。</summary>
         <value>To be added.</value>
-        <remarks><para>将 <see cref="M:Microsoft.Office.Interop.Excel.CustomProperties.Add(System.String,System.Object)" /> 方法与 <see cref="P:Microsoft.Office.Interop.Excel.SmartTag.Properties" /> 属性一起用于存储智能标记的额外元数据。</para>
+        <remarks><para>将 <see cref="M:Microsoft.Office.Interop.Excel.CustomProperties.Add(System.String,System.Object)" /> Method 与 <see cref="P:Microsoft.Office.Interop.Excel.SmartTag.Properties" /> 属性一起用于存储智能标记的额外元数据。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
