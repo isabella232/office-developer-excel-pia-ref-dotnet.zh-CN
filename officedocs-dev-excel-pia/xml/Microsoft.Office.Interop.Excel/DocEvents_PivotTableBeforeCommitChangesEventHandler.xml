@@ -1,5 +1,5 @@
 <Type Name="DocEvents_PivotTableBeforeCommitChangesEventHandler" FullName="Microsoft.Office.Interop.Excel.DocEvents_PivotTableBeforeCommitChangesEventHandler">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="6686618a6a49df380d5d92722fd1d8bd84c6439c" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012395" /></Metadata><TypeSignature Language="C#" Value="public delegate void DocEvents_PivotTableBeforeCommitChangesEventHandler(PivotTable TargetPivotTable, int ValueChangeStart, int ValueChangeEnd, out bool Cancel);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b0883d714fc360b07b380dadaecb061f24936a48b96b7d8f03fa0d2d91c88b93" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508547" /></Metadata><TypeSignature Language="C#" Value="public delegate void DocEvents_PivotTableBeforeCommitChangesEventHandler(PivotTable TargetPivotTable, int ValueChangeStart, int ValueChangeEnd, out bool Cancel);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DocEvents_PivotTableBeforeCommitChangesEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.DocEvents_PivotTableBeforeCommitChangesEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DocEvents_PivotTableBeforeCommitChangesEventHandler(TargetPivotTable As PivotTable, ValueChangeStart As Integer, ValueChangeEnd As Integer, ByRef Cancel As Boolean)" />
@@ -30,10 +30,10 @@
   </ReturnValue>
   <Docs>
     <param name="TargetPivotTable">包含要提交的更改的数据透视表</param>
-    <param name="ValueChangeStart">关联对象中第一个更改的 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> 索引。 索引由集合 <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> 中对象 <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> 的属性 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> 指定。</param>
-    <param name="ValueChangeEnd">关联对象中最后一次更改的 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> 索引。 索引由集合 <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> 中对象 <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> 的属性 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> 指定。</param>
-    <param name="Cancel"><b>假</b> 的事件发生时。 如果事件过程将此参数设置 <b>为 true，</b>则不针对数据透视表的 OLAP 数据源提交更改。</param>
-    <summary>用于 <b>为</b> 事件添加事件处理程序的委托 <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableBeforeCommitChanges" /> 类型。 在针对数据透视表的 OLAP 数据源提交更改之前，发生 <b>PivotTableBeforeCommitChanges</b> 事件。</summary>
+    <param name="ValueChangeStart">关联对象中第一个更改的 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> 索引。 索引由集合 <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> 中对象的 <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> 属性 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> 指定。</param>
+    <param name="ValueChangeEnd">关联对象中最后一次更改的 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> 索引。 索引由集合 <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> 中对象的 <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> 属性 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> 指定。</param>
+    <param name="Cancel"><b>假</b> 的事件发生时。 如果事件过程将此参数设置 <b>成 true，</b>则不针对数据透视表的 OLAP 数据源提交更改。</param>
+    <summary>用于为事件添加事件处理程序的 <b>Delegate</b> <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableBeforeCommitChanges" /> 类型。 <b>PivotTableBeforeCommitChanges</b>事件在针对数据透视表的 OLAP 数据源提交更改之前发生。</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

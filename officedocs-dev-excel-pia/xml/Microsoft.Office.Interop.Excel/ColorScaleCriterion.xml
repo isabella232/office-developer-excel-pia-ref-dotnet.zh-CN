@@ -1,5 +1,5 @@
 <Type Name="ColorScaleCriterion" FullName="Microsoft.Office.Interop.Excel.ColorScaleCriterion">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="71a5a3fdaa7d1393ccedac6ff867343c7fd8ae11" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005745" /></Metadata><TypeSignature Language="C#" Value="public interface ColorScaleCriterion" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4300478031386a6108bff5ce1de31ebaedde5c92e202b2aa273a0c5a4efce780" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54509646" /></Metadata><TypeSignature Language="C#" Value="public interface ColorScaleCriterion" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ColorScaleCriterion" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" />
   <TypeSignature Language="VB.NET" Value="Public Interface ColorScaleCriterion" />
@@ -22,10 +22,10 @@
   </Attributes>
   <Docs>
     <summary>代表颜色格式条件格式的最小、中点或最大阈值的条件。</summary>
-    <remarks><para>每个 <b>ColorScaleCriterion</b> 都是集合的 <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> 一部分。 使用 <b>ColorScaleCriteria</b> <paramref name="index" /> () ，返回单个条件。</para>
-      <para>你可以为色 <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" /> <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Value" /> 标设置 ， 和 <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.FormatColor" /> 每个阈值。</para>
+    <remarks><para>每个 <b>ColorScaleCriterion</b> 都是集合的一 <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> 部分。 使用 <b>ColorScaleCriteria</b> <paramref name="index" /> () ，返回单个条件。</para>
+      <para>你可以为色标设置每个阈值的 、 <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" /> <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Value" /> 和 <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.FormatColor" /> 。</para>
       <para> </para></remarks>
-    <example><para>以下代码示例创建了一个数字范围，然后将双色色阶条件格式规则应用于该范围。 然后，通过索引到集合中设置单个条件，将最小阈值的颜色分配给红色，将最大阈值设置为 <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> 蓝色。</para></example>
+    <example><para>以下代码示例创建了一个数字范围，然后将双色色阶条件格式规则应用于该范围。 然后，通过索引集合以设置单个条件，将最小阈值的颜色分配给红色，将最大阈值的颜色设置为 <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> 蓝色。</para></example>
   </Docs>
   <Members>
     <Member MemberName="FormatColor">
@@ -53,7 +53,7 @@
       <Docs>
         <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> 一个对象，该对象指定分配给色标条件格式的阈值的颜色。 只读。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /></value>
-        <remarks><para>可以使用该属性将最小、中点或最大阈值的颜色设置为任何自定义颜色 <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.Color" /> ;或者使用 <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.ThemeColor" /> 该属性。</para>
+        <remarks><para>可以使用 属性将最小、中点或最大阈值的颜色设置为任何自定义颜色 <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.Color" /> ;或者使用 <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.ThemeColor" /> 属性。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -80,7 +80,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一 <b>个 Integer</b> 值，该值指示条件代表的阈值。 只读。</summary>
+        <summary>返回一 <b>个 Integer</b> 值，指示条件表示的阈值。 只读。</summary>
         <value><b>Integer</b></value>
         <remarks><para>对于双色色阶条件格式规则，此属性将为最小阈值返回值“1”，为最大阈值返回值“2”。在使用三色色阶规则时，最小、中点和最大阈值的值将分别为“1”、“2”和“3”。</para>
           <para> </para></remarks>
@@ -112,7 +112,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlConditionValueTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回枚举的常量之一，该常量指定如何确定数据条或色标条件格式的 <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" /> 阈值。 只读。</summary>
+        <summary>返回枚举的常量之一，该常量指定如何确定数据条或色标条件格式 <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" /> 的阈值。 只读。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" /></value>
         <remarks><para>数据条或色阶的阈值类型可以是数字、百分比、公式或百分点值。 如果将类型设置为百分点值，将使用 Excel 中的 Percentile 函数确定阈值。</para>
           <para> </para></remarks>
@@ -146,8 +146,8 @@
       <Docs>
         <summary>返回或设置色阶条件格式的最小、中点或最大阈值。 读/写。</summary>
         <value><b>Object</b></value>
-        <remarks><para>只有当条件格式的属性设置为下列常量之一时，才能设置该值： ， <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" /> <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueNumber" /> ， 或 <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercent" /> <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercentile" /> <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueFormula" /> 。</para>
-          <para>如果阈值类型为公式，则可以将公式设置为 <b>String</b> 类型。 此公式必须返回单一数字。</para>
+        <remarks><para>只有当条件格式的属性设置为下列常量之一时，才能设置该值 <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" /> ：、、 <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueNumber" /> 或 <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercent" /> <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercentile" /> <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueFormula" /> 。</para>
+          <para>如果阈值类型为公式，则可以将公式设置为 <b>String</b> 类型。而公式必须返回单个数字。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

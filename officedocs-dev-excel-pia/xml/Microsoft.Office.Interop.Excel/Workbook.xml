@@ -1,5 +1,5 @@
 <Type Name="Workbook" FullName="Microsoft.Office.Interop.Excel.Workbook">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="38fbc25ab1d7bdcab1f5c79b80d9c636b7fd7389" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009245" /></Metadata><TypeSignature Language="C#" Value="public interface Workbook : Microsoft.Office.Interop.Excel._Workbook, Microsoft.Office.Interop.Excel.WorkbookEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="74b0d67032a36562a3dc07c14b13f75166a1544759e0d80afa4e72cd3fba820c" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54516457" /></Metadata><TypeSignature Language="C#" Value="public interface Workbook : Microsoft.Office.Interop.Excel._Workbook, Microsoft.Office.Interop.Excel.WorkbookEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Workbook implements class Microsoft.Office.Interop.Excel._Workbook, class Microsoft.Office.Interop.Excel.WorkbookEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Workbook" />
   <TypeSignature Language="VB.NET" Value="Public Interface Workbook&#xA;Implements _Workbook, WorkbookEvents_Event" />
@@ -26,27 +26,27 @@
   </Attributes>
   <Docs>
     <summary>代表一个 Microsoft Excel 工作簿.</summary>
-    <remarks><para>这是派生自 COM Coclass（托管代码要求此 Coclass 来实现与相应的 COM 对象的互操作性）的 .NET 接口。 使用此派生的接口来访问所有方法、属性和 COM 对象的事件成员。 但是，如果您想要使用的方法或事件共享同一名称并且位于相同的 COM 对象下，请转换为相应的主接口以调用该方法，并转换为最新的事件接口以连接到该事件。 参考此主题以获取有关 COM 对象的信息。 有关 COM 对象的方法和属性成员的信息，请参阅 <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> 。</para>
-      <para><see cref="T:Microsoft.Office.Interop.Excel.Workbook" />对象是集合的 <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> 一个成员。 <b>Workbooks</b> 集合包含 Microsoft Excel 中当前打开的所有 <b>Workbook</b> 对象。</para>
-      <para>本节介绍了以下用于返回 <b>Workbook</b> 对象的属性：</para>
+    <remarks><para>这是派生自 COM Coclass（托管代码要求此 Coclass 来实现与相应的 COM 对象的互操作性）的 .NET 接口。 使用此派生的接口来访问所有方法、属性和 COM 对象的事件成员。 但是，如果您想要使用的方法或事件共享同一名称并且位于相同的 COM 对象下，请转换为相应的主接口以调用该方法，并转换为最新的事件接口以连接到该事件。 参考此主题以获取有关 COM 对象的信息。 有关 COM 对象的 方法和属性成员的信息，请参阅 <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> 。</para>
+      <para><see cref="T:Microsoft.Office.Interop.Excel.Workbook" />对象是集合的成员 <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> 。 <b>Workbooks</b> 集合包含 Microsoft Excel 中当前打开的所有 <b>Workbook</b> 对象。</para>
+      <para>本节将介绍以下用于返回 <b>Workbook</b> 对象的属性：</para>
       <list type="bullet">
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel._Application.Workbooks" /> property</description>
+            <see cref="P:Microsoft.Office.Interop.Excel._Application.Workbooks" /> 属性</description>
         </item>
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel._Application.ActiveWorkbook" /> property</description>
+            <see cref="P:Microsoft.Office.Interop.Excel._Application.ActiveWorkbook" /> 属性</description>
         </item>
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel._Application.ThisWorkbook" /> property</description>
+            <see cref="P:Microsoft.Office.Interop.Excel._Application.ThisWorkbook" /> 属性</description>
         </item>
       </list>
       <para>Workbooks 属性</para>
-      <para>使用 <b>工作簿</b> () 工作簿名称或 <paramref name="index" /> 索引号，返回 <paramref name="index" /> 单个 <b>Workbook</b> 对象。</para>
-      <para>索引号指示在其中打开或创建工作簿的顺序。 Workbooks(1) 是创建的第一个工作簿，而 Workbooks(Workbooks.Count)Workbooks 是最后一个。 激活某工作簿并不更改其索引号。 所有工作簿均包括在索引计数中，即便是隐藏工作簿也是如此。</para>
-      <para>该属性 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Name" /> 返回工作簿名称。 不能使用此属性设置名称;如果需要更改名称，请使用该方法以其他名称 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 保存工作簿。</para>
+      <para>使用 <b>Workbooks</b> <paramref name="index" /> () （其中 <paramref name="index" /> 是工作簿名称或索引号）返回单个 <b>Workbook</b> 对象。</para>
+      <para>编号指示创建或打开工作簿的顺序。Workbooks(1) 是创建的第一个工作簿，而 Workbooks(Workbooks.Count)Workbooks 是最后一个。激活某工作簿并不更改其索引号。所有工作簿均包括在索引计数中，即便是隐藏工作簿也是如此。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Excel._Workbook.Name" />属性返回工作簿名称。 不能使用此属性设置名称;如果需要更改名称，请使用 方法以其他 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 名称保存工作簿。</para>
       <para>ActiveWorkbook 属性</para>
       <para><b>ActiveWorkbook</b>属性返回当前处于活动状态的工作簿。</para>
       <para>ThisWorkbook 属性</para>

@@ -1,5 +1,5 @@
 <Type Name="HPageBreaks" FullName="Microsoft.Office.Interop.Excel.HPageBreaks">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="0624b974810397b893a61eed52c425b38d116dad" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003449" /></Metadata><TypeSignature Language="C#" Value="public interface HPageBreaks : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="143b90804cf70a6ebd8042b0ddb60f0508f3aa6fa2f32f38450f6c6ea6aae372" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508337" /></Metadata><TypeSignature Language="C#" Value="public interface HPageBreaks : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HPageBreaks implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.HPageBreaks" />
   <TypeSignature Language="VB.NET" Value="Public Interface HPageBreaks&#xA;Implements IEnumerable" />
@@ -26,9 +26,9 @@
   </Attributes>
   <Docs>
     <summary>打印区域内水平分页符的集合。 每个水平分页符都由一个对象 <see cref="T:Microsoft.Office.Interop.Excel.HPageBreak" /> 表示。</summary>
-    <remarks><para>使用 <b>HPageBreaks</b> 属性可返回 <b>HPageBreaks</b> 集合。 使用 <see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" /> 该方法可添加水平分页符。</para>
+    <remarks><para>使用 <b>HPageBreaks</b> 属性可返回 <b>HPageBreaks</b> 集合。 使用 <see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" /> 方法可添加水平分页符。</para>
       <para>如果添加的分页符不和打印区域交叠，则新添加的 <b>HPageBreak</b> 对象将不会出现在打印区域的 <b>HPageBreaks</b> 集合中。</para>
-      <para>将 <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Application" /> 属性、属性或方法与 <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Count" /> <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Creator" /> <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Item(System.Int32)" /> <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Parent" /> <see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" /> <b>HPageBreaks</b> 属性结合使用时：</para>
+      <para>当 <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Application" /> 属性、 <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Count" /> 属性、 <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Creator" /> 属性、属性、属性或方法与 <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Item(System.Int32)" /> <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Parent" /> <see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" /> <b>HPageBreaks 属性一起使用</b> 时：</para>
       <list type="bullet">
         <item>
           <description>对于自动打印区域，<b>HPageBreaks</b> 属性只应用于打印区域内的分页符。</description>
@@ -100,8 +100,8 @@
         <Parameter Name="Before" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Before">必需 <b>对象</b>。 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 对象。 新的分页符将添加到该区域上方。</param>
-        <summary>添加水平分页符。 返回一 <see cref="T:Microsoft.Office.Interop.Excel.HPageBreak" /> 个对象。</summary>
+        <param name="Before">必需的 <b>对象</b>。 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 对象。 新的分页符将添加到该区域上方。</param>
+        <summary>添加水平分页符。 返回 <see cref="T:Microsoft.Office.Interop.Excel.HPageBreak" /> 一个对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -129,7 +129,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -250,7 +250,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">必需整数。 对象的索引号。</param>
+        <param name="Index">必需项，类型为 Integer。 对象的索引号。</param>
         <summary>从集合中返回一个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

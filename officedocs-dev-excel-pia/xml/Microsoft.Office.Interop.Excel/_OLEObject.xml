@@ -1,5 +1,5 @@
 <Type Name="_OLEObject" FullName="Microsoft.Office.Interop.Excel._OLEObject">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="af49a80aff9121295165535f61d74b6cd1d1256b" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012682" /></Metadata><TypeSignature Language="C#" Value="public interface _OLEObject" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="68d775a6630163aee28d8cfb30306ccaf7e3c4db551d8045bc35fae7ec41c67b" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54516030" /></Metadata><TypeSignature Language="C#" Value="public interface _OLEObject" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _OLEObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel._OLEObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface _OLEObject" />
@@ -111,7 +111,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>此属性返回一个对象，该对象代表指定对象的创建者 (可以使用 OLE 自动化对象的此属性返回该对象 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 的应用程序) 。 只读。</summary>
+        <summary>此属性返回一个对象，该对象代表指定对象的创建者 (可以将此属性与 OLE 自动化对象一同使用，以返回该对象 <see cref="T:Microsoft.Office.Interop.Excel.Application" />) 。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -142,10 +142,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果打开包含指定 OLE 对象的工作簿时自动载入该 OLE 对象，则为 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
+        <summary>如果打开包含指定 OLE 对象的工作簿时自动载入该 OLE 对象，则为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
-        <remarks><para>ActiveX 忽略此属性。 打开一个工作簿时总会载入 ActiveX 控件。</para>
-          <para>对于大多数 OLE 对象类型，此属性不能设为 <b>True</b>。 对于新 OLE 对象，默认情况下其 <b>AutoLoad</b> 属性设为 <b>False</b>；当 Microsoft Excel 载入工作簿时，设为“False”可节省时间和内存。 自动加载 OLE 对象的好处是，对于代表可变数据的对象，可以立即重新建立指向源数据的链接，并在必要时再次呈现这些对象。</para>
+        <remarks><para>ActiveX 忽略此属性。打开一个工作簿时总会载入 ActiveX 控件。</para>
+          <para>对于大多数 OLE 对象类型，此属性不能设为 <b>True</b>。 对于新 OLE 对象，默认情况下其 <b>AutoLoad</b> 属性设为 <b>False</b>；当 Microsoft Excel 载入工作簿时，设为“False”可节省时间和内存。 自动加载 OLE 对象的好处是，对于代表可变数据的对象，可立即重新建立指向源数据的链接，并在必要时再次呈现这些对象。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -175,7 +175,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果数据源改变时 OLE 对象将自动更新，则为 <b>True</b>。 仅在对象被链接时有效 (<see cref="P:Microsoft.Office.Interop.Excel._OLEObject.OLEType" /> 其属性必须为 <b>xlOLELink</b>) 。 只读 <b>Boolean</b>。</summary>
+        <summary>如果数据源改变时 OLE 对象将自动更新，则为 <b>True</b>。 仅在对象与对象链接时 (<see cref="P:Microsoft.Office.Interop.Excel._OLEObject.OLEType" /> 其属性必须为 <b>xlOLELink</b>) 。 只读 <b>Boolean</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -203,7 +203,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 一个对象，该对象表示对象的边框。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 一个对象，该对象代表对象的边框。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -452,7 +452,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果启用对象，则为 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
+        <summary>如果启用对象，则为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -572,7 +572,7 @@
       <Docs>
         <summary>从对象左边界至 A 列左边界（在工作表上）或图表区左边界（在图表上）的距离，以磅为单位。 读/写 <b>Double</b>。</summary>
         <value>To be added.</value>
-        <remarks><para>如果窗口最大化，则此属性返回一个负数，该负数因窗口边框的宽度而异。 如果将此属性设置为 0 (为零) 则会使窗口在应用程序窗口最大化时略小一点。 换句话说，如果 <b>Left</b> 属性为 0 (零) ，Microsoft Excel 主窗口的左边框将在屏幕上几乎不可见。</para>
+        <remarks><para>如果窗口最大化，则此属性返回一个负数，该负数因窗口边框的宽度而异。 如果将此属性设置为 0 (零) 则会使窗口在应用程序窗口最大化时略小一些。 换句话说，如果<b>Left</b>属性为 0 (零) ，则主 Microsoft Excel 窗口的左边框将在屏幕上几乎不可见。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -602,7 +602,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指向控制值的工作表区域。 如果为这些单元格赋值，则指定控制也会取得相应的值。 与此类似，如果更改控制的值，则单元格的值也作相应变动。 读/写 <b>String</b>。</summary>
+        <summary>返回或设置指向控制值的工作表区域。如果为这些单元格赋值，则指定控制也会取得相应的值。与此类似，如果更改控制的值，则单元格的值也作相应变动。<b>String</b> 型，可读写。</summary>
         <value>To be added.</value>
         <remarks><para>不能将该属性应用于多选列表框。</para>
           <para> </para></remarks>
@@ -634,10 +634,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置用于填充指定列表框的工作表区域。 对该属性进行设置将破坏列表框中的所有列表项。 读/写 <b>String</b>。</summary>
+        <summary>返回或设置用于填充指定列表框的工作表区域。对该属性进行设置将破坏列表框中的所有列表项。<b>String</b> 型，可读写。</summary>
         <value>To be added.</value>
         <remarks><para>Microsoft Excel 阅读区域中的每一单元格的内容，并将单元格值插入到列表框中。列表对该区域中单元格的修订进行追踪。</para>
-          <para>如果列表框中的列表是使用该方法创建的，则此属性返回空字符串 <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.AddItem(System.String,System.Object)" /> ("") 。</para>
+          <para>如果列表框中的列表是使用 方法创建的，则此属性返回空字符串 <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.AddItem(System.String,System.Object)" /> ("") 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -667,7 +667,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>如果</b>对象被锁定，则其为 True;如果工作表受保护时可以修改该对象，则其为<b>False。</b> 读/写 <b>Boolean</b>。</summary>
+        <summary>如果对象已锁定，则其为<b>True;</b>如果工作表受保护时可以修改该对象，则其为<b>False。</b> 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -726,7 +726,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回与此 OLE 对象相联系的 OLE 自动化对象。 只读 <b>对象</b> 。</summary>
+        <summary>返回与此 OLE 对象相联系的 OLE 自动化对象。<b>Object</b> 型，只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -754,7 +754,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 OLE 对象类型。 可为以下 <b>XlOLEType</b> 常量之一：<b>xlOLELink</b> 或 <b>xlOLEEmbed</b>。 如果对象是链接的，则返回 <b>xlOLELink</b> (该对象位于文件) 外部;如果对象是嵌入的，则返回 <b>xlOLEEmbed (</b> 则该对象完全包含在文件) 。 只读 <b>对象</b> 。</summary>
+        <summary>返回 OLE 对象类型。 可为以下 <b>XlOLEType</b> 常量之一：<b>xlOLELink</b> 或 <b>xlOLEEmbed</b>。 如果对象链接在文件 (则返回 <b>xlOLELink;</b> 如果对象嵌入) 则返回 <b>xlOLEEmbed</b> (则该对象完全包含在文件) 中。 只读 <b>对象</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -791,7 +791,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置单击指定对象时运行的宏的名称。 读/写 <b>String</b>。</summary>
+        <summary>返回或设置单击指定对象时运行的宏的名称。<b>String</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks><para>为菜单项设置该属性，该属性可取代为菜单项和指定宏设定的自定义帮助信息。</para>
           <para> </para></remarks>
@@ -832,7 +832,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父对象。 只读。</summary>
+        <summary>返回指定对象的父对象。只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -904,7 +904,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果打印文档时也打印指定对象，则为 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
+        <summary>如果打印文档时也打印指定对象，则为 <b>True</b>。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -932,7 +932,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回对象的程序标识符。 只读 <b>String</b>。</summary>
+        <summary>返回对象的程序标识符。<b>String</b> 型，只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1045,7 +1045,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ShapeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> 个对象，该对象表示指定的一个或多个对象。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> 一个对象，该对象表示指定的一个或多个对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1107,7 +1107,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>从对象上边缘到工作表上第 1 (行顶边的距离（以) 或图表上图表区 (顶端) 。 读/写 <b>Double</b>。</summary>
+        <summary>从对象上边缘到工作表上第 1 (行顶端的距离（以) 或图表区顶部的 (图表) ）。 读/写 <b>Double</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1135,7 +1135,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个对象，该对象代表位于指定对象的左上角 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 下的单元格。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 一个对象，该对象代表指定对象左上角下的单元格。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1188,7 +1188,7 @@
         <Parameter Name="Verb" Type="Microsoft.Office.Interop.Excel.XlOLEVerb" />
       </Parameters>
       <Docs>
-        <param name="Verb">可选 <b>XlOLEVerb</b>。 OLE 对象服务器将执行其操作的动词。 如果省略此参数，则发送默认动词。 对象的源应用程序决定哪些动词可用。 OLE 对象的典型动词为 Open 和 Primary（由 <b>XlOLEVerb</b> 常量 <b>xlOpen</b> 和 <b>xlPrimary</b> 表示）。</param>
+        <param name="Verb">可选<b>属性，为 XlOLEVerb。</b> OLE 对象服务器将执行其操作的动词。 如果省略此参数，则发送默认动词。 对象的源应用程序决定哪些动词可用。 OLE 对象的典型动词为 Open 和 Primary（由 <b>XlOLEVerb</b> 常量 <b>xlOpen</b> 和 <b>xlPrimary</b> 表示）。</param>
         <summary>向指定的 OLE 对象服务器发送动词。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1220,7 +1220,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>决定对象是否可见。 <b>Boolean</b> 类型，可读写。</summary>
+        <summary>决定对象是否可见。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1281,7 +1281,7 @@
       <Docs>
         <summary>返回指定对象的 z-次序位置。 只读 <b>Integer</b>。</summary>
         <value>To be added.</value>
-        <remarks><para>在任何对象集合中，z 顺序后面的对象为 <paramref name="collection" /> (1) ，z-顺序前面的对象为 (<paramref name="collection" /> <paramref name="collection" /> 。<b>计数</b>) 。</para>
+        <remarks><para>在任何对象集合中，z-顺序后面的对象为 <paramref name="collection" /> (1) ，z-顺序前面的对象为 (<paramref name="collection" /> <paramref name="collection" /> 。<b>计数</b>) 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

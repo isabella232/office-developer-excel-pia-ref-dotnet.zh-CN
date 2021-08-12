@@ -1,5 +1,5 @@
 <Type Name="WorkbookEvents_SheetPivotTableBeforeAllocateChangesEventHandler" FullName="Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableBeforeAllocateChangesEventHandler">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="2e0da9c4c3258228c829062ea9382c13546fe9b8" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50008769" /></Metadata><TypeSignature Language="C#" Value="public delegate void WorkbookEvents_SheetPivotTableBeforeAllocateChangesEventHandler(object Sh, PivotTable TargetPivotTable, int ValueChangeStart, int ValueChangeEnd, out bool Cancel);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0be05066b367a34451877f556ad05e80ff7b62ac31e520225fe0cdda09a5a5a7" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54516450" /></Metadata><TypeSignature Language="C#" Value="public delegate void WorkbookEvents_SheetPivotTableBeforeAllocateChangesEventHandler(object Sh, PivotTable TargetPivotTable, int ValueChangeStart, int ValueChangeEnd, out bool Cancel);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WorkbookEvents_SheetPivotTableBeforeAllocateChangesEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableBeforeAllocateChangesEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub WorkbookEvents_SheetPivotTableBeforeAllocateChangesEventHandler(Sh As Object, TargetPivotTable As PivotTable, ValueChangeStart As Integer, ValueChangeEnd As Integer, ByRef Cancel As Boolean)" />
@@ -32,10 +32,10 @@
   <Docs>
     <param name="Sh">包含数据透视表的工作表。</param>
     <param name="TargetPivotTable">包含要应用的更改的数据透视表。</param>
-    <param name="ValueChangeStart">关联集合中第一个更改的 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> 索引。 索引由集合 <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> 中对象 <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> 的属性 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> 指定。</param>
-    <param name="ValueChangeEnd">关联集合中最后一次更改的 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> 索引。 索引由集合 <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> 中对象 <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> 的属性 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> 指定。</param>
-    <param name="Cancel"><b>假</b> 的事件发生时。 如果事件过程将此参数设置 <b>为 true，</b>则更改不会应用于数据透视表，并且所有编辑都丢失。</param>
-    <summary>用于 <b>为</b> 事件添加事件处理程序的委托 <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeAllocateChanges" /> 类型。 <b>SheetPivotTableBeforeAllocateChanges</b>事件在更改应用于数据透视表之前发生。</summary>
+    <param name="ValueChangeStart">关联集合中第一个更改的 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> 索引。 索引由集合 <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> 中对象的 <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> 属性 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> 指定。</param>
+    <param name="ValueChangeEnd">关联集合中最后一次更改的 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> 索引。 索引由集合 <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> 中对象的 <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> 属性 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> 指定。</param>
+    <param name="Cancel"><b>假</b> 的事件发生时。 如果事件过程将此参数设置 <b>为 true，</b>则更改不会应用于数据透视表，并且所有编辑操作都丢失。</param>
+    <summary>用于为事件添加事件处理程序的 <b>Delegate</b> <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeAllocateChanges" /> 类型。 <b>SheetPivotTableBeforeAllocateChanges</b>事件在更改应用于数据透视表之前发生。</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

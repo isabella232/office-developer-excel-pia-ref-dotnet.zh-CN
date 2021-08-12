@@ -1,5 +1,5 @@
 <Type Name="DataLabels" FullName="Microsoft.Office.Interop.Excel.DataLabels">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="59a0db665b8a81c22e071c0c60a0f23b4492e55a" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005661" /></Metadata><TypeSignature Language="C#" Value="public interface DataLabels : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="183e6b823810ac922719b95c0064876783c60436ac2127a42ae2c66471cf1cc1" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54509527" /></Metadata><TypeSignature Language="C#" Value="public interface DataLabels : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DataLabels implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.DataLabels" />
   <TypeSignature Language="VB.NET" Value="Public Interface DataLabels&#xA;Implements IEnumerable" />
@@ -26,8 +26,8 @@
   </Attributes>
   <Docs>
     <summary>指定系列 <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /> 的所有对象的集合。 <b>数据标签</b> 的每个对象表示一个点或趋势线的数据标签。 对于没有可定义点 (如区域系列)， <b>数据标签</b> 集合包含单个数据标签。</summary>
-    <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Excel.Series.DataLabels(System.Object)" /> 该方法可返回 <b>DataLabels</b> 集合。</para>
-      <para>使用 <b>DataLabels</b> () 数据标签索引号，其中返回 <paramref name="index" /> 单个 <paramref name="index" /> <b>DataLabel</b> 对象。</para>
+    <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Excel.Series.DataLabels(System.Object)" /> 方法可返回 <b>DataLabels</b> 集合。</para>
+      <para>使用 <b>DataLabels</b> () （其中是数据标签索引号） <paramref name="index" /> <paramref name="index" /> 返回单个 <b>DataLabel</b> 对象。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -226,7 +226,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -325,7 +325,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 一个对象，该对象表示对象的边框。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 一个对象，该对象代表对象的边框。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.Border" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -439,7 +439,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定形状的对象，或指定图表（包含形状或图表的填充格式属性 <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> ）的对象。 只读。</summary>
+        <summary>返回指定形状的对象或指定图表（包含形状或图表的填充格式 <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> 属性）的对象。 只读。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -636,7 +636,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">必需 <b>对象</b>。 对象的名称或索引号。</param>
+        <param name="Index">必需的 <b>对象</b>。 对象的名称或索引号。</param>
         <summary>从集合中返回单个对象。</summary>
         <returns><see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /></returns>
         <remarks>To be added.</remarks>
@@ -665,7 +665,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回的对象的名称。 只读的 <b>字符串</b> 。</summary>
+        <summary>返回的对象的名称。只读的 <b>字符串</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -696,9 +696,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置对象的格式代码。 读/写， <b>字符串</b> 。</summary>
+        <summary>返回或设置对象的格式代码。读/写， <b>字符串</b> 。</summary>
         <value>To be added.</value>
-        <remarks><para>格式代码是在 设置单元格格式对话框中 格式代码选项相同的字符串。 <b>Format</b>函数使用的格式代码字符串与<b>NumberFormat 和属性</b>不同 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 。</para>
+        <remarks><para>格式代码是在 设置单元格格式对话框中 格式代码选项相同的字符串。 Format <b></b>函数使用的格式代码字符串与<b>NumberFormat 和属性使用</b>的格式代码 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 字符串不同。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -761,7 +761,7 @@
       <Docs>
         <summary>返回或设置对象的格式代码，以用户的语言的字符串形式。 读取/写入 <b>对象</b> 。</summary>
         <value>To be added.</value>
-        <remarks><para><b>Format</b>函数使用的格式代码字符串与 <see cref="P:Microsoft.Office.Interop.Excel.DataLabels.NumberFormat" /> <b>NumberFormatLocal</b>属性不同。</para>
+        <remarks><para>Format <b></b>函数使用的格式代码字符串与 和 <see cref="P:Microsoft.Office.Interop.Excel.DataLabels.NumberFormat" /> <b>NumberFormatLocal</b>属性使用的格式代码字符串不同。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -791,7 +791,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>文本打印方向。 可以是 -90 到 90 度范围内的整数值。</summary>
+        <summary>文本打印方向。 可以是 –90 到 90 度范围内的整数值。</summary>
         <value>To be added.</value>
         <remarks><para>可以使用下列常量：</para>
           <para>
@@ -832,7 +832,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父对象。 只读。</summary>
+        <summary>返回指定对象的父对象。只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -893,9 +893,9 @@
       <Docs>
         <param name="Index">要传播的数据标签的索引号。</param>
         <summary>使您可以采用单个数据标签的内容和格式，并应用于系列上的所有其他数据标签。</summary>
-        <remarks><para>如果源数据标签支持与目标数据标签不兼容的字段，则这些字段将作为其 [FIELD NAME] 插入。 例如，如果带有百分比字段的饼图系列上的数据标签传播到柱形图上的数据标签，该百分比字段将成为显示 [PERCENTAGE] 的未解析字段。</para>
+        <remarks><para>如果源数据标签支持与目标数据标签不兼容的字段，则这些字段将插入为它们的 [FIELD NAME]。 例如，如果具有百分比字段的饼图系列上的数据标签传播到柱形图上的数据标签，该百分比字段将成为显示 [PERCENTAGE] 的未解析字段。</para>
           <para>
-            <b>注意</b>：将参数 0 (0) 将数据标签重置为当前原型。</para>
+            <b>注意</b>：将零参数 (0) 将数据标签重置为当前原型。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -983,7 +983,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置或返回一 <b>个对象</b> ，表示用于图表中的数据标签的分隔符。 读/写。</summary>
+        <summary>设置或返回 <b>一个对象</b> ，表示用于图表中的数据标签的分隔符。 读/写。</summary>
         <value>To be added.</value>
         <remarks><para>图表可以以编程方式; 访问数据标签之前必须先激活否则，将发生运行时错误。</para>
           <para> </para></remarks>
@@ -1046,7 +1046,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>真</b> 要在图表中显示数据标签的气泡大小。 如果为 <b>False</b>，则隐藏该分类的名称。 读/写 <b>Boolean</b>。</summary>
+        <summary>如果为 <b>True</b>，则在图表中显示数据标签的气泡的大小。如果为 <b>False</b>，则隐藏气泡的大小。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks><para>以程序方式访问数据标签之前，必须先激活图表，否则将出现运行错误。</para>
           <para> </para></remarks>
@@ -1078,7 +1078,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>真</b> 要在图表中显示数据标签的分类名称。 如果为 <b>False</b>，则隐藏该分类的名称。 读/写 <b>Boolean</b>。</summary>
+        <summary>如果为 <b>True</b>，则在图表中显示数据标签的分类名称。如果为 <b>False</b>，则隐藏该分类的名称。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks><para>以程序方式访问数据标签之前，必须先激活图表，否则将出现运行错误。</para>
           <para> </para></remarks>
@@ -1141,7 +1141,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>真</b> 要在图表中显示数据标签的百分比数值。 如果为 <b>False</b>，则隐藏该分类的名称。 读/写 <b>Boolean</b>。</summary>
+        <summary>如果为 <b>True</b>，则在图表中显示数据标签的百分比数值。如果为 <b>False</b>，则隐藏该百分比数值。<b>Boolean</b> 类型，可读写。</summary>
         <value>To be added.</value>
         <remarks><para>以程序方式访问数据标签之前，必须先激活图表，否则将出现运行错误。</para>
           <para> </para></remarks>
@@ -1173,7 +1173,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>用于在数据标签 <b>区域</b> 上存在 Range 字段时切换该字段。 <b>Boolean</b> (<b>bool</b> in C#) 可读/写</summary>
+        <summary>用于在数据标签 <b>区域</b> 上存在 Range 字段时切换该字段。 <b>Boolean</b> (<b>bool in</b> C#) Read/Write</summary>
         <value>To be added.</value>
         <remarks><para><b>Range</b>对象将任意单元格区域映射到一系列数据标签，以便每个数据标签对应于该范围中的一个单元格。</para>
           <para> </para></remarks>
@@ -1205,7 +1205,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个 <b>Boolean</b> 值，它指明图表上数据标签的系列名称显示方式。 如果为 <b>True</b>，则显示系列名称。 如果为 <b>False</b>，则隐藏数据标签值。 读/写。</summary>
+        <summary>返回或设置一个 <b>Boolean</b> 值，它指明图表上数据标签的系列名称显示方式。如果为 <b>True</b>，则显示系列名称。如果为 <b>False</b>，则隐藏系列名称。可读写。</summary>
         <value>To be added.</value>
         <remarks><para>以程序方式访问数据标签之前，必须先激活图表，否则将出现运行错误。</para>
           <para> </para></remarks>
@@ -1237,7 +1237,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个 <b>Boolean</b> 值，该值对应所指定图表的数据标签值显示方式。 如果为 <b>True</b>，则显示数据标签值。 如果为 <b>False</b>，则隐藏数据标签值。 读/写。</summary>
+        <summary>返回或设置一个 <b>Boolean</b> 值，该值对应所指定图表的数据标签值显示方式。如果为 <b>True</b>，则显示数据标签值。如果为 <b>False</b>，则隐藏数据标签值。可读写。</summary>
         <value>To be added.</value>
         <remarks><para>以程序方式访问数据标签之前，必须先激活指定的图表，否则将出现运行错误。</para>
           <para> </para></remarks>

@@ -1,5 +1,5 @@
 <Type Name="ThreeDFormat" FullName="Microsoft.Office.Interop.Excel.ThreeDFormat">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="a7446cb76912959213bb4dcc1c28dae6c32fcad1" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009609" /></Metadata><TypeSignature Language="C#" Value="public interface ThreeDFormat : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1467d37fca890cba105f638eaf4339c2551c91088187b9602a09b72bb4d9c56f" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54516093" /></Metadata><TypeSignature Language="C#" Value="public interface ThreeDFormat : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ThreeDFormat implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ThreeDFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ThreeDFormat&#xA;Implements _IMsoDispObj" />
@@ -23,7 +23,7 @@
   </Attributes>
   <Docs>
     <summary>代表形状的三维格式。</summary>
-    <remarks><para>使用该属性 <see cref="P:Microsoft.Office.Interop.Excel.Shape.ThreeD" /> 可返回 <b>ThreeDFormat</b> 对象。</para>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.Shape.ThreeD" /> 属性可返回 <b>ThreeDFormat</b> 对象。</para>
       <para>不能应用三维格式对某些类型的形状，如倾斜的形状或多个不连续的路径。属性中的大多数，这种形状的 <b>ThreeDFormat</b> 对象的方法将会失败。</para>
       <para> </para></remarks>
   </Docs>
@@ -54,7 +54,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -209,7 +209,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个值，该值指示是否应为对象引发顶部插入斜 <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetThreeDFormat(Microsoft.Office.Core.MsoPresetThreeDFormat)" /> 面。 读/写。</summary>
+        <summary>返回或设置一个值，该值指示是否应该为对象引发顶部插入斜 <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetThreeDFormat(Microsoft.Office.Core.MsoPresetThreeDFormat)" /> 面。 读/写。</summary>
         <value><b>Single</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -268,7 +268,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ColorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回对象的轮廓 <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> 线颜色。 只读。</summary>
+        <summary>返回对象的轮廓线 <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> 颜色。 只读。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.ColorFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -365,7 +365,7 @@
       <Docs>
         <summary>返回或设置该形状的延伸深度。</summary>
         <value>To be added.</value>
-        <remarks><para>Depth <b></b>属性可以是 -600 到 9600 的值， (正值生成正面为原始形状的突出;负值生成一个背面为原始形状的) 。</para>
+        <remarks><para><b>深度</b>属性可以是 –600 到 9600 (正值产生的正面为原始形状的突出;负值产生的突出其背面是原始形状) 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -454,7 +454,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置对象的查看 <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> 角度。 读/写。</summary>
+        <summary>返回或设置可查看 <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> 对象的角度。 读/写。</summary>
         <value><b>Single</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -538,11 +538,11 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">必需 <b>单个</b>。 指定形状绕 X 轴旋转值的改变量（以度为单位）。 可以是 -90 到 90 的值。 正值为使形状上倾，负值使其下倾。</param>
+        <param name="Increment">必需 <b>单个</b>。 指定形状绕 X 轴旋转值的改变量（以度为单位）。 可以是 –90 到 90 的值。 正值为使形状上倾，负值使其下倾。</param>
         <summary>按指定度数值，改变指定图形绕 X 轴的旋转度。</summary>
-        <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationX" /> 该属性可设置形状绕 x 轴的绝对旋转角度。</para>
-          <para>不能将指定形状绕 X 轴的旋转角度调整超过 <b>RotationX</b> 属性的上下限 (90 度到 -90 度) 。 例如，如果<b>RotationX</b>属性最初设置为 80，并且您为参数指定 40，则生成的旋转角度将为 90 (RotationX 属性) 而不是 <paramref name="Increment" /> 120。 <b></b></para>
-          <para>若要更改形状绕 y 轴的旋转角度，请使用 <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationY(System.Single)" /> 该方法。 若要更改绕 z 轴的旋转角度，请使用 <see cref="M:Microsoft.Office.Interop.Excel.Shape.IncrementRotation(System.Single)" /> 该方法。</para>
+        <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationX" /> 属性可设置形状绕 x 轴的绝对旋转角度。</para>
+          <para>不能将指定形状绕 X 轴的旋转角度调整超过 <b>RotationX</b> 属性的上下限 (90 度到 –90 度) 。 例如，如果<b>RotationX</b>属性最初设置为 80，并且为参数指定 40，则结果旋转角度将为 90 (RotationX 属性) 而不是 <paramref name="Increment" /> 120 的上限<b></b>。</para>
+          <para>若要更改形状绕 y 轴的旋转角度，请使用 <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationY(System.Single)" /> 方法。 若要更改绕 z 轴的旋转角度，请使用 <see cref="M:Microsoft.Office.Interop.Excel.Shape.IncrementRotation(System.Single)" /> 方法。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -569,11 +569,11 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">必需 <b>单个</b>。 指定形状绕 Y 轴旋转角度的改变量（以度为单位）。 可以是 -90 到 90 的值。 正值表示形状向左旋转，负值表示形状向右旋转。</param>
+        <param name="Increment">必需 <b>单个</b>。 指定形状绕 Y 轴旋转角度的改变量（以度为单位）。 可以是 –90 到 90 的值。 正值表示形状向左旋转，负值表示形状向右旋转。</param>
         <summary>按指定的度数值，改变指定图形绕 Y 轴的旋转量。</summary>
-        <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" /> 该属性可设置形状绕 y 轴的绝对旋转角度。</para>
-          <para>若要更改形状绕 x 轴的旋转角度，请使用 <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationX(System.Single)" /> 该方法。 若要更改绕 z 轴的旋转角度，请使用 <see cref="M:Microsoft.Office.Interop.Excel.Shape.IncrementRotation(System.Single)" /> 该方法。</para>
-          <para>不能将指定形状绕 Y 轴形状的旋转角度调整到超过 <b>RotationY</b> 属性的上下限 (90 度到 -90 度) 。 例如，如果<b>RotationY</b>属性最初设置为 80，并且您为参数指定 40，则生成的旋转角度将为 90 (RotationY 属性) 而不是 <paramref name="Increment" /> 120。 <b></b></para>
+        <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" /> 属性可设置形状绕 y 轴的绝对旋转角度。</para>
+          <para>若要更改形状绕 x 轴的旋转角度，请使用 <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationX(System.Single)" /> 方法。 若要更改绕 z 轴的旋转角度，请使用 <see cref="M:Microsoft.Office.Interop.Excel.Shape.IncrementRotation(System.Single)" /> 方法。</para>
+          <para>不能使指定形状绕 Y 轴形状的旋转角度超过 <b>RotationY</b> 属性的上下限 (90 度到 –90 度) 。 例如，如果 <b>RotationY</b> 属性最初设置为 80，并且为参数指定 40，则结果旋转角度将为 <paramref name="Increment" /> 90 (<b>RotationY</b> 属性) 而不是 120 的上限。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -602,9 +602,9 @@
       <Docs>
         <param name="Increment">指定形状绕 Z 轴旋转的角度（以度为单位）。 可以是 – 90 到 90 的值。 正值表示形状向左旋转，负值表示形状向右旋转。</param>
         <summary>使指定的形状绕 Z 轴旋转指定的角度。</summary>
-        <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationZ" /> 该属性可设置形状绕 z 轴的绝对旋转角度。</para>
-          <para>若要更改形状绕 z 轴的旋转角度，请使用 <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationZ(System.Single)" /> 该方法。</para>
-          <para>不能使指定形状绕 Z 轴的旋转角度超出 <b>RotationZ</b> 属性的上下限（90 度到 -90 度）。 例如，如果<b>RotationZ</b>属性最初设置为 80，并且您为参数指定 40，则生成的旋转角度将为 90 (RotationZ 属性) 而不是 <paramref name="Increment" /> 120。 <b></b></para>
+        <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationZ" /> 属性可设置形状绕 z 轴的绝对旋转角度。</para>
+          <para>若要更改形状绕 z 轴的旋转角度，请使用 <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationZ(System.Single)" /> 方法。</para>
+          <para>不能使指定形状绕 Z 轴的旋转角度超出 <b>RotationZ</b> 属性的上下限（90 度到 -90 度）。 例如，如果<b>RotationZ</b>属性最初设置为 80，并且为参数指定 40，则结果旋转角度将为 90 (RotationZ 属性) 而不是 <paramref name="Increment" /> 120<b></b>的上限。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -634,7 +634,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置对象上设置的突出光的百 <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> 分百。 读/写。</summary>
+        <summary>返回或设置在对象上设置的突出光的 <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> 拉伸。 读/写。</summary>
         <value><b>Single</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -751,7 +751,7 @@
       <Docs>
         <summary>返回延伸的伸展路径偏离原形状（延伸部分的正面）的方向。</summary>
         <value>To be added.</value>
-        <remarks><para>若要设置此属性的值，请使用 <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetExtrusionDirection(Microsoft.Office.Core.MsoPresetExtrusionDirection)" /> 该方法。</para>
+        <remarks><para>若要设置此属性的值，请使用 <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetExtrusionDirection(Microsoft.Office.Core.MsoPresetExtrusionDirection)" /> 方法。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -906,7 +906,7 @@
         <summary>返回预置的延伸格式。</summary>
         <value>To be added.</value>
         <remarks><para>每个预设的延伸格式都包含一组各种延伸属性的预设值。 如果突出具有自定义格式，而不是预设格式，则此属性返回 <see cref="F:Microsoft.Office.Core.MsoPresetThreeDFormat.msoPresetThreeDFormatMixed" /> 。 The values for this property correspond to the options (numbered from left to right, top to bottom) displayed when you click the 3-D button on the Drawing toolbar.</para>
-          <para>若要设置预设的突出格式，请使用 <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetThreeDFormat(Microsoft.Office.Core.MsoPresetThreeDFormat)" /> 该方法。</para>
+          <para>若要设置预设的突出格式，请使用 <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetThreeDFormat(Microsoft.Office.Core.MsoPresetThreeDFormat)" /> 方法。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -964,7 +964,7 @@
       <Docs>
         <summary>将延伸部分绕 x 轴和 y 轴的转角重新设置为 0（零）度，从而使延伸部分的前面朝前。</summary>
         <remarks><para>本方法并不重新设置绕 z 轴的转角。</para>
-          <para>若要将绕 x 轴和 y 轴的拉伸旋转角度设置为 0 (0) ，请使用对象的和 <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationX" /> <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" /> <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> 属性。 若要设置绕 z 轴的拉伸旋转角度，请使用代表突出形状 <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 的对象的属性。</para>
+          <para>若要将拉伸绕 x 轴和 y 轴的旋转量设置为 0 (0) ，请使用 对象的 和 <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationX" /> <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" /> <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> 属性。 若要设置拉伸绕 z 轴的旋转角度，请使用代表突出形状 <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 的对象的 属性。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -996,8 +996,8 @@
       <Docs>
         <summary>返回或设置延伸形状绕 x 轴的旋转角度，以度为单位。</summary>
         <value>To be added.</value>
-        <remarks><para><b>RotationX</b>属性可以是 -90 到 90 的值。 正值表示向上旋转;负值表示向下旋转。</para>
-          <para>若要设置被拉伸形状绕 y 轴的旋转角度，请使用 <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" /> 对象 <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> 的属性。 若要设置拉伸形状绕 z 轴的旋转角度，请使用对象的 Rotation <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 属性。 若要在不旋转突出的正面的情况下更改突出的横排路径的方向，请使用 <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetExtrusionDirection(Microsoft.Office.Core.MsoPresetExtrusionDirection)" /> 该方法。</para>
+        <remarks><para><b>RotationX</b>属性可以是 –90 到 90 的值。 正值表示向上旋转;负值表示向下旋转。</para>
+          <para>若要设置被拉伸形状绕 y 轴的旋转角度，请使用 <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" /> 对象的 <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> 属性。 若要设置图形的拉伸绕 z 轴的旋转角度，请使用 对象的 Rotation <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 属性。 若要在不旋转突出的正面的情况下更改拉伸路径的方向，请使用 <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetExtrusionDirection(Microsoft.Office.Core.MsoPresetExtrusionDirection)" /> 方法。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1029,8 +1029,8 @@
       <Docs>
         <summary>以度为单位返回或设置具有延伸的形状绕 y 轴的转角。</summary>
         <value>To be added.</value>
-        <remarks><para><b>RotationY</b>属性可以是 -90 到 90 的值。 正值表示向左; 旋转负值表示向右旋转。</para>
-          <para>若要设置拉伸形状绕 x 轴的旋转角度，请使用 <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationX" /> 对象 <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> 的属性。 若要设置拉伸形状绕 z 轴的旋转角度，请使用对象的 Rotation <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 属性。 若要在不旋转突出的正面的情况下更改突出的横排路径的方向，请使用 <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetExtrusionDirection(Microsoft.Office.Core.MsoPresetExtrusionDirection)" /> 该方法。</para>
+        <remarks><para><b>RotationY</b>属性可以是 –90 到 90 的值。 正值表示向左; 旋转负值表示向右旋转。</para>
+          <para>若要设置拉伸形状绕 x 轴的旋转角度，请使用 对象的 <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationX" /> <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> 属性。 若要设置图形的拉伸绕 z 轴的旋转角度，请使用 对象的 Rotation <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 属性。 若要在不旋转突出的正面的情况下更改拉伸路径的方向，请使用 <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetExtrusionDirection(Microsoft.Office.Core.MsoPresetExtrusionDirection)" /> 方法。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1062,8 +1062,8 @@
       <Docs>
         <summary>返回或设置延伸形状绕 Z 轴旋转的度数。  读/写。</summary>
         <value><b>Single</b></value>
-        <remarks><para><b>RotationZ</b> 属性可以是从 –90 到 90 的值。 正值表示向上旋转;负值表示向下旋转。</para>
-          <para>若要设置拉伸形状绕 y 轴的旋转角度，请使用 <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" /> 对象 <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> 的属性。 若要设置拉伸形状绕 x 轴的旋转角度，请使用 <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationX" /> <b>ThreeDFormat</b> 对象的属性。 若要在不旋转突出的正面的情况下更改突出路径的方向，请使用 <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetExtrusionDirection(Microsoft.Office.Core.MsoPresetExtrusionDirection)" /> 该方法。</para>
+        <remarks><para><b>RotationZ</b> 属性可以是从 –90 到 90 的值。正值表示向上旋转；负值表示向下旋转。</para>
+          <para>若要设置被拉伸形状绕 y 轴的旋转角度，请使用 <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" /> 对象的 <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> 属性。 若要设置被拉伸的形状绕 x 轴的旋转角度，请使用 <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationX" /> <b>ThreeDFormat 对象的</b> 属性。 若要在不旋转突出正面的情况下更改突出路径的方向，请使用 <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetExtrusionDirection(Microsoft.Office.Core.MsoPresetExtrusionDirection)" /> 方法。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1147,8 +1147,8 @@
         <Parameter Name="PresetThreeDFormat" Type="Microsoft.Office.Core.MsoPresetThreeDFormat" />
       </Parameters>
       <Docs>
-        <param name="PresetThreeDFormat">必需 <b>项，MsoPresetThreeDFormat</b>。 指定预设的延伸格式，该格式对应于单击 绘图 工具栏上的 3-D 按钮时所显示的选项 (从左向右，从上到下编号) 之一。</param>
-        <summary>返回预设的延伸格式。 每个预设的延伸格式包含一组各种延伸属性的预设值。</summary>
+        <param name="PresetThreeDFormat">必需 <b>。MsoPresetThreeDFormat</b>。 指定预设的延伸格式，该格式对应于单击 绘图 工具栏上的 3-D 按钮时所显示的选项 (从左向右，从上到下编号) 之一。</param>
+        <summary>返回预设的延伸格式。每个预设的延伸格式包含一组各种延伸属性的预设值。</summary>
         <remarks><para>此方法将 <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.PresetThreeDFormat" /> 该属性设置为参数指定的 <paramref name="PresetThreeDFormat" /> 格式。</para>
           <para> </para></remarks>
       </Docs>

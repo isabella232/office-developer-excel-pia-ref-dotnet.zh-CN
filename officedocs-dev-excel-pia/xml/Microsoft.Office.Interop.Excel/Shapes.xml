@@ -1,5 +1,5 @@
 <Type Name="Shapes" FullName="Microsoft.Office.Interop.Excel.Shapes">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="7d8f4259d10e89624f92628ba847b174395cf289" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010309" /></Metadata><TypeSignature Language="C#" Value="public interface Shapes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="530f667e5dd841d8274e1c621bc1dc888d3f3f007a275d9f3403ddb97f9309ad" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54516240" /></Metadata><TypeSignature Language="C#" Value="public interface Shapes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Shapes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Shapes" />
   <TypeSignature Language="VB.NET" Value="Public Interface Shapes&#xA;Implements IEnumerable" />
@@ -26,9 +26,9 @@
   </Attributes>
   <Docs>
     <summary>指定工作表上 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 所有对象的集合。</summary>
-    <remarks><para>每个对象代表绘图层中的一个对象，如自图形、任意多边形 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 、OLE 对象或图片。</para>
+    <remarks><para>每个 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 对象都代表绘图层中的一个对象，如自图形、任意多边形、OLE 对象或图片。</para>
       <para>
-        <b></b>注意：如果要处理文档中形状的子集（例如，只对文档中的自选图形或只对选定的形状执行某些操作）则必须构造一个包含要处理的形状的集合。 <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /></para>
+        <b></b>注意：如果要处理文档中的一部分形状（例如，只对文档中的自选图形或选定的形状执行某种操作）则必须构造一个包含要处理的形状的集合。 <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -91,14 +91,14 @@
         <Parameter Name="Height" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Type">必需 <see cref="T:Microsoft.Office.Core.MsoCalloutType" /> 。 标注线的类型。 可以是其中一个 <b>MsoCalloutType</b> 常量<b>：msoCalloutOne</b>。 水平或垂直的单段标注线。<b>msoCalloutTwo</b>。 可自由旋转的单段标注线。<b>msoCalloutMixed</b>。<b>msoCalloutThree</b>。 双线段线。<b>msoCalloutFour</b>。 三线段标注线。</param>
+        <param name="Type">必需 <see cref="T:Microsoft.Office.Core.MsoCalloutType" /> 。 标注线的类型。 可以是其中一个 <b>MsoCalloutType</b> 常量：<b>msoCalloutOne</b>。 水平或垂直的单线段标注线。<b>msoCalloutTwo</b>。 可自由旋转的单线段标注线。<b>msoCalloutMixed</b>。<b>msoCalloutThree</b>。 双线段线。<b>msoCalloutFour</b>。 三线段标注线。</param>
         <param name="Left">必需 <b>单个</b>。 标注边框的左上角相对于文档左上角的位置（以磅为单位）。</param>
         <param name="Top">必需 <b>单个</b>。 标注边框的左上角相对于文档左上角的位置（以磅为单位）。</param>
         <param name="Width">必需 <b>单个</b>。 标注边框的宽度（以磅为单位）。</param>
         <param name="Height">必需 <b>单个</b>。 标注边框的高度（以磅为单位）。</param>
         <summary>创建一个无边框的线形标注。 返回 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 一个代表新标注的对象。</summary>
         <returns>To be added.</returns>
-        <remarks><para>您可以使用该方法插入更多种标注 <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddShape(Microsoft.Office.Core.MsoAutoShapeType,System.Single,System.Single,System.Single,System.Single)" /> 。</para>
+        <remarks><para>您可以使用 方法插入更多各种 <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddShape(Microsoft.Office.Core.MsoAutoShapeType,System.Single,System.Single,System.Single,System.Single)" /> 标注。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -213,8 +213,8 @@
         <param name="Top">图表上边缘距离定位点的以磅为单位的位置。</param>
         <param name="Width">以磅为单位的图表宽度。</param>
         <param name="Height">以磅为单位的图表高度。</param>
-        <param name="NewLayout">如果为 true，则使用新的动态格式规则插入图表 (标题打开，并且只有有多个系列时，图例 <paramref name="NewLayout" /> 才) 。</param>
-        <summary>向文档添加图表。 返回 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 一个对象，该对象代表图表并添加到指定的集合中。</summary>
+        <param name="NewLayout">如果为 true，则通过使用新的动态格式规则插入图表 (Title 为打开，并且 Legend 仅在有多个系列时 <paramref name="NewLayout" />) 。</param>
+        <summary>向文档添加图表。 返回 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 一个代表图表的对象，并添加到指定集合中。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -251,9 +251,9 @@
         <param name="BeginY">必需 <b>单个</b>。 连接符的起点相对于文档左上角的垂直位置（以磅为单位）。</param>
         <param name="EndX">必需 <b>单个</b>。 连接符的终点相对于文档左上角的水平位置（以磅为单位）。</param>
         <param name="EndY">必需 <b>单个</b>。 连接符的终点相对于文档左上角的垂直位置（以磅为单位）。</param>
-        <summary>创建一个连接符。 返回 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 一个代表新连接器的对象。</summary>
+        <summary>创建一个连接符。 返回 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 一个代表新连接符的对象。</summary>
         <returns>To be added.</returns>
-        <remarks><para>添加一个连接符时，它没有连接到任何对象。 使用 和 方法将连接符的开头和结尾附加到 <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> 文档中的其他形状。</para>
+        <remarks><para>添加一个连接符时，它没有连接到任何对象。 使用 <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> 和 <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> 方法将连接符的开头和结尾附加到文档中的其他形状。</para>
           <para>将连接符连接到形状上时，连接符的大小和位置将自动进行必要的调整。因此，将连接符连接到其他形状上时，添加连接符时所指定的初始大小和位置是无关紧要的。</para>
           <para> </para></remarks>
       </Docs>
@@ -281,8 +281,8 @@
         <Parameter Name="SafeArrayOfPoints" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SafeArrayOfPoints">必需 <b>对象</b>。 由指定曲线的顶点和控制点的坐标对组成的数组。 首先指定起点，然后指定两个第一段贝塞尔曲线的控制点。 该曲线每增加一条线段，就要为其指定一个顶点和两个控制点。 最后指定该曲线的终点。 请注意，必须指定的点数始终为 3n + 1，其中 n 为曲线的线段个数。</param>
-        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 个对象，该对象代表工作表中的贝塞尔曲线。</summary>
+        <param name="SafeArrayOfPoints">必需的 <b>对象</b>。 由指定曲线的顶点和控制点的坐标对组成的数组。 首先指定起点，然后指定两个第一段贝塞尔曲线的控制点。 该曲线每增加一条线段，就要为其指定一个顶点和两个控制点。 最后指定该曲线的终点。 请注意，必须指定的点数始终为 3n + 1，其中 n 为曲线的线段个数。</param>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 一个对象，该对象代表工作表中的贝塞尔曲线。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -317,9 +317,9 @@
         <Parameter Name="Height" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Type">必需 <see cref="T:Microsoft.Office.Core.MsoDiagramType" /> 。 图表的类型。 可以是以下 <b>MsoDiagramType</b> 常量之一<b>：msoDiagramCycle</b> A process diagram with a continuous cycle diagram type.<b>msoDiagramMixed</b> 混合图表类型。<b>msoDiagramOrgChart</b> 分层关系图表类型。<b>msoDiagramPyramid</b> 基于基础的关系图表类型。<b>msoDiagramRadial</b> 显示核心元素关系的图表类型。<b>msoDiagramTarget</b> 显示目标步骤的图表类型。<b>msoDiagramVenn</b> 显示元素之间的重叠区域图表类型。</param>
-        <param name="Left">必需 <b>单个</b>。 相对于 (左上角) 图表左上角的位置（以点表示）。</param>
-        <param name="Top">必需 <b>单个</b>。 图表 (左上角) 相对于工作表左上角的位置（以点表示）。</param>
+        <param name="Type">必需 <see cref="T:Microsoft.Office.Core.MsoDiagramType" /> 。 图表的类型。 可以是其中一个 <b>MsoDiagramType</b> 常量<b>：msoDiagramCycle</b> 具有连续周期图表类型的流程图。<b>msoDiagramMixed</b> 混合图表类型。<b>msoDiagramOrgChart</b> 分层关系图表类型。<b>msoDiagramPyramid</b> 基于基础的关系图表类型。<b>msoDiagramRadial</b> 显示核心元素关系的图表类型。<b>msoDiagramTarget</b> 显示目标的步骤的图表类型。<b>msoDiagramVenn</b> 显示元素之间重叠的区域的图表类型。</param>
+        <param name="Left">必需 <b>单个</b>。 图表 (左上角相对于) 左上角的位置，以点表示。</param>
+        <param name="Top">必需 <b>单个</b>。 图表 (左上角) 相对于工作表左上角的位置，以点表示。</param>
         <param name="Width">必需 <b>单个</b>。 图表的宽度（以点表示）。</param>
         <param name="Height">必需 <b>单个</b>。 图表的高度（以点表示）。</param>
         <summary>创建图表。 返回 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 一个代表新图表的对象。</summary>
@@ -354,14 +354,14 @@
         <Parameter Name="Height" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Type">必需 <see cref="T:Microsoft.Office.Interop.Excel.XlFormControl" /> 。 Microsoft Excel 控件类型。 无法在工作表上创建编辑框。 可以是以下 <b>XlFormControl</b> 常量之一<b>：xlButtonControl</b><b>xlCheckBox</b><b>xlDropDown</b><b>xlEditBox</b><b>xlGroupBox</b><b>xlLabel</b><b>xlListBox</b><b>xlOptionButton</b><b>xlScrollBar</b><b>xlSpinner</b></param>
-        <param name="Left">必需 <b>整数</b>。 新对象相对于工作表 A1 单元格左上角或图表左上角的初始坐标（以磅为单位）。</param>
-        <param name="Top">必需 <b>整数</b>。 新对象相对于工作表 A1 单元格左上角或图表左上角的初始坐标（以磅为单位）。</param>
-        <param name="Width">必需 <b>整数</b>。 以磅为单位给出新对象的初始大小。</param>
-        <param name="Height">必需 <b>整数</b>。 以磅为单位给出新对象的初始大小。</param>
+        <param name="Type">必需 <see cref="T:Microsoft.Office.Interop.Excel.XlFormControl" /> 。 Microsoft Excel 控件类型。 无法在工作表上创建编辑框。 可以是以下<b>XlFormControl</b>常量之一<b>：xlButtonControl</b><b>xlCheckBox</b><b>xlDropDown</b><b>xlEditBox</b><b>xlGroupBox xlLabel</b><b>xlListBox</b><b></b><b>xlOptionButton</b><b>xlScrollBar</b><b>xlSpinner</b></param>
+        <param name="Left">必需<b>类型，类型为 Integer。</b> 新对象相对于工作表 A1 单元格左上角或图表左上角的初始坐标（以磅为单位）。</param>
+        <param name="Top">必需<b>类型，类型为 Integer。</b> 新对象相对于工作表 A1 单元格左上角或图表左上角的初始坐标（以磅为单位）。</param>
+        <param name="Width">必需<b>类型，类型为 Integer。</b> 以磅为单位给出新对象的初始大小。</param>
+        <param name="Height">必需<b>类型，类型为 Integer。</b> 以磅为单位给出新对象的初始大小。</param>
         <summary>创建一个 Microsoft Excel 控件。 返回 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 一个代表新控件的对象。</summary>
         <returns>To be added.</returns>
-        <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddOLEObject(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel.OLEObjects.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> OLEObjects 集合的方法或方法创建一个ActiveX控件。</para>
+        <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddOLEObject(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel.OLEObjects.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> OLEObjects 集合的 方法创建一个ActiveX控件。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -392,7 +392,7 @@
         <Parameter Name="Height" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Orientation">必需 <see cref="T:Microsoft.Office.Core.MsoTextOrientation" /> 。 标签中文本的方向。 可以是以下<b>MsoTextOrientation</b>常量之一<b>：msoTextOrientationDownward</b><b>msoTextOrientationHorizontal</b><b>msoTextOrientationHorizontalRotatedFarEast</b><b>msoTextOrientationMixed msoTextOrientationUpward</b><b>msoTextOrientationVertical</b><b>msoTextOrientationVerticalFarEast</b>某些常量可能不可用， 取决于美国 (的语言支持，例如) 或安装的语言支持。<b></b></param>
+        <param name="Orientation">必需 <see cref="T:Microsoft.Office.Core.MsoTextOrientation" /> 。 标签中文本的方向。 可以是以下<b>MsoTextOrientation</b>常量之一<b>：msoTextOrientationDownward</b><b>msoTextOrientationHorizontal</b><b>msoTextOrientationHorizontalRotatedFarEast</b><b>msoTextOrientationMixed</b><b>msoTextOrientationUpward msoTextOrientationVertical</b><b>msoTextOrientationVerticalFarEast</b>其中某些常量可能不可用， 取决于美国 (的语言支持，例如) 或安装的语言支持。<b></b></param>
         <param name="Left">必需 <b>单个</b>。 标签左上角相对于文档左上角的位置（以磅为单位）。</param>
         <param name="Top">必需 <b>单个</b>。 标签左上角相对于文档顶部的位置（以磅为单位）。</param>
         <param name="Width">必需 <b>单个</b>。 标签的宽度（以磅为单位）。</param>
@@ -469,18 +469,18 @@
         <Parameter Name="Height" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ClassType">可选 <b>对象</b>。  (必须指定两者之 <paramref name="ClassType" /> 一或 <paramref name="FileName" />) 。 一个字符串，包含要创建的对象的程序标识符。 如果 <paramref name="ClassType" /> 已指定 <paramref name="FileName" /> ， <paramref name="Link" /> 则忽略。</param>
-        <param name="Filename">可选 <b>对象</b>。 创建对象所用的文件名称。 如果未指定路径，则使用当前的工作文件夹。 必须为对象指定 or 参数，但不能 <paramref name="ClassType" /> <paramref name="FileName" /> 同时指定两者。</param>
-        <param name="Link">可选 <b>对象</b>。 <b>真</b> 若要将 OLE 对象链接到创建它的文件。 <b>假</b> 以使 OLE 对象成为独立复的文件。 如果指定了值 <paramref name="ClassType" /> ，则此参数必须为<b>False。</b> 默认值为 <b>False</b>。</param>
+        <param name="ClassType">可选 <b>对象</b>。  (必须指定 或 <paramref name="ClassType" /> <paramref name="FileName" />) 。 一个字符串，包含要创建的对象的程序标识符。 如果 <paramref name="ClassType" /> 指定 ， <paramref name="FileName" /> 则忽略 <paramref name="Link" /> 和 。</param>
+        <param name="Filename">可选 <b>对象</b>。 创建对象所用的文件名称。 如果未指定路径，则使用当前的工作文件夹。 必须为对象指定 <paramref name="ClassType" /> 或 <paramref name="FileName" /> 参数，但不能同时指定两者。</param>
+        <param name="Link">可选 <b>对象</b>。 <b>真</b> 若要将 OLE 对象链接到创建它的文件。 <b>假</b> 以使 OLE 对象成为独立复的文件。 如果为 指定了值 <paramref name="ClassType" /> ，则此参数必须为 <b>False</b>。 默认值为 <b>False</b>。</param>
         <param name="DisplayAsIcon">可选 <b>对象</b>。 <b>真</b> 若要将 OLE 对象显示为图标。 默认值为 <b>False</b> 。</param>
         <param name="IconFileName">可选 <b>对象</b>。 包含将要显示的图标的文件。</param>
-        <param name="IconIndex">可选 <b>对象</b>。 内图标的索引 <paramref name="IconFileName" /> 。 指定文件中图标的顺序与图标在“更改图标”对话框中出现的顺序相对应（选中“显示为图标”复选框后，可从“对象”对话框访问该对话框）。 文件中的第一个图标的索引号是 0 (零)。 如果给定索引号的图标不存在，则使用 (索引号为 1 的) <paramref name="IconFileName" /> 图标。 默认值为 0 (零)。</param>
+        <param name="IconIndex">可选 <b>对象</b>。 内图标的索引 <paramref name="IconFileName" /> 。 指定文件中图标的顺序与图标在“更改图标”对话框中出现的顺序相对应（选中“显示为图标”复选框后，可从“对象”对话框访问该对话框）。 文件中的第一个图标的索引号是 0 (零)。 如果 中不存在具有给定索引号的图标，则使用索引号为 1 的 (文件的第二个) <paramref name="IconFileName" /> 图标。 默认值为 0 (零)。</param>
         <param name="IconLabel">可选 <b>对象</b>。 显示在图标下面的标签（题注）。</param>
         <param name="Left">可选 <b>对象</b>。 新对象的左上角相对于文档左上角的位置（以磅为单位）。 默认值为 0（零）。</param>
         <param name="Top">可选 <b>对象</b>。 新对象的左上角相对于文档左上角的位置（以磅为单位）。 默认值为 0（零）。</param>
         <param name="Width">可选 <b>对象</b>。 以磅为单位给出 OLE 对象的初始尺寸。</param>
         <param name="Height">可选 <b>对象</b>。 以磅为单位给出 OLE 对象的初始尺寸。</param>
-        <summary>创建一个 OLE 对象。 返回一 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 个对象，该对象表示新的 OLE 对象。</summary>
+        <summary>创建一个 OLE 对象。 返回 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 一个对象，该对象代表新的 OLE 对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -515,7 +515,7 @@
       </Parameters>
       <Docs>
         <param name="Filename">必需的 <b>字符串</b> 。 要在其中创建 OLE 对象的文件。</param>
-        <param name="LinkToFile">必需 <see cref="T:Microsoft.Office.Core.MsoTriState" /> 。 要链接至的文件。 可以是以下 <b>MsoTriState</b> 常量之一<b>：msoCTrue</b><b>msoFalse</b> 使图片成为文件的独立副本。<b>msoTriStateMixed</b><b>msoTriStateToggle</b><b>msoTrue</b> 将图片链接到创建图片的文件。</param>
+        <param name="LinkToFile">必需 <see cref="T:Microsoft.Office.Core.MsoTriState" /> 。 要链接至的文件。 可以是其中一个 <b>MsoTriState</b> 常量：<b>msoCTrue</b><b>msoFalse</b> 使图片成为文件的独立副本。<b>msoTriStateMixed</b><b>msoTriStateToggle</b><b>msoTrue</b> 将图片链接到创建图片的文件。</param>
         <param name="SaveWithDocument">必需 <b>。MsoTriState</b>。 将图片与文档一起保存。</param>
         <param name="Left">必需 <b>单个</b>。 图片左上角相对于文档左上角的位置（以磅为单位）。</param>
         <param name="Top">必需 <b>单个</b>。 图片左上角相对于文档顶部的位置（以磅为单位）。</param>
@@ -558,14 +558,14 @@
       <Docs>
         <param name="Filename">要在其中创建 OLE 对象的文件。</param>
         <param name="LinkToFile">确定是否将图片链接到从中创建该图片的文件。</param>
-        <param name="SaveWithDocument">确定是否将已链接的图片插入到文档一起保存。 如果 LinkToFile 为 msoFalse，则此参数必须为 msoTrue。</param>
+        <param name="SaveWithDocument">确定是否将已链接的图片插入到文档一起保存。如果为 msoFalse 时链接到文件，则此参数必须是 属性值为 msoTrue 。 </param>
         <param name="Left">图片左边缘相对于工作表左边缘的位置（以点为单位）。</param>
         <param name="Top">图片上边缘相对于工作表上边缘的位置（以点为单位）。</param>
         <param name="Width">图片的宽度（以磅为单位）。</param>
         <param name="Height">图片的高度（以磅为单位）。</param>
         <param name="Compress">确定插入图片时是否应该压缩图片。</param>
         <summary>从现有文件创建图片。 返回 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 一个代表新图片的对象。</summary>
-        <returns>型号</returns>
+        <returns>形状</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -592,8 +592,8 @@
         <Parameter Name="SafeArrayOfPoints" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SafeArrayOfPoints">必需 <b>对象</b>。 指定连续线段图形的顶点的坐标对数组。</param>
-        <summary>创建开放的折线或闭合的多边形。 返回一 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 个对象，该对象代表新的折线或多边形。</summary>
+        <param name="SafeArrayOfPoints">必需的 <b>对象</b>。 指定连续线段图形的顶点的坐标对数组。</param>
+        <summary>创建开放的折线或闭合的多边形。 返回一 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 个代表新折线或多边形的对象。</summary>
         <returns>To be added.</returns>
         <remarks><para>若要组成一个封闭的多边形，请为连续线段图形的第一个和最后一个顶点指定相同的坐标。</para>
           <para> </para></remarks>
@@ -629,11 +629,11 @@
         <param name="Type">必需 <see cref="T:Microsoft.Office.Core.MsoAutoShapeType" /> 。 指定要创建的自选形状的类型。</param>
         <param name="Left">必需 <b>单个</b>。 自选形状边框的左上角相对于文档左上角的位置（以磅为单位）。</param>
         <param name="Top">必需 <b>单个</b>。 自选形状边框的左上角相对于文档左上角的位置（以磅为单位）。</param>
-        <param name="Width">必需 <b>单个</b>。 自Shape 边框的宽度和高度（以点表示）。</param>
-        <param name="Height">必需 <b>单个</b>。 自Shape 边框的宽度和高度（以点表示）。</param>
+        <param name="Width">必需 <b>单个</b>。 自Shape 边界框的宽度和高度（以点表示）。</param>
+        <param name="Height">必需 <b>单个</b>。 自Shape 边界框的宽度和高度（以点表示）。</param>
         <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 一个对象，该对象代表工作表中的新自Shape。</summary>
         <returns>To be added.</returns>
-        <remarks><para>若要更改已添加的自Shape 的类型，请设置 <see cref="P:Microsoft.Office.Interop.Excel.Shape.AutoShapeType" /> 该属性。</para>
+        <remarks><para>若要更改已添加的自Shape 的类型，请设置 <see cref="P:Microsoft.Office.Interop.Excel.Shape.AutoShapeType" /> 属性。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -748,7 +748,7 @@
         <param name="FontItalic">必需 <b>。MsoTriState</b>。 在艺术字中要倾斜的字体。</param>
         <param name="Left">必需 <b>单个</b>。 艺术字边框左上角相对于文档左上角的位置（以磅为单位）。</param>
         <param name="Top">必需 <b>单个</b>。 艺术字边框左上角相对于文档顶部的位置（以磅为单位）。</param>
-        <summary>创建艺术字对象。 返回一 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 个对象，该对象表示新的艺术字对象。</summary>
+        <summary>创建艺术字对象。 返回一 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 个代表新艺术字对象的对象。</summary>
         <returns>To be added.</returns>
         <remarks><para>向文档添加艺术字对象时，该对象的高度和宽度将自动根据所指定的文字的大小和数量来设置。</para>
           <para> </para></remarks>
@@ -777,7 +777,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -812,7 +812,7 @@
         <param name="Y1">必需 <b>单个</b>。 任意图形中第一个节点相对于文档左上角的位置（以磅为单位）。</param>
         <summary>建立任意多边形对象。 返回 <see cref="T:Microsoft.Office.Interop.Excel.FreeformBuilder" /> 一个对象，该对象代表正在构建的任意多边形。</summary>
         <returns>To be added.</returns>
-        <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> 该方法向任意多边形添加线段。 向任意多边形添加至少一段后，可以使用该方法将 <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> <b>FreeformBuilder</b> 对象转换为具有在 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> <b>FreeformBuilder</b> 对象中定义的几何描述的对象。</para>
+        <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> 方法向任意多边形添加线段。 向任意多边形添加至少一个线段后，可以使用 方法将 <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> <b>FreeformBuilder</b> 对象转换为具有在 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> <b>FreeformBuilder</b> 对象中定义的几何描述的对象。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -929,7 +929,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">必需 <b>对象</b>。 对象的名称或索引号。</param>
+        <param name="Index">必需的 <b>对象</b>。 对象的名称或索引号。</param>
         <summary>从集合中返回一个对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -989,7 +989,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">必需 <b>对象</b>。 包含在该区域中的各单个形状。 可以是指定形状索引号的整数、指定形状名称的字符串，也可以是包含整数或字符串的数组。</param>
+        <param name="Index">必需的 <b>对象</b>。 包含在该区域中的各单个形状。 可以是指定形状索引号的整数、指定形状名称的字符串，也可以是包含整数或字符串的数组。</param>
         <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> 一个对象，该对象代表集合中形状的 <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> 子集。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

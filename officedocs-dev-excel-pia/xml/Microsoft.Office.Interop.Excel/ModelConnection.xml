@@ -1,5 +1,5 @@
 <Type Name="ModelConnection" FullName="Microsoft.Office.Interop.Excel.ModelConnection">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="fd5c31aae4d45548f7153f5488725dde8ae8c9ee" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011681" /></Metadata><TypeSignature Language="C#" Value="public interface ModelConnection" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="614daa5ac7b9c92307b86e26d9cee3909e81ccbd788f4a81ccbf87ec5647d56d" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54516737" /></Metadata><TypeSignature Language="C#" Value="public interface ModelConnection" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ModelConnection" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ModelConnection" />
   <TypeSignature Language="VB.NET" Value="Public Interface ModelConnection" />
@@ -21,8 +21,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>包含 Excel 2013 中引入的新模型连接类型以与集成数据模型交互的信息。</summary>
-    <remarks><para>要用于连接到模型的所有数据透视表，将具有一个新的"特殊"工作簿连接，该连接始终存在 (且无法在具有数据模型的) 中删除。 它在工作簿中首次创建模型时创建。 此特殊工作簿连接上的所有属性都是只读的。 其名称为：工作簿数据模型。</para>
+    <summary>包含有关 Excel 2013 中引入的新模型连接类型的信息，以便与集成数据模型进行交互。</summary>
+    <remarks><para>若要用于连接到模型的所有数据透视表，将具有一个新的"特殊"工作簿连接，该连接始终位于 (且无法删除) 具有数据模型的工作簿中的数据透视表。 它在首次在工作簿中创建模型时创建。 此特殊工作簿连接上的所有属性都是只读的。 其名称为：工作簿数据模型。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -49,7 +49,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ADO Connection 对象用于创建与数据源的开放连接。 允许加载项（如 Powerview）创建与引擎的直接连接，从而创建数据模型。 <b>ADOConnection</b> 对象只读。</summary>
+        <summary>ADO Connection 对象用于创建与数据源的开放式连接。 启用加载项（如 Powerview）以创建与引擎的直接连接，从而创建数据模型。 <b>ADOConnection</b> 对象只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -77,7 +77,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Excel 应用程序的对象。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Excel应用程序。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -136,9 +136,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定数据源的命令字符串。 <b>使用</b> <b>C# (</b> 对象的对象) 可读/写</summary>
+        <summary>返回或设置指定数据源的命令字符串。 <b>对象</b> (<b>读/写</b> C#) 对象</summary>
         <value>To be added.</value>
-        <remarks><para>这可以是模型表 (的表) 或计算到表的 DAX 表达式。</para>
+        <remarks><para>这是模型表 (表的表) 或计算为表的 DAX 表达式。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -168,9 +168,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCmdType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置常量 <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" /> 之一。 读/写</summary>
+        <summary>返回或设置其中一 <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" /> 个常量。 读/写</summary>
         <value>To be added.</value>
-        <remarks><para>对于<b>ModelConnection</b>对象，此类型将设置为<b>xlCmdTable</b>或<b>xlCmdDAX。</b> 与数据模型的隔离连接<b>ThisWorkbookDataModel</b>的类型为<b>xlCmdCube。</b></para>
+        <remarks><para>对于 <b>ModelConnection</b> 对象，此类型将设置为 <b>xlCmdTable</b> 或 <b>xlCmdDAX</b>。 与数据模型的隔离连接 <b>ThisWorkbookDataModel</b> 的类型为 <b>xlCmdCube</b>。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -197,7 +197,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读 <b>Integer</b> (<b>int int</b> int c#) 。</summary>
+        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读<b>Integer</b>类型 (<b>整数C#) 。</b></summary>
         <value>To be added.</value>
         <remarks><para>由于对象是在 Excel 中创建的，因此此属性返回十六进制值 5843454C，它表示字符串"XCEL"。</para>
           <para> </para></remarks>
@@ -226,7 +226,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一 <b>个对象</b> ，表示指定的 <b>ModelConnection</b> 对象的父对象。 只读。</summary>
+        <summary>返回一 <b>个对象</b> ，表示指定的 <b>ModelConnection 对象的父</b> 对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

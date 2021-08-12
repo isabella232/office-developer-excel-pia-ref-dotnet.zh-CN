@@ -1,5 +1,5 @@
 <Type Name="ListColumn" FullName="Microsoft.Office.Interop.Excel.ListColumn">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="08d4b05d05d4520afef5aa08e764c83df4bcd655" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999957" /></Metadata><TypeSignature Language="C#" Value="public interface ListColumn" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b71df3550763bd1f7f5358b97663ac2d082d516fbb8ae024d73469a818652288" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54516359" /></Metadata><TypeSignature Language="C#" Value="public interface ListColumn" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListColumn" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ListColumn" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListColumn" />
@@ -21,8 +21,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>表示列表中的列。 <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" />对象是集合的 <see cref="T:Microsoft.Office.Interop.Excel.ListColumns" /> 一个成员。 该 <see cref="T:Microsoft.Office.Interop.Excel.ListColumns" /> 集合包含列表中所有列 (<see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> 对象) 。</summary>
-    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.ListObject.ListColumns" /> 对象的属性 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> 返回集合 <see cref="T:Microsoft.Office.Interop.Excel.ListColumns" /> 。</para>
+    <summary>表示列表中的列。 <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" />对象是集合的成员 <see cref="T:Microsoft.Office.Interop.Excel.ListColumns" /> 。 该 <see cref="T:Microsoft.Office.Interop.Excel.ListColumns" /> 集合包含列表中所有列 (<see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> 对象) 。</summary>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.ListObject.ListColumns" /> 对象的 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> 属性可返回 <see cref="T:Microsoft.Office.Interop.Excel.ListColumns" /> 集合。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -80,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -164,7 +164,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>在列表中删除数据列。 不从工作表中删除列。 如果列表链接到 Microsoft Windows SharePoint Services网站，将无法从服务器中删除列并生成错误。</summary>
+        <summary>在列表中删除数据列。 不从工作表中删除列。 如果列表链接到Microsoft Windows SharePoint Services，将无法从服务器中删除列，并生成错误。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,7 +253,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置列表列的名称。 这还用作显示名称列的索引。 此名称必须在列表中唯一。 读/写 <b>String</b>。</summary>
+        <summary>返回或设置列表列的名称。 这还用作显示名称列的列。 此名称必须在列表中唯一。 读/写 <b>String</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -281,7 +281,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父对象。 只读。</summary>
+        <summary>返回指定对象的父对象。只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -340,9 +340,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一 <b>个</b> 字符串 ，表示计算列中的公式。 公式用 Excel 语法表示 (美国英语区域设置，A1 表示法表示) 。 只读 <b>String</b>。</summary>
-        <value><b>字符串</b></value>
-        <remarks><para>如果该对象不属于链接到 SharePoint 网站的列表，或者如果该对象不是在 SharePoint 网站上指定为计算列的列，则您将遇到运行时错误 <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> 。</para>
+        <summary>返回一 <b>个</b> 字符串 ，表示计算列中的公式。 公式以美国英语区域Excel A1 (表示法的语法) 。 只读 <b>String</b>。</summary>
+        <value><b>String</b></value>
+        <remarks><para>如果该对象不属于链接到 SharePoint 网站的列表，或者该对象不是指定为 SharePoint 网站上计算列的列，则您将获得运行时 <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> 错误。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -369,7 +369,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回对象的"总计" <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> 行。 只读。</summary>
+        <summary>返回对象的总计 <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> 行。 只读。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.Range" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -402,7 +402,7 @@
       <Docs>
         <summary>根据枚举的值确定列表列的"总计"行中的 <see cref="T:Microsoft.Office.Interop.Excel.XlTotalsCalculation" /> 计算类型。 读/写。</summary>
         <value>To be added.</value>
-        <remarks><para>无需显示"总计"行，就无需设置此属性。 此属性没有固定的“默认”值。 当添加或删除其他列时，Excel 可能会更改此属性的状态。</para>
+        <remarks><para>若要设置此属性，无需显示"总计"行。 此属性没有固定的“默认”值。 Excel添加或删除其他列时，此属性的状态可能会更改。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

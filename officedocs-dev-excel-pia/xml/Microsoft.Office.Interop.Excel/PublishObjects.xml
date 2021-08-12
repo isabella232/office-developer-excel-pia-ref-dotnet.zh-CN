@@ -1,5 +1,5 @@
 <Type Name="PublishObjects" FullName="Microsoft.Office.Interop.Excel.PublishObjects">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="f387dc9c018dbd0378441a0c44743179b7b5fb9c" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010750" /></Metadata><TypeSignature Language="C#" Value="public interface PublishObjects : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6fe2cae33cf7bdeaa934dee8836349bfb3286b0661da03d1e1d77248b6b612d6" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54516604" /></Metadata><TypeSignature Language="C#" Value="public interface PublishObjects : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PublishObjects implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PublishObjects" />
   <TypeSignature Language="VB.NET" Value="Public Interface PublishObjects&#xA;Implements IEnumerable" />
@@ -26,7 +26,7 @@
   </Attributes>
   <Docs>
     <summary>工作簿中所有 <see cref="T:Microsoft.Office.Interop.Excel.PublishObject" /> 对象的集合。 每个 <b>PublishObject</b> 对象都代表保存为网页的工作簿中的某一项，并且还可以根据该对象中属性和方法所指定的值进行刷新。</summary>
-    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.PublishObjects" /> 该属性可返回 <b>PublishObjects</b> 集合。</para>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.PublishObjects" /> 属性可返回 <b>PublishObjects</b> 集合。</para>
       <para>使用 <b>PublishObjects</b> () 返回单个 <paramref name="index" /> <paramref name="index" /> <b>PublishObject</b> 对象，其中是工作簿中指定项目的索引号。</para>
       <para> </para></remarks>
   </Docs>
@@ -97,11 +97,11 @@
         <param name="SourceType">必需 <see cref="T:Microsoft.Office.Interop.Excel.XlSourceType" /> 。 源的类型。</param>
         <param name="Filename">必需的 <b>字符串</b> 。 用于保存源对象的 URL（在 Intranet 或网站上）或路径（本地或网络）。</param>
         <param name="Sheet">可选 <b>对象</b>。 保存为网页的工作表名称。</param>
-        <param name="Source">可选 <b>对象</b>。 用于标识具有以下常量之一作为参数的项目的唯一名称 <paramref name="SourceType" /> ：xlSourceAutoFilter、xlSourceChart、xlSourcePivotTable、xlSourcePrintArea、xlSourceQuery<b></b>或<b>xlSourceRange。</b> <b></b> <b></b> <b></b> <b></b> 如果 <paramref name="SourceType" /> 为 <b>xlSourceRange，</b>则 Source 指定一个范围，该范围可以是已定义的名称。 如果 <paramref name="SourceType" /> 为 <b>xlSourceChart</b> <b>、xlSourcePivotTable</b>或 <b>xlSourceQuery，</b>则指定图表、数据透视 <paramref name="Source" /> 表或查询表的名称。</param>
-        <param name="HtmlType">可选 <b>对象</b>。 指定项目是保存为交互式的 Microsoft Office Web 组件还是保存为静态文本和图像。 可以是下列常量 <see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" /> 之一。ConstantDescription<b>xlHtmlCalc</b>Item saved as an interactive Microsoft Office Spreadsheet component.<b>xlHtmlChart</b>另存为图表组件的交互式Microsoft Office项。<b>xlHtmlList</b>另存为数据透视表组件的Microsoft Office项。<b>xlHtmlStatic</b>另存为静态文本和图像的项目。</param>
+        <param name="Source">可选 <b>对象</b>。 用于标识具有以下常量之一作为参数的项目的唯一名称 <paramref name="SourceType" /> ：xlSourceAutoFilter、xlSourceChart、xlSourcePivotTable、xlSourcePrintArea、xlSourceQuery<b></b>或<b>xlSourceRange。</b> <b></b> <b></b> <b></b> <b></b> 如果 <paramref name="SourceType" /> 为 <b>xlSourceRange</b>，则 Source 指定一个范围，该范围可以是已定义的名称。 如果 <paramref name="SourceType" /> 为 <b>xlSourceChart</b> <b>、xlSourcePivotTable</b>或 <b>xlSourceQuery，</b>则指定图表、 <paramref name="Source" /> 数据透视表或查询表的名称。</param>
+        <param name="HtmlType">可选 <b>对象</b>。 指定项目是保存为交互式的 Microsoft Office Web 组件还是保存为静态文本和图像。 可以是下列常量 <see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" /> 之一。ConstantDescription<b>xlHtmlCalc</b>Item 另存为交互式Microsoft Office电子表格组件。<b>xlHtmlChart</b>另存为交互式图表组件Microsoft Office项。<b>xlHtmlList</b>另存为数据透视表组件的Microsoft Office项。<b>xlHtmlStatic</b>另存为静态文本和图像的项。</param>
         <param name="DivID">可选 <b>对象</b>。 在 HTML DIV 标记中使用的唯一标识符，它用于标识网页上的项。</param>
         <param name="Title">可选 <b>对象</b>。 网页的标题。</param>
-        <summary>创建一个对象，该对象代表保存在网页上的文档中的项目。 当对 Microsoft Excel 中的文档进行了一些自动修订时，这些对象可帮助随后对网页进行的更新。 返回一 <see cref="T:Microsoft.Office.Interop.Excel.PublishObject" /> 个对象。</summary>
+        <summary>创建一个对象，该对象代表保存在网页上的文档中的项目。 当对 Microsoft Excel 中的文档进行了一些自动修订时，这些对象可帮助随后对网页进行的更新。 返回 <see cref="T:Microsoft.Office.Interop.Excel.PublishObject" /> 一个对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -129,7 +129,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -275,7 +275,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">必需 <b>对象</b>。 对象的名称或索引号。</param>
+        <param name="Index">必需的 <b>对象</b>。 对象的名称或索引号。</param>
         <summary>从集合中返回一个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

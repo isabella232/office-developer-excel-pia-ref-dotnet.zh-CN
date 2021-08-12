@@ -1,5 +1,5 @@
 <Type Name="Names" FullName="Microsoft.Office.Interop.Excel.Names">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="25942f5647980d40fd5f4e153bf99810065d6715" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011429" /></Metadata><TypeSignature Language="C#" Value="public interface Names : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c8b57541ca50c6f2a0f5542451dbf6fe82f758340e8eab6edcae939433971b15" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54515785" /></Metadata><TypeSignature Language="C#" Value="public interface Names : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Names implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Names" />
   <TypeSignature Language="VB.NET" Value="Public Interface Names&#xA;Implements IEnumerable" />
@@ -26,9 +26,9 @@
   </Attributes>
   <Docs>
     <summary>应用程序或工作簿中 <see cref="T:Microsoft.Office.Interop.Excel.Name" /> 所有对象的集合。 每一个 <b>Name</b> 对象都代表一个单元格区域的定义名称。 名称可以是内置名称（如“Database”、“Print_Area”和“Auto_Open”）或自定义名称。</summary>
-    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Names" /> 该属性可返回 <b>Names</b> 集合。</para>
-      <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.Names.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 该方法可创建一个名称并将其添加到集合中。 Add <b></b>方法的参数必须以 A1 样式表示法指定，包括美元符号 <paramref name="RefersTo" /> ($) 适当。 例如，如果在 Sheet1 上选择了单元格 A10，并且使用参数 <paramref name="RefersTo" /> "=sheet1！A1：B1"， the new name actually refers to cells A10：B10 (because you specified a relative reference) . 若要指定绝对引用，请使用“=Sheet1!$A$1:$B$1”。</para>
-      <para>使用 <b>名称</b> <paramref name="index" /> () ，其中的名称 <paramref name="index" /> 索引号或定义的名称，返回单个 <b>名称</b> 对象。</para>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Names" /> 属性可返回 <b>Names</b> 集合。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.Names.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 方法创建一个名称并将其添加到集合中。 Add <b></b>方法的参数必须以 A1 样式表示法指定，包括美元符号 (<paramref name="RefersTo" /> $) 适当。 例如，如果在 Sheet1 上选择了单元格 A10，并且使用参数 <paramref name="RefersTo" /> "=sheet1！A1：B1"， the new name actually refers to cells A10：B10 (because you specified a relative reference) . 若要指定绝对引用，请使用“=Sheet1!$A$1:$B$1”。</para>
+      <para>使用 <b>名称</b> <paramref name="index" /> () ， <paramref name="index" /> 其中的名称索引号或定义的名称，返回单个 <b>名称</b> 对象。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -99,17 +99,17 @@
       </Parameters>
       <Docs>
         <param name="Name">可选 <b>对象</b>。 如果 <paramref name="NameLocal" /> 未指定，则必需。 要用作名称的文本。 名称不能包含空格，也不能看起来像单元格引用。</param>
-        <param name="RefersTo">可选 <b>对象</b>。 必需，除非指定了其他参数 <paramref name="RefersTo" /> 之一。 使用 A1 样式表示法 (描述名称) 。 <b>注意</b> 如果引用不存在，则不返回任何值。</param>
-        <param name="Visible">可选 <b>对象</b>。 <b>如果为 True，</b> 请正常定义名称。 <b>如果</b> 为 False，将名称定义为隐藏名称 (即，该名称不会显示在"定义名称、粘贴名称"或"已选中"对话框中) 。 默认值为 <b>True</b>。</param>
-        <param name="MacroType">可选 <b>对象</b>。 宏类型，如下表所示。ValueMeaning1User 定义函数 (<b>Function</b> 过程) 2Macro (也称为 <b>Sub</b> 过程) 3 或 omittedNone (，即名称不引用用户定义的函数或宏) </param>
+        <param name="RefersTo">可选 <b>对象</b>。 必需，除非指定了其他参数 <paramref name="RefersTo" /> 之一。 使用 A1 样式表示法 (名称引用) 。 <b>注意</b> 如果引用不存在，则不返回任何值。</param>
+        <param name="Visible">可选 <b>对象</b>。 <b>如果为 True，</b> 请正常定义名称。 <b>如果为 False，</b> 将名称定义为隐藏名称 (，即它不显示在"定义名称"、"粘贴名称"或"Goto") 。 默认值为 <b>True</b>。</param>
+        <param name="MacroType">可选 <b>对象</b>。 宏类型，如下表所示。ValueMeaning1User 定义函数 (<b>Function</b> 过程) 2Macro (也称为 <b>Sub</b> 过程) 3 或省略None (，即名称不引用用户定义的函数或宏) </param>
         <param name="ShortcutKey">可选 <b>对象</b>。 宏快捷键。 必须是单个字母，例如“z”或“Z”。 仅适用于命令宏。</param>
-        <param name="Category">可选 <b>对象</b>。 宏或函数的类别（如果 <paramref name="MacroType" /> 为 1 或 2）。 该分类在“函数向导”中使用。 可以使用从 1 开始 (数字类别来引用现有类别) 也可以按 (宏语言的名称) 。 如果指定的类别不存在，Microsoft Excel 将创建新类别。</param>
-        <param name="NameLocal">可选 <b>对象</b>。 如果 <paramref name="Name" /> 未指定，则必需。 要用作用户名的文本 (用户语言) 。 名称不能包含空格，也不能看起来像单元格引用。</param>
-        <param name="RefersToLocal">可选 <b>对象</b>。 必需，除非指定了其他参数 <paramref name="RefersTo" /> 之一。 使用 A1 样式表示法 (表示法，描述名称以用户语言) 。</param>
+        <param name="Category">可选 <b>对象</b>。 宏或函数的类别（如果 <paramref name="MacroType" /> 为 1 或 2）。 该分类在“函数向导”中使用。 现有类别可以按数字类型 (从 1 开始) 或按 (宏语言的名称引用) 。 Microsoft Excel如果指定的类别不存在，则创建一个新类别。</param>
+        <param name="NameLocal">可选 <b>对象</b>。 如果 <paramref name="Name" /> 未指定，则必需。 要用作用户名的文本 (以用户语言) 。 名称不能包含空格，也不能看起来像单元格引用。</param>
+        <param name="RefersToLocal">可选 <b>对象</b>。 必需，除非指定了其他参数 <paramref name="RefersTo" /> 之一。 使用 A1 样式表示法 (以用户语言描述名称) 。</param>
         <param name="CategoryLocal">可选 <b>对象</b>。 如果 <paramref name="Category" /> 未指定，则必需。 用用户语言标识自定义函数类别的文本。</param>
-        <param name="RefersToR1C1">可选 <b>对象</b>。 必需，除非指定了其他参数 <paramref name="RefersTo" /> 之一。 介绍使用 R1C1 样式表示法 (引用的名称) 。</param>
-        <param name="RefersToR1C1Local">可选 <b>对象</b>。 必需，除非指定了其他参数 <paramref name="RefersTo" /> 之一。 使用 R1C1 样式表示法 (表示法，描述该名称以用户语言) 。</param>
-        <summary>定义新名称。 返回一 <see cref="T:Microsoft.Office.Interop.Excel.Name" /> 个对象。</summary>
+        <param name="RefersToR1C1">可选 <b>对象</b>。 必需，除非指定了其他参数 <paramref name="RefersTo" /> 之一。 使用 R1C1 样式表示法 (名称引用的名称) 。</param>
+        <param name="RefersToR1C1Local">可选 <b>对象</b>。 必需，除非指定了其他参数 <paramref name="RefersTo" /> 之一。 使用 R1C1 样式表示法 (以用户语言描述名称所引用) 。</param>
+        <summary>定义新名称。 返回 <see cref="T:Microsoft.Office.Interop.Excel.Name" /> 一个对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -137,7 +137,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -287,7 +287,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父对象。 只读。</summary>
+        <summary>返回指定对象的父对象。只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

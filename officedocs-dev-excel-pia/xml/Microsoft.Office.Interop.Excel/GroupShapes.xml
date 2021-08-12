@@ -1,5 +1,5 @@
 <Type Name="GroupShapes" FullName="Microsoft.Office.Interop.Excel.GroupShapes">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ebe63e575d737f035f42220903f1e7f1ac5fd0cc" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003470" /></Metadata><TypeSignature Language="C#" Value="public interface GroupShapes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2f7fe960f3ef274dc5a3cc6fc0e7f41dbca7b99c48323744be0aa7a9f0c7cb70" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508344" /></Metadata><TypeSignature Language="C#" Value="public interface GroupShapes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract GroupShapes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.GroupShapes" />
   <TypeSignature Language="VB.NET" Value="Public Interface GroupShapes&#xA;Implements IEnumerable" />
@@ -26,8 +26,8 @@
   </Attributes>
   <Docs>
     <summary>代表组合形状中的单个形状。</summary>
-    <remarks><para>每个形状都由一个对象 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 表示。 通过使用此对象的方法，可以处理组合中的单个形状， <see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" /> 而无需取消组合。</para>
-      <para>使用 <see cref="P:Microsoft.Office.Interop.Excel.Shape.GroupItems" /> 该属性可返回 <b>GroupShapes</b> 集合。 使用 <b>GroupItems</b> () 从 GroupShapes 集合中返回单个形状，其中是组合形状中单个 <paramref name="index" /> <paramref name="index" /> <b>形状</b> 的个数。</para>
+    <remarks><para>每个形状都由一个对象 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 表示。 将 <see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" /> 方法用于此对象，可以处理组合中的单个形状，而无需取消组合。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Excel.Shape.GroupItems" /> 属性可返回 <b>GroupShapes</b> 集合。 使用 <b>GroupItems</b> () 从 <paramref name="index" /> GroupShapes 集合中返回单个形状，其中是组合形状中单个 <paramref name="index" /> <b>形状</b> 的编号。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -86,7 +86,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -204,7 +204,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">必需 <b>对象</b>。 对象的名称或索引号。</param>
+        <param name="Index">必需的 <b>对象</b>。 对象的名称或索引号。</param>
         <summary>从集合中返回一个对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -264,11 +264,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">必需 <b>对象</b>。 包含在该区域中的各单个形状。 可以是指定形状索引号的整数、指定形状名称的字符串，也可以是包含整数或字符串的数组。</param>
+        <param name="Index">必需的 <b>对象</b>。 包含在该区域中的各单个形状。 可以是指定形状索引号的整数、指定形状名称的字符串，也可以是包含整数或字符串的数组。</param>
         <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> 一个对象，该对象代表集合中形状的 <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> 子集。</summary>
         <value>To be added.</value>
-        <remarks><para>虽然可以使用该属性返回任意数目的形状，但如果只需要返回集合的单个成员，则使用此方法 <see cref="P:Microsoft.Office.Interop.Excel.GroupShapes.Range(System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" /> 更简单。</para>
-          <para>若要指定整数或字符串的数组 <paramref name="Index" /> ，可以使用 <b>Array</b> 函数。</para>
+        <remarks><para>虽然可以使用 属性返回任意数目的形状，但如果只需要返回集合的单个成员，则使用 该方法 <see cref="P:Microsoft.Office.Interop.Excel.GroupShapes.Range(System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" /> 会更简单。</para>
+          <para>若要为 指定整数或字符串数组 <paramref name="Index" /> ，可以使用 <b>Array</b> 函数。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
