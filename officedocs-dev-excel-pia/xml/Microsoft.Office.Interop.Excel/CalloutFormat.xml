@@ -1,5 +1,5 @@
 <Type Name="CalloutFormat" FullName="Microsoft.Office.Interop.Excel.CalloutFormat">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="144c12a51fd945c3e61defd5702f0c40849afc21" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006025" /></Metadata><TypeSignature Language="C#" Value="public interface CalloutFormat : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6233f9c3484fe7f0bc582770ce3c7a0f5a5300316b4270daaef13eed9b0f8926" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508120" /></Metadata><TypeSignature Language="C#" Value="public interface CalloutFormat : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CalloutFormat implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.CalloutFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface CalloutFormat&#xA;Implements _IMsoDispObj" />
@@ -23,7 +23,7 @@
   </Attributes>
   <Docs>
     <summary>包含应用于线形标注的属性和方法。</summary>
-    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.Shape.Callout" /> 该属性可返回 <b>CalloutFormat</b> 对象。</para>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.Shape.Callout" /> 属性可返回 <b>CalloutFormat</b> 对象。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -102,7 +102,7 @@
       <Docs>
         <summary>返回或设置标注线的角度。</summary>
         <value>To be added.</value>
-        <remarks><para>如果标注线包含多个线段 <b>，Angle</b> 属性返回或设置距离标注文本框最远的线段的角度。</para>
+        <remarks><para>如果标注线包含多个线段， <b>则 Angle</b> 属性返回或设置离标注文本框最远的线段的角度。</para>
           <para>
             <b>MsoCalloutAngleType</b> 可以是以下 <b>MsoCalloutAngleType</b> 常量之一：</para>
           <para>
@@ -153,7 +153,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -201,9 +201,9 @@
             <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msoTrue</b> 标注线连接到标注文本框的位置根据标注线原点 (（其中标注指向) ）是位于标注文本框的左侧还是右侧而改变。</para>
-          <para>如果本属性的值为 <b>True</b>，那么当标注文本框位于标注线起点的右边时，标注的落差值（标注文本框的边框与标注线所指向的位置之间的垂直距离）从标注文本框的顶边开始计算，而当标注文本框位于标注线起点的左边时，落差值从标注文本框的底边开始计算。 如果本属性的值为 <b>False</b>，那么不管标注文本框与标注线起点的相对位置怎样，标注的落差值都从标注文本框的顶边开始计算。 使用 <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomDrop(System.Single)" /> 该方法可设置放置值，并使用 <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Drop" /> 该属性返回放置值。</para>
-          <para>设置该属性仅在标注具有显式设置的下拉值（即，该属性的值为 <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.DropType" /> <b>msoCalloutDropCustom）时影响标注</b>。 默认情况下，在创建标注时即会显示设置其落差值</para>
+            <b>msoTrue</b> 标注线连接到标注文本框的位置根据标注线起点 (（其中标注指向) ）是位于标注文本框的左侧还是右侧而改变。</para>
+          <para>如果本属性的值为 <b>True</b>，那么当标注文本框位于标注线起点的右边时，标注的落差值（标注文本框的边框与标注线所指向的位置之间的垂直距离）从标注文本框的顶边开始计算，而当标注文本框位于标注线起点的左边时，落差值从标注文本框的底边开始计算。 如果本属性的值为 <b>False</b>，那么不管标注文本框与标注线起点的相对位置怎样，标注的落差值都从标注文本框的顶边开始计算。 使用 <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomDrop(System.Single)" /> 方法可设置 drop 值，并使用 <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Drop" /> 属性返回 drop 值。</para>
+          <para>设置此属性只影响标注具有显式设置的下拉值 - 即，如果属性的值为 <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.DropType" /> <b>msoCalloutDropCustom</b>。 默认情况下，在创建标注时即会显示设置其落差值</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -238,7 +238,7 @@
             <b>msoCTrue</b>
           </para>
           <para>
-            <b>msoFalse</b> 每当移动标注时，标注的第一段将保留属性 <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> 指定的固定长度。</para>
+            <b>msoFalse</b> 无论何时移动标注，标注的第一段都保持属性指定的 <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> 固定长度。</para>
           <para>
             <b>msoTriStateMixed</b>
           </para>
@@ -246,8 +246,8 @@
             <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msoTrue</b> 标注线的第一段 (文本标注框上的线段) 移动标注时自动缩放。</para>
-          <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.AutomaticLength" /> 该方法将此属性设置为 <b>msoTrue</b>，并使用该方法将此属性设置为 <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> <b>msoFalse</b>。</para>
+            <b>msoTrue</b> 标注线的第一段 (文本标注框的线段) 移动标注时自动缩放。</para>
+          <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.AutomaticLength" /> 方法将此属性设置为 <b>msoTrue</b>，并使用 方法将此属性设置为 <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> <b>msoFalse</b>。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -273,8 +273,8 @@
       <Parameters />
       <Docs>
         <summary>指定在移动标注时，自动调整的第一段 (附加到文本标注框的线段) 在标注线。</summary>
-        <remarks><para><b>AutomaticLength</b>方法仅适用于其线条由多个线段组成的标注 (类型<b>为 msoCalloutThree</b>和<b>msoCalloutFour</b>) 。</para>
-          <para>使用此方法可指定标注线的第一段在移动标注时保留属性返回的 <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> 固定长度。</para>
+        <remarks><para><b>AutomaticLength</b>方法仅适用于标注其线条由多个线段 (<b>msoCalloutThree</b>和<b>msoCalloutFour</b>) 。</para>
+          <para>使用 方法可指定标注线的第一段在移动标注时保持属性返回的 <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> 固定长度。</para>
           <para>应用此方法将该属性 <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoLength" /> 设置 <b>为 True</b>。</para>
           <para> </para></remarks>
       </Docs>
@@ -380,7 +380,7 @@
       <Docs>
         <param name="Drop">必需 <b>单个</b>。 垂直距离（以磅为单位）。</param>
         <summary>设置缘的文本边界框到标注线与文本框的连接位置的垂直距离 (以磅为单位)。</summary>
-        <remarks><para>此距离从文本框的顶部开始计算，除非该属性设置为 True，并且文本框位于标注线起点左侧 (标注指向) 的位置，在这种情况下，放置距离从文本框底部开始测量。 <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> <b></b></para>
+        <remarks><para>此距离从文本框的顶部测量，除非该属性设置为 True，并且文本框位于标注指向) 的位置的标注线起点 (的左侧，在这种情况下，放置距离从文本框底部开始测量。 <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> <b></b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -408,10 +408,10 @@
       </Parameters>
       <Docs>
         <param name="Length">必需 <b>单个</b>。 标注的第一段的长度（以点表示）。</param>
-        <summary>指定标注线的第一段 (文本标注框的线段) 移动标注时保持固定长度。</summary>
-        <remarks><para><b>CustomLength</b>方法仅适用于其线条由多个线段组成的标注 (<b>msoCalloutThree</b>和<b>msoCalloutFour</b>) 。</para>
-          <para>使用此方法可指定在移动标注时自动调整标注线的第 <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.AutomaticLength" /> 一段。</para>
-          <para>应用此方法将 <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoLength" /> 该属性设置为 <b>False，</b> 将 <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> 该属性设置为为 Length 参数 <b>指定的</b> 值。</para>
+        <summary>指定标注线的第一段 (附加到文本标注框的线段) 移动标注时保持固定长度。</summary>
+        <remarks><para><b>CustomLength</b>方法仅适用于标注其线条由多个线段 (<b>msoCalloutThree</b>和<b>msoCalloutFour</b>) 。</para>
+          <para>使用 方法指定无论何时移动标注，标注线的第一条线 <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.AutomaticLength" /> 段都自动缩放。</para>
+          <para>应用此方法将 <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoLength" /> 该属性设置为 <b>False</b> ，并 <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> 设置该属性为 <b>Length</b> 参数指定的值。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -438,11 +438,11 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>对于具有显式设置垂直距离的标注，返回从文本边界框的边缘到标注线连接到文本框的位置的垂直距离 (（以) 点表示）。</summary>
+        <summary>对于具有显式设置的垂直距离值的标注，返回从文本边界框边缘到标注线连接到文本框的位置的垂直距离 (（以) 点表示）。</summary>
         <value>To be added.</value>
-        <remarks><para>距离从文本框顶部开始计算，除非该属性设置为 True，并且文本框位于标注线起点的左侧 (标注指向) 的位置，在这种情况下，放置距离从文本框底部开始测量。 <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> <b></b></para>
-          <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomDrop(System.Single)" /> 该方法可设置此属性的值。</para>
-          <para>只有在标注具有显式设置的下拉值（即，如果属性值为 <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.DropType" /> <b>msoCalloutDropCustom</b>时）时，此属性的值才能准确反映标注线附件在文本框中的位置。</para>
+        <remarks><para>该距离从文本框的顶部开始计算，除非该属性设置为 True，并且文本框位于标注指向) 的位置的标注线起点的左侧 (在这种情况下，放置距离从文本框底部开始测量。 <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> <b></b></para>
+          <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomDrop(System.Single)" /> 方法可设置此属性的值。</para>
+          <para>只有在标注具有显式设置的下拉值（即，该属性的值为 <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.DropType" /> <b>msoCalloutDropCustom</b>时）时，此属性的值才能准确反映标注线与文本框的附件位置。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -488,8 +488,8 @@
           <para>
             <b>msoCalloutDropTop</b>
           </para>
-          <para>如果标注放置类型为<b>msoCalloutDropCustom，</b>则标注文本框和标注线原点的相对位置的属性值 (标注指向) 的位置用于确定标注线连接到文本框的位置。 <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Drop" /> <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /></para>
-          <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> 该方法可设置此属性的值。</para>
+          <para>如果标注放置类型为<b>msoCalloutDropCustom</b>，则和 属性的值以及标注文本框和标注线起点的相对位置 (标注指向) 的位置用于确定标注线与文本框的连接到的位置。 <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Drop" /> <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /></para>
+          <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> 方法可设置此属性的值。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -547,10 +547,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当指定标注的属性设置为 False 时，返回标注线的第一条线段的长度 (（以) 点 (附加到文本标注框的线段 <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoLength" />) 。 <b></b></summary>
+        <summary>当指定标注的属性设置为 False 时，返回标注线的第一条线段的长度 (以)  (附加到文本标注框的线段 <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoLength" />) 。 <b></b></summary>
         <value>To be added.</value>
-        <remarks><para><b>Length</b>属性仅适用于其线条由多个线段组成的标注 (<b>msoCalloutThree</b>和<b>msoCalloutFour</b>) 。</para>
-          <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> 该方法可设置对象的此 <see cref="T:Microsoft.Office.Interop.Excel.CalloutFormat" /> 属性的值。</para>
+        <remarks><para><b>Length</b>属性仅适用于标注其线条由多个线段 (<b>msoCalloutThree</b>和<b>msoCalloutFour</b>) 。</para>
+          <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> 方法可设置对象的此 <see cref="T:Microsoft.Office.Interop.Excel.CalloutFormat" /> 属性的值。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

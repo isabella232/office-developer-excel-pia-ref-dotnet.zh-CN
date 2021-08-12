@@ -1,5 +1,5 @@
 <Type Name="WorkbookEvents_Event" FullName="Microsoft.Office.Interop.Excel.WorkbookEvents_Event">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="2c6690aaaabf5f77b79d72b8fb4094774b86969d" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009014" /></Metadata><TypeSignature Language="C#" Value="public interface WorkbookEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5c6c14cfb45f660b94bbb9a89f6cfaead100ae23f7c8de6e10ecefb588a5256b" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54511690" /></Metadata><TypeSignature Language="C#" Value="public interface WorkbookEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WorkbookEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.WorkbookEvents_Event" />
   <TypeSignature Language="VB.NET" Value="Public Interface WorkbookEvents_Event" />
@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Excel 对象事件 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> 的事件接口。</summary>
+    <summary>对象事件Excel <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> 接口。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -61,7 +61,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_AddinInstallEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>以加载项安装工作簿时发生。</summary>
+        <summary>在将工作簿作为加载项安装时发生。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,7 +119,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_AfterXmlExportEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>在 Excel 将数据从指定工作簿保存或导出到 XML 数据文件之后发生。</summary>
+        <summary>在将Excel工作簿中保存或导出数据到 XML 数据文件之后发生。</summary>
         <remarks><para>XML 功能（以 XML 电子表格格式保存文件除外）仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中可用。</para>
           <para> </para></remarks>
       </Docs>
@@ -139,7 +139,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_AfterXmlImportEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>在刷新现有 XML 数据连接之后或将新的 XML 数据导入指定的 Excel 工作簿后发生。</summary>
+        <summary>在刷新现有 XML 数据连接之后或将新 XML 数据导入到指定的工作簿中之后，Excel发生。</summary>
         <remarks><para>XML 功能（以 XML 电子表格格式保存文件除外）仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中可用。</para>
           <para> </para></remarks>
       </Docs>
@@ -159,7 +159,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_BeforeCloseEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>在工作簿关闭之前发生。 如果工作簿已更改，则此事件在询问用户是否保存更改之前发生。</summary>
+        <summary>在关闭工作簿之前，先产生此事件。如果该工作簿已经更改过，则本事件在询问用户是否保存更改之前产生。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,7 +216,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_BeforeXmlExportEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>在 Excel 将数据从指定工作簿保存或导出到 XML 数据文件之前发生。</summary>
+        <summary>在将Excel工作簿中保存或导出数据到 XML 数据文件之前发生。</summary>
         <remarks><para>XML 功能（以 XML 电子表格格式保存文件除外）仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中可用。</para>
           <para> </para></remarks>
       </Docs>
@@ -236,7 +236,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_BeforeXmlImportEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>在刷新现有 XML 数据连接之前或将新的 XML 数据导入 Excel 工作簿之前发生。</summary>
+        <summary>在刷新现有 XML 数据连接之前或将新 XML 数据导入工作簿之前，Excel发生。</summary>
         <remarks><para>XML 功能（以 XML 电子表格格式保存文件除外）仅在 Microsoft Office Professional Edition 2003 和 Microsoft Office Excel 2003 中可用。</para>
           <para> </para></remarks>
       </Docs>
@@ -256,7 +256,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_DeactivateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>在停用工作簿时发生。</summary>
+        <summary>在工作簿被停用时发生。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -275,7 +275,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_ModelChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>在 Excel 数据模型更改后发生。</summary>
+        <summary>在更改数据Excel后发生。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -295,8 +295,8 @@
       </ReturnValue>
       <Docs>
         <summary>在工作簿中创建新图表时发生。</summary>
-        <remarks><para>每当在工作表、图表工作表或其他工作表类型中插入或粘贴新图表时，就会 <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewChart" /> 发生该事件。 如果插入或粘贴多个图表，那么按照图表的插入或粘贴顺序，每个图表都会发生一次该事件。 如果将图表对象或图表工作表从一个位置移到另一个位置，则不会发生该事件。 但是，如果在图表对象和图表工作表之间移动图表，仍会发生该事件，因为必须创建新图表。</para>
-          <para>以下情况下不会发生该事件：复制或粘贴图表工作表、更改图表类型、更改图表数据源、撤消或恢复插入或粘贴图表以及加载包含图表的工作簿。 <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewChart" /></para>
+        <remarks><para>每当在工作表、图表工作表或其他工作表类型中插入或粘贴新图表时 <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewChart" /> ，就会发生该事件。 如果插入或粘贴多个图表，那么按照图表的插入或粘贴顺序，每个图表都会发生一次该事件。 如果将图表对象或图表工作表从一个位置移到另一个位置，则不会发生该事件。 但是，如果在图表对象和图表工作表之间移动图表，仍会发生该事件，因为必须创建新图表。</para>
+          <para>在下列情况下不会发生该事件：复制或粘贴图表工作表、更改图表类型、更改图表数据源、撤消或恢复插入或粘贴图表以及加载包含图表的工作簿。 <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewChart" /></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -391,7 +391,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_RowsetCompleteEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当用户在 OLAP 数据透视表上钻取记录集或调用行集操作时，将引发该事件。</summary>
+        <summary>当用户在 OLAP 数据透视表上深化记录集或调用行集操作时，将引发该事件。</summary>
         <remarks><para>由于记录集是以异步方式创建的，所以此事件允许自动确定已在何时完成操作。此外，由于记录集是在单独的工作表上创建的，所以需要将此事件置于工作簿级别上。</para>
           <para> </para></remarks>
       </Docs>
@@ -565,7 +565,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetLensGalleryRenderCompleteEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当标注库的图标 (动态和静态) 工作表呈现时发生。</summary>
+        <summary>当标注库的图标已 (和静态) 工作表呈现时发生。</summary>
         <remarks><para>例如，此事件可用于指示何时重新启用屏幕更新或显示其他对话框。</para>
           <para> </para></remarks>
       </Docs>
@@ -586,7 +586,7 @@
       </ReturnValue>
       <Docs>
         <summary>在编辑或重新计算（对于包含公式的单元格）数据透视表中的单元格或单元格区域后发生。</summary>
-        <remarks><para>除了编辑或重新计算单元格外，该事件 <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableAfterValueChange" /> 不会在任何条件下发生。 例如，它不会在刷新、排序、筛选或向下钻取数据透视表时发生，即使这些操作移动单元格，并可能从 OLAP 数据源检索新值也是如此。</para>
+        <remarks><para><see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableAfterValueChange" />除了编辑或重新计算单元格外，该事件不会在任何条件下发生。 例如，它不会在刷新、排序、筛选或向下钻取数据透视表时发生，即使这些操作移动单元格，并可能从 OLAP 数据源检索新值也是如此。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -606,7 +606,7 @@
       </ReturnValue>
       <Docs>
         <summary>在将更改应用到数据透视表前发生。</summary>
-        <remarks><para>该事件在 Excel 执行 UPDATE CUBE 语句以将所有更改应用到数据透视表的 OLAP 数据源之前，以及用户选择在用户界面中应用更改后立即 <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeAllocateChanges" /> 发生。</para>
+        <remarks><para>该事件在 Excel 执行 UPDATE CUBE 语句以将所有更改应用到数据透视表的 OLAP 数据源之前，以及用户选择在用户界面中应用更改后立即发生 <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeAllocateChanges" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -626,7 +626,7 @@
       </ReturnValue>
       <Docs>
         <summary>在向数据透视表的 OLAP 数据源提交更改之前发生。</summary>
-        <remarks><para>该事件在 Excel 对数据透视表的 OLAP 数据源执行 COMMIT TRANSACTION 之前，以及用户选择保存整个数据透视表的更改后立即 <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeCommitChanges" /> 发生。</para>
+        <remarks><para>该事件在数据透视表Excel OLAP 数据源执行 COMMIT TRANSACTION 之前，以及用户选择保存整个数据透视表的更改后立即 <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeCommitChanges" /> 发生。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -646,7 +646,7 @@
       </ReturnValue>
       <Docs>
         <summary>在放弃对数据透视表所做的更改之前发生。</summary>
-        <remarks><para>在 Excel 对 OLAP 数据源执行 ROLLBACK TRANSACTION 语句之前，如果事务仍处于活动状态，然后在用户选择放弃更改后放弃数据透视表中所有编辑的值，则立即发生。</para>
+        <remarks><para>如果事务仍处于活动状态，Excel对 OLAP 数据源执行 ROLLBACK TRANSACTION 语句，然后在用户选择放弃更改后放弃数据透视表中的所有编辑值，则立即发生。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -666,7 +666,7 @@
       </ReturnValue>
       <Docs>
         <summary>在更改了数据透视表之后发生。</summary>
-        <remarks><para>在数据透视表大多数更改过程中发生，以便您可以编写代码以响应用户操作，例如清除、分组或刷新数据透视表中的 <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableChangeSync" /> 项目。</para>
+        <remarks><para>在数据透视表进行大多数更改期间发生，以便您可以编写代码以响应用户操作，例如清除、分组或刷新数据透视表中的 <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableChangeSync" /> 项目。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

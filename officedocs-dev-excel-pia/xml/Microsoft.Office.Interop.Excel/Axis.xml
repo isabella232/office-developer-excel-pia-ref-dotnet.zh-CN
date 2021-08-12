@@ -1,5 +1,5 @@
 <Type Name="Axis" FullName="Microsoft.Office.Interop.Excel.Axis">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d10d4e8e1ee2a7c304ba94c879df8f19e1748061" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006165" /></Metadata><TypeSignature Language="C#" Value="public interface Axis" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="33db8a8125c546d90c5be7392ef005bd8bb9ada4d6c8b0676f7d3325261d456c" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54507756" /></Metadata><TypeSignature Language="C#" Value="public interface Axis" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Axis" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Axis" />
   <TypeSignature Language="VB.NET" Value="Public Interface Axis" />
@@ -23,7 +23,7 @@
   <Docs>
     <summary>代表图表中的单个坐标轴。</summary>
     <remarks><para><b>Axis</b>对象是集合的 <see cref="T:Microsoft.Office.Interop.Excel.Axes" /> 一个成员。</para>
-      <para>使用 <b>轴</b> () ，其中类型为坐标轴类型，而组为坐标轴组，则返回 <paramref name="type, group" /> 单个 <b>Axis</b> 对象。 <paramref name="Type" /> 可以是下列常量之一 <see cref="ff" /> ： <b>xlCategory</b>、 <b>xlSeries</b>或 <b>xlValue</b>。 <paramref name="Group" /> 可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> <b>：xlPrimary</b> 或 <b>xlSecondary</b>。 有关详细信息，请参阅 <see cref="M:Microsoft.Office.Interop.Excel._Chart.Axes(System.Object,Microsoft.Office.Interop.Excel.XlAxisGroup)" /> 方法。</para>
+      <para>使用 <b>Axes</b> () （其中 type 为坐标轴类型，group 为坐标轴组）返回 <paramref name="type, group" /> 单个 <b>Axis</b> 对象。 <paramref name="Type" />可以是下列常量之一 <see cref="ff" /> <b>：xlCategory、xlSeries</b>或<b>xlValue</b>。 <b></b> <paramref name="Group" /> 可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> <b>：xlPrimary</b> 或 <b>xlSecondary</b>。 有关详细信息，请参阅 <see cref="M:Microsoft.Office.Interop.Excel._Chart.Axes(System.Object,Microsoft.Office.Interop.Excel.XlAxisGroup)" /> 方法。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -50,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -232,7 +232,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 一个对象，该对象表示对象的边框。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 一个对象，该对象代表对象的边框。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -265,7 +265,7 @@
       <Docs>
         <summary>返回或设置指定坐标轴的所有分类名称作为文本数组。</summary>
         <value>To be added.</value>
-        <remarks><para>设置此属性时，可以设置为包含类别名称的数组 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 或对象。</para>
+        <remarks><para>设置此属性时，可以设置为数组或包含类别名称 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 的对象。</para>
           <para>该属性仅适用于分类轴。</para>
           <para> </para></remarks>
       </Docs>
@@ -360,7 +360,7 @@
       <Docs>
         <summary>返回或设置指定坐标轴与其他坐标轴相交的点。</summary>
         <value>To be added.</value>
-        <remarks><para><b>Crosses</b>属性可以是下表中列出的 <see cref="T:Microsoft.Office.Interop.Excel.XlAxisCrosses" /> 常量之一。</para>
+        <remarks><para><b>Crosses</b>属性可以是下表 <see cref="T:Microsoft.Office.Interop.Excel.XlAxisCrosses" /> 中列出的常量之一。</para>
           <list type="table">
             <item>
               <term>
@@ -384,7 +384,7 @@
               <term>
                 <b>xlAxisCrossesCustom</b>
               </term>
-              <description>该属性 <see cref="P:Microsoft.Office.Interop.Excel.Axis.CrossesAt" /> 指定坐标轴交叉点。</description>
+              <description>属性 <see cref="P:Microsoft.Office.Interop.Excel.Axis.CrossesAt" /> 指定坐标轴交叉点。</description>
             </item>
           </list>
           <para>该属性对雷达图无效。对于三维图表，该属性只能应用于数值轴并指示由分类轴所定义的平面与数值轴相交的位置。</para>
@@ -482,7 +482,7 @@
         <value>To be added.</value>
         <remarks><para>在绘制大数值图表时，使用单位标志可使刻度线标志易于阅读。例如，如果将数值轴的单位设置为百、千或百万，则可以在坐标轴的刻度标志上使用较小的数字值。</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlDisplayUnit" /> 可以是以下 <b>XlDisplayUnit</b> 常量之一：</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlDisplayUnit" /> 可以是以下 <b>XlDisplayUnit 常量</b> 之一：</para>
           <para>
             <b>xlHundredMillions</b>
           </para>
@@ -546,7 +546,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果属性的值为 <see cref="P:Microsoft.Office.Interop.Excel.Axis.DisplayUnit" /> <b>xlCustom，DisplayUnitCustom</b>属性返回或设置显示单位的值。 <b></b> 该值范围必须是从 0 到 10E307。</summary>
+        <summary>如果属性的值为 <see cref="P:Microsoft.Office.Interop.Excel.Axis.DisplayUnit" /> <b>xlCustom</b>， <b>则 DisplayUnitCustom</b> 属性返回或设置显示单位的值。 该值范围必须是从 0 到 10E307。</summary>
         <value>To be added.</value>
         <remarks><para>在绘制大数值图表时，使用单位标志可使刻度线标志易于阅读。例如，如果将数值轴的单位设置为百、千或百万，则可以在坐标轴的刻度标志上使用较小的数字值。</para>
           <para> </para></remarks>
@@ -634,7 +634,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>如此</b> 如果指定坐标轴上 <see cref="P:Microsoft.Office.Interop.Excel.Axis.DisplayUnit" /> 显示由 or <see cref="P:Microsoft.Office.Interop.Excel.Axis.DisplayUnitCustom" /> 属性指定的标签。 默认值为 <b>True</b>。</summary>
+        <summary><b>如此</b> 如果或 属性 <see cref="P:Microsoft.Office.Interop.Excel.Axis.DisplayUnit" /> 指定的 <see cref="P:Microsoft.Office.Interop.Excel.Axis.DisplayUnitCustom" /> 标签显示在指定的坐标轴上。 默认值为 <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -816,9 +816,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置对数的底，使用对数刻度时。 读/写 <b>双</b> 。</summary>
+        <summary>返回或设置对数的底，使用对数刻度时。读/写 <b>双</b> 。</summary>
         <value><b>Double</b></value>
-        <remarks><para>试图将此属性设置为小于或等于零 (0) 的值将导致错误。 默认值是 10。</para>
+        <remarks><para>试图将此属性设置为小于或等于零 (0) 的值将导致错误。默认值是 10。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -924,7 +924,7 @@
         <summary>返回或设置数值轴的主要单位。</summary>
         <value>To be added.</value>
         <remarks><para>设置此属性将 <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnitIsAuto" /> 该属性设置为 <b>False</b>。</para>
-          <para>使用该属性 <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickMarkSpacing" /> 可设置分类轴上的刻度线间距。</para>
+          <para>使用 <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickMarkSpacing" /> 属性可设置分类轴上的刻度线间距。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -986,7 +986,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlTimeUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置分类轴的主要单位刻度值，当该属性设置为 <see cref="P:Microsoft.Office.Interop.Excel.Axis.CategoryType" /> <b>xlTimeScale</b>时。</summary>
+        <summary>当该属性设置为 xlTimeScale 时，返回或设置分类轴的主要单位 <see cref="P:Microsoft.Office.Interop.Excel.Axis.CategoryType" /> <b>刻度值</b>。</summary>
         <value>To be added.</value>
         <remarks><para>
             <see cref="T:Microsoft.Office.Interop.Excel.XlTimeUnit" /> 可以是以下 <b>XlTimeUnit 常量</b> 之一：</para>
@@ -1232,7 +1232,7 @@
         <summary>返回或设置数值轴上的次要单位。</summary>
         <value>To be added.</value>
         <remarks><para>设置此属性将 <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinorUnitIsAuto" /> 该属性设置为 <b>False</b>。</para>
-          <para>使用 <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickMarkSpacing" /> 该属性可设置分类轴上的刻度线间距。</para>
+          <para>使用 <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickMarkSpacing" /> 属性可设置分类轴上的刻度线间距。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1294,7 +1294,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlTimeUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置当属性设置为 <see cref="P:Microsoft.Office.Interop.Excel.Axis.CategoryType" /> <b>xlTimeScale</b>时分类轴的次要单位刻度值。</summary>
+        <summary>当该属性设置为 xlTimeScale 时，返回或设置分类轴的次要单位 <see cref="P:Microsoft.Office.Interop.Excel.Axis.CategoryType" /> <b>刻度值</b>。</summary>
         <value>To be added.</value>
         <remarks><para>
             <see cref="T:Microsoft.Office.Interop.Excel.XlTimeUnit" /> 可以是以下 <b>XlTimeUnit 常量</b> 之一：</para>
@@ -1399,7 +1399,7 @@
         <summary>返回或设置数值轴的刻度类型。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlScaleType" /> 可以是以下 <b>XlScaleType</b> 常量之一：</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlScaleType" /> 可以是以下 <b>XlScaleType 常量之</b> 一：</para>
           <para>
             <b>xlScaleLinear</b>
           </para>
@@ -1432,7 +1432,7 @@
       <Docs>
         <summary>选择对象。</summary>
         <returns>To be added.</returns>
-        <remarks><para>要选择单元格或单元格区域，请使用 <b>Select</b> 方法。 若要使单个单元格成为活动单元格，请使用 <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" /> 该方法。</para>
+        <remarks><para>要选择单元格或单元格区域，请使用 <b>Select</b> 方法。 若要使单个单元格成为活动单元格，请使用 <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" /> 方法。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1465,7 +1465,7 @@
         <summary>说明指定坐标轴上刻度线标志的位置。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlTickLabelPosition" /> 可以是以下 <b>XlTickLabelPosition</b> 常量之一：</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlTickLabelPosition" /> 可以是以下 <b>XlTickLabelPosition 常量</b> 之一：</para>
           <para>
             <b>xlTickLabelPositionLow</b>
           </para>
@@ -1478,7 +1478,7 @@
           <para>
             <b>xlTickLabelPositionNextToAxis</b>
           </para>
-          <para>不能在三维图表 <b>上使用 xlTickLabelPositionHigh</b> 常量。</para>
+          <para>不能在三维图表上使用 <b>xlTickLabelPositionHigh</b> 常量。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1505,7 +1505,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TickLabels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.TickLabels" /> 个对象，该对象代表指定坐标轴的刻度线标签。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.TickLabels" /> 一个对象，该对象代表指定坐标轴的刻度线标签。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1568,9 +1568,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置刻度标签间距是否是自动设置的。 读/写 <b>Boolean</b>。</summary>
+        <summary>返回或设置刻度标签间距是否是自动设置的。可读/写 <b>Boolean</b> 类型。</summary>
         <value><b>Boolean</b></value>
-        <remarks><para>该属性 <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabelSpacing" /> 返回当前的刻度线标签间距，无论设置是否自动。</para>
+        <remarks><para>该属性 <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabelSpacing" /> 返回当前刻度标签间距，无论设置是否自动。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1602,7 +1602,7 @@
       <Docs>
         <summary>返回或设置刻度线之间的分类数或数据系列数。 仅应用于分类坐标轴或系列坐标轴。</summary>
         <value>To be added.</value>
-        <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" /> and <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinorUnit" /> 属性设置数值轴上的刻度线间距。</para>
+        <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" /> 和 <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinorUnit" /> 属性可设置数值轴上的刻度线间距。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1629,7 +1629,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>从对象上边缘到工作表上第 1 行顶部的距离（以 () 或图表区域上图表区域 (顶部）) 。</summary>
+        <summary>从对象上边缘到工作表上第 1 (行顶端的距离（以) 或图表区顶部的 (图表) ）。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1663,7 +1663,7 @@
         <summary>返回 Axis 类型。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" /> 可以是以下 <b>XlAxisType</b> 常量之一：</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" /> 可以是以下 <b>XlAxisType 常量之</b> 一：</para>
           <para>
             <b>xlCategory</b>
           </para>

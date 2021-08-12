@@ -1,5 +1,5 @@
 <Type Name="Chart" FullName="Microsoft.Office.Interop.Excel.Chart">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="27bd453c5b6413f47df900780ebfd03d3cabd7c6" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50004254" /></Metadata><TypeSignature Language="C#" Value="public interface Chart : Microsoft.Office.Interop.Excel._Chart, Microsoft.Office.Interop.Excel.ChartEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f62a5e994e6eb1250102fdd993bf420ff2514b51ea5c8320abf52b3bb039ef9b" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508050" /></Metadata><TypeSignature Language="C#" Value="public interface Chart : Microsoft.Office.Interop.Excel._Chart, Microsoft.Office.Interop.Excel.ChartEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Chart implements class Microsoft.Office.Interop.Excel._Chart, class Microsoft.Office.Interop.Excel.ChartEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Chart" />
   <TypeSignature Language="VB.NET" Value="Public Interface Chart&#xA;Implements _Chart, ChartEvents_Event" />
@@ -25,38 +25,38 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表工作簿中的图表。 该图表可以是嵌入的图表 (包含在图表) <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> 或单独的图表工作表中。</summary>
-    <remarks><para>这是派生自 COM Coclass（托管代码要求此 Coclass 来实现与相应的 COM 对象的互操作性）的 .NET 接口。 使用此派生的接口来访问所有方法、属性和 COM 对象的事件成员。 但是，如果您想要使用的方法或事件共享同一名称并且位于相同的 COM 对象下，请转换为相应的主接口以调用该方法，并转换为最新的事件接口以连接到该事件。 参考此主题以获取有关 COM 对象的信息。 有关 COM 对象的方法和属性成员的信息，请参阅 <see cref="T:Microsoft.Office.Interop.Excel._Chart" /> 。</para>
+    <summary>代表工作簿中的图表。 该图表可以是嵌入式图表 (包含在图表) <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> 或单独的图表工作表中。</summary>
+    <remarks><para>这是派生自 COM Coclass（托管代码要求此 Coclass 来实现与相应的 COM 对象的互操作性）的 .NET 接口。 使用此派生的接口来访问所有方法、属性和 COM 对象的事件成员。 但是，如果您想要使用的方法或事件共享同一名称并且位于相同的 COM 对象下，请转换为相应的主接口以调用该方法，并转换为最新的事件接口以连接到该事件。 参考此主题以获取有关 COM 对象的信息。 有关 COM 对象的 方法和属性成员的信息，请参阅 <see cref="T:Microsoft.Office.Interop.Excel._Chart" /> 。</para>
       <para>本节将介绍以下用于返回 <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> 对象的属性：</para>
       <list type="bullet">
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel.ChartObject.Chart" /> property</description>
+            <see cref="P:Microsoft.Office.Interop.Excel.ChartObject.Chart" /> 属性</description>
         </item>
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" /> property</description>
+            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" /> 属性</description>
         </item>
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" /> property</description>
+            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" /> 属性</description>
         </item>
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" /> property</description>
+            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" /> 属性</description>
         </item>
       </list>
       <para>Chart 属性</para>
-      <para>使用 <b>Chart</b> 属性可返回 <b>一个 Chart</b> 对象，该对象代表 <b>ChartObject</b> 对象中包含的图表。</para>
+      <para>使用 <b>Chart</b> 属性可返回 <b>Chart</b> 对象，该对象代表 <b>ChartObject 对象</b> 中包含的图表。</para>
       <para>Charts 属性</para>
-      <para>该 <see cref="T:Microsoft.Office.Interop.Excel.Charts" /> 集合包含工作簿中每个图表工作表的 <b>Chart</b> 对象。 使用 <b>图表</b> () 图表工作表索引号或名称，返回 <paramref name="index" /> <paramref name="index" /> 单个 <b>Chart</b> 对象。</para>
-      <para>图表索引号表示图表工作表在工作簿标签栏上的位置。 所有图表工作表都包含在索引计数中，即使它们处于隐藏状态。 图表工作表名称显示在图表的工作簿选项卡上。 可以使用该属性 <see cref="P:Microsoft.Office.Interop.Excel._Chart.Name" /> 设置或返回图表名称。</para>
-      <para><b>Chart</b>对象也是集合的 <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> 一个成员。 <b>Sheets</b> 集合包含工作簿中所有的工作表（图表工作表和工作表）。 使用 <b>工作表</b> <paramref name="index" /> () ，其中工作表索引号或名称， <paramref name="index" /> 返回单个工作表。</para>
+      <para>该 <see cref="T:Microsoft.Office.Interop.Excel.Charts" /> 集合包含工作簿中每个图表工作表的 <b>Chart</b> 对象。 使用 <b>Charts</b> <paramref name="index" /> () （其中 <paramref name="index" /> 是图表工作表的索引号或名称）返回单个 <b>Chart</b> 对象。</para>
+      <para>图表索引号表示图表工作表在工作簿标签栏上的位置。 所有图表工作表都包含在索引计数中，即使它们处于隐藏状态。 图表工作表名称显示在图表的工作簿选项卡上。 可以使用 属性 <see cref="P:Microsoft.Office.Interop.Excel._Chart.Name" /> 设置或返回图表名称。</para>
+      <para><b>Chart</b>对象也是集合的成员 <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> 。 <b>Sheets</b> 集合包含工作簿中所有的工作表（图表工作表和工作表）。 使用 <b>Sheets</b> <paramref name="index" /> () （其中是工作表索引号或名称） <paramref name="index" /> 返回单个工作表。</para>
       <para>ActiveChart 属性</para>
-      <para>如果图表是活动对象，可以使用 <b>ActiveChart</b> 属性引用它。 如果用户已选择图表工作表或已使用该方法激活图表工作表，则图表工作表 <see cref="M:Microsoft.Office.Interop.Excel._Chart.Activate" /> 处于活动状态。</para>
-      <para>如果用户已选择嵌入图表，或者嵌入图表中包含的对象已使用 Activate 方法激活，则嵌入图表 <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> 处于活动状态。 <b></b></para>
+      <para>如果图表是活动对象，可以使用 <b>ActiveChart</b> 属性引用它。 如果用户已选择图表工作表或已使用 方法激活图表工作表，则图表工作表 <see cref="M:Microsoft.Office.Interop.Excel._Chart.Activate" /> 处于活动状态。</para>
+      <para>如果用户已选择嵌入图表，或者嵌入图表中包含的对象已使用 Activate 方法激活，则嵌入图表处于活动状态 <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> 。 <b></b></para>
       <para>ActiveSheet 属性</para>
-      <para>如果图表工作表是活动工作表，可以使用 <b>ActiveSheet</b> 属性引用它。 </para>
+      <para>如果图表工作表是活动工作表，可以使用 <b>ActiveSheet</b> 属性引用它。</para>
       <para> </para></remarks>
   </Docs>
   <Members />

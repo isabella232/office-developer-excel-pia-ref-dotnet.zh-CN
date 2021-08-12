@@ -1,5 +1,5 @@
 <Type Name="ChartEvents_SelectEventHandler" FullName="Microsoft.Office.Interop.Excel.ChartEvents_SelectEventHandler">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d908c92015694a838a0f3791d629e86b7417d344" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50004030" /></Metadata><TypeSignature Language="C#" Value="public delegate void ChartEvents_SelectEventHandler(int ElementID, int Arg1, int Arg2);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2f9dda833164a5e6df84626eaa50ce49e76c3a3d0827448c535fce344a102e03" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54507588" /></Metadata><TypeSignature Language="C#" Value="public delegate void ChartEvents_SelectEventHandler(int ElementID, int Arg1, int Arg2);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ChartEvents_SelectEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ChartEvents_SelectEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ChartEvents_SelectEventHandler(ElementID As Integer, Arg1 As Integer, Arg2 As Integer)" />
@@ -28,11 +28,11 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="ElementID">必需。 双击的对象。</param>
+    <param name="ElementID">必填。 双击的对象。</param>
     <param name="Arg1">取决于 <paramref name="ElementID" /> 。</param>
     <param name="Arg2">取决于 <paramref name="ElementID" /> 。</param>
-    <summary>用于 <b>为</b> 事件添加事件处理程序的委托 <see cref="E:Microsoft.Office.Interop.Excel.ChartEvents_Event.Select" /> 类型。 选择图表元素时，将发生 <b>Select</b> 事件。</summary>
-    <remarks><para>下表显示与每个参数关联的参数 <paramref name="ElementID" /> 。</para>
+    <summary>用于为事件添加事件处理程序的 <b>Delegate</b> <see cref="E:Microsoft.Office.Interop.Excel.ChartEvents_Event.Select" /> 类型。 选择图表元素时，将发生 <b>Select</b> 事件。</summary>
+    <remarks><para>下表显示与每个 关联的参数 <paramref name="ElementID" /> 。</para>
       <list type="table">
         <item>
           <term>xlAxis</term>
@@ -198,11 +198,11 @@
         </item>
         <item>
           <term>AxisType</term>
-          <description>指定坐标轴类型。 可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" /> ： <b>xlCategory</b>、 <b>xlSeriesAxis</b>或 <b>xlValue</b>。</description>
+          <description>指定坐标轴类型。 可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" /> <b>：xlCategory、xlSeriesAxis</b>或<b>xlValue</b>。 <b></b></description>
         </item>
         <item>
           <term>DropZoneType</term>
-          <description>指定拖放区域类型: 列、 数据、 页或行字段。 可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFieldOrientation" /> <b>：xlColumnField</b>、 <b>xlDataField</b>、 <b>xlPageField</b>或 <b>xlRowField</b>。 列和行字段常量分别指定系列和分类字段。</description>
+          <description>指定拖放区域类型: 列、 数据、 页或行字段。 可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFieldOrientation" /> <b>：xlColumnField、xlDataField、xlPageField</b>或<b>xlRowField</b>。 <b></b> <b></b> 列和行字段常量分别指定系列和分类字段。</description>
         </item>
         <item>
           <term>GroupIndex</term>
@@ -210,11 +210,11 @@
         </item>
         <item>
           <term>PivotFieldIndex</term>
-          <description>指定集合中特定列的偏移量 (数据、) 、页面或行 (<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> 字段) 偏移量。</description>
+          <description>指定特定列在集合中的偏移量 (字段) 、数据、页面或 (<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> 行) 偏移量。</description>
         </item>
         <item>
           <term>PointIndex</term>
-          <description>指定系列中 <see cref="T:Microsoft.Office.Interop.Excel.Points" /> 特定点的集合中的偏移量。 值 –1 表示已选择所有数据点。</description>
+          <description>指定系列中特定点在集合 <see cref="T:Microsoft.Office.Interop.Excel.Points" /> 中的偏移量。 值 –1 指示已选择所有数据点。</description>
         </item>
         <item>
           <term>SeriesIndex</term>
@@ -226,7 +226,7 @@
         </item>
         <item>
           <term>TrendlineIndex</term>
-          <description>指定系列中 <see cref="T:Microsoft.Office.Interop.Excel.Trendlines" /> 特定趋势线的集合中的偏移量。</description>
+          <description>指定系列中特定 <see cref="T:Microsoft.Office.Interop.Excel.Trendlines" /> 趋势线在集合中的偏移量。</description>
         </item>
       </list>
       <para> </para></remarks>

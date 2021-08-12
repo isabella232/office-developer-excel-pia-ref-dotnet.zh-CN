@@ -1,5 +1,5 @@
 <Type Name="ShadowFormat" FullName="Microsoft.Office.Interop.Excel.ShadowFormat">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="5eeac5f0fb754a2bafeb2c032994726f97c18d68" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010358" /></Metadata><TypeSignature Language="C#" Value="public interface ShadowFormat : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a2510607e7229c53c796d8f1556dbec52265f3afbe64d5d9cb0708d4e02ac967" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54512334" /></Metadata><TypeSignature Language="C#" Value="public interface ShadowFormat : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ShadowFormat implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ShadowFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ShadowFormat&#xA;Implements _IMsoDispObj" />
@@ -22,8 +22,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>表示阴影格式的 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 。</summary>
-    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.Shape.Shadow" /> 该属性可返回 <see cref="T:Microsoft.Office.Interop.Excel.ShadowFormat" /> 一个对象。</para>
+    <summary>代表 的阴影格式 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 。</summary>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.Shape.Shadow" /> 属性可返回 <see cref="T:Microsoft.Office.Interop.Excel.ShadowFormat" /> 对象。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -53,7 +53,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -148,7 +148,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ColorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.ColorFormat" /> 个对象，该对象代表指定的前景填充或纯色。</summary>
+        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel.ColorFormat" /> 个对象，该对象代表指定的前景色或纯色。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -176,9 +176,9 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">必需 <b>单个</b>。 指定阴影偏移量水平移动（以点表示）。 正值使阴影向右移动，负值使阴影向左移动。</param>
+        <param name="Increment">必需 <b>单个</b>。 指定阴影的水平偏移量（以点表示）。 正值使阴影向右移动，负值使阴影向左移动。</param>
         <summary>按指定磅值改变阴影的水平偏移量。</summary>
-        <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.OffsetX" /> 该属性可设置绝对水平阴影偏移量。</para>
+        <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.OffsetX" /> 属性可设置阴影的绝对水平偏移量。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -207,7 +207,7 @@
       <Docs>
         <param name="Increment">必需 <b>单个</b>。 指定阴影的垂直偏移量（以点表示）。 正值表示阴影下移，负值表示阴影上移。</param>
         <summary>按指定磅值更改阴影的垂直偏移量。</summary>
-        <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.OffsetY" /> 该属性可设置绝对垂直阴影偏移量。</para>
+        <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.OffsetY" /> 属性可设置阴影的绝对垂直偏移量。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -271,7 +271,7 @@
         <summary>返回或设置阴影相对于指定形状的水平偏移量（以点表示）。</summary>
         <value>To be added.</value>
         <remarks><para>正值表示负值表示阴影向图形; 右侧读它的左侧。</para>
-          <para>如果要从阴影的当前位置水平或垂直移动阴影，而无需指定绝对位置，请使用 <see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetX(System.Single)" /> 该方法 <see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetY(System.Single)" /> 或方法。</para>
+          <para>如果要从阴影的当前位置水平或垂直移动，而无需指定绝对位置，请使用 <see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetX(System.Single)" /> 方法或 <see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetY(System.Single)" /> 方法。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -304,7 +304,7 @@
         <summary>返回或设置阴影相对于指定形状的垂直偏移量（以点表示）。</summary>
         <value>To be added.</value>
         <remarks><para>正值表示负值表示阴影向图形; 右侧读它的左侧。</para>
-          <para>如果要从阴影的当前位置水平或垂直移动阴影，而无需指定绝对位置，请使用 <see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetX(System.Single)" /> 方法 <see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetY(System.Single)" /> 或方法。</para>
+          <para>如果要从阴影的当前位置水平或垂直移动，而无需指定绝对位置，请使用 <see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetX(System.Single)" /> 方法或 <see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetY(System.Single)" /> 方法。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -362,7 +362,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一 <see cref="T:Microsoft.Office.Core.MsoTriState" /> 个 表示是否在旋转阴影旋转 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 时旋转。 读/写。</summary>
+        <summary>返回或设置 <see cref="T:Microsoft.Office.Core.MsoTriState" /> ，表示旋转时是否旋转阴影 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 。 读/写。</summary>
         <value><see cref="T:Microsoft.Office.Core.MsoTriState" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -426,7 +426,7 @@
       <Docs>
         <summary>返回或使用 <see cref="T:Microsoft.Office.Core.MsoShadowStyle" /> 对象来设置指定阴影的样式。 读/写。</summary>
         <value><see cref="T:Microsoft.Office.Core.MsoShadowStyle" /></value>
-        <remarks><para>下表显示了可能的值 <see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.Style" /> 。</para>
+        <remarks><para>下表显示了 可能的值 <see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.Style" /> 。</para>
           <list type="table">
             <item>
               <term>

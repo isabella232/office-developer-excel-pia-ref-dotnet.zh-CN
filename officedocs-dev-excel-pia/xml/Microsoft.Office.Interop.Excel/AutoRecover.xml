@@ -1,5 +1,5 @@
 <Type Name="AutoRecover" FullName="Microsoft.Office.Interop.Excel.AutoRecover">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="cd09f7ea28f0544739412fc8f1a64ac1370cadc1" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006193" /></Metadata><TypeSignature Language="C#" Value="public interface AutoRecover" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ad687d2bdd6ea6b8998a99101e91c7f3ade86f5987b49393a703763820432a69" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54507763" /></Metadata><TypeSignature Language="C#" Value="public interface AutoRecover" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoRecover" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AutoRecover" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoRecover" />
@@ -23,9 +23,9 @@
   <Docs>
     <summary>代表工作簿的自动恢复功能。</summary>
     <remarks><para>AutoRecover 对象的属性确定备份所有文件的路径和时间间隔。</para>
-      <para>使用 <see cref="P:Microsoft.Office.Interop.Excel._Application.AutoRecover" /> 对象的属性 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 可返回 <b>AutoRecover</b> 对象。</para>
-      <para>使用 <see cref="P:Microsoft.Office.Interop.Excel.AutoRecover.Path" /> <b>AutoRecover</b> 对象的属性可设置自动恢复文件保存位置的路径。</para>
-      <para>使用 <see cref="P:Microsoft.Office.Interop.Excel.AutoRecover.Time" /> <b>AutoRecover</b> 对象的属性可设置备份所有文件的时间间隔。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Excel._Application.AutoRecover" /> 对象的 属性 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 可返回 <b>AutoRecover</b> 对象。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Excel.AutoRecover.Path" /> <b>AutoRecover</b> 对象的 属性可设置保存自动恢复文件的路径。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Excel.AutoRecover.Time" /> <b>AutoRecover</b> 对象的 属性可设置备份所有文件的时间间隔。</para>
       <para>注意 Time <b>属性的单位</b> 以分钟为单位。</para>
       <para> </para></remarks>
   </Docs>
@@ -53,7 +53,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -173,7 +173,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置或返回 Microsoft Excel 将存储自动恢复临时文件的完整路径。</summary>
+        <summary>设置或返回自动恢复临时Microsoft Excel的完整路径。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -207,8 +207,8 @@
         <summary>设置或返回对象的 <see cref="T:Microsoft.Office.Interop.Excel.AutoRecover" /> 时间间隔。</summary>
         <value>To be added.</value>
         <remarks><para>允许的值为从 1 到 120 分钟的整数。 默认值为 10 分钟。</para>
-          <para>输入的小数值将舍入为最接近的整数。 例如，输入的 5.5 与 6 等价。</para>
-          <para>如果输入了超出有效范围的时间值，Microsoft Excel 将恢复为之前使用的时间值。</para>
+          <para>输入的小数值将舍入为最接近的整数。例如，输入的 5.5 与 6 等价。</para>
+          <para>如果输入了超出有效范围的时间值，Microsoft Excel将恢复为之前使用的时间值。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
