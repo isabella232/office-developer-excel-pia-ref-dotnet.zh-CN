@@ -1,5 +1,5 @@
 <Type Name="PivotCaches" FullName="Microsoft.Office.Interop.Excel.PivotCaches">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="a96fa5538045c8441266412dcd431b316fe7edd6" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010924" /></Metadata><TypeSignature Language="C#" Value="public interface PivotCaches : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="79b074c418dba72dfdf57d294663784a4c1be8876368a70bb4d9c8d800a3dca5" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518683" /></Metadata><TypeSignature Language="C#" Value="public interface PivotCaches : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotCaches implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotCaches" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotCaches&#xA;Implements IEnumerable" />
@@ -27,7 +27,7 @@
   <Docs>
     <summary>代表工作簿中数据透视表的内存缓存的集合。</summary>
     <remarks><para>每个内存缓存都由一个对象 <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> 表示。</para>
-      <para>使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.PivotCaches" /> 该方法可返回 <b>PivotCaches</b> 集合。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.PivotCaches" /> 方法可返回 <b>PivotCaches</b> 集合。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -93,10 +93,10 @@
       </Parameters>
       <Docs>
         <param name="SourceType">必需 <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> 。 数据透视表缓存数据的源。 可以是以下 <b>XlPivotTableSourceType</b> 常量之一<b>：xlConsolidation</b><b>xlDatabase</b><b>xlExternal</b><b>xlPivotTable</b><b>xlScenario</b></param>
-        <param name="SourceData">可选 <b>对象</b>。 新数据透视表缓存的数据。 如果不是 <paramref name="SourceType" /> <b>xlExternal，则此参数是必需的</b>。 可以是对象、区域数组或代表现有数据透视表 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 名称的文本常量。 对于外部数据库，这是一个双元素数组。 第一个元素是指定数据提供程序的连接字符串。 第二个元素是SQL数据所使用的查询字符串。 如果指定此参数，则还必须指定 <paramref name="SourceType" /> 。</param>
+        <param name="SourceData">可选 <b>对象</b>。 新数据透视表缓存的数据。 如果 不是 <paramref name="SourceType" /> <b>xlExternal ，则此参数是必需的</b>。 可以是对象、区域数组或表示现有数据透视表名称 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 的文本常量。 对于外部数据库，这是一个双元素数组。 第一个元素是指定数据提供程序的连接字符串。 第二个元素是SQL数据的查询字符串。 如果指定此参数，则还必须指定 <paramref name="SourceType" /> 。</param>
         <summary>向集合添加新的数据透视表 <see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" /> 缓存。</summary>
         <returns>To be added.</returns>
-        <remarks><para>如果数据透视表缓存未由对象引用，则数据透视表缓存会在保存 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 工作簿之前自动删除。</para>
+        <remarks><para>如果对象未引用数据透视表缓存，则数据透视表缓存会在保存工作簿 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 之前自动删除。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -123,7 +123,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -180,14 +180,14 @@
         <Parameter Name="Version" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SourceType">必需 <paramref name="SourceType" /> 可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> <b>：xlConsolidation、xlDatabase</b>或<b>xlExternal。</b> <b></b></param>
-        <param name="SourceData"><b>可选对象</b>新缓存 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 的数据。</param>
-        <param name="Version">的 <b>可选</b> 对象版本 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。  版本可以是常量 <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableVersionList" /> 之一。</param>
+        <param name="SourceType">Required <paramref name="SourceType" /> 可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> <b>：xlConsolidation、xlDatabase</b>或<b>xlExternal</b>。 <b></b></param>
+        <param name="SourceData">可选 <b>对象</b> 新缓存 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 的数据。</param>
+        <param name="Version">可选 <b>对象</b> 版本 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。  版本可以是常量 <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableVersionList" /> 之一。</param>
         <summary>创建新的 <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> 。</summary>
         <returns><see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /></returns>
-        <remarks><para>使用此方法时不支持以下两个常量 <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> <b>：xlPivotTable</b>和<b>xlScenario。</b> 如果提供这两个常量之一，将返回运行时错误。</para>
-          <para>如果 <paramref name="SourceData" /> 参数不是 <paramref name="SourceType" /> xlExternal，则参数是必需的。 当为 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> <paramref name="SourceType" /> xlConsolidation (xlDatabase) 或 Excel 对象为 <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> xlExternal (时，它可以是一个对象 <paramref name="SourceType" />) 。</para>
-          <para>未提供时，版本将为 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> xlPivotTableVersion12。  不允许使用 <b>xlPivotTableVersionCurrent</b> 常量，如果提供该常量，则返回运行时错误。</para>
+        <remarks><para>使用此方法时不支持以下两个常量 <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> <b>：xlPivotTable</b> 和 <b>xlScenario</b>。 如果提供这两个常量之一，将返回运行时错误。</para>
+          <para>如果 <paramref name="SourceData" /> 参数不是 <paramref name="SourceType" /> xlExternal，则参数是必需的。 当为 xlConsolidation 或 xlDatabase (时，该对象可以是) ，Excel对象 (为 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> <paramref name="SourceType" /> <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> <paramref name="SourceType" /> xlExternal) 。</para>
+          <para>未提供时，版本 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 将为 xlPivotTableVersion12。  不允许使用 <b>xlPivotTableVersionCurrent</b> 常量，如果提供该常量，则返回运行时错误。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -276,7 +276,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">必需 <b>对象</b>。 对象的索引号。</param>
+        <param name="Index">必需的 <b>对象</b>。 对象的索引号。</param>
         <summary>从集合中返回一个对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

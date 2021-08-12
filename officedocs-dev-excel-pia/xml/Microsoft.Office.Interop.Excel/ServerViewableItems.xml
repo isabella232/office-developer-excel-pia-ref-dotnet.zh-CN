@@ -1,5 +1,5 @@
 <Type Name="ServerViewableItems" FullName="Microsoft.Office.Interop.Excel.ServerViewableItems">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="6a49378a5a672e109bb0d1469a510a5d3faf8153" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010386" /></Metadata><TypeSignature Language="C#" Value="public interface ServerViewableItems : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="cc883c260d2e188264f53f25ac65e3bf5cbc3c4a7e4656c7f151a22fe20bd43a" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518893" /></Metadata><TypeSignature Language="C#" Value="public interface ServerViewableItems : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ServerViewableItems implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ServerViewableItems" />
   <TypeSignature Language="VB.NET" Value="Public Interface ServerViewableItems&#xA;Implements IEnumerable" />
@@ -26,9 +26,9 @@
   </Attributes>
   <Docs>
     <summary>已标记为在服务器上可查看的对象的集合。</summary>
-    <remarks><para>这是对对象的引用集合 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。 只有该集合中的对象才会显示在服务器上。  默认情况下，会显示整个工作簿（包括所有工作表）。  </para>
-      <para>每个对象 <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> 只能存在一个对象 <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> 。  此集合无法按名称编制索引，因为不能保证标记为在服务器上可查看的对象的名称是唯一的。</para>
-      <para>在 Excel 用户界面中，您可以在"选项"对话框中查看标记为在服务器上Excel Services可查看的对象的集合。</para>
+    <remarks><para>这是对 中的对象的引用集合 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。 只有该集合中的对象才会显示在服务器上。  默认情况下，会显示整个工作簿（包括所有工作表）。  </para>
+      <para>每个 只能 <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> 存在一个对象 <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> 。  此集合无法按名称编制索引，因为无法保证标记为在服务器上可查看的对象的名称是唯一的。</para>
+      <para>在Excel用户界面中，可以在"选项"对话框中查看标记为在服务器上Excel Services对象的集合。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -90,10 +90,10 @@
         <Parameter Name="Obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Obj">Required <b>Object</b>可以是对工作表或已命名项目的引用 (<paramref name="Obj" /> 例如，命名的 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> s、charts、tables 和 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> s) 。 不能在同一集合中同时包含工作表和已命名项。</param>
+        <param name="Obj">Required <b>Object</b> <paramref name="Obj" /> can be a reference to sheets or named items (for example， named <see cref="T:Microsoft.Office.Interop.Excel.Range" /> s， charts， tables， and <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> s) . 不能在同一集合中同时包含工作表和已命名项。</param>
         <summary>添加对集合 <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> 的引用。</summary>
         <returns><b>Object</b></returns>
-        <remarks><para>如果您尝试将工作表和已命名项目的组合添加到集合中， <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> 则返回错误。  该集合只能包含对工作表的引用，也可以只包含对命名项的引用，但不能在同一调用 <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> 中同时包含这两个引用。  </para>
+        <remarks><para>如果您尝试将工作表和已命名项目的组合添加到集合 <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> 中，将返回错误。  该集合只能包含对工作表的引用，也可以只包含对命名项的引用，但不能在同一调用 <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> 中同时包含二者。  </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -120,9 +120,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 个对象。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 一个对象。 只读。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel._Application" /></value>
-        <remarks><para>如果不与对象限定符一起使用，则此属性返回 Microsoft Office Excel 应用程序。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象。</para>
+        <remarks><para>如果不与对象限定符一起使用，此属性将返回Microsoft Office Excel应用程序。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -149,7 +149,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回集合中的对象数目。 只读。</summary>
+        <summary>返回集合中的对象数目。只读。</summary>
         <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -177,9 +177,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位 <b>整数</b> ，指示创建此对象时的应用程序。 只读。</summary>
+        <summary>返回一个 32 位 <b>Integer</b> 类型的值，指示创建此对象时所使用应用程序。 只读。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
-        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。  <b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。<b>Creator</b> 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。例如，Microsoft Excel 的创建者代码为 XCEL。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -206,8 +206,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">必需 <b>整数</b> 要删除的对象的索引。</param>
-        <summary>删除对集合中对象 <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> 的引用 <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> 。</summary>
+        <param name="Index">必需 <b>属性</b> ，类型为 Integer 要删除的对象的索引。</param>
+        <summary>删除对 集合中对象的 <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> 引用 <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> 。</summary>
         <remarks><para>如果不希望在 Excel Services 中看到特定对象，请使用此方法删除该对象。</para>
           <para> </para></remarks>
       </Docs>
@@ -233,10 +233,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>删除对集合中所有对象的 <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> 引用 <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> 。</summary>
-        <remarks><para>如果不希望在服务器上查看集合中任何对象，请使用此方法一 <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> 次删除所有对象。</para>
+        <summary>删除对 集合中所有对象的 <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> 引用 <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> 。</summary>
+        <remarks><para>如果不希望在服务器上查看集合中的任一对象，请使用此方法一 <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> 次删除所有对象。</para>
           <para>
-            <b>注意</b>：如果集合中不包含至少一个对象，则当在集合中查看对象时，你将看到消息"无法显示指定的 <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> <b></b> <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> 命名区域或Excel Services。</para>
+            <b>注意</b>：如果集合不包含至少一个对象 ，则当在集合中查看 时，你将看到消息"无法显示指定的命名 <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> <b></b> <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> 区域或Excel Services。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -295,8 +295,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">必需 <b>整数</b> 要返回 <b>的对象</b> 的索引。</param>
-        <summary>从集合中 <b>返回</b> 单个 <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> 对象。</summary>
+        <param name="Index">必需 <b>属性</b> ，类型为 Integer 要 <b>返回的 Object</b> 的索引。</param>
+        <summary>从集合 <b>中返回</b> 单个 <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> 对象。</summary>
         <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>

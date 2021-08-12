@@ -1,5 +1,5 @@
 <Type Name="Worksheets" FullName="Microsoft.Office.Interop.Excel.Worksheets">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="a754235a311170e13d0d4825decb297f28a9fa27" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50008503" /></Metadata><TypeSignature Language="C#" Value="public interface Worksheets : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="568a7170d5682c9a3e761b870e9ced7af6fba23888301567a84f883402cb0c5a" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518452" /></Metadata><TypeSignature Language="C#" Value="public interface Worksheets : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Worksheets implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Worksheets" />
   <TypeSignature Language="VB.NET" Value="Public Interface Worksheets&#xA;Implements IEnumerable" />
@@ -26,10 +26,10 @@
   </Attributes>
   <Docs>
     <summary>指定工作簿或 <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> 活动工作簿中所有对象的集合。 每个 <b>Worksheet</b> 对象都代表一个工作表。</summary>
-    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel._Application.Worksheets" /> 该属性可返回 <b>Worksheets</b> 集合。</para>
-      <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.Worksheets.Add(System.Object,System.Object,System.Object,System.Object)" /> 该方法创建新工作表并将其添加到集合中。</para>
-      <para>使用 <b>工作表</b> () 工作表索引号或名称，返回 <paramref name="index" /> <paramref name="index" /> 单个 <b>Worksheet</b> 对象。</para>
-      <para><b>Worksheet</b>对象也是集合的 <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> 一个成员。 <b>Sheets</b> 集合包含工作簿中所有的工作表（图表工作表和工作表）。</para>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel._Application.Worksheets" /> 属性可返回 <b>Worksheets</b> 集合。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.Worksheets.Add(System.Object,System.Object,System.Object,System.Object)" /> 方法可创建一个新工作表并将其添加到集合中。</para>
+      <para>使用 <b>Worksheets</b> <paramref name="index" /> () （其中是工作表索引号或名称） <paramref name="index" /> 返回单个 <b>Worksheet</b> 对象。</para>
+      <para><b>Worksheet</b>对象也是集合的成员 <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> 。 <b>Sheets</b> 集合包含工作簿中所有的工作表（图表工作表和工作表）。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -138,10 +138,10 @@
         <param name="Before">可选 <b>对象</b>。 指定工作表的对象，新建的工作表将置于此工作表之前。</param>
         <param name="After">可选 <b>对象</b>。 指定工作表的对象，新建的工作表将置于此工作表之后。</param>
         <param name="Count">可选 <b>对象</b>。 要添加的工作表数。 默认值为 1。</param>
-        <param name="Type">可选 <b>对象</b>。 指定工作表类型。 可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlSheetType" /> <b>：xlWorksheet</b>、 <b>xlChart</b>、 <b>xlExcel4MacroSheet</b>或 <b>xlExcel4IntlMacroSheet</b>。 如果要基于现有模板插入工作表，请指定模板的路径。 默认值为 <b>xlWorksheet</b>。</param>
+        <param name="Type">可选 <b>对象</b>。 指定工作表类型。 可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlSheetType" /> ：xlWorksheet、xlChart、xlExcel4MacroSheet 或<b>xlExcel4IntlMacroSheet</b>。 <b></b> <b></b> <b></b> 如果要基于现有模板插入工作表，请指定模板的路径。 默认值为 <b>xlWorksheet</b>。</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
-        <remarks><para>如果 <paramref name="Before" /> 两 <paramref name="After" /> 者都省略，则新工作表将插入到活动工作表之前。</para>
+        <remarks><para>如果 <paramref name="Before" /> 和 <paramref name="After" /> 都省略，则新工作表将插入到活动工作表之前。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -173,10 +173,10 @@
         <param name="Before">可选 <b>对象</b>。 指定工作表的对象，新建的工作表将置于此工作表之前。</param>
         <param name="After">可选 <b>对象</b>。 指定工作表的对象，新建的工作表将置于此工作表之后。</param>
         <param name="Count">可选 <b>对象</b>。 要添加的工作表数。 默认值为 1</param>
-        <param name="NewLayout">可选 <b>对象</b>。 一个对象，指定要用于新工作表的布局。</param>
+        <param name="NewLayout">可选 <b>对象</b>。 一个对象，指定要用于新工作表的版式。</param>
         <summary>此方法只针对 <b>Charts</b> 集合对象实施，如果在 <b>Sheets</b> 和 <b>Worksheets</b> 对象上使用，将会生成运行时错误。</summary>
         <returns>To be added.</returns>
-        <remarks><para>如果 <paramref name="Before" /> 两 <paramref name="After" /> 者都省略，则新工作表将插入到活动工作表之前。</para>
+        <remarks><para>如果 <paramref name="Before" /> 和 <paramref name="After" /> 都省略，则新工作表将插入到活动工作表之前。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -203,7 +203,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -234,7 +234,7 @@
         <param name="Before">可选 <b>对象</b>。 将要在其之前放置所复制工作表的工作表。 不能指定 <paramref name="Before" /> 是否指定 <paramref name="After" /> 。</param>
         <param name="After">可选 <b>对象</b>。 将要在其之后放置所复制工作表的工作表。 不能指定 <paramref name="After" /> 是否指定 <paramref name="Before" /> 。</param>
         <summary>将工作表复制到工作簿的另一位置。</summary>
-        <remarks><para>如果未指定或 <paramref name="Before" /> <paramref name="After" /> ，Microsoft Excel 将创建一个新工作簿，其中包含复制的工作表。</para>
+        <remarks><para>如果不指定 或 ，则Microsoft Excel创建一个包含复制 <paramref name="Before" /> <paramref name="After" /> 工作表的新工作簿。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -317,7 +317,7 @@
       <Parameters />
       <Docs>
         <summary>删除对象。</summary>
-        <remarks><para>删除 or <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> 时，此方法将显示一个对话框，提示用户确认删除。 默认显示此对话框。 如果用户在对话框中单击了<b></b><b></b>"取消<b>"，Delete</b>方法将返回一个布尔值;如果用户单击"删除"，则返回<b>True。</b></para>
+        <remarks><para>删除 或 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> 时，此方法将显示一个对话框，提示用户确认删除操作。 默认显示此对话框。 Delete <b></b>方法返回一<b>个 Boolean</b>值，如果用户单击对话框中的"取消"，该值为<b>False;</b>如果用户单击"删除"，则返回<b>True。</b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -436,7 +436,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">必需 <b>对象</b>。 对象的名称或索引号。</param>
+        <param name="Index">必需的 <b>对象</b>。 对象的名称或索引号。</param>
         <summary>从集合中返回一个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -468,7 +468,7 @@
         <param name="Before">可选 <b>对象</b>。 在其之前放置移动工作表的工作表。 不能指定 <paramref name="Before" /> 是否指定 <paramref name="After" /> 。</param>
         <param name="After">可选 <b>对象</b>。 在其之后放置移动工作表的工作表。 不能指定 <paramref name="After" /> 是否指定 <b>Before</b>。</param>
         <summary>将工作表移到工作簿中的其他位置。</summary>
-        <remarks><para>如果不指定或，Microsoft Excel 将创建一个包含移动工作表 <paramref name="Before" /> <paramref name="After" /> 的新工作簿。</para>
+        <remarks><para>如果不指定 或 ，则Microsoft Excel创建一个包含移动 <paramref name="Before" /> <paramref name="After" /> 工作表的新工作簿。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -495,7 +495,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父对象。 只读。</summary>
+        <summary>返回指定对象的父对象。只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -537,11 +537,11 @@
         <param name="Copies">可选 <b>对象</b>。 打印份数。 如果省略此参数，则只打印一份。</param>
         <param name="Preview">可选 <b>对象</b>。 如果为 <b>True</b>，Microsoft Excel 将在打印对象之前调用打印预览。 如果为 <b>False</b>（或省略该参数），则立即打印对象。</param>
         <param name="ActivePrinter">可选 <b>对象</b>。 设置活动打印机的名称。</param>
-        <param name="PrintToFile">可选 <b>对象</b>。 如果为 <b>True</b>，则打印到文件。 如果 <paramref name="PrToFileName" /> 未指定，Microsoft Excel 将提示用户输入输出文件的名称。</param>
+        <param name="PrintToFile">可选 <b>对象</b>。 如果为 <b>True</b>，则打印到文件。 如果 <paramref name="PrToFileName" /> 未指定，Microsoft Excel提示用户输入输出文件的名称。</param>
         <param name="Collate">可选 <b>对象</b>。 如果为 <b>True</b>，则逐份打印多个副本。</param>
-        <param name="PrToFileName">可选 <b>对象</b>。 如果 <paramref name="PrintToFile" /> 设置为 <b>True，</b>则此参数指定要打印到的文件的名称。</param>
+        <param name="PrToFileName">可选 <b>对象</b>。 如果 <paramref name="PrintToFile" /> 设置为 <b>True</b>，则此参数指定要打印到的文件的名称。</param>
         <summary>打印对象。</summary>
-        <remarks><para>"页面"在工作表或工作簿的说明中引用打印页，而不是 <paramref name="From" /> <paramref name="To" /> 整个页面。</para>
+        <remarks><para>"页面"（在工作表或工作簿中为整体页面）的描述和引用打印 <paramref name="From" /> <paramref name="To" /> 的页面。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -637,9 +637,9 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Replace">可选 <b>对象</b> (仅用于工作表) 。 <b>为</b> 当前所选内容替换为指定的对象。 <b>False</b> 来扩展当前选定内容以包括任何以前选定的对象和指定的对象。</param>
+        <param name="Replace">可选的 <b>Object</b> (仅用于工作表) 。 <b>为</b> 当前所选内容替换为指定的对象。 <b>False</b> 来扩展当前选定内容以包括任何以前选定的对象和指定的对象。</param>
         <summary>选择对象。</summary>
-        <remarks><para>要选择单元格或单元格区域，请使用 <b>Select</b> 方法。 若要使单个单元格成为活动单元格，请使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Activate" /> 该方法。</para>
+        <remarks><para>要选择单元格或单元格区域，请使用 <b>Select</b> 方法。 若要使单个单元格成为活动单元格，请使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Activate" /> 方法。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

@@ -1,5 +1,5 @@
 <Type Name="Trendlines" FullName="Microsoft.Office.Interop.Excel.Trendlines">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="16729ecd05466f30367a2ad9f0440647d5e8ade1" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009469" /></Metadata><TypeSignature Language="C#" Value="public interface Trendlines : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="937148e91d997051158c5c969e16f37b457051fc64d68f38bcccce1d8733556e" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54519145" /></Metadata><TypeSignature Language="C#" Value="public interface Trendlines : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Trendlines implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Trendlines" />
   <TypeSignature Language="VB.NET" Value="Public Interface Trendlines&#xA;Implements IEnumerable" />
@@ -26,10 +26,10 @@
   </Attributes>
   <Docs>
     <summary>指定系列 <see cref="T:Microsoft.Office.Interop.Excel.Trendline" /> 的所有对象的集合。 <b>趋势线</b> 中的每个对象表示图表中的趋势线。 趋势线显示的趋势，或者方向，一系列中的数据。</summary>
-    <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Excel.Series.Trendlines(System.Object)" /> 该方法可返回 <b>Trendlines</b> 集合。</para>
-      <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.Trendlines.Add(Microsoft.Office.Interop.Excel.XlTrendlineType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 该方法可创建新的趋势线，并将其添加到系列中。</para>
-      <para>使用 <b>趋势线</b> <paramref name="index" /> () ，其中趋势线索引号， <paramref name="index" /> 返回单个 <b>趋势线</b> 对象。</para>
-      <para>索引号指出趋势线添加到系列中的顺序。 Trendlines(1) 是第一个添加到系列中的趋势线，而 Trendlines(Trendlines.Count) 是最后一个。</para>
+    <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Excel.Series.Trendlines(System.Object)" /> 方法可返回 <b>Trendlines</b> 集合。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Excel.Trendlines.Add(Microsoft.Office.Interop.Excel.XlTrendlineType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 方法可创建新的趋势线并将其添加到系列中。</para>
+      <para>使用<b>Trendlines</b> () 返回单个 TrendLine 对象，其中是趋势线 <paramref name="index" /> <paramref name="index" /> 索引号。 <b></b></para>
+      <para>索引号指出趋势线添加到系列中的顺序。Trendlines(1) 是第一个添加到系列中的趋势线，而 Trendlines(Trendlines.Count) 是最后一个。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -95,15 +95,15 @@
       </Parameters>
       <Docs>
         <param name="Type">可选 <see cref="T:Microsoft.Office.Interop.Excel.XlTrendlineType" /> 。 趋势线类型。</param>
-        <param name="Order">可选 <b>对象</b>。 如果为 <paramref name="Type" /> <b>xlPolynomial ，则必需</b>。 趋势线顺序号。 必须为 2 到 6 之间的整数（包括 2 和 6）。</param>
-        <param name="Period">可选 <b>对象</b>。 如果为 <paramref name="Type" /> <b>xlMovingAvg ，则必需</b>。 趋势线周期。 必须为大于 1，而小于正添加趋势线的数据系列中数据点个数的整数。</param>
+        <param name="Order">可选 <b>对象</b>。 如果 为 <paramref name="Type" /> <b>xlPolynomial ，则必需</b>。 趋势线顺序号。 必须为 2 到 6 之间的整数（包括 2 和 6）。</param>
+        <param name="Period">可选 <b>对象</b>。 如果 为 <paramref name="Type" /> <b>xlMovingAvg ，则必需</b>。 趋势线周期。 必须为大于 1，而小于正添加趋势线的数据系列中数据点个数的整数。</param>
         <param name="Forward">可选 <b>对象</b>。 趋势线向前延伸的周期数目（或散点图中的单位个数）。</param>
         <param name="Backward">可选 <b>对象</b>。 趋势线向后延伸的周期数目（或散点图中的单位个数）。</param>
         <param name="Intercept">可选 <b>对象</b>。 趋势线的截距。 如果省略此参数，则由回归分析自动设置截距。</param>
         <param name="DisplayEquation">可选 <b>对象</b>。 <b>真</b> (在数据标签与 R 平方值相同) 在图表上显示的趋势线公式。 默认值为 <b>False</b>。</param>
         <param name="DisplayRSquared">可选 <b>对象</b>。 <b>真</b> 要在图表上 (中数据标签与公式的相同) 显示趋势线的 R 平方值。 默认值为 <b>False</b>。</param>
         <param name="Name">可选 <b>对象</b>。 作为文本的趋势线名称。 如果省略此参数，则由 Microsoft Excel 生成名称。</param>
-        <summary>创建新的趋势线。 返回一 <see cref="T:Microsoft.Office.Interop.Excel.Trendline" /> 个对象。</summary>
+        <summary>创建新的趋势线。 返回 <see cref="T:Microsoft.Office.Interop.Excel.Trendline" /> 一个对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -131,7 +131,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -248,7 +248,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">必需 <b>对象</b>。 对象的名称或索引号。</param>
+        <param name="Index">必需的 <b>对象</b>。 对象的名称或索引号。</param>
         <summary>从集合中返回一个对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

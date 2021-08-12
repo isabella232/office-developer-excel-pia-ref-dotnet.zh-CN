@@ -1,5 +1,5 @@
 <Type Name="PivotItemList" FullName="Microsoft.Office.Interop.Excel.PivotItemList">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="262aa442811c81a69cf1d71e4b2a4d52c05f86c0" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010799" /></Metadata><TypeSignature Language="C#" Value="public interface PivotItemList : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="678999535a33acfb5578313326329fd9a90387d33099afd3b23de1ffa9314ac4" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518907" /></Metadata><TypeSignature Language="C#" Value="public interface PivotItemList : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotItemList implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotItemList" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotItemList&#xA;Implements IEnumerable" />
@@ -25,9 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>指定数据透视 <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> 表中所有对象的集合。 每个 <b>PivotItem</b> 代表数据透视表字段中的一个项。</summary>
-    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.RowItems" /> 对象的 or <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.ColumnItems" /> 属性 <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> 可返回 <b>PivotItemList</b> 集合。</para>
-      <para>返回 <b>PivotItemList</b> 集合后，可以使用该方法 <see cref="M:Microsoft.Office.Interop.Excel.PivotItemList.Item(System.Object)" /> 标识特定的 <b>PivotItem</b> 列表。</para>
+    <summary>指定数据透视表中 <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> 所有对象的集合。 每个 <b>PivotItem</b> 代表数据透视表字段中的一个项。</summary>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.RowItems" /> 对象的 <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.ColumnItems" /> 或 属性 <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> 可返回 <b>PivotItemList</b> 集合。</para>
+      <para>返回 <b>PivotItemList</b> 集合后，可以使用 方法 <see cref="M:Microsoft.Office.Interop.Excel.PivotItemList.Item(System.Object)" /> 标识特定的 <b>PivotItem</b> 列表。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -89,7 +89,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -206,10 +206,10 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">必需 <b>对象</b>。 对象的名称或索引号。</param>
+        <param name="Index">必需的 <b>对象</b>。 对象的名称或索引号。</param>
         <summary>从集合中返回一个对象。</summary>
         <returns>To be added.</returns>
-        <remarks><para>对象的文本名称是和 <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Name" /> <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Value" /> 属性的值。 对于 OLAP (联机) ，该值等于属性的值 <see cref="P:Microsoft.Office.Interop.Excel._OLEObject.SourceName" /> 。 对于其他数据源，该值等于属性的值 <see cref="P:Microsoft.Office.Interop.Excel._Application.Caption" /> 。</para>
+        <remarks><para>对象的文本名称是 和 <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Name" /> <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Value" /> 属性的值。 对于 OLAP (联机) ，该值等于 <see cref="P:Microsoft.Office.Interop.Excel._OLEObject.SourceName" /> 属性的值。 对于其他数据源，值等于属性的值 <see cref="P:Microsoft.Office.Interop.Excel._Application.Caption" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -236,7 +236,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父对象。 只读。</summary>
+        <summary>返回指定对象的父对象。只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

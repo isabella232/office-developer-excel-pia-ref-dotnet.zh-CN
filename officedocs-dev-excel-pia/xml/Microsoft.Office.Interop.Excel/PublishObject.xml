@@ -1,5 +1,5 @@
 <Type Name="PublishObject" FullName="Microsoft.Office.Interop.Excel.PublishObject">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="fcc61ded7b33a1797bd24a5447641b388b7f9f14" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010778" /></Metadata><TypeSignature Language="C#" Value="public interface PublishObject" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="25a70522ac930fee202381605c46a4549fd8193cfe61b4d688bc30b71c9ed0c6" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54519082" /></Metadata><TypeSignature Language="C#" Value="public interface PublishObject" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PublishObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PublishObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface PublishObject" />
@@ -19,7 +19,7 @@
   </Attributes>
   <Docs>
     <summary>代表保存为网页的工作簿中的项，并可以根据 <b>PublishObject</b> 对象中属性和方法所指定的值进行刷新。</summary>
-    <remarks><para><b>PublishObject</b>对象是集合 <see cref="T:Microsoft.Office.Interop.Excel.PublishObjects" /> 的一个成员。</para>
+    <remarks><para><b>PublishObject</b>对象是集合的一 <see cref="T:Microsoft.Office.Interop.Excel.PublishObjects" /> 个成员。</para>
       <para>使用 <b>PublishObjects</b> () 返回单个 <paramref name="index" /> <paramref name="index" /> <b>PublishObject</b> 对象，其中是工作簿中指定项目的索引号。</para>
       <para> </para></remarks>
   </Docs>
@@ -47,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -78,7 +78,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>保存工作簿时，Microsoft Excel 将确定集合中的任意项目是否将 <see cref="T:Microsoft.Office.Interop.Excel.PublishObjects" /> <b>AutoRepublish</b> 属性设置为 <b>True，</b> 如果是，则重新发布它。 默认值为 <b>False</b>。</summary>
+        <summary>保存工作簿时，Microsoft Excel确定集合中的任意项目是否将 <see cref="T:Microsoft.Office.Interop.Excel.PublishObjects" /> <b>AutoRepublish</b>属性设置为<b>True，</b>如果是，则重新发布它。 默认值为 <b>False</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -195,7 +195,7 @@
       <Docs>
         <summary>返回或设置保存指定源对象位置的 URL（Intranet 或网站上）或路径（本地或网络）。</summary>
         <value>To be added.</value>
-        <remarks><para>如果 <b>指定</b> 路径中的文件夹不存在，Filename 属性将生成错误。</para>
+        <remarks><para>如果指定路径中的文件夹不存在，则 <b>Filename</b> 属性将生成错误。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -227,7 +227,7 @@
       <Docs>
         <summary>返回或设置在将指定项保存到网页中时，由 Microsoft Excel 所生成的 HTML 的类型。</summary>
         <value>To be added.</value>
-        <remarks><para><b>HtmlType</b>属性可以是指定项是静态的还是交互式网页 <see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" /> 中的常量之一。 默认值为 <b>xlHtmlStatic</b>。</para>
+        <remarks><para><b>HtmlType</b>属性可以是指定项目是静态的还是交互式网页 <see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" /> 中的常量之一。 默认值为 <b>xlHtmlStatic</b>。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -281,9 +281,9 @@
         <Parameter Name="Create" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Create">可选 <b>对象</b>。 在 HTML 文件存在的情况下，如果该值为 <b>True</b>，则会替换该文件；如果该值为 <b>False</b>，则会在文件末尾插入这些项。 如果文件不存在，则无论参数值如何，都会创建 <paramref name="Create" /> 该文件。</param>
+        <param name="Create">可选 <b>对象</b>。 在 HTML 文件存在的情况下，如果该值为 <b>True</b>，则会替换该文件；如果该值为 <b>False</b>，则会在文件末尾插入这些项。 如果文件不存在，则无论参数值如何，都会创建 <paramref name="Create" /> 文件。</param>
         <summary>将文档中的项或项的集合保存到网页中。</summary>
-        <remarks><para>该属性 <see cref="P:Microsoft.Office.Interop.Excel.PublishObject.Filename" /> 返回或设置 HTML 文件的位置和名称。</para>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Excel.PublishObject.Filename" />属性返回或设置 HTML 文件的位置和名称。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -340,7 +340,7 @@
       <Docs>
         <summary>返回标识属性值为 <see cref="P:Microsoft.Office.Interop.Excel.PublishObject.SourceType" /> <b>xlSourceRange</b>、 <b>xlSourceChart</b>、 <b>xlSourcePrintArea</b>、 <b>xlSourceAutoFilter</b>、 <b>xlSourcePivotTable</b>或 <b>xlSourceQuery</b>的项目的唯一名称。</summary>
         <value>To be added.</value>
-        <remarks><para>如果 <b>SourceType</b> 属性设置为 <b>xlSourceRange</b>，则此属性返回一个区域，该区域可以是一个定义名称。 如果 <b>SourceType</b> 属性设置为 <b>xlSourceChart</b>、<b>xlSourcePivotTable</b> 或 <b>xlSourceQuery</b>，则此属性返回对象的名称，例如：图表名称、数据透视表名称或查询表名称。</para>
+        <remarks><para>如果 <b>SourceType</b> 属性设置为 <b>xlSourceRange</b>，则此属性返回一个区域，该区域可以是一个定义名称。如果 <b>SourceType</b> 属性设置为 <b>xlSourceChart</b>、<b>xlSourcePivotTable</b> 或 <b>xlSourceQuery</b>，则此属性返回对象的名称，例如：图表名称、数据透视表名称或查询表名称。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

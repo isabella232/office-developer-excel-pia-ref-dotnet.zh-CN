@@ -1,5 +1,5 @@
 <Type Name="OLEDBConnection" FullName="Microsoft.Office.Interop.Excel.OLEDBConnection">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="907e0e2b7ef356c71a4d22a04803c5aeb256084d" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011359" /></Metadata><TypeSignature Language="C#" Value="public interface OLEDBConnection" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="da0d456cfd0d5cb2fc5730ebc56258e3dad340916ab85ed3549732eeee756c5f" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518508" /></Metadata><TypeSignature Language="C#" Value="public interface OLEDBConnection" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OLEDBConnection" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.OLEDBConnection" />
   <TypeSignature Language="VB.NET" Value="Public Interface OLEDBConnection" />
@@ -22,8 +22,8 @@
   </Attributes>
   <Docs>
     <summary>代表 OLE DB 连接。</summary>
-    <remarks><para>OLE DB 连接可存储在 Excel 工作簿中。  当 Micrososft Excel 打开工作簿时，Excel 将创建 OLE DB 连接的内存副本，称为  <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> 对象。</para>
-      <para>对象包含与连接有关的信息，例如要连接到的服务器的名称以及要打开在服务器上 <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> 的对象的名称。  或者，该对象还可以包括身份验证凭据信息，或要传递给服务器并执行的命令 (例如，由 SQL Server) 执行的 <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> SELECT 语句。</para>
+    <remarks><para>OLE DB 连接可存储在 Excel 工作簿中。  当 Micrososft Excel打开工作簿时，Excel创建一个称为 对象的 OLE DB 连接的内存 <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> 副本。</para>
+      <para>对象包含与连接有关的信息，例如要连接到的服务器的名称以及要在服务器上 <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> 打开的对象的名称。  （可选）该对象还可以包括身份验证凭据信息，或要传递到服务器并执行的命令 (例如，由 SQL Server) <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> 执行的 SELECT 语句。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -50,12 +50,14 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果将数据透视表缓存连接到 OLE DB 数据源，则返回一个 ADO Connection 对象。 只读。</summary>
-        <value><b>Object</b></value>
-        <remarks><para>该属性公开了与数据提供程序的 Microsoft Excel 连接，允许用户在 Excel 使用的同一会话的上下文中 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ADOConnection" /> 编写代码。 </para>
-          <para>该属性 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ADOConnection" /> 仅适用于数据源为 OLE DB 数据源的会话。 如果没有 ADO 会话，查询将导致运行时错误。
+        <summary>如果将数据透视表缓存连接到 OLE DB 数据源，则返回一个 ADO Connection 对象。只读。
 
-该属性 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ADOConnection" /> 可用于任何具有 ADO 的基于 OLE DB 的缓存。 ADO Connection 对象可与 ADO MD 一起使用，以查找有关缓存所基于的 OLAP 多维数据集的信息。</para>
+</summary>
+        <value><b>Object</b></value>
+        <remarks><para>属性公开Microsoft Excel提供程序的连接，允许用户在用户使用的同 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ADOConnection" /> 一会话的上下文中Excel代码。 </para>
+          <para><see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ADOConnection" />该属性仅适用于数据源为 OLE DB 数据源的会话。 如果没有 ADO 会话，查询将导致运行时错误。
+
+<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ADOConnection" />该属性可用于 ADO 中任何基于 OLE DB 的缓存。 ADO Connection 对象可与 ADO MD 一起使用，以查找有关缓存所基于的 OLAP 多维数据集的信息。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -85,7 +87,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>如此</b>如果连接文件始终用于建立与数据源的连接。 读/写 <b>Boolean</b>。</summary>
+        <summary>如果连接文件始终用于建立与数据源的连接，则其为<b>True。</b> 读/写 <b>Boolean</b>。</summary>
         <value><b>Boolean</b></value>
         <remarks><para>当此属性为 <b>True</b> 时，连接文件将始终用于建立与数据源的连接。  如果在工作簿中嵌入的连接不同于外部连接文件，则忽略嵌入的连接，且外部连接文件将是唯一考虑的版本。</para>
           <para> </para></remarks>
@@ -114,7 +116,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果不与对象限定符一起使用，则此属性返回一个对象，该对象Microsoft Office  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> Excel 应用程序。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象。 只读。</summary>
+        <summary>如果不与对象限定符一起使用，则此属性返回 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 一个代表应用程序Microsoft Office Excel对象。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象。 只读。</summary>
         <value><b>应用程序</b></value>
         <remarks><para>您可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序。</para>
           <para> </para></remarks>
@@ -146,7 +148,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果 OLE DB 连接的查询是异步执行（在后台执行）的，则为 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
+        <summary>如果 OLE DB 连接的查询是异步执行（在后台执行）的，则为 <b>True</b>。可读/写 <b>Boolean</b> 类型。</summary>
         <value><b>Boolean</b></value>
         <remarks><para>对于 OLAP 数据源，此属性是只读的，并且始终返回 <b>False</b>。</para>
           <para> </para></remarks>
@@ -178,7 +180,7 @@
         <summary>获取 <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> 指定连接的集合。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" />指定连接的集合。</value>
         <remarks><para>只读。</para>
-          <para>使用集合的属性在多个数据透视表和使用同一连接的多维数据集函数之间共享 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CalculatedMembers" /> <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> 计算成员。</para>
+          <para>使用集合的 属性在多个数据透视表和使用同一连接的多维数据集函数之间共享 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CalculatedMembers" /> <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> 计算成员。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -204,7 +206,7 @@
       <Parameters />
       <Docs>
         <summary>对指定的 OLE DB 连接取消正在进行的所有刷新操作。</summary>
-        <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Refreshing" /> 该属性可确定刷新操作当前是否正在进行。</para>
+        <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Refreshing" /> 属性可确定刷新操作当前是否正在进行。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -236,8 +238,8 @@
       <Docs>
         <summary>返回或设置指定数据源的命令字符串。 读取/写入 <b>对象</b> 。</summary>
         <value><b>Object</b></value>
-        <remarks><para>您应该使用属性而不是 SQL 属性，现在主要是为了与 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" /> 早期版本的 Microsoft Excel 兼容而存在。 <b></b> 如果同时使用这两个属性 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" /> ，则属性值优先。</para>
-          <para>该属性 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandType" /> 描述属性的值 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" /> 。</para>
+        <remarks><para>你应该使用 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" /> 属性，而不是<b>SQL</b>属性，现在主要是为了与早期版本的 Microsoft Excel 兼容。 如果同时使用这两个属性 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" /> ，则属性值优先。</para>
+          <para><see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandType" />属性描述属性的值 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -301,9 +303,9 @@
       <Docs>
         <summary>返回或设置一个包含 OLE DB 设置的字符串，这些设置使 Microsoft Excel 可以连接 OLE DB 数据源。 读取/写入 <b>对象</b> 。</summary>
         <value><b>Object</b></value>
-        <remarks><para>设置 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> 该属性不会立即启动与数据源的连接。 必须使用该方法 <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> 建立连接并检索数据。
+        <remarks><para>设置 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> 属性不会立即启动与数据源的连接。 必须使用 方法 <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> 建立连接并检索数据。
 
-使用脱机多维数据集文件时，将 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" /> 该属性设置为 <b>True，</b> 并使用 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> 属性而不是 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> 属性。</para>
+使用脱机多维数据集文件时，将该属性设置为 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" /> <b>True，</b> 并使用 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> 属性而不是 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> 属性。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -330,9 +332,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回枚举中的 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 一个常量，该常量指示创建此对象时的应用程序。 只读。</summary>
+        <summary>返回枚举中的 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 一个常量，该常量指示创建此对象时所使用应用程序。 只读。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
-        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。  该属性设计为在 Microsoft Excel for the Macintosh 中使用，其中每个应用程序都有 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Creator" /> 一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回字符串 XCEL，它等同于十六进制的数字 5843454C。  该属性旨在用于 Macintosh Microsoft Excel，其中每个应用程序都有一个四字符的 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Creator" /> 创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -362,9 +364,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果用户可刷新连接，则为 <b>True</b>。 默认值为 <b>True</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
+        <summary>
+			如果用户可刷新连接，则为 <b>True</b>。默认值是 <b>True</b>。可读/写 <b>Boolean</b> 类型。</summary>
         <value><b>Boolean</b></value>
-        <remarks><para>如果 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.RefreshOnFileOpen" /> 该属性设置为 False， <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.EnableRefresh" /> 则忽略 <b>该属性</b>。 </para>
+        <remarks><para>如果 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.RefreshOnFileOpen" /> 该属性设置为 False <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.EnableRefresh" /> ，则忽略 <b>该属性</b>。 </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -391,9 +394,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果 <b>该属性</b> 为 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.MaintainConnection" /> <b>True，</b>则返回 True 。 如果数据透视表缓存当前未与其源相连，则返回 <b>False</b>。 只读 <b>Boolean</b>。</summary>
+        <summary>如果 <b>属性</b> 为 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.MaintainConnection" /> <b>True</b>，则返回 True 。 如果数据透视表缓存当前未与其源相连，则返回 <b>False</b>。 只读 <b>Boolean</b>。</summary>
         <value><b>Boolean</b></value>
-        <remarks><para><see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.IsConnected" />该属性不检查连接是否连接。 即使此属性返回<b>True，</b>如果连接不再有效，向提供程序发送命令也可能会导致错误。</para>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.IsConnected" />属性不检查连接是否连接。 即使此属性返回<b>True</b>，向提供程序发送命令可能会导致错误，如果连接不再有效。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -425,9 +428,9 @@
       <Docs>
         <summary>返回或设置脱机多维数据集文件的连接字符串。 读取/写入 <b>对象</b> 。</summary>
         <value><b>Object</b></value>
-        <remarks><para>对于非 OLAP 数据源，该属性的值为空字符串，并且 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" /> 该属性设置为<b>False。</b></para>
-          <para>设置 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> 该属性不会立即启动与数据源的连接。 必须先使用 <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> 该方法建立连接并检索数据。</para>
-          <para>如果该属性设置为 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" /> <b>True，</b>则使用属性的值。 如果该属性设置为 False，则该属性指定基于除文件外的其他源的查询表 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> 本地多维数据集字符串。</para>
+        <remarks><para>对于非 OLAP 数据源，该属性的值为空 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> 字符串，并且 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" /> 该属性设置为 <b>False</b>。</para>
+          <para>设置 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> 属性不会立即启动与数据源的连接。 必须先使用 <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> 方法建立连接并检索数据。</para>
+          <para>如果该属性设置为 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> True ，则 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" /> 使用 <b>属性的值</b>。 如果该属性设置为 False ，则该属性指定基于除文件外的其他源的查询表 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> 本地多维数据集字符串。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -460,7 +463,7 @@
         <summary>获取或设置指定连接区域设置标识符。</summary>
         <value>指定连接区域设置标识符。</value>
         <remarks><para>读/写。</para>
-          <para>在将 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocaleID" /> 该属性设置为新的区域设置之前，必须将对象 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.RetrieveInOfficeUILang" /> <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> 的属性设置为<b>false。</b> 有关有效的区域设置 ID (LCID) 值，请搜索 MSDN 网站中的"Microsoft 分配区域设置 ID"。</para>
+          <para>在将 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocaleID" /> 该属性设置为新的区域设置之前，必须将 对象的 属性 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.RetrieveInOfficeUILang" /> 设置为 <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> <b>false</b>。 有关有效区域设置 ID (LCID) ，请搜索 MSDN 网站中的"Microsoft 分配区域设置 ID"。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -490,9 +493,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果从刷新操作开始直至关闭工作簿，都一直保留与指定数据源的连接，则返回 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
+        <summary>如果从刷新操作开始直至关闭工作簿，都一直保留与指定数据源的连接，则返回 <b>True</b>。可读/写 <b>Boolean</b> 类型。
+
+</summary>
         <value><b>Boolean</b></value>
-        <remarks><para>默认值为 <b>True</b>。 如果预计会频繁对服务器进行查询，则可将此属性设置为 <b>True</b>，这样能减少重新连接的时间因而可提高性能。 如果将此属性设置为 <b>False</b>，则会使打开的连接关闭。</para>
+        <remarks><para>默认值是 <b>True</b>。如果预计会频繁对服务器进行查询，则可以将此属性设置为 <b>True</b>，这样能减少重新连接的时间，因而可提高性能。如果将此属性设置为 <b>False</b>，则会使打开的连接关闭。
+
+</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -518,9 +525,9 @@
       <Parameters />
       <Docs>
         <summary>为指定的 OLE DB 连接建立连接。</summary>
-        <remarks><para>当连接删除且用户希望重新建立连接时 <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.MakeConnection" /> ，可以使用该方法。 </para>
+        <remarks><para><see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.MakeConnection" />当连接删除且用户希望重新建立连接时，可以使用 该方法。 </para>
           <para>如果断开连接，则各种对象和方法可能都会返回运行时错误。使用该方法可确保在执行其他对象或方法之前已建立一个连接。</para>
-          <para>如果指定的 OLE DB 连接的属性已设置为 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.MaintainConnection" /> <b>False，</b>则该方法将导致运行时错误。</para>
+          <para>如果指定的 OLE DB 连接的 属性已设置为 False ， <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.MaintainConnection" /> 则该方法将导致运行时 <b>错误</b>。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -578,7 +585,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果 <b>OLE</b> DB 连接连接到 OLAP 服务器中的联机分析处理， (True) 。 只读 <b>Boolean</b>。</summary>
+        <summary>如果 OLE DB 连接与联机分析处理 (OLAP) 服务器相连，则返回 <b>True</b>，只读 <b>Boolean</b> 类型。</summary>
         <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -606,7 +613,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父对象。 只读。</summary>
+        <summary>返回指定对象的父对象。只读。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -658,11 +665,11 @@
       <Parameters />
       <Docs>
         <summary>刷新 OLE DB 连接。</summary>
-        <remarks><para>与 OLE DB 数据源建立连接时，Microsoft Excel 使用属性指定的连接 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> 字符串。 如果指定的连接字符串缺少必需的值，将显示对话框，提示用户提供必需的信息。 如果该属性 <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> 为 <b>False，</b>则不显示对话框，并且该方法失败，但 <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> 连接信息不足异常。</para>
-          <para>Microsoft Excel 成功连接后，它将存储已完成的连接字符串，以便不会在同一编辑会话期间显示对该方法的后续调用 <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> 的提示。 您可以通过检查属性的值来获取已完成的连接  <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> 字符串。</para>
-          <para>完成数据库连接后，将检查 SQL 查询的有效性。 如果查询被无效，该方法将失败 <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> ，SQL语法错误异常。</para>
-          <para>如果查询成功完成或启动，该方法将返回 True;如果用户取消连接，则返回 <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> <b>False。</b> <b></b></para>
-          <para>若要了解提取的行数是否超过了工作表上的可用行数，请检查 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.FetchedRowOverflow" /> 该属性。 每次调用该方法时，都会 <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> 初始化此属性。</para>
+        <remarks><para>当与 OLE DB 数据源建立连接时，Microsoft Excel属性指定的连接 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> 字符串。 如果指定的连接字符串缺少必需的值，将显示对话框，提示用户提供必需的信息。 如果该属性 <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> 为 <b>False</b>，则不显示对话框，并且 <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> 该方法失败，并出现"连接信息不足"异常。</para>
+          <para>在Microsoft Excel成功连接后，它将存储已完成的连接字符串，以便不会在同一编辑会话期间显示对方法的后续调用 <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> 的提示。 您可以通过检查属性的值来获取完成的连接  <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> 字符串。</para>
+          <para>完成数据库连接后，将检查 SQL 查询的有效性。 如果查询被无效，该方法将失败 <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> ，SQL语法错误"异常。</para>
+          <para>如果查询成功完成或启动，则该方法返回 <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> <b>True;</b>如果用户取消连接，则返回<b>False。</b></para>
+          <para>若要了解提取的行数是否超过了工作表上的可用行数，请检查 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.FetchedRowOverflow" /> 属性。 每次调用方法时，都会 <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> 初始化此属性。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -689,7 +696,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回上次刷新 OLE DB 连接的日期。 只读的 <b>DateTime</b>。</summary>
+        <summary>返回上次刷新 OLE DB 连接的日期。 只读<b>DateTime 。</b></summary>
         <value><b>DateTime</b></value>
         <remarks><para>对于 OLAP 数据源，在每次查询后都会更新此属性。</para>
           <para> </para></remarks>
@@ -718,9 +725,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果正在进行指定 OLE DB 连接的后台 OLE DB 查询，则为 <b>True</b>。 读/写 <b>Boolean</b>。</summary>
+        <summary>
+			如果正在进行指定 OLE DB 连接的后台 OLE DB 查询，则为 <b>True</b>。可读/写 <b>Boolean</b> 类型。</summary>
         <value><b>Boolean</b></value>
-        <remarks><para>使用此方法 <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.CancelRefresh" /> 取消后台查询。</para>
+        <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.CancelRefresh" /> 方法取消后台查询。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -750,9 +758,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果每次打开工作簿都自动更新连接，则为 <b>True</b>。 默认值为 <b>False</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
+        <summary>
+			如果每次打开工作簿都自动更新连接，则为 <b>True</b>。默认值为 <b>False</b>。可读/写 <b>Boolean</b> 类型。</summary>
         <value><b>Boolean</b></value>
-        <remarks><para>使用工作簿中的方法打开工作簿时，不会自动 <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 刷新Visual Basic。 使用 <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> 该方法在工作簿打开后刷新数据。</para>
+        <remarks><para>使用工作簿中的 方法打开工作簿时，不会自动刷新 <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> Visual Basic。 使用 <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> 方法在工作簿打开后刷新数据。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -814,9 +823,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果要以 Office 用户界面显示语言（如果可用）检索数据和错误，则为 <b>True</b>。  读/写 <b>Boolean</b>。</summary>
+        <summary>如果要以 Office 用户界面显示语言（如果可用）检索数据和错误，则为 <b>True</b>。可读/写 <b>Boolean</b> 类型。</summary>
         <value><b>Boolean</b></value>
-        <remarks><para>如果此属性设置为 <b>False</b>，则改用连接字符串中的 LCID 值。 如果未指定 LCID，则使用服务器中的默认 LCID。</para>
+        <remarks><para>如果此属性设置为 <b>False</b>，则改用连接字符串中的 LCID 值。如果未指定 LCID，则使用服务器中的默认 LCID。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -848,7 +857,7 @@
       <Docs>
         <summary>返回或设置 OLE DB 连接与其数据源连接的方式。 读/写 <see cref="T:Microsoft.Office.Interop.Excel.XlRobustConnect" /> 。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlRobustConnect" /></value>
-        <remarks><para>如果使用可靠的连接，当 Microsoft Excel 无法使用工作簿连接信息建立连接时，Excel 将检查工作簿连接是否具有外部连接文件的路径。  如果有，Excel 将打开外部连接文件并尝试使用外部连接文件中包含的信息进行连接。  如果在使用外部连接文件之后能够建立连接，则 Excel 将更新工作簿的连接对象。  </para>
+        <remarks><para>如果使用可靠的连接，Microsoft Excel无法使用工作簿连接信息建立连接时，Excel将检查工作簿连接是否具有外部连接文件的路径。  如果有，Excel 将打开外部连接文件并尝试使用外部连接文件中包含的信息进行连接。  如果在使用外部连接文件之后能够建立连接，则 Excel 将更新工作簿的连接对象。  </para>
           <para>在信息技术部门在一个中央位置维护和更新连接的情况下，这可以提供可靠的连接，每当上一版本的连接（缓存在工作簿中）失败时，允许用户的工作簿自动获取那些更新。 </para>
           <para> </para></remarks>
       </Docs>
@@ -910,7 +919,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果将 OLE DB 连接字符串中的密码信息保存在连接字符串中，则为 <b>True</b>。 如果删除密码，则为 <b>False</b>。 读/写 <b>Boolean</b>。</summary>
+        <summary>如果将 OLE DB 连接字符串中的密码信息保存在连接字符串中，则为 <b>True</b>。如果删除密码，则为 <b>False</b>。可读/写 <b>Boolean</b> 类型。</summary>
         <value><b>Boolean</b></value>
         <remarks><para>此属性由数据透视表和查询表在 ODBC 和 OLEDB 查询中使用。</para>
           <para> </para></remarks>
@@ -973,7 +982,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果在使用指定连接时从服务器中检索 OLAP 服务器的填充色格式，则为 <b>True</b>。  读/写 <b>Boolean</b>。</summary>
+        <summary>如果在使用指定连接时从服务器中检索 OLAP 服务器的填充色格式，则为 <b>True</b>。可读/写 <b>Boolean</b> 类型。</summary>
         <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1004,7 +1013,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果在使用指定连接时从服务器中检索 OLAP 服务器的字体样式格式，则为 <b>True</b>。  读/写 <b>Boolean</b>。</summary>
+        <summary>如果在使用指定连接时从服务器中检索 OLAP 服务器的字体样式格式，则为 <b>True</b>。可读/写 <b>Boolean</b> 类型。</summary>
         <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1035,7 +1044,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果在使用指定连接时从服务器中检索 OLAP 服务器的数字格式，则为 <b>True</b>。  读/写 <b>Boolean</b>。</summary>
+        <summary>如果在使用指定连接时从服务器中检索 OLAP 服务器的数字格式，则为 <b>True</b>。可读/写 <b>Boolean</b> 类型。</summary>
         <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1066,8 +1075,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置单一登录 (SSO) 应用程序标识符，该标识符用于在 SSO 数据库中查找凭据。 读/写 <b>String</b>。</summary>
-        <value><b>字符串</b></value>
+        <summary>返回或设置单一登录 (SSO) 应用程序标识符，该标识符用于在 SSO 数据库中查找凭据。可读/写 <b>String</b> 类型。</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1097,7 +1106,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果在使用指定连接时从服务器中检索 OLAP 服务器的文本颜色格式，则为 <b>True</b>。  读/写 <b>Boolean</b>。</summary>
+        <summary>如果在使用指定连接时从服务器中检索 OLAP 服务器的文本颜色格式，则为 <b>True</b>。可读/写 <b>Boolean</b> 类型。</summary>
         <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1128,8 +1137,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个 <b>String</b> 类型的值，该值指示用于创建连接的 Microsoft Office 数据连接文件或类似文件。 读/写。</summary>
-        <value><b>字符串</b></value>
+        <summary>返回或设置一个 <b>String</b> 类型的值，该值指示用于创建连接的 Microsoft Office 数据连接文件或类似文件。可读/写。</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1160,8 +1169,8 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置一个 <b>String</b> 类型的值，该值指示 OLE DB 连接的源数据文件。 读/写。</summary>
-        <value><b>字符串</b></value>
-        <remarks><para>例如，对于基于文件的数据源 (，Access) <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.SourceDataFile" /> 属性包含源数据文件的完全限定路径。 对于基于服务器的数据源（如 SQL Server），该属性为 null。 如果 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.SourceDataFile" /> 以编程方式更改属性， <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> 该属性将设置为 null。</para>
+        <value><b>String</b></value>
+        <remarks><para>例如，对于基于文件的 (，Access) 属性包含源数据文件 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.SourceDataFile" /> 的完全限定路径。 对于基于服务器的数据源（如 SQL Server），该属性为 null。 如果 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.SourceDataFile" /> 以编程方式更改属性， <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> 则该属性设置为 null。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1191,7 +1200,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>如此</b> 如果 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> 该属性用于指定使 Microsoft Excel 连接到数据源的字符串。 <b>假</b> 如果使用属性指定的 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> 连接字符串。 读/写 <b>Boolean</b>。</summary>
+        <summary><b>如此</b>如果 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> 属性用于指定字符串，使Microsoft Excel连接到数据源。 <b>假</b> 如果使用属性指定的 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> 连接字符串。 读/写 <b>Boolean</b>。</summary>
         <value><b>Boolean</b></value>
         <remarks><para>本示例将第一个数据透视表缓存的连接字符串设置为引用脱机多维数据集文件。</para>
           <para> </para></remarks>

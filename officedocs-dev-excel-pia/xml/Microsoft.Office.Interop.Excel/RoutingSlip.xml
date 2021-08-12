@@ -1,5 +1,5 @@
 <Type Name="RoutingSlip" FullName="Microsoft.Office.Interop.Excel.RoutingSlip">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d1e265b4ea2021fff6dba4ef91746a75aeaa3e17" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010491" /></Metadata><TypeSignature Language="C#" Value="public interface RoutingSlip" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9c8337de7ae1eba925d8da90043087f2d04736d8b1f57e9186ae9e83e872ce1f" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518207" /></Metadata><TypeSignature Language="C#" Value="public interface RoutingSlip" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract RoutingSlip" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.RoutingSlip" />
   <TypeSignature Language="VB.NET" Value="Public Interface RoutingSlip" />
@@ -22,8 +22,8 @@
   </Attributes>
   <Docs>
     <summary>代表工作簿的传送名单。传送名单用于在电子邮件系统中发送工作簿。</summary>
-    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.RoutingSlip" /> 该属性可返回 <b>RoutingSlip</b> 对象。</para>
-      <para><b>RoutingSlip</b>对象不存在，除非工作簿的属性为 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.HasRoutingSlip" /> <b>True，</b>否则无法返回该对象。</para>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.RoutingSlip" /> 属性可返回 <b>RoutingSlip</b> 对象。</para>
+      <para><b>RoutingSlip</b>对象不存在，无法返回，除非工作簿的 属性 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.HasRoutingSlip" /> 为<b>True</b>。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -50,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -111,7 +111,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlRoutingSlipDelivery</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置邮件传递的方法。 可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlRoutingSlipDelivery" /> <b>：xlOneAfterAnother</b> 或 <b>xlAllAtOnce</b>。</summary>
+        <summary>返回或设置邮件传递的方法。 可以是下列常量之一 <see cref="T:Microsoft.Office.Interop.Excel.XlRoutingSlipDelivery" /> <b>：xlOneAfterAnother 或</b> <b>xlAllAtOnce</b>。</summary>
         <value>To be added.</value>
         <remarks><para>如果正在进行传送，则无法设置该属性。</para>
           <para> </para></remarks>
@@ -327,7 +327,7 @@
       <Docs>
         <summary>返回或设置邮件或传送名单的主题。</summary>
         <value>To be added.</value>
-        <remarks><para>对象的主题用作用于路由工作簿 <see cref="T:Microsoft.Office.Interop.Excel.RoutingSlip" /> 的邮件的主题。</para>
+        <remarks><para>对象的主题 <see cref="T:Microsoft.Office.Interop.Excel.RoutingSlip" /> 用作用于路由工作簿的邮件的主题。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
