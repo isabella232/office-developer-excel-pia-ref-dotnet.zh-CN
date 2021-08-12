@@ -1,5 +1,5 @@
 <Type Name="TextFrame" FullName="Microsoft.Office.Interop.Excel.TextFrame">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="2d1bfd568b124e87a7cc39c702d6b945df65ab68" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009644" /></Metadata><TypeSignature Language="C#" Value="public interface TextFrame" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5b4356dc4dd2d3b658f3600cb0230834afce20795d1430632fc3d0d156c66e64" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518032" /></Metadata><TypeSignature Language="C#" Value="public interface TextFrame" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextFrame" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TextFrame" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextFrame" />
@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>表示 <b>形状</b> 对象中的文字框架。 包含文本框架中的文本以及控制文本框架的对齐和定位的属性和方法。</summary>
+    <summary>代表 <b>Shape</b> 对象中的文本框架。包含文本框架中的文本以及控制文本框架的对齐和定位的属性和方法。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -79,9 +79,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>如此</b> 如果 Microsoft Excel 自动计算文本框边距。</summary>
+        <summary><b>如此</b>如果Microsoft Excel自动计算文本框边距。</summary>
         <value>To be added.</value>
-        <remarks><para>当此属性为 <b>True</b>时，将 <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginLeft" /> 忽略 、 <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginRight" /> 和 <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginTop" /> <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginBottom" /> 属性。</para>
+        <remarks><para>当此属性为 <b>True</b>时，将忽略 、 、 <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginLeft" /> <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginRight" /> 和 <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginTop" /> <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginBottom" /> 属性。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -140,7 +140,7 @@
       </Parameters>
       <Docs>
         <param name="Start">可选 <b>对象</b>。 要返回的第一个字符。 如果此参数设置为 1 或被省略，则 <b>Characters</b> 方法将返回以第一个字符为起始字符的字符区域。</param>
-        <param name="Length">可选 <b>对象</b>。 要返回的字符数。 如果省略该参数 <b>，Characters</b> 方法将返回字符串的剩余部分 (设置为参数的字符之后的所有 <paramref name="Start" />) 。</param>
+        <param name="Length">可选 <b>对象</b>。 要返回的字符数。 如果省略该参数，则 <b>Characters</b> 方法将返回字符串 (设置为参数的字符之后的所有 <paramref name="Start" />) 。</param>
         <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Characters" /> 一个对象，该对象代表形状的文本框架中的字符范围。</summary>
         <returns>To be added.</returns>
         <remarks><para>可以使用 <b>Characters</b> 对象向文本框架中添加字符和设置字符的格式。</para>
@@ -240,7 +240,7 @@
         <summary>获取或设置指定对象的水平溢出设置。</summary>
         <value>指定对象的水平溢出设置。</value>
         <remarks><para>读/写。</para>
-          <para>此属性仅在属性为 <see cref="P:Microsoft.Office.Interop.Excel.TextFrame2.WordWrap" /> <b>msoFalse</b> (0) 。</para>
+          <para>此属性仅在属性为 <see cref="P:Microsoft.Office.Interop.Excel.TextFrame2.WordWrap" /> <b>msoFalse</b> (0 时) 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -396,7 +396,7 @@
       <Docs>
         <summary>文本框方向。</summary>
         <value>To be added.</value>
-        <remarks><para><b>Orientation</b>属性可以是 -90 到 90 度或<b>MsoTextOrientation</b>常量之一的整数值。</para>
+        <remarks><para><b>Orientation 属性</b>可以是从 –90 到 90 度或<b>MsoTextOrientation</b>常量之一的整数值。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -456,7 +456,7 @@
       <Docs>
         <summary>返回或设置指定对象的阅读次序。</summary>
         <value>To be added.</value>
-        <remarks><para><b>ReadingOrder</b>属性可以是下列常量之一： <b>xlRTL</b> (从右到左) 、 <b>xlLTR</b> (从左到右) 或<b>xlContext</b>。</para>
+        <remarks><para><b>ReadingOrder</b>属性可以是下列常量之一<b>：xlRTL</b> (从右到左<b>) 、xlLTR</b> (从左到右) 或<b>xlContext</b>。</para>
           <para>[!注释] 由于选择或安装的语言支持（例如美国英语）不同，有些常量可能无法使用。</para>
           <para> </para></remarks>
       </Docs>
@@ -523,7 +523,7 @@
         <summary>获取或设置指定对象的垂直溢出设置。</summary>
         <value>指定对象的垂直溢出设置。</value>
         <remarks><para>读/写。</para>
-          <para>此属性仅在属性为 <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.AutoSize" /> false 时 <b>有效</b>。</para>
+          <para>此属性仅在属性为 false <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.AutoSize" /> 时 <b>有效</b>。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

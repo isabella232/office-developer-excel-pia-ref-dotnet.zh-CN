@@ -1,5 +1,5 @@
 <Type Name="SpellingOptions" FullName="Microsoft.Office.Interop.Excel.SpellingOptions">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="b664c52434f8d93eb47ce0675a7bb457e2c7098f" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009854" /></Metadata><TypeSignature Language="C#" Value="public interface SpellingOptions" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="39b78b9722c9047438cf4182aa5dfa6e2c2088c1cb35b384d87aa5a69848950c" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54516954" /></Metadata><TypeSignature Language="C#" Value="public interface SpellingOptions" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SpellingOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SpellingOptions" />
   <TypeSignature Language="VB.NET" Value="Public Interface SpellingOptions" />
@@ -22,7 +22,7 @@
   </Attributes>
   <Docs>
     <summary>表示工作表的各种拼写检查选项。</summary>
-    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel._Application.SpellingOptions" /> 该对象的属性 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 可返回 <b>SpellingOptions</b> 对象。</para>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel._Application.SpellingOptions" /> 对象的 属性 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 可返回 <b>SpellingOptions</b> 对象。</para>
       <para>返回 <b>SpellingOptions</b> 对象后，可以使用其下列属性设置或返回各种拼写检查选项：</para>
       <list type="bullet">
         <item>
@@ -150,7 +150,7 @@
         <value><b>如此</b> 如果拼写检查器使用有关以 alef hamza 开头的阿拉伯语单词的规则;否则为 <b>false</b>。</value>
         <remarks><para>读/写。</para>
           <para>
-            <b>如此</b> 如果拼写检查使用阿拉伯语单词以 alef hamza 开头的拼写规则;否则 <b>为 false</b>。</para>
+            <b>如此</b> 如果拼写检查使用有关以 alef hamza 开头的阿拉伯语单词的拼写规则;否则 <b>为 false</b>。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -214,11 +214,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置拼写检查器是否使用规则来标记以 haa 结尾的阿拉伯语单词，而不是 taa marboota。</summary>
-        <value><b>如此</b> 如果拼写检查器使用规则标记以 haa 结尾的阿拉伯语单词，而不是 taa marboota;否则为 <b>false</b>。</value>
+        <summary>获取或设置拼写检查器是否使用规则来标记以 haa 而不是 taa marboota 结尾的阿拉伯语单词。</summary>
+        <value><b>如此</b> 如果拼写检查器使用规则来标记以 haa 而不是 taa marboota 结尾的阿拉伯语单词;否则为 <b>false</b>。</value>
         <remarks><para>读/写。</para>
           <para>
-            <b>如此</b> 如果拼写检查器使用规则标记以 haa 结尾的阿拉伯语单词，而不是 taa marboota;否则 <b>为 false</b>。</para>
+            <b>如此</b> 如果拼写检查器使用规则来标记以 haa 而不是 taa marboota 结尾的阿拉伯语单词;否则 <b>为 false</b>。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -376,7 +376,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>False</b> 指示 Microsoft Excel 检查大写单词; <b>True</b> 指示 Excel 在使用拼写检查时忽略大写的单词。</summary>
+        <summary><b>False</b>指示Microsoft Excel大写单词;<b>True</b>指示Excel拼写检查时忽略大写的单词。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -407,7 +407,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>False</b> 指示 Microsoft Excel 检查 Internet 和文件地址; <b>True</b> 指示 Excel 在使用拼写检查器时忽略 Internet 和文件地址。</summary>
+        <summary><b>False</b>指示Microsoft Excel检查 Internet 和文件地址;<b>True</b>指示Excel拼写检查器时忽略 Internet 和文件地址。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -438,7 +438,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>False</b> 指示 Microsoft Excel 检查混合数字; <b>True</b> 指示 Excel 在检查拼写时忽略混合数字。</summary>
+        <summary><b>False</b>指示Microsoft Excel检查混合数字;<b>True</b>指示Excel拼写检查时忽略混合数字。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -562,7 +562,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPortugueseReform</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置欧洲葡萄牙语拼写检查的模式。</summary>
+        <summary>获取或设置欧洲葡萄牙语的拼写检查模式。</summary>
         <value>欧洲葡萄牙语拼写检查模式。</value>
         <remarks><para>读/写。</para>
           <para>
@@ -630,8 +630,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSpanishModes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置检查西班牙语拼写的模式。</summary>
-        <value>检查西班牙语拼写的模式。</value>
+        <summary>获取或设置用于检查西班牙语拼写的模式。</summary>
+        <value>用于检查西班牙语拼写的模式。</value>
         <remarks><para>读/写。</para>
           <para> </para></remarks>
       </Docs>
@@ -662,7 +662,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置为 <b>True</b>时，指示 Microsoft Excel 在使用拼写检查时仅建议主词典中的单词。 <b>如果为 False，</b> 则使用拼写检查时仅从主词典中删除建议单词的限制。</summary>
+        <summary>设置为<b>True</b>时，Microsoft Excel拼写检查时仅从主词典建议单词。 <b>如果为 False，</b> 则使用拼写检查时仅从主词典中删除建议单词的限制。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -693,7 +693,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指示 Microsoft Excel 创建自定义词典，在工作表上执行拼写检查时，可以将新单词添加到该词典中。</summary>
+        <summary>指示Microsoft Excel创建一个自定义词典，在工作表上执行拼写检查时，可以将新单词添加到该词典中。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

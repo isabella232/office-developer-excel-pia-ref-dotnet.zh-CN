@@ -1,5 +1,5 @@
 <Type Name="FileExportConverters" FullName="Microsoft.Office.Interop.Excel.FileExportConverters">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d9d15ade86de30f26a8ffa76c4393a2b02abadaa" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012262" /></Metadata><TypeSignature Language="C#" Value="public interface FileExportConverters : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="097b5d5536010da6b567200b43864e95a787174e90268a272abc201559fbf8da" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54509975" /></Metadata><TypeSignature Language="C#" Value="public interface FileExportConverters : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FileExportConverters implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.FileExportConverters" />
   <TypeSignature Language="VB.NET" Value="Public Interface FileExportConverters&#xA;Implements IEnumerable" />
@@ -25,10 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>表示 <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" /> 可用于保存文件的所有文件转换器的对象的集合。</summary>
-    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel._Application.FileExportConverters" /> 该属性可返回 <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" /> 集合。</para>
-      <para><b>Add</b>方法对集合 <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" /> 不可用。 <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" /> 对象在安装过程中Microsoft Office安装补充转换器。</para>
-      <para>使用 <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" /> (索引) ，其中索引是一个整数，返回单个的 FileExportConverter 对象。 索引号代表文件转换器在 FileExportConverters 集合中的位置。</para>
+    <summary>对象的集合 <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" /> ，这些对象代表可用于保存文件的所有文件转换器。</summary>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel._Application.FileExportConverters" /> 属性可返回 <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" /> 集合。</para>
+      <para><b>Add</b>方法对集合 <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" /> 不可用。 <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" />对象在安装过程中添加Microsoft Office安装补充转换器。</para>
+      <para>使用 (Index) （其中 Index 是整数） <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" /> 可返回单个 FileExportConverter 对象。 索引号代表文件转换器在 FileExportConverters 集合中的位置。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -90,7 +90,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。 只读。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。 只读。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -148,7 +148,7 @@
       <Docs>
         <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 一个常量，该常量指示创建指定对象时所使用应用程序。 只读 Long。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
-        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回十六进制值 5843454C，该值表示字符串“XCEL”。 Creator 属性是为 Macintosh 上的 Microsoft Excel 设计的，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。 例如，Microsoft Excel 的创建者代码为 XCEL。</para>
+        <remarks><para>如果该对象是在 Microsoft Excel 中创建的，则此属性返回十六进制值 5843454C，该值表示字符串“XCEL”。Creator 属性设计为在 Microsoft Excel for the Macintosh 中使用，在 Macintosh 上，每个应用程序都具有一个四字符的创建者代码。例如，Microsoft Excel 的创建者代码为 XCEL。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

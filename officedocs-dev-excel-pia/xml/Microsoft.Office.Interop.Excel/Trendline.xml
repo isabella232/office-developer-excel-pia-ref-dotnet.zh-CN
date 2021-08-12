@@ -1,5 +1,5 @@
 <Type Name="Trendline" FullName="Microsoft.Office.Interop.Excel.Trendline">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="43cabd68ae83576c2d2f307683fffd5d099fc7d7" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009476" /></Metadata><TypeSignature Language="C#" Value="public interface Trendline" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6a930ebc84632db2f6995aef63fe35eec004ee4c0d3dbb87a15bdaf8e49b91c8" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54517941" /></Metadata><TypeSignature Language="C#" Value="public interface Trendline" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Trendline" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Trendline" />
   <TypeSignature Language="VB.NET" Value="Public Interface Trendline" />
@@ -23,8 +23,8 @@
   <Docs>
     <summary>代表图表上的趋势线。 趋势线显示的趋势，或者方向，一系列中的数据。</summary>
     <remarks><para><b>Trendline</b>对象是集合的 <see cref="T:Microsoft.Office.Interop.Excel.Trendlines" /> 一个成员。 <b>趋势线</b> 集合包含单个数据系列的所有 <b>趋势线</b> 对象。</para>
-      <para>使用 <b>趋势线</b> <paramref name="index" /> () ，其中趋势线索引号， <paramref name="index" /> 返回单个 <b>趋势线</b> 对象。</para>
-      <para>索引号指出趋势线添加到系列中的顺序。 Trendlines(1) 是第一个添加到系列中的趋势线，而 Trendlines(Trendlines.Count) 是最后一个。</para>
+      <para>使用<b>Trendlines</b> () 返回单个 Trendline 对象，其中是趋势线 <paramref name="index" /> <paramref name="index" /> 索引号。 <b></b></para>
+      <para>索引号指出趋势线添加到系列中的顺序。Trendlines(1) 是第一个添加到系列中的趋势线，而 Trendlines(Trendlines.Count) 是最后一个。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -51,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -147,7 +147,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 一个对象，该对象表示对象的边框。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 一个对象，该对象代表对象的边框。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -233,7 +233,7 @@
       <Docs>
         <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /> 一个对象，该对象代表与点或趋势线关联的数据标签。</summary>
         <value>To be added.</value>
-        <remarks><para>若要打开趋势线的数据标签，需要将 <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayEquation" /> 该属性或 <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayRSquared" /> 属性设置为<b>True。</b></para>
+        <remarks><para>若要打开趋势线的数据标签，需要将 属性 <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayEquation" /> 或 <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayRSquared" /> 属性设置为 <b>True</b>。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

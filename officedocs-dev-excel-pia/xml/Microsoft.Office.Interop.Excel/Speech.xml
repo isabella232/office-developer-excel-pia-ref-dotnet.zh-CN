@@ -1,5 +1,5 @@
 <Type Name="Speech" FullName="Microsoft.Office.Interop.Excel.Speech">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="1a463e61ce556cdcc28ee34539e04ed33852d6ca" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009875" /></Metadata><TypeSignature Language="C#" Value="public interface Speech" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0f654b6c10e3110a0b6267111f978db256db44bf2d1d9243f90625e0e06faff0" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54516968" /></Metadata><TypeSignature Language="C#" Value="public interface Speech" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Speech" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Speech" />
   <TypeSignature Language="VB.NET" Value="Public Interface Speech" />
@@ -22,10 +22,10 @@
   </Attributes>
   <Docs>
     <summary>包括与语音相关的方法和属性。</summary>
-    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel._Application.Speech" /> 对象的属性 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 可返回 <b>Speech</b> 对象。</para>
-      <para>返回<b>Speech</b>对象后，可以使用 Speech 对象的方法播放字符串 <see cref="M:Microsoft.Office.Interop.Excel.Speech.Speak(System.String,System.Object,System.Object,System.Object)" /> 的内容。 <b></b></para>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Excel._Application.Speech" /> 对象的 属性 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 可返回 <b>Speech</b> 对象。</para>
+      <para>返回<b>Speech</b>对象后，可以使用 Speech 对象 <see cref="M:Microsoft.Office.Interop.Excel.Speech.Speak(System.String,System.Object,System.Object,System.Object)" /> 的方法播放<b></b>字符串的内容。</para>
       <para>
-        <b>注意</b>：安装树中的语音功能与听写和命令控件相关，无需 &amp; 安装。</para>
+        <b>注意</b>：安装树中的语音功能与听写和命令控件相关， &amp; 无需安装。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -57,7 +57,7 @@
       <Docs>
         <summary>返回或设置朗读单元格的次序。</summary>
         <value>To be added.</value>
-        <remarks><para><b>Direction</b>属性的值是一个 <see cref="T:Microsoft.Office.Interop.Excel.XlSpeakDirection" /> 常量。</para>
+        <remarks><para><b>Direction 属性的值</b>是一个 <see cref="T:Microsoft.Office.Interop.Excel.XlSpeakDirection" /> 常量。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -87,10 +87,10 @@
       </Parameters>
       <Docs>
         <param name="Text">必需的 <b>字符串</b> 。 要朗读的文本。</param>
-        <param name="SpeakAsync">可选 <b>对象</b>。 <b>如果</b> 为 True，则异步 (该方法不等待其语音 <paramref name="Text" /> <paramref name="Text" />) 。 <b>如果</b> 为 False，则该方法 (先等待其语音，然后再 <paramref name="Text" /> <paramref name="Text" /> 继续) 。 默认值为 <b>False</b>。</param>
-        <param name="SpeakXML">可选属性，类型为 <b>Boolean</b>。 <b>True</b> 将导致 <paramref name="Text" /> 将解释为 XML。 <b>如果</b> 为 <paramref name="Text" /> False，则不将其解释为 XML，因此将读取和解释任何 XML 标记。 默认值为 <b>False</b>。</param>
-        <param name="Purge">可选 <b>对象</b>。 <b>True</b> 将导致当前语音终止，并且任何缓冲的文本在语音之前 <paramref name="Text" /> 被清除。 <b>False</b> 不会导致当前语音终止，并且不会在语音之前清除缓冲 <paramref name="Text" /> 的文本。 默认值为 <b>False</b>。</param>
-        <summary>Microsoft Excel 播放指定的文本字符串。</summary>
+        <param name="SpeakAsync">可选 <b>对象</b>。 <b>如果为 True，</b> 则异步 (方法不会等待 在语音中 <paramref name="Text" /> <paramref name="Text" />) 。 <b>如果为 False，</b> 则该方法等待 (，然后再继续操作，然后 <paramref name="Text" /> <paramref name="Text" />) 。 默认值为 <b>False</b>。</param>
+        <param name="SpeakXML">可选属性，类型为 <b>Boolean</b>。 <b>如果</b> 为 <paramref name="Text" /> True，则解释为 XML。 <b>如果</b> 为 <paramref name="Text" /> False，则不将 解释为 XML，因此将读取和解释任何 XML 标记。 默认值为 <b>False</b>。</param>
+        <param name="Purge">可选 <b>对象</b>。 <b>如果为 True，</b> 则当前语音将终止，并且任何缓冲的文本在说出前 <paramref name="Text" /> 将被清除。 <b>如果为 False，</b> 则不终止当前语音，并且不会在说出之前清除缓冲 <paramref name="Text" /> 的文本。 默认值为 <b>False</b>。</param>
+        <summary>Microsoft Excel播放指定的文本字符串。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
