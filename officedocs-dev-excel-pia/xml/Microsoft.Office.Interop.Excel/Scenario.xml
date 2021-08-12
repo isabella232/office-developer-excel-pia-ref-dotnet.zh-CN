@@ -1,5 +1,5 @@
 <Type Name="Scenario" FullName="Microsoft.Office.Interop.Excel.Scenario">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="86d8d02ae441f3ac07255a45ae9cd0cf278fe5fe" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010477" /></Metadata><TypeSignature Language="C#" Value="public interface Scenario" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="942163ef79c471667dca1194a35577d8c25f3644b0ae61b52fa63454b55832ca" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54514210" /></Metadata><TypeSignature Language="C#" Value="public interface Scenario" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Scenario" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Scenario" />
   <TypeSignature Language="VB.NET" Value="Public Interface Scenario" />
@@ -21,9 +21,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表工作表上的一个方案。 方案是一组称为 (保存) <paramref name="changing cells" /> 的输入值。</summary>
-    <remarks><para><b>Scenario</b>对象是集合 <see cref="T:Microsoft.Office.Interop.Excel.Scenarios" /> 的一个成员。 <b>Scenarios</b> 集合包含某个工作表的所有定义方案。</para>
-      <para>使用 <b>方案</b> <paramref name="index" /> () 方案名称 <paramref name="index" /> 或索引号，返回单个 <b>Scenario</b> 对象。</para>
+    <summary>代表工作表上的一个方案。 方案是名为 (保存) <paramref name="changing cells" /> 一组输入值。</summary>
+    <remarks><para><b>Scenario</b>对象是集合的成员 <see cref="T:Microsoft.Office.Interop.Excel.Scenarios" /> 。 <b>Scenarios</b> 集合包含某个工作表的所有定义方案。</para>
+      <para>使用 <b>Scenarios</b> <paramref name="index" /> () （其中是方案名称 <paramref name="index" /> 或索引号）返回单个 <b>Scenario</b> 对象。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -50,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -78,11 +78,11 @@
         <Parameter Name="Values" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ChangingCells">必需 <b>对象</b>。 <see cref="T:Microsoft.Office.Interop.Excel.Range" />一个对象，指定方案的新更改单元格集。 这些可变单元格必须与方案位于同一工作表中。</param>
+        <param name="ChangingCells">必需的 <b>对象</b>。 <see cref="T:Microsoft.Office.Interop.Excel.Range" />指定方案的新更改单元格集的对象。 这些可变单元格必须与方案位于同一工作表中。</param>
         <param name="Values">可选 <b>对象</b>。 包含可变单元格的新方案值的数组。 如果省略此参数，将假定方案值为这些可变单元格的当前值。</param>
         <summary>更改方案以得到一组新的可变单元格及方案值（可选）。</summary>
         <returns>To be added.</returns>
-        <remarks><para>如果指定 v，数组必须包含区域每个单元格的元素;否则 <paramref name="alues" /> <paramref name="ChangingCells" /> ，Microsoft Excel 将生成一个错误。</para>
+        <remarks><para>如果指定 v ，数组必须包含区域中每个单元格的元素;否则，Microsoft Excel <paramref name="alues" /> <paramref name="ChangingCells" /> 将生成错误。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -227,9 +227,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果方案处于隐藏状态，则其为<b>True。</b> 默认值为 <b>False</b>。</summary>
+        <summary><b>如此</b> 如果方案处于隐藏状态。 默认值为 <b>False</b>。</summary>
         <value>To be added.</value>
-        <remarks><para>请勿将此属性与该属性 <see cref="P:Microsoft.Office.Interop.Excel.Range.FormulaHidden" /> 混淆。</para>
+        <remarks><para>请勿将此属性与 属性 <see cref="P:Microsoft.Office.Interop.Excel.Range.FormulaHidden" /> 混淆。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -287,7 +287,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果对象被锁定，则其为<b>True;</b><b>假</b>如果工作表受保护时可以修改对象。</summary>
+        <summary><b>如此</b> 如果对象被锁定; <b>假</b> 如果工作表受保护时可以修改对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -372,7 +372,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>通过在工作表中插入方案的值来显示方案。 受影响的单元格为方案的更改单元格。</summary>
+        <summary>通过在工作表中插入方案的值来显示方案。受影响的单元格为方案的更改单元格。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

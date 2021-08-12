@@ -1,5 +1,5 @@
 <Type Name="IRtdServer" FullName="Microsoft.Office.Interop.Excel.IRtdServer">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="91b1868ee8a3354dc6036654d8402e4aad54ba45" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49997654" /></Metadata><TypeSignature Language="C#" Value="public interface IRtdServer" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5913a9fd46bfb7d5f88e17acdfa800f3c9bcbcb95acd68db9963071ca4d3270b" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54514371" /></Metadata><TypeSignature Language="C#" Value="public interface IRtdServer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRtdServer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.IRtdServer" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRtdServer" />
@@ -48,9 +48,9 @@
         <Parameter Name="GetNewValues" Type="System.Boolean&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="TopicID">必需 <b>整数</b>。 由 Microsoft Excel 指定的用于标识主题的唯一值。</param>
-        <param name="Strings">必需 <b>对象</b>。 用于标识主题的字符串的一维数组。</param>
-        <param name="GetNewValues">必需 <b>布尔值</b>。 如果该值为 <b>True</b>，则确定是否需要新值。</param>
+        <param name="TopicID">必需<b>类型，类型为 Integer。</b> 由 Microsoft Excel 指定的用于标识主题的唯一值。</param>
+        <param name="Strings">必需的 <b>对象</b>。 用于标识主题的字符串的一维数组。</param>
+        <param name="GetNewValues">必需<b>项，为 Boolean。</b> 如果该值为 <b>True</b>，则确定是否需要新值。</param>
         <summary>添加来自实时数据服务器的新主题。 当打开包含实时数据函数的文件时，或者当用户在包含<b>RTD</b>函数的新公式中输入时，将调用<b>ConnectData</b>方法。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -79,7 +79,7 @@
         <Parameter Name="TopicID" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="TopicID">必需 <b>整数</b>。 指定给 Microsoft Excel 指定的主题的唯一值。</param>
+        <param name="TopicID">必需<b>类型，类型为 Integer。</b> 指定给 Microsoft Excel 指定的主题的唯一值。</param>
         <summary>将不再使用的主题通知给实时数据 (RTD) 服务器应用程序。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -107,7 +107,7 @@
       <Docs>
         <summary>判断实时数据服务器是否仍处于活动状态。 如果返回零或负数，则表示失败，返回正数则表示服务器处于活动状态。</summary>
         <returns>To be added.</returns>
-        <remarks><para>如果自上次使用该方法调用 Excel 以来属性已过，则 Microsoft Excel 将调用 Heartbeat <see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" /> <see cref="M:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.UpdateNotify" /> 方法。</para>
+        <remarks><para>如果自上次使用 Microsoft Excel调用检测信号以来，Excel调用 Heartbeat <see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" /> <see cref="M:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.UpdateNotify" /> 方法。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -134,10 +134,10 @@
         <Parameter Name="TopicCount" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="TopicCount">必需 <b>整数</b>。 RTD 服务器必须将值更改为返回的 <paramref name="TopicCount" /> 数组中的元素数。</param>
+        <param name="TopicCount">必需<b>类型，类型为 Integer。</b> RTD 服务器必须将 的值更改为 <paramref name="TopicCount" /> 返回的数组中的元素数。</param>
         <summary>Microsoft Excel 调用本方法可获取新数据。</summary>
         <returns>To be added.</returns>
-        <remarks><para>返回到 Excel 的数据 <b>是包含二</b> 维数组的对象。 第一维代表主题 ID 的列表。 第二维代表与主题 ID 关联的值。</para>
+        <remarks><para>返回给 Excel的数据是包含二维数组的<b>Object。</b> 第一维代表主题 ID 的列表。 第二维代表与主题 ID 关联的值。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -165,7 +165,7 @@
       </Parameters>
       <Docs>
         <param name="CallbackObject">必需 <see cref="T:Microsoft.Office.Interop.Excel.IRTDUpdateEvent" /> 对象。 回调对象。</param>
-        <summary>实例化实时数据服务器后立即调用 <b>ServerStart</b> 方法。 负值或零表示启动服务器失败;正值表示成功。</summary>
+        <summary>在实例化实时数据服务器后立即调用 <b>ServerStart</b> 方法。 负值或零表示启动服务器失败;正值表示成功。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

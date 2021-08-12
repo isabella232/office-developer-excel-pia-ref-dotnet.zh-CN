@@ -1,5 +1,5 @@
 <Type Name="PlotArea" FullName="Microsoft.Office.Interop.Excel.PlotArea">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="5a540fca333680ff420954f4c897f1253f3abc3a" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49997241" /></Metadata><TypeSignature Language="C#" Value="public interface PlotArea" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7adf0c15f0f8a156351e82b06c9d84444194ed2aefa3663b6d7e2b9215834945" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54513811" /></Metadata><TypeSignature Language="C#" Value="public interface PlotArea" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PlotArea" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PlotArea" />
   <TypeSignature Language="VB.NET" Value="Public Interface PlotArea" />
@@ -23,7 +23,7 @@
   <Docs>
     <summary>代表图表的绘图区。 该区域为绘制图表数据的区域。</summary>
     <remarks><para>二维图表中的绘图区包含数据标志、网格线、数据标签、趋势线和可选的置于图表区内的图表项。 三维图表的绘图区中除包含上述各项外，还在图表中包含背景墙、基底、坐标轴、坐标轴标题和刻度线标签。 绘图区被图表区所包围。 二维图表的图表区包含坐标轴、图表标题、坐标轴标题和图例。 三维图表的图表区包含图表标题和图例。 有关设置图表区域格式的信息，请参阅 <see cref="T:Microsoft.Office.Interop.Excel.ChartArea" /> 对象。</para>
-      <para>使用该属性 <see cref="P:Microsoft.Office.Interop.Excel._Chart.PlotArea" /> 可返回 <b>PlotArea</b> 对象。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Excel._Chart.PlotArea" /> 属性可返回 <b>PlotArea</b> 对象。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -174,7 +174,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个代表 Microsoft Excel 应用程序的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 一个对象，该对象Microsoft Excel应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -205,7 +205,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 一个对象，该对象表示对象的边框。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 一个对象，该对象代表对象的边框。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -292,7 +292,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> 指定图表的对象，该对象包含图表的填充格式属性。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> 指定图表的对象，该指定图表包含图表的填充格式属性。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -384,7 +384,7 @@
       <Docs>
         <summary>返回绘图区的内部高度（以点表示）。</summary>
         <value>To be added.</value>
-        <remarks><para>这种度量方式的图形区域不包含坐标轴标签。 绘图 <see cref="P:Microsoft.Office.Interop.Excel.PlotArea.Height" /> 区的属性使用包含坐标轴标签的矩形边界。</para>
+        <remarks><para>这种度量方式的图形区域不包含坐标轴标签。 <see cref="P:Microsoft.Office.Interop.Excel.PlotArea.Height" />绘图区的属性使用包含坐标轴标签的矩形边界。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -414,9 +414,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回从图表边缘到绘图区内左边缘的距离（以点表示）。</summary>
+        <summary>返回从图表边缘到绘图区内部左边缘的距离（以点表示）。</summary>
         <value>To be added.</value>
-        <remarks><para>这种度量方式的图形区域不包含坐标轴标签。 绘图 <see cref="P:Microsoft.Office.Interop.Excel.PlotArea.Left" /> 区的属性使用包含坐标轴标签的矩形边界。</para>
+        <remarks><para>这种度量方式的图形区域不包含坐标轴标签。 <see cref="P:Microsoft.Office.Interop.Excel.PlotArea.Left" />绘图区的属性使用包含坐标轴标签的矩形边界。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -448,7 +448,7 @@
       <Docs>
         <summary>返回从图表边缘到绘图区内部上边缘的距离（以点表示）。</summary>
         <value>To be added.</value>
-        <remarks><para>这种度量方式的图形区域不包含坐标轴标签。 绘图 <see cref="P:Microsoft.Office.Interop.Excel.PlotArea.Top" /> 区的属性使用包含坐标轴标签的矩形边界。</para>
+        <remarks><para>这种度量方式的图形区域不包含坐标轴标签。 <see cref="P:Microsoft.Office.Interop.Excel.PlotArea.Top" />绘图区的属性使用包含坐标轴标签的矩形边界。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -480,7 +480,7 @@
       <Docs>
         <summary>返回绘图区的内部宽度（以点表示）。</summary>
         <value>To be added.</value>
-        <remarks><para>这种度量方式的图形区域不包含坐标轴标签。 绘图 <see cref="P:Microsoft.Office.Interop.Excel.PlotArea.Width" /> 区的属性使用包含坐标轴标签的矩形边界。</para>
+        <remarks><para>这种度量方式的图形区域不包含坐标轴标签。 <see cref="P:Microsoft.Office.Interop.Excel.PlotArea.Width" />绘图区的属性使用包含坐标轴标签的矩形边界。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

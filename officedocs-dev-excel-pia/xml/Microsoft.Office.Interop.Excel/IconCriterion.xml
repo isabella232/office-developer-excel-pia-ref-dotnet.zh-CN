@@ -1,5 +1,5 @@
 <Type Name="IconCriterion" FullName="Microsoft.Office.Interop.Excel.IconCriterion">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="aeac399c7630a815bc10a17585c99b77cfcc3ff7" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50000230" /></Metadata><TypeSignature Language="C#" Value="public interface IconCriterion" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e19325de9317002315e49c97966302e1963aa338e03106c2d0ee40b91ef31a87" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54505033" /></Metadata><TypeSignature Language="C#" Value="public interface IconCriterion" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IconCriterion" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.IconCriterion" />
   <TypeSignature Language="VB.NET" Value="Public Interface IconCriterion" />
@@ -56,7 +56,7 @@
       <Docs>
         <summary>获取或设置图标集条件格式规则中条件的图标。</summary>
         <value>To be added.</value>
-        <remarks><para>在图标集条件格式规则中为图标条件设置<b>Icon</b>属性后，该属性将更改为 <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconSet" /> <b>xlCustomSet。</b></para>
+        <remarks><para>在图标集条件格式规则中设置图标条件的 <b>Icon</b> 属性后，该属性将更改为 <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconSet" /> <b>xlCustomSet</b>。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -147,7 +147,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlConditionValueTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回枚举的常量之一，该常量指定如何确定图标集 <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" /> 的阈值。 只读。</summary>
+        <summary>返回枚举的常量之一，该常量指定 <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" /> 如何确定图标集的阈值。 只读。</summary>
         <value>To be added.</value>
         <remarks><para>图标集的阈值类型可以是数字、百分比、公式或百分点值。如果将类型设置为百分点值，将使用 Excel 中的 Percentile 函数确定阈值。</para>
           <para> </para></remarks>
@@ -179,10 +179,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置条件格式中图标的阈值。 读/写 <b>Variant</b>。</summary>
+        <summary>返回或设置条件格式中图标的阈值。可读/写 <b>Variant</b> 类型。</summary>
         <value>To be added.</value>
-        <remarks><para>只有在条件格式的属性设置为下列常量之一时，才能设置该值 <see cref="P:Microsoft.Office.Interop.Excel.IconCriterion.Type" /> ：xlConditionValueNumber、xlConditionValuePercent、xlConditionValuePercentile 或<b>xlConditionValueFormula。</b> <b></b> <b></b> <b></b></para>
-          <para>如果阈值的类型是公式，可以将公式设置为 <b>字符串</b>。 此公式必须返回单一数字。</para>
+        <remarks><para>只有当条件格式的属性设置为下列常量之一时，才能设置该值 <see cref="P:Microsoft.Office.Interop.Excel.IconCriterion.Type" /> ：xlConditionValueNumber、xlConditionValuePercent、xlConditionValuePercentile 或<b>xlConditionValueFormula</b>。 <b></b> <b></b> <b></b></para>
+          <para>如果阈值的类型是公式，可以将该公式设置为 <b>字符串</b>。 此公式必须返回单一数字。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
